@@ -23,7 +23,7 @@ const sync = { lastTry: null, lastOk: null, ok: null, message: '尚未同步', c
 
 function git(args, timeout) {
   return new Promise(resolve => {
-    execFile('git', ['-C', REPO].concat(args), { timeout: timeout || 120000 }, (error, stdout, stderr) => {
+    execFile('git', ['-C', REPO, '-c', 'http.version=HTTP/1.1'].concat(args), { timeout: timeout || 120000 }, (error, stdout, stderr) => {
       resolve({ error, out: String(stdout || '').trim(), err: String(stderr || '').trim() });
     });
   });
@@ -36,8 +36,8 @@ async function pull() {
   sync.lastTry = new Date().toISOString();
   const before = (await git(['rev-parse', 'HEAD'], 10000)).out;
   let r = await git(['pull', '--ff-only', '--quiet'], 120000);
-  if (r.error) {
-    // 网络偶尔不通，隔 20 秒再试一次
+  // 国内连 GitHub 不稳定，失败了隔 20 秒再试，最多 3 次
+  for (let i = 0; i < 2 && r.error; i++) {
     await new Promise(res => setTimeout(res, 20000));
     r = await git(['pull', '--ff-only', '--quiet'], 120000);
   }
