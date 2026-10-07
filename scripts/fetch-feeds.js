@@ -123,7 +123,7 @@ async function pool(list, n, fn) {
 const AIHOT = {
   latest24h: 'https://aihot.news/api/v1/agent/latest?window=24h&limit=30',
   latest7d: 'https://aihot.news/api/v1/agent/latest?window=7d&limit=30',
-  hot: 'https://aihot.news/api/v1/agent/hot?limit=20',
+  hot: 'https://aihot.news/api/v1/agent/hot',
   daily: 'https://aihot.news/api/v1/agent/daily',
   weekly: 'https://aihot.news/api/v1/agent/weekly',
 };
