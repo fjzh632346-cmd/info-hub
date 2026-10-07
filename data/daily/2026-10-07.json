@@ -1,7 +1,7 @@
 {
   "type": "daily",
   "date": "2026-10-07",
-  "headline": "AI 这边新模型扎堆：谷歌 Nano Banana 2.1 生图降价一半，Mistral 和 Reflection 各发一个大号开放权重模型；仓储这边正值国庆，最近两天没有一手新消息，补上本周值得看的 4 条（IFR 数据：去年卖出的专业服务机器人近一半是物流机器人）。",
+  "headline": "AI 这边新模型扎堆：谷歌 Nano Banana 2.1 生图降价一半，Mistral 和 Reflection 各发一个大号开放权重模型；仓储这边，一篇分析讲中国自动化厂商靠“隐形项目”加速出海，另有 Aldi 生鲜自动化和 Exotec 货到人两个真实案例。",
   "sections": [
     {
       "key": "ai",
@@ -86,6 +86,55 @@
       "title": "仓储物流自动化",
       "items": [
         {
+          "title": "中国仓储自动化厂商加速出海，“隐形项目”让外界低估了它们的实力",
+          "source": "Automated Warehouse",
+          "published": "2026-10-05",
+          "summary": "文章指出，中国厂商在海外拿到的不少项目是“隐形项目”：中国企业出海建厂时，直接在中国国内找中国供应商采购，不走公开招标，所以西方厂商往往连竞标机会都没有，市场统计也看不到。极智嘉、海柔、海康机器人等移动机器人公司已经在海外站稳，现在做固定式自动化（输送线、分拣机、立体库这类装在地上不动的设备）的科捷（Kengic）、蓝剑（Bluesword）等也在跟进。原因是 2022 年后国内电商和新能源车建厂放缓、厂商太多、利润被压低，出海成了生存需要，重点去东南亚、海湾国家和欧洲。",
+          "why": "直接关系到北自科技、今天国际这类公司的增长逻辑：国内卷、海外找增量；求职时可以关注这些公司的海外项目岗位。",
+          "url": "https://www.automatedwarehouseonline.com/how-hidden-projects-skew-success-of-chinese-warehouse-automation-vendors/",
+          "tags": [
+            "观点",
+            "数据"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "title": "Aldi 英国新配送中心用 Cimcorp 系统自动处理生鲜果蔬",
+          "source": "Automated Warehouse",
+          "published": "2026-10-06",
+          "summary": "德国连锁超市 Aldi 在英国莱斯特郡的 Bardon 配送中心启用了芬兰 Cimcorp 的生鲜自动化系统，该园区已投资超过 5 亿英镑，面积约 12 万平方米。全面投产后（2027 年），高峰期每天有 150 万公斤果蔬经过这里，每天发出 6000 多托盘到门店。生鲜区分三个温区（含专门的香蕉催熟间）：冷藏区用高位货架存托盘，需要发往门店时由自动穿梭车取出。",
+          "why": "生鲜和冷链是仓储自动化里最难的场景之一（多温区、保质期短），这是一个规模很大的真实案例，适合做课程案例分析。",
+          "url": "https://www.automatedwarehouseonline.com/aldi-uses-cimcorp-technology-automate-fresh-produce-handling/",
+          "tags": [
+            "案例"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "title": "美国建材批发商 First Supply 用 Exotec Skypod 实现“下午 5 点前下单，次日早上送达”",
+          "source": "Automated Warehouse",
+          "published": "2026-10-06",
+          "summary": "First Supply 是一家有 129 年历史的家族企业，给装修、水暖工人供货。它的新配送中心用了法国 Exotec 的 Skypod 系统：一种网格式立体库（ASRS），机器人能沿货架爬升取箱，再送到拣选工位（货到人，人不走动、货送到人面前）。公司物流负责人说，选型时最看重占地小和价格——“我们是家族企业，没有无限预算”，最终能做到下午 5 点前下单、第二天早上送到。",
+          "why": "中型企业怎么选自动化方案的真实思路：先定“货到人、少占地”，再按预算筛，可以对照课程里的选型方法。",
+          "url": "https://www.automatedwarehouseonline.com/first-supply-achieves-next-day-delivery-exotec-skypod-system/",
+          "tags": [
+            "案例"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "title": "波士顿动力任命前亚马逊 Alexa 负责人 Rohit Prasad 为 CEO",
+          "source": "The Robot Report",
+          "published": "2026-10-06",
+          "summary": "做 Atlas 人形机器人和 Stretch 卸货机器人的波士顿动力，在前 CEO 离职近 9 个月后任命 Rohit Prasad 为新 CEO。他在亚马逊干了 12 年，从零做起 Alexa 语音助手，后来负责亚马逊的通用人工智能研发。公司说这次任命是为了加快“物理 AI”（让 AI 控制真实世界里的机器人）的商业化。",
+          "why": "机器人公司请 AI 大模型背景的人当 CEO，说明行业重心正从“机器人能动”转向“机器人会自己判断”，仓储机器人也在同一条路上。",
+          "url": "https://www.therobotreport.com/boston-dynamics-appoints-former-amazon-executive-rohit-prasad-new-ceo/",
+          "tags": [
+            "观点"
+          ],
+          "vendorClaim": false
+        },
+        {
           "title": "IFR：2025年全球专业服务机器人销量增长24%，物流运输类占47%",
           "source": "国际机器人联合会（IFR）新闻稿",
           "published": "2026-09-30",
@@ -97,49 +146,12 @@
             "数据"
           ],
           "vendorClaim": false
-        },
-        {
-          "title": "美国A3发布移动机器人安全标准R15.08第三部分，三部分标准全部完成",
-          "source": "Robotics & Automation News",
-          "published": "2026-10-02",
-          "summary": "美国自动化促进协会A3发布ANSI/A3 R15.08-3-2026。R15.08是针对工业移动机器人（IMR，包括工厂和仓库里的AMR、自动叉车等）的安全标准：第1部分管设计制造，第2部分管系统集成和应用，这次的第3部分管使用方，规定了企业在现场用机器人时要做的风险评估、员工培训和定期运行检查。至此三部分全部发布。",
-          "why": "做AMR项目或去集成商、甲方仓库实习时，安全合规是验收必查项，了解R15.08（及对应的国际标准ISO 3691-4）是加分点。",
-          "url": "https://roboticsandautomationnews.com/2026/10/02/industry-body-a3-releases-final-part-of-safety-standard-for-industrial-mobile-robots/105474/",
-          "tags": [
-            "观点"
-          ],
-          "vendorClaim": false
-        },
-        {
-          "title": "Exotec日本调查：51%仓库员工想跳槽或离职，最想交给机器人的是搬重物",
-          "source": "LOGISTICS TODAY（日本）",
-          "published": "2026-10-02",
-          "summary": "法国仓储机器人公司Exotec在日本做的问卷显示，51.0%的仓库/物流中心员工在考虑跳槽或离职，20多岁的人群中这一比例达65.5%。离职原因前两位是身体负担（39.7%）和薪资待遇不满（39.4%）；62.0%的人希望把搬运重物交给机器人，只有14.3%不希望引入自动化。",
-          "why": "说明仓储自动化的核心驱动力是“招不到、留不住人”，可作为做自动化项目可行性分析时的需求论据，但要注意是厂商自己做的调查。",
-          "url": "https://www.logi-today.com/1006738",
-          "tags": [
-            "数据"
-          ],
-          "vendorClaim": true
-        },
-        {
-          "title": "大福：现有系统能自动化仓库约85%的作业，剩下15%靠人形机器人，计划2030年进入验证阶段",
-          "source": "MONOist（日本）",
-          "published": "2026-09-28",
-          "summary": "日本大福（Daifuku，全球最大物料搬运设备商之一，主营AS/RS即自动化立体仓库，用堆垛机在高货架上自动存取货）在东京国际物流综合展上表示，入库、搬运、存储、拣选、包装、分拣、出库等环节目前约85%可由现有设备自动化。剩下约15%（如抓取衣服等软性物品）计划用双臂人形机器人解决，社长寺井友章称目标是2030年前后进入验证阶段；大福强调自身优势在于懂物流系统布局。",
-          "why": "龙头厂商对“自动化天花板在哪里”的判断，对理解堆垛机/输送分拣与机器人拣选的分工很有帮助；属于公司自述的规划，不是已落地成果。",
-          "url": "https://monoist.itmedia.co.jp/mn/articles/2609/28/news058.html",
-          "tags": [
-            "观点"
-          ],
-          "vendorClaim": true
         }
       ]
     }
   ],
   "notes": [
-    "本期由对话里手动生成（定时任务今天没写成功）。",
-    "仓储部分：国庆休市，北自科技、今天国际无新公告；过去 48 小时没找到可核实的一手消息，所以放的是 9 月 28 日到 10 月 2 日、读过原文的 4 条。",
-    "这次大部分 RSS 订阅源打不开（需要逐个确认访问权限），改用搜索结果里的原文链接核对。"
+    "本期由对话里手动生成（定时任务今天没写成功）。仓储部分已改用新上线的信源抓取结果（feeds/latest.json）。",
+    "IFR 那条发布于 9 月 30 日，10 月 5 日被 Supply Chain 24/7 转载，因为数据重要所以保留。"
   ]
 }
