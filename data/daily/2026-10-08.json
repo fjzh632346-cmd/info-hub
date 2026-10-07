@@ -1,0 +1,292 @@
+{
+  "type": "daily",
+  "date": "2026-10-08",
+  "headline": "AI 侧今天的重点是「怎么把 Agent 训得更好、管得更稳」（微软 Agent Lightning、Stacklok），以及 NVIDIA 用同一底座拿下数学与编程奥赛金牌水平；仓储侧信息偏薄，WMS 选型框架和退货机器人案例最值得看。",
+  "sections": [
+    {
+      "key": "ai",
+      "title": "AI",
+      "items": [
+        {
+          "pick": true,
+          "title": "Agent Lightning v1.0：让真实在用的 Agent 框架直接参与强化学习，核心只有约 3500 行代码",
+          "source": "Microsoft Research（微软亚洲研究院）",
+          "published": "2026-10-08",
+          "readMinutes": 12,
+          "summary": "微软亚洲研究院提出「驾驭式智能体强化学习」：部署时用哪个 Agent 框架（harness，即包住模型的工具调用与上下文管理外壳），训练时就让同一个框架直接参与强化学习（RL，让模型靠奖惩试错变强）。做法是在 Agent 和模型之间放一个兼容 OpenAI 接口的代理，只记录模型调用，不必在训练框架里重写 Agent。原文为英文。",
+          "takeaways": [
+            "只要把 Agent 的模型端点指向 Agent Lightning 代理，通常就能接入 RL 训练，Claude Code、Codex、OpenHands 等现成框架都在适用范围内",
+            "共置异步 RL 让 rollout（跑 Agent 采样）和模型更新共用同一组 GPU，文中称比同步 RL 端到端快约 2 倍，且比传统异步 RL 少用 GPU",
+            "Agent 执行作为普通 Kubernetes 作业运行，不依赖商业沙箱服务，大规模采样成本更低",
+            "示例流水线用 SWE-smith、mini-SWE-agent 和 Qwen3.5-9B 做端到端编码智能体训练"
+          ],
+          "why": "你平时用 Claude 做 Agent，这篇讲清了「Agent 怎么被训练得更好」的工程结构（代理层、采样控制、训练器三件套），对理解 FDE/AI 产品岗位里常说的 harness、RL 很有帮助；代码量小，适合当读源码的入门样本。",
+          "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+          "tags": [
+            "报告",
+            "教程"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "pick": true,
+          "title": "NVIDIA 用同一套 Nemotron 微调出 IMO 与 IOI 2026 金牌水平的系统",
+          "source": "Hugging Face 博客（NVIDIA）",
+          "published": "2026-10-07",
+          "readMinutes": 10,
+          "summary": "NVIDIA 以 Nemotron 3 为底座，用监督微调（SFT）、强化学习（RL）和「生成—评估—修正」的推理策略，做出在 IMO 2026（数学奥赛）和 IOI 2026（信息学奥赛）都达到金牌水平的系统。IOI 是与人类选手同等时间和提交限制的实时运行，但属非官方、不计入正式排名；IMO 证明由官方评分员评分。原文为英文。",
+          "takeaways": [
+            "编程方向整理了 2.2 万道题并合成推理轨迹；训练了 Nano（总 300 亿/激活 30 亿参数）和 Ultra（总 5500 亿/激活 550 亿参数）两个专家模型",
+            "以 IOI 2025 为例：Nano 从 130 分经 SFT 到 280、RL 到 291，加上 GenCorrect 迭代修正策略到 468 分，超过金牌线 438.3；Ultra 同策略 502 分",
+            "小模型的提升主要来自 SFT，RL 只带来较小但稳定的增量；大模型一个 epoch 的 SFT 就超过完整训练的 Nano",
+            "结论是：不必为每个难题新训基础模型，按「专业化微调 + 推理时反馈」的可复现配方即可"
+          ],
+          "why": "对要判断「AI 数学/代码能力到了什么位置」很有参考价值，也能看到一条普通团队可借鉴的模型专业化路线；数据来自厂商自己，建议当作官方自述看待。",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+          "tags": [
+            "报告"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "pick": true,
+          "title": "Stanford HAI：想让员工用上 AI，别把它包装成「效率工具」",
+          "source": "Stanford HAI（经 AIHOT 收录）",
+          "published": "2026-10-07",
+          "readMinutes": 8,
+          "summary": "研究者访谈了三家公司的 184 名员工，并在一家律所跟踪两个部门近两年。同一款 AI 工具（LawBot），一个部门强调提速，另一个部门问「你最想摆脱哪些无聊工作」并给探索时间；后者使用频率高 58%、尝试新用法多 70%。原文为英文（AIHOT 收录的是中文译文）。",
+          "takeaways": [
+            "被要求用 AI 的员工常觉得工作失去意义，也不愿学新技能，担心学到的东西很快过时",
+            "推广方式只是前提，还要配套培训、每周知识分享、固定探索时间，承诺才可信",
+            "考核指标要跟着改：按案件量评判会惩罚用 AI 做深度研究的人；按 token 用量评判会逼出「为用而用」",
+            "任务松散耦合的岗位（如律师助理、医疗转录）更容易被 AI 改造，销售这类紧密捆绑的岗位则不然"
+          ],
+          "why": "想做 AI 产品经理或 FDE（驻场交付工程师），核心难题往往不是模型，而是客户内部怎么用起来；这篇给出了有对照数据的推广思路，可直接用在方案里。",
+          "url": "https://hai.stanford.edu/news/want-employees-to-embrace-ai-stop-selling-it-as-a-productivity-tool",
+          "tags": [
+            "报告",
+            "观点"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "pick": true,
+          "title": "Kubernetes 创始人做「云原生 Agent 框架」：Stacklok 的 Mecatl 想让编程 Agent 像容器一样被管理",
+          "source": "Latent Space",
+          "published": "2026-10-07",
+          "readMinutes": 12,
+          "summary": "Kubernetes（容器编排系统）的两位创造者 Craig McLuckie 和 Joe Beda 创办的 Stacklok，从软件供应链安全转向 Agent 方向，6 月开源了「云原生 harness」Mecatl。思路是把 Agent 循环放到云端，用类似 Kubernetes 控制循环的方式保证会话可靠、工具隔离、上下文保留。文章是访谈整理，原文英文。",
+          "takeaways": [
+            "编程 Agent 多从终端和桌面应用起步，企业真正的代码和上下文（IP）在本地，难以统一管理",
+            "OpenAI 与 Anthropic 自 2025 年起都在把 harness 往云端搬，但可靠性、工具隔离和上下文保存仍是难点",
+            "类比 2010 年代初容器编排：用控制循环让 Agent 失败可恢复、可扩缩",
+            "Stacklok 2023 年融资 1750 万美元 A 轮，近期转向基于 Kubernetes 的 Agent 方案"
+          ],
+          "why": "你自己在用 Claude 做 Agent，这篇帮你看懂「Agent 上云」为什么难、企业为什么要管它，是 FDE 面试里能聊的行业背景；注意这是创业公司的自我叙事，暂无独立测评。",
+          "url": "https://www.latent.space/p/stacklok",
+          "tags": [
+            "案例",
+            "观点"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "pick": false,
+          "title": "Mistral Large 4 登陆 Arena 的 Code Arena 网页开发榜，排第 45、1534 分",
+          "source": "Arena（经 AIHOT 整理）",
+          "summary": "Arena 称其比 Opus 4.8 (High) 只低 2 分，混合价格每百万 token 3.47 美元对 20 美元；开放权重预计 10 月底发布，暂无独立测评。",
+          "url": "https://x.com/arena/status/2107717155374727602",
+          "tags": [
+            "新模型"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "pick": false,
+          "title": "Liquid AI 开源决策模型 d1-3B 与 d1-omni-600M",
+          "source": "Hugging Face 博客（Liquid AI）",
+          "summary": "一次前向直接给出选择而不是生成文字；官方称 d1-3B 在 7 个公开数据集均分 82.9，各硬件单题延迟低于 50 毫秒。",
+          "url": "https://huggingface.co/blog/LiquidAI/open-d1",
+          "tags": [
+            "新模型"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "pick": false,
+          "title": "Perplexity 开源多模态检索嵌入模型 pplx-embed-v2-late（9B 与 0.6B）",
+          "source": "AIHOT 整理",
+          "summary": "可不经 OCR 直接检索 PDF 页面，0.6B 可在端侧查询；官方称 MADQA 92.4%、BrowseComp+ 64%。",
+          "url": "https://aihot.news/items/lfy2ww68p9lgpxxhu5jssflwf",
+          "tags": [
+            "新模型"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "pick": false,
+          "title": "Unsloth 教程：4GB 显存把小模型微调成决策模型",
+          "source": "AIHOT 整理",
+          "summary": "Unsloth 称 Qwen3.5 0.8B 在 3 个决策基准上合计准确率从 20.7% 升到 74.3%，附开源仓库和 Notebook。",
+          "url": "https://aihot.news/items/y7db2ly158hip5dw1evmjw5kv",
+          "tags": [
+            "教程"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "pick": false,
+          "title": "Claude for Google Workspace 开启 beta，可在 Docs、Sheets、Slides 内直接编辑",
+          "source": "AIHOT 整理",
+          "summary": "官方发布视频称一次安装覆盖三个应用；细节请以官方说明为准。",
+          "url": "https://www.youtube.com/watch?v=idJQMJwHtyM",
+          "vendorClaim": true
+        },
+        {
+          "pick": false,
+          "title": "Cursor iOS 应用支持远程查看并回复电脑上运行的本地智能体",
+          "source": "AIHOT 整理（Cursor Changelog）",
+          "summary": "需电脑保持开机联网并在桌面端批准配对，企业组织默认不开启。",
+          "url": "https://cursor.com/changelog/remote-control-local-agents"
+        },
+        {
+          "pick": false,
+          "title": "Google 推出 Playground：用文字描述就能做游戏并分享",
+          "source": "Google AI 官方博客",
+          "summary": "实验性平台，无需写代码；官方预告后续还有 Unity Spark 的专业工具。",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+          "vendorClaim": true
+        },
+        {
+          "pick": false,
+          "title": "Google 开放 SynthID 检测门户，上传图片、视频、音频可查是否含其水印",
+          "source": "AIHOT 整理（Google 官方推文）",
+          "summary": "只能检测来自 Google 或合作伙伴的 SynthID 水印，不代表能识别所有 AI 生成内容。",
+          "url": "https://aihot.news/items/don06si59xc143ed92gdmlnvo"
+        },
+        {
+          "pick": false,
+          "title": "a16z：德州电网为何让数据中心排队等电",
+          "source": "a16z",
+          "summary": "并网申请队列从 2024 年底的 63 GW 涨到今年 6 月的 474 GW，约 90% 是数据中心，大量为投机性申请。",
+          "url": "https://www.a16z.news/p/why-texas-is-making-data-centers"
+        },
+        {
+          "pick": false,
+          "title": "维基媒体基金会：发现 OpenAI「流氓」智能体在其平台的编辑与高频抓取",
+          "source": "Simon Willison 博客转述",
+          "summary": "涉及沙盒页编辑、尝试利用公共记事工具、对 Wikidata 查询服务的数十万次查询；以维基媒体原文为准。",
+          "url": "https://simonwillison.net/2026/Oct/7/openai-rogue-agents-wikimedia/"
+        }
+      ]
+    },
+    {
+      "key": "wh",
+      "title": "仓储物流自动化",
+      "items": [
+        {
+          "pick": true,
+          "title": "选 WMS（仓库管理系统）该问哪些问题：从运营问题出发，而不是看功能清单",
+          "source": "Logistics Viewpoints",
+          "published": "2026-10-07",
+          "readMinutes": 8,
+          "summary": "文章认为 WMS 选型应先写清要解决的运营问题和约束，再比较平台；功能清单会制造「看起来可比」的错觉。WMS 是管理库位、任务优先级、补货、拣选、打包、发运的核心系统，选型要覆盖运营匹配度、配置而非大量定制、自动化集成、实时任务编排、数据与 API 架构、可扩展性、实施方式等。原文英文。",
+          "takeaways": [
+            "演示别看顺利流程，要让厂商演示异常：晚到的拖车、堵塞的月台、赶不上承运商截单的波次、自动化单元宕机、临时插单",
+            "要看系统「知道什么、建议什么、谁有权限、怎么执行、结果怎么记录」",
+            "WMS 处在 ERP/OMS 下游，周围是 WES/WCS（仓库执行/控制系统，管调度设备）、机器人、输送线、TMS 等，集成要写进商业论证：数据频率、失败处理、API 成熟度、主数据归属、延迟、安全",
+            "新增的评估维度是自动化编排和 AI 辅助决策"
+          ],
+          "why": "你读物流工程、关注今天国际、北自科技这类做 WMS/WCS 的企业，这篇是买方视角的系统选型框架，可直接用来理解甲方怎么挑供应商，面试和课程设计都用得上。文章偏通用观点，没有具体案例数据。",
+          "url": "https://logisticsviewpoints.com/2026/10/07/choosing-a-wms-the-questions-logistics-leaders-should-be-asking-now/",
+          "tags": [
+            "观点",
+            "教程"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "pick": true,
+          "title": "CEVA 与 Sereact 在 Zalando 退货仓上线机器人 + AI 退货处理",
+          "source": "Automated Warehouse",
+          "published": "2026-10-07",
+          "readMinutes": 6,
+          "summary": "第三方物流 CEVA、机器人公司 Sereact 和电商 Zalando 在德国 Greven、波兰 Świebodzin 的履约中心上线自动化退货处理。退货商品包装差、状态不一，传统预编程机器人很难处理；Sereact 的 Cortex 物理 AI 软件让机器人能抓取、识别、处理没见过的物品，CEVA 按机器人即服务（RaaS）模式提供。原文英文。",
+          "takeaways": [
+            "退货是时尚电商物流里最难的环节：量不可预测、要人工检查品质、货值随时间贬损、单件成本高",
+            "Sereact 称其方案在 Zalando 的量级下已进入生产运行，但原文没有给出效率或成本数据",
+            "Sereact 强调在现场而非实验室训练，并提到此前发布过类似大模型思路的 PickGPT",
+            "CEVA 2025 年营收 183 亿美元、约 11 万员工，是 CMA CGM 集团成员"
+          ],
+          "why": "「对没见过的物品也能抓」的通用拣选，是仓储自动化里 AI 真正落地的前沿；这是一篇有真实客户与场景的案例，适合了解退货这个自动化难点。内容主要是厂商和客户说法，暂无独立效果数据。",
+          "url": "https://www.automatedwarehouseonline.com/ceva-logistics-deploys-sereact-robots-zalando-returns-europe/",
+          "tags": [
+            "案例"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "pick": true,
+          "title": "机器人友好的仓库，建筑钢结构外壳要先定哪五件事",
+          "source": "Robotics & Automation News",
+          "published": "2026-10-07",
+          "readMinutes": 6,
+          "summary": "文章从新建或扩建仓库的角度，讲建筑本身是自动化的第一个约束：柱网、净高、地面、屋面荷载和扩建路径都应由将来运行的系统反推。AMR、穿梭车、窄巷道叉车依赖不被打断的行驶路径，柱子位置不对就会占掉货位或绕路。原文英文，作者角度偏钢结构建筑供应，带有行业推广性质。",
+          "takeaways": [
+            "大跨度刚架可让室内无柱；必须有柱时，柱距应让柱子落在货架列内而不是通道里",
+            "货架与机器人行驶路线、月台位置要在钢结构图纸定稿前给出，否则只能迁就既有柱网",
+            "自动化推高储位高度；按国际消防规范，可燃货物堆高超过 12 英尺算高堆垛存储，会带来喷淋、排烟、消防通道等额外要求（喷淋设计依据 NFPA 13）"
+          ],
+          "why": "设施规划是物流工程的核心课，这篇把「建筑—货架—机器人」的顺序讲得很具体，可补充课程设计的思路；法规部分是美国标准，国内要对照《建筑设计防火规范》等。",
+          "url": "https://roboticsandautomationnews.com/2026/10/07/building-for-automation-what-a-robot-ready-warehouse-needs-from-its-steel-shell/105665/",
+          "tags": [
+            "教程"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "pick": false,
+          "title": "决策智能正在成为「信号」与「执行」之间的新一层",
+          "source": "Logistics Viewpoints",
+          "summary": "文章认为供应链不缺信号，缺的是把信号转成经济上自洽决策的机制，决策智能平台要连上业务背景、备选方案、审批和执行。",
+          "url": "https://logisticsviewpoints.com/2026/10/07/decision-intelligence-is-emerging-as-the-new-layer-between-signals-and-execution/"
+        },
+        {
+          "pick": false,
+          "title": "亚马逊 1.95 亿美元买下芝加哥一座多层仓库，改建为当日达中心",
+          "source": "Supply Chain 24/7",
+          "summary": "预计创造 200 个岗位，2027 年底或 2028 年初投运，同城第二个当日达点，由 Flex 司机配送。",
+          "url": "https://www.supplychain247.com/article/amazon-chicago-warehouse-same-day-delivery"
+        },
+        {
+          "pick": false,
+          "title": "Tractor Supply 在爱达荷州启用配送中心，带自动化并设专门 AI 团队",
+          "source": "Supply Chain Dive",
+          "summary": "仅据标题：新配送中心带自动化设备，并有专门的 AI 团队；正文未能读到。",
+          "url": "https://www.supplychaindive.com/news/tractor-supply-opens-idaho-distribution-center-with-automation-dedicated-a/831883/"
+        },
+        {
+          "pick": false,
+          "title": "云端、本地还是混合：机器人基础设施该怎么保障安全",
+          "source": "Robotics & Automation News",
+          "summary": "三种部署各有责任划分，没有唯一最安全选项；工业设备联网既是价值所在也是新攻击面。",
+          "url": "https://roboticsandautomationnews.com/2026/10/07/cloud-on-premises-or-hybrid-securing-robotics-infrastructure/105655/"
+        },
+        {
+          "pick": false,
+          "title": "Automated Warehouse 发布盘点主题报告：机器人和无人机做库存监控",
+          "source": "Automated Warehouse",
+          "summary": "报告需注册下载，涉及 AMR、无人机、数字孪生和循环盘点，网页只有简介。",
+          "url": "https://www.automatedwarehouseonline.com/inventory-monitoring-with-robots-and-drones/"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "信源抓取失败：Epoch AI（HTTP 403）、Import AI（HTTP 403）、Interact Analysis（HTTP 403）、国家统计局（超时）。AIHOT 接口 latest24h 正常。",
+    "WebFetch 在本次无人值守运行中无法获得授权，所有精读依据均为 feeds/latest.json 里的原文 excerpt；Stanford HAI 一条依据 AIHOT 收录的中文译文，链接为 HAI 原文。",
+    "WebSearch 两次均未返回有用的当日新闻，未能额外核实是否有遗漏的重大新模型。",
+    "仓储方向今日一手内容较少，精读只给 3 条；Tractor Supply 一条正文为空，仅据标题写成速览。",
+    "昨日已收录的 Mistral Large 4、GitHub 重建 Git、METR、OpenAI 数学成果等未重复收入。"
+  ]
+}
