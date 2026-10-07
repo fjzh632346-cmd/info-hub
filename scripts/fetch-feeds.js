@@ -118,6 +118,31 @@ async function pool(list, n, fn) {
   return out;
 }
 
+// AIHOT（aihot.news，卡兹克团队）的精选接口：它已经从大量 AI 资讯里挑过一遍，
+// 作为日报和周报 AI 部分的补充材料。按其说明，个人非商业使用免费。
+const AIHOT = {
+  latest24h: 'https://aihot.news/api/v1/agent/latest?window=24h&limit=30',
+  latest7d: 'https://aihot.news/api/v1/agent/latest?window=7d&limit=30',
+  hot: 'https://aihot.news/api/v1/agent/hot?limit=20',
+  daily: 'https://aihot.news/api/v1/agent/daily',
+  weekly: 'https://aihot.news/api/v1/agent/weekly',
+};
+async function fetchAihot() {
+  const out = { fetchedAt: new Date().toISOString(), note: '来自 aihot.news 公开接口（默认精选池），个人非商业使用', endpoints: {} };
+  for (const [name, url] of Object.entries(AIHOT)) {
+    try {
+      const body = await get(url, 20000);
+      let data; try { data = JSON.parse(body); } catch (e) { data = body.slice(0, 200000); }
+      out.endpoints[name] = { url, ok: true, data };
+    } catch (e) {
+      out.endpoints[name] = { url, ok: false, error: String(e.message || e).slice(0, 160) };
+    }
+  }
+  fs.writeFileSync(path.join(path.dirname(OUT), 'aihot.json'), JSON.stringify(out, null, 1));
+  const ok = Object.values(out.endpoints).filter(x => x.ok).length;
+  console.log(`AIHOT：${ok}/${Object.keys(AIHOT).length} 个接口成功`);
+}
+
 (async () => {
   const since = Date.now() - HOURS * 3600 * 1000;
   const status = [];
@@ -137,6 +162,7 @@ async function pool(list, n, fn) {
   await pool(items, 6, async it => { it.excerpt = it.source === '36氪快讯' ? '' : await excerpt(it.url); });
   fs.mkdirSync(path.dirname(OUT), { recursive: true });
   fs.writeFileSync(OUT, JSON.stringify({ fetchedAt: new Date().toISOString(), hours: HOURS, status, items }, null, 1));
+  await fetchAihot();
   const bad = status.filter(s => !s.ok).length;
   console.log(`共 ${FEEDS.length} 个信源，失败 ${bad} 个；最近 ${HOURS} 小时条目 ${items.length} 条`);
 })();
