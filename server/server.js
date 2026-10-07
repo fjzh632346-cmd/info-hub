@@ -34,6 +34,7 @@ async function pull() {
   if (pulling) return sync;
   pulling = true;
   sync.lastTry = new Date().toISOString();
+  const before = (await git(['rev-parse', 'HEAD'], 10000)).out;
   let r = await git(['pull', '--ff-only', '--quiet'], 120000);
   if (r.error) {
     // 网络偶尔不通，隔 20 秒再试一次
@@ -51,6 +52,14 @@ async function pull() {
   const c = await git(['log', '-1', '--format=%h %ci'], 10000);
   sync.commit = c.out;
   pulling = false;
+  // 服务端程序本身有更新时，退出让 systemd 自动用新代码重启
+  if (sync.ok && before) {
+    const changed = await git(['diff', '--name-only', before, 'HEAD', '--', 'server/'], 10000);
+    if (changed.out) {
+      console.log('服务端代码已更新，2 秒后重启');
+      setTimeout(() => process.exit(0), 2000);
+    }
+  }
   return sync;
 }
 
@@ -66,9 +75,11 @@ function loadDir(dir) {
 }
 
 // ---------- 收藏与笔记 ----------
+// config.json 里 password 为空 = 不需要密码
+const OPEN = !config.password;
 function checkPass(req) {
+  if (OPEN) return true;
   const given = String(req.headers['x-pass'] || '');
-  if (!config.password) return false;
   const a = Buffer.from(given), b = Buffer.from(config.password);
   return a.length === b.length && crypto.timingSafeEqual(a, b);
 }
@@ -119,7 +130,7 @@ const server = http.createServer(async (req, res) => {
   const p = decodeURIComponent(url.pathname);
   try {
     if (p === '/api/all' && req.method === 'GET') {
-      return json(res, 200, { dailies: loadDir('daily'), weeklies: loadDir('weekly'), x: loadDir('x'), sync });
+      return json(res, 200, { dailies: loadDir('daily'), weeklies: loadDir('weekly'), x: loadDir('x'), sync, auth: !OPEN });
     }
     if (p === '/api/status') return json(res, 200, sync);
     if (p === '/api/login' && req.method === 'POST') {

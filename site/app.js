@@ -2,7 +2,7 @@
 (function () {
   'use strict';
 
-  var state = { data: null, saved: {}, pass: '', filter: '全部' };
+  var state = { data: null, saved: {}, pass: '', filter: '全部', auth: true };
   try { state.pass = localStorage.getItem('infohub-pass') || ''; } catch (e) {}
 
   var $main = document.getElementById('main');
@@ -51,7 +51,7 @@
   var pendingLogin = null;
   function needLogin() {
     return new Promise(function (resolve, reject) {
-      if (state.pass) return resolve();
+      if (state.pass || !state.auth) return resolve();
       pendingLogin = { resolve: resolve, reject: reject };
       document.getElementById('loginError').textContent = '';
       document.getElementById('pass').value = '';
@@ -79,7 +79,7 @@
   });
 
   function loadSaved() {
-    if (!state.pass) return Promise.resolve();
+    if (!state.pass && state.auth) return Promise.resolve();
     return api('/api/saved').then(function (s) { state.saved = s || {}; })
       .catch(function (e) { if (e.status === 401) { state.pass = ''; try { localStorage.removeItem('infohub-pass'); } catch (x) {} } });
   }
@@ -298,7 +298,7 @@
   }
 
   function viewSaved() {
-    if (!state.pass) {
+    if (state.auth && !state.pass) {
       return '<h1 class="page-title">收藏与笔记</h1><p class="page-lead">收藏存在你的服务器上，登录后才能看到。</p><button type="button" class="btn" data-act="login">输入密码</button>';
     }
     var ids = Object.keys(state.saved).sort(function (a, b) { return state.saved[a].savedAt < state.saved[b].savedAt ? 1 : -1; });
@@ -449,8 +449,11 @@
   }
 
   function boot() {
-    return Promise.all([api('/api/all'), loadSaved()]).then(function (r) {
-      state.data = r[0];
+    return api('/api/all').then(function (d) {
+      state.data = d;
+      state.auth = d.auth !== false;
+      return loadSaved();
+    }).then(function () {
       renderSync(state.data.sync);
       route();
     }).catch(function (e) {
