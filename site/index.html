@@ -4,57 +4,25 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>信息库</title>
-<meta name="theme-color" content="#E7EAE9" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#1A2026" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F8F9FA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121518" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <a class="skip" href="#main">跳到正文</a>
-<div class="shell">
-  <aside class="rail" aria-label="分区">
-    <div class="rail-top">
-    <a class="brand" href="#/">
-      <span class="brand-mark" aria-hidden="true"></span>
-      <span class="brand-name">信息库</span>
-    </a>
-    <form class="search" role="search" id="searchForm">
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#/"><i aria-hidden="true"></i>信息库</a>
+    <span class="today" id="today"></span>
+    <form class="search" id="searchForm" role="search">
       <label class="sr" for="q">搜索全部内容</label>
-      <input id="q" type="search" placeholder="搜索标题、来源、内容" autocomplete="off">
+      <input id="q" type="search" placeholder="搜索" autocomplete="off">
     </form>
-    </div>
-    <nav class="zones" id="zones">
-      <a href="#/" data-route="today">今日</a>
-      <a href="#/week" data-route="week">本周</a>
-      <a href="#/models" data-route="models">模型怎么选</a>
-      <a href="#/skills" data-route="skills">Skill 与提示词</a>
-      <a href="#/kaoyan" data-route="kaoyan">考研</a>
-      <a href="#/jobs" data-route="jobs">就业实习</a>
-      <span class="gap" aria-hidden="true"></span>
-      <a href="#/saved" data-route="saved">收藏与笔记</a>
-      <a href="#/history" data-route="history">往期</a>
-    </nav>
-    <div class="sync" id="sync" aria-live="polite"></div>
-  </aside>
-  <main id="main" class="main" tabindex="-1">
-    <p class="loading">正在读取……</p>
-  </main>
-</div>
-
-<dialog id="loginDialog" class="dialog">
-  <form method="dialog" id="loginForm">
-    <h2>输入网站密码</h2>
-    <p>收藏和笔记存在你自己的服务器上，需要密码才能修改。密码在安装时显示过一次；忘了的话在服务器上运行 <code>cat /opt/info-hub/config.json</code> 查看。</p>
-    <label for="pass" class="sr">密码</label>
-    <input id="pass" type="password" autocomplete="current-password" required>
-    <p class="form-error" id="loginError" role="alert"></p>
-    <div class="dialog-actions">
-      <button type="button" class="btn ghost" id="loginCancel">取消</button>
-      <button type="submit" class="btn">登录</button>
-    </div>
-  </form>
-</dialog>
-
+  </div>
+  <nav class="zones" id="zones" aria-label="分区"></nav>
+</header>
+<main class="wrap" id="main" tabindex="-1"><p class="loading">正在读取……</p></main>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="/app.js"></script>
 </body>
