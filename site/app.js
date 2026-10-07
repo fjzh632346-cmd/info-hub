@@ -436,7 +436,7 @@
 
   function renderSync(s) {
     if (!s) return;
-    var when = s.lastOk ? new Date(s.lastOk).toLocaleString('zh-CN', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }) : '还没有';
+    var when = s.lastOk ? new Date(s.lastOk).toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false }) : '还没有';
     $sync.innerHTML = (s.ok === false ? '<span class="bad">' + esc(s.message) + '</span><br>' : '') +
       '上次更新：' + esc(when) + '<br><button type="button" id="syncNow">立即同步</button>';
     document.getElementById('syncNow').addEventListener('click', function () {
