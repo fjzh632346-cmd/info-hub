@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>信息库 · 分拣台</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../common.css">
+<style>
+@font-face { font-family: "Barlow Condensed"; font-weight: 600; font-display: swap; src: url(/fonts/barlow-condensed-latin-600-normal.woff2) format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 700; font-display: swap; src: url(/fonts/barlow-condensed-latin-700-normal.woff2) format("woff2"); }
+:root {
+  --rail: #E9ECEB; --list: #F5F6F5; --reader: #FFFFFF; --hover: #ECEFEE; --sel: #FFFFFF;
+  --ink: #1A1F24; --ink-2: #3B464E; --muted: #6E7980; --line: #DADFDE;
+  --rack: #1E4F8A; --tape: #F5C518; --tape-ink: #1A1F24; --warn: #A3261A;
+  --zh: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+  --num: "Barlow Condensed", "Arial Narrow", var(--zh);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) { :root {
+  --rail: #101417; --list: #151A1E; --reader: #1A2024; --hover: #1C2328; --sel: #222A30;
+  --ink: #E5E9EB; --ink-2: #C0C9CE; --muted: #87939A; --line: #283137;
+  --rack: #7FA9DE; --tape: #E9BA14; --tape-ink: #101417; --warn: #F08A7E;
+  color-scheme: dark;
+} }
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; background: var(--reader); color: var(--ink); font: 400 15px/1.7 var(--zh); -webkit-text-size-adjust: 100%; }
+a { color: var(--rack); text-underline-offset: 3px; }
+button { font: inherit; color: inherit; cursor: pointer; }
+:focus-visible { outline: 2px solid var(--rack); outline-offset: 2px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.app { display: grid; grid-template-columns: 212px 400px minmax(0, 1fr); height: 100vh; height: 100dvh; }
+
+/* ---------- 左：分区 ---------- */
+.rail { background: var(--rail); border-right: 1px solid var(--line); padding: 18px 10px; overflow-y: auto; display: flex; flex-direction: column; }
+.brand { display: flex; align-items: center; gap: 9px; padding: 0 8px 18px; font-weight: 700; letter-spacing: .05em; color: var(--ink); text-decoration: none; }
+.brand i { width: 20px; height: 20px; border-radius: 3px; background:
+  linear-gradient(var(--tape), var(--tape)) 3px 5px / 14px 3px no-repeat,
+  linear-gradient(var(--tape), var(--tape)) 3px 12px / 14px 3px no-repeat, #1E4F8A; }
+.group { margin: 0 0 14px; }
+.group h2 { margin: 0 0 2px; padding: 0 10px; font-size: 12px; font-weight: 600; color: var(--muted); }
+.zone-btn { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 8px; padding: 6px 10px; border: 0; border-radius: 5px; background: none; text-align: left; color: var(--ink-2); font-size: 14.5px; }
+.zone-btn:hover { background: var(--hover); color: var(--ink); }
+.zone-btn[aria-current="true"] { background: var(--sel); color: var(--ink); font-weight: 600; box-shadow: inset 3px 0 0 var(--tape); }
+@media (prefers-color-scheme: light) { .zone-btn[aria-current="true"] { box-shadow: inset 3px 0 0 var(--tape), 0 1px 2px rgba(0,0,0,.06); } }
+.zone-btn .n { font: 600 15px/1 var(--num); color: var(--muted); }
+.zone-btn .n.unread { color: var(--rack); }
+.rail-foot { margin-top: auto; padding: 10px; font-size: 12px; color: var(--muted); line-height: 1.6; }
+.rail-foot kbd { font: 600 11px/1 var(--num); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 3px; padding: 1px 4px; color: var(--ink-2); }
+
+/* ---------- 中：列表 ---------- */
+.list { background: var(--list); border-right: 1px solid var(--line); display: flex; flex-direction: column; min-height: 0; }
+.list-head { padding: 18px 18px 12px; border-bottom: 1px solid var(--line); }
+.list-title { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.list-title h1 { margin: 0; font-size: 18px; font-weight: 700; }
+.list-title .date { font-size: 13px; color: var(--muted); }
+.progress { margin-top: 10px; display: flex; align-items: center; gap: 10px; font-size: 12px; color: var(--muted); }
+.bar { flex: 1; height: 6px; border-radius: 3px; background: var(--line); overflow: hidden; }
+.bar span { display: block; height: 100%; background: var(--tape); transition: width .3s; }
+.progress button { border: 0; background: none; padding: 0; font-size: 12px; color: var(--muted); text-decoration: underline; text-underline-offset: 2px; }
+.progress button:hover { color: var(--ink); }
+.notice { margin: 10px 0 0; font-size: 12.5px; line-height: 1.6; color: var(--ink-2); background: color-mix(in srgb, var(--tape) 22%, transparent); border-radius: 4px; padding: 6px 10px; }
+.rows { flex: 1; overflow-y: auto; overscroll-behavior: contain; }
+.sec { position: sticky; top: 0; z-index: 1; margin: 0; padding: 6px 18px; font-size: 12px; font-weight: 600; color: var(--muted); background: var(--list); border-bottom: 1px solid var(--line); }
+.row { display: grid; grid-template-columns: 10px minmax(0, 1fr); gap: 10px; width: 100%; padding: 12px 18px 12px 14px; border: 0; border-bottom: 1px solid var(--line); background: none; text-align: left; }
+.row:hover { background: var(--hover); }
+.row[aria-selected="true"] { background: var(--sel); box-shadow: inset 3px 0 0 var(--tape); }
+.row .dot { width: 7px; height: 7px; border-radius: 50%; margin-top: 8px; background: var(--rack); }
+.row.read .dot { background: transparent; }
+.row .src { display: flex; gap: 8px; font-size: 12px; color: var(--muted); line-height: 1.5; }
+.row .src b { font-weight: 600; color: var(--ink-2); }
+.row .src .saved { color: var(--tape-ink); background: var(--tape); border-radius: 2px; padding: 0 4px; font-weight: 600; }
+.row .t { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-top: 2px; font-size: 15px; line-height: 1.55; font-weight: 600; color: var(--ink); }
+.row.read .t { font-weight: 400; color: var(--ink-2); }
+.row .s { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-top: 3px; font-size: 13px; line-height: 1.6; color: var(--muted); }
+.list-empty { padding: 30px 18px; color: var(--muted); font-size: 14px; }
+
+/* ---------- 右：阅读 ---------- */
+.reader { overflow-y: auto; min-width: 0; background: var(--reader); }
+.doc { max-width: 680px; padding: 40px 48px 120px; }
+.back { display: none; }
+.kicker { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; font-size: 13px; color: var(--muted); margin: 0 0 12px; }
+.kicker .z { color: var(--ink); font-weight: 600; }
+.tag { font-size: 12px; line-height: 18px; border: 1px solid var(--line); border-radius: 3px; padding: 0 6px; color: var(--muted); }
+.tag.vendor { color: var(--warn); border-color: currentColor; }
+.tag.sample { color: var(--tape-ink); background: var(--tape); border-color: var(--tape); }
+.doc h1 { margin: 0 0 18px; font-size: 26px; line-height: 1.45; font-weight: 700; letter-spacing: .005em; }
+.doc .lead { font-size: 17px; line-height: 1.85; color: var(--ink-2); margin: 0 0 22px; }
+.why { margin: 0 0 26px; padding: 14px 16px; border-radius: 6px; background: var(--list); border: 1px solid var(--line); }
+.why b { display: block; font-size: 13px; color: var(--muted); font-weight: 600; margin-bottom: 2px; }
+.why p { margin: 0; font-size: 15.5px; color: var(--ink); }
+.tools { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 28px; }
+.tool { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 6px; border: 1px solid var(--line); background: var(--reader); color: var(--ink); font-size: 14px; text-decoration: none; }
+.tool:hover { border-color: var(--muted); }
+.tool.primary { background: var(--ink); border-color: var(--ink); color: var(--reader); }
+.tool[aria-pressed="true"] { background: var(--tape); border-color: var(--tape); color: var(--tape-ink); font-weight: 600; }
+.tool kbd { font: 600 12px/1 var(--num); opacity: .6; }
+.note { margin: 0 0 26px; }
+.note textarea { width: 100%; min-height: 110px; font: inherit; font-size: 15px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--list); color: var(--ink); resize: vertical; }
+.note .row2 { display: flex; justify-content: space-between; align-items: center; margin-top: 6px; font-size: 12px; color: var(--muted); }
+.note-show { margin: 0 0 26px; padding: 10px 14px; border-left: 3px solid var(--tape); background: var(--list); white-space: pre-wrap; font-size: 15px; }
+.dl { display: grid; grid-template-columns: 4.5em minmax(0, 1fr); gap: 8px 14px; margin: 0 0 24px; font-size: 15px; }
+.dl dt { color: var(--muted); } .dl dd { margin: 0; } .dl ol { margin: 0; padding-left: 1.2em; }
+.shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; margin: 0 0 24px; }
+.shots a { display: block; aspect-ratio: 4/5; overflow: hidden; border-radius: 4px; background: var(--list); border: 1px solid var(--line); }
+.shots img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.prompt { border: 1px solid var(--line); border-radius: 6px; overflow: hidden; margin: 0 0 24px; }
+.prompt-bar { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 7px 12px; background: var(--list); border-bottom: 1px solid var(--line); font-size: 13px; color: var(--muted); }
+.prompt-bar button { border: 0; background: none; padding: 0 0 0 12px; color: var(--rack); font-size: 13px; }
+.prompt pre { margin: 0; padding: 14px; white-space: pre-wrap; word-break: break-word; font: 13.5px/1.75 ui-monospace, "Cascadia Mono", Consolas, var(--zh); color: var(--ink-2); max-height: 420px; overflow: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 14.5px; margin: 0 0 24px; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 12.5px; color: var(--muted); font-weight: 600; }
+td.u { font-weight: 600; white-space: nowrap; }
+.pick { display: inline-block; margin: 0 4px 4px 0; padding: 0 7px; border-radius: 3px; border: 1px solid var(--line); font-size: 13.5px; }
+.pick:first-child { border-color: var(--rack); color: var(--rack); }
+.blank { height: 100%; display: grid; place-items: center; color: var(--muted); font-size: 14px; text-align: center; padding: 40px; }
+.blank kbd { font: 600 13px/1 var(--num); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 3px; padding: 2px 6px; margin: 0 2px; }
+
+/* ---------- 窄屏 ---------- */
+@media (max-width: 1100px) {
+  .app { grid-template-columns: 360px minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); }
+  .rail { grid-column: 1 / -1; flex-direction: row; align-items: center; gap: 6px; padding: 8px 12px; border-right: 0; border-bottom: 1px solid var(--line); overflow-x: auto; scrollbar-width: none; }
+  .rail::-webkit-scrollbar { display: none; }
+  .brand { padding: 0 10px 0 4px; flex: none; }
+  .group { display: contents; }
+  .group h2, .rail-foot { display: none; }
+  .zone-btn { width: auto; flex: none; white-space: nowrap; padding: 6px 10px; }
+  .zone-btn[aria-current="true"] { box-shadow: inset 0 -3px 0 var(--tape); }
+  .doc { padding: 32px 32px 120px; }
+}
+@media (max-width: 760px) {
+  body { font-size: 15.5px; }
+  .app { grid-template-columns: minmax(0, 1fr); }
+  .list { border-right: 0; }
+  .reader { position: fixed; inset: 0; z-index: 20; transform: translateX(100%); transition: transform .22s ease; visibility: hidden; }
+  .app.reading .reader { transform: none; visibility: visible; }
+  .doc { padding: 0 18px 110px; }
+  .back { display: flex; position: sticky; top: 0; z-index: 2; margin: 0 -18px 18px; padding: 10px 18px; background: var(--reader); border-bottom: 1px solid var(--line); gap: 12px; align-items: center; justify-content: space-between; }
+  .back button { border: 0; background: none; padding: 4px 0; font-size: 15px; color: var(--rack); }
+  .back span { font-size: 12px; color: var(--muted); }
+  .doc h1 { font-size: 22px; }
+  .doc .lead { font-size: 16.5px; }
+  .tool kbd, .rail-foot { display: none; }
+  .tools { position: sticky; bottom: 0; z-index: 2; margin: 0 -18px 24px; padding: 10px 18px calc(10px + env(safe-area-inset-bottom)); background: var(--reader); border-top: 1px solid var(--line); flex-wrap: nowrap; }
+  .tool { flex: 1; justify-content: center; padding: 10px 6px; }
+  .app.reading ~ .ih-switch { display: none; }
+  .shots { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (prefers-reduced-motion: reduce) { .reader, .bar span { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="app" id="app">
+  <aside class="rail" id="rail" aria-label="分区"></aside>
+  <section class="list" aria-label="条目列表">
+    <header class="list-head" id="listHead"></header>
+    <div class="rows" id="rows" role="listbox" aria-label="条目" tabindex="0"></div>
+  </section>
+  <main class="reader" id="reader" aria-live="polite"></main>
+</div>
+<script src="../common.js"></script>
+<script>
+(function () {
+  'use strict';
+  var esc = IH.esc, url = IH.safeUrl;
+  var $rail = document.getElementById('rail'), $rows = document.getElementById('rows'),
+      $head = document.getElementById('listHead'), $reader = document.getElementById('reader'), $app = document.getElementById('app');
+  var T, zone = 'today', sel = null, visible = [];
+
+  var VIEWS = [
+    { group: '今天', items: [['today', '全部'], ['ai', 'AI'], ['wh', '仓储物流'], ['x', 'X 精选']] },
+    { group: '本周', items: [['md', '模型怎么选'], ['sk', 'Skill 与提示词'], ['ky', '考研'], ['jb', '就业实习']] },
+    { group: '我的', items: [['saved', '收藏与笔记']] }
+  ];
+  var TITLES = { today: '今天全部', ai: 'AI', wh: '仓储物流自动化', x: 'X 晚间精选', md: '模型怎么选', sk: 'Skill 与提示词', ky: '考研', jb: '就业实习', saved: '收藏与笔记' };
+
+  function itemsOf(z) {
+    if (z === 'today') return T.today;
+    if (z === 'sk') return T.skills;
+    if (z === 'md') return [{ id: 'TABLE', zone: 'md', title: '按用途选模型（本周表格）', source: '周报', summary: '写代码、长文、中文、数学、智能体、性价比、国内可用，七种用途各推荐哪几个。', table: true, sample: T.sampleWeekly, tags: [] }]
+      .concat(T.week.filter(function (e) { return e.zone === 'md'; }));
+    if (z === 'saved') return Object.keys(IH.saved).map(function (id) { var s = IH.saved[id]; return Object.assign({ id: id, title: id }, s.snapshot || {}, { id: id }); });
+    return T.all.filter(function (e) { return e.zone === z; });
+  }
+  function unread(list) { return list.filter(function (e) { return !IH.isRead(e.id); }).length; }
+
+  function renderRail() {
+    $rail.innerHTML = '<a class="brand" href="/v/a/"><i aria-hidden="true"></i>信息库</a>' + VIEWS.map(function (g) {
+      return '<div class="group"><h2>' + g.group + '</h2>' + g.items.map(function (v) {
+        var list = itemsOf(v[0]), u = v[0] === 'saved' || v[0] === 'md' ? 0 : unread(list);
+        var n = v[0] === 'saved' ? list.length : (u || list.length);
+        return '<button type="button" class="zone-btn" data-zone="' + v[0] + '" aria-current="' + (zone === v[0]) + '">' +
+          '<span>' + v[1] + '</span><span class="n' + (u ? ' unread' : '') + '" title="' + (u ? u + ' 条未读' : '共 ' + n + ' 条') + '">' + n + '</span></button>';
+      }).join('') + '</div>';
+    }).join('') + '<div class="rail-foot"><kbd>J</kbd> <kbd>K</kbd> 上下条　<kbd>O</kbd> 看原文<br><kbd>S</kbd> 收藏　<kbd>N</kbd> 写笔记</div>';
+  }
+
+  function renderList() {
+    var all = itemsOf(zone);
+    visible = all;
+    var done = all.length - unread(all);
+    var head = '<div class="list-title"><h1>' + TITLES[zone] + '</h1><span class="date">' +
+      (zone === 'saved' ? '' : IH.cnDate((['today', 'ai', 'wh', 'x'].indexOf(zone) >= 0 ? (T.daily || T.x || {}).date : (T.weekly || {}).date) || '2026-01-01')) + '</span></div>';
+    if (zone !== 'saved' && all.length) {
+      head += '<div class="progress"><div class="bar" aria-hidden="true"><span style="width:' + Math.round(done / all.length * 100) + '%"></span></div>' +
+        '<span>' + done + ' / ' + all.length + ' 已看</span>' + (done < all.length ? '<button type="button" data-act="allread">全部标为已看</button>' : '') + '</div>';
+    }
+    var isTodayZone = ['today', 'ai', 'wh'].indexOf(zone) >= 0, isWeekZone = ['md', 'sk', 'ky', 'jb'].indexOf(zone) >= 0;
+    if ((isTodayZone && T.sampleDaily) || (isWeekZone && T.sampleWeekly)) {
+      head += '<p class="notice">' + (isTodayZone ? '今天的日报还没生成（每天 7:51），' : '第一期周报还没生成（每周日 8:46），') + '标了"示例"的条目是演示用的假数据。</p>';
+    }
+    $head.innerHTML = head;
+    if (!all.length) { $rows.innerHTML = '<p class="list-empty">' + (zone === 'saved' ? '还没有收藏。看到有用的条目按 S 或点"收藏"。' : '这里暂时没有内容。') + '</p>'; return; }
+    var html = '', lastZone = null;
+    all.forEach(function (e) {
+      if (zone === 'today' && e.zone !== lastZone) { html += '<h2 class="sec">' + IH.ZONES[e.zone].long + '</h2>'; lastZone = e.zone; }
+      var read = IH.isRead(e.id);
+      html += '<button type="button" class="row' + (read ? ' read' : '') + '" role="option" data-id="' + esc(e.id) + '" aria-selected="' + (sel === e.id) + '">' +
+        '<span class="dot" aria-hidden="true"></span><span>' +
+        '<span class="src"><b>' + esc(e.source || IH.ZONES[e.zone].name) + '</b>' + (e.sample ? '<span>示例</span>' : '') + (e.deadline ? '<span>截止 ' + esc(e.deadline.slice(5)) + '</span>' : '') +
+          (IH.saved[e.id] ? '<span class="saved">已收藏</span>' : '') + '</span>' +
+        '<span class="t">' + esc(e.zone === 'x' ? (e.summary || e.title) : e.title) + '</span>' +
+        (e.zone === 'x' ? '' : '<span class="s">' + esc(e.summary || '') + '</span>') +
+      '</span></button>';
+    });
+    $rows.innerHTML = html;
+  }
+
+  function promptBlock(e) {
+    if (!e.prompt) return '';
+    return '<div class="prompt"><div class="prompt-bar"><span id="plabel">提示词原文</span><span>' +
+      (e.promptZh ? '<button type="button" data-act="lang">看中文</button>' : '') + '<button type="button" data-act="copy">复制原文</button></span></div>' +
+      '<pre id="ptext">' + esc(e.prompt) + '</pre></div>';
+  }
+  function table() {
+    var rows = ((T.weekly || {}).models || {}).table || [];
+    return '<table><thead><tr><th>用途</th><th>推荐</th><th>依据</th></tr></thead><tbody>' + rows.map(function (r) {
+      return '<tr><td class="u">' + esc(r.use) + '</td><td>' + (r.picks || []).map(function (p) { return '<span class="pick">' + esc(p) + '</span>'; }).join('') +
+        '</td><td>' + (r.link ? '<a href="' + esc(url(r.link)) + '" target="_blank" rel="noopener noreferrer">' + esc(r.basis) + '</a>' : esc(r.basis || '')) + '</td></tr>';
+    }).join('') + '</tbody></table>';
+  }
+
+  function renderReader() {
+    var e = visible.filter(function (x) { return x.id === sel; })[0];
+    if (!e) {
+      $reader.innerHTML = '<div class="blank"><p>从左边选一条开始看。<br>键盘上按 <kbd>J</kbd> 直接从第一条开始。</p></div>';
+      return;
+    }
+    var saved = IH.saved[e.id];
+    var idx = visible.indexOf(e);
+    var tags = (e.tags || []).map(function (t) { return '<span class="tag">' + esc(t) + '</span>'; }).join('') +
+      (e.vendorClaim ? '<span class="tag vendor">厂商说法</span>' : '') + (e.sample ? '<span class="tag sample">示例数据</span>' : '');
+    var h = '<article class="doc">' +
+      '<div class="back"><button type="button" data-act="back">‹ 返回列表</button><span>' + (idx + 1) + ' / ' + visible.length + '</span></div>' +
+      '<p class="kicker"><span class="z">' + esc(IH.ZONES[e.zone] ? IH.ZONES[e.zone].long : '') + '</span>' +
+        (e.source ? '<span>' + esc(e.source) + '</span>' : '') + (e.published ? '<span>' + esc(e.published) + '</span>' : '') +
+        (e.metrics ? '<span>' + esc(e.metrics) + '</span>' : '') + (e.stars ? '<span>' + esc(e.stars) + ' 星</span>' : '') + tags + '</p>' +
+      '<h1>' + esc(e.zone === 'x' ? (e.author || e.handle) + (e.kind === 'prompt' ? ' 的提示词' : ' 说') : e.title) + '</h1>';
+    if (e.table) return ($reader.innerHTML = h + '<p class="lead">' + esc((T.weekly || {}).headline || '') + '</p>' + table() + '</article>');
+    if (e.summary) h += '<p class="lead">' + esc(e.summary) + '</p>';
+    if (e.zone === 'sk' && (e.scene || e.howto)) {
+      h += '<dl class="dl">' + (e.scene ? '<dt>适合</dt><dd>' + esc(e.scene) + '</dd>' : '') +
+        (e.howto && e.howto.length ? '<dt>怎么用</dt><dd><ol>' + e.howto.map(function (s) { return '<li>' + esc(s) + '</li>'; }).join('') + '</ol></dd>' : '') + '</dl>';
+    }
+    if (e.why) h += '<div class="why"><b>' + esc(e.whyLabel || '为什么值得看') + '</b><p>' + esc(e.why) + '</p></div>';
+    if (e.deadline) h += '<div class="why"><b>截止日期</b><p>' + esc(e.deadline) + (/^\d{4}-/.test(e.deadline) ? '（还有 ' + IH.daysUntil(e.deadline) + ' 天）' : '') + '</p></div>';
+    if (e.images && e.images.length) {
+      h += '<div class="shots" id="shots">' + e.images.slice(0, 6).map(function (src) {
+        return '<a href="' + esc(url(e.url)) + '" target="_blank" rel="noopener noreferrer"><img src="' + esc(url(src)) + '" alt="原作者的效果图" loading="lazy" referrerpolicy="no-referrer"></a>';
+      }).join('') + '</div>';
+    }
+    h += promptBlock(e);
+    h += '<div class="tools">' +
+      '<a class="tool primary" href="' + esc(url(e.url)) + '" target="_blank" rel="noopener noreferrer" data-act="open">看原文 <kbd>O</kbd></a>' +
+      '<button type="button" class="tool" data-act="save" aria-pressed="' + !!saved + '">' + (saved ? '已收藏' : '收藏') + ' <kbd>S</kbd></button>' +
+      '<button type="button" class="tool" data-act="note">' + (saved && saved.note ? '改笔记' : '写笔记') + ' <kbd>N</kbd></button>' +
+      (idx < visible.length - 1 ? '<button type="button" class="tool" data-act="next">下一条 <kbd>J</kbd></button>' : '') + '</div>';
+    if (saved && saved.note) h += '<p class="note-show">' + esc(saved.note) + '</p>';
+    $reader.innerHTML = h + '</article>';
+    $reader.scrollTop = 0;
+  }
+
+  function select(id, focusRow) {
+    sel = id;
+    if (id && id !== 'TABLE') IH.markRead(id);
+    location.replace('#' + zone + (id ? '/' + encodeURIComponent(id) : ''));
+    renderRail(); renderList(); renderReader();
+    if (id) $app.classList.add('reading');
+    var row = $rows.querySelector('[data-id="' + CSS.escape(id || '') + '"]');
+    if (row) { row.scrollIntoView({ block: 'nearest' }); if (focusRow) row.focus({ preventScroll: true }); }
+  }
+  function setZone(z) { zone = z; sel = null; $app.classList.remove('reading'); location.replace('#' + z); renderRail(); renderList(); renderReader(); $rows.scrollTop = 0; }
+  function step(d) {
+    if (!visible.length) return;
+    var i = visible.map(function (e) { return e.id; }).indexOf(sel);
+    i = i < 0 ? 0 : Math.max(0, Math.min(visible.length - 1, i + d));
+    select(visible[i].id, true);
+  }
+  function current() { return visible.filter(function (x) { return x.id === sel; })[0]; }
+
+  function doSave() {
+    var e = current(); if (!e || e.table) return;
+    IH.toggleSave(e).then(function (on) { IH.toast(on ? '已收藏' : '已取消收藏'); renderRail(); renderList(); renderReader(); }).catch(function () {});
+  }
+  function doNote() {
+    var e = current(); if (!e || e.table || document.getElementById('noteText')) return;
+    var cur = (IH.saved[e.id] && IH.saved[e.id].note) || '';
+    var box = document.createElement('div'); box.className = 'note';
+    box.innerHTML = '<label class="sr" for="noteText">笔记</label><textarea id="noteText" placeholder="写下想法、待办或疑问">' + esc(cur) + '</textarea>' +
+      '<div class="row2"><span>Ctrl + Enter 保存，Esc 取消</span><span><button type="button" class="tool" data-act="note-cancel">取消</button> <button type="button" class="tool primary" data-act="note-save">保存笔记</button></span></div>';
+    $reader.querySelector('.tools').after(box);
+    box.querySelector('textarea').focus();
+  }
+  function saveNote() {
+    var e = current(), ta = document.getElementById('noteText'); if (!e || !ta) return;
+    IH.saveNote(e, ta.value).then(function () { IH.toast('笔记已保存，也已加入收藏'); renderRail(); renderList(); renderReader(); }).catch(function () {});
+  }
+
+  document.addEventListener('click', function (ev) {
+    var z = ev.target.closest('[data-zone]'); if (z) return setZone(z.getAttribute('data-zone'));
+    var r = ev.target.closest('.row'); if (r) return select(r.getAttribute('data-id'));
+    var a = ev.target.closest('[data-act]'); if (!a) return;
+    var act = a.getAttribute('data-act'), e = current();
+    if (act === 'open') return;
+    if (act === 'back') { $app.classList.remove('reading'); return; }
+    if (act === 'next') return step(1);
+    if (act === 'save') return doSave();
+    if (act === 'note') return doNote();
+    if (act === 'note-cancel') return renderReader();
+    if (act === 'note-save') return saveNote();
+    if (act === 'copy') return IH.copy(e.prompt);
+    if (act === 'lang') {
+      var zh = a.textContent === '看中文';
+      document.getElementById('ptext').textContent = zh ? e.promptZh : e.prompt;
+      document.getElementById('plabel').textContent = zh ? '提示词中文翻译' : '提示词原文';
+      a.textContent = zh ? '看原文' : '看中文';
+    }
+    if (act === 'allread') { visible.forEach(function (x) { IH.markRead(x.id); }); renderRail(); renderList(); }
+  });
+  document.addEventListener('error', function (ev) {
+    var img = ev.target; if (!img || img.tagName !== 'IMG') return;
+    var g = img.closest('.shots'); img.parentNode.remove();
+    if (g && !g.children.length) g.outerHTML = '<p class="kicker">效果图加载不出来（图在 X 上，可能需要代理），点"看原文"去原帖看。</p>';
+  }, true);
+  document.addEventListener('keydown', function (ev) {
+    var t = ev.target;
+    if (t.id === 'noteText') {
+      if (ev.key === 'Escape') renderReader();
+      if (ev.key === 'Enter' && (ev.ctrlKey || ev.metaKey)) saveNote();
+      return;
+    }
+    if (ev.ctrlKey || ev.metaKey || ev.altKey || /INPUT|TEXTAREA/.test(t.tagName)) return;
+    var k = ev.key.toLowerCase();
+    if (k === 'j' || k === 'arrowdown') { ev.preventDefault(); step(1); }
+    else if (k === 'k' || k === 'arrowup') { ev.preventDefault(); step(-1); }
+    else if (k === 'o') { var e = current(); if (e && e.url) window.open(e.url, '_blank', 'noopener'); }
+    else if (k === 's') doSave();
+    else if (k === 'n') { ev.preventDefault(); doNote(); }
+    else if (k === 'escape') $app.classList.remove('reading');
+  });
+
+  IH.load().then(function (t) {
+    T = t;
+    var h = decodeURIComponent(location.hash.slice(1)).split('/');
+    if (TITLES[h[0]]) zone = h[0];
+    renderRail(); renderList();
+    if (h[1] && window.innerWidth > 760) select(h[1]); else renderReader();
+  }).catch(function (e) {
+    $reader.innerHTML = '<div class="blank"><p>读取数据失败：' + esc(e.message) + '</p></div>';
+  });
+  IH.switcher('a');
+})();
+</script>
+</body>
+</html>

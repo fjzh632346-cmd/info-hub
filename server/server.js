@@ -165,6 +165,9 @@ const server = http.createServer(async (req, res) => {
       return serveFile(res, path.join(REPO, 'demos'), p.slice('/demos/'.length),
         { 'Content-Security-Policy': 'sandbox allow-scripts allow-popups' });
     }
+    // 备选版式：/v/a/、/v/b/、/v/c/
+    if (/^\/v\/[a-z]$/.test(p)) return send(res, 301, '', { Location: p + '/' });
+    if (p.startsWith('/v/')) return serveFile(res, path.join(REPO, 'site', 'v'), p.slice('/v/'.length));
     if (p.startsWith('/fonts/') || p === '/app.js' || p === '/style.css' || p === '/favicon.svg') {
       return serveFile(res, path.join(REPO, 'site'), p.slice(1));
     }

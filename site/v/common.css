@@ -1,0 +1,19 @@
+/* 三个版式共用的小部件：版式切换条、提示 */
+.ih-switch {
+  position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); z-index: 50;
+  display: flex; gap: 2px; padding: 3px; border-radius: 999px;
+  background: rgba(20, 24, 28, .88); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, .22);
+  font: 500 12px/1 "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+}
+.ih-switch a { color: #C9D1D6; text-decoration: none; padding: 7px 11px; border-radius: 999px; white-space: nowrap; }
+.ih-switch a:hover { color: #fff; }
+.ih-switch a[aria-current="page"] { background: #F5C518; color: #14181C; font-weight: 700; }
+#ih-toast {
+  position: fixed; left: 50%; top: 18px; transform: translate(-50%, -12px); opacity: 0; z-index: 60;
+  background: #14181C; color: #fff; padding: 8px 16px; border-radius: 6px; font: 14px/1.4 "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  pointer-events: none; transition: opacity .18s, transform .18s;
+}
+#ih-toast.show { opacity: 1; transform: translate(-50%, 0); }
+@media (prefers-reduced-motion: reduce) { #ih-toast { transition: none; } }
+@media print { .ih-switch { display: none; } }

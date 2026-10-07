@@ -1,0 +1,238 @@
+{
+ "daily": {
+  "type": "daily",
+  "date": "2026-10-07",
+  "headline": "Google 发了 Nano Banana 2.1，图像生成又卷一轮；大福二季度订单同比涨了 18%，半导体工厂是主力。",
+  "sections": [
+   {
+    "key": "ai",
+    "title": "AI",
+    "items": [
+     {
+      "title": "Google 发布 Nano Banana 2.1：多轮编辑时人物和物体不再走样",
+      "source": "Google AI 博客",
+      "published": "2026-10-06",
+      "summary": "新版本在多轮编辑中能保持人物、物体外观一致，最多支持 14 张参考图。Gemini App 和 AI Studio 已上线，API 价格不变。",
+      "why": "你在用的照片艺术类提示词大多基于它，换模型前先看这条。",
+      "url": "https://example.com/",
+      "tags": [
+       "新模型"
+      ],
+      "vendorClaim": true
+     },
+     {
+      "title": "a16z：消费级 AI 付费最多的 1% 用户，钱花在'做东西'上",
+      "source": "a16z",
+      "published": "2026-10-06",
+      "summary": "统计 Top 50 应用收入，前 1% 的重度用户贡献约 40% 付费，主要买建站、写代码、做 Agent 一类工具。",
+      "why": "说明会用 AI 动手做东西的人才是付费主力，对 AI 产品经理方向有参考。",
+      "url": "https://example.com/",
+      "tags": [
+       "报告",
+       "数据"
+      ],
+      "vendorClaim": false
+     },
+     {
+      "title": "Simon Willison 记录：40 分钟用 Claude 写完一个 SQLite 插件",
+      "source": "Simon Willison",
+      "published": "2026-10-06",
+      "summary": "从需求到发布每一步的提示词都公开了，中间两次纠正模型的错误假设。",
+      "why": "可以照着学怎么跟 AI 结对写代码。",
+      "url": "https://example.com/",
+      "tags": [
+       "案例"
+      ],
+      "vendorClaim": false
+     },
+     {
+      "title": "Epoch AI：前沿模型训练算力每年涨 4.2 倍",
+      "source": "Epoch AI",
+      "published": "2026-10-06",
+      "summary": "数据集覆盖 2020–2026 年 300 多个模型，增速比去年估计的略快。",
+      "why": "判断 AI 行业节奏的底层数据。",
+      "url": "https://example.com/",
+      "tags": [
+       "数据"
+      ],
+      "vendorClaim": false
+     }
+    ]
+   },
+   {
+    "key": "wh",
+    "title": "仓储物流自动化",
+    "items": [
+     {
+      "title": "大福二季度订单同比增长 18%，汽车行业订单下滑",
+      "source": "Daifuku IR",
+      "published": "2026-10-06",
+      "summary": "半导体和液晶工厂的搬运系统是增长主力，汽车行业订单下滑 6%，北美电商物流中心项目延期。",
+      "why": "大福是立体库龙头，它的订单结构就是行业风向标。",
+      "url": "https://example.com/",
+      "tags": [
+       "财报"
+      ],
+      "vendorClaim": false
+     },
+     {
+      "title": "Symbotic 扩大与沃尔玛合作：再改造 400 家门店配送中心",
+      "source": "Symbotic 投资者公告",
+      "published": "2026-10-06",
+      "summary": "合同金额未披露，预计 2027–2029 年分批交付。",
+      "why": "机器人 + 立体库一体化方案正在大规模落地。",
+      "url": "https://example.com/",
+      "tags": [
+       "案例"
+      ],
+      "vendorClaim": true
+     },
+     {
+      "title": "9 月制造业 PMI 50.3，连续两个月扩张",
+      "source": "国家统计局",
+      "published": "2026-10-06",
+      "summary": "新订单指数 51.1，物流业景气指数同步回升。",
+      "why": "宏观数据，用来判断仓储设备需求。",
+      "url": "https://example.com/",
+      "tags": [
+       "数据"
+      ],
+      "vendorClaim": false
+     }
+    ]
+   }
+  ],
+  "notes": []
+ },
+ "weekly": {
+  "type": "weekly",
+  "date": "2026-10-04",
+  "headline": "编程榜单上 Opus 5.5 和 Gemini 3.5 Pro 咬得很紧；国内能直接用的首选还是 Qwen 和 DeepSeek。",
+  "models": {
+   "news": [
+    {
+     "title": "Anthropic 发布 Claude Opus 5.5",
+     "source": "Anthropic",
+     "published": "2026-10-06",
+     "summary": "编程测评刷新最高分，长任务更稳定。",
+     "why": "写代码、做网页的首选之一。",
+     "url": "https://example.com/",
+     "tags": [
+      "新模型"
+     ],
+     "vendorClaim": true
+    }
+   ],
+   "table": [
+    {
+     "use": "写代码/做网页",
+     "picks": [
+      "Claude Opus 5.5",
+      "GPT-5.5"
+     ],
+     "basis": "LMArena WebDev 榜",
+     "link": "https://example.com/"
+    },
+    {
+     "use": "长文写作",
+     "picks": [
+      "Claude Opus 5.5"
+     ],
+     "basis": "EQ-Bench 创意写作",
+     "link": "https://example.com/"
+    },
+    {
+     "use": "中文能力",
+     "picks": [
+      "Qwen 3.5",
+      "DeepSeek V4"
+     ],
+     "basis": "SuperCLUE 9 月",
+     "link": "https://example.com/"
+    },
+    {
+     "use": "数学推理",
+     "picks": [
+      "GPT-5.5",
+      "Gemini 3.5 Pro"
+     ],
+     "basis": "AIME 2026",
+     "link": "https://example.com/"
+    },
+    {
+     "use": "智能体",
+     "picks": [
+      "Claude Opus 5.5"
+     ],
+     "basis": "Terminal-Bench",
+     "link": "https://example.com/"
+    },
+    {
+     "use": "性价比",
+     "picks": [
+      "DeepSeek V4"
+     ],
+     "basis": "Artificial Analysis",
+     "link": "https://example.com/"
+    },
+    {
+     "use": "国内可直接使用",
+     "picks": [
+      "Qwen 3.5",
+      "DeepSeek V4",
+      "Kimi K3"
+     ],
+     "basis": "各家官方可用性",
+     "link": "https://example.com/"
+    }
+   ]
+  },
+  "skills": [
+   {
+    "name": "frontend-design",
+    "category": "网页设计",
+    "what": "让 AI 做网页时先定配色、字体和版式，再写代码，避免千篇一律的模板感。",
+    "scene": "个人主页、作品集、活动页",
+    "howto": [
+     "在 Claude 里加载这个 Skill",
+     "说清楚网站给谁看、要传达什么",
+     "让它先出设计方案再写代码"
+    ],
+    "url": "https://example.com/",
+    "author": "Anthropic",
+    "stars": "12k"
+   }
+  ],
+  "kaoyan": [
+   {
+    "title": "2027 年硕士研究生招生考试网上报名 10 月 10 日开始",
+    "source": "研招网",
+    "published": "2026-10-06",
+    "summary": "网上报名 10 月 10 日–31 日，预报名 9 月 24 日已开始。",
+    "why": "你考的是 2027 年 12 月那一届，今年先熟悉流程，明年同期再报。",
+    "url": "https://example.com/",
+    "tags": [],
+    "vendorClaim": false
+   }
+  ],
+  "jobs": [
+   {
+    "company": "极智嘉",
+    "role": "解决方案实习生（物流方向）",
+    "forWhom": "大三可投，物流/机械背景优先",
+    "deadline": "2026-10-31",
+    "summary": "参与仓储机器人项目方案设计，北京办公，每周 4 天。",
+    "url": "https://example.com/"
+   },
+   {
+    "company": "海康机器人",
+    "role": "移动机器人产品实习生",
+    "forWhom": "大三、研一可投",
+    "deadline": "2026-11-15",
+    "summary": "做 AMR 产品需求调研和竞品分析，杭州。",
+    "url": "https://example.com/"
+   }
+  ],
+  "notes": []
+ }
+}

@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>信息库 · 早报</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../common.css">
+<style>
+@font-face { font-family: "Barlow Condensed"; font-weight: 500; font-display: swap; src: url(/fonts/barlow-condensed-latin-500-normal.woff2) format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 700; font-display: swap; src: url(/fonts/barlow-condensed-latin-700-normal.woff2) format("woff2"); }
+:root {
+  --page: #F8F9FA; --ink: #15191D; --ink-2: #353E45; --muted: #6A747B; --line: #DCE0E3; --soft: #EEF1F3;
+  --blue: #1E4F8A; --tape: #F5C518; --tape-ink: #15191D; --warn: #A3261A;
+  --zh: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+  --num: "Barlow Condensed", "Arial Narrow", var(--zh);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) { :root {
+  --page: #121518; --ink: #E9ECEE; --ink-2: #C4CBD0; --muted: #8B959C; --line: #2A3137; --soft: #1A1F23;
+  --blue: #86AEE2; --tape: #E9BA14; --tape-ink: #121518; --warn: #F08A7E;
+  color-scheme: dark;
+} }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: 72px; }
+body { margin: 0; background: var(--page); color: var(--ink); font: 400 17px/1.9 var(--zh); }
+a { color: var(--blue); text-underline-offset: 4px; text-decoration-thickness: 1px; }
+button { font: inherit; color: inherit; cursor: pointer; }
+:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+
+/* ---------- 顶栏 ---------- */
+.top { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--page) 92%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.top-in { max-width: 1040px; margin: 0 auto; padding: 0 28px; height: 56px; display: flex; align-items: center; gap: 28px; }
+.brand { display: flex; align-items: center; gap: 9px; color: var(--ink); text-decoration: none; font-weight: 700; letter-spacing: .06em; font-size: 16px; flex: none; }
+.brand i { width: 20px; height: 20px; border-radius: 3px; background:
+  linear-gradient(var(--tape), var(--tape)) 3px 5px / 14px 3px no-repeat,
+  linear-gradient(var(--tape), var(--tape)) 3px 12px / 14px 3px no-repeat, #1E4F8A; }
+.tabs { display: flex; gap: 22px; overflow-x: auto; scrollbar-width: none; }
+.tabs::-webkit-scrollbar { display: none; }
+.tabs a { color: var(--muted); text-decoration: none; font-size: 15px; white-space: nowrap; line-height: 54px; border-bottom: 2px solid transparent; }
+.tabs a:hover { color: var(--ink); }
+.tabs a[aria-current="page"] { color: var(--ink); font-weight: 600; border-bottom-color: var(--ink); }
+
+/* ---------- 版心：左边窄栏放分区名，右边正文 ---------- */
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 28px 160px; }
+.mast { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 0 40px; padding: 56px 0 40px; border-bottom: 3px solid var(--ink); }
+.mast .day { font: 700 112px/.8 var(--num); letter-spacing: -.02em; margin: 0; }
+.mast .meta { align-self: end; font-size: 15px; color: var(--muted); line-height: 1.7; }
+.mast .meta b { color: var(--ink); font-weight: 600; }
+.mast h1 { grid-column: 2; margin: 22px 0 0; font-size: 27px; line-height: 1.6; font-weight: 700; letter-spacing: .01em; max-width: 26em; }
+.sample-note { grid-column: 2; margin: 18px 0 0; font-size: 14px; line-height: 1.7; color: var(--ink-2); padding: 8px 12px; border-left: 3px solid var(--tape); background: var(--soft); max-width: 40em; }
+
+/* 先看这三条 */
+.top3 { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 0 40px; padding: 28px 0 36px; border-bottom: 1px solid var(--line); }
+.label { font-size: 14px; font-weight: 700; color: var(--ink); line-height: 1.5; }
+.label span { display: block; font: 500 15px/1.5 var(--num); color: var(--muted); }
+.top3 ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; counter-reset: t; }
+.top3 li { counter-increment: t; }
+.top3 li::before { content: counter(t); display: block; font: 700 30px/1 var(--num); color: var(--tape); -webkit-text-stroke: 1px color-mix(in srgb, var(--ink) 25%, transparent); margin-bottom: 10px; }
+.top3 a { display: block; color: var(--ink); text-decoration: none; font-weight: 600; font-size: 17px; line-height: 1.6; }
+.top3 a:hover { text-decoration: underline; }
+.top3 small { display: block; margin-top: 6px; font-size: 13px; color: var(--muted); line-height: 1.6; }
+
+/* 分区 */
+.sec { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 0 40px; padding: 36px 0 8px; border-bottom: 1px solid var(--line); }
+.sec > .label { position: sticky; top: 84px; align-self: start; }
+.entry { padding: 0 0 30px; margin: 0 0 30px; border-bottom: 1px dashed var(--line); max-width: 640px; }
+.entry:last-child { border-bottom: 0; margin-bottom: 0; }
+.entry h3 { margin: 0 0 4px; font-size: 21px; line-height: 1.55; font-weight: 700; }
+.entry h3 a { color: var(--ink); text-decoration: none; }
+.entry h3 a:hover { text-decoration: underline; }
+.entry.read h3 a { color: var(--muted); }
+.by { font-size: 13.5px; color: var(--muted); margin: 0 0 10px; display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: center; }
+.tag { font-size: 12px; line-height: 18px; border: 1px solid var(--line); border-radius: 3px; padding: 0 6px; }
+.tag.vendor { color: var(--warn); border-color: currentColor; }
+.tag.sample { background: var(--tape); border-color: var(--tape); color: var(--tape-ink); }
+.entry p { margin: 0 0 10px; color: var(--ink-2); }
+.entry p.why { color: var(--ink); }
+.entry p.why b { font-weight: 700; background: linear-gradient(transparent 58%, color-mix(in srgb, var(--tape) 55%, transparent) 58%); padding: 0 1px; margin-right: 6px; }
+.links { display: flex; gap: 20px; font-size: 14px; margin-top: 12px; }
+.links a, .links button { color: var(--muted); background: none; border: 0; padding: 0; text-decoration: underline; text-underline-offset: 4px; font-size: 14px; }
+.links a:hover, .links button:hover { color: var(--ink); }
+.links .on { color: var(--ink); font-weight: 600; text-decoration: none; }
+.links .on::before { content: ""; display: inline-block; width: 8px; height: 8px; background: var(--tape); margin-right: 6px; vertical-align: 1px; }
+.note { margin: 12px 0 0; padding: 8px 12px; background: var(--soft); border-left: 3px solid var(--tape); white-space: pre-wrap; font-size: 15px; line-height: 1.75; }
+.note-edit textarea { width: 100%; min-height: 96px; margin-top: 12px; font: inherit; font-size: 15px; line-height: 1.7; padding: 10px 12px; border: 1px solid var(--line); border-radius: 4px; background: var(--soft); color: var(--ink); resize: vertical; }
+.note-edit div { display: flex; justify-content: flex-end; gap: 16px; font-size: 14px; }
+
+/* X：短条目 */
+.tweet { padding: 0 0 22px; margin: 0 0 22px; border-bottom: 1px dashed var(--line); max-width: 640px; }
+.tweet:last-child { border-bottom: 0; }
+.tweet .who { font-size: 15px; margin: 0 0 4px; }
+.tweet .who b { font-weight: 700; }
+.tweet .who span { color: var(--muted); font-size: 13.5px; margin-left: 8px; }
+.tweet p { margin: 0; font-size: 16px; line-height: 1.85; color: var(--ink-2); }
+.tweet p.clip { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.tweet .links { margin-top: 8px; }
+
+/* 本周备忘 */
+.memo { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 0 40px; padding: 36px 0; }
+.memo-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: var(--soft); }
+.memo-grid > div { padding: 18px 20px; border-right: 1px solid var(--line); }
+.memo-grid > div:last-child { border-right: 0; }
+.memo-grid h4 { margin: 0 0 8px; font-size: 13px; color: var(--muted); font-weight: 600; }
+.big { font: 700 52px/1 var(--num); }
+.big small { font: 400 15px/1 var(--zh); color: var(--muted); margin-left: 4px; }
+.memo-grid p { margin: 6px 0 0; font-size: 14px; line-height: 1.7; color: var(--ink-2); }
+.memo-grid ul { list-style: none; margin: 0; padding: 0; font-size: 14.5px; line-height: 1.9; }
+.memo-grid ul b { font-weight: 600; }
+.memo-grid ul span { color: var(--muted); }
+.end { margin: 24px 0 0 240px; font-size: 15px; color: var(--muted); }
+
+/* 周报里的表、Skill */
+table { width: 100%; max-width: 680px; border-collapse: collapse; font-size: 15.5px; margin: 0 0 30px; }
+th, td { text-align: left; padding: 11px 10px 11px 0; border-bottom: 1px solid var(--line); vertical-align: top; line-height: 1.6; }
+th { font-size: 13px; color: var(--muted); font-weight: 600; }
+td.u { font-weight: 700; white-space: nowrap; }
+.pick { display: inline-block; margin: 0 6px 4px 0; padding: 0 8px; border-radius: 3px; background: var(--soft); border: 1px solid var(--line); font-size: 14px; }
+.pick:first-child { border-color: var(--ink); }
+dl.how { display: grid; grid-template-columns: 4em minmax(0, 1fr); gap: 2px 14px; font-size: 15.5px; margin: 0 0 10px; }
+dl.how dt { color: var(--muted); } dl.how dd { margin: 0; } dl.how ol { margin: 0; padding-left: 1.2em; }
+.prompt { margin: 14px 0 10px; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.prompt-bar { display: flex; justify-content: space-between; padding: 6px 12px; background: var(--soft); border-bottom: 1px solid var(--line); font-size: 13px; color: var(--muted); }
+.prompt-bar button { border: 0; background: none; padding: 0 0 0 12px; font-size: 13px; color: var(--blue); }
+.prompt pre { margin: 0; padding: 12px 14px; white-space: pre-wrap; word-break: break-word; font: 13.5px/1.75 ui-monospace, "Cascadia Mono", Consolas, var(--zh); color: var(--ink-2); max-height: 13em; overflow: hidden; -webkit-mask-image: linear-gradient(#000 70%, transparent); mask-image: linear-gradient(#000 70%, transparent); }
+.prompt pre.open { max-height: none; -webkit-mask-image: none; mask-image: none; }
+.shots { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; margin: 14px 0 6px; }
+.shots a { display: block; aspect-ratio: 4/5; overflow: hidden; border-radius: 3px; background: var(--soft); }
+.shots img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.shots-fail { font-size: 13px; color: var(--muted); }
+.empty { color: var(--muted); }
+
+/* ---------- 手机 ---------- */
+@media (max-width: 860px) {
+  body { font-size: 16.5px; line-height: 1.85; }
+  .top-in { padding: 0 16px; gap: 18px; height: 50px; }
+  .tabs { gap: 16px; }
+  .tabs a { line-height: 48px; font-size: 14.5px; }
+  .wrap { padding: 0 18px 140px; }
+  .mast, .top3, .sec, .memo { grid-template-columns: minmax(0, 1fr); }
+  .mast { padding: 32px 0 28px; }
+  .mast .day { font-size: 88px; }
+  .mast .meta { margin-top: 12px; }
+  .mast h1, .sample-note { grid-column: 1; }
+  .mast h1 { font-size: 21px; margin-top: 16px; }
+  .label { margin-bottom: 14px; display: flex; gap: 10px; align-items: baseline; }
+  .label span { display: inline; }
+  .sec > .label { position: static; }
+  .top3 ol { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .top3 li { display: grid; grid-template-columns: 28px minmax(0, 1fr); }
+  .top3 li::before { margin: 0; font-size: 26px; }
+  .entry h3 { font-size: 19px; }
+  .memo-grid { grid-template-columns: minmax(0, 1fr); }
+  .memo-grid > div { border-right: 0; border-bottom: 1px solid var(--line); }
+  .memo-grid > div:last-child { border-bottom: 0; }
+  .end { margin-left: 0; }
+  .shots { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  td.u { white-space: normal; }
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#/"><i aria-hidden="true"></i>信息库</a>
+    <nav class="tabs" id="tabs" aria-label="栏目">
+      <a href="#/" data-v="today">早报</a>
+      <a href="#/week" data-v="week">周报</a>
+      <a href="#/skills" data-v="skills">Skill 与提示词</a>
+      <a href="#/saved" data-v="saved">收藏</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap" id="main"><p class="empty" style="padding-top:60px">正在读取……</p></main>
+<script src="../common.js"></script>
+<script>
+(function () {
+  'use strict';
+  var esc = IH.esc, url = IH.safeUrl, T, byId = {};
+  var $main = document.getElementById('main');
+
+  function reg(e) { byId[e.id] = e; return e; }
+  function minutes(list) {
+    var n = list.reduce(function (s, e) { return s + (e.title || '').length + (e.summary || '').length + (e.why || '').length; }, 0);
+    return Math.max(1, Math.round(n / 450));
+  }
+  function tags(e) {
+    return (e.tags || []).map(function (t) { return '<span class="tag">' + esc(t) + '</span>'; }).join('') +
+      (e.vendorClaim ? '<span class="tag vendor">厂商说法</span>' : '') + (e.sample ? '<span class="tag sample">示例</span>' : '');
+  }
+  function links(e) {
+    var s = IH.saved[e.id];
+    return '<div class="links"><a href="' + esc(url(e.url)) + '" target="_blank" rel="noopener noreferrer" data-act="open">看原文</a>' +
+      '<button type="button" data-act="save"' + (s ? ' class="on"' : '') + '>' + (s ? '已收藏' : '收藏') + '</button>' +
+      '<button type="button" data-act="note">' + (s && s.note ? '改笔记' : '写笔记') + '</button></div>' +
+      (s && s.note ? '<p class="note">' + esc(s.note) + '</p>' : '');
+  }
+  function entry(e) {
+    reg(e);
+    return '<article class="entry' + (IH.isRead(e.id) ? ' read' : '') + '" id="e-' + esc(e.id) + '" data-id="' + esc(e.id) + '">' +
+      '<h3><a href="' + esc(url(e.url)) + '" target="_blank" rel="noopener noreferrer" data-act="open">' + esc(e.title) + '</a></h3>' +
+      '<p class="by"><span>' + esc(e.source || '') + '</span>' + (e.published ? '<span>' + esc(e.published) + '</span>' : '') +
+        (e.deadline ? '<span>截止 ' + esc(e.deadline) + '</span>' : '') + tags(e) + '</p>' +
+      (e.summary ? '<p>' + esc(e.summary) + '</p>' : '') +
+      (e.why ? '<p class="why"><b>' + esc(e.whyLabel || '为什么值得看') + '</b>' + esc(e.why) + '</p>' : '') +
+      links(e) + '</article>';
+  }
+  function tweet(e) {
+    reg(e);
+    return '<article class="tweet" id="e-' + esc(e.id) + '" data-id="' + esc(e.id) + '">' +
+      '<p class="who"><b>' + esc(e.author || e.handle) + '</b><span>' + esc(e.handle || '') + (e.metrics ? ' · ' + esc(e.metrics) : '') + '</span> ' + tags(e) + '</p>' +
+      '<p class="clip">' + esc(e.summary) + '</p>' + links(e) + '</article>';
+  }
+  function section(title, n, body, id) {
+    return '<section class="sec"' + (id ? ' id="' + id + '"' : '') + '><div class="label">' + esc(title) + '<span>' + n + ' 条</span></div><div>' + body + '</div></section>';
+  }
+  function memo() {
+    var days = IH.daysUntil(IH.EXAM_DATE);
+    var rows = (((T.weekly || {}).models || {}).table || []).slice(0, 3);
+    var jobs = T.week.filter(function (e) { return e.zone === 'jb' && /^\d{4}-/.test(e.deadline || ''); })
+      .sort(function (a, b) { return a.deadline < b.deadline ? -1 : 1; }).slice(0, 2);
+    return '<section class="memo"><div class="label">备忘<span>每天都在</span></div><div class="memo-grid">' +
+      '<div><h4>距 2027 年考研初试</h4><div class="big">' + days + '<small>天</small></div><p>按往年 12 月下旬估算，正式日期以研招网公告为准。</p></div>' +
+      '<div><h4>最近的实习截止</h4>' + (jobs.length ? '<ul>' + jobs.map(function (j) {
+        return '<li><b>' + esc(j.company) + '</b> <span>还有 ' + IH.daysUntil(j.deadline) + ' 天</span><br>' + esc(j.role) + '</li>';
+      }).join('') + '</ul>' : '<p>本周没有带截止日期的岗位。</p>') + '</div>' +
+      '<div><h4>本周模型怎么选</h4><ul>' + rows.map(function (r) {
+        return '<li><span>' + esc(r.use) + '</span>　<b>' + esc((r.picks || [])[0] || '') + '</b></li>';
+      }).join('') + '</ul><p><a href="#/week">看完整表格</a></p></div>' +
+    '</div></section>';
+  }
+
+  function viewToday() {
+    var d = T.daily, x = T.x;
+    var ai = T.today.filter(function (e) { return e.zone === 'ai'; }), wh = T.today.filter(function (e) { return e.zone === 'wh'; }),
+        xs = T.today.filter(function (e) { return e.zone === 'x'; });
+    var date = (d || x || {}).date || '2026-01-01';
+    var h = '<header class="mast"><p class="day">' + esc(IH.dot(date)) + '</p>' +
+      '<div class="meta"><b>' + esc(IH.cnDate(date)) + '</b><br>今天 ' + T.today.length + ' 条，读完大约 ' + minutes(T.today) + ' 分钟</div>' +
+      '<h1>' + esc(d ? d.headline : '今天的日报还没出来，先看昨晚 X 上的精选。') + '</h1>' +
+      (T.sampleDaily ? '<p class="sample-note">今天的日报还没生成（每天 7:51 自动生成）。下面 AI 和仓储两栏标了"示例"的是演示数据，X 精选是真实内容。</p>' : '') +
+      '</header>';
+    var picks = [ai[0], wh[0], xs.slice().sort(function (a, b) { return parseFloat(b.metrics) - parseFloat(a.metrics); })[0]].filter(Boolean);
+    if (picks.length) {
+      h += '<section class="top3"><div class="label">先看这三条<span>其余的往下翻</span></div><ol>' + picks.map(function (e) {
+        return '<li><div><a href="#e-' + esc(e.id) + '">' + esc(e.zone === 'x' ? (e.author + '：' + e.summary.slice(0, 36) + '…') : e.title) + '</a>' +
+          '<small>' + esc(IH.ZONES[e.zone].name) + (e.why ? '　' + e.why : '') + '</small></div></li>';
+      }).join('') + '</ol></section>';
+    }
+    if (ai.length) h += section('AI', ai.length, ai.map(entry).join(''), 's-ai');
+    if (wh.length) h += section('仓储物流', wh.length, wh.map(entry).join(''), 's-wh');
+    if (xs.length) h += section('昨晚 X 上', xs.length, xs.map(tweet).join(''), 's-x');
+    h += memo();
+    h += '<p class="end">今天就这些。明早 7:51 更新。</p>';
+    return h;
+  }
+
+  function skill(e) {
+    reg(e);
+    var s = '<article class="entry" id="e-' + esc(e.id) + '" data-id="' + esc(e.id) + '">' +
+      '<h3><a href="' + esc(url(e.url)) + '" target="_blank" rel="noopener noreferrer" data-act="open">' + esc(e.name || e.title) + '</a></h3>' +
+      '<p class="by"><span>' + esc(e.category || '') + '</span><span>' + esc(e.author || e.handle || '') + '</span>' +
+        (e.stars ? '<span>' + esc(e.stars) + ' 星</span>' : '') + (e.metrics ? '<span>' + esc(e.metrics) + '</span>' : '') + tags(e) + '</p>' +
+      (e.what ? '<p>' + esc(e.what) + '</p>' : '');
+    if (e.scene || (e.howto && e.howto.length)) {
+      s += '<dl class="how">' + (e.scene ? '<dt>适合</dt><dd>' + esc(e.scene) + '</dd>' : '') +
+        (e.howto && e.howto.length ? '<dt>怎么用</dt><dd><ol>' + e.howto.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ol></dd>' : '') + '</dl>';
+    }
+    if (e.images && e.images.length) {
+      s += '<div class="shots">' + e.images.slice(0, 4).map(function (src) {
+        return '<a href="' + esc(url(e.url)) + '" target="_blank" rel="noopener noreferrer"><img src="' + esc(url(src)) + '" alt="原作者的效果图" loading="lazy" referrerpolicy="no-referrer"></a>';
+      }).join('') + '</div>';
+    }
+    if (e.prompt) {
+      s += '<div class="prompt"><div class="prompt-bar"><span>提示词原文</span><span>' +
+        (e.promptZh ? '<button type="button" data-act="lang">看中文</button>' : '') +
+        '<button type="button" data-act="expand">展开</button><button type="button" data-act="copy">复制原文</button></span></div><pre>' + esc(e.prompt) + '</pre></div>';
+    }
+    return s + links(e) + '</article>';
+  }
+
+  function viewWeek() {
+    var w = T.weekly;
+    if (!w) return '<p class="empty" style="padding-top:60px">还没有周报，每周日早上 8:46 生成。</p>';
+    var by = function (z) { return T.week.filter(function (e) { return e.zone === z; }); };
+    var rows = ((w.models || {}).table || []);
+    var h = '<header class="mast"><p class="day">' + esc(IH.dot(w.date)) + '</p><div class="meta"><b>' + esc(IH.cnDate(w.date)) + ' 周报</b><br>每周日 8:46 更新</div>' +
+      '<h1>' + esc(w.headline) + '</h1>' + (T.sampleWeekly ? '<p class="sample-note">第一期周报还没生成，下面是演示数据。</p>' : '') + '</header>';
+    h += section('按用途选模型', rows.length, '<table><thead><tr><th>用途</th><th>推荐</th><th>依据</th></tr></thead><tbody>' + rows.map(function (r) {
+      return '<tr><td class="u">' + esc(r.use) + '</td><td>' + (r.picks || []).map(function (p) { return '<span class="pick">' + esc(p) + '</span>'; }).join('') +
+        '</td><td>' + (r.link ? '<a href="' + esc(url(r.link)) + '" target="_blank" rel="noopener noreferrer">' + esc(r.basis) + '</a>' : esc(r.basis || '')) + '</td></tr>';
+    }).join('') + '</tbody></table>');
+    [['md', '模型动态'], ['ky', '考研'], ['jb', '就业实习']].forEach(function (z) {
+      var list = by(z[0]); if (list.length) h += section(z[1], list.length, list.map(entry).join(''));
+    });
+    var sk = by('sk'); if (sk.length) h += section('Skill', sk.length, sk.map(skill).join(''));
+    return h;
+  }
+
+  function viewSkills() {
+    var groups = {};
+    T.skills.forEach(function (e) { (groups[e.category || '其他'] = groups[e.category || '其他'] || []).push(e); });
+    var h = '<header class="mast"><p class="day" style="font-size:96px">Skill</p><div class="meta"><b>Skill 与提示词</b><br>网页设计附示例，照片艺术附效果图和完整提示词</div></header>';
+    Object.keys(groups).forEach(function (k) { h += section(k, groups[k].length, groups[k].map(skill).join('')); });
+    return h;
+  }
+
+  function viewSaved() {
+    var ids = Object.keys(IH.saved).sort(function (a, b) { return IH.saved[a].savedAt < IH.saved[b].savedAt ? 1 : -1; });
+    var h = '<header class="mast"><p class="day" style="font-size:96px">' + ids.length + '</p><div class="meta"><b>收藏与笔记</b><br>和现在网站上的收藏是同一份</div></header>';
+    return h + section('收藏', ids.length, ids.length ? ids.map(function (id) {
+      var s = Object.assign({ title: id }, IH.saved[id].snapshot || {}, { id: id });
+      return s.prompt || s.howto ? skill(s) : entry(s);
+    }).join('') : '<p class="empty">还没有收藏。</p>');
+  }
+
+  function route() {
+    var v = (location.hash.replace(/^#\/?/, '').split('/')[0]) || 'today';
+    if (/^e-/.test(v)) return;
+    byId = {};
+    $main.innerHTML = v === 'week' ? viewWeek() : v === 'skills' ? viewSkills() : v === 'saved' ? viewSaved() : viewToday();
+    Array.prototype.forEach.call(document.querySelectorAll('.tabs a'), function (a) {
+      if (a.getAttribute('data-v') === (['week', 'skills', 'saved'].indexOf(v) >= 0 ? v : 'today')) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
+    });
+    window.scrollTo(0, 0);
+  }
+  function rerender() { var y = scrollY; route(); scrollTo(0, y); }
+
+  $main.addEventListener('click', function (ev) {
+    var a = ev.target.closest('[data-act]');
+    var anchor = ev.target.closest('a[href^="#e-"]');
+    if (anchor) { ev.preventDefault(); var t = document.getElementById(anchor.getAttribute('href').slice(1)); if (t) t.scrollIntoView({ behavior: 'smooth' }); return; }
+    if (!a) return;
+    var card = a.closest('[data-id]'), e = card && byId[card.getAttribute('data-id')], act = a.getAttribute('data-act');
+    if (act === 'open') { if (e) { IH.markRead(e.id); card.classList.add('read'); } return; }
+    if (act === 'save') IH.toggleSave(e).then(function (on) { IH.toast(on ? '已收藏' : '已取消收藏'); rerender(); }).catch(function () {});
+    if (act === 'note') {
+      if (card.querySelector('.note-edit')) return;
+      var box = document.createElement('div'); box.className = 'note-edit';
+      box.innerHTML = '<textarea aria-label="笔记" placeholder="写下想法、待办或疑问">' + esc((IH.saved[e.id] || {}).note || '') + '</textarea><div class="links"><button type="button" data-act="note-cancel">取消</button><button type="button" data-act="note-save">保存笔记</button></div>';
+      a.closest('.links').after(box); box.querySelector('textarea').focus();
+    }
+    if (act === 'note-cancel') a.closest('.note-edit').remove();
+    if (act === 'note-save') IH.saveNote(e, a.closest('.note-edit').querySelector('textarea').value).then(function () { IH.toast('笔记已保存'); rerender(); }).catch(function () {});
+    if (act === 'copy') IH.copy(e.prompt);
+    if (act === 'expand') { var pre = card.querySelector('pre'); var o = pre.classList.toggle('open'); a.textContent = o ? '收起' : '展开'; }
+    if (act === 'lang') { var p2 = card.querySelector('pre'), zh = a.textContent === '看中文'; p2.textContent = zh ? e.promptZh : e.prompt; a.textContent = zh ? '看原文' : '看中文'; }
+  });
+  // X 条目点正文展开
+  $main.addEventListener('click', function (ev) { var p = ev.target.closest('.tweet p.clip'); if (p) p.classList.remove('clip'); });
+  document.addEventListener('error', function (ev) {
+    var img = ev.target; if (!img || img.tagName !== 'IMG') return;
+    var g = img.closest('.shots'); img.parentNode.remove();
+    if (g && !g.children.length) g.outerHTML = '<p class="shots-fail">效果图加载不出来（图在 X 上，可能需要代理），点"看原文"去原帖看。</p>';
+  }, true);
+
+  window.addEventListener('hashchange', route);
+  IH.load().then(function (t) { T = t; route(); })
+    .catch(function (e) { $main.innerHTML = '<p class="empty" style="padding-top:60px">读取数据失败：' + esc(e.message) + '</p>'; });
+  IH.switcher('b');
+})();
+</script>
+</body>
+</html>
