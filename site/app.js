@@ -4,6 +4,13 @@
 
   var state = { data: null, saved: {}, pass: '', filter: '全部', auth: true };
   try { state.pass = localStorage.getItem('infohub-pass') || ''; } catch (e) {}
+  var readSet = {};
+  try { readSet = JSON.parse(localStorage.getItem('infohub-read') || '{}') || {}; } catch (e) {}
+  function markRead(id) {
+    if (!id || readSet[id]) return;
+    readSet[id] = 1;
+    try { localStorage.setItem('infohub-read', JSON.stringify(readSet)); } catch (e) {}
+  }
 
   var $main = document.getElementById('main');
   var $sync = document.getElementById('sync');
@@ -94,28 +101,30 @@
     if (e.source) meta.push('<span>' + esc(e.source) + '</span>');
     if (e.published) meta.push('<span>' + esc(e.published) + '</span>');
     if (e.extraMeta) meta.push(e.extraMeta);
-    return '<article class="item" data-id="' + esc(e.id) + '">' +
-      '<span class="loc" title="库位编码">' + esc(e.code) + '</span>' +
-      '<div>' +
-        '<h3><a href="' + esc(safeUrl(e.url)) + '" target="_blank" rel="noopener noreferrer">' + esc(e.title) + '</a></h3>' +
-        '<p class="meta">' + meta.join('') + tags + '</p>' +
-        (e.summary ? '<p class="summary">' + esc(e.summary) + '</p>' : '') +
-        (e.why ? '<p class="why"><strong>' + esc(e.whyLabel || '为什么值得看') + '：</strong>' + esc(e.why) + '</p>' : '') +
+    var read = readSet[e.id];
+    return '<article class="item' + (read ? ' is-read' : '') + (e.compact ? ' compact' : '') + '" data-id="' + esc(e.id) + '">' +
+        '<h3><a href="' + esc(safeUrl(e.url)) + '" target="_blank" rel="noopener noreferrer" data-act="open">' + esc(e.title) + '</a></h3>' +
+        '<p class="meta">' + meta.join('') + tags + (read ? '<span class="read-mark">已读</span>' : '') + '<span class="loc" title="条目编号，收藏和搜索时用">' + esc(e.code) + '</span></p>' +
+        (e.summary ? '<p class="summary' + (e.compact ? ' clamp' : '') + '">' + esc(e.summary) + '</p>' : '') +
+        (e.why ? '<p class="why"><span class="why-label">' + esc(e.whyLabel || '为什么值得看') + '</span>' + esc(e.why) + '</p>' : '') +
         (saved && saved.note ? '<p class="note-text">' + esc(saved.note) + '</p>' : '') +
-        '<div class="actions">' +
-          '<button type="button" data-act="save" aria-pressed="' + (saved ? 'true' : 'false') + '">' + (saved ? '已收藏' : '收藏') + '</button>' +
-          '<button type="button" data-act="note">' + (saved && saved.note ? '改笔记' : '写笔记') + '</button>' +
-          '<a class="linkbtn" href="' + esc(safeUrl(e.url)) + '" target="_blank" rel="noopener noreferrer">看原文</a>' +
-        '</div>' +
-      '</div>' +
+        actionsHTML(saved, e.url) +
     '</article>';
+  }
+
+  function actionsHTML(saved, url) {
+    return '<div class="actions">' +
+      '<a class="act act-open" href="' + esc(safeUrl(url)) + '" target="_blank" rel="noopener noreferrer" data-act="open">看原文</a>' +
+      '<button type="button" class="act" data-act="save" aria-pressed="' + (saved ? 'true' : 'false') + '">' + (saved ? '已收藏' : '收藏') + '</button>' +
+      '<button type="button" class="act" data-act="note">' + (saved && saved.note ? '改笔记' : '写笔记') + '</button>' +
+    '</div>';
   }
 
   var registry = {}; // id -> 快照，用于收藏
   function reg(e) { registry[e.id] = e; return e; }
 
-  function zone(title, count, body) {
-    return '<section class="zone"><div class="zone-bar"><h2>' + esc(title) + '</h2><span class="count">' + count + '</span></div>' +
+  function zone(title, count, body, anchor) {
+    return '<section class="zone"' + (anchor ? ' id="z-' + anchor + '"' : '') + '><div class="zone-bar"><h2>' + esc(title) + '</h2><span class="count">' + count + '</span></div>' +
       '<div class="zone-body">' + (body || '<p class="empty">这一期没有内容。</p>') + '</div></section>';
   }
 
@@ -134,8 +143,7 @@
     if (!imgs || !imgs.length) return '';
     return '<div class="shots">' + imgs.slice(0, 6).map(function (src) {
       return '<a href="' + esc(safeUrl(link || src)) + '" target="_blank" rel="noopener noreferrer">' +
-        '<img src="' + esc(safeUrl(src)) + '" alt="效果图" loading="lazy" referrerpolicy="no-referrer" ' +
-        'onerror="this.parentNode.innerHTML=\'<span class=img-fail>图片加载不出来，可能需要代理，点这里看原帖</span>\'"></a>';
+        '<img src="' + esc(safeUrl(src)) + '" alt="效果图" loading="lazy" referrerpolicy="no-referrer"></a>';
     }).join('') + '</div>';
   }
   function promptHTML(prompt, promptZh) {
@@ -144,7 +152,7 @@
       '<div class="prompt-bar"><span>提示词原文</span><span>' +
         (promptZh ? '<button type="button" class="linkbtn" data-act="lang">看中文翻译</button> ' : '') +
         '<button type="button" class="linkbtn" data-act="copy">复制原文</button></span></div>' +
-      '<pre>' + esc(prompt) + '</pre></div>';
+      '<pre class="clamp">' + esc(prompt) + '</pre></div>';
   }
   function demoHTML(demo) {
     if (!demo) return '';
@@ -161,10 +169,9 @@
     if (s.stars) meta.push(esc(s.stars) + ' 星');
     if (s.posted) meta.push(esc(s.posted));
     if (s.metrics) meta.push(esc(s.metrics));
-    return '<article class="skill item-like" data-id="' + esc(s.id) + '">' +
-      '<div class="skill-head"><span class="loc">' + esc(s.code) + '</span>' +
-      '<h3><a href="' + esc(safeUrl(s.url)) + '" target="_blank" rel="noopener noreferrer">' + esc(s.name) + '</a></h3></div>' +
-      '<p class="meta" style="margin-top:6px">' + meta.map(function (m) { return '<span>' + m + '</span>'; }).join('') + '</p>' +
+    return '<article class="skill" data-id="' + esc(s.id) + '">' +
+      '<h3><a href="' + esc(safeUrl(s.url)) + '" target="_blank" rel="noopener noreferrer" data-act="open">' + esc(s.name) + '</a></h3>' +
+      '<p class="meta">' + meta.map(function (m, i) { return i === 0 ? '<span class="cat">' + m + '</span>' : '<span>' + m + '</span>'; }).join('') + '<span class="loc">' + esc(s.code) + '</span></p>' +
       '<dl>' +
         (s.what ? '<dt>做什么</dt><dd>' + esc(s.what) + '</dd>' : '') +
         (s.scene ? '<dt>适合</dt><dd>' + esc(s.scene) + '</dd>' : '') +
@@ -172,11 +179,7 @@
       '</dl>' +
       demoHTML(s.demo) + imagesHTML(s.images, s.url) + promptHTML(s.prompt, s.promptZh) +
       (saved && saved.note ? '<p class="note-text">' + esc(saved.note) + '</p>' : '') +
-      '<div class="actions">' +
-        '<button type="button" data-act="save" aria-pressed="' + (saved ? 'true' : 'false') + '">' + (saved ? '已收藏' : '收藏') + '</button>' +
-        '<button type="button" data-act="note">' + (saved && saved.note ? '改笔记' : '写笔记') + '</button>' +
-        '<a class="linkbtn" href="' + esc(safeUrl(s.url)) + '" target="_blank" rel="noopener noreferrer">看原文</a>' +
-      '</div></article>';
+      actionsHTML(saved, s.url) + '</article>';
   }
 
   function allSkills() {
@@ -201,29 +204,45 @@
   }
 
   // ---------- 页面 ----------
-  function viewDaily(d) {
-    if (!d) return '<h1 class="page-title">还没有日报</h1><p class="page-lead">每天早上 7:51 会自动生成第一期，生成后这里就会显示。</p>';
-    var html = '<header class="masthead"><p class="stamp"><span class="stamp-date">' + esc(d.date.slice(5).replace('-', '.')) + '</span>' +
-      '<span class="stamp-sub">' + esc(cnDate(d.date)) + ' 日报</span></p>' +
-      '<p class="headline">' + esc(d.headline) + '</p></header>';
-    (d.sections || []).forEach(function (s) {
-      var prefix = s.key === 'wh' ? 'WH' : 'AI';
-      var items = itemsFromSection(prefix, d.date, s.items);
-      html += zone(s.title || (s.key === 'wh' ? '仓储物流自动化' : 'AI'), items.length, items.map(itemHTML).join(''));
-    });
-    var x = (state.data.x || []).filter(function (f) { return f.date <= d.date; })[0];
+  function viewDaily(d, isToday) {
+    var zones = [], html;
+    if (d) {
+      html = '<header class="masthead"><p class="stamp"><span class="stamp-date">' + esc(d.date.slice(5).replace('-', '.')) + '</span>' +
+        '<span class="stamp-sub">' + esc(cnDate(d.date)) + ' 日报</span></p>' +
+        '<p class="headline">' + esc(d.headline) + '</p></header>';
+      (d.sections || []).forEach(function (s) {
+        var prefix = s.key === 'wh' ? 'WH' : 'AI';
+        var title = s.title || (s.key === 'wh' ? '仓储物流自动化' : 'AI');
+        var items = itemsFromSection(prefix, d.date, s.items);
+        zones.push({ key: s.key, title: title, n: items.length, html: zone(title, items.length, items.map(itemHTML).join(''), s.key) });
+      });
+    } else if (isToday) {
+      html = '<header class="masthead"><h1 class="page-title">今天的日报还没生成</h1>' +
+        '<p class="page-lead">每天早上 7:51 自动生成，生成后半小时内会出现在这里。先看看下面的 X 精选，或者去<a href="#/week">本周</a>和<a href="#/history">往期</a>。</p></header>';
+    } else {
+      return '<h1 class="page-title">没有这一期日报</h1><p class="page-lead"><a href="#/history">回到往期列表</a></p>';
+    }
+    var refDate = d ? d.date : '9999';
+    var x = (state.data.x || []).filter(function (f) { return f.date <= refDate; })[0];
     if (x && x.items && x.items.length) {
       var xs = x.items.map(function (it, i) {
         return reg({
-          id: fullId('X', x.date, i), code: code('X', x.date, i), title: (it.author || it.handle) + '：' + (it.textZh || '').slice(0, 40),
-          url: it.url, source: 'X · ' + (it.handle || ''), published: it.posted, summary: it.textZh,
-          why: it.kind === 'prompt' ? '完整提示词和效果图在「Skill 与提示词」里。' : '', whyLabel: '提示',
+          id: fullId('X', x.date, i), code: code('X', x.date, i), compact: true,
+          title: it.author || it.handle || 'X',
+          url: it.url, source: it.handle || '', published: it.posted, summary: it.textZh,
           tags: [{ prompt: '提示词', news: '资讯', opinion: '观点' }[it.kind] || it.kind]
         });
       });
-      html += zone('X 晚间精选 ' + x.date.slice(5), xs.length, xs.map(itemHTML).join(''));
+      var t = 'X 晚间精选 · ' + x.date.slice(5).replace('-', '.');
+      zones.push({ key: 'x', title: 'X 精选', n: xs.length, html: zone(t, xs.length, xs.map(itemHTML).join(''), 'x') });
     }
-    if (d.notes && d.notes.length) html += '<p class="page-lead" style="margin-top:24px">备注：' + esc(d.notes.join('；')) + '</p>';
+    if (zones.length > 1) {
+      html += '<nav class="jump" aria-label="本期分区">' + zones.map(function (z) {
+        return '<button type="button" data-jump="z-' + esc(z.key) + '">' + esc(z.title) + '<span>' + z.n + '</span></button>';
+      }).join('') + '</nav>';
+    }
+    html += zones.map(function (z) { return z.html; }).join('');
+    if (d && d.notes && d.notes.length) html += '<p class="footnote">备注：' + esc(d.notes.join('；')) + '</p>';
     return html;
   }
 
@@ -349,7 +368,7 @@
     var parts = h.split('/').filter(Boolean);
     var key = parts[0] || 'today';
     var html;
-    if (key === 'today') html = viewDaily((state.data.dailies || [])[0]);
+    if (key === 'today') html = viewDaily((state.data.dailies || [])[0], true);
     else if (key === 'd') html = viewDaily((state.data.dailies || []).filter(function (d) { return d.date === parts[1]; })[0]);
     else if (key === 'week') html = viewWeekly((state.data.weeklies || [])[0]);
     else if (key === 'w') html = viewWeekly((state.data.weeklies || []).filter(function (w) { return w.date === parts[1]; })[0]);
@@ -367,15 +386,53 @@
     Array.prototype.forEach.call(document.querySelectorAll('.zones a'), function (a) {
       if (a.getAttribute('data-route') === current) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
     });
+    enhance();
     window.scrollTo(0, 0);
   }
+
+  // 渲染后处理：长文字折叠、图片失败合并
+  function enhance() {
+    Array.prototype.forEach.call($main.querySelectorAll('.clamp'), function (el) {
+      if (el.scrollHeight <= el.clientHeight + 4) { el.classList.remove('clamp'); return; }
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'more'; b.textContent = '展开全文'; b.setAttribute('data-act', 'more');
+      b.setAttribute('aria-expanded', 'false');
+      el.after(b);
+    });
+  }
+  // 图片加载失败：整组只留一行提示，不留灰块
+  document.addEventListener('error', function (ev) {
+    var img = ev.target;
+    if (!img || img.tagName !== 'IMG' || !img.closest('.shots')) return;
+    var grid = img.closest('.shots');
+    img.parentNode.classList.add('failed');
+    if (grid.querySelectorAll('a:not(.failed)').length === 0) {
+      var link = grid.querySelector('a').getAttribute('href');
+      grid.outerHTML = '<p class="shots-fail">效果图加载不出来（图片在 X 上，可能需要代理）。<a href="' + esc(link) + '" target="_blank" rel="noopener noreferrer">去原帖看图</a></p>';
+    }
+  }, true);
 
   // ---------- 交互 ----------
   function rerenderKeepScroll() { var y = window.scrollY; route(); window.scrollTo(0, y); }
 
   $main.addEventListener('click', function (ev) {
+    var opener = ev.target.closest('a[data-act="open"]');
+    if (opener) {
+      var c = opener.closest('[data-id]');
+      if (c) { markRead(c.getAttribute('data-id')); c.classList.add('is-read'); }
+      return;
+    }
     var btn = ev.target.closest('button');
     if (!btn) return;
+    if (btn.getAttribute('data-act') === 'more') {
+      var target = btn.previousElementSibling;
+      var open = target.classList.toggle('open');
+      btn.textContent = open ? '收起' : '展开全文';
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      return;
+    }
+    var jump = btn.getAttribute('data-jump');
+    if (jump) { var z = document.getElementById(jump); if (z) z.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
     var act = btn.getAttribute('data-act');
     var filter = btn.getAttribute('data-filter');
     if (filter) { state.filter = filter; rerenderKeepScroll(); return; }
@@ -391,6 +448,7 @@
         var pre = box.querySelector('pre');
         var showingZh = btn.textContent === '看原文';
         pre.textContent = showingZh ? box.getAttribute('data-prompt-en') : box.getAttribute('data-prompt-zh');
+        box.querySelector('.prompt-bar span').textContent = showingZh ? '提示词原文' : '提示词中文翻译';
         btn.textContent = showingZh ? '看中文翻译' : '看原文';
       }
       return;
