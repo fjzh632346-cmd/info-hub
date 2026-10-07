@@ -4,35 +4,19 @@
   "items": [
     {
       "kind": "prompt",
-      "category": "照片艺术",
-      "author": "Ozan Sihay",
-      "handle": "@ozansihay",
-      "url": "https://x.com/ozansihay/status/2107544398531637407",
-      "posted": "2026-10-07",
-      "metrics": "5.1 万查看",
-      "textZh": "作者用同一段提示词依次测试了 Nano Banana 2.1、GPT Image 2.5、Grok Imagine 2.0、Ideogram 4.5 四个图像模型，主题是伊斯坦布尔博斯普鲁斯海峡边的夜间街头烤肉摊。四张图按模型顺序排列，适合直接对比各家在写实街拍、霓虹招牌文字和夜景光影上的差别。",
-      "prompt": "Ultra-realistic night street photograph on the Istanbul Bosphorus waterfront. A tiny makeshift caravan food stall, slightly battered metal sides, steam rising. Hand-painted neon-style rickety sign reading “Köfteci Buğra Usta” in Turkish, glowing uneven cyan and warm amber, wires and brackets visibly DIY. Inside the open caravan, the usta grilling köfte over charcoal, orange ember glow on his face and apron. One waiter in a simple dark shirt stands in front of the stall; the same “Köfteci Buğra Usta” lettering is printed on the back of his shirt. Plastic stools and small low tables outside, a few locals eating, soft conversation. A plastic water jug (damacana) near the counter. Behind them, dark Bosphorus water with distant city lights and a faint ferry silhouette. Wet asphalt reflections, streetlamp spill, shallow depth of field, natural film grain, shot on 35mm f/1.8, candid documentary look, no CGI look, no text errors on signs.",
-      "promptZh": "超写实的夜间街头照片，地点在伊斯坦布尔博斯普鲁斯海峡沿岸。一个小小的简易房车小吃摊，金属侧板略有磕碰，蒸汽升腾。手绘的霓虹风格歪斜招牌，用土耳其语写着“Köfteci Buğra Usta”（布拉师傅肉丸店），发出不均匀的青色和暖琥珀色光，电线和支架明显是自己搭的。敞开的房车里，师傅正在炭火上烤肉丸，橙色炭火映在他的脸和围裙上。一名穿简单深色衬衫的服务员站在摊位前，衬衫背后印着同样的“Köfteci Buğra Usta”字样。摊外摆着塑料凳和小矮桌，几个本地人在吃东西，轻声交谈。柜台旁放着一个塑料大水桶。背景是幽暗的博斯普鲁斯海水、远处城市灯火和一艘渡轮的模糊剪影。湿漉漉的柏油路反光，路灯光溢出，浅景深，自然胶片颗粒，35mm f/1.8 拍摄，抓拍纪实风格，不要 CGI 感，招牌文字不能出错。",
+      "category": "视频",
+      "score": 88,
+      "author": "testarossa",
+      "handle": "@rossaxbt",
+      "url": "https://x.com/rossaxbt/status/2107483570885312793",
+      "posted": "2026-10-06",
+      "metrics": "2.3 万查看",
+      "textZh": "作者用 Opus 5.5 一段提示词做出一支 22 秒的产品动效视频：每一帧都是 HTML canvas 代码画出来的，再用 Playwright（浏览器自动化工具）逐帧渲染成视频，全程没用 After Effects。他把完整模板公开了，换上自己产品的问答、封面、音乐和 logo 就能复刻。提示词的写法值得学：先列输入素材，再写导演要求（时长、缓动曲线、配色、禁止项）、分镜结构、技术实现和常见坑，最后要求 AI 先给节拍图和静帧确认再渲染。",
+      "prompt": "<inputs>\nAsk me for: one question a user asks my product and its one-line answer, two album covers, a royalty-free song around 110 BPM with a quiet intro and a hard drop (Mixkit, free for commercial use), and my logo for the ending. If I skip anything, use these defaults: \"is this all code?\" / \"yes. every frame.\", two atmospheric photos, and Mixkit \"Head Bang\".\n</inputs>\n\n<direction>\nA 22-second square loop, 1440x1440 at 60fps. 2D only, one continuous take. Nothing cuts: each scene grows from the one before it, and every gesture carries the camera into the next space. Each morph takes 0.8s on cubic-bezier(.45,0,.15,1). The camera zoom follows the same curve, making the shape changes feel almost invisible. Content dissolves during the second half of each glide. One gesture per scene.\n\nLook: a warm light stage (#f3f3f0 to #e3e3de), black UI, and a dark app world (#121212) tinted by the current album cover. Use one green accent (#1ed760), Geist for UI, the real macOS pointer, and soft layered shadows that grow as shapes lift.\n\nBanned: hard cuts, bouncy springs, particles, glows, zooming in and immediately back out, holds longer than 1s, anything that feels like a template.\n</direction>\n\n<structure>\nFollow the song's beats. The press lands on the drop.\n\nGenerate: the cursor clicks. The pill glides into a spinner, then becomes a check.\n\nChat: the check splits into three typing dots with goo. The left dot flies up, becomes the question bubble and types the question. The right dot flies down into the reply. Both bubbles shrink back into dots as they glide toward the center and merge with the middle dot.\n\nPlay: the middle dot bends into a play triangle, one point at a time. The cursor presses it on the drop. A white button appears under the click as the dark app floods the frame around it, leaving the white shape as the play button. The camera pulls back to reveal the full now-playing screen: large cover, title, heart (liked, filling green), progress bar, controls and volume.\n\nSwipe: the cursor drags the cover sideways. The next track slides in, and the app changes its tint to match the new cover.\n\nDrag: the camera glides toward the volume slider. The cursor pulls it to max and keeps going. The bar rubber-bands, dragging the camera sideways out of the app and onto a dark dotted canvas while the camera follows the knob.\n\nChart: the line lands and curves upward into a green chart as the number counts up. The volume knob becomes the chart's final point.\n\nDive: the cursor clicks that point. The camera dives into it until the light stage fills the frame.\n\nEnding: an \"Ask [my product]\" button grows from the light, narrows into a line, then fans out into my logo (default: the Claude spark, with six copies rotating into twelve rays in Claude orange). The logo folds back into the line, which thickens into Generate. Last frame = first frame.\n</structure>\n\n<build>\n1. One HTML canvas. Everything is computed from time inside seek(t): no timers or state carried between frames.\n2. Use a camera with position and log-space zoom. Place scenes side by side in one world so every pan actually travels between them.\n3. Goo: blur and alpha threshold on an offscreen layer for the split and merges.\n4. Floods: grow circles from the point that caused them to the farthest corner in about 0.4s. Change the color underneath.\n5. Sound: before the press, play the song through a low-pass filter so it feels like it's in the next room. Open it to full sound on the drop. Use a downloaded Mixkit SFX for every event, positioned by its measured peak. Loudnorm to -14 LUFS.\n6. Render with Playwright at 60fps using 4 motion-blur subframes, and 12 for the fast pan. Scan every frame for single-frame jumps and fix them.\n</build>\n\n<gotchas>\nA handoff between two drawings will pop unless the first has fully landed. Keep the cursor attached to whatever it drags, even when that object stretches. Counters and tooltips that update every frame smear under motion blur, so swap complete values instead.\n</gotchas>\n\n<start>\nAsk me for the inputs, then show me the beat map and 6 stills (chat, play, app, drag, chart, logo) before rendering.\n</start>",
+      "promptZh": "<输入>\n向我索要：用户会问我产品的一个问题及一句话回答、两张专辑封面、一首约 110 BPM、前奏安静、有强烈\"drop\"（高潮爆点）的免版税歌曲（Mixkit，可免费商用），以及结尾用的 logo。如果我漏给了什么，就用默认值：\"这全是代码吗？\"/\"是的，每一帧都是。\"、两张有氛围感的照片、Mixkit 的《Head Bang》。\n</输入>\n\n<导演要求>\n22 秒方形循环视频，1440x1440，60fps。只做 2D，一镜到底。不许硬切：每个场景都从上一个场景\"长\"出来，每个动作都把镜头带进下一个空间。每次形变用时 0.8 秒，缓动曲线 cubic-bezier(.45,0,.15,1)。镜头缩放沿用同一条曲线，让形状变化几乎察觉不到。内容在每段滑动的后半段淡出。每个场景只做一个动作。\n\n视觉：暖色浅色舞台（#f3f3f0 到 #e3e3de）、黑色 UI，以及一个按当前专辑封面着色的深色 App 世界（#121212）。只用一种绿色强调色（#1ed760），UI 字体用 Geist，用真实的 macOS 鼠标指针，形状抬起时柔和的层叠阴影随之变大。\n\n禁止：硬切、弹跳弹簧动画、粒子、发光、放大后立刻缩回、停顿超过 1 秒、任何有模板感的东西。\n</导演要求>\n\n<结构>\n跟着歌曲节拍走，按下的动作落在 drop 上。\n\n生成：光标点击，胶囊按钮滑变成加载转圈，再变成对勾。\n\n聊天：对勾以\"黏液\"效果分裂成三个输入中的小圆点。左边的点飞上去变成提问气泡并打出问题；右边的点飞下来变成回答。两个气泡在滑向中心时缩回成圆点，和中间的点合并。\n\n播放：中间的点一个角一个角地弯成播放三角形。光标在 drop 时按下它。点击处出现白色按钮，同时深色 App 从周围漫开填满画面，白色形状留下来成为播放键。镜头后拉，露出完整的正在播放界面：大封面、标题、爱心（已喜欢，填充绿色）、进度条、控制按钮和音量。\n\n滑动：光标把封面横向拖走，下一首滑入，App 的色调随新封面变化。\n\n拖拽：镜头滑向音量条。光标把它拉到最大还继续拉，音量条像橡皮筋一样把镜头横向拖出 App，来到深色点阵画布上，镜头跟着滑块走。\n\n图表：线条落下并向上弯成绿色图表，数字同步往上跳。音量滑块变成图表的最后一个点。\n\n俯冲：光标点击那个点，镜头一路钻进去，直到浅色舞台填满画面。\n\n结尾：\"Ask [我的产品]\"按钮从光里长出来，收窄成一条线，再展开成我的 logo（默认：Claude 星芒，六个副本旋转成十二道 Claude 橙色光芒）。logo 折回成线，线加粗变回\"生成\"按钮。最后一帧 = 第一帧。\n</结构>\n\n<制作>\n1. 只用一个 HTML canvas。所有画面都在 seek(t) 里由时间算出来：不用计时器，帧与帧之间不保留状态。\n2. 用一个有位置和对数空间缩放的镜头。把所有场景并排放在同一个世界里，让每次平移都是真的在场景之间移动。\n3. 黏液效果：在离屏图层上做模糊 + 透明度阈值，用于分裂和合并。\n4. 漫开效果：从触发点画圆，约 0.4 秒扩到最远的角，同时换掉下面的颜色。\n5. 声音：按下之前，让歌曲经过低通滤波，听起来像在隔壁房间；drop 时完全打开。每个事件都用下载的 Mixkit 音效，按实测峰值对齐。响度标准化到 -14 LUFS。\n6. 用 Playwright 以 60fps 渲染，每帧 4 个运动模糊子帧，快速平移时用 12 个。逐帧检查单帧跳变并修掉。\n</制作>\n\n<注意事项>\n两个图形交接时，前一个没完全落定就会\"跳\"。光标要一直粘在它拖动的东西上，哪怕那东西被拉伸。每帧都变化的计数器和提示框在运动模糊下会糊掉，所以直接切换完整数值。\n</注意事项>\n\n<开始>\n先向我要输入素材，渲染前先给我看节拍图和 6 张静帧（聊天、播放、App、拖拽、图表、logo）。\n</开始>",
+      "video": "https://x.com/rossaxbt/status/2107483570885312793",
       "images": [
-        "https://pbs.twimg.com/media/HT-AK4hWUAANBVo?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HT-AMWBXIAAhftM?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HT-ANNbXwAEsxPJ?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HT-AOPmXkAATAaJ?format=jpg&name=large"
-      ]
-    },
-    {
-      "kind": "prompt",
-      "category": "照片艺术",
-      "author": "Hakm",
-      "handle": "@hakmgpt",
-      "url": "https://x.com/hakmgpt/status/2107535382183387282",
-      "posted": "2026-10-07",
-      "metrics": "1.2 万查看",
-      "textZh": "四个图像模型对比：Nano Banana 2.1、GPT-image 2.5、Muse-image、Qwen-image 2.1，用同一段复古丝网印刷风格海报提示词画夜海中的彩色灯塔。拼图里四格分别标注了模型名，能看出各家对半网点、套色错位和复古配色的理解差异。",
-      "prompt": "A spectacular vintage screen-print illustration of a tall colorful lighthouse standing alone on a dark rocky island in a vast nighttime ocean. The lighthouse has geometric blocks of cream, hot pink, yellow and cobalt blue, with a dark blue roof. Its powerful yellow beam sweeps across the sky in a huge curved arc. Deep blue ocean with stylized white waves fills the bottom of the image. Dense halftone dots cover every surface, with rough paper texture and imperfect ink registration. Limited retro CMYK palette, flat graphic shapes, 1970s children's storybook screen-print aesthetic, mysterious and magical atmosphere, no text, 16:9.",
-      "promptZh": "一幅壮观的复古丝网印刷插画：一座高大的彩色灯塔孤零零地立在夜晚辽阔大海中的黑色礁石岛上。灯塔由奶油色、亮粉、黄色和钴蓝色的几何色块组成，屋顶是深蓝色。强烈的黄色光束以巨大的弧线扫过天空。画面底部是深蓝色海洋和风格化的白色浪花。所有表面都覆盖着密集的半调网点，带有粗糙纸张质感和不完美的套色错位。有限的复古 CMYK 配色，扁平图形，1970 年代儿童绘本丝网印刷美学，神秘而梦幻的氛围，不要文字，16:9。",
-      "images": [
-        "https://pbs.twimg.com/media/HT94I2sWAAAWpmU?format=jpg&name=large"
+        "https://pbs.twimg.com/amplify_video_thumb/2107457858237337600/img/dkQroS7scLiQE5PD.jpg"
       ]
     },
     {
@@ -48,6 +32,73 @@
       "promptZh": "最新一期 Acquired 关于 Home Depot 的节目非常精彩。我想让你做一个能讲述整期内容的 Artifact。做得漂亮、可交互，重点传达整期节目里的商业智慧精华。一定要做得非常好，多花 token，反复迭代，直到你自己满意为止。可以在全篇加入水彩插画和历史照片，目标是《纽约客》或《纽约时报》数据可视化的风格，甚至更好。我觉得你可以用 OpenCV 来处理水彩图。",
       "images": [
         "https://pbs.twimg.com/media/HT92FNObkAAJlae?format=jpg&name=large"
+      ],
+      "score": 85
+    },
+    {
+      "kind": "prompt",
+      "category": "照片艺术",
+      "author": "Ozan Sihay",
+      "handle": "@ozansihay",
+      "url": "https://x.com/ozansihay/status/2107544398531637407",
+      "posted": "2026-10-07",
+      "metrics": "5.1 万查看",
+      "textZh": "作者用同一段提示词依次测试了 Nano Banana 2.1、GPT Image 2.5、Grok Imagine 2.0、Ideogram 4.5 四个图像模型，主题是伊斯坦布尔博斯普鲁斯海峡边的夜间街头烤肉摊。四张图按模型顺序排列，适合直接对比各家在写实街拍、霓虹招牌文字和夜景光影上的差别。",
+      "prompt": "Ultra-realistic night street photograph on the Istanbul Bosphorus waterfront. A tiny makeshift caravan food stall, slightly battered metal sides, steam rising. Hand-painted neon-style rickety sign reading “Köfteci Buğra Usta” in Turkish, glowing uneven cyan and warm amber, wires and brackets visibly DIY. Inside the open caravan, the usta grilling köfte over charcoal, orange ember glow on his face and apron. One waiter in a simple dark shirt stands in front of the stall; the same “Köfteci Buğra Usta” lettering is printed on the back of his shirt. Plastic stools and small low tables outside, a few locals eating, soft conversation. A plastic water jug (damacana) near the counter. Behind them, dark Bosphorus water with distant city lights and a faint ferry silhouette. Wet asphalt reflections, streetlamp spill, shallow depth of field, natural film grain, shot on 35mm f/1.8, candid documentary look, no CGI look, no text errors on signs.",
+      "promptZh": "超写实的夜间街头照片，地点在伊斯坦布尔博斯普鲁斯海峡沿岸。一个小小的简易房车小吃摊，金属侧板略有磕碰，蒸汽升腾。手绘的霓虹风格歪斜招牌，用土耳其语写着“Köfteci Buğra Usta”（布拉师傅肉丸店），发出不均匀的青色和暖琥珀色光，电线和支架明显是自己搭的。敞开的房车里，师傅正在炭火上烤肉丸，橙色炭火映在他的脸和围裙上。一名穿简单深色衬衫的服务员站在摊位前，衬衫背后印着同样的“Köfteci Buğra Usta”字样。摊外摆着塑料凳和小矮桌，几个本地人在吃东西，轻声交谈。柜台旁放着一个塑料大水桶。背景是幽暗的博斯普鲁斯海水、远处城市灯火和一艘渡轮的模糊剪影。湿漉漉的柏油路反光，路灯光溢出，浅景深，自然胶片颗粒，35mm f/1.8 拍摄，抓拍纪实风格，不要 CGI 感，招牌文字不能出错。",
+      "images": [
+        "https://pbs.twimg.com/media/HT-AK4hWUAANBVo?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HT-AMWBXIAAhftM?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HT-ANNbXwAEsxPJ?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HT-AOPmXkAATAaJ?format=jpg&name=large"
+      ],
+      "score": 82
+    },
+    {
+      "kind": "prompt",
+      "category": "网页设计",
+      "score": 80,
+      "author": "程序员鱼皮",
+      "handle": "@yupi996",
+      "url": "https://x.com/yupi996/status/2107735426769551691",
+      "posted": "2026-10-07",
+      "metrics": "1.4 万查看",
+      "textZh": "做网页时与其费力描述动画效果，不如直接告诉 AI 它们的专业名称：1）Scroll-triggered：滚进屏幕自动播完，如卡片淡入；2）Scroll-linked：滚多少动多少，如顶部阅读进度条；3）Parallax（视差）：背景比前景滚得慢；4）Sticky：滚到顶就钉住，如通讯录字母标题；5）Scroll Snap：一次停一屏；6）Horizontal Scroll：往下滚、卡片横着走。例如直接说\"导航栏用 Sticky，首屏背景做成 Parallax\"。",
+      "prompt": "导航栏用 Sticky，首屏背景做成 Parallax",
+      "promptZh": "导航栏用 Sticky（滚到顶部后固定），首屏背景做成 Parallax（视差滚动）",
+      "video": "https://x.com/yupi996/status/2107735426769551691"
+    },
+    {
+      "kind": "prompt",
+      "category": "照片艺术",
+      "author": "Hakm",
+      "handle": "@hakmgpt",
+      "url": "https://x.com/hakmgpt/status/2107535382183387282",
+      "posted": "2026-10-07",
+      "metrics": "1.2 万查看",
+      "textZh": "四个图像模型对比：Nano Banana 2.1、GPT-image 2.5、Muse-image、Qwen-image 2.1，用同一段复古丝网印刷风格海报提示词画夜海中的彩色灯塔。拼图里四格分别标注了模型名，能看出各家对半网点、套色错位和复古配色的理解差异。",
+      "prompt": "A spectacular vintage screen-print illustration of a tall colorful lighthouse standing alone on a dark rocky island in a vast nighttime ocean. The lighthouse has geometric blocks of cream, hot pink, yellow and cobalt blue, with a dark blue roof. Its powerful yellow beam sweeps across the sky in a huge curved arc. Deep blue ocean with stylized white waves fills the bottom of the image. Dense halftone dots cover every surface, with rough paper texture and imperfect ink registration. Limited retro CMYK palette, flat graphic shapes, 1970s children's storybook screen-print aesthetic, mysterious and magical atmosphere, no text, 16:9.",
+      "promptZh": "一幅壮观的复古丝网印刷插画：一座高大的彩色灯塔孤零零地立在夜晚辽阔大海中的黑色礁石岛上。灯塔由奶油色、亮粉、黄色和钴蓝色的几何色块组成，屋顶是深蓝色。强烈的黄色光束以巨大的弧线扫过天空。画面底部是深蓝色海洋和风格化的白色浪花。所有表面都覆盖着密集的半调网点，带有粗糙纸张质感和不完美的套色错位。有限的复古 CMYK 配色，扁平图形，1970 年代儿童绘本丝网印刷美学，神秘而梦幻的氛围，不要文字，16:9。",
+      "images": [
+        "https://pbs.twimg.com/media/HT94I2sWAAAWpmU?format=jpg&name=large"
+      ],
+      "score": 78
+    },
+    {
+      "kind": "prompt",
+      "category": "视频",
+      "score": 74,
+      "author": "Abhishek",
+      "handle": "@HeyAbhishek",
+      "url": "https://x.com/HeyAbhishek/status/2107458140279394589",
+      "posted": "2026-10-06",
+      "metrics": "2.5 万查看",
+      "textZh": "一支 30 秒竖屏 3D 动画短片（小海狸 Nibs 过峡谷摘果子，最后发现\"山\"是一只巨龟）的完整制作流程：先用 GPT Image 2.5 生成角色设定稿（正侧背视图、表情条、配色板），再把设定稿作为参考图交给 Seedance 2.5 按分镜生成视频，保证角色前后一致。这里收的是第一步角色设定稿的完整提示词；第二步的 Seedance 分镜提示词很长（按秒写了每个镜头），在帖子回复里，点开原帖可看。",
+      "prompt": "Character-design reference sheet on a clean light cream / pale warm-yellow studio background, neatly organized like an official premium 3D animated feature-film character model sheet.\nEvery view must depict the EXACT SAME original beaver character with strict identity, markings, proportions, fur pattern and color consistency.\nTop-left title block:\nNIBS — TINY ENGINEER\nTYPE: young beaver\nPERSONALITY: inventive / optimistic / stubborn / fearless / accident-prone\nBUILD: tiny compact body / oversized flat tail / large feet\nSTYLE: premium realistic 3D animated character\nAGE APPEARANCE: young\nBelow the title include a labeled COLOR PALETTE:\nDARK CHOCOLATE FUR\nWARM BROWN FUR\nCREAM MUZZLE\nDARK TAIL\nFRONT TEETH\nNOSE\nAMBER EYES\nMODEL-SHEET LAYOUT\nCenter-left:\nLarge FULL-BODY FRONT VIEW\nLarge FULL-BODY SIDE VIEW\nCenter:\nLarge FULL-BODY 3/4 HERO VIEW\nFULL-BODY REAR VIEW, clearly showing the tail\nCenter-right:\nHEAD FRONT VIEW\nHEAD SIDE VIEW\nHEAD 3/4 VIEW\nBottom:\nEXPRESSION STRIP\nHAPPY\nTHINKING\nDETERMINED\nPROUD\nCONFUSED\nPANICKED\nDAZED\nBeside the expression strip show three small action poses:\ndragging an enormous stick\npushing a heavy object with his back and feet\nstanding proudly with both paws on his hips\nCHARACTER DESIGN\nNibs is an entirely original young beaver designed around an instantly recognizable silhouette.\nVery small, compact pear-shaped body.\nSlightly oversized head relative to his body.\nRich dark chocolate-brown fur across the top of his head, back, arms and legs.\nSlightly warmer medium-brown fur along the sides.\nSoft cream-colored muzzle, lower cheeks, throat and small upper-chest patch.\nFur is slightly scruffy rather than perfectly groomed, with several irregular tufts around his cheeks, forehead, elbows and belly.\nTwo tiny rounded ears partially hidden inside his fur.\nLarge expressive warm amber-brown eyes with clearly visible irises and natural highlights.\nEyes are expressive but retain believable animal anatomy.\nSmall glossy dark-brown triangular nose.\nTwo clearly visible oversized cream-colored front incisors.\nThe two teeth are slightly uneven, with one sitting subtly lower than the other, creating a memorable but natural asymmetry.\nShort powerful arms with small dark paws.\nLarge hind feet.\nShort legs.\nSIGNATURE TAIL\nNibs has an unusually large, broad dark-brown flat beaver tail, nearly the length of his torso.\nRounded paddle shape.\nClearly visible realistic overlapping scale texture.\nThick where it connects to the body and gradually flattening toward the end.\nThe tail should feel slightly oversized for Nibs and become a major part of his silhouette and physical comedy.\nIt must remain identical in every view.\nFACE\nFriendly and intelligent.\nNibs should naturally look as though he is constantly figuring something out.\nHis thinking expression should involve slightly narrowed eyes and a tiny head tilt.\nHis excited expression should use widened amber eyes and raised posture.\nHis panic should remain cute and readable without extreme facial deformation.\nNo human eyebrows.\nNo clothing.\nNo hat.\nNo tool belt.\nNo glasses.\nNo shoes.\nNo accessories.\nNo logos.\nNo weapons.\nRENDERING\nPremium photorealistic 3D CGI animated-feature rendering.\nDense individually defined fur strands.\nSoft fur displacement.\nRealistic fur clumping.\nHighly detailed tail scales.\nNatural paw pads.\nSubtle subsurface scattering in ears and nose.\nRealistic wet eye reflections.\nSoft cinematic studio illumination.\nPhysically realistic materials.\nGentle contact shadows.\nExtremely clean professional character-model presentation.\nCombine believable beaver anatomy with carefully exaggerated animated proportions designed for expressive physical comedy.\nNibs must have a completely original character design and visual identity.\nDo not reproduce or closely resemble any recognizable existing animated beaver, rodent, mascot, film character, television character or franchise character.\nClean pale warm-yellow studio background only.\nNo environment.\nNo unrelated props.\nNo additional characters.\nStrict identity consistency across every view.",
+      "promptZh": "角色设计参考图（设定稿），背景是干净的浅奶油色/淡暖黄色摄影棚，排版整齐，像正式的高品质 3D 动画电影角色模型设定稿。\n每个视图都必须画的是\"完全相同\"的原创海狸角色，身份特征、斑纹、比例、毛发图案和颜色严格一致。\n左上角标题区：\nNIBS — 小小工程师\n类型：年轻海狸\n性格：爱发明 / 乐观 / 倔强 / 无畏 / 容易闯祸\n体型：小而紧凑的身体 / 超大扁尾巴 / 大脚\n风格：高品质写实 3D 动画角色\n外表年龄：年轻\n标题下方放一个带标注的配色板：\n深巧克力色毛、暖棕色毛、奶油色口鼻、深色尾巴、门牙、鼻子、琥珀色眼睛\n设定稿布局\n中左：大尺寸全身正视图、大尺寸全身侧视图\n中间：大尺寸全身 3/4 主视图、全身背视图（清楚展示尾巴）\n中右：头部正视图、头部侧视图、头部 3/4 视图\n底部：表情条——开心、思考、坚定、得意、困惑、慌张、发懵\n表情条旁边画三个小动作姿势：拖一根巨大的树枝；用背和脚推重物；双爪叉腰骄傲站立\n角色设计\nNibs 是完全原创的年轻海狸，围绕一眼能认出的剪影来设计。\n身体很小、紧凑、呈梨形；头相对身体略大。\n头顶、背部、手臂和腿是浓郁的深巧克力棕色毛；身体两侧是稍暖的中棕色毛。\n口鼻、下脸颊、喉部和上胸一小块是柔和的奶油色。\n毛发略显蓬乱而不是梳得整整齐齐，脸颊、额头、手肘和肚子周围有几撮不规则的翘毛。\n两只小圆耳朵半藏在毛里。\n大而有表现力的暖琥珀棕色眼睛，虹膜清晰，有自然高光；眼睛有表现力但保留可信的动物解剖结构。\n小而有光泽的深棕色三角形鼻子。\n两颗明显的超大奶油色门牙，略微不齐，一颗比另一颗低一点，形成好记又自然的不对称。\n短而有力的手臂，深色小爪子；大后脚；短腿。\n标志性尾巴\nNibs 有一条异常大、宽的深棕色扁平海狸尾巴，长度接近躯干。圆桨形，有清晰写实的重叠鳞片纹理；与身体连接处厚，往末端逐渐变扁。尾巴对 Nibs 来说要略显过大，成为剪影和肢体喜剧的重要部分。每个视图里必须完全一致。\n脸部\n友善、聪明。Nibs 看起来应该总是在琢磨什么。思考表情：眼睛微眯、头微微歪。兴奋表情：琥珀色眼睛睁大、身体挺起。慌张时仍然可爱易读，不要极端的面部变形。\n不要人类眉毛、衣服、帽子、工具腰带、眼镜、鞋子、配饰、logo、武器。\n渲染\n高品质照片级写实 3D CGI 动画电影渲染。浓密、根根分明的毛发；柔和的毛发位移；真实的毛发成簇；高细节尾巴鳞片；自然的爪垫；耳朵和鼻子有轻微次表面散射；眼睛有真实的湿润反光；柔和的电影感棚拍光；物理真实的材质；轻柔的接触阴影。极其干净专业的角色模型展示。\n把可信的海狸解剖结构与精心夸张的动画比例结合，服务于有表现力的肢体喜剧。\nNibs 必须是完全原创的角色设计和视觉形象。不要复制或接近任何已知的动画海狸、啮齿动物、吉祥物、电影角色、电视角色或系列角色。\n只要干净的淡暖黄色摄影棚背景。不要环境、不要无关道具、不要其他角色。所有视图严格保持身份一致。",
+      "video": "https://x.com/HeyAbhishek/status/2107458140279394589",
+      "images": [
+        "https://pbs.twimg.com/media/HT8yBtfasAEc7Z4.jpg"
       ]
     },
     {
@@ -89,16 +140,6 @@
       "posted": "2026-10-07",
       "metrics": "2.2 万查看",
       "textZh": "a16z 第 7 版“消费级 AI 应用收入 Top 50”的一个发现：花钱最多的前 1% AI 用户主要买的是“搭建、自动化、上线”类工具。和普通付费用户相比，他们付费使用 n8n 的概率高 23 倍，fal 和 Manus 高 18 倍，Higgsfield 高 15 倍。a16z 另一条帖子还提到 Replit 按收入是前 10，按流量却在倒数 5 名。"
-    },
-    {
-      "kind": "opinion",
-      "category": "其他",
-      "author": "a16z",
-      "handle": "@a16z",
-      "url": "https://x.com/a16z/status/2107572973456769403",
-      "posted": "2026-10-07",
-      "metrics": "2.3 万查看",
-      "textZh": "OpenAI 总裁 Greg Brockman 在 a16z 访谈中讲他们的“安全闭环”：每次新模型发布，先拿它攻自家系统找漏洞。他们曾抽调 25% 的生产工程师暂停手头项目，专门用模型找安全漏洞，修掉了一批严重问题，直到 Astra 模型能找到的 P0 级问题基本找完。目标是把这套流程自动化，内部叫“防御工厂”，每出一代新模型就再跑一轮。"
     },
     {
       "kind": "news",
