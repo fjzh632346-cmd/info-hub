@@ -1,0 +1,31 @@
+# 每天两次抓取信源，写到 feeds/latest.json，供生成日报的定时任务读取
+name: 抓取信源
+on:
+  schedule:
+    - cron: '20 22 * * *'   # 北京时间 06:20（日报 07:51 生成前）
+    - cron: '20 10 * * *'   # 北京时间 18:20
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: fetch-feeds
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node scripts/fetch-feeds.js
+      - name: 提交
+        run: |
+          git config user.name "info-hub"
+          git config user.email "fjzh632346-cmd@users.noreply.github.com"
+          git add feeds/latest.json
+          git diff --cached --quiet && exit 0
+          git commit -m "信源 $(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M')"
+          for i in 1 2 3; do git pull --rebase origin main && git push origin main && exit 0; sleep 5; done
+          exit 1

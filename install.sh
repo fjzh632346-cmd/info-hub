@@ -39,6 +39,8 @@ fi
 # 拉取慢的时候别卡死
 git -C "$REPO_DIR" config http.lowSpeedLimit 1000
 git -C "$REPO_DIR" config http.lowSpeedTime 60
+# 国内连 GitHub 用 HTTP/2 常报 framing 错误，改用 HTTP/1.1
+git -C "$REPO_DIR" config http.version HTTP/1.1
 
 # 3. 配置（已有就保留，不会改你的密码）
 if [ ! -f "$HOME_DIR/config.json" ]; then
