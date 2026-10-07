@@ -1,83 +1,209 @@
 {
   "type": "daily",
   "date": "2026-10-07",
-  "headline": "AI 这边新模型扎堆：谷歌 Nano Banana 2.1 生图降价一半，Mistral 和 Reflection 各发一个大号开放权重模型；仓储这边，一篇分析讲中国自动化厂商靠“隐形项目”加速出海，另有 Aldi 生鲜自动化和 Exotec 货到人两个真实案例。",
+  "headline": "AI 这边最值得读的是两篇落地复盘：Claude Code 云端并行干活的官方手册，和 Vercel 用“14 条规则 + 模型”接管销售线索；另有 Mistral、Reflection、谷歌三家发新模型。仓储这边，Interact Analysis 解释中国自动化厂商出海为何被低估，外加一篇多客户仓库上 AMR 的一线复盘。",
   "sections": [
     {
       "key": "ai",
       "title": "AI",
       "items": [
         {
-          "title": "谷歌发布 Nano Banana 2.1：生图更稳、4K 输出，API 价格砍半",
-          "source": "Android Headlines / Google DeepMind 模型卡",
+          "pick": true,
+          "title": "Claude Code 云端会话实战指南：每个任务一台独立虚拟机，并行干活、交回一个分支",
+          "source": "Anthropic Claude 开发者博客",
           "published": "2026-10-06",
-          "summary": "Nano Banana 是谷歌 Gemini 的图像生成与编辑模型。2.1 版支持 4K 出图，一次最多参考 14 张图、在多轮修改里保持同一人物和物体不走样，并接入谷歌搜索做事实核对。API 标准价降一半：1K 图从约 0.067 美元降到 0.0336 美元，4K 图从 0.151 美元降到 0.0756 美元，批量模式再减半。已在 Gemini 应用、Google AI Studio、Flow 等处上线。",
-          "why": "做照片艺术、海报的话，这是本周最直接相关的新模型；效果好不好要看后面的独立对比（Arena 生图榜还没更新到它）。",
-          "url": "https://www.androidheadlines.com/2026/10/google-launches-nano-banana-2-1-ai-images-price.html",
+          "readMinutes": 30,
+          "summary": "Claude Code 新增“云端会话”：每个任务在一台全新的虚拟机（VM，云上临时开的一台电脑）里跑，仓库被克隆到一个新的 claude/ 分支，做完交回分支，可转成 PR（合并请求）。作者对一个小型 Node.js 项目同时开了 3 个会话：修一个约四分之一概率失败的测试、核对 API 文档、改结构化日志，最长 87 秒全部完成，修测试那个还自己把测试连跑了 40 遍证明修好了；第 4 个会话从手机发起，只做调查，找出了一个真实的边界 bug。文章还给出本地和云端各适合什么、7 种适合云端的工作流、GitHub 连接排错、虚拟机配置（约 4 核 16GB）等细节。原文英文。",
+          "takeaways": [
+            "云端适合：多个互不相关的任务并行、要跑很久的验证（比如测试连跑 200 次）、从手机发起、运行不信任的代码；需要本机数据库/VPN/GPU 或要盯着浏览器快速改界面的，留在本地。",
+            "给任务时附上“证明命令”（如“修完后连跑 50 次”），会话才能自己验证结果。",
+            "各会话互相隔离，一个会话修好的问题另一个看不到——第 3 个会话就因此带着一个失败测试提交了。",
+            "Pro/Max/Team/Enterprise 都能用，不单独收算力费，但和本地共用额度，并行开会话额度消耗会快很多。"
+          ],
+          "why": "你平时就用 Claude 写代码、做网站和 Agent，这篇是官方给的完整上手手册，照着配一次就能把“排队干活”变成“并行干活”；文中“本地 vs 云端”的取舍也是做 AI 交付（FDE）时给客户讲方案的现成框架。",
+          "url": "https://claude.dev/blog/claude-code-in-the-cloud/",
           "tags": [
-            "新模型"
+            "教程"
           ],
           "vendorClaim": true
         },
         {
-          "title": "Mistral 发布 Large 4：1 万亿参数开放权重模型，月底放出权重",
-          "source": "Mistral AI 官方博客",
+          "pick": true,
+          "title": "Vercel 用 AI 智能体接管销售线索：从 125 行提示词到“14 条规则 + 模型”",
+          "source": "Tomasz Tunguz 博客",
           "published": "2026-10-06",
-          "summary": "法国 Mistral 推出 Mistral Large 4 公开预览。它是 MoE（混合专家：模型很大，但每次只调用其中一部分，省算力）架构，总参数 1 万亿、每次激活 490 亿，原生支持图文。API 价格每百万 token 输入 1.36 美元、输出 4.18 美元，权重计划本月底开放下载。官方自报 DeepSWE v1.1 得分 61.7%，并称法律、金融任务超过 GPT-6 Astra。",
-          "why": "擅长写代码、网络安全和法律金融类任务（均为官方说法），价格比美国头部模型低；暂无独立测评，国内可通过下载权重自行部署（月底后）。",
-          "url": "https://mistral.ai/news/mistral-large-4/",
-          "tags": [
-            "新模型"
+          "readMinutes": 6,
+          "summary": "Vercel 首席运营官讲他们怎么用智能体处理“入站销售线索”（客户主动留资后的筛选和首次联系）。起步只用一名工程师 20% 的时间，第一版是团队最好的销售写的约 125 行提示词；前六周像带新人一样，人先看完前 100 封邮件，之后改成每 100 封抽查 1 封。后来提示词膨胀到 1000 行、模型并不总守规矩，于是把确定性的部分改写成 14 条代码规则，只在需要人类式判断的地方用模型，再加一个智能体专门盯规则违规。整个职能一年推理和基础设施成本约 1000 美元，原来的销售团队全部转去做更需要和人沟通的外拓。原文英文。",
+          "takeaways": [
+            "先挑一个规则清楚、结果可检查的问题下手，比追求“全自动”更容易成功。",
+            "人工把关可以从“全看”逐步降到“抽查 1%”，用数据决定什么时候放手。",
+            "能写成规则的就别交给模型：作者统计的 14 个生产级智能体流程里，65% 的步骤是纯代码，只有 14% 完全由智能体决定。"
           ],
-          "vendorClaim": true
+          "why": "这是一个讲清了步骤、成本和组织变化的真实落地复盘，正好对应 AI 交付工程师和 AI 产品经理要做的事：拆流程、定规则、设计人工把关；你做 Agent 项目时也可以照着“规则 + 模型”的结构来搭。",
+          "url": "https://tomtunguz.com/how-to-automate-inbound/",
+          "tags": [
+            "案例"
+          ],
+          "vendorClaim": false
         },
         {
-          "title": "Reflection 开源编程模型 Beam：5010 亿参数，Apache 2.0 许可",
-          "source": "Reflection AI 官方博客",
+          "pick": true,
+          "title": "GitHub 重建 Git 底层架构：智能体让提交量一年涨了 5 倍",
+          "source": "GitHub 工程博客",
+          "published": "2026-10-06",
+          "readMinutes": 12,
+          "summary": "GitHub 公布：2026 年 8 月每月 Git 事件从一年前的 2182 亿次涨到 4733 亿次，9 月提交 73.8 亿次（一年前的 5 倍多），推送量涨 4.9 倍，最忙的单个仓库一个月约 10 亿次请求，主要推手是 AI 编程智能体。旧架构把每个仓库完整复制到 5 台文件服务器上，加副本能扛更多读取，但每次写入要等所有副本，结果越扩容写得越慢。新思路是“存储和计算分开”：数据放进云存储，前面用轻量的计算节点缓存，只在更新分支指针这一步严格同步；内部测试写入吞吐最高提升 35 倍。原文英文（有中文转述）。",
+          "takeaways": [
+            "智能体带来的压力主要在“写”而不是“读”：大量并发提交挤向同一个主分支。",
+            "“副本既负责不丢数据又负责扛读取”会让读和写互相拖累，把这两件事拆开是常见的扩容思路。",
+            "设计原则可以概括为：只在必须一致的地方协调，其余并行处理，维护工作挪到后台。"
+          ],
+          "why": "一手数据直接说明 AI 编程已经把基础设施推到极限，适合做行业判断的论据；“存储和计算分开”“减少协调”这类架构取舍，和仓储系统里“集中调度 vs 分散执行”的思路相通，学运筹和系统设计时可以对照着看。",
+          "url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/",
+          "tags": [
+            "数据"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "pick": true,
+          "title": "SemiAnalysis 实测：同样花钱，Claude 订阅的“等值 API 用量”约为 OpenAI 的 5 倍",
+          "source": "SemiAnalysis",
           "published": "2026-10-05",
-          "summary": "美国初创公司 Reflection 发布 Beam，总参数 5010 亿、每次激活 230 亿，用 Apache 2.0 许可（可以免费商用）。官方自报 SWE-Bench Verified 80.9 分、Terminal-Bench v2.1 80.1 分，对比对象是 GLM 5.3、Kimi K3、Qwen 3.8-Max 等国产开源模型。目前要排队申请，本月内公开权重和技术报告。",
-          "why": "美国公司开始专门做开源编程模型和中国开源模型正面竞争；目前只有厂商自报成绩，暂无独立测评。",
-          "url": "https://reflection.ai/blog/introducing-beam",
+          "readMinutes": 12,
+          "summary": "订阅制（每月固定付费）只给用户一个 0–100% 的用量条，不告诉你到底能用多少 token（模型计费的文字单位）。SemiAnalysis 逐项跑提示词、观察用量条变化，把各档订阅折算成“如果按 API 计价值多少钱”。结论：中端模型档位（Opus 5.5 对 GPT 6.1 Sol），Anthropic 各档订阅的等值价值约是 OpenAI 的 5 倍；OpenAI 最近把 200 美元档额度减半、新推的 500 美元档只比原来多 21%。文中还估算订阅只占 Anthropic 收入约 10%，却吃掉 40% 以上的推理算力。免费部分约 2400 字，后半部分付费。原文英文。",
+          "takeaways": [
+            "说某个订阅“值多少钱”没有意义，要看“套餐 × 模型 × 用法”三者组合：同一个套餐跑不同模型、不同任务，价值差很多。",
+            "厂商可以随时悄悄调整各模型的额度消耗，静态对比很快过时。",
+            "订阅是被大幅补贴的获客手段，对厂商利润率影响很大，后续限额收紧的可能性不小。"
+          ],
+          "why": "你每天在用 Claude 等订阅工具，这篇给了一套可以自己复现的“额度到底值多少”的测法，选套餐时有依据；对 AI 产品经理来说，订阅补贴、算力占用和定价的关系也是基础功课。",
+          "url": "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x",
+          "tags": [
+            "数据",
+            "报告"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "pick": false,
+          "title": "Mistral 发布 Large 4 预览版：1 万亿参数，月底开放权重",
+          "source": "Simon Willison 博客",
+          "published": "2026-10-06",
+          "summary": "1 万亿参数、每次只用 490 亿的 MoE 模型，API 已开放，第三方智能指数 38 分，权重月底开放。",
+          "url": "https://simonwillison.net/2026/Oct/6/le-chonk/",
           "tags": [
             "新模型"
           ],
           "vendorClaim": true
         },
         {
-          "title": "OpenAI 公布内部模型做出的 372 组数学结果，数学界担心没人来得及验证",
-          "source": "Inside AI News",
-          "published": "2026-10-07",
-          "summary": "OpenAI 发布了 722 份数学论文手稿，包含 372 组数学和理论计算机科学结果，来自一个尚未发布的内部模型。据称几乎都是把一条提示交给单个 AI 智能体、在约 4000 个问题上跑出来的，平均每个结果的算力约相当于 ChatGPT Pro 思考 3 小时，部分证明已用 Lean（一种能让计算机自动检查证明的语言）形式化。数学家的主要质疑是：结果太多，几乎没人独立验证过，署名和引用前人工作的规则也不清楚。",
-          "why": "AI 产出的速度已经超过人类审核的速度，这个“验证跟不上”的问题在写代码、做方案时同样存在。",
-          "url": "https://insideai.news/news/machine-learning/openai-math-results/13731/",
+          "pick": false,
+          "title": "Reflection 发布开源编程模型 Beam：5010 亿参数，Apache 2.0",
+          "source": "Latent Space",
+          "published": "2026-10-06",
+          "summary": "美国从零训练，自报 SWE-bench Verified 80.9；外界认为约在 GLM-5.2 水平，落后国产头部模型。",
+          "url": "https://www.latent.space/p/ainews-reflection-beam-501b-a23b",
+          "tags": [
+            "新模型"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "pick": false,
+          "title": "谷歌 Nano Banana 2.1 生图模型正式上线，旧版弃用",
+          "source": "Gemini API 更新日志",
+          "published": "2026-10-06",
+          "summary": "画质、按提示词出图、多轮人物一致性和文字渲染提升，新增 1:8、8:1 等超宽比例，支持 1K/2K/4K。",
+          "url": "https://ai.google.dev/gemini-api/docs/changelog#10-06-2026",
+          "tags": [
+            "新模型"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "pick": false,
+          "title": "谷歌开源多模态嵌入模型 EmbeddingGemma 2",
+          "source": "Google DeepMind 博客",
+          "published": "2026-10-06",
+          "summary": "7.4 亿参数，能在手机本地把文字、代码、图片、音视频转成可比对的向量，用来做离线搜索；Apache 2.0 可商用。",
+          "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+          "tags": [
+            "新模型"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "pick": false,
+          "title": "OpenAI 公开内部模型做出的一批数学成果",
+          "source": "OpenAI",
+          "published": "2026-10-06",
+          "summary": "以 GitHub 仓库公开，平均每个结果约耗 ChatGPT Pro 思考 3 小时的算力，部分证明可由机器核验。",
+          "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
           "tags": [
             "报告"
           ],
           "vendorClaim": true
         },
         {
-          "title": "Meta 和 Sierra 推出“个人智能体协议”：让你的 AI 助手替你和商家打交道",
-          "source": "The Next Web",
+          "pick": false,
+          "title": "Sierra 和 Meta 发起“个人智能体协议”",
+          "source": "Sierra 博客",
           "published": "2026-10-06",
-          "summary": "Sierra 和 Meta 牵头发布 Personal Agent Protocol，规定个人 AI 助手怎样登录商家系统、能做哪些事：基于 OAuth（就是常见的“用微信/谷歌账号登录”那套授权机制），助手先以访客身份查库存和退货政策，用户登录后再授权只读或可写。首批合作方有 Shopify、Stripe、Walmart 等，v0.1 规范本月发布，支付功能留到以后。",
-          "why": "“AI 替人下单”正在从演示走向行业标准，电商和物流的订单入口可能因此改变。",
-          "url": "https://thenextweb.com/news/personal-agent-protocol-sierra-meta",
+          "summary": "规定个人 AI 助手怎样登录商家、能读还是能改；Shopify、Walmart 等参与，v0.1 规范本月发布。",
+          "url": "https://sierra.ai/blog/introducing-personal-agent-protocol",
           "tags": [
             "观点"
           ],
           "vendorClaim": false
         },
         {
-          "title": "Anthropic 整合网络安全验证计划：分三级向安全人员开放更强能力",
-          "source": "Anthropic 官方新闻",
+          "pick": false,
+          "title": "METR：AI 智能体可能篡改给人看的审查记录",
+          "source": "METR",
           "published": "2026-10-06",
-          "summary": "Anthropic 把之前的 Glasswing 等项目合并成分三级的网络安全验证计划：防御级（安全运营、恶意软件分析，几天内审核）、红队级（授权渗透测试，仅限机构）、专门级（测试关系到生命安全的系统，和美国政府一起审核）。官方称这个项目已发现超过 12.9 万个软件漏洞。普通用户用的模型保持原来的安全限制，没有变化。",
-          "why": "头部 AI 公司开始用“先验证身份、再放开能力”的方式处理高风险用途，以后其他敏感能力很可能也这样管。",
-          "url": "https://www.anthropic.com/news/cyber-verification-program",
+          "summary": "研究者借助 AI 约 10 分钟找到评测工具查看器的注入漏洞，可改写审查者看到的内容；建议把日志系统当安全设施对待。",
+          "url": "https://metr.org/blog/2026-10-06-ai-systems-could-cover-up-misbehavior/",
+          "tags": [
+            "报告"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "pick": false,
+          "title": "PromptArmor 拆解 WebMCP：网站直接给 AI 智能体提供“按钮”",
+          "source": "PromptArmor",
+          "published": "2026-10-06",
+          "summary": "已有 2959 个网站接入，Chrome、Edge 支持；风险包括提示词注入、标“只读”的工具实际能写入等。",
+          "url": "https://www.promptarmor.com/resources/what-is-webmcp",
+          "tags": [
+            "教程"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "pick": false,
+          "title": "DeepSeek 据报道接近完成至少 800 亿元融资",
+          "source": "AIHOT（转述彭博）",
+          "published": "2026-10-06",
+          "summary": "腾讯和宁德时代是主要投资方之一，高于原定约 500 亿元目标，并计划 2027 年初上市；细节仍可能变化。",
+          "url": "https://aihot.news/items/wbi0gsddrrfnavs6vvuqb2r7j",
+          "tags": [
+            "数据"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "pick": false,
+          "title": "Nathan Lambert：开源模型网络安全风险的讨论走偏了",
+          "source": "Interconnects",
+          "published": "2026-10-06",
+          "summary": "作者认为单禁开源模型挡不住坏人，反而让防守方用不上强模型；闭源模型同样被用于攻击。原文英文。",
+          "url": "https://www.interconnects.ai/p/the-cyber-risk-discourse-is-broken",
           "tags": [
             "观点"
           ],
-          "vendorClaim": true
+          "vendorClaim": false
         }
       ]
     },
@@ -86,24 +212,68 @@
       "title": "仓储物流自动化",
       "items": [
         {
-          "title": "中国仓储自动化厂商加速出海，“隐形项目”让外界低估了它们的实力",
-          "source": "Automated Warehouse",
+          "pick": true,
+          "title": "中国仓储自动化厂商加速出海：“隐形项目”让公开数据低估了它们",
+          "source": "Automated Warehouse（转载 Interact Analysis）",
           "published": "2026-10-05",
-          "summary": "文章指出，中国厂商在海外拿到的不少项目是“隐形项目”：中国企业出海建厂时，直接在中国国内找中国供应商采购，不走公开招标，所以西方厂商往往连竞标机会都没有，市场统计也看不到。极智嘉、海柔、海康机器人等移动机器人公司已经在海外站稳，现在做固定式自动化（输送线、分拣机、立体库这类装在地上不动的设备）的科捷（Kengic）、兰剑智能（Bluesword）等也在跟进。原因是 2022 年后国内电商和新能源车建厂放缓、厂商太多、利润被压低，出海成了生存需要，重点去东南亚、海湾国家和欧洲。",
-          "why": "直接关系到北自科技、今天国际这类公司的增长逻辑：国内卷、海外找增量；求职时可以关注这些公司的海外项目岗位。",
+          "readMinutes": 7,
+          "summary": "Interact Analysis（市场研究公司）分析师撰文：极智嘉、海柔创新、海康机器人这批移动机器人厂商已在海外站稳，现在凯乐士（Kengic）、兰剑（Bluesword）等做固定式自动化（输送线、分拣机、立体库）的厂商也开始出海，重点是东南亚、海湾国家和部分欧洲市场。原因是 2022 年后国内电商和新能源车扩产放缓、厂商数量激增、价格战压低利润。所谓“隐形项目”，是中资企业在海外建厂时通过熟人网络、工程总包方直接找国内供应商，不走公开招标，所以外界统计到的中国厂商份额是“非常保守”的估计。原文英文。",
+          "takeaways": [
+            "国内市场内卷是出海的主要推力，出海对很多固定式自动化厂商已经是“活下去”的问题。",
+            "中资海外工厂“中国对中国”的采购链，是中国厂商出海的重要跳板，也让西方厂商在招标前就出局。",
+            "西方厂商的应对：降价压力变大、更强调交付速度和总成本，并开始和中国厂商合作。"
+          ],
+          "why": "你关注的极智嘉、海康机器人、今天国际这一类公司，未来几年的增长很大程度看海外；面试或写行业分析时，“隐形项目”这个视角能让你说出比新闻稿更深一层的判断。",
           "url": "https://www.automatedwarehouseonline.com/how-hidden-projects-skew-success-of-chinese-warehouse-automation-vendors/",
           "tags": [
-            "观点",
-            "数据"
+            "观点"
           ],
           "vendorClaim": false
         },
         {
+          "pick": true,
+          "title": "多客户仓库上 AMR 为什么容易翻车：一位 3PL 工业工程师的复盘",
+          "source": "MH&L",
+          "published": "2026-10-07",
+          "readMinutes": 9,
+          "summary": "作者是第三方物流公司日本邮船物流（Yusen Logistics）的工业工程师。他观察到：AMR（自主移动机器人，能自己规划路线的搬运小车）在单一客户、品种稳定的仓库里效果好，在多个客户共用一个仓、SKU（库存单品）频繁变化的“高混合”仓库里常常表现变差——机器人一样，差别在部署前的准备。他总结了五个难点：SKU 结构不断变化、多个客户争抢同一批机器人、各客户主数据格式不一、老仓库布局不适合机器人、系统配置跟不上业务增长，并给出对应做法。原文英文。",
+          "takeaways": [
+            "把“定期重新配置”写进运营流程，而不是上线后一劳永逸。",
+            "上线前就定好多个客户订单冲突时谁说了算，以及由谁拍板。",
+            "上线前把商品主数据、库位记录和现场实物逐一核对，并提前改通道宽度、暂存区和地面标识。"
+          ],
+          "why": "这是一线工程师写的落地经验，正好对应物流工程课里的仓库布局、拣选和 WMS（仓库管理系统）数据问题；以后去极智嘉、海康这类公司做解决方案或实施，客户现场遇到的就是这些坑。",
+          "url": "https://www.mhlnews.com/technology-automation/article/55409745/navigating-the-complexities-of-high-mix-distribution-with-amrs",
+          "tags": [
+            "案例"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "pick": true,
+          "title": "美国建材批发商用 Exotec 货到人系统做到“下午 5 点前下单，次日早上送达”",
+          "source": "Automated Warehouse",
+          "published": "2026-10-06",
+          "readMinutes": 9,
+          "summary": "有 129 年历史的家族企业 First Supply（卖暖通、水暖、照明等工程材料给装修承包商）在威斯康星新建配送中心，用 Exotec 的 Skypod 系统：一种网格式 AS/RS（自动化立体存取系统），机器人沿货架爬升取料箱送到拣选台，“货到人”。它用满了仓库约 12 米（40 英尺）的高度，管理 1.4 万多个 SKU，拣选速度比人工快 10 倍，同样占地下库容扩大到 4 倍，还预留了 30% 的扩容空间；次日达订单最多占日单量的 20%。上线时输送线搬不动太轻的小件，团队用标准邮政托盘装起来解决。原文英文。",
+          "takeaways": [
+            "选型逻辑：先确定要“占地小的货到人”，再按预算和可扩展性筛供应商，中小企业很看重“现在买得起、以后能扩”。",
+            "真实数字：拣选效率 10 倍、库容 4 倍、预留 30% 余量，可以作为货到人方案效果的参考量级。",
+            "落地问题往往很具体，比如轻小件在输送线上不稳，需要现场想办法。"
+          ],
+          "why": "一个从选型、数字到落地问题都讲到的货到人案例，适合用来理解立体库和货到人系统怎么算账；和你专业课、以后面试自动化厂商时讲案例都直接相关。",
+          "url": "https://www.automatedwarehouseonline.com/first-supply-achieves-next-day-delivery-exotec-skypod-system/",
+          "tags": [
+            "案例"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "pick": false,
           "title": "Aldi 英国新配送中心用 Cimcorp 系统自动处理生鲜果蔬",
           "source": "Automated Warehouse",
           "published": "2026-10-06",
-          "summary": "德国连锁超市 Aldi 在英国莱斯特郡的 Bardon 配送中心启用了芬兰 Cimcorp 的生鲜自动化系统，该园区已投资超过 5 亿英镑，面积约 12 万平方米。全面投产后（2027 年），高峰期每天有 150 万公斤果蔬经过这里，每天发出 6000 多托盘到门店。生鲜区分三个温区（含专门的香蕉催熟间）：冷藏区用高位货架存托盘，需要发往门店时由自动穿梭车取出。",
-          "why": "生鲜和冷链是仓储自动化里最难的场景之一（多温区、保质期短），这是一个规模很大的真实案例，适合做课程案例分析。",
+          "summary": "分冷藏区和香蕉催熟房，高架库存放、穿梭车调出；满负荷后高峰日发出 6000 多个托盘，Aldi 已投入超 5 亿英镑。",
           "url": "https://www.automatedwarehouseonline.com/aldi-uses-cimcorp-technology-automate-fresh-produce-handling/",
           "tags": [
             "案例"
@@ -111,38 +281,76 @@
           "vendorClaim": false
         },
         {
-          "title": "美国建材批发商 First Supply 用 Exotec Skypod 实现“下午 5 点前下单，次日早上送达”",
-          "source": "Automated Warehouse",
-          "published": "2026-10-06",
-          "summary": "First Supply 是一家有 129 年历史的家族企业，给装修、水暖工人供货。它的新配送中心用了法国 Exotec 的 Skypod 系统：一种网格式立体库（ASRS），机器人能沿货架爬升取箱，再送到拣选工位（货到人，人不走动、货送到人面前）。公司物流负责人说，选型时最看重占地小和价格——“我们是家族企业，没有无限预算”，最终能做到下午 5 点前下单、第二天早上送到。",
-          "why": "中型企业怎么选自动化方案的真实思路：先定“货到人、少占地”，再按预算筛，可以对照课程里的选型方法。",
-          "url": "https://www.automatedwarehouseonline.com/first-supply-achieves-next-day-delivery-exotec-skypod-system/",
-          "tags": [
-            "案例"
-          ],
-          "vendorClaim": true
-        },
-        {
-          "title": "波士顿动力任命前亚马逊 Alexa 负责人 Rohit Prasad 为 CEO",
-          "source": "The Robot Report",
-          "published": "2026-10-06",
-          "summary": "做 Atlas 人形机器人和 Stretch 卸货机器人的波士顿动力，在前 CEO 离职近 9 个月后任命 Rohit Prasad 为新 CEO。他在亚马逊干了 12 年，从零做起 Alexa 语音助手，后来负责亚马逊的通用人工智能研发。公司说这次任命是为了加快“物理 AI”（让 AI 控制真实世界里的机器人）的商业化。",
-          "why": "机器人公司请 AI 大模型背景的人当 CEO，说明行业重心正从“机器人能动”转向“机器人会自己判断”，仓储机器人也在同一条路上。",
-          "url": "https://www.therobotreport.com/boston-dynamics-appoints-former-amazon-executive-rohit-prasad-new-ceo/",
+          "pick": false,
+          "title": "Plus One Robotics CEO 访谈：机器人干活，人来拍板",
+          "source": "Robotics & Automation News",
+          "published": "2026-10-07",
+          "summary": "他认为大模型只缩短部署时间、不让机器人变快；包裹上线、拆垛这类大批量场景，专用自动化仍比人形机器人划算。",
+          "url": "https://roboticsandautomationnews.com/2026/10/07/interview-with-plus-one-robotics-ceo-erik-nieves-robots-work-people-rule/105617/",
           "tags": [
             "观点"
           ],
           "vendorClaim": false
         },
         {
-          "title": "IFR：2025年全球专业服务机器人销量增长24%，物流运输类占47%",
-          "source": "国际机器人联合会（IFR）新闻稿",
-          "published": "2026-09-30",
-          "summary": "IFR（国际机器人联合会，全球机器人行业统计机构）发布《World Robotics 2026 服务机器人》报告：2025年全球专业服务机器人卖出近25万台，同比增长24%。其中运输与物流机器人（包括仓库里搬货的AMR，即自主移动机器人，能自己规划路线、不需要地面磁条）卖出11.75万台，占47%，增长21%，是最大的应用类别。全尺寸人形机器人（身高140厘米以上）约卖出7000台。",
-          "why": "权威第三方年度数据，写课程论文、做求职面试的行业认知时可以直接引用“物流机器人占专业服务机器人近一半”。",
-          "url": "https://ifr.org/ifr-press-releases/news/south-korea-robot-density-2024",
+          "pick": false,
+          "title": "Descartes 演示跨系统物流智能体：省 8% 运费的方案被人否了",
+          "source": "Logistics Viewpoints",
+          "published": "2026-10-06",
+          "summary": "一张订单跨 4 家公司、15 个产品、28 个步骤由智能体协同；改订承运商可省 8%，但对方信任分仅 32，人工否决。",
+          "url": "https://logisticsviewpoints.com/2026/10/06/descartes-takes-agentic-ai-into-the-logistics-workflow-at-the-descartes-innovation-forum/",
           "tags": [
-            "报告",
+            "案例"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "pick": false,
+          "title": "波士顿动力任命前亚马逊 Alexa 负责人 Rohit Prasad 为 CEO",
+          "source": "The Robot Report",
+          "published": "2026-10-06",
+          "summary": "前 CEO 离职近 9 个月后补位，公司称意在加快“物理 AI”商业化；它也做仓库卸货机器人 Stretch。",
+          "url": "https://www.therobotreport.com/boston-dynamics-appoints-former-amazon-executive-rohit-prasad-new-ceo/",
+          "vendorClaim": false
+        },
+        {
+          "pick": false,
+          "title": "美国仓库系统安装商 Wize Solutions 一口气收购 4 家集成商",
+          "source": "DC Velocity",
+          "published": "2026-10-05",
+          "summary": "补强输送线和自动化安装能力，跻身美国最大的仓库系统安装公司之列，原团队全部留任。",
+          "url": "https://www.dcvelocity.com/supply-chain/other-services/systems-integration-services/wize-solutions-acquires-four-other-systems-integrators",
+          "vendorClaim": false
+        },
+        {
+          "pick": false,
+          "title": "大福发布英国冷链仓储白皮书",
+          "source": "Daifuku",
+          "published": "2026-10-07",
+          "summary": "讨论英国冷链需求上升、缺工和运营复杂度，以及自动化如何应对；需登记下载，属厂商资料。",
+          "url": "https://www.daifuku.com/solution/news/2026/1007_1/",
+          "tags": [
+            "报告"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "pick": false,
+          "title": "罗宾逊全球物流拟以 58 亿美元收购同行 RXO",
+          "source": "DC Velocity",
+          "published": "2026-10-05",
+          "summary": "美国两大货运经纪商合并，预计 2027 年上半年完成；与仓内自动化关系较弱，属行业格局变化。",
+          "url": "https://www.dcvelocity.com/supply-chain/non-asset-3pl/freight-brokers/c-h-robinson-agrees-to-acquire-fellow-freight-broker-rxo-for-5-8-billion",
+          "vendorClaim": false
+        },
+        {
+          "pick": false,
+          "title": "旺季拉长：AI 服务器需求和港口拥堵让运力偏紧",
+          "source": "DC Velocity",
+          "published": "2026-10-06",
+          "summary": "Dimerco 月报：台湾 AI 服务器带动空运紧张，上海港拥堵预计持续到 10 月中下旬，靠泊等待超 5 天。",
+          "url": "https://www.dcvelocity.com/supply-chain/other-services/global-logistics/peak-season-runs-long-as-ai-demand-and-port-congestion-keep-capacity-tight",
+          "tags": [
             "数据"
           ],
           "vendorClaim": false
@@ -151,7 +359,10 @@
     }
   ],
   "notes": [
-    "本期由对话里手动生成（定时任务今天没写成功）。仓储部分已改用新上线的信源抓取结果（feeds/latest.json）。",
-    "IFR 那条发布于 9 月 30 日，10 月 5 日被 Supply Chain 24/7 转载，因为数据重要所以保留。"
+    "抓取失败：Epoch AI、Import AI、Interact Analysis 订阅源返回 HTTP 403（Interact Analysis 那篇通过 Automated Warehouse 转载读到）；AIHOT 热榜接口返回 HTTP 400。",
+    "过去 72 小时无新内容：Google AI、One Useful Thing、Sequoia、宝玉、Benedict Evans、大福（日文）、Symbotic、Symbotic IR、Georgia Tech SCL、Locus Robotics、36氪快讯、国家统计局。",
+    "Supply Chain Dive、OpenAI 官网、BestBlogs 早报的条目没有正文摘录；OpenAI 数学那条已打开原文核对。",
+    "Artificial Analysis、Gemini API 更新日志、Reflection 官网本次未能打开，Mistral Large 4、Nano Banana 2.1、Beam 三条依据 Simon Willison、Latent Space 和 AIHOT 的原文摘录。",
+    "Plus One Robotics 访谈全文长度无法确认，暂放速览。"
   ]
 }
