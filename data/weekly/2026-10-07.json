@@ -1,0 +1,319 @@
+{
+  "type": "weekly",
+  "date": "2026-10-07",
+  "headline": "写代码做网页，Claude Opus 5.5 仍是 Arena WebDev 榜第一；谷歌 Gemini 4 Argon 登上文本榜第一但普通人还用不上。考研这边，2027 年研考 10 月 15 日开始报名，报名和确认合并成一步——明年这时候就轮到你。",
+  "models": {
+    "news": [
+      {
+        "title": "谷歌发布 Gemini 4 Argon：文本榜第一、智能指数追平 GPT-6 Astra，但普通人暂时用不上",
+        "source": "Artificial Analysis",
+        "published": "2026-09-30",
+        "summary": "Artificial Analysis 实测 Gemini 4 Argon（High）智能指数 53 分，与 GPT-6 Astra 持平，略高于 GPT-6.1 Sol 的 52 分；幻觉率 15%，远低于 Astra 的 51%，但每道题平均输出约 6.2 万 token，是 Astra 的两倍多。Arena 文本榜它以 1525 分排第一（初步排名），但在 WebDev 榜只排第 9（1680 分）、Agent 榜第 10。目前只向谷歌 Fairwind 计划里的少数网络安全合作方开放，限时价每百万 token 输入 2 美元、输出 10 美元，之后涨到 4/20 美元。",
+        "why": "写作和知识类问答可能是新强者，但写代码和做 Agent 不是它的强项，而且现在还没法直接用。",
+        "url": "https://artificialanalysis.ai/articles/gemini-4-argon-google-top-three-labs",
+        "tags": [
+          "新模型",
+          "榜单"
+        ],
+        "vendorClaim": false
+      },
+      {
+        "title": "Arena WebDev 榜更新：Claude Opus 5.5 以 1815 分登顶，Sonnet 5.5 新上榜第 3",
+        "source": "Arena（arena.ai）",
+        "published": "2026-10-01",
+        "summary": "截至 10 月 1 日的 WebDev（做网页）榜单：第 1 名 Claude Opus 5.5（Max）1815 分，第 2 名 GPT-6 Astra（Max）1788 分，第 3 名 10 月 1 日新加入的 Claude Sonnet 5.5（xhigh）1786 分，第 4 名 9 月 30 日新加入的 GPT-6.1 Sol（Max）1758 分。国产模型最高是 Qwen3.8-Max，第 10 名 1671 分；Kimi K3（Max）第 13 名 1658 分。",
+        "why": "用 AI 做网页、写前端的话，这个由真人投票的榜单比厂商自报跑分更有参考价值；价格更低的 Sonnet 5.5 和 GPT-6.1 Sol 已经挤进前四。",
+        "url": "https://arena.ai/leaderboard/code/webdev",
+        "tags": [
+          "榜单"
+        ],
+        "vendorClaim": false
+      },
+      {
+        "title": "Mistral 发布 Mistral Large 4：1 万亿参数，承诺月底开放权重",
+        "source": "Mistral AI 官方博客",
+        "published": "2026-10-06",
+        "summary": "法国 Mistral 推出 Mistral Large 4 公开预览版，总参数 1 万亿、每次激活 490 亿，先通过 Mistral Studio 的 API 提供，权重计划本月底开放下载。API 价格每百万 token 输入 1.36 美元、输出 4.18 美元。官方自报 DeepSWE v1.1 得分 61.7%、Coding Agent Index 49.8%，并称在法律任务上超过 GPT-6 Astra；TechCrunch 报道称独立测评结果还没出来。",
+        "why": "又一个超大开放权重模型，主打和中国开源模型竞争，但目前只有厂商自报成绩，等权重和独立测评出来再判断。",
+        "url": "https://mistral.ai/news/mistral-large-4/",
+        "tags": [
+          "新模型",
+          "开源"
+        ],
+        "vendorClaim": true
+      },
+      {
+        "title": "蚂蚁集团发布 Ling-3.1-flash：5600 亿参数，开放权重要等收费服务上线后",
+        "source": "Dr. Web",
+        "published": "2026-10-02",
+        "summary": "蚂蚁集团 9 月 30 日发布 Ling-3.1-flash，总参数约 5600 亿、每个 token 激活约 250 亿（MoE 架构），上下文最长 100 万 token，免费试用期间限 25.6 万。权重要等收费服务上线后才开放，没给时间表；8 位精度权重约 560GB，至少要 8 张 H100 才跑得动。Artificial Analysis 已在 10 月 3 日收录对它的测评。",
+        "why": "国产厂商又出了一个百万上下文的大模型，但个人电脑跑不了，目前只能用官方服务。",
+        "url": "https://www.drweb.de/ling-3-1-flash-ant-group-offene-gewichte/",
+        "tags": [
+          "新模型"
+        ],
+        "vendorClaim": false
+      },
+      {
+        "title": "Arena 文生图榜（10 月 6 日）：OpenAI GPT Image 2.5 包揽前两名",
+        "source": "Arena（arena.ai）",
+        "published": "2026-10-06",
+        "summary": "截至 10 月 6 日（82 个模型、约 659 万票），gpt-image-2.5-sunburst 以 1425 分排第 1，gpt-image-2.5-flare 1398 分第 2，gpt-image-2（medium）1383 分第 3；微软 mai-image-2.6（1333）和谷歌 Nano Banana 2.1（1328）分列 4、5。10 月 2 日新加入的 grok-imagine-image-2.0（canvas）排第 6，1321 分。",
+        "why": "做 AI 生图时可以参考：目前真人投票里 OpenAI 的图像模型领先明显，Sunburst 画质更好，Flare 速度更快。",
+        "url": "https://arena.ai/leaderboard/text-to-image",
+        "tags": [
+          "榜单",
+          "生图"
+        ],
+        "vendorClaim": false
+      }
+    ],
+    "table": [
+      {
+        "use": "写代码/做网页",
+        "picks": [
+          "Claude Opus 5.5",
+          "GPT-6 Astra"
+        ],
+        "basis": "Arena WebDev 榜（截至 2026-10-01）：Claude Opus 5.5（Max）第 1 名 1815 分，GPT-6 Astra（Max）第 2 名 1788 分；想省钱的话，Claude Sonnet 5.5（xhigh）以 1786 分排第 3，和第 2 名只差 2 分。",
+        "link": "https://arena.ai/leaderboard/code/webdev"
+      },
+      {
+        "use": "长文写作",
+        "picks": [
+          "Claude Opus 5.5",
+          "Gemini 4 Argon"
+        ],
+        "basis": "Arena 文本总榜（截至 2026-10-02）：Gemini 4 Argon（High）第 1 名 1525 分（初步排名，暂未公开开放）；Claude Opus 5.5（High）第 4 名 1504 分，第 2 到第 6 名之间只差 4 分。注意：这是文本综合榜，不是专门的长文写作评测。",
+        "link": "https://arena.ai/leaderboard/text"
+      },
+      {
+        "use": "中文能力",
+        "picks": [
+          "Qwen3.8-Max-0902",
+          "DeepSeek-V4.1-Flash"
+        ],
+        "basis": "SuperCLUE 中文通用榜（DataLearner 整理，页面更新于 2026-09-25）：Qwen3.8-Max-0902 72.62 分第 1，DeepSeek-V4.1-Flash 71.81 分第 2，GLM-5.3 71.29 分第 4，Kimi K3 70.68 分第 5。该榜只收录国产模型，没有和 Claude/GPT/Gemini 直接比较。",
+        "link": "https://www.datalearner.com/benchmarks/superclue"
+      },
+      {
+        "use": "数学推理",
+        "picks": [
+          "GPT-6 Astra",
+          "Claude Fable 5"
+        ],
+        "basis": "Epoch AI 的 FrontierMath Tier 4（43 道研究级数学题）：GPT-6 Astra 得分 97.6%，2026 年 9 月解出了最后一道之前没有 AI 解出的题；同一报道提到 Claude Fable 5 为 90.2%、GPT-5.6 Sol 为 83.0%。但在需要 Lean 形式化证明的 FrontierMath Erdős 题集上，Astra 只解出 68 题中的 2 题。",
+        "link": "https://eu.36kr.com/en/p/3978639480617733"
+      },
+      {
+        "use": "智能体",
+        "picks": [
+          "Claude Fable 5.1",
+          "Claude Opus 5.5"
+        ],
+        "basis": "Arena Agent 榜综合排名：Claude Fable 5.1（Max）14.31% 第 1，Claude Opus 5.5（High）13.82% 第 2，Claude Sonnet 5.5（Max）12.52% 第 3，GPT-6 Astra（Max）12.27% 第 4；每个任务成本 Fable 5.1 约 5.39 美元，Opus 5.5 约 1.58 美元，Opus 5.5 更划算。",
+        "link": "https://arena.ai/leaderboard?arena=text"
+      },
+      {
+        "use": "性价比",
+        "picks": [
+          "GPT-6.1 Sol",
+          "DeepSeek V4.1 Flash"
+        ],
+        "basis": "Artificial Analysis：GPT-6.1 Sol（Max）智能指数 52 分，只比 GPT-6 Astra 低 1 分，跑一道指数测试题成本 0.72 美元，不到 Astra（3.26 美元）的四分之一；价格每百万 token 输入 2 美元、输出 10 美元。Arena Agent 榜的性价比曲线上，DeepSeek V4.1 Flash（Max）每个任务约 0.12 美元（得分 4.02%），是更便宜的一档。",
+        "link": "https://artificialanalysis.ai/de/articles/gpt-6-1-sol-replaces-gpt-6-sol-after-just-7-days-with-near-astra-intelligence"
+      },
+      {
+        "use": "国内可直接使用",
+        "picks": [
+          "DeepSeek V4.1 Flash",
+          "Qwen3.8-Max"
+        ],
+        "basis": "DeepSeek V4.1 Flash 于 2026-09-10 在官网网页版、官方 App 和 API 同时上线，API 闲时价每百万 token 输入（未命中缓存）1 元、输出 4 元，SuperCLUE 中文榜第 2；Qwen3.8-Max（阿里，2026-08-03 发布）可在千问 App 和千问 API 使用，国内价每百万 token 输入 12 元、输出 36 元，在 Arena WebDev 榜排第 10，是国产模型里排名最高的（IT之家报道：https://www.ithome.com/0/984/897.htm）。",
+        "link": "https://eu.36kr.com/en/p/3977300285174021"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "name": "frontend-design（Anthropic 官方网页设计 Skill）",
+      "category": "网页设计",
+      "what": "Anthropic 官方出品的前端设计 Skill。让 Claude 以“设计工作室总监”的身份做网页：先从主题本身找视觉灵感，写出配色（4–6 个色值）、字体、版式线框和设计原则，再对照需求删掉“AI 味”默认套路（奶油底+陶土色、全大写小标签、千篇一律的圆角卡片、每节淡入动画、按钮后加“→”等），最后才写代码并截图自查。9 月 3 日刚更新，专门加强了“避免通用默认设计”的内容。",
+      "scene": "用 Claude Code 或 Claude 应用做个人主页、课程项目展示页、社团/活动落地页、作品集等，希望页面有辨识度、不像模板；也适合把已有的“AI 感”很重的页面改造得更有设计感。",
+      "howto": [
+        "Claude Code：在对话框输入 /plugin marketplace add anthropics/skills，把官方 Skill 仓库注册为插件市场",
+        "继续输入 /plugin install example-skills@anthropic-agent-skills 安装示例 Skill 合集（frontend-design 就在 example-skills 里）；也可以输入 /plugin 后依次选 Browse and install plugins → anthropic-agent-skills → example-skills → Install now",
+        "使用时直接点名即可，例如：“用 frontend-design skill 帮我做一个物流工程课程设计的展示网页，先给我设计计划再写代码”",
+        "Claude 应用（网页版/桌面版）：官方 README 写明这些示例 Skill 已对付费计划开放，按官方帮助文档“Using skills in Claude”开启后，在对话里同样点名使用",
+        "建议让 Claude 先输出“配色/字体/版式线框/原则”计划，你确认后再写代码，并要求它截图检查手机端效果"
+      ],
+      "url": "https://github.com/anthropics/skills/tree/main/skills/frontend-design",
+      "author": "Anthropic",
+      "stars": "",
+      "demo": "demos/2026-10-07-cold-store/index.html",
+      "images": [],
+      "prompt": "",
+      "promptZh": ""
+    },
+    {
+      "name": "超现实微缩珊瑚世界（GPT Image 2 微距摄影提示词）",
+      "category": "照片艺术",
+      "what": "一条“微距摄影 + 超现实微缩景观”的生图提示词：毛茸茸的珊瑚/苔藓质感里藏着橙墙红顶的小灯塔、棕榈树小岛、罗马数字时钟、热气球、蓝色玩具船和小蜥蜴，极浅景深把前后景虚化成柔和色块。原作者 Lynn Cole 于 2026-10-06 在 X 上发布，YouMind 的 awesome-gpt-image-2 合集收录。",
+      "scene": "想练习“微距 + 浅景深 + 梦幻色调”的照片艺术感；做手机壁纸、公众号/小红书配图、海报背景；也可以把里面的小物件换成自己喜欢的元素做系列作品。",
+      "howto": [
+        "复制下方英文 prompt 原文（英文效果通常更稳定）",
+        "粘贴到 ChatGPT（GPT Image 2）等支持该模型的生图工具里生成；其他生图模型也可以试，但效果以原作者用的 GPT Image 2 为准",
+        "想改造时，可以把 prompt 发给 Claude，让它“保留微距、浅景深、珊瑚质感，把灯塔换成××”，再拿改好的 prompt 去生图"
+      ],
+      "url": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2",
+      "author": "Lynn Cole（@priestessofdada）；YouMind-OpenLab 收录",
+      "stars": "",
+      "demo": "",
+      "images": [
+        "https://cms-assets.youmind.com/media/1791273292679_sep23p_HT6AK4EXAAAGJbw.jpg"
+      ],
+      "prompt": "A vertical, high-resolution macro photograph of a surreal miniature diorama. The scene is dominated by complex, fuzzy organic structures resembling coral or moss in shades of beige and rust-orange. In the center stands a small, cylindrical lighthouse with orange walls and a red roof, nestled within the textured growth. To the right, a cluster of stylized green palm trees sits atop a mossy island. A white analog clock face with Roman numerals is embedded in the upper-right coral structure. On the left, a tiny hot air balloon floats near a looped branch. At the bottom, a dark grey, granular surface serves as the ground, where a small blue toy boat rests on the left and a tiny green lizard-like figure stands on the right. The depth of field is extremely shallow, creating a strong bokeh effect that blurs the background and foreground elements into soft washes of color.",
+      "promptZh": "这是一张垂直构图的高分辨率微距摄影作品，呈现了一个超现实的微型景观。画面主体由复杂的、类似珊瑚或苔藓的毛茸茸有机结构组成，色调以米色和锈橙色为主。中心位置矗立着一座小型圆柱形灯塔，拥有橙色的墙壁和红色的屋顶，巧妙地融入在纹理丰富的生长物中。右侧，一簇风格化的绿色棕榈树坐落在长满苔藓的小岛上。一个带有罗马数字的白色模拟时钟表盘嵌入在右上方的珊瑚结构中。左侧，一个微小的热气球漂浮在一个环状树枝附近。底部是一片深灰色的颗粒状表面作为地面，左边停泊着一艘蓝色玩具小船，右边站立着一个绿色的蜥蜴状小雕像。景深极浅，营造出强烈的散景效果，将背景和前景元素模糊成柔和的色彩晕染。"
+    },
+    {
+      "name": "昭和老街复古胶片照（GPT Image 2 胶片摄影提示词）",
+      "category": "照片艺术",
+      "what": "一条“老胶片照片”风格的生图提示词：1950–60 年代日本小镇的窄街上，短卷发女生抬手整理头发、对镜头微笑，背景是瓦顶木屋、电线杆和旧自行车；画面带褪色、漏光、灰尘斑点和暖色调，像翻出来的旧相册。原作者拓斗（@Kmsbdd0GXBOcrXQ）于 2026-10-06 在 X 上发布，YouMind 的 awesome-gpt-image-2 合集收录。",
+      "scene": "喜欢胶片/复古街拍质感；做怀旧风头像、朋友圈/小红书图文配图；学习如何用“年代 + 场景细节 + 胶片瑕疵（漏光、灰尘、褪色）”来描述照片质感。",
+      "howto": [
+        "复制下方英文 prompt 原文",
+        "粘贴到 ChatGPT（GPT Image 2）等生图工具中生成",
+        "可以只替换人物衣着或街道地点（例如换成老北京胡同），保留“faded, light leaks, dust spots, warm tones of aged film”这类胶片描述，质感就能保留"
+      ],
+      "url": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2",
+      "author": "拓斗（@Kmsbdd0GXBOcrXQ）；YouMind-OpenLab 收录",
+      "stars": "",
+      "demo": "",
+      "images": [
+        "https://cms-assets.youmind.com/media/1791273291509_dyb2uk_HT7lPiGasAAzx8Q.jpg"
+      ],
+      "prompt": "A vintage-style photograph of a young woman standing on a narrow street in a traditional Japanese town, likely from the 1950s or 60s. She has short, curly dark brown hair and is smiling gently at the camera while holding both hands up to her head, adjusting her hair. She wears a cream-colored hooded sweatshirt with drawstrings and a plaid skirt featuring red, blue, and beige tones. A brown leather shoulder bag hangs across her body. The background includes wooden buildings with tiled roofs, utility poles, and an old bicycle parked nearby. The image has a faded, nostalgic quality with light leaks, dust spots, and warm color tones typical of aged film photography.",
+      "promptZh": "一张复古风格的照片，展示了一位年轻女性站在传统日本小镇的狭窄街道上，背景仿佛定格在 1950 或 60 年代。她留着深棕色的短卷发，对着镜头温柔微笑，双手举至头部整理头发。她身穿一件带抽绳的米色连帽卫衣，搭配一条红、蓝、米色调相间的格子裙。一个棕色皮革单肩包斜挎在身上。背景包括带有瓦顶的木质建筑、电线杆以及停在附近的一辆旧自行车。图像呈现出褪色的怀旧质感，伴有漏光效果、灰尘斑点以及老式胶片摄影典型的暖色调。"
+    },
+    {
+      "name": "复古车流动感街头人像（GPT Image 2 长曝光摄影提示词）",
+      "category": "照片艺术",
+      "what": "一条经典的“长曝光动态模糊”街头人像提示词：人物双手插兜静立、焦点锐利，身后的复古汽车高速驶过拉出红、青、黄的模糊光带；黄金时刻暖光、70 年代胶片色调和细颗粒。原作者 @iamaiistudio 在 X 发布，EvoLinkAI 的 awesome-gpt-image-2-API-and-Prompts 合集收录在“人像与摄影”分类。",
+      "scene": "想学习“动静对比”（主体清晰、背景动态模糊）这种摄影构图手法；做时尚感海报、个人作品集封面、街拍风配图。",
+      "howto": [
+        "复制下方英文 prompt 原文",
+        "粘贴到 ChatGPT（GPT Image 2）等生图工具中生成",
+        "想换风格可改服装颜色或年代（如把 1970s 换成 1990s），保留 motion blur trails、long-exposure、sharp focus on the subject 这几个关键词来维持动静对比效果"
+      ],
+      "url": "https://github.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts/blob/main/cases/portrait.md",
+      "author": "@iamaiistudio；EvoLinkAI 收录",
+      "stars": "",
+      "demo": "",
+      "images": [
+        "https://raw.githubusercontent.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts/main/images/portrait_case314/output.jpg"
+      ],
+      "prompt": "A stylish woman standing still with hands in pockets, wearing a loose sage-green button-up shirt tucked into high-waisted dark trousers. Calm, confident expression. Vintage cars rushing past at high speed behind her, creating dramatic motion blur trails with a long-exposure photography effect. Street portrait setting, warm golden-hour lighting, muted retro color palette with reds, teals, and yellows streaking across the frame. Sharp focus on the woman with shallow depth of field, strong subject isolation. Cinematic realism, editorial fashion mood, nostalgic 1970s film look, soft grain, ultra-detailed, high resolution.",
+      "promptZh": "一位时髦的女性双手插兜静静站立，身穿宽松的鼠尾草绿色纽扣衬衫，下摆塞进深色高腰长裤。表情平静而自信。她身后的复古汽车高速驶过，形成长曝光摄影效果般强烈的动态模糊拖影。街头人像场景，温暖的黄金时刻光线，红色、青绿色和黄色交织划过画面的低饱和复古色调。人物焦点清晰，浅景深，主体突出。电影感写实，时尚大片氛围，怀旧的 1970 年代胶片质感，柔和颗粒，细节极其丰富，高分辨率。"
+    },
+    {
+      "name": "ai-image-prompts-skill（让 Claude 帮你搜生图提示词）",
+      "category": "其他",
+      "what": "YouMind 开源的一个 Agent Skill：装进 Claude Code 后，你用一句话描述想要的画面，Claude 会在它自带的 1 万多条社区生图提示词库里检索，推荐最匹配的 3 条，并附上效果样图；还能根据你的文章/脚本内容改写出定制提示词。提示词库每天自动同步两次（仓库 10 月 5–7 日仍在持续更新）。",
+      "scene": "想找“胶片人像”“产品白底图”“公众号封面”等现成好用的生图提示词，又不想自己一个个翻合集；或者写完一篇文章/课程汇报，想让 Claude 按内容给配图出提示词。",
+      "howto": [
+        "电脑需先装好 Node.js（Skill 安装和同步提示词库要用）",
+        "在终端运行 npx skills i YouMind-OpenLab/ai-image-prompts-skill，按提示选择安装到 Claude Code",
+        "在 Claude Code 里直接说需求，例如：“帮我找一个日系胶片感人像的生图提示词”，Claude 会返回 3 条带样图的推荐",
+        "想按自己的内容定制：把文章贴给 Claude 并说“帮我找适合做封面的提示词并按内容改写”",
+        "提示词库会自动检查更新；也可以在 Skill 目录里运行 node scripts/setup.js --force 手动同步"
+      ],
+      "url": "https://github.com/YouMind-OpenLab/ai-image-prompts-skill",
+      "author": "YouMind-OpenLab",
+      "stars": "",
+      "demo": "",
+      "images": [],
+      "prompt": "",
+      "promptZh": ""
+    }
+  ],
+  "kaoyan": [
+    {
+      "title": "2027年研考网上报名10月15日开始，报名与确认合并为一个流程",
+      "source": "科技日报（中国科技网）",
+      "published": "2026-10-04",
+      "summary": "2027年全国硕士研究生招生初试网上报名时间为2026年10月15日至24日。今年起，原来分开的“网上报名”和“网上确认”两个阶段合并：考生在报名期间填写个人信息和报考志愿后，可以一并提交报考点要求的核验材料。报名照片的采集提前到填写基本信息的阶段，可用学信网App在线拍摄，系统会实时检测光线、角度；照片统一要求白色背景，准考证也用这张照片。",
+      "why": "这是明年这时候你要走的流程（参加2027年12月考试，报名大约在2027年10月）。如果这套一体化流程延续下去，你需要在报名那10天里一次性备好照片和核验材料，不会再有单独的确认阶段可以补。具体以明年的公告为准。",
+      "url": "https://www.stdaily.com/web/gdxw/2026-10/04/content_591740.html",
+      "tags": [
+        "报名",
+        "流程变化",
+        "研招网"
+      ],
+      "vendorClaim": false
+    },
+    {
+      "title": "各省陆续发布研考报名公告：报名费180元，单位、报考点、考试方式提交后不能改",
+      "source": "川观新闻（四川省2027年研考报名公告报道）",
+      "published": "2026-10-04",
+      "summary": "四川省公布的2027年研考报名安排：预报名10月9日至12日，正式报名10月15日至24日（每天9:00—22:00），报名考试费180元/人，准考证在考前10天左右打印。公告提醒：“招生单位”“报考点”“考试方式”三项一经提交不能修改；应届本科毕业生原则上选择就读学校所在地的报考点。北京地区的报名公告目前还没检索到。",
+      "why": "到2027年报名时你是应届生，按惯例应选北京（学校所在地）的报考点。三项信息提交后不能改，所以报名前要先定好目标院校和专业，不要等到报名期才纠结。预报名一般比正式报名早几天，可以早点完成。",
+      "url": "https://cbgc.scol.com.cn/news/8024499",
+      "tags": [
+        "报名",
+        "报考点",
+        "注意事项"
+      ],
+      "vendorClaim": false
+    }
+  ],
+  "jobs": [
+    {
+      "company": "顺丰科技",
+      "role": "2027届校招：产品经理、数据产品经理、运筹优化算法工程师、大数据挖掘与分析、AI开发等13类岗位",
+      "forWhom": "面向2027届应届毕业生，大三现在不能投。岗位清单可以对照来规划方向，尤其是“运筹优化”“数据产品经理”，和物流工程专业比较对口；明年这时候投。",
+      "deadline": "2027-09-30",
+      "summary": "网申从2026年8月12日开始，页面写的截止日期是2027年9月30日，官网投递入口在 campus.sf-express.com。页面上没有北京宣讲会的信息。",
+      "url": "https://campus.niuqizp.com/job-v885aLt5a.html"
+    },
+    {
+      "company": "京东（含京东物流）",
+      "role": "2027届校招（物流储备、采销、技术、产品、运营等）；实习岗位全年开放",
+      "forWhom": "全职岗位面向2027届，大三不能投；页面写着实习岗位“全年开放”，大三可以在校招官网的“实习”通道看有没有能做寒暑假或兼读的岗位。",
+      "deadline": "2026-11-30",
+      "summary": "全职岗位网申时间为2026年8月17日至11月30日，工作地点覆盖300多个城市。投递入口是京东校招官网 campus.jd.com，或者用京东在职员工的内推码。据IT之家报道，京东今年第一次在校招流程里加入AI面试。",
+      "url": "https://campus.niuqizp.com/job-v8s5aLtCL.html"
+    },
+    {
+      "company": "京东物流",
+      "role": "仓储生产运营类实习生",
+      "forWhom": "优先招2027届物流、电商、计算机、机械、管理类专业的学生，要求全职到岗实习3个月以上。大三在学期中基本没法满足，寒假也不够3个月；可以作为了解京东物流一线运营岗位要求的参考。",
+      "deadline": "未注明",
+      "summary": "2026年9月29日发布，专业不限，物流相关专业优先，希望实习生有明确的就业意向。投递入口是官网（页面指向国家大学生就业服务平台 ncss.cn）。",
+      "url": "https://campus.niuqizp.com/job-vmr5MnnzN.html"
+    },
+    {
+      "company": "泡泡玛特",
+      "role": "2027届校招：创意实物制造与交付、零售运营与支持、商业智能、数字化与技术等",
+      "forWhom": "面向毕业时间在2026年9月至2027年8月之间的2027届学生，大三不能投；属于民营消费品企业的供应链/运营方向，明年秋招可以考虑。",
+      "deadline": "2026-11-30",
+      "summary": "网申时间为2026年9月7日至11月30日，北京宣讲会已列入安排，但具体时间还没公布。投递入口是 popmart.zhiye.com/campus。",
+      "url": "https://campus.niuqizp.com/job-vlm5CMML5.html"
+    },
+    {
+      "company": "招聘趋势：FDE（前置部署工程师 / AI交付工程师）",
+      "role": "FDE / AI交付工程师",
+      "forWhom": "趋势参考，适合正在考虑“AI交付工程师”方向的大三同学。",
+      "deadline": "未注明",
+      "summary": "36氪（笔记侠）2026年9月20日的文章引用的数据：美国FDE岗位数从2025年4月的643个增加到2026年4月的5330个，约7.3倍；LinkedIn报告称2023到2025年新增FDE岗位增长了42倍。国内字节“豆包大模型FDE”月薪3.5万到7万元，蚂蚁数科B端岗位月薪4万到6万元。文章也指出，不少岗位只是把实施工程师、售前换了个名字；真正的FDE需要行业经验和业务理解，靠上课很难速成。对物流专业来说，懂仓储/供应链业务，再加上Python和Agent搭建能力，是比较实际的组合。",
+      "url": "https://eu.36kr.com/en/p/3988956431940361"
+    }
+  ],
+  "notes": [
+    "本期由对话里手动生成（定时任务今天没写成功）。",
+    "示例网站“冷链前置仓自动化改造”是按 frontend-design Skill 的方法做的虚构课程设计展示页，数据都是假设值。",
+    "“中文能力”用的是 SuperCLUE（只收国产模型）；“数学推理”依据是 9 月的 FrontierMath 数据；“长文写作”用的是 Arena 文本总榜，不是专门的长文评测。",
+    "表中 Claude、GPT、Gemini 在国内能否直接使用没有逐一核实；“国内可直接使用”一行只选了已确认官方渠道上线的国产模型。",
+    "照片类效果图 cms-assets.youmind.com 的两张没能实际下载验证，如果网站上显示不出来就是这个原因。",
+    "研招网、北科大研招网、北科大就业网这次没能直接打开，考研和就业条目是通过新闻报道和招聘汇总站核对的，投递前请到官网复核。已截止未列：海康机器人（10-01）、菜鸟/阿里（10-05）。北自科技、今天国际、大福（中国）、极智嘉、明略科技本周没查到可投的公告。"
+  ]
+}

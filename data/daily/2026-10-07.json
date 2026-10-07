@@ -1,0 +1,145 @@
+{
+  "type": "daily",
+  "date": "2026-10-07",
+  "headline": "AI 这边新模型扎堆：谷歌 Nano Banana 2.1 生图降价一半，Mistral 和 Reflection 各发一个大号开放权重模型；仓储这边正值国庆，最近两天没有一手新消息，补上本周值得看的 4 条（IFR 数据：去年卖出的专业服务机器人近一半是物流机器人）。",
+  "sections": [
+    {
+      "key": "ai",
+      "title": "AI",
+      "items": [
+        {
+          "title": "谷歌发布 Nano Banana 2.1：生图更稳、4K 输出，API 价格砍半",
+          "source": "Android Headlines / Google DeepMind 模型卡",
+          "published": "2026-10-06",
+          "summary": "Nano Banana 是谷歌 Gemini 的图像生成与编辑模型。2.1 版支持 4K 出图，一次最多参考 14 张图、在多轮修改里保持同一人物和物体不走样，并接入谷歌搜索做事实核对。API 标准价降一半：1K 图从约 0.067 美元降到 0.0336 美元，4K 图从 0.151 美元降到 0.0756 美元，批量模式再减半。已在 Gemini 应用、Google AI Studio、Flow 等处上线。",
+          "why": "做照片艺术、海报的话，这是本周最直接相关的新模型；效果好不好要看后面的独立对比（Arena 生图榜还没更新到它）。",
+          "url": "https://www.androidheadlines.com/2026/10/google-launches-nano-banana-2-1-ai-images-price.html",
+          "tags": [
+            "新模型"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "title": "Mistral 发布 Large 4：1 万亿参数开放权重模型，月底放出权重",
+          "source": "Mistral AI 官方博客",
+          "published": "2026-10-06",
+          "summary": "法国 Mistral 推出 Mistral Large 4 公开预览。它是 MoE（混合专家：模型很大，但每次只调用其中一部分，省算力）架构，总参数 1 万亿、每次激活 490 亿，原生支持图文。API 价格每百万 token 输入 1.36 美元、输出 4.18 美元，权重计划本月底开放下载。官方自报 DeepSWE v1.1 得分 61.7%，并称法律、金融任务超过 GPT-6 Astra。",
+          "why": "擅长写代码、网络安全和法律金融类任务（均为官方说法），价格比美国头部模型低；暂无独立测评，国内可通过下载权重自行部署（月底后）。",
+          "url": "https://mistral.ai/news/mistral-large-4/",
+          "tags": [
+            "新模型"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "title": "Reflection 开源编程模型 Beam：5010 亿参数，Apache 2.0 许可",
+          "source": "Reflection AI 官方博客",
+          "published": "2026-10-05",
+          "summary": "美国初创公司 Reflection 发布 Beam，总参数 5010 亿、每次激活 230 亿，用 Apache 2.0 许可（可以免费商用）。官方自报 SWE-Bench Verified 80.9 分、Terminal-Bench v2.1 80.1 分，对比对象是 GLM 5.3、Kimi K3、Qwen 3.8-Max 等国产开源模型。目前要排队申请，本月内公开权重和技术报告。",
+          "why": "美国公司开始专门做开源编程模型和中国开源模型正面竞争；目前只有厂商自报成绩，暂无独立测评。",
+          "url": "https://reflection.ai/blog/introducing-beam",
+          "tags": [
+            "新模型"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "title": "OpenAI 公布内部模型做出的 372 组数学结果，数学界担心没人来得及验证",
+          "source": "Inside AI News",
+          "published": "2026-10-07",
+          "summary": "OpenAI 发布了 722 份数学论文手稿，包含 372 组数学和理论计算机科学结果，来自一个尚未发布的内部模型。据称几乎都是把一条提示交给单个 AI 智能体、在约 4000 个问题上跑出来的，平均每个结果的算力约相当于 ChatGPT Pro 思考 3 小时，部分证明已用 Lean（一种能让计算机自动检查证明的语言）形式化。数学家的主要质疑是：结果太多，几乎没人独立验证过，署名和引用前人工作的规则也不清楚。",
+          "why": "AI 产出的速度已经超过人类审核的速度，这个“验证跟不上”的问题在写代码、做方案时同样存在。",
+          "url": "https://insideai.news/news/machine-learning/openai-math-results/13731/",
+          "tags": [
+            "报告"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "title": "Meta 和 Sierra 推出“个人智能体协议”：让你的 AI 助手替你和商家打交道",
+          "source": "The Next Web",
+          "published": "2026-10-06",
+          "summary": "Sierra 和 Meta 牵头发布 Personal Agent Protocol，规定个人 AI 助手怎样登录商家系统、能做哪些事：基于 OAuth（就是常见的“用微信/谷歌账号登录”那套授权机制），助手先以访客身份查库存和退货政策，用户登录后再授权只读或可写。首批合作方有 Shopify、Stripe、Walmart 等，v0.1 规范本月发布，支付功能留到以后。",
+          "why": "“AI 替人下单”正在从演示走向行业标准，电商和物流的订单入口可能因此改变。",
+          "url": "https://thenextweb.com/news/personal-agent-protocol-sierra-meta",
+          "tags": [
+            "观点"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "title": "Anthropic 整合网络安全验证计划：分三级向安全人员开放更强能力",
+          "source": "Anthropic 官方新闻",
+          "published": "2026-10-06",
+          "summary": "Anthropic 把之前的 Glasswing 等项目合并成分三级的网络安全验证计划：防御级（安全运营、恶意软件分析，几天内审核）、红队级（授权渗透测试，仅限机构）、专门级（测试关系到生命安全的系统，和美国政府一起审核）。官方称这个项目已发现超过 12.9 万个软件漏洞。普通用户用的模型保持原来的安全限制，没有变化。",
+          "why": "头部 AI 公司开始用“先验证身份、再放开能力”的方式处理高风险用途，以后其他敏感能力很可能也这样管。",
+          "url": "https://www.anthropic.com/news/cyber-verification-program",
+          "tags": [
+            "观点"
+          ],
+          "vendorClaim": true
+        }
+      ]
+    },
+    {
+      "key": "wh",
+      "title": "仓储物流自动化",
+      "items": [
+        {
+          "title": "IFR：2025年全球专业服务机器人销量增长24%，物流运输类占47%",
+          "source": "国际机器人联合会（IFR）新闻稿",
+          "published": "2026-09-30",
+          "summary": "IFR（国际机器人联合会，全球机器人行业统计机构）发布《World Robotics 2026 服务机器人》报告：2025年全球专业服务机器人卖出近25万台，同比增长24%。其中运输与物流机器人（包括仓库里搬货的AMR，即自主移动机器人，能自己规划路线、不需要地面磁条）卖出11.75万台，占47%，增长21%，是最大的应用类别。全尺寸人形机器人（身高140厘米以上）约卖出7000台。",
+          "why": "权威第三方年度数据，写课程论文、做求职面试的行业认知时可以直接引用“物流机器人占专业服务机器人近一半”。",
+          "url": "https://ifr.org/ifr-press-releases/news/south-korea-robot-density-2024",
+          "tags": [
+            "报告",
+            "数据"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "title": "美国A3发布移动机器人安全标准R15.08第三部分，三部分标准全部完成",
+          "source": "Robotics & Automation News",
+          "published": "2026-10-02",
+          "summary": "美国自动化促进协会A3发布ANSI/A3 R15.08-3-2026。R15.08是针对工业移动机器人（IMR，包括工厂和仓库里的AMR、自动叉车等）的安全标准：第1部分管设计制造，第2部分管系统集成和应用，这次的第3部分管使用方，规定了企业在现场用机器人时要做的风险评估、员工培训和定期运行检查。至此三部分全部发布。",
+          "why": "做AMR项目或去集成商、甲方仓库实习时，安全合规是验收必查项，了解R15.08（及对应的国际标准ISO 3691-4）是加分点。",
+          "url": "https://roboticsandautomationnews.com/2026/10/02/industry-body-a3-releases-final-part-of-safety-standard-for-industrial-mobile-robots/105474/",
+          "tags": [
+            "观点"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "title": "Exotec日本调查：51%仓库员工想跳槽或离职，最想交给机器人的是搬重物",
+          "source": "LOGISTICS TODAY（日本）",
+          "published": "2026-10-02",
+          "summary": "法国仓储机器人公司Exotec在日本做的问卷显示，51.0%的仓库/物流中心员工在考虑跳槽或离职，20多岁的人群中这一比例达65.5%。离职原因前两位是身体负担（39.7%）和薪资待遇不满（39.4%）；62.0%的人希望把搬运重物交给机器人，只有14.3%不希望引入自动化。",
+          "why": "说明仓储自动化的核心驱动力是“招不到、留不住人”，可作为做自动化项目可行性分析时的需求论据，但要注意是厂商自己做的调查。",
+          "url": "https://www.logi-today.com/1006738",
+          "tags": [
+            "数据"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "title": "大福：现有系统能自动化仓库约85%的作业，剩下15%靠人形机器人，计划2030年进入验证阶段",
+          "source": "MONOist（日本）",
+          "published": "2026-09-28",
+          "summary": "日本大福（Daifuku，全球最大物料搬运设备商之一，主营AS/RS即自动化立体仓库，用堆垛机在高货架上自动存取货）在东京国际物流综合展上表示，入库、搬运、存储、拣选、包装、分拣、出库等环节目前约85%可由现有设备自动化。剩下约15%（如抓取衣服等软性物品）计划用双臂人形机器人解决，社长寺井友章称目标是2030年前后进入验证阶段；大福强调自身优势在于懂物流系统布局。",
+          "why": "龙头厂商对“自动化天花板在哪里”的判断，对理解堆垛机/输送分拣与机器人拣选的分工很有帮助；属于公司自述的规划，不是已落地成果。",
+          "url": "https://monoist.itmedia.co.jp/mn/articles/2609/28/news058.html",
+          "tags": [
+            "观点"
+          ],
+          "vendorClaim": true
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "本期由对话里手动生成（定时任务今天没写成功）。",
+    "仓储部分：国庆休市，北自科技、今天国际无新公告；过去 48 小时没找到可核实的一手消息，所以放的是 9 月 28 日到 10 月 2 日、读过原文的 4 条。",
+    "这次大部分 RSS 订阅源打不开（需要逐个确认访问权限），改用搜索结果里的原文链接核对。"
+  ]
+}

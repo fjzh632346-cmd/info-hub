@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>冷链前置仓自动化改造｜课程设计</title>
+<style>
+/* 设计计划（按 frontend-design Skill 先定再写）
+   主题：冷链前置仓 → 素材来自冷库板、霜、温度记录仪、俯视布局图
+   颜色：冷库板 #EEF3F2 / 墨蓝 #15324B / 霜蓝 #A9CCDB / 货架钢 #5F7C8C / 温度红 #C4162A（只给温度读数和关键结论用）
+   字体：中文系统黑体一种，靠字重和字号拉开层级；数字用等宽数字
+   版式：左对齐；首屏用"俯视布局图 + 实时库温"当主角，其余部分克制
+   原则：大胆只用在首屏那张会动的布局图上，其余都安静 */
+:root{
+  --board:#EEF3F2; --ink:#15324B; --frost:#A9CCDB; --steel:#5F7C8C;
+  --red:#C4162A; --line:#C9D6D8; --paper:#F8FAFA;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--board);color:var(--ink);
+  font:16px/1.75 -apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+  font-variant-numeric:tabular-nums}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* 顶栏 */
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;
+  padding:18px 0;border-bottom:2px solid var(--ink)}
+.top b{font-size:15px;letter-spacing:.02em}
+.top span{font-size:14px;color:var(--steel)}
+
+/* 首屏 */
+.hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:40px;align-items:center;padding:48px 0 56px}
+.hero h1{font-size:clamp(30px,4.6vw,52px);line-height:1.18;margin:0 0 20px;font-weight:800;letter-spacing:-.01em}
+.hero p{margin:0 0 14px;max-width:30em;color:#2c4a61}
+.temp{display:flex;align-items:baseline;gap:14px;margin-top:26px;padding-top:18px;border-top:1px solid var(--line)}
+.temp strong{font-size:44px;line-height:1;color:var(--red);font-weight:700}
+.temp small{font-size:14px;color:var(--steel);line-height:1.5}
+.plan{background:var(--paper);border:2px solid var(--ink);padding:14px}
+.plan svg{display:block;width:100%;height:auto}
+.plan figcaption{font-size:13px;color:var(--steel);margin-top:8px}
+.shuttle{animation:run 7s ease-in-out infinite alternate}
+.s2{animation-duration:9s;animation-delay:-3s}
+.s3{animation-duration:6s;animation-delay:-1s}
+.s4{animation-duration:8s;animation-delay:-5s}
+.tote{animation:belt 6s linear infinite}
+.t2{animation-delay:-2s}.t3{animation-delay:-4s}
+@keyframes run{from{transform:translateX(0)}to{transform:translateX(330px)}}
+@keyframes belt{from{transform:translateX(0)}to{transform:translateX(420px)}}
+@media (prefers-reduced-motion:reduce){.shuttle,.tote{animation:none}}
+
+/* 通用段落 */
+section{padding:56px 0;border-top:2px solid var(--ink)}
+h2{font-size:28px;line-height:1.3;margin:0 0 10px;font-weight:800}
+.lead{margin:0 0 30px;max-width:40em;color:#2c4a61}
+
+/* 现状：三条读数，像温度记录纸上的刻度 */
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-left:1px solid var(--line)}
+.facts div{padding:6px 22px 4px;border-right:1px solid var(--line)}
+.facts b{display:block;font-size:34px;line-height:1.2}
+.facts p{margin:6px 0 0;font-size:15px;color:#2c4a61}
+
+/* 流程：真的是先后顺序，所以才编号 */
+.flow{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));counter-reset:f}
+.flow li{counter-increment:f;padding:0 18px 0 0;position:relative}
+.flow li::before{content:counter(f);display:inline-grid;place-items:center;width:30px;height:30px;
+  border:2px solid var(--ink);border-radius:50%;font-weight:700;margin-bottom:10px;background:var(--board);position:relative;z-index:1}
+.flow li::after{content:"";position:absolute;left:30px;right:0;top:15px;border-top:2px dashed var(--steel)}
+.flow li:last-child::after{display:none}
+.flow h3{margin:0 0 4px;font-size:18px}
+.flow p{margin:0;font-size:15px;color:#2c4a61}
+
+/* 设备表 */
+.table{width:100%;min-width:620px;border-collapse:collapse;font-size:15px;background:var(--paper)}
+.table th,.table td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+.table th{font-weight:700;background:#E2EBEC}
+.table td:last-child,.table th:last-child{text-align:right;white-space:nowrap}
+.scroll{overflow-x:auto;border:2px solid var(--ink)}
+
+/* 计算器 */
+.calc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
+.field{margin-bottom:22px}
+.field label{display:flex;justify-content:space-between;font-weight:700;margin-bottom:6px}
+.field output{color:var(--red)}
+input[type=range]{width:100%;accent-color:var(--ink)}
+.result{background:var(--ink);color:#fff;padding:26px 26px 22px}
+.result dl{margin:0;display:grid;grid-template-columns:auto auto;gap:10px 18px;align-items:baseline}
+.result dt{font-size:15px;color:var(--frost)}
+.result dd{margin:0;font-size:30px;font-weight:700;text-align:right}
+.result p{margin:18px 0 0;font-size:14px;color:var(--frost);line-height:1.6}
+.payback{margin-top:22px}
+.bar{height:14px;background:#2E4E68;position:relative;margin-top:6px}
+.bar i{position:absolute;left:0;top:0;bottom:0;background:var(--frost);transition:width .35s ease}
+.note{font-size:14px;color:var(--steel);margin-top:14px}
+
+footer{border-top:2px solid var(--ink);padding:26px 0 40px;font-size:14px;color:var(--steel)}
+
+@media (max-width:820px){
+  .hero{grid-template-columns:minmax(0,1fr);padding-top:32px}
+  .calc{grid-template-columns:minmax(0,1fr)}
+  .facts{grid-template-columns:minmax(0,1fr);border-left:0}
+  .facts div{border-right:0;border-bottom:1px solid var(--line);padding:12px 0}
+  .flow{grid-template-columns:minmax(0,1fr);gap:18px}
+  .flow li::after{display:none}
+  section{padding:40px 0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <b>冷链前置仓自动化改造</b>
+    <span>物流工程课程设计示例，第三小组</span>
+  </header>
+
+  <div class="hero">
+    <div>
+      <h1>把 1,200 平方米的冷库，交给 6 台穿梭车</h1>
+      <p>一家社区生鲜前置仓，每天要在零下 18 度的冷冻区里拣 2,400 单。拣货员每次进库最多待 40 分钟，一到晚高峰就排队出库。</p>
+      <p>我们把冷冻区改成四向穿梭车密集库：人留在常温的拣选站，货自己出来。</p>
+      <div class="temp">
+        <strong id="t">−18.0°C</strong>
+        <small>冷冻区实时库温（演示数据）<br>改造后，拣货员不再进入这个温区</small>
+      </div>
+    </div>
+    <figure class="plan" style="margin:0">
+      <svg viewBox="0 0 600 390" role="img" aria-labelledby="planTitle">
+        <title id="planTitle">冷冻区俯视布局：四排货架，穿梭车在巷道里往返，提升机在左侧，输送线把料箱送往底部的拣选站</title>
+        <!-- 冷库外墙 -->
+        <rect x="8" y="8" width="584" height="300" fill="#E6EFF2" stroke="#15324B" stroke-width="3"/>
+        <!-- 提升机 -->
+        <rect x="24" y="30" width="62" height="256" fill="#fff" stroke="#15324B" stroke-width="2"/>
+        <text x="55" y="162" font-size="14" text-anchor="middle" fill="#15324B" writing-mode="tb">提升机</text>
+        <!-- 货架与巷道 -->
+        <g fill="#5F7C8C">
+          <rect x="104" y="30" width="470" height="34"/>
+          <rect x="104" y="94" width="470" height="34"/>
+          <rect x="104" y="158" width="470" height="34"/>
+          <rect x="104" y="222" width="470" height="34"/>
+        </g>
+        <g stroke="#E6EFF2" stroke-width="2">
+          <path d="M150 30v34M196 30v34M242 30v34M288 30v34M334 30v34M380 30v34M426 30v34M472 30v34M518 30v34"/>
+          <path d="M150 94v34M196 94v34M242 94v34M288 94v34M334 94v34M380 94v34M426 94v34M472 94v34M518 94v34"/>
+          <path d="M150 158v34M196 158v34M242 158v34M288 158v34M334 158v34M380 158v34M426 158v34M472 158v34M518 158v34"/>
+          <path d="M150 222v34M196 222v34M242 222v34M288 222v34M334 222v34M380 222v34M426 222v34M472 222v34M518 222v34"/>
+        </g>
+        <!-- 巷道里的穿梭车 -->
+        <g fill="#C4162A">
+          <rect class="shuttle" x="110" y="70" width="44" height="18" rx="3"/>
+          <rect class="shuttle s2" x="110" y="134" width="44" height="18" rx="3"/>
+          <rect class="shuttle s3" x="110" y="198" width="44" height="18" rx="3"/>
+          <rect class="shuttle s4" x="110" y="262" width="44" height="18" rx="3"/>
+        </g>
+        <!-- 保温门 -->
+        <rect x="40" y="304" width="40" height="8" fill="#A9CCDB"/>
+        <!-- 输送线（常温区） -->
+        <rect x="40" y="330" width="520" height="24" fill="#fff" stroke="#15324B" stroke-width="2"/>
+        <g fill="#15324B">
+          <rect class="tote" x="46" y="335" width="22" height="14"/>
+          <rect class="tote t2" x="46" y="335" width="22" height="14"/>
+          <rect class="tote t3" x="46" y="335" width="22" height="14"/>
+        </g>
+        <!-- 拣选站 -->
+        <g fill="#A9CCDB" stroke="#15324B" stroke-width="2">
+          <rect x="300" y="358" width="70" height="26"/><rect x="400" y="358" width="70" height="26"/><rect x="500" y="358" width="70" height="26"/>
+        </g>
+        <text x="300" y="322" font-size="13" fill="#15324B">常温区：输送线 → 3 个拣选站</text>
+      </svg>
+      <figcaption>冷冻区俯视图。红色方块是穿梭车，深色小方块是正在送往拣选站的料箱。</figcaption>
+    </figure>
+  </div>
+
+  <section aria-labelledby="h-now">
+    <h2 id="h-now">现在卡在哪里</h2>
+    <p class="lead">我们在仓里跟了 5 个晚高峰，记下三组数字。问题不在人不够努力，而在冷冻区本身限制了人能工作的时间。</p>
+    <div class="facts">
+      <div><b>40 分钟</b><p>拣货员每次进入冷冻区的上限，之后必须出来回暖 15 分钟</p></div>
+      <div><b>37%</b><p>晚高峰订单里含冷冻商品的比例，全部挤在 18:00–20:00</p></div>
+      <div><b>11 分钟</b><p>冷冻商品从下单到打包的平均等待，常温商品只要 4 分钟</p></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-flow">
+    <h2 id="h-flow">改造后，一箱冻饺子怎么走</h2>
+    <p class="lead">货到人：人站着不动，料箱按订单顺序被送到面前。</p>
+    <ol class="flow">
+      <li><h3>入库</h3><p>供应商到货在常温缓冲区扫码，料箱经保温门进入冷冻区。</p></li>
+      <li><h3>存储</h3><p>提升机把料箱送到对应层，穿梭车放进货位；系统按出库频率排货位。</p></li>
+      <li><h3>出库</h3><p>订单到达后，穿梭车取箱，提升机下送，经保温门回到常温输送线。</p></li>
+      <li><h3>拣选</h3><p>拣货员在拣选站按灯光提示取件，空箱自动回库。</p></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="h-eq">
+    <h2 id="h-eq">设备清单</h2>
+    <p class="lead">按日均 2,400 单、峰值 1 小时完成全天 18% 订单来配。价格是课程里的估算值，不是报价。</p>
+    <div class="scroll">
+      <table class="table">
+        <thead><tr><th>设备</th><th>用途</th><th>数量</th><th>估算单价（万元）</th></tr></thead>
+        <tbody>
+          <tr><td>四向穿梭车（耐低温型）</td><td>在货架巷道里存取料箱，可以换巷道</td><td>6 台</td><td>38</td></tr>
+          <tr><td>料箱提升机</td><td>把料箱在不同层之间上下运送</td><td>2 台</td><td>45</td></tr>
+          <tr><td>密集货架</td><td>4 排 × 9 列 × 8 层，约 2,300 个货位</td><td>1 套</td><td>96</td></tr>
+          <tr><td>快速保温门</td><td>料箱进出冷冻区时减少冷量损失</td><td>2 樘</td><td>6</td></tr>
+          <tr><td>输送线与拣选站</td><td>常温区送箱，3 个货到人工位</td><td>1 套</td><td>58</td></tr>
+          <tr><td>仓库控制软件（WCS）</td><td>调度穿梭车、提升机和输送线</td><td>1 套</td><td>40</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-calc">
+    <h2 id="h-calc">换个订单量试试</h2>
+    <p class="lead">拖动滑块，看看需要几台穿梭车、几个拣选工位，以及大概几年收回投资。</p>
+    <div class="calc">
+      <form id="calc" onsubmit="return false">
+        <div class="field">
+          <label for="orders">日均订单 <output id="o1"></output></label>
+          <input id="orders" type="range" min="600" max="6000" step="100" value="2400">
+        </div>
+        <div class="field">
+          <label for="lines">每单冷冻商品件数 <output id="o2"></output></label>
+          <input id="lines" type="range" min="1" max="6" step="1" value="2">
+        </div>
+        <div class="field">
+          <label for="peak">高峰 1 小时占全天比例 <output id="o3"></output></label>
+          <input id="peak" type="range" min="10" max="30" step="1" value="18">
+        </div>
+        <p class="note">计算假设：每台穿梭车每小时完成 180 次存取，每台提升机 540 次，每个拣选工位 350 件；留 20% 余量。改造前冷冻区需要 14 名拣货员，人工成本按每人每年 9.6 万元。</p>
+      </form>
+      <div class="result" aria-live="polite">
+        <dl>
+          <dt>高峰每小时出库</dt><dd id="r0"></dd>
+          <dt>穿梭车</dt><dd id="r1"></dd>
+          <dt>提升机</dt><dd id="r2"></dd>
+          <dt>拣选工位（每个 1 人）</dt><dd id="r3"></dd>
+          <dt>估算总投资</dt><dd id="r4"></dd>
+        </dl>
+        <div class="payback">
+          <div style="color:var(--frost);font-size:15px">投资回收期</div>
+          <div id="r5" style="font-size:30px;font-weight:700"></div>
+          <div class="bar" aria-hidden="true"><i id="bar"></i></div>
+        </div>
+        <p id="hint"></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    这是一个示例页面：按 Anthropic 官方 frontend-design Skill 的方法（先定配色、字体、版式和原则，再对照“AI 默认样式”自查）制作。仓库、数据和小组都是虚构的，用来演示一份课程设计展示页可以长什么样。
+  </footer>
+</div>
+
+<script>
+(function(){
+  var $=function(id){return document.getElementById(id)};
+  var fmt=function(n){return n.toLocaleString('zh-CN')};
+  function calc(){
+    var orders=+$('orders').value, lines=+$('lines').value, peak=+$('peak').value;
+    $('o1').textContent=fmt(orders)+' 单';
+    $('o2').textContent=lines+' 件';
+    $('o3').textContent=peak+'%';
+    var perHour=Math.round(orders*lines*peak/100);
+    var shuttles=Math.max(2,Math.ceil(perHour*1.2/180));
+    var lifts=Math.max(1,Math.ceil(perHour*1.2/540));
+    var stations=Math.max(1,Math.ceil(perHour*1.2/350));
+    var rackCost=Math.round(96*Math.max(.5,orders/2400));
+    var invest=shuttles*38+lifts*45+rackCost+12+40+stations*6+40;
+    var before=Math.max(4,Math.round(14*orders/2400));
+    var saved=Math.max(0,(before-stations-2)*9.6);
+    $('r0').textContent=fmt(perHour)+' 件';
+    $('r1').textContent=shuttles+' 台';
+    $('r2').textContent=lifts+' 台';
+    $('r3').textContent=stations+' 个';
+    $('r4').textContent=fmt(invest)+' 万元';
+    if(saved<=0){
+      $('r5').textContent='收不回来';
+      $('bar').style.width='100%';
+      $('hint').textContent='订单量太小时，省下的人工抵不过设备投资。这种仓更适合先做半自动（比如电子标签拣选）。';
+    }else{
+      var y=invest/saved;
+      $('r5').textContent=y.toFixed(1)+' 年';
+      $('bar').style.width=Math.min(100,y/10*100)+'%';
+      $('hint').textContent=y<=5?'5 年以内回本，在冷链自动化项目里算比较容易通过的方案。':'超过 5 年回本，汇报时要补充其他收益，比如减少冷量损失、降低员工冻伤风险。';
+    }
+  }
+  ['orders','lines','peak'].forEach(function(id){$(id).addEventListener('input',calc)});
+  calc();
+  // 库温演示：在 −18.4 到 −17.6 之间小幅波动
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce){setInterval(function(){
+    var v=-18+(Math.random()-.5)*.8;
+    $('t').textContent='−'+Math.abs(v).toFixed(1)+'°C';
+  },3000);}
+})();
+</script>
+</body>
+</html>
