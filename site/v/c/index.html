@@ -304,10 +304,15 @@ td.b { font-size: 12px; color: var(--muted); text-align: right; white-space: now
     var img = ev.target; if (img && img.tagName === 'IMG' && img.closest('.thumbs')) { var g = img.closest('.thumbs'); img.remove(); if (!g.children.length) g.remove(); }
   }, true);
 
+  // 统一按北京时间显示，不受电脑系统时区影响
+  function bj(date) {
+    var o = {}; new Intl.DateTimeFormat('zh-CN', { timeZone: 'Asia/Shanghai', month: 'numeric', day: '2-digit', weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: false })
+      .formatToParts(date).forEach(function (p) { o[p.type] = p.value; });
+    return o;
+  }
   function tick() {
-    var d = new Date();
-    document.getElementById('clock').innerHTML = (d.getMonth() + 1) + '.' + ('0' + d.getDate()).slice(-2) +
-      '<small>' + ['周日', '周一', '周二', '周三', '周四', '周五', '周六'][d.getDay()] + ' ' + ('0' + d.getHours()).slice(-2) + ':' + ('0' + d.getMinutes()).slice(-2) + '</small>';
+    var o = bj(new Date());
+    document.getElementById('clock').innerHTML = o.month + '.' + o.day + '<small>' + o.weekday + ' ' + o.hour + ':' + o.minute + '</small>';
   }
   tick(); setInterval(tick, 30000);
 
@@ -315,7 +320,7 @@ td.b { font-size: 12px; color: var(--muted); text-align: right; white-space: now
     T = t;
     var s = t.sync || {}, el = document.getElementById('sync');
     if (s.ok === false) el.classList.add('bad');
-    el.innerHTML = '<span>' + (s.lastOk ? '上次同步 ' + new Date(s.lastOk).toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit', hour12: false }) : '尚未同步') + '</span>';
+    el.innerHTML = '<span>' + (s.lastOk ? '上次同步 ' + (function (o) { return o.hour + ':' + o.minute; })(bj(new Date(s.lastOk))) : '尚未同步') + '</span>';
     render();
   }).catch(function (e) { $page.innerHTML = '<p>读取数据失败：' + esc(e.message) + '</p>'; });
   IH.switcher('c');

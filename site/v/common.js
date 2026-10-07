@@ -16,9 +16,10 @@
     return (d.getMonth() + 1) + '月' + d.getDate() + '日' + (withWeek === false ? '' : ' ' + WEEK[d.getDay()]);
   };
   IH.dot = function (date) { return date ? date.slice(5).replace('-', '.') : ''; };
+  // 按北京时间的"今天"算天数，不受电脑时区影响
   IH.daysUntil = function (date) {
-    var now = new Date(); now.setHours(0, 0, 0, 0);
-    return Math.round((new Date(date + 'T00:00:00') - now) / 86400000);
+    var today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai' }).format(new Date());
+    return Math.round((Date.parse(date + 'T00:00:00Z') - Date.parse(today + 'T00:00:00Z')) / 86400000);
   };
   // 考研初试一般在 12 月下旬的周六，按往年规律估算 2027 年为 12 月 25 日
   IH.EXAM_DATE = '2027-12-25';
