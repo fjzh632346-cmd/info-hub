@@ -1,0 +1,131 @@
+{
+  "type": "x",
+  "date": "2026-10-08",
+  "items": [
+    {
+      "kind": "prompt",
+      "category": "视频",
+      "score": 86,
+      "author": "歸藏(guizang.ai)",
+      "handle": "@op7418",
+      "url": "https://x.com/op7418/status/2108148604447883464",
+      "posted": "2026-10-08",
+      "metrics": "2 万查看",
+      "textZh": "歸藏让 Grok Bot 每天早上自动出一条约 90 秒的「AI 早报」讲解视频：收集资讯、写代码、渲染视频全在它的云端虚拟机上跑，不占本地电脑。他把完整提示词放在了第一条回复里（https://x.com/op7418/status/2108148741014458839），里面用到他自己公开的三个 Skill：产品视频（React + GSAP 做画面、Playwright 逐帧渲染、FFmpeg 合成）、社交卡片版式、中文去 AI 腔。这套提示词也能直接给 Claude Code 用，结构（采集→简报→视频→交付检查）很适合照着改成自己的日报视频。",
+      "prompt": "把里面的 @<你的用户名> 和\"其他来源\"换成对方自己的\n\n请帮我搭一套「AI 早报 + 讲解视频」流程：每天整理前一天的 AI 资讯，出一份文字简报，再做成一条约 90 秒的中文讲解视频。先装好环境，用昨天的内容试跑一期，交给我验收。\n\n【一、安装 skill（在你自己的电脑上）】\n把下面三个公开仓库克隆到 ~/.claude/skills/ 下，每个都完整读一遍 SKILL.md 和它引用的文件：\n- https://github.com/op7418/guizang-product-video-skill （视频制作流程：React + GSAP 搭画面，Playwright 逐帧渲染，FFmpeg 合成）\n- https://github.com/op7418/guizang-social-card-skill （版式：瑞士风，纸白底，安全橙 #FF6B35）\n- https://github.com/op7418/Humanizer-zh （旁白去 AI 腔）\n按 skill 的环境检查把缺的依赖装齐（Node、Playwright + Chromium、FFmpeg、Python 等）。另外装 edge-tts 做中文配音，可以先用 zh-CN-YunxiNeural，语速 +20%；有更稳定的 TTS 也可以换。\n\n【二、采集资讯（日期 Y = 我所在时区的昨天）】\n- 时间窗口用我所在时区的完整一天，换算成 UTC 再查，不要直接用 UTC 零点。\n- 来源：我的 X 收藏、我自己在 Y 当天发的推文（按 赞 + 2×评论 + 2×收藏 取前 3，附上评论区里有实质内容的观点），以及我下面列出的其他来源。\n- 我的 X 账号：@<你的用户名>\n- 其他来源（可选）：<比如某个 newsletter 的发件邮箱、某个网页>\n- 某个来源读不到时，如实写\"没读到\"，和\"没更新\"分开写。\n\n【三、文字简报】\n- 把相关内容归成 5–7 条主线，每条一句话标题，加一两句要点，带上关键数字。\n- 每条都要附原推链接 https://x.com/<用户名>/status/<id>，补过背景的再附一个官方来源。\n- 价格、跑分、融资额这类数字要回官方页核对。传言标\"未证实/社区传言\"。绝不编造数字、引用、链接或用户名，评论作者按推文 id 回填。\n\n【四、讲解视频】\n- 完全按 Product Video skill 的流程做：先写 DIRECTION.md，再搭镜头，最后渲染。画面的字体、配色和排版沿用社交卡片 skill。\n- 结构：片头（AI 早报 + 日期 + 今日条数）→ 每条新闻一屏（标题、1–2 个橙色关键数字、来源账号）→ X 雷达一屏 → 片尾。总长 60–90 秒，默认横屏 1920×1080。\n- 旁白中文口语化，先用 Humanizer-zh 过一遍。每句单独合成配音并量出时长，镜头、字幕和动作时间都按实际配音时长来对齐。字幕烧录进画面，人声出现时把音乐压低。\n- 视频里只放简报里已经有的事实，不新增内容。\n- 导出后跑 skill 自带的交付检查，抽帧逐屏看：文字不能溢出、重叠或截断，中文不能缺字，整片色调要统一。有问题先改完再交。\n\n【五、交付】\n发给我：文字简报全文、成片 mp4、旁白稿、3–4 张关键帧，再加一句话说明哪些步骤还不稳定。不要替我发任何消息或帖子。\n\n试跑我满意之后，再帮我建一个每天早上 9 点自动跑的定时任务。",
+      "promptZh": "把里面的 @<你的用户名> 和\"其他来源\"换成对方自己的\n\n请帮我搭一套「AI 早报 + 讲解视频」流程：每天整理前一天的 AI 资讯，出一份文字简报，再做成一条约 90 秒的中文讲解视频。先装好环境，用昨天的内容试跑一期，交给我验收。\n\n【一、安装 skill（在你自己的电脑上）】\n把下面三个公开仓库克隆到 ~/.claude/skills/ 下，每个都完整读一遍 SKILL.md 和它引用的文件：\n- https://github.com/op7418/guizang-product-video-skill （视频制作流程：React + GSAP 搭画面，Playwright 逐帧渲染，FFmpeg 合成）\n- https://github.com/op7418/guizang-social-card-skill （版式：瑞士风，纸白底，安全橙 #FF6B35）\n- https://github.com/op7418/Humanizer-zh （旁白去 AI 腔）\n按 skill 的环境检查把缺的依赖装齐（Node、Playwright + Chromium、FFmpeg、Python 等）。另外装 edge-tts 做中文配音，可以先用 zh-CN-YunxiNeural，语速 +20%；有更稳定的 TTS 也可以换。\n\n【二、采集资讯（日期 Y = 我所在时区的昨天）】\n- 时间窗口用我所在时区的完整一天，换算成 UTC 再查，不要直接用 UTC 零点。\n- 来源：我的 X 收藏、我自己在 Y 当天发的推文（按 赞 + 2×评论 + 2×收藏 取前 3，附上评论区里有实质内容的观点），以及我下面列出的其他来源。\n- 我的 X 账号：@<你的用户名>\n- 其他来源（可选）：<比如某个 newsletter 的发件邮箱、某个网页>\n- 某个来源读不到时，如实写\"没读到\"，和\"没更新\"分开写。\n\n【三、文字简报】\n- 把相关内容归成 5–7 条主线，每条一句话标题，加一两句要点，带上关键数字。\n- 每条都要附原推链接 https://x.com/<用户名>/status/<id>，补过背景的再附一个官方来源。\n- 价格、跑分、融资额这类数字要回官方页核对。传言标\"未证实/社区传言\"。绝不编造数字、引用、链接或用户名，评论作者按推文 id 回填。\n\n【四、讲解视频】\n- 完全按 Product Video skill 的流程做：先写 DIRECTION.md，再搭镜头，最后渲染。画面的字体、配色和排版沿用社交卡片 skill。\n- 结构：片头（AI 早报 + 日期 + 今日条数）→ 每条新闻一屏（标题、1–2 个橙色关键数字、来源账号）→ X 雷达一屏 → 片尾。总长 60–90 秒，默认横屏 1920×1080。\n- 旁白中文口语化，先用 Humanizer-zh 过一遍。每句单独合成配音并量出时长，镜头、字幕和动作时间都按实际配音时长来对齐。字幕烧录进画面，人声出现时把音乐压低。\n- 视频里只放简报里已经有的事实，不新增内容。\n- 导出后跑 skill 自带的交付检查，抽帧逐屏看：文字不能溢出、重叠或截断，中文不能缺字，整片色调要统一。有问题先改完再交。\n\n【五、交付】\n发给我：文字简报全文、成片 mp4、旁白稿、3–4 张关键帧，再加一句话说明哪些步骤还不稳定。不要替我发任何消息或帖子。\n\n试跑我满意之后，再帮我建一个每天早上 9 点自动跑的定时任务。\n\n（原文即为中文）",
+      "video": "https://x.com/op7418/status/2108148604447883464"
+    },
+    {
+      "kind": "prompt",
+      "category": "图片编辑",
+      "score": 80,
+      "author": "Flowers ☾",
+      "handle": "@flowersslop",
+      "url": "https://x.com/flowersslop/status/2107880369416458461",
+      "posted": "2026-10-08",
+      "metrics": "5.6 万查看",
+      "textZh": "作者公开了自己把照片放大到 8K 的 Skill。他没用专门的放大工具，而是让 GPT-6.1 Sol 这类大模型分块重画细节：先把照片切成 9 块分别增强再拼回去，第二轮再挑脸、手、布料等重点区域精修，每次都把原图一起给模型做参考，防止人脸走样。缺点是慢，两轮 8K 大约 10 分钟。可以粘贴进 Codex 或 ChatGPT 安装使用；Claude Code 能调用图片编辑工具的话也可以试。",
+      "prompt": "---\nname: flowers-upscale\ndescription: Photo to 8K; 2/3-pass contextual AI crop enhancement and registered blending.\n---\nINPUT S=uploaded photo; missing→request. Unspecified→ask \"2 passes (recommended) or 3? 8K default; another resolution?\" Await choice. N=2|3; L=specified longest edge else8192; preserve aspect. Discover available AI image-editing+raster-processing capabilities; missing→report requirement. Use environment-native tools/paths; create helpers as needed. Preserve S; separate outputs. Execute end-to-end after choice.\n\nE(C): inspect; AI-edit inputs=[S=context,C=target], maximum practical supported resolution; retain actual output dimensions. Prompt=Q+only relevant material constraints. Concurrent independent calls where supported; persist outputs+source-coordinate boxes+prompts immediately.\n\nP1: S→3×3 cores; pad each side20% core dimension, clip to S→9 overlapping C→E→register/blend→M1; resize assembled M1 to L.\nP2: M1→4–8 padded salient ROIs(face/hair/hands/objects/textiles as present)→E→register/blend→M2. Exclude low-information regions.\nN=3: M2→4–8 tighter focal ROIs(individual eyes/lips/nose/fingers/material details as present)→E→register/blend→M3. Keep homologous features consistent. Every E receives S, never crop alone.\n\nQ=\"1=original: identity/anatomy/color/light authority. 2=target: return exact crop/framing/geometry. Reconstruct plausible photographic detail; preserve expression, pose, contours, clothing, genuine imperfections, focus falloff. Optical clarity; natural edge transitions; spatially varied texture. Repair inherited artifacts. Skin: irregular pores/fine creases, quiet intervals. Hair: cohesive groups, selective fibers, natural sparse fringe. Iris: source color, irregular branching fibers, coherent pupil, restrained reflections. Textiles: original weave direction/spacing/motifs. Avoid invented structures/marks, beautification, relighting, halos, ringing, embossed/crosshatched/repeated texture, synthetic grain, blanket sharpening.\"\n\nASSEMBLE: map recorded boxes→master; global similarity registration first; bounded smooth local correction only with reliable correspondence, never distort rigid geometry/repeating patterns. Unreliable→retain prior pixels. Match broad exposure/color without transferring old fine texture. Normalized overlap/multiband blend; feather15–25% border→alpha0 at interior patch boundaries. Preserve native enhanced crops. Before next pass: inspect full image+100% focal/overlap crops; repair doubling/seams/drift/texture mismatch. ≤2 targeted retries/defect; rejected/failed→retain prior content+disclose.\n\nEXPORT: M_N→lossless PNG at L; verify dimensions+decode; deliver file+preview+prompts/settings. Describe detail as reconstructed; distinguish exported resolution from native generated resolution.",
+      "promptZh": "---\n名称：flowers-upscale\n说明：把照片放大到 8K；分 2 或 3 轮，按上下文对局部做 AI 增强，再对齐拼合。\n---\n输入 S = 上传的照片；没有就先要。用户没说清时先问：\"做 2 轮（推荐）还是 3 轮？默认 8K，要别的分辨率吗？\"等用户选。N = 2 或 3；L = 指定的最长边，默认 8192；保持原比例。先查清当前环境有哪些 AI 改图和图片处理能力，缺了就报告需要什么。用环境自带的工具和路径，需要就自己写辅助脚本。原图 S 不动，输出单独存放。用户选完后一口气做完。\n\nE(C)（增强一块裁剪 C）：先检查；调用 AI 改图，输入 = [S 作为参考全图，C 作为要改的目标]，用能支持的最高分辨率；记下实际输出尺寸。提示词 = Q + 只跟这块相关的材质要求。能并发就并发；每块的输出、在原图上的坐标框和提示词立刻存盘。\n\n第 1 轮：把 S 切成 3×3 九块，每边外扩该块尺寸的 20%（不超出原图）→ 9 块有重叠的裁剪 → 逐块增强 → 对齐拼合成 M1；把 M1 缩放到 L。\n第 2 轮：在 M1 里挑 4–8 个重点区域（脸、头发、手、物体、布料等，外扩一圈）→ 增强 → 对齐拼合成 M2。信息少的区域跳过。\nN=3 时第 3 轮：在 M2 里挑 4–8 个更小的焦点区域（单只眼睛、嘴唇、鼻子、手指、材质细节等）→ 增强 → 拼合成 M3。同类部位（如两只眼睛）要保持一致。每次增强都要带上原图 S，不能只给裁剪块。\n\nQ（每次增强都附带的要求）＝\"图 1 是原图：人物长相、身体结构、颜色、光线都以它为准。图 2 是目标：返回完全相同的裁剪范围、构图和几何形状。补出可信的摄影细节；保留表情、姿势、轮廓、衣服、真实的瑕疵和焦外虚化。光学上清晰，边缘过渡自然，纹理在空间上有变化。修掉原图带来的瑕疵。皮肤：不规则毛孔和细纹，中间留有平滑区。头发：成束、只有部分单根发丝、自然稀疏的碎发。虹膜：保留原色，不规则放射纹理，瞳孔完整，反光克制。布料：保持原来的织纹方向、间距和图案。不要凭空加结构或痕迹，不要美颜，不要改光，不要光晕、振铃、浮雕感或重复纹理、人造颗粒、整体锐化。\"\n\n拼合：把记录的坐标框映射回总图；先做整体相似变换对齐，只有对应关系可靠时才做有限的平滑局部校正，绝不扭曲硬物体的几何和重复图案。不可靠就保留之前的像素。整体曝光和颜色对齐，但不要把旧的细纹理带过来。重叠区归一化或多频段融合；块的内部边界羽化 15–25%，过渡到完全透明。保留增强后的原生裁剪。进入下一轮前：看整图并 100% 放大看焦点区和重叠区，修掉重影、接缝、错位和纹理不匹配。每个问题最多定向重试 2 次；还不行就保留之前的内容并说明。\n\n导出：把 M_N 存成分辨率为 L 的无损 PNG；检查尺寸和能否正常打开；交付文件、预览图、所用提示词和设置。说明细节是\"重建\"出来的；区分导出分辨率和模型原生生成的分辨率。",
+      "images": [
+        "https://pbs.twimg.com/amplify_video_thumb/2107708869455532032/img/SlNg1jk3ZSJSPelR.jpg"
+      ]
+    },
+    {
+      "kind": "prompt",
+      "category": "视频",
+      "score": 74,
+      "author": "GrayNoteLab",
+      "handle": "@GrayNoteLab",
+      "url": "https://x.com/GrayNoteLab/status/2107824874203099568",
+      "posted": "2026-10-07",
+      "metrics": "3 万查看",
+      "textZh": "一条 30 秒的古装写实短片，作者公开了完整分镜提示词：先锁定画质、人物、场景和空间关系，再按镜头写时长、景别、视角、运镜、构图、动作、对白和“连续性锁定”，最后列负面约束。这种“分镜表”写法能有效避免 AI 视频里人物换脸、站位乱跳的问题，换成别的题材也能套用。作者建议配合参考角色图使用。",
+      "prompt": "东方古装写实电影级画质；清晨柔和自然光；空气透视与薄雾；真实皮肤、布料质感；胶片级暖调色彩分级；禁止幻想CG感、塑料感、贴图感。\n\n【人物锁定】\n以参考图锁定三人身份：\n女主A、女主B（丫鬟）、男主C。\n全片严格保持三人身份、脸部特征、体型、发型、服装、配饰一致，不因镜头切换改变人物身份。\n\n【场景锁定】\n江南古代集市：青瓦坡屋顶、白墙木构建筑、石板街道、商铺幌子与灯笼；街边水果摊、垂柳、板车。\n\n【空间关系】\n镜头01高空俯瞰整条街市；镜头02切至街边水果摊；镜头03、04均在垂柳下同一位置展开对话。\n\n【光影氛围】\n清晨斜射柔光，薄雾漫动，柳枝与远景具有自然空气透视。\n\n【分镜】\n\n【镜头01】\n【时长】0–7秒\n【景别】大远景\n【视角】高空俯视约45度\n【运镜】缓慢前推并轻微下降\n【构图】街道对角线贯穿，屋顶群层叠铺陈\n【画面内容】古镇集市全貌：青瓦屋顶绵延，石板街上行人、商贩、马匹、货车往来。\n【动作节奏】舒缓\n【人物动作】人群自然流动，小贩整理货摊，马匹缓行。\n【锚定特效与物理反馈】晨雾随气流缓慢漂移，阳光在瓦面形成柔和高光。\n【摄影机硬性要求】运动平稳。\n【连续性锁定】确立街市地理关系，镜头02的水果摊位于街道左侧中段。\n\n【镜头02】\n【时长】7–12秒\n【景别】特写转中景\n【视角】平视微俯\n【运镜】缓慢前推，焦点从水果转移到背景人物\n【构图】前景水果篮虚化压框，背景垂柳与行人渐清晰\n【画面内容】竹篮中红桃、青李、柑橘堆叠；背景垂柳下男主C从远处走来。\n【动作节奏】由静转动\n【人物动作】男主C从远处走近，步伐从容。\n【锚定特效与物理反馈】阳光透过柳叶在果面投下斑驳光点，微风拂动柳枝。\n【摄影机硬性要求】焦点转移平滑。\n【连续性锁定】男主C即镜头03、04中的男子，身份、服装、发型与配饰保持完全一致；水果摊红穗挂饰保留至下一镜头。\n\n【镜头03】\n【时长】12–20秒\n【景别】中景\n【视角】平视\n【运镜】固定机位，轻微呼吸感\n【构图】垂柳居右框景，三人居中，背景行人与货摊虚化\n【画面内容】柳树下男主C与女主A、女主B相遇交谈；背景板车经过、行人往来。\n【动作节奏】生活流，舒缓\n【人物动作】男主C开口说话，神情讶异含笑；女主A与女主B应答。\n【对白】男主C：“小姐也会来这般热闹市井？”\n【锚定特效与物理反馈】柳枝在微风中轻摆，阳光透叶洒落。\n【摄影机硬性要求】三人左右站位全程不变。\n【连续性锁定】画面左侧女主B，中间女主A，右侧男主C；三人身份固定，不交换、不复制、不漂移。背景板车自右向左经过。\n\n【镜头04】\n【时长】20–30秒\n【景别】近景\n【视角】平视略仰\n【运镜】缓慢横移并轻微推近\n【构图】垂柳枝条前景虚化，三人面部清晰\n【画面内容】女主A抬手轻拨柳枝，转头含笑应答；男主C注视女主A，女主B站在旁边。\n【动作节奏】情绪点，柔和\n【人物动作】女主A指尖拨开柳枝、转头、微笑说话；男主C目光追随女主A；女主B自然站立。\n【对白】女主A：“公子来得，我为何来不得？”\n【锚定特效与物理反馈】被拨动的柳枝轻晃回弹，叶间光斑自然流动。\n【摄影机硬性要求】前景柳枝保持虚化。\n【连续性锁定】女主B左侧、女主A中间、男主C右侧；三人站位、身份、脸部特征、服装、发型、配饰与镜头03完全一致；柳枝动态自然衔接。\n\n【负面约束】\n无多余文字、无水印、无人物复制、无解剖错误、无现代元素、无身份漂移、无服装突变、无发型突变、无配饰变化、无人物互换、无角色数量变化。",
+      "promptZh": "东方古装写实电影级画质；清晨柔和自然光；空气透视与薄雾；真实皮肤、布料质感；胶片级暖调色彩分级；禁止幻想CG感、塑料感、贴图感。\n\n【人物锁定】\n以参考图锁定三人身份：\n女主A、女主B（丫鬟）、男主C。\n全片严格保持三人身份、脸部特征、体型、发型、服装、配饰一致，不因镜头切换改变人物身份。\n\n【场景锁定】\n江南古代集市：青瓦坡屋顶、白墙木构建筑、石板街道、商铺幌子与灯笼；街边水果摊、垂柳、板车。\n\n【空间关系】\n镜头01高空俯瞰整条街市；镜头02切至街边水果摊；镜头03、04均在垂柳下同一位置展开对话。\n\n【光影氛围】\n清晨斜射柔光，薄雾漫动，柳枝与远景具有自然空气透视。\n\n【分镜】\n\n【镜头01】\n【时长】0–7秒\n【景别】大远景\n【视角】高空俯视约45度\n【运镜】缓慢前推并轻微下降\n【构图】街道对角线贯穿，屋顶群层叠铺陈\n【画面内容】古镇集市全貌：青瓦屋顶绵延，石板街上行人、商贩、马匹、货车往来。\n【动作节奏】舒缓\n【人物动作】人群自然流动，小贩整理货摊，马匹缓行。\n【锚定特效与物理反馈】晨雾随气流缓慢漂移，阳光在瓦面形成柔和高光。\n【摄影机硬性要求】运动平稳。\n【连续性锁定】确立街市地理关系，镜头02的水果摊位于街道左侧中段。\n\n【镜头02】\n【时长】7–12秒\n【景别】特写转中景\n【视角】平视微俯\n【运镜】缓慢前推，焦点从水果转移到背景人物\n【构图】前景水果篮虚化压框，背景垂柳与行人渐清晰\n【画面内容】竹篮中红桃、青李、柑橘堆叠；背景垂柳下男主C从远处走来。\n【动作节奏】由静转动\n【人物动作】男主C从远处走近，步伐从容。\n【锚定特效与物理反馈】阳光透过柳叶在果面投下斑驳光点，微风拂动柳枝。\n【摄影机硬性要求】焦点转移平滑。\n【连续性锁定】男主C即镜头03、04中的男子，身份、服装、发型与配饰保持完全一致；水果摊红穗挂饰保留至下一镜头。\n\n【镜头03】\n【时长】12–20秒\n【景别】中景\n【视角】平视\n【运镜】固定机位，轻微呼吸感\n【构图】垂柳居右框景，三人居中，背景行人与货摊虚化\n【画面内容】柳树下男主C与女主A、女主B相遇交谈；背景板车经过、行人往来。\n【动作节奏】生活流，舒缓\n【人物动作】男主C开口说话，神情讶异含笑；女主A与女主B应答。\n【对白】男主C：“小姐也会来这般热闹市井？”\n【锚定特效与物理反馈】柳枝在微风中轻摆，阳光透叶洒落。\n【摄影机硬性要求】三人左右站位全程不变。\n【连续性锁定】画面左侧女主B，中间女主A，右侧男主C；三人身份固定，不交换、不复制、不漂移。背景板车自右向左经过。\n\n【镜头04】\n【时长】20–30秒\n【景别】近景\n【视角】平视略仰\n【运镜】缓慢横移并轻微推近\n【构图】垂柳枝条前景虚化，三人面部清晰\n【画面内容】女主A抬手轻拨柳枝，转头含笑应答；男主C注视女主A，女主B站在旁边。\n【动作节奏】情绪点，柔和\n【人物动作】女主A指尖拨开柳枝、转头、微笑说话；男主C目光追随女主A；女主B自然站立。\n【对白】女主A：“公子来得，我为何来不得？”\n【锚定特效与物理反馈】被拨动的柳枝轻晃回弹，叶间光斑自然流动。\n【摄影机硬性要求】前景柳枝保持虚化。\n【连续性锁定】女主B左侧、女主A中间、男主C右侧；三人站位、身份、脸部特征、服装、发型、配饰与镜头03完全一致；柳枝动态自然衔接。\n\n【负面约束】\n无多余文字、无水印、无人物复制、无解剖错误、无现代元素、无身份漂移、无服装突变、无发型突变、无配饰变化、无人物互换、无角色数量变化。\n\n（原文即为中文）",
+      "video": "https://x.com/GrayNoteLab/status/2107824874203099568"
+    },
+    {
+      "kind": "news",
+      "category": "视频",
+      "score": 70,
+      "author": "Vox",
+      "handle": "@Voxyz_ai",
+      "url": "https://x.com/Voxyz_ai/status/2107868554209235257",
+      "posted": "2026-10-08",
+      "metrics": "2.6 万查看",
+      "textZh": "有人做了个网站 prompt-motion.com，收录 230 多条用 Opus 5.5 做的动效视频（产品发布片、App 宣传、个人作品集、文字动画、讲解动画），每条都附完整提示词或 Skill、一键复制、原作者链接和所用模型。挑一个喜欢的，把提示词贴进 Opus 5.5、换成自己的产品就能做。想学做视频类 Skill 时可以当素材库。"
+    },
+    {
+      "kind": "news",
+      "category": "编程",
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2107896388163919908",
+      "posted": "2026-10-08",
+      "metrics": "6.3 万查看",
+      "textZh": "Anthropic 发布 Claude Haiku 5.5：10 万 Token 以内的请求每百万 Token 输入 0.1 美元、输出 0.5 美元，比 Haiku 4.5 便宜 90%，官方估算平均成本降约 75%。能力也明显提升：操作电脑完成多步任务（OSWorld 2.1）从 15.7% 涨到 72.4%，命令行编程（Terminal-Bench 4.0）从 0 到 39.2%。适合跑摘要、分类、客服，或在 Claude Code 里给 Opus/Sonnet 当“打下手”的子智能体；首次支持五档“投入力度”调节。同时 Sonnet 5.5 读缓存价格减半；Max 和 Team 订阅用户每月送 API 额度（Max 5x 送 100 美元、Max 20x 送 200 美元、Team 最多 500 美元），只能在 Claude 开放平台使用。"
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2107917964146012485",
+      "posted": "2026-10-08",
+      "metrics": "4 万查看",
+      "textZh": "OpenAI 把 GPT-6 推进 ChatGPT 日常聊天，主打“智能界面”（Intelligent UI）：模型会按问题决定回答的样子，比如对比题并排摆、讲原理配一张能拖参数的示意图、聚餐购物清单可以调人数自动改分量。付费用户用 GPT-6 Sol，免费版用 GPT-6 Luna；联网问题开始回答的时间比上一代早 44%。宝玉还对比了 Claude 的做法：Claude 是模型现写网页代码画图，更自由；OpenAI 用固定组件库，样式统一、手机上原生显示。"
+    },
+    {
+      "kind": "news",
+      "category": "研究",
+      "author": "Scale Labs",
+      "handle": "@ScaleAILabs",
+      "url": "https://x.com/ScaleAILabs/status/2107920376756117903",
+      "posted": "2026-10-08",
+      "metrics": "13.1 万查看",
+      "textZh": "Scale 发布新测评「Humanity's Sixth Sense」（人类第六感），用 522 道图片和视频开放题，考空间、因果、社交等日常直觉式视觉推理。差距很大：人类 93.1%，最强的 GPT-6 Astra 只有 53.6%，模型中位数 30.9%。说明大模型在“看懂真实场景”上离人还远，这也是仓储机器人等实体 AI 落地的难点之一。"
+    },
+    {
+      "kind": "opinion",
+      "category": "其他",
+      "author": "歸藏(guizang.ai)",
+      "handle": "@op7418",
+      "url": "https://x.com/op7418/status/2108017913030717443",
+      "posted": "2026-10-08",
+      "metrics": "11.3 万查看",
+      "textZh": "歸藏把 Haiku 5.5 和几款国产“小而便宜”的模型做了价格和跑分对比：Haiku 5.5 比 DeepSeek-V4.1 Flash、智谱 GLM 5.3 Flash 都便宜，在 Terminal Bench 4.0 等测试上也持平或略高。他认为这次定价明显是冲着国产低价模型去的。观点带情绪，但对比数据可以参考；选便宜模型做批量任务时值得自己再核对一次。"
+    },
+    {
+      "kind": "opinion",
+      "category": "研究",
+      "author": "数字生命卡兹克",
+      "handle": "@Khazix0918",
+      "url": "https://x.com/Khazix0918/status/2108037650003493350",
+      "posted": "2026-10-08",
+      "metrics": "2.9 万查看",
+      "textZh": "卡兹克的长文科普：10 月 7 日 OpenAI 在 GitHub 开了 openai/math 仓库，放出 722 份数学手稿、372 组成果，覆盖数论、代数几何、组合数学等方向，全部出自一个未公开的内部模型。做法是挑了约 4000 个数学界尚未解决的“开放问题”喂给模型，平均每个成果约花 3 小时 Pro 级思考算力。文章用白话解释了这件事为什么重要、数学评测为何已被刷满。"
+    },
+    {
+      "kind": "opinion",
+      "category": "研究",
+      "author": "Ethan Mollick",
+      "handle": "@emollick",
+      "url": "https://x.com/emollick/status/2107964764316209326",
+      "posted": "2026-10-08",
+      "metrics": "9.2 万查看",
+      "textZh": "沃顿商学院教授 Mollick 转荐计算机科学家 Scott Aaronson 的博客文章：数学家们第一次面对 OpenAI 放出的几百个 AI 证明，描述“遇到一个在窄领域超过人类的智能”是什么感受——有些问题是用人类想不到的方式解开的，让人重新思考“真正懂一件事”意味着什么。可以和上一条卡兹克的科普对照着看。"
+    },
+    {
+      "kind": "opinion",
+      "category": "编程",
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2108072320317145306",
+      "posted": "2026-10-08",
+      "metrics": "2.3 万查看",
+      "textZh": "宝玉分享他在 Claude Code 里的用法：让 Fable 当“技术组长”，负责分析、拆任务和验收，具体活派给 Opus 子智能体去干。因为 Fable 大部分时间在等子任务，你可以不停往同一个会话里派新活，它会记着排队安排。他还把上下文上限设成 30 万 Token（/autocompact 300k）。缺点是比只用 Opus 5.5 费钱。做 Agent 项目时可以参考这种“一个指挥、多个干活”的分工。"
+    }
+  ]
+}
