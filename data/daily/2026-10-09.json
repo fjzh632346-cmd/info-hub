@@ -1,0 +1,312 @@
+{
+  "type": "daily",
+  "date": "2026-10-09",
+  "headline": "Anthropic 发布与 GPT-6 Luna 同价的小模型 Haiku 5.5，但长上下文和新分词器藏着涨价；仓储方面，中国厂商出海与高混合场景 AMR 部署的难点值得细读。",
+  "sections": [
+    {
+      "key": "ai",
+      "title": "AI",
+      "items": [
+        {
+          "pick": true,
+          "title": "Claude Haiku 5.5 发布：与 GPT-6 Luna 同价，但有两个隐藏成本",
+          "source": "Simon Willison",
+          "published": "2026-10-07",
+          "readMinutes": 6,
+          "summary": "Anthropic 发布小模型 Haiku 5.5，每百万 token 输入/输出 $0.10/$0.50，与 OpenAI 上月发布的 GPT-6 Luna 完全同价。作者实测指出：输入超过 10 万 token 后价格涨 5 倍；新分词器让同一段提示词多用约 1.25 倍 token，等于隐性涨价。Haiku 无法关闭推理，默认中档。原文英文。",
+          "takeaways": [
+            "10 万 token 以内的任务，Haiku 5.5 与 Luna 同价且官方跑分更高；超过 10 万 token，Luna（超 27.2 万才涨价且涨幅小）更划算",
+            "换分词器会让按 token 计费的账单悄悄变高，选型要用自己的提示词实测 token 数",
+            "Artificial Analysis 智能指数 43 分（AIHOT 转述），比一年前的 Haiku 4.5 高 26 分；暂无更多独立测评",
+            "Anthropic 定位是配合 Opus/Sonnet 做子智能体，处理摘要、压缩、数据库查询这类高量任务"
+          ],
+          "why": "你平时用 Claude 做 Agent，子任务换成便宜小模型是控制成本的直接办法；这篇讲清了什么长度下划算，几分钟能读完。",
+          "url": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
+          "tags": [
+            "新模型"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "pick": true,
+          "title": "Anthropic：如何构建可靠的定时智能体自动化",
+          "source": "Claude.dev 开发者博客（经 AIHOT 抓取全文）",
+          "published": "2026-10-08",
+          "readMinutes": 12,
+          "summary": "Anthropic 用 Claude Managed Agents（托管智能体，beta）做了一个每日简报的参考实现：按计划读 Slack 和 GitHub，把需要知道的发到 Slack。文章把它拆成六个可复用组件，并给出防错规则，如用‘书签’记录每个来源读到的最新时间戳，而不是固定读‘过去 24 小时’，避免漏读或重复；凭据放在沙箱外的保险库里。",
+          "takeaways": [
+            "固定时间窗口会在运行偏晚时漏条目、偏早时重复；改为每个来源存一个书签，下次从书签开始",
+            "密钥放 vault，沙箱里只有占位符，请求出沙箱时才替换成真实 token",
+            "某个来源失效却没人察觉是定时智能体的典型事故，要显式报告读取失败"
+          ],
+          "why": "你正在做每日简报这类自动化，这篇几乎就是同类系统的设计说明，可直接对照改进自己的流程。",
+          "url": "https://claude.dev/blog/building-effective-agent-automations/",
+          "tags": [
+            "教程"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "pick": true,
+          "title": "一个模型家族拿下 IOI 和 IMO 两块金牌水平：Nemotron 微调配方",
+          "source": "Hugging Face（NVIDIA）",
+          "published": "2026-10-07",
+          "readMinutes": 15,
+          "summary": "NVIDIA 团队在 Nemotron 3 基座上，用 SFT（监督微调，用标准答案教模型）、RL（强化学习）和‘生成—评估—精炼’的推理策略，做出在 IOI 2026（信息学奥赛）与 IMO 2026（数学奥赛）都达金牌水平的系统：IOI 得 535.4/600，IMO 得 30/42 分。原文英文，给出数据规模和训练配方。",
+          "takeaways": [
+            "小模型靠专门训练加测试时多次生成、评分、改进，可以逼近大模型的竞赛成绩",
+            "SFT 带来大部分提升，RL 提供较小但稳定的增益",
+            "IOI 成绩来自实时前瞻运行但为非官方基准；IMO 证明由官方评分员评分",
+            "全程自然语言证明，没有形式化证明器和外部工具"
+          ],
+          "why": "想了解‘怎样把开源模型训练成专项高手’的实际配方与数字，这篇是一手技术报告；同时是厂商自报成绩，要带着这个前提读。",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+          "tags": [
+            "报告"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "pick": true,
+          "title": "网络安全风险的讨论走偏了：开源模型该不该禁",
+          "source": "Interconnects（Nathan Lambert）",
+          "published": "2026-10-06",
+          "readMinutes": 10,
+          "summary": "作者批评当前关于开放权重模型网络安全风险的讨论：前沿实验室和国安圈认为开源模型风险不可承受，他自己与 Hugging Face 等认为禁开源反而更不安全，而中国公司继续发布网络能力强的开源模型，西方对其风险评估方式几乎没有认真研究。他担心政策会同时削弱美国竞争力并提高长期风险。原文英文，观点文章。",
+          "takeaways": [
+            "讨论中三方立场：禁开源派、反对禁令派、继续开源的中国公司",
+            "‘单方面禁开源就能挡住坏人’和‘中国公司不在乎安全’都是过度简化",
+            "政策取舍需要直面利弊，而不是只看最吓人的情景"
+          ],
+          "why": "开源与闭源之争会直接决定你能用到哪些模型和工具，理解各方论据有助于判断国内外模型的走向；观点性强，需要和别的来源对照。",
+          "url": "https://www.interconnects.ai/p/the-cyber-risk-discourse-is-broken",
+          "tags": [
+            "观点"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "pick": false,
+          "title": "OpenAI 向全部 ChatGPT 用户推出 GPT-6 与 Intelligent UI",
+          "source": "OpenAI（AIHOT 转述全文）",
+          "summary": "新的 GPT-6 面向每周 12 亿用户，回答可直接生成按钮、表单、图表等可交互界面。",
+          "url": "https://openai.com/index/gpt-6-for-everyone/",
+          "tags": [
+            "新模型"
+          ]
+        },
+        {
+          "pick": false,
+          "title": "Mistral Large 4 预览版：1 万亿参数，Artificial Analysis 得 38 分",
+          "source": "Simon Willison",
+          "summary": "Mistral 发布 1T 总参数/49B 激活的预览版，承诺本月底放出开源权重；约落后前沿 6 个月。",
+          "url": "https://simonwillison.net/2026/Oct/6/le-chonk/",
+          "tags": [
+            "新模型"
+          ]
+        },
+        {
+          "pick": false,
+          "title": "Reflection 发布 501B 开源编码模型 Beam",
+          "source": "Latent Space",
+          "summary": "美国训练的 501B/23B 激活开源模型，官方称 SWE-bench Verified 80.9，权重 Apache 2.0 本月放出；暂无独立测评。",
+          "url": "https://www.latent.space/p/ainews-reflection-beam-501b-a23b",
+          "tags": [
+            "新模型"
+          ]
+        },
+        {
+          "pick": false,
+          "title": "OpenAI 公开 722 篇内部模型产出的数学论文",
+          "source": "Latent Space",
+          "summary": "OpenAI 称其未发布的内部模型产出 722 篇手稿，业内评价很高，但结论仍需专家核验。",
+          "url": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai",
+          "tags": [
+            "报告"
+          ]
+        },
+        {
+          "pick": false,
+          "title": "Anthropic 下调 Sonnet 5.5 缓存读取价并给订阅用户 API 额度",
+          "source": "Latent Space",
+          "summary": "缓存读取价从每百万 token $0.20 降到 $0.10；Max 与 Team 套餐新增每月 Platform API 额度。",
+          "url": "https://www.latent.space/p/ainews-claude-haiku-55-better-than"
+        },
+        {
+          "pick": false,
+          "title": "Zenity：一条提示词可劫持 AWS 账户内全部 AgentCore 智能体",
+          "source": "The Decoder（经 AIHOT）",
+          "summary": "研究者通过元数据服务窃取凭据，控制同账户同区域所有智能体；AWS 已收紧权限。",
+          "url": "https://the-decoder.com/a-single-prompt-was-enough-to-hijack-every-ai-agent-in-an-aws-account-zenity-researchers-found/"
+        },
+        {
+          "pick": false,
+          "title": "CrowdStrike：疑似一人用 AI 渗透工具攻击多家韩国银行",
+          "source": "The Decoder（经 AIHOT）",
+          "summary": "攻击者用开源 AI 渗透测试工具 ARTEX，Shinhan Bank 超过 2.5 万条客户记录泄露。",
+          "url": "https://the-decoder.com/ai-powered-hacking-tools-enabled-a-likely-single-attacker-to-breach-multiple-south-korean-banks/"
+        },
+        {
+          "pick": false,
+          "title": "Arena 完成 2 亿美元 B 轮，估值 31 亿美元",
+          "source": "AIHOT 整理",
+          "summary": "AI 评测平台 Arena 宣布融资，并推出衡量智能体行为是否安全的 Alignment Index。",
+          "url": "https://aihot.news/items/p95hk44dfpkogo2v4rgwvxq30"
+        },
+        {
+          "pick": false,
+          "title": "Google 发布 EmbeddingGemma 2 开源多模态嵌入模型",
+          "source": "Google DeepMind",
+          "summary": "轻量开源嵌入模型（把文本图片转成向量，用于检索），可在本地运行。",
+          "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/"
+        }
+      ]
+    },
+    {
+      "key": "wh",
+      "title": "仓储物流自动化",
+      "items": [
+        {
+          "pick": true,
+          "title": "‘隐藏项目’如何扭曲中国仓储自动化厂商的成功故事",
+          "source": "Automated Warehouse",
+          "published": "2026-10-05",
+          "readMinutes": 8,
+          "summary": "文章指出，极智嘉、海柔、海康机器人之后，科捷、Wazyim、蓝剑等做固定自动化（输送、分拣等）的中国厂商也开始出海。国内电商与新能源车厂建设放缓、厂商数量暴增、利润被压低，出海成了生存需要，主要瞄准东南亚、海湾国家和部分欧洲地区。所谓‘隐藏项目’是中国企业间的直接采购，不公开招标，让西方厂商在竞标前就失去机会。原文英文。",
+          "takeaways": [
+            "国内需求放缓+价格战是中国厂商出海的主因",
+            "出海目标集中在自动化渗透率低的东南亚、海湾和欧洲部分市场",
+            "‘隐藏项目’让公开业绩和订单数据难以反映真实竞争格局"
+          ],
+          "why": "你关注极智嘉、海康机器人等公司，这篇用外部视角说明它们的海外扩张逻辑，对求职时判断公司处境和面试谈行业很有用。",
+          "url": "https://www.automatedwarehouseonline.com/how-hidden-projects-skew-success-of-chinese-warehouse-automation-vendors/",
+          "tags": [
+            "观点"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "pick": true,
+          "title": "高混合配送中心部署 AMR 为什么容易失败",
+          "source": "MH&L",
+          "published": "2026-10-07",
+          "readMinutes": 6,
+          "summary": "AMR（自主移动机器人，仓内自动搬运车）部署顺利的通常是单一客户、SKU 稳定、场地为之设计；多客户、SKU 不断变化的 3PL 配送中心则容易出问题，硬件相同，差别在于是否理解环境。作者认为这类场景是多个运营共用一套机器人，系统会慢慢偏离最初配置，应从一开始把定期重新配置写进运营模式。原文英文。",
+          "takeaways": [
+            "问题不在机器人硬件，而在方案按单一客户场景设计",
+            "SKU 变化带来导航冲突和任务逻辑失效，是缓慢漂移而非突然故障",
+            "把定期重新配置做成运营流程的一部分"
+          ],
+          "why": "物流工程专业的课程设计和面试都会碰到‘方案在什么条件下失效’，这篇给了一个贴近 3PL 的分析框架。",
+          "url": "https://www.mhlnews.com/technology-automation/article/55409745/navigating-the-complexities-of-high-mix-distribution-with-amrs",
+          "tags": [
+            "观点"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "pick": true,
+          "title": "机器人友好仓库对钢结构建筑的要求",
+          "source": "Robotics & Automation News",
+          "published": "2026-10-07",
+          "readMinutes": 6,
+          "summary": "文章讨论新建或扩建自动化仓库时，建筑本身是第一道约束：柱网、净高、地面、屋顶荷载和扩建路径要围绕系统设计，这些在钢架确定时就锁定，之后很难改。例如内部立柱会占用货位或迫使机器人绕行，可用无柱跨度的刚架来避免。原文英文。",
+          "takeaways": [
+            "柱网和净高决定了 AMR、穿梭车、窄巷道叉车的行驶路径",
+            "五项早期决策：柱位、净高、地坪、屋顶荷载、扩建空间",
+            "在已有建筑里应先定存储方案，新建时则先定建筑"
+          ],
+          "why": "和设施规划、仓库布局课程直接对应，可作为课程作业或设计的现实案例补充。",
+          "url": "https://roboticsandautomationnews.com/2026/10/07/building-for-automation-what-a-robot-ready-warehouse-needs-from-its-steel-shell/105665/",
+          "tags": [
+            "案例"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "pick": true,
+          "title": "First Supply 用 Exotec Skypod 做到次日达",
+          "source": "Automated Warehouse",
+          "published": "2026-10-06",
+          "readMinutes": 6,
+          "summary": "129 年历史的美国水暖建材批发商 First Supply，在新建配送中心里采用 Exotec 的 Skypod（货到人系统，机器人沿货架爬行取货箱）。其物流负责人讲了选型过程：比较了从简单到复杂的各种机器人方案，最终选了占地小的货到人方案，实现 17 点前下单次日上午送达。原文英文，含厂商参与。",
+          "takeaways": [
+            "选型思路：先看业务和空间约束，再选自动化形态",
+            "货到人方案占地少，适合 SKU 多的批发场景",
+            "目标是用自动化增强员工而非全部替代"
+          ],
+          "why": "是一个完整的用户侧选型与落地叙述，可对比今天国际、极智嘉等公司的方案思路。",
+          "url": "https://www.automatedwarehouseonline.com/first-supply-achieves-next-day-delivery-exotec-skypod-system/",
+          "tags": [
+            "案例"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "pick": false,
+          "title": "CEVA 与 Sereact 用机器人处理 Zalando 退货",
+          "source": "Automated Warehouse",
+          "summary": "德国与波兰两个仓上线双臂机器人处理时尚退货，无需逐件训练，按机器人即服务模式运营。",
+          "url": "https://www.automatedwarehouseonline.com/ceva-logistics-deploys-sereact-robots-zalando-returns-europe/",
+          "tags": [
+            "案例"
+          ]
+        },
+        {
+          "pick": false,
+          "title": "Jabil 谈人形机器人从样机走向量产",
+          "source": "The Robot Report",
+          "summary": "Jabil 称行业正进入数万台量产阶段，重点转向成本结构、可制造性和质量。",
+          "url": "https://www.therobotreport.com/jabil-discusses-pace-humanoid-robot-development-production/"
+        },
+        {
+          "pick": false,
+          "title": "波士顿动力任命前亚马逊高管 Rohit Prasad 为 CEO",
+          "source": "The Robot Report",
+          "summary": "前 CEO 今年 2 月离任，新 CEO 主推物理 AI 商业化。",
+          "url": "https://www.therobotreport.com/boston-dynamics-appoints-former-amazon-executive-rohit-prasad-new-ceo/"
+        },
+        {
+          "pick": false,
+          "title": "Simbe 的 Tally 货架巡检机器人累计部署 3000 台",
+          "source": "Automated Warehouse",
+          "summary": "Groceryshop 2026 上宣布，另有一家一线零售商正在推广，数量会继续增加。",
+          "url": "https://www.automatedwarehouseonline.com/groceryshop-2026-retail-robots-are-scaling-now-what/"
+        },
+        {
+          "pick": false,
+          "title": "Aldi 英国 Bardon 配送中心启用 Cimcorp 生鲜自动化",
+          "source": "Automated Warehouse",
+          "summary": "该站点已投资超 5 亿英镑，今年 5 月投运，现开始生鲜作业。",
+          "url": "https://www.automatedwarehouseonline.com/aldi-uses-cimcorp-technology-automate-fresh-produce-handling/"
+        },
+        {
+          "pick": false,
+          "title": "C.H. Robinson 拟以 58 亿美元收购 RXO",
+          "source": "DC Velocity",
+          "summary": "两家货运经纪巨头合并，整合卡车经纪、管理运输、全球货代和末端配送业务。",
+          "url": "https://www.dcvelocity.com/supply-chain/non-asset-3pl/freight-brokers/c-h-robinson-agrees-to-acquire-fellow-freight-broker-rxo-for-5-8-billion"
+        },
+        {
+          "pick": false,
+          "title": "Wize Solutions 收购四家系统集成商",
+          "source": "DC Velocity",
+          "summary": "美国犹他州仓储系统安装商并购后跻身美国最大仓储系统安装公司之列。",
+          "url": "https://www.dcvelocity.com/supply-chain/other-services/systems-integration-services/wize-solutions-acquires-four-other-systems-integrators"
+        },
+        {
+          "pick": false,
+          "title": "大福发布英国冷链仓储自动化白皮书",
+          "source": "Daifuku",
+          "summary": "白皮书讨论英国冷链面临的需求增长、劳动力短缺与自动化策略；正文需登记下载，未读全文。",
+          "url": "https://www.daifuku.com/solution/news/2026/1007_1/"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "抓取失败的信源：Epoch AI（HTTP 403）、Import AI（HTTP 403）、Symbotic IR（HTTP 403）、国家统计局（请求超时）。AIHOT 五个接口均正常。",
+    "北京时间周五，范围按过去 24 小时放宽到前一日傍晚；今日 36氪快讯无相关入选。",
+    "GPT-6 条目依据 AIHOT 转述的官方原文；Haiku 5.5 的 Artificial Analysis 得分来自 AIHOT 摘要，未打开原文。大福白皮书需登记，未读全文。WebSearch 对当日大新闻无有效结果，重大新模型依据信源和 AIHOT 判断。"
+  ]
+}
