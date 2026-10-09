@@ -1,0 +1,152 @@
+{
+  "type": "x",
+  "date": "2026-10-09",
+  "items": [
+    {
+      "kind": "prompt",
+      "category": "视频",
+      "score": 88,
+      "author": "kelanoo",
+      "handle": "@kelanoo",
+      "url": "https://x.com/kelanoo/status/2108199183983497433",
+      "posted": "2026-10-08",
+      "metrics": "1.4 万查看 · 272 赞",
+      "textZh": "作者用 Opus 5.5 做了一条 20 秒的动画短片，讲 Opus 把杂活交给 Haiku 的小故事，画面 100% 是代码写出来的动态图形（Remotion 框架），配音和音乐用 ElevenLabs，分镜参考图用 GPT Image，总花费不到 10 美元、3 小时。完整提示词在他的第一条回复里（https://x.com/kelanoo/status/2108199189134053863）。这份提示词最值得学的是它的“工作流”：先锁事实（facts.json）→ 写剧本对比方案 → 定美术规范 → 先做音频、按音乐节拍定时间轴 → 再用代码画动画 → 六道自检（含“关掉声音也能看懂”测试）→ 最后把整套流程存成一个可复用的 Skill。想用 Claude Code 做讲解视频、产品宣传片的话，可以直接照这个结构改。",
+      "prompt": "You're directing a 20-second animated short about the Claude Haiku 5.5 release. You're the director, the art department, the animator, the sound designer and the QA team, and you have real tools to call.\n\nI'm giving you the idea, the tools and the quality bar. Everything else, from the beats to the look to the jokes, is yours to design. I trust your taste more than a beat sheet I could write. Your capabilities are far beyond what you assume, so work like it: plan carefully, push the craft, and use the tools and the time this deserves. Spend generously where it improves the film and economically everywhere else.\n\nFinal output: `out/level3.mp4`, 1920×1080, 30fps, exactly 20.0 seconds, with voices, music and sound design. At the end, you'll also save your process as a reusable skill.\n\n---\n\n## 1. The idea\n\n**Opus is overloaded with work it shouldn't be doing.** It's buried in small, repetitive tasks: summaries, classifications, lookups, compactions. Then it has a realization: it can hand all of that to Haiku. It calls Haiku, Haiku arrives fast and clears the pile, and Opus is finally free to do the hard, important work it's built for.\n\nThat's the premise. How you tell it is up to you: the staging, gags, rhythm, camera, character beats, what the eureka moment looks like, how Haiku arrives, and how the delegation plays out. Sonnet can appear if it earns its place.\n\n**Fixed points:**\n- 20.0 seconds, 16:9.\n- Opus and Haiku are characters in the same family as the Claude character.\n- The film must read with the sound off.\n- The ending respects reality: Haiku takes the volume, and Opus keeps the hard thinking. Anthropic says Opus 5.5 and Sonnet 5.5 remain the better choice for complex agentic coding, so Haiku is never shown replacing Opus.\n\n---\n\n## 2. Style reference\n\nThe reference is Jake Moran's \"Animated agent session story\": https://www.prompt-motion.com/jake11moran-a269c4. It was made with this skill: https://github.com/heygen-com/hyperframes-community-skills/tree/master/skills/session-story. Read the skill, including its references on motion and the room.\n\nTake from it:\n- The hand-drawn watercolour-on-paper look.\n- A cozy room as a world.\n- Cartoon blocks with faces as characters.\n- Physical paper props that carry the story (paper planes as tasks).\n- A score that's cued to every action.\n\nDon't copy it. Use it as a starting point and push it further: richer staging, better acting from the characters, more cinematic camera, and a stronger hook. It should look like it belongs to the same family, made by someone who studied it closely.\n\n---\n\n## 3. Facts (lock these before any creative work)\n\nFetch https://www.anthropic.com/claude-haiku-5-5 and write `facts.json`: every claim you might use, each with the exact supporting sentence from the page. Only claims in `facts.json` may appear on screen or in dialogue.\n\nThis is a story first, so use one or two facts at most, woven into the world rather than presented as slides. For example, a price tag being re-stamped, or Haiku's speed shown rather than stated. The film must end on a card with **Claude Haiku 5.5**.\n\n---\n\n## 4. Audience and hook\n\nThe audience is AI and developer Twitter/X: people who use Claude every day and know the model names and the jokes about them. Before writing the treatment:\n- **Research:** spend a little time on how people currently talk about Opus, Sonnet and Haiku, and what's being said about this launch. Find one or two references or running jokes this audience would recognize and enjoy. Use them only if they fit the story naturally. Never use real people or brand logos.\n- **The hook:** the first second has to work as a still frame on a busy timeline. Someone scrolling should instantly see \"a character drowning in work\" and want to see what happens.\n- **Text on screen:** this is motion design that tells a story, not a lyric video. Use text sparingly and only where it adds something: a beat the picture can't carry alone, the fact stamp, and the end card. Integrate it into the world (painted, stamped, written in marker) rather than overlaying it.\n\n---\n\n## 5. Tools\n\nThe keys are in `.env`. Pick the best tool for each job, and tell me which you chose and why.\n\n| Tool | Key | Use it for |\n|---|---|---|\n| Web search and fetch | — | Source page, style reference, audience research |\n| Higgsfield (connector) | — | Image generation; call `models_explore` first to pick the best model for flat illustrated characters. Also music or sound effects if its audio models are the best fit. |\n| GPT Image (OpenAI) | `OPENAI_API_KEY` | A second image model. Test both on the same prompt and keep whichever matches the style better. |\n| ElevenLabs | `ELEVENLABS_API_KEY` | Character voices, sound effects, and music (Eleven Music) |\n| Remotion | — | The film itself |\n| ffmpeg + Python | — | Audio analysis, frame extraction, checks |\n| Subagents | — | Parallel research and independent review |\n\n---\n\n## 6. Order of work\n\n### Step 1: Treatment\nWrite `treatment.md`:\n- Your take on the story in one paragraph.\n- The beat sheet with timings.\n- What happens in each shot: camera, acting, the gag.\n- Where the music hits.\n- What each character says.\n- Which fact appears and how.\n- Why this version is the strongest way to tell it.\n\nWrite two or three distinct treatments, then pick one and explain why.\n\n### Step 2: Style bible\nWrite `style/bible.md`:\n- Palette: 6 colours maximum, with hex values and a reason for each.\n- Ink line rules: weight, and the \"boiling\" redraw jitter.\n- Watercolour and paper texture.\n- Lighting.\n- Type: local font files only.\n- Character design rules for Opus and Haiku: size ratio, shapes, how each one moves, and their expression set.\n\n### Step 3: Key art (images as the base, no video generation)\nThe generated images are your key frames and design references. You are the in-betweener. Generate:\n1. **Style frames:** 3 options of the world. Pick one.\n2. **Character sheets:** Opus and Haiku, each with front, three-quarter and side views and their full expression set. Use the chosen style frame as a reference so everything shares one world.\n3. **Key poses:** one image per key pose in your treatment (roughly 6–10), each built from the character sheets and the style frame, matching the camera and composition of the shot.\n\nPut everything on one contact sheet.\n\n**Stop and wait for my approval** before building anything.\n\nThe images are references. The final film is drawn in code to match them, and generated images never appear on screen. Trace the shapes, poses, proportions and composition from the key art into SVG, and animate between them.\n\n### Step 4: Audio first\nThe film's timing comes from the audio.\n1. **Voices:** audition at least 2 ElevenLabs voices per character. Opus should feel warm, low and deliberate. Haiku should feel quick, bright and eager. Generate each line separately, with 2 takes, and keep the best delivery.\n2. **Music:** generate a track that fits your treatment, about 22s long, with its structure matching your beats: for example, a drop when Haiku arrives. If the generated track won't land on your beats, trim and offset it with ffmpeg rather than changing the picture.\n3. **Sound effects:** a sound for every physical action. Paper, whooshes, impacts, the lightbulb, stamps.\n4. **Timing map:** detect the music's beat onsets and write `timing.json`. It holds every beat time, the drop frame, each voice line's start and end frames, and every key action snapped to the nearest beat. All animation timing reads from `timing.json`, with nothing hardcoded.\n5. Play me the audio-only mix before building the picture.\n\n### Step 5: Build in Remotion\n- **Components:** one per character, prop and set piece. Story beats live as data in `story.json`.\n- **Drawing:** watercolour fills via SVG turbulence and displacement filters, a multiply-blended paper texture, and boiling ink lines.\n- **Motion craft:** anticipation before every big action, follow-through after, squash and stretch, springs for landings, arcs for every moving object, and no linear easing.\n- **Acting:** the characters have to perform. Give them readable poses, holds where the audience needs to read a face, and timing that's funny.\n- **Mouths:** mouth shapes driven by the voice track's loudness. They must be still when the character is silent.\n- **Camera:** push-ins, a whip or a shake where it helps. Motivate every camera move.\n- **Mix:** music, voices and sound effects on separate layers. Duck the music under dialogue.\n\n---\n\n## 7. Verification loops (do not skip any)\n\n1. **Key-pose match:** at every key pose, render the frame and compare it side by side with its key art. Write what differs and fix it.\n2. **Sound-off read:** render a silent cut. A fresh subagent that has seen nothing else reviews a contact sheet at 2 frames per second and retells the story. If it can't, the staging failed. Fix it and repeat.\n3. **Sync check:** list every catch, landing, stamp and dialogue line with its actual frame vs its `timing.json` target. Everything must be within 1 frame.\n4. **Fact check:** every word on screen and in dialogue, matched to `facts.json`. Cut anything unmatched.\n5. **Technical:** duration exactly 20.0s, stereo audio, peaks below −1 dBFS, no unintended dead air.\n6. **Director's review:**\n   - Watch the whole film at least twice as frames.\n   - Write a brutal critique as the most demanding motion designer you know: what feels assembled, what's slow, what doesn't land.\n   - Fix the top 3 issues, then review again.\n   - Only then hand it over, with a 10-frame contact sheet.\n\n---\n\n## 8. Package it as a skill\n\nSave the full pipeline as `.claude/skills/launch-film/SKILL.md`, so that next time *\"Make a launch film for [URL] about [idea]\"* is enough.\n\nThe skill should include:\n- The fact lock\n- The treatment process\n- The style bible as a reference file\n- The key-art process with both image models\n- Voice auditions\n- Music and sound effects\n- The timing map\n- The reusable Remotion components\n- Every verification loop\n\n---\n\n## Approval gates\n1. `facts.json` and the chosen treatment\n2. Style bible, character sheets and key poses → **wait for my approval**\n3. Audio-only mix and `timing.json`\n4. Final film, contact sheet and critique\n5. Skill\n\nKeep a task list throughout. At each gate, show me the work, not a description of it.",
+      "promptZh": "你要导演一条 20 秒的 Claude Haiku 5.5 发布动画短片。你同时是导演、美术、动画师、音效师和质检，手上有真实可调用的工具。我只给你创意、工具和质量标准，节奏、画面、笑点都由你设计。最终输出 out/level3.mp4，1920×1080、30fps、正好 20.0 秒，有配音、音乐和音效；最后把你的流程存成可复用的 Skill。\n\n一、创意：Opus 被一堆不该它干的小活（摘要、分类、查询、压缩）淹没，然后突然想到可以交给 Haiku；Haiku 飞快赶到清空任务堆，Opus 终于能去做难而重要的事。固定要求：20 秒、16:9；Opus 和 Haiku 是 Claude 角色家族的成员；关掉声音也要看得懂；结尾尊重事实——Haiku 接走大量小活，Opus 保留难题，不能表现成 Haiku 取代 Opus。\n\n二、风格参考：Jake Moran 的「Animated agent session story」和它所用的 session-story skill（读完它的动作和房间参考）。借鉴：手绘水彩纸质感、温馨房间作为世界、带脸的卡通方块角色、用纸质道具讲故事（纸飞机代表任务）、每个动作都配上音乐点。不要照抄，要在调度、表演、镜头和开场钩子上更进一步。\n\n三、事实先锁定：抓取 Haiku 5.5 官方页面，写 facts.json，每条说法附原文句子；只有其中的内容能出现在画面或台词里。故事为主，最多用一两个事实，融入画面（比如价签被重新盖章），结尾卡片必须是 Claude Haiku 5.5。\n\n四、观众与开场：观众是天天用 Claude 的开发者。先调研大家怎么聊 Opus/Sonnet/Haiku，找一两个圈内梗（不用真人和品牌 logo）。第一秒当静态图也要能抓人：一眼看到“一个角色被工作淹没”。画面文字少而精，并融入场景（手写、盖章、马克笔）。\n\n五、工具：网页搜索抓取、Higgsfield（生图，先挑最适合扁平插画角色的模型）、GPT Image（第二个生图模型，同提示词对比择优）、ElevenLabs（配音、音效、音乐）、Remotion（做片子）、ffmpeg+Python（音频分析、抽帧、检查）、子代理（并行调研和独立评审）。说明每样工具的选择理由。\n\n六、工作顺序：1）剧本：写 2–3 个不同方案（故事一段话、带时间的节拍表、每个镜头的机位表演笑点、音乐重音位置、台词、事实如何出现、为什么最好），选一个并说明理由。2）美术规范 style/bible.md：最多 6 色（附色值和理由）、线条规则与“抖动重绘”、水彩纸纹、光线、只用本地字体、两个角色的比例形状动作和表情集。3）关键美术（只当参考，不做视频生成）：3 个风格帧选 1；两角色的正/侧/四分之三视图和全套表情；每个关键姿势一张（约 6–10 张）；拼成一张总览，然后停下来等我批准。最终画面全部用代码按参考图描成 SVG 再做补间，生成图不能直接上屏。4）先做音频：每个角色至少试 2 种声音（Opus 温暖低沉从容，Haiku 快速明亮热情），每句台词 2 条选最好；生成约 22 秒的配乐，结构对齐节拍（如 Haiku 出场时鼓点落下），对不上就用 ffmpeg 剪，不改画面；每个物理动作都配音效；检测节拍写 timing.json，所有动画时间都从这里读，不写死；先给我听纯音频版。5）用 Remotion 搭建：每个角色、道具、场景一个组件，故事节拍放 story.json；水彩用 SVG 噪声和位移滤镜、正片叠底纸纹、抖动线条；动作要有预备、跟随、挤压拉伸、弹簧落地、弧线运动，不用线性缓动；角色要会演，给观众看清表情的停顿；嘴型由配音音量驱动，不说话时闭嘴；镜头运动要有动机；音乐、人声、音效分轨，说话时压低音乐。\n\n七、自检（一项不能少）：1）关键姿势帧与参考图逐一对比修正；2）渲染无声版，让一个什么都没看过的子代理按每秒 2 帧看截图复述故事，复述不出来就重做；3）同步检查：每个动作和台词的实际帧与 timing.json 误差不超过 1 帧；4）事实核对：画面和台词每个字都要能对上 facts.json；5）技术检查：正好 20.0 秒、立体声、峰值低于 −1 dBFS、无多余空白；6）导演复审：至少完整看两遍，以最挑剔的动效设计师身份写一份狠批，修掉前三个问题再审，然后附 10 帧总览交付。\n\n八、打包成 Skill：把全流程存为 .claude/skills/launch-film/SKILL.md，下次一句“给 [链接] 做一条关于 [创意] 的发布短片”就够了；包含事实锁定、剧本流程、美术规范、双模型关键美术流程、配音试音、音乐音效、时间轴、可复用 Remotion 组件和全部自检环节。\n\n审批节点：1）facts.json 和选定剧本；2）美术规范、角色设定和关键姿势（等我批准）；3）纯音频版和 timing.json；4）成片、总览和批评；5）Skill。全程维护任务清单，每个节点给我看成果，而不是描述。",
+      "video": "https://x.com/kelanoo/status/2108199183983497433"
+    },
+    {
+      "kind": "prompt",
+      "category": "照片艺术",
+      "score": 85,
+      "author": "小小东",
+      "handle": "@xiaoxiaodong",
+      "url": "https://x.com/xiaoxiaodong/status/2108227862390280585",
+      "posted": "2026-10-09",
+      "metrics": "5614 查看 · 123 赞",
+      "textZh": "小小东「美学提示词」系列 VOL.341：「第二世界」超现实摄影插画。上传一张自己拍的照片，上半张保留原照片，下半张是米白纸质空间，让照片里的某个结构（影子、道路、水面、枝条等）“越界”进入下半张，并变成另一种可以被使用的东西，再配 0–3 个极简黑线小人和一句英文手写旁白。帖子正文给了完整提示词（用 GPT Image 2），对应 Skill 放在 GitHub：github.com/nevertoday/xxd-panel-341。适合拿自己的随手照片做有创意的海报。",
+      "prompt": "请基于我上传的每一张摄影作品，分别创作一张独立的 3:4 竖版「第二世界」概念性超现实摄影插画海报，每张单独输出，不拼图。整体上下 严格 1:1。上半部分是原始现实照片，下半部分是从照片内部生长出来的另一层空间；二者不是上下拼接，而是同一个瞬间在不同叙事层中的连续存在。\n上半部分尽可能忠实保留原照片，不改变主体、动作、空间关系、光线、色彩与真实质感，只做必要的等比裁切与轻微高级调性整理，使其具有干净、克制、独立出版物般的摄影品质。\n创作重点不在“题材”，而在视觉结构的再理解。先观察这张照片中最具决定性的结构线索，例如边界、坡度、水面、倒影、阴影、裂缝、道路、枝条、云层、轮廓、空隙、流向、重复节奏、空间转折或人物姿态；从中找到最适合被“越界”的那个部分。然后让它突破照片边界，进入下半部分，并在进入后发生用途、尺度、语义或叙事角色的转译。不是简单延长，而是让现实中的某种东西，在第二层空间里变成另一种可以被使用、进入、测量、打捞、修补、整理、借用、展开或收藏的存在。\n下半部分是温暖、安静、带细微纸张肌理的暖米白空间，保留充足留白。它不是插画背景，也不是装饰区，而是承接“越界之后的新逻辑”的地方。上下关系应符合：现实 → 越界 → 转译。画面的趣味来自一个聪明而准确的跨层叙事，而不是可爱装饰。\n可加入极简黑色手绘线稿人物，但应少而准，0–3 个即可。人物不是摆设，而是第二世界的使用者；他们必须与被转译出的结构发生真实互动。线条轻、简、自然，略带手工感，不卖萌，不复杂，不喧宾夺主。动作应具体、克制、聪明，像是在认真处理一件本来就存在于这个世界里的小事。\n可加入一句简短英文手写旁白，但必须根据这张图里真实发生的“第二世界事件”现场生成。语气像顺手写下的发现或轻声旁白，带一点幽默和余味，不写成励志句，不解释寓意，不套模板。\n整体风格应呈现：Mixed-Media Photo Illustration、Surreal Photomontage、Frame-Breaking Illusion、Trompe-l'œil、Visual Metaphor、Conceptual Editorial Illustration 的综合质感。也就是：以跨媒介拼贴为形式，以画面越界为机制，以视觉隐喻为核心，以温柔、轻微、聪明的微型超现实主义为情绪基调。\n不要做成“照片下方加小人和句子”的模板图；不要只有延伸没有转译；不要只有形式没有隐喻；不要强行抒情；不要商业广告感、复杂插画感、重复动作、无依据装饰、机械拼贴、硬连接或廉价治愈风。\n最终目标：\n让观者先看到一张成立的真实照片，再忽然发现其中某个元素越界进入了另一层空间，并在那里获得了一个意想不到却极其自然的新意义。\n不是给照片加创意，而是把照片里原本潜伏的第二种现实显现出来。",
+      "promptZh": "（原文即为中文，无需翻译）",
+      "images": [
+        "https://pbs.twimg.com/media/HUHuCs9aoAEXMkO.jpg",
+        "https://pbs.twimg.com/media/HUHuCs-aQAAVBPM.jpg"
+      ]
+    },
+    {
+      "kind": "prompt",
+      "category": "照片艺术",
+      "score": 76,
+      "author": "리비",
+      "handle": "@_ribbie_",
+      "url": "https://x.com/_ribbie_/status/2108185052588998698",
+      "posted": "2026-10-08",
+      "metrics": "6573 查看 · 263 赞",
+      "textZh": "韩国作者分享的「创造者」V5 提示词：古风仙侠人物手持巨型毛笔在空中作画，画出的动物从水墨里“活”过来，一半是平面水墨、一半是真实生物，黑白银灰配色、强对比光。作者说明：可以自由修改使用，用时请注明出处；把 [ANIMAL] 换成动物名；横版比竖版好看。提示词里的“1.45::xxx::”是给各元素加权重的写法（数字越大越突出）。",
+      "prompt": "1person, solo, ancient Chinese fantasy, xianxia-inspired, dynamic action scene,\n\n1.45::dramatic composition::, 1.4::dynamic perspective::, 1.35::cinematic motion::, 1.35::character large in frame::, low angle, sweeping diagonal composition, full body or thigh-up,\n\n1.45::holding a giant calligraphy brush::, 1.4::painting in midair::, 1.4::one arm extended powerfully::, 1.35::wide flowing sleeve movement::, 1.35::hair and robe whipping in the air::, 1.3::powerful elegant posture::, 1.3::commanding the world with ink::,\n\n1.5::a giant ink painting of [ANIMAL] forming in midair::,\n1.5::the painted creature becoming real::,\n1.45::partly 2D ink painting and partly real creature::,\n1.45::the creature emerging out of the ink artwork::,\n1.4::ink strokes transforming into a living body::,\n1.4::fur, feathers, scales, claws, wings, or tail forming from brushstrokes::,\n1.4::half-painted, half-real transformation::,\n1.4::ink splashes bursting outward as the creature takes shape::,\n1.35::the creature leaping out from a floating scroll or from the air itself::,\n1.35::brushstrokes unraveling into a living beast::,\n1.35::swirling black ink turning into a real creature body::,\n1.3::painted outline still visible around the creature::,\n1.3::trails of ink connected to the brush and the creature::,\n\n1.4::floating calligraphy strokes::, 1.35::glowing Chinese characters::, 1.35::exploding ink splashes::, 1.35::scroll fragments flying through the air::, 1.3::misty mountains and rivers painted into existence around the scene::,\n\nornate traditional Chinese robes, elegant layered hanfu, long wide sleeves, embroidered cloud and mountain motifs, black, white, charcoal, muted silver palette, subtle jade accessories, flowing ribbons, refined scholar-immortal atmosphere,\n\nancient Chinese hall merging with a painted world, giant hanging scrolls, floating parchment fragments, stone floor splashed with ink, magical calligraphy circle beneath the feet, drifting ink mist, suspended droplets of black ink, mountainous ink-wash scenery appearing in the background,\n\nhigh contrast lighting, luminous ink glow, monochrome fantasy atmosphere, dramatic black-and-white contrast, rich brush texture, intense transformation effect, elegant and majestic, visually spectacular, powerful magical realism",
+      "promptZh": "单人，古代中国奇幻，仙侠风格，动态动作场景；（权重1.45）戏剧性构图、（1.4）动态透视、（1.35）电影感动作、（1.35）人物在画面中占比大，低角度，横扫式对角线构图，全身或大腿以上；（1.45）手持巨型毛笔、（1.4）在空中作画、（1.4）一只手臂有力伸出、（1.35）宽大衣袖飘动、（1.35）头发和长袍在空中翻飞、（1.3）有力而优雅的姿态、（1.3）以墨号令天地；（1.5）空中正在成形的巨幅 [动物] 水墨画、（1.5）画中生物变成真的、（1.45）一半二维水墨一半真实生物、（1.45）生物从水墨画中钻出、（1.4）墨迹化为活体、（1.4）毛发/羽毛/鳞片/爪/翅/尾从笔触中长出、（1.4）半画半真的转化、（1.4）生物成形时墨点向外迸溅、（1.35）生物从漂浮的卷轴或空气中跃出、（1.35）笔触散开化为活兽、（1.35）旋转的黑墨变成真实身体、（1.3）生物周围仍可见画出的轮廓、（1.3）墨迹连着毛笔和生物；（1.4）漂浮的书法笔画、（1.35）发光的汉字、（1.35）爆开的墨花、（1.35）飞舞的卷轴碎片、（1.3）周围被画出来的云雾山水；华丽的传统中式长袍、层叠汉服、宽长袖、云纹山纹刺绣，黑白炭灰哑银配色，少量玉饰，飘带，清雅的书生仙人气质；古代殿堂与画中世界融合，巨大挂轴，漂浮的羊皮纸碎片，溅满墨迹的石地，脚下的魔法书法阵，飘散的墨雾，悬浮的墨滴，背景浮现水墨山景；高对比光线，发光的墨，单色奇幻氛围，强烈黑白对比，丰富笔触质感，强烈的变身效果，优雅磅礴，视觉震撼，有力的魔幻现实主义。",
+      "images": [
+        "https://pbs.twimg.com/media/HUHG82LaMAAhKSB.jpg",
+        "https://pbs.twimg.com/media/HUHG9dnagAA4DBg.jpg",
+        "https://pbs.twimg.com/media/HUHG-PCasAA0CrZ.jpg",
+        "https://pbs.twimg.com/media/HUHG_ADbMAEdhrG.jpg"
+      ]
+    },
+    {
+      "kind": "prompt",
+      "category": "照片艺术",
+      "score": 68,
+      "author": "Talia",
+      "handle": "@TaliaAariz",
+      "url": "https://x.com/TaliaAariz/status/2108458612662128684",
+      "posted": "2026-10-09",
+      "metrics": "860 查看 · 113 赞",
+      "textZh": "用 GPT Image 2.5 生成的夜景胶片风人像：白色吊带裙、手捧一大束小雏菊挡住半张脸，直闪+轻微动态模糊+胶片颗粒，模仿 35mm 胶片相机的随拍感。提示词写法很典型：人物外貌→服装配饰→动作神态→背景→相机/光线/质感→画幅，可以当作“胶片闪光灯人像”的模板来改。",
+      "prompt": "Ultra-photorealistic candid night portrait of an adult woman with fair porcelain glass skin, luminous dewy complexion, soft natural rosy blush, softly defined brows, subtle brown eyeshadow, natural lashes, and peachy-nude glossy lips. Extremely long, thick espresso brown hair in a high messy ponytail with loose curls strands blowing across her face. Wearing a delicate white spaghetti-strap dress, backless, thick gold hoop earrings, subtle piercings and gold rings. She gently holds a huge bouquet of white daisies with yellow centers close to her face, partially covering her mouth and lower face, gazing softly toward the camera with a dreamy candid expression. Dark outdoor nighttime background with warm distant bokeh lights, direct on-camera flash, slight motion blur, subtle film grain, intimate 35mm analog-camera aesthetic, cinematic low-light atmosphere, ultra-detailed. Add a small handwriting watermark written dev at the bottom left. Ar 3:4.",
+      "promptZh": "超写实的夜间随拍人像：一位成年女性，白皙通透的“玻璃肌”，水润有光泽的肤色，自然淡红腮红，眉形柔和，淡棕色眼影，自然睫毛，蜜桃裸色亮面唇。极长极浓密的深咖啡色头发扎成凌乱的高马尾，松散卷发被风吹过脸庞。穿一条精致的白色细吊带露背连衣裙，粗金色圈形耳环，少量耳钉和金戒指。她把一大束黄心白色雏菊轻轻捧在脸前，遮住嘴和下半张脸，温柔地看向镜头，神情梦幻自然。背景是昏暗的户外夜景，远处有暖色散景光点；机顶直闪，轻微动态模糊，细微胶片颗粒，亲密的 35mm 胶片相机质感，电影感弱光氛围，细节极丰富。在左下角加一个手写小水印“dev”。画幅 3:4。",
+      "images": [
+        "https://pbs.twimg.com/media/HUK_63KXIAEKR6C.jpg",
+        "https://pbs.twimg.com/media/HUK_63iW4AAmIwC.jpg",
+        "https://pbs.twimg.com/media/HUK_63GXYAAY6bZ.jpg",
+        "https://pbs.twimg.com/media/HUK_66iXsAA5UXX.jpg"
+      ]
+    },
+    {
+      "kind": "news",
+      "category": "PPT",
+      "score": 84,
+      "author": "zhouluobo（萝卜哥）",
+      "handle": "@zhouluobo",
+      "url": "https://x.com/zhouluobo/status/2108446526452244658",
+      "posted": "2026-10-09",
+      "metrics": "2.7 万查看 · 142 赞",
+      "textZh": "萝卜哥开源了一个免费的 PPT Skill「luobo-ppt」（github.com/zhouwei713/luobo-ppt），能从文章直接生成能讲的 PPT，也能给已有 PPT 换风格（文字一个不改，用脚本逐字核对）。要点：14 套预设风格，也可以给一张参考图让它照着配色和元素来；输出的是 PowerPoint 原生元素，表格、图表双击就能改数据；每页标题写成一句结论，自动配口播备注；内置版式容量表（如漏斗最多 5 层、每层不超过 26 字），避免字越缩越小；公式编辑器里的公式会转成普通文字公式，换软件也不丢；不接生图模型也能画插画。支持 Claude、Codex、Cursor 等。缺点是慢：12 页左右要 15–25 分钟，可以说“快速模式”跳过确认环节。"
+    },
+    {
+      "kind": "news",
+      "category": "视频",
+      "score": 72,
+      "author": "Anvisha Pai",
+      "handle": "@anvisha",
+      "url": "https://x.com/anvisha/status/2108252061209088159",
+      "posted": "2026-10-09",
+      "metrics": "167 万查看 · 2733 赞",
+      "textZh": "Voyager 发布：自称“创意工作版的 Codex”，一个专门让 AI 做视频、图形和游戏的开放工具（官方说法是 harness，可以理解为给模型套上的一整套工作台）。它针对 Opus、Astra、DeepSeek 这些模型做了优化，自带免费的图形、音乐和视频剪辑工具，也能操控 Blender、DaVinci Resolve、After Effects、Ableton 等 100 多款软件。作者在后续回复里解释：和 Higgsfield 这类只做 AI 视频生成的不同，它覆盖分镜、剪辑、找素材、作曲的全流程；和“Claude + Skill”的区别是他们在做专门给 AI 用的专业级命令行工具，省 token、效果更好；目前还没开源，计划近期开源，也会把这些工具开放给 Claude Code 用。属于厂商自己的说法，效果以实际试用为准。"
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "score": 80,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2108409240847016347",
+      "posted": "2026-10-09",
+      "metrics": "1.6 万查看",
+      "textZh": "Anthropic 给 Claude 加了两个新功能：Claude Dashboards（连上公司数据库后，用大白话提问就能自动生成会随数据更新的数据看板，每个数字都能点开看背后的查询语句，付费套餐可用）和 Claude Motion（输入 /motion，把报告、图表做成几十秒的动画讲解，靠写代码让文字图表动起来而不是视频生成模型，可导出 MP4，目前只对 Team 和企业版开放）。同时，文档、幻灯片、设计三项功能结束测试，所有套餐包括免费版都能用，支持多人和 Claude 一起编辑、导出保留排版的 PPT/PDF、转成可编辑的 Google Slides。Claude Design 独立网站 12 月 14 日关闭，并入普通对话。"
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "score": 70,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2108255984703475733",
+      "posted": "2026-10-09",
+      "metrics": "6.8 万查看 · 182 赞",
+      "textZh": "Anthropic 一年多来第一次改 Claude 的使用政策，11 月 12 日生效。最受关注的一条：用户不得对 Claude“持续且无必要地辱骂或虐待”，主要处理方式仍是让 Claude 结束对话；平时发火、争论、写黑暗题材、做测试研究都不算。其他改动：禁止用 Claude 搞隐瞒真实发布者或刷量的虚假宣传；禁止散布选举虚假信息；武器禁令扩大到“让武器运转的软件和部件”；未经同意追踪他人被明确禁止；诊断病情、调整用药、推荐具体投资产品被列为高风险用途，开发这类产品必须先由合格专业人士审核结果并告知用户内容由 AI 生成。来源是 The Verge 的报道。"
+    },
+    {
+      "kind": "news",
+      "category": "编程",
+      "score": 66,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2108215552993055187",
+      "posted": "2026-10-08",
+      "metrics": "1.9 万查看 · 92 赞",
+      "textZh": "提醒：刚发布的 Claude Haiku 5.5 用的是阶梯价格——输入内容（上下文）在 10 万 token 以内时很便宜，一旦超过 10 万 token，单价变成 5 倍，这个细节在价格页面上不太显眼。如果你用 API 跑长文档或长对话的 Agent，算成本时要注意，长上下文场景未必比上一代或其他模型便宜。"
+    },
+    {
+      "kind": "opinion",
+      "category": "研究",
+      "score": 62,
+      "author": "Ethan Mollick",
+      "handle": "@emollick",
+      "url": "https://x.com/emollick/status/2108414247558316508",
+      "posted": "2026-10-09",
+      "metrics": "2.6 万查看 · 528 赞",
+      "textZh": "沃顿商学院教授 Ethan Mollick 转述一篇发表在《柳叶刀》的研究：在急诊/门诊（urgent care）场景下，早已过时的 Gemini 2.5 Pro 和 Gemini 2.5 Flash（而且看不到病人病历），给出的建议被其他医生评为和真人医生质量相近，没有发现安全问题。他的观点是：模型此后又进步了很多。注意这只是专家评分研究，不等于 AI 可以替代看病；论文原文：thelancet.com（付费）。"
+    },
+    {
+      "kind": "opinion",
+      "category": "其他",
+      "score": 58,
+      "author": "a16z",
+      "handle": "@a16z",
+      "url": "https://x.com/a16z/status/2108244794149679212",
+      "posted": "2026-10-09",
+      "metrics": "17.6 万查看 · 1388 赞",
+      "textZh": "投资机构 a16z 的观点文章《你需要一个新的 CFO》：首席财务官的角色从“会计”到“银行家”再到“建设者”。七点变化：1）AI 自动拉取和对账，数据不再是瓶颈；2）AI 原生的财务工具几天就能上线，月结变日结；3）会用 Claude Code、Codex 自己做工具的“财务工程师”兴起；4）财务团队变小，最精简的团队人数占比从约 5% 降到 2%；5）按 token、调用量计费的收入变化太快，预算从年度计划变成实时滚动；6）AI 动过的每个数字都要能追溯来源，财务仍负责最终签字；7）算力开支、用人还是用软件、自建还是采购，都成了财务决策。对想做供应链/运营方向的同学，可以看到“懂业务+会用 AI 做工具”正在成为职能岗位的新要求。原文：a16z.news/p/you-need-a-new-cfo。"
+    }
+  ]
+}
