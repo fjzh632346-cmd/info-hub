@@ -34,6 +34,29 @@ def log(msg: str) -> None:
     print(msg, flush=True)
 
 
+def pick_summary(lines: list[str], kind: str) -> list[str]:
+    """从 agent 最后的输出里找那三行总结。
+
+    指令要求第三行是网站地址，所以以带 :8800 的那一行为锚点，取它和前两行。
+    agent 有时会在总结后面再补几句备注，所以不能简单取最后三行。
+    找不到锚点时，用写入的数据文件里的 headline 兜底。
+    """
+    for i in range(len(lines) - 1, -1, -1):
+        if "120.55.51.34:8800" in lines[i]:
+            return lines[max(0, i - 2): i + 1]
+    import json
+    from datetime import datetime, timedelta, timezone
+    today = (datetime.now(timezone.utc) + timedelta(hours=8)).strftime("%Y-%m-%d")
+    f = ROOT / "data" / kind / f"{today}.json"
+    try:
+        headline = json.loads(f.read_text(encoding="utf-8")).get("headline")
+        if headline:
+            return [str(headline)]
+    except Exception:
+        pass
+    return lines[:3] if lines else ["（agent 没有输出总结）"]
+
+
 async def run(kind: str) -> int:
     cfg = CONFIGS[kind]
     prompt = (ROOT / "automation" / "prompts" / f"{kind}.md").read_text(encoding="utf-8")
@@ -74,7 +97,7 @@ async def run(kind: str) -> int:
     # 最后几行文字：优先用结果消息里的 result，没有就用最后一段说明
     final = ((result.result if result and result.result else "") or last_text).strip()
     lines = [l.strip(" -*") for l in final.splitlines() if l.strip()]
-    tail = lines[-3:] if lines else ["（agent 没有输出总结）"]
+    tail = pick_summary(lines, kind)
     SUMMARY_FILE.write_text("\n".join(tail) + "\n", encoding="utf-8")
 
     # 用量和费用
