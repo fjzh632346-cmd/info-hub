@@ -1,7 +1,13 @@
 {
- "fetchedAt": "2026-10-09T02:15:02.108Z",
+ "fetchedAt": "2026-10-09T17:01:11.553Z",
  "hours": 72,
  "status": [
+  {
+   "source": "Epoch AI",
+   "feed": "https://epochai.substack.com/feed",
+   "ok": false,
+   "error": "HTTP 403"
+  },
   {
    "source": "Google DeepMind",
    "feed": "https://deepmind.google/blog/rss.xml",
@@ -13,28 +19,22 @@
    "source": "OpenAI",
    "feed": "https://openai.com/news/rss.xml",
    "ok": true,
-   "total": 1258,
-   "recent": 11
+   "total": 1259,
+   "recent": 8
   },
   {
    "source": "a16z",
    "feed": "https://www.a16z.news/feed",
    "ok": true,
    "total": 20,
-   "recent": 4
+   "recent": 5
   },
   {
    "source": "Hugging Face",
    "feed": "https://huggingface.co/blog/feed.xml",
    "ok": true,
    "total": 876,
-   "recent": 4
-  },
-  {
-   "source": "Epoch AI",
-   "feed": "https://epochai.substack.com/feed",
-   "ok": false,
-   "error": "HTTP 403"
+   "recent": 5
   },
   {
    "source": "Import AI",
@@ -50,6 +50,13 @@
    "recent": 0
   },
   {
+   "source": "Simon Willison",
+   "feed": "https://simonwillison.net/atom/everything/",
+   "ok": true,
+   "total": 30,
+   "recent": 18
+  },
+  {
    "source": "Google AI",
    "feed": "https://blog.google/technology/ai/rss/",
    "ok": true,
@@ -57,38 +64,31 @@
    "recent": 1
   },
   {
-   "source": "Simon Willison",
-   "feed": "https://simonwillison.net/atom/everything/",
-   "ok": true,
-   "total": 30,
-   "recent": 16
-  },
-  {
    "source": "Latent Space",
    "feed": "https://www.latent.space/feed",
    "ok": true,
    "total": 20,
-   "recent": 6
+   "recent": 5
   },
   {
    "source": "Interconnects",
    "feed": "https://www.interconnects.ai/feed",
    "ok": true,
    "total": 20,
-   "recent": 1
+   "recent": 0
+  },
+  {
+   "source": "大福（日文）",
+   "feed": "https://www.daifuku.com/jp/rss_all.xml",
+   "ok": true,
+   "total": 10,
+   "recent": 0
   },
   {
    "source": "Benedict Evans",
    "feed": "https://www.ben-evans.com/benedictevans/?format=rss",
    "ok": true,
    "total": 20,
-   "recent": 0
-  },
-  {
-   "source": "宝玉",
-   "feed": "https://baoyu.io/feed.xml",
-   "ok": true,
-   "total": 50,
    "recent": 0
   },
   {
@@ -102,14 +102,14 @@
    "source": "BestBlogs 每日早报",
    "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
    "ok": true,
-   "total": 7,
-   "recent": 4
+   "total": 6,
+   "recent": 3
   },
   {
-   "source": "大福（日文）",
-   "feed": "https://www.daifuku.com/jp/rss_all.xml",
+   "source": "宝玉",
+   "feed": "https://baoyu.io/feed.xml",
    "ok": true,
-   "total": 10,
+   "total": 50,
    "recent": 0
   },
   {
@@ -127,13 +127,6 @@
    "recent": 0
   },
   {
-   "source": "Symbotic IR",
-   "feed": "https://ir.symbotic.com/rss/news-releases.xml",
-   "ok": true,
-   "total": 10,
-   "recent": 0
-  },
-  {
    "source": "Georgia Tech SCL",
    "feed": "https://www.scl.gatech.edu/rss.xml",
    "ok": true,
@@ -141,18 +134,16 @@
    "recent": 0
   },
   {
-   "source": "Interact Analysis",
-   "feed": "https://www.interactanalysis.com/feed/",
-   "ok": true,
-   "total": 0,
-   "recent": 0
+   "source": "Symbotic IR",
+   "feed": "https://ir.symbotic.com/rss/news-releases.xml",
+   "ok": false,
+   "error": "HTTP 403"
   },
   {
-   "source": "Logistics Viewpoints",
-   "feed": "https://logisticsviewpoints.com/feed/",
-   "ok": true,
-   "total": 10,
-   "recent": 10
+   "source": "Interact Analysis",
+   "feed": "https://www.interactanalysis.com/feed/",
+   "ok": false,
+   "error": "HTTP 403"
   },
   {
    "source": "Automated Warehouse",
@@ -162,6 +153,13 @@
    "recent": 5
   },
   {
+   "source": "Logistics Viewpoints",
+   "feed": "https://logisticsviewpoints.com/feed/",
+   "ok": true,
+   "total": 10,
+   "recent": 10
+  },
+  {
    "source": "The Robot Report 物流",
    "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
    "ok": true,
@@ -169,17 +167,31 @@
    "recent": 2
   },
   {
-   "source": "MH&L",
-   "feed": "https://www.mhlnews.com/__rss/website-scheduled-content.xml?input=%7B%22sectionAlias%22%3A%22home%22%7D",
-   "ok": true,
-   "total": 25,
-   "recent": 4
-  },
-  {
    "source": "DC Velocity",
    "feed": "https://www.dcvelocity.com/rss",
    "ok": true,
    "total": 30,
+   "recent": 11
+  },
+  {
+   "source": "MH&L",
+   "feed": "https://www.mhlnews.com/__rss/website-scheduled-content.xml?input=%7B%22sectionAlias%22%3A%22home%22%7D",
+   "ok": true,
+   "total": 25,
+   "recent": 5
+  },
+  {
+   "source": "Supply Chain 24/7 自动化",
+   "feed": "https://feeds.feedburner.com/sc247/rss/automation",
+   "ok": true,
+   "total": 20,
+   "recent": 2
+  },
+  {
+   "source": "Supply Chain Dive",
+   "feed": "https://www.supplychaindive.com/feeds/news/",
+   "ok": true,
+   "total": 10,
    "recent": 10
   },
   {
@@ -188,20 +200,6 @@
    "ok": true,
    "total": 10,
    "recent": 0
-  },
-  {
-   "source": "Supply Chain 24/7 自动化",
-   "feed": "https://feeds.feedburner.com/sc247/rss/automation",
-   "ok": true,
-   "total": 20,
-   "recent": 1
-  },
-  {
-   "source": "Supply Chain Dive",
-   "feed": "https://www.supplychaindive.com/feeds/news/",
-   "ok": true,
-   "total": 10,
-   "recent": 10
   },
   {
    "source": "AIHOT",
@@ -234,12 +232,246 @@
  "items": [
   {
    "group": "ai",
+   "source": "a16z",
+   "title": "This Week in Charts: Are Prediction Markets Politically Biased?",
+   "url": "https://www.a16z.news/p/this-week-in-charts-are-prediction",
+   "published": "2026-10-09T16:31:10.000Z",
+   "description": "Rule of 40 Ain’t What It Used To Be; Atoms keep winning, but what about everyone else?; AI Has Come For Call Centers, After All?",
+   "excerpt": "We’re excited to announce that a16z is leading an investment in TypeSafe AI, the creators of Jev. Read more about why we invested in our blog post and hear from the team in our a16z Show episode .\nEarlier this week, Flávio Bolsonaro secured a surprise first-round victory in the Brazilian presidential election. Or maybe it wasn’t a surprise. Charts knows next to nothing about Brazilian politics, so we really couldn’t say.\nIf you take a gander at the prediction markets, however, it appears as though Bolsonaro’s win was at least somewhat surprising, but not too surprising:\nAfter pacing as a long shot for most of the year, odds began to turn in Bolsonaro’s favor in August, and by the second week of September, he was already the favorite. Unsurprisingly, Bolsonaro’s odds for winning the presidency have since skyrocketed, after the recent first-round win.\nWhatever the surprise, prediction markets were early and right on this one by ~3 weeks. The outcome of the election is apparently consequential for financial markets too, judging by MSCI’s Brazil ETF , which jumped ~15% after the news of Bolsonaro’s first-round win. To be fair, the ETF also started climbing back in August (when Bolsonaro’s Kalshi odds began to turn), but not nearly as steeply or as uniformly. In other words, it seems fair to conclude that prediction markets had this one first.\nAll of this was a somewhat longwinded segue to some recent research that purports to show that prediction markets are actually pretty good at elections, or at least, they don’t demonstrate much partisan bias.\nProf. Zitzewitz published some preliminary findings in an NBER working paper that aggregated over 100 years’ worth of prediction markets (albeit with most of the sample coming recently) looking for evidence of over-pricing along various dimensions, including demographics and political affiliation. The premise of the study is that any bias would show up as outsized returns (either positive or negative) for whichever attribute(s) prediction markets systematically over- or underrated. That makes sense: if, e.g., prediction markets consistently underrate female candidates, then taking the “over” on female candidates would be a winning strategy (reflected by a positive coefficient).\nAs it turns out, the evidence of bias is pretty much non-existent:\nThis chart summarizes a subset of the results, and among political affiliation, gender, color, or age, there is not a single dimension where the return coefficient was above or"
+  },
+  {
+   "group": "ai",
+   "source": "a16z",
+   "title": "Investing in TypeSafe AI",
+   "url": "https://www.a16z.news/p/investing-in-typesafe",
+   "published": "2026-10-09T16:28:52.000Z",
+   "description": "a16z leads investment in TypeSafe AI",
+   "excerpt": "The Jev launch is the biggest narrative violation we’ve seen this year, in the best possible way.\nThe reason behind the instant take-off is obvious in hindsight. While AI is incredibly useful for creating software like a human, at superhuman speed, it’s been far more difficult to integrate into code. “AI is eating software” has ironically meant that it’s writing a lot more traditional software a lot faster, but not necessarily making the software more intelligent.\nThe real economic unlock should be that all software is imbued naturally and natively with the intelligence of the latest models, at performance and cost that makes sense with traditional software economics . This is exactly what TypeSafe AI accomplished with Jev, and is why it’s that fastest growing model we’ve ever seen - reaching 1 trillion tokens generated in merely 3 days post launch.\nTwo important properties set Jev apart from every other large language model. Rather than encoding a model decision output into text, and leaving the software to parse and normalize it, Jev hands the decision directly to your code as a typed value. The output is so small that they don’t even bother charging for it. The modality innovation is accompanied by an economical one. Jev is roughly 1/100 to 1/500 the cost of frontier models while being 100x faster for classification tasks at the comparable accuracy.\nHowever, the significance of the Jev model is not that it’s faster, cheaper and more accurate (though it is all three), but that it opened a new path of how we think about AI and its relationship to software. Jev is the first of a new class of System One models , which are built to be deeply integrated with code (rather than talked to by people) that returns instinctive decisions in the native language of software. While the big labs chase more parameters, longer context, deeper chains of reasoning that’s “human-like”, this is an entirely new direction to truly make AI ubiquitous.\nFrom the first conversation with Diogo, we found ourselves philosophically aligned with the mission behind this movement. Jev and TypeSafe as a company are much more aligned with developers ethos: pragmatic, composable, and deeply respectful of people who build. It’s a refreshing take in contrast to the rhetoric around the big labs about replacing software engineers and killing SaaS. TypeSafe believes AI is a tool that can make software more intelligent, and returns the power to the developers hands.\nThe developer community respond"
+  },
+  {
+   "group": "wh",
+   "source": "Logistics Viewpoints",
+   "title": "C.H. Robinson’s $5.8 Billion RXO Acquisition: Scale, Density, and AI Reshape Freight Brokerage",
+   "url": "https://logisticsviewpoints.com/2026/10/09/c-h-robinsons-5-8-billion-rxo-acquisition-scale-density-and-ai-reshape-freight-brokerage/",
+   "published": "2026-10-09T15:58:59.000Z",
+   "description": "C.H. Robinson’s planned $5.8 billion acquisition of RXO is more than another consolidation move in the freight brokerage market. It represents a major bet that the next phase of competition in third-party logistics will be driven by the combination of network scale, transportation density, broader service capabilities, and increasingly automated operations. Announced October 5, the […] The post C.H. Robinson’s $5.8 Billion RXO Acquisition: Scale, Density, and AI Reshape Freight Brokerage appeared first on Logistics Viewpoints .",
+   "excerpt": "C.H. Robinson’s planned $5.8 billion acquisition of RXO is more than another consolidation move in the freight brokerage market. It represents a major bet that the next phase of competition in third-party logistics will be driven by the combination of network scale, transportation density, broader service capabilities, and increasingly automated operations.\nAnnounced October 5, the stock-and-cash transaction would create a combined company with an enterprise value of more than $25 billion. Under the agreement, RXO shareholders would receive consideration valued at $30.25 per share, a 29 percent premium to RXO’s October 2 closing price. The companies expect the transaction to close during the first half of 2027, subject to shareholder and regulatory approvals.\nFor the logistics industry, however, the strategic rationale is more interesting than the transaction mechanics.\nAt its core, the deal significantly expands C.H. Robinson’s position in North American surface transportation. RXO brings a substantial truck brokerage operation as well as managed transportation, expedited transportation, and last-mile capabilities.\nRXO generated approximately $5.7 billion in revenue during 2025, including $4.2 billion from truck brokerage and nearly $1.2 billion from last-mile operations. Its brokerage business expanded significantly following RXO’s acquisition of Coyote Logistics, giving C.H. Robinson another large pool of shipper relationships, carrier capacity, freight transactions, and transportation data.\nThat scale matters because brokerage economics are increasingly influenced by density. A larger network provides more opportunities to match freight with available capacity, reduce empty miles, improve carrier utilization, and create more competitive options for shippers.\nC.H. Robinson explicitly identified increased network density as one of the strategic benefits of the transaction. The combined organization should also be able to offer customers a wider portfolio spanning truck brokerage, managed transportation, global forwarding, expedited transportation, and last mile.\nThe significance is therefore not simply that a large broker is becoming larger. The value comes from how effectively the combined network can be orchestrated.\nRXO also gives C.H. Robinson a much larger presence in final-mile transportation.\nThis is particularly significant for shipments involving appliances, furniture, exercise equipment, building materials, and other large products that require"
+  },
+  {
+   "group": "wh",
+   "source": "Supply Chain Dive",
+   "title": "Golden Week slowdown may not be enough to ease Transpacific ocean rates",
+   "url": "https://www.supplychaindive.com/news/golden-week-slowdown-may-not-be-enough-to-ease-transpacific-ocean-rates/832512/",
+   "published": "2026-10-09T15:48:00.000Z",
+   "description": "While the holiday in China may keep rates stable, weather-related disruptions are keeping freight fees elevated, Freightos reported.",
+   "excerpt": ""
+  },
+  {
+   "group": "wh",
+   "source": "Supply Chain Dive",
+   "title": "AI-driven cargo bump sparks Transpacific air freight service",
+   "url": "https://www.supplychaindive.com/news/ai-driven-cargo-bump-sparks-transpacific-air-freight-service/832399/",
+   "published": "2026-10-09T15:34:00.000Z",
+   "description": "Nippon Express and Japan Airlines&#39; weekly circuit connects Los Angeles with key hubs in Asia for AI and semiconductor cargo.",
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "Hugging Face",
+   "title": "Impactful scheduling for GPU clusters",
+   "url": "https://huggingface.co/blog/allenai/impactful-scheduling",
+   "published": "2026-10-09T15:20:29.000Z",
+   "description": "",
+   "excerpt": "Building a cluster scheduler to prioritize high-impact research while maintaining full occupancy\nOn the AI Infrastructure team at Ai2, we’re responsible for providing the institute’s GPU compute capacity, specifically targeting large, distributed training workloads. We think about this task as a pyramid of four metrics that build on each other.\nThe foundation is availability : how often the hardware is healthy and ready for work. Above this is occupancy : the fraction of available time assigned to a specific workload. Next is impact : how often the most valuable workloads are chosen to receive resources. The capstone of the pyramid is utilization : the fraction of GPU capacity used over the lifetime of a workload.\nThis post is about improving the impact of our scheduling decisions. We recently replaced a priority-based scheduler with a system including GPU time budgets, hierarchical fair-share allocation, and a time-slicing contract. As a result, we shifted the debate about how much GPU time each research project deserves from a case-by-case operational task to a transparent administrative budgeting process.\nAt Ai2, we manage thousands of NVIDIA H100, B200, and B300 GPUs arranged in clusters ranging in size from 88 to 1024 GPUs. These clusters are built for large-scale distributed training of AI models, and they serve a group of about 150 internal researchers whose work covers a diverse set of AI domains, including the full model flow of LLM and VLM training, robotics reinforcement learning (RL) simulation, and post-training for scientific agentic use cases.\nLike many labs, we have demand for GPU time that far exceeds supply. Based on submitted workloads, at any moment in time we have outstanding requests for 2-3x more GPUs than are available. One way to think about this is that every available GPU hour on our cluster has 2-3 different research workloads competing for it.\nHistorically, we used a priority-based scheduler, and we allowed workloads to opt out of preemptability. Each team had a limit on concurrent GPUs that could be used by workloads which were protected from preemption. Preemptible workloads could exceed that limit on idle GPUs. This strategy produced predictable pathologies. For example, we observed instances of GPU “squatting” where users would park no-op workloads they could connect to when the need arose. This occurred because researchers found they could not launch debugging workloads with low enough latency to tackle problems in real ti"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "ARC Prize 2026：TUFA Labs 以 88.06% 登顶 ARC-AGI-2 高分榜",
+   "url": "https://aihot.news/items/o8tu2a2i9r2roqh7un9l5grq2",
+   "published": "2026-10-09T15:19:27.000Z",
+   "description": "ARC Prize 公布 2026 赛季 ARC-AGI-2 高分榜，TUFA Labs 以 88.06% 排名第一。10 万美元之外另设的 15 万美元 Bonus Prize 将由所有得分超过 85% 的团队分享；榜单第 2 至第 5 名分别为 Rabbithole（80.56%）、Yi-Chia Chen（77.22%）、Nubanana（77.08%）和 _hans（67.64%）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/o8tu2a2i9r2roqh7un9l5grq2",
+   "excerpt": "ARC Prize 公布 2026 赛季 ARC-AGI-2 高分榜，TUFA Labs 以 88.06% 排名第一。10 万美元之外另设的 15 万美元 Bonus Prize 将由所有得分超过 85% 的团队分享；榜单第 2 至第 5 名分别为 Rabbithole（80.56%）、Yi-Chia Chen（77.22%）、Nubanana（77.08%）和 _hans（67.64%）。\nARC Prize 官方公布 2026 赛季 ARC-AGI-2 高分赛况，88.06% 登顶并触发超过 85% 团队共享的 15 万美元奖金。\nARC Prize 官方公布 2026 赛季 ARC-AGI-2 高分赛况，88.06% 登顶并触发超过 85% 团队共享的 15 万美元奖金。"
+  },
+  {
+   "group": "ai",
+   "source": "Simon Willison",
+   "title": "Quoting Matthew Green",
+   "url": "https://simonwillison.net/2026/Oct/9/matthew-green/",
+   "published": "2026-10-09T15:02:29.000Z",
+   "description": "Everyone is very concerned about being respectable, so I’m going to be the goofball who raises worst-case possibilities. I think there is a 1% chance we live in Minicrypt, and a 15% chance we functionally lose confidence in our existing public-key encryption algorithms. [...] The problem here is that the speed of AI producing surprises, and the speed of human beings replacing standards (even with the very best AI assistance) are just orders of magnitude different. You only recover from a surprise like this if you do the preparation in advance. &mdash; Matthew Green , on Twitter. I looked it up",
+   "excerpt": "Everyone is very concerned about being respectable, so I’m going to be the goofball who raises worst-case possibilities. I think there is a 1% chance we live in Minicrypt, and a 15% chance we functionally lose confidence in our existing public-key encryption algorithms. [...]\nThe problem here is that the speed of AI producing surprises, and the speed of human beings replacing standards (even with the very best AI assistance) are just orders of magnitude different. You only recover from a surprise like this if you do the preparation in advance.\n&mdash; Matthew Green , on Twitter. I looked it up and Minicrypt is Russell Impagliazzo’s hypothetical world in which public-key encryption is impossible.\nThis is a quotation collected by Simon Willison, posted on 9th October 2026 ."
+  },
+  {
+   "group": "wh",
+   "source": "Automated Warehouse",
+   "title": "FANUC America brings AI and packaging cobots to Pack Expo",
+   "url": "https://www.automatedwarehouseonline.com/fanuc-america-brings-ai-packaging-cobots-pack-expo-2026/",
+   "published": "2026-10-09T14:13:04.000Z",
+   "description": "FANUC America plans to show its collaborative automation for packaging, food handling, palletizing, and more in Chicago. The post FANUC America brings AI and packaging cobots to Pack Expo appeared first on Automated Warehouse .",
+   "excerpt": "At Pack Expo International 2026 this month, FANUC America Corp. plans to demonstrate how artificial intelligence, collaborative robotics, and machine vision for packaging and palletizing applications. The industrial automation leader claimed that they can help companies tackle labor shortages, simplify product handling, and automate more of the packaging process.\n“Whether companies are automating product handling, packaging, food processing or palletizing applications, they’re looking for solutions that are easy to implement, simple to operate and capable of delivering value quickly,” stated James Cooper, vice president for U.S. general industry sales at FANUC America. “Our PACK EXPO exhibit highlights automation technologies that can be applied across a wide range of manufacturing environments, helping companies reduce manual tasks, improve operational efficiency and accelerate their automation journey.”\nRochester Hills, Mich.-based FANUC America is a subsidiary of Japan’s FANUC Corp. and provides CNC systems, robotics, and ROBOMACHINEs. The company said its technologies can help manufac t urers maximize productivity, reliability, and profitability.\nIn Booth N25217 at Chicago’s McCormick Place, attendees can see live demonstrations ranging from package verification and food-grade processing to integrated packaging and palletizing applications, said FANUC America. A key focus of the exhibit is how automation can help manufacturers address workforce challenges while simplifying robot deployment.\nRegister now and help us celebrate 20 years of RoboBusiness! See new collaborative automation for packaging operations FANUC America also plans to exhibit collaborative systems to streamline packaging workflows while adapting to changing production requirements.\nIn addition, FANUC America said it plans to showcase “one of the industry’s broadest portfolios of food-grade automation technologies with applications spanning primary food handling, packaging, and palletizing.”\nFANUC America also said it will show circular line tracking with SCARA robotics at Pack Expo 2026. The company said its SR-9 i A/R SCARA robot has a compact footprint and high-speed performance, combining vision guidance and visual conveyor tracking in a circular line-tracking application.\nAfter picking moving parts and placing them into trays, the robot will automatically change tooling to transfer parts into cartons. The demonstration is intended to show manufacturers how they can maximize through"
+  },
+  {
+   "group": "wh",
+   "source": "DC Velocity",
+   "title": "First hurricane to reach U.S. in 2026 could arrive by Friday night",
+   "url": "https://www.dcvelocity.com/supply-chain/other-services/disaster-response/first-hurricane-to-reach-u-s-in-2026-could-arrive-by-friday-night",
+   "published": "2026-10-09T14:08:46.000Z",
+   "description": "The first major storm of the 2026 Atlantic hurricane season strengthened to dangerous category 3 status over the Gulf of Mexico last night , but is forecasted to weaken quickly once it makes landfall on the Alabama coast sometime Friday night. Hurricane Isaias—which is pronounced “issy-ay-ahs”—will likely come ashore late Friday night or early Saturday morning around Mobile Bay, Alabama, according to forecasts from Everstream . But the storm will likely weaken right before making landfall to a category 1 or strong tropical ranking, and then it will move fairly quickly overland, as opposed to s",
+   "excerpt": "Hurricane Isaias strengthens to Category 3 over Gulf of Mexico, but is forecasted to weaken quickly over land.\nBen Ames has spent 30 years as a journalist since starting out as a reporter for daily newspapers in Pennsylvania and Massachusetts. He has focused on business and technology reporting since 1999 for trade journals including Cahners’ Design News and Modern Materials Handling magazines, and other magazines with PennWell and IDG. A native New Yorker, Ames went to college in Maine and now lives with his family outside of Boston, where they all love to hike and kayak.\nThe first major storm of the 2026 Atlantic hurricane season strengthened to dangerous category 3 status over the Gulf of Mexico last night , but is forecasted to weaken quickly once it makes landfall on the Alabama coast sometime Friday night.\nHurricane Isaias—which is pronounced “issy-ay-ahs”—will likely come ashore late Friday night or early Saturday morning around Mobile Bay, Alabama, according to forecasts from Everstream . But the storm will likely weaken right before making landfall to a category 1 or strong tropical ranking, and then it will move fairly quickly overland, as opposed to stalling out and dumping dangerous loads of rain in concentrated locations, the firm said.\nThat means its rainfall totals will likely be in the range of 3 inches to 7 inches, which is on the lower range of hurricane-spectrum drenchings which can typically reach well into the double digits, Everstream said. Likewise, its windspeed, storm surge, and electrical power outage potential will be moderate. It total, Hurricane Isaias will not be as big an event as other recent hurricanes to strike the region, such as Helene and Milton , which both struck in 2024, Everstream’s chief science officer, Mark Russo, said in a video briefing.\nStill, the storm could impact supply chains by causing flooding, slowdowns, or potential closures of interstate highways including I-10 between Slidell, Louisiana, and the middle of the Florida panhandle, and I-65 near Mobile, Alabama, he said. At the time of the briefing, Everstream said that no cargo airports were expected to close and the Port of New Orleans planned to continue operating.\nHowever, the Port of Mobile sits right at the center of the storm's target area, and has largely shut down already. The U.S. Coast Guard by Friday morning had established “Port Condition ZULU,” indicating gale-force winds are expected within 12 hours. The port is now closed to vessel traffi"
+  },
+  {
+   "group": "wh",
+   "source": "Logistics Viewpoints",
+   "title": "EDI Is Not Dying—and APIs Were Never Going to Replace It",
+   "url": "https://logisticsviewpoints.com/2026/10/09/edi-is-not-dyingand-apis-were-never-going-to-replace-it/",
+   "published": "2026-10-09T14:00:00.000Z",
+   "description": "The EDI-versus-API debate is based on a false replacement narrative. Different interaction patterns solve different operating problems, and mature supply chains will continue to use multiple mechanisms deliberately. The post EDI Is Not Dying—and APIs Were Never Going to Replace It appeared first on Logistics Viewpoints .",
+   "excerpt": "Executive thesis. The EDI-versus-API debate is based on a false replacement narrative. Different interaction patterns solve different operating problems, and mature supply chains will continue to use multiple mechanisms deliberately.\nFor years, supply chain technology discussions have framed APIs as the modern successor to EDI. That framing confuses age with fitness for purpose. EDI remains deeply embedded in high-volume B2B document exchange because it provides stable transaction patterns across large partner ecosystems. APIs excel at different forms of interaction. The relevant question is not which technology wins, but which pattern fits the business exchange.\nA purchase order, shipment notice, invoice, real-time capacity request, status lookup, event notification, and analytical data feed do not have identical latency, coupling, governance, or partner requirements. Mature architectures use different patterns deliberately. Forcing every interaction into one protocol can increase complexity rather than simplify it.\nA large enterprise does not control the technology maturity of every carrier, supplier, broker, or customer. The integration architecture has to work across that heterogeneity. In some relationships, EDI will remain the most reliable mechanism. In others, APIs or events will enable more dynamic interaction. Flexibility at the edge is therefore an operating requirement, not a concession to legacy technology.\nThe real target should be brittle mapping, opaque failures, manual onboarding, duplicated business logic, weak identity, and poor monitoring. Those problems can exist in an EDI estate or an API estate. Modernization is successful when it reduces the cost of partner change, improves observability, standardizes governance, and makes business events easier to use across the enterprise.\nSupply chain leaders should evaluate integration by interaction pattern, operational reliability, partner reach, security, observability, and change cost. A mixed architecture is not inherently messy if the enterprise has clear standards and ownership. In many cases, the strongest design will combine EDI, APIs, and event-driven patterns rather than attempt to eliminate one of them.\nThe Logistics Viewpoints EDI vs. APIs in Supply Chain and Logistics guide explains where each pattern fits, why protocol ideology is unhelpful, and how to choose based on interaction and partner requirements.\nThe modernization objective should be to remove brittleness, improve observa"
+  },
+  {
+   "group": "wh",
+   "source": "Supply Chain Dive",
+   "title": "These ‘4 pillars’ are critical for successful automation",
+   "url": "https://www.supplychaindive.com/news/these-4-pillars-are-critical-for-successful-automation/831500/",
+   "published": "2026-10-09T13:59:48.000Z",
+   "description": "&ldquo;People, processes, data and systems&rdquo; are essential elements of any automation strategy, Sven Diedrich, head of digital transformation and business solutions at Pinaxis, said at IMTS in Chicago.",
+   "excerpt": ""
+  },
+  {
+   "group": "wh",
+   "source": "Logistics Viewpoints",
+   "title": "Shared Automation and the Future of Warehousing",
+   "url": "https://logisticsviewpoints.com/2026/10/09/shared-automation-and-the-future-of-warehousing/",
+   "published": "2026-10-09T13:29:29.000Z",
+   "description": "Shared Automation and the Future of Warehousing At a LogiSYM conference a few years ago, I recalled a business owner once asked a practical question: would it make sense for him to invest in installing warehouse automation in premises he leased? Would the expected period of occupancy justify the investment in equipment and supporting infrastructure? […] The post Shared Automation and the Future of Warehousing appeared first on Logistics Viewpoints .",
+   "excerpt": "Shared Automation and the Future of Warehousing\nAt a LogiSYM conference a few years ago, I recalled a business owner once asked a practical question: would it make sense for him to invest in installing warehouse automation in premises he leased? Would the expected period of occupancy justify the investment in equipment and supporting infrastructure?\nThe question highlighted how operating conditions can shape an automation decision. Potential productivity gains need to be weighed against upfront costs, deployment time, and the payback period. Expected occupancy also matters, particularly for fixed systems that would be costly to relocate.\nA Different Way to Access Warehouse Automation\nI attended the OMEGA 1 Singapore groundbreaking on September 24, 2026, where Ally Logistic Property (ALP) Co-founder and CEO Charlie Chang outlined a model that offers another way to approach these investment decisions. OMEGA brings together logistics real estate, shared automation, software, and maintenance services.\nIn a conventional warehouse lease, businesses typically rent space and arrange the equipment and systems needed for their operations. This may include racking, handling equipment, automation, and warehouse management software.\nALP describes OMEGA as logistics “ infrastructure as a service ”. Customers lease dedicated operating areas and access shared automated pallet capacity through a pay-as-you-use model. This allows businesses to use automation without each funding and integrating a separate system. Target users include 3PL operators and businesses in retail, e-commerce, FMCG, and technology.\nFor tenants, automation becomes part of the warehouse offering. Businesses can compare the cost of accessing shared capacity with purchasing and installing their own system. This may be relevant where volumes change over time or where the expected lease period makes a standalone investment difficult to justify.\nALP Co-founder and CEO Charlie Chang explains how OMEGA combines dedicated customer areas with shared automation and storage at the OMEGA 1 Singapore groundbreaking.\nThe approach also influences how the facility is planned. When automation is added to an existing warehouse, equipment and workflows must accommodate the building’s layout and structure. This can constrain storage arrangements and the movement of goods.\nCharlie explained that OMEGA starts with how goods need to be stored and moved, then plans the building, automation, and software around those requirem"
+  },
+  {
+   "group": "ai",
+   "source": "Simon Willison",
+   "title": "A new feature for my blog, built using my voice",
+   "url": "https://simonwillison.net/2026/Oct/9/built-using-my-voice/",
+   "published": "2026-10-09T12:54:06.000Z",
+   "description": "I shipped a new feature for my blog today: the Newsletters page, which offers an index of all of the newsletters I've sent out, both my free weekly Substack and my monthly sponsors-only updates. I built the feature almost entirely using my voice, chatting away to my laptop while I cooked dinner. Codex voice mode I used the ChatGPT desktop app for this, in the Codex tab, using the voice conversation mode, running against a local development environment. Here's what that looks like: I started the session against my local simonwillisonblog checkout by typing: Start dev server and open in browser ",
+   "excerpt": "I shipped a new feature for my blog today: the Newsletters page, which offers an index of all of the newsletters I’ve sent out, both my free weekly Substack and my monthly sponsors-only updates. I built the feature almost entirely using my voice, chatting away to my laptop while I cooked dinner.\nI used the ChatGPT desktop app for this, in the Codex tab, using the voice conversation mode, running against a local development environment. Here’s what that looks like:\nI started the session against my local simonwillisonblog checkout by typing:\nThis gave me a preview of the site that it would be working on, and meant that I could later ask it to show me the new pages so I could visually track its progress.\nThen I clicked the “Start new voice chat” button—that’s not the microphone button, it’s the one to the right of it—and set my laptop up in the kitchen so I could talk to it while I cooked.\nI had a pretty good idea of what I wanted to build, and it’s a simple enough Django feature that I was certain the model (in this case GPT-6 Astra High) would be able to do it. A new model, a migration, some view code, templates, and a couple of import functions to populate the database from external sources.\nHere’s an extract of my voice transcript that was captured by Codex:\nUm, they do not. Um, this is going to be a new type of content. Um, it’s not going to show up... Oh, hold on. Yeah, no- I do not want this to show up in my, um, tag pages and date archive pages and... Actually, no, I think... I don’t want it on the tag pages. I don’t want it on the, um, blog index page. But I think I do want it to show up on the date-based pages. You know, if you navigate to September the 19th, and I sent a newsletter on that page, I think I want that to show up. So... this is- so I think we probably need a new model. The other thing is that I want them searchable, uh the Substack ones are not searchable, because those are actually just copies of other s- on content on my blog. These monthly ones do contain unique content, and spe- and once they’re... published, like once they’re made public a month after they’ve gone out, I want them to show up on my search results.\nApparently this was clear enough that the model knew what I wanted to build! You can read the full transcript, disfluencies and all, in this Gist .\nWe went on like this for about half an hour (the time it took to cook dinner). The model would reply and occasionally ask clarifying questions, then get to work modifying the "
+  },
+  {
+   "group": "wh",
+   "source": "Supply Chain 24/7 自动化",
+   "title": "AI Is Reshaping Procurement Jobs, But Few Leaders Have Redesigned Them",
+   "url": "https://www.supplychain247.com/article/gartner-procurement-ai-job-redesign-survey",
+   "published": "2026-10-09T12:10:00.000Z",
+   "description": "Gartner finds that procurement leaders expect AI-driven gains, but most have not yet redesigned jobs to prepare employees for changing responsibilities.",
+   "excerpt": "Only 25% of procurement leaders have redesigned jobs because of AI , even as 63% of senior procurement leaders expect the technology to greatly improve performance over the next three years, according to findings by Gartner .\nThe firm warned that the gap could leave procurement teams with employees whose skills no longer match their work. As AI takes over routine tasks, leaders need to decide how responsibilities will change and help employees prepare.\nThe findings came from two surveys completed in April 2026. Gartner&rsquo;s Chief Procurement Officer Survey included 213 senior procurement leaders, while its C-Suite AI Survey included 1,303 respondents across business functions, including 134 procurement leaders.\n&ldquo;Successful AI implementation at the functional level is fundamentally a role redesign challenge,&rdquo; said Fareen Mehrzai, senior director analyst in Gartner&rsquo;s Supply Chain practice. &ldquo;Responsibilities and skills across procurement are already changing. Chief procurement officers (CPOs) who delay redesigning roles risk leaving employees without a clear path forward and their organizations without the talent needed to capture the full value from AI.&rdquo;\nGartner said middle-skilled procurement roles face particular pressure because much of their work follows standardized steps that AI can handle. It expects demand to shift toward lower-skilled positions that rely heavily on AI assistance and higher-skilled jobs requiring creativity and complex problem-solving.\nThe firm recommends reviewing roles with employees to determine which responsibilities should remain with people and which should move to AI. Without that planning, Gartner said, organizations risk lower employee morale,skill gaps, and weaker competitiveness.\nGartner also urged procurement leaders to regularly assess both employees&rsquo; technical knowledge and their human skills. The firm said creativity, influence, adaptability, and ethical judgment become more valuable as routine work is automate d .\nThe firm recommends providing focused training before those skills weaken. That means preparing employees for changing responsibilities alongside teaching them how to use AI tools.\nThe third recommendation is to give employees a safe place to try AI tools and new workflows, with failed experiments treated as part of learning. Gartner said leaders should explain their AI goals, address employee resistance directly, and help colleagues learn from one another.\n&ldquo;CPOs "
+  },
+  {
+   "group": "wh",
+   "source": "Supply Chain Dive",
+   "title": "Federal court clears way for class-action suit against IEEPA tariffs",
+   "url": "https://www.supplychaindive.com/news/federal-court-clears-way-for-class-action-suit-against-ieepa-tariffs/832600/",
+   "published": "2026-10-09T11:59:00.000Z",
+   "description": "By certifying a class of importers this week, the Court of International Trade seeks to ensure all businesses that paid the illegal levies receive reimbursements.",
+   "excerpt": ""
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Cevotec brings robotic composite lamination to South Korea with KCompositeLab partnership",
+   "url": "https://roboticsandautomationnews.com/2026/10/09/cevotec-brings-robotic-composite-lamination-to-south-korea-with-kcompositelab-partnership/105793/",
+   "published": "2026-10-09T08:57:06.000Z",
+   "description": "Cevotec has appointed Korean composite specialist KCompositeLab (KCLab) as its sales partner for South Korea. KCLab will represent Cevotec’s SAMBA robotic lamination equipment and also support manufacturers of aerostructures and composite pressure vessels with local application engineering. Cevotec and KCompositeLab (KCLab) have entered a commercial partnership to bring Robotic Lamination to composite manufacturers in South […]",
+   "excerpt": "Cevotec has appointed Korean composite specialist KCompositeLab (KCLab) as its sales partner for South Korea. KCLab will represent Cevotec’s SAMBA robotic lamination equipment and also support manufacturers of aerostructures and composite pressure vessels with local application engineering.\nCevotec and KCompositeLab (KCLab) have entered a commercial partnership to bring Robotic Lamination to composite manufacturers in South Korea.\nKCLab acts as Cevotec’s sales partner in the Korean market and supports customers technically – from the first feasibility assessment through process development to production ramp-up, leveraging their own experienced composite engineering capabilities.\nSouth Korea is one of the fastest-growing markets for advanced composites. The partnership primarily targets two industries: manufacturers of aerospace and defense structures, and producers of composite pressure vessels for hydrogen storage.\nSovereign aerospace programs, a rapidly expanding defense export industry and government-backed localization initiatives create sustained demand, while hydrogen mobility drives volume in composite tank production. The type of process automation demand from these industries match well the equipment portfolio of Cevotec.\nCevotec’s Robotic Lamination technology is based on the Fiber Patch Placement (FPP) process, which has been developed in the aerospace industry for close to 20 years.\nCevotec has been industrializing the technology during the past 10 years for series production. Robotic Lamination equipment automates composite lay-up on complex 3D geometries.\nRobots place individual plies or patches of carbon fiber, glass fiber, prepreg or adhesive film onto molds of complex shape; each patch can be individually oriented.\nThis enables process automation for mid-sized, complex aircraft parts that typically fall outside the process window of established technologies that for example build wings and fuselage of aircrafts.\nAs Robotic Lamination is not used in South Korea so far, it represents an opportunity for the industry to extent the automation envelope for high-quality, high-rate composite manufacturing.\nFor composite pressure vessels, the technology enables industrial production of dome reinforcements. These local reinforcements on pressure vessel domes enable additional storage volume by reducing overall weight and material needed.\nThis rare combination of cost and performance benefits is an attractive lever for Korean manufacturers of type I"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "RobotPlusPlus expands industrial maintenance automation with HighMate robots",
+   "url": "https://roboticsandautomationnews.com/2026/10/09/robotplusplus-expands-industrial-maintenance-automation-with-highmate-robots/105788/",
+   "published": "2026-10-09T08:43:36.000Z",
+   "description": "RobotPlusPlus, an engineering-led developer of working-at-height robots, is extending automation across industrial maintenance with its HighMate Series for industrial cleaning and corrosion control, led by the HighMate AP-F-CO Coating Robot+VOC Recovery System. The systems, presented at SMM 2026 in Hamburg, cut workers’ exposure to hazardous work at height while improving cleaning and surface-treatment efficiency and […]",
+   "excerpt": "RobotPlusPlus , an engineering-led developer of working-at-height robots, is extending automation across industrial maintenance with its HighMate Series for industrial cleaning and corrosion control, led by the HighMate AP-F-CO Coating Robot+VOC Recovery System.\nThe systems, presented at SMM 2026 in Hamburg, cut workers’ exposure to hazardous work at height while improving cleaning and surface-treatment efficiency and consistency.\nOn ships, storage tanks, bridges, and other large steel structures, manual coating often struggles with harmful particles, high paint loss, and reliance on the painter’s skill.\nThe HighMate AP-F-CO Coating Robot+VOC Recovery System handle exactly that. It attaches by permanent magnet, adapts to curvatures as tight as a 3m radius, and carries two spray nozzles with spacing, and travel speed.\nThe flexibility supports even coating that avoids defects like orange peel and sagging, with overspray kept nearly negligible, at a production rate of 300 to 500 square meters per hour.\nThe robot also features a recovery system that collects overspray of the paint during operation, keeping the worksite clean and reducing environmental impact.\nThe company also demonstrated the HighMate AP Ex Series, an ATEX Zone 1-certified robot with a universal magnetic carrier and interchangeable hydro blasting, cleaning, coating, and abrasive blasting modules delivering 40+ m²/h with over 99 percent wastewater recovery.\nRobotPlusPlus showcases its HighMate industrial maintenance robots for coating, cleaning and surface preparation, including systems for hazardous work at height.Rounding out the display were the C20 Cargo Hold Cleaning Robot, built for confined cargo-hold spaces, and the HighMate Ultra Series Surface Preparation Robot, whose flexible four-wheel magnetic crawler adapts to complex curved surfaces like ship hulls.\nDr Hua-Yang Xu, founder and CEO of RobotPlusPlus, says: “We’re excited to show how the HighMate Series is taking on more demanding work in industrial settings.\n“With the HighMate AP-F-CO Coating Robot +VOC Recovery System entering international markets for the first time, RobotPlusPlus looks forward to bringing more automation and efficiency to work in high-risk environments.”\nOur website relies on ads to provide free content and sustain our operations. By turning off your ad blocker, you help support us and ensure we can continue offering valuable content without any cost to you.\nWe truly appreciate your understanding and support. Th"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Researchers develop battery-free wearable device powered by human movement",
+   "url": "https://roboticsandautomationnews.com/2026/10/09/researchers-develop-battery-free-wearable-device-powered-by-human-movement/105783/",
+   "published": "2026-10-09T08:32:16.000Z",
+   "description": "Researchers at Dongguk University in South Korea have developed a flexible, battery-free electronic device that can harvest energy from human movement and use it to power neuromorphic sensing and learning functions. The technology could eventually be used in wearable health-monitoring systems, electronic skin, smart prosthetics, human-machine interfaces and intelligent motion-monitoring devices without requiring conventional batteries […]",
+   "excerpt": "Researchers at Dongguk University in South Korea have developed a flexible, battery-free electronic device that can harvest energy from human movement and use it to power neuromorphic sensing and learning functions.\nThe technology could eventually be used in wearable health-monitoring systems, electronic skin, smart prosthetics, human-machine interfaces and intelligent motion-monitoring devices without requiring conventional batteries or an external power supply.\nThe system reminds us of the Seiko Kinetic watch (main image), first released in 1988, which also harvested energy from the movement of the wearer.\nLed by Professor Sejoon Lee of Dongguk University’s Department of System Semiconductor, the research team combined a triboelectric nanogenerator, or TENG, with a flexible graphene-channel ion-gel-gated transistor.\nThe TENG converts mechanical stimuli such as body movement, touch or vibration into electrical signals. These signals directly operate the artificial synaptic functions of the device, meaning it can sense movement and process information without a separate source of electrical power.\nLee says: “In human tactile perception mechanoreceptors sense even minute mechanical disturbances and convert them into neural spikes.\n“To replicate this process electronically, we integrated a triboelectric nanogenerator with a g-IGT that converts mechanical stimuli into electrical signals that directly regulate artificial synaptic behavior without requiring external power.”\nThe researchers demonstrated several forms of artificial memory, ranging from sensory memory lasting around 70 milliseconds to short-term memory lasting 0.2-0.45 seconds.\nRepeated stimulation could also move the system toward a longer-term memory state lasting more than two seconds.\nThe device was additionally tested using an artificial neural network designed to recognize six human activities, including walking, sitting, standing and climbing stairs.\nUsing the experimentally measured behavior of the device, the system achieved 88.05 percent accuracy in classifying the activities while the flexible device was under bending.\nThe researchers say the technology could ultimately enable wearable AI systems combining sensing, memory, learning and information processing while reducing or eliminating their dependence on batteries.\nLee says: “Our research could contribute to a new generation of wearable artificial intelligence systems that operate with minimal reliance on batteries or external comput"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Monolithos launches long-term memory system for robots and embodied AI",
+   "url": "https://roboticsandautomationnews.com/2026/10/09/monolithos-launches-long-term-memory-system-for-robots-and-embodied-ai/105780/",
+   "published": "2026-10-09T08:15:38.000Z",
+   "description": "Monolithos has launched a public alpha of Robot Brain, a long-term memory and experience system designed to enable robots and embodied AI systems to retain information from previous tasks and make it available during future operations. The system is designed to preserve a robot’s task histories, including failures, human corrections and subsequent outcomes, rather than […]",
+   "excerpt": "Monolithos has launched a public alpha of Robot Brain , a long-term memory and experience system designed to enable robots and embodied AI systems to retain information from previous tasks and make it available during future operations.\nThe system is designed to preserve a robot’s task histories, including failures, human corrections and subsequent outcomes, rather than treating each new task largely in isolation.\nMonolithos says Robot Brain organizes those records into traceable and revisable experience that can subsequently be retrieved according to the task, operating conditions and purpose.\nThe idea is that when a robot encounters a problem similar to one it has previously experienced, its planning system can be given relevant information about what happened previously, including any human intervention that followed.\nThe system also retains information about the conditions under which an experience was acquired, helping prevent an old solution from automatically being treated as applicable when circumstances have changed.\nRobot Brain operates as a separate service alongside an existing robotics stack rather than replacing the robot’s planning and control systems.\nMonolithos says the robot’s existing systems remain responsible for decisions, real-time control and device safety, while Robot Brain manages historical experience and supplies relevant memory as context.\nThe technology could potentially be used for robot planning and recovery, allowing systems to inspect previous failures and interventions, as well as for reviewing experience generated during simulation and training.\nMonolithos emphasizes that its current demonstrations are not measured comparisons of robot performance and that robots without Robot Brain may use other memory systems. The company says operational benefits would need to be evaluated using comparable tasks and operating conditions.\nRobot Brain is currently available as a public Alpha 0.1 for macOS on Apple Silicon and Linux on ARM64 and x86-64 systems.\nThe software can be evaluated without physical robot hardware, a simulator, GPU or local AI model. Developers can initially test the ingestion, recall and persistence of experience before connecting the system to a robot, simulator, training platform or other execution system.\nThe launch comes as long-term memory is emerging as an increasingly important area of embodied AI research, particularly for robots expected to operate over extended periods rather than completing isolated t"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "FireDome launches US operations to advance autonomous wildfire defense",
+   "url": "https://roboticsandautomationnews.com/2026/10/09/firedome-launches-us-operations-to-advance-autonomous-wildfire-defense/105775/",
+   "published": "2026-10-09T08:00:07.000Z",
+   "description": "FireDome, an autonomous wildfire resilience company, has announced the launch of its US operations, anchored by a demonstration site at Yuba County Airport. The site gives FireDome a dedicated environment in a wildfire risk prone area with real world conditions to validate its system as the company prepares for commercial deployment. Over the past several […]",
+   "excerpt": "FireDome , an autonomous wildfire resilience company, has announced the launch of its US operations, anchored by a demonstration site at Yuba County Airport.\nThe site gives FireDome a dedicated environment in a wildfire risk prone area with real world conditions to validate its system as the company prepares for commercial deployment.\nOver the past several months, the company has quietly established a fully operational site featuring offices, a control room and a dedicated demonstration area, with the FireDome system at its center.\nThe site has served as a hub for ongoing demonstrations and testing, including capsule launches and evaluations of the system’s detection, targeting and suppression capabilities under real-world conditions.\nAs wildfire is a year-round threat to communities, critical infrastructure and businesses, as well as a huge challenge for the insurance market, the need is shifting from reactive response to persistent, proactive protection and risk reduction.\nFireDome is moving wildfire intervention upstream with a system designed to detect and suppress fires before they escalate.\nFrom its new California footprint, the company will initially focus its expansion across high-risk regions within the state, working with communities, businesses, fire-service organizations, property owners and insurers to advance new approaches to wildfire preparedness.\nGadi Benjamini, co-founder and CEO of FireDome, says: “When extreme winds move embers and firefighting resources are stretched thin, communities and properties need multiple layers of protection that can pinpoint threats early and create an immediate barrier in the critical moments before crews arrive.\n“Our focus is on creating a holistic wildfire defense platform that strengthens the traditional tools and strategies communities already rely on.\n“By combining data, early detection and autonomous suppression, FireDome gives incident commanders greater visibility and adds a critical layer of security when every second matters.\n“The new test site allows us to put that approach to work in a real-world environment and refine how it can serve as a force multiplier for those on the front lines.”\nFireDome provides 24/7 detection, proactive protection, precision targeting and real-time suppression together in a single autonomous wildfire defense platform.\nIts stationary launchers can identify and respond to emerging threats by “deploying” – meaning shooting or launching – smart capsules filled with eco-fri"
+  },
+  {
+   "group": "ai",
+   "source": "OpenAI",
+   "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+   "url": "https://openai.com/index/sophos",
+   "published": "2026-10-09T07:00:00.000Z",
+   "description": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "OpenAI 研究负责人发声明回应三名员工离职争议",
+   "url": "https://aihot.news/items/uceike4yt1on0k7sj37f9nfeh",
+   "published": "2026-10-09T06:17:00.000Z",
+   "description": "OpenAI 研究负责人发声明，称上周在调查发现 Jasmine、Mikita 和 Tomek 违反敏感信息处理政策后终止其雇佣，并表示内部调查发现超出三人公开信所述的重大信任违规。声明强调解雇与提出安全担忧无关，称正在敲定与第三方安全评估机构的合同并将在数周内公布详情，同时认同保持前沿模型可监测性需要全行业承诺。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uceike4yt1on0k7sj37f9nfeh",
+   "excerpt": "OpenAI 研究负责人发声明，称上周在调查发现 Jasmine、Mikita 和 Tomek 违反敏感信息处理政策后终止其雇佣，并表示内部调查发现超出三人公开信所述的重大信任违规。声明强调解雇与提出安全担忧无关，称正在敲定与第三方安全评估机构的合同并将在数周内公布详情，同时认同保持前沿模型可监测性需要全行业承诺。\nOpenAI 官方回应离职争议，澄清解雇与提出安全担忧无关，并公布第三方安全评估合作进展。\n上周，我们与 Jasmine、Mikita 和 Tomek 分道扬镳，此前一项彻底调查发现他们违反了处理敏感信息的明确政策。我们的内部调查发现，除了他们公开信中所述内容之外，还存在严重的信任背弃，我们坚持不再继续雇用他们的决定。我们通常对个人雇佣事宜保密，也不认为来回争论会有成效或带来解决方案，但我们想直接回应他们在信中提出的几点。\n- 我们想非常明确地表示，这些决定与提出安全关切或公开发声无关。安全和研究辩论每天都在 OpenAI 发生，往往激烈且极具批判性。我们积极鼓励这些讨论，并认为它们对于做出正确决定至关重要。如果没有高度的信任，我们就无法完成摆在我们面前的工作。我们将继续对团队中出于善意的错误极为宽容。我们没有、也不会因为任何员工提出关切而解雇他们。\n- 我们正在积极敲定与第三方安全评估机构的合同，并将在未来几周内公布细节。公司上下一直在非常努力地推动这些合作关系落地运行。我们致力于引入外部评估机构，并继续将与被独立安全组织的密切合作作为我们安全工作的核心部分。我们的许多研究人员已经在与第三方安全组织富有成效地合作。\n- 我们同意信中的观点，即保持前沿模型的可监测性需要整个行业的承诺，包括 OpenAI 在内。可监测性长期以来一直是我们研究计划的核心部分，也是我们持续投入大量资源的领域（参见我们关于 Monitoring Monitorability 的出版物以及随后对可监测性评估的开源、我们针对 GPT-6 Astra 的系统卡、Jakub 的博客和 X 上的帖子，以及我们 Alignment 博客上关于该主题的大量博文）。\n我们对这一结果深感难过。我们感谢 Jasmine、Mikita 和 Tomek 在 OpenAI 对 AI 安全所做的贡献，以及他们愿意发声并挑战既有想法。我们曾支持他们的声音、支持他们的工作，并给予他们极大的信任。这些决定与提出安全关切无关。我们一直鼓励这样做，也将永远如此。\nOpenAI 官方回应离职争议，澄清解雇与提出安全担忧无关，并公布第三方安全评估合作进展。"
+  },
+  {
+   "group": "ai",
    "source": "BestBlogs 每日早报",
    "title": "EP200 · AWS 谈智能体云、Shopify 模拟商家增长、Neo4j 将记忆化为技能",
    "url": "https://www.bestblogs.dev/explore/brief/2026-10-09?utm_source=rss&utm_medium=feed&utm_campaign=daily_brief&entry=rss_brief_index",
    "published": "2026-10-09T06:00:00.000Z",
    "description": "📝 今日导语 AWS 重构智能体云、Shopify 模拟商家增长、Neo4j 蒸馏记忆技能：看懂执行、决策与学习的落地方法。 🏷 今日关键词： 智能体云 商家数字孪生 记忆与技能 Decisions API MCP 重建 📰 今日精选内容 AWS CEO Matt Garman 谈为 AI 智能体重建云基础设施 a16z &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 91 Shopify CTO Mikhail Parakhin 谈 AI 战略：提高能力上限与商家数字孪生 Claude &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 89 把智能体记忆蒸馏成真正可用的技能：从记忆图到可治理技能 — Will Lyon，Neo4j AI Engineer &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 88 OpenAI 推出 Decisions API：用预设选项实现快速决策 OpenAI &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 Reducto 为何删掉并重建 MCP 服务器：让智能体的错误变得可见 AI Engineer &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 88 Agent Lightning：轻量级强化学习智能体训练框架 Microsoft Re",
    "excerpt": ""
+  },
+  {
+   "group": "wh",
+   "source": "MH&L",
+   "title": "3PLs Moving AI into Operational Use",
+   "url": "https://www.mhlnews.com/technology-automation/news/55410240/ai-moving-to-operational-use-by-3pls",
+   "published": "2026-10-09T04:05:00.000Z",
+   "description": "However, new study from CSCMP finds data quality and legacy integration are barriers to scaling AI.",
+   "excerpt": "The 2027 Third-Party Logistics Study finds that shipper-3PL relationships remain strong as supply chains navigate growing complexity and disruption. Nearly all shippers (97%) and 3PLs (98%) agree that their relationships have generally been successful.\nThe study was released by the Council of Supply Chain Management Professionals. John Langley, emeritus professor at the University of Tennessee , is the study's founder and creator. It is supported by Penske Logistics and NTT DATA .\nThe study found that 93% of shippers credit their providers with improving service while 73% said they bring new and innovative solutions to logistics challenges.\nHowever, shippers&rsquo; perceptions around cost have shifted, and the number crediting 3PLs with reducing overall costs dropped to 52% from 75%. The authors believe that change could reflect the challenging cost environment, with the supply chain experiencing a transition from pure cost savings and toward greater service and resilience, or a combination of both.\nOutsourcing itself continues to expand, and 86% of shippers and 90% of 3PLs said they are increasing their use of outsourced logistics services. Both sides report increased partner consolidation, cited by 74% of shippers, up from 50%, and 90% of 3PLs, up from 62%.\nHowever, an IT gap remains, and 70% of shippers said they are satisfied with their 3PL&rsquo;s technology capabilities, but 94% of 3PLs believe their shipper customers are satisfied.\nOne especially interesting finding is that artificial intelligence is moving into operational use. \"The study shows data quality and legacy integration remain the top barriers to scaling AI, and that should be a wake-up call. The technology is ready &mdash; what's lagging is the foundation underneath it,&rdquo; said Jonathan Whitaker, managing director, Supply Chain Consulting, NTT DATA, Inc., in a statement. &ldquo;Organizations that treat data and systems as strategic infrastructure, not an afterthought, will be the ones that turn AI from a pilot into a competitive advantage.\nAI is here now . AI adoption is well embedded in supply chain operational planning and execution. Shippers are using it for predictive analytics and risk planning at a higher rate (66%) when compared with 3PLs (43%). Third-party providers are using it for generative AI, machine learning, optimization and autonomous decision making. A few barriers to wider spread adoption include data quality and availability (61%), legacy system integration (54%), "
+  },
+  {
+   "group": "wh",
+   "source": "MH&L",
+   "title": "Import Cargo’s Extended Peak Season Ends",
+   "url": "https://www.mhlnews.com/global-supply-chain/news/55410705/import-cargos-extended-peak-season-ends",
+   "published": "2026-10-09T04:05:00.000Z",
+   "description": "\"Most holiday merchandise has arrived, and the remainder of the year is just a matter of last-minute replenishment and preparation for early 2027.,\" said Jonathan Gold of NRF.",
+   "excerpt": "The drawn-out peak shipping season that has characterized this year appears to finally be ending, according to the Global Port Tracker released by the National Retail Federation and Hackett Associates.\nImport volume at the nation&rsquo;s major container ports has started to slow down compared with persistent high numbers over the summer.\n\"Even with any fluctuations in final data, we&rsquo;re likely past the busiest part of the year,&rdquo; NRF Vice President for Supply Chain and Customs Policy Jonathan Gold said.\n&ldquo;The truth is that the peak season started early and was stretched out through the summer and early fall, with the difference from month to month often amounting to little more than a rounding error. Most holiday merchandise has arrived, and the remainder of the year is just a matter of last-minute replenishment and preparation for early 2027. Consumers should find shelves well stocked with a wide range of choices to meet their needs and budgets for the holidays.&rdquo;\nHackett Associates Founder Ben Hackett said: &ldquo;Core economic indicators are broadly flat or weakening slightly month over month recently. &ldquo;Despite this, consumers appear to remain confident and cautious at the same time, with consumer confidence indexes sliding to multi-year lows while consumer spending continues to be robust in the face of increasing inflation.&rdquo;\nU.S. ports covered by Global Port Tracker handled 2.3 million TEUs in August, the latest month for which final numbers are available. That was down 0.7% from a year earlier but up 0.4% from July to likely make August the busiest month of the year after an extended peak season. Ports have not yet reported September numbers, but Global Port Tracker projected a drop to 2.28 million TEU, up 8.2% year over year. October is forecast at 2.25 million TEU, up 8.5% year over year; November at 2 million TEU, down 1%, and December at 2.02 million TEU, up 0.6%. Those numbers would bring 2026 to a total of 25.8 million TEU, up 1.4% from last year&rsquo;s 25.4 million TEU.\nThe first half of 2026 totaled 12.7 million TEU, up 1.1% from the same period in 2025. January 2027 is forecast at 2.07 million TEU, down 1.9% year over year, and February at 1.92 million TEU, up 1%."
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Mistral Large 4 进入 Agent Arena 前十五实验室，排名第 43",
+   "url": "https://aihot.news/items/y9clkoyn1giula1pc7pkb9qxd",
+   "published": "2026-10-09T03:53:32.000Z",
+   "description": "Arena 宣布 Mistral Large 4 进入 Agent Arena 前十五实验室，基于超 5000 个真实智能体会话，该预览版净改进分为 -6.6%，总排名第 43，比前代 Mistral Medium 3.5（-12.60%）高出 11 位。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y9clkoyn1giula1pc7pkb9qxd",
+   "excerpt": "Arena 宣布 Mistral Large 4 进入 Agent Arena 前十五实验室，基于超 5000 个真实智能体会话，该预览版净改进分为 -6.6%，总排名第 43，比前代 Mistral Medium 3.5（-12.60%）高出 11 位。\nArena 用 Agent Arena 实测数据给出 Mistral Large 4 的排名与分数，可对照其官方发布信息核实模型实际表现。\nMistral Large 4 由 @MistralAI 打造，已跻身 Agent Arena 前 15 实验室！\n在超过 5K 真实世界智能体会话中，这个预览模型录得 -6.6% 的净提升分数。它比上一个版本 Mistral Medium 3.5（-12.60%）高出 11 个排名。\nMistral Large 4 在 Agent Arena 中总排名第 43。开放权重预计在 10 月底发布，但以目前的分数，Mistral Large 4 在开放模型中会排到第 13 名。\n@MistralAI 也是 Agent Arena 前 15 中唯一的欧洲实验室。恭喜团队！\nMeet Mistral Large 4, aka Le Chonk. • 1T parameters, natively multimodal. 49B active. It is the best open weights model from US or Europe on aggregated benchmarks. • State-of-the-art on critical workloads, including cyber defense, manufacturing and finance and it surpasses closed frontier models on visual grounding. • Forged in Europe end-to-end and is deployable from Europe via our own Mistral Cloud infrastructure. • Available to all via API today. Working with cybersecurity partners privately. Open weights release end of October.\nArena 用 Agent Arena 实测数据给出 Mistral Large 4 的排名与分数，可对照其官方发布信息核实模型实际表现。"
   },
   {
    "group": "wh",
@@ -252,12 +484,12 @@
   },
   {
    "group": "ai",
-   "source": "AIHOT",
-   "title": "Tibo 宣布发布 ChatGPT",
-   "url": "https://aihot.news/items/f3doqdpq8n9mpmqc95jdyaxq0",
-   "published": "2026-10-09T00:12:24.000Z",
-   "description": "Tibo 宣布 ChatGPT 发布，并给出访问地址 https://chatgpt.com/。推文本身仅含发布声明和链接，未提供更多功能或细节。 🔗 阅读原文 via AIHOT · https://aihot.news/items/f3doqdpq8n9mpmqc95jdyaxq0",
-   "excerpt": "Tibo 宣布 ChatGPT 发布，并给出访问地址 https://chatgpt.com/。推文本身仅含发布声明和链接，未提供更多功能或细节。"
+   "source": "Simon Willison",
+   "title": "ttok 1.0",
+   "url": "https://simonwillison.net/2026/Oct/9/ttok/",
+   "published": "2026-10-09T00:34:43.000Z",
+   "description": "Release: ttok 1.0 I released ttok 0.4 , ran uv tool upgrade ttok , piped a file into the new version... and realized that it was defaulting to the GPT-4 tokenizer when it should very clearly default to GPT-5/GPT-6 instead! I figured switching the default was a reasonable excuse to finally ship a 1.0. OpenAI haven't actually confirmed that GPT-6 uses the same tokenizer as the GPT-5 family yet - there's an angry issue about it - but I found this commit by William Liu which reports on an experiment he ran confirming that the tokenizers are likely the same: All seven GPT models (5.5, 5.6 Sol/Terra",
+   "excerpt": "I released ttok 0.4 , ran uv tool upgrade ttok , piped a file into the new version... and realized that it was defaulting to the GPT-4 tokenizer when it should very clearly default to GPT-5/GPT-6 instead!\nI figured switching the default was a reasonable excuse to finally ship a 1.0.\nOpenAI haven't actually confirmed that GPT-6 uses the same tokenizer as the GPT-5 family yet - there's an angry issue about it - but I found this commit by William Liu which reports on an experiment he ran confirming that the tokenizers are likely the same:\nAll seven GPT models (5.5, 5.6 Sol/Terra/Luna, 6 Astra/Sol/Luna) report 44,794 tokens and match each other on every one of the 31 fixtures. GPT-6 introduces no input-count change on this corpus.\nThis is a beat by Simon Willison, posted on 9th October 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
   },
   {
    "group": "ai",
@@ -576,15 +808,6 @@
   },
   {
    "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "The Simple Upgrade That Keeps Drivers Confident in Any Weather",
-   "url": "https://roboticsandautomationnews.com/2026/10/08/the-simple-upgrade-that-keeps-drivers-confident-in-any-weather/105714/",
-   "published": "2026-10-08T13:38:47.000Z",
-   "description": "The weather can be really unpredictable. A clear morning commute can turn into a rainstorm by the afternoon. While you can’t control the weather, there are ways you can prepare yourself better for handling such situations. One of the best places to start is with your vehicle. A few upgrades to your vehicle, such as […]",
-   "excerpt": "The weather can be really unpredictable. A clear morning commute can turn into a rainstorm by the afternoon. While you can’t control the weather, there are ways you can prepare yourself better for handling such situations. One of the best places to start is with your vehicle.\nA few upgrades to your vehicle, such as all-season tires and high-quality headlights, can increase your confidence.\nThese upgrades offer better peace of mind and help you reach home safely, no matter what the road conditions are. Let’s look at some of the most effective upgrades you can make.\nThe tires of your vehicle are an essential component. Worn-out or low-quality tires don’t provide proper grip, increase braking distances, and make it harder to control your vehicle in wet and slippery road conditions.\nInvesting in all-season tires is one of the easiest ways to stay safe no matter how the weather is. Some tires are not made for conditions where the roads are slippery, muddy, or wet.\nThey are not dependable, as they don’t provide the right traction. On the other hand, all-season tires are suitable for all temperatures and will help you move through rain and light snow.\nSo, if you live in a region that experiences drastic changes in the weather conditions but don’t want to switch to seasonal tires, all-season tires are the best choice.\nFor regions that experience frequent heavy rainfall, dust, storms, or snow, visibility is very important. Windshield wipers are important for a clear view.\nNow, wipers naturally wear over time, which can cause streaks or poor water removal from the windshield. Experts recommend that it is important to change the windshield wipers every six to twelve months.\nAlso, investing in premium silicone blades is a good idea because they last longer and perform better during heavy rainfall.\nAlong with replacing the wipers, use a quality windshield washer fluid to keep the surface clean in all weather conditions.\nBad weather conditions are not always the prime reason for poor visibility. Sometimes, poor visibility is also caused by low-quality and low-capability headlights.\nAlong with low-quality headlights, aging headlights can also make nighttime driving and driving through storms much more difficult.\nChoosing new-generation LED headlights is a smart choice, as they offer better illumination, longer lifespans, and lower energy consumption compared to the older halogen headlights.\nAlso, all the brake lights, turn signal lights, and fog lights must be functionin"
-  },
-  {
-   "group": "wh",
    "source": "Supply Chain Dive",
    "title": "Amazon launches 2 new China-to-US air freight options",
    "url": "https://www.supplychaindive.com/news/amazon-launches-2-new-china-to-us-air-freight-options/832364/",
@@ -595,11 +818,11 @@
   {
    "group": "ai",
    "source": "AIHOT",
-   "title": "Zenity 研究人员发现一条提示词即可劫持 AWS 账户内全部 AgentCore 智能体",
+   "title": "Zenity 披露 AgentCore 漏洞链：一个公开 AI Agent 可控制同账户同区域所有 Agent",
    "url": "https://aihot.news/items/cal34hameqt3bh6d52vaqt58v",
    "published": "2026-10-08T13:01:01.000Z",
-   "description": "Zenity Labs 研究人员披露名为 AgentCorruption 的漏洞链，只需对一个公开的 Amazon Bedrock AgentCore 智能体发送一条提示词，即可通过元数据服务 169.254.169.254 窃取其 AWS 凭据，进而控制同账户同区域内的所有 AgentCore 智能体，读取私人对话、源代码和存储的凭据，还能篡改长期记忆。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cal34hameqt3bh6d52vaqt58v",
-   "excerpt": "A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found\nZenity Labs 研究人员披露名为 AgentCorruption 的漏洞链，只需对一个公开的 Amazon Bedrock AgentCore 智能体发送一条提示词，即可通过元数据服务 169.254.169.254 窃取其 AWS 凭据，进而控制同账户同区域内的所有 AgentCore 智能体，读取私人对话、源代码和存储的凭据，还能篡改长期记忆。\n原文梳理了 Zenity 演示的完整攻击链和 AWS 此后的权限收紧，读者可以据此评估自己云端智能体的隔离与最小权限配置。\nZenity Labs 的研究人员表示，亚马逊 Bedrock AgentCore 上只需一个可公开访问的 AI 代理，就足以接管同一 AWS 账户和区域内的所有 AgentCore 代理。\nAmazon Bedrock AgentCore 是 AWS 用于运行企业 AI 代理的平台，提供工具、记忆和访问管理功能。安全公司 Zenity Labs 发现了一条漏洞利用链，研究人员将其称为“AgentCorruption”。\n攻击者只需对某个公开代理拥有聊天访问权限，即可利用这些漏洞。研究人员表示，仅凭一条提示，他们就接管了同一 AWS 账户和区域内的所有 AgentCore 代理，暴露了私密对话、源代码和存储的凭证。据 Zenity 称，该问题是系统性的，影响了多个 AWS 账户中内置工具的代理。\nAWS 在内部地址 169.254.169.254 运行实例元数据服务，为实例和工作负载提供临时凭证以向 AWS 进行身份验证。任何捕获这些凭证的人都可以利用它们冒充该实例。\n据 Zenity 的 技术博客文章 称，AI 代理通常不应能够访问该服务，但 AgentCore 缺乏适当的隔离。研究人员使用 Strands （AWS 提供的一个开源框架，自带网络工具）构建了一个测试代理。当用平实的语言要求它查询元数据服务并将结果发送到外部服务器时，该代理遵从了指令。研究人员写道：“我们本应对抗的沙箱边界根本不存在。”\n窃取的凭证在平台外研究人员自己的机器上也能使用，因此他们不再需要该代理来继续攻击。元数据服务还暴露了内部 AWS 服务的证书和密钥材料，以及一个不属于研究人员账户的内部 S3 存储的预签名 URL。\n据 Zenity 称，移除网络工具也无济于事，因为缺陷出在平台本身。研究人员还通过命令行工具实施了该攻击。\n之所以能够接管，是因为 AgentCore 的默认权限并未限定于接收这些权限的代理。据 Zenity 称，这些权限适用于同一账户和区域内的所有代理，授予了读、写和删除访问权限，从而允许进行破坏性操作。\n凭借这些权限，研究人员可以列出每个代理、在几秒钟内下载其代码包，并调用每一个代理。这些代码包中通常包含被遗忘的密码或 API 密钥以及源代码，可能暴露的远不止代理本身。例如，攻击者可以从面向公众的客户服务代理转移到内部财务代理并访问其数据。研究人员还可以读取用户与代理之间的所有私密对话。\n对于启用了长期记忆的智能体，研究人员可以篡改该记忆以影响其未来行为。他们 关于记忆投毒的文章 描述了如何植入指令，使智能体将未来的对话转发到外部目的地。用户会继续与一个看似可信的智能体交谈，而不会察觉任何异常。\nAWS 建议将密码和 API 密钥与智能体分开存放在安全存储中，但 AgentCore 的默认权限削弱了这一保护。根据 Zenity 关于凭证窃取的文章 ，这些权限允许智能体访问存储的凭证，包括 AWS 之外服务的密钥。\nZenity 表示，它于 2025 年 12 月 25 日向 AWS 报告了 AgentCore 的发现，此后 AWS 将 IMDSv2 设为新 AgentCore 部署的默认选项。IMDSv2 是元数据服务的更安全版本，而 Zenity 的攻击正是将其作为入口点。Zenity 还销售面向 AI 智能体的安全平台，这使该公司在报告该领域漏洞方面存在商业利益。\n根据 Zenity 更新的说明，AWS 还在 8 月左右更改了 AgentCore 的默认执行角色。更新后的角色不再允许智能体调用其他智能体、读取私人对话或从 AWS Secrets Manager 检索凭证。AWS 还大幅限制了其他权限，不过研究人员仍建议企业创建访问权限更窄的自定义角色。他们在 对默认角色的分析 中解释了这些建议。\nZenity 首席技术官 Michael Bargury 认为，云安全与智能体工作所需的灵活性之间存在冲突。“云安全关乎分段和最小权限访问。但 AI 智能体需要创作自由才能发挥作用，”他说。每家在云中运行智能体的公司都面临这种权衡，尤其是当面向公众的智能体和内部智能体共享同一环境时。在这种设置下，单个漏洞就可能危及整个系统的安全边界。\nAgentCore 的发现遵循了 Zenity 在其他地方记录过的一种模式：看似无害的输入会让智能体转而对抗自己的组织。在其 AgentFlayer 研究 中，零点击攻击使 Salesforce Einstein、Copilot Studio 和 Cursor 重定向客户数据或泄露凭证。借助 AgentForger ，一个被篡改的 ChatGPT 链接就足以在 OpenAI 的 Workspace Agents 中创建一个禁用了审批要求的自主智能体。\nOpenAI 在四天内修复了其漏洞，而 AgentCore 过于宽泛的默认权限在 Zenity 报告后仍持续了数月。AWS 已 向所有企业提供 AgentCore ，亚马逊称其用户包括索尼和爱立信。\n关于智能体记忆的研究也记录了类似弱点。Google DeepMind 在其 “AI 智能体陷阱”分类体系 中将长期记忆操纵列为一个单独的攻击类别，发现知识库中只需少量被投毒"
+   "description": "Zenity Labs 发现 AWS Bedrock AgentCore 的漏洞链“AgentCorruption”，只需对一个公开 Agent 发送一条提示词，即可窃取凭证并接管同 AWS 账户和区域内所有 Agent，读取私有对话、下载源代码并篡改长期记忆。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cal34hameqt3bh6d52vaqt58v",
+   "excerpt": "One public-facing AI agent on AWS could read, rewrite, and delete every other agent in the region\nZenity Labs 发现 AWS Bedrock AgentCore 的漏洞链“AgentCorruption”，只需对一个公开 Agent 发送一条提示词，即可窃取凭证并接管同 AWS 账户和区域内所有 Agent，读取私有对话、下载源代码并篡改长期记忆。\n原文完整还原了攻击链、AWS 的修复时间线和最小权限权衡，对评估云端 Agent 部署风险有直接参考价值。\nZenity Labs 的研究人员表示，亚马逊 Bedrock AgentCore 上只需一个可公开访问的 AI 代理，就足以接管同一 AWS 账户和区域内的所有 AgentCore 代理。\nAmazon Bedrock AgentCore 是 AWS 用于运行企业 AI 代理的平台，提供工具、记忆和访问管理功能。安全公司 Zenity Labs 发现了一条漏洞利用链，研究人员将其称为“AgentCorruption”。\n攻击者只需对某个公开代理拥有聊天访问权限，即可利用这些漏洞。研究人员表示，仅凭一条提示，他们就接管了同一 AWS 账户和区域内的所有 AgentCore 代理，暴露了私密对话、源代码和存储的凭证。据 Zenity 称，该问题是系统性的，影响了多个 AWS 账户中内置工具的代理。\nAWS 在内部地址 169.254.169.254 运行实例元数据服务，为实例和工作负载提供临时凭证以向 AWS 进行身份验证。任何捕获这些凭证的人都可以利用它们冒充该实例。\n据 Zenity 的 技术博客文章 称，AI 代理通常不应能够访问该服务，但 AgentCore 缺乏适当的隔离。研究人员使用 Strands （AWS 提供的一个开源框架，自带网络工具）构建了一个测试代理。当用平实的语言要求它查询元数据服务并将结果发送到外部服务器时，该代理遵从了指令。研究人员写道：“我们本应对抗的沙箱边界根本不存在。”\n窃取的凭证在平台外研究人员自己的机器上也能使用，因此他们不再需要该代理来继续攻击。元数据服务还暴露了内部 AWS 服务的证书和密钥材料，以及一个不属于研究人员账户的内部 S3 存储的预签名 URL。\n据 Zenity 称，移除网络工具也无济于事，因为缺陷出在平台本身。研究人员还通过命令行工具实施了该攻击。\n之所以能够接管，是因为 AgentCore 的默认权限并未限定于接收这些权限的代理。据 Zenity 称，这些权限适用于同一账户和区域内的所有代理，授予了读、写和删除访问权限，从而允许进行破坏性操作。\n凭借这些权限，研究人员可以列出每个代理、在几秒钟内下载其代码包，并调用每一个代理。这些代码包中通常包含被遗忘的密码或 API 密钥以及源代码，可能暴露的远不止代理本身。例如，攻击者可以从面向公众的客户服务代理转移到内部财务代理并访问其数据。研究人员还可以读取用户与代理之间的所有私密对话。\n对于启用了长期记忆的智能体，研究人员可以篡改该记忆以影响其未来行为。他们 关于记忆投毒的文章 描述了如何植入指令，使智能体将未来的对话转发到外部目的地。用户会继续与一个看似可信的智能体交谈，而不会察觉任何异常。\nAWS 建议将密码和 API 密钥与智能体分开存放在安全存储中，但 AgentCore 的默认权限削弱了这一保护。根据 Zenity 关于凭证窃取的文章 ，这些权限允许智能体访问存储的凭证，包括 AWS 之外服务的密钥。\nZenity 表示，它于 2025 年 12 月 25 日向 AWS 报告了 AgentCore 的发现，此后 AWS 将 IMDSv2 设为新 AgentCore 部署的默认选项。IMDSv2 是元数据服务的更安全版本，而 Zenity 的攻击正是将其作为入口点。Zenity 还销售面向 AI 智能体的安全平台，这使该公司在报告该领域漏洞方面存在商业利益。\n根据 Zenity 更新的说明，AWS 还在 8 月左右更改了 AgentCore 的默认执行角色。更新后的角色不再允许智能体调用其他智能体、读取私人对话或从 AWS Secrets Manager 检索凭证。AWS 还大幅限制了其他权限，不过研究人员仍建议企业创建访问权限更窄的自定义角色。他们在 对默认角色的分析 中解释了这些建议。\nZenity 首席技术官 Michael Bargury 认为，云安全与智能体工作所需的灵活性之间存在冲突。“云安全关乎分段和最小权限访问。但 AI 智能体需要创作自由才能发挥作用，”他说。每家在云中运行智能体的公司都面临这种权衡，尤其是当面向公众的智能体和内部智能体共享同一环境时。在这种设置下，单个漏洞就可能危及整个系统的安全边界。\nAgentCore 的发现遵循了 Zenity 在其他地方记录过的一种模式：看似无害的输入会让智能体转而对抗自己的组织。在其 AgentFlayer 研究 中，零点击攻击使 Salesforce Einstein、Copilot Studio 和 Cursor 重定向客户数据或泄露凭证。借助 AgentForger ，一个被篡改的 ChatGPT 链接就足以在 OpenAI 的 Workspace Agents 中创建一个禁用了审批要求的自主智能体。\nOpenAI 在四天内修复了其漏洞，而 AgentCore 过于宽泛的默认权限在 Zenity 报告后仍持续了数月。AWS 已 向所有企业提供 AgentCore ，亚马逊称其用户包括索尼和爱立信。\n关于智能体记忆的研究也记录了类似弱点。Google DeepMind 在其 “AI 智能体陷阱”分类体系 中将长期记忆操纵列为一个单独的攻击类别，发现知识库中只需少量被投毒的文档就能引导回答。在红队研究 “Agents of Chaos” 中，研究人员通过智能体记忆文件中链接的一"
   },
   {
    "group": "wh",
@@ -647,33 +870,6 @@
    "excerpt": "The New Logistics Advantage — Part 8 of 9\nComplex B2B technology markets do not behave like consumer markets. Buyers are fewer, decisions are larger, sales cycles are longer, technical risk is higher, and most purchases involve multiple stakeholders with different definitions of value.\nThat changes the role of market visibility. In a simple market, repeated exposure can be enough to keep a brand in consideration. In a complex market, visibility creates more value when it helps buyers understand a problem, develop confidence in a point of view, and connect that understanding to a provider that appears credible enough to engage.\nThe strategic sequence is therefore not impression to lead. It is closer to: be seen, be understood, be credible, be considered, and then be engaged.\nThis is especially true in emerging categories such as decision intelligence, autonomous exception management, agentic AI, connected execution, and other markets where category boundaries are still forming. Buyers may not agree on the category definition, budget owner, architecture, or evaluation criteria.\nIn those situations, feature marketing arrives too early. A provider can explain what its product does and still fail to answer the buyer’s more basic questions: What problem is this category solving? Why is the old approach insufficient? How should the capability fit into the existing architecture? What risks does it introduce? What operating outcome should justify the investment?\nCompanies that help answer those questions can influence how the market frames the purchase. That does not guarantee commercial preference, but it creates a more valuable form of visibility: the firm becomes associated with a useful way of thinking about the problem.\nThis is why independent research and serious editorial content matter so much in technical markets. The buyer is not merely looking for a vendor claim. The buyer is trying to reduce uncertainty.\nDifferent formats solve different parts of that uncertainty problem. An always-on Logistics Viewpoints Sponsorship Program can create sustained presence around an audience and topic set. A Sponsored Webinar Program is better suited to explaining a complicated market issue in depth. A Sponsored Podcast Program can develop executive voice and make leadership more legible to the market. A Supplier Spotlight Program can clarify what a provider does, where it fits, and why its capabilities matter. ARC Industry Forum Sponsorship extends the model into live ex"
   },
   {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "TrinaTracker launches robots to automate solar farm construction and maintenance",
-   "url": "https://roboticsandautomationnews.com/2026/10/08/trinatracker-launches-robots-to-automate-solar-farm-construction-and-maintenance/105710/",
-   "published": "2026-10-08T09:51:45.000Z",
-   "description": "TrinaTracker, a global provider of smart tracking systems and a wholly owned subsidiary of Trinasolar, has launched two self-developed robotic products: Buildex PV Module Installation Robot and Aurora PV Cleaning Robot, to expand its Smart PV Ecosystem. TrinaTracker is evolving from a tracking system equipment supplier into a smart PV and robotics solution provider. By […]",
-   "excerpt": "TrinaTracker , a global provider of smart tracking systems and a wholly owned subsidiary of Trinasolar, has launched two self-developed robotic products: Buildex PV Module Installation Robot and Aurora PV Cleaning Robot, to expand its Smart PV Ecosystem.\nTrinaTracker is evolving from a tracking system equipment supplier into a smart PV and robotics solution provider.\nBy integrating high-reliability trackers, AI algorithms, installation and cleaning robots, and engineering and intelligent operations services, the company delivers a full lifecycle solution for PV power plants by optimising plant design, improving construction and O&M (operations and maintenance) quality, and reducing operational costs.\nLarge-scale PV projects have traditionally relied heavily on manual module installation, resulting in high labour requirements, long construction cycles, higher costs, inconsistent installation precision and safety risks – all of which can hinder standardised deployment.\nBuildex reshapes PV construction through automated, standardised and intelligent workflows.\nPowered by high-precision AI vision positioning and integrated precision mechanical control systems, Buildex autonomously completes module picking, transportation, alignment and placement.\nIt adapts to complex terrain and diverse tracker layouts, reducing labour intensity and safety risks while improving installation accuracy and delivery speed for utility-scale PV projects.\nMillimetre-level visual perception for precise construction: equipped with industrial 3D cameras and AI vision algorithms, the robot identifies modules and structures to achieve millimetre-accurate alignment and standardised laying. A LiDAR-AI multi-sensing safety system mitigates on-site risks.\nAutomation sets new efficiency benchmarks: the robot installs up to 90 modules per hour, 3-4 times faster than manual labour. Its innovative fork-and-flip mechanism supports automatic feeding and is compatible with both landscape and portrait mounting, streamlining material handling and site schedules.\nWide compatibility for complex terrain and trackers: the height-adjustable robotic base works with fixed and tracking brackets as well as modules in 1P/2P tracker scenarios. With 17 degree platform levelling capability, it operates reliably on sloped land and expands viable construction scenarios.\nContinuous operation to improve construction efficiency: designed for continuous operation, Buildex can help shorten installation cycles, reduce lab"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Convergix expands Michigan operations with new facility in Holland",
-   "url": "https://roboticsandautomationnews.com/2026/10/08/convergix-expands-michigan-operations-with-new-facility-in-holland/105707/",
-   "published": "2026-10-08T09:39:55.000Z",
-   "description": "Convergix Automation Solutions is pleased to announce the expansion of its Michigan footprint with a new 60,000-square-foot facility in Holland, Michigan. The investment reflects the company’s continued growth and commitment to increasing capacity, enhancing customer support, and attracting top talent across the region. Located at 1362 Lincoln Avenue, the Holland facility becomes Convergix’s fourth Michigan […]",
-   "excerpt": "Convergix Automation Solutions is pleased to announce the expansion of its Michigan footprint with a new 60,000-square-foot facility in Holland, Michigan.\nThe investment reflects the company’s continued growth and commitment to increasing capacity, enhancing customer support, and attracting top talent across the region.\nLocated at 1362 Lincoln Avenue, the Holland facility becomes Convergix’s fourth Michigan location, joining its existing operations in Bridgman, Lakeshore, and Auburn Hills.\nThe additional space will support continued business growth while reinforcing the company’s strong presence throughout the state.\nThe Holland expansion is a growth initiative designed to support increasing customer demand and future opportunities. All existing Convergix locations will remain integral to the company’s operations and long-term strategy.\n“Holland is an exciting step forward for Convergix,” said Sam Gooding, president of Convergix Industrial Solutions.\n“Demand for our solutions is growing, and this expansion gives us the capacity to serve our customers while creating new opportunities across our organization.\n“West Michigan has long been a source of strong engineering and skilled trades talent, and we’re committed to growing here.”\nConvergix plans to bring the facility online over the coming months and will continue to invest in building a talented team to support customers across the region. The company also expects the expansion to create additional career opportunities as operations ramp up.\nThe Holland facility strengthens Convergix’s ability to deliver innovative automation and engineering solutions while positioning the organization for continued growth in Michigan and beyond.\nOur website relies on ads to provide free content and sustain our operations. By turning off your ad blocker, you help support us and ensure we can continue offering valuable content without any cost to you.\nWe truly appreciate your understanding and support. Thank you for considering disabling your ad blocker for this website"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Stäubli Robotics to host automation summit following European sales restructuring",
-   "url": "https://roboticsandautomationnews.com/2026/10/08/staubli-robotics-to-host-automation-summit-following-european-sales-restructuring/105703/",
-   "published": "2026-10-08T09:32:56.000Z",
-   "description": "Stäubli Robotics will host its first North East European Robotics & Automation Summit at its Welcome Center in Bayreuth, Germany, on November 19 and 20, following a restructuring of its sales operations across Northern, Central and Eastern Europe. The company has consolidated its sales activities across the region, with overall responsibility centralized at its Bayreuth […]",
-   "excerpt": "Stäubli Robotics will host its first North East European Robotics & Automation Summit at its Welcome Center in Bayreuth, Germany, on November 19 and 20, following a restructuring of its sales operations across Northern, Central and Eastern Europe.\nThe company has consolidated its sales activities across the region, with overall responsibility centralized at its Bayreuth operation.\nPeter Pühringer, managing director and regional robotics director at Stäubli Robotics, now oversees the strategic and operational management of the countries covered by the organization.\nStäubli says the restructuring is intended to streamline decision-making, improve coordination between national operations and provide international customers with a single point of contact across multiple European markets.\nPühringer says: “A company operating in multiple European countries can now rely on a single point of contact across all its locations.\n“With the Summit, we’re bringing this benefit to life for the first time. We’ll showcase our portfolio of solutions in one location and connect customers, partners, and experts from all markets in the region.”\nHeld under the theme “Shaping the Future of Smart Manufacturing,” the two-day summit will cover robotics, physical AI, digitalization and flexible automation.\nThe program includes discussions on humanoid robots, the EU Machinery Regulation, the Cyber Resilience Act and logistics automation, alongside workshops and demonstrations covering machine vision, bin picking, mobile robots, digital twins and AI-supported inspection.\nSimon Schmidt of the Fraunhofer Institute for Manufacturing Engineering and Automation will deliver a keynote on developments in humanoid robotics and applied research.\nStäubli will also demonstrate automation technologies with partners and system integrators in dedicated general industry and life sciences application areas.\nRegistration for the event closes on November 6.\nOur website relies on ads to provide free content and sustain our operations. By turning off your ad blocker, you help support us and ensure we can continue offering valuable content without any cost to you.\nWe truly appreciate your understanding and support. Thank you for considering disabling your ad blocker for this website"
-  },
-  {
    "group": "ai",
    "source": "AIHOT",
    "title": "Crowdstrike 报告疑似单人使用 AI 渗透工具攻击多家韩国银行",
@@ -681,15 +877,6 @@
    "published": "2026-10-08T09:24:17.000Z",
    "description": "Crowdstrike 报告称，一名疑似中文使用者于2026年9月底至10月初利用 AI 驱动的开源渗透测试工具 ARTEX 攻击多家韩国金融机构，窃取大量数据，其中 Shinhan Bank 超过 25,000 条包含姓名、联系方式、收入和信用额度的记录泄露。 🔗 阅读原文 via AIHOT · https://aihot.news/items/br6vb46mhi9mkv2pxiq59k8z7",
    "excerpt": "AI-powered hacking tools enabled a likely single attacker to breach multiple South Korean banks\nCrowdstrike 报告称，一名疑似中文使用者于2026年9月底至10月初利用 AI 驱动的开源渗透测试工具 ARTEX 攻击多家韩国金融机构，窃取大量数据，其中 Shinhan Bank 超过 25,000 条包含姓名、联系方式、收入和信用额度的记录泄露。\n原文给出了攻击工具、所用模型和泄露规模等具体细节，可帮助读者认识AI驱动的渗透测试如何放大单人攻击能力。\nCrowdstrike 报告了韩国的一起基础设施黑客攻击事件。 一名疑似讲中文的攻击者在 2026 年 9 月下旬至 10 月初期间袭击了多家韩国金融机构，窃取了大量数据。据 韩国报纸《韩民族》 报道，仅新韩银行一家就有超过 25,000 条包含姓名、联系方式、收入和信用额度的记录被盗。韩国金融监管机构召开了紧急会议。总统李在明呼吁进行彻底调查。\n攻击者使用了 ARTEX ，这是一款中国的开源工具，于 7 月首次发布在 GitHub 上，它利用 AI 语言模型进行自动化渗透测试，也就是说它能自行发现安全漏洞。其背后的模型是 DeepSeek v4.1-flash、GLM-5.3 和 Grok 4.6。研究人员在攻击者的开放目录中发现了 Claude Code 会话日志，显示其搜索 Telegram 群组以出售窃取的数据。\nCrowdstrike 表示，此案表明 AI 工具如何能让一个人在短时间内实施大规模入侵，这正是 网络安全专家数月来一直警告的风险 。就在几天前，Anthropic 记录到 GLM-5.3 编写漏洞利用程序的能力几乎与 Mythos Preview 相当 ，后者是 Anthropic 的前沿模型，也是 在 2026 年 3 月下旬引发整个争论的那个模型 。\n订阅 THE DECODER，享受无广告阅读、每周 AI 新闻通讯、每年六次我们独家的“AI Radar”前沿报告、完整档案访问权限以及评论区访问权限。\n来源： The Decoder：AI News · the-decoder.com\n原文给出了攻击工具、所用模型和泄露规模等具体细节，可帮助读者认识AI驱动的渗透测试如何放大单人攻击能力。"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Sereact robots automate Zalando returns processing at logistics facilities in Germany and Poland",
-   "url": "https://roboticsandautomationnews.com/2026/10/08/sereact-robots-automate-zalando-returns-processing-at-logistics-facilities-in-germany-and-poland/105699/",
-   "published": "2026-10-08T09:18:22.000Z",
-   "description": "Physical AI company Sereact, online retailer Zalando and CEVA Logistics have announced the launch of AI-powered automated returns processing across key fulfillment facilities in Germany (Greven) and Poland (Świebodzin). Powered by Cortex, Sereact’s physical AI platform, the dual-arm robotic systems have entered live operations to autonomously process returned fashion items, marking the initial phase of […]",
-   "excerpt": "Physical AI company Sereact , online retailer Zalando and CEVA Logistics have announced the launch of AI-powered automated returns processing across key fulfillment facilities in Germany (Greven) and Poland (Świebodzin).\nPowered by Cortex, Sereact’s physical AI platform, the dual-arm robotic systems have entered live operations to autonomously process returned fashion items, marking the initial phase of a broader initiative to scale returns automation across Europe.\nReturns management remains one of the most complex operations in fashion e-commerce logistics. Returned items often arrive poorly packed and disheveled. The uniqueness of the state of the returned items defies conventional robotic pre-programming.\nSereact’s Cortex platform groups previously unseen objects – identifying, grasping and sorting items dynamically without requiring article-specific training or pre-determined article sets.\nDelivered as a Robotics-as-a-Service model, the deployment represents the first operational milestone of the strategic collaboration.\nIn July, Zalando joined Sereact’s Series B round as a strategic investor, and the partners are actively collaborating to scale intelligent automation across their shared European logistics footprint.\nThe technology is designed to work alongside humans. By taking on highly repetitive handling, the robotic system reduces physical strain on employees, allowing them to upskill into higher-value roles where human expertise and judgement are required.\nMasood Choudhry, SVP logistics, Zalando, says: “At the heart of our collaboration with Sereact and CEVA is a fundamental belief: true innovation happens when technology and human potential advance together.\n“By solving the most complex challenges in modern fulfilment today, we are actively shaping the future of e-commerce logistics for fashion and lifestyle.”\nChris Walton, SVP contract logistics, CEVA Logistics, says: “One of the toughest challenges is returns handling, due to its extreme operational nature and scale, unpredictable volumes, manual quality checks, seasonality, value decay, and a disproportionately high cost per unit.\n“Our Robotics-as-a-Service model classifies items faster, reduces manual touchpoints, and delivers consistent, predictable quality on a large scale. For our customers, this transforms returns from a cost driver into a controlled, high‑performance service.”\nDr Ralf Gulde, CEO and co-founder, Sereact, says: “Returns are the hardest manipulation problem in fashion log"
   },
   {
    "group": "ai",
@@ -1097,24 +1284,6 @@
    "excerpt": "Anthropic 发布新版使用政策，将于 11 月 12 日生效，多数变化是对既有规则的澄清。更新包括新设禁止欺骗性活动章节、收窄选举条款、明确武器软件与无人机武装禁令、更精确的监控与执法限制、补充高风险用例及自主物理操作的 human in the loop 要求，并新增禁止对模型的持续无端虐待行为。\n官方逐条说明新版使用政策的实际变化，读者可以据此了解 Claude 在选举、武器、监控等场景的边界如何调整。\n每年，Anthropic 都会根据我们模型不断演进的能力以及从客户那里收到的反馈，更新其使用政策。我们今天发布新版本的政策。在这篇文章中，我们总结了所做的变更。\n最新版本中的大部分更新旨在澄清现有规则。自上次更新以来的一年里，Claude 承担了更长时间、更独立的工作。本次更新提供了新的示例，说明我们的规则如何适用于 Claude 的新能力。它借鉴了我们在过去一年中观察到的影响力行动、武器开发和监控领域的新滥用模式（正如我们在 最新威胁情报报告 中所记录的那样）。我们还更新了规则，以澄清我们对健康和金融等领域高风险用例的要求，增加了当 Claude 被用于自主采取物理行动时的控制措施，并应对针对我们模型的滥用行为。\n更新后的政策于 11 月 12 日生效。完整的 使用政策 和 支持地区政策 可在各自的页面上找到。\n正如我们 上个月所写 ，我们看到了国家媒体机构、政府宣传办公室和商业公司利用 Claude 运营虚假账号网络和捏造新闻网站的例子。我们的政策已经禁止此类活动，但相关限制分散在我们的选举、欺诈、隐私和虚假信息章节中。\n我们将这些规则整合为一个新章节，标题为“不得参与欺骗性活动或人为活动”，该章节适用于任何形式的欺骗性活动（无论是政治还是商业）。它涵盖了掩盖信息幕后推手或通过虚假账号或帖子放大内容的努力，以及构建用于运营影响力行动的工具和基础设施。\n我们在每个版本的使用政策中都对政治内容限制进行了完善，以确保我们的模型能够在民主进程中得到恰当使用。在此版本中，我们进一步细化了选举章节，特别聚焦于禁止使用 Claude 欺骗选民或破坏选举（例如，散布关于候选人或不实投票信息的虚假信息、冒充候选人或选举官员，或试图压制投票率）。我们将其更名为“不得破坏民主进程”，以反映这一范围。\n出于类似原因，我们还取消了针对个性化投票和竞选定向的全面禁令。该禁令涵盖了合法的公民工作，例如非营利组织使用 Claude 为其他语言的选民撰写信息，或选举官员发送选票补救通知。促使最初规则出台的行为（如依赖欺骗或滥用选民个人数据的选民定向）仍根据我们的欺骗性活动、监控和隐私章节予以禁止。\n我们的使用政策一直禁止使用 Claude 开发武器。最近，我们看到有人试图利用我们的模型为武器构建制导与控制软件。更新后的条款明确规定，我们的禁令涵盖使武器得以运作的软件和组件，以及诸如为无人机和其他自主载具配备武器等行为。这些变更反映了我们此前一直执行原有政策的方式。\n我们九月的 威胁情报报告 记录了越来越多地使用 AI 构建用于识别和追踪政治异见人士的监控系统的情况。我们重写了监控与刑事司法部分，以更精确地说明我们禁止的内容。例如，未经他人同意对其进行追踪是被禁止的，无论是实时进行还是通过分析此前收集的数据进行。在执法或刑事司法程序中，Claude 不得被用于决定或建议调查、逮捕或起诉谁。我们还禁止将 Claude 用于构建或改进专为监控设计的工具。\n与之前对武器禁令的更新一样，此次更新并不反映我们在实践中执行内容的改变：它只是旨在让我们的政策更加明确。新条款还阐明了哪些用途仍然被允许，包括人们已同意的追踪（如欺诈监测）、内容审核、新闻工作和法律研究。\n当我们的产品被用于可能影响某人健康、法律权利、财务、生计或获取基本服务的方式时，我们要求必须有合格的“人在回路”（即有权审查并在必要时更改 Claude 建议的人），并且必须告知受影响的个人使用了 AI。\n这些要求并未随我们使用政策的更新版本而改变。然而，用户经常询问我们某个特定用例是否有这些要求，因此我们重写了高风险用例要求部分，以更直接地回答这一问题。它现在列出了哪些类型的建议被涵盖，哪些不被涵盖。\n继我们的 模型硬件标准 发布之后，该部分还增加了对我们模型使用的要求：当模型连接到会采取自主物理行动且可能造成伤害的硬件时，必须有合格的操作员能够观察设备并在需要时将其停止；如果 Claude 断开连接，设备还必须能够保持安全状态。\n我们新增了一项禁令，禁止对我们的模型持续且无必要地实施滥用或残忍行为。该政策更新仅适用于极端情况，即用户反复以残忍方式对待我们的模型且没有任何可辨别的目的。它不适用于常见的用户挫败感、反对意见、黑暗创作主题或模型测试与研究。\n这一新增内容与我们已采取的一项措施一致，即允许 Claude 模型在 Claude.ai 和 Claude Code 上 终止与持续滥用用户的罕见对话 。此类滥用是本次更新的主要关注点；Claude 终止这些交互的能力仍将是主要的执行机制。\n去年，我们 更新了《支持地区政策》 ，限制由总部位于我们未支持地区的实体多数持股的公司访问 Claude。我们更新了 支持地区页面 ，以阐明我们如何执行该政策。我们的政策禁止身处未支持地区的个人、在未支持地区注册或设立总部的实体，以及由这些地区的人员或实体多数持股或控制的实体使用 Claude。\n随着 Claude 的能力和风险不断变化，我们将持续更新《使用政策》。与本次及此前的更新一样，我们将广泛征求 Anthropic 内部以及政策制定者、领域专家、公民社会和我们产品用户的意见。\nAnthropic 将在三年内投入 1.5 亿美元支持 Genesis Mission，这是一项旨在通过 AI 加速科学与技术发现的联邦计划。\n我们正在推出全新扩展版的网络验证计划，为符合条件的安全专业人员提供先进的网络能力并减少拦截分类器。\nAnthropic 将向 Claude Frontier Acade"
   },
   {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "McCormick cites higher freight, input costs in lifting inflation forecast",
-   "url": "https://www.supplychaindive.com/news/mccormick-cites-higher-freight-input-costs-in-lifting-inflation-forecast/832279/",
-   "published": "2026-10-07T15:15:00.000Z",
-   "description": "The spice and seasoning maker is mitigating the impact through pricing and productivity measures, as well as the acquisition of a Mexico subsidiary.",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "Diesel’s supply crunch may hit CFOs through freight contracts",
-   "url": "https://www.supplychaindive.com/news/diesels-supply-crunch-may-hit-cfos-through-freight-contracts/831981/",
-   "published": "2026-10-07T15:15:00.000Z",
-   "description": "Chevron CFO Eimear Bonner expects energy prices to stay elevated, while a major trucking CEO says contracts signed before diesel prices rose are hurting the bottom line.",
-   "excerpt": ""
-  },
-  {
    "group": "ai",
    "source": "Simon Willison",
    "title": "Anti-Patterns in Software Blogging",
@@ -1130,16 +1299,7 @@
    "url": "https://aihot.news/items/iz93flwr7h9m7po4wnu8sm4hy",
    "published": "2026-10-07T14:46:15.000Z",
    "description": "亚利桑那州上诉法院裁定，Gabriel Horcasitas 2021 年路怒枪杀 Christopher Pelkey 一案维持过失杀人定罪，但因量刑听证中播放的 AI 生成受害者视频带有不当情感分量，法官须重新考虑刑期。 🔗 阅读原文 via AIHOT · https://aihot.news/items/iz93flwr7h9m7po4wnu8sm4hy",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "Tractor Supply opens Idaho distribution center with automation, dedicated AI team",
-   "url": "https://www.supplychaindive.com/news/tractor-supply-opens-idaho-distribution-center-with-automation-dedicated-a/831883/",
-   "published": "2026-10-07T14:15:46.000Z",
-   "description": "The retailer&#39;s site in Nampa will distribute inventory to 123 stores and includes a group that aims to &quot;apply practical artificial intelligence to operational needs.&quot;",
-   "excerpt": ""
+   "excerpt": "亚利桑那州上诉法院裁定，Gabriel Horcasitas 2021 年路怒枪杀 Christopher Pelkey 一案维持过失杀人定罪，但因量刑听证中播放的 AI 生成受害者视频带有不当情感分量，法官须重新考虑刑期。\n报道记录了美国法院首次承认 AI 生成受害者视频影响量刑的案例，可帮助读者理解 AI 生成内容进入司法程序的边界争议。\n你好，今天是周三，我们继续推进。今天我们带来一个非常离奇的案件更新，涉及一名男子的影像被 AI 从死亡中“复活”，并出现在法官面前，宣布“原谅”杀害他的人。404 Media 撰稿人 Matthew Gault 与该男子的姐姐进行了长时间交谈，她撰写了那些话语并生成了这段视频，她说打动法官正是她的全部目的。\n亚利桑那州一名被判过失杀人罪的男子将获得重新量刑，因为一段 AI 生成的、让受害者从坟墓之外发声的视频被裁定作为影响陈述带有“不当的情感分量”。亚利桑那州一家上诉法院裁定，过失杀人指控维持不变，但法官必须因 AI 而重新考虑该男子的刑期长度。\n2021 年，Gabriel Horcasitas 在一起路怒事件中开枪打死了 Christopher Pelkey。陪审团裁定他犯有过失杀人罪。在 Horcasitas 的量刑听证会上，Pelkey 的姐姐 Stacey Wales 在受害者影响陈述中 播放了一段 AI 生成的视频 。在视频中，她用自己撰写的话语让 AI 生成的 Pelkey 形象说出这些话，Pelkey 的 AI 化身原谅了杀害他的人，并说他们在另一种人生中“本可以成为朋友”。\nWales 告诉 404 Media，她制作这段视频的意图就是打动法官。“这不正是你希望人与人之间的联结成为的样子吗？”她说。“你有没有从电影院出来时说：‘好吧，那太煽情了。那太有冲击力了。’人与人之间的联结是有力量的，而试图把这一点传达给一个从未认识过另一个人、从未认识过地球上这个人的对象，把这个人 37 年的一生浓缩到一场两小时的量刑活动中，是很难做到的，我认为受害者和受害者家属应该获得一切机会。”\n一批新法律即将到来 。 最近提出的几项立法 如果获得通过，将大幅限制联邦机构使用 Flock 摄像头，立法者在解释为何需要这些立法时引用了 404 Media 的报道。“在人们对人工智能不受约束的权力日益担忧之际，Flock 正在美国各地的社区未经同意安装数万枚摄像头，从而彻底摧毁隐私这一概念，”Bernie Sanders 说。\n报道记录了美国法院首次承认 AI 生成受害者视频影响量刑的案例，可帮助读者理解 AI 生成内容进入司法程序的边界争议。"
   },
   {
    "group": "ai",
@@ -1175,7 +1335,7 @@
    "url": "https://aihot.news/items/yk3grmalszldrwd1p8bxk0cki",
    "published": "2026-10-07T14:01:44.000Z",
    "description": "a16z 的 Ryan McEntush 分析德州电网暂停审批数据中心的原因：并网队列从 2024 年底的 63 GW 激增到今年 6 月的 474 GW，约 90% 是数据中心，开发商大量投机性申请且社区沟通不足。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yk3grmalszldrwd1p8bxk0cki",
-   "excerpt": ""
+   "excerpt": "a16z 的 Ryan McEntush 分析德州电网暂停审批数据中心的原因：并网队列从 2024 年底的 63 GW 激增到今年 6 月的 474 GW，约 90% 是数据中心，开发商大量投机性申请且社区沟通不足。\n原文用并网队列、自备电源和灵活性三条线索拆解德州数据中心限电的成因，帮助读者理解 AI 电力瓶颈的真实结构。\n2024年底，得克萨斯州的电网运营商队列中有 63 GW的大型新客户 。到今年6月，这一 数字达到了474 GW ，是创纪录峰值需求的五倍多，其中约90%是数据中心。\n随后得克萨斯州 按下了暂停键 。最初只是 要求 数据中心自行承担电网升级费用，如今已升级为对所有新许可的 冻结 。如果你关心AI和美国的再工业化，这一点值得了解。它为什么这么做？\n即将到来的 选举 是部分原因，但背后的深层问题值得深挖。首先是并网队列。这次暂停既关乎项目本身，也关乎项目如何申请审批。开发商惯常会在多个站点重复提交申请，其中许多是尚无客户的 投机性 建设。这些新开发商往往连一块GPU都没插过电，更不用说发电厂了。因此，处理这些低质量申请让负责该州大部分电网运营的ERCOT陷入 困境 。规划者无法分辨哪些是真实的，他们也不希望由电费用户为那些永远不会落地的项目所建的升级买单。\n第二个问题是社区认同。噪音、用水、排放和电费是附近居民 最关心的事 。无论这些问题背后的 实际情况 如何，当数据中心落户城镇时，人们理应得到 直接的答复 ，而他们 并不总能得到 （ 截至6月，377家公司中只有28家 回答了该州关于其资源使用情况的调查）。在胡德县，委员们被要求支持“爱国者项目”的税收减免，却不知道 它究竟是谁 。平心而论，公司在选址期间使用代号很常见，因为知名买家会推高价格，但一旦官员就税收减免进行投票，这一逻辑就更难站得住脚了。\n这一更广泛的政治背景很重要，但我将只聚焦 能源 方面：为什么为数据中心供电如此困难，开发商正试图用哪些方式来实现，以及事态可能走向何方。\n亚马逊购电的方式有助于说明发生了什么变化。过去十年，他们会找到一家有网络容量的公用事业公司，注册为大型负荷用户，然后签订长期合同，在纸面上 匹配 其用电量。这些合同往往 纯粹是财务性的 ，意味着你不一定需要证明电力能输送到你那里，而且并网很容易，因为公用事业公司通常有闲置的网络容量。\n这已不再成立。电网已被拉伸到极限，如今几乎任何新的大型负荷或发电设施都需要升级。 电力流经所有相连的路径 ，所以从某座电厂购电并不会为你预留一条通往你建筑的路线（甚至还有输电拥堵 权 市场）。\n因此，买家首先转向他们能更直接主张的稳定电力（全天候可用），通常是通过 重启退役电厂 或在现有电厂旁边建设。 两者都不是真正的出路 ，而一些最激烈的争论围绕“共址”展开， ERCOT将其描述为 在电力到达电网之前从邻近电厂取电：\nSusquehanna： Amazon 买下了一座园区 ，紧邻 Talen 的核电站，但联邦电网监管机构 FERC 否决了 Talen 直接向其输送更多电力的申请 。公用事业公司曾辩称，这会使得该园区逃避电网费用，并将固定的输电成本转嫁给其他所有人。根据 重组后的协议 ，Amazon 像其他任何客户一样支付输电费用 。\nFreestone： CyrusOne 位于 Constellation 燃气电厂旁的 760 MW 园区需要获得 得克萨斯州公用事业委员会（PUCT）的批准 ，因为它实际上会从其他人那里夺走该电厂的大部分发电量。PUCT 在 5 月 表示同意 ，前提是该园区能在 ERCOT 发出呼叫后 30 分钟内 削减用电 或切换到备用电源。\nArmstrong County： 两个 Crusoe 数据中心，分别为 265 MW 和 260 MW，共用一个最多只能发电约 265 MW 的风电场。两者都适用与 Freestone 相同的规则，因此当 ERCOT 呼叫时，每个都必须削减其全部负荷。两者合计削减的负荷几乎是该风电场实际发电量的两倍，Crusoe 称这 过于苛刻 ，但 PUCT 维持了这一规定。\n互联研究是电网规划者确定电网新增项目需要升级哪些线路和变电站的方式。ERCOT 过去按照 一次最多处理 50 个大型负荷 的规则逐一审查研究，但到 2025 年 11 月中旬，新增了 225 个请求。因此今年 6 月，PUCT 批准了一种新的批量处理方式 。在“Batch Zero”下，ERCOT 将 75 MW 及以上的大型负荷放在一起研究，并在它们之间分配电网容量。\n这些研究主要询问的是当某些东西发生故障时会发生什么。 NERC 的标准 是北美可靠性的基准，涵盖了一系列广泛的停电场景， ERCOT 还增加了自己的要求 。规划者可能会模拟一台变压器故障，然后在此基础上再让一条线路或一台发电机停运。要在不削减更多负荷的情况下维持这一可靠性标准，通常意味着要建设额外的基础设施。\n一个较新的风险是负荷突然同时从电网脱落。许多数据中心在第一次电压骤降时就切换到备用电源以保护其硬件，因此一次故障就可能在几秒内 从电网拉走巨大的负荷 。今年早些时候在弗吉尼亚州就 发生过 这种情况，但幸运的是处理得很好。\n得克萨斯的容错空间更小，因为 ERCOT 的电网在很大程度上是 孤立的 。在某些情况下，ERCOT 一次只能损失 约 3.2 GW 的负荷，否则就会引发严重问题。一项新的电压 穿越规则 现在要求新建数据中心在常规故障期间保持连接，我甚至听说有实验室在训练运行失败后运行虚拟任务，只是为了不让负荷突然下降。\n所有这些听起来可能过于保守，但该系统的设计初衷就是将可靠性置于成本之上。简而言之，电网是为炎热的夏日和严寒的冬季而建的，那时故障可能意味着生死。正是这一职责使得电网规模的确定如此困难；你为几个高峰时段而建设，却要全年为其付费。\n那么，这一切韧性究竟由谁来买单？得克萨斯州通常根据每个大客户在电网夏季高峰期的用电需求来分摊输电成本，因此，一个在最热的下午削减负荷的大型用"
   },
   {
    "group": "wh",
@@ -1238,7 +1398,7 @@
    "url": "https://aihot.news/items/r96kyuxfie0w9mup4206gzn29",
    "published": "2026-10-07T12:45:31.000Z",
    "description": "NVIDIA Nemotron 团队基于 Nemotron 3，用 SFT、RL 和反馈驱动推理分别构建了在 IOI 2026 与 IMO 2026 达到金牌水平的系统。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r96kyuxfie0w9mup4206gzn29",
-   "excerpt": ""
+   "excerpt": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO\nNVIDIA Nemotron 团队基于 Nemotron 3，用 SFT、RL 和反馈驱动推理分别构建了在 IOI 2026 与 IMO 2026 达到金牌水平的系统。\n原文给出 IOI 与 IMO 金牌级成绩的具体分数、训练配方和开放资源，读者可以复用其模型与推理系统组合思路。\n国际信息学奥林匹克竞赛（IOI）和国际数学奥林匹克竞赛（IMO）考察的是不同的能力。IOI 要求算法和代码在严格的时间和提交限制下通过隐藏测试。IMO 则要求严谨的自然语言证明。在这两项竞赛中取得成功都很困难。而在两者中都取得成功，则指向更广泛的能力。\n我们近期的结果表明，Nemotron 是一个强大且适应性强的基座，可用于构建世界级的专家模型。从 Nemotron 3 开始，我们的团队使用监督微调（SFT）、强化学习（RL）和反馈驱动的推理，构建出在 IMO 2026 和 IOI 2026 上均达到金牌水平的系统。\nIOI 的结果来自一次实时、前瞻性的运行，其时间、互联网访问和提交限制与人类参赛者相同。这是一项非官方、无监督的基准测试，未被纳入官方 IOI 排名。IMO 系统提交的证明由官方 IMO 评分员评分。\n“易于微调”不应仅仅意味着让一个检查点可训练。它应该意味着一个能力强大的基座模型可以通过清晰、可复用的配方适配到要求严苛的领域。\n训练和推理运行规模可观，但底层方法熟悉且可复现。我们不需要为每个挑战都构建一个新的基座模型。我们让 Nemotron 针对任务进行专业化。\n对于竞技编程，我们整理了 22,000 道题并生成合成推理轨迹，以训练两个专家模型。Nemotron-3-Nano-CC 总参数量 300 亿、激活参数量 30 亿，接受了 SFT 和 RL。Nemotron-3-Ultra-CC 总参数量 5500 亿、激活参数量 550 亿，接受了 SFT。\nIOI 2025 上的进展让专业化的价值一目了然。Nano 从后训练前的 130 分提升到 SFT 后的 280 分，再到 RL 后的 291 分。借助 GenCorrect——我们的迭代式生成-评估-精炼策略——它达到 468 分，越过了 438.3 的金牌阈值。Ultra-CC 在相同的测试时策略下达到 502 分。\n这些实验还表明，适配在每个规模上不必看起来都一样。SFT 带来了 Nano 的大部分提升，RL 则增加了较小但持续的改进。对于更强的 Ultra 模型，一个 SFT 轮次就足以在 IOI、ICPC 和 LiveCodeBench Pro 上超越完全后训练过的 Nano 模型。这一发现指导了用于 IOI 2026 的竞赛专用 Ultra-CC 系统，该系统得分 535.4（满分 600）。\nIMO 项目将同样的思路应用于奥林匹克数学。从 Nemotron 3 Ultra 出发，我们分别用 SFT 训练了一个专家模型，用 RL 训练了另一个。\nSFT 语料库包含 414,890 个经过质量过滤的样本，覆盖 15,818 道独特的证明题。它不仅仅是教授最终答案。数据涵盖了证明生成、精炼、验证和元验证，因此模型学会了构建论证、识别漏洞、回应批评，以及判断证明是否完整。RL 模型则在 9,597 道接近模型能力前沿的证明题上进行了训练。\n在开发实验中，两个后训练检查点都优于通用可用模型。SFT 检查点在第一轮搜索中最强，而 RL 检查点取得了最佳的单检查点整体结果。它们的优势互补，因此最终系统将两个专家模型与通用模型一起使用。\n对于每道 IMO 题目，模型生成候选证明、对其评分、生成批评意见，并精炼最有希望的尝试。一个单独的高算力阶段选出最终提交。整个系统以自然语言运行，没有形式化证明器、外部工具或互联网访问。它获得了 42 分中的 30 分，其中六道题中有四道获得满分，并超过了官方金牌分数线。\n我们之前的 IOI 2025 Hugging Face 文章 展示了测试时计算如何将开放权重模型推向金牌级表现。新结果补充了重要的一环：更好的专业化让推理系统拥有更好的候选、更好的批评者和更好的精炼。\n在 IOI 中，GenCorrect 将微调带来的收益转化为多轮反馈中的更大提升。在 IMO 中，使用互补的 SFT 和 RL 检查点比简单地从单个检查点抽取更多样本更有价值。在两种情况下，最佳结果都来自将强大的专家模型与能够搜索、验证和改进的系统相结合。\n这一区别很重要。这些奖牌不是仅靠微调产生的，也不是仅靠暴力采样产生的。它们来自模型、数据和推理循环的协同设计。\n我们希望这些结果在竞赛之外也有用。 Nemotron Labs IMO 2026 合集 汇集了 SFT 和 RL 检查点、两个训练数据集，以及 Nemotron-IMO-Bench——一个包含 200 道奥林匹克级题目的新基准。 IMO 论文 描述了训练方法和生成-验证-精炼系统，而 NeMo-Skills 仓库 包含 IMO 推理流水线、提示词、提交的证明以及可复现的快速入门。对于竞技编程， Nemotron-3-Ultra-CC 模型 已在 Hugging Face 上提供， IOI 论文 提供了训练配方和 GenCorrect 方法论。IOI 评估和推理流水线也可在 NeMo-Skills 中获取。\nIMO 和 IOI 共同为一个简单的理念提供了异常严苛的证据：Nemotron 可以被微调为世界级的领域专家，然后与透明的推理工作流组合，解决人类竞赛前沿的问题。\n原文给出 IOI 与 IMO 金牌级成绩的具体分数、训练配方和开放资源，读者可以复用其模型与推理系统组合思路。"
   },
   {
    "group": "ai",
@@ -1268,24 +1428,6 @@
    "excerpt": "Managing returns is one of the most complex operations in fashion e-commerce logistics, with items poorly packed and in varying conditions. Today, Sereact, Zalando, and CEVA Logistics launched automated returns using robots and AI in fulfillment centers in Greven, Germany, and Świebodzin, Poland.\n“One of the toughest challenges is returns handling, due to its extreme operational nature and scale, unpredictable volumes, manual quality checks, seasonality, value decay, and a disproportionately high cost per unit,” stated Chris Walton, senior vice president for contract logistics at CEVA Logistics.\n“Our robotics-as-a-service model classifies items faster, reduces manual touchpoints, and delivers consistent, predictable quality on a large scale,” he added. “For our customers, this transforms returns from a cost driver into a controlled, high‑performance service.”\nMarseille, France-based CEVA Logistics offers a range of customized logistics systems, as well as multimodal transport in more than 170 countries. The third-party logistics provider ( 3PL ) has about 110,000 employees at more than 1,700 facilities. With 2025 revenue of $18.3 billion (U.S.), CEVA is part of the CMA CGM Group.\nReturned items often arrive poorly packed and in varying condition. Examining, sorting, and reconditioning products for reintegration into outbound inventory is typically a labor-intensive process that has been beyond conventional robotic pre-programming, noted the partners.\n“Returns are the hardest manipulation problem in fashion logistics,” noted Dr. Ralf Gulde, co-founder and CEO of Sereact. “If a system only works on articles it has seen before, it does not work in a returns operation at all. Running this in production with CEVA at Zalando volumes is the strongest proof point we have.”\nSereact has developed Cortex , physical AI software that enables robots to grasp, identify, and handle unfamiliar items. The Stuttgart, Germany-based company has raised $116 in Series B funding, with Zalando as an investor. It counts IKEA, DHL, Rohlik, Arvato , BMW, Mercedes-Benz, and Daimler Truck among its customers and conducts research and deployment at the same time.\n“Generalizing picking will require a data set that includes system dynamics of the real world,” Gulde told Automated Warehouse . “Shortly after ChatGPT came out, we released PickGPT. We realized that the technology behind LLMs were transformative.”\n“Instead of building in the lab, we build on the shop floor, aligning with enter"
   },
   {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "USTR initiates next stage of USMCA review",
-   "url": "https://www.supplychaindive.com/news/ustr-initiates-next-stage-of-usmca-review/832285/",
-   "published": "2026-10-07T11:58:00.000Z",
-   "description": "The agency is seeking public comment as part of the annual review process triggered by the U.S.&rsquo; decision not to extend the pact this summer.",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "Choosing a WMS: The Questions Logistics Leaders Should Be Asking Now",
-   "url": "https://logisticsviewpoints.com/2026/10/07/choosing-a-wms-the-questions-logistics-leaders-should-be-asking-now/",
-   "published": "2026-10-07T11:00:00.000Z",
-   "description": "Choosing a WMS: The Questions Logistics Leaders Should Be Asking Now should begin with a simple discipline: define the operating problem before comparing products. In a crowded market, feature lists create an illusion of comparability. The post Choosing a WMS: The Questions Logistics Leaders Should Be Asking Now appeared first on Logistics Viewpoints .",
-   "excerpt": "A WMS evaluation should begin with the operating problem, not the product demo. In a crowded market, feature lists create an illusion of comparability; the better question is which platform best fits the decisions, constraints, interfaces, and outcomes of the buyer’s actual operation.\nThe core job is the operational system that manages inventory location, warehouse work, task priorities, replenishment, picking, packing, staging, and shipping inside the distribution operation. Buyers should translate that mission into explicit requirements tied to service, cost, capacity, risk, and response time. That prevents a vendor's strongest demo feature from quietly becoming the buyer's strategy. That is why Select Technology for the System, Not the Feature List is a useful buying principle for WMS evaluation: the target operating model should determine which capabilities actually matter.\nCore capabilities include inventory control, receiving and putaway, replenishment, wave and waveless work release, picking and packing, labor coordination, shipping, yard and dock interfaces, analytics, and increasingly automation orchestration and AI-assisted decision support. Not every organization needs maximum depth in every area. The evaluation should weight the capabilities that matter to the operating model and explicitly de-emphasize those that do not.\nThe platform will live inside an architecture where ERP and OMS upstream; WMS at the inventory-and-work core; WES/WCS, robotics, conveyors, sortation, labor systems, YMS, parcel, and TMS around the execution edge. Integration should therefore be tested as part of the business case, including data frequency, failure handling, API maturity, ownership of master data, latency, security, and what happens when an upstream feed is incomplete.\nA useful demonstration should include a late inbound trailer, a constrained dock, a wave that threatens a carrier cutoff, an automation cell that goes down, or an urgent order that must be reprioritized without destabilizing the rest of the facility. Ask the provider to show what the system knows, what it recommends, who or what has authority, how the action is executed, and how the outcome is recorded. A polished happy path is far less informative than a realistic exception.\nThe evaluation should cover operational fit, configurability without excessive customization, automation integration, real-time work orchestration, data and API architecture, scalability, implementation model, upgradeabilit"
-  },
-  {
    "group": "ai",
    "source": "OpenAI",
    "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
@@ -1301,7 +1443,7 @@
    "url": "https://aihot.news/items/kxqn0rzbtjdxg7ibbjge08tzt",
    "published": "2026-10-07T06:18:23.000Z",
    "description": "Arena 宣布 Mistral Large 4 登陆 Code Arena: WebDev，以 1534 分排名第 45，比 Mistral Large 3（第130名）高 304 分，比 Mistral Medium 3.5 高 271 分。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kxqn0rzbtjdxg7ibbjge08tzt",
-   "excerpt": ""
+   "excerpt": "Arena 宣布 Mistral Large 4 登陆 Code Arena: WebDev，以 1534 分排名第 45，比 Mistral Large 3（第130名）高 304 分，比 Mistral Medium 3.5 高 271 分。\nArena 实测数据显示 Mistral Large 4 的编码得分、排名和价格对比，可帮读者评估其性价比位置。\nMistral Large 4 由 @MistralAI 刚刚登陆 Code Arena：WebDev 排名第 45。凭借 1534 分，这相比排名第 130 的 Mistral Large 3 提升了 +304 分！\n此次发布也标志着相比其表现次佳的变体 Mistral Medium 3.5（排名第 122）提升了 271 分。\nMistral Large 4 的性能仅比 Claude Opus 4.8 (High) 低 2 分，而混合价格却低了近 6 倍：每百万 token 3.47 美元 vs. 20 美元。附近但性能更高的模型可以以更低价格获得，使其刚好落在 Code Arena：WebDev 帕累托前沿之外。\n@MistralAI 宣布其开放权重将于十月底发布。敬请期待它在 Arena 开放模型中的得分，并祝贺团队此次发布！\nMeet Mistral Large 4, aka Le Chonk. • 1T parameters, natively multimodal. 49B active. It is the best open weights model from US or Europe on aggregated benchmarks. • State-of-the-art on critical workloads, including cyber defense, manufacturing and finance and it surpasses closed frontier models on visual grounding. • Forged in Europe end-to-end and is deployable from Europe via our own Mistral Cloud infrastructure. • Available to all via API today. Working with cybersecurity partners privately. Open weights release end of October.\nArena 实测数据显示 Mistral Large 4 的编码得分、排名和价格对比，可帮读者评估其性价比位置。"
   },
   {
    "group": "ai",
@@ -1373,7 +1515,7 @@
    "url": "https://aihot.news/items/tyhn4y95ez3mvj0p7xovpaq61",
    "published": "2026-10-07T00:00:00.000Z",
    "description": "Google Research 在 NBER 发表的论文报告了一项三个月随机田野实验，向11家知识产权律所的133名律师随机开放当时未发布的 AI 专利写作助手（现属 Gemini Notebook）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tyhn4y95ez3mvj0p7xovpaq61",
-   "excerpt": ""
+   "excerpt": "Does better work always mean better workers?\nGoogle Research 在 NBER 发表的论文报告了一项三个月随机田野实验，向11家知识产权律所的133名律师随机开放当时未发布的 AI 专利写作助手（现属 Gemini Notebook）。\n原文用三个月随机田野实验区分了AI辅助产出与独立能力变化，给出初级与资深律师分化的具体证据。\n判断力是区分资深专业人士与初级同行的关键。培养判断力需要在工作中投入数千小时的学习，通常是通过与相对常规的工作进行枯燥但具有塑造性的接触，并且往往是在经验丰富的员工指导下完成的。但AI已经在 改变 在职学习的方式。一方面， 放射学 、 商业问题解决 、 求职者写作 和 法律教育 领域的实证研究表明，当AI工具被深思熟虑地嵌入培训工作流程时，经验较少的员工可以提高其独立工作表现。\n另一方面，近期针对 软件工程师 、 管理咨询顾问 、 高中生 和 临床医生 的实验表明，虽然AI充当了临时外骨骼，能提升即时产出，但一旦移除该工具，这些收益往往无法持续。要理解AI如何侵蚀或增强专业能力，需要三个很少同时具备的要素：（1）将AI持续使用嵌入日常专业工作中，持续数月而非数小时；（2）在AI不可用时对无辅助判断力进行可信评估；（3）由领域专家进行盲评。\n在 美国国家经济研究局 发表的《 AI辅助是增强还是侵蚀专业能力？来自专利撰写三个月实地实验的证据 》一文中，我们描述了一项实地实验，用于捕捉在知识产权法这一高度专业密集的职业中，因使用AI而发生的短期生产力和长期技能培养两方面的变化。在我们的实验中，我们在11家与Google有常规、非排他性业务往来的知识产权律师事务所的133名律师中，随机分配了一款当时尚未发布的 Google Labs AI专利撰写辅助工具（现已成为 Gemini Notebook 的一部分）的使用权限。每家律所三分之二的律师（“实验”组）获得了该工具的早期使用权，其余律师（“对照”组）接受了一些关于如何使用AI的培训，但在三个月研究期结束前被禁止使用该工具。\n在为期10天的人工智能辅助之后，我们向所有参与的律师发送了一包关于一项假设发明的发明人材料，并要求他们起草一份专利。我们在90天后也做了同样的事情，但使用了另一组模拟的发明人材料。我们在两个时间段都观察到了起草任务中预期的人工智能提升效果。在第10天，获得人工智能工具访问权限使起草得分（由独立法律专家根据包含 李克特量表 的评分标准，对五个不同质量维度进行评分）提高了0.34个标准差，相当于在对照组得分中百分位排名上升了10个点；到第90天，这一提升增至0.38个标准差，意味着百分位排名上升了11个点。这些改进在所有质量维度上都表现出显著的一致性。值得注意的是，更好的表现来自低分频率的降低和高分频率的提高，而优秀得分的频率没有变化。从形式上看，获得人工智能访问权限的律师的得分从底部移动到了中下和中等等分位，但卓越得分的数量没有明显变化。这一模式在初级律师中尤为明显，他们质量的提升还伴随着显著的时间节省（例如，在10天任务中，比对照组平均124分钟的速度快了18分钟）。\n但专利律师不仅仅起草专利；他们还会相互审查彼此的工作，以发现可能导致专利在法庭上无法执行的关键错误（有时称为“专利亵渎”）——例如，过度主张发明的新颖性或范围。因此，我们在第90天增加了另一项任务，要求受试者对一份包含许多实质性及文体错误的现有假设专利进行红线标注（手动标记并更正）。这项测试任务反映了更资深律师日常使用的专业判断，而他们通常无法奢侈地依赖人工智能。关键的是，虽然治疗组律师被鼓励在起草任务中使用未发布的人工智能工具或任何其他人工智能工具，但没有人被允许在红线标注任务中使用人工智能，这使得他们在该任务上的得分成为衡量其技能发展程度的指标。对于所有任务，无论是起草还是红线标注，我们都与第三方专利专业人士合作，从五个质量维度对提交内容进行评分：(1) 可执行性，(2) 准确性，(3) 策略性模糊（权利要求的战术性界定），(4) 完整性，以及 (5) 清晰度。\n当人工智能助手在第90天的红线标注任务中被移除时，这种拉平效应消失了。获得人工智能工具访问权限的律师在这项无辅助任务中比对照组高出0.32个标准差（相当于百分位排名上升9个点），但这种效应完全由资深律师驱动，他们比对照组受试者高出0.45个标准差（上升13个点），而初级律师则没有表现出明显改善。相反，初级律师的得分出现了分化：极低分更多，平庸分更少，良好分更多，而优秀分没有增加。\n这些结果对学习意味着什么？获得AI工具使用权限的资深律师，显然在过去三个月里通过使用该工具，从专业判断中收获了显著的价值。但初级律师的情况则更为复杂。部分分数有所提高，暗示AI具备跨越式促进学习的能力。另一些分数则向分布的低端扩散，表明在某些场景下AI能帮助初级律师交付合格的工作，但他们借助机器提升的表现，并未转化为更快地掌握那些让资深专业人士独具价值的专业知识。\n考察定性编辑模式，可以洞察不同经验水平的专业人士如何与生成式AI工具互动。在实验组和对照组中，初级律师的提交都遵循僵化的形式主义：他们从上到下按顺序工作，常常在触及主要专利权利要求之前，就把时间耗尽在低风险引言部分的文字编辑上。初级律师还专注于表面层面的同义词替换，而非商业范围的改进。即使初级律师发现了严重缺陷，他们也往往留下描述性评论来诊断问题，而不是执行修订来修复它。由于这种“只诊断不执行”的姿态在未借助AI的对照组初级律师中同样普遍，它代表了一种初级律师的基线缺陷，而三个月依赖AI执行改写并未弥补这一缺陷。\n相比之下，资深律师则持续从AI的接触中受益。接受处理的资深律师在修订上花费的时间比初级律师更长，他们跳过低风险的文字，从头重建权利要求，剔除可能无意中缩小法律权利或限制保护范围的语言，并将许多修改与明确的法律原则相配对。在后续访谈中，资深律师描述他们并非将AI输出视为成品，而是视为“逻辑审"
   },
   {
    "group": "ai",
@@ -1383,24 +1525,6 @@
    "published": "2026-10-07T00:00:00.000Z",
    "description": "Google 推出 Developer Knowledge API 生态，作为 Google Cloud、Firebase、Android 等开发者文档的官方程序化来源，用结构化 API 和 Markdown 格式文档取代网页抓取，支持语义与关键词搜索、文档分块和有依据的问答。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tuqbedzhrouuxwobb1pldbiyd",
    "excerpt": "Supercharge your development with the Google Developer Knowledge API ecosystem\nGoogle 推出 Developer Knowledge API 生态，作为 Google Cloud、Firebase、Android 等开发者文档的官方程序化来源，用结构化 API 和 Markdown 格式文档取代网页抓取，支持语义与关键词搜索、文档分块和有依据的问答。\n官方为自己的开发者文档检索 API 提供了 CLI、agent skill、客户端库等多入口，可对照选型接入现有工作流。\n如果你在 Google Cloud 上构建 AI 智能体或开发者工具，请不要再依赖脆弱的网页抓取，也不要再与过时的 LLM 训练截止日期较劲。\n使用 Google Developer Knowledge API 生态系统，包括我们的 gcloud CLI 界面、官方智能体技能、API Explorer 和多语言客户端库，可以更快、更智能、更有信心地构建。无论你是在命令行终端中操作、向 AI 智能体发出提示、以交互方式测试请求，还是编写生产软件，我们的工具都能提供 Google 文档。\nDeveloper Knowledge API 是 Google 官方的、以编程方式访问的开发者文档权威来源，涵盖 Google Cloud、Firebase、Android 等。它专为现代 AI 智能体、IDE 扩展和自动化工作流而设计，用结构化 API 取代了脆弱的网页抓取，提供新鲜的 Markdown 格式文档。\n通过提供语义搜索和关键词搜索、智能文档分块以及有依据的问答能力，该 API 可确保你的智能体和开发者工具保持准确且 token 高效。\nDeveloper Knowledge API 会频繁建立索引，以确保可预测的检索、新鲜的文档，以及上游更新与智能体访问之间的最小延迟。\n借助 Developer Knowledge API 接口，开发者和 AI 智能体可以在终端、IDE 和后端代码库中发现、检索并综合出以 Google 官方文档为依据的答案。\nDeveloper Knowledge API gcloud CLI 界面将官方文档搜索、检索和有依据的问答集成到你的命令行环境中。它已预装在 Cloud Shell 中，并可在 Linux、macOS 和 Windows 上的标准 Google Cloud SDK 安装中使用，无需额外插件或配置。\nDeveloper Knowledge 智能体技能 在 AI 编码助手与 Google 文档生态系统之间建立连接，使自主工具能够访问最新的技术规范。\n此命令会在你的项目中安装 Developer Knowledge agent skill。该技能会指导你的助手如何使用 Developer Knowledge MCP server （或使用 curl 回退到 REST API）。\n要在你的 IDE 中连接到 MCP server，或使用 Application Default Credentials 或 API key 配置身份验证，请参阅 Connect to the Developer Knowledge MCP server 。\n客户端库 让你可以将文档检索、搜索和基于依据的答案生成嵌入到生产系统、自动化 CI/CD 流水线和企业知识机器人中。\n以下示例演示了 AI agent 如何使用 Python 客户端库获取最新的产品发布说明，从而确保其响应基于其训练截止日期之后的数据：\nDeveloper Knowledge API 的 Google APIs Explorer 提供了一个集成到 Google 开发者网站中的交互式零代码界面，可用于试验和验证 API 请求及响应结构。\n准备好将 Google 开发者文档集成到你的工作流和 AI 工具中了吗？以下是一些入门方法：\n来源： Google Developers Blog · developers.googleblog.com\n官方为自己的开发者文档检索 API 提供了 CLI、agent skill、客户端库等多入口，可对照选型接入现有工作流。"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Liquid AI 发布开源决策模型 d1-3B 和 d1-omni-600M",
-   "url": "https://aihot.news/items/qawfhyw1v10hv75bld8ogbjgj",
-   "published": "2026-10-07T00:00:00.000Z",
-   "description": "Liquid AI 发布开源权重决策模型 d1-3B 和 d1-omni-600M，已在 Hugging Face 上提供。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qawfhyw1v10hv75bld8ogbjgj",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "vLLM 详解 DeepSeek-V4.1-Flash 优化：Agent 场景吞吐提升 5 倍",
-   "url": "https://aihot.news/items/h8ldh8orhiz1tbad38w4e6cpn",
-   "published": "2026-10-07T00:00:00.000Z",
-   "description": "Inferact 与 vLLM 社区在 DeepSeek-V4.1-Flash 发布三周内完成优化，低并发速度提升 1.9 倍，150 TPS 约束下吞吐提升 5.3 倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/h8ldh8orhiz1tbad38w4e6cpn",
-   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1536,123 +1660,6 @@
    "published": "2026-10-06T17:35:39.000Z",
    "description": "Release: datasette-atom 0.11a0 A minor fix for compatibility with the latest Datasette alphas. This meant we could upgrade the datasette.io site to Datasette 1.0a41. Tags: atom , datasette",
    "excerpt": "A minor fix for compatibility with the latest Datasette alphas. This meant we could upgrade the datasette.io site to Datasette 1.0a41.\nThis is a beat by Simon Willison, posted on 6th October 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
-  },
-  {
-   "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "Before the Vendor Shortlist: How to Structure the Decision Intelligence Market",
-   "url": "https://logisticsviewpoints.com/2026/10/06/before-the-vendor-shortlist-how-to-structure-the-decision-intelligence-market/",
-   "published": "2026-10-06T17:30:00.000Z",
-   "description": "Before the Vendor Shortlist: How to Structure the Decision Intelligence Market should happen before a buyer asks for demos. Decision Intelligence is an emerging market with providers arriving from planning, optimization, visibility, risk, networks, enterprise suites, orchestration, and AI-native architectures. The post Before the Vendor Shortlist: How to Structure the Decision Intelligence Market appeared first on Logistics Viewpoints .",
-   "excerpt": "A Decision Intelligence shortlist should not begin with vendor demos. Providers are arriving from planning, optimization, visibility, risk, networks, enterprise suites, orchestration, and AI-native architectures, and without a category framework a shortlist can become a collection of impressive but fundamentally different products.\nInventory the decisions that are slow, fragmented, poorly contextualized, or overly dependent on manual coordination. For each one, document frequency, consequence, time horizon, required data, systems touched, decision rights, and the action that follows. This creates a demand-side map before the supply-side market is introduced. The physical logistics intelligence-layer discussion also explains why superficially similar providers can occupy very different architectural positions depending on where they sense, interpret, decide, and act.\nThe eligibility test is decision impact. Generic BI, horizontal AI, reporting, and transactional systems do not qualify by default; the technology must materially improve a real supply-chain decision That gate prevents the market from expanding into every product with a dashboard, copilot, optimization engine, or AI claim.\nA useful structure distinguishes planning and optimization-led; visibility, event, and risk-led; decision-orchestration and AI-native; and suite, network, or enterprise-led approaches. These approaches can all create value, but they often solve different decision problems and operate at different levels of depth and reach.\nDecision depth asks whether the platform interprets context, models tradeoffs, and changes the quality of the decision. Operating reach asks how broadly that capability spans functions, workflows, systems, partners, and time horizons. Buyers can add governance, execution connectivity, evidence quality, and implementation fit as additional criteria.\nOnce the structure is clear, evaluate decision fit, decision depth, operating reach, context quality, scenario and tradeoff capability, workflow and execution connectivity, governance, explainability, evidence quality, and referenceable outcomes. A large suite may be attractive when enterprise reach and installed-base integration dominate; a specialist may be stronger where one high-value decision requires deeper intelligence. The framework makes those tradeoffs explicit.\nA disciplined market structure is therefore not academic taxonomy. It reduces evaluation noise, prevents false comparisons, and makes the short"
-  },
-  {
-   "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "Transportation Leaders See AI Moving From Experiment to Operating Model at the Descartes Innovation Forum",
-   "url": "https://logisticsviewpoints.com/2026/10/06/transportation-leaders-see-ai-moving-from-experiment-to-operating-model-at-the-descartes-innovation-forum/",
-   "published": "2026-10-06T17:24:39.000Z",
-   "description": "For the past few years, transportation executives have had to manage through one disruption after another: excess capacity, collapsing rates, driver shortages, rising fuel costs, fraud, cargo theft, shifting regulations, and increasingly demanding customers. What struck me during the transportation management discussion I moderated at the Descartes Innovation Forum was how quickly another issue has […] The post Transportation Leaders See AI Moving From Experiment to Operating Model at the Descartes Innovation Forum appeared first on Logistics Viewpoints .",
-   "excerpt": "For the past few years, transportation executives have had to manage through one disruption after another: excess capacity, collapsing rates, driver shortages, rising fuel costs, fraud, cargo theft, shifting regulations, and increasingly demanding customers.\nWhat struck me during the transportation management discussion I moderated at the Descartes Innovation Forum was how quickly another issue has moved to the center of the conversation: technology, and particularly AI, is becoming part of the operating model rather than a separate innovation initiative.\nThe freight market itself remains complicated. Demand remains relatively soft, yet capacity has tightened significantly as trucking companies and drivers have exited the system. That creates an unusual dynamic in which rates can increase without a corresponding demand surge. It also changes the shipper conversation from simply negotiating lower rates to ensuring access to dependable capacity and managing greater pricing uncertainty.\nFor shippers, the response increasingly starts upstream. Better forecasting, inventory optimization, dedicated transportation, and network planning can reduce exposure to the spot market and prevent costly expedites. The objective is to make an emergency become an inconvenience. That is a useful way to think about transportation management because some of the largest transportation costs are created long before anyone tenders a load.\nTechnology is also becoming an increasingly important tool for protecting margins. One example discussed involved a repetitive process performed approximately 750,000 times each month. When converted into labor, the activity consumes roughly 1,500 employee hours every day. Automating work at that scale is not a marginal productivity improvement. It changes the economics of the operation.\nAgentic AI was therefore not discussed as something sitting five years over the horizon. The conversation included active use cases involving workflow automation, voice agents, email automation, decision support, and software development. The challenge increasingly becomes deciding what should be automated, where humans should remain in the loop, and how quickly organizations can absorb the rate of technological change.\nOne of the most striking examples involved a proprietary transportation management system containing more than 30 million lines of code and accumulated over approximately 20 years of development and acquisitions. A 12-person team was given six week"
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
-   "url": "https://openai.com/index/atlassian-partnership",
-   "published": "2026-10-06T16:00:00.000Z",
-   "description": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "a16z",
-   "title": "Investing in General Medicine",
-   "url": "https://www.a16z.news/p/investing-in-general-medicine",
-   "published": "2026-10-06T15:30:49.000Z",
-   "description": "“General Store”",
-   "excerpt": "When we shop for almost anything, we expect three things: (1) to understand our options, (2) to see what they cost, and (3) to get what we need quickly. Technology has enabled entire industries to rebuild themselves around making this experience easier for consumers.\nThen, we get to healthcare. Consumers don’t shop for healthcare, right? They don’t even know what they need, right (...said a patronizing voice)? In today’s era of pervasive LLMs, we have to acknowledge that patients do often know what they need. And the healthcare shopping experience has only become that much more frustrating as a result. Because even when we know what we need (a prescription renewal, a lab test, a scan, a specialist’s opinion), the work is just beginning. First find someone who offers care, then check whether insurance covers it, then track down our medical records, get the referral, figure out what prior authorization is, call the office to schedule, and then call again. And often, we learn what the whole thing costs only after receiving care.\nHealthcare has many sophisticated systems for authorizing services and reimbursing providers. But the information a patient needs to actually make a purchasing decision is scattered across portals, phone calls, and paperwork. To the broader system, these are separate tasks owned by separate parties but to the person looking for care, they are all part of one deeply personal and consequential journey.\nWe couldn’t be more excited to lead General Medicine’s $120M Series B as they build the general store for healthcare.\nImagine finding a lump in your breast and wondering if it could be cancer. Getting an answer may involve an initial clinical evaluation with a primary care provider, followed by a diagnostic mammogram or ultrasound, and, depending on the findings, perhaps an image-guided biopsy. Then you nervously wait for someone to review the results with you. If it is cancer, the coordination gets far more complex: further imaging, separate appointments with surgical, medical, and radiation oncology teams – sometimes across different practices and locations. And on top of worrying about your health, you’re also the one ultimately responsible for keeping your care moving along.\nSeveral changes are making a more connected experience possible today. Better access to medical records allows a person’s history to be brought together across providers and time, while AI can now synthesize that information and surface it in a way that is relevan"
-  },
-  {
-   "group": "ai",
-   "source": "Simon Willison",
-   "title": "Scrimshaw Jukebox",
-   "url": "https://simonwillison.net/2026/Oct/6/scrimshaw-jukebox/",
-   "published": "2026-10-06T15:17:39.000Z",
-   "description": "Tool: Scrimshaw Jukebox I wanted to see if Claude Opus 5.5 could compose music, so I tried this : I want you to write some computer game music for me. First design simple text based format for the music and build an artifact that can play it out loud - include some example tracks in that artifact I am looking for music of the quality of the original secret of Monkey Island It leaned a lot harder into the Monkey Island theme than I had intended, but the results are surprisingly good. I wonder if the ability to compose competent music is similar to the 3D graphics thing - a new capability for te",
-   "excerpt": "I wanted to see if Claude Opus 5.5 could compose music, so I tried this :\nI want you to write some computer game music for me. First design simple text based format for the music and build an artifact that can play it out loud - include some example tracks in that artifact\nI am looking for music of the quality of the original secret of Monkey Island\nIt leaned a lot harder into the Monkey Island theme than I had intended, but the results are surprisingly good.\nI wonder if the ability to compose competent music is similar to the 3D graphics thing - a new capability for text models that emerged in the past few months?\nWould need some careful experiments with other recent and not-so-recent models to confirm if this is new or if they've been able to do this for a while.\nThis is a beat by Simon Willison, posted on 6th October 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
-  },
-  {
-   "group": "ai",
-   "source": "Interconnects",
-   "title": "The Cyber Risk Discourse is Broken",
-   "url": "https://www.interconnects.ai/p/the-cyber-risk-discourse-is-broken",
-   "published": "2026-10-06T14:22:41.000Z",
-   "description": "Open-weights, ideology, and acknowledging trade-offs.",
-   "excerpt": "I’ve had one too many discussions on the cyber risks of open models — where someone assumes that either banning open models happens in a silo (and bad actors will somehow actually be stopped) or that China is a threat and doesn’t care about AI safety — that I feel we’re going to end up making policy decisions that both limit American AI competitiveness and increases long-term cyber risk. I feel like we’re locked in on a path of lose-lose situation, unless people embrace nuance, trade-offs, and scary realities.\nMuch has been written about the views of various players in this debate, which I summarize as follows:\nOpen weight models pose an untenable risk to society’s functionality , occupied by frontier lab leadership and the national security community in the U.S.\nWestern voices saying open weight models are necessary for defense and banning them will make the world less safe , occupied by AI risk moderates to different extremes. I include myself in this bucket, along with Hugging Face’s perspective after the OpenAI incident, and others like Joshua Saxe .\nChinese companies continuing to release open-weight models with strong cyber capabilities , who are making decisions based on the risk assessments of their society and government.\nThis list is also organized by volume or clarity of message in the Western AI ecosystem. The risk-focused discussions have been disproportionately visible, including pieces of work which I view as very detrimental to potential of engaging across assumed party lines on this issue. There’s also very little substantive engagement trying to understand how Chinese companies assess risk — rather, mostly arguments that border on ad hominem attacks like “Chinese labs don’t care about safety.”\nInterconnects AI is a reader-supported publication. Consider becoming a subscriber.\nThe most recent publication from the “open-weights are dangerous” crowd was the report by Anthropic on the risks of GLM-5.3 as an offensive cyber tool. The problem with this is not the technical research they did, which is largely reasonable, but the failure to engage on more cross cutting questions like: What happens if we ban open models due to cyber risks or why do Chinese companies deem these models safe to release?\nThese questions, which I’ll come back to, are the ones we need to answer to understand the ecosystem perspective on current AI risks. All policy actions happen in a multi-piece puzzle, where the shape of risk can be changed, but it is rare that you ge"
-  },
-  {
-   "group": "wh",
-   "source": "Automated Warehouse",
-   "title": "First Supply achieves next-day delivery with Exotec Skypod system",
-   "url": "https://www.automatedwarehouseonline.com/first-supply-achieves-next-day-delivery-exotec-skypod-system/",
-   "published": "2026-10-06T12:55:00.000Z",
-   "description": "For First Supply, Exotec's dense storage and ability to utilize all 40-feet of the warehouse's vertical space, were important features. The post First Supply achieves next-day delivery with Exotec Skypod system appeared first on Automated Warehouse .",
-   "excerpt": "Today, Exotec SAS said that its Skypod-powered warehouse automation solution has enabled First Supply LLC to offer next-morning delivery at scale for orders placed by 5:00 p.m. As a wholesale supplier of HVAC, builder, plumbing, lighting, waterworks, and other industrial supplies, First Supply faces intense demand to support contractors as they keep projects moving.\nAccording to Steve Baer, chief logistics officer at First Supply, the 129-year-old company was operating dozens of branches in the upper Midwest. It was looking for a way to grow while also ensuring its inventory was in the right places. The answer was its Greenfield Distribution Center and the Skypod system at the heart of it.\n“We wanted to be as efficient, ergonomic, good for the community, good for the employees, and good for the environment as we could,” Baer told Automated Warehouse . “In order to grow, we need to make sure that we’re sustainable. You can’t necessarily use robotics for everything, but where we could use robotics, we wanted to augment our employees so we could grow.”\nWhen First Supply set out to find an automation provider, Baer said the Madison, Wis.-based company looked at everything available on the market.\n“We looked all different kinds of technology, from very basic robotics all the way up to the very sophisticated robotics,” said Baer. “As we learned more, and as we thought more and more about our business, we thought that a goods-to-person solution that ate up very little floor space would be the right kind of a choice, so that narrowed the solution set.”\nFrom there, Baer said cost was one of the biggest factors. “We’re a family owned, fifth-generation-run private company, and we didn’t have an unlimited checkbook,” he explained. “So, we wanted to make sure that the solution we chose would be able to be affordable now and scale for the future.”\nTime is essential for First Supply’s customer base, which made next-day delivery an even more important goal.\n“Our customers are the contractors that come to your house to fix your bathroom or remodel your kitchen, and time is money,” noted Baer. “If they’re missing something, they can’t wait for days and days to finish the job, so it’s very important that we’re able to fulfill that quickly.”\nRegister now and help us celebrate 20 years of RoboBusiness! Inside First Supply’s Skypod system Skypod is Exotec’s grid-based automated storage and retrieval system ( ASRS ). The company ‘s dense storage, and its ability to utilize all 4"
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "How Jump Trading is scaling quant research with ChatGPT",
-   "url": "https://openai.com/index/jump-trading",
-   "published": "2026-10-06T12:00:00.000Z",
-   "description": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "Sharing AI progress in mathematics",
-   "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
-   "published": "2026-10-06T12:00:00.000Z",
-   "description": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "Advancing computer use with Ironclad",
-   "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
-   "published": "2026-10-06T10:00:00.000Z",
-   "description": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "Latent Space",
-   "title": "[AINews] Reflection Beam - 501B-A23B American Open Model",
-   "url": "https://www.latent.space/p/ainews-reflection-beam-501b-a23b",
-   "published": "2026-10-06T06:28:43.000Z",
-   "description": "A small win for US open source",
-   "excerpt": "It’s been over a year since Reflection launched with us with big goals on coding (and hinted about their RL approach ):\nBut they stayed “stealth” longer than Thinking Machines and it was not clear we would ever get a model launch out of them, as the broader open model ecosystem did not slow down one bigt for them. Well, we did :\nThey compare themselves to Inkling, Nemotron, and GLM 5.2, but the SOTA GLM 5.3, Kimi K3, Qwen 3.8 Max, and DeepSeek V4.1 Flash are generally ahead. Still, since this is US-trained from scratch, there’s a segment of the market that has been eagerly waiting for more options here, and more importantly, Reflection has now announced its arrival as a functional neolab!\nAI News for 10/03/2026-10/5/2026. We checked 12 subreddits, 544 Twitters and no further Discords. AINews’ website lets you search all past issues. As a reminder, AINews is now a section of Latent Space . You can opt in/out of email frequencies!\nReflection’s Beam Leads a Wave of Open-Weight Releases\nBeam launch : Reflection announced Beam, a text-only 501B-total / 23B-active MoE for coding, agentic and scientific work. It was trained from scratch, and full weights under Apache 2.0 are due this month ( announcement , Laskin ).\nTraining scale : Team posts cite 23.8T pretraining tokens, partly from an OCR pipeline over hundreds of millions of PDFs ( data lead ). They also describe a stable RL/OPD run on 10K GB300s with more than 100M rollouts across ~1M tasks ( Damos ).\nClaimed results : A summary of Reflection’s claims gives 80.9 on SWE-bench Verified, 3–4x the inference efficiency of GLM 5.2, and four weeks each of pretraining and RL on ~10,500 GB300s ( summary ). A tech report and OSS integrations are promised ( Polozov ).\nContext : Axios reported the launch ahead of time. It said Reflection pays $150M/month for Colossus compute plus a $1B Nebius deal, and that other unnamed US labs will ship open models this month ( Curran ).\nIndependent and critical reads : Artificial Analysis has early access and expects Beam to be among the most token-efficient open models for its intelligence ( AA ).\nMFU and architecture : Elie Bakouch estimates only ~12% BF16 MFU in pretraining. He reads the architecture as 3:1 interleaved global/sliding-window attention and notes better held-out code perplexity than DSv4 ( analysis ).\nCompute comparison : Teortaxes calls Beam an iso-FLOP replication of DeepSeek V3 ( post ). He infers ~1.3B RL sandboxes over 4 weeks, with up to 170K running at once ("
-  },
-  {
-   "group": "ai",
-   "source": "BestBlogs 每日早报",
-   "title": "EP197 · ReviewBench 开放基准测试、Cleric 谈诊断方法、a16z 谈 消费者 AI 现状",
-   "url": "https://www.bestblogs.dev/explore/brief/2026-10-06?utm_source=rss&utm_medium=feed&utm_campaign=daily_brief&entry=rss_brief_index",
-   "published": "2026-10-06T06:00:00.000Z",
-   "description": "📝 今日导语 GitHub 评估 AI 审查，Cleric 校准故障诊断，a16z 谈消费需求：读懂验证方法与产品机会。 🏷 今日关键词： ReviewBench Cleric 消费者 AI Claude Agent SDK WorkOS 📰 今日精选内容 ReviewBench：用于 AI 代码审查的开放基准测试 The GitHub Blog &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 你的 AI 智能体为何自信地误判生产故障：Willem Pienaar 谈诊断方法｜Cleric AI Engineer &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 消费者 AI 现状：付费集中、私人智能体的信任门槛与新商业模式 a16z &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 87 Cresta 用 Claude Agent SDK 将客服知识转为智能体构建器 Anthropic &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 88 AI 原生开发者的工作方式：Nick Nisi 与 Zack Proser 的 WorkOS 智能体实战 AI Engineer &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 88 Jeremy Avigad：AI 时代，数学理解",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "MH&L",
-   "title": "C.H. Robinson to Acquire RXO",
-   "url": "https://www.mhlnews.com/global-supply-chain/news/55409635/ch-robinson-to-acquire-rxo",
-   "published": "2026-10-06T04:05:00.000Z",
-   "description": "The $5.8 billion acquisition will create a company with an enterprise value exceeding $25 billion, boosting scale and market reach.",
-   "excerpt": "C.H. Robinson Worldwide, a Fortune 1000 provider of transportation solutions, announced on October 5 that it will acquire RXO, a last-mile logistics provider.\nThe acquisition will be a stock-and-cash transaction valued at $5.8 billion and will create a combined company with an enterprise value of over $25 billion.\nIn the announcement, C.H. Robinson said it expects to realize approximately $300 million of net run-rate cost synergies within two years post-close.\n&ldquo;This transaction is a natural next step in our transformation, allowing us to create a more scaled, resilient North American third-party logistics provider positioned to offer exceptional customer service and redefine the future of our industry,&rdquo; said Dave Bozeman , C.H. Robinson's president and CEO, in a statement. &ldquo;Like C.H. Robinson, RXO is a customer-focused company with expertise and talent that will allow us to expand our capabilities to better support customers of all sizes on their most complex challenges.&rdquo;\nC.H. Robinson offered the following strategic and financial benefits of the acquisition."
   }
  ]
 }
