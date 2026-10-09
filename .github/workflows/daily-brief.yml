@@ -1,0 +1,47 @@
+# 每天用 Claude Agent SDK（月度 API 额度）生成日报，写到 data/daily/
+name: 每日简报
+on:
+  schedule:
+    - cron: '51 23 * * *'   # 北京时间 07:51
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: fetch-feeds
+  cancel-in-progress: false
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: pip install claude-agent-sdk
+      - name: 设置 git 身份
+        run: |
+          git config user.name "info-hub"
+          git config user.email "fjzh632346-cmd@users.noreply.github.com"
+      - name: 生成日报
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python automation/run_agent.py daily
+      - name: 校验
+        run: node scripts/validate.js
+      - name: 提交并推送
+        run: |
+          git add data demos
+          git diff --cached --quiet && { echo "没有改动"; exit 0; }
+          FIRST=$(head -n 1 "$RUNNER_TEMP/agent_summary.txt" 2>/dev/null || true)
+          {
+            echo "日报 $(TZ=Asia/Shanghai date '+%Y-%m-%d') ${FIRST}"
+            echo
+            cat "$RUNNER_TEMP/agent_summary.txt" 2>/dev/null || true
+          } > "$RUNNER_TEMP/commit_msg.txt"
+          git commit -F "$RUNNER_TEMP/commit_msg.txt"
+          for i in 1 2 3; do git pull --rebase origin main && git push origin main && exit 0; sleep 5; done
+          exit 1
