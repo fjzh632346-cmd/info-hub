@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>前置仓出库作业系统图解 · 课程设计示例</title>
+  <!-- 按 diagram-design 的 "system" 字体模式：不加载任何外部字体，所有字体栈回落到系统字体 -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --color-paper:       #f5f5f5;
+      --color-paper-2:     #ececec;
+      --color-ink:         #2d3142;
+      --color-muted:       #4f5d75;
+      --color-soft:        #5a6580;
+      --color-rule:        rgba(45,49,66,0.12);
+      --color-accent:      #bf4520;
+      --color-accent-tint: rgba(191,69,32,0.08);
+      --color-link:        #2e5aa8;
+      --font-sans:  'Geist', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', system-ui, sans-serif;
+      --font-serif: 'Instrument Serif', 'Songti SC', 'Noto Serif SC', 'SimSun', serif;
+      --font-mono:  'Geist Mono', ui-monospace, Menlo, Consolas, monospace;
+    }
+
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: var(--font-sans);
+      background: var(--color-paper);
+      color: var(--color-ink);
+      min-height: 100vh;
+      padding: 3rem 2rem;
+      line-height: 1.6;
+    }
+    .container { max-width: 1080px; margin: 0 auto; }
+
+    .header { margin-bottom: 2.25rem; }
+    .header-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+      margin-bottom: 0.75rem;
+    }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.6rem, 3vw + 1rem, 2.4rem);
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.6rem;
+    }
+    .subtitle { color: var(--color-muted); max-width: 46em; font-size: 0.98rem; }
+
+    h2 {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      font-size: 1.35rem;
+      margin: 2.5rem 0 0.4rem;
+    }
+    .section-note { color: var(--color-muted); font-size: 0.9rem; margin-bottom: 1rem; max-width: 46em; }
+
+    /* 图表外包一层局部横向滚动：手机上只滚图，不滚整页 */
+    .diagram-container {
+      max-width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-top: 1px solid var(--color-rule);
+      border-bottom: 1px solid var(--color-rule);
+      padding: 0.75rem 0;
+    }
+    .diagram-container svg { display: block; width: 100%; }
+    svg.arch { min-width: 1000px; }
+    svg.bars { min-width: 1000px; }
+    .scroll-hint { display: none; font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-soft); margin-top: 0.4rem; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr 0.9fr;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: #ffffff;
+      border: 1px solid var(--color-rule);
+      border-radius: 6px;
+      padding: 1.25rem;
+    }
+    .card-header {
+      display: flex; align-items: center; gap: 0.6rem;
+      padding-bottom: 0.75rem; margin-bottom: 0.75rem;
+      border-bottom: 1px solid rgba(45,49,66,0.08);
+    }
+    .card-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+    .card-dot.coral { background: var(--color-accent); }
+    .card-dot.ink { background: var(--color-ink); }
+    .card-dot.link { background: var(--color-link); }
+    .card h3 { font-size: 0.92rem; font-weight: 600; }
+    .card ul { list-style: none; color: var(--color-muted); font-size: 0.86rem; }
+    .card li { position: relative; padding-left: 1rem; margin-bottom: 0.35rem; }
+    .card li::before { content: '—'; position: absolute; left: 0; color: rgba(45,49,66,0.3); }
+    .card .num { font-family: var(--font-mono); color: var(--color-ink); }
+
+    .footer {
+      margin-top: 2.5rem; padding-top: 1.25rem;
+      border-top: 1px solid rgba(45,49,66,0.10);
+      font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.04em;
+      color: var(--color-soft);
+      display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;
+    }
+
+    @media (max-width: 760px) {
+      body { padding: 1.75rem 1rem; }
+      .cards { grid-template-columns: 1fr; }
+      .scroll-hint { display: block; }
+    }
+    @media print {
+      .diagram-container { overflow-x: visible; }
+      svg.arch, svg.bars { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header class="header">
+      <p class="header-eyebrow">Course Design · 物流系统规划 · 示例</p>
+      <h1>前置仓出库作业：从一张订单到包裹出库</h1>
+      <p class="subtitle">一个虚构的城市前置仓课程设计展示页。上图讲清系统分工，下图看一天里出库压力落在哪个时段。所有名称和数字都是示例，不对应任何真实企业。</p>
+    </header>
+
+    <h2>系统分工</h2>
+    <p class="section-note">订单先进入订单系统，再由仓库管理系统（WMS，决定"拣什么、去哪拣"）拆成作业任务，交给仓库控制系统（WCS，直接指挥设备）分派给三类设备。</p>
+
+    <div class="diagram-container">
+      <svg class="arch" viewBox="0 56 1000 484" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="wh-arch-title wh-arch-desc">
+        <title id="wh-arch-title">前置仓出库系统架构</title>
+        <desc id="wh-arch-desc">顾客订单经订单系统进入仓库管理系统，仓库管理系统把任务下发给仓库控制系统，再分派到立体库、货到人机器人和分拣线，同时把实时数据推送到运营看板。</desc>
+        <defs>
+          <marker id="wh-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+            <polygon points="0 0, 8 3, 0 6" fill="#4f5d75"/>
+          </marker>
+          <marker id="wh-arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+            <polygon points="0 0, 8 3, 0 6" fill="#bf4520"/>
+          </marker>
+          <marker id="wh-arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+            <polygon points="0 0, 8 3, 0 6" fill="#2e5aa8"/>
+          </marker>
+        </defs>
+
+        <rect x="0" y="56" width="1000" height="484" fill="#f5f5f5"/>
+
+        <!-- ===== 先画连线（在方框下面） ===== -->
+        <!-- 订单 → OMS -->
+        <line x1="160" y1="108" x2="216" y2="108" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#wh-arrow)"/>
+        <!-- OMS → WMS -->
+        <line x1="360" y1="108" x2="416" y2="108" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#wh-arrow)"/>
+        <!-- WMS → 看板（数据推送，虚线蓝） -->
+        <line x1="580" y1="108" x2="756" y2="108" stroke="#2e5aa8" stroke-width="1.2" stroke-dasharray="5,4" marker-end="url(#wh-arrow-link)"/>
+        <rect x="640" y="80" width="60" height="16" fill="#f5f5f5"/>
+        <text x="670" y="93" fill="#2e5aa8" font-size="12" font-weight="500" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" text-anchor="middle">实时数据</text>
+        <!-- WMS → WCS（主路径，强调色） -->
+        <line x1="500" y1="136" x2="500" y2="236" stroke="#bf4520" stroke-width="1.4" marker-end="url(#wh-arrow-accent)"/>
+        <rect x="512" y="176" width="60" height="16" fill="#f5f5f5"/>
+        <text x="542" y="189" fill="#bf4520" font-size="12" font-weight="500" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" text-anchor="middle">任务下发</text>
+        <!-- WCS → 立体库（左，圆角直角折线） -->
+        <path d="M 460 296 L 460 340 Q 460 348 452 348 L 288 348 Q 280 348 280 356 L 280 396" fill="none" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#wh-arrow)"/>
+        <!-- WCS → AMR（中） -->
+        <line x1="500" y1="296" x2="500" y2="396" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#wh-arrow)"/>
+        <!-- WCS → 分拣线（右） -->
+        <path d="M 540 296 L 540 340 Q 540 348 548 348 L 712 348 Q 720 348 720 356 L 720 396" fill="none" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#wh-arrow)"/>
+        <rect x="316" y="320" width="76" height="16" fill="#f5f5f5"/>
+        <text x="354" y="333" fill="#4f5d75" font-size="12" font-weight="500" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" text-anchor="middle">出库搬运</text>
+        <rect x="608" y="320" width="76" height="16" fill="#f5f5f5"/>
+        <text x="646" y="333" fill="#4f5d75" font-size="12" font-weight="500" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" text-anchor="middle">按路线分拣</text>
+
+        <!-- ===== 方框 ===== -->
+        <!-- 顾客订单（外部） -->
+        <rect x="40" y="80" width="120" height="56" rx="6" fill="#f5f5f5"/>
+        <rect x="40" y="80" width="120" height="56" rx="6" fill="rgba(79,93,117,0.10)" stroke="#5a6580" stroke-width="1"/>
+        <rect x="48" y="86" width="26" height="12" rx="2" fill="none" stroke="rgba(90,101,128,0.4)" stroke-width="0.8"/>
+        <text x="61" y="95" fill="#5a6580" font-size="7" font-family="ui-monospace,Menlo,monospace" text-anchor="middle" letter-spacing="0.08em">EXT</text>
+        <text x="100" y="115" fill="#2d3142" font-size="13" font-weight="600" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" text-anchor="middle">顾客订单</text>
+        <text x="100" y="129" fill="#4f5d75" font-size="9" font-family="ui-monospace,Menlo,monospace" text-anchor="middle">App / 小程序</text>
+
+        <!-- OMS -->
+        <rect x="220" y="80" width="140" height="56" rx="6" fill="#f5f5f5"/>
+        <rect x="220" y="80" width="140" height="56" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+        <rect x="228" y="86" width="26" height="12" rx="2" fill="none" stroke="rgba(45,49,66,0.4)" stroke-width="0.8"/>
+        <text x="241" y="95" fill="#2d3142" font-size="7" font-family="ui-monospace,Menlo,monospace" text-anchor="middle" letter-spacing="0.08em">OMS</text>
+        <text x="290" y="115" fill="#2d3142" font-size="13" font-weight="600" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" text-anchor="middle">订单系统</text>
+        <text x="290" y="129" fill="#4f5d75" font-size="9" font-family="ui-monospace,Menlo,monospace" text-anchor="middle">合单 · 截单 18:00</text>
+
+        <!-- WMS（焦点） -->
+        <rect x="420" y="80" width="160" height="56" rx="6" fill="#f5f5f5"/>
+        <rect x="420" y="80" width="160" height="56" rx="6" fill="rgba(191,69,32,0.08)" stroke="#bf4520" stroke-width="1.2"/>
+        <rect x="428" y="86" width="26" height="12" rx="2" fill="none" stroke="rgba(191,69,32,0.5)" stroke-width="0.8"/>
+        <text x="441" y="95" fill="#bf4520" font-size="7" font-family="ui-monospace,Menlo,monospace" text-anchor="middle" letter-spacing="0.08em">WMS</text>
+        <text x="500" y="115" fill="#2d3142" font-size="13" font-weight="600" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" text-anchor="middle">仓库管理系统</text>
+        <text x="500" y="129" fill="#4f5d75" font-size="9" font-family="ui-monospace,Menlo,monospace" text-anchor="middle">波次 · 库位分配</text>
+
+        <!-- 看板 -->
+        <rect x="760" y="80" width="180" height="56" rx="6" fill="#f5f5f5"/>
+        <rect x="760" y="80" width="180" height="56" rx="6" fill="rgba(45,49,66,0.03)" stroke="rgba(45,49,66,0.30)" stroke-width="1"/>
+        <rect x="768" y="86" width="22" height="12" rx="2" fill="none" stroke="rgba(45,49,66,0.22)" stroke-width="0.8"/>
+        <text x="779" y="95" fill="#5a6580" font-size="7" font-family="ui-monospace,Menlo,monospace" text-anchor="middle" letter-spacing="0.08em">BI</text>
+        <text x="850" y="115" fill="#2d3142" font-size="13" font-weight="600" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" text-anchor="middle">运营看板</text>
+        <text x="850" y="129" fill="#4f5d75" font-size="9" font-family="ui-monospace,Menlo,monospace" text-anchor="middle">UPH · 准时率 · 积压</text>
+
+        <!-- WCS -->
+        <rect x="420" y="240" width="160" height="56" rx="6" fill="#f5f5f5"/>
+        <rect x="420" y="240" width="160" height="56" rx="6" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+        <rect x="428" y="246" width="26" height="12" rx="2" fill="none" stroke="rgba(45,49,66,0.4)" stroke-width="0.8"/>
+        <text x="441" y="255" fill="#2d3142" font-size="7" font-family="ui-monospace,Menlo,monospace" text-anchor="middle" letter-spacing="0.08em">WCS</text>
+        <text x="500" y="275" fill="#2d3142" font-size="13" font-weight="600" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" text-anchor="middle">仓库控制系统</text>
+        <text x="500" y="289" fill="#4f5d75" font-size="9" font-family="ui-monospace,Menlo,monospace" text-anchor="middle">设备调度 · 交通管制</text>
+
+        <!-- 立体库 -->
+        <rect x="200" y="400" width="160" height="56" rx="6" fill="#f5f5f5"/>
+        <rect x="200" y="400" width="160" height="56" rx="6" fill="rgba(45,49,66,0.05)" stroke="#4f5d75" stroke-width="1"/>
+        <rect x="208" y="406" width="34" height="12" rx="2" fill="none" stroke="rgba(79,93,117,0.5)" stroke-width="0.8"/>
+        <text x="225" y="415" fill="#4f5d75" font-size="7" font-family="ui-monospace,Menlo,monospace" text-anchor="middle" letter-spacing="0.08em">AS/RS</text>
+        <text x="280" y="435" fill="#2d3142" font-size="13" font-weight="600" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" text-anchor="middle">箱式立体库</text>
+        <text x="280" y="449" fill="#4f5d75" font-size="9" font-family="ui-monospace,Menlo,monospace" text-anchor="middle">4 巷道 · 6,000 箱位</text>
+
+        <!-- AMR -->
+        <rect x="420" y="400" width="160" height="56" rx="6" fill="#f5f5f5"/>
+        <rect x="420" y="400" width="160" height="56" rx="6" fill="rgba(45,49,66,0.05)" stroke="#4f5d75" stroke-width="1"/>
+        <rect x="428" y="406" width="28" height="12" rx="2" fill="none" stroke="rgba(79,93,117,0.5)" stroke-width="0.8"/>
+        <text x="442" y="415" fill="#4f5d75" font-size="7" font-family="ui-monospace,Menlo,monospace" text-anchor="middle" letter-spacing="0.08em">AMR</text>
+        <text x="500" y="435" fill="#2d3142" font-size="13" font-weight="600" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" text-anchor="middle">货到人机器人</text>
+        <text x="500" y="449" fill="#4f5d75" font-size="9" font-family="ui-monospace,Menlo,monospace" text-anchor="middle">24 台 · 3 个拣选站</text>
+
+        <!-- 分拣线 -->
+        <rect x="640" y="400" width="160" height="56" rx="6" fill="#f5f5f5"/>
+        <rect x="640" y="400" width="160" height="56" rx="6" fill="rgba(45,49,66,0.05)" stroke="#4f5d75" stroke-width="1"/>
+        <rect x="648" y="406" width="30" height="12" rx="2" fill="none" stroke="rgba(79,93,117,0.5)" stroke-width="0.8"/>
+        <text x="663" y="415" fill="#4f5d75" font-size="7" font-family="ui-monospace,Menlo,monospace" text-anchor="middle" letter-spacing="0.08em">SORT</text>
+        <text x="720" y="435" fill="#2d3142" font-size="13" font-weight="600" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" text-anchor="middle">交叉带分拣线</text>
+        <text x="720" y="449" fill="#4f5d75" font-size="9" font-family="ui-monospace,Menlo,monospace" text-anchor="middle">32 格口 · 按配送路线</text>
+
+        <!-- ===== 图例（底部横条） ===== -->
+        <line x1="40" y1="488" x2="960" y2="488" stroke="rgba(45,49,66,0.12)" stroke-width="1"/>
+        <rect x="40" y="506" width="14" height="10" rx="2" fill="rgba(191,69,32,0.08)" stroke="#bf4520" stroke-width="1"/>
+        <text x="60" y="515" fill="#4f5d75" font-size="12" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif">决策核心</text>
+        <rect x="140" y="506" width="14" height="10" rx="2" fill="#ffffff" stroke="#2d3142" stroke-width="1"/>
+        <text x="160" y="515" fill="#4f5d75" font-size="12" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif">业务系统</text>
+        <rect x="240" y="506" width="14" height="10" rx="2" fill="rgba(45,49,66,0.05)" stroke="#4f5d75" stroke-width="1"/>
+        <text x="260" y="515" fill="#4f5d75" font-size="12" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif">自动化设备</text>
+        <rect x="352" y="506" width="14" height="10" rx="2" fill="rgba(79,93,117,0.10)" stroke="#5a6580" stroke-width="1"/>
+        <text x="372" y="515" fill="#4f5d75" font-size="12" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif">外部输入</text>
+        <line x1="456" y1="511" x2="476" y2="511" stroke="#bf4520" stroke-width="1.4" marker-end="url(#wh-arrow-accent)"/>
+        <text x="484" y="515" fill="#4f5d75" font-size="12" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif">主任务流</text>
+        <line x1="560" y1="511" x2="580" y2="511" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#wh-arrow)"/>
+        <text x="588" y="515" fill="#4f5d75" font-size="12" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif">一般流转</text>
+        <line x1="664" y1="511" x2="684" y2="511" stroke="#2e5aa8" stroke-width="1.2" stroke-dasharray="5,4" marker-end="url(#wh-arrow-link)"/>
+        <text x="692" y="515" fill="#4f5d75" font-size="12" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif">数据推送</text>
+      </svg>
+    </div>
+    <p class="scroll-hint">← 图较宽，可左右滑动查看 →</p>
+
+    <h2>一天里的出库压力</h2>
+    <p class="section-note">按两小时汇总的出库单量（示例数据）。晚高峰 18–20 点占全天约 28%，是设备配置要扛住的时段。</p>
+
+    <div class="diagram-container">
+      <svg class="bars" viewBox="0 56 1000 324" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="wh-bars-title wh-bars-desc">
+        <title id="wh-bars-title">分时段出库单量（示例）</title>
+        <desc id="wh-bars-desc">八个两小时时段的出库单量，晚上六点到八点最高，约 2,140 单，凌晨最低。</desc>
+        <rect x="0" y="56" width="1000" height="324" fill="#f5f5f5"/>
+
+        <!-- 网格线与刻度：y=300 为 0，每 500 单 = 50px -->
+        <g stroke="rgba(45,49,66,0.10)" stroke-width="1">
+          <line x1="80" y1="300" x2="960" y2="300" stroke="#bfc0c0"/>
+          <line x1="80" y1="250" x2="960" y2="250"/>
+          <line x1="80" y1="200" x2="960" y2="200"/>
+          <line x1="80" y1="150" x2="960" y2="150"/>
+          <line x1="80" y1="100" x2="960" y2="100"/>
+        </g>
+        <g fill="#5a6580" font-size="10" font-family="ui-monospace,Menlo,monospace" text-anchor="end">
+          <text x="70" y="304">0</text>
+          <text x="70" y="254">500</text>
+          <text x="70" y="204">1,000</text>
+          <text x="70" y="154">1,500</text>
+          <text x="70" y="104">2,000</text>
+        </g>
+
+        <!-- 柱子：宽 64，间距 108，起点 x=112 -->
+        <g fill="rgba(45,49,66,0.16)" stroke="#4f5d75" stroke-width="1">
+          <rect x="112" y="284" width="64" height="16"/>
+          <rect x="220" y="232" width="64" height="68"/>
+          <rect x="328" y="196" width="64" height="104"/>
+          <rect x="436" y="214" width="64" height="86"/>
+          <rect x="544" y="204" width="64" height="96"/>
+          <rect x="652" y="172" width="64" height="128"/>
+          <rect x="868" y="236" width="64" height="64"/>
+        </g>
+        <rect x="760" y="86" width="64" height="214" fill="rgba(191,69,32,0.18)" stroke="#bf4520" stroke-width="1.2"/>
+
+        <!-- 数值 -->
+        <g fill="#2d3142" font-size="10" font-family="ui-monospace,Menlo,monospace" text-anchor="middle">
+          <text x="144" y="276">160</text>
+          <text x="252" y="224">680</text>
+          <text x="360" y="188">1,040</text>
+          <text x="468" y="206">860</text>
+          <text x="576" y="196">960</text>
+          <text x="684" y="164">1,280</text>
+          <text x="900" y="228">640</text>
+        </g>
+        <text x="792" y="78" fill="#bf4520" font-size="11" font-weight="600" font-family="ui-monospace,Menlo,monospace" text-anchor="middle">2,140</text>
+
+        <!-- 横轴标签 -->
+        <g fill="#4f5d75" font-size="11" font-family="ui-monospace,Menlo,monospace" text-anchor="middle">
+          <text x="144" y="322">06–08</text>
+          <text x="252" y="322">08–10</text>
+          <text x="360" y="322">10–12</text>
+          <text x="468" y="322">12–14</text>
+          <text x="576" y="322">14–16</text>
+          <text x="684" y="322">16–18</text>
+          <text x="792" y="322">18–20</text>
+          <text x="900" y="322">20–22</text>
+        </g>
+        <text x="80" y="356" fill="#5a6580" font-size="12" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif">单位：出库单 · 合计 7,760 单 · 示例数据</text>
+      </svg>
+    </div>
+    <p class="scroll-hint">← 图较宽，可左右滑动查看 →</p>
+
+    <section class="cards" aria-label="设计要点">
+      <div class="card">
+        <div class="card-header"><span class="card-dot coral"></span><h3>设计目标</h3></div>
+        <ul>
+          <li>晚高峰每小时出库 <span class="num">1,070</span> 单不积压</li>
+          <li>下单到出库平均不超过 <span class="num">25</span> 分钟</li>
+          <li>拣选准确率目标 <span class="num">99.9%</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header"><span class="card-dot ink"></span><h3>关键测算（示例）</h3></div>
+        <ul>
+          <li>单站拣选效率按 <span class="num">400</span> 行/小时估算</li>
+          <li>3 个拣选站可覆盖晚高峰 <span class="num">1.1</span> 倍需求</li>
+          <li>AMR 数量按站点等待时间小于 <span class="num">5</span> 秒反推</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header"><span class="card-dot link"></span><h3>下一步</h3></div>
+        <ul>
+          <li>用仿真验证高峰排队</li>
+          <li>补一张异常处理流程图</li>
+          <li>对比人工拣选方案成本</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>虚构课程设计 · 按 diagram-design 方法绘制 · 所有数据为示例</span>
+      <span>单文件 HTML · 无外部依赖</span>
+    </footer>
+  </div>
+</body>
+</html>
