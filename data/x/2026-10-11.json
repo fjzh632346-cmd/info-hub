@@ -1,0 +1,98 @@
+{
+  "type": "x",
+  "date": "2026-10-11",
+  "items": [
+    {
+      "kind": "prompt",
+      "category": "视频",
+      "score": 84,
+      "author": "ultima",
+      "handle": "@ultimaxbt",
+      "url": "https://x.com/ultimaxbt/status/2108935657334702300",
+      "posted": "2026-10-10",
+      "metrics": "2.2 万查看 · 347 赞",
+      "textZh": "作者用 Claude Opus 5.5 做了一段 15 秒的动态设计视频，全程没有手动打关键帧（关键帧：动画软件里手动标记的动作节点）。一颗橙色圆点串起整片：开关 → 文字变形 → 弹簧曲线 → 图形变换 → 动态文字 → 半调点阵 → 结尾卡片。帖子里公开了完整提示词。思路是让 AI 写一个网页，画面全部由时间计算出来，再录成视频。提示词分成输入、方向、结构、制作、注意几块，写法本身就值得照着学。你想用 Claude 做产品介绍或答辩开场动画，可以直接拿来改。",
+      "prompt": "<inputs>\nAsk me for: a short label for the first toggle, one main word, a percentage for the graph, text for the final card, one accent color and a track with a clear beat.\n</inputs>\n\n<direction>\nA 2D motion design film in 16:9. Use a warm off-white canvas, near-black backgrounds, bold type and one vivid orange accent. The orange dot links every scene: it begins in the UI, becomes the dot above a letter, draws a spring graph, expands into a shape and reappears on the end card. A cursor makes the opening click feel real. Keep the movement crisp and controlled, with subtle spring overshoots and no empty pauses.\nBanned: stock footage, gradients, glows, particle bursts, arbitrary transitions and movement that doesn't grow from something already on screen.\n</direction>\n\n<structure>\nAround 15 seconds, with a visual change on every major beat.\nOpen: a cursor clicks the orange toggle beside \"Reduce Motion\". The letters bend and shift into place until only \"Motion\" remains, with the orange dot above the \"i\".\nSpring: the dot leaps away from the word and lands on a graph. Its trajectory draws a spring response, passes the target and settles next to a \"+22%\" callout.\nShape: the dot races along a line, expands into an orange circle and fills the frame. A black rounded square rotates inside it, then extends into a pill. Everything contracts into one orange dot on black.\nType: words including \"SPRINGS\", \"EASING\", \"KINETIC TYPE\", \"3D\" and \"SOUND\" circle the dot. The ring of words spreads into a field of tiny dots.\nReveal: the halftone field expands and turns black, uncovering the final card: \"Opus 5.5\", \"Motion designer.\" and \"0 keyframes\".\nReturn: the orange dot travels back through the halftone, graph and toggle. Make the last frame match the first for a seamless loop.\n</structure>\n\n<build>\n1. Use one HTML file, 1920x1080 at 60fps. Calculate every visual from time inside seek(t): no CSS transitions, timers or state carried between frames.\n2. Use closed-form springs for the toggle, moving dot and graph. Draw the graph with the same spring function that controls the dot.\n3. Move the letters individually as \"Reduce Motion\" becomes \"Motion\". Keep the orange dot above the \"i\" until it jumps away.\n4. Treat the orange circle, rotating square and pill as states of one shape. Carry its position and momentum through each change.\n5. Arrange the words on a circular path, then send their letters outward to transition into the halftone grid.\n6. Draw the halftone as a dot grid whose sizes react to the orange dot. Expand it beyond the frame before showing the end card.\n7. Align the click, dot landing, graph peak, shape changes and final title with measured beats. Render one frame per beat to check timing before the full export.\n</build>\n\n<gotchas>\nThe graph and dot must share the same motion or the spring will look wrong. Use the same orange accent throughout. Time outgoing and incoming text separately so letters never overlap. When a shape fills the screen, extend it beyond all four corners. Match the cursor, dot and typography in the opening and closing frames to prevent a loop stutter.\n</gotchas>\n\n<start>\nAsk me for the inputs, then show me the beat map and four stills (toggle, graph, kinetic type, end card) before building the full video.\n</start>",
+      "promptZh": "<输入>\n先问我要：第一个开关上的短标签、一个主词、图表上的百分比、结尾卡片的文字、一个强调色，以及一段节拍清楚的配乐。\n</输入>\n\n<方向>\n16:9 的 2D 动态设计短片。用暖白色画布、接近黑色的背景、粗体字和一个鲜艳的橙色强调色。一颗橙色圆点串起所有场景：它从界面里出现，变成某个字母上的点，画出弹簧曲线，扩张成图形，最后回到结尾卡片上。用一个鼠标光标让开场的点击显得真实。动作要干脆、受控，带一点弹簧式的轻微过冲，不要有空白停顿。\n禁止：素材视频、渐变、发光、粒子爆炸、随意的转场，以及不是从画面中已有元素生长出来的运动。\n</方向>\n\n<结构>\n约 15 秒，每个主要节拍都有画面变化。\n开场：光标点击“Reduce Motion”旁边的橙色开关。字母弯曲、移位，最后只剩“Motion”，橙点停在“i”上方。\n弹簧：圆点从单词上跳走，落到一张图表上。它的轨迹画出弹簧响应曲线，越过目标后回落，停在“+22%”标注旁。\n图形：圆点沿一条线飞奔，扩张成橙色圆形并铺满画面。一个黑色圆角方块在里面旋转，再拉长成胶囊形。最后全部收缩成黑底上的一颗橙点。\n文字：包括“SPRINGS”“EASING”“KINETIC TYPE”“3D”“SOUND”的单词绕着圆点转圈，这圈文字再散成一片细小的点阵。\n揭示：半调点阵扩大并变黑，露出结尾卡片：“Opus 5.5”“Motion designer.”“0 keyframes”。\n回归：橙点依次穿回半调点阵、图表和开关。最后一帧要和第一帧一致，做成无缝循环。\n</结构>\n\n<制作>\n1. 用一个 HTML 文件，1920x1080，60 帧。所有画面都由 seek(t) 里的时间算出来：不用 CSS 过渡、定时器，也不在帧之间保存状态。\n2. 开关、移动的圆点和图表都用闭式弹簧公式。图表曲线用控制圆点的同一个弹簧函数来画。\n3. “Reduce Motion”变成“Motion”时逐个字母移动。橙点在跳走前一直停在“i”上方。\n4. 橙色圆形、旋转方块和胶囊形当作同一个图形的不同状态，每次变化都延续它的位置和动量。\n5. 把单词排在圆形路径上，再让字母向外散开，过渡到半调点阵。\n6. 半调效果画成一个点阵，点的大小随橙点变化。显示结尾卡片前，先把点阵扩到画面之外。\n7. 点击、圆点落地、曲线峰值、图形变化和最终标题都对准测量好的节拍。正式导出前，每个节拍先渲染一帧检查时间点。\n</制作>\n\n<注意>\n图表和圆点必须共用同一套运动，否则弹簧看起来会不对。全程用同一个橙色。出场和入场的文字分开计时，字母不要重叠。图形铺满屏幕时要超出四个角。开头和结尾的光标、圆点、字体要对齐，避免循环时卡顿。\n</注意>\n\n<开始>\n先问我要输入内容，然后给我看节拍表和四张静帧（开关、图表、动态文字、结尾卡片），确认后再做完整视频。\n</开始>",
+      "video": "https://x.com/ultimaxbt/status/2108935657334702300"
+    },
+    {
+      "kind": "news",
+      "category": "编程",
+      "score": 78,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2109151666020794711",
+      "posted": "2026-10-11",
+      "metrics": "4.3 万查看 · 430 赞",
+      "textZh": "宝玉用开源工具 REA（Reverse Engineer Anything，把逆向分析工具接到 Claude Code、Codex 这类编程智能体上，帮你分析没有源码的软件）试着还原了 Claude Slides 的幻灯片编辑器，几乎还原了全部功能。步骤是：先下载网页里的核心脚本和样式表；让 Codex 安装 REA；用 REA Skill 逆向被混淆（故意打乱、让人难读）的代码；最后用 Claude Code 重写成结构清楚的代码。至于幻灯片 Skill 的提示词，他没有去逆向，而是先做一份 Slides，再让 Claude 照着自己的效果写一个同样好的 slides skill。代码公开在 GitHub 的 JimLiu/baocut。你想自己做 PPT Skill，这个“让 AI 描述自己怎么做”的办法很实用。"
+    },
+    {
+      "kind": "opinion",
+      "category": "研究",
+      "score": 76,
+      "author": "Sergii Makarevych",
+      "handle": "@sermakarevich",
+      "url": "https://x.com/sermakarevich/status/2108942010123968804",
+      "posted": "2026-10-10",
+      "metrics": "3.4 万查看 · 574 赞",
+      "textZh": "一篇讲“怎么判断 AI 智能体真的把活干完了”的长文（智能体：会自己调用工具、改数据、连做好几步的 AI）。核心观点：要检查它改了什么，别只看它说了什么。作者用一个虚构自行车店的客服智能体做实验：20 个任务各跑 3 次，共 60 次。只看回复，60 次里有 58 次算通过；去查数据库，只有 48 次真正做对。有 10 次嘴上说“已退款”，实际没退。他建议报告两个数：至少成功一次的比例（能力，0.85）和每次都成功的比例（稳定性，0.75），客户真正感受到的是后者。文章还讲了怎么找出失败的第一步、什么时候能用模型当裁判。你如果考虑做 AI 交付工程师（FDE），这是很实在的入门材料。"
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "score": 70,
+      "author": "Michael Guo",
+      "handle": "@Michaelzsguo",
+      "url": "https://x.com/Michaelzsguo/status/2109113444322431296",
+      "posted": "2026-10-11",
+      "metrics": "3 万查看 · 260 赞",
+      "textZh": "谷歌发布了一款 Mac 上的 AI 会议笔记应用 Foresight，免费，不用订阅，完全在本机离线运行。开会时你随手记几个关键词，它会结合会议录音转成的文字，帮你补成完整笔记；线上会议和面对面交流都能用。接入项目文件、资料和日历后，开会聊到某个问题，它还能自动找出相关内容并标明出处。背后用的是谷歌的两个开放模型：EmbeddingGemma 2 负责查资料，Gemma 4 负责生成回答。录音和资料都留在自己电脑上。注意：这只能在 Mac 上用。"
+    },
+    {
+      "kind": "opinion",
+      "category": "其他",
+      "score": 66,
+      "author": "a16z",
+      "handle": "@a16z",
+      "url": "https://x.com/a16z/status/2109003648034615343",
+      "posted": "2026-10-11",
+      "metrics": "6.1 万查看 · 255 赞",
+      "textZh": "Figma（设计工具公司）CEO Dylan Field 在访谈里修正了自己的说法。他以前说 AI 会“降低门槛，也抬高上限”，现在看到的只有前一半：做东西的门槛降了，但作品的上限没变。他认为能被验证对错的事 AI 最擅长，第一是数学，第二可能是网络安全；设计没有唯一答案，五个设计师在一起常常意见不合。他还说，我们口中的“AI 垃圾内容”（slop）标准在悄悄变化：一两个月前不算垃圾的东西，现在就算了。作品里的用心别人看得出来；AI 定的是你必须超过的下限，上限要靠你自己。"
+    },
+    {
+      "kind": "opinion",
+      "category": "其他",
+      "score": 64,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2109063941233979397",
+      "posted": "2026-10-11",
+      "metrics": "3.7 万查看 · 89 赞",
+      "textZh": "这条在回应 @guansi 的观察：有些新人交上来的方案写得很漂亮，技术先进、术语齐全，一看就是 AI 写的，但多聊两句就会发现，里面很多内容超出了他自己的理解，审方案的同事心里都憋着气。宝玉一句话点出问题：这是把核对内容的成本，从写的人转嫁给了审的人；写的人自己成了 AI 和审查者之间的传声筒。对你的提醒：用 AI 写课程报告、实习方案没问题，但交出去之前，自己要能讲清楚每一段。"
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "score": 60,
+      "author": "a16z",
+      "handle": "@a16z",
+      "url": "https://x.com/a16z/status/2109033742853619830",
+      "posted": "2026-10-11",
+      "metrics": "3.8 万查看 · 478 赞",
+      "textZh": "a16z 的每周图表：呼叫中心的岗位在减少，而且从富国扩散到了全球。按国家收入分组看，高收入国家的呼叫中心就业从 2022 年开始转为负增长，中低收入国家也在 2025 年转负。帖子本身只给了数据，没有解释原因。原文是 a16z.news 的“This Week in Charts”。对你的参考：看行业岗位时，可以多留意哪些是按固定流程办事的工作，这类岗位的变化往往来得更早。"
+    },
+    {
+      "kind": "opinion",
+      "category": "PPT",
+      "score": 58,
+      "author": "数字生命卡兹克",
+      "handle": "@Khazix0918",
+      "url": "https://x.com/Khazix0918/status/2109246672689872921",
+      "posted": "2026-10-11",
+      "metrics": "1.1 万查看 · 113 赞",
+      "textZh": "卡兹克分享了一次实测：他用一段话的提示词，加上团队自己做的“品牌 PPT Skill”和“品牌动效 Skill”，让 Claude Opus 5.5 花 20 分钟做出了第二天要讲的几十页完整演讲 PPT，自己觉得几乎不用再改。他没有公开提示词和 Skill，帖子里只有效果视频。可以带走的思路是：把自家的配色、版式、动效规则先写成 Skill，再让 AI 套用，比每次从头描述有效得多。",
+      "video": "https://x.com/Khazix0918/status/2109246672689872921"
+    }
+  ]
+}
