@@ -1,0 +1,247 @@
+{
+ "type": "daily",
+ "date": "2026-10-14",
+ "headline": "Google 发布 Gemini 4 Argon、Meta 推出 Muse Wonder，Anthropic 披露自研 Scion 替代 git；仓储侧 Symbotic 收购 cellumation，且 SKU 选择决定 AS/RS 回报。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "Anthropic 为什么放弃 git、自研版本控制系统 Scion",
+     "source": "Anthropic Engineering",
+     "published": "2026-10-13",
+     "readMinutes": 15,
+     "summary": "Anthropic 日均合并代码从 5 月约 2,500 次涨到 9 月超 30,000 次，git 撑不住（主分支历史近 100GB，每天约 2,500 万次 CI 检出）。7 人团队 5 个月自研 Scion 并完整迁移 monorepo（把所有代码放在一个仓库的做法）。原文英文。",
+     "takeaways": [
+      "智能体写代码后，瓶颈从'写'转到'开发基础设施'：合并队列、全局锁这类按人类速度设计的流程不再适用",
+      "Scion 设计：客户端永远在线、服务端管历史/合并、按需取文件；缓存命中率超 99%，CI 检出从分钟降到秒",
+      "迁移期间合并量涨了 10 倍，7 人 5 个月完成，说明 AI 辅助下大型基建迁移周期大幅缩短",
+      "工程师角色变成定设计取舍、审'变更意图'而不是逐行看代码"
+     ],
+     "why": "你平时用 Claude 写代码、做 Agent，这篇是'AI 大规模写代码之后工程体系怎么变'的一手复盘，对理解 FDE/AI 工程岗位的工作环境有帮助；不要求懂 git 内部原理。",
+     "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+     "tags": [
+      "案例",
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Gemini 4 Argon 发布：Google 新旗舰，主打复杂工程与科研任务",
+     "source": "Google AI 官方博客",
+     "published": "2026-10-13",
+     "readMinutes": 8,
+     "summary": "Google 发布 Gemini 4 Argon，经 API、AI Studio、Antigravity（Google 的智能体编程环境）和 Gemini App 开放，官方称 Vals Index（金融、编程、法律、税务综合榜）第一。初期定价输入 2 美元/百万 token、输出 10 美元/百万 token。原文英文。",
+     "takeaways": [
+      "Google 内部称使用 Argon 后智能体代码提交增加 35% 以上、回滚减少近三分之一（厂商自述）",
+      "第三方：AIHOT 转述 Artificial Analysis 智能指数与 GPT-6 Astra 持平、单任务成本约 60%；另有实测称知识类强但体验一般，难撼 Claude Opus 5.5",
+      "Antigravity 需 Ultra 会员；国内直连是否可用文中未说明"
+     ],
+     "why": "今天最重的新模型，做 Agent 或写代码选型要知道它的价格和强项；先读官方文了解宣称能力，再对照第三方评测。",
+     "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+     "tags": [
+      "新模型"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "Dyna-2：世界动作模型与长时间自主运行的机器人（Latent Space 访谈）",
+     "source": "Latent Space",
+     "published": "2026-10-13",
+     "readMinutes": 25,
+     "summary": "Dyna Robotics 首席科学家 Jason Ma 讲 Dyna-2：用 100 万小时人类视频预训练的'世界动作模型'（同时预测未来画面和机器人动作），连续 24 小时叠餐巾成功率 99.4%，已在鼎泰丰每天叠数千张。原文英文播客，附文字介绍。",
+     "takeaways": [
+      "新任务最少约 45 分钟示范即可学会",
+      "落地难点是长时间可靠运行与出错自恢复，而非单次演示",
+      "Dyna 自研硬件而非用通用人形机器人",
+      "人类视频数据可跨四个数量级扩展"
+     ],
+     "why": "物理 AI 是仓储自动化下一步的技术底座（拣选、叠放类柔性操作），读它能判断机器人学习离仓库落地多远；对机器人方向的视野积累也有用。",
+     "url": "https://www.latent.space/p/dyna",
+     "tags": [
+      "访谈"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "title": "Meta 发布 Muse Wonder 与 Wonder Full，进入前沿梯队",
+     "source": "Latent Space",
+     "summary": "据传 API 价 4/20 美元每百万 token、上下文 1M；Arena WebDev 第 15、文本第 2，暂无充分独立测评。",
+     "url": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder",
+     "tags": [
+      "新模型"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "title": "面壁开源 MiniCPM-V 4.7：35B-A3B 多模态模型 3GB 内存端侧运行",
+     "source": "AIHOT 整理",
+     "summary": "面壁称其为首个可端侧无损流畅运行的开源 MoE 多模态模型，含 35B-A3B 与 1B 两版，厂商说法。",
+     "url": "https://aihot.news/items/fidy0y9chlgs0puyn96qkmj1b",
+     "tags": [
+      "新模型"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "title": "Liquid AI 发布 LFM2.5-24B-A2B 端侧智能体模型",
+     "source": "Hugging Face",
+     "summary": "开源权重，总参数 24B、每 token 激活 2B，定位设备端私有智能体，暂无独立测评。",
+     "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+     "tags": [
+      "新模型"
+     ]
+    },
+    {
+     "title": "XBOW 借 GPT-5.6 Sol 6 天做出 Chrome 全链漏洞，获 25 万美元赏金",
+     "source": "AIHOT 整理",
+     "summary": "算力成本约 4 万美元，是 Google 第二次就 Chrome 全链漏洞付出该级别赏金。",
+     "url": "https://aihot.news/items/ekphiltd4fdsskdlueleul8qa"
+    },
+    {
+     "title": "Character.AI 申请破产，部分资产 2000 万美元售予迪士尼",
+     "source": "AIHOT 整理",
+     "summary": "法院文件显示其月算力支出远高于订阅收入峰值（约 280 万美元/月）。",
+     "url": "https://aihot.news/items/vwu0li2nl5hztqeztnq8b5udc"
+    },
+    {
+     "title": "OpenAI 在办公室发现窃听装置，涉事员工被捕",
+     "source": "AIHOT 整理",
+     "summary": "OpenAI 称已移交 FBI，暂无模型权重或客户数据外泄迹象。",
+     "url": "https://aihot.news/items/fgxi5gwvctlssc05odpcyf6ov"
+    },
+    {
+     "title": "LangSmith 推出 AI Search：用自然语言搜 agent 运行轨迹",
+     "source": "AIHOT 整理",
+     "summary": "可按行为描述查询如 PII 泄露、用户受挫，公测中。",
+     "url": "https://aihot.news/items/cgbpvdepk4p1jrrawgzbfbxov"
+    },
+    {
+     "title": "Epic 转向 AI 先行开发，迪士尼合作射击游戏无限期延期",
+     "source": "AIHOT 整理",
+     "summary": "据 Bloomberg，Epic 让 Claude 等模型写全部代码，项目随后延期。",
+     "url": "https://aihot.news/items/kcwro19vl7dr5jgcjgec7mive"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "为什么 SKU 选择能决定 AS/RS 项目的投资回报",
+     "source": "Logistics Viewpoints",
+     "published": "2026-10-13",
+     "readMinutes": 7,
+     "summary": "AS/RS（自动化立体仓/存取系统）常被理解为'存货'，作者认为真正价值是减少人工搬运，所以该放进系统的是动销快的 SKU（库存单品）。少数高频 SKU 贡献大部分订单行、拣选和补货工作量，选错 SKU 再先进的系统也难回本。原文英文。",
+     "takeaways": [
+      "AS/RS 收益来自'被处理次数'，不只是存储密度",
+      "按 SKU 动销速度（velocity）筛选是商业论证的核心",
+      "项目前应花与选型同等的精力做 SKU 分析"
+     ],
+     "why": "物流工程课程和仓储方向面试常考'什么该自动化'，这篇把 ABC 分类与自动化投资回报连起来，可用于课程设计或项目讲述。",
+     "url": "https://logisticsviewpoints.com/2026/10/13/why-sku-selection-can-make-or-break-an-as-rs-business-case/",
+     "tags": [
+      "观点",
+      "案例"
+     ]
+    },
+    {
+     "pick": true,
+     "title": "从反复提问到持久化决策工作流：供应链运营里的 AI 架构转变",
+     "source": "Logistics Viewpoints",
+     "published": "2026-10-13",
+     "readMinutes": 8,
+     "summary": "文章主张供应链 AI 不应停留在'每次问一遍'的聊天，而要做成有治理的持续流程：保留事件、上下文、备选方案、约束、审批、人工改写、行动和结果。原文英文。",
+     "takeaways": [
+      "决策工作流应记录建议、人工覆盖、行动和结果，形成可改进规则与自主程度阈值的证据库",
+      "聊天记录不等于运营学习系统",
+      "关键在跨时间保存运行状态"
+     ],
+     "why": "你关注 AI 交付工程师（FDE）和 AI 产品经理，这篇讲的正是把 AI 嵌进业务流程而非做聊天窗口的方法论。",
+     "url": "https://logisticsviewpoints.com/2026/10/13/from-prompting-to-persistent-decision-workflows-in-supply-chain-operations/",
+     "tags": [
+      "观点"
+     ]
+    },
+    {
+     "pick": true,
+     "title": "Descartes 创新论坛：物流执行的下一阶段是直接'做事'的 AI",
+     "source": "Logistics Viewpoints",
+     "published": "2026-10-13",
+     "readMinutes": 8,
+     "summary": "作者复盘 2026 Descartes 创新论坛：物流企业系统和数据已很多，大量工作仍发生在系统之间（邮件、门户、手工录入，Descartes 称'转椅税'）。真正有价值的 AI 是直接帮人执行下一步并有控制。涉及运力收紧、油价、货运欺诈。原文英文。",
+     "takeaways": [
+      "'转椅税'：人在多个系统间手工搬运信息的成本",
+      "重点从'解释发生了什么'转向'替人执行工作'",
+      "运力、燃油和欺诈压力下，企业要求不加人就提效"
+     ],
+     "why": "了解物流软件厂商如何定位 AI，对看校招 JD（TMS/WMS 实施、解决方案岗）有帮助；偏运输执行，与仓储关联稍弱。",
+     "url": "https://logisticsviewpoints.com/2026/10/13/what-the-descartes-innovation-forum-said-about-the-next-phase-of-logistics-execution/",
+     "tags": [
+      "观点"
+     ]
+    },
+    {
+     "title": "Symbotic 收购德国 cellumation，补齐软件定义分拣",
+     "source": "DC Velocity",
+     "summary": "celluveyor 由数百个可独立控制的全向单元组成，可省空间；cellumation 将保留品牌继续服务客户。",
+     "url": "https://www.dcvelocity.com/material-handling/robotics/symbotic-says-latest-acquisition-uses-conveyor-automation-to-free-up-dc-space",
+     "tags": [
+      "案例"
+     ]
+    },
+    {
+     "title": "AutoStore 秋季更新：扩展 FlexBinsPort，Pio Pal 提供按服务租用",
+     "source": "Automated Warehouse",
+     "summary": "两年新增 18 项创新、再推 8 项，覆盖箱型、案箱处理与 VersaAI 拣选软件。",
+     "url": "https://www.automatedwarehouseonline.com/autostore-expands-flexbinsport-capabilities-offers-pio-pal-through-raas/"
+    },
+    {
+     "title": "报道：沃尔玛发货箱太高，不适配仓库机器人",
+     "source": "Supply Chain 24/7",
+     "summary": "沃尔玛自动化扩张遇到包装尺寸、机器人维修和电费上升问题（仅摘要，未读全文）。",
+     "url": "https://www.supplychain247.com/article/walmart-warehouse-automation-packaging-robot-costs"
+    },
+    {
+     "title": "运输中断风险为三年来最高",
+     "source": "MH&L",
+     "summary": "中东战事、油价波动与司机短缺是主要风险。",
+     "url": "https://www.mhlnews.com/global-supply-chain/news/55411208/transportation-disruption-risk-highest-in-3-years"
+    },
+    {
+     "title": "美国 9 月集装箱进口量创同月历史新高",
+     "source": "DC Velocity",
+     "summary": "同比增长 24.8%。",
+     "url": "https://www.dcvelocity.com/transportation/maritime-ocean/u-s-container-imports-reached-their-highest-september-on-record"
+    },
+    {
+     "title": "供应链平台宣称很多，能证明的很少",
+     "source": "Logistics Viewpoints",
+     "summary": "给出从共享数据、集成、治理等维度检验'平台'名号的方法。",
+     "url": "https://logisticsviewpoints.com/2026/10/13/everyone-claims-to-have-a-supply-chain-platform-very-few-can-prove-it/",
+     "tags": [
+      "观点"
+     ]
+    },
+    {
+     "title": "Walmart 将 Wing 无人机配送扩至丹佛、西雅图",
+     "source": "Supply Chain Dive",
+     "summary": "明年起 270 多家门店提供空中配送，与仓内关系较弱。",
+     "url": "https://www.supplychaindive.com/news/walmart-to-expand-wing-drone-delivery-to-denver-seattle/832654/"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "所有信源抓取正常（latest.json 无失败项，AIHOT 各接口 ok）。",
+  "Gemini 4 Argon 第三方评测引用自 AIHOT 转述，未读原始榜单；Muse Wonder 仅有 Latent Space 汇总。",
+  "仓储方向今天的一手数据较少，精读三篇均为英文行业分析；36氪快讯、国家统计局、北自/今天国际/极智嘉/海康暂无当天相关内容。",
+  "Walmart 箱体高度一条原文无正文，只用摘要。"
+ ]
+}
