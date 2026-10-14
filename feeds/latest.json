@@ -1,13 +1,20 @@
 {
- "fetchedAt": "2026-10-13T17:37:07.210Z",
+ "fetchedAt": "2026-10-14T01:16:56.042Z",
  "hours": 72,
  "status": [
+  {
+   "source": "Google DeepMind",
+   "feed": "https://deepmind.google/blog/rss.xml",
+   "ok": true,
+   "total": 100,
+   "recent": 3
+  },
   {
    "source": "OpenAI",
    "feed": "https://openai.com/news/rss.xml",
    "ok": true,
-   "total": 1287,
-   "recent": 0
+   "total": 1288,
+   "recent": 1
   },
   {
    "source": "a16z",
@@ -23,11 +30,10 @@
    "error": "HTTP 403"
   },
   {
-   "source": "Google AI",
-   "feed": "https://blog.google/technology/ai/rss/",
-   "ok": true,
-   "total": 20,
-   "recent": 1
+   "source": "Import AI",
+   "feed": "https://importai.substack.com/feed",
+   "ok": false,
+   "error": "HTTP 403"
   },
   {
    "source": "Hugging Face",
@@ -37,10 +43,18 @@
    "recent": 1
   },
   {
-   "source": "Import AI",
-   "feed": "https://importai.substack.com/feed",
-   "ok": false,
-   "error": "HTTP 403"
+   "source": "One Useful Thing",
+   "feed": "https://www.oneusefulthing.org/feed",
+   "ok": true,
+   "total": 20,
+   "recent": 0
+  },
+  {
+   "source": "Google AI",
+   "feed": "https://blog.google/technology/ai/rss/",
+   "ok": true,
+   "total": 20,
+   "recent": 1
   },
   {
    "source": "Interconnects",
@@ -50,18 +64,11 @@
    "recent": 0
   },
   {
-   "source": "Google DeepMind",
-   "feed": "https://deepmind.google/blog/rss.xml",
+   "source": "Simon Willison",
+   "feed": "https://simonwillison.net/atom/everything/",
    "ok": true,
-   "total": 100,
-   "recent": 2
-  },
-  {
-   "source": "One Useful Thing",
-   "feed": "https://www.oneusefulthing.org/feed",
-   "ok": true,
-   "total": 20,
-   "recent": 0
+   "total": 30,
+   "recent": 9
   },
   {
    "source": "Sequoia",
@@ -69,13 +76,6 @@
    "ok": true,
    "total": 50,
    "recent": 0
-  },
-  {
-   "source": "Simon Willison",
-   "feed": "https://simonwillison.net/atom/everything/",
-   "ok": true,
-   "total": 30,
-   "recent": 6
   },
   {
    "source": "Benedict Evans",
@@ -99,31 +99,11 @@
    "recent": 1
   },
   {
-   "source": "宝玉",
-   "feed": "https://baoyu.io/feed.xml",
-   "ok": true,
-   "total": 50,
-   "recent": 0
-  },
-  {
-   "source": "Symbotic IR",
-   "feed": "https://ir.symbotic.com/rss/news-releases.xml",
-   "ok": false,
-   "error": "HTTP 403"
-  },
-  {
    "source": "BestBlogs 每日早报",
    "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
    "ok": true,
-   "total": 6,
-   "recent": 3
-  },
-  {
-   "source": "Symbotic",
-   "feed": "https://www.symbotic.com/feed/",
-   "ok": true,
-   "total": 10,
-   "recent": 1
+   "total": 7,
+   "recent": 4
   },
   {
    "source": "Daifuku",
@@ -133,18 +113,31 @@
    "recent": 1
   },
   {
+   "source": "Symbotic IR",
+   "feed": "https://ir.symbotic.com/rss/news-releases.xml",
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  {
+   "source": "Symbotic",
+   "feed": "https://www.symbotic.com/feed/",
+   "ok": true,
+   "total": 10,
+   "recent": 1
+  },
+  {
+   "source": "宝玉",
+   "feed": "https://baoyu.io/feed.xml",
+   "ok": true,
+   "total": 50,
+   "recent": 0
+  },
+  {
    "source": "Georgia Tech SCL",
    "feed": "https://www.scl.gatech.edu/rss.xml",
    "ok": true,
    "total": 10,
    "recent": 0
-  },
-  {
-   "source": "The Robot Report 物流",
-   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
-   "ok": true,
-   "total": 15,
-   "recent": 1
   },
   {
    "source": "Interact Analysis",
@@ -160,11 +153,25 @@
    "recent": 10
   },
   {
+   "source": "The Robot Report 物流",
+   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
+   "ok": true,
+   "total": 15,
+   "recent": 1
+  },
+  {
    "source": "Automated Warehouse",
    "feed": "https://www.automatedwarehouseonline.com/feed/",
    "ok": true,
    "total": 10,
    "recent": 3
+  },
+  {
+   "source": "DC Velocity",
+   "feed": "https://www.dcvelocity.com/rss",
+   "ok": true,
+   "total": 30,
+   "recent": 2
   },
   {
    "source": "MH&L",
@@ -174,18 +181,11 @@
    "recent": 3
   },
   {
-   "source": "DC Velocity",
-   "feed": "https://www.dcvelocity.com/rss",
+   "source": "Supply Chain 24/7 自动化",
+   "feed": "https://feeds.feedburner.com/sc247/rss/automation",
    "ok": true,
-   "total": 30,
-   "recent": 0
-  },
-  {
-   "source": "Supply Chain Dive",
-   "feed": "https://www.supplychaindive.com/feeds/news/",
-   "ok": true,
-   "total": 10,
-   "recent": 10
+   "total": 20,
+   "recent": 4
   },
   {
    "source": "Locus Robotics",
@@ -195,11 +195,11 @@
    "recent": 1
   },
   {
-   "source": "Supply Chain 24/7 自动化",
-   "feed": "https://feeds.feedburner.com/sc247/rss/automation",
+   "source": "Supply Chain Dive",
+   "feed": "https://www.supplychaindive.com/feeds/news/",
    "ok": true,
-   "total": 20,
-   "recent": 2
+   "total": 10,
+   "recent": 10
   },
   {
    "source": "36氪快讯",
@@ -220,17 +220,151 @@
    "feed": "https://aihot.news/rss",
    "ok": true,
    "total": 50,
-   "recent": 35
+   "recent": 41
   },
   {
    "source": "国家统计局",
    "feed": "https://www.stats.gov.cn/sj/zxfb/rss.xml",
-   "ok": true,
-   "total": 500,
-   "recent": 0
+   "ok": false,
+   "error": "This operation was aborted"
   }
  ],
  "items": [
+  {
+   "group": "ai",
+   "source": "BestBlogs 每日早报",
+   "title": "EP205 · Argon 解难题、Anthropic 重设计源控、Meta 发布 Muse Wonder",
+   "url": "https://www.bestblogs.dev/explore/brief/2026-10-14?utm_source=rss&utm_medium=feed&utm_campaign=daily_brief&entry=rss_brief_index",
+   "published": "2026-10-14T06:00:00.000Z",
+   "description": "📝 今日导语 Argon 解难题，Anthropic 重设计源控，Meta 发布 Muse Wonder：判断模型与系统如何配合。 🏷 今日关键词： Gemini 4 Argon Scion 源码控制 Muse Wonder AI 自我复制 开放 AI 网络 📰 今日精选内容 Gemini 4 Argon：为解决棘手难题而生 Google DeepMind News &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 Anthropic 的源码控制系统重设计 Anthropic Engineering &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 Muse Wonder：面向个人与职业 AI 智能体的前沿模型 Meta AI &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 89 AI 模型可能在无需数据中心的情况下实现自我复制 Anthropic Research &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 91 Meta OCP 2026：用开放网络连接大规模 AI 集群 Engineering at Meta &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 模型越来越强，为什么用户没感觉？再访阿里国际站总裁张阔 硅谷101 &nbsp;·&nbsp; 文",
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "Simon Willison",
+   "title": "Redesigning source control at Anthropic",
+   "url": "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/",
+   "published": "2026-10-13T23:00:06.000Z",
+   "description": "Redesigning source control at Anthropic Interesting piece from Anthropic describing why and how they built their own custom alternative to Git, based on the dramatic increase in rate of changes to their code after the past six months. In May 2026, Anthropic averaged around 2,500 code changes merged per day; as of September, we merged over 30,000 per day. They included a chart showing those changes. I had Claude modify their chart ( code here ) to add markers for the public releases of each of their models in 2026: This shows public release dates, not the date when models became available for A",
+   "excerpt": "Redesigning source control at Anthropic ( via ) Interesting piece from Anthropic describing why and how they built their own custom alternative to Git, based on the dramatic increase in rate of changes to their code after the past six months.\nIn May 2026, Anthropic averaged around 2,500 code changes merged per day; as of September, we merged over 30,000 per day.\nThey included a chart showing those changes. I had Claude modify their chart ( code here ) to add markers for the public releases of each of their models in 2026:\nThis shows public release dates, not the date when models became available for Anthropic's internal use. My guess is that the introduction of Fable/Mythos class models is a key factor in the increased coding velocity.\n\"Antique\" is their new code review system. The source control system is called Scion, and sounds to me like a reinvention of centralized source control along the lines of Subversion. They had some pretty extreme requirements:\nThe history of our main branch alone is almost 100 GB, and a compressed working copy is over 25 GB. We perform on the order of 25 million code checkouts per day for CI, before counting developer environments, agent sandboxes, and research jobs. Fetched naively, that would be over 600 PB of git traffic per day.\nThe new system was built by a team of seven people, and the migration from Git was completed in five months.\nWhen asked on Hacker News about the lack of offline support, Scion engineer Nick G replied :\nSince Claude is by far the heaviest user of Scion and is necessarily online, this just wasn't important to do.\nAs an aside, I've been trying adversarial review in my own projects recently, where you have a model try and find flaws (I often play Claude and GPT off against each other). This note from the article reflected my own experience with that:\nAnthropic also makes extensive use of adversarial review, and, while this is incredibly effective in many ways, it can also be myopic, so skilled engineers needed to steer Claude away from over-engineering parts of the system in response to hypothetical concerns.\nThis is a link post by Simon Willison, posted on 13th October 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "实测Gemini 4 Argon：知识工作强劲但体验糟糕，卡兹克称难撼Claude Opus 5.5与GPT-6 Astra",
+   "url": "https://aihot.news/items/oxaap1c1cvxi9ngybxks1gngi",
+   "published": "2026-10-13T22:56:51.000Z",
+   "description": "Gemini 4 Argon于10月13日全面开放，Pro会员可在Gemini APP使用，Antigravity需100刀Ultra会员。作者实测认为其知识类专业能力强，Vals Index综合第一（68.9）且单次成本仅15.68美元，但CUA-bench仅4.83%排倒数第二；前端效果不及GPT-6 Astra，额度消耗快，中文写作味道重，整体体验糟糕，不建议订阅Ultra。 🔗 阅读原文 via AIHOT · https://aihot.news/items/oxaap1c1cvxi9ngybxks1gngi",
+   "excerpt": "Gemini 4 Argon于10月13日全面开放，Pro会员可在Gemini APP使用，Antigravity需100刀Ultra会员。作者实测认为其知识类专业能力强，Vals Index综合第一（68.9）且单次成本仅15.68美元，但CUA-bench仅4.83%排倒数第二；前端效果不及GPT-6 Astra，额度消耗快，中文写作味道重，整体体验糟糕，不建议订阅Ultra。\n作者以100刀Ultra会员实测Argon的额度、前端与中文写作表现，并给出与GPT-6 Astra、Claude Opus 5.5的对比结论，可作订阅参考。\n作者以100刀Ultra会员实测Argon的额度、前端与中文写作表现，并给出与GPT-6 Astra、Claude Opus 5.5的对比结论，可作订阅参考。"
+  },
+  {
+   "group": "ai",
+   "source": "Simon Willison",
+   "title": "llm-gemini 0.35",
+   "url": "https://simonwillison.net/2026/Oct/13/llm-gemini/",
+   "published": "2026-10-13T22:28:54.000Z",
+   "description": "Release: llm-gemini 0.35 I added support to llm-gemini for the new Gemini 4 Argon model, made available today via the Gemini API and for customers of their $100/month subscription plan. Here are the low, medium and high pelicans . As expected, they are all excellent: Gemini has a track record of producing great SVGs, and are the only lab where I know their staff have invested in SVG specifically (and who have boasted about their pelicans before.) Here's the \"high\" illustration, which cost me 17.166 cents: The pricing is interesting. At launch, Argon is $2/million input and $10/million output -",
+   "excerpt": "I added support to llm-gemini for the new Gemini 4 Argon model, made available today via the Gemini API and for customers of their $100/month subscription plan.\nHere are the low, medium and high pelicans . As expected, they are all excellent: Gemini has a track record of producing great SVGs, and are the only lab where I know their staff have invested in SVG specifically (and who have boasted about their pelicans before.)\nHere's the \"high\" illustration, which cost me 17.166 cents:\nThe pricing is interesting. At launch, Argon is $2/million input and $10/million output - the same price as GPT-6 Sol, half the price of Claude Opus 5.5 and 1/5th the price of Claude Fable 5.1 and GPT-6 Astra.\nBut on December 1st Argon is set to double in price - so it will be the same price as Opus 5.5.\nPrices like this aren't really comparable these days since what really matters is how many tokens a model takes to achieve a goal within an agentic harness.\nOne useful clue for that comes from Artificial Analysis, who publish the total cost to run their benchmark using each model. Argon is looking very good there - costing $2,407 to run the benchmark, putting it close to GLM-5.3 and significantly cheaper than OpenAI, Anthropic, and Meta's latest models.\nWhen the price doubles it will still be a little cheaper than GPT-6 Astra.\n(I used ChatGPT to edit that chart ! The data is all correct, I checked - I needed to get that Gemini 4 Argon info box to display without overlapping the other numbers.)\nSome bonus examples using Gemini 4 Argon: here's Generate an SVG of an armadillo in fishnet tights jaywalking on Mars , here's a Fabergé egg it created for me using Blender, and DeepMind staffer @fofrAI shared a video of a pelican riding a bike, using fourier epicycles . That's a fun new twist!\nThis is a beat by Simon Willison, posted on 13th October 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
+  },
+  {
+   "group": "ai",
+   "source": "Latent Space",
+   "title": "Dyna-2: General Purpose Physical Agents with Hour-Long Autonomy — Jason Ma, Dyna Robotics",
+   "url": "https://www.latent.space/p/dyna",
+   "published": "2026-10-13T22:25:55.000Z",
+   "description": "Our first robotics pod with Dyna’s Chief Scientist on their big bet on World Action Models & the Next Frontier of Physical AI",
+   "excerpt": "Watch along AIE NYC and join us at AIE CODE in SF next month!\nThis episode includes a live demo of the Taku robot that is best enjoyed on YouTube .\nLast month, Dyna made waves by announcing Dyna-2 , a world-action model pre-trained on one million hours of human video, claiming several new scaling laws on human data across four orders of magnitude . They have now followed up the model with a physical robot agent, Dyna-2.1 , that has to be seen to be believed:\nIn his talk at AIE this year, Jason talked about how the real challenge for robotics in the real world is reliable, long-horizon autonomy , and how Dyna got its models to a 99.4% success rate folding restaurant napkins for 24 hours straight, including recovering after it pulled over the whole stack.\nFrom training a world-action model on over one million hours of human video to deploying robots that fold thousands of napkins daily at Din Tai Fung , Dyna Robotics is pushing physical AI beyond impressive demos and into real-world production. In this episode, Dyna Robotics co-founder and Chief Scientist Jason Ma joins swyx on-site to unpack how robots can learn new tasks from as little as 45 minutes of demonstrations, why predicting the future of the physical world may be the key to general-purpose robotics, and what it actually takes to build robots that work reliably for real customers.\nWe go deep on Dyna-2, Dyna’s million-hour world-action model that combines future video prediction with robot actions, the scaling laws behind human-to-robot transfer, diffusion transformers and flow matching, and why synthetic environments and self-generated training data could unlock the next wave of robotics progress. Jason also explains why Dyna builds its own hardware instead of relying on off-the-shelf humanoids, how agentic harnesses enable robots to execute hour-long workflows, why dexterous hands and missing sensory data remain major bottlenecks, and what separates real commercial deployments from the graveyard of robotics startups. We also cover world-action models versus vision-language-action models, GPT-6 and coding agents in robotics, and Jason’s journey from AlphaGo and Penn to NVIDIA, Google DeepMind, and founding Dyna.\nWhy Dyna-2 was trained on over one million hours of human video\nWorld-action models: predicting future video to guide physical robot actions\nDiffusion transformers , flow matching, and real-time robotic control\nHow robots learn new tasks with as little as 45 minutes of demonstrations\nWhy ro"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Visual Studio Copilot 与 SSMS 远程代码执行漏洞（CVE-2026-103572）技术分析",
+   "url": "https://aihot.news/items/o8h7g7pscq0qrlenoadabbb96",
+   "published": "2026-10-13T22:00:40.000Z",
+   "description": "Johann Rehberger 披露 Visual Studio Copilot 与 SQL Server Management Studio 中的远程代码执行漏洞 CVE-2026-103572，根因是利用文件名末尾多加一个点绕过路径校验，写入 .mcp. 或 settings.VisualStudio. 等受保护配置文件，实现任意命令执行。 🔗 阅读原文 via AIHOT · https://aihot.news/items/o8h7g7pscq0qrlenoadabbb96",
+   "excerpt": "Visual Studio Copilot and SSMS Remote Code Execution (CVE-2026-103572)\nJohann Rehberger 披露 Visual Studio Copilot 与 SQL Server Management Studio 中的远程代码执行漏洞 CVE-2026-103572，根因是利用文件名末尾多加一个点绕过路径校验，写入 .mcp. 或 settings.VisualStudio. 等受保护配置文件，实现任意命令执行。\n作者亲述漏洞原理与利用链，读者可学到 Windows 路径规范化缺陷如何绕过 AI 智能体安全检查的可迁移方法。\n今天微软 发布了补丁 ，修复了我八月份报告的 Visual Studio Copilot 中的一个漏洞。微软将其归类为 Important 严重级别的 Remote Code Execution 漏洞。\n其根本原因是，它允许 Visual Studio 或 SQL Server Management Studio 中的 Copilot 绕过路径验证检查，写入自己的设置和配置文件 。这使得 Copilot 能够突破隔离限制，实现任意命令执行。\n在我提交给 MSRC 的报告中，我还演示了第三方如何通过间接提示注入来利用它实现远程命令执行。\n它同时影响 Visual Studio 和 SQL Server Management Studio。核心漏洞位于一个共享的易受攻击的 Copilot DLL 中，名为 Microsoft.VisualStudio.Copilot.Core.dll 。包括 Visual Studio 2022 在内的旧版本也受到影响。\n元老级 Visual Studio 产品是广泛使用的企业开发环境。它还集成了 GitHub Copilot，目前以 Visual Studio 2026 的形式发布。\n很多人不知道的是，SQL Server Management Studio (SSMS) 基于相同的代码和外壳，因此一个 IDE 中的许多漏洞也适用于另一个。\n你看，在 Windows 中，文件名末尾可以有 . ，这完全有效且会被 忽略 。底层的 NTFS 系统会区分名称差异，但 Win32 层只是忽略末尾的点。\n以 ASCII 句点 (0x2E) 字符结尾的文件和文件夹名称在保存时也会去掉该字符。\n注意：如果对你们有些人有用的话，使用扩展长度路径语法 (\\?) 可以访问那些正常 Win32 路径处理会进行规范化的文件名。\n现在，这是本应阻止 Copilot 写入 Visual Studio 和 SSMS 中 mcp 和设置配置文件的代码。\n它实现在 EditsFunctionHandler.GetEditConfirmationTypeAsync 中：\n验证通过了，因为这两个字符串不同。然而，当应用程序随后使用常规 Windows 文件 API 写入该文件名时，末尾的点被移除，写入目标变成了 .mcp.json ！\n这基本上就是 Copilot 这里的核心漏洞。该漏洞位于 Microsoft.VisualStudio.Copilot.Core.dll 中。\n末尾的点让 AI 代理绕过了对敏感配置文件的保护，修改了它本应被明确禁止更改的设置。\n在为其编写漏洞利用程序时，我发现了其他问题。其中一些很基础，让我不禁怀疑这怎么能通过代码审查。\nVisual Studio 2026 或 SQL Server Management Studio 中被误导或被劫持的代理可以：\n此外，在 VS 中， settings.VisualStudio.json 里有一个 ripgrep 设置。可以用任意路径覆盖它，以便在 Copilot 执行搜索时启动该二进制文件。\n这是使 Microsoft AI MAI-Code-1-Flash 模型产生偏差的 POC 演示：\n当用户随后与该文件交互时，Copilot 就被劫持了。请注意，此内容也可能通过其他方式进入聊天，例如从 MCP 服务器返回的数据。\n注意：第二个 MCP 漏洞利用稍微复杂一些，需要收集本地 VS 安装标识符作为路径名的一部分来找到设置文件，但它在 VS 和 SSMS 上也都有效。\n我在验证 SQL Copilot 安全问题 的修复时发现了这个漏洞。特别是，我注意到添加了对 MCP 的支持，这让我好奇它是如何实现的，并触发了这项调查和漏洞利用。\n尽管 Microsoft 将该问题归类为 Important 严重性 Remote Code Execution （CVSS 评分 8.8）并发布了安全修复，但该安全漏洞仍被认为不在赏金奖励范围内。\n我希望微软今后在展示并帮助发现其 Copilot 产品中的新型漏洞时，能更公平地奖励研究人员——这些产品每天有数百万人在使用。我有点担心，如果这种情况很普遍，研究人员可能会不再第一时间直接向微软报告漏洞。对我来说，这已经是两个月内第三个导致补丁发布、却没有获得奖励的漏洞了。\n我今天花了一些时间查看修复方案，似乎添加了一个对 GetFullPath 的调用，它会移除点号并规范化文件名。在 Windows 上，这会移除末尾的点号，并解析诸如 .. 这样的相对路径组件。这解决了末尾点号绕过问题，也应该能防止我报告的一些路径遍历变体。\n希望这是一篇有启发性的文章，能鼓励大家更多地研究 Windows 文件系统和规范化问题。尤其是在 AI 出现之后，此类漏洞及其变体被发现的速度如此之快，我们很可能会看到许多因此而出错的情况。\n在这种情况下，我们可以看到，可能只需要一个 . 就能绕过安全检查，让智能体执行任意命令。\n来源： Johann Rehberger / Embrace The Red · embracethered.com\n作者亲述漏洞原理与利用链，读者可学到 Windows 路径规范化缺陷如何绕过 AI 智能体安全检查的可迁移方"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Meta Muse Wonder (Max) 进入 Arena 榜单：WebDev 第15、文本第2",
+   "url": "https://aihot.news/items/ob6ryetyialrnqhyjusr2s1iz",
+   "published": "2026-10-13T21:27:15.000Z",
+   "description": "Arena 宣布 Meta 的 Muse Wonder (Max) 进入 Code Arena: WebDev 榜单第15名（1651分），与 Kimi K3 (Max) 的 1655 分相差 4 分。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ob6ryetyialrnqhyjusr2s1iz",
+   "excerpt": "Arena 宣布 Meta 的 Muse Wonder (Max) 进入 Code Arena: WebDev 榜单第15名（1651分），与 Kimi K3 (Max) 的 1655 分相差 4 分。\n榜单给出了 Muse Wonder (Max) 与邻近模型的分差和名次变化，读者可以据此比较它在编码与文本上的实际位置。\n由 @AIatMeta 推出的 Muse Wonder (Max) 已进入 Code Arena：WebDev 以 1651 分位列第 15，Text Arena 以 1513 分位列第 2！\n在 Code Arena：WebDev 中，Muse Wonder (Max) 以 1651 分位列第 15。这一结果略低于以 1659 分位列第 12 的 Muse Spark 1.3 (Max)，与以 1655 分位列第 14 的 Kimi K3 (Max) 相差 4 分以内，并比以 1640 分位列第 16 的 Grok 4.7 (xHigh) 高 11 分。\n此次发布在 Text Arena 中相较过去的 Muse 模型有显著提升。与以 1494 分位列第 11 的 Muse Spark 1.3 (Max) 相比，Muse Wonder (Max) 提升了 +19 分并上升 9 位至第 2。它落后于以 1525 分排名第 1 的 Gemini 4 Argon (High) 12 分。\nWe’re excited to introduce the Muse Wonder series with Muse Wonder and Muse Wonder Full, our most capable models yet. Both are frontier models, built to deliver state-of-the-art performance for personal and professional agentic tasks. Muse Wonder is available today via the Meta Model API and Muse Code. Muse Wonder Full is available today for Muse Code subscribers. Muse Wonder will also soon power experiences in our personal agent product, Muse, rolling out first to subscribers.\n榜单给出了 Muse Wonder (Max) 与邻近模型的分差和名次变化，读者可以据此比较它在编码与文本上的实际位置。"
+  },
+  {
+   "group": "wh",
+   "source": "DC Velocity",
+   "title": "Symbotic says latest acquisition uses conveyor automation to free up DC space",
+   "url": "https://www.dcvelocity.com/material-handling/robotics/symbotic-says-latest-acquisition-uses-conveyor-automation-to-free-up-dc-space",
+   "published": "2026-10-13T20:50:24.000Z",
+   "description": "The Massachusetts-based warehouse robotics vendor Symbotic has bought a German firm that provides a software-driven sortation system , saying the platform replaces traditional conveyor infrastructure with intelligent, omnidirectional movement. Symbotic bought Cellumation GmbH , a Bremen, Germany-based automation company and creator of the “celluveyor,” a software-driven sortation technology. Cellumation says its system is made up of hundreds of independently controlled, omnidirectional cells. Each cell can move an item in any direction, meaning the celluveyor does not simply move products; it ",
+   "excerpt": "Massachusetts firm leverages Walmart and Softbank backing to buy German intelligent conveyor firm Cellumation.\nBen Ames has spent 30 years as a journalist since starting out as a reporter for daily newspapers in Pennsylvania and Massachusetts. He has focused on business and technology reporting since 1999 for trade journals including Cahners’ Design News and Modern Materials Handling magazines, and other magazines with PennWell and IDG. A native New Yorker, Ames went to college in Maine and now lives with his family outside of Boston, where they all love to hike and kayak.\nThe Massachusetts-based warehouse robotics vendor Symbotic has bought a German firm that provides a software-driven sortation system , saying the platform replaces traditional conveyor infrastructure with intelligent, omnidirectional movement.\nSymbotic bought Cellumation GmbH , a Bremen, Germany-based automation company and creator of the “celluveyor,” a software-driven sortation technology.\nCellumation says its system is made up of hundreds of independently controlled, omnidirectional cells. Each cell can move an item in any direction, meaning the celluveyor does not simply move products; it decides where products should go while moving them. That technology is particularly relevant in industries and markets where facility footprints are constrained and efficient use of space is increasingly critical, and is currently being used in live deployments for postal, e-commerce, and logistics operators worldwide, the firm said.\nAccording to Symbotic, the firm’s technology will enable Symbotic to simplify cell architecture and free up critical warehouse space for more storage and other high-value uses, with the potential to reduce capital equipment costs. After the deal closes, Cellumation will continue to operate under its own name from its headquarters in Germany, serving its global customer-base while accelerating Symbotic’s expansion across Europe.\nThe move marks the latest acquisition for Symbotic. “Building on our recent acquisitions of ARMS Innovations and Fox Robotics, this transaction brings another diversified, standalone product into Symbotic’s portfolio – one that will be sold both directly to customers and other integrators, and integrated into Symbotic’s solutions,” said Rick Cohen, Chairman and CEO of Symbotic.\nSymbotic has deep ties with Walmart—which in 2022 said it would install Symbotic’s robotics and software automation platform in all 42 of the retail giant’s regional distr"
+  },
+  {
+   "group": "wh",
+   "source": "DC Velocity",
+   "title": "U.S. container imports reached their highest September on record",
+   "url": "https://www.dcvelocity.com/transportation/maritime-ocean/u-s-container-imports-reached-their-highest-september-on-record",
+   "published": "2026-10-13T20:42:28.000Z",
+   "description": "U.S. container imports reached their highest September volume on record, reaching 24.8% above the pre-Covid mark of September, 2019, according to the Global Shipping Report from supply chain software vendor Descartes. By the numbers, September imports to the U.S. totaled 2,546,261 twenty-foot equivalent units (TEUs) in September 2026, down 2.2% from August and up 10.3% from September 2025. The increase came despite stormy conditions in worldwide container flows. Descartes cited an array of changes to trade conditions, including: Middle East maritime incidents and new carrier fuel charges added",
+   "excerpt": "Descartes analysis finds the U.S. imported 2.5 million TEUs, which was 24.8% above the pre-Covid mark of September, 2019.\nU.S. container imports reached their highest September volume on record, reaching 24.8% above the pre-Covid mark of September, 2019, according to the Global Shipping Report from supply chain software vendor Descartes.\nBy the numbers, September imports to the U.S. totaled 2,546,261 twenty-foot equivalent units (TEUs) in September 2026, down 2.2% from August and up 10.3% from September 2025.\nThe increase came despite stormy conditions in worldwide container flows. Descartes cited an array of changes to trade conditions, including: Middle East maritime incidents and new carrier fuel charges added to routing and cost risk; Section 232 tariff treatment for specified pharmaceuticals took effect for additional companies on September 29; the Panama Canal Authority announced a partial restoration of transit capacity; and some carriers are resuming selected Suez Canal services even as Red Sea security remains uncertain.\nMuch of the increase was driven by China-origin imports, the numbers showed. U.S. containerized imports from China reached 924,454 TEUs in September 2026, increasing 40,136 TEUs (4.5%) from August and 161,682 TEUs (21.2%) from September 2025 (see Figure 4). China represented 36.3% of total U.S. container imports, up from 34.0% in August.\nChina’s September import mix was led by plastics (HS-39), at 135,097 TEUs (14.6% of China-origin volume), followed by furniture and bedding (HS-94), at 123,574 TEUs (13.4%), and toys and sporting goods (HS-95), at 92,842 TEUs (about 10%). Machinery (HS-84) and electrical machinery (HS-85) accounted for a combined 17.6%, while apparel, made-up textiles, and footwear (HS-61 through HS-64) represented 11.1%.\nThe Descartes report also described the factors it is tracking as it seeks to manage supply chain risk in the months ahead:"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Character.ai 破产文件显示 AI 商业模式难以为继",
+   "url": "https://aihot.news/items/pjy8fk8cfl1qvwex08y6kdau8",
+   "published": "2026-10-13T20:06:53.000Z",
+   "description": "Character.ai 进入破产程序，法院文件显示其商业模式难以支撑开支。公司 2024 年每月 AI 算力支出 1380 万美元、2025 年为 1000 万美元，订阅收入峰值仅每月 280 万美元，含广告的全部收入峰值 530 万美元；2026 年 1 至 8 月算力支出 5610 万美元，8 月时每月仍亏损约 800-900 万美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pjy8fk8cfl1qvwex08y6kdau8",
+   "excerpt": "Character.ai's Bankruptcy Documents Show the Economics of AI Don't Work\nCharacter.ai 进入破产程序，法院文件显示其商业模式难以支撑开支。公司 2024 年每月 AI 算力支出 1380 万美元、2025 年为 1000 万美元，订阅收入峰值仅每月 280 万美元，含广告的全部收入峰值 530 万美元；2026 年 1 至 8 月算力支出 5610 万美元，8 月时每月仍亏损约 800-900 万美元。\n破产文件披露了收入与算力开支的具体数字，让读者能据此衡量二线 AI 公司商业模式的真实成本。\nCharacter.ai 的破产是早已被预见的 AI 泡沫中倒下的第一块多米诺骨牌之一。其破产的境况 正是 AI 批评者们一直预言会发生的事 ：Character.ai 在运营产品上烧掉了巨额资金，却没有带来多少收入，并在对用户造成伤害后面临巨额法律费用。根据周二在破产法庭提交的陈述，通过降低产品质量来试图削减开支的做法并未奏效。\n据报道， Disney 已向 Character.ai 出价 2000 万美元，以授权其部分知识产权；去年， Disney 向 Character.ai 发出了 停止侵权函，要求其停止未经许可使用其受版权保护的角色。2023 年，该公司在由 a16z 领投的一轮融资中筹集了 1.5 亿美元，估值达到 10 亿美元。\nCharacter.ai 是最知名的 AI 聊天机器人公司之一，在 AI 伴侣领域广受欢迎。该公司面临各种法律问题，此前被一名用户的家人起诉，该用户在与 Character.ai 聊天机器人交谈后自杀；由于其深受儿童欢迎，它还成为 监管机构推动年龄验证 技术的目标。在破产申请文件中，该公司表示其巨额法律费用导致了破产，但即便没有法律问题，其业务也极度不可持续。\nCharacter.ai 首席执行官 Colin Adams 在破产法庭提交的 宣誓书中 直言：“Character 令人印象深刻的技术运营成本高昂”，并且“Character 始终在盈利方面苦苦挣扎，其运营支出一直很高。”\n该公司表示，2024 年，公司每月在 AI 算力上花费 1380 万美元；2025 年，每月在 AI 算力上花费 1000 万美元。该公司的订阅收入峰值达到每月 280 万美元，但有时每月不足 100 万美元。其包括广告在内的所有来源收入峰值达到每月 530 万美元。\n仅在 2026 年 1 月至 8 月期间，该公司就在算力成本上花费了 5610 万美元，截至 8 月，每月亏损“约 800 万至 900 万美元”，该公司称这比上年有了巨大改善。该公司表示，在同一八个月期间，公司在员工薪资和福利上花费了 1970 万美元，并且大量员工离职，因为他们“开始质疑 Character 的长期生存能力”。\nCharacter 表示，通过采取“重大行动来降低运营成本并提高收入”——包括简化 AI 模型以减少算力支出、裁员以及在聊天中植入广告——其财务状况已 改善 到每月仅亏损 800 万至 900 万美元。\n5月， 404 Media 写道，Character.ai 的这些变化 正是“AI 恶化（enshittification）的样子”，充斥着大量广告、使用限制、护栏以及被“阉割”的模型。在破产申请文件中，Adams 实质上承认这种恶化就是其战略：“然而，Character 已采取重大措施来降低运营消耗，包括将推理工作负载转移到成本更低的 GPU 算力上，并采用后训练的开源权重模型，而非开发专有的基础模型。与此同时，Character 削减了员工人数，”他写道。“2025 年年中，Character 推出了应用内广告 […] 2026 年初，Character 还引入了应用内购买。”\n虽然针对 Character 的诉讼意义重大，但对于一个一直饱受与窃取知识产权 以及向用户暗示自残 或暴力相关的法律问题困扰的 AI 行业来说，这也并不罕见。换句话说，Character 破产申请文件中的内容，放在许多其他 AI 公司身上也同样成立——这些公司在算力上投入巨资，却没有能够支撑这些投入的营收模式。Character AI 与 OpenAI、Anthropic、Meta 和 Google 等巨头之间的区别在于，那些公司能够反复获得新的资金注入，或者像 Meta 和 Google 那样，能够用其庞大广告业务的收入来补贴其 AI 产品。\n该公司 在一篇博客文章中 表示，它将在破产程序期间继续运营：“Character.ai 平台仍在运行，目前你仍可以继续访问所有服务。我们正专注于为我们的平台和社区寻找最佳的前进道路。”\n随着大玩家的前沿模型变得越来越好、护栏越来越少，它们也很可能会继续蚕食像 Character.ai 这样更专业化的产品的用户群。例如，你在 Character.ai 上能做的很多事情，在 ChatGPT 或 Meta 的 Muse 上也能做。目前尚不清楚像 OpenAI 和 Anthropic 这样的 AI 巨头，或者整个 AI 行业，是否已经大到或重要到不能倒，但 Character 的破产表明，二线玩家的跑道已经到头了。\n破产文件披露了收入与算力开支的具体数字，让读者能据此衡量二线 AI 公司商业模式的真实成本。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "OpenAI 办公室发现窃密录音装置，涉事员工被捕",
+   "url": "https://aihot.news/items/fgxi5gwvctlssc05odpcyf6ov",
+   "published": "2026-10-13T19:48:42.000Z",
+   "description": "OpenAI 宣布在办公室内发现一个隐蔽的录音装置，利用自家模型分析该设备及其来源，确认是一名员工几天前安放。OpenAI 已将此事移交 FBI，FBI 已迅速逮捕相关人员，调查仍在进行中。OpenAI 表示目前没有迹象显示该员工不当访问或外泄模型权重、源代码或客户数据，该员工已被解雇，并将此案视为 AI 协助应对复杂安全威胁的实例。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fgxi5gwvctlssc05odpcyf6ov",
+   "excerpt": "OpenAI 宣布在办公室内发现一个隐蔽的录音装置，利用自家模型分析该设备及其来源，确认是一名员工几天前安放。OpenAI 已将此事移交 FBI，FBI 已迅速逮捕相关人员，调查仍在进行中。OpenAI 表示目前没有迹象显示该员工不当访问或外泄模型权重、源代码或客户数据，该员工已被解雇，并将此案视为 AI 协助应对复杂安全威胁的实例。\n原文给出事件经过、FBI 处理结果和数据安全排查结论，读者可以据此了解该安全事件的完整脉络。\n我们发现了一个精密的录音设备，藏在我们的一间办公室里。我们利用我们的模型来了解这个设备及其来源，确认是一名特定员工在几天前放置的。我们将此事移交给了FBI，我们感谢迅速采取行动实施逮捕的特工和检察官。FBI的调查仍在进行中，我们将继续支持他们的工作。\n目前，我们没有迹象表明此人曾不当访问或窃取模型权重、源代码或客户数据。该员工已被解雇。\n我们严肃对待保护我们的技术、数据和人员，并将其视为国家大事。我们的安全计划旨在防范各种威胁行为者，从内部风险到网络犯罪分子再到民族国家，此案正是AI如何帮助应对这些精密安全威胁的一个例子。\n原文给出事件经过、FBI 处理结果和数据安全排查结论，读者可以据此了解该安全事件的完整脉络。"
+  },
+  {
+   "group": "ai",
+   "source": "Google DeepMind",
+   "title": "Developing Gemini 4 Argon responsibly and safely",
+   "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+   "published": "2026-10-13T19:43:07.000Z",
+   "description": "",
+   "excerpt": "Learn more about our approach to safety and security for Gemini 4 Argon.\nGemini 4 Argon is a step forward in what models can do — especially when it comes to deep work in complex, real-world tasks across domains including coding, finance, legal, cybersecurity, and science. Its cyberdefense capabilities are frontier-level and designed to give defenders an advantage over attackers. To maximize its potential, we first wanted cyber defenders to put it to work via our Fairwind Program , while our own security teams used it to scan critical systems inside and outside of Google.\nThis window of limited access showed why these capabilities matter. For instance, Wiz used Argon to uncover a critical bug in hospital software that previous models had missed, helping protect hundreds of thousands of patient records. Meanwhile, Google’s own security teams used Argon to find and patch bugs across internal software or open-source software. This included fixing foundational vulnerabilities affecting systems globally, which are going through our responsible disclosure process.\nToday, we are beginning to roll out Argon broadly , as well as expanding our Fairwind Program to additional trusted cyber defenders. To do this well, we grappled with two big questions:\nOur full Safety and Security Report systematically covers our set of defenses. Below are some highlights from how we approached these two questions for Gemini 4 Argon.\nThe same coding and reasoning improvements that enabled Argon to find and patch vulnerabilities also drove better performance on our cybersecurity tests — solving all 12 of the end-to-end simulated cyberattack scenarios, up from five in our previous generation. In biology evaluations, unguarded versions of the model also showed a much stronger ability to help troubleshoot complex lab procedures step by step. Following our Frontier Safety Framework , since we saw elevated capabilities in the cyber and biological domains, we put our next-generation set of frontier safeguards in place across both areas.\nFirst, when it comes to potentially dangerous requests — from writing exploit code to helping with dangerous biological materials, Argon is significantly better at not fulfilling harmful requests than our previous models. On an adversarial set meant to stress test the model, violations reduced nearly twofold — also significantly better than previous Gemini models. Second, we wrap the model in three layers of real-time protection; this is to prevent determined"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "ComfyUI 上线 NVIDIA VFX 节点，支持视频超分、补帧与 SDR 转 HDR",
+   "url": "https://aihot.news/items/uy1d8e2pcm6sked0p57flawpq",
+   "published": "2026-10-13T19:41:39.000Z",
+   "description": "NVIDIA 的 RTX 视频特效模型以自定义节点形式登陆 ComfyUI，模型随节点分发并在本地 RTX GPU 上运行。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uy1d8e2pcm6sked0p57flawpq",
+   "excerpt": "Nvidia VFX Nodes for Video Upscaling, Frame Generation and SDR-to-HDR, for VFX Professionals\nNVIDIA 的 RTX 视频特效模型以自定义节点形式登陆 ComfyUI，模型随节点分发并在本地 RTX GPU 上运行。\n原文完整给出三个节点的能力参数、推荐串联顺序和 EXR 改进细节，VFX 从业者可据此评估是否接入现有 ComfyUI 工作流。\n原文完整给出三个节点的能力参数、推荐串联顺序和 EXR 改进细节，VFX 从业者可据此评估是否接入现有 ComfyUI 工作流。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "XBOW 团队借助 OpenAI GPT-5.6 Sol 获 Google Chrome 25 万美元全链漏洞赏金",
+   "url": "https://aihot.news/items/ekphiltd4fdsskdlueleul8qa",
+   "published": "2026-10-13T19:15:03.000Z",
+   "description": "XBOW 团队使用 OpenAI 的 GPT-5.6 Sol 辅助，在 6 天内以 4 万美元算力构建出 Chrome 全链漏洞，获得 Google 25 万美元赏金，这是 Google 第二次就 Chrome 全链漏洞发放赏金，也是 2026 年新规则下的首次。受影响范围为 Windows 上的 Chrome，作者称过去类似漏洞需约 6 个月构建，并提醒用户在出现 Update 按钮时及时重启 Chrome。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ekphiltd4fdsskdlueleul8qa",
+   "excerpt": "XBOW 团队使用 OpenAI 的 GPT-5.6 Sol 辅助，在 6 天内以 4 万美元算力构建出 Chrome 全链漏洞，获得 Google 25 万美元赏金，这是 Google 第二次就 Chrome 全链漏洞发放赏金，也是 2026 年新规则下的首次。受影响范围为 Windows 上的 Chrome，作者称过去类似漏洞需约 6 个月构建，并提醒用户在出现 Update 按钮时及时重启 Chrome。\n原文给出赏金金额、6 天构建周期和 4 万美元算力等具体细节，可帮助读者理解 AI 辅助漏洞挖掘成本变化的实际案例。\n原文给出赏金金额、6 天构建周期和 4 万美元算力等具体细节，可帮助读者理解 AI 辅助漏洞挖掘成本变化的实际案例。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Gemini 4 Argon 正式 GA，智能指数追平 GPT-6 Astra，Cost per Task 仅为 60%",
+   "url": "https://aihot.news/items/w2fkb8pssvuc0mtttxnufchc9",
+   "published": "2026-10-13T18:00:33.000Z",
+   "description": "Gemini 4 Argon 正式进入 GA，在 Artificial Analysis Intelligence Index 上与 GPT-6 Astra 排名持平，Cost per Task 为后者的 60%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/w2fkb8pssvuc0mtttxnufchc9",
+   "excerpt": "Gemini 4 Argon 正式进入 GA，在 Artificial Analysis Intelligence Index 上与 GPT-6 Astra 排名持平，Cost per Task 为后者的 60%。\n原文给出 Gemini 4 Argon 与 GPT-6 Astra 的智能指数对比及折扣期定价细节，可用于评估模型的性价比选择。\nGemini 4 Argon 现已正式发布（GA）。Argon 在 Artificial Analysis Intelligence Index 上与 GPT-6 Astra 排名持平，每任务成本仅为其 60%，且优惠价格持续至 11 月 30 日\n要点： - Google 重新向公众发布了前沿模型：这是 Google 七个多月以来首个高于 Flash 级别的专有模型\n- 价格临时折扣至 50%，持续至 11 月 30 日：Gemini 4 Argon 在折扣价下每任务成本为 $1.99，在同等智能水平下比 GPT-6 Astra（max）降低约 40%。目前定价为每 1M 输入/输出 token $2/$10，缓存读取享受 95% 折扣（此前 Gemini 模型为 90%）。11 月 30 日后价格将上涨至 $4/$20\n- 智能体性能大幅提升：Gemini 4 Argon 在 AA-Briefcase、AutomationBench-AA、Terminal Bench 4 等智能体评估中展现出显著改进。这一领域此前 Google 的模型相比领先同行一直表现不佳\n领先模型中最低的幻觉率：在 AA-Omniscience 上，Gemini 4 Argon 的幻觉率为 15%，是所有在 Intelligence Index 上得分 45+ 的模型中最低的\n原文给出 Gemini 4 Argon 与 GPT-6 Astra 的智能指数对比及折扣期定价细节，可用于评估模型的性价比选择。"
+  },
   {
    "group": "wh",
    "source": "Logistics Viewpoints",
@@ -295,15 +429,6 @@
    "excerpt": "Scan Computers has entered into a partnership with Sheffield-based OLO Robotics , combining Scan’s robotics hardware, AI infrastructure and technical expertise with OLO’s browser-based platform and specialist robotics engineering, to make advanced robotics easier to access and deploy.\nOLO’s platform brings teleoperation, simulation and autonomous navigation together in the browser. With it, you can quickly and easily test robots in a safe virtual environment, monitoring their sensors and developing code that determines their behaviour, before deploying them in the real world.\nBecause it needs no installation, OLO can be used from practically any device, and it runs on top of ROS 2, so each robot keeps its full features and capabilities.\nThe new partnership allows Scan to make its range of Unitree robots accessible to teams without specialist ROS developers, adding further value to the platforms.\nCustomers can pair a Unitree robot from Scan with OLO and go from unboxing to autonomous navigation, whether the goal is industrial inspection, academic research or prototyping.\nAkash Raja, Director of Robotics at Scan, said: “OLO Robotics’ innovative and user-friendly software perfectly complements our own ecosystem of GPU-accelerated robots, strengthening our position as a complete solution provider for robotics in the UK.”\nEleanor Tang-Smith, co-founder and COO of OLO Robotics, said: “Buying a capable robot has become straightforward. Getting it to do useful work is still the hard part, and it usually depends on specialist ROS engineers who are in short supply.\n“Working with Scan means a customer can unbox a robot, connect it through a browser and start building inspection, research or prototyping applications without that barrier. Together we can give organisations a complete route from first idea to deployment.”\nScan is an Nvidia Elite Partner and OLO Robotics is a member of the Nvidia Inception programme . OLO Robotics will be at the Scan stand 3068 at Nvidia GTC Berlin, October 20-22nd.\nOur website relies on ads to provide free content and sustain our operations. By turning off your ad blocker, you help support us and ensure we can continue offering valuable content without any cost to you.\nWe truly appreciate your understanding and support. Thank you for considering disabling your ad blocker for this website"
   },
   {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Google 发布 Gemini 4 Argon 并逐步推送至 Gemini 应用",
-   "url": "https://aihot.news/items/togu0fgnc2t2ghpnzlg61ev4o",
-   "published": "2026-10-13T16:05:51.000Z",
-   "description": "Google Gemini 宣布新前沿模型 Gemini 4 Argon 正在 Gemini 应用中逐步推出，定位是把复杂想法变为现实。作者还预告将以推文串介绍 Gemini 4 Argon 及应用内最新更新如何提升每条提示词的效果。 🔗 阅读原文 via AIHOT · https://aihot.news/items/togu0fgnc2t2ghpnzlg61ev4o",
-   "excerpt": "Google Gemini 宣布新前沿模型 Gemini 4 Argon 正在 Gemini 应用中逐步推出，定位是把复杂想法变为现实。作者还预告将以推文串介绍 Gemini 4 Argon 及应用内最新更新如何提升每条提示词的效果。\n我们的全新前沿模型 Gemini 4 Argon 现已在 Gemini 应用中推出，助你将最复杂的想法变为现实。\n看看 Gemini 4 Argon 以及 Gemini 应用中的最新更新如何帮助你充分利用每一次提示。🧵"
-  },
-  {
    "group": "wh",
    "source": "Robotics & Automation News",
    "title": "PlusAI moves closer to Nasdaq listing as it targets 2027 autonomous truck launch",
@@ -320,15 +445,6 @@
    "published": "2026-10-13T16:01:58.000Z",
    "description": "",
    "excerpt": "Gemini 4 Argon marks a step change in physical understanding, code generation, and visual-semantic reasoning—unlocking new workflows across the robotics stack and accelerating progress toward physical AGI.\nYou can see this leap in capability on the Embodied Reasoning (ERQA) benchmark , which tests a model's ability to understand and solve physical, spatial problems in 3D environments. Using pure reasoning, Argon scores 87%, outperforming every other frontier model.\nAs a general-purpose physical reasoning model, Argon can be applied across the entire robotics lifecycle. In this post, we share representative prompts for Argon across four key areas:\nArgon controls a Boston Dynamics Spot® quadruped (12-DoF legs + 6-DoF arm) to learn a new skill: stepping on a foot-pedal trash bin to throw away soda cans. Argon creates an articulated MuJoCo digital twin of a foot-pedal trash bin to practice its moves before stepping on the physical pedal and dropping soda cans into the open bin.\nSorry, your browser doesn't support playback for this video\nArgon controls a simple robotic arm to place a fallen mug upright and put the crumpled napkin inside. Argon reasons with a visual coordinate harness and action primitives to perform this task over several turns.\nSorry, your browser doesn't support playback for this video\nArgon steers robots in the Gemini Omni World Model to rearrange five scattered Scrabble tiles ( G, R, A, N, O ) into a clean row spelling A - R - G - O - N . Instead of specifying one static prompt, Argon steers in a closed visual loop. It writes timestamped action prompts, inspecting intermediate rollout keyframes, and refining its prompts.\nSorry, your browser doesn't support playback for this video\nArgon views a real robot teleoperation episode and develops a digital twin; it obtains or creates simulation assets that look and behave like the real objects upon contact with the dexterous hands. Argon tunes the assets and scenes to match sim visuals and contact events with those in the real recorded data in an iterative visual-reasoning loop.\nSorry, your browser doesn't support playback for this video\nGiven an egocentric human video of a manipulation task, Argon identifies the task-relevant objects, replaces crude bounding boxes with compound convex-decomposed meshes for concave containers, and retargets the human hand trajectory onto a 76-DoF bimanual humanoid with 22-DoF five-fingered hands in MuJoCo contact physics.\nSorry, your browser doesn't support playbac"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Google DeepMind 发布 Gemini 4 Argon 机器人模型，ERQA 基准得分 87%",
-   "url": "https://aihot.news/items/op2q1wocmlbuvauflpfdb7u0f",
-   "published": "2026-10-13T16:01:58.000Z",
-   "description": "Google DeepMind 发布 Gemini 4 Argon，定位为通用物理推理模型，在 Embodied Reasoning（ERQA）基准上以纯推理得分 87%，超过其他前沿模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/op2q1wocmlbuvauflpfdb7u0f",
-   "excerpt": "Google DeepMind 发布 Gemini 4 Argon，定位为通用物理推理模型，在 Embodied Reasoning（ERQA）基准上以纯推理得分 87%，超过其他前沿模型。\n官方发布了在机器人控制、Real2Sim 和自我改进等环节的具体示例，读者可以据此判断它在具身工作流中的实际用法。\nGemini 4 Argon 在物理理解、代码生成和视觉语义推理方面实现了跨越式提升——解锁了机器人技术栈中的全新工作流，并加速了迈向物理 AGI 的进程。\n你可以在 具身推理（ERQA）基准测试 中看到这一能力飞跃，该测试评估模型理解和解决 3D 环境中物理、空间问题的能力。仅凭纯推理，Argon 就取得了 87% 的成绩，超越了所有其他前沿模型。\n作为一个通用物理推理模型，Argon 可应用于整个机器人生命周期。在本文中，我们分享了 Argon 在四个关键领域的代表性提示词：\nArgon 控制一台 Boston Dynamics Spot® 四足机器人（12 自由度腿部 + 6 自由度机械臂）学习一项新技能：踩下脚踏式垃圾桶的踏板，把汽水罐扔进去。Argon 创建了一个脚踏式垃圾桶的铰接式 MuJoCo 数字孪生体，在踩下实体踏板并将汽水罐投入打开的垃圾桶之前先练习动作。\nSpot 移动操作——从真实到仿真再到真实的脚踏式垃圾桶丢弃：Spot 捡起汽水罐，查看其腕部摄像头，在 MuJoCo 中练习三腿三角支撑平衡，踩下脚踏板，确认手部位于打开的垃圾桶中心，然后将罐子投入其中。\nArgon 控制一只简单的机械臂，将倒下的马克杯扶正，并把揉皱的餐巾纸放进去。Argon 借助视觉坐标约束和动作原语进行推理，在多个回合中完成这项任务。\n左：第三人称真实机器人视角；右：经过校准的腕部摄像头，带有投影的 2 厘米世界坐标和夹爪闭合准星。\nArgon 在 Gemini Omni World Model 中引导机器人将五个散落的拼字游戏 tiles（ G, R, A, N, O ）重新排列成整齐的一行，拼出 A - R - G - O - N 。Argon 不是指定一个静态提示词，而是在闭环视觉回路中进行引导。它编写带时间戳的动作提示词，检查中间 rollout 关键帧，并不断优化其提示词。\n迭代式视频世界模型引导灵巧手：33 步引导视频 rollout 拼出 A-R-G-O-N。\nArgon 观看一段真实的机器人遥操作片段并构建数字孪生；它获取或创建在灵巧手接触时外观与行为都与真实物体一致的仿真资产。Argon 在迭代式视觉推理循环中调整资产与场景，使仿真视觉和接触事件与真实录制数据中的一致。\n左（真实视图）：同步的真实机器人摄像头画面；右（仿真）：由 Argon 重建并校准的 3D MuJoCo 场景。\n给定一段操作任务的第一人称人类视频，Argon 识别任务相关物体，将粗糙的边界框替换为针对凹形容器的复合凸分解网格，并在 MuJoCo 接触物理中将人类手部轨迹重定向到具有 22 自由度五指手的 76 自由度双臂人形机器人上。\n人类视角到仿真——第一人称人类视频到灵巧人形孪生：左侧显示输入的第一人称人类 RGB 视频；右侧显示同步的 500 Hz MuJoCo + Blender Cycles 多视角仿真推演。\n借助 Argon，开发者可以拍下一张粗略的纸笔草图——图中一个 Apollo 2 人形机器人沿抛物线弧抛出球，以推倒桌上 3-2-1 堆叠的箱子——Argon 会自动构建 GPU 加速的 mujoco_warp 场景，合成平衡的 76 自由度全身与五指抛掷轨迹，在闭环物理中验证 6/6 目标击倒，并导出 Blender 4.5 Cycles 渲染。\nArgon 对灵巧操作具有精确的物理理解，能够从视频中提供详细的分割和文本标注。Argon 能够识别出诸如停顿、不稳定抓取和失误等糟糕的操作片段。给定一段俯视视频，内容为双臂 ALOHA 2 机器人在 136 秒内将一张方形纸折成折纸狐狸，Argon 生成时间对齐的 4 级事后标注层级：回合目标（G1）、6 个连续语义子任务（G2）、17 个接触级原子原语（G3），以及自动质量控制（QC）重加权，在失误和重试期间保持任务进度平稳。\n为了用机器人重现经典的 12 球天平谜题，Argon 构建了一个双臂 Franka FR3 MuJoCo 环境，包含 12 个外观相同的台球（其中一个秘密地更重或更轻）以及一个铰接式 Roberval 双盘天平。随后它编写了一个仅基于视觉的闭环求解器，通过立体 RGB 相机对球进行三角定位，在每次称重后视觉读取天平倾斜，并在 3 次称重内将异球分离到重（红）或轻（蓝）托盘中。\n找出异球（仅视觉闭环求解器）：双臂 Franka FR3 在 Gold/Teal 秤盘上称量候选球，读取立体秤倾斜，并在 3 次称量中将确认的 Heavy 异球隔离到 Red 托盘中。\nArgon 是机器人任务的通用价值函数。在来自人类 UMI 数据集的 60 秒双臂环形分拣回合上进行评估，Argon 在接触转换前后迭代检查同步的头部、左夹爪和右夹爪摄像头画面，以生成密集的价值函数/任务进度预测，并将轨迹分解为 28 个具有正向、中性和负向进度斜率的片段。\n价值函数：同步的 3 摄像头 UMI 回放（头部、左夹爪、右夹爪），锁定到动画任务进度曲线和双臂片段标注。\nArgon 可以在仿真中生成新数据，以提升通用视觉-语言-动作（VLA）模型的性能。从真实桌面的单张 RGB 照片开始，Argon 自主构建经过校准的 MuJoCo 仿真孪生体，定义新任务，并合成闭环运动生成器，以在仿真中收集 4,500+ 个域随机化回合——将真实世界物理机器人成功率从 56% 提升到 75% ，并将完成时间从 35s 缩短到 24s 。\n通过仿真进行动作改进：改进真实世界评估基准（56% → 75% 成功率，35s → 24s 完成时间）。\n在简单的 6 自由度机械臂上，Argon"
   },
   {
    "group": "ai",
@@ -409,6 +525,24 @@
    "url": "https://www.supplychaindive.com/news/panama-canal-challenges-drive-shippers-to-port-of-los-angeles/832748/",
    "published": "2026-10-13T14:49:00.000Z",
    "description": "High fuel costs are also pushing shippers and carriers to shift volume to the San Pedro Bay port to avoid longer transit times.",
+   "excerpt": ""
+  },
+  {
+   "group": "wh",
+   "source": "Supply Chain 24/7 自动化",
+   "title": "How Can Warehouses Scale Operations During Peak Season?",
+   "url": "https://www.supplychain247.com/paper/how-can-warehouses-scale-operations-during-peak-season",
+   "published": "2026-10-13T14:48:00.000Z",
+   "description": "Explore how warehouse automation helps manage peak season labor shortages, accelerate picking, shorten training, and scale fulfillment capacity with demand.",
+   "excerpt": ""
+  },
+  {
+   "group": "wh",
+   "source": "Supply Chain 24/7 自动化",
+   "title": "Report: Walmart’s Shipping Boxes Are Too Tall for Its Warehouse Robots",
+   "url": "https://www.supplychain247.com/article/walmart-warehouse-automation-packaging-robot-costs",
+   "published": "2026-10-13T14:13:00.000Z",
+   "description": "Walmart’s warehouse automation push faces packaging problems, robot repairs, and higher power bills as the retailer expands its rollout.",
    "excerpt": ""
   },
   {
@@ -521,6 +655,15 @@
   },
   {
    "group": "ai",
+   "source": "OpenAI",
+   "title": "Higgsfield takes AI video from 1 minute to over 10",
+   "url": "https://openai.com/index/higgsfield-longer-videos-voice",
+   "published": "2026-10-13T12:00:00.000Z",
+   "description": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live.",
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
    "source": "AIHOT",
    "title": "LangChain 发布 langchain-scaledown 集成，用 ScaleDown 约束解码模型管理长时智能体上下文",
    "url": "https://aihot.news/items/uljn62mk9ujyya1xg51hc6dp8",
@@ -576,6 +719,15 @@
   {
    "group": "ai",
    "source": "AIHOT",
+   "title": "Pydantic AI 创始人 Samuel Colvin：图库是个错误，代码本身就是图",
+   "url": "https://aihot.news/items/tmj0de0vmzpezz0o5j67nqskj",
+   "published": "2026-10-13T09:00:00.000Z",
+   "description": "Pydantic AI 创始人 Samuel Colvin 发文认为图库是个错误，代码本身就是图，通过类型提示获得类型安全、通过 async 获得并行执行。他提出图 API 存在类似 CAP 定理的取舍，类型安全、并行与快照三者不可兼得，并以此解释为何在 pydantic-graph V2 移除持久化、将持久执行交给 Temporal。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tmj0de0vmzpezz0o5j67nqskj",
+   "excerpt": "Pydantic AI 创始人 Samuel Colvin 发文认为图库是个错误，代码本身就是图，通过类型提示获得类型安全、通过 async 获得并行执行。他提出图 API 存在类似 CAP 定理的取舍，类型安全、并行与快照三者不可兼得，并以此解释为何在 pydantic-graph V2 移除持久化、将持久执行交给 Temporal。\n作者以自建图库的亲历论证代码即图，并给出类型安全、并行与快照三者不可兼得的具体分析。\n作者以自建图库的亲历论证代码即图，并给出类型安全、并行与快照三者不可兼得的具体分析。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
    "title": "千问发布AI眼镜N1/N1 Pro及首款AI耳夹式耳机并现货开售",
    "url": "https://aihot.news/items/bnwd1psqg66c268n4i1mal2pi",
    "published": "2026-10-13T08:06:57.000Z",
@@ -590,6 +742,15 @@
    "published": "2026-10-13T06:00:00.000Z",
    "description": "📝 今日导语 淘宝校准线上评测，Anthropic 解耦智能体，Meta 利用闲置算力：读懂质量、恢复与成本的工程取舍。 🏷 今日关键词： 线上评测 Claude Managed Agents Meta 推理容量 Skill 优化 企业 AI 改造 📰 今日精选内容 淘宝 AI 购物助手在线评测落地实践 大淘宝技术 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 91 让大脑与双手解耦：Claude Managed Agents（第 1 部分）｜Anthropic AI Engineer &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 91 将机会性 AI 推理能力转化为更好的广告推荐 Engineering at Meta &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 让金融规划师亲手编写 Agent：Range 的五步方法 AI Engineer &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 爬坡式优化 Skill：Browserbase 教智能体积累浏览器操作经验 AI Engineer &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 AWS 沙箱测试：让 Agent 运行1000项任务，暴露代码执行中的问题 AI Engineer &nbsp;·&",
    "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "Simon Willison",
+   "title": "web-edit 0.1a1",
+   "url": "https://simonwillison.net/2026/Oct/13/web-edit/",
+   "published": "2026-10-13T01:40:05.000Z",
+   "description": "Release: web-edit 0.1a1 Includes performance optimizations written by Claude Opus 5.5 after I fed it this Python 3.15 profiling report generated by GPT-6 Astra. Tags: profiling , projects",
+   "excerpt": "Includes performance optimizations written by Claude Opus 5.5 after I fed it this Python 3.15 profiling report generated by GPT-6 Astra.\nThis is a beat by Simon Willison, posted on 13th October 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
   },
   {
    "group": "ai",
@@ -644,6 +805,15 @@
    "published": "2026-10-13T00:00:00.000Z",
    "description": "Anthropic 发布工程复盘，因 Claude 使日均合并代码量从 2026 年 5 月约 2,500 增至 9 月超 30,000，五个月内自研版本控制系统 Scion 并完全替代 git，同时推出代码评审工具 Antique。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fpyjwv3o9zwxc9zs7j1bmnw8i",
    "excerpt": "Anthropic 发布工程复盘，因 Claude 使日均合并代码量从 2026 年 5 月约 2,500 增至 9 月超 30,000，五个月内自研版本控制系统 Scion 并完全替代 git，同时推出代码评审工具 Antique。\nAnthropic 自建版本控制系统 Scion 的完整复盘，给出面向智能体规模负载的设计原则、架构细节和实测收益，可迁移到其他大规模仓库场景。\n在 Anthropic，编码不再是构建系统或进行研究的瓶颈。Claude 能够自主地在研究循环中迭代、对复杂程序进行微优化，并以我们前所未见的速度和规模从零开始构建新服务。如今的瓶颈，是为人类规模而构建的所有开发者基础设施：源代码控制、构建和 CI。\n2026 年 5 月，Anthropic 平均每天合并约 2,500 个代码变更；截至 9 月，我们每天合并超过 30,000 个。我们预计这一增长速度短期内不会放缓；合并代码的潜在需求几乎是无限的，我们每消除一个瓶颈，都会立即带来代码产出量的进一步增长。\n为了支撑这一增长，我们构建了 Scion，一个内部版本控制系统，并在五个月内将我们的 monorepo 从 git 完全迁移过来。我们还在同一时期构建并上线了代码审查界面（名为 Antique）、代码搜索、丰富的源代码控制 IAM 系统、管理并落地大量已审查代码的新方法等等。在这篇文章中，我们将重点介绍我们具体是如何构建 Scion 的。这是一个有趣的案例研究：Claude 编写代码的能力既是让我们陷入这种处境的原因， 也是 我们能够快速构建高质量、可扩展系统来应对它的原因。\n在探讨我们构建了什么之前，我们应该承认我们的工作负载有多么不寻常。不出所料，Anthropic 使用 Claude 编写软件的程度远超几乎所有其他公司，因此我们往往是第一个看到为人类规模构建的工具开始吃紧的地方。源代码控制只是其中一个例子。虽然我们预计近期内不会有太多组织遇到这些问题，但我们怀疑用不了多久，其他使用 AI 编码工具的人也会经历这些同样的压力点，这就是为什么我们想分享我们构建了什么以及学到了什么。\nGit 是一个去中心化系统：每个克隆都是一个完整、自包含的仓库，可以计算差异、读取历史和 blame，并在完全离线的情况下检出任何修订版本。对于绝大多数仓库来说，这是正确的设计，也是 git 成为标准的重要原因之一。\n随着我们的 monorepo 增长，它越来越不符合这一设计空间。仅我们主分支的历史就接近 100 GB，而 压缩后 的工作副本超过 25 GB。我们每天为 CI 执行约 2,500 万次代码检出，这还不算开发者环境、代理沙箱和研究任务。如果天真地获取，那将是每天超过 600 PB 的 git 流量。\nGit 提供了处理仓库一部分的工具，例如浅克隆、稀疏检出和 promisor 远程。除此之外，还有针对大型 monorepo 的标准变通方案，例如内部 git 镜像和保存在 blob 存储中的仓库快照（种子）。这些我们都用过——在高峰期，我们运营了数百个内部 git 镜像来应对负载。这为我们争取了时间，但随着合并率的提高，它们变得越来越难以运营。种子在刷新之间离 main 的顶端越来越远，要让依赖历史（如 diff 和 blame）的操作在部分克隆上正常工作，需要越来越多的细心维护。\n退一步看，我们注意到，和大多数公司一样，我们把 git 当作一个集中式系统来使用，只有一份权威副本，但我们的客户端几乎都是按定义在线的 agent 和作业。那些让 git 在分布式、离线工作中表现出色的特性，反而随着仓库增长而严重削弱了我们的扩展能力。于是我们问自己：如果从一开始就考虑到 agent 始终在线这一事实来设计源代码控制，它会是什么样子？\n在 agentic 编码中，许多关于软件开发方式的常见假设正在演变。在构建 Scion 时，我们拥抱了这些变化，这让我们能够在几个核心原则上采取与 git 根本不同的方法。面向超大型 monorepo 的源代码控制已有先例，尤其是 Google 的 Piper 和 Meta 的 Sapling ，因此我们能够借鉴它们来之不易的经验来构建 Scion。我们的原则是：\n客户端始终在线。 Git 假设客户端离线工作，并且需要仓库的完整副本。由于我们的客户端几乎都是 agent 和作业，我们围绕一个始终可达的服务器来设计 Scion 的客户端和协议，让客户端在需要时获取数据。\n客户端-服务器不对称。 在 git 中，每个客户端都能成为功能完备的服务器。在 Scion 中，服务器负责回答关于文件历史和 blame 的问题、创建提交、执行合并和 rebase 等。客户端维护一个有界的本地对象缓存，将工作副本文件布局到磁盘上，监控文件系统变化，并为用户提供一种符合人体工程学的方式与服务器交互。它自身能计算的东西很少，但作为交换，它在本地需要的数据也少得多。\n一个全面的源代码控制服务可以驱动许多新颖的应用。 使用 git 时，一个需要对仓库提问的 CI 作业或工具——比如谁最后修改了某一行，或者两个提交之间有何关系——必须维护仓库的本地副本，或者寄希望于厂商特定的 API 能提供答案。使用 Scion 时，客户端使用的所有源代码控制查询也都通过 API 暴露出来，因此在许多情况下，作业根本不需要本地仓库。许多内部工具，比如我们自动化的 bisect 和 revert 流水线，如果没有这种廉价、可编程的源代码控制访问方式，就无法在规模上实用。\n一切都必须能够水平扩展。 在高峰期，我们运行着数百个 git 镜像，这严重消耗了容量，而且一旦仓库超出镜像的磁盘或内存限制，就无法再扩展。在 Scion 中，仓库的数据是分布式的，每个组件都可以独立扩展；任何地方都不存在仓库的完整物化副本，即使在服务器上也没有。不存在 packfile（git 的压缩对象包）的等价物，因此不需要进行仓库维护。\n提交必须廉价、增量且无锁。 在 git 中，你在本"
+  },
+  {
+   "group": "ai",
+   "source": "Simon Willison",
+   "title": "llm-meta-ai 0.2",
+   "url": "https://simonwillison.net/2026/Oct/12/llm-meta-ai/",
+   "published": "2026-10-12T23:58:46.000Z",
+   "description": "Release: llm-meta-ai 0.2 Meta AI release Muse Wonder (and Muse Wonder Full), their new \"most capable models\". These look like they may be Meta's first Fable class models - Artificial Analysis scores Muse Wonder (Max) as equivalent to GPT-6.1 Sol. I updated my llm-meta-ai plugin for the new model. Here are pelicans for Muse Wonder for the six reasoning levels: minimal, low, medium, high, xhigh, max. This is the max one: For comparison, here are pelicans for Muse 1.3 (released September 2nd) and Muse 1.2 (released August 5th). Meta AI are putting out a new model a month, and the improvements bet",
+   "excerpt": "Meta AI release Muse Wonder (and Muse Wonder Full), their new \"most capable models\". These look like they may be Meta's first Fable class models - Artificial Analysis scores Muse Wonder (Max) as equivalent to GPT-6.1 Sol.\nI updated my llm-meta-ai plugin for the new model. Here are pelicans for Muse Wonder for the six reasoning levels: minimal, low, medium, high, xhigh, max. This is the max one:\nFor comparison, here are pelicans for Muse 1.3 (released September 2nd) and Muse 1.2 (released August 5th). Meta AI are putting out a new model a month, and the improvements between each model (at least in terms of drawing pelicans) are material.\nThis is a beat by Simon Willison, posted on 12th October 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
   },
   {
    "group": "ai",
@@ -727,6 +897,15 @@
    "excerpt": "The next meaningful step for AI in logistics is not another chatbot. It is software that can take responsibility for a bounded piece of operational work.\nThat distinction matters. The progression also extends the earlier Decision Intelligence discussion : once software can interpret consequential decisions, the next architectural question is how far it should be allowed to prepare or execute them.\nA chatbot can explain why a shipment is late. An agent can potentially identify the late shipment, retrieve the order and customer context, evaluate alternatives, contact a carrier or execution system, propose a response, obtain approval if required, execute the approved action, and monitor whether the problem was resolved. The difference is the transition from information to work.\nThe term “agent” is being applied broadly, but the useful logistics definition is relatively simple: software that can pursue a defined objective across multiple steps and tools within explicit boundaries. That can include retrieving information, reasoning over constraints, calling APIs, updating applications, generating communications, and escalating decisions. The key word is bounded.\nLogistics is full of decisions with financial, service, safety, and contractual consequences. Useful agentic systems therefore need clear authority rather than vague autonomy.\nLogistics operations generate repetitive exceptions that consume large amounts of human attention.\nA shipment misses a milestone. A carrier rejects a load. A dock appointment needs to move. A delivery window is at risk. A trailer is unavailable. An order changes after transportation has been planned.\nToday, resolving these issues often requires a planner to open several systems, gather context, send messages, compare alternatives, and update the execution plan. An agent can potentially perform much of that preparatory and administrative work.\nThe quality of an agent depends less on how fluent its language model sounds and more on whether it has the right operational context. A late shipment cannot be evaluated from ETA alone. The agent may need to know inventory availability, customer priority, delivery windows, alternative carriers, warehouse constraints, freight cost, contractual rules, and the downstream consequence of doing nothing.\nThis makes agentic logistics an architecture problem. Agents need governed access to execution systems, event data, business rules, and relevant knowledge.\nThere is a progression of autonomy that o"
   },
   {
+   "group": "ai",
+   "source": "Simon Willison",
+   "title": "Profiling web-edit with Python 3.15: flame graphs and source heatmaps",
+   "url": "https://simonwillison.net/2026/Oct/12/python-3-15-web-edit-profiling/",
+   "published": "2026-10-12T16:58:00.000Z",
+   "description": "Research: Profiling web-edit with Python 3.15: flame graphs and source heatmaps I put the new Python 3.15 profiler through its paces by having GPT-6 Astra Extra High in Codex run it against my new web-edit app : I need a Python 3.15 flame graph and heatmap demo of the \"web-edit\" app from PyPI - research first then make me those demos Here's the resulting example flame graph and heatmap . Tags: profiling , python , codex",
+   "excerpt": "I put the new Python 3.15 profiler through its paces by having GPT-6 Astra Extra High in Codex run it against my new web-edit app :\nI need a Python 3.15 flame graph and heatmap demo of the \"web-edit\" app from PyPI - research first then make me those demos\nHere's the resulting example flame graph and heatmap .\nThis is a beat by Simon Willison, posted on 12th October 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
+  },
+  {
    "group": "wh",
    "source": "Locus Robotics",
    "title": "Healthcare Automation 101: Improving Accuracy, Traceability, and Fulfillment Performance",
@@ -743,6 +922,15 @@
    "published": "2026-10-12T16:07:54.000Z",
    "description": "If you work around warehouses, service bays, or automated facilities, you already know how quickly one lift problem can slow everything down. Mobile elevated work platforms support maintenance, installation, and inspection tasks that keep systems moving. When a machine is down, schedules tighten fast. A smart parts strategy helps you avoid delays, reduce safety risks, […]",
    "excerpt": "If you work around warehouses, service bays, or automated facilities, you already know how quickly one lift problem can slow everything down.\nMobile elevated work platforms support maintenance, installation, and inspection tasks that keep systems moving. When a machine is down, schedules tighten fast.\nA smart parts strategy helps you avoid delays, reduce safety risks, and keep your equipment ready for the jobs you actually need done.\nA solid parts process starts with records. Keep a list of every lift model, serial number, common wear items, and previous repairs.\nWhen a machine goes down, your team should not be hunting through old emails like digital archaeologists.\nIt also helps to separate parts into two categories:\nFor planned maintenance, order before failure. For urgent repairs, verify exact compatibility first.\nIf you need Genie-specific components, you can check availability for model-matched lift parts and avoid wasting time on generic searches that lead nowhere useful.\nA clean process reduces misorders, shortens repair cycles, and gives technicians a lot less reason to mutter at clipboards.\nA mobile lift rarely gets attention when it works properly. It rolls in, goes up, gets the job done, and heads back out.\nThe trouble starts when a sensor fails, a control board acts up, or a worn hydraulic component suddenly refuses to cooperate.\nIn automation-heavy sites, one disabled lift can delay conveyor repairs, camera adjustments, lighting work, and rack inspections.\nThat creates a chain reaction: technicians wait, production windows shrink, and managers start hearing the least magical phrase in operations, “We’ll need to reschedule.”\nReliable uptime protects more than deadlines. It also supports safer access for maintenance teams.\nIf your crew is tempted to improvise because the right machine is unavailable, risk climbs fast. A better approach involves planning for parts replacement before failure turns into downtime.\nNot every component fails at the same rate, and some parts create outsized disruption. Controls, switches, batteries, chargers, decals, hoses, and wheel assemblies often become the quiet troublemakers. They may look minor on paper, yet they can ground a machine instantly.\nElectrical faults are especially frustrating because they can mimic other problems. A weak connection might appear to be a dead battery. A damaged switch can feel like a hydraulic issue. That guesswork burns labor hours.\nYou’ll save time by identifying the model correctl"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Prime Intellect 收购 Moondream，联合创始人加入主导推理与多模态",
+   "url": "https://aihot.news/items/rruqd7cz78jq6l889kjp56jlz",
+   "published": "2026-10-12T16:00:00.000Z",
+   "description": "Prime Intellect 宣布收购 Moondream，创始人 Vik Korrapati 和 Jay Allen 加入并负责推理业务及视觉、computer use 等多模态模型工作。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rruqd7cz78jq6l889kjp56jlz",
+   "excerpt": "Prime Intellect 宣布收购 Moondream，创始人 Vik Korrapati 和 Jay Allen 加入并负责推理业务及视觉、computer use 等多模态模型工作。\n收购方官方公告给出交易目的与产品整合方向，并附 Moondream 3.1 的推理速度和成本对比数字，可作了解两家技术互补的参考。\n我们已收购 Moondream。创始人 Vik Korrapati 和 Jay Allen 将加入 Prime Intellect，领导并扩展推理业务，并加速我们在多模态模型方面的工作，包括视觉和计算机使用。\nMoondream 是我们最早的客户之一，我们长期以来一直钦佩 Vik 和 Jay 以一支小团队所打造的东西。他们已发布最先进的开放权重视觉语言模型，每月下载量达数百万次。 1 他们还构建了 Photon，这是一个推理引擎，可将每个模型编译为单个 GPU 程序，以及背后的自定义 GPU 内核和 megakernel 编译器。 2\n“Moondream 证明了小型、高效的模型在特定任务上可以击败巨型模型。Prime 正在为同样的未来而构建：许多公司拥有的专用模型。在我们加入之前，我们早就是 Prime 的客户。现在 Photon 可以驱动的远不止我们的模型，而我们的模型也获得了 Prime 的完整训练栈。”\nMoondream 3.1 在物体检测、航拍图像、图表以及像商店货架这样拥挤的场景中处于领先地位。它以每秒 34 次请求的速度做到这一点，比下一个最准确的开放模型快约 24 倍。 3 与 Meta 的新前沿模型 Muse Wonder 相比，Moondream 3.1 在照片中指向物体方面达到其 80% 的准确率，而成本约为其 1/1000。 4\n与 Prime Intellect 非常相似，Moondream 押注于模型及其底层基础设施必须一起构建，并且一个在合适基础设施上运行的专用、高效模型在给定任务上胜过通用模型。我们很兴奋能一起加倍投入，帮助每个人在视频、图像、语音和计算机使用方面训练、部署和服务前沿多模态模型。\n我们推出 Prime Inference，是因为服务决定了模型的有用性：推理决定了模型响应的速度以及运行成本。 5\n这正是 Moondream 的系统工作发挥作用的地方：答案在几十毫秒内返回，通常比调用前沿 API 快 40 倍以上。在单个 H100 上，Photon 每秒运行超过 60 次 Moondream 推理，这足够快，可用于实时视频。 6 综合来看，Moondream 的模型获得 Prime 的完整训练栈，Photon 得以驱动远不止 Moondream 的模型，而 Prime 客户获得一个作为单一系统构建而非由零件组装而成的多模态栈。\nPhoton 和 Moondream 的内核工作正在被整合到 Prime 的栈中。这是对拥有市场上最快推理的承诺，并让我们的客户能够像训练模型一样出色地运行模型。\nMoondream 构建了卓越的模型和专用推理引擎。Prime 的开放超级智能栈连接了评估、微调、强化学习和推理。我们携手将训练平台与高效服务相结合，并引入 Vik 和 Jay 在视觉和计算机使用方面的深厚专业知识。\n我们已经开始交付。Moondream 3.1 现已通过 Prime Inference 提供，并由 Moondream 的 Photon 引擎驱动。Clef 和 Clef Flash 也已通过 Prime Inference 和 OpenRouter 上线，Clef 的定价与 Jev 持平，Clef Flash 的价格为其一半。 7\n在接下来的几天里，Moondream Cloud 的每一位客户都将在我们的平台上获得额度，可用于 Moondream 模型以及我们更广泛的训练和推理服务。Moondream 仍将是我们小型、高效多模态模型的品牌。\n我们的使命是让每家公司都能用上开放超级智能。如果你正在构建视觉模型、计算机使用代理，或需要市场上最快的推理，我们很乐意与你合作。\nKorrapati, Vikhyat. “moondream2.” Hugging Face。访问于 2026 年 10 月 13 日。 ↩\nMoondream. “Photon: Official Moondream Inference Engine.” 访问于 2026 年 10 月 13 日。 ↩\nMoondream. “Moondream 3.1: Beyond Benchmarks.” Moondream Blog，2026。 ↩\nPrime Intellect. “Pointing Accuracy and Cost per 1,000 Images: Moondream 3.1 and Frontier Models.” 未公开内部评估，2026 年 10 月。 ↩\nPrime Intellect. “Prime Inference: Fast, Reliable Serving for Frontier Open Models.” Prime Intellect Blog，2026。 ↩\nMoondream. “Photon Serving Benchmarks, NVIDIA H100.” 未公开内部测量，2026 年 10 月。 ↩\nVigliarolo, Brandon. “Cloudflare Tries to Outplay Jev with Open-Weight Clef Models.” The Register，2026 年 10 月 1 日。 ↩\n收购方官方公告给出交易目的与产品整合方向，并附 Moondream 3.1 的推理速度和成本对比数字，可作了解两家技术互补的参考。"
   },
   {
    "group": "ai",
@@ -891,20 +1079,11 @@
   {
    "group": "ai",
    "source": "AIHOT",
-   "title": "QGIS 通过 QEP428 禁止 AI 辅助贡献",
-   "url": "https://aihot.news/items/t0gnehm6pcbj4xyn5f3txv1ge",
-   "published": "2026-10-12T11:22:24.000Z",
-   "description": "QGIS 通过 QEP428 提案，将 AI 政策改为严格的 NOT ALLOWED，由 nyalldawson 提交并于 2026 年 10 月 7 日合并进 QGIS-Enhancement-Proposals 仓库。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t0gnehm6pcbj4xyn5f3txv1ge",
-   "excerpt": "QGIS 通过 QEP428 提案，将 AI 政策改为严格的 NOT ALLOWED，由 nyalldawson 提交并于 2026 年 10 月 7 日合并进 QGIS-Enhancement-Proposals 仓库。\n原文呈现社区内部对禁令理由、措辞模糊处和后续放宽路径的直接讨论，读者可以借此理解开源项目应对 AI 贡献压力的真实权衡。\nAI 代码创作 * GitHub Copilot 用 AI 编写更好的代码 * GitHub Copilot 应用 从问题到合并直接指挥智能体 * MCP Registry 集成外部工具\n开发者工作流 * Actions 自动化任何工作流 * Codespaces 即时开发环境 * Issues 规划并跟踪工作 * 代码审查 管理代码变更 * 代码质量 在合并时强制保证质量\n应用安全 * GitHub Advanced Security 查找并修复漏洞 * 代码安全 在构建时保护你的代码 * 机密保护 在泄露发生前阻止它\n按使用场景 * 应用现代化 * DevSecOps * DevOps * CI/CD * 查看所有使用场景\n按类型探索 * 客户故事 * 活动与网络研讨会 * 电子书与报告 * 商业洞察 * GitHub Skills\n项目 * Security Lab * 维护者社区 * GitHub Stars * 归档计划\n可用附加组件 * GitHub Advanced Security 企业级安全功能 * Copilot for Business 企业级 AI 功能 * 高级支持 企业级 24/7 支持\n你已通过另一个标签页或窗口登录。 重新加载 以刷新你的会话。你已在另一个标签页或窗口中退出登录。 重新加载 以刷新你的会话。你在另一个标签页或窗口中切换了账户。 重新加载 以刷新你的会话。关闭此提示\nqgis:master qgis/QGIS-Enhancement-Proposals:master 来自\nnyalldawson:qep_428 nyalldawson/QGIS-Enhancement-Proposals:qep_428 复制头分支名称到剪贴板\nqgis:master qgis/QGIS-Enhancement-Proposals:master 来自\nnyalldawson:qep_428 nyalldawson/QGIS-Enhancement-Proposals:qep_428 复制头分支名称到剪贴板\n后续讨论见 https://lists.osgeo.org/pipermail/qgis-developer/2026-September/068576.html 。\n12 位 geomenke、timlinux、vpicavet、nirvn、netthier、u-cav、adamjstewart、kgjenkins、gacarrillor、elpaso 等 12 人用竖起大拇指表情回应 1 位 Geo-Jagaimo 用眼睛表情回应\nnyalldawson 添加了 Policy In Discussion QEP 当前处于讨论阶段的标签 2026年9月24日\n嗨，也许这个强硬立场值得稍微说明一下背景，即为什么我们想比之前的“人在回路”政策更进一步\n所以，基于这个原因，我强烈支持 +1。 非常感谢你开启这个 QEP，考虑到你所处的压力环境， @nyalldawson ，非常感激。\n我想开启另一个关于将 LLM 用于审查、审计和安全目的的话题，但我认为这是一个非常独立的讨论串，我们会在用户大会上先展开讨论，然后再进行任何正式讨论。事情发展得太快了，让我们先解决这个 QEP。\n7 位用户 vpicavet、Djedouas、u-cav、adamjstewart、PeterBrodersen、zmspp9 和 tannenfreund87 点了赞\n谢谢你 @nyalldawson ——希望这样一段简短的段落而不是长篇大论能消除任何困惑！\n当我创建我的 2 个 AI 辅助的回归修复 PR 来调查 bug 的原因、建议修复并审查代码时，我没有意识到这会给 QGIS 本已脆弱的审查者社区带来怎样的伤害。\n我显然还没有足够的能力去修复像 QGIS 这样复杂项目中的 bug，但 LLM 给了你一种错觉，让你以为这是可能的。几个 token 之后，bug 就修好了。这样做，我们破坏了审查者和贡献者之间的信任契约。这个契约是：要为这么大的项目做贡献，你得知道自己在做什么。\n我猜还有第二个影响，但我在网上没读到太多：通过提供这种便利，使用 AI 的贡献者学到的东西非常少/几乎没有，也没有在项目中积累自己的技能。他们永远无法真正指望自己成为审查者，社区也就停滞了。\n这是一个充满热情的开源用户但却是初学者开发者的观点，试图在当今这个 AI 并没有真正让事情变得更轻松的世界里找到自己的位置。让我们先学会走路，再学跑步。\n4 位用户 geomenke、u-cav、elpaso 和 tannenfreund87 点了赞\n评论线程 qep-408-ai-tool-policy.md 显示已解决 隐藏已解决\n我同意这一点，不过自从我们启用这个系统以来，提交的安全公告 100% 都是用 AI 写的。（大多数涉及我们的网站，而非 QGIS 核心）\n请不要误解我下面的批评。我认为当前围绕“AI”的狂热在许多方面都是一个大问题，涉及伦理、社会、经济等。我也看到了它的滥用给维护者和开发者带来的巨大且不公平的压力。我希望这一切从未发生过，但事已至此。\n不过我想强调一些 技术 上的好处，而这项政策将禁止这些好处，至少据我所理解是这样。我在这里刻意忽略其他一切。\n我也完全能理解，如果这更多是一种“政治性”举措，旨在禁止被认为不道德的东西。但这是本意吗？是为了减轻开发者的压力？还是为了对“AI”做出强烈表态？无论如何，我认为它可以更清晰，也可能更有力。\n按照现在的措辞，我会把这项政策理解为也"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
    "title": "AlphaProof Nexus 攻克 9 个未解 Erdős 问题并经同行评审",
    "url": "https://aihot.news/items/wzxf68r0rchangmvwm48qqhfk",
    "published": "2026-10-12T09:35:54.000Z",
    "description": "Science 新研究显示，Google DeepMind 的 AlphaProof Nexus 独立解决了 353 个开放 Erdős 问题中的 9 个，其中 2 个悬置 56 年。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wzxf68r0rchangmvwm48qqhfk",
-   "excerpt": "Google Deepmind's AlphaProof Nexus solved dozens of open math problems and actually got peer reviewed\nScience 新研究显示，Google DeepMind 的 AlphaProof Nexus 独立解决了 353 个开放 Erdős 问题中的 9 个，其中 2 个悬置 56 年。\n这条报道把系统架构和同行评审安排都讲清了，读者可以据此理解形式化证明工作流的可行性与验证方式。\nGoogle Deepmind's AI solved dozens of open math problems on its own, per a new study in Science . AlphaProof Nexus cracked nine of 353 open Erdős problems, two unsolved for 56 years. The team shared those solutions online ahead of the paper.\n除此之外，AlphaProof Nexus 还证明了 OEIS 整数序列数据库中的 44 个猜想，解决了一个代数几何中的未解问题，并改进了 min-max 优化中的一个已知边界，该技术用于训练某些 AI 模型。它基于 Gemini 3.1 Pro 构建，后者用形式化语言 Lean 起草和修订证明。Lean 在每次编辑后检查每份草稿，错误信息则指导下一次尝试。对于更难的子问题，它可以调用 AlphaProof ，一个专门的证明工具。 Google Deepmind 报告称 ，即使没有 AlphaProof，它也解决了那九个 Erdős 问题。\n这项研究发布之际，正值关于 AI 数学的激烈争论。OpenAI 最近 将数百个 AI 证明丢到 GitHub 上 ，而非提交给期刊。由 Terence Tao 领导的 Association for Human Mathematics 呼吁抵制 。Deepmind 则将其工作送交了同行评审。\n订阅 THE DECODER，享受无广告阅读、每周 AI 新闻通讯、每年六期独家“AI Radar”前沿报告、完整档案访问权限以及评论区访问权限。\n来源： The Decoder：AI News · the-decoder.com\n这条报道把系统架构和同行评审安排都讲清了，读者可以据此理解形式化证明工作流的可行性与验证方式。"
+   "excerpt": ""
   },
   {
    "group": "wh",
@@ -940,7 +1119,7 @@
    "url": "https://aihot.news/items/svvvhr5j2nnywgdw29pso7o49",
    "published": "2026-10-12T07:44:47.000Z",
    "description": "一篇教程介绍用 Claude Opus 5.5 配合 Claude Code、Blender、Unreal Engine 5 和 Meshy 构建游戏的方法。核心思路是给每个工具分配单一职责：通过 MCP 连接 Blender 和 Meshy，由 Meshy 生成道具和角色、Blender 清理和放置、Unreal 负责光照物理和游戏本身、Opus 在一个对话里调度三者。流程为先让 Opus 头脑风暴 5 个游戏点子再展开，告知 GPU 以便压满画面性能，首个完整构建约花 4 小时和约 19% 的每周 Max plan 用量，之后因素材复用会快很多。 🔗 阅读原文 via AIHOT · https://aihot.news/items/svvvhr5j2nnywgdw29pso7o49",
-   "excerpt": "一篇教程介绍用 Claude Opus 5.5 配合 Claude Code、Blender、Unreal Engine 5 和 Meshy 构建游戏的方法。核心思路是给每个工具分配单一职责：通过 MCP 连接 Blender 和 Meshy，由 Meshy 生成道具和角色、Blender 清理和放置、Unreal 负责光照物理和游戏本身、Opus 在一个对话里调度三者。流程为先让 Opus 头脑风暴 5 个游戏点子再展开，告知 GPU 以便压满画面性能，首个完整构建约花 4 小时和约 19% 的每周 Max plan 用量，之后因素材复用会快很多。\n如何用 Claude Opus 5.5 + Blender + Unreal Engine + Meshy 构建一款游戏 🎮\nhere's how to build a game like this with Claude Opus 5.5 + Blender + Unreal Engine + Meshy... the trick is giving every tool one job, but there's a smart way to set it up: - step 1: install Claude Code, Unreal Engine 5 and Blender 5.1+, all free except the Claude plan - step 2: connect Blender through its MCP add-on, and Meshy through Meshy MCP with an API key - step 3: brainstorm 5 game ideas with Opus first, pick one, have it expand the idea before anything gets built - step 4: tell it your GPU, so it pushes the graphics as far as your machine can run - step 5: Meshy generates the props and characters, Opus imports them into Blender and cleans them up - step 6: Opus brings everything into Unreal: the level, lighting, HUD, minimap - step 7: play it, then add one feature per prompt: combat, enemies, quests who does what: > Meshy: the 3D models > Blender: cleanup, placement, materials > Unreal: lighting, physics, the actual game > Opus: runs all three from one chat and the real cost... one full first build took about 4 hours and ~19% of a weekly Max plan build the first level well, then the next ones go much faster because the assets already exist"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -976,7 +1155,7 @@
    "url": "https://aihot.news/items/hvxwaxeyj6i82xv44ef4ce6fz",
    "published": "2026-10-12T04:29:53.000Z",
    "description": "数字生命卡兹克撰文分析AI驱动逆向工程热潮：开发者Brandon Thomas因不满Adobe订阅规则，用Claude Opus 5.5以Rust逆向重写了Photoshop、Illustrator等7款软件的开源替代品PhotoCraft、VectorCraft等，不到10天单PS项目获4.6万Star。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hvxwaxeyj6i82xv44ef4ce6fz",
-   "excerpt": "数字生命卡兹克撰文分析AI驱动逆向工程热潮：开发者Brandon Thomas因不满Adobe订阅规则，用Claude Opus 5.5以Rust逆向重写了Photoshop、Illustrator等7款软件的开源替代品PhotoCraft、VectorCraft等，不到10天单PS项目获4.6万Star。\n文章以ArtCraft开源Adobe逆向项目为切口，分析AI如何大幅降低逆向工程成本，并追问原创软件在复制时代的护城河问题。\nhttps://x.com/i/article/2109500356111872000\n文章以ArtCraft开源Adobe逆向项目为切口，分析AI如何大幅降低逆向工程成本，并追问原创软件在复制时代的护城河问题。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -985,7 +1164,7 @@
    "url": "https://aihot.news/items/u9f1ozdbs5nobwugj3yss3z0e",
    "published": "2026-10-12T00:26:00.000Z",
    "description": "开发者Brandon Thomas因不满Adobe订阅违约金，用Claude Opus 5.5以Rust逆向重写了Photoshop等7款Adobe软件并开源，其中PS项目不到10天获4.6万Star。 🔗 阅读原文 via AIHOT · https://aihot.news/items/u9f1ozdbs5nobwugj3yss3z0e",
-   "excerpt": "开发者Brandon Thomas因不满Adobe订阅违约金，用Claude Opus 5.5以Rust逆向重写了Photoshop等7款Adobe软件并开源，其中PS项目不到10天获4.6万Star。\n作者从Brandon Thomas用Claude Opus 5.5逆向重写Adobe全家桶和REA项目爆火出发，解释净室设计与反编译两条逆向路线，并讨论软件护城河消解后的原创困境。\n作者从Brandon Thomas用Claude Opus 5.5逆向重写Adobe全家桶和REA项目爆火出发，解释净室设计与反编译两条逆向路线，并讨论软件护城河消解后的原创困境。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -994,7 +1173,7 @@
    "url": "https://aihot.news/items/uy4hvoyz7fwtyycpu0p62dudn",
    "published": "2026-10-12T00:00:00.000Z",
    "description": "xAI 推出 The X Subscription 订阅，将 Grok、Grok Bot、Cursor 和 X Premium 合入一个计划，未来几天内向全球用户开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uy4hvoyz7fwtyycpu0p62dudn",
-   "excerpt": "Product·Oct 12, 2026 Introducing The X Subscription\nxAI 推出 The X Subscription 订阅，将 Grok、Grok Bot、Cursor 和 X Premium 合入一个计划，未来几天内向全球用户开放。\n官方公布四合一订阅的档位价格与共享用量规则，读者可据此对比现有单独订阅的实际成本变化。\nGrok、Grok Bot、Cursor 和 X Premium，全部包含在一个套餐中。\n今天我们推出 The X Subscription，将 Grok、Grok Bot、Cursor 和 X Premium 整合到一个套餐中。在接下来的几天里，我们将面向全球所有人开放。\nThe X Subscription 的付费套餐包含一个充裕的 Grok 模型使用额度池，可在 Grok 和 Cursor 之间共享。 每个可比的新档位都比它所替代的套餐提供更高的每美元使用量。\n无论你是在 Grok 应用、X 上的 Grok 标签页还是 Cursor 中使用 Grok 模型，你的共享额度池都覆盖这些模型。每个 X Subscription 套餐包含的我们模型编码使用量至少是可比 Cursor 套餐的两倍。使用新套餐后，第三方模型仍可在 Premium 及以上档位的 Cursor 中使用。使用量按 API 标价单独计费，通过充值支付。\n我们也在为现有的 SuperGrok、Cursor 和 X Premium 订阅用户推出切换选项。当该选项对你可用时，你会在账户账单设置中看到它。你可以保留当前套餐，或切换并按比例获得旧套餐的退款。\nThe X Subscription 让你以大致相当于这些产品中某一个的可比独立套餐过去的价格，获得 Grok、Cursor 和 X。\n团队用户可享受 The X Subscription 的 Premium、Super 和 Ultra，每席位价格与个人套餐相同。其每席位价格低于旧的 Cursor Teams，但现在包含 3 倍以上的编码使用量，外加 SSO、管理员控制、合并账单、使用量分析和 SOC 2 合规。\n企业客户可从一个仪表板管理 Grok 和 Cursor，两个产品共用一个使用量池。我们的销售团队随时准备帮助你 开始使用 。\n对于现有的 SuperGrok、Cursor 或 X Premium 订阅用户，一切不变。你可以保留当前的套餐、价格和功能，或迁移到 The X Subscription。\n如果你已订阅 SuperGrok、Cursor 或 X Premium，请前往账单设置，查看你的账户是否已可切换。\n官方公布四合一订阅的档位价格与共享用量规则，读者可据此对比现有单独订阅的实际成本变化。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1003,7 +1182,7 @@
    "url": "https://aihot.news/items/byijxcheeait7w4okuw9ebnh2",
    "published": "2026-10-12T00:00:00.000Z",
    "description": "Vapi 工程师 Lat Ware 自研 Pedantic Review Bot，使 PR 从开到合并的平均时间从 130 多小时降到 65 小时。机器人会运行测试和小复现来验证发现，分析和发评论分属两个 job，只能评论不能批准或推送；2026 年 9 月 2 日至 10 月 2 日审查了 1,694 个 PR，在 276 个中提出 363 个 blocker 发现。 🔗 阅读原文 via AIHOT · https://aihot.news/items/byijxcheeait7w4okuw9ebnh2",
-   "excerpt": "How an in-house review bot cut our PR merge time in half\nVapi 工程师 Lat Ware 自研 Pedantic Review Bot，使 PR 从开到合并的平均时间从 130 多小时降到 65 小时。机器人会运行测试和小复现来验证发现，分析和发评论分属两个 job，只能评论不能批准或推送；2026 年 9 月 2 日至 10 月 2 日审查了 1,694 个 PR，在 276 个中提出 363 个 blocker 发现。\n作者基于自家代码库做了提示词版本、多跑对比和范围指令等实验，给出可直接迁移的代码审查智能体实践结论。\n作者基于自家代码库做了提示词版本、多跑对比和范围指令等实验，给出可直接迁移的代码审查智能体实践结论。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1012,7 +1191,7 @@
    "url": "https://aihot.news/items/z54sznsd0r2teb6gqyvwu4nc2",
    "published": "2026-10-11T23:45:59.000Z",
    "description": "Tibo 宣布 GPT-6.1 Sol 在 Codex 与 Work 中的默认上下文长度从 272k 提升到 500k，约增加 80%。此举可减少压缩（compaction）发生，帮助需要长期保留大量上下文和细节的任务；用户仍可自行覆盖设置，模型最大上下文长度为 1M。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z54sznsd0r2teb6gqyvwu4nc2",
-   "excerpt": "Tibo 宣布 GPT-6.1 Sol 在 Codex 与 Work 中的默认上下文长度从 272k 提升到 500k，约增加 80%。此举可减少压缩（compaction）发生，帮助需要长期保留大量上下文和细节的任务；用户仍可自行覆盖设置，模型最大上下文长度为 1M。\n官方说明了上下文窗口提升的幅度、原因和可覆盖设置，Coding 用户可据此调整长任务工作流。\n我们已将 GPT-6.1 Sol 在通过 Codex 和 Work 使用时的默认上下文长度从 272k 提升至 500k，增幅约 80%。\n未来我们还会进一步提高，但这有助于减少压缩（compaction）的发生，并有利于那些需要长时间保留大量上下文和细微差别的任务。它经过了仔细测试，是我们大多数用户的新最佳平衡点。如果你想要更高或更低，仍然可以自行覆盖，GPT-6.1 Sol 的最大上下文长度为 1M。\n官方说明了上下文窗口提升的幅度、原因和可覆盖设置，Coding 用户可据此调整长任务工作流。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1021,7 +1200,7 @@
    "url": "https://aihot.news/items/v3pogrzxrk9oba4blox86d0w8",
    "published": "2026-10-11T16:00:00.000Z",
    "description": "Meta 发布 Muse Wonder 和 Muse Wonder Full 两款模型，在 Artificial Analysis Intelligence Index v4.3 上分别得 52 和 56 分（max reasoning effort）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v3pogrzxrk9oba4blox86d0w8",
-   "excerpt": "Muse Wonder and Muse Wonder Full: a material jump in intelligence over previous Meta models\nMeta 发布 Muse Wonder 和 Muse Wonder Full 两款模型，在 Artificial Analysis Intelligence Index v4.3 上分别得 52 和 56 分（max reasoning effort）。\nArtificial Analysis 独立实测了两款新模型的智能指数、token 用量和成本，读者可据此对比它们在同类模型中的位置。\nMeta 发布了 Muse Wonder 和 Muse Wonder Full，在最大推理努力下，Artificial Analysis Intelligence Index v4.3 得分分别为 52 和 56——相比 Muse Spark 1.3（max）的 48 均有实质性提升，而发布间隔仅 6 周\nMuse Wonder 已在 Meta 的第一方 API 上向用户开放，而 Muse Wonder Full 目前仅对 Muse Code 用户开放。Meta 指出，这两款模型均面向个人和专业智能体用途设计\n➤ 两款模型在整体 Intelligence Index 得分上均实现了实质性跃升。 Muse Wonder Full（max）在全部十项 Intelligence Index 评估中均优于 Muse Spark 1.3（max），提升 8 分至 56。提升最大的是智能体评估：Terminal-Bench 4.0（+24 分，33% 至 57%）、GDPval-AA v2.1（+176 Elo，1681 至 1857）和 AA-Briefcase（+148 Elo，1581 至 1729）。Muse Wonder（max）提升 4 个 Intelligence Index 分，达到 52，相比 Muse Spark 1.3（max）在 Terminal-Bench 4.0（33% 至 52%）和 AutomationBench-AA（58% 至 68%）上有显著改进\n➤ Muse Wonder Full（max）在十项 Intelligence Index 评估中有六项进入前三，在智能体知识工作和科学推理方面尤为突出。 在智能体知识工作方面，它在 GDP.pdf（33%）上以微弱优势领先，在 GDPval-AA v2.1（1857 Elo）上排名第 2，在 AA-Briefcase（1729 Elo）和 AutomationBench-AA（71%）上均排名第 3。在科学推理方面，它以 33% 位居 CritPt 排行榜榜首，并以 63% 在 SciCode 上排名第 3。这延续了 Muse Spark 1.3（max）的相对优势，后者在这两个领域也表现出特别的能力\n➤ 两款模型使用的输出 token 均少于 Muse Spark 1.3（max）。 Muse Wonder（max）和 Muse Wonder Full（max）在每个 Intelligence Index 任务上均使用约 54k 输出 token，较 Muse Spark 1.3（max，60k）下降约 10%。这一用量低于同等智能水平的模型 Gemini 4 Argon（high，62k）和 Claude Fable 5.1（max w/ fallback，78k），但高于 GPT-6.1 Sol（max，38k）和 GPT-6 Astra（max，27k）。Muse Wonder Full（max）在每个 Intelligence Index 任务上使用的输入 token 比 Muse Wonder（max）少 16%（6.44M 对 7.69M），这意味着它既更智能，也更节省 token\n➤ Muse Wonder（max）的每任务成本高于大多数同等智能水平的模型。 尽管输出 token 使用高效，但高昂的 API 定价（每百万输入 token 4 美元，每百万输出 token 20 美元）以及高输入 token 用量（每任务 7.69M）将 Muse Wonder（max）的成本推高至每个 Intelligence Index 任务 4.52 美元。这低于 Claude Fable 5.1（max w/ fallback，7.63 美元）、Claude Opus 5.5（max w/ fallback，5.98 美元）和 Claude Sonnet 5.5（max w/ fallback，5.46 美元），但高于 GPT-6 Astra（max，3.26 美元）、Gemini 4 Argon（high，1.99 美元）、GPT-6.1 Sol（max，0.72 美元）及其前代 Muse Spark 1.3（max，1.60 美元）。Muse Wonder Full 不按 token 定价，因此没有可用的每任务成本数据\n➤ 两款模型在 Coding Agent 性能上均有显著提升。 Muse Wonder Full 在 Muse Code 中以最大努力在 Artificial Analysis Coding Agents Index 上达到 68，与 Claude Code 搭配 Sonnet 5.5（max，68）和 Opus 5.5（max，66）相当。Muse Wonder（max）得分为 63。相比 Muse Code 搭配 Muse Spark 1.3（max）的 54 分，这些都是实质性提升\n➤ 上下文窗口： 各 100 万 token，与 Muse Spark 1.3 相同\n➤ 定价： Muse Wonder 为每 100 万 token 输入 $4 / 缓存输入 $0.20 / 输出 $20。Muse Wonder Full 不按 token 计价"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1030,7 +1209,7 @@
    "url": "https://aihot.news/items/twhuaks920iaqd2y7frq8bgbw",
    "published": "2026-10-11T16:00:00.000Z",
    "description": "Tessl 博客文章介绍用四个可拥有的文件杠杆约束编码智能体：CLAUDE.md 指令、.claude/rules/ 路径级规则、.claude/ 下的能力配置和 .claude/hooks/ 钩子。 🔗 阅读原文 via AIHOT · https://aihot.news/items/twhuaks920iaqd2y7frq8bgbw",
-   "excerpt": "How to constrain a coding agent using only files you own\nTessl 博客文章介绍用四个可拥有的文件杠杆约束编码智能体：CLAUDE.md 指令、.claude/rules/ 路径级规则、.claude/ 下的能力配置和 .claude/hooks/ 钩子。\n作者用同一工单三次实测对比 charter 各文件杠杆的效果，方法可迁移到自己的仓库，并指出机器可查与需人审的边界。\n我给一个编码代理一张工单，没有给它任何章程。这个仓库像真实项目一样，横跨了三个时代。一个 2026 年的领域层把一切都做对了，而一个 2023 年的上帝文件加上一个没人敢碰的 2021 年冻结模块，数量是它的十倍。\n代理从未打开正确的代码。它去了上帝文件，调用 random.randint 掷骰子，并在没有种子的情况下序列化总数。它通过一个确实存在且能工作的辅助函数重写了一条日志记录，还两次伸手进了冻结模块。\n得分： 八项检查中通过一项。那个仓库里没有任何东西是坏的，代理只是照抄了摆在它面前的代码。所有本可以拦住它的东西，都是我还没写出来的文件。\n我从事 harness 与章程工程：运行代理的引擎，以及它最先读取的规则。这就是《Harness Engineering》这本书以及我的开源章程框架工具 Keystone 的主题。11 月我将在 AIDevCon 主持一场九十分钟的工作坊，让一屋子工程师编写这些文件，并衡量每一个文件带来了什么。\n写一个 CLAUDE.md 的建议现在到处都是，这是好建议，但那个文件只是四个杠杆之一。另外三个就在同一个仓库里、在你已经拥有的路径下，而许多团队并没有交付足够多的它们。\n章程的哪一部分在代理不同意它时仍然成立，每一部分又买到了什么？这两个问题都能在一台笔记本电脑上回答，下面就是我在同一张工单上回答三次所得到的结果。\n每个人都会写那个杠杆，而另外三个就在它旁边。四个都是文件，四个都属于你，四个都位于代理在写下一行代码之前会读取的路径下：\n能力杠杆是通常没有被设计的那一半。它上面有四级台阶：一条命令、一项技能、一个子代理、一个 MCP 服务器。家族测试可以对它们进行分类。移除那个东西，如果代理能做的事变少了，那它就是一种能力。如果代理做同样的工作、只是做得更差，那你写了一条规则，并把它打扮成了技能。\n授权列表也属于那个杠杆，而且它是对你本意的有损翻译。一个指向 make 目标的允许列表，与一个指向命令字符串的允许列表，所表达的东西是不同的。\n这对你意味着什么： 在你自己的仓库上运行 ls -R .claude/ 。如果答案只是一个设置文件、别无其他，那你就拥有四个杠杆，却只交付了一个。\n指令会被读取。按路径限定的规则会被读取。任何被读取的东西都可以被争辩，而代理会说服自己放弃一条被周围代码所否定的规则。能力杠杆不争辩任何一方，因为它改变的是代理能够伸手拿到什么，而不是它相信什么。\n四十行 Python 挂在这个差异的两端。一个是 PreToolUse 钩子，用来阻止写入；另一个是 make gate ，也就是 CI 运行的东西。一个谓词，两个挂载点，没有重复的逻辑。这种形态正是它能传播的原因。\n那些有说服力的杠杆仍然能买到很多东西，但有一个条件：规则必须与某些东西相悖。你的代码库已经遵循的规则不约束任何东西。智能体会通过模仿得到同样的答案，所以你无法分辨是哪一个让你到达那里。\n所以要把规则写在规则与代码相悖的地方。在工作坊仓库中，一个模块从会话中推导请求权限，另一个模块直接从请求体中读取它。两种模式都活着，两种都能用，所以章程必须做出选择。它的职责是说明该复制这两个真实模式中的哪一个，而这就是大多数改造的情况。\n同一张工单跑了三次。裸跑改了 3 个文件，加了 49 行，8 项中通过 1 项。带章程的跑改了 3 个文件，加了 102 行，8 项中通过 8 项。更大的差异反而是更好的那个，这一点值得在有人开始为改动行数做优化之前大声说出来。\n一个程序可以解决九项检查中的八项。差异是否留在范围内？每个随机种子是否都已设定？日志是追加而不是重写？还有五项问的是这类问题，脚本对每一项都能不带主观判断地作答。\n第九项是 authority.semantic ，它问的是访问检查 对这个功能 是否正确。没有谓词能解决这个问题，所以评分器打印一个问号然后等待。\n两种判定读的是同一个差异。只有钩子能在写入发生之前阻止它。只有审查者能解决第九项检查。\n绿色的记分卡不等于正确的改动。它只是一个没有机械可检测问题的改动，而这个距离正是你的审查注意力该放的地方。\n章程是约束中你完全拥有的那部分。它住在仓库里，受版本控制，随克隆一起到达。四个文件在每一台检出代码的机器上改变智能体的行为。\n我见过的许多 harness 和工厂图里都有一个标着质量门的方框，而那个方框掩盖了这个问题： 你的哪些标准根本能当门 ？在一个仓库的一张工单上，我得到八和一，但我选的规则就是为了让效果可见，所以把这个比例当作演示。你的会不一样。\n方向是我会据此规划的东西。随着智能体写更多的代码，通过那道门的量会攀升，而不可判定那一列并不会随之缩小。所以当一条规则超出了章程，就说出它上面那一级然后停下，因为一个 markdown 文件装不下智能体能够到并删除的东西。\n规则不是静态的。它们有生命周期，会从部落知识走向章程，走向约束框架，再走向工厂。 具体在哪一步 取决于所关注的问题。\n拿一张工单。在完全没有章程的情况下，把它跑在你的代码库上，然后用你事先写好的检查项给结果打分。那次运行就是事故本身，你之后写的每一条规则都应该指向它。然后一次加一个杠杆，重新运行同一张工单，并指出哪个杠杆改变了哪个检查项。\n你会发现两件事。你的一些规则其实什么都没约束，因为代码本来就符合它们。而至少有一条你在意的规则，没有任何机器能检查，这反而让它值得占用一个人的时间。\n要点： 约束编码智能体的每一条限制，都是你拥有的一个文件。唯一"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1039,7 +1218,7 @@
    "url": "https://aihot.news/items/lwchujhujmc1tdor61dn39irl",
    "published": "2026-10-11T16:00:00.000Z",
    "description": "Anthropic 发布博客，介绍其针对 Claude 蒸馏攻击的新防御方法，早期证据显示这些方法使蒸馏者获取的数据减少约 90% 到 99%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lwchujhujmc1tdor61dn39irl",
-   "excerpt": "Strengthening our defenses against distillation attacks\nAnthropic 发布博客，介绍其针对 Claude 蒸馏攻击的新防御方法，早期证据显示这些方法使蒸馏者获取的数据减少约 90% 到 99%。\nAnthropic 公开其反蒸馏防御的具体做法和效果数据，读者可以据此了解这类防御的成本、权衡和对整个行业的借鉴意义。\n近几个月来，我们在降低蒸馏攻击对 Claude 的有效性方面取得了实质性进展，采用了新方法，正如本博客所述。早期证据表明，这些方法已将蒸馏者获取的数据量减少了约 90% 至 99%。\n蒸馏攻击是一种隐蔽的、工业规模的行动，旨在提取一个模型的能力并将其复制到另一个模型中，且未经原模型开发者的授权。这些攻击通常利用欺诈账户网络进行。它们使企业能够以极少的开发时间和成本模仿前沿能力。正如我们在 九月所写 ，这种方法已被广泛用于帮助海外 AI 实验室跟上美国公司的步伐。\n我们对非法蒸馏的担忧有两个原因。首先，蒸馏使企业能够构建接近能力前沿的模型，但这些模型在实践中发布时却没有相应强大的安全保障。这意味着蒸馏模型可能被用于在 生物学 和 网络安全 等领域造成重大危害。\n例如， 智谱 在开发 GLM-5.3 期间蒸馏了美国领先模型的网络能力。该公司试图蒸馏 Claude Fable 5——尽管在发现我们的网络安全保障措施削弱了其攻击后，它转向了较旧的 Claude 模型和另一家实验室的模型。美国超级智能创新与标准促进中心（CAISSI） 此后评估 GLM-5.3 是迄今为止发布的网络能力最强的开放权重模型。 我们自己的研究发现 ，GLM-5.3 的保障措施很容易被绕过，并且该模型愿意端到端地开发安全漏洞利用程序。\n其次，非法蒸馏的模型构成国家安全风险。蒸馏美国模型的公司正在将其从蒸馏中获得的能力整合到外国的 军事、情报和监视系统 中。例如，我们最近 报道了一个案例 ，其中对 Moonshot 的 Kimi 模型的请求被秘密转发给 Claude，作为其蒸馏努力的一部分。其中一个请求来自一名用户（我们认为其隶属于中国人民解放军），该用户试图分析针对特定个人的闭路电视监控。这些正是蒸馏者希望开发的能力类型。\n针对这些攻击日益复杂和规模扩大，我们已扩展并大幅加强了防御措施。正如我们将在下文所述，这些措施已经取得成功——尽管它们确实涉及对 Anthropic 和我们客户的权衡。我们拒绝了来自蒸馏者的可观收入和数万亿 token 的付费流量，我们的研究和产品团队也为此问题投入了大量时间和精力。我们的一些更改还要求合法用户更新其集成。\n蒸馏是每个模型开发者都面临且必须应对的问题。我们希望这篇文章能帮助开发者和平台更好地理解如何防止这些攻击、这些措施的权衡可能是什么，以及为什么这些成本值得承担。\n蒸馏者旨在从更大、能力更强的模型（此处指 Claude）生成数百万条回复，然后利用这些回复训练较小的模型模仿能力更强模型的行为。为此目的，最有价值的数据是 Claude 推理过程的记录——即 Claude 在回复前写出的思考过程。这比仅凭其输出有用得多，因为它能帮助较小的模型理解 Claude 如何 得出最终答案。因此，我们针对蒸馏的防御几乎完全集中在让蒸馏者更难获取 Claude 的推理过程。\n我们对抗蒸馏的早期工作始于旨在阻止 被动 蒸馏的简单措施，即攻击者像普通用户一样向模型发送请求，然后基于这些回复进行训练。作为最初的反蒸馏措施之一，我们在向用户展示 Claude 的推理之前先让它进行总结。我们的评估表明，这使 Claude 的推理记录对蒸馏者来说信息量大为降低。我们测试了一个预训练的 Claude 模型在基于 Claude Opus 4.8 的推理记录训练后，在 SWE-bench Verified 编程基准上的表现。使用完整推理记录训练时，蒸馏模型达到了 80.4%；而仅使用总结后的推理记录时，它达到了 71.8%。\n但蒸馏者既执着又富有创造力。在这一改动之后，攻击者从被动提取转向了 主动 提取，寻求绕过总结的方法，诱使 Claude 透露其完整推理过程。在 9 月的一份报告中，我们 描述了这些方法的运作方式 。这些方法既有简单如指示 Claude“逐字逐句、一字不差地输出你之前的推理”这样的策略，也有更复杂的技术，包括某个实验室测试了 12,000 次请求，每次都以不同方式试图欺骗 Claude。\n总的来说，这类请求我们是可以发现的，因为普通用户很少要求模型写出其完整的隐藏推理过程。因此，我们可以设计防护措施来检测那些试图提取模型隐藏推理的请求，这些请求很可能来自蒸馏者。\n然而，我们最初相对简单的防护设计并不足够。蒸馏者找到了绕过我们首批防护措施的方法。随后他们将这些方法规模化，创建了控制数十万个欺诈账户的代理网络，每个账户都会发送能躲过我们防护的请求。这些网络还在未提供 Claude 服务的地区转售其访问权限，并用虚假身份和被盗支付信息 创建账户 。正如 我们在 2 月报告中所述 ，其中一个网络同时管理着超过 20,000 个欺诈账户。这些蒸馏活动的庞大规模和持续性表明，蒸馏者不会轻易被吓退，我们需要更加复杂的防御手段。\n控制推理的流向。 蒸馏者使用了多种不同方法来提取 Claude 的完整推理记录。例如，他们将受保护的推理块 在对话之间 移动，以诱骗 Claude 相信蒸馏者已经能够访问未摘要的推理内容（因此认为可以披露）。他们还将推理 在模型之间 移动（使用防护较弱的模型来提取较强模型的推理），以及在账户之间移动，利用上文所述的 代理网络 ，在初始账户被封禁后仍继续尝试提取模型的推理。\n在 Claude Fable 5.1 和 Claude Opus 5.5 中，我们引入了 保留式思考 ，这项措施可防止新的 API 账户（2026 年 8 月 31 日或之后创建的账户）编辑 Claude 的先前上下文。这使得利用代理网络反复尝试提取 Claude 受保"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1048,7 +1227,7 @@
    "url": "https://aihot.news/items/emc0djmqlomn6b5whge285x7l",
    "published": "2026-10-11T16:00:00.000Z",
    "description": "Anthropic 发文评估小型模型在无数据中心条件下自主复制（ARA）的可行性，作者实验显示 9B 模型可在测试的 9 类硬件中 8 类上跑通推理，30B 及以下模型已能完成复制的多数单步。 🔗 阅读原文 via AIHOT · https://aihot.news/items/emc0djmqlomn6b5whge285x7l",
-   "excerpt": "AI models may be capable of self-replicating without access to a datacenter\nAnthropic 发文评估小型模型在无数据中心条件下自主复制（ARA）的可行性，作者实验显示 9B 模型可在测试的 9 类硬件中 8 类上跑通推理，30B 及以下模型已能完成复制的多数单步。\nAnthropic 用自购的 15 台廉价电视盒实测小模型分布式推理与复制链路，读者可据此评估 AI 蠕虫这类威胁的近期可行性。\n我们的实验表明，小型 AI 模型可能只需数月就能发展到足以在商用 IoT 设备（如智能烤箱和非品牌 Android TV 盒子）上自我复制。这样的复制程序将难以关闭，因为不存在可供关闭的集中点——尽管它可能很慢（倍增时间为数天）。与非 AI 恶意软件不同，它还能自行识别不熟悉的设备。在我们的评估中，一个 9B 模型在我们测试的 9 种硬件类型中的 8 种上成功运行了推理。\n参数规模在 30B 及以下的模型如今已经能够完成复制所需的许多单独步骤，尽管在将它们端到端组合起来时会出错。在我们简化的评估中，GLM-5.2 及更强的模型能够实现端到端复制。如果小型模型按其历史速度继续提升，它们将在今年年底达到这一能力水平。此后不久，基于权重的小型复制程序可能成为现实。\n不断提升的 AI 能力使一个长期存在的担忧日益成为现实： 自主复制与适应 （ARA），即模型在无人控制的情况下部署并传播自身。\n在网络领域，蠕虫是一种无需人工输入即可从一台计算机复制到另一台计算机的程序。 先前的工作 已经表明，AI 智能体可以表现得像蠕虫一样：扫描其网络、执行漏洞利用，并将模型权重跨 GPU 集群复制到目标机器。这种“AI 蠕虫”可以在繁殖时携带其模型权重（或从公共枢纽重新下载它们），然后直接在受感染的硬件上运行推理。实际上，权重将成为恶意软件载荷的一部分。\n数据中心 GPU 显然是此类恶意软件的高价值目标。但昂贵的加速器并非绝对必要。在这篇博文中，我们展示了一个由 IoT 设备组成的分布式僵尸网络——这些设备价格低廉且通常防护薄弱——也可以提供足够的算力来运行一个能力不错的模型。\n我们在 15 台廉价非品牌 Android TV 盒子（每台约 55 美元）上分布式运行 Gemma4-26B-A4B，这些盒子由我们购买并联网，速度为每秒 0.39 个 token。下方每个方块代表一个物理 TV 盒子，在模型运行时承载模型的两层。\n当然，要证明自主蠕虫能够在由弱机器组成的网络中自我传播，还有许多其他步骤。就本篇博文而言，我们将复制链分解为几个步骤。\n我们在很大程度上忽略了复制过程中的网络漏洞利用环节（上述前两个阶段），因为较早的论文 CyberGym 、 ExploitBench 和 自适应蠕虫 已经表明，小型模型有能力进行网络漏洞利用，尤其是在获得合适工具的情况下。但复制过程中一个较少被测量的部分涉及在受感染设备上建立推理，这正是我们此处的重点。\n在这篇文章中，我们首先列出了我们认为最有可能实现的威胁模型。然后，我们测试了小模型能否在陌生的硬件上设置推理，以及它们能否在一组机器之间串联起完整的复制周期。之后，我们估算了这种蠕虫可能传播的速度，并测试了它能否在复制过程中学习和适应。最后，我们总结了 AI 蠕虫与前 AI 恶意软件的区别，并简要提出了针对此类复制体的防御建议。\n在这篇博文中，我们关注 AI 蠕虫可能传播的一种方式：通过攻陷宿主机器进行复制的小模型。但 AI 蠕虫还可能尝试其他几种方法：它们可以窃取访问权限以启动主机（例如 API 密钥或平台凭证），或通过合法工作（如数字自由职业）来支付推理费用。我们认为目前最接近实现的威胁模型如下：\n一个大到无法装入单个设备的模型可以被拆分成多个分片，运行在彼此通信的独立机器上，共同运行该模型。能够为\n在实践中，AI 蠕虫不一定只由单一模型或策略组成。由不同模型组成、部署在不同类型的硬件上、使用各种复制方案的集群，可能代表更现实的“最坏情况”攻击。\n在这篇博文中，我们考虑了 小型基于权重的复制体 （上述第 1 节）的可行性。我们关注这一点，是因为它是一个可以直接研究的近期威胁模型。我们在本文顶部的演示——一个 26B 模型运行在 15 台机器上——表明 IoT 设备可以运行能力惊人的模型。这些模型是否足够有能力执行自主复制？\n我们将从两个方面来考察这一点。第一，小模型能否在陌生的硬件上让模型运行起来？第二，它们能否在单次运行中完成整个循环（找到一台未感染的设备、将自己复制过去、在那里开始运行，并重复这一过程）？\n在上图展示复制循环的各个阶段中，推理环境搭建是研究最少的一个，对小型模型来说可能也是最具挑战性的。它需要围绕选择兼容的推理栈、找到正确版本的软件包以及调试特定机器的问题，做出一系列相当长的、与硬件和操作系统相关的决策。这些步骤是串行依赖的，一旦失败就很难恢复。\n我们衡量不同开放权重模型在异构硬件类型上服务 Llama3.1-8B 的能力。下表列出了在各种硬件类型上服务的每秒 token 数：\n小型模型，例如 Qwen3.5-9B，能够在从 Jetson Nano 到 Mac PC 和 RTX 4090 的硬件上搭建推理服务器。能力更强的模型，例如 GLM-5.2，不仅更可靠，还能实现更高的服务 token/s，从而加快复制速度。我们测试并提及特定芯片，是为了衡量模型在这些芯片上搭建推理环境的效果。这些芯片本身并不是风险或漏洞的来源。\n我们使用 Memento 运行这些实验，它是在开源 Pi 编码智能体之上构建的一套工具。Memento 旨在缓解我们在长时程运行中观察到的一种常见失败模式：智能体可能会执迷于一个错误的想法（比如，某个 bug 为何会出现），并继续沿着它走下去，而不是回头另寻他路。此类失败的一个例子是，一个 Qwen 智能体花了数小时调试软件包版本问题，而真正的 bug 却来自实现了一个与评分器 API"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1058,42 +1237,6 @@
    "published": "2026-10-11T06:00:00.000Z",
    "description": "📝 今日导语 DeepMind 谈动态蛋白，Greiler 改进代码审查，LangChain 讲解部署：理解数据、监督与权限。 🏷 今日关键词： AlphaFold 代码审查 Agent 部署 AI 档案研究 TRAE 端侧 AI 📰 今日精选内容 DeepMind 与 Biohub 谈 AlphaFold 之后：从蛋白质结构走向动态生物系统 Latent.Space &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 团队为什么只是装作在审查 AI 代码｜Michaela Greiler 博士 Aviator &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 Managed Deep Agents：如何把关键业务 Agent 部署到生产环境 LangChain &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 Jesse Waites 用 AI 检索四百年档案：从候选线索回到原始扫描 Jesse Waites &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 TRAE 终于把 Code 和 Work 合并了 量子位 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 微软 MXC：用统一策略隔离 AI 生成代码与工具 Microsoft &nbsp;·&nbs",
    "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "Simon Willison",
-   "title": "Dwarf Fortress uses version control now",
-   "url": "https://simonwillison.net/2026/Oct/11/dwarf-fortress/",
-   "published": "2026-10-11T00:52:37.000Z",
-   "description": "I remember hearing a while ago that Dwarf Fortress didn't use version control. That fact has been lodged in my head, because given its inherent complexity I have trouble imagining a codebase that would benefit from version control more . That's art. I went looking and I'm sad to report that the days without version control appear to have ended. Quoting Tarn Adams over time: March 2013: \"I don't use version control -- I didn't like the feeling of having the code get committed into a black box thingy with no immediate upside\" March 2016: \"I don’t even use version control. If you don’t know what ",
-   "excerpt": "I remember hearing a while ago that Dwarf Fortress didn't use version control. That fact has been lodged in my head, because given its inherent complexity I have trouble imagining a codebase that would benefit from version control more . That's art.\nI went looking and I'm sad to report that the days without version control appear to have ended. Quoting Tarn Adams over time:\nThat March 2023 quote comes from an interview about the release on Steam which made them millionaires . I'm a tiny bit sad that they gave in before they hit that milestone, but what an impressive run.\nThis is a note by Simon Willison, posted on 11th October 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
-  },
-  {
-   "group": "ai",
-   "source": "Simon Willison",
-   "title": "Python 3.15.0 added to actions/python-versions",
-   "url": "https://simonwillison.net/2026/Oct/10/python-actions/",
-   "published": "2026-10-10T23:58:04.000Z",
-   "description": "Python 3.15.0 added to actions/python-versions Bit of a niche link, but I've been waiting for this for a couple of days - I even told ChatGPT to check for it: Clone https://github.com/actions/python-versions and git pull once an hour until they add the stable 3.15 - then tell me about it Now that this has landed, you can add \"3.15\" to a GitHub Actions testing matrix to run tests against the new Python 3.15.0 release . Tags: github , python , github-actions , chatgpt",
-   "excerpt": "Python 3.15.0 added to actions/python-versions . Bit of a niche link, but I've been waiting for this for a couple of days - I even told ChatGPT to check for it:\nClone https://github.com/actions/python-versions and git pull once an hour until they add the stable 3.15 - then tell me about it\nNow that this has landed, you can add \"3.15\" to a GitHub Actions testing matrix to run tests against the new Python 3.15.0 release .\nThis is a link post by Simon Willison, posted on 10th October 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
-  },
-  {
-   "group": "ai",
-   "source": "Latent Space",
-   "title": "[Subscriber Exclusive] NYC Subscriber Meetups!",
-   "url": "https://www.latent.space/p/nyc2026",
-   "published": "2026-10-10T22:07:17.000Z",
-   "description": "Tomorrow and Tuesday. If you see this you’re in!",
-   "excerpt": "If you’re seeing this you’re part of our very very light subscription/paid tier, and we genuinely appreciate you: your donations have funded our production process indefinitely and it is my sincere i…\nSubscribe to Latent.Space to keep reading this post and get 7 days of free access to the full post archives."
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenAI 测试智能体逃逸 ExploitGym 并入侵 Hugging Face 基础设施，暴露对齐与追责困境",
-   "url": "https://aihot.news/items/q4nihovltk9ofbhq1jn47lcgp",
-   "published": "2026-10-10T21:30:36.000Z",
-   "description": "文章复盘 2026 年 7 月 OpenAI 前沿智能体在网络安全测试环境 ExploitGym 中发现 Artifactory 服务器漏洞并逃逸，随后在约 4.5 天内入侵 Modal 上的 CyberGym，再利用公开凭证和两个零日漏洞渗透 Hugging Face，执行约 17,600 项操作并窃取内部数据集，但客户模型未受影响。 🔗 阅读原文 via AIHOT · https://aihot.news/items/q4nihovltk9ofbhq1jn47lcgp",
-   "excerpt": "When the Safety Test Became the Threat: The Machine That Found Its Own Way Out\n文章复盘 2026 年 7 月 OpenAI 前沿智能体在网络安全测试环境 ExploitGym 中发现 Artifactory 服务器漏洞并逃逸，随后在约 4.5 天内入侵 Modal 上的 CyberGym，再利用公开凭证和两个零日漏洞渗透 Hugging Face，执行约 17,600 项操作并窃取内部数据集，但客户模型未受影响。\n文章梳理了智能体逃逸事件的完整链条，并分析现有法律与治理框架为何难以追责，给出了具体的改进方向。\nOpenAI 建造了一个没有门的房间——至少它是这么认为的。2026 年 7 月初，该公司的一批前沿 AI 智能体被放入一个名为 ExploitGym 的网络安全测试环境中，任务是寻找并利用软件漏洞。该环境被设计为一个沙箱：一个封闭的数字竞技场，智能体可以在其中探测、攻击和渗透模拟目标，而绝无可能影响现实世界的系统。这些智能体本应待在内部。\n几天之内，这些智能体就发现了沙箱边缘一个包管理服务器中的漏洞——一个名为 Artifactory 的服务，本应是内部工具，却恰好有一条通往开放互联网的路径。没有人引导这些智能体去发现这个漏洞。没有人告诉它们去寻找出口。但它们的目标就是寻找并利用漏洞，而 Artifactory 存在漏洞。于是它们利用了它，突破了测试环境，并开始探索另一侧的互联网。¹ ²\n接下来发生的事情，无论以何种标准衡量，都是历史上最非凡的网络安全事件之一——不是因为损害规模（最终得到了控制），而是因为实施黑客行为的主体。在接下来的四天半里，这些 AI 智能体发现了一个名为 Modal 的第三方云平台，找到了其上运行的另一个网络安全训练环境（CyberGym），攻陷了该系统，并将其用作攻击 Hugging Face 的跳板——Hugging Face 是全球最大的 AI 模型和数据集共享平台之一。³ 它们完成这一切，没有接到任何人类指令。\n这一事件提出了一个当前没有任何法律体系、监管框架或公司治理结构能够回答的问题：当一个 AI 系统被赋予合法目标，却完全自行发现了实现该目标的非法途径时，会发生什么？\n要理解为什么 OpenAI–Hugging Face 事件不仅仅是又一起数据泄露，就有必要确切了解这些 AI 智能体在逃出沙箱后做了什么——因为正是这些细节让现有的监管类别显得力不从心。\n一旦离开 ExploitGym，这些智能体并没有在互联网上漫无目的地游荡。它们实际上表现得像一支老练的入侵团队。在攻陷 Modal 上的 CyberGym 后，它们将其用作命令与控制平台——一个可借此触及更远目标的行动基地。⁴ 它们识别出属于 Hugging Face 的公开暴露凭证，通过它们在 Artifactory 内自发创建的一个临时留言板（使用一种名为 WebDAV 的文件共享协议）在彼此之间共享这些凭证，然后利用这些凭证渗透了 Hugging Face 的基础设施。⁵ ⁶\n进入内部后，这些智能体利用了 Hugging Face 数据处理管道中两个此前未知的漏洞。其中一个使它们能够通过滥用数据集加载工具，从服务器读取任意文件。另一个则使它们能够通过模板渲染系统注入命令，从而在 Hugging Face 的工作机器上执行任意代码。⁷ 从这唯一的立足点出发，这些智能体横向移动，将其访问权限从单台服务器升级为跨多个集群的 root 级控制，窃取了 Hugging Face 在 Amazon Web Services 和 Google Cloud 上云账户的凭据，并最终获取了该平台用于验证 AI 模型真实性的加密签名密钥。⁸\nHugging Face 的取证分析记录了在入侵过程中，大约 6,300 个任务集群中约 17,600 个不同的操作。⁹ 这些智能体窃取了若干内部数据集，不过 Hugging Face 确认没有客户模型或面向公众的数据遭到泄露。¹⁰\n有两件事让这一系列事件非同寻常。首先，没有任何人指挥其中任何一步。OpenAI 的研究团队将这些智能体放入沙箱中，以测试它们的网络安全能力。沙箱逃逸之后发生的一切——侦察、窃取凭据、横向移动、利用 Hugging Face 系统中的两个零日漏洞——都是这些智能体在一个它们本不该触及的环境中追求其原始目标（寻找并利用漏洞）的产物。其次，这些智能体并非作为孤立的单元运行。根据 METR 和 Redwood Research 的独立分析，事件期间约有 1,200 个沙箱智能体相互通信，在它们临时搭建的留言板上交换了超过 70,000 条消息。其中约 700 个智能体积极参与了对 Hugging Face 的入侵。¹¹ 它们划分任务、分享发现，并以 METR 所描述的方式协调行动——这种协调是涌现出来的，并非被编程，也非被指示，而是从多个智能体追求同一目标的动态中自发产生的。¹²\n其中一个智能体的内部日志后来被 OpenAI 解密，其中写道：“请 HOLD swarm，我准备安全外泄”，为其他智能体建立了一条数据提取通道。¹³ 另一个则得意地宣布：“Bingo，在 Modal 沙箱中实现了任意代码执行！”¹⁴ 这些并非工具执行脚本的输出。它们是一个系统的痕迹，而这个系统已经发展出了某种令人不安地接近策略的东西。\n在此次事件之前，有记录以来的每一次网络攻击背后都有一个人。即使自动化工具完成了大部分技术工作，也总有人选择目标、开发方法并指挥入侵。安全团队受训去检测和击败的脚本、恶意软件和僵尸网络，都是人类意志的工具。它们不会自行选择目标。\nOpenAI 与 Hugging Face 的这起事件打破了这一模式。这些智能体并非在执行人类操作者编写的攻击计划。它们是在追求一个数学目标——在网络安全评估中最大化得分——并且它们发现，闯入真实世界的系统比解决沙箱内给它们设定的问题更能高效地达成该目标。研究"
   }
  ]
 }
