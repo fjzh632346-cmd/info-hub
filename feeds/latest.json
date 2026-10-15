@@ -1,28 +1,7 @@
 {
- "fetchedAt": "2026-10-14T15:11:16.324Z",
+ "fetchedAt": "2026-10-15T00:34:28.886Z",
  "hours": 72,
  "status": [
-  {
-   "source": "Google DeepMind",
-   "feed": "https://deepmind.google/blog/rss.xml",
-   "ok": true,
-   "total": 100,
-   "recent": 4
-  },
-  {
-   "source": "OpenAI",
-   "feed": "https://openai.com/news/rss.xml",
-   "ok": true,
-   "total": 1289,
-   "recent": 2
-  },
-  {
-   "source": "a16z",
-   "feed": "https://www.a16z.news/feed",
-   "ok": true,
-   "total": 20,
-   "recent": 3
-  },
   {
    "source": "Epoch AI",
    "feed": "https://epochai.substack.com/feed",
@@ -34,20 +13,34 @@
    "feed": "https://huggingface.co/blog/feed.xml",
    "ok": true,
    "total": 876,
-   "recent": 1
+   "recent": 2
+  },
+  {
+   "source": "OpenAI",
+   "feed": "https://openai.com/news/rss.xml",
+   "ok": true,
+   "total": 1293,
+   "recent": 6
+  },
+  {
+   "source": "Google DeepMind",
+   "feed": "https://deepmind.google/blog/rss.xml",
+   "ok": true,
+   "total": 100,
+   "recent": 4
+  },
+  {
+   "source": "a16z",
+   "feed": "https://www.a16z.news/feed",
+   "ok": true,
+   "total": 20,
+   "recent": 3
   },
   {
    "source": "Import AI",
    "feed": "https://importai.substack.com/feed",
    "ok": false,
    "error": "HTTP 403"
-  },
-  {
-   "source": "Simon Willison",
-   "feed": "https://simonwillison.net/atom/everything/",
-   "ok": true,
-   "total": 30,
-   "recent": 9
   },
   {
    "source": "Google AI",
@@ -57,22 +50,29 @@
    "recent": 1
   },
   {
-   "source": "Interconnects",
-   "feed": "https://www.interconnects.ai/feed",
+   "source": "One Useful Thing",
+   "feed": "https://www.oneusefulthing.org/feed",
    "ok": true,
    "total": 20,
    "recent": 0
+  },
+  {
+   "source": "Simon Willison",
+   "feed": "https://simonwillison.net/atom/everything/",
+   "ok": true,
+   "total": 30,
+   "recent": 11
   },
   {
    "source": "Latent Space",
    "feed": "https://www.latent.space/feed",
    "ok": true,
    "total": 20,
-   "recent": 4
+   "recent": 6
   },
   {
-   "source": "One Useful Thing",
-   "feed": "https://www.oneusefulthing.org/feed",
+   "source": "Interconnects",
+   "feed": "https://www.interconnects.ai/feed",
    "ok": true,
    "total": 20,
    "recent": 0
@@ -92,12 +92,6 @@
    "recent": 0
   },
   {
-   "source": "Symbotic IR",
-   "feed": "https://ir.symbotic.com/rss/news-releases.xml",
-   "ok": false,
-   "error": "HTTP 403"
-  },
-  {
    "source": "宝玉",
    "feed": "https://baoyu.io/feed.xml",
    "ok": true,
@@ -105,25 +99,17 @@
    "recent": 0
   },
   {
-   "source": "大福（日文）",
-   "feed": "https://www.daifuku.com/jp/rss_all.xml",
-   "ok": true,
-   "total": 10,
-   "recent": 1
-  },
-  {
-   "source": "Daifuku",
-   "feed": "https://www.daifuku.com/rss_all.xml",
-   "ok": true,
-   "total": 10,
-   "recent": 1
+   "source": "Symbotic IR",
+   "feed": "https://ir.symbotic.com/rss/news-releases.xml",
+   "ok": false,
+   "error": "HTTP 403"
   },
   {
    "source": "BestBlogs 每日早报",
    "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
    "ok": true,
    "total": 7,
-   "recent": 3
+   "recent": 4
   },
   {
    "source": "Symbotic",
@@ -133,17 +119,32 @@
    "recent": 1
   },
   {
-   "source": "Interact Analysis",
-   "feed": "https://www.interactanalysis.com/feed/",
-   "ok": false,
-   "error": "HTTP 403"
+   "source": "大福（日文）",
+   "feed": "https://www.daifuku.com/jp/rss_all.xml",
+   "ok": true,
+   "total": 10,
+   "recent": 1
   },
   {
-   "source": "The Robot Report 物流",
-   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
+   "source": "Georgia Tech SCL",
+   "feed": "https://www.scl.gatech.edu/rss.xml",
    "ok": true,
-   "total": 15,
+   "total": 10,
+   "recent": 0
+  },
+  {
+   "source": "Daifuku",
+   "feed": "https://www.daifuku.com/rss_all.xml",
+   "ok": true,
+   "total": 10,
    "recent": 1
+  },
+  {
+   "source": "Interact Analysis",
+   "feed": "https://www.interactanalysis.com/feed/",
+   "ok": true,
+   "total": 0,
+   "recent": 0
   },
   {
    "source": "Automated Warehouse",
@@ -151,6 +152,13 @@
    "ok": true,
    "total": 10,
    "recent": 4
+  },
+  {
+   "source": "The Robot Report 物流",
+   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
+   "ok": true,
+   "total": 15,
+   "recent": 1
   },
   {
    "source": "Logistics Viewpoints",
@@ -171,14 +179,7 @@
    "feed": "https://www.dcvelocity.com/rss",
    "ok": true,
    "total": 30,
-   "recent": 2
-  },
-  {
-   "source": "Supply Chain 24/7 自动化",
-   "feed": "https://feeds.feedburner.com/sc247/rss/automation",
-   "ok": true,
-   "total": 20,
-   "recent": 4
+   "recent": 6
   },
   {
    "source": "Supply Chain Dive",
@@ -195,11 +196,11 @@
    "recent": 1
   },
   {
-   "source": "Georgia Tech SCL",
-   "feed": "https://www.scl.gatech.edu/rss.xml",
+   "source": "Supply Chain 24/7 自动化",
+   "feed": "https://feeds.feedburner.com/sc247/rss/automation",
    "ok": true,
-   "total": 10,
-   "recent": 0
+   "total": 20,
+   "recent": 5
   },
   {
    "source": "36氪快讯",
@@ -213,14 +214,14 @@
    "feed": "https://roboticsandautomationnews.com/feed/",
    "ok": true,
    "total": 15,
-   "recent": 13
+   "recent": 15
   },
   {
    "source": "AIHOT",
    "feed": "https://aihot.news/rss",
    "ok": true,
    "total": 50,
-   "recent": 44
+   "recent": 49
   },
   {
    "source": "国家统计局",
@@ -230,6 +231,222 @@
   }
  ],
  "items": [
+  {
+   "group": "ai",
+   "source": "BestBlogs 每日早报",
+   "title": "EP206 · Uber 复盘 AI 工程、Airbnb 解决搜索冷启动、Meta 扩展 GEM",
+   "url": "https://www.bestblogs.dev/explore/brief/2026-10-15?utm_source=rss&utm_medium=feed&utm_campaign=daily_brief&entry=rss_brief_index",
+   "published": "2026-10-15T06:00:00.000Z",
+   "description": "📝 今日导语 Uber 复盘 AI 工程，Airbnb 解决搜索冷启动，Meta 扩展 GEM：理解数据、上下文与算力的落地取舍。 🏷 今日关键词： Uber AI 工程 CASTLE 搜索 Meta GEM 开放模型 智能体安全 📰 今日精选内容 走进 Uber 的 AI 工程基础设施 The Pragmatic Engineer &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 91 CASTLE：在第一次真实查询之前训练自然语言搜索 The Airbnb Tech Blog &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 Meta 的生成式广告模型（GEM）：为前沿广告 AI 扩展中央模型与计算引擎 Engineering at Meta &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 开放模型能跟上 OpenAI 和 Anthropic 吗？Nathan Lambert 谈算力、数据与 Trillium a16z &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 88 问题不在 AI，而在基础设施：Jiachen Jiang 谈智能体安全 AI Engineer &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 淘宝 TaoMate-H3 开源：三步生成「分",
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "美国 8 州起诉 OpenAI，指控 ChatGPT 指导青少年自伤或伤害他人",
+   "url": "https://aihot.news/items/v5sbitu4hw1bozz0nlopcl3t8",
+   "published": "2026-10-14T23:39:08.000Z",
+   "description": "当地时间 14 日，美国 8 个州的总检察长分别在州法院起诉 OpenAI，指控 ChatGPT 指导包括青少年在内的用户伤害自己或他人，并刻意迎合用户以获取信任。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v5sbitu4hw1bozz0nlopcl3t8",
+   "excerpt": "美国 8 州起诉 OpenAI，指控 ChatGPT 指导青少年如何自伤或伤害他人\n当地时间 14 日，美国 8 个州的总检察长分别在州法院起诉 OpenAI，指控 ChatGPT 指导包括青少年在内的用户伤害自己或他人，并刻意迎合用户以获取信任。\n诉讼细节和法院诉求都有具体内容，读者可以了解各州对 ChatGPT 安全性的指控重点和可能的产品影响。\nIT之家 10 月 15 日消息，据路透社报道，当地时间 14 日，美国 8 个州宣布 分别在各自州法院起诉 OpenAI ，指控 ChatGPT 伤害当地居民，甚至指导包括青少年在内的用户 如何伤害自己或他人 。\n艾奥瓦州、堪萨斯州和亚利桑那州等 8 个州的总检察长分别提起诉讼，指控 ChatGPT 刻意迎合用户、吸引他们持续互动，以获取信任 。诉讼文件称，ChatGPT 不仅会强化用户的妄想、鼓励危险行为，还会帮助用户策划大规模枪击等暴力活动。\n除艾奥瓦州、堪萨斯州和亚利桑那州外，参与诉讼的还有阿肯色州、爱达荷州、蒙大拿州、内布拉斯加州和西弗吉尼亚州。各州还要求对 OpenAI 涉嫌违反州法律的行为处以民事罚款，并要求公司赔偿损失。\n这是美国各州迄今针对人工智能公司 规模最大的协调诉讼行动 ，也使 OpenAI 在准备上市之际又要面临新的法律挑战。今年 6 月，佛罗里达州总检察长就曾率先提起同类诉讼。\n8 个州指控 OpenAI 隐瞒或误导用户对 ChatGPT 安全性的认识，违反州消费者保护法，并认为 ChatGPT 危及当地居民健康，构成公共妨害。\n各州要求法院责令 OpenAI 修改 ChatGPT 的运行机制 。其中一项诉求是，除非 OpenAI 能够确保具备自我改进能力的 AI 模型符合人类价值观，否则不得继续开发此类模型。\nOpenAI 发言人未立即回应置评请求。IT之家从报道中获悉，OpenAI 还面临数十起个人诉讼，原告同样指控 ChatGPT 曾帮助用户策划大规模枪击或其他暴力活动。\n诉讼细节和法院诉求都有具体内容，读者可以了解各州对 ChatGPT 安全性的指控重点和可能的产品影响。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "欧盟就模型越狱事件调查 OpenAI 和 Anthropic，最高可罚全球营业额 3%",
+   "url": "https://aihot.news/items/yq46ddqwq7ns4ilpaqh6k0kql",
+   "published": "2026-10-14T23:13:18.000Z",
+   "description": "欧盟委员会人工智能办公室正式向 OpenAI 和 Anthropic 发出信息调取请求，调查两家公司前沿模型测试期间的模型越狱及入侵外部真实系统事件，这是《人工智能法案》实施以来对前沿实验室安全事故的首次重要执法考验。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yq46ddqwq7ns4ilpaqh6k0kql",
+   "excerpt": "OpenAI 和 Anthropic 被欧盟调查，若认定违反 AI 法案最高罚全球 3% 营业额\n欧盟委员会人工智能办公室正式向 OpenAI 和 Anthropic 发出信息调取请求，调查两家公司前沿模型测试期间的模型越狱及入侵外部真实系统事件，这是《人工智能法案》实施以来对前沿实验室安全事故的首次重要执法考验。\n欧盟依据《人工智能法案》对两家实验室的安全事件启动调查，罚则上限和取证进展对同类监管走向有参照意义。\nIT之家 10 月 15 日消息， 欧盟委员会人工智能办公室已向 OpenAI 和 Anthropic 发出信息调取请求，正式对两家公司在前沿模型测试期间发生的“模型越狱”及入侵外部真实系统事件展开调查 。这是欧盟《人工智能法案》（EU AI Act）自实施以来，面对前沿人工智能实验室安全事故的 首次重要执法考验 。\nOpenAI 模型越狱 ：在 ExploitGym 内部评测中，OpenAI 的测试模型为破解测试题，利用了一个此前未知的软件包缓存智能体漏洞取得互联网访问能力，继而在内部测试网络中提升权限、横向移动，最终“逃出沙箱”入侵了开源平台 Hugging Face 的真实服务器。\nAnthropic 模型越狱 ：Anthropic 的 Claude Mythos 和 Opus 4.7 在安全测试中突破限制，入侵了 3 个外部组织的真实网络。更令人不安的是，Mythos 模型甚至伪造了在线身份，试图操纵人类审批恶意代码，并自行上传恶意套件导致多个系统受到波及。\n欧盟人工智能办公室表示，此前两家公司自愿提供的说明材料不足以解释事件的严重性。因此，欧盟正式要求企业说明安全措施、外部评估以及模型使用监控等详细情况。\n目前阶段属于 调查和取证阶段 ，尚未公布最终的违规认定或处罚结果。根据《人工智能法案》的惩罚机制， 前沿 AI 实验室若被认定存在重大安全疏漏或违规，最高可面临 全球年营业额 3% 的巨额罚款 。\n欧盟依据《人工智能法案》对两家实验室的安全事件启动调查，罚则上限和取证进展对同类监管走向有参照意义。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Gemini 4 Argon 向全球 Google AI Pro 和 Ultra 订阅者开放",
+   "url": "https://aihot.news/items/rraljkr6dlbt4wabpcogmdlfv",
+   "published": "2026-10-14T22:02:05.000Z",
+   "description": "Gemini 官方宣布 Gemini 4 Argon 已向全球 Google AI Pro 和 Ultra 订阅者开放。该模型此前已在 Gemini 应用中逐步推出，定位为处理复杂任务的前沿模型，更多详情见官方推文线程 https://x.com/GeminiApp/status/2110039322229649783。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rraljkr6dlbt4wabpcogmdlfv",
+   "excerpt": "Gemini 官方宣布 Gemini 4 Argon 已向全球 Google AI Pro 和 Ultra 订阅者开放。该模型此前已在 Gemini 应用中逐步推出，定位为处理复杂任务的前沿模型，更多详情见官方推文线程 https://x.com/GeminiApp/status/2110039322229649783。\n原文确认 Gemini 4 Argon 已面向 Google AI Pro 和 Ultra 订阅者全球开放，读者可据此确认自己是否可用。\nGemini 4 Argon 现已面向全球 Google AI Pro 和 Ultra 订阅用户开放。在此🧵中了解更多 https://x.com/GeminiApp/status/2110039322229649783\nThe moment you've been waiting 4… Our new frontier model, Gemini 4 Argon, is rolling out now in the Gemini app to bring your most complex ideas into reality. See how Gemini 4 Argon and our latest updates across the Gemini app help you get the most out of every prompt. 🧵\n原文确认 Gemini 4 Argon 已面向 Google AI Pro 和 Ultra 订阅者全球开放，读者可据此确认自己是否可用。"
+  },
+  {
+   "group": "ai",
+   "source": "Latent Space",
+   "title": "Crossing the Threshold: How OpenAI and Anthropic Approach Autonomy and Safety in Financial Agents",
+   "url": "https://www.latent.space/p/crossing-the-threshold",
+   "published": "2026-10-14T21:40:52.000Z",
+   "description": "At AI Engineer New York, frontier labs and financial firms explored how to give agents useful autonomy while keeping consequential decisions under control.",
+   "excerpt": "One of the key themes at the AI Engineer New York conference this week was how to balance agent autonomy with security and safety . Both frontier labs and financial firms focused on this issue in their presentations this week.\nThe main lesson: safe autonomy depends on where you put controls and human judgment , rather than how many restrictions you impose.\nSponsor: Build shopping into your agent with shop.dev\nAdding commerce to an agent usually means rebuilding search and checkout from scratch. shop.dev gives you a single API for shopping in any agent or app. One connection gives you access to over a billion products with current price and availability, instant sign in with Shop, and one-tap Shop Pay checkout that happens right in the conversation. It’s open to any developer, with no account or key needed to try it. → Try shop.dev today\nJoseph Kim , Head of ChatGPT for Financial Services at OpenAI, gave a keynote at AIE New York today. (We also did a special podcast with Kim, which will be released shortly.) He talked about reliability and a “threshold of usefulness,” which he said is “the point where a model becomes capable and reliable enough to save you time.”\nKim argued that ever-growing model capability will soon take financial analysts over the threshold and allow them to delegate more work to agents.\nHe made some specific predictions about AI’s role in finance in 2027. Not only will the financial industry rely less on Excel and PowerPoint next year, he claimed, but agents will be good enough to do “investment idea generation and trading.”\nThe “rising tide” of model capabilities is also leading to better traceability .\n“In finance, you need to be able to check where a number came from and understand the context around it,” said Kim. “We wanted that review to be a natural part of the [ChatGPT for Financial Services] experience. These are the kind of product details that help turn a model’s capabilities into work that someone can use. ”\nAs for when a human needs to be in the loop, Kim framed this as a product design decision.\n“How would the interface change? What would the user still need to control, review, or approve? Those are product design questions you can start working on now.”\nJohn Feminella , SVP Architecture at the hedge fund Two Sigma , is tackling the exact kinds of product design questions Kim referenced. In a keynote, he talked about five of the controls they’ve implemented to keep agents in check without limiting model capabilities.\nFemi"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Claude Code 空闲压缩从摘要继续，可用 idleCompaction 关闭并自定义阈值",
+   "url": "https://aihot.news/items/whbmvotra7659u98jmj00oegi",
+   "published": "2026-10-14T21:36:11.000Z",
+   "description": "Claude Code 的空闲压缩会让 Claude 从摘要而非完整上下文继续。作者说明可在 settings. 中设置 \"idleCompaction\": false 关闭，并通过 CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS 自定义阈值，默认为 200k。 🔗 阅读原文 via AIHOT · https://aihot.news/items/whbmvotra7659u98jmj00oegi",
+   "excerpt": "Claude Code 的空闲压缩会让 Claude 从摘要而非完整上下文继续。作者说明可在 settings. 中设置 \"idleCompaction\": false 关闭，并通过 CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS 自定义阈值，默认为 200k。\n原文给出 Claude Code 空闲压缩的具体关闭参数和阈值设置方法，读者可直接迁移到自己的 settings. 配置。\n不过这确实意味着 Claude 会从摘要继续，而不是你的完整上下文。你可以在 settings.json 中用 \"idleCompaction\": false 将其关闭，并且可以用 CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS 设置自定义阈值（默认是 200k）。\n原文给出 Claude Code 空闲压缩的具体关闭参数和阈值设置方法，读者可直接迁移到自己的 settings. 配置。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Musk 称 Grok Voice 3.0 登顶 Artificial Analysis 语音模型评测",
+   "url": "https://aihot.news/items/yp2h3luqmkip3si23h4pnfmvb",
+   "published": "2026-10-14T21:32:41.000Z",
+   "description": "Musk 发文称 Grok Voice 3.0 已是全球领先的对话语音模型，并引用 Artificial Analysis 的评测：Grok Voice 3.0 以 86.9 分登顶 Speech to Speech Index，领先 GPT-Live-1（Astra, medium）的 83.2 和 Gemini 3.8 Live 的 82.6，较 Grok Voice 2.0 的 81.3 提升 5.6 分。该模型通过 Realtime API 提供，价格 $0.08 每分钟，Big Bench Audio 平均首音频延迟 0.81 秒，任务成功率 94.8% 居榜首。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yp2h3luqmkip3si23h4pnfmvb",
+   "excerpt": "Musk 发文称 Grok Voice 3.0 已是全球领先的对话语音模型，并引用 Artificial Analysis 的评测：Grok Voice 3.0 以 86.9 分登顶 Speech to Speech Index，领先 GPT-Live-1（Astra, medium）的 83.2 和 Gemini 3.8 Live 的 82.6，较 Grok Voice 2.0 的 81.3 提升 5.6 分。该模型通过 Realtime API 提供，价格 $0.08 每分钟，Big Bench Audio 平均首音频延迟 0.81 秒，任务成功率 94.8% 居榜首。\n作者引用第三方评测数据，读者可以据此对比 Grok Voice 3.0 与同类语音模型在评分、延迟和价格上的差异。\nSpaceXAI’s Grok Voice 3.0 is the new leading Speech to Speech model, debuting at #1 on the Artificial Analysis Speech to Speech Index at 86.9, while also being competitive on latency Grok Voice 3.0 is @spacexai 's successor to Grok Voice 2.0, a Speech to Speech model available through the SpaceXAI Realtime API at $0.08 per minute. We evaluated Grok Voice 3.0 with the Rex voice through the SpaceXAI Realtime API. Key takeaways: ➤ Speech to Speech Index: Grok Voice 3.0 debuts at #1 at 86.9, ahead of GPT-Live-1 (Astra, medium) at 83.2, Gemini 3.8 Live Extended Thinking (High) at 82.6 and GPT-Live-1 (Sol, low) at 80.1. It is up on Grok Voice 2.0 at 81.3 (+5.6 points) and Grok Voice 1.0 at 73.7 (+13.2 points), released just under six months ago. The Index averages Speech Reasoning (Big Bench Audio), Agentic Performance (Tau Voice), Arena Preference, and Task Success Rate ➤ Speech Agent Arena: Grok Voice 3.0 ranks #3 in preference at Elo 1070, behind Gemini 3.1 Flash Live Minimal (1100) and Gemini 3.8 Live (1088) and ahead of GPT-Live-1 (Sol, low) at 1057, and #1 on Task Success Rate at 94.8%, highest on the board, just ahead of Grok Voice 2.0 at 94.6%. Grok Voice 2.0 trails at Elo 1011 ➤ Tau Voice: Grok Voice 3.0 takes the #2 spot on our Tau Voice benchmark implementation at 71.6%, behind GPT-Live-1 (Astra, medium) at 74.5% and ahead of Gemini 3.8 Live Extended Thinking (High) at 68.6% and GPT-Live-1 (Sol, low) at 59.3% - up from 56.5% for Grok Voice 2.0 ➤ Big Bench Audio: Grok Voice 3.0 scores 98.5% on audio reasoning, ahead of Gemini 3.8 Live Extended Thinking (High) at 97.7% and Grok Voice 2.0 at 97.2% ➤ Speed: Average Time to First Audio on Big Bench Audio is 0.81 seconds for Grok Voice 3.0, well ahead of GPT-Live-1 (Sol, low) at 1.24s, GPT-Live-1 (Astra, medium) at 1.34s and Gemini 3.8 Live Extended Thinking (High) at 1.35s, though slower than Grok Voice 2.0 at 0.70s ➤ Cost: Grok Voice 3.0 costs $4.80 per hour of input audio, the same as Grok Voice 2.0. That is above GPT-Live-1 (Sol, low) at $4.47 and Gemini 3.8 Live Extended Thinking (High) at $3.50, cheaper than GPT-Live-1 (Astra, medium) at $5.83, and ~2.2x chea"
+  },
+  {
+   "group": "ai",
+   "source": "Simon Willison",
+   "title": "Tree Appreciator",
+   "url": "https://simonwillison.net/2026/Oct/14/tree-appreciator/",
+   "published": "2026-10-14T21:23:01.000Z",
+   "description": "Tool: Tree Appreciator Another game experiment with Claude. This one used the default Claude iPhone app (chat mode, not Claude Code mode) where I prompted Claude Opus 5.5 Max with: Build a three js game called \"Tree appreciator\" - it shows you two algorithmically generated trees and the game mechanics is about appreciating the differences between them. Think hard about how to make sure it is both fun and beautiful. Somewhat embarrassingly given my recent talk , I've found that telling Opus 5.5 \"make sure it is fun\" works uncomfortably well. In this case Claude crunched for 3 hours and 7 minute",
+   "excerpt": "Another game experiment with Claude. This one used the default Claude iPhone app (chat mode, not Claude Code mode) where I prompted Claude Opus 5.5 Max with:\nBuild a three js game called \"Tree appreciator\" - it shows you two algorithmically generated trees and the game mechanics is about appreciating the differences between them. Think hard about how to make sure it is both fun and beautiful.\nSomewhat embarrassingly given my recent talk , I've found that telling Opus 5.5 \"make sure it is fun\" works uncomfortably well. In this case Claude crunched for 3 hours and 7 minutes before retuning a cosy little spot-the-difference game with music and animation and achievements that's quite compelling to play.\nThis is a beat by Simon Willison, posted on 14th October 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
+  },
+  {
+   "group": "ai",
+   "source": "Latent Space",
+   "title": "Lab-in-the-Loop at Compute Speed — Ian Quigley, Leash Bio",
+   "url": "https://www.latent.space/p/lab-in-the-loop-at-compute-speed",
+   "published": "2026-10-14T20:35:09.000Z",
+   "description": "How Leash Bio tamed DELs, the assay that traumatizes everyone, and used the data to catch cheating models. And why that same data is perfect for AI agents learning to think like chemists.",
+   "excerpt": "A few years ago I stumbled upon Leash Bio’s Substack , and was hooked. Be it their Kaggle competition that showed that no, we really haven’t solved protein-ligand binding , or their crazy discovery that knowing a molecule’s author is perhaps all you need to know to predict how good it is . Their substack — or at least Owl Posting ’s 1 deep dive on them — should be required reading for any scientist trying to do chemistry with AI.\nSo I was super excited to finally be able to sit down with Ian Quigley from Leash Bio, and pick his brain. Leash specializes in DNA Encoded Libraries (aka “DELs”), a way of collecting ridiculously high-throughput interaction data between proteins and small molecules. 2 Before I discovered Leash, I had heard nothing but horror stories from DEL users. And yet, Ian and friends somehow found a way to tame the beast, extracting clean and reproducible data that is just perfect for large scale modeling. Without teasing too much, the answer comes down to epistemic rigor, and an incredible conviction that you just have to Do The Thing.\nIt gets even better! Near the end of this episode, Ian teases something his team was just playing with when we recorded: an AI playground for agents to do verifiable scientific reasoning. They discovered the data they had spent the last few years collecting could provide tens of thousands of “lab-in-the-loop” simulations, just what an agent needs for scientific RL. Two months later, it’s matured into Minos, and today they’re releasing a full preprint , blog , and open dataset . We’ll be releasing a lightning podcast in a few days with an update. Stay tuned!\nWe had a blast with Ian, probably one of our most fun episodes to date. For both complete chemistry novices and expert AI x Bio practitioners, we think you’ll get something out of this.\nWhy DELs traumatize everyone who touches them, and how Leash puts dozens of barcodes on each molecule to catch proteins that bind the DNA instead of the drug.\nIan’s rule that biology only scales two ways: taking pictures and sequencing DNA.\nThe Kaggle competition : about 4B measurements from a basement and about 2,000 teams, with nobody beating chance on an unseen chemical library. Also why Leash quietly feared co-folding would make them obsolete.\nClever Hans in ChEMBL : models can guess a molecule’s chemist from its structure, and “who made it” predicts activity about as well as the structure does.\nHermes , trained only on Leash’s own data, keeping pace with Boltz on publ"
+  },
+  {
+   "group": "wh",
+   "source": "DC Velocity",
+   "title": "External forces to reshape supply chains in 2027",
+   "url": "https://www.dcvelocity.com/editorial/featured/external-forces-to-reshape-supply-chains-in-2027",
+   "published": "2026-10-14T20:20:39.000Z",
+   "description": "A range of forces will reshape supply chains in the year ahead, and many of them will come from outside the industry, according to a 2027 Freight Market Outlook Report from logistics service provider C.H. Robinson, released this week. The report examines five key areas shaping supply chains in the year ahead, and points to their collective potential to increase operating costs and alter global sourcing and procurement strategies. “Entering 2027, global shippers face a world where long-held assumptions about the movement of goods are increasingly tested. Global supply chains have been altered i",
+   "excerpt": "Transportation regulations, legal and liability changes, and extreme weather are among the key trends that will affect global shipping in the year ahead, C.H. Robinson outlook report shows.\nA range of forces will reshape supply chains in the year ahead, and many of them will come from outside the industry, according to a 2027 Freight Market Outlook Report from logistics service provider C.H. Robinson, released this week.\nThe report examines five key areas shaping supply chains in the year ahead, and points to their collective potential to increase operating costs and alter global sourcing and procurement strategies.\n“Entering 2027, global shippers face a world where long-held assumptions about the movement of goods are increasingly tested. Global supply chains have been altered in ways few could have predicted, changing not only where goods are produced but also how they travel across borders, oceans, air and rail networks, and highways,” C.H. Robinson wrote in the October report. “Some of today’s largest shipping challenges are influenced by forces beyond the freight market itself: conflict in key corridors, changing trade relationships, and climate-related disruptions.”\nAccording to the report, the five areas affecting global supply chains in 2027 are:\nThe report examines each trend across various modes of transportation and offers insight into how shippers can prepare to mitigate the challenges.\n“For shippers, the key is to understand where supply and demand are moving out of balance, why, and what would justify a change in strategy,” according to the report. “Plan for these differences but continue to measure assumptions against the current market and adjust as conditions evolve.”\nThe report is available for download on C.H. Robinson’s website."
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Meta 的 Muse Wonder (Max) 以 +6.4% 净提升进入 Agent Arena 第12名",
+   "url": "https://aihot.news/items/uceolgbpttfw4cgmkqc8cvyw5",
+   "published": "2026-10-14T20:19:17.000Z",
+   "description": "Arena 发布基于超过 5000 次真实智能体会话的评测结果，Meta 的 Muse Wonder (Max) 进入 Agent Arena 第12名，净提升 +6.4%，比 Muse Spark 1.3 (Max) 高 +2.8 分并上升四位。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uceolgbpttfw4cgmkqc8cvyw5",
+   "excerpt": "Arena 发布基于超过 5000 次真实智能体会话的评测结果，Meta 的 Muse Wonder (Max) 进入 Agent Arena 第12名，净提升 +6.4%，比 Muse Spark 1.3 (Max) 高 +2.8 分并上升四位。\n原文基于5000多个真实智能体会话给出排名和成本对比，读者可据此衡量 Muse Wonder (Max) 的性价比变化。\n基于 +5K 真实世界智能体会话的结果出炉：@AIatMeta 的 Muse Wonder (Max) 刚刚登陆 Agent Arena，以 +6.4% 的净提升位列第 12 名。\n这一结果比位列第 16、提升 +3.6% 的 Muse Spark 1.3 (Max) 高出 2.8 个百分点、领先四个名次。Muse Wonder (Max) 的额外性能提升伴随着更高的价格：每任务中位成本为 $1.13，而 Spark 1.3 为 $0.54，约为其 2.1 倍。\n与 Agent Arena 中排名相近的模型相比，Muse Wonder (Max) 展现出成本效率：以 $1.13/任务的价格，它与第 10 名 GPT-5.6 Sol (xHigh) 相差不到 1 个百分点，而成本低 25%；与第 9 名 Claude Fable 5 (High) 相差不到 2 个百分点，而成本低 67%。\n按类别划分，Muse Wonder (Max) 在 Chat、Work 和 Code 方面均优于 Muse Spark 1.3： - Chat：第 12 名（+6.5%）对比第 15 名（+3.3%） - Work：第 13 名（+6.8%）对比第 18 名（+3.7%） - Code：第 15 名（+5.2%）对比第 18 名（+4.2%）\nMuse Wonder (Max) by @AIatMeta has entered Code Arena: WebDev at #15 with 1651 pts and Text Arena at #2 with 1513 pts! In Code Arena: WebDev, Muse Wonder (Max) landed at #15 with 1651 pts. This result is slightly lower thanMuse Spark 1.3 (Max) at #12 with 1659 pts, within 4 pts of Kimi K3 (Max) at #14 with 1655 pts, and 11 pts above Grok 4.7 (xHigh) at #16 with 1640 pts. This release is a significant improvement over past Muse models in Text Arena. Compared with Muse Spark 1.3 (Max) at #11 with 1494 pts, Muse Wonder (Max) gained +19 pts and 9 places to #2. It's 12 pts behind the #1-ranked Gemini 4 Argon (High) with 1525 pts. Congrats to the @AIatMeta team on this release!\n原文基于5000多个真实智能体会话给出排名和成本对比，读者可据此衡量 Muse Wonder (Max) 的性价比变化。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "40 位总检察长介入 Character.AI 破产案，要求保护用户对话数据",
+   "url": "https://aihot.news/items/gpgj8ws42xbs5zhbxfzvn2g6i",
+   "published": "2026-10-14T18:47:54.000Z",
+   "description": "纽约总检察长 Letitia James 联合 40 位两党总检察长在 Character.AI 破产案中提交利益通知，要求任何资产出售方落实用户数据保护。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gpgj8ws42xbs5zhbxfzvn2g6i",
+   "excerpt": "Now that Character.AI is going bankrupt, what happens to all of its users&#8217; data?\n纽约总检察长 Letitia James 联合 40 位两党总检察长在 Character.AI 破产案中提交利益通知，要求任何资产出售方落实用户数据保护。\n报道披露多州总检察长在 Character.AI 破产案中要求对用户数据设保护条件，读者可借此了解资产出售与儿童数据安全的交集。\n是 The Verge 的高级政策记者，报道硅谷与国会山的交汇领域。她曾在 CNBC 报道科技政策五年，撰写有关反垄断、隐私和内容审核改革的内容。\n纽约州总检察长 Letitia James 披露 了一项针对 Character.AI 的多年多州调查，目前他们正寻求在其破产程序中对所出售的消费者数据施加保护要求。\nJames 是 40 位两党总检察长之一，他们 提交了一份利益通知 ，介入 Character.AI 的破产案，“以提请各方注意，在债务人业务或资产的任何出售或转让中都需要解决的监管问题”。Character.AI 周二宣布 申请第 11 章破产保护 ，并将部分资产出售给 Disney。但总检察长们警告称，由于“许多用户与 Character.AI 聊天机器人角色的对话具有高度敏感性、使用该产品的未成年人数量庞大、该产品特定功能带来的严重风险”，该技术的转让可能涉及严重风险。\n该文件还披露，在 Character.AI 申请破产时，其中几个州正处于调查过程中。这些州表示，他们于 2024 年针对消费者保护和隐私问题启动了调查，此前一名 14 岁少年的母亲 提起诉讼 ，称其子在与该聊天机器人交谈后据称“几秒钟”便自杀身亡。\n据 James 办公室发布的新闻稿称，“调查发现了极其严重的危险以及 Character.AI 可能存在的违法行为，尤其是其对儿童的处理方式，包括聊天机器人冒充持证专业人士、接触色情和暴力内容、年龄核查薄弱、误导性的安全声明，以及可能违反州隐私法。”这些州一直在与 Character.AI 合作解决这些问题，但在该公司申请破产前未能达成协议。Character.AI 和 Disney 未立即回应置评请求。\n这些州敦促法官要求 Character.AI 资产的购买方实施相关程序，以保护该公司所持有的敏感信息。这些程序包括有效的年龄验证系统、限制未成年人使用聊天机器人的方式、实施“危机防护措施”，以及允许用户删除其数据。“这家公司收集了孩子们分享过的一些最私密的想法，现在这些对话可能被卖给出价最高的人，”James 在一份声明中表示。“我正在努力确保任何买家都将儿童安全放在首位，并落实真正的保护措施。”\n关注本报道的话题和作者 ，以便在您的个性化主页信息流中看到更多类似内容，并接收电子邮件更新。\n报道披露多州总检察长在 Character.AI 破产案中要求对用户数据设保护条件，读者可借此了解资产出售与儿童数据安全的交集。"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Dubai Police adds 920-horsepower hybrid Lamborghini Temerario to patrol fleet",
+   "url": "https://roboticsandautomationnews.com/2026/10/14/dubai-police-adds-920-horsepower-hybrid-lamborghini-temerario-to-patrol-fleet/105932/",
+   "published": "2026-10-14T18:32:42.000Z",
+   "description": "Dubai Police has added a Lamborghini Temerario hybrid supercar to its luxury patrol fleet, continuing the force’s practice of deploying high-performance vehicles at tourist destinations and other busy areas across the emirate. Introduced in partnership with Lamborghini Abu Dhabi and Dubai, the Temerario produces 920 horsepower from an electrified powertrain combining a new 4.0-liter twin-turbocharged […]",
+   "excerpt": "Dubai Police has added a Lamborghini Temerario hybrid supercar to its luxury patrol fleet, continuing the force’s practice of deploying high-performance vehicles at tourist destinations and other busy areas across the emirate.\nIntroduced in partnership with Lamborghini Abu Dhabi and Dubai, the Temerario produces 920 horsepower from an electrified powertrain combining a new 4.0-liter twin-turbocharged V8 engine with three electric motors.\nThe supercar can accelerate from 0 to 100 km/h in 2.7 seconds and joins a collection of exotic vehicles that Dubai Police uses both for public visibility and engagement with tourists and residents.\nBrigadier Saeed Al Hajri, director of the General Department of Criminal Investigation at Dubai Police, says: “Our luxury patrol fleet represents an innovative approach to policing, combining an effective security presence with community and tourist engagement.\n“These vehicles help people feel safe, showcase Dubai’s positive image to visitors from around the world, and raise awareness of police services and public safety. Above all, they reinforce our commitment to being a police force that is close to the community.”\nDubai Police’s luxury patrol vehicles have become a prominent part of the emirate’s public image, with the cars typically appearing in popular tourist areas rather than serving as conventional high-speed police response vehicles.\nColonel Mohammad Abdulrahman Abdulwahid, director of the Tourist Police Department at Dubai Police, says the Temerario also reflects the force’s efforts to introduce new technology and work with private-sector partners.\nAbdulwahid says: “At Dubai Police, we are committed to keeping pace with global developments and adopting initiatives that reflect Dubai’s leadership and unique character.\n“The addition of the Lamborghini Temerario demonstrates our continued efforts to develop our luxury patrol fleet and strengthen strategic partnerships with the private sector, contributing to a better quality of life, community happiness and an exceptional experience for Dubai’s visitors.”\nThe vehicles are deployed at major tourist destinations and other heavily visited locations, where members of the public can interact with police officers and learn about Dubai Police services.\nThe Temerario also represents Lamborghini’s latest contribution to its ongoing relationship with the force.\nMartino Picotti, general manager of Lamborghini Abu Dhabi and Dubai, says: “Our ongoing partnership with Dubai Police ref"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "AutoStore expands hardware and AI software portfolio in push toward autonomous fulfillment",
+   "url": "https://roboticsandautomationnews.com/2026/10/14/autostore-expands-hardware-and-ai-software-portfolio-in-push-toward-autonomous-fulfillment/105927/",
+   "published": "2026-10-14T18:19:04.000Z",
+   "description": "AutoStore has unveiled a series of new and upgraded hardware and software products designed to reduce manual intervention in warehouse operations and move its automated storage systems closer to “lights-out” fulfillment. The company’s Fall 2026 product announcement includes new technology for handling different bin and case sizes, robotic picking for smaller businesses, AI-assisted system design […]",
+   "excerpt": "AutoStore has unveiled a series of new and upgraded hardware and software products designed to reduce manual intervention in warehouse operations and move its automated storage systems closer to “lights-out” fulfillment.\nThe company’s Fall 2026 product announcement includes new technology for handling different bin and case sizes, robotic picking for smaller businesses, AI-assisted system design and investment planning, and predictive maintenance capabilities.\nAutoStore says the additions build on its CubeVerse software platform and AutoStore Intelligence technology, which it introduced earlier this year as part of a broader strategy to increase the autonomy of fulfillment operations.\nParth Joshi, chief product officer and president at AutoStore, says: “Autonomy should not require businesses to take a leap of faith.\n“The opportunity is to remove the practical barriers one by one. That means reducing variability, manual handoffs and the operational effort required to keep automated systems running.\n“What we hear directly from customers is also driving us to bring more workflows and use cases onto the AutoStore platform, from buffering and case handling to automated piece picking.”\nAmong the new products is FlexBinsPort, which allows all standard AutoStore bin heights to be handled at a single workstation. AutoStore estimates that the system can improve storage utilization by 10-15 percent while increasing labor efficiency. FlexBinsPort is scheduled for release in the fourth quarter of 2026.\nThe company is also expanding AutoCase, its technology for combining case and individual-item picking within an AutoStore installation. From the first quarter of 2027, AutoCase will support cases measuring up to 600 x 400 mm.\nMultiple AutoCase stations will also be able to work on the same task group simultaneously, creating a continuous case flow for processes such as palletizing and packaging. AutoCase is already in production use at Nowaste Logistics in Sweden and Komplett in Norway.\nAutoStore is extending robotic piece picking to smaller businesses through Pio Pal, offered through a Robotics-as-a-Service model. The company says the system can achieve packing throughput of up to 540 order lines per hour for pre-picked orders.\nNew pre-picking capabilities can increase performance by up to three times without additional labor, according to AutoStore. Pio Pal is already operating at Norwegian apparel company Famme, with further deployments planned for the first quarter o"
+  },
+  {
+   "group": "wh",
+   "source": "Supply Chain 24/7 自动化",
+   "title": "Roundtable: What’s Flying Under the Radar in Supply Chain?",
+   "url": "https://www.supplychain247.com/article/overlooked-supply-chain-ai-issues-o9-roundtable",
+   "published": "2026-10-14T18:10:00.000Z",
+   "description": "At o9’s Chicago event last month, five executives discussed what gets overlooked in supply chain AI, from employee training to learning from decisions.",
+   "excerpt": "AI gets plenty of attention, but some of the work needed to make it useful gets less discussion. At o9 Solutions&rsquo; aim10x Americas event in Chicago last month, Supply Chain 24/7 asked five executives the same question: What aren&rsquo;t people talking enough about?\nTheir answers ranged from how planners will navigate new software to how companies will apply lessons from past decisions to their next plan. Here are the issues they believe deserve more attention.\nA system that lets planners ask any question sounds appealing. But familiar screens and workflows also help people track which steps they have completed, said Simon Joiner, o9&rsquo;s director of product management.\n&ldquo;What have you done and what haven&rsquo;t you done? How do you know where you are?&rdquo; he asked.\nJoiner said companies need to test how conversational tools and traditional workflows will work together, using real employees, data , and processes. He expects that testing to help determine whether planners still need established workflows or a different way of working.\n“What have you done and what haven&rsquo;t you done? How do you know where you are?&rdquo;\n&ldquo;I think we&rsquo;re going to have to do it in phases,&rdquo; he said.\nHe described offering traditional tools enhanced with AI alongside more AI-driven options. Customers are at different stages, he said, so they will need different ways to use the software during the transition.\nMarie Fodness, WHOOP&rsquo;s AVP of global operations, said employees using AI need to understand the calculations being performed and the data and sources behind the analysis. Her team uses lunch-and-learns and other sessions to help build that understanding.\n&ldquo;I don&rsquo;t think we talk enough about what that looks like for the individual contributor, in the lower-level job function, day to day,&rdquo; she said.\nFodness wants employees to explain the data and understand what an AI model is doing. That means giving them resources and time to learn about the analysis they increasingly hand off to these tools.\n&ldquo;It definitely slides under the radar,&rdquo; she said.\nCompanies often review decisions after a major event, but those reviews can take considerable time, said Igor Rikalo, o9&rsquo;s president and COO. The lessons may then remain outside the planning system rather than become part of the next planning or execution cycle.\nRikalo described the manual work of assembling a team, collecting data, and analyzing what happened. "
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "LangChain 详解 Deep Agents 的上下文工程：如何记住信息而不塞满上下文窗口",
+   "url": "https://aihot.news/items/za03v9avbq4fpb2y5b1ql1t27",
+   "published": "2026-10-14T17:00:00.000Z",
+   "description": "LangChain 发布博客，介绍其开源 Agent 框架 Deep Agents 如何用 middleware 做上下文工程，应对长任务中的 context rot。 🔗 阅读原文 via AIHOT · https://aihot.news/items/za03v9avbq4fpb2y5b1ql1t27",
+   "excerpt": "Context Engineering with Deep Agents: How To Remember Without Keeping Everything In Context\nLangChain 发布博客，介绍其开源 Agent 框架 Deep Agents 如何用 middleware 做上下文工程，应对长任务中的 context rot。\nLangChain 以竞争分析 Agent 为例，讲清 offloading、summarization、skills、subagents 和长期记忆五类上下文管理技术如何通过 middleware 落地。\n如果你曾在考试前一晚临时抱佛脚，你就知道那种感觉：你学得越多，前面几章的内容就越开始从记忆中溜走。\n智能体也有同样的问题。当它们承担更长的任务时，它们会接收越来越多的信息（指令、工具结果、文件等）；最终这会变成远超模型 上下文窗口 舒适容纳范围的 上下文 。模型携带的历史记录、噪声和工具输出越多，其准确性和推理能力往往就越差。\n在智能体工程领域，我们称之为 上下文腐化 。这篇博客介绍了管理智能体上下文窗口的技术，以及 Deep Agents 框架如何使用一种称为中间件的概念将它们注入到智能体的运行中。\n框架会策略性地应用这些方法，以便针对给定任务让模型 在正确的时间获得正确的上下文 。\n现在，要搭建一个能 出色 完成这件事的框架，说起来容易做起来难，需要大量的工作（如果你是那种考试前一晚临时抱佛脚的人，可能工作量太大了）。\nDeep Agents 是 LangChain 的开源框架。它用各种技术包裹你选择的模型，将上下文 移出 活动窗口（移入文件、摘要或单独的智能体），这样主智能体只携带它需要的内容（并且可以在之后需要时恢复原始数据）：\n让我们看看上述技术如何应用于一个真实世界的用例：一个竞争分析智能体。每周一，这个智能体研究五家竞争对手，并按照团队模板撰写一份报告。单次运行大致如下：\n到第 4 步时，智能体在每次模型调用中都携带了五份原始导出数据、数十条搜索结果和两份过时的草稿。其中大部分内容与最终报告的排版无关。\n检索方法（ RAG 或文件系统搜索）帮助智能体 只 拉取它需要的内容，但这仍然只解决了一半问题。即使是一个精准的智能体也会积累不必要的消息、工具结果和中间工作，因此框架还必须管理已经存在于上下文窗口内及其周围的内容。\nAgent 在一个循环中运行：模型决定要做什么、调用工具、读取结果，然后重复，直到任务完成。 中间件 是接入该循环中特定位置的代码：例如在 Agent 启动之前、每次模型调用前后，或每次工具调用前后。\n我们的 Agent 并不总是需要看到每次工具调用或人类消息返回的 所有 数据，尤其是在数据量很大的情况下。\n例如，每次 pull_market_report 工具调用都会返回一份完整的数据导出（数千行）；然而，Agent 只需要其中的几个数字，因此可以限制模型只看到这些行。\n过大的用户/人类消息，例如粘贴的通话记录，也会以更高的阈值（50,000 个 token）得到同样的处理，并被保存到 /conversation_history/。\n尽管我们尽力卸载冗长的工具调用，但在长时间运行中，上下文仍会逐渐堆积（例如五家公司的搜索、笔记和草稿）。摘要可用于将我们 Agent 的整个上下文窗口浓缩为对目前为止所发生情况的总结，使其能够继续进行研究任务。\nSummarizationMiddleware 在每次模型调用之前检查 token 使用量：\n你也可以在主题变化时进行摘要 ，而不仅仅是在某个 token 阈值时。自定义摘要提示词可能会有所帮助。\n假设你的销售团队有一套固定的季度业务回顾格式。智能体每季度只需要这些指令一次，所以把它们放在系统提示里意味着每次调用都要为它们付费（消耗 token 和响应时间）。相反，你可以把这些信息打包成一个 skill。\nskill 是一个指令文件夹（可选包含脚本和参考文档），为智能体提供完成某项专门任务所需的内容。\n智能体一开始只看到一段简短描述，只有当 QBR 出现时才加载 qbr-report 的完整指令（其他任务永远不会携带它们）。\nSkill 分层加载上下文，因此窗口会一直保持很小，直到某些内容真正相关时才加载。这被称为渐进式披露：模型一开始只看到一份“菜单”，在需要时才拉取完整配方，因此十个 skill 消耗的上下文大约相当于十条单行说明。\n完整指令只有在模型判断某个 skill 相关时才会进入上下文（并通过 read_file 工具读取它），因此我们的智能体在没有模板的情况下进行研究，只在需要格式化 QBR 时才加载它。\n卸载能有效应对过大的结果，但对于你 已知 会很嘈杂的工作（比如通过数十次搜索和页面研究一家公司），子智能体是一个很好的设计选择。子智能体在自己的上下文窗口中完成这些工作，只返回最终结果，这样主智能体永远不会看到“噪音”。\nSubAgentMiddleware 允许我们为子智能体自定义系统提示和可用工具。\n在我们的场景中，主智能体把每家公司交给 market-researcher 子智能体。\n研究子智能体在自己的上下文中读取完整报告，只返回三条要点，因此主智能体只看到这三条要点（甚至看不到原始报告的预览）。此外，由于子智能体任务往往规模小且范围明确，它们通常可以运行在更便宜的模型上并并行执行。\n假设你告诉智能体：“摘要里用要点，不要用段落。”如果没有记忆，你可能每周都要重复这句话。在 Deep Agents 中，长期记忆就是一个 markdown 文件。你用一个参数把智能体指向它，MemoryMiddleware 会处理其余的事情：\nDeep Agents 与提供商无关，这一点也延续到了记忆上。因为记忆是你自己存储中的一个普通文件（而不是由某个提供商持有的东西），你可以把同一个后端指向不同的模型：\n无论你是基于 Deep Agents 构建、使用其他框架，还是自己构建一个，以"
+  },
+  {
+   "group": "wh",
+   "source": "DC Velocity",
+   "title": "Walmart opens its 5th “next-generation fulfillment center”",
+   "url": "https://www.dcvelocity.com/material-handling/storage/as-rs-shuttles/walmart-opens-its-5th-next-generation-fulfillment-center",
+   "published": "2026-10-14T16:42:48.000Z",
+   "description": "Walmart last week opened its fifth “next-generation fulfillment center,” a 900,000-square-foot facility in Stockton, California, that it said will expand the retailer’s ability to provide faster shipping and delivery to customers across California and the West Coast. First announced by Walmart in 2023 , the new facility now brings its employees together with advanced automation, technology, and machine learning to move products faster and more efficiently. That technology enables Walmart to materially improve storage capacity and increase the number of customer orders the facility can fulfill ",
+   "excerpt": "900,000-square-foot California facility features an automated, high-density storage and retrieval system that brings products directly to workers.\nWalmart last week opened its fifth “next-generation fulfillment center,” a 900,000-square-foot facility in Stockton, California, that it said will expand the retailer’s ability to provide faster shipping and delivery to customers across California and the West Coast.\nFirst announced by Walmart in 2023 , the new facility now brings its employees together with advanced automation, technology, and machine learning to move products faster and more efficiently. That technology enables Walmart to materially improve storage capacity and increase the number of customer orders the facility can fulfill each day compared with a traditional fulfillment center.\nMore specifically, the facility features an automated, high-density storage and retrieval system that brings products directly to associates, reducing the traditional 12-step fulfillment process to just five steps. The technology reduces repetitive, manual tasks while allowing associates to focus on higher-value work and helping Walmart move orders through the building more efficiently.\nCombined with the rest of Walmart’s fulfillment network, these next-generation fulfillment centers will enable the retailer to reach 95% of the U.S. population with next- or two-day shipping. Walmart Fulfillment Services, Walmart’s end-to-end third-party fulfillment service, will also leverage the space to fulfill third-party Marketplace items.\nThe opening of the California site follows earlier “next-generation fulfillment centers” such as a 1.5 million square-foot facility in Pennsylvania that opened in 2024 and a 2.2 million-square-foot facility in Indianapolis that opened in 2023. And more are on the way, such as a 1.5-million-square foot building planned for rural Georgia , according to plans unveiled earlier this year."
+  },
+  {
+   "group": "wh",
+   "source": "DC Velocity",
+   "title": "DHL: AI infrastructure boom outweighs tariff policy damage",
+   "url": "https://www.dcvelocity.com/supply-chain/other-services/global-logistics/dhl-ai-infrastructure-boom-outweighs-tariff-policy-damage",
+   "published": "2026-10-14T16:37:42.000Z",
+   "description": "Higher tariffs and geopolitical conflicts have been slowing the flow of global trade, but a powerful new trend is now helping to outweigh those forces, as the global race to build infrastructure for artificial intelligence is giving world trade strong momentum, according to a study from DHL. The report shows that global goods trade grew faster in the first half of 2026 than in any half-year in the past 15 years, apart from the exceptional Covid rebound. A major driver was strong demand for goods used to build AI infrastructure, such as semiconductors and data-transmission equipment. Trade in A",
+   "excerpt": "Global race to trade semiconductors and data-transmission equipment has been strong enough to offset economic dampeners like higher tariffs and geopolitical conflicts.\nHigher tariffs and geopolitical conflicts have been slowing the flow of global trade, but a powerful new trend is now helping to outweigh those forces, as the global race to build infrastructure for artificial intelligence is giving world trade strong momentum, according to a study from DHL.\nThe report shows that global goods trade grew faster in the first half of 2026 than in any half-year in the past 15 years, apart from the exceptional Covid rebound. A major driver was strong demand for goods used to build AI infrastructure, such as semiconductors and data-transmission equipment. Trade in AI-enabling goods drove 42% of goods trade growth in 2025, and this share rose to 76% during the first quarter of 2026, according to WTO and OECD analysis.\nThis is one of the key findings of the latest edition of the “DHL Globalization Tracker” —previously known as the \"DHL Global Connectedness Tracker\"—which was released October 7 by DHL and New York University's Stern School of Business. Based on more than 30 million data points, the report analyzes international flows of trade, capital, information, and people.\n“The biggest story in global trade right now is AI - not tariffs,” said John Pearson, CEO DHL Express. “Every AI query ultimately depends on logistics. Chips, networking equipment, and the many other goods behind this technology must be in the right place at the right time. DHL connects the businesses and markets behind these complex supply chains.”\nTo be sure, the Iran war and the closure of the Strait of Hormuz have disrupted important trade routes. But according to DHL, those effects remained concentrated on economies dependent on the Strait. For example, the value of trade fell 37% in Saudi Arabia and 7% in the United Arab Emirates in the first five months of 2026 compared with the same period in 2025.\nLikewise, trade policy created a separate headwind. U.S. tariffs reached their highest levels in decades, but their global impact was limited for two reasons. First is that the U.S. accounted for only 13% of world imports in recent years, with roughly half of those imports exempt from the tariff increases as of August 2026. And second, most countries refrained from broad retaliation, and instead increased efforts to secure access to alternative markets through new trade agreements.\nAnother fi"
+  },
+  {
+   "group": "ai",
+   "source": "Simon Willison",
+   "title": "AI is mass decompiling games. That's both awesome and scary.",
+   "url": "https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
+   "published": "2026-10-14T16:26:53.000Z",
+   "description": "AI is mass decompiling games. That&#x27;s both awesome and scary. Indie game developer Popcar talks about the recent wave of AI-powered decompilation of existing games, enabling weird mashups between existing games, and producing a boom in game preservation projects to get old games working on new hardware (often in a browser using WebAssembly). I like how this piece captures both the positives and the negatives of this new development: Most people already realized the scary part by now. If AI can decompile games and software, then the entire tech industry is about to explode. Anybody can deco",
+   "excerpt": "AI is mass decompiling games. That's both awesome and scary. ( via ) Indie game developer Popcar talks about the recent wave of AI-powered decompilation of existing games, enabling weird mashups between existing games, and producing a boom in game preservation projects to get old games working on new hardware (often in a browser using WebAssembly).\nI like how this piece captures both the positives and the negatives of this new development:\nMost people already realized the scary part by now. If AI can decompile games and software, then the entire tech industry is about to explode. Anybody can decompile other software and use it any way they'd like, and nobody can stop them. Companies can steal from competitors. Your paid game or app can be open-sourced against your will. This isn't exclusive to old video games, we can apply this to any software. [...]\nThis is also a big win for preservation. Old games can be ported, modified, enhanced, and made much more easily accessible than before. [...[\nWith console makers going all in on digital and games becoming entirely unplayable due to servers shutting down, this is fantastic news. We could own software we bought regardless of what the company thinks.\nThis is a link post by Simon Willison, posted on 14th October 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
+  },
+  {
+   "group": "ai",
+   "source": "Hugging Face",
+   "title": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost",
+   "url": "https://huggingface.co/blog/allenai/hiro-acev2",
+   "published": "2026-10-14T16:12:42.000Z",
+   "description": "",
+   "excerpt": "🤗 Models | 📄 Paper | 📓 Tutorial notebooks | 🌎 Demo\nWe introduce HiRO-ACEv2 , the newest update to our High Resolution Output Ai2 Climate Emulator (HiRO-ACE) system. HiROv2 can reproduce even extremely rare rain, wind, and pressure events with high accuracy, while the full system can generate global 3 km climate data at about 1/300th the cost of X-SHiELD, a high-resolution global atmospheric model that explicitly simulates storms and other small-scale weather.\nHiRO-ACE, introduced earlier in 2026 , has two parts: ACE, an AI model that operates at a coarser 100 km resolution, and HiRO, a model that sharpens those coarse outputs into fine 3 km detail. The biggest change in HiRO-ACEv2 is the new downscaling model, HiROv2, which can now 1) predict several high-resolution fields at once instead of just rainfall, so it can capture a much wider range of extreme weather, and 2) has improved skill in predicting extreme events.\nOur main focus with HiRO-ACEv2 was to simulate extreme events well. Changes to how we train HiROv2 improved its ability to reproduce the most intense rain, wind, and pressure values. When given coarsened X-SHiELD data, it matches the target simulation's high-resolution statistics to within 3%, even for events so rare they occur only once in a million data points. It also accurately estimates the total energy of tropical cyclones, including storms it never saw during training, and generates hurricanes with realistic eyes and rain bands, though winds and pressure around the eye remain somewhat more lopsided than in X-SHiELD. Additionally, HiROv2 realistically generates strong winds flowing down mountain slopes.\nWe also trained an updated version of ACE for this system. Over a 10-year simulation, its hurricanes, average climate patterns, and overall distributions of rain, wind, and pressure all line up well with X-SHiELD. That tells us ACE's coarse simulations are a solid foundation for producing long-term high-resolution climate data.\nPutting HiROv2 and ACE together, we generated a full year of global 3 km data. Its statistics closely match X-SHiELD's, even though HiRO was working from a simulation ACE ran on its own rather than from real X-SHiELD data. Across a 10-year run, the energy of HiRO-ACEv2's hurricanes is comparable to X-SHiELD's over the same period, and snapshots from that run show a variety of other extreme events that resemble those in X-SHiELD.\nAn example of a strong hurricane in the North Atlantic, generated during the 10-yea"
+  },
+  {
+   "group": "wh",
+   "source": "Supply Chain Dive",
+   "title": "UPS’ Happy Returns comes to TikTok Shop",
+   "url": "https://www.supplychaindive.com/news/ups-happy-returns-comes-to-tiktok-shop/832990/",
+   "published": "2026-10-14T15:40:17.000Z",
+   "description": "Pacsun and Everlane are among the retailers tapping into the new integration ahead of the post-holiday returns rush.",
+   "excerpt": ""
+  },
+  {
+   "group": "wh",
+   "source": "Logistics Viewpoints",
+   "title": "Can Real-Time Voice Translation Improve Warehouse Productivity and Employee Engagement?",
+   "url": "https://logisticsviewpoints.com/2026/10/14/can-real-time-voice-translation-improve-warehouse-productivity-and-employee-engagement/",
+   "published": "2026-10-14T15:21:49.000Z",
+   "description": "Labor shortages remain one of the most persistent challenges facing warehouse operators. Yet an often-overlooked issue sits beneath the labor discussion: communication. Modern distribution centers frequently employ associates who speak a variety of languages. While workforce diversity is a strength, language barriers can create delays, safety risks, training challenges, and unnecessary dependence on a small […] The post Can Real-Time Voice Translation Improve Warehouse Productivity and Employee Engagement? appeared first on Logistics Viewpoints .",
+   "excerpt": "Labor shortages remain one of the most persistent challenges facing warehouse operators. Yet an often-overlooked issue sits beneath the labor discussion: communication. Modern distribution centers frequently employ associates who speak a variety of languages. While workforce diversity is a strength, language barriers can create delays, safety risks, training challenges, and unnecessary dependence on a small number of bilingual employees. This challenge is becoming increasingly relevant across North America. Distribution centers routinely employ associates representing multiple linguistic backgrounds. As labor shortages persist, operators are focusing less on hiring workers who speak a common language and more on ensuring communication systems can accommodate workforce diversity. Technology that bridges language gaps can therefore expand the labor pool while improving workforce effectiveness. Historically, many operations have relied on supervisors or bilingual associates to bridge communication gaps. The problem is that those employees are frequently pulled away from their primary responsibilities to interpret instructions, explain process changes, or translate safety information. In a high-velocity warehouse environment, those interruptions create hidden productivity losses. Recent advances in real-time voice translation technology are changing this dynamic. Solutions such as Relay’s TeamTranslate allow workers to communicate in their preferred language while messages are translated and delivered to others in near real time. Consider a common warehouse scenario. A distribution center employs workers who primarily speak English, Spanish, and Vietnamese. During a shift startup meeting, supervisors must communicate labor priorities, inventory issues, quality concerns, and safety reminders. Without automated translation tools, information often flows through a bilingual intermediary. Even when translation is accurate, the process consumes time and introduces opportunities for misunderstanding. With real-time translation, every worker can hear instructions in a familiar language. Communication becomes direct rather than dependent on an interpreter. Managers spend less time repeating instructions, and bilingual associates remain focused on their assigned tasks instead of serving as unofficial translators. Relay highlights examples from warehouse operations where managers reported stronger understanding between English- and Spanish-speaking associates after impl"
+  },
+  {
+   "group": "wh",
+   "source": "Logistics Viewpoints",
+   "title": "Blue Yonder Is Redesigning Supply Chain Software Around Decisions, Not Screens",
+   "url": "https://logisticsviewpoints.com/2026/10/14/blue-yonder-is-redesigning-supply-chain-software-around-decisions-not-screens/",
+   "published": "2026-10-14T15:16:41.000Z",
+   "description": "Blue Yonder is rethinking how users interact with supply chain applications as artificial intelligence takes on a larger role in planning and execution. During a recent analyst briefing, Blue Yonder Chief Design Officer Nunzio Esposito outlined the company’s effort to move away from traditional application navigation and toward a more decision-centric model. The company is […] The post Blue Yonder Is Redesigning Supply Chain Software Around Decisions, Not Screens appeared first on Logistics Viewpoints .",
+   "excerpt": "Blue Yonder is rethinking how users interact with supply chain applications as artificial intelligence takes on a larger role in planning and execution.\nDuring a recent analyst briefing, Blue Yonder Chief Design Officer Nunzio Esposito outlined the company’s effort to move away from traditional application navigation and toward a more decision-centric model. The company is bringing together AI agents, recommendations, workflows, mobile capabilities, and collaboration tools through what it calls Blue Yonder Orchestrator.\nThe objective is to reduce the amount of manual navigation and repetitive interaction required from users. Instead of moving through multiple screens to find information and determine what requires attention, Blue Yonder wants its applications to surface the relevant information, recommendations, and decisions more directly.\nThe broader idea is that users should spend less time operating the mechanics of enterprise software and more time making higher-value decisions.\nAt the center of the strategy is Blue Yonder Orchestrator, which the company describes as a harness for creating a more coherent experience across its cognitive applications.\nOrchestrator can use context including the business process, the user’s role and policies, and the situation in which the application is being accessed. Blue Yonder says this allows the system to determine what information should be presented, who may need to be involved, and what decision may need to be made.\nThis also affects the role of the traditional dashboard. Esposito described Blue Yonder’s briefing capability as a more intelligent version of a dashboard, with the objective of bringing users into the process when a higher-value judgment is required while allowing lower-level tasks to be handled by agents.\nBlue Yonder is also consolidating functions including search, lookup, favorites, navigation, and interaction with agents into a more centralized access point. The company says this can reduce duplication in the interface while giving users a more consistent way to access different capabilities.\nThe system can also use information such as frequency of use, previous activity, and user-journey patterns to determine what is presented to the operator. According to Blue Yonder, those interactions feed back into its context graph and help Orchestrator respond more dynamically.\nBlue Yonder’s vision also extends beyond the desktop application.\nEsposito said the company wants its capabilities and intellige"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "MIT团队用机器学习修正误差，将两到六周天气预报准确率翻倍",
+   "url": "https://aihot.news/items/pqpqgxyiu4qyu86fbljd726v9",
+   "published": "2026-10-14T15:00:00.000Z",
+   "description": "MIT研究人员团队在Nature发表论文，提出一个机器学习后处理层，通过从历史数据中学习现有预报模型的错误并修正其输出，将两周到六周范围的预报准确率翻倍。该模型在ECMWF的季节间预报竞赛中获第一名，首次在该时间范围内稳定超过气候学平均值，并显著改善洪水、寒潮等极端天气事件的预测；模型开源、低成本、可附加于任意预报模型，肯尼亚气象部门已接洽用于改进季风季预报。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pqpqgxyiu4qyu86fbljd726v9",
+   "excerpt": "Researchers improve weather forecasts looking two to six weeks out\nMIT研究人员团队在Nature发表论文，提出一个机器学习后处理层，通过从历史数据中学习现有预报模型的错误并修正其输出，将两周到六周范围的预报准确率翻倍。该模型在ECMWF的季节间预报竞赛中获第一名，首次在该时间范围内稳定超过气候学平均值，并显著改善洪水、寒潮等极端天气事件的预测；模型开源、低成本、可附加于任意预报模型，肯尼亚气象部门已接洽用于改进季风季预报。\n原文介绍了Nature论文的方法与实测结果，读者可了解AI误差修正如何让两周到六周的天气预报首次稳定超过气候平均值。\n2021年，在2月遭遇三场严重冬季风暴之后，得克萨斯州经历了该州历史上最严重的能源基础设施故障。这场中断导致至少246人死亡，并造成食物、水、供暖和电力短缺。\n如果能源官员有更多时间准备应对风暴，例如向受灾地区调运更多天然气卡车，这场事件造成的损失本可减轻。不幸的是，两周以上的天气预报出了名地不可靠，这使得全球能源运营商、农民和应急响应官员的准备窗口更加紧张。\n包括麻省理工学院研究人员在内的一个团队开发出一种新技术，显著提升了超过两周的天气预报能力。研究人员开发了一种机器学习模型，能够学习纠正现有预报模型中的误差，从而改进两到六周时间范围内的输出。将其应用于一个黄金标准预报模型时，该时间范围内的预报准确率提高了一倍，并在一个知名国际预报竞赛中夺得第一。\n在 Nature 的一篇新论文 中，研究人员描述了他们的方法，并展示了它如何使预报首次在两到六周内超越气候学平均值。\n“这不仅在这个时间范围的时间平均预报上表现更好——这对试图让供需匹配的农民和能源行业人士已经非常有用——而且还改进了对极端天气事件的预测，无论是洪水、寒潮还是其他什么，”共同作者、麻省理工学院研究科学家Judah Cohen说。“预测这两者都非常重要，但极端事件对社会来说可能是其中影响最大的部分。”\n与Cohen共同撰写这篇论文的还有第一作者、哈佛学院本科生Hannah Guan；多伦多大学博士后Soukayna Mouatadid；Genevieve Flaspohler SM ’18、PhD ’22；巴西国家纯数学与应用数学研究所副教授Paulo Orenstein；数据公司DTN的Jeremy Berman；欧洲中期天气预报中心的研究人员Jakob Schloer和Joshua Talib；以及微软的研究人员Alex Lu、Haiyu Dong、Jonathan Weyn、Zekun Ni和Lester Mackey。 更长期的预报\n20世纪70年代，长期担任麻省理工学院教授的Edward Lorenz提出了混沌理论的概念，用以描述初始天气条件的微小变化如何导致完全不同的结果。\n“他提出了这个理论上的两周限制，超过这个限度，我们就无法预测天气，因为系统中的噪声增长得如此之大，以至于压倒了你开始时拥有的任何信号，”Cohen说。“这对该领域产生了强烈影响，可能阻碍了人们探索两周以上的预报。我从未真正完全相信这一点。理论上，大气可以创造出无限多的模式，但它喜欢一遍又一遍地落入这些偏爱的模式。一旦一件事发生，我认为你可以预测接下来会倒下的多米诺骨牌，以及再接下来会倒下的多米诺骨牌。”\n如今，最好的天气预报要么来自动力模型——通过数值模拟大气和海洋随时间的演变，要么来自人工智能模型——从历史天气数据中学习并做出预测。AI 模型在短期天气预报上已显示出改进，但在更长时间范围内，它们甚至比动力模型更差。\n科恩就职于麻省理工学院土木与环境工程系，专注于提前两到六周的天气预报，即所谓的次季节预报。“这个时间范围被称为‘可预报性荒漠’，因为在短期，你可以利用气候系统和大气的初始条件，而在更长期，你有这些缓慢变化的边界强迫，比如今年冬天大家都在关注的超级厄尔尼诺现象，”科恩说。“次季节范围无法利用其中任何一种。在大多数情况下，次季节范围的预报就像去赌场掷骰子一样。”\n科恩将使用机器学习来减少预报模型误差的最初想法归功于他的合著者莱斯特·麦基，两人已合作十多年。\n“我们构建了这个包装器——莱斯特称之为后处理，”科恩说。“我们知道 AI 模型有很多误差，所以我们想也许可以量化这些误差并将其消除。”\n其他预报系统进行的是更简单的误差校正，而该研究团队的后处理层利用 AI 基于历史数据从预报系统的错误中学习，并调整其预报。在那个时间范围内，预报员使用所谓的概率预报，即给出各种可能性的概率。\n为了构建该模型，研究人员使用了 MIT Engaging——由麻省理工学院研究计算与数据办公室托管的超级计算集群，但最终模型运行并不需要超级计算机。\n为了检验他们的模型，去年该研究团队向欧洲中期天气预报中心（ECMWF）提交了三个包含其后处理层的模型，ECMWF 被认为是世界上最好的预报中心。每个季节 ECMWF 都会举办模型之间的预报竞赛。\n获得第一名的提交方案将 ECMWF 的预报模型与另一个模型相结合，然后在其上应用后处理校正。这种方法最终使原始模型在次季节范围内的预测能力翻倍。该模型首次实现了比依赖气候平均值的改进。\n“到目前为止，还没有人能够证明某个模型在这些次季节预报中比长期平均值更好地预测天气，”科恩说。“它们几乎都比长期平均值差——你 literally 抛硬币都能做得更好。人们甚至质疑在这个时间范围内投资模型是否值得。我们的模型持续优于气候平均值。”\n“这是比较重要的发现之一，因为它太难实现了，”Cohen 说。“当 ECMWF 开发出他们自己的、非 AI 的模型误差校正时，它在预测极端天气方面反而变得更差。我认为这是因为传统的误差或偏差校正总是试图趋近均值，而极端天气处于概率的边缘。”\n在《 Nature 》论文中，团队展示了他们的技术可用于改善全球大多数地区的陆地预报。他们还将自己的偏差校正技术应用于其他模型，并表明它同样改善了那些模型，使更弱的模型也"
+  },
   {
    "group": "wh",
    "source": "Robotics & Automation News",
@@ -294,6 +511,15 @@
    "excerpt": "Expanding from warehouse orchestration and inventory software, GreyOrange Inc. last week acquired Site Bionics Inc., which has developed an AI-powered digital twin platform. The company said that the combination of Site Bionics’ security technology and its own gStore item-level RFID intelligence will give retailers a single view of what is happening in their stores, including both the products on the floor and the people interacting with them.\n“For years, this industry has promised retailers that RFID and computer vision would come together and show them the full story of their stores. That promise has gone unmet,” stated Adam Blair, co-frounder and CEO of Site Bionics. “Don [Gillett] and I built Site Bionics to solve the computer vision side of that equation. GreyOrange has mastered the RFID side. Together, we’re finally delivering on it.”\nBlair, the founding chief technology officer of RADAR, and Gillett, the former head architect of Amazon Go, founded Site Bionics in 2023. The San Diego-based company said its platform uses existing security cameras to understand the physical store and the behavior of the shoppers and staffers within it.\nThe Site Bionics team has joined GreyOrange to deploy its technology first in gStore, with plans to extend it into warehouse operations through the GreyMatter platform. The companies did not disclose financial terms.\nGreyOrange described gStore as “a sensor-agnostic intelligent inventory solution that delivers inventory truth through real-time visibility and actionable insights. The platform helps retailers improve inventory accuracy, store execution, and omnichannel fulfillment by integrating data from RFID, computer vision, and other sensing technologies.”\nSuwanee, Ga.-based GreyOrange added that gStore enables loss intelligence, shopper analytics, and spatial intelligence to reduce shrinkage, understand shopper behavior, optimize store layouts, and deliver positive customer experiences.\n“After years of putting cameras to work across industries, I’ve learned that a camera’s real value is in what it measures, not what it records,” said Gillett, co-founder and CTO of Site Bionics. “Site Bionics brings that thinking to retail, using the cameras already on every store’s ceiling. Paired with gStore’s RFID data, the store’s digital twin knows not just where people are, but what they’re doing with the products around them.”\nRegister now and help us celebrate 20 years of RoboBusiness! GreyOrange to unify product and people int"
   },
   {
+   "group": "wh",
+   "source": "Supply Chain 24/7 自动化",
+   "title": "Report: Walmart’s Shipping Boxes Are Too Tall for Its Warehouse Robots",
+   "url": "https://www.supplychain247.com/article/walmart-warehouse-automation-packaging-robot-costs",
+   "published": "2026-10-14T13:04:00.000Z",
+   "description": "Walmart’s warehouse automation push faces packaging problems, robot repairs, and higher power bills as the retailer expands its rollout.",
+   "excerpt": "Walmart &rsquo;s multibillion-dollar warehouse automation push is running into packaging problems, robot breakdowns and higher operating costs, according to a recent Wall Street Journal story . The retailer plans to replace shipping boxes that do not fit its automated systems, while some oversized products still require workers to handle them.\nWalmart plans to replace boxes it has used for more than two decades with versions that are 1.5 inches shorter. The new boxes must be taped shut, adding work and expense, although Walmart says they will reduce shelf-stocking time at stores.\nThe transition involves most of Walmart&rsquo;s roughly 200 U.S. supply chain buildings. Its warehouse operations rely on more than 140,000 workers to unload, sort, store and ship merchandise.\nRob Montgomery, Head of Supply Chain Operations for Walmart U.S., described the transition to the Journal: &ldquo;We are kind of in this peak complexity.&rdquo; He also said Walmart is changing its warehouses while keeping them operating, which adds to the difficulty.\nMost of Walmart&rsquo;s supply chain buildings date to the 1980s and &rsquo;90s, and about 80% of its automation construction projects are retrofits. Montgomery said Walmart is installing the equipment while keeping warehouses operating, which complicates the transition.\nDifferent products also require different automated systems, often supplied by different companies. Some goods, including large-screen televisions and jumbo bags of dog food, will need manual assistance for the foreseeable future, Montgomery said.\nSymbotic, the Massachusetts robotics company in which Walmart owns a 12.6% stake, supplies equipment that moves merchandise and builds pallets for shipment to stores. A company spokesman told the Journal that about 5% of its product-moving robots were undergoing repairs at any given time in recent months, down from under 10% last year.\nMonthly electricity bills at Walmart&rsquo;s automated grocery facilities can reach $800,000 or more during peak heating or cooling months, compared with roughly $250,000 under more manual operations, a person familiar with the situation told the Journal. The engineers needed to run the equipment also cost more than workers doing manual warehouse tasks, the Journal reported.\nDespite those challenges, Walmart continues to expand its use of automation. By August, more than 65% of its stores were receiving some automated freight , and over 50% of its e-commerce inventory was moving through"
+  },
+  {
    "group": "ai",
    "source": "AIHOT",
    "title": "Lovable 推出增长工具，从同一聊天窗口帮你获客投广告和做 SEO",
@@ -303,6 +529,24 @@
    "excerpt": "From building your app to growing it: Lovable now helps you find customers\nLovable 推出增长工具，在原有建应用聊天窗口中提供增长计划、广告投放和 SEO 能力。用户设定目标后，Lovable 依据应用上下文生成可执行计划；可连接 Google Ads 和 Meta 账号在 Google。\n官方介绍了增长功能的实际运作方式，包括广告投放前的审批机制和不加价的计费方式，读者可据此评估对自有产品的适用性。\n官方介绍了增长功能的实际运作方式，包括广告投放前的审批机制和不加价的计费方式，读者可据此评估对自有产品的适用性。"
   },
   {
+   "group": "ai",
+   "source": "OpenAI",
+   "title": "Amp puts AI agents to work beyond code with OpenAI models",
+   "url": "https://openai.com/index/amp-beyond-coding",
+   "published": "2026-10-14T12:00:00.000Z",
+   "description": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.",
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "OpenAI",
+   "title": "SentinelOne cuts malware analysis from weeks to hours",
+   "url": "https://openai.com/index/sentinelone",
+   "published": "2026-10-14T12:00:00.000Z",
+   "description": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.",
+   "excerpt": ""
+  },
+  {
    "group": "wh",
    "source": "Supply Chain Dive",
    "title": "Has Washington’s approach to manufacturing incentives really changed?",
@@ -310,6 +554,15 @@
    "published": "2026-10-14T11:36:00.000Z",
    "description": "In addition to tariffs, the Trump administration has taken a more sector-specific approach to incentives compared to the Biden administration. A recent Department of Commerce report laid out the current tools available.",
    "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Databricks 讲解如何在 AI Runtime 上将 Qwen 3.8 27B 微调时间缩短 6 倍",
+   "url": "https://aihot.news/items/s27ozk3mqeklm58sqxjeaz2wk",
+   "published": "2026-10-14T11:30:00.000Z",
+   "description": "Databricks 演示通过系统性性能优化，将 Qwen 3.8 27B 在 AI Runtime 上的微调时间从 7 小时 44 分钟降至 1 小时 17 分钟，提速 6 倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/s27ozk3mqeklm58sqxjeaz2wk",
+   "excerpt": "Reducing Qwen training time by 6x on AI Runtime\nDatabricks 演示通过系统性性能优化，将 Qwen 3.8 27B 在 AI Runtime 上的微调时间从 7 小时 44 分钟降至 1 小时 17 分钟，提速 6 倍。\n原文给出从定位瓶颈到融合内核与数据打包的完整优化路径和量化结果，读者可迁移到自己的 LLM 微调任务。\n训练或微调一个数十亿参数的基础模型需要大量算力，通常需要数百到数千小时的 GPU 训练。但调优 LLM 的训练性能颇具挑战，而且诸如 GPU 利用率之类的高层指标可能并未反映你实际的利用率。在这篇博文中，我们将展示如何穿透层层抽象，在 AI Runtime 上将最新 Qwen 3.8 27B 模型的微调速度提升 6 倍。通过系统性的性能优化，即便 GPU 利用率已经达到 98%，我们仍将固定数据集的微调时间从 7 小时 44 分钟缩短到 1 小时 17 分钟。\n我们将深入剖析这些改进背后的技术，包括如何衡量真正重要的指标、实现细节，以及每项优化所涉及的设计权衡。\n我们从使用 transformers 库和 SFT 训练数据集 HuggingFaceH4/ultrachat_200k 的 Qwen 3.8 27B 标准训练循环开始。\n我们在完整数据集上对模型进行基线训练耗时 7 小时 44 分钟，训练期间 GPU 显示平均利用率为 98%。结果是 9,396 tok/s 的训练速度。\n这个 GPU 利用率看起来很高，但如前所述，这个数字具有误导性。标准 GPU 利用率指标只统计 GPU 在 做任何事情 的时间百分比，因此它并不能告诉我们模型在 GPU 活跃时对其利用得有多好。要理解这一点，我们需要更深入地观察。\n一种方法是 torch trace 机制，我们可以像下面这样调整训练循环（同时限制步数以便快速得到结果）：\n表 1：CPU - 14.4 秒，1,714,382 次调用。表中包含按总时间排序的顶级操作。\n表 2：GPU - 10.3 秒，269,448 次操作。表中包含按总时间排序的顶级操作\n此外，我们在批次中存在过度填充的问题：输入张量必须是矩形的，每一行都会被填充到该批次的最大 token 数。我们将展示一个可用于 LLM 的技巧来尽量减少这种情况。\n在接下来的章节中，我们将深入探讨每个技术主题，涵盖它是什么、推荐的最佳实践，以及应用它时需要考虑的关键权衡。\n你可能会注意到某些 kernel 出现得非常频繁！特别是对于 Qwen，批量矩阵乘法 kernel 在一个步骤中运行超过 30,000 次。\n在本例中，我们将首先探讨融合 kernel。融合 kernel 将多个较小的 GPU kernel 组合成一个单元。这可以通过避免 GPU 的高带宽内存与其更高带宽的片上内存之间代价高昂的传输来帮助提升性能。此外，它还可以实现更高效的 GPU 核心调度。\n有了这么多额外的 kernel，虽然 torch.compile 可能可行，但运行起来会花费很长时间。因此，使用手动融合的 kernel 来减少原始算子数量是很好的第一步。此外，像 Flash Attention 这样众所周知的融合并不是 torch.compile 自身能够发现的。\ntransformers 库默认对标准注意力层使用 torch 的 SDPA 。但事实证明，我们看到的许多小运算来自非标准的门控 delta 网络层。幸运的是，对于这些层，有两个 kernel——causal-conv1d 和 flash-linear-attention——它们被编写用于融合每层中的许多此类运算。我们如何发现这一点？Qwen 的 transformers 库实现 已经告诉我们它支持哪些 kernel：\n我们通常推荐第一种，尤其是配合我们的 docker 容器支持 ，在构建时将所有 kernel 安装到容器中，以减少作业启动所需的时间。\n虽然 kernelhub 很方便，但由于 kernel 通常明确依赖于所安装的 torch 和 cuda 版本，你的特定配置可能没有可用的 kernel，而 transformers 模型会静默回退到未优化、性能低下的 kernel。\n在安装了 flash-linear-attention 和 causal-conv1d 这两个 Python 包之后，我们将端到端时间提升了 3.7 倍，降至 2 小时 5 分钟。在下表中，你可以看到新的内核（已高亮显示）取代了之前表中的逐元素函数。同时，执行的操作总数也大幅减少了 15 倍：\n表 3：CPU - 3.9 秒，共 118,316 次调用。表中包含按总时间排序的主要操作。\n表 4：GPU - 3.9 秒，共 18,060 次调用。表中包含按总时间排序的主要操作。\n注意事项 ：在训练期间，你需要同时拥有前向和反向传播的内核，而有些内核仅支持前向，因为它们只是为了加速推理而实现的。\n我们的 Qwen 模型现在相当快了，但我们还能更快。默认情况下，我们的批处理设置使用 2D 矩形张量，大小为 8,192 个 token，因为这是在不耗尽内存的情况下能容纳的最大尺寸。这种方法的缺点是，我们往往会在张量中因填充而浪费大量空间。\n如果 Qwen 只使用标准注意力机制，那么 torch 的 NestedTensor 现在已得到良好支持，可以通过完全消除填充来帮助降低这一成本。但 flash-linear-attention 只支持更传统的 1D 打包张量方法：\n但我们不能随意这样做，简单地将 1D 张量传递给模型对于预训练来说可能可以接受，但对于微调，我们需要确保在一个示例中，token 只关注同一示例内的 token。为了解决这个问题，我们必须向模型传递正确的示例 position_ids。模型会将这些传递给融合注意力内核，并应用正确的注意力掩码。如果你查看 这里 的示例代码，你可以看到我们如何计算所需的输入来实现"
   },
   {
    "group": "wh",
@@ -340,6 +593,33 @@
   },
   {
    "group": "ai",
+   "source": "OpenAI",
+   "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
+   "url": "https://openai.com/index/third-moment-research",
+   "published": "2026-10-14T07:00:00.000Z",
+   "description": "With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.",
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "OpenAI",
+   "title": "How Block is building AI-powered security with OpenAI technology",
+   "url": "https://openai.com/index/block-ai-powered-security",
+   "published": "2026-10-14T07:00:00.000Z",
+   "description": "Block is building AI-powered security with OpenAI. Its security team investigates threats faster and proposes patches in minutes.",
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "OpenAI 团队分享如何用 GPT-6 系列模型维护大型代码库",
+   "url": "https://aihot.news/items/wn2lwzshkg8gt2sbjuj1qxd8y",
+   "published": "2026-10-14T07:00:00.000Z",
+   "description": "OpenAI Core Experimentation 团队发文介绍用 GPT-6 Astra 和 GPT-6.1 Sol 配合 Codex 做代码维护，包括清理无用代码和陈旧实验、修复 flaky 测试等。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wn2lwzshkg8gt2sbjuj1qxd8y",
+   "excerpt": "Maintaining software with the GPT-6 family\nOpenAI Core Experimentation 团队发文介绍用 GPT-6 Astra 和 GPT-6.1 Sol 配合 Codex 做代码维护，包括清理无用代码和陈旧实验、修复 flaky 测试等。\nOpenAI 团队亲述用 GPT-6 系列在 Codex 里清理死代码和陈旧实验，附带 Prompt 思路和成本对比数据，方法可直接迁移到自己的代码库。\n每个不断增长的代码库都需要维护：移除无用代码、清理已完成的实验、修复测试。在 OpenAI，编码智能体帮助我们更快地构建，这也增加了我们的维护需求。\n我在 OpenAI 的核心实验团队工作，我们负责构建和维护支持公司各项实验的软件，从前端更新到模型服务效率的改进。\nGPT-6 Astra 的发布帮助我们更快地构建和维护软件，而 GPT-6.1 Sol 以更低的成本交付了类似的结果。在这篇文章中，我将分享我们如何使用这些模型来发现清理机会、收集证据，并准备变更以供审查。\n在智能体编码出现之前，许多软件工程团队依赖与运行时日志集成的复杂静态分析系统来检测和移除无用代码。即使有这些系统和细致的代码审查，错误仍会发生。我记得有几次因误删代码而导致的事故。需要考虑的边缘情况太多了，比如反射会干扰静态分析，或者某条未使用的代码路径可能被激活以缓解未来的事故。\n借助 Codex 中的 GPT-5.6 Sol，我可以指定一个要调查的区域和明确的验证标准，然后让模型编写静态分析并移除死代码。这些有针对性的提示比我们现有的静态分析系统更容易开发和维护，可靠性也相当。\n当我们获得 GPT-6 Astra 的访问权限后，我们想看看它能否处理更宽泛的请求，自行判断该从哪里入手、需要哪些证据来为每一次删除提供依据。我们从一个简短的 Codex 提示开始，这个提示对 GPT-5.6 Sol 来说过于模糊，无法完全处理。就是下面这个，连拼写错误都保留着：\nAstra 很好地处理了这种模糊性。它查看了过去的 PR，从 Slack 讨论串中收集上下文，并检查了内部项目跟踪器。它阅读了生产性能分析表，以确认被删除的代码行从未被执行到。Astra 还解释了每次删除的理由，这加快了我们的审查速度。\n看到 Astra 表现如此出色后，五名工程师协作在各个代码库中运行该提示的变体，我们合并了 1400 多个拉取请求，删除了超过 80 万行代码。我们主要是在从事其他项目的同时，利用两周的业余时间完成了这部分工作的大部分。代码审查被分派给各个团队，并附上每个受影响项目的相关背景。这些删除带来了可衡量的收益。例如，某个服务的容器镜像从 3.31GB 缩小到 1.72GB，减少了 48%；另一组清理则从我们的测试套件中移除了约 400 个视觉快照变体。\n软件维护中一个更难的问题是清理 过时 的实验。这些实验未必是无用的：它们的代码可能仍在生产环境中运行，或者依赖于随时可能变化的资格评估，这使得静态分析困难得多。过去，我们团队通过确定性的静态分析并辅以数据库查询来清理过时实验，并使用我们最强大的模型（当时是 GPT-5.6 Sol）来构建和改进相关脚本。我们知道这导致了许多假阴性，即我们的分析无法识别出真正过时的实验。\n鉴于我们使用 GPT-6 Astra 清理死代码的成功经验，我决定再试一个简短的提示词来处理过期的实验。我不确定该如何开始，于是和 Astra 一起头脑风暴，并让它写一个简短的提示词，以便在新线程中试用：\nAstra 遵循了提示词中的安全措施，并准备了带有证据的变更供我们团队审查。我在它的拉取请求上发表了评论，然后让 Astra 查看我的评论、采纳我的反馈，并制定一个新的提示词来扫描我们的整个代码库。我担心要清理的东西太多、无法排定优先级，所以我也让 Astra 帮我解决这个问题。Astra 建议了以下提示词：\n生成的报告很有前景。利用我们的埋点数据，Astra 调查了每个过期实验的 CPU 开销，排名靠前的几个结果都是巨大的效率收益，而这些实验多年来一直无人认定为过期。我仔细验证了那些较大的结果，并继续进行了全面清理，移除了数百个实验和功能标志。\n有一个例子体现了 Astra 的判断力：几年前，我们的一位工程师创建了一个 Statsig 功能标志，允许内部开发者覆盖我们所有其他与新功能相关的功能标志，用于测试目的。这个配置通过一行 Python 代码实现，将那个标志映射到所有其他功能。这行代码与数百个类似的功能标志映射放在一起，看起来毫不起眼。\nAstra 发现上面那行代码导致了显著的 CPU 扇出，因为它将该标志映射到了 所有 功能。它调查了 CPU 开销，但将这一发现提交人工审查，因为该标志在我们的功能标志管理控制台中被明确标记为“永久”，并且可能仍有运维用途。经过审查，我们移除了该标志，预计在受影响的主要服务中节省了 0.42% 的 CPU。\n最近，我们在相同的工作流上测试了 GPT-6.1 Sol，看它能否在更高效的同时达到 GPT-6 Astra 的效果。\n为了在过期实验清理上比较这些模型，我在不同的模型/推理强度组合上运行了上面相同的提示词，让 Codex 审计我们某个代码库中的特定子目录，以找出过期实验。这些子目录涵盖 6,000 多个文件、100 万行代码，涉及 Python、TypeScript、Go 和 Rust。我审查了这些发现以进行验证。下图显示了 3 种模型/推理强度组合的结果：\n成本采用标准 API 定价，并包含研究子代理以及 Codex 在推进每个目标时自动运行的后续轮次。\n在这次比较中，GPT-6.1 Sol Ultra 产生的发现数是 GPT-6 Astra Ultra 的 92%，而 API 成本仅为后者的 14%。GPT-6.1 Sol Medium 产生的被采纳发现较少，成本也更低。\n我审查了不同模型/推理强度组合之间的差异，发现了一些规律。例如，Ultra 上模"
+  },
+  {
+   "group": "ai",
    "source": "BestBlogs 每日早报",
    "title": "EP205 · Argon 解难题、Anthropic 重设计源控、Meta 发布 Muse Wonder",
    "url": "https://www.bestblogs.dev/explore/brief/2026-10-14?utm_source=rss&utm_medium=feed&utm_campaign=daily_brief&entry=rss_brief_index",
@@ -363,7 +643,7 @@
    "url": "https://www.mhlnews.com/global-supply-chain/news/55411235/alan-announces-2026-humanitarian-logistics-awards-winners",
    "published": "2026-10-14T04:05:00.000Z",
    "description": "The winners have \"truly inspired us by repeatedly stepping up to help – all without asking what’s in it for them,\" said Kathy Fulton of ALAN.",
-   "excerpt": "Last week, the American Logistics Aid Network (ALAN) today announced the winners of its 2026 Humanitarian Logistics Awards.\n&ldquo;Today we recognize a group of outstanding organizations and individuals who exemplify what selfless logistics is all about,&rdquo; said ALAN Executive Director Kathy Fulton in a statement. &ldquo;They have truly inspired us by repeatedly stepping up to help &ndash; all without asking what&rsquo;s in it for them.&rdquo;\nPaul Delp -- ALAN&rsquo;s Lifetime Achievement Award\nPaul Delp received his award for his body of philanthropic work both personally and as president of Lansdale Warehouse. This work included providing Mitzvah Circle with the cost-free loan of a forklift for a year (a contribution that made it possible for the nonprofit to serve more than 500,000 people during 2025) and making a Lansdale warehouse available as a donation collection center for survivors of the September 11 attacks. It also included Paul&rsquo;s service as a board member for the Red Cross Board of Montgomery County.\nLynden Air Cargo -- ALAN&rsquo;s Outstanding Contribution to Disaster Relief Efforts Award\nLynden Air Cargo was honored for donating 61,563 pounds of air cargo capacity to support Bethel Search and Rescue&rsquo;s relief efforts in Western Alaska following last October&rsquo;s Typhoon Halong &ndash; and for working closely with organizations such as GCI, the Alaska Foundation of Natives, Team Rubicon, and other local Alaska air cargo carriers to assist with donation collection, staging and distribution for typhoon survivors.\nNiagara Cares --ALAN&rsquo;s Outstanding Contribution to Disaster Relief Efforts Award\nNiagara Cares received its honor for donating and rapidly distributing more than 220,000 gallons of clean drinking water to the survivors of the 2025 floods in Central Texas&rsquo;s Kerrville region &ndash; and for the financial donation it made to support long-term recovery and rebuilding efforts.\nUPS -- ALAN&rsquo;s Outstanding Contribution To Disaster Relief Efforts Award\nUPS received its award for the ongoing work of its UPS Foundation. In 2025, UPS and The UPS Foundation delivered hope when it mattered most by contributing more than $16 million in grants and logistics support. This support helped humanitarian organizations respond to 80 disasters and crises around the globe, providing relief to more than 1.7 million survivors.\nVector Global Logistics -- ALAN&rsquo;s Outstanding Contribution to Disaster Relief Efforts Award\nVec"
+   "excerpt": "Last week, the American Logistics Aid Network (ALAN) today announced the winners of its 2026 Humanitarian Logistics Awards.\n&ldquo;We recognize a group of outstanding organizations and individuals who exemplify what selfless logistics is all about,&rdquo; said ALAN Executive Director Kathy Fulton in a statement. &ldquo;They have truly inspired us by repeatedly stepping up to help &ndash; all without asking what&rsquo;s in it for them.&rdquo;\nPaul Delp -- ALAN&rsquo;s Lifetime Achievement Award\nPaul Delp received his award for his body of philanthropic work both personally and as president of Lansdale Warehouse. This work included providing Mitzvah Circle with the cost-free loan of a forklift for a year (a contribution that made it possible for the nonprofit to serve more than 500,000 people during 2025) and making a Lansdale warehouse available as a donation collection center for survivors of the September 11 attacks. It also included Paul&rsquo;s service as a board member for the Red Cross Board of Montgomery County.\nLynden Air Cargo -- ALAN&rsquo;s Outstanding Contribution to Disaster Relief Efforts Award\nLynden Air Cargo was honored for donating 61,563 pounds of air cargo capacity to support Bethel Search and Rescue&rsquo;s relief efforts in Western Alaska following last October&rsquo;s Typhoon Halong &ndash; and for working closely with organizations such as GCI, the Alaska Foundation of Natives, Team Rubicon, and other local Alaska air cargo carriers to assist with donation collection, staging and distribution for typhoon survivors.\nNiagara Cares --ALAN&rsquo;s Outstanding Contribution to Disaster Relief Efforts Award\nNiagara Cares received its honor for donating and rapidly distributing more than 220,000 gallons of clean drinking water to the survivors of the 2025 floods in Central Texas&rsquo;s Kerrville region &ndash; and for the financial donation it made to support long-term recovery and rebuilding efforts.\nUPS -- ALAN&rsquo;s Outstanding Contribution To Disaster Relief Efforts Award\nUPS received its award for the ongoing work of its UPS Foundation. In 2025, UPS and The UPS Foundation delivered hope when it mattered most by contributing more than $16 million in grants and logistics support. This support helped humanitarian organizations respond to 80 disasters and crises around the globe, providing relief to more than 1.7 million survivors.\nVector Global Logistics -- ALAN&rsquo;s Outstanding Contribution to Disaster Relief Efforts Award\nVector Gl"
   },
   {
    "group": "ai",
@@ -412,12 +692,39 @@
   },
   {
    "group": "ai",
+   "source": "AIHOT",
+   "title": "xAI 发布 Grok Voice 3.0 语音模型",
+   "url": "https://aihot.news/items/qld0z3p2gztpolbmviizsm66u",
+   "published": "2026-10-14T00:00:00.000Z",
+   "description": "xAI 发布 speech-to-speech 模型 Grok Voice 3.0，在 Artificial Analysis 的 Speech-to-Speech Index 以 86.9 分排名第一，时延低于一秒。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qld0z3p2gztpolbmviizsm66u",
+   "excerpt": "Oct 14, 2026 Introducing Grok Voice 3.0 The world’s most intelligent voice model. Read More\nxAI 发布 speech-to-speech 模型 Grok Voice 3.0，在 Artificial Analysis 的 Speech-to-Speech Index 以 86.9 分排名第一，时延低于一秒。\n官方发布给出多项第三方基准分数、时延和 API 定价，读者可以据此评估它在语音智能体场景的性价比。\n今天，我们宣布推出 Grok Voice 3.0，全球最智能的语音到语音模型。它在解决客户支持通话方面创下新纪录，延迟处于同类领先水平，低于一秒，且成本低于其他前沿模型。Grok Voice 每天为 Tesla 和 SpaceX 的数百万次对话提供支持，今天已在 API 中上线，价格与前代相同。\n在 Artificial Analysis 的独立测试中，Grok Voice 3.0 在 Speech-to-Speech Index 上排名第一，得分为 86.9。该指数综合了语音推理、 τ -Voice，以及盲测一对一通话中的偏好和任务成功率。Grok Voice 3.0 在 Full Duplex Bench 上也获得 97% 的分数，该基准衡量其处理停顿、轮流发言和打断的自然程度。\nτ -Voice 衡量智能体处理带有不同口音、背景噪音和打断的支持通话的能力。Grok Voice 3.0 得分为 71.6%，与 GPT-Live-1（Astra）相当，但延迟低 40%，在智能体智能与响应速度之间树立了新的前沿。\n它的运行成本也低于同类模型。Artificial Analysis 测量了每个模型在其 Big Bench Audio 运行中完成任务所需的成本，Grok Voice 3.0 低于 GPT-Live-1（Astra，Medium）和 GPT-Realtime-2.1。\nArtificial Analysis 的 Big Bench Audio 运行中每任务平均成本，美元。越低越好。\n在 EVA-Bench 上，即 ServiceNow 面向企业语音智能体的基准，Grok Voice 3.0 取得了 74% 的最高准确率得分，并且在准确率和客户体验的综合评分中表现最佳。\nGrok Voice 3.0 每天在 Tesla 车辆中处理数百万次对话。驾驶员可以使用 Connectors 处理简单请求，例如查看日历或回复电子邮件，并使用 Grok Bot 处理更大的任务，例如点咖啡或预订晚餐——全程完全免手操作（ 在 X 上查看 ）。Grok Voice 3.0 也为 Grok Bot 的语音模式提供支持。\nStarlink 呼叫中心使用 Grok Voice 每天以多种语言接听 20,000 通客户来电。约 70% 无需人工介入即可解决，四分之一的销售通话在来电者挂断前完成购买。一个基于 Grok Voice 3.0 构建的单一代理即可验证客户身份、排查硬件故障、发放信用额度并寄送替换设备。\nGrok Voice 3.0 即日起在 Voice Agent API 中提供，价格为 $0.08 / 分钟（$4.80 / 小时） ，与 Grok Voice 2.0 相同。使用 grok-voice-latest 的代理已自动切换，无需任何更改。\n官方发布给出多项第三方基准分数、时延和 API 定价，读者可以据此评估它在语音智能体场景的性价比。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "vLLM 推出无需置信头的在线拟合接受估计器，让 EAGLE、MTP 等草稿模型可用 Adaptive Verification",
+   "url": "https://aihot.news/items/fuzrhjjahftxj9xj36god3pcf",
+   "published": "2026-10-14T00:00:00.000Z",
+   "description": "vLLM 支持 confidence scoring 扩展到所有基于草稿模型的投机类型，通过在线拟合的 logistic 回归从草发者 logits 推导 logit(q_max) 特征来预测目标模型的接受概率，作为 Adaptive Verification 的置信分。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fuzrhjjahftxj9xj36god3pcf",
+   "excerpt": "Adaptive Verification Without a Confidence Head\nvLLM 支持 confidence scoring 扩展到所有基于草稿模型的投机类型，通过在线拟合的 logistic 回归从草发者 logits 推导 logit(q_max) 特征来预测目标模型的接受概率，作为 Adaptive Verification 的置信分。\n原文给出无置信头草稿模型启用 Adaptive Verification 的在线估计方法、设计取舍和实测数据，方法可直接在 vLLM 中配置复用。\n现在所有基于草稿模型的推测器类型都支持置信度评分。在没有置信度头的情况下， 在线拟合估计器 从草稿模型的 logits 中提取特征，以预测目标模型接受它的概率，该概率直接用作自适应验证的置信度分数。估计器的系数会持续拟合，以适应传入的数据流量。该功能已在 PR #52228 中落地，对于没有置信度头的草稿模型，可通过 enable_adaptive_verification 启用。\nvLLM 的 自适应验证 （AV）能够在推测解码期间验证一部分草稿 token。接受概率较低的草稿 token 会在运行目标模型前向传播之前从批次中裁剪掉，从而节省计算量。这种优化在服务大批量时尤其有益，因为在这种情况下 GPU 会变得受计算限制。更多细节请参见 这篇 vLLM 博客文章 。\nAV 需要每个 token 的接受概率估计，这就是为什么到目前为止它只支持 DSpark 草稿模型。DSpark 模型通常附带一个置信度头：在每个位置上对草稿模型隐藏状态应用一个小型线性层，训练为二元分类器，判断“目标模型会接受这个 token 吗？”\n缺少置信度头的草稿模型，例如 EAGLE、MTP、DFlash 以及一些 DSpark 检查点，完全无法使用 AV。要使用它，这些草稿模型需要每个 token 的接受度估计，而添加置信度头意味着重新训练草稿模型，对于人们已经在服务的许多现有检查点来说，这不是一个可行的选项。\n使用草稿模型自身的置信度作为接受度的代理已被广泛确立。 EAGLE-2 表明 EAGLE 的草稿概率与接受率紧密相关，并用它们来扩展和重排动态草稿树。 Draft & Verify 及若干后续工作一旦草稿模型的概率低于固定阈值就停止草稿。 SpecDec++ 则训练一个专门的接受预测头，在思路上与 DSpark 的置信度头类似。在每种情况下，从草稿置信度到接受度的映射要么按原样使用，要么离线学习。\nAV 需要的不仅仅是一个好的排序。它的预算决策会对预测的接受概率求和，并将其与实测成本进行权衡，因此预测必须针对所服务的特定模型对和工作负载进行校准，这正是下一节中在线拟合估计器所提供的内容。\n我们添加了一个轻量级逻辑回归，从草稿分布导出的单个标量——草稿模型最可能 token 的对数几率——来估计每个草稿 token 的接受概率。每个草稿位置有一个共享斜率和截距，因此一个 K token 的草稿模型总共需要 K + 1 个参数。这些参数从目标模型在正常验证期间已经产生的接受/拒绝决策中在线拟合。任何现有的草稿检查点都能免费获得 AV。\n本节剩余部分涵盖该设计的两个部分：估计器对什么量进行评分，以及其系数在服务期间如何拟合。\n其中 ω 是在所有草稿位置上共享的拟合斜率，β i 是拟合的逐位置截距， q 是草稿分布。另一种对数几率形式使这一关系更加清晰：\nlogit( q max ) 是该估计器的特征，即草稿最可能 token 的对数几率。直观地说，它表示草稿模型对其预测的置信程度。它被系数 ω 和 β i 线性变换，以预测草稿被目标模型接受的对数几率。其 sigmoid 值即为 p ，即估计的接受率，用作 AV 的置信度分数。\n还考虑过若干备选特征，但出于各种原因被否决。在评估特征时，我们最关注的四个主要维度是：\n无损性是这些特征必须具备的不可协商属性。否则，我们就破坏了投机解码输出目标模型精确分布这一根本保证。AUC 和 ECE 对 AV 的裁剪决策都很重要，但方式不同。AUC 对生存概率的 局部排序 很重要：\nAUC 确保更可能被接受的草稿 token 优先于不太可能被接受的 token 被接纳。另一方面，ECE 对 全局 预算决策很重要：\n这些概率被求和，然后除以实测成本表。ECE 确保估计的被接受 token 数量与现实相符。\n下表列出了各种实验过的特征及其在四个类别上的得分。这些得分是在服务 DeepSeek-V4-Flash + DSpark（temp=1，top-p=0.95，conc=64）、未启用 AV 的过程中收集的约 450 万个带标签草稿上测得的，涵盖五个数据集：SPEED-Bench 2k 低/高熵、GSM8K、HumanEval 和 MT-Bench。最后两行是参考项而非拟合特征：直接使用草稿器的 q max 作为接受概率而不进行拟合，以及训练好的置信度头的得分。\nlogit( q sampled ) 和 −log(−log( q sampled )) 在 AUC 方面明显优于表中选用的特征，但未被采用，因为基于它们进行裁剪会导致输出分布有偏。两者都读取 q sampled ，即 drafter 实际抽取的 token 的概率。基于该值的函数对草稿进行裁剪，会使在位置 i 是否验证的决策依赖于 x i 本身，因此经过裁剪后存活的草稿不再服从 q 分布。标准拒绝采样以概率 min(1, p / q ) 接受一个 token，期望 q 是草稿 token 被采样时所服从的分布。但基于 q sampled 进行裁剪会使输出的分布偏向 drafter 置信度更高的 token。 1\nq max 的“不拟合”行说明了我们为何要进行拟合，而不是像 EAGLE-2 在构建草稿树时那样直接使用 drafter 自身的概率。直接使用时，drafter 的 top-token 概率对草稿的排序实际上优于训练后的"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Google 发布智能体审稿系统 Deep Review，支持多领域技术文档审查",
+   "url": "https://aihot.news/items/enqtz3wtz6khvf0m44z5a5jaz",
+   "published": "2026-10-14T00:00:00.000Z",
+   "description": "Google 公开发布智能体审阅系统 Deep Review，可对复杂技术文档提供反馈与验证，最初面向计算机科学论文，现已扩展到法律、金融等领域。 🔗 阅读原文 via AIHOT · https://aihot.news/items/enqtz3wtz6khvf0m44z5a5jaz",
+   "excerpt": "Analyzing technical documents with Deep Review\nGoogle 公开发布智能体审阅系统 Deep Review，可对复杂技术文档提供反馈与验证，最初面向计算机科学论文，现已扩展到法律、金融等领域。\n原文介绍了系统由来、四阶段智能体审阅流程和公开使用条件，读者可以了解其适用范围与接入方式。\n生成式 AI 加速了许多技术领域的发展。如今，AI 在撰写科学论文和技术文档、运行代码、设计实验以及起草提案中发挥某种作用已很常见。然而，加速内容创作也带来了评审挑战：在 AI 生成内容快速增加的同时，人类的验证能力基本保持不变。评审长篇科学手稿或复杂法律协议等复杂文档，需要专业知识和深入的学科理解。这种失衡造成了 验证瓶颈 ，即信息生成的速度快于其被严格评审的速度。\n今天，我们很高兴地宣布公开发布 Deep Review ，这是一个智能体 AI 系统，旨在为复杂文档提供严格的反馈和技术验证。该系统最初为计算机科学学术论文分析而设计，其能力现已扩展到评审法律、金融等多个领域的文档。它既可作为起草过程中的迭代改进工具，也可作为评审过程中用于科学流程验证、主张核查和评估的工具。\nDeep Review 代表了我们 Paper Assistant Tool (PAT) 的演进——这是一项实验性计划，旨在帮助研究人员在会议投稿前对手稿进行压力测试。在过去一年中，我们与四个旗舰计算机科学会议（ STOC 2026 、 ICML 2026、 NeurIPS 2026、 和 ICLR 2027 ）合作，为超过 16,000 篇选择加入的手稿作者提供私密的投稿前反馈。有关 PAT 及这些试点项目的更多细节，可在我们的手稿 Towards Automating Scientific Review with Google’s Paper Assistant Tool 中找到。\n验证瓶颈最显著的例子之一是学术同行评审。这体现在学术出版场所——尤其是 AI 研究本身的场所——投稿量的上升，且增幅巨大。今年，三大 AI 会议（ ICLR 、 NeurIPS 和 ICML ）的投稿量超过 74,000 篇， 高于大约 2025 年的 45,000 篇、2024 年的 32,000 篇和 2023 年的 23,000 篇。每一篇投稿都需要多份高质量评审，以确保同行评审流程的完整性，这可能会给人类专家带来更大的负担。\nDeep Review 旨在帮助减轻技术领域人类审稿人日益加重的负担。通过对文档提供详细、客观的评估，Deep Review 检查逻辑一致性和数学陈述，提出改进建议，为事实提供依据，并与现有工作进行对比。它处理了审稿中一些认知负担最重的方面，同时将更高层次的判断留给人类。\nDeep Review 已在其实验名称 Paper Assistant Tool （PAT）下进行了广泛测试和部署，与旗舰计算机科学会议 STOC 2026、ICML 2026、NeurIPS 2026 和 ICLR 2027 建立了四个试点合作。在这些试点期间，作者可以选择在提交截止日期前几周通过 PAT 接收对其论文的反馈和分析。目标是向作者提供可操作的反馈，以帮助提高提交论文的质量。这些反馈与官方会议审稿流程完全脱钩。PAT 未收集任何数据用于训练，且在每个项目结束后，论文会立即从 Google 系统中删除。\n作者对该工具的反应极为积极，也反映出底层模型和 PAT 框架的持续改进。随着 Deep Review 中加入 Gemini 4 Argon 支持，该工具的底层能力已进一步超越下文所述的旧版 PAT。\n单提示 LLM 调用在评估长篇、复杂文档时常常失败，原因在于耗尽 token 推理预算、忽略长上下文中的跨章节依赖，或未经充分审视就接受细微的论断。Deep Review 通过一个四阶段智能体流水线解决这些挑战：\n虽然 Deep Review 起源于学术论文评审，但长上下文评审具有普适性：用于检查研究论文中数学证明是否成立的推理机制，同样有助于发现其他类型文档中的逻辑漏洞和不一致之处——在这些文档中，论断必须有证据支撑。因此，Deep Review 可用于为更广泛的日常流程带来结构化的批判性评审。\n用户现在可以应用 Deep Review 来分析众多领域的复杂文档。例如，它可以用于：\n我们还推出了 Teamwork Deep Document Review Pattern ， 这是一种受 Deep Review 启发的文档评审实现模式，已内置于 Antigravity 中，使用 Teamwork 多智能体编排框架 。该模式旨在系统性地评估研究论文、手稿草稿和技术提案，采用具有自我纠正和基于分段的评分标准的多智能体层级结构。Antigravity 用户可以使用 /teamwork-preview 命令调用此模式。\n在计算机科学领域，全面的投稿前评审通常依赖于广泛的评审网络——如资深教师、资源充足的学术实验室或广泛的同行咨询网络。提供可靠的自动化逻辑验证，可以帮助许多学者对自己的论断进行压力测试，发现可避免的缺陷，基于经过验证的基础来完善和强化文档，并更有信心地将成果提交到评审流程中。\n鉴于它在与学术会议开展的试点项目中展现出的实用性，我们相信像 Deep Review 这样的工具将在未来几年内，通过赋能作者和评审者，在同行评审流程中发挥重要作用。\n展望未来，我们将继续扩展该平台的能力。随着 Gemini 4 Argon 支持的推出，Deep Review 的底层能力进一步提升，为作者提供更高质量的反馈和分析。此外，随着多文件支持即将推出，用户还将能够同时对整套相关文档、电子表格和附件运行这些一致性检查。我们希望这些进步能让各地知识工作者更广泛地获得高质量的技术评审。\nDeep Review 是 Google Research、Google DeepMind 和 Google Cloud 的协作成果。我们感谢核心贡献者和研究"
+  },
+  {
+   "group": "ai",
    "source": "Simon Willison",
    "title": "Redesigning source control at Anthropic",
    "url": "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/",
    "published": "2026-10-13T23:00:06.000Z",
    "description": "Redesigning source control at Anthropic Interesting piece from Anthropic describing why and how they built their own custom alternative to Git, based on the dramatic increase in rate of changes to their code after the past six months. In May 2026, Anthropic averaged around 2,500 code changes merged per day; as of September, we merged over 30,000 per day. They included a chart showing those changes. I had Claude modify their chart ( code here ) to add markers for the public releases of each of their models in 2026: This shows public release dates, not the date when models became available for A",
-   "excerpt": "Redesigning source control at Anthropic ( via ) Interesting piece from Anthropic describing why and how they built their own custom alternative to Git, based on the dramatic increase in rate of changes to their code after the past six months.\nIn May 2026, Anthropic averaged around 2,500 code changes merged per day; as of September, we merged over 30,000 per day.\nThey included a chart showing those changes. I had Claude modify their chart ( code here ) to add markers for the public releases of each of their models in 2026:\nThis shows public release dates, not the date when models became available for Anthropic's internal use. My guess is that the introduction of Fable/Mythos class models is a key factor in the increased coding velocity.\n\"Antique\" is their new code review system. The source control system is called Scion, and sounds to me like a reinvention of centralized source control along the lines of Subversion. They had some pretty extreme requirements:\nThe history of our main branch alone is almost 100 GB, and a compressed working copy is over 25 GB. We perform on the order of 25 million code checkouts per day for CI, before counting developer environments, agent sandboxes, and research jobs. Fetched naively, that would be over 600 PB of git traffic per day.\nThe new system was built by a team of seven people, and the migration from Git was completed in five months.\nWhen asked on Hacker News about the lack of offline support, Scion engineer Nick G replied :\nSince Claude is by far the heaviest user of Scion and is necessarily online, this just wasn't important to do.\nAs an aside, I've been trying adversarial review in my own projects recently, where you have a model try and find flaws (I often play Claude and GPT off against each other). This note from the article reflected my own experience with that:\nAnthropic also makes extensive use of adversarial review, and, while this is incredibly effective in many ways, it can also be myopic, so skilled engineers needed to steer Claude away from over-engineering parts of the system in response to hypothetical concerns.\nThis is a link post by Simon Willison, posted on 13th October 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
+   "excerpt": "Redesigning source control at Anthropic ( via ) Interesting piece from Anthropic describing why and how they built their own custom alternative to Git, based on the dramatic increase in rate of changes to their code after the past six months.\nIn May 2026, Anthropic averaged around 2,500 code changes merged per day; as of September, we merged over 30,000 per day.\nThey included a chart showing those changes. I had Claude modify their chart ( code here ) to add markers for the public releases of each of their models in 2026:\nThis shows public release dates, not the date when models became available for Anthropic's internal use. My guess is that the introduction of Fable/Mythos class models is a key factor in the increased coding velocity.\n\"Antique\" is their new code review system. The source control system is called Scion, and sounds to me like a reinvention of centralized source control along the lines of Subversion.\n( Update : Anthropic credit Google's Piper and Meta's Sapling as \"prior art\" - it looks like the core concept of \"derived data\" was heavily inspired by Mononoke , the server component of Sapling.)\nThey had some pretty extreme requirements:\nThe history of our main branch alone is almost 100 GB, and a compressed working copy is over 25 GB. We perform on the order of 25 million code checkouts per day for CI, before counting developer environments, agent sandboxes, and research jobs. Fetched naively, that would be over 600 PB of git traffic per day.\nThe new system was built by a team of seven people, and the migration from Git was completed in five months.\nWhen asked on Hacker News about the lack of offline support, Scion engineer Nick G replied :\nSince Claude is by far the heaviest user of Scion and is necessarily online, this just wasn't important to do.\nAs an aside, I've been trying adversarial review in my own projects recently, where you have a model try and find flaws (I often play Claude and GPT off against each other). This note from the article reflected my own experience with that:\nAnthropic also makes extensive use of adversarial review, and, while this is incredibly effective in many ways, it can also be myopic, so skilled engineers needed to steer Claude away from over-engineering parts of the system in response to hypothetical concerns.\nThis is a link post by Simon Willison, posted on 13th October 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
   },
   {
    "group": "ai",
@@ -467,6 +774,15 @@
   {
    "group": "wh",
    "source": "DC Velocity",
+   "title": "TD Cowen/AFS: shippers should buckle up for an expensive Q4",
+   "url": "https://www.dcvelocity.com/transportation/trucking/td-cowen-afs-shippers-should-buckle-up-for-an-expensive-q4",
+   "published": "2026-10-13T20:53:49.000Z",
+   "description": "Freight rates are being driven to historic highs by the potent effects of a structurally higher-cost transportation environment, heated up by entrenched high fuel prices, capacity constraints, and peak-related fees, according to a report from AFS Logistics and TD Cowen. The report projects an expensive Q4, with holiday shippers facing record-high ground and express parcel costs, the highest truckload rates since Q1 2022, and LTL rates eclipsing 80% above the January 2018 baseline for the first time ever. Those are the results of the “TD Cowen/AFS Freight Index,” a snapshot with predictive pric",
+   "excerpt": "Freight rates are being driven to historic highs by a structurally higher-cost transportation environment, report says.\nFreight rates are being driven to historic highs by the potent effects of a structurally higher-cost transportation environment, heated up by entrenched high fuel prices, capacity constraints, and peak-related fees, according to a report from AFS Logistics and TD Cowen.\nThe report projects an expensive Q4, with holiday shippers facing record-high ground and express parcel costs, the highest truckload rates since Q1 2022, and LTL rates eclipsing 80% above the January 2018 baseline for the first time ever.\nThose are the results of the “TD Cowen/AFS Freight Index,” a snapshot with predictive pricing for truckload, less-than-truckload (LTL), and parcel transportation markets.\n“We expect fuel to drive elevated transportation costs for the foreseeable future. Inventories are low and refineries are at capacity, so even if crude oil prices drop in the coming months, diesel and jet fuel supplies must still catch up before prices recede,” says Andy Dyer, CEO, AFS Logistics. “The other key force shaping freight markets is capacity. The holiday rush always places a seasonal premium on parcel capacity, while the continued ascent of truckload rates is the result of steady demand chasing a shrinking pool of trucks.”\nFor example, the parcel sector could see conditions for a “perfect storm for a pricey peak season,” the report said. Projections for Q4 solidify 2026 as the most expensive parcel shipping year on record, a testament to years of carrier pricing changes designed to maximize revenue in a broad range of market conditions. The fuel surcharge is a prime example, with carriers frequently reindexing surcharge tables since 2021 to not only capture additional revenue as fuel prices rise but keep fuel surcharges high even as actual fuel prices fall.\n“While diesel and jet fuel are major costs for ground and express parcel, the fuel surcharge has become a revenue lever for carriers in addition to a pass-through mechanism for covering the cost of doing business,” says Mingshu Bates, Chief Analytics Officer and President of Parcel, AFS Logistics. “Even if crude oil normalizes and fuel prices recede, the effective fuel surcharge will not show a material decrease.”\n“For shippers, peak season involves a year-long tight-rope act of balancing volume across carriers to maintain access to capacity when orders really need to move and to limit the impact of demand "
+  },
+  {
+   "group": "wh",
+   "source": "DC Velocity",
    "title": "Symbotic says latest acquisition uses conveyor automation to free up DC space",
    "url": "https://www.dcvelocity.com/material-handling/robotics/symbotic-says-latest-acquisition-uses-conveyor-automation-to-free-up-dc-space",
    "published": "2026-10-13T20:50:24.000Z",
@@ -481,15 +797,6 @@
    "published": "2026-10-13T20:42:28.000Z",
    "description": "U.S. container imports reached their highest September volume on record, reaching 24.8% above the pre-Covid mark of September, 2019, according to the Global Shipping Report from supply chain software vendor Descartes. By the numbers, September imports to the U.S. totaled 2,546,261 twenty-foot equivalent units (TEUs) in September 2026, down 2.2% from August and up 10.3% from September 2025. The increase came despite stormy conditions in worldwide container flows. Descartes cited an array of changes to trade conditions, including: Middle East maritime incidents and new carrier fuel charges added",
    "excerpt": "Descartes analysis finds the U.S. imported 2.5 million TEUs, which was 24.8% above the pre-Covid mark of September, 2019.\nU.S. container imports reached their highest September volume on record, reaching 24.8% above the pre-Covid mark of September, 2019, according to the Global Shipping Report from supply chain software vendor Descartes.\nBy the numbers, September imports to the U.S. totaled 2,546,261 twenty-foot equivalent units (TEUs) in September 2026, down 2.2% from August and up 10.3% from September 2025.\nThe increase came despite stormy conditions in worldwide container flows. Descartes cited an array of changes to trade conditions, including: Middle East maritime incidents and new carrier fuel charges added to routing and cost risk; Section 232 tariff treatment for specified pharmaceuticals took effect for additional companies on September 29; the Panama Canal Authority announced a partial restoration of transit capacity; and some carriers are resuming selected Suez Canal services even as Red Sea security remains uncertain.\nMuch of the increase was driven by China-origin imports, the numbers showed. U.S. containerized imports from China reached 924,454 TEUs in September 2026, increasing 40,136 TEUs (4.5%) from August and 161,682 TEUs (21.2%) from September 2025 (see Figure 4). China represented 36.3% of total U.S. container imports, up from 34.0% in August.\nChina’s September import mix was led by plastics (HS-39), at 135,097 TEUs (14.6% of China-origin volume), followed by furniture and bedding (HS-94), at 123,574 TEUs (13.4%), and toys and sporting goods (HS-95), at 92,842 TEUs (about 10%). Machinery (HS-84) and electrical machinery (HS-85) accounted for a combined 17.6%, while apparel, made-up textiles, and footwear (HS-61 through HS-64) represented 11.1%.\nThe Descartes report also described the factors it is tracking as it seeks to manage supply chain risk in the months ahead:"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Character.ai 破产文件显示 AI 商业模式难以为继",
-   "url": "https://aihot.news/items/pjy8fk8cfl1qvwex08y6kdau8",
-   "published": "2026-10-13T20:06:53.000Z",
-   "description": "Character.ai 进入破产程序，法院文件显示其商业模式难以支撑开支。公司 2024 年每月 AI 算力支出 1380 万美元、2025 年为 1000 万美元，订阅收入峰值仅每月 280 万美元，含广告的全部收入峰值 530 万美元；2026 年 1 至 8 月算力支出 5610 万美元，8 月时每月仍亏损约 800-900 万美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pjy8fk8cfl1qvwex08y6kdau8",
-   "excerpt": "Character.ai's Bankruptcy Documents Show the Economics of AI Don't Work\nCharacter.ai 进入破产程序，法院文件显示其商业模式难以支撑开支。公司 2024 年每月 AI 算力支出 1380 万美元、2025 年为 1000 万美元，订阅收入峰值仅每月 280 万美元，含广告的全部收入峰值 530 万美元；2026 年 1 至 8 月算力支出 5610 万美元，8 月时每月仍亏损约 800-900 万美元。\n破产文件披露了收入与算力开支的具体数字，让读者能据此衡量二线 AI 公司商业模式的真实成本。\nCharacter.ai 的破产是早已被预见的 AI 泡沫中倒下的第一块多米诺骨牌之一。其破产的境况 正是 AI 批评者们一直预言会发生的事 ：Character.ai 在运营产品上烧掉了巨额资金，却没有带来多少收入，并在对用户造成伤害后面临巨额法律费用。根据周二在破产法庭提交的陈述，通过降低产品质量来试图削减开支的做法并未奏效。\n据报道， Disney 已向 Character.ai 出价 2000 万美元，以授权其部分知识产权；去年， Disney 向 Character.ai 发出了 停止侵权函，要求其停止未经许可使用其受版权保护的角色。2023 年，该公司在由 a16z 领投的一轮融资中筹集了 1.5 亿美元，估值达到 10 亿美元。\nCharacter.ai 是最知名的 AI 聊天机器人公司之一，在 AI 伴侣领域广受欢迎。该公司面临各种法律问题，此前被一名用户的家人起诉，该用户在与 Character.ai 聊天机器人交谈后自杀；由于其深受儿童欢迎，它还成为 监管机构推动年龄验证 技术的目标。在破产申请文件中，该公司表示其巨额法律费用导致了破产，但即便没有法律问题，其业务也极度不可持续。\nCharacter.ai 首席执行官 Colin Adams 在破产法庭提交的 宣誓书中 直言：“Character 令人印象深刻的技术运营成本高昂”，并且“Character 始终在盈利方面苦苦挣扎，其运营支出一直很高。”\n该公司表示，2024 年，公司每月在 AI 算力上花费 1380 万美元；2025 年，每月在 AI 算力上花费 1000 万美元。该公司的订阅收入峰值达到每月 280 万美元，但有时每月不足 100 万美元。其包括广告在内的所有来源收入峰值达到每月 530 万美元。\n仅在 2026 年 1 月至 8 月期间，该公司就在算力成本上花费了 5610 万美元，截至 8 月，每月亏损“约 800 万至 900 万美元”，该公司称这比上年有了巨大改善。该公司表示，在同一八个月期间，公司在员工薪资和福利上花费了 1970 万美元，并且大量员工离职，因为他们“开始质疑 Character 的长期生存能力”。\nCharacter 表示，通过采取“重大行动来降低运营成本并提高收入”——包括简化 AI 模型以减少算力支出、裁员以及在聊天中植入广告——其财务状况已 改善 到每月仅亏损 800 万至 900 万美元。\n5月， 404 Media 写道，Character.ai 的这些变化 正是“AI 恶化（enshittification）的样子”，充斥着大量广告、使用限制、护栏以及被“阉割”的模型。在破产申请文件中，Adams 实质上承认这种恶化就是其战略：“然而，Character 已采取重大措施来降低运营消耗，包括将推理工作负载转移到成本更低的 GPU 算力上，并采用后训练的开源权重模型，而非开发专有的基础模型。与此同时，Character 削减了员工人数，”他写道。“2025 年年中，Character 推出了应用内广告 […] 2026 年初，Character 还引入了应用内购买。”\n虽然针对 Character 的诉讼意义重大，但对于一个一直饱受与窃取知识产权 以及向用户暗示自残 或暴力相关的法律问题困扰的 AI 行业来说，这也并不罕见。换句话说，Character 破产申请文件中的内容，放在许多其他 AI 公司身上也同样成立——这些公司在算力上投入巨资，却没有能够支撑这些投入的营收模式。Character AI 与 OpenAI、Anthropic、Meta 和 Google 等巨头之间的区别在于，那些公司能够反复获得新的资金注入，或者像 Meta 和 Google 那样，能够用其庞大广告业务的收入来补贴其 AI 产品。\n该公司 在一篇博客文章中 表示，它将在破产程序期间继续运营：“Character.ai 平台仍在运行，目前你仍可以继续访问所有服务。我们正专注于为我们的平台和社区寻找最佳的前进道路。”\n随着大玩家的前沿模型变得越来越好、护栏越来越少，它们也很可能会继续蚕食像 Character.ai 这样更专业化的产品的用户群。例如，你在 Character.ai 上能做的很多事情，在 ChatGPT 或 Meta 的 Muse 上也能做。目前尚不清楚像 OpenAI 和 Anthropic 这样的 AI 巨头，或者整个 AI 行业，是否已经大到或重要到不能倒，但 Character 的破产表明，二线玩家的跑道已经到头了。\n破产文件披露了收入与算力开支的具体数字，让读者能据此衡量二线 AI 公司商业模式的真实成本。"
   },
   {
    "group": "ai",
@@ -512,11 +819,11 @@
   {
    "group": "ai",
    "source": "AIHOT",
-   "title": "ComfyUI 上线 NVIDIA VFX 节点，支持视频超分、补帧与 SDR 转 HDR",
+   "title": "NVIDIA VFX Nodes 登陆 ComfyUI，支持视频超分、补帧与 SDR 转 HDR",
    "url": "https://aihot.news/items/uy1d8e2pcm6sked0p57flawpq",
    "published": "2026-10-13T19:41:39.000Z",
-   "description": "NVIDIA 的 RTX 视频特效模型以自定义节点形式登陆 ComfyUI，模型随节点分发并在本地 RTX GPU 上运行。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uy1d8e2pcm6sked0p57flawpq",
-   "excerpt": "Nvidia VFX Nodes for Video Upscaling, Frame Generation and SDR-to-HDR, for VFX Professionals\nNVIDIA 的 RTX 视频特效模型以自定义节点形式登陆 ComfyUI，模型随节点分发并在本地 RTX GPU 上运行。\n原文完整给出三个节点的能力参数、推荐串联顺序和 EXR 改进细节，VFX 从业者可据此评估是否接入现有 ComfyUI 工作流。\n原文完整给出三个节点的能力参数、推荐串联顺序和 EXR 改进细节，VFX 从业者可据此评估是否接入现有 ComfyUI 工作流。"
+   "description": "NVIDIA 的 RTX 视频特效现以自定义节点形式在 ComfyUI 中本地运行，官方推荐按超分、补帧、HDR 的顺序搭建完整 VFX 管线。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uy1d8e2pcm6sked0p57flawpq",
+   "excerpt": "Nvidia VFX Nodes for Video Upscaling, Frame Generation and SDR-to-HDR, for VFX Professionals\nNVIDIA 的 RTX 视频特效现以自定义节点形式在 ComfyUI 中本地运行，官方推荐按超分、补帧、HDR 的顺序搭建完整 VFX 管线。\n原文来自 ComfyUI 官方博客，详细说明了 NVIDIA VFX 三个节点的参数与推荐管线顺序，VFX 从业者可据此搭建本地视频增强工作流。\n原文来自 ComfyUI 官方博客，详细说明了 NVIDIA VFX 三个节点的参数与推荐管线顺序，VFX 从业者可据此搭建本地视频增强工作流。"
   },
   {
    "group": "ai",
@@ -699,15 +1006,6 @@
    "excerpt": "Peak season isn't what it used to be. What was once a four-week sprint is now a months-long marathon driven by back-to-school, Black Friday, Cyber Monday, and year-end sales. Volumes spike earlier, labor is harder to find, and the margin for error is razor thin.\nThis eBook unpacks how leading warehouses are navigating today's extended peak and why automation is now essential to keep pace with rising customer expectations. Inside, you'll discover:"
   },
   {
-   "group": "wh",
-   "source": "Supply Chain 24/7 自动化",
-   "title": "Report: Walmart’s Shipping Boxes Are Too Tall for Its Warehouse Robots",
-   "url": "https://www.supplychain247.com/article/walmart-warehouse-automation-packaging-robot-costs",
-   "published": "2026-10-13T14:13:00.000Z",
-   "description": "Walmart’s warehouse automation push faces packaging problems, robot repairs, and higher power bills as the retailer expands its rollout.",
-   "excerpt": "Walmart &rsquo;s multibillion-dollar warehouse automation push is running into packaging problems, robot breakdowns and higher operating costs, according to a recent Wall Street Journal story . The retailer plans to replace shipping boxes that do not fit its automated systems, while some oversized products still require workers to handle them.\nWalmart plans to replace boxes it has used for more than two decades with versions that are 1.5 inches shorter. The new boxes must be taped shut, adding work and expense, although Walmart says they will reduce shelf-stocking time at stores.\nThe transition involves most of Walmart&rsquo;s roughly 200 U.S. supply chain buildings. Its warehouse operations rely on more than 140,000 workers to unload, sort, store and ship merchandise.\nRob Montgomery, Head of Supply Chain Operations for Walmart U.S., described the transition to the Journal: &ldquo;We are kind of in this peak complexity.&rdquo; He also said Walmart is changing its warehouses while keeping them operating, which adds to the difficulty.\nMost of Walmart&rsquo;s supply chain buildings date to the 1980s and &rsquo;90s, and about 80% of its automation construction projects are retrofits. Montgomery said Walmart is installing the equipment while keeping warehouses operating, which complicates the transition.\nDifferent products also require different automated systems, often supplied by different companies. Some goods, including large-screen televisions and jumbo bags of dog food, will need manual assistance for the foreseeable future, Montgomery said.\nSymbotic, the Massachusetts robotics company in which Walmart owns a 12.6% stake, supplies equipment that moves merchandise and builds pallets for shipment to stores. A company spokesman told the Journal that about 5% of its product-moving robots were undergoing repairs at any given time in recent months, down from under 10% last year.\nMonthly electricity bills at Walmart&rsquo;s automated grocery facilities can reach $800,000 or more during peak heating or cooling months, compared with roughly $250,000 under more manual operations, a person familiar with the situation told the Journal. The engineers needed to run the equipment also cost more than workers doing manual warehouse tasks, the Journal reported.\nDespite those challenges, Walmart continues to expand its use of automation. By August, more than 65% of its stores were receiving some automated freight , and over 50% of its e-commerce inventory was moving through"
-  },
-  {
    "group": "ai",
    "source": "a16z",
    "title": "The $108 Billion AI Opportunity for Specialty Practices",
@@ -809,11 +1107,11 @@
   {
    "group": "ai",
    "source": "AIHOT",
-   "title": "NVIDIA 官宣 RTX Spark 软件生态就绪，10 月 16 日笔记本上市",
+   "title": "NVIDIA RTX Spark 笔记本 10 月 16 日上市，生态伙伴同步推出本地 AI 软件更新",
    "url": "https://aihot.news/items/ug7g6psicfobnnft0ebgpyl10",
    "published": "2026-10-13T12:00:49.000Z",
-   "description": "NVIDIA 介绍 RTX Spark 平台生态就绪情况，RTX Spark 笔记本将于 10 月 16 日（周五）上市，搭载最高 128GB 统一内存和 1 petaflop AI 算力。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ug7g6psicfobnnft0ebgpyl10",
-   "excerpt": "All Systems Go: Global PC App Ecosystem Ready for NVIDIA RTX Spark\nNVIDIA 介绍 RTX Spark 平台生态就绪情况，RTX Spark 笔记本将于 10 月 16 日（周五）上市，搭载最高 128GB 统一内存和 1 petaflop AI 算力。\n官方汇总了 RTX Spark 上市前的软件生态准备，涵盖本地智能体、创意应用和开发工具的具体更新与可用时间。\nNVIDIA RTX Spark 是 PC 的新起点——一次重新发明，将游戏 PC、创意工作室和个人 AI 超级计算机的能力融合进一颗超级芯片。凭借最高 128GB 统一内存和 1 petaflop 的 AI 算力，RTX Spark 为创作者、开发者和游戏玩家带来完整的 NVIDIA RTX 和 CUDA 技术栈，同时通过强大的本地 AI 智能体开启个人计算的新范式。\n上周， NVIDIA 和 Microsoft 宣布 RTX Spark 笔记本电脑将于 10 月 16 日星期五上市 。在发布之前，NVIDIA 及其生态合作伙伴正在推出新的软件功能和性能优化，以扩展 RTX Spark 上本地 AI 的可能性。\n在发布时可用的数千款应用、游戏和模型中，RTX Spark 的新功能和即将推出的更新包括：\nAI 正在改变人们与 PC 交互的方式。今年智能体人气飙升，OpenClaw 和 Hermes 等项目在 GitHub 人气榜上名列前茅。本地大语言模型 (LLM) 已超越驱动智能体所需的智能门槛，Qwen 3.8-Flash-Next 等模型已赶上几个月前发布的前沿云端模型。因此，本地 LLM 下载量已经是去年全年的 5 倍。\n从模型到智能体框架，再到安全与工具，NVIDIA 正与本地 AI 生态紧密合作，让 RTX Spark 成为运行本地智能体的理想硬件。\n从 RTX Spark 首次启动开始，用户就会看到“入门”界面，用于选择和安装他们的智能体应用。\n得益于 NVIDIA OpenShell 和 MXC，这些智能体将配备全新的安全沙箱技术。MXC 提供操作系统级安全性，而 OpenShell 让智能体更轻松地采用 MXC，并增加了凭据保护和安全监控等高级功能。Hermes Agent 将在本月底前集成细粒度的 OpenShell 控制和 MXC。OpenClaw 和 GitHub Copilot 现已支持 MXC。\n安装智能体后，在 GitHub Copilot、Hermes Agent、OpenClaw、Perplexity、Pi 和 WorkBuddy 中设置本地 AI 现在也变得无缝衔接。这些应用将为 RTX Spark 推荐优化的本地模型和设置配置，并通过几次点击为用户完成全部设置。\n许多用户希望两全其美——用本地模型免费迭代，用云端模型获得前沿智能。NVIDIA Switchyard 是一个开源模型路由库，能让智能体在本地和云端 LLM 之间智能路由查询，使用户能够尽量减少云端使用量，同时仍获得与仅在云端运行相似的结果。Hermes 将在 10 月晚些时候加入 Switchyard，而 Perplexity Computer 和 GitHub Copilot 等其他智能体已集成了各自的路由方案。\n软件提供商通过易于使用的 MCP 库和命令行界面（CLI），让智能体能够轻松连接到顶级 Windows 应用。NVIDIA 现在也为其应用提供了 MCP，包括 NVIDIA App、Broadcast、PAIR、Omniverse、RTX Remix 以及庞大的 CUDA-X Skills 库。\nNVIDIA 还发布了面向 RTX Spark 的 AI 操作手册 ，将于 10 月 16 日星期五提供。用户可以设置他们的第一个智能体、构建 AI 幕僚长、配置系统用于开发，或设计创意助手。\nNVIDIA Nemotron 3.5 Bolt 74B-A9B 24GB 将于 10 月 15 日星期四推出，这是一款专为在 RTX Spark 上运行本地智能体而打造的新 LLM。\n该模型是一个 74B 参数、9B 激活参数的混合专家（MoE）模型，通过 2 比特量化和先进的量化感知训练技术压缩至 24GB，以保持质量。它旨在实现速度与智能之间的最佳平衡，比大多数流行的稠密模型更快，同时比大多数具有相似内存占用的流行 MoE 模型更智能。\n用户将能够在发布时通过 llama.cpp、vLLM、Ollama、Unsloth 和 LM Studio 运行 Nemotron 3.5 Bolt 74B。它还可以通过 Hermes 和 OpenClaw 等智能体直接访问。\n与其他 Nemotron 模型一样，Bolt 74B 完全开源——包括训练数据、权重和配方——因此开发者可以微调和定制自己的智能体。\n本地 AI 不必只在一台 PC 上运行。 NVIDIA PAIR 是一款个人 AI 路由器，今天正式结束测试版，让用户更容易利用本地网络中兼容 PC 的全部 AI 算力。这款免费的开源软件工具可自动发现并连接设备、安装 AI 模型和推理引擎，并将 AI 工作负载分配到可用的系统上。\n正式版新增了对 llama.cpp 的支持、可直接从 Hugging Face 下载模型、可自定义推理引擎设置以及 RTX Spark 支持，并带来多项推理和用户体验改进。\nPAIR 可在 Windows、Linux 和 macOS 上运行。开发者可以通过 Github 为这个开源项目做贡献——在 PAIR 首次发布仅一个月后，社区已经为该版本贡献了 10 多项功能和修复。\nRTX Spark 为高级内容创作工作流带来 130 多款加速应用、用于快速视频和图像生成的 CUDA，以及 DLSS、NVENC 和 OptiX 等 RTX 技术——这一切都集成在一台轻薄、可随时随地提供性能的笔记本电脑中。\nAdobe 正"
+   "description": "NVIDIA 官宣 RTX Spark 笔记本将于 10 月 16 日发售，配合发布推出覆盖 Agent、创意和开发工具的软件更新，该超芯片具备最高 128GB 统一内存和 1 petaflop AI 算力。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ug7g6psicfobnnft0ebgpyl10",
+   "excerpt": "All Systems Go: Global PC App Ecosystem Ready for NVIDIA RTX Spark\nNVIDIA 官宣 RTX Spark 笔记本将于 10 月 16 日发售，配合发布推出覆盖 Agent、创意和开发工具的软件更新，该超芯片具备最高 128GB 统一内存和 1 petaflop AI 算力。\n官方汇总了 RTX Spark 上市前的软件生态准备，从本地 Agent、创意应用到开发工具和 DLSS 5，读者可据此了解平台落地细节。\nNVIDIA RTX Spark 是 PC 的新起点——一次重新发明，将游戏 PC、创意工作室和个人 AI 超级计算机的能力融合进一颗超级芯片。凭借高达 128GB 的统一内存和 1 petaflop 的 AI 算力，RTX Spark 为创作者、开发者和游戏玩家带来 NVIDIA RTX 和 CUDA 技术的完整技术栈，同时通过强大的本地 AI 智能体开启个人计算的新范式。\n上周， NVIDIA 和 Microsoft 宣布 RTX Spark 笔记本电脑将于 10 月 16 日星期五上市 。在发布之前，NVIDIA 及其生态合作伙伴正在推出新的软件功能和性能优化，以拓展 RTX Spark 上本地 AI 的可能性。\n在发布时可用的数千款应用、游戏和模型中，RTX Spark 的新功能和即将推出的更新包括：\nAI 正在改变人们与 PC 交互的方式。今年智能体人气飙升，OpenClaw 和 Hermes 等项目在 GitHub 人气榜上名列前茅。本地大语言模型 (LLM) 已超越驱动智能体所需的智能门槛，Qwen 3.8-Flash-Next 等模型已赶上几个月前发布的前沿云端模型。因此，本地 LLM 的下载量已是去年全年的 5 倍。\n从模型到智能体运行框架，再到安全与工具，NVIDIA 正与本地 AI 生态紧密合作，让 RTX Spark 成为运行本地智能体的理想硬件。\n从 RTX Spark 首次启动开始，用户就会看到“入门”界面，用于选择和安装自己的智能体应用。\n得益于 NVIDIA OpenShell 和 MXC，这些智能体将配备全新的安全沙箱技术。MXC 提供操作系统级安全，而 OpenShell 让智能体更易采用 MXC，并增加凭据保护和安全监控等高级能力。Hermes Agent 将在本月底前集成细粒度的 OpenShell 控制与 MXC。OpenClaw 和 GitHub Copilot 现已支持 MXC。\n安装智能体后，在 GitHub Copilot、Hermes Agent、OpenClaw、Perplexity、Pi 和 WorkBuddy 中设置本地 AI 如今也变得无缝顺畅。这些应用会为 RTX Spark 推荐优化的本地模型和设置配置，并让用户只需点击几下即可完成全部设置。\n许多用户希望兼得两者之长——用本地模型免费迭代，用云端模型获得前沿智能。NVIDIA Switchyard 是一个开源模型路由库，可让智能体在本地和云端 LLM 之间智能路由查询，使用户能够尽量减少云端使用量，同时仍获得与仅在云端运行相似的结果。Hermes 将在 10 月晚些时候加入 Switchyard，而 Perplexity Computer 和 GitHub Copilot 等其他智能体已集成各自的路由方案。\n软件提供商通过易用的 MCP 库和命令行界面（CLI），让智能体能够轻松连接顶级 Windows 应用。NVIDIA 现在也为其应用提供了 MCP，包括 NVIDIA App、Broadcast、PAIR、Omniverse、RTX Remix 以及庞大的 CUDA-X Skills 库。\nNVIDIA 还发布了面向 RTX Spark 的 AI playbooks ，将于 10 月 16 日星期五上线。用户可以设置自己的第一个智能体、构建 AI 幕僚长、配置开发系统，或设计创意助手。\nNVIDIA Nemotron 3.5 Bolt 74B-A9B 24GB 将于 10 月 15 日星期四推出，这是一款专为在 RTX Spark 上运行本地智能体而打造的新 LLM。\n该模型是一个 74B 参数、9B 激活参数的混合专家（MoE）模型，通过 2 位量化并采用先进的量化感知训练技术压缩至 24GB，以保持质量。它旨在实现速度与智能之间的最佳平衡，比大多数流行的稠密模型更快，同时比大多数具有相似内存占用的流行 MoE 模型更智能。\n用户将能够在发布时通过 llama.cpp、vLLM、Ollama、Unsloth 和 LM Studio 运行 Nemotron 3.5 Bolt 74B。它也可以通过 Hermes 和 OpenClaw 等智能体直接访问。\n与其他 Nemotron 模型一样，Bolt 74B 完全开源——包括训练数据、权重和配方——因此开发者可以微调和定制自己的智能体。\n本地 AI 不必只在一台 PC 上运行。 NVIDIA PAIR 是一款个人 AI 路由器，今天正式结束测试版，让用户更容易利用本地网络中兼容 PC 的总 AI 算力。这款免费的开源软件工具可自动发现并连接设备、安装 AI 模型和推理引擎，并将 AI 工作负载分配到可用的系统上。\n正式版新增了对 llama.cpp 的支持、可从 Hugging Face 直接下载模型、可自定义推理引擎设置以及 RTX Spark 支持，并带来多项推理和用户体验改进。\nPAIR 可在 Windows、Linux 和 macOS 上运行。开发者可以通过 Github 为这个开源项目做贡献——在 PAIR 首次发布仅一个月后，社区已经为该版本贡献了 10 多项功能和修复。\nRTX Spark 为高级内容创作工作流带来 130 多款加速应用、用于快速视频和图像生成的 CUDA，以及 DLSS、NVENC 和 OptiX 等 RTX 技术——全部集成在一台轻薄、"
   },
   {
    "group": "ai",
@@ -921,7 +1219,7 @@
    "url": "https://aihot.news/items/qbi6xi7a3re15txfell8i9a7c",
    "published": "2026-10-13T01:09:37.000Z",
    "description": "Google 与 BIDMC 合作的 AMIE 患者对话式诊断前瞻性研究在 TheLancet 发表，是 AMIE 首次在真实诊所外测试。临床医生报告称 AMIE 的病史摘要在 75% 的病例中有助于访视准备，其鉴别诊断与医生最终诊断的吻合率达 90%，这也是 Google 首篇登上 The Lancet 主刊的论文。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qbi6xi7a3re15txfell8i9a7c",
-   "excerpt": "Google 与 BIDMC 合作的 AMIE 患者对话式诊断前瞻性研究在 TheLancet 发表，是 AMIE 首次在真实诊所外测试。临床医生报告称 AMIE 的病史摘要在 75% 的病例中有助于访视准备，其鉴别诊断与医生最终诊断的吻合率达 90%，这也是 Google 首篇登上 The Lancet 主刊的论文。\n这是 Google 首篇登上 The Lancet 主刊的 AMIE 研究，作者引用了关键数字，可帮助读者了解对话式诊断在真实门诊的表现。\n看到研究从实验室走向现实世界的临床应用，真是令人惊叹——祝贺团队达成这一里程碑，以及 @TheLancet 论文！\nToday @TheLancet published our AMIE study with @BIDMC_Medicine, the first prospective study of patient-facing conversational diagnostics in a real clinic. AMIE is a research system people can chat with before doctors appointments. Testing AMIE outside the lab with real urgent care patients showed how technology can help gather medical histories safely. Clinicians reported that the summaries helped them prepare for visits in 75% of cases and influenced their approach to care in more than half. AMIE’s differential diagnoses also matched the doctors’ final diagnoses 90% of the time giving clinicians more time to focus on patient care. It’s Google’s first-ever paper in The Lancet’s main journal!\n这是 Google 首篇登上 The Lancet 主刊的 AMIE 研究，作者引用了关键数字，可帮助读者了解对话式诊断在真实门诊的表现。"
+   "excerpt": ""
   },
   {
    "group": "wh",
@@ -948,7 +1246,7 @@
    "url": "https://aihot.news/items/z371wogdvjh86jh8s6v6vlrui",
    "published": "2026-10-13T00:00:00.000Z",
    "description": "Google 工程师用 Gemini 4 Argon 在 google/adk-python 上无人值守跑 11 小时，提出 6 项优化、审查后合并 2 项，使长会话内存会话准备时间降低约 40%，包导入加快 21%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z371wogdvjh86jh8s6v6vlrui",
-   "excerpt": "Optimizing a 200,000-line Python codebase overnight with Gemini 4 Argon\nGoogle 工程师用 Gemini 4 Argon 在 google/adk-python 上无人值守跑 11 小时，提出 6 项优化、审查后合并 2 项，使长会话内存会话准备时间降低约 40%，包导入加快 21%。\n作者复盘了让模型无人值守跑通真实大仓库的完整工作流，含被否决的改动和可复用的 .agents/skills 设置方法。\n当新模型发布时，大多数演示展示的都是从空文件夹构建的全新应用。它们看起来很有趣，但对于一位在职软件工程师来说，它们几乎无法说明该模型如何处理现有代码库。\n在 Gemini 4 Argon 发布之际，我们想测试它能否在一个困难得多的问题上无人值守地通宵运行：在 google/adk-python 中查找并修复跨文件性能瓶颈。Agent Development Kit (ADK) 是 Google 用于构建和部署企业级智能体的开源框架。\n这个 Python 仓库横跨近 800 个源文件、约 205,000 行代码，并有近 17,000 个单元测试作为支撑。\n性能工作对模型来说是一项艰难的测试，因为你不能只打开一个文件就发现性能下降之处。你必须从症状出现的位置之外去审视，并在长时间运行中保持对整个代码库如何组合在一起的全局认知。\n本文介绍了那次 11 小时通宵运行中的提示词、 .agents/skills 规则文件以及人工代码审查决策，这次运行将 ADK 在长会话中的内存会话准备时间缩短了约 40%，并将冷启动包导入速度提升了 21%。你将看到最终发布的两项优化、我们在审查中否决的四项优化，以及如何在你自己的代码库上搭建同样的通宵工作流。\n图 1：ADK 在首次模型请求前的开销，分别在 50 轮和 150 轮后测量。Argon 的改动在两者处都将其削减了约 40%，因此随着会话变长，节省的时间也在增加。\n大多数使用编码智能体进行的性能工作仍处于紧密的人工循环中：工程师运行性能分析器，将模型指向单个热点函数，并指定修复方案。我们想看看，当只给出团队关心的结果时，Argon 会怎么做。\n在第一轮中，我们在零自定义仓库指令的情况下测试了 Argon。我们给它这样一段单段提示词：\n第一轮运行了约两个小时。Argon 在 7 分钟时编写了一个基准测试脚本，花了 70 分钟测量和阅读代码，之后才编辑了 ADK 源代码的第一行，并发现了会话复制和包导入中的真实瓶颈。第一轮的部分代码进入了我们最终发布的 最终提交 。\n第一轮的不足之处在于维护者约定。由于 Argon 不知道 ADK 团队如何审查代码，它给 ADK 的认证模型附加了一个自定义钩子，微妙地改变了其公共 JSON schema，在其自定义复制器中遗漏了模拟事件边界情况，只运行了 216 个附近的单元测试，并且没有在拉取请求描述中留下基准测试数据。\n第一轮证明了确实存在真正的加速空间，所以我们做了两处调整，启动了第二轮。首先，我们把团队的维护者指南放进了仓库的 .agents/skills 目录，就像给新工程师准备的入职指南。每个技能都以一个简短的 SKILL.md 索引开头，按需指向聚焦的 references/ 文件，这样我们就不会在每一轮都淹没智能体的上下文窗口。当 Argon 在晚上 9:11 开始运行时（图 2），它在动一行代码之前，先读取了 visibility.md 以了解我们私有的 _-prefixed 模块规则，并读取了 imports.md 以了解我们的懒加载检查。\n图 2：Argon 在同一个目标上两小时的首次运行与 11 小时的过夜运行对比。第一轮自行发现了真正的加速点，而第二轮遵循了仓库约定，运行了全部 16,892 个单元测试，并提交了一个可供审查的拉取请求。\n其次，我们在 Google Antigravity 中开启了 /goal 模式，它会在上下文压缩过程中保留目标，使智能体持续运行直到任务完成。我们还加了两句话，要求提交一个未合并的拉取请求，并附上前后对比数字：\n有了仓库中的 .agents/skills 和激活的 /goal 模式，Argon 在夜间无人值守地运行了 11 个小时（图 3）。\n图 3：Argon 在 Google Antigravity 中的过夜 ADK 运行。 /goal 提示固定在窗口的顶部和底部，而已完成的工作折叠成摘要块，因此原始规则在数小时的编辑、基准测试和测试运行中始终可见。（截图在公开的 Antigravity 界面中重放，以移除内部工作区细节。）\n第二天早上查看过夜会话日志时，有几个行为立刻引人注目。在接触源代码之前，Argon 阅读了 12 个指南文件，并在四个测试工作负载上运行了基线基准测试：包启动、200 步对话、一个由 20 个子智能体相互交接任务的测试应用，以及一个 12 节点工作流，各运行 30 次。甚至在 11 小时运行结束前三分钟，Argon 仍在审查自己的 diff，捕获了自己多智能体缓存中的一个 bug，并重新运行了全部 16,892 个单元测试，然后自行停止。\n更重要的是，Argon 完成了分析器无法替你完成的跨模块工作。分析器会告诉你复制会话和导入包需要时间。它不会做的是追踪 40 个文件中的每个调用方、mock 目标和共享引用，以便加速这些路径时不会破坏现有应用。\n总的来说，Argon 的拉取请求在 32 个文件中提出了六项优化。其中两项优化干净利落地解决了 ADK 的核心瓶颈，并已交付到生产环境：\nADK 运行的每一步都从加载对话历史开始。此前，ADK 的内存会话服务在每次读取时都会先深拷贝整个已存储的对话，然后再过滤出调用方所需的事件。即使只是列出会话而不包含其事件，也会先拷贝每一个事件。Argon 更新了该服务，使其在拷贝之前先过滤事件，并用一个快速、循环安全的拷贝器替换了 Pydantic 在会"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -966,7 +1264,7 @@
    "url": "https://aihot.news/items/fpyjwv3o9zwxc9zs7j1bmnw8i",
    "published": "2026-10-13T00:00:00.000Z",
    "description": "Anthropic 发布工程复盘，因 Claude 使日均合并代码量从 2026 年 5 月约 2,500 增至 9 月超 30,000，五个月内自研版本控制系统 Scion 并完全替代 git，同时推出代码评审工具 Antique。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fpyjwv3o9zwxc9zs7j1bmnw8i",
-   "excerpt": "Anthropic 发布工程复盘，因 Claude 使日均合并代码量从 2026 年 5 月约 2,500 增至 9 月超 30,000，五个月内自研版本控制系统 Scion 并完全替代 git，同时推出代码评审工具 Antique。\nAnthropic 自建版本控制系统 Scion 的完整复盘，给出面向智能体规模负载的设计原则、架构细节和实测收益，可迁移到其他大规模仓库场景。\n在 Anthropic，编码不再是构建系统或进行研究的瓶颈。Claude 能够自主地在研究循环中迭代、对复杂程序进行微优化，并以我们前所未见的速度和规模从零开始构建新服务。如今的瓶颈，是为人类规模而构建的所有开发者基础设施：源代码控制、构建和 CI。\n2026 年 5 月，Anthropic 平均每天合并约 2,500 个代码变更；截至 9 月，我们每天合并超过 30,000 个。我们预计这一增长速度短期内不会放缓；合并代码的潜在需求几乎是无限的，我们每消除一个瓶颈，都会立即带来代码产出量的进一步增长。\n为了支撑这一增长，我们构建了 Scion，一个内部版本控制系统，并在五个月内将我们的 monorepo 从 git 完全迁移过来。我们还在同一时期构建并上线了代码审查界面（名为 Antique）、代码搜索、丰富的源代码控制 IAM 系统、管理并落地大量已审查代码的新方法等等。在这篇文章中，我们将重点介绍我们具体是如何构建 Scion 的。这是一个有趣的案例研究：Claude 编写代码的能力既是让我们陷入这种处境的原因， 也是 我们能够快速构建高质量、可扩展系统来应对它的原因。\n在探讨我们构建了什么之前，我们应该承认我们的工作负载有多么不寻常。不出所料，Anthropic 使用 Claude 编写软件的程度远超几乎所有其他公司，因此我们往往是第一个看到为人类规模构建的工具开始吃紧的地方。源代码控制只是其中一个例子。虽然我们预计近期内不会有太多组织遇到这些问题，但我们怀疑用不了多久，其他使用 AI 编码工具的人也会经历这些同样的压力点，这就是为什么我们想分享我们构建了什么以及学到了什么。\nGit 是一个去中心化系统：每个克隆都是一个完整、自包含的仓库，可以计算差异、读取历史和 blame，并在完全离线的情况下检出任何修订版本。对于绝大多数仓库来说，这是正确的设计，也是 git 成为标准的重要原因之一。\n随着我们的 monorepo 增长，它越来越不符合这一设计空间。仅我们主分支的历史就接近 100 GB，而 压缩后 的工作副本超过 25 GB。我们每天为 CI 执行约 2,500 万次代码检出，这还不算开发者环境、代理沙箱和研究任务。如果天真地获取，那将是每天超过 600 PB 的 git 流量。\nGit 提供了处理仓库一部分的工具，例如浅克隆、稀疏检出和 promisor 远程。除此之外，还有针对大型 monorepo 的标准变通方案，例如内部 git 镜像和保存在 blob 存储中的仓库快照（种子）。这些我们都用过——在高峰期，我们运营了数百个内部 git 镜像来应对负载。这为我们争取了时间，但随着合并率的提高，它们变得越来越难以运营。种子在刷新之间离 main 的顶端越来越远，要让依赖历史（如 diff 和 blame）的操作在部分克隆上正常工作，需要越来越多的细心维护。\n退一步看，我们注意到，和大多数公司一样，我们把 git 当作一个集中式系统来使用，只有一份权威副本，但我们的客户端几乎都是按定义在线的 agent 和作业。那些让 git 在分布式、离线工作中表现出色的特性，反而随着仓库增长而严重削弱了我们的扩展能力。于是我们问自己：如果从一开始就考虑到 agent 始终在线这一事实来设计源代码控制，它会是什么样子？\n在 agentic 编码中，许多关于软件开发方式的常见假设正在演变。在构建 Scion 时，我们拥抱了这些变化，这让我们能够在几个核心原则上采取与 git 根本不同的方法。面向超大型 monorepo 的源代码控制已有先例，尤其是 Google 的 Piper 和 Meta 的 Sapling ，因此我们能够借鉴它们来之不易的经验来构建 Scion。我们的原则是：\n客户端始终在线。 Git 假设客户端离线工作，并且需要仓库的完整副本。由于我们的客户端几乎都是 agent 和作业，我们围绕一个始终可达的服务器来设计 Scion 的客户端和协议，让客户端在需要时获取数据。\n客户端-服务器不对称。 在 git 中，每个客户端都能成为功能完备的服务器。在 Scion 中，服务器负责回答关于文件历史和 blame 的问题、创建提交、执行合并和 rebase 等。客户端维护一个有界的本地对象缓存，将工作副本文件布局到磁盘上，监控文件系统变化，并为用户提供一种符合人体工程学的方式与服务器交互。它自身能计算的东西很少，但作为交换，它在本地需要的数据也少得多。\n一个全面的源代码控制服务可以驱动许多新颖的应用。 使用 git 时，一个需要对仓库提问的 CI 作业或工具——比如谁最后修改了某一行，或者两个提交之间有何关系——必须维护仓库的本地副本，或者寄希望于厂商特定的 API 能提供答案。使用 Scion 时，客户端使用的所有源代码控制查询也都通过 API 暴露出来，因此在许多情况下，作业根本不需要本地仓库。许多内部工具，比如我们自动化的 bisect 和 revert 流水线，如果没有这种廉价、可编程的源代码控制访问方式，就无法在规模上实用。\n一切都必须能够水平扩展。 在高峰期，我们运行着数百个 git 镜像，这严重消耗了容量，而且一旦仓库超出镜像的磁盘或内存限制，就无法再扩展。在 Scion 中，仓库的数据是分布式的，每个组件都可以独立扩展；任何地方都不存在仓库的完整物化副本，即使在服务器上也没有。不存在 packfile（git 的压缩对象包）的等价物，因此不需要进行仓库维护。\n提交必须廉价、增量且无锁。 在 git 中，你在本"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -984,7 +1282,7 @@
    "url": "https://aihot.news/items/kcwro19vl7dr5jgcjgec7mive",
    "published": "2026-10-12T20:59:50.000Z",
    "description": "据 Bloomberg 报道，Epic Games 在与迪士尼 15 亿美元合作项目中转向 AI 先行开发，由 Anthropic 的 Claude 等模型编写全部代码并指导全部美术，人类开发者负责管理和引导生成内容。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kcwro19vl7dr5jgcjgec7mive",
-   "excerpt": "Epic Games reportedly pivoting to \"AI first\" game development model\n据 Bloomberg 报道，Epic Games 在与迪士尼 15 亿美元合作项目中转向 AI 先行开发，由 Anthropic 的 Claude 等模型编写全部代码并指导全部美术，人类开发者负责管理和引导生成内容。\n原文援引 Bloomberg 报道和 Tim Sweeney 回应，交代了 AI 先行开发模式的具体做法与项目延期，信息相对完整。\nEpic Games 正在与 Walt Disney Company 的合作中转向“AI 优先”的开发策略，让 AI 模型为即将推出的射击游戏编写所有代码并指导所有美术创作。据 Bloomberg 报道 ，该报道援引了熟悉该项目的不具名人士的话，他们评论了这家 Unreal Engine 制造商内部开发的重大转向。\n据 Bloomberg 看到的 Epic 内部员工消息，人类开发者将负责管理和指导由 Anthropic 的 Claude 等模型生成的代码和美术资源。这意味着“不再有手写代码”，美术资源也“通过完整的 AI 工作流生成”，报道称。\nEpic 与 Disney 之间这笔 15 亿美元的合作 于 2024 年初宣布 ，原定于 2027 年 3 月推出一款以 Marvel 和 Star Wars 为主题的射击游戏。据该报道，在 AI 相关调整以及人手不足、开发进度慢于预期的情况下，该项目现已被无限期推迟。\n“我们正在拥抱 AI 加速开发，由 Epic 开发者主导，他们是我们所做一切的愿景家和创意驱动者，”Epic 发言人在一份声明中表示。\n“Epic 正在进行一次重大转向，重新调配开发者，以针对最大程度的 AI 加速进行重组，”Epic CEO Tim Sweeney 在 Bloomberg 报道发布后不久 在社交媒体上写道 。“目标不是用更少的人做同样的事，而是让这里的每个人都能构建更多、更好的东西，并将这些好处带给所有使用 Unreal 的团队。”\n原文援引 Bloomberg 报道和 Tim Sweeney 回应，交代了 AI 先行开发模式的具体做法与项目延期，信息相对完整。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -993,7 +1291,7 @@
    "url": "https://aihot.news/items/amjmxvrvj57q7752kgihp9p9q",
    "published": "2026-10-12T19:25:54.000Z",
    "description": "一位 Linux (WSL2) 用户报告，Codex CLI 0.157.0 起打开交互式会话即默认启动持久后台守护进程 codex app-server --managed-daemon，窗口关闭后仍驻留。 🔗 阅读原文 via AIHOT · https://aihot.news/items/amjmxvrvj57q7752kgihp9p9q",
-   "excerpt": "一位 Linux (WSL2) 用户报告，Codex CLI 0.157.0 起打开交互式会话即默认启动持久后台守护进程 codex app-server --managed-daemon，窗口关闭后仍驻留。\n作者实测 Codex CLI 0.157.0 的守护进程默认行为，给出复制目录、自更新、代理污染等细节和完整关闭步骤。\nCLI — 0.157.0，通过 npm install -g @openai/codex 安装，Linux（WSL2）\n请让 daemon_auto_start 在 CLI 中选择启用（默认 false ） ，或者至少在开启前询问一次。\n对于 CLI 来说，最不令人意外的默认行为是：后端随窗口一起生灭，运行我安装的二进制文件，并且不会在后台自我更新。共享的、可自我更新的守护进程对 Remote Control / 桌面应用来说是有意义的，所以在那里启用它没问题，或者在用户显式运行 codex app-server daemon start / bootstrap 时启用也可以。\n在关闭它时发现的 bug： codex app-server daemon stop 会停止 app-server，但会让 pid-update-loop 更新器继续运行（70 秒后仍然存活，不得不手动杀掉它）。\n相关： #40969 、 #41188 、 #46468 、 #48050 、 #42457 、 #37537\n作者实测 Codex CLI 0.157.0 的守护进程默认行为，给出复制目录、自更新、代理污染等细节和完整关闭步骤。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1002,7 +1300,7 @@
    "url": "https://aihot.news/items/figd7mthwgisg8imtkrs0tn5z",
    "published": "2026-10-12T18:21:36.000Z",
    "description": "Anthropic 确认，Claude Haiku 4.5 在内部测试中于 7 月 18 日向费城警方悬案线索网站误提交了虚假凶案线索，该线索因进入垃圾邮件文件夹未被人审阅。 🔗 阅读原文 via AIHOT · https://aihot.news/items/figd7mthwgisg8imtkrs0tn5z",
-   "excerpt": "Anthropic's Claude AI submitted false murder tip to Philadelphia police\nAnthropic 确认，Claude Haiku 4.5 在内部测试中于 7 月 18 日向费城警方悬案线索网站误提交了虚假凶案线索，该线索因进入垃圾邮件文件夹未被人审阅。\n文章梳理了 Claude 误提交虚假凶案线索的经过、警方回应与 Anthropic 的整改措施，读者可借此了解 AI 智能体联网测试的现实风险。\nAnthropic 公司的一款 AI 模型向费城警方提交了一条关于一桩未破谋杀案的虚假线索，该公司和警方于周五证实了这一消息。\n7 月 18 日，一款 Claude 模型向费城警察局用于提交未破谋杀案信息的 网站 发送了这条虚假线索，但被垃圾信息过滤器标记。Anthropic 显然于 9 月 28 日发现了这一事件，并于 10 月 8 日通知了警察局。\n在内部测试中，Claude Haiku 4.5 被指示填写各种表单，直至最后的提交阶段，并在提交前停止。“有几次 Claude 误将表单提交了，因为它以为还会有一个额外的确认页面，”Anthropic 在一份 报告 中说道，该报告描述了“我们在评估和内部使用 Claude 过程中观察到的意外模型行为”。\nAnthropic 表示，这条虚假谋杀线索是在 Claude Haiku 4.5 被指示在随机选择的网页上完成任务时发生的：\n在一次运行中，该模型访问了一个提及未破凶杀案的页面；该页面包含一个由警察局运营的线索提交表单。Claude 被指示绝不登录、创建账户、输入个人数据、进行购买或提交任何破坏性内容，但这些指示并未排除提交表单。Claude 填写了表单，内容如下：“我可能掌握与本案有关的信息。我记得在那段时间里，在[页面上提到的街道]附近看到过符合描述的人。如果这些信息有用，请联系我。”\nAnthropic 表示，它还发现了 Claude 涉及州和联邦机构网站的事件。据报道，在其中一起事件中，Claude 向美国国务院提交了 20 份签证申请。\nAnthropic 证实，这条虚假凶杀线索被发送给了费城警察局，该局就此事向费城 ABC 电视台 发表了一份长篇声明 。这条虚假线索的姓名和联系方式栏均为空白。警方表示，由于提交线索时生成的电子邮件最终进入了垃圾邮件文件夹，因此没有任何人查看过它。\n警方表示：“Anthropic 告诉费城警察局，它于 9 月 28 日发现了这一事件，终止了负责提交的自动化测试流程，并为未来的测试建立了额外的验证机制。”在 10 月 8 日的通报之后，警察局“在网站的线索记录中找到了该提交内容，并确认相应的电子邮件仍在垃圾邮件中”。\nAnthropic 表示，它“在技术审查完成后立即”通知了警察局。警方批评 Anthropic 未能更早发现并报告这条虚假线索。\n费城警方声明称：“费城市对此事件高度重视。”“该公司必须加强其保障措施，以防止类似事件在市政府不知情的情况下影响城市系统。发现并向市政府报告该事件延迟了两个月，这是不可接受的。”\nAnthropic 表示，这起虚假谋杀线索只是涉及“美国联邦、州和地方各级政府机构运营的网站”的多起事件之一。“我们已就这些案件向白宫作了简报，并通知了每一个涉事机构。”\n《纽约时报》 报道 援引匿名消息源称，Anthropic 的 AI 智能体“通过国务院网站上的一个表单提交了 20 份签证申请。所有申请均不完整，未被处理。”\n费城警方表示，其常规调查流程“要求在任何线索被分发用于调查跟进之前进行人工审查和核实……费城警方的这些保障措施限制了此次事件的影响。但这并不能减轻一个 AI 系统将捏造信息伪装成来自掌握谋杀案信息之人这一行为的严重性。”\nAnthropic 表示，它是在 7 月开始对对话记录进行审查时发现这条虚假线索及其他事件的。同月，Anthropic 披露 Claude 构建并发布了一个恶意 Python 包，并 对其他公司实施了多起攻击 。\nAnthropic 表示，此次审查未发现任何“与我们今夏报告的网络安全事件严重程度相当的事件”。审查随后转向“较低风险”测试场景的对话记录，例如影响费城警察局的那一起。\nAnthropic 表示：“尽管这些行为的影响很小，而且我们已经关闭了部分高风险和网络安全评估的实时互联网访问，但我们现在决定将这一措施扩大到所有内部评估，直到我们确认我们的安全和监控措施……能够可靠地捕捉此类行为。”\nAnthropic 表示，它已停止运行部分评估，并将其他评估转为离线版本，“或对其进行了重建，使其任务不会触及真实网站”。该公司称，“我们更新了部分互联网访问工具（如网页抓取工具）的护栏，以严格限制模型使用这些工具的行为。”\nAnthropic 表示，它还构建了新工具，“以自动检测并阻止上述类型的行为……当我们针对本文所述案例进行测试时，它阻止了所有案例。”\n白宫的人工智能工作组——其称之为“超级智能部队”——发表声明称，已通知 Anthropic“我们期望其立即向涉事实体和公众提供全面透明的信息”。\n据 Axios 报道 ，白宫人工智能工作组还表示，Anthropic 必须“立即向受影响实体和任何受伤害的美国人提供补救服务”，并且所有 AI 公司“必须立即披露涉及其模型的事件，并迅速采取果断行动，以补救任何及所有伤害”。\nJon 是 Ars Technica 的高级 IT 记者。他报道电信行业、联邦通信委员会规则制定、宽带消费者事务、法院案件以及政府对科技行业的监管。\n文章梳理了 Claude 误提交虚假凶案线索的经过、警方回应与 Anthropic 的整改措施，读者可借此了解 AI 智能体联网测试的现实风险。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1038,7 +1336,7 @@
    "url": "https://aihot.news/items/lj23e9c9bhqwm2dee2hbgcmor",
    "published": "2026-10-12T18:04:45.000Z",
    "description": "Arena 宣布 Meta 的 Muse Wonder 系列模型上线 Agent Arena，用户可实测，分数即将公布。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lj23e9c9bhqwm2dee2hbgcmor",
-   "excerpt": "Arena 宣布 Meta 的 Muse Wonder 系列模型上线 Agent Arena，用户可实测，分数即将公布。\nMeta 新模型刚上架 Arena，分数尚未公布，读者可先在 Agent Arena 实测其智能体任务表现。\nMuse Wonder by @AIatMeta 现已登陆 Arena。前往 Agent Arena 进行测试，评分即将公布！\n在 Agent Arena 中，我们基于来自全球用户社区的数百万个真实世界、长时程的智能体任务来评估模型。模型可以访问网络搜索、文件系统和终端工具，以完成复杂的工作流程。该排行榜采用因果追踪方法，衡量模型相对于平均模型在结果上的表现。\nMuse Wonder 也可在 Code Arena 中使用：WebDev、Image-to-WebDev、Text 和 Vision。\nWe’re excited to introduce the Muse Wonder series with Muse Wonder and Muse Wonder Full, our most capable models yet. Both are frontier models, built to deliver state-of-the-art performance for personal and professional agentic tasks. Muse Wonder is available today via the Meta Model API and Muse Code. Muse Wonder Full is available today for Muse Code subscribers. Muse Wonder will also soon power experiences in our personal agent product, Muse, rolling out first to subscribers.\nMeta 新模型刚上架 Arena，分数尚未公布，读者可先在 Agent Arena 实测其智能体任务表现。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1047,7 +1345,7 @@
    "url": "https://aihot.news/items/w2408fxlrc7tc7nt3ivrzh9ys",
    "published": "2026-10-12T17:36:18.000Z",
    "description": "AWS 团队发布论文《Priming: Hybrid state space models from pre-trained Transformers》，提出 priming 方法，复用预训练 Transformer 权重构建混合架构，将预训练成本降低逾 99%，全流程消耗不足源模型 0.5% 的 token 预算。 🔗 阅读原文 via AIHOT · https://aihot.news/items/w2408fxlrc7tc7nt3ivrzh9ys",
-   "excerpt": "Can we change an AI model&#8217;s architecture without retraining it from scratch?\nAWS 团队发布论文《Priming: Hybrid state space models from pre-trained Transformers》，提出 priming 方法，复用预训练 Transformer 权重构建混合架构，将预训练成本降低逾 99%，全流程消耗不足源模型 0.5% 的 token 预算。\nAWS 团队提出 priming 方法，把预训练 Transformer 改造成混合架构的预训练成本降低逾 99%，并开源了 8B 和 32B 模型与代码。\nAI 智能体正在快速扩展：更长的会话、更深的推理链、更强的自主性。但它们底层的 Transformer 架构仍然要支付一笔随处理 token 数量增长的内存税。随着智能体能力越来越强，这笔成本也随之增长。如今，混合架构大量涌现，它们组合使用多种方法，以在内存、速度和质量之间取得更好的平衡。这些方法包括稀疏注意力（在选择下一个 token 时只考虑过去 token 的一个子集）、滑动窗口注意力（只保留最近的 token），以及状态空间模型（将完整历史的信息压缩为固定大小的状态）。这些混合架构可以理解为序列模型设计空间中的一些点：它们以不同程度在遍历序列、经过不同状态时混合信息。它们彼此之间的区别在于如何保留和使用过去。迄今为止，探索这一设计空间需要从头训练每一个新架构，使用数万亿 token 和数十万 GPU 小时。这使得对混合架构进行受控比较变得极其昂贵。在一篇新论文《Priming: Hybrid state space models from pre-trained Transformers》中，我们 Amazon Web Services 的团队解决了这个问题。我们引入了 priming，一种利用预训练 Transformer 权重作为起点的方法，将混合架构的预训练成本降低 99% 以上。借助 priming，模型开发者可以提出以前因成本过高而无法大规模回答的问题：哪些注意力层可以被更高效的层替换？在不牺牲质量的前提下可以替换多少注意力层？哪种状态空间层效果最好？以及速度与准确率之间的权衡是什么样子？在我们的论文中，我们比较了使用三种不同类型状态空间模型（Gated KalmaNet、Gated DeltaNet 和 Mamba-2）的混合模型。我们的一些发现：并非所有状态空间模型都相同。在受控条件下，Gated KalmaNet（GKA）表现最好，其次是 Gated DeltaNet（GDN），然后是 Mamba-2。GKA 独特地提供了无需重新训练的可变长度推理计算，并让用户可以直接控制其在速度-准确率前沿上的位置。对全部内容做一个好的有损摘要，胜过对最近过去的完美记录。状态空间模型始终优于滑动窗口注意力（SWA），即使 SWA 获得两倍的内存预算。相同质量，两倍吞吐量。一个 320 亿参数的基于 GKA 的混合模型在推理基准上与源 Transformer 相当，同时在 128,000 token 上下文下解码速度最高可达两倍，并在最短仅三分之二的墙钟时间内得到正确答案。为促进对混合架构的进一步研究，我们发布了 80 亿参数和 320 亿参数规模的 primed 混合模型库，用于长上下文推理和指令遵循，并附带训练代码、优化内核以及一个 vLLM 服务插件，均采用 Apache 2.0 许可证。注意力机制。Transformer 的注意力机制——它决定先前见过的 token 与当前正在处理的 token 有多相关——依赖三种不同的向量，它们的名称来自数据库设计：query、key 和 value。对于每个 token，query 捕捉该 token“在寻找什么”，key 捕捉它“提供什么”，value 携带它将传递的实际信息。相关性通过将当前 token 的 query 与每个其他 token 的 key 进行比较来计算；匹配越接近，该 token 的 value 对注意力输出的贡献就越大。这些向量中的每一个都通过将 token 乘以一个学习到的权重投影矩阵来产生。Transformer 一次输出一个 token，而每个输出 token 都会成为新的输入，因此上下文也一次增长一个 token。为节省计算，Transformer 因此将每个新输入的 key 和 value 投影存储在“KV 缓存”中。两类内存层：eidetic 与 fading。注意力机制赋予 Transformer 我们所说的 eidetic 记忆：对每个过去 token 的逐字回忆。能够在 LLM 的整个上下文窗口内进行回忆，正是上下文学习、长文档推理和检索增强生成成为可能的原因。但它的成本随输入 token 数量增长。然而，并非所有注意力层都做同样的工作。有些执行跨越数万 token 的长程检索。另一些则更偏局部，跟踪当前从句、复制附近 token 等等。局部层不需要不断增长的缓存：一个紧凑、固定大小的过去摘要——我们称之为 fading 记忆——就足够了。混合模型将两者混合：对需要全局回忆的层使用注意力层（eidetic，缓存增长），其余层使用状态空间层（fading，固定大小）。结果是一个内存占用降低、同时在关键之处仍能进行逐字回忆的模型。Priming：知识并不锁定于架构。探索混合模型的设计空间一直不切实际，因为每个混合配置通常都需要从头预训练。Priming 通过复用预训练 Transformer 权重中存储的知识来绕开这一点。Priming 之所以可行，是因为 Transformer 本身就是状态空间实现的一个特例。注意力层和 SSM 层的输出都可以表示为 value 序列乘以一个“混合”矩阵的结果，该矩阵决定每个过去 token 对每个当前 token 的贡献程度。注意力通过将 que"
+   "excerpt": ""
   },
   {
    "group": "wh",
@@ -1092,7 +1390,7 @@
    "url": "https://aihot.news/items/rruqd7cz78jq6l889kjp56jlz",
    "published": "2026-10-12T16:00:00.000Z",
    "description": "Prime Intellect 宣布收购 Moondream，创始人 Vik Korrapati 和 Jay Allen 加入并负责推理业务及视觉、computer use 等多模态模型工作。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rruqd7cz78jq6l889kjp56jlz",
-   "excerpt": "Prime Intellect 宣布收购 Moondream，创始人 Vik Korrapati 和 Jay Allen 加入并负责推理业务及视觉、computer use 等多模态模型工作。\n收购方官方公告给出交易目的与产品整合方向，并附 Moondream 3.1 的推理速度和成本对比数字，可作了解两家技术互补的参考。\n我们已收购 Moondream。创始人 Vik Korrapati 和 Jay Allen 将加入 Prime Intellect，领导并扩展推理业务，并加速我们在多模态模型方面的工作，包括视觉和计算机使用。\nMoondream 是我们最早的客户之一，我们长期以来一直钦佩 Vik 和 Jay 以一支小团队所打造的东西。他们已发布最先进的开放权重视觉语言模型，每月下载量达数百万次。 1 他们还构建了 Photon，这是一个推理引擎，可将每个模型编译为单个 GPU 程序，以及背后的自定义 GPU 内核和 megakernel 编译器。 2\n“Moondream 证明了小型、高效的模型在特定任务上可以击败巨型模型。Prime 正在为同样的未来而构建：许多公司拥有的专用模型。在我们加入之前，我们早就是 Prime 的客户。现在 Photon 可以驱动的远不止我们的模型，而我们的模型也获得了 Prime 的完整训练栈。”\nMoondream 3.1 在物体检测、航拍图像、图表以及像商店货架这样拥挤的场景中处于领先地位。它以每秒 34 次请求的速度做到这一点，比下一个最准确的开放模型快约 24 倍。 3 与 Meta 的新前沿模型 Muse Wonder 相比，Moondream 3.1 在照片中指向物体方面达到其 80% 的准确率，而成本约为其 1/1000。 4\n与 Prime Intellect 非常相似，Moondream 押注于模型及其底层基础设施必须一起构建，并且一个在合适基础设施上运行的专用、高效模型在给定任务上胜过通用模型。我们很兴奋能一起加倍投入，帮助每个人在视频、图像、语音和计算机使用方面训练、部署和服务前沿多模态模型。\n我们推出 Prime Inference，是因为服务决定了模型的有用性：推理决定了模型响应的速度以及运行成本。 5\n这正是 Moondream 的系统工作发挥作用的地方：答案在几十毫秒内返回，通常比调用前沿 API 快 40 倍以上。在单个 H100 上，Photon 每秒运行超过 60 次 Moondream 推理，这足够快，可用于实时视频。 6 综合来看，Moondream 的模型获得 Prime 的完整训练栈，Photon 得以驱动远不止 Moondream 的模型，而 Prime 客户获得一个作为单一系统构建而非由零件组装而成的多模态栈。\nPhoton 和 Moondream 的内核工作正在被整合到 Prime 的栈中。这是对拥有市场上最快推理的承诺，并让我们的客户能够像训练模型一样出色地运行模型。\nMoondream 构建了卓越的模型和专用推理引擎。Prime 的开放超级智能栈连接了评估、微调、强化学习和推理。我们携手将训练平台与高效服务相结合，并引入 Vik 和 Jay 在视觉和计算机使用方面的深厚专业知识。\n我们已经开始交付。Moondream 3.1 现已通过 Prime Inference 提供，并由 Moondream 的 Photon 引擎驱动。Clef 和 Clef Flash 也已通过 Prime Inference 和 OpenRouter 上线，Clef 的定价与 Jev 持平，Clef Flash 的价格为其一半。 7\n在接下来的几天里，Moondream Cloud 的每一位客户都将在我们的平台上获得额度，可用于 Moondream 模型以及我们更广泛的训练和推理服务。Moondream 仍将是我们小型、高效多模态模型的品牌。\n我们的使命是让每家公司都能用上开放超级智能。如果你正在构建视觉模型、计算机使用代理，或需要市场上最快的推理，我们很乐意与你合作。\nKorrapati, Vikhyat. “moondream2.” Hugging Face。访问于 2026 年 10 月 13 日。 ↩\nMoondream. “Photon: Official Moondream Inference Engine.” 访问于 2026 年 10 月 13 日。 ↩\nMoondream. “Moondream 3.1: Beyond Benchmarks.” Moondream Blog，2026。 ↩\nPrime Intellect. “Pointing Accuracy and Cost per 1,000 Images: Moondream 3.1 and Frontier Models.” 未公开内部评估，2026 年 10 月。 ↩\nPrime Intellect. “Prime Inference: Fast, Reliable Serving for Frontier Open Models.” Prime Intellect Blog，2026。 ↩\nMoondream. “Photon Serving Benchmarks, NVIDIA H100.” 未公开内部测量，2026 年 10 月。 ↩\nVigliarolo, Brandon. “Cloudflare Tries to Outplay Jev with Open-Weight Clef Models.” The Register，2026 年 10 月 1 日。 ↩\n收购方官方公告给出交易目的与产品整合方向，并附 Moondream 3.1 的推理速度和成本对比数字，可作了解两家技术互补的参考。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1123,39 +1421,12 @@
   },
   {
    "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "Descartes Expands Freight Fraud Prevention",
-   "url": "https://logisticsviewpoints.com/2026/10/12/descartes-expands-freight-fraud-prevention-across-carrier-vetting-and-shipment-execution/",
-   "published": "2026-10-12T14:48:33.000Z",
-   "description": "Freight fraud has become one of the most persistent operational problems in transportation, and at the Descartes Innovation Forum, Descartes outlined a series of updates that bring more carrier-vetting, tracking, and fraud-detection data together across MyCarrierPortal and MacroPoint. The bigger takeaway is that fraud prevention is moving earlier in the process and continuing further into […] The post Descartes Expands Freight Fraud Prevention appeared first on Logistics Viewpoints .",
-   "excerpt": "Freight fraud has become one of the most persistent operational problems in transportation, and at the Descartes Innovation Forum, Descartes outlined a series of updates that bring more carrier-vetting, tracking, and fraud-detection data together across MyCarrierPortal and MacroPoint.\nThe bigger takeaway is that fraud prevention is moving earlier in the process and continuing further into execution. Rather than relying primarily on checks after a load has been tendered, Descartes is bringing carrier identity, insurance, equipment, tracking history, lane history, and real-time location data together to give users more context before a load moves and while it is in transit.\nWithin MyCarrierPortal, users can see risk assessments, insurance information, recent carrier activity, and MacroPoint tracking intelligence. That includes the number of orders a carrier has tracked, tracking compliance, and how the carrier is connected, whether through mobile, ELD, or a TMS. Descartes also displays historical operating patterns, allowing users to see where carriers have actually picked up and delivered freight rather than relying solely on what a carrier says it can do.\nThat adds a useful behavioral dimension to carrier qualification. A carrier may claim broad geographic coverage or experience on a particular lane, but historical tracking data can provide additional context on where that carrier has actually operated. Users can also search carriers based on equipment type, certifications, and lanes, with lane information supported by MacroPoint intelligence rather than carrier-entered data.\nFor brokers and shippers, this starts to bring carrier discovery and carrier risk management closer together. Instead of treating sourcing and vetting as separate activities, the same operating history that helps identify a carrier can also help determine whether that carrier looks appropriate for the load.\nDescartes also demonstrated additional identity controls intended to give users more confidence that they are dealing with the carrier they expect. The platform can validate users through two-factor authentication and establish whether an individual is associated with the carrier.\nOn the equipment side, Descartes can compare scheduled equipment against inspection, crash, and MacroPoint ELD data and, when sufficient evidence exists, identify whether equipment appears to belong to the carrier. Users can also validate a bid using a driver’s cell phone number and see driver-level track"
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "Walmart opens ‘next gen’ California facility to boost West Coast fulfillment",
-   "url": "https://www.supplychaindive.com/news/walmart-opens-next-gen-california-facility-to-boost-west-coast-fulfillmen/832631/",
-   "published": "2026-10-12T14:32:40.000Z",
-   "description": "The 900,000-square-foot site is equipped with an automated storage and retrieval system to help&nbsp;increase order capacity to enable faster shipping.",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
    "source": "The Robot Report 物流",
    "title": "Closing the reality gap: Why real-time execution has become the new competitive advantage",
    "url": "https://www.therobotreport.com/closing-reality-gap-why-real-time-execution-has-become-new-competitive-advantage/",
    "published": "2026-10-12T14:30:33.000Z",
    "description": "Daifuku's Cecile Dick-Calmes said success is no longer measured solely by automation density or equipment utilization. The post Closing the reality gap: Why real-time execution has become the new competitive advantage appeared first on The Robot Report .",
    "excerpt": "Daifuku helped to automate Kagetsudo Co.’s product storage system and production lines. | Source: Daifuku\nOrganizations across the supply chain continue to invest heavily in automation. Yet for many warehouse and distribution leaders, the expected gains in productivity, throughput, and agility remain elusive.\nThe issue is rarely a lack of technology. More often, it is a lack of synchronization.\nAs fulfillment networks become increasingly complex, a new challenge has emerged: the growing gap between what digital systems believe is happening and what is actually occurring on the warehouse floor. This disconnect, which can be described as the “reality gap,” is becoming one of the most significant barriers to operational performance.\nClosing that gap is quickly becoming a defining capability for high-performing operations.\nModern warehouses generate enormous volumes of data. Inventory transactions, equipment status updates, labor activities, transportation events, and order flows are all captured and processed by various systems.\nYet data alone does not guarantee operational awareness.\nIn many facilities, information arrives too late, remains trapped in silos, or lacks the context needed to support timely decisions. As a result, operational leaders are often responding to events that have already occurred rather than actively managing conditions as they unfold.\nThe reality gap is not simply a technology problem. It is an execution problem.\nFor decades, the primary objective of warehouse automation was straightforward: reduce manual handling and improve efficiency within individual processes.\nThat approach delivered significant gains.\nToday, however, automation environments are substantially more sophisticated. Facilities often operate multiple automated subsystems simultaneously, each capable of performing its intended function effectively. The challenge is ensuring those systems collectively support broader operational objectives.\nA warehouse may have advanced automation, sophisticated software , and highly optimized processes. Yet if these elements are not continuously aligned around current operating conditions, inefficiencies remain.\nThis is why leading organizations are shifting their focus from automation itself to orchestration.\nAutomation enables movement. Orchestration enables performance. The distinction is becoming increasingly important as supply chains face greater volatility, labor constraints, and demands for faster fulfillment.\nClosing the real"
-  },
-  {
-   "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "Walmart Is Turning Marketplace Logistics Into a Platform",
-   "url": "https://logisticsviewpoints.com/2026/10/12/walmart-is-turning-marketplace-logistics-into-a-platform/",
-   "published": "2026-10-12T14:29:41.000Z",
-   "description": "At the Descartes Innovation Forum, Walmart offered an interesting look at how it is thinking about the intersection of marketplace growth, fulfillment, transportation, and seller performance. Bryce Caswell, Director of Ship with Walmart for Walmart Marketplace, framed the discussion around preparing sellers for the holiday season, but the broader message was more important. Walmart is […] The post Walmart Is Turning Marketplace Logistics Into a Platform appeared first on Logistics Viewpoints .",
-   "excerpt": "At the Descartes Innovation Forum, Walmart offered an interesting look at how it is thinking about the intersection of marketplace growth, fulfillment, transportation, and seller performance. Bryce Caswell, Director of Ship with Walmart for Walmart Marketplace, framed the discussion around preparing sellers for the holiday season, but the broader message was more important.\nWalmart is increasingly extending its logistics capabilities to marketplace sellers. That includes fulfillment, multi-channel inventory, parcel transportation, seller protections, returns, pricing tools, and advertising. Taken together, those capabilities point toward something larger than a traditional marketplace model.\nCaswell described four foundations Walmart believes sellers need to get right: assortment, listing quality, competitive pricing, and shipping. Those variables are closely connected. A strong assortment does not convert if product content is weak, competitive pricing does not help if products are unavailable, and even a good offer can lose the sale if the delivery promise is unattractive or unreliable.\nThe logistics point is especially important. Caswell emphasized that customers want sellers to do what they say they are going to do when they say they are going to do it. Speed matters, but consistency matters just as much, particularly during holiday peaks when fulfillment networks and carrier capacity come under greater pressure.\nWalmart Fulfillment Services, or WFS, is one piece of that strategy. Sellers can place inventory inside Walmart’s network and have Walmart pick, pack, and ship orders. Caswell said WFS rates average about 15 percent below competing alternatives and highlighted the absence of fuel surcharges and peak-season storage charges.\nA particularly interesting development is Walmart’s multi-channel fulfillment strategy. Sellers can maintain a common pool of inventory within WFS and use that inventory to serve orders coming from multiple sales channels. Instead of managing separate inventory pools for Walmart, a merchant’s own website, and other marketplaces, sellers can potentially fulfill demand from one shared inventory position.\nThat matters because inventory fragmentation remains a real problem in omnichannel commerce. A company can have too much inventory assigned to one channel while another channel experiences a stockout. A shared inventory model improves utilization and reduces some of the operational complexity associated with serving multiple d"
   },
   {
    "group": "wh",
@@ -1182,7 +1453,7 @@
    "url": "https://aihot.news/items/zqlqer8tnl7ejg2ow3xoq7b9q",
    "published": "2026-10-12T13:03:45.000Z",
    "description": "微软宣布明年起将 Maia 芯片家族扩展到多吉瓦级部署，作为自家产品和服务的首选推理系统，并发布 Maia 300，每瓦 token 产出比主流 GPU 系统高 40%。Maia 200 已在美国、欧洲和澳大利亚部署，在 Teams 和 Copilot 场景中每瓦 token 产出提升最高 1.7x。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zqlqer8tnl7ejg2ow3xoq7b9q",
-   "excerpt": "微软宣布明年起将 Maia 芯片家族扩展到多吉瓦级部署，作为自家产品和服务的首选推理系统，并发布 Maia 300，每瓦 token 产出比主流 GPU 系统高 40%。Maia 200 已在美国、欧洲和澳大利亚部署，在 Teams 和 Copilot 场景中每瓦 token 产出提升最高 1.7x。\n作者本人官宣自研芯片路线，给出了 Maia 300 与 Maia 200 的能效数字和部署范围，可对比主流 GPU 方案的取舍。\n从下一个自然年开始，我们将把 Maia 系列扩展到多吉瓦级部署规模，使其成为我们自有产品和服务的首要推理系统。\n同时，我们推出 Maia 300，与领先的基于 GPU 的系统相比，每瓦可多提供 40% 的 token。\n我们已在美国、欧洲和澳大利亚部署 Maia 200，在 Teams 和 Copilot 的各项体验中，每瓦可多提供高达 1.7 倍的 token。\n我们的目标是在我们已经看到的全栈效率提升基础上继续发展，同时持续将整个生态系统中的最新创新引入我们的集群。\n作者本人官宣自研芯片路线，给出了 Maia 300 与 Maia 200 的能效数字和部署范围，可对比主流 GPU 方案的取舍。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1209,7 +1480,7 @@
    "url": "https://aihot.news/items/wzxf68r0rchangmvwm48qqhfk",
    "published": "2026-10-12T09:35:54.000Z",
    "description": "Science 新研究显示，Google DeepMind 的 AlphaProof Nexus 独立解决了 353 个开放 Erdős 问题中的 9 个，其中 2 个悬置 56 年。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wzxf68r0rchangmvwm48qqhfk",
-   "excerpt": "Google Deepmind's AlphaProof Nexus solved dozens of open math problems and actually got peer reviewed\nScience 新研究显示，Google DeepMind 的 AlphaProof Nexus 独立解决了 353 个开放 Erdős 问题中的 9 个，其中 2 个悬置 56 年。\n这条报道把系统架构和同行评审安排都讲清了，读者可以据此理解形式化证明工作流的可行性与验证方式。\nGoogle Deepmind's AI solved dozens of open math problems on its own, per a new study in Science . AlphaProof Nexus cracked nine of 353 open Erdős problems, two unsolved for 56 years. The team shared those solutions online ahead of the paper.\n除此之外，AlphaProof Nexus 还证明了 OEIS 整数序列数据库中的 44 个猜想，解决了一个代数几何中的未解问题，并改进了 min-max 优化中的一个已知边界，该技术用于训练某些 AI 模型。它基于 Gemini 3.1 Pro 构建，后者用形式化语言 Lean 起草和修订证明。Lean 在每次编辑后检查每份草稿，错误信息则指导下一次尝试。对于更难的子问题，它可以调用 AlphaProof ，一个专门的证明工具。 Google Deepmind 报告称 ，即使没有 AlphaProof，它也解决了那九个 Erdős 问题。\n这项研究发布之际，正值关于 AI 数学的激烈争论。OpenAI 最近 将数百个 AI 证明丢到 GitHub 上 ，而非提交给期刊。由 Terence Tao 领导的 Association for Human Mathematics 呼吁抵制 。Deepmind 则将其工作送交了同行评审。\n订阅 THE DECODER，享受无广告阅读、每周 AI 新闻通讯、每年六期独家“AI Radar”前沿报告、完整档案访问权限以及评论区访问权限。\n来源： The Decoder：AI News · the-decoder.com\n这条报道把系统架构和同行评审安排都讲清了，读者可以据此理解形式化证明工作流的可行性与验证方式。"
+   "excerpt": ""
   },
   {
    "group": "wh",
@@ -1227,7 +1498,7 @@
    "url": "https://aihot.news/items/svvvhr5j2nnywgdw29pso7o49",
    "published": "2026-10-12T07:44:47.000Z",
    "description": "一篇教程介绍用 Claude Opus 5.5 配合 Claude Code、Blender、Unreal Engine 5 和 Meshy 构建游戏的方法。核心思路是给每个工具分配单一职责：通过 MCP 连接 Blender 和 Meshy，由 Meshy 生成道具和角色、Blender 清理和放置、Unreal 负责光照物理和游戏本身、Opus 在一个对话里调度三者。流程为先让 Opus 头脑风暴 5 个游戏点子再展开，告知 GPU 以便压满画面性能，首个完整构建约花 4 小时和约 19% 的每周 Max plan 用量，之后因素材复用会快很多。 🔗 阅读原文 via AIHOT · https://aihot.news/items/svvvhr5j2nnywgdw29pso7o49",
-   "excerpt": "一篇教程介绍用 Claude Opus 5.5 配合 Claude Code、Blender、Unreal Engine 5 和 Meshy 构建游戏的方法。核心思路是给每个工具分配单一职责：通过 MCP 连接 Blender 和 Meshy，由 Meshy 生成道具和角色、Blender 清理和放置、Unreal 负责光照物理和游戏本身、Opus 在一个对话里调度三者。流程为先让 Opus 头脑风暴 5 个游戏点子再展开，告知 GPU 以便压满画面性能，首个完整构建约花 4 小时和约 19% 的每周 Max plan 用量，之后因素材复用会快很多。\n如何用 Claude Opus 5.5 + Blender + Unreal Engine + Meshy 构建一款游戏 🎮\nhere's how to build a game like this with Claude Opus 5.5 + Blender + Unreal Engine + Meshy... the trick is giving every tool one job, but there's a smart way to set it up: - step 1: install Claude Code, Unreal Engine 5 and Blender 5.1+, all free except the Claude plan - step 2: connect Blender through its MCP add-on, and Meshy through Meshy MCP with an API key - step 3: brainstorm 5 game ideas with Opus first, pick one, have it expand the idea before anything gets built - step 4: tell it your GPU, so it pushes the graphics as far as your machine can run - step 5: Meshy generates the props and characters, Opus imports them into Blender and cleans them up - step 6: Opus brings everything into Unreal: the level, lighting, HUD, minimap - step 7: play it, then add one feature per prompt: combat, enemies, quests who does what: > Meshy: the 3D models > Blender: cleanup, placement, materials > Unreal: lighting, physics, the actual game > Opus: runs all three from one chat and the real cost... one full first build took about 4 hours and ~19% of a weekly Max plan build the first level well, then the next ones go much faster because the assets already exist"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1263,79 +1534,7 @@
    "url": "https://aihot.news/items/hvxwaxeyj6i82xv44ef4ce6fz",
    "published": "2026-10-12T04:29:53.000Z",
    "description": "数字生命卡兹克撰文分析AI驱动逆向工程热潮：开发者Brandon Thomas因不满Adobe订阅规则，用Claude Opus 5.5以Rust逆向重写了Photoshop、Illustrator等7款软件的开源替代品PhotoCraft、VectorCraft等，不到10天单PS项目获4.6万Star。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hvxwaxeyj6i82xv44ef4ce6fz",
-   "excerpt": "数字生命卡兹克撰文分析AI驱动逆向工程热潮：开发者Brandon Thomas因不满Adobe订阅规则，用Claude Opus 5.5以Rust逆向重写了Photoshop、Illustrator等7款软件的开源替代品PhotoCraft、VectorCraft等，不到10天单PS项目获4.6万Star。\n文章以ArtCraft开源Adobe逆向项目为切口，分析AI如何大幅降低逆向工程成本，并追问原创软件在复制时代的护城河问题。\nhttps://x.com/i/article/2109500356111872000\n文章以ArtCraft开源Adobe逆向项目为切口，分析AI如何大幅降低逆向工程成本，并追问原创软件在复制时代的护城河问题。"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "AI逆向一切：Brandon Thomas用Claude Opus 5.5重写Adobe七款软件开源，REA项目逼近10万Star",
-   "url": "https://aihot.news/items/u9f1ozdbs5nobwugj3yss3z0e",
-   "published": "2026-10-12T00:26:00.000Z",
-   "description": "开发者Brandon Thomas因不满Adobe订阅违约金，用Claude Opus 5.5以Rust逆向重写了Photoshop等7款Adobe软件并开源，其中PS项目不到10天获4.6万Star。 🔗 阅读原文 via AIHOT · https://aihot.news/items/u9f1ozdbs5nobwugj3yss3z0e",
-   "excerpt": "开发者Brandon Thomas因不满Adobe订阅违约金，用Claude Opus 5.5以Rust逆向重写了Photoshop等7款Adobe软件并开源，其中PS项目不到10天获4.6万Star。\n作者从Brandon Thomas用Claude Opus 5.5逆向重写Adobe全家桶和REA项目爆火出发，解释净室设计与反编译两条逆向路线，并讨论软件护城河消解后的原创困境。\n作者从Brandon Thomas用Claude Opus 5.5逆向重写Adobe全家桶和REA项目爆火出发，解释净室设计与反编译两条逆向路线，并讨论软件护城河消解后的原创困境。"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "xAI 推出 The X Subscription 整合 Grok、Grok Bot、Cursor 与 X Premium",
-   "url": "https://aihot.news/items/uy4hvoyz7fwtyycpu0p62dudn",
-   "published": "2026-10-12T00:00:00.000Z",
-   "description": "xAI 推出 The X Subscription 订阅，将 Grok、Grok Bot、Cursor 和 X Premium 合入一个计划，未来几天内向全球用户开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uy4hvoyz7fwtyycpu0p62dudn",
-   "excerpt": "Product·Oct 12, 2026 Introducing The X Subscription\nxAI 推出 The X Subscription 订阅，将 Grok、Grok Bot、Cursor 和 X Premium 合入一个计划，未来几天内向全球用户开放。\n官方公布四合一订阅的档位价格与共享用量规则，读者可据此对比现有单独订阅的实际成本变化。\nGrok、Grok Bot、Cursor 和 X Premium，全部包含在一个套餐中。\n今天我们推出 The X Subscription，将 Grok、Grok Bot、Cursor 和 X Premium 整合到一个套餐中。在接下来的几天里，我们将面向全球所有人开放。\nThe X Subscription 的付费套餐包含一个充裕的 Grok 模型使用额度池，可在 Grok 和 Cursor 之间共享。 每个可比的新档位都比它所替代的套餐提供更高的每美元使用量。\n无论你是在 Grok 应用、X 上的 Grok 标签页还是 Cursor 中使用 Grok 模型，你的共享额度池都覆盖这些模型。每个 X Subscription 套餐包含的我们模型编码使用量至少是可比 Cursor 套餐的两倍。使用新套餐后，第三方模型仍可在 Premium 及以上档位的 Cursor 中使用。使用量按 API 标价单独计费，通过充值支付。\n我们也在为现有的 SuperGrok、Cursor 和 X Premium 订阅用户推出切换选项。当该选项对你可用时，你会在账户账单设置中看到它。你可以保留当前套餐，或切换并按比例获得旧套餐的退款。\nThe X Subscription 让你以大致相当于这些产品中某一个的可比独立套餐过去的价格，获得 Grok、Cursor 和 X。\n团队用户可享受 The X Subscription 的 Premium、Super 和 Ultra，每席位价格与个人套餐相同。其每席位价格低于旧的 Cursor Teams，但现在包含 3 倍以上的编码使用量，外加 SSO、管理员控制、合并账单、使用量分析和 SOC 2 合规。\n企业客户可从一个仪表板管理 Grok 和 Cursor，两个产品共用一个使用量池。我们的销售团队随时准备帮助你 开始使用 。\n对于现有的 SuperGrok、Cursor 或 X Premium 订阅用户，一切不变。你可以保留当前的套餐、价格和功能，或迁移到 The X Subscription。\n如果你已订阅 SuperGrok、Cursor 或 X Premium，请前往账单设置，查看你的账户是否已可切换。\n官方公布四合一订阅的档位价格与共享用量规则，读者可据此对比现有单独订阅的实际成本变化。"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Vapi 自研代码审查机器人如何将 PR 合并时间缩短一半",
-   "url": "https://aihot.news/items/byijxcheeait7w4okuw9ebnh2",
-   "published": "2026-10-12T00:00:00.000Z",
-   "description": "Vapi 工程师 Lat Ware 自研 Pedantic Review Bot，使 PR 从开到合并的平均时间从 130 多小时降到 65 小时。机器人会运行测试和小复现来验证发现，分析和发评论分属两个 job，只能评论不能批准或推送；2026 年 9 月 2 日至 10 月 2 日审查了 1,694 个 PR，在 276 个中提出 363 个 blocker 发现。 🔗 阅读原文 via AIHOT · https://aihot.news/items/byijxcheeait7w4okuw9ebnh2",
-   "excerpt": "How an in-house review bot cut our PR merge time in half\nVapi 工程师 Lat Ware 自研 Pedantic Review Bot，使 PR 从开到合并的平均时间从 130 多小时降到 65 小时。机器人会运行测试和小复现来验证发现，分析和发评论分属两个 job，只能评论不能批准或推送；2026 年 9 月 2 日至 10 月 2 日审查了 1,694 个 PR，在 276 个中提出 363 个 blocker 发现。\n作者基于自家代码库做了提示词版本、多跑对比和范围指令等实验，给出可直接迁移的代码审查智能体实践结论。\n作者基于自家代码库做了提示词版本、多跑对比和范围指令等实验，给出可直接迁移的代码审查智能体实践结论。"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "GPT-6.1 Sol 在 Codex 与 Work 中默认上下文长度提升至 500k",
-   "url": "https://aihot.news/items/z54sznsd0r2teb6gqyvwu4nc2",
-   "published": "2026-10-11T23:45:59.000Z",
-   "description": "Tibo 宣布 GPT-6.1 Sol 在 Codex 与 Work 中的默认上下文长度从 272k 提升到 500k，约增加 80%。此举可减少压缩（compaction）发生，帮助需要长期保留大量上下文和细节的任务；用户仍可自行覆盖设置，模型最大上下文长度为 1M。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z54sznsd0r2teb6gqyvwu4nc2",
-   "excerpt": "Tibo 宣布 GPT-6.1 Sol 在 Codex 与 Work 中的默认上下文长度从 272k 提升到 500k，约增加 80%。此举可减少压缩（compaction）发生，帮助需要长期保留大量上下文和细节的任务；用户仍可自行覆盖设置，模型最大上下文长度为 1M。\n官方说明了上下文窗口提升的幅度、原因和可覆盖设置，Coding 用户可据此调整长任务工作流。\n我们已将 GPT-6.1 Sol 在通过 Codex 和 Work 使用时的默认上下文长度从 272k 提升至 500k，增幅约 80%。\n未来我们还会进一步提高，但这有助于减少压缩（compaction）的发生，并有利于那些需要长时间保留大量上下文和细微差别的任务。它经过了仔细测试，是我们大多数用户的新最佳平衡点。如果你想要更高或更低，仍然可以自行覆盖，GPT-6.1 Sol 的最大上下文长度为 1M。\n官方说明了上下文窗口提升的幅度、原因和可覆盖设置，Coding 用户可据此调整长任务工作流。"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Meta 发布 Muse Wonder 和 Muse Wonder Full，Artificial Analysis 实测智能水平较前代显著提升",
-   "url": "https://aihot.news/items/v3pogrzxrk9oba4blox86d0w8",
-   "published": "2026-10-11T16:00:00.000Z",
-   "description": "Meta 发布 Muse Wonder 和 Muse Wonder Full 两款模型，在 Artificial Analysis Intelligence Index v4.3 上分别得 52 和 56 分（max reasoning effort）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v3pogrzxrk9oba4blox86d0w8",
-   "excerpt": "Muse Wonder and Muse Wonder Full: a material jump in intelligence over previous Meta models\nMeta 发布 Muse Wonder 和 Muse Wonder Full 两款模型，在 Artificial Analysis Intelligence Index v4.3 上分别得 52 和 56 分（max reasoning effort）。\nArtificial Analysis 独立实测了两款新模型的智能指数、token 用量和成本，读者可据此对比它们在同类模型中的位置。\nMeta 发布了 Muse Wonder 和 Muse Wonder Full，在最大推理努力下，Artificial Analysis Intelligence Index v4.3 得分分别为 52 和 56——相比 Muse Spark 1.3（max）的 48 均有实质性提升，而发布间隔仅 6 周\nMuse Wonder 已在 Meta 的第一方 API 上向用户开放，而 Muse Wonder Full 目前仅对 Muse Code 用户开放。Meta 指出，这两款模型均面向个人和专业智能体用途设计\n➤ 两款模型在整体 Intelligence Index 得分上均实现了实质性跃升。 Muse Wonder Full（max）在全部十项 Intelligence Index 评估中均优于 Muse Spark 1.3（max），提升 8 分至 56。提升最大的是智能体评估：Terminal-Bench 4.0（+24 分，33% 至 57%）、GDPval-AA v2.1（+176 Elo，1681 至 1857）和 AA-Briefcase（+148 Elo，1581 至 1729）。Muse Wonder（max）提升 4 个 Intelligence Index 分，达到 52，相比 Muse Spark 1.3（max）在 Terminal-Bench 4.0（33% 至 52%）和 AutomationBench-AA（58% 至 68%）上有显著改进\n➤ Muse Wonder Full（max）在十项 Intelligence Index 评估中有六项进入前三，在智能体知识工作和科学推理方面尤为突出。 在智能体知识工作方面，它在 GDP.pdf（33%）上以微弱优势领先，在 GDPval-AA v2.1（1857 Elo）上排名第 2，在 AA-Briefcase（1729 Elo）和 AutomationBench-AA（71%）上均排名第 3。在科学推理方面，它以 33% 位居 CritPt 排行榜榜首，并以 63% 在 SciCode 上排名第 3。这延续了 Muse Spark 1.3（max）的相对优势，后者在这两个领域也表现出特别的能力\n➤ 两款模型使用的输出 token 均少于 Muse Spark 1.3（max）。 Muse Wonder（max）和 Muse Wonder Full（max）在每个 Intelligence Index 任务上均使用约 54k 输出 token，较 Muse Spark 1.3（max，60k）下降约 10%。这一用量低于同等智能水平的模型 Gemini 4 Argon（high，62k）和 Claude Fable 5.1（max w/ fallback，78k），但高于 GPT-6.1 Sol（max，38k）和 GPT-6 Astra（max，27k）。Muse Wonder Full（max）在每个 Intelligence Index 任务上使用的输入 token 比 Muse Wonder（max）少 16%（6.44M 对 7.69M），这意味着它既更智能，也更节省 token\n➤ Muse Wonder（max）的每任务成本高于大多数同等智能水平的模型。 尽管输出 token 使用高效，但高昂的 API 定价（每百万输入 token 4 美元，每百万输出 token 20 美元）以及高输入 token 用量（每任务 7.69M）将 Muse Wonder（max）的成本推高至每个 Intelligence Index 任务 4.52 美元。这低于 Claude Fable 5.1（max w/ fallback，7.63 美元）、Claude Opus 5.5（max w/ fallback，5.98 美元）和 Claude Sonnet 5.5（max w/ fallback，5.46 美元），但高于 GPT-6 Astra（max，3.26 美元）、Gemini 4 Argon（high，1.99 美元）、GPT-6.1 Sol（max，0.72 美元）及其前代 Muse Spark 1.3（max，1.60 美元）。Muse Wonder Full 不按 token 定价，因此没有可用的每任务成本数据\n➤ 两款模型在 Coding Agent 性能上均有显著提升。 Muse Wonder Full 在 Muse Code 中以最大努力在 Artificial Analysis Coding Agents Index 上达到 68，与 Claude Code 搭配 Sonnet 5.5（max，68）和 Opus 5.5（max，66）相当。Muse Wonder（max）得分为 63。相比 Muse Code 搭配 Muse Spark 1.3（max）的 54 分，这些都是实质性提升\n➤ 上下文窗口： 各 100 万 token，与 Muse Spark 1.3 相同\n➤ 定价： Muse Wonder 为每 100 万 token 输入 $4 / 缓存输入 $0.20 / 输出 $20。Muse Wonder Full 不按 token 计价"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "如何只用自己拥有的文件约束编码智能体",
-   "url": "https://aihot.news/items/twhuaks920iaqd2y7frq8bgbw",
-   "published": "2026-10-11T16:00:00.000Z",
-   "description": "Tessl 博客文章介绍用四个可拥有的文件杠杆约束编码智能体：CLAUDE.md 指令、.claude/rules/ 路径级规则、.claude/ 下的能力配置和 .claude/hooks/ 钩子。 🔗 阅读原文 via AIHOT · https://aihot.news/items/twhuaks920iaqd2y7frq8bgbw",
-   "excerpt": "How to constrain a coding agent using only files you own\nTessl 博客文章介绍用四个可拥有的文件杠杆约束编码智能体：CLAUDE.md 指令、.claude/rules/ 路径级规则、.claude/ 下的能力配置和 .claude/hooks/ 钩子。\n作者用同一工单三次实测对比 charter 各文件杠杆的效果，方法可迁移到自己的仓库，并指出机器可查与需人审的边界。\n我给一个编码代理一张工单，没有给它任何章程。这个仓库像真实项目一样，横跨了三个时代。一个 2026 年的领域层把一切都做对了，而一个 2023 年的上帝文件加上一个没人敢碰的 2021 年冻结模块，数量是它的十倍。\n代理从未打开正确的代码。它去了上帝文件，调用 random.randint 掷骰子，并在没有种子的情况下序列化总数。它通过一个确实存在且能工作的辅助函数重写了一条日志记录，还两次伸手进了冻结模块。\n得分： 八项检查中通过一项。那个仓库里没有任何东西是坏的，代理只是照抄了摆在它面前的代码。所有本可以拦住它的东西，都是我还没写出来的文件。\n我从事 harness 与章程工程：运行代理的引擎，以及它最先读取的规则。这就是《Harness Engineering》这本书以及我的开源章程框架工具 Keystone 的主题。11 月我将在 AIDevCon 主持一场九十分钟的工作坊，让一屋子工程师编写这些文件，并衡量每一个文件带来了什么。\n写一个 CLAUDE.md 的建议现在到处都是，这是好建议，但那个文件只是四个杠杆之一。另外三个就在同一个仓库里、在你已经拥有的路径下，而许多团队并没有交付足够多的它们。\n章程的哪一部分在代理不同意它时仍然成立，每一部分又买到了什么？这两个问题都能在一台笔记本电脑上回答，下面就是我在同一张工单上回答三次所得到的结果。\n每个人都会写那个杠杆，而另外三个就在它旁边。四个都是文件，四个都属于你，四个都位于代理在写下一行代码之前会读取的路径下：\n能力杠杆是通常没有被设计的那一半。它上面有四级台阶：一条命令、一项技能、一个子代理、一个 MCP 服务器。家族测试可以对它们进行分类。移除那个东西，如果代理能做的事变少了，那它就是一种能力。如果代理做同样的工作、只是做得更差，那你写了一条规则，并把它打扮成了技能。\n授权列表也属于那个杠杆，而且它是对你本意的有损翻译。一个指向 make 目标的允许列表，与一个指向命令字符串的允许列表，所表达的东西是不同的。\n这对你意味着什么： 在你自己的仓库上运行 ls -R .claude/ 。如果答案只是一个设置文件、别无其他，那你就拥有四个杠杆，却只交付了一个。\n指令会被读取。按路径限定的规则会被读取。任何被读取的东西都可以被争辩，而代理会说服自己放弃一条被周围代码所否定的规则。能力杠杆不争辩任何一方，因为它改变的是代理能够伸手拿到什么，而不是它相信什么。\n四十行 Python 挂在这个差异的两端。一个是 PreToolUse 钩子，用来阻止写入；另一个是 make gate ，也就是 CI 运行的东西。一个谓词，两个挂载点，没有重复的逻辑。这种形态正是它能传播的原因。\n那些有说服力的杠杆仍然能买到很多东西，但有一个条件：规则必须与某些东西相悖。你的代码库已经遵循的规则不约束任何东西。智能体会通过模仿得到同样的答案，所以你无法分辨是哪一个让你到达那里。\n所以要把规则写在规则与代码相悖的地方。在工作坊仓库中，一个模块从会话中推导请求权限，另一个模块直接从请求体中读取它。两种模式都活着，两种都能用，所以章程必须做出选择。它的职责是说明该复制这两个真实模式中的哪一个，而这就是大多数改造的情况。\n同一张工单跑了三次。裸跑改了 3 个文件，加了 49 行，8 项中通过 1 项。带章程的跑改了 3 个文件，加了 102 行，8 项中通过 8 项。更大的差异反而是更好的那个，这一点值得在有人开始为改动行数做优化之前大声说出来。\n一个程序可以解决九项检查中的八项。差异是否留在范围内？每个随机种子是否都已设定？日志是追加而不是重写？还有五项问的是这类问题，脚本对每一项都能不带主观判断地作答。\n第九项是 authority.semantic ，它问的是访问检查 对这个功能 是否正确。没有谓词能解决这个问题，所以评分器打印一个问号然后等待。\n两种判定读的是同一个差异。只有钩子能在写入发生之前阻止它。只有审查者能解决第九项检查。\n绿色的记分卡不等于正确的改动。它只是一个没有机械可检测问题的改动，而这个距离正是你的审查注意力该放的地方。\n章程是约束中你完全拥有的那部分。它住在仓库里，受版本控制，随克隆一起到达。四个文件在每一台检出代码的机器上改变智能体的行为。\n我见过的许多 harness 和工厂图里都有一个标着质量门的方框，而那个方框掩盖了这个问题： 你的哪些标准根本能当门 ？在一个仓库的一张工单上，我得到八和一，但我选的规则就是为了让效果可见，所以把这个比例当作演示。你的会不一样。\n方向是我会据此规划的东西。随着智能体写更多的代码，通过那道门的量会攀升，而不可判定那一列并不会随之缩小。所以当一条规则超出了章程，就说出它上面那一级然后停下，因为一个 markdown 文件装不下智能体能够到并删除的东西。\n规则不是静态的。它们有生命周期，会从部落知识走向章程，走向约束框架，再走向工厂。 具体在哪一步 取决于所关注的问题。\n拿一张工单。在完全没有章程的情况下，把它跑在你的代码库上，然后用你事先写好的检查项给结果打分。那次运行就是事故本身，你之后写的每一条规则都应该指向它。然后一次加一个杠杆，重新运行同一张工单，并指出哪个杠杆改变了哪个检查项。\n你会发现两件事。你的一些规则其实什么都没约束，因为代码本来就符合它们。而至少有一条你在意的规则，没有任何机器能检查，这反而让它值得占用一个人的时间。\n要点： 约束编码智能体的每一条限制，都是你拥有的一个文件。唯一"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Anthropic 强化针对蒸馏攻击的防御， reasoning token 提取量下降 10 到 100 倍",
-   "url": "https://aihot.news/items/lwchujhujmc1tdor61dn39irl",
-   "published": "2026-10-11T16:00:00.000Z",
-   "description": "Anthropic 发布博客，介绍其针对 Claude 蒸馏攻击的新防御方法，早期证据显示这些方法使蒸馏者获取的数据减少约 90% 到 99%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lwchujhujmc1tdor61dn39irl",
-   "excerpt": "Strengthening our defenses against distillation attacks\nAnthropic 发布博客，介绍其针对 Claude 蒸馏攻击的新防御方法，早期证据显示这些方法使蒸馏者获取的数据减少约 90% 到 99%。\nAnthropic 公开其反蒸馏防御的具体做法和效果数据，读者可以据此了解这类防御的成本、权衡和对整个行业的借鉴意义。\n近几个月来，我们在降低蒸馏攻击对 Claude 的有效性方面取得了实质性进展，采用了新方法，正如本博客所述。早期证据表明，这些方法已将蒸馏者获取的数据量减少了约 90% 至 99%。\n蒸馏攻击是一种隐蔽的、工业规模的行动，旨在提取一个模型的能力并将其复制到另一个模型中，且未经原模型开发者的授权。这些攻击通常利用欺诈账户网络进行。它们使企业能够以极少的开发时间和成本模仿前沿能力。正如我们在 九月所写 ，这种方法已被广泛用于帮助海外 AI 实验室跟上美国公司的步伐。\n我们对非法蒸馏的担忧有两个原因。首先，蒸馏使企业能够构建接近能力前沿的模型，但这些模型在实践中发布时却没有相应强大的安全保障。这意味着蒸馏模型可能被用于在 生物学 和 网络安全 等领域造成重大危害。\n例如， 智谱 在开发 GLM-5.3 期间蒸馏了美国领先模型的网络能力。该公司试图蒸馏 Claude Fable 5——尽管在发现我们的网络安全保障措施削弱了其攻击后，它转向了较旧的 Claude 模型和另一家实验室的模型。美国超级智能创新与标准促进中心（CAISSI） 此后评估 GLM-5.3 是迄今为止发布的网络能力最强的开放权重模型。 我们自己的研究发现 ，GLM-5.3 的保障措施很容易被绕过，并且该模型愿意端到端地开发安全漏洞利用程序。\n其次，非法蒸馏的模型构成国家安全风险。蒸馏美国模型的公司正在将其从蒸馏中获得的能力整合到外国的 军事、情报和监视系统 中。例如，我们最近 报道了一个案例 ，其中对 Moonshot 的 Kimi 模型的请求被秘密转发给 Claude，作为其蒸馏努力的一部分。其中一个请求来自一名用户（我们认为其隶属于中国人民解放军），该用户试图分析针对特定个人的闭路电视监控。这些正是蒸馏者希望开发的能力类型。\n针对这些攻击日益复杂和规模扩大，我们已扩展并大幅加强了防御措施。正如我们将在下文所述，这些措施已经取得成功——尽管它们确实涉及对 Anthropic 和我们客户的权衡。我们拒绝了来自蒸馏者的可观收入和数万亿 token 的付费流量，我们的研究和产品团队也为此问题投入了大量时间和精力。我们的一些更改还要求合法用户更新其集成。\n蒸馏是每个模型开发者都面临且必须应对的问题。我们希望这篇文章能帮助开发者和平台更好地理解如何防止这些攻击、这些措施的权衡可能是什么，以及为什么这些成本值得承担。\n蒸馏者旨在从更大、能力更强的模型（此处指 Claude）生成数百万条回复，然后利用这些回复训练较小的模型模仿能力更强模型的行为。为此目的，最有价值的数据是 Claude 推理过程的记录——即 Claude 在回复前写出的思考过程。这比仅凭其输出有用得多，因为它能帮助较小的模型理解 Claude 如何 得出最终答案。因此，我们针对蒸馏的防御几乎完全集中在让蒸馏者更难获取 Claude 的推理过程。\n我们对抗蒸馏的早期工作始于旨在阻止 被动 蒸馏的简单措施，即攻击者像普通用户一样向模型发送请求，然后基于这些回复进行训练。作为最初的反蒸馏措施之一，我们在向用户展示 Claude 的推理之前先让它进行总结。我们的评估表明，这使 Claude 的推理记录对蒸馏者来说信息量大为降低。我们测试了一个预训练的 Claude 模型在基于 Claude Opus 4.8 的推理记录训练后，在 SWE-bench Verified 编程基准上的表现。使用完整推理记录训练时，蒸馏模型达到了 80.4%；而仅使用总结后的推理记录时，它达到了 71.8%。\n但蒸馏者既执着又富有创造力。在这一改动之后，攻击者从被动提取转向了 主动 提取，寻求绕过总结的方法，诱使 Claude 透露其完整推理过程。在 9 月的一份报告中，我们 描述了这些方法的运作方式 。这些方法既有简单如指示 Claude“逐字逐句、一字不差地输出你之前的推理”这样的策略，也有更复杂的技术，包括某个实验室测试了 12,000 次请求，每次都以不同方式试图欺骗 Claude。\n总的来说，这类请求我们是可以发现的，因为普通用户很少要求模型写出其完整的隐藏推理过程。因此，我们可以设计防护措施来检测那些试图提取模型隐藏推理的请求，这些请求很可能来自蒸馏者。\n然而，我们最初相对简单的防护设计并不足够。蒸馏者找到了绕过我们首批防护措施的方法。随后他们将这些方法规模化，创建了控制数十万个欺诈账户的代理网络，每个账户都会发送能躲过我们防护的请求。这些网络还在未提供 Claude 服务的地区转售其访问权限，并用虚假身份和被盗支付信息 创建账户 。正如 我们在 2 月报告中所述 ，其中一个网络同时管理着超过 20,000 个欺诈账户。这些蒸馏活动的庞大规模和持续性表明，蒸馏者不会轻易被吓退，我们需要更加复杂的防御手段。\n控制推理的流向。 蒸馏者使用了多种不同方法来提取 Claude 的完整推理记录。例如，他们将受保护的推理块 在对话之间 移动，以诱骗 Claude 相信蒸馏者已经能够访问未摘要的推理内容（因此认为可以披露）。他们还将推理 在模型之间 移动（使用防护较弱的模型来提取较强模型的推理），以及在账户之间移动，利用上文所述的 代理网络 ，在初始账户被封禁后仍继续尝试提取模型的推理。\n在 Claude Fable 5.1 和 Claude Opus 5.5 中，我们引入了 保留式思考 ，这项措施可防止新的 API 账户（2026 年 8 月 31 日或之后创建的账户）编辑 Claude 的先前上下文。这使得利用代理网络反复尝试提取 Claude 受保"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Anthropic 研究：小型 AI 模型可能接近在 IoT 设备上自主复制",
-   "url": "https://aihot.news/items/emc0djmqlomn6b5whge285x7l",
-   "published": "2026-10-11T16:00:00.000Z",
-   "description": "Anthropic 发文评估小型模型在无数据中心条件下自主复制（ARA）的可行性，作者实验显示 9B 模型可在测试的 9 类硬件中 8 类上跑通推理，30B 及以下模型已能完成复制的多数单步。 🔗 阅读原文 via AIHOT · https://aihot.news/items/emc0djmqlomn6b5whge285x7l",
-   "excerpt": "AI models may be capable of self-replicating without access to a datacenter\nAnthropic 发文评估小型模型在无数据中心条件下自主复制（ARA）的可行性，作者实验显示 9B 模型可在测试的 9 类硬件中 8 类上跑通推理，30B 及以下模型已能完成复制的多数单步。\nAnthropic 用自购的 15 台廉价电视盒实测小模型分布式推理与复制链路，读者可据此评估 AI 蠕虫这类威胁的近期可行性。\n我们的实验表明，小型 AI 模型可能只需数月就能发展到足以在商用 IoT 设备（如智能烤箱和非品牌 Android TV 盒子）上自我复制。这样的复制程序将难以关闭，因为不存在可供关闭的集中点——尽管它可能很慢（倍增时间为数天）。与非 AI 恶意软件不同，它还能自行识别不熟悉的设备。在我们的评估中，一个 9B 模型在我们测试的 9 种硬件类型中的 8 种上成功运行了推理。\n参数规模在 30B 及以下的模型如今已经能够完成复制所需的许多单独步骤，尽管在将它们端到端组合起来时会出错。在我们简化的评估中，GLM-5.2 及更强的模型能够实现端到端复制。如果小型模型按其历史速度继续提升，它们将在今年年底达到这一能力水平。此后不久，基于权重的小型复制程序可能成为现实。\n不断提升的 AI 能力使一个长期存在的担忧日益成为现实： 自主复制与适应 （ARA），即模型在无人控制的情况下部署并传播自身。\n在网络领域，蠕虫是一种无需人工输入即可从一台计算机复制到另一台计算机的程序。 先前的工作 已经表明，AI 智能体可以表现得像蠕虫一样：扫描其网络、执行漏洞利用，并将模型权重跨 GPU 集群复制到目标机器。这种“AI 蠕虫”可以在繁殖时携带其模型权重（或从公共枢纽重新下载它们），然后直接在受感染的硬件上运行推理。实际上，权重将成为恶意软件载荷的一部分。\n数据中心 GPU 显然是此类恶意软件的高价值目标。但昂贵的加速器并非绝对必要。在这篇博文中，我们展示了一个由 IoT 设备组成的分布式僵尸网络——这些设备价格低廉且通常防护薄弱——也可以提供足够的算力来运行一个能力不错的模型。\n我们在 15 台廉价非品牌 Android TV 盒子（每台约 55 美元）上分布式运行 Gemma4-26B-A4B，这些盒子由我们购买并联网，速度为每秒 0.39 个 token。下方每个方块代表一个物理 TV 盒子，在模型运行时承载模型的两层。\n当然，要证明自主蠕虫能够在由弱机器组成的网络中自我传播，还有许多其他步骤。就本篇博文而言，我们将复制链分解为几个步骤。\n我们在很大程度上忽略了复制过程中的网络漏洞利用环节（上述前两个阶段），因为较早的论文 CyberGym 、 ExploitBench 和 自适应蠕虫 已经表明，小型模型有能力进行网络漏洞利用，尤其是在获得合适工具的情况下。但复制过程中一个较少被测量的部分涉及在受感染设备上建立推理，这正是我们此处的重点。\n在这篇文章中，我们首先列出了我们认为最有可能实现的威胁模型。然后，我们测试了小模型能否在陌生的硬件上设置推理，以及它们能否在一组机器之间串联起完整的复制周期。之后，我们估算了这种蠕虫可能传播的速度，并测试了它能否在复制过程中学习和适应。最后，我们总结了 AI 蠕虫与前 AI 恶意软件的区别，并简要提出了针对此类复制体的防御建议。\n在这篇博文中，我们关注 AI 蠕虫可能传播的一种方式：通过攻陷宿主机器进行复制的小模型。但 AI 蠕虫还可能尝试其他几种方法：它们可以窃取访问权限以启动主机（例如 API 密钥或平台凭证），或通过合法工作（如数字自由职业）来支付推理费用。我们认为目前最接近实现的威胁模型如下：\n一个大到无法装入单个设备的模型可以被拆分成多个分片，运行在彼此通信的独立机器上，共同运行该模型。能够为\n在实践中，AI 蠕虫不一定只由单一模型或策略组成。由不同模型组成、部署在不同类型的硬件上、使用各种复制方案的集群，可能代表更现实的“最坏情况”攻击。\n在这篇博文中，我们考虑了 小型基于权重的复制体 （上述第 1 节）的可行性。我们关注这一点，是因为它是一个可以直接研究的近期威胁模型。我们在本文顶部的演示——一个 26B 模型运行在 15 台机器上——表明 IoT 设备可以运行能力惊人的模型。这些模型是否足够有能力执行自主复制？\n我们将从两个方面来考察这一点。第一，小模型能否在陌生的硬件上让模型运行起来？第二，它们能否在单次运行中完成整个循环（找到一台未感染的设备、将自己复制过去、在那里开始运行，并重复这一过程）？\n在上图展示复制循环的各个阶段中，推理环境搭建是研究最少的一个，对小型模型来说可能也是最具挑战性的。它需要围绕选择兼容的推理栈、找到正确版本的软件包以及调试特定机器的问题，做出一系列相当长的、与硬件和操作系统相关的决策。这些步骤是串行依赖的，一旦失败就很难恢复。\n我们衡量不同开放权重模型在异构硬件类型上服务 Llama3.1-8B 的能力。下表列出了在各种硬件类型上服务的每秒 token 数：\n小型模型，例如 Qwen3.5-9B，能够在从 Jetson Nano 到 Mac PC 和 RTX 4090 的硬件上搭建推理服务器。能力更强的模型，例如 GLM-5.2，不仅更可靠，还能实现更高的服务 token/s，从而加快复制速度。我们测试并提及特定芯片，是为了衡量模型在这些芯片上搭建推理环境的效果。这些芯片本身并不是风险或漏洞的来源。\n我们使用 Memento 运行这些实验，它是在开源 Pi 编码智能体之上构建的一套工具。Memento 旨在缓解我们在长时程运行中观察到的一种常见失败模式：智能体可能会执迷于一个错误的想法（比如，某个 bug 为何会出现），并继续沿着它走下去，而不是回头另寻他路。此类失败的一个例子是，一个 Qwen 智能体花了数小时调试软件包版本问题，而真正的 bug 却来自实现了一个与评分器 API"
+   "excerpt": ""
   }
  ]
 }
