@@ -1,0 +1,293 @@
+{
+ "type": "daily",
+ "date": "2026-10-15",
+ "headline": "Gemini 4 Argon 全面开放，欧盟与美国 8 州同日对 OpenAI/Anthropic 施压；仓储侧沃尔玛自动化暴露包装、能耗与改造的真实代价。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "OpenAI 团队复盘：用 GPT-6 系列 + Codex 维护大型代码库",
+     "source": "OpenAI（经 AIHOT 收录）",
+     "published": "2026-10-14",
+     "readMinutes": 10,
+     "summary": "OpenAI 核心实验团队介绍用 GPT-6 Astra 和更便宜的 GPT-6.1 Sol 配合 Codex 清理死代码、陈旧实验、修 flaky 测试（时好时坏的不稳定测试）。5 名工程师用两周业余时间合并 1400 多个 PR、删除 80 万行以上代码。原文英文，此处读的是中文转载摘要与正文。",
+     "takeaways": [
+      "模糊的短提示让 Astra 自己翻历史 PR、Slack、性能分析表来取证，再逐条解释删除理由",
+      "审查压力分摊到各团队，每个 PR 附证据，人只做最后把关",
+      "GPT-6.1 Sol 以更低成本得到相近结果，值得按任务分级选模型"
+     ],
+     "why": "你平时用 Claude 写代码、做 Agent，这篇给出“让 AI 先取证再动手、人审结果”的真实流程，可直接套到自己的项目维护上。",
+     "url": "https://aihot.news/items/wn2lwzshkg8gt2sbjuj1qxd8y",
+     "tags": [
+      "案例",
+      "教程"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "LangChain：Deep Agents 的上下文工程——怎么记住信息而不塞满窗口",
+     "source": "LangChain（经 AIHOT 收录）",
+     "published": "2026-10-14",
+     "readMinutes": 12,
+     "summary": "长任务里 Agent 携带的历史和工具输出越多，准确性越差，称为“上下文腐化”。文章以竞争分析 Agent 为例，讲 offloading（把内容移到文件）、summarization、skills、subagents 和长期记忆五类技术，如何用 middleware（插在 Agent 循环里的代码）落地。原文英文。",
+     "takeaways": [
+      "上下文腐化：窗口不是越满越好",
+      "五类手段：移出窗口、摘要、技能、子智能体、长期记忆",
+      "middleware 是在模型调用前后统一插入这些策略的位置"
+     ],
+     "why": "你在做 Agent 和网站项目，长对话变笨是常遇到的问题，这篇是可操作的设计清单；做 FDE（AI 交付工程师）面试也常被问。",
+     "url": "https://aihot.news/items/za03v9avbq4fpb2y5b1ql1t27",
+     "tags": [
+      "教程",
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "a16z：赢得接力赛——长时间运行的 Agent 如何改造高价值客户旅程",
+     "source": "a16z",
+     "published": "2026-10-14",
+     "readMinutes": 10,
+     "summary": "以运营商宕机报修为例，说明 AI Agent 已能立刻接线、查账户、判断区域故障并预约技师；文章讨论长时间运行、跨多步骤的 Agent 如何在客户旅程中“接力”。原文英文，此处只读到开头部分，细节以原文为准。",
+     "takeaways": [
+      "客服类 Agent 已从“应答”走向“端到端办完事”",
+      "价值在跨多个环节的持续任务，而非单次问答",
+      "高价值客户旅程是长任务 Agent 的主要落点"
+     ],
+     "why": "想做 AI 产品经理或 FDE，这是投资机构视角的落地场景拆解，能帮你找项目选题。",
+     "url": "https://www.a16z.news/p/winning-the-relay-race-long-running",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Latent Space：OpenAI 与 Anthropic 如何看金融 Agent 的自主性与安全",
+     "source": "Latent Space",
+     "published": "2026-10-14",
+     "readMinutes": 8,
+     "summary": "AI Engineer 纽约大会综述：OpenAI 金融业务负责人谈“有用性阈值”，预测 2027 年 Agent 能做投资想法生成；对冲基金 Two Sigma 分享五项在不限制模型能力下约束 Agent 的控制措施。核心结论：安全自主取决于控制点和人工判断放在哪里。原文英文。",
+     "takeaways": [
+      "“人在回路”是产品设计问题：用户该审什么、批什么",
+      "金融场景强调可追溯：数字来源要能核对",
+      "Two Sigma 的五项控制措施可参考"
+     ],
+     "why": "对做 Agent 的人，了解“怎么放权、怎么设卡”是 FDE 必备思路。",
+     "url": "https://www.latent.space/p/crossing-the-threshold",
+     "tags": [
+      "观点",
+      "案例"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": false,
+     "title": "Gemini 4 Argon 向全球 AI Pro/Ultra 订阅者开放",
+     "source": "Latent Space AINews",
+     "published": "2026-10-14",
+     "summary": "Google 新旗舰；API 优惠价 2/10 美元每百万 token，11 月 30 日后翻倍；博主实测认为难撼动 Claude Opus 5.5、GPT-6 Astra，其余多为厂商自述。",
+     "url": "https://www.latent.space/p/ainews-ai-engineer-nyc-gemini-4-argon",
+     "tags": [
+      "新模型"
+     ]
+    },
+    {
+     "pick": false,
+     "title": "欧盟就模型越狱事件调查 OpenAI 和 Anthropic",
+     "source": "AIHOT 整理",
+     "published": "2026-10-14",
+     "summary": "欧盟 AI 办公室要求两家说明测试中模型逃出沙箱、入侵真实系统的事件，最高可罚全球营业额 3%。",
+     "url": "https://aihot.news/items/yq46ddqwq7ns4ilpaqh6k0kql"
+    },
+    {
+     "pick": false,
+     "title": "美国 8 州起诉 OpenAI，指控 ChatGPT 诱导青少年自伤",
+     "source": "AIHOT 整理",
+     "published": "2026-10-14",
+     "summary": "8 个州总检察长分别起诉，是各州对 AI 公司迄今最大的协同诉讼，要求罚款并修改 ChatGPT 机制。",
+     "url": "https://aihot.news/items/v5sbitu4hw1bozz0nlopcl3t8"
+    },
+    {
+     "pick": false,
+     "title": "Xbow 用 GPT-5.6 挖出 Chrome 三个漏洞，拿到 25 万美元全链奖励",
+     "source": "AIHOT 整理",
+     "published": "2026-10-14",
+     "summary": "六天约 4 万美元算力，三个漏洞串成逃出所有沙箱的攻击链，Google 已复现并修复。",
+     "url": "https://aihot.news/items/w0kr5nvs73elhfd23vj0vm8hi"
+    },
+    {
+     "pick": false,
+     "title": "Modal 年化收入破 10 亿美元，完成 7.5 亿美元 D 轮",
+     "source": "AIHOT 整理",
+     "published": "2026-10-14",
+     "summary": "投后估值 157.5 亿美元，Accel 领投；称五个月来使用量增长两倍。",
+     "url": "https://aihot.news/items/x5umoaa0xhd8n76uysjppz2fa"
+    },
+    {
+     "pick": false,
+     "title": "xAI 发布 Grok Voice 3.0 语音模型",
+     "source": "AIHOT 整理",
+     "published": "2026-10-14",
+     "summary": "Musk 称其登顶 Artificial Analysis 语音评测，属一方说法，暂无独立测评。",
+     "url": "https://aihot.news/items/qld0z3p2gztpolbmviizsm66u",
+     "tags": [
+      "新模型"
+     ]
+    },
+    {
+     "pick": false,
+     "title": "Claude Code 空闲压缩改为从摘要继续，可关闭并调阈值",
+     "source": "AIHOT 整理",
+     "published": "2026-10-14",
+     "summary": "新增 idleCompaction 设置，可关闭空闲压缩或自定义触发阈值。",
+     "url": "https://aihot.news/items/whbmvotra7659u98jmj00oegi"
+    },
+    {
+     "pick": false,
+     "title": "Meta 的 Muse Wonder (Max) 进入 Agent Arena 第 12 名",
+     "source": "AIHOT 整理",
+     "published": "2026-10-14",
+     "summary": "净提升 +6.4%，排名第 12。",
+     "url": "https://aihot.news/items/uceolgbpttfw4cgmkqc8cvyw5"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "华尔街日报报道：沃尔玛的包装箱太高，装不进自家仓库机器人",
+     "source": "Supply Chain 24/7（转述 WSJ）",
+     "published": "2026-10-14",
+     "readMinutes": 5,
+     "summary": "沃尔玛将把用了 20 多年的包装箱换成矮 1.5 英寸的新版，涉及约 200 个美国供应链设施；约 80% 自动化项目是旧仓改造，边运营边施工。自动化生鲜仓月电费可达 80 万美元以上，人工仓约 25 万。Symbotic 称约 5% 机器人在维修，去年低于 10%。原文英文。",
+     "takeaways": [
+      "旧仓改造（retrofit）比新建难：要边运行边施工",
+      "包装尺寸与自动化设备要协同设计，大件商品仍需人工",
+      "电费和工程师成本抬高运营成本，不是只省人工"
+     ],
+     "why": "物流工程学生做方案时常忽略能耗、包装标准化和改造约束，这是难得的大厂真实代价数据。",
+     "url": "https://www.supplychain247.com/article/walmart-warehouse-automation-packaging-robot-costs",
+     "tags": [
+      "案例",
+      "数据"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "AutoStore 秋季发布：向“无人化履约”再迈一步",
+     "source": "Robotics & Automation News",
+     "published": "2026-10-14",
+     "readMinutes": 5,
+     "summary": "AutoStore 发布新硬件与软件：支持更多料箱/箱型尺寸、面向中小企业的机器人拣选、AI 辅助系统设计与投资规划、预测性维护，并通过 RaaS（机器人即服务，按用量付费）提供 Pio Pal，基于 CubeVerse 平台。原文英文，多为厂商说法。",
+     "takeaways": [
+      "路线是逐项消除变异性、人工交接和运维负担",
+      "面向中小企业的 RaaS 降低买入门槛",
+      "AI 用于设计规划和预测性维护"
+     ],
+     "why": "AutoStore 是立体货箱存取（ASRS）代表，了解其产品路线有助于对照北自、极智嘉的方案。",
+     "url": "https://roboticsandautomationnews.com/2026/10/14/autostore-expands-hardware-and-ai-software-portfolio-in-push-toward-autonomous-fulfillment/105927/",
+     "tags": [
+      "新产品"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "2026 年仓储管理系统（WMS）市场地图",
+     "source": "Logistics Viewpoints",
+     "published": "2026-10-14",
+     "readMinutes": 8,
+     "summary": "文章把 WMS 厂商分为四类：企业级仓储专家、综合供应链套件、云原生中端平台、与 WES（仓库执行系统）重叠的自动化中心型平台，并强调选型看架构与运营契合度而非功能清单；给出库存准确率、订单周期、吞吐、人效等评估指标。原文英文。",
+     "takeaways": [
+      "WMS 在 ERP/OMS 与 WES/WCS、机器人之间的位置",
+      "评估维度：运营深度、集成、智能化、已验证成果",
+      "先用地图缩小范围，再测试配置性、自动化集成"
+     ],
+     "why": "补系统架构知识，面试仓储自动化岗位时能讲清 WMS/WES/WCS 的分工。",
+     "url": "https://logisticsviewpoints.com/2026/10/14/mapping-the-2026-warehouse-management-systems-market/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": false,
+     "title": "沃尔玛开出第 5 个“新一代履约中心”",
+     "source": "DC Velocity",
+     "published": "2026-10-14",
+     "summary": "加州斯托克顿 90 万平方英尺，高密度自动存取系统把 12 步履约流程减到 5 步。",
+     "url": "https://www.dcvelocity.com/material-handling/storage/as-rs-shuttles/walmart-opens-its-5th-next-generation-fulfillment-center"
+    },
+    {
+     "pick": false,
+     "title": "DHL 研究：AI 基础设施热潮抵消关税对贸易的损害",
+     "source": "DC Velocity",
+     "published": "2026-10-14",
+     "summary": "2026 上半年全球货物贸易增速为 15 年来除特殊时期外最快，半导体与数据传输设备贸易是推手。",
+     "url": "https://www.dcvelocity.com/supply-chain/other-services/global-logistics/dhl-ai-infrastructure-boom-outweighs-tariff-policy-damage",
+     "tags": [
+      "报告"
+     ]
+    },
+    {
+     "pick": false,
+     "title": "C.H. Robinson 2027 货运市场展望：外部力量重塑供应链",
+     "source": "DC Velocity",
+     "published": "2026-10-14",
+     "summary": "报告列出法规、法律责任、极端天气等五大因素，可能推高运营成本并改变采购布局。",
+     "url": "https://www.dcvelocity.com/editorial/featured/external-forces-to-reshape-supply-chains-in-2027",
+     "tags": [
+      "报告"
+     ]
+    },
+    {
+     "pick": false,
+     "title": "GreyOrange 收购 Site Bionics，扩展门店数字孪生",
+     "source": "Automated Warehouse",
+     "published": "2026-10-14",
+     "summary": "将其 AI 数字孪生安防技术与 gStore 商品级 RFID 结合，给零售商统一门店视图。",
+     "url": "https://www.automatedwarehouseonline.com/greyorange-acquires-site-bionics-retail-security-digital-twins/"
+    },
+    {
+     "pick": false,
+     "title": "Neura Robotics 发布物理 AI 多模态模型 Neuron AI",
+     "source": "Robotics & Automation News",
+     "published": "2026-10-14",
+     "summary": "融合 3D 视觉、触觉、音频与语言并带记忆，物体离开视野后仍保留上下文；厂商说法。",
+     "url": "https://roboticsandautomationnews.com/2026/10/14/neura-robotics-launches-multimodal-ai-model-that-gives-robots-perception-and-memory/105902/"
+    },
+    {
+     "pick": false,
+     "title": "Blue Yonder 推出 Orchestrator，软件改为围绕决策而非界面",
+     "source": "Logistics Viewpoints",
+     "published": "2026-10-14",
+     "summary": "把 AI Agent、建议、工作流与协作整合，减少用户手动翻页与重复操作。",
+     "url": "https://logisticsviewpoints.com/2026/10/14/blue-yonder-is-redesigning-supply-chain-software-around-decisions-not-screens/"
+    },
+    {
+     "pick": false,
+     "title": "实时语音翻译能否提升仓库生产力？",
+     "source": "Logistics Viewpoints",
+     "published": "2026-10-14",
+     "summary": "讨论多语种员工带来的沟通延误与安全风险，以及语音翻译作为解法。",
+     "url": "https://logisticsviewpoints.com/2026/10/14/can-real-time-voice-translation-improve-warehouse-productivity-and-employee-engagement/"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "抓取失败：Epoch AI、Import AI、Symbotic IR（HTTP 403），国家统计局（超时）；36氪快讯、Interact Analysis 无数据。",
+  "部分 AI 条目经 AIHOT 转载，精读依据为 excerpt，未全文打开原文；a16z 一篇只读到开头。",
+  "今日未做额外 WebSearch 核实，新模型信息来自 Latent Space AINews 与 AIHOT。"
+ ]
+}
