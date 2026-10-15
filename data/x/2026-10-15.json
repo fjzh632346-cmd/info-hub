@@ -108,6 +108,53 @@
       "posted": "2026-10-14",
       "metrics": "1.6 万查看 · 145 赞 · 208 收藏",
       "textZh": "宝玉分享一个“偷师”方法：Grok 每天推送的 AI 资讯质量不错，那就直接问它“你是怎么在 X 上检索资讯、怎么判断新不新、有没有价值的？”。它的做法其实很简单：盯三类账号（AI 公司官方号、关键人物、新闻爆料号），再配一套可复制的搜索语句，覆盖模型发布、产品与 Agent、融资收购、监管安全、中文资讯等，并写明怎么判断时效和价值、按什么格式推送。再让它把流程整理成一个 Skill 就能复用。你自己在做信息网站，这套思路可以直接对照改进筛选规则。完整提示词作者放在评论区（本次没能加载出来）。"
+    },
+    {
+      "kind": "prompt",
+      "category": "视频",
+      "score": 84,
+      "author": "数字生命卡兹克",
+      "handle": "@Khazix0918",
+      "url": "https://x.com/Khazix0918/status/2110587546271191166",
+      "posted": "2026-10-15",
+      "metrics": "6.3 万查看，1300+ 收藏",
+      "textZh": "卡兹克实测开源 Skill「Anatomy」（作者 @wheresryan22，GitHub: wheresryan22/anatomy）：一句话让 Claude 把一个机械或原理做成能转动、能拆开看零件的 3D 交互动画（比如机械表、航空发动机剖面）。他进一步让 Opus 5.5 在此基础上一轮直接出带配音讲解的科普视频（机械表、显卡、TCP 三次握手、刹车），5 分钟视频约耗 Claude Max 周额度的 1%，但 Opus 最高强度要跑约 1.5 小时。安装方法：让你的 Agent“帮我安装这个 skill：https://github.com/wheresryan22/anatomy/tree/main”。作者也提醒：生成的结构和讲解不保证全对，学专业知识要核对。对学机械/物流设备原理的你，可以拿来做堆垛机、输送线这类设备的原理演示。",
+      "prompt": "/anatomy explain how a mechanical watch keeps time, interactive",
+      "promptZh": "/anatomy 做一个交互演示，解释机械表是怎么计时的",
+      "images": [
+        "https://pbs.twimg.com/amplify_video_thumb/2110583989073481728/img/ry-DuYK8MxUZQy0M.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2110584116622315520/img/_ndfPmAngMNjk_W0.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2110584361691258880/img/FPX8oDfNj37PFyqa.jpg"
+      ],
+      "video": "https://x.com/Khazix0918/status/2110587546271191166"
+    },
+    {
+      "kind": "prompt",
+      "category": "网页设计",
+      "score": 80,
+      "author": "Luneri",
+      "handle": "@itsluneri",
+      "url": "https://x.com/itsluneri/status/2110564814531797386",
+      "posted": "2026-10-15",
+      "metrics": "6.9 万查看，1400+ 收藏",
+      "textZh": "作者用同一段提示词，分别让 Opus 5.5 在“不装 / 装了 TasteSkill v2（一个提升网页审美的 Skill）”两种情况下做落地页，并放出对比视频。提示词本身很值得抄：给一张参考图当“美术方向”，要求学它的设计语言但不抄内容，并且明确列出一长串“禁止项”（紫色渐变、发光色块、毛玻璃、满屏圆角卡片、三列功能格子、空洞的营销话术等），用来避开一眼 AI 味的网页。",
+      "prompt": "Build a complete, production-quality landing page for Orbit, a project management platform for small product teams.\nOrbit combines projects, tasks, discussions, documents, and weekly progress updates in one workspace. Its core purpose is to let teams understand what is happening without constantly asking for updates or scheduling status meetings.\nTechnical requirements\nBuild the website using Next.js, React, and TypeScript.\nUse TSX components and a proper Next.js project structure. Do not create a plain HTML/CSS website.\nThe implementation should be clean, componentized, responsive, and production-quality. Use modern CSS or Tailwind CSS for styling where appropriate.\nDo not merely describe the implementation. Build the complete working page.\nVisual reference\nUse the provided reference image as the primary art-direction reference.\nMatch its overall visual character very closely: typography treatment, density, spacing philosophy, texture, contrast, borders, surface treatment, visual weight, image treatment, and general design atmosphere.\nHowever, do not copy the reference website or recreate its content.\nDo not copy its:\nbranding\ntext or copy\nlogos\nillustrations\nexact layout\nindividual components\nimagery\nproprietary visual assets\nInstead, understand the design language behind the reference and reinterpret it for Orbit.\nFor example, if the reference uses grain, paper texture, sharp borders, muted surfaces, unusual typography, dense layouts, editorial spacing, or a particular treatment of imagery, use those qualities as inspiration while creating an original design.\nThe finished page should clearly belong to the same visual world as the reference while still being an original website.\nPage\nThe hero should immediately explain Orbit and show a convincing view of the actual product.\nThroughout the page, create realistic Orbit UI showing projects, tasks, assignees, discussions, documents, statuses, deadlines, and weekly updates.\nInclude the sections that genuinely help sell the product, such as:\nHero\nProduct demonstration\n\nCore workflow\nFeatures\nTeam use cases\nIntegrations\nCustomer proof\nPricing\nFAQ\nFinal CTA\nYou may change, combine, reorder, or remove sections when doing so produces a stronger page.\nDesign quality\nAvoid the stereotypical AI-generated SaaS aesthetic.\nNo purple gradient hero.\nNo glowing blobs.\nNo glassmorphism.\nNo giant collection of rounded cards.\nNo endless 3-column feature grids.\nNo random floating icons.\nNo meaningless charts.\nNo fake AI functionality.\nNo excessive pills.\nNo generic startup illustrations.\nNo repetitive centered sections.\nDo not make every element a card or container.\nUse typography, composition, whitespace, texture, product UI, imagery, and hierarchy to create visual interest.\nThe product UI itself should be detailed and believable. Keep names, projects, dates, statuses, and other information consistent across different product previews.\nCopy should be concise and specific. Avoid phrases such as “supercharge your workflow,” “unlock your potential,” and other generic SaaS language.\nAdd subtle, intentional interactions and motion where they improve the experience. Avoid animation for animation's sake.\nMake the page excellent on desktop and mobile.\nThe final result should feel designed, not generated.\nTake the reference image seriously. Analyze its design system first, then translate that design language into an original Orbit website.\nDo not ask me to choose colors, fonts, layouts, libraries, or design direction. Make those decisions yourself and implement the complete site.",
+      "promptZh": "为 Orbit 做一个完整、可上线质量的落地页。Orbit 是给小型产品团队用的项目管理平台，把项目、任务、讨论、文档和每周进展放在一个工作区里，核心用途是让团队不用老问进度、不用开状态会就知道发生了什么。\n技术要求：用 Next.js、React、TypeScript 搭建，用 TSX 组件和规范的 Next.js 项目结构，不要做成纯 HTML/CSS 网站；代码干净、组件化、响应式；样式可用现代 CSS 或 Tailwind；不要只描述实现，要把页面真的做出来。\n视觉参考：把我提供的参考图当作主要美术方向。尽量贴近它的整体气质——字体处理、信息密度、留白思路、质感、对比度、边框、表面处理、视觉重量、图片处理和整体氛围。但不要照抄参考网站或它的内容，不要抄它的品牌、文案、Logo、插画、具体布局、单个组件、图片和专有素材。要理解它背后的设计语言，再为 Orbit 重新诠释。比如参考图用了颗粒感、纸张纹理、锐利边框、低饱和底色、特别的字体、紧凑布局、杂志式留白或特殊的图片处理，就把这些特点当灵感，做出原创设计。成品要明显和参考图属于同一个视觉世界，但仍是原创网站。\n页面：首屏要马上讲清 Orbit 是什么，并展示一个可信的真实产品界面。全页面做出逼真的 Orbit 界面，展示项目、任务、负责人、讨论、文档、状态、截止日期和每周进展。包含真正有助于卖产品的板块，比如：首屏、产品演示、核心流程、功能、团队使用场景、集成、客户证明、价格、常见问题、最后的行动号召。为了效果更好，可以改动、合并、调整顺序或删掉板块。\n设计质量：避开典型的 AI 生成 SaaS 风格。不要紫色渐变首屏、不要发光色块、不要毛玻璃、不要一大堆圆角卡片、不要没完没了的三列功能格子、不要随机漂浮的图标、不要无意义的图表、不要假的 AI 功能、不要过多的胶囊标签、不要通用的创业插画、不要重复的居中板块、不要把每个元素都装进卡片或容器。用字体、构图、留白、质感、产品界面、图片和层级来制造视觉趣味。产品界面要细致可信，不同预览里的名字、项目、日期、状态等信息要前后一致。文案简洁具体，避免“为你的工作流加速”“释放你的潜能”这类空话。只在能改善体验的地方加克制、有意图的交互和动效，不要为动而动。桌面和手机上都要好用。最终效果要像是被设计出来的，而不是被生成出来的。认真对待参考图：先分析它的设计体系，再把这套设计语言转译成一个原创的 Orbit 网站。不要让我选颜色、字体、布局、库或设计方向，你自己做决定并把整个网站做完。",
+      "images": [
+        "https://pbs.twimg.com/amplify_video_thumb/2110564564559364096/img/txLJ7RVjZSNLeTg7.jpg"
+      ],
+      "video": "https://x.com/itsluneri/status/2110564814531797386"
+    },
+    {
+      "kind": "opinion",
+      "category": "其他",
+      "score": 62,
+      "author": "a16z",
+      "handle": "@a16z",
+      "url": "https://x.com/a16z/status/2110445591293722933",
+      "posted": "2026-10-15",
+      "metrics": "3.4 万查看",
+      "textZh": "a16z 摘录 Nathan Lambert（前艾伦 AI 研究所后训练负责人之一，正在创办非营利开源模型实验室 Trillium）访谈里的五个观点：① 算力差距：他跟中国研究员说 OpenAI 普通研究员随时能用约 5000 张 H100 等效算力，对方“下巴掉到地上”；② 人才：中国实验室技术非常强，人才上很难说不对等；③ OpenAI 的长处是最早押最激进的方向，比如开启“推理模型”路线；④ 现在有 20–30 家公司能做好模型，觉得“只有我们会做”是自我安慰；⑤ 他更担心的不是 AI 自我进化，而是社会对已经存在的风险准备不足，需要更多研究让公众知情。"
     }
   ]
 }
