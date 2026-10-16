@@ -1,0 +1,236 @@
+{
+ "type": "daily",
+ "date": "2026-10-16",
+ "headline": "Meta 开放 816B 参数的 Muse Spark Open，Anthropic Q3 营收增速放缓；仓储侧沃尔玛自动化暴露包装与改造难题。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "Meta 发布开放权重模型 Muse Spark Open：816B 参数、1M 上下文，主打编程与智能体",
+     "source": "Hugging Face",
+     "published": "2026-10-15",
+     "readMinutes": 10,
+     "summary": "Meta 开放 Muse Spark Open：混合专家（MoE，每次只激活一部分参数的架构）模型，总参数约 816B、每 token 激活约 42B，上下文最长 100 万 token，可输入文本、图像、音频、视频，输出文本。Hugging Face 文章讲了怎么部署、微调，并称它是目前美国最强的开放权重模型。原文英文。",
+     "takeaways": [
+      "针对多文件重构、长时间调试等真实开发流程训练，定位是 agentic coding（智能体写代码）",
+      "提供 BF16 与 NVFP4 两个检查点；vLLM、SGLang、Together、OpenRouter 等首日支持，Apple 演示可在 Mac Studio 集群本地跑",
+      "'最强'是 Meta 和合作方的说法，Arena 的 Agent Arena 评分还未公布，暂无独立测评"
+     ],
+     "why": "你平时用 Claude 写代码、做 Agent，这篇告诉你开源模型能到什么水平、怎么自己部署，也方便判断后续是否值得换成本地或低价替代。",
+     "url": "https://huggingface.co/blog/meta-muse-spark-open",
+     "tags": [
+      "新模型"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "Microsoft AI 公布 MAI-Base-2 预训练细节：2.8T 参数 MoE",
+     "source": "Microsoft AI（经 AIHOT 收录）",
+     "published": "2026-10-15",
+     "readMinutes": 20,
+     "summary": "微软 AI 披露自研基础模型 MAI-Base-2：总参数 2.8T、激活 80B，用 16k 块 GB200 训练 38 天，平均 MFU（算力利用率）21%、goodput 89%。官方称其预训练 FLOPs 效率比 DeepSeek-V4-Pro-Base 高 4–12 倍，并详细介绍缩放阶梯、Muon 优化器、dropless MoE 等做法。目前仍在后训练，原文英文，数据均为微软自测。",
+     "takeaways": [
+      "评测用 BPB（每字节比特数，与分词器无关）在留出数据上对比，并做了去污染",
+      "用'缩放阶梯'（一组固定配方、不同规模的小模型）来验证每项改动是否有效",
+      "微软强调数据来源可溯、不蒸馏，计划通过 Foundry 授权权重给企业"
+     ],
+     "why": "想了解大模型预训练在工程上怎么做的，这是少见的完整公开材料；即使不做训练，也能帮你理解算力、效率和模型成本为何成为竞争焦点。",
+     "url": "https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/",
+     "tags": [
+      "报告",
+      "新模型"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "评测 AI 智能体：告别“凭感觉检查”",
+     "source": "Google Developers Blog",
+     "published": "2026-10-15",
+     "readMinutes": 10,
+     "summary": "Google 工程师给出智能体评测实践：从关键用户旅程（CUJ）出发拆成场景，用用户模拟器 LLM 生成测试对话，记录工具调用轨迹，再用开源 agent-eval 工具包结合人工复核与自动验证，最后接入 CI/CD 做发布门禁。指出智能体常见隐性失败如重试循环、工具参数幻觉。原文英文。",
+     "takeaways": [
+      "评测以用户目标为锚，而不是抽象基准分",
+      "单一总分无法定位原因，要拆分指标并看执行轨迹",
+      "从简单可重复的检查起步，逐步自动化"
+     ],
+     "why": "你在做 Agent 项目，这是把 demo 做成可交付产品的方法；做 AI 交付工程师（FDE）求职时，评测能力是很好的项目亮点。",
+     "url": "https://developers.googleblog.com/evaluating-ai-agents-moving-past-the-vibe-check/",
+     "tags": [
+      "教程"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "title": "Anthropic 向投资者披露 Q3 营收 168 亿美元，环比增约 45%",
+     "source": "AIHOT 整理",
+     "summary": "增速较 Q2 的 140% 明显放缓，调整后营业利润率 11%，11 月 IPO 估值预期或下调。",
+     "url": "https://aihot.news/items/allv4n9g9lhfy72m1pg725apv"
+    },
+    {
+     "title": "Gemini 4 Argon 在 ARC-AGI-3 得分 97.5%",
+     "source": "AIHOT 整理",
+     "summary": "ARC Prize 称在适配 harness 下 97.5%，标准 harness 为 49.8%；已向全球 Pro/Ultra 订阅者开放。",
+     "url": "https://aihot.news/items/cvpbhz4ao2wr6pxpthix2z15c"
+    },
+    {
+     "title": "Claude Opus 5.5 fast mode 结束预览",
+     "source": "AIHOT 整理",
+     "summary": "速度最高提升 2.5 倍，定价 8/40 美元每百万 token，已上 Microsoft Foundry。",
+     "url": "https://aihot.news/items/e2ssy0a7scpnel6ppyl3r9f2t"
+    },
+    {
+     "title": "Anthropic Code Review 正式可用",
+     "source": "AIHOT 整理",
+     "summary": "结束研究预览，面向 Claude Team 和 Enterprise 组织开放。",
+     "url": "https://aihot.news/items/wmxwoemumqiq2yfrjngl3a5rc"
+    },
+    {
+     "title": "Black Forest Labs 发布开源文生图模型 FLUX 3 Image Klein",
+     "source": "AIHOT 整理",
+     "summary": "5.6B 参数开放权重，支持文生图、图像编辑和最多 10 张参考图，已进入 Diffusers。",
+     "url": "https://aihot.news/items/ybc0etkws56yxmrveyttxz3lm"
+    },
+    {
+     "title": "阶跃星辰开放 Step 5 Preview 权重",
+     "source": "AIHOT 整理",
+     "summary": "600B 稀疏 MoE 模型，BF16 与 FP8 权重上线 Hugging Face 和 ModelScope（国内可下载）。",
+     "url": "https://aihot.news/items/v0dw619te36yzweiqtuw7pjxs"
+    },
+    {
+     "title": "蚂蚁百灵开源 Ling-3.1-flash",
+     "source": "AIHOT 整理",
+     "summary": "总参数约 560B、激活约 25B、最高 1M 上下文，称可 4 卡部署。",
+     "url": "https://aihot.news/items/hie2iw214agnrwu3mxy3t79af"
+    },
+    {
+     "title": "可灵 Kling 4.0 全量开放",
+     "source": "AIHOT 整理",
+     "summary": "新增 MCP 和 CLI 接入，可嵌入视频创作工作流。",
+     "url": "https://aihot.news/items/uoqzntmcb5v0io1g6obac7amu"
+    },
+    {
+     "title": "卡兹克实测开源 Skill Anatomy",
+     "source": "AIHOT 整理",
+     "summary": "一句话让 AI 生成可交互的原理科普动画与讲解视频，属视频类 Skill。",
+     "url": "https://aihot.news/items/kg6bx3goagkn4k8kt7jl9lqgd"
+    },
+    {
+     "title": "欧盟就模型越狱事件调查 OpenAI 和 Anthropic",
+     "source": "AIHOT 整理",
+     "summary": "欧盟 AI 办公室发出信息调取请求，最高可罚全球营业额 3%。",
+     "url": "https://aihot.news/items/yq46ddqwq7ns4ilpaqh6k0kql"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "为什么 SKU 选择决定 AS/RS 投资回报",
+     "source": "Logistics Viewpoints",
+     "published": "2026-10-13",
+     "readMinutes": 6,
+     "summary": "文章指出 AS/RS（自动化立体库/穿梭车/料箱机器人等）的价值主要在减少人工搬运，而不是存得多；选哪些 SKU 进系统，往往比选设备更决定成败。SKU 动销速度越快，每次自动存取节省的行走和搜寻越多。原文英文。",
+     "takeaways": [
+      "自动化收益来自‘被处理的频次’，高频 SKU 才有价值",
+      "立项时先做 SKU 画像（速度、尺寸、重量），再选技术",
+      "只追求存储密度会误判投资回报"
+     ],
+     "why": "物流工程课程里的 ABC 分类、拣选策略在这里直接变成项目可行性判断，面试讲自动化方案时可用。",
+     "url": "https://logisticsviewpoints.com/2026/10/13/why-sku-selection-can-make-or-break-an-as-rs-business-case/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "报道：沃尔玛的纸箱太高，放不进它的仓库机器人",
+     "source": "Supply Chain 24/7（转述华尔街日报）",
+     "published": "2026-10-14",
+     "readMinutes": 5,
+     "summary": "据华尔街日报，沃尔玛数十亿美元的仓库自动化遇到包装不匹配、机器人故障和成本上升。它将把用了 20 多年的纸箱缩短 1.5 英寸；约 200 座仓库中约 80% 的自动化项目是在不停运的情况下改造老仓库。原文英文。",
+     "takeaways": [
+      "自动化落地常卡在包装、商品多样性等‘非技术’问题",
+      "老仓库边运营边改造，复杂度极高",
+      "不同品类需要不同厂商的系统，集成成本不可忽视"
+     ],
+     "why": "真实反映大型自动化项目的难点，是理解‘方案图纸与现场差距’的好案例，适合作为课程设计或面试谈资。",
+     "url": "https://www.supplychain247.com/article/walmart-warehouse-automation-packaging-robot-costs",
+     "tags": [
+      "案例"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "2026 年仓储管理系统（WMS）市场图谱",
+     "source": "Logistics Viewpoints",
+     "published": "2026-10-14",
+     "readMinutes": 8,
+     "summary": "文章把 WMS 市场按架构和运营差异分为企业级专家型、综合供应链套件、云原生中端平台，以及与 WES（仓库执行系统）和调度编排重叠的自动化型平台，并列出评估维度：库存准确率、订单周期、吞吐、人效等。原文英文。",
+     "takeaways": [
+      "WMS 选型应看与自身运营架构的匹配，而非功能清单",
+      "四类供应商各有强弱与实施假设",
+      "WMS、WES 与自动化调度的边界正在重叠"
+     ],
+     "why": "你关注仓储自动化和供应链岗位，这篇能帮你快速建立 WMS/WES 软件格局的框架。",
+     "url": "https://logisticsviewpoints.com/2026/10/14/mapping-the-2026-warehouse-management-systems-market/",
+     "tags": [
+      "分析"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "title": "AutoStore 发布 2026 秋季新品",
+     "source": "Automated Warehouse",
+     "summary": "FlexBinsPort 让单工作站处理各种料箱高度，称可提升存储利用率 10–15%；Pio Pal 提供 RaaS 租赁。",
+     "url": "https://www.automatedwarehouseonline.com/autostore-expands-flexbinsport-capabilities-offers-pio-pal-through-raas/"
+    },
+    {
+     "title": "Symbotic 收购德国 cellumation",
+     "source": "Automated Warehouse",
+     "summary": "获得由六边形全向轮单元组成的软件控制分拣技术 celluveyor，补全端到端产品线。",
+     "url": "https://www.automatedwarehouseonline.com/symbotic-acquires-cellumation-software-driven-sortation/"
+    },
+    {
+     "title": "沃尔玛开设第 5 座新一代履约中心",
+     "source": "DC Velocity",
+     "summary": "加州 Stockton 90 万平方英尺，采用高密度自动存取系统，履约步骤从 12 步减到 5 步。",
+     "url": "https://www.dcvelocity.com/material-handling/storage/as-rs-shuttles/walmart-opens-its-5th-next-generation-fulfillment-center"
+    },
+    {
+     "title": "MH&L：AI 优化托盘拣选分配",
+     "source": "MH&L",
+     "summary": "传统 WMS 按路线分配，AI 实时组合托盘可减少跨巷道行走；偏厂商视角。",
+     "url": "https://www.mhlnews.com/warehousing/article/55409389/beyond-route-based-sequencing-how-ai-sifts-millions-of-combinations-to-build-smarter-pallet-assignments"
+    },
+    {
+     "title": "物流网络正在获得‘智能层’",
+     "source": "Logistics Viewpoints",
+     "summary": "传感器、RFID、视觉让软件无需人工上报就能掌握物流现场状态。",
+     "url": "https://logisticsviewpoints.com/2026/10/15/the-physical-logistics-network-is-getting-an-intelligence-layer/"
+    },
+    {
+     "title": "GreyOrange 收购 Site Bionics",
+     "source": "Automated Warehouse",
+     "summary": "布局零售安防数字孪生。",
+     "url": "https://www.automatedwarehouseonline.com/greyorange-acquires-site-bionics-retail-security-digital-twins/"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "抓取失败：Epoch AI、Import AI、Symbotic IR、Interact Analysis（HTTP 403），国家统计局（超时）",
+  "本次未单独 WebSearch，AI 部分主要依据 AIHOT 与 feeds；仅有 AIHOT 摘要的条目放速览",
+  "仓储一手/中文信源当日较少，精读仅依据英文行业媒体，AutoStore/Symbotic 等为厂商或行业报道",
+  "Muse Spark Open 暂无独立测评，Arena 评分未公布；Anthropic Q3 数字来自媒体转述投资者会议"
+ ]
+}
