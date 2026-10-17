@@ -34,6 +34,28 @@
       ]
     },
     {
+      "kind": "opinion",
+      "category": "编程",
+      "score": 84,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2111384189656252712",
+      "posted": "2026-10-17",
+      "metrics": "2.2 万查看 · 189 赞 · 242 收藏",
+      "textZh": "宝玉把 Anthropic 工程师 Addy Osmani 10 月 15 日的博客《How the Claude Code team does code review》讲成了一期视频，文稿放在评论区。要点：Claude Code 自己约九成代码由 Claude 写，6–9 月合并的修改翻了一倍多，需要撤回的比例反而降了四成多。做法是叠多层检查（作者用“一摞带洞的奶酪片”比喻，每层都会漏，叠起来就很难漏）：AI 写完先自己跑测试，再派一个没看过过程的新 Claude 审一遍；提交后自动跑代码规范、测试、AI 多人审查加投票、安全审查；按风险定要不要人批（改文案不用人、普通改动 1 人、高风险 2 人），AI 的批准不算人的批准；新功能先藏在开关后面分批放出，出事几分钟就能撤回。AI 审 AI 曾一晚上来回 50 多轮，后来规定最多审三轮、之后只看新改的部分。最后给个人的两条建议：给 AI 写一份简短说明（比如 CLAUDE.md，写清怎么跑测试和规则），提交前跑一下 /code-review。你平时用 Claude 写代码、做 Agent，这套流程可以直接照着搭小版本；数字是他们自己公布的，只代表一个团队。"
+    },
+    {
+      "kind": "news",
+      "category": "编程",
+      "score": 78,
+      "author": "歸藏",
+      "handle": "@op7418",
+      "url": "https://x.com/op7418/status/2111380782174683300",
+      "posted": "2026-10-17",
+      "metrics": "3.1 万查看 · 103 赞",
+      "textZh": "DeepSeek 发布 V4.1 Flash 1017 版本。按官方说法：整体能力又有明显提升，同时任务跑得更快、输出更短，同样的活花钱更少；重点宣传能从零开始做完整个项目，一句简单提示词就能做个小游戏或视频；还开放了自研的搜索 API（让程序调用它的联网搜索），歸藏认为它在国内中文信息上搜得很准，适合接进自己做的 Agent。歸藏也提醒，DeepSeek 自己出的 SWE 测评（衡量写代码能力的考卷）图上“完爆所有模型”有点离谱，自家考卷的成绩要打折看。他随后用自己给 Opus 5.5 写的游戏特效提示词试了一下，结论是细节和创意还差 Opus 5.5 不少，但能用（https://x.com/op7418/status/2111427699520749951）。对你来说：国内能直接用、价格低，适合做网站和 Agent 时当便宜的备选模型。"
+    },
+    {
       "kind": "news",
       "category": "研究",
       "score": 85,
@@ -65,17 +87,6 @@
       "posted": "2026-10-16",
       "metrics": "167 万查看 · 2762 赞",
       "textZh": "前 Google DeepMind 研究总监戴明博创办的 Elorian AI 发布第一个“视觉思考”模型 Glimpse，主打看懂会动、会换角度的画面（视频、多视角），号称在主要视觉推理测试上和 GPT-6 Astra 相当。网页版免费可用，也开放 API。有开发者用它看游戏录屏找 bug，能按时间戳列出问题。厂商说法，效果待更多人实测；做视频、图像类工作或想让 AI 检查界面效果的可以试试。"
-    },
-    {
-      "kind": "news",
-      "category": "研究",
-      "score": 66,
-      "author": "Aravind Srinivas",
-      "handle": "@AravSrinivas",
-      "url": "https://x.com/AravSrinivas/status/2111111329536987234",
-      "posted": "2026-10-16",
-      "metrics": "5.3 万查看 · 695 赞",
-      "textZh": "Perplexity CEO 宣布 Google 的 Gemini 4 Argon 已对所有 Perplexity 用户开放（快速搜索和 Computer 代理模式都能用），并称它在“宽而深的研究”测试 WANDR 上刷新最好成绩。同一天还有日本博主介绍 Google 新上线的论文评审服务 Deep Review，用 Gemini 4 Argon 帮你审论文，每周免费 2 次、每次约 20 分钟。查资料、写课程论文时可以多一个工具。"
     },
     {
       "kind": "news",
