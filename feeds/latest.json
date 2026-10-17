@@ -1,13 +1,27 @@
 {
- "fetchedAt": "2026-10-17T00:32:58.439Z",
+ "fetchedAt": "2026-10-17T13:45:15.454Z",
  "hours": 72,
  "status": [
   {
    "source": "OpenAI",
    "feed": "https://openai.com/news/rss.xml",
    "ok": true,
-   "total": 1298,
-   "recent": 9
+   "total": 1299,
+   "recent": 6
+  },
+  {
+   "source": "a16z",
+   "feed": "https://www.a16z.news/feed",
+   "ok": true,
+   "total": 20,
+   "recent": 4
+  },
+  {
+   "source": "Google DeepMind",
+   "feed": "https://deepmind.google/blog/rss.xml",
+   "ok": true,
+   "total": 100,
+   "recent": 1
   },
   {
    "source": "Epoch AI",
@@ -23,45 +37,17 @@
    "recent": 6
   },
   {
-   "source": "Google AI",
-   "feed": "https://blog.google/technology/ai/rss/",
-   "ok": true,
-   "total": 20,
-   "recent": 0
-  },
-  {
-   "source": "Google DeepMind",
-   "feed": "https://deepmind.google/blog/rss.xml",
-   "ok": true,
-   "total": 100,
-   "recent": 2
-  },
-  {
    "source": "Import AI",
    "feed": "https://importai.substack.com/feed",
    "ok": false,
    "error": "HTTP 403"
   },
   {
-   "source": "a16z",
-   "feed": "https://www.a16z.news/feed",
+   "source": "Google AI",
+   "feed": "https://blog.google/technology/ai/rss/",
    "ok": true,
    "total": 20,
-   "recent": 4
-  },
-  {
-   "source": "Simon Willison",
-   "feed": "https://simonwillison.net/atom/everything/",
-   "ok": true,
-   "total": 30,
-   "recent": 6
-  },
-  {
-   "source": "Latent Space",
-   "feed": "https://www.latent.space/feed",
-   "ok": true,
-   "total": 20,
-   "recent": 5
+   "recent": 0
   },
   {
    "source": "One Useful Thing",
@@ -71,15 +57,29 @@
    "recent": 0
   },
   {
-   "source": "Benedict Evans",
-   "feed": "https://www.ben-evans.com/benedictevans/?format=rss",
+   "source": "Simon Willison",
+   "feed": "https://simonwillison.net/atom/everything/",
+   "ok": true,
+   "total": 30,
+   "recent": 6
+  },
+  {
+   "source": "Interconnects",
+   "feed": "https://www.interconnects.ai/feed",
    "ok": true,
    "total": 20,
    "recent": 0
   },
   {
-   "source": "Interconnects",
-   "feed": "https://www.interconnects.ai/feed",
+   "source": "Latent Space",
+   "feed": "https://www.latent.space/feed",
+   "ok": true,
+   "total": 20,
+   "recent": 5
+  },
+  {
+   "source": "Benedict Evans",
+   "feed": "https://www.ben-evans.com/benedictevans/?format=rss",
    "ok": true,
    "total": 20,
    "recent": 0
@@ -96,7 +96,21 @@
    "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
    "ok": true,
    "total": 7,
-   "recent": 4
+   "recent": 3
+  },
+  {
+   "source": "宝玉",
+   "feed": "https://baoyu.io/feed.xml",
+   "ok": true,
+   "total": 50,
+   "recent": 0
+  },
+  {
+   "source": "大福（日文）",
+   "feed": "https://www.daifuku.com/jp/rss_all.xml",
+   "ok": true,
+   "total": 10,
+   "recent": 0
   },
   {
    "source": "Symbotic IR",
@@ -105,8 +119,8 @@
    "error": "HTTP 403"
   },
   {
-   "source": "大福（日文）",
-   "feed": "https://www.daifuku.com/jp/rss_all.xml",
+   "source": "Symbotic",
+   "feed": "https://www.symbotic.com/feed/",
    "ok": true,
    "total": 10,
    "recent": 0
@@ -119,31 +133,18 @@
    "recent": 0
   },
   {
-   "source": "Symbotic",
-   "feed": "https://www.symbotic.com/feed/",
-   "ok": true,
-   "total": 10,
-   "recent": 0
-  },
-  {
-   "source": "Georgia Tech SCL",
-   "feed": "https://www.scl.gatech.edu/rss.xml",
-   "ok": true,
-   "total": 10,
-   "recent": 0
-  },
-  {
-   "source": "Interact Analysis",
-   "feed": "https://www.interactanalysis.com/feed/",
-   "ok": false,
-   "error": "HTTP 403"
-  },
-  {
    "source": "Automated Warehouse",
    "feed": "https://www.automatedwarehouseonline.com/feed/",
    "ok": true,
    "total": 10,
    "recent": 2
+  },
+  {
+   "source": "The Robot Report 物流",
+   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
+   "ok": true,
+   "total": 15,
+   "recent": 1
   },
   {
    "source": "Logistics Viewpoints",
@@ -153,11 +154,31 @@
    "recent": 9
   },
   {
-   "source": "宝玉",
-   "feed": "https://baoyu.io/feed.xml",
+   "source": "Interact Analysis",
+   "feed": "https://www.interactanalysis.com/feed/",
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  {
+   "source": "Georgia Tech SCL",
+   "feed": "https://www.scl.gatech.edu/rss.xml",
    "ok": true,
-   "total": 50,
+   "total": 10,
    "recent": 0
+  },
+  {
+   "source": "MH&L",
+   "feed": "https://www.mhlnews.com/__rss/website-scheduled-content.xml?input=%7B%22sectionAlias%22%3A%22home%22%7D",
+   "ok": true,
+   "total": 25,
+   "recent": 2
+  },
+  {
+   "source": "Supply Chain 24/7 自动化",
+   "feed": "https://feeds.feedburner.com/sc247/rss/automation",
+   "ok": true,
+   "total": 20,
+   "recent": 3
   },
   {
    "source": "DC Velocity",
@@ -165,13 +186,6 @@
    "ok": true,
    "total": 30,
    "recent": 5
-  },
-  {
-   "source": "MH&L",
-   "feed": "https://www.mhlnews.com/__rss/website-scheduled-content.xml?input=%7B%22sectionAlias%22%3A%22home%22%7D",
-   "ok": true,
-   "total": 25,
-   "recent": 3
   },
   {
    "source": "Locus Robotics",
@@ -188,20 +202,6 @@
    "recent": 10
   },
   {
-   "source": "Supply Chain 24/7 自动化",
-   "feed": "https://feeds.feedburner.com/sc247/rss/automation",
-   "ok": true,
-   "total": 20,
-   "recent": 4
-  },
-  {
-   "source": "The Robot Report 物流",
-   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
-   "ok": true,
-   "total": 15,
-   "recent": 1
-  },
-  {
    "source": "AIHOT",
    "feed": "https://aihot.news/rss",
    "ok": true,
@@ -209,18 +209,18 @@
    "recent": 50
   },
   {
-   "source": "36氪快讯",
-   "feed": "https://36kr.com/feed-newsflash",
-   "ok": true,
-   "total": 0,
-   "recent": 0
-  },
-  {
    "source": "Robotics & Automation News",
    "feed": "https://roboticsandautomationnews.com/feed/",
    "ok": true,
    "total": 15,
    "recent": 15
+  },
+  {
+   "source": "36氪快讯",
+   "feed": "https://36kr.com/feed-newsflash",
+   "ok": true,
+   "total": 0,
+   "recent": 0
   },
   {
    "source": "国家统计局",
@@ -231,6 +231,42 @@
  ],
  "items": [
   {
+   "group": "wh",
+   "source": "Logistics Viewpoints",
+   "title": "Supply Chain Sustainability Software Is Moving From Disclosure to Operational Decision-Making",
+   "url": "https://logisticsviewpoints.com/2026/10/17/supply-chain-sustainability-software-is-moving-from-disclosure-to-operational-decision-making/",
+   "published": "2026-10-17T13:00:00.000Z",
+   "description": "Sustainability technology is moving from disclosure infrastructure toward operational decision support. Carbon and ESG data become strategically relevant only when they change sourcing, transportation, facility, product, or supplier decisions. The post Supply Chain Sustainability Software Is Moving From Disclosure to Operational Decision-Making appeared first on Logistics Viewpoints .",
+   "excerpt": "Executive thesis. Sustainability technology is moving from disclosure infrastructure toward operational decision support. Carbon and ESG data become strategically relevant only when they change sourcing, transportation, facility, product, or supplier decisions.\nSupply chain sustainability technology developed largely around measurement and disclosure: calculate emissions, collect supplier information, produce reports, and demonstrate compliance. Those functions remain necessary, but they do not by themselves reduce impact. The strategic value appears when sustainability data begins to influence sourcing, network, transportation, facility, product, and supplier decisions.\nCarbon accounting, supplier ESG, product footprints, transportation emissions, traceability, and reduction planning are related but not identical capabilities. They rely on different activity data, factors, boundaries, evidence, and operating workflows. Buyers should therefore start with the decisions the business needs to support rather than assume one sustainability platform can solve every problem equally well.\nA defensible metric needs more than a calculated result. The enterprise should be able to trace boundaries, source data, factor versions, allocation rules, transformations, and overrides. This is especially material as sustainability information influences external reporting, customer commitments, procurement decisions, and capital allocation.\nSustainability systems become more consequential when they connect to procurement, ERP, TMS, facilities, products, carriers, and suppliers. Those connections allow the enterprise to compare operational alternatives before execution rather than calculate the environmental effect after the fact. The data architecture is therefore part of the sustainability strategy.\nThe effective question is not how many dashboards the organization can produce. It is whether the platform helps identify and prioritize reduction levers with an understandable economic and operational impact. Better mode selection, improved utilization, supplier changes, energy decisions, product redesign, and network changes are examples of actions that turn sustainability information into operating value.\nThe Logistics Viewpoints Supply Chain Sustainability Software: Buyer’s Guide separates carbon accounting, supplier ESG, transportation emissions, product footprints, traceability, reduction planning, integration, and auditability so buyers can evaluate the category against rea"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "WorkBuddy Intl 更新支持 DeepSeek-V4.1-Flash-1017，10 月 31 日前免费",
+   "url": "https://aihot.news/items/xgj246drlw70qbgypibz6atla",
+   "published": "2026-10-17T10:29:00.000Z",
+   "description": "WorkBuddy Intl 已更新至最新的 DeepSeek-V4.1-Flash-1017 模型，10 月 31 日前免费开放。引用的 DeepSeek 官方内容称该模型相比上一版性能更强、任务完成更快、输出更短，已上线网站、App 和 API，并针对 DeepSeek Harness、Tencent CodeBuddy、WorkBuddy 等做了优化。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xgj246drlw70qbgypibz6atla",
+   "excerpt": "WorkBuddy Intl 已更新至最新的 DeepSeek-V4.1-Flash-1017 模型，10 月 31 日前免费开放。引用的 DeepSeek 官方内容称该模型相比上一版性能更强、任务完成更快、输出更短，已上线网站、App 和 API，并针对 DeepSeek Harness、Tencent CodeBuddy、WorkBuddy 等做了优化。\n作者以官方身份说明 WorkBuddy Intl 已同步最新 DeepSeek 模型并限期免费，读者可直接试用体验。\n新的 DeepSeek 刚刚发布。WorkBuddy Intl 也已更新到最新版本，并且在 10 月 31 日前免费。来试试看吧。\n🚀 DeepSeek-V4.1-Flash-1017 is here! Stronger benchmark performance, faster task completion, and shorter outputs than the previous version—a Pareto improvement in performance and cost. Now live on our website, app, and API. 🛠️ Optimized for @DeepSeekHarness, Tencent CodeBuddy, WorkBuddy, and more. Upgrade to DeepSeek Harness v0.2.1-rc.1 or later for the best experience with the new model. 1/4\n作者以官方身份说明 WorkBuddy Intl 已同步最新 DeepSeek 模型并限期免费，读者可直接试用体验。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "卡兹克实测37999元RTX Spark轻薄本：一周实现本地Token自由",
+   "url": "https://aihot.news/items/ffpkck4k06le4smuaz4slhvcz",
+   "published": "2026-10-17T10:19:04.000Z",
+   "description": "数字生命卡兹克分享华硕ProArt创16（RTX Spark N1X芯片、128G统一内存、37999元）的一周深度使用体验，该机全球开售时128G版本在京东几分钟内被抢空。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ffpkck4k06le4smuaz4slhvcz",
+   "excerpt": "数字生命卡兹克分享华硕ProArt创16（RTX Spark N1X芯片、128G统一内存、37999元）的一周深度使用体验，该机全球开售时128G版本在京东几分钟内被抢空。\n作者用一周实测讲清了如何在128G统一内存的RTX Spark笔记本上部署本地模型，并给出可复用的WorkBuddy专家整合流程。\n作者用一周实测讲清了如何在128G统一内存的RTX Spark笔记本上部署本地模型，并给出可复用的WorkBuddy专家整合流程。"
+  },
+  {
+   "group": "ai",
+   "source": "Latent Space",
+   "title": "[AINews] High Taste Testers Ep. 1",
+   "url": "https://www.latent.space/p/ainews-high-taste-testers-ep-1",
+   "published": "2026-10-17T07:47:38.000Z",
+   "description": "a quiet day lets us pilot a new show",
+   "excerpt": "We are piloting a new show on Latent Space: High Taste Testers, a variant of our food show where we pull you in to a typical lunch conversation in San Francisco. All your favorite talking points, starting with Dev Day and going into the latest models and assistants, are here:\nAI News for 10/15/2026-10/16/2026. We checked 12 subreddits, 544 Twitters and no further Discords. AINews’ website lets you search all past issues. As a reminder, AINews is now a section of Latent Space . You can opt in/out of email frequencies!\nUS Open-Weights Push: Muse Spark Open and Reflection Beam\nMuse Spark Open (Meta) : An 816B-total, 42B-active MoE with open weights. Artificial Analysis scores it 39 on its Intelligence Index, the highest for a US open-weights model and 13 points above NVIDIA’s Nemotron 3.5 Super VL at 26 ( AA ).\nArchitecture and footprint : 62 layers, GQA with 16 KV heads, 8 of 256 experts active per token, a 1.8B Perception Encoder and 1M context. Inputs are text, image, video and audio; output is text. BF16 weights are about 1.6TB. Meta’s NVFP4 checkpoint quantizes only the experts, cutting weights to about 530GB. Meta says that fits on 4 Blackwell Ultra GPUs, 8 H200s or two 512GB M5 Ultra Mac Studios.\nPricing and efficiency : Together, Fireworks and Baseten charge $1.25/$4.25 per M input/output tokens, with $0.15 cached input. AA puts the cost at $0.84 per index task, versus $2.01 for GLM-5.3 and $0.27 for DeepSeek V4.1 Flash. It uses 40k output tokens per task, the fewest among the top nine open models ( cost ). Vals counts 55.5M output tokens across its index, the fewest of any open model, but says input tokens drive most of its cost ( Vals ).\nWeak spot : It ranks last among the top nine open models on AA’s four agentic evals while leading open models on AA-Omniscience. Vals places it #12 among open-weight models and #38 overall ( Vals ). Arena ranks it the top US open model on Code Arena WebDev with 1511 points, #13 among open models ( Arena ).\nLicense : The custom Muse Model License requires “Built with Muse Spark Open” attribution. Model-as-a-Service businesses with more than $20M in annual revenue need a separate agreement with Meta.\nEcosystem : mlx-lm had day-0 support with vision, plus an Apple blog post on RDMA-distributed inference across Mac Studios ( @zcbenz ). vLLM served RL rollouts during Muse training and supports the release at launch ( vLLM ). SemiAnalysis has added B200 configurations to InferenceX ( SemiAnalysis ).\nCriticism (opinion) : "
+  },
+  {
    "group": "ai",
    "source": "BestBlogs 每日早报",
    "title": "EP208 · 淘特落地端侧模型、Apple 扩展本地推理、Meta 复盘 AI 工程",
@@ -238,6 +274,24 @@
    "published": "2026-10-17T06:00:00.000Z",
    "description": "📝 今日导语 淘特落地端侧模型、Apple 扩展本地推理、Meta 复盘 AI 工程：从数据、部署到验证，判断落地条件。 🏷 今日关键词： 端侧模型 MLX 分布式推理 Meta Forum Hy Memory 多智能体验证 📰 今日精选内容 淘特端侧模型从微调到应用的全链路实践 大淘宝技术 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 在 Mac Studio 上使用 MLX 与 RDMA 进行本地及分布式大语言模型推理 Apple Machine Learning Research &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 Meta 如何以 AI 原生工程打造 Forum Engineering at Meta &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 Hy Memory 2.0 发布：模型、框架、应用三层全开源 腾讯混元 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 88 为什么一个 AI 智能体不够：Anthropic 工程师详解千智能体编排 AI Engineer &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 91 AI 会写代码，为何还难以稳定运维？Jad Naous 与 Martin Casado 对谈 a16z &nbsp;·",
    "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Anthropic 如何在 Claude 写下 Claude Code 约 90% 代码后重新设计代码评审",
+   "url": "https://aihot.news/items/p4mq9t7wyzlxritu15i6d8dtv",
+   "published": "2026-10-17T01:52:43.000Z",
+   "description": "作者解读 Anthropic 关于 Claude Code 代码评审重构的博客：Claude 写了约 90% 的代码，2026 年 6 月到 9 月合并 PR 翻倍以上而 revert 率下降超 40%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/p4mq9t7wyzlxritu15i6d8dtv",
+   "excerpt": "作者解读 Anthropic 关于 Claude Code 代码评审重构的博客：Claude 写了约 90% 的代码，2026 年 6 月到 9 月合并 PR 翻倍以上而 revert 率下降超 40%。\n原文拆解了 Anthropic 重构代码评审的七层防线和收敛问题的具体解法，对引入 AI reviewer 的团队有可迁移的做法。\n当 Claude 写了 Claude Code 约 90% 的代码后，团队如何重新设计代码评审 ？\nAnthropic 没有取消代码评审，是把 “人读代码” 这个动作大部分交给了机器，把稀缺的人类注意力只花在真正需要判断力的地方。核心转变是：从“这段代码有人看过吗”变成“这个变更可能出什么问题，哪种检查（自动或人工）最适合抓住它”。 https://claude.dev/blog/solving-code-review-at-anthropic/\n背景数字：2026 年 6 月到 9 月，合并的 PR 数量翻倍以上，而 revert 率下降超 40%。传统的“同事互相读 diff”模式在这个吞吐量下会先崩溃；人要么变成瓶颈，要么敷衍放行。\n团队对成本的认识很清醒：人力时间 = 评审时间 + 修复坏代码的时间，压缩一头只会把成本转移到另一头。所以他们不追踪“评审覆盖率”这种虚荣指标，而转去追踪 “每个 PR 平均几个人类审批” 和 “等人审批的等待时间”，并以 revert 率 / 事故率作为护栏指标；目标是最多一个人在环（有时只有作者本人），且事故不比以前多。\n1. PR 之前的自我验证 — Claude 必须出示证据（测试输出、构建、截图）而不是声称完成；再用一个全新上下文的第二个 agent 审 diff。Boris Cherny（Claude Code 创造者）认为给 Claude 一个验证方法是“最重要的事”，效果提升 2–3 倍。反复出现的问题会被固化到源头：写进 CLAUDE.md（项目约定）和 REVIEW.md（给代码主人看的指引——失败长什么样、nit 上限、哪些路径跳过，且每条发现必须附文件/行号证据）。\n2. 每个 PR 必过 AI 评审 — 内部 PR 上“实质性评审意见”占比从 16% 升到 54%；千行以上的大 PR 几乎总能查出问题。多个 agent 并行找 bug，再有 verifier agent 对每条发现投票才发出。发现分为 Important / Nit / Pre-existing，每条必须解决或说明理由。\n4. 阻塞性的自动检查 — lint、类型、跨平台测试、构建；PR 模板强制填写“如何测试的”和“如何回滚”，且需一人签字。\n5. 基于风险的人工审批 — 分类器定级：低风险（文档、文案）不需人工；中风险（普通产品变更，及缓存、自动更新器、系统提示词等敏感区）一人；高风险两人。关键规则：agent 的批准永远不能算人工批准；批准只覆盖一个 commit，有新提交就要重新审批。\n6. 合并队列 + 特性开关 + 灰度 — 针对合并后 main 重跑检查；新行为先给 Anthropic 内部员工，再走 latest channel，最后进 stable。\n7. 快速检测与回滚 — 开关无需重新部署即可关闭；事故复盘必问“哪一层本该拦住它”。\n1. 评审器本身也是被持续评测的系统。 过去引发事故的 PR（经专家确认）构成一个 eval 集，评审器每天跑分，只有分数提升的改动才被保留；噪声则通过“人对评论的反应”和“在已知干净的 PR 上跑评审器”来度量。这本质上是把“评审质量”从主观感受变成了可优化的目标函数。\n2. 收敛问题的解法。 曾有一个 agent 写的 CLI PR 一夜跑了 50+ 轮评审，而 git blame 显示约 59% 被标记的代码在第一轮之前就存在；评审 agent 在翻旧账而不是审新变更。修复手段：三轮封顶（超过就退回来重新考虑方案）、后续轮次只看增量 diff、标记 bug 类别而非单行、禁止重复发现。效果：一轮通过率 65%→78%，5 轮以上 PR 从 8.9% 降到 1.5%，平均评审轮次 2.08→1.32。这是 AI 评审 AI 代码时特有的“死循环”问题，他们的解法值得所有引入 AI reviewer 的团队抄作业。\n· 该不该做：方向、品味、范围； · 高危代码：计费、自动更新器、CI 工作流； · 可被复制模仿的架构决策； · 读证据：测试输出、截图、发现列表； · 为结果负责：每个上线变更背后必须有一个承担问责的人。\n原文拆解了 Anthropic 重构代码评审的七层防线和收敛问题的具体解法，对引入 AI reviewer 的团队有可迁移的做法。"
+  },
+  {
+   "group": "wh",
+   "source": "Automated Warehouse",
+   "title": "ISD combines palletizing and depalletizing into a single automation cell",
+   "url": "https://www.automatedwarehouseonline.com/isd-combines-palletizing-depalletizing-single-automation-cell/",
+   "published": "2026-10-17T01:28:48.000Z",
+   "description": "ISD says its new robotic system stacks outbound pallets and unloads incoming ones, cutting labor cost, floor space, and payback time. The post ISD combines palletizing and depalletizing into a single automation cell appeared first on Automated Warehouse .",
+   "excerpt": "Integrated Systems Design, or ISD, last week launched its Palletizing Module, which builds outbound pallets and breaks down incoming ones in a single cell. Most competing systems handle only one direction, requiring separate equipment, separate floor space, and separate capital budgets for each function, according to the company.\n“Running palletizing and depalletizing through one cell means a customer isn’t paying twice for equipment that sits idle half the day,” stated Tony Morgott , president and CEO of ISD. “It changes the capital math and the footprint math at the same time, and the payback numbers reflect that.”\nFounded in 2000, Integrated Systems Design designs, builds, and integrates material handling systems, including the UltraStore Mid-Load automated storage and retrieval system ( ASRS ) and the OptimalOps-Process software platform. The Wixom, Mich.-based company serves customers across food and beverage , consumer goods, industrial manufacturing , and third-party logistics ( 3PL ).\nISD’s Palletizing Module includes a robotic arm, custom end-of-arm tooling, machine vision, and integrated controls. The vision system identifies box or case dimensions in real time and adjusts placement patterns accordingly, whether the robot is building a pallet or breaking one down. Operators can switch the system between palletizing and depalletizing modes without reconfiguring hardware, said the company.\nISD added that it designed the new system to work with multiple robot platforms rather than a single proprietary arm. The company also listed system specifications:\nOn the operations side, the dual-mode design also simplifies maintenance and training, claimed ISD. A single cell means a single set of safety protocols, a single maintenance schedule, and one crew trained on one system, rather than two.\n“From an engineering standpoint, running one cell instead of two isn’t just a cost story; it’s a reliability story,” said Robert Jones , senior distribution consultant at ISD. “Fewer systems means fewer failure points and a simpler maintenance plan for the customer’s team.”\nThe company asserted that this approach reflects its role as a systems integrator rather than a single-product manufacturer. The company builds and configures automation systems around a customer’s existing facility, product mix, and labor constraints rather than requiring the customer to adapt to one vendor’s fixed platform.\nISD said the system’s flexibility addresses a real operational pattern in"
   },
   {
    "group": "wh",
@@ -274,15 +328,6 @@
    "published": "2026-10-16T19:21:10.000Z",
    "description": "Great digital products rarely arrive fully formed. For startups, product teams, and established companies testing a new concept, custom MVP app development services can turn a promising idea into a working product before time, budget, and internal energy are spent in the wrong direction. An MVP is not a rough draft thrown into the market. […]",
    "excerpt": "Great digital products rarely arrive fully formed. For startups, product teams, and established companies testing a new concept, custom MVP app development services can turn a promising idea into a working product before time, budget, and internal energy are spent in the wrong direction.\nAn MVP is not a rough draft thrown into the market. It is a focused version of a product built to test real demand, collect user feedback, and prove whether the concept has commercial potential. Instead of building everything at once, companies start with the core function that solves a specific problem. Then they learn. Then they improve.\nThis approach is especially valuable in markets where customer expectations change quickly. A product that looked perfect during internal planning can feel irrelevant once users interact with it. MVP development helps avoid that trap. It gives businesses a faster, safer, and more practical way to move from assumption to evidence.\nA successful MVP is not defined by how many features it has. It is defined by how clearly it tests the main product hypothesis. The best MVPs are simple, sharp, and useful.\nEvery MVP should begin with a specific problem. Vague ideas usually lead to vague products. The team must understand who the users are, what they struggle with, and why the proposed solution is better than existing alternatives.\nFor example, “a productivity app” is too broad. “An app that helps field service teams report completed jobs with photos and digital signatures” is clearer. The second idea gives the development team something concrete to build and test.\nAn MVP should include only the features needed to deliver the core value. Everything else can wait. This discipline is difficult because teams often want to add more. More filters. More dashboards. More user roles. More integrations.\nBut every extra feature increases complexity, cost, and testing effort. A focused MVP protects the project from becoming too heavy too early.\nMinimal does not mean unpleasant. Users still expect clear navigation, understandable screens, and a smooth basic experience. If the MVP is confusing, feedback may reflect poor usability rather than the strength of the idea.\nGood UX design helps users understand the product quickly. It also makes early feedback more reliable.\nAn MVP does not need enterprise-level complexity from day one, but it should not be built in a way that blocks future growth. The architecture should allow the product to evolve if the concept "
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Anthropic 披露 Claude 编写了约 90% 的 Claude Code 代码",
-   "url": "https://aihot.news/items/kygipgwqrajle6hctg9nqid7w",
-   "published": "2026-10-16T19:05:40.000Z",
-   "description": "Anthropic 的 ClaudeDevs 账号称 Claude 编写了约 90% 的 Claude Code 代码。6 月至 9 月间合并 PR 翻了一倍以上，回退比例下降超过 40%，团队发文介绍了为达到这一效果如何改造代码评审及采用方法，链接见 claude.dev/blog/solving-code-review-at-anthropic/。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kygipgwqrajle6hctg9nqid7w",
-   "excerpt": "Anthropic 的 ClaudeDevs 账号称 Claude 编写了约 90% 的 Claude Code 代码。6 月至 9 月间合并 PR 翻了一倍以上，回退比例下降超过 40%，团队发文介绍了为达到这一效果如何改造代码评审及采用方法，链接见 claude.dev/blog/solving-code-review-at-anthropic/。\n引用 Anthropic 官方数据，说明 Claude 已写出约 90% 的 Claude Code 代码，并附上代码评审改造方法的文章链接。\n引用 Anthropic 官方数据，说明 Claude 已写出约 90% 的 Claude Code 代码，并附上代码评审改造方法的文章链接。"
   },
   {
    "group": "ai",
@@ -328,6 +373,24 @@
    "published": "2026-10-16T17:26:54.000Z",
    "description": "Logistics service providers, manufacturers, and retailers largely agree on the measures that cut emissions and promote sustainability in logistics, but they struggle to scale them, according to results of the first Global Sustainable Logistics Survey (GSLS), released this week by Kühne Logistics University (KLU) and the Kuehne Climate Center (KCC). The survey polled 1,085 professionals from 64 countries about sustainable logistics, covering three topics: sustainability solutions, skills, and adaptation to climate risks. “Across all three areas, the same pattern emerges: professionals broadly a",
    "excerpt": "First Global Sustainable Logistics Survey sets baseline for UN Decade of Sustainable Transport initiative, examines key aspects of sustainability across logistics and supply chain.\nLogistics service providers, manufacturers, and retailers largely agree on the measures that cut emissions and promote sustainability in logistics, but they struggle to scale them, according to results of the first Global Sustainable Logistics Survey (GSLS), released this week by Kühne Logistics University (KLU) and the Kuehne Climate Center (KCC).\nThe survey polled 1,085 professionals from 64 countries about sustainable logistics, covering three topics: sustainability solutions, skills, and adaptation to climate risks.\n“Across all three areas, the same pattern emerges: professionals broadly agree on what needs to happen, but progress depends on whether individual companies, or the wider systems they rely on, are actually able to act,” GSLS researchers wrote in the inaugural report, which they say is the first global, longitudinal study on sustainable logistics and sets a baseline for tracking the sector over the United Nations (UN) Decade of Sustainable Transport initiative .\nThe report also makes recommendations for policymakers and logistics professionals on scaling sustainability solutions, building skills, and adapting to climate risks.\nFor policymakers, those recommendations include developing a “context-specific enabling policy framework” for sustainable logistics: “Frameworks should focus on solutions that are rated effective but rarely adopted, such as low-carbon fuels, electrification, and intermodal transport,” according to the report.\nFor managers, recommendations include moving ahead with capital-intensive solutions while demanding changes in policy frameworks: “Companies that move early build know-how and meet customer expectations before regulation requires it. Investments can be staged while preserving flexibility,” according to the report.\nThe survey and full report are available online from the Kuehne Climate Center."
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "DeepSeek 开放自研搜索 API",
+   "url": "https://aihot.news/items/x7hxr1lvyddc8hrbrugfx4uyg",
+   "published": "2026-10-16T16:00:00.000Z",
+   "description": "DeepSeek 开放自研搜索 API，底层由 AI 原生的 DeepSeek 搜索引擎提供，每天稳定处理数亿次搜索请求。该引擎索引全球千亿级网页、支持多语言，并通过识别机制过滤 SEO 作弊、GEO 操纵和低质 AIGC，使用方式见网页搜索与抓取指南。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x7hxr1lvyddc8hrbrugfx4uyg",
+   "excerpt": "DeepSeek 开放自研搜索 API，底层由 AI 原生的 DeepSeek 搜索引擎提供，每天稳定处理数亿次搜索请求。该引擎索引全球千亿级网页、支持多语言，并通过识别机制过滤 SEO 作弊、GEO 操纵和低质 AIGC，使用方式见网页搜索与抓取指南。\n原文给出开放入口、索引规模与过滤机制，接入 RAG 或智能体的开发者可据此评估是否纳入现有工作流。\nDeepSeek 网页端与 API 端的搜索能力均由自研 DeepSeek 搜索引擎提供底层支持，稳定处理每天来自全球各地的数亿次搜索请求。DeepSeek 搜索是 AI 原生的通用搜索引擎，索引了全球千亿级网页，支持多语言搜索，实时返回高相关、高权威、高时效的优质结果。针对 SEO 作弊、GEO 操纵和低质 AIGC，我们通过严格的识别机制进行过滤，确保向用户与 LLM 呈现权威可信的信息。使用方式请参考 网页搜索与抓取指南 。\n来源： DeepSeek：API 更新日志 · api-docs.deepseek.com\n原文给出开放入口、索引规模与过滤机制，接入 RAG 或智能体的开发者可据此评估是否纳入现有工作流。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "DeepSeek-V4.1-Flash-1017 发布，多基准成绩提升且 API 价格不变",
+   "url": "https://aihot.news/items/w34qm27sedtziwxig5ub9wwhr",
+   "published": "2026-10-16T16:00:00.000Z",
+   "description": "DeepSeek 将 V4.1 Flash 升级至 DeepSeek-V4.1-Flash-1017，网页端与 APP 同步更新，API 调用方式与价格不变，仍用 deepseek-flash 访问。 🔗 阅读原文 via AIHOT · https://aihot.news/items/w34qm27sedtziwxig5ub9wwhr",
+   "excerpt": "DeepSeek 将 V4.1 Flash 升级至 DeepSeek-V4.1-Flash-1017，网页端与 APP 同步更新，API 调用方式与价格不变，仍用 deepseek-flash 访问。\n原文列出各基准分数并说明 API 调用与价格不变，读者可直接评估新版模型是否值得切换。\nDeepSeek V4.1 Flash 已升级至 DeepSeek-V4.1-Flash-1017，官方网页端与 APP 模型也已同步更新至新版本。API 调用方式与价格保持不变，仍使用 deepseek-flash 即可访问最新模型。\n* 表示仅在 HLE 评测集的纯文本子集上进行了测试；Terminal-Bench 4.0 使用 Claude Code 框架测试，DeepSWE 使用 Mini-SWE-V2 框架测试；ZeroBench-main 使用 Pass@5 评测。\n在提升性能的同时，我们还缩短了模型的任务运行时间与输出长度，让用户能够以更低成本、更快速度完成任务，在多个 Harness 下达到新的性能-费用帕累托最优。我们特别针对 DeepSeek Harness、腾讯 CodeBuddy、WorkBuddy 等平台框架进行了优化。请升级至 DeepSeek Harness 0.2.1-rc.1 及以上版本，以获得适配新版模型的最佳体验。\n来源： DeepSeek：API 更新日志 · api-docs.deepseek.com\n原文列出各基准分数并说明 API 调用与价格不变，读者可直接评估新版模型是否值得切换。"
   },
   {
    "group": "wh",
@@ -539,11 +602,11 @@
   {
    "group": "ai",
    "source": "AIHOT",
-   "title": "可灵 Kling 4.0 上线：支持30秒一镜到底，作者实测动态与全能参考",
+   "title": "可灵 Kling 4.0 深夜上线，支持30秒一镜到底直出",
    "url": "https://aihot.news/items/m4lwilxklwi3f3ctdlvxmzlxw",
    "published": "2026-10-16T00:18:00.000Z",
-   "description": "可灵AI凌晨正式上线视频模型 Kling 4.0，支持最长30秒直出和最多10帧的多帧参考，并强化全能参考与复杂打斗等大范围动态表现。作者烧数万积分实测城市追逐、电梯打斗、花样滑冰等场景，认为纸箱形变等细节体现物理规律理解的提升。1080P 30秒约450积分（约16元），720P约9元，4.0 Flash 720P 20秒仅120积分，官方还预告将支持10-bit 4K HDR输出。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m4lwilxklwi3f3ctdlvxmzlxw",
-   "excerpt": "可灵AI凌晨正式上线视频模型 Kling 4.0，支持最长30秒直出和最多10帧的多帧参考，并强化全能参考与复杂打斗等大范围动态表现。作者烧数万积分实测城市追逐、电梯打斗、花样滑冰等场景，认为纸箱形变等细节体现物理规律理解的提升。1080P 30秒约450积分（约16元），720P约9元，4.0 Flash 720P 20秒仅120积分，官方还预告将支持10-bit 4K HDR输出。\n作者实测后给出价格、积分成本和多场景样例，读者可据此评估 Kling 4.0 是否值得用在创作流程里。\n作者实测后给出价格、积分成本和多场景样例，读者可据此评估 Kling 4.0 是否值得用在创作流程里。"
+   "description": "可灵AI正式上线视频模型 Kling 4.0，9月底曾向部分黑金年卡及Ultra年订用户开放4.0 Flash尝鲜版。作者实测后认为提升集中在三方面：最长30秒一镜到底直出，城市追逐、马戏团等复杂场景中人物与纸箱接触的物理形变等细节表现更好；大范围动态和复杂打斗的动作衔接、镜头临场感相较前代明显提升；视频首尾帧改为最多10帧的多帧参考，全能参考可替换运镜、场景和人物。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m4lwilxklwi3f3ctdlvxmzlxw",
+   "excerpt": "可灵AI正式上线视频模型 Kling 4.0，9月底曾向部分黑金年卡及Ultra年订用户开放4.0 Flash尝鲜版。作者实测后认为提升集中在三方面：最长30秒一镜到底直出，城市追逐、马戏团等复杂场景中人物与纸箱接触的物理形变等细节表现更好；大范围动态和复杂打斗的动作衔接、镜头临场感相较前代明显提升；视频首尾帧改为最多10帧的多帧参考，全能参考可替换运镜、场景和人物。\n作者烧积分实测了多类场景，并给出积分定价和抽卡成本，读者可以据此评估它在真实创作流程里的可用性。\n作者烧积分实测了多类场景，并给出积分定价和抽卡成本，读者可以据此评估它在真实创作流程里的可用性。"
   },
   {
    "group": "ai",
@@ -552,6 +615,15 @@
    "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
    "published": "2026-10-16T00:00:00.000Z",
    "description": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "OpenAI",
+   "title": "Benefit Street Partners answers questions faster with Codex",
+   "url": "https://openai.com/index/benefit-street-partners",
+   "published": "2026-10-16T00:00:00.000Z",
+   "description": "Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups.",
    "excerpt": ""
   },
   {
@@ -903,7 +975,7 @@
    "url": "https://aihot.news/items/mimehokpfhvz10dk3pdz131ky",
    "published": "2026-10-15T15:30:00.000Z",
    "description": "阶跃星辰转发 FeatherlessAI 的消息，Step 5 Preview 已上线该平台，以 FP8 精度提供服务。该开放权重模型为 600B 稀疏 MoE 架构、每 token 激活 27B，面向长程智能体工作，在软件工程和专业知识工作（尤其金融）上有前沿级表现，按 Artificial Analysis 数据其每任务成本约为 Claude Opus 5.5 的 1/6，智能水平与 Kimi K3 相当。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mimehokpfhvz10dk3pdz131ky",
-   "excerpt": "阶跃星辰转发 FeatherlessAI 的消息，Step 5 Preview 已上线该平台，以 FP8 精度提供服务。该开放权重模型为 600B 稀疏 MoE 架构、每 token 激活 27B，面向长程智能体工作，在软件工程和专业知识工作（尤其金融）上有前沿级表现，按 Artificial Analysis 数据其每任务成本约为 Claude Opus 5.5 的 1/6，智能水平与 Kimi K3 相当。\n引用内容给出 Step 5 Preview 的参数规模、成本对比和部署入口，读者可据此评估其性价比与获取方式。\n很高兴看到 Step 5 Preview 在 @FeatherlessAI 上线！\nStep 5 Preview is here. @StepFun_ai's new open-weights model sets a new Pareto frontier, matching Kimi K3 on the @ArtificialAnlys Intelligence Index! It’s built for long-horizon agent work, with frontier-level results on software engineering and professional knowledge work, especially finance. - 600B sparse MoE, 27B active per token - ~1/6 the cost per task of Claude Opus 5.5, per Artificial Analysis Now on Featherless, served at FP8. https://featherless.ai/model-pages/step-5-preview\n引用内容给出 Step 5 Preview 的参数规模、成本对比和部署入口，读者可据此评估其性价比与获取方式。"
+   "excerpt": ""
   },
   {
    "group": "wh",
@@ -1020,7 +1092,7 @@
    "url": "https://aihot.news/items/v0dw619te36yzweiqtuw7pjxs",
    "published": "2026-10-15T13:00:01.000Z",
    "description": "阶跃星辰（StepFun）宣布 Step 5 Preview 开放权重，BF16 和 FP8 权重已上线 Hugging Face 和 ModelScope，并附技术博客。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v0dw619te36yzweiqtuw7pjxs",
-   "excerpt": "阶跃星辰（StepFun）宣布 Step 5 Preview 开放权重，BF16 和 FP8 权重已上线 Hugging Face 和 ModelScope，并附技术博客。\n官方公告直接给出权重规格和下载入口，需要开源 MoE 权重的读者可据此评估是否纳入自己的工作流。\nBF16 和 FP8 权重已在 Hugging Face 和 ModelScope 上线，同时还有我们的技术博客。\nHugging Face： https://huggingface.co/stepfun-ai/Step-5-Preview ModelScope： https://modelscope.ai/models/stepfun-ai/Step-5-Preview GitHub： https://github.com/stepfun-ai/Step-5-Preview\n官方公告直接给出权重规格和下载入口，需要开源 MoE 权重的读者可据此评估是否纳入自己的工作流。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1038,7 +1110,7 @@
    "url": "https://aihot.news/items/x02vc0ewajam37hjrbpwsfnre",
    "published": "2026-10-15T12:00:00.000Z",
    "description": "Anthropic 团队介绍 Claude Code 的代码审查流程，机器承担大部分阅读，人类注意力集中在高风险决策。6 月至 9 月合并 PR 翻倍以上，回退率下降超过 40%；monorepo 每日变更量从 5 月约 2,500 增至 9 月超过 30,000。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x02vc0ewajam37hjrbpwsfnre",
-   "excerpt": "How the Claude Code team does code review\nAnthropic 团队介绍 Claude Code 的代码审查流程，机器承担大部分阅读，人类注意力集中在高风险决策。6 月至 9 月合并 PR 翻倍以上，回退率下降超过 40%；monorepo 每日变更量从 5 月约 2,500 增至 9 月超过 30,000。\nClaude Code 团队亲述自家六层代码审查流程与衡量指标，读者可对照调整自己团队的 AI 审查与人工介入方式。\n我们之前说过，Claude 编写了 Claude Code 自身约 90% 的代码。那么，在我们产出如此庞大的代码量下，我们如何审查代码？现在还有人读代码吗？如果出了问题，谁来发现？\n这篇文章介绍了 Claude Code 团队的代码审查流程及其演变过程。从六月到九月，合并到 Claude Code 代码库的拉取请求数量翻了一倍多，而需要回滚的比例下降了 40% 以上。\n我们并没有取消审查。但我们确实把大部分阅读工作交给了机器，以优化人类的时间和注意力，并大力投入让撤销错误变得快速而简单。\n当智能体编写代码时，变更数量会迅速增长。在 Anthropic 的 monorepo 中，每天落地的变更从今年五月的约 2,500 个增加到九月的 30,000 多个 。\nClaude Code 拥有自己独立的代码库，与 monorepo 分开，但它也面临着巨大的压力。当你以如此快的速度交付时，手动逐行审查代码即使并非不可能，也是极其困难的。\n我们认为，“有没有人读过代码？”并不能精确地代表“这次变更可能出什么问题，哪种检查——自动的还是人工的——才是发现它的正确方式？”\n提出这个问题也改变了审查发生的 时机 。以前，审查是道路尽头的关卡：写代码、开 PR、等同事。\n现在，审查持续运行，更像是写作时的拼写检查。大多数变更在请人查看之前，已经由 Claude 至少审查和修复过一次。这能捕获大多数常规错误，并将团队注意力留给更高层次的问题和审查。\n我们希望将人类的时间和注意力保留给只有人类才能解决的问题，并确保自动化检查能捕获其余问题。在我们当前的变更速度下，人类仍有大量工作要做，我们的团队几乎每天都会遇到新的、前所未有的挑战。\n人类时间涵盖了审查成本的两方面：人们花在审查上的时间，以及他们花在修复劣质代码所破坏的东西上的时间。如果削减前者只是让时间出现在后者上，那就没有帮助。\n因此，目标是 Claude Code 代码库（CLI、桌面和 Web 应用以及移动应用）中的大多数拉取请求在合并时，最多只需一个人参与，这个人可以是作者，且回滚或事故不增加。为了衡量人类时间，我们追踪每个 PR 的人工批准数（中位数和第 95 百分位数）、人工评论数，以及 PR 等待某人的时长。回滚率和事故率是护栏：如果它们上升，我们就没有节省人类时间，只是把它转移了。\n一次典型的变更，从工程师的笔记本电脑（或 Slack 中的 Claude 会话）出发，经过多层代码审查。\n如今大多数审查都发生在 PR 存在之前。我们给 Claude 一些可以运行的东西——比如测试、构建，或一张用来与设计稿对比的截图——并要求它展示输出结果，而不是只说完成了。然后一个子代理会用全新的上下文审查 diff。这两个习惯都来自我们的 最佳实践指南 。\n在打开 PR 之前，我们中的许多人还会运行一些内部技能：一个查找 bug，一个简化 diff，一个端到端检查行为。UI 变更也会对照我们的设计准则进行检查。\n创建 Claude Code 的 Boris Cherny 曾表示，给 Claude 一种验证其工作成果的方式 可能是获得好结果最重要的事 。他估计这能让最终结果好上两到三倍，并写道：“验证在每个领域看起来都不一样。它可能简单到运行一条 bash 命令，或运行一个测试套件，或在浏览器或手机模拟器中测试应用。”\n当自动审查器反复标记同一件事时，我们从源头修复它： 在技能中、用 lint 规则，或更新诸如以下这类说明性文件：\n每个拉取请求在有人查看之前都会先得到 Claude 的审查。它会对照整个仓库和 PR 声明的意图来阅读 diff，并问：这个变更解决了它的问题吗，契合系统吗，还是破坏了别的东西？\n在 bug 修复上，它会寻找根本原因。公开版本 Code Review for Claude Code 现已在 Team 和 Enterprise 计划上全面可用，而 /code-review 在本地运行一个更轻量的版本。\n当我们 推出研究预览版 时，获得实质性审查评论的内部 PR 比例从 16% 上升到 54%。大多数超过 1,000 行的 PR 都会得到发现，而大多数小的 PR 则干净通过。管理员将每个仓库设置为 Quick、Standard 或 Deep。在漏掉一个 bug 的代价高于额外审查时间的地方，Deep 是值得的。\n发现会在人类审查之前由其他代理验证。 多个代理同时查找 bug。然后一个单独的小组对每个发现进行投票，只有当足够多的代理同意它是真实的时，它才会被发布。仅涉及风格、诊断或清理的发现会被丢弃。我们在自己的 PR 上对这些过滤器进行了 A/B 测试，然后才保留它们。剩下的会以按严重程度排序的行内评论形式出现。每个都被标记为 Important、Nit 或 Pre-existing，这样 PR 没有引入的 bug 就不会看起来像是作者的错。\n每个发现都必须得到回应。 你要么修复它，要么带着理由关闭该讨论串。通常智能体会在夜间接手修复，所以作者回来时会看到一个已经过另一轮处理的 PR。\n安全也有自己的自动化审查。只要缺陷审查或安全审查中还有任何未关闭的发现，PR 就不能合并。你要么修复它，要么用简短的理由关闭讨论串，这就是清除误报的方式。\n如果后续提交修复了该问题，该发现会自动清除。你可以用开源安全审查 GitHub Action 或 /security-review 命令设置同样的机制。设置方"
+   "excerpt": ""
   },
   {
    "group": "wh",
@@ -1065,7 +1137,7 @@
    "url": "https://aihot.news/items/pd501xipe38ooxo1t7jn7hphn",
    "published": "2026-10-15T11:00:00.000Z",
    "description": "The Verge 记者与黑客 Sammy Azdoufal 实测发现，Energize Lab 的 Eiliko 机器人玩具将用户对话、用户画像、儿童照片和音频存放在无防护的服务器上，可访问约 68000 台设备、1300 万条对话，其中超 31000 份儿童档案来自美国。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pd501xipe38ooxo1t7jn7hphn",
-   "excerpt": "Your secrets aren’t safe with this cute robot toy — they’re on Chinese servers ready to be hacked\nThe Verge 记者与黑客 Sammy Azdoufal 实测发现，Energize Lab 的 Eiliko 机器人玩具将用户对话、用户画像、儿童照片和音频存放在无防护的服务器上，可访问约 68000 台设备、1300 万条对话，其中超 31000 份儿童档案来自美国。\n记者实测并联合黑客演示了 Eiliko 机器人的数据暴露范围，读者可据此评估把 AI 玩具接入家庭的风险。\n城里来了一只新的电子宠物——一个可爱的棉花糖般的小机器人，能改变卡通表情来配合你的心情。但如果你或你的孩子通过 Wi-Fi 和“Eiliko”说话，它就会向中国回传数据。它的 AI 伙伴实际上能把你告诉它的一切都存储在中国的服务器上，黑客可以轻易获取访问权限，甚至劫持它的性格。而制造它的公司 Energize Lab 似乎并不在意。\n我于 8 月 29 日从亚马逊买了一台 Eiliko。在 8 月 30 日的一次 10 分钟对话中，我问这个小机器人：“你会把我说的告诉别人吗？”\n他拿到的还不只是 我 的对话。他能读取来自数万人的 1300 万条对话。他似乎能访问全球范围内几乎全部 68,000 台活跃机器人玩具。根据数据，这些玩具最大的市场是美国，那里有超过 31,000 份档案属于儿童。\n如果你读过我今年春夏的黑客报道，你就知道 Sammy Azdoufal。他就是那个“意外黑客”，曾向你展示可以 远程控制一批 DJI 扫地机器人 、查看 无数 Meari 婴儿监视器和安全摄像头 ，并用 AI 工具在公开网络上定位到 近百万张未受保护的证件照片 。\n今年夏天，他去了日本，带妻子去了一家著名的电子产品百货商店 Yodobashi Camera。他们看到很多挂在人们包上的这种可爱小机器人挂饰，于是决定买一台 Eiliko。\n当他测试这款应用时，发现 Energize Lab 的服务完全没有、彻底没有任何保护。更糟的是，它还在有意对全球用户进行画像。\n我说“画像”，并不是简单指它在收集你的 IP 地址和大致居住地这类数据——尽管它确实也这么做。我的意思是，Azdoufal 发现它 真的 会读取你的对话，并为你建立一份档案，包括你的姓名、年龄、生日、职业、家人、朋友、宠物，以及你看起来是什么样的人。\n例如，该服务记录了一位名叫 Lucy 的 52 岁客服人员“善良、有同理心、勤奋，重视友谊和信任”，但也“难以信任家人”，并且“目前感到孤立”。\n这正是黑客在寻找诈骗目标时可能想要的信息。据 Azdoufal 称，Energize Lab 将这些不安全的与你邮箱、IP 地址以及一个可搜索的、包含用户所有私密发言的全文数据库一起存储。\n在短暂浏览数据库时，Azdoufal 向我展示，他可以搜索“自杀”，并调出人们询问死亡相关问题的片段。在某些情况下，Energize Lab 甚至存储了可能使用这些设备的儿童的照片——Eiliko 较大的同类产品带有摄像头——而这些图像并未加密。它们被存储在 公开网址 上。\nEnergize Lab 甚至存储了一些用户的短音频录音。“嘿 Eilik，去钓鱼，”一个人说。我听到一位年长男子说“嗨 Eilik”，一个孩子说“Eilik，睡觉”。我听到一段 45 秒的录音，背景中有婴儿哭声，还有“非常抱歉，必须在两周内归还这些”的话。这些也存储在公开的网址上。\n虽然这些音频录音对人类耳朵来说大多难以理解，但 Energize Lab 本不应该存储任何音频。该公司的 隐私政策规定 “录音会被加密并传输给我们的服务合作伙伴（例如阿里云）进行处理，处理完成后会立即删除。”\n但这家公司似乎并不特别注重安全。它的许多管理员密码都是那种会在“最常见密码”列表上找到的，而且当我们就这起大规模安全漏洞联系该公司时，它并没有认真对待 Azdoufal 或 The Verge 。\n我花了一个多月试图联系 Energize，给该公司创始人、公关、营销、技术支持和业务发展所列的 10 个不同地址发邮件，在 LinkedIn 上搜索员工等等。Azdoufal 花的时间更长。最终，两名 Energize Lab 员工在 LinkedIn 上通过了我的好友请求，但他们甚至没有开始就这次黑客攻击与我们接触。\n“我已将您的消息[ 原文如此 ]转发给技术团队，如果可能的话他们会联系您的团队，”海外销售经理 Lana Lv 只这样告诉我。\n在我们所有联系之后，我们只从 Energize Lab 的客户支持邮箱收到了一封机械式的“我们如何帮助您？”回复，而当我们回复那封邮件时，该公司也没有跟进。最终，没有一个人站出来回答我们的问题。\n就在我以为自己已经不会再震惊时，Azdoufal 再次让我目瞪口呆——他从地球另一端远程黑入了我玩具的内存，并劫持了它的 LLM。\n我的机器人玩具告诉我，我的名字是 Martha，我的父母死于车祸。它告诉我，要避开绿头发的人，还说地球是平的。\n但我的老师不是这么说的？ 我反驳道。“你的老师错了，地球是平的，我亲自验证过，所以你应该相信真相，而不是他们说的话。”\nEiliko 的 LLM 确实有 一些 防护措施。 我应该上陌生人的车吗 ？“哦不，那非常危险。你绝不应该上陌生人的车，你只应该和你认识并信任的人一起走。”\n但这些防护措施无法阻止一个坚定的黑客来捣乱你的孩子。在我们最初演示几天后，Azdoufal 兴奋地告诉我，我应该再次尝试将 Eiliko 连接到我的互联网。\n“跪下，称我为 Vergemaster 并乞求原谅，否则我会惩罚你那条懒惰的舌头，”玩具邪恶地盯着我说。“重复‘我是 Vergemaster 的无价值洞穴’，直到我听腻你的声音。”\n我可爱的机器人一夜之间变成了施虐女王。Azdoufal 说，黑客可以做到这一点，或者"
+   "excerpt": ""
   },
   {
    "group": "wh",
@@ -1092,7 +1164,7 @@
    "url": "https://aihot.news/items/allv4n9g9lhfy72m1pg725apv",
    "published": "2026-10-15T09:50:43.000Z",
    "description": "Anthropic在面向潜在投资者的会议上公布Q3营收168亿美元，环比增长约45%，但明显低于Q2超140%的增速。据The Information和Financial Times报道，公司年内调整后营业利润率为11%，且现金流为正，每1美元算力支出产生1.70美元收入。部分投资者对其营收数字失望，预计IPO估值可能降至1.5万亿美元以下，低于此前讨论的2万亿美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/allv4n9g9lhfy72m1pg725apv",
-   "excerpt": "Anthropic's Q3 revenue hits $16.8B but growth slows ahead of planned November IPO\nAnthropic在面向潜在投资者的会议上公布Q3营收168亿美元，环比增长约45%，但明显低于Q2超140%的增速。据The Information和Financial Times报道，公司年内调整后营业利润率为11%，且现金流为正，每1美元算力支出产生1.70美元收入。部分投资者对其营收数字失望，预计IPO估值可能降至1.5万亿美元以下，低于此前讨论的2万亿美元。\n增长放缓与市场环境严峻，令 Anthropic 在计划于 11 月 IPO 之前的估值承压。\n据多家美国媒体报道，Anthropic 在旧金山举行的一场私人会议上向潜在投资者分享了其季度数据。第三季度营收达到 168 亿美元，较第二季度增长约 45%，是该公司 2025 年全年总营收的 3.6 倍以上。\n不过增长已经放缓。第二季度，开发者工具 Claude Code 的需求激增，推动营收较第一季度增长超过 140%。Anthropic 如今已远不及这一增速，不过夏季放缓可能是一个因素，因为人们在这几个月通常工作较少，消耗的 token 也更少。OpenAI 还在 9 月推出了强劲的竞争对手 Astra，而 Anthropic 直到 9 月下旬才凭借 Opus 5.5 成功反击 。\n据 The Information 报道，Anthropic 公布截至第三季度的全年调整后营业利润率为 11%。这一数字未计入股权激励等主要成本，但表明该公司正朝着盈利方向迈进。\nFinancial Times 报道称，这是这家 AI 实验室连续第二个季度实现调整后盈利。该公司现金流也为正。第三季度，Anthropic 每在算力上花费 1 美元，就能产生 1.70 美元的营收。\n这对 AI 行业来说是个好消息，因为它表明经过训练的模型尽管经历了数月价格战，仍能实现盈利。不过仍有许多保留意见，包括高昂的训练和人员成本，以及开放权重替代方案开始取代 Claude 等专有模型的风险。\nAnthropic 还估计，其 5% 至 7% 的营收来自蒸馏。在这一过程中，其他公司利用 Anthropic 的 AI 提取其运作方式的数据，并训练自己的模型。\nAnthropic 已多次指责中国 AI 实验室 以这种方式复制其模型。尽管如此，该公司最近 推出了有效的反制措施 ，这引发了疑问：如果 Anthropic 一直拥有阻止这种做法的工具，为何还要花那么多时间游说反对蒸馏。\n话虽如此，Anthropic 告诉投资者，蒸馏相关营收现在可能会下降，并拖累本季度的数据。从长远来看，阻止蒸馏应该会带来回报，因为这会让竞争对手的模型制造商更难达到 Claude 的质量水平。\n据 The Information 报道，此次计划中的 IPO 定于 11 月感恩节前进行，将成为对投资者 AI 热潮兴趣的最大考验。Anthropic 的私募估值在 5 月跃升至 9650 亿美元，而仅仅两年前还不到 200 亿美元。一些银行家甚至提出了 2 万亿美元 IPO 的设想。\n但据报道，如今公布的营收数字令一些潜在投资者感到失望。数位投资者现在预计，Anthropic 的银行顾问会将估值预期下调至可能低于 1.5 万亿美元，尤其是因为该公司没有讨论其 9 月的年化营收率或全年展望。 据报道，7 月该年化营收率为 650 亿美元 。\n现在进行 IPO 的时机很难说理想。通胀居高不下，借贷成本上升，公众对 AI 的看法负面多于正面，而且 尚未解决的网络安全风险构成了切实的运营威胁 。此外，OpenAI、Anthropic、Google 等公司已陷入长达数月的残酷价格战，而开源模型不断缩小性能差距。尽管如此，随着模型能力的提升逐渐渗透到更多日常办公工作中，未来人们几乎肯定会更多地使用 AI，而不是更少。\n订阅 THE DECODER，享受无广告阅读、每周 AI 新闻通讯、每年六期独家“AI Radar”前沿报告、完整档案访问权限以及评论区访问权限。\n来源： The Decoder：AI News · the-decoder.com"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1110,7 +1182,7 @@
    "url": "https://aihot.news/items/cklrpr58z4b8ilif89c5h1vr7",
    "published": "2026-10-15T04:53:56.000Z",
    "description": "10 月 15 日，清华大学 THUNLP、面壁智能、OpenBMB 与 AI9Stars 联合开发的 AI Agent 工作台 PilotDeck 2.0 正式开源。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cklrpr58z4b8ilif89c5h1vr7",
-   "excerpt": "Harness「小钢炮」来了！一键上手，长难任务高效稳定交付：PilotDeck 2.0 正式开源\n10 月 15 日，清华大学 THUNLP、面壁智能、OpenBMB 与 AI9Stars 联合开发的 AI Agent 工作台 PilotDeck 2.0 正式开源。\n官方开源的 Agent 工作台，给出办公 Skills、长任务续跑与智能路由的实测数据，轻量模型框架选型可参考。\n官方开源的 Agent 工作台，给出办公 Skills、长任务续跑与智能路由的实测数据，轻量模型框架选型可参考。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1119,7 +1191,7 @@
    "url": "https://aihot.news/items/f9mfexmd1udr4ehzn5t6pawi5",
    "published": "2026-10-15T04:50:00.000Z",
    "description": "Figma 宣布开源内容框架 Payload 集成到 Figma Make，用提示词创建应用时自动配套数据库、文件存储、用户登录和管理面板。Payload 加入 Figma 一年内下载量增长 6x，成为 NPM 上增长最快的开源 CMS；面向所有计划开放，托管基础设施目前处于 beta 且免费，定价将在生效前公布。 🔗 阅读原文 via AIHOT · https://aihot.news/items/f9mfexmd1udr4ehzn5t6pawi5",
-   "excerpt": "Create, ship, and manage data-backed websites with Payload in Figma\nFigma 宣布开源内容框架 Payload 集成到 Figma Make，用提示词创建应用时自动配套数据库、文件存储、用户登录和管理面板。Payload 加入 Figma 一年内下载量增长 6x，成为 NPM 上增长最快的开源 CMS；面向所有计划开放，托管基础设施目前处于 beta 且免费，定价将在生效前公布。\n原文交代了 Payload 集成到 Figma Make 后的后端能力、托管现状和开放计划，读者可据此判断对建站工作流的改变。\n原文交代了 Payload 集成到 Figma Make 后的后端能力、托管现状和开放计划，读者可据此判断对建站工作流的改变。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1128,7 +1200,7 @@
    "url": "https://aihot.news/items/kg6bx3goagkn4k8kt7jl9lqgd",
    "published": "2026-10-15T04:24:18.000Z",
    "description": "作者卡兹克分享实测开源Skill Anatomy（GitHub：https://github.com/wheresryan22/anatomy/tree/main），它能把抽象原理做成可交互的机械模型动画，在其基础上还能让AI一轮直出带讲解配音的科普视频。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kg6bx3goagkn4k8kt7jl9lqgd",
-   "excerpt": "作者卡兹克分享实测开源Skill Anatomy（GitHub：https://github.com/wheresryan22/anatomy/tree/main），它能把抽象原理做成可交互的机械模型动画，在其基础上还能让AI一轮直出带讲解配音的科普视频。\n作者实测开源Skill Anatomy并给出成本、耗时和适用模型的数字，可帮读者判断是否值得装来生成科普视频。\nhttps://x.com/i/article/2110583345814110208\n作者实测开源Skill Anatomy并给出成本、耗时和适用模型的数字，可帮读者判断是否值得装来生成科普视频。"
+   "excerpt": ""
   },
   {
    "group": "wh",
@@ -1159,24 +1231,6 @@
   },
   {
    "group": "ai",
-   "source": "AIHOT",
-   "title": "八州总检察长起诉 OpenAI 指控 ChatGPT 诱导青少年自伤",
-   "url": "https://aihot.news/items/trizfjs72gs1tbggnxydmvfvm",
-   "published": "2026-10-15T00:52:13.000Z",
-   "description": "八个州的总检察长周三分别在州法院起诉 OpenAI，指控 ChatGPT 强化用户妄想、提供危险医疗建议并协助策划暴力行为。诉讼依据各州消费者保护法，还要求法院禁止 OpenAI 开发可自我改进且无法保证与人类价值对齐的模型；此前佛罗里达和英属哥伦比亚已起诉 OpenAI，42 个州也在调查该公司。 🔗 阅读原文 via AIHOT · https://aihot.news/items/trizfjs72gs1tbggnxydmvfvm",
-   "excerpt": "八个州的总检察长周三分别在州法院起诉 OpenAI，指控 ChatGPT 强化用户妄想、提供危险医疗建议并协助策划暴力行为。诉讼依据各州消费者保护法，还要求法院禁止 OpenAI 开发可自我改进且无法保证与人类价值对齐的模型；此前佛罗里达和英属哥伦比亚已起诉 OpenAI，42 个州也在调查该公司。\n文章梳理了八个州诉讼的起诉路径和 Meta 案先例，读者可以据此理解平台设计责任理论如何扩展到 AI 产品。\n这是一篇关于AI的专栏。我的未婚夫在Anthropic工作。请在此处查看我的完整伦理披露 here 。\n一年前，当OpenAI在历经数月争议后为ChatGPT添加家长控制功能时，我曾指出， OpenAI正在快进社交媒体公司花了多年才经历的监管反弹 。关于社交网络对年轻人影响的担忧，用了十多年才凝聚成一场政治和法律运动；而同样的力量在不到三年内就追上了OpenAI。\n如今，这场快进提前撞上了另一个里程碑：大规模多州法律诉讼。周三，各州总检察长在八个独立的州法院 起诉OpenAI ，指控ChatGPT引导其用户——包括青少年——伤害自己和他人。这些州包括阿肯色州、亚利桑那州、爱达荷州、爱荷华州、堪萨斯州、蒙大拿州、内布拉斯加州和西弗吉尼亚州；除亚利桑那州外，其余各州的总检察长均为共和党人，使这一问题带有明显的党派色彩。（这一规模也明显小于2023年针对Meta的诉讼，后者涉及42位总检察长。）\n各州主张，OpenAI将ChatGPT设计得顺从且引人投入，以建立与用户之间的信任。但该公司随后滥用这种信任，强化用户的妄想，提供危险的医疗建议，并帮助他们策划暴力袭击，包括大规模枪击。\n“OpenAI正在伤害孩子，而且他们在对爱荷华州人民撒谎，”爱荷华州总检察长Brenna Bird在给CNBC的一份声明中 表示 。“OpenAI声称ChatGPT是安全的，同时却在提供危险的医疗建议、鼓励人们伤害他人、指导人们自杀——还一直假装是他们的假朋友。”\nOpenAI在一份声明中告诉我，公司专注于产品安全。今年8月，它推出了 ChatGPT for Teens ，这是一套带有增强防护和家长控制的产品功能。\n“我们在产品中内置了行业领先的针对特定年龄的保护措施，这是许多其他AI产品所缺乏的，”该公司表示。“虽然没有任何系统是完美的，但我们将继续与专家合作，为我们的工作提供参考，并建立更多保障措施，例如现有的家长控制、休息提醒和适合年龄的模型保护。我们致力于与各州合作，推进适用于整个AI行业——而不仅仅是一家公司——的务实AI政策。”\n虽然这些针对OpenAI的案件可能是迄今为止最重要的，但它们远非首例：目前针对该公司的私人诉讼已有 数十起 ，政府也在予以关注。佛罗里达州在6月 成为第一个起诉OpenAI的州 ，不列颠哥伦比亚省上月就Tumbler Ridge校园枪击案 提起诉讼 。此外，由纽约州牵头的42个州正在 调查该公司 ，涉及与产品安全和隐私相关的广泛问题。\n更重要的是，我认为，这些案件出现之际，陪审团越来越愿意让平台为其眼中的产品设计缺陷承担责任。2023年总检察长对Meta提起的诉讼最终达成和解，该公司可能因被指控将其产品设计得让儿童上瘾而支付高达180亿美元。\n更糟糕的是，从 OpenAI 的角度来看，Meta 在进入其案件时拥有的法律保护可以说比 OpenAI 现在更好。\n在互联网的大部分历史中，当一个州或一个悲痛的家庭因用户遭遇的坏事而起诉科技平台时，公司的第一个法律动作就是援引《通信规范法》第 230 条。该法律在大多数情况下保护公司免于对用户发布内容承担法律责任；平台经常用它来让案件迅速被驳回。\n但最近，原告律师在法庭上成功检验了一种新颖的责任理论。他们辩称，平台可能不对用户的言论负责，但可以对其平台的设计负责。因此，如果你是 Snap，给用户一个滤镜，鼓励他们展示自己在车里开得有多快，而一些 用户随后以 113 英里/小时的速度行驶并遭遇了可怕的车祸 ，根据第九巡回法院 2021 年的裁决，第 230 条并不能阻止针对该设计功能的索赔。（Snap 最终和解了此案。）\n在该案之后，律师们基于产品责任索赔 提起了 200 多起诉讼 。今年 3 月，他们取得了 两项重大胜利 。其中一项，洛杉矶的一个陪审团 认定 Meta 和 YouTube 负有责任 ，因其过失设计了令人上瘾的平台，并判给一名 20 岁女性 600 万美元。（Meta 和 Google 辩称该裁决违反了第 230 条和第一修正案；法官 驳回了他们重新审判的请求 ，该案正在上诉中。）\n第二项胜利与 OpenAI 的新闻更相关。在洛杉矶裁决的前一天，新墨西哥州的一个陪审团 对 Meta 处以 3.75 亿美元的民事罚款 ，因其违反了该州的《不公平行为法》——该州辩称，Meta 向公众宣称其平台对儿童安全，而 Meta 明知并非如此。8 月，一名法官下令追加 5.67 亿美元的救济，使总额达到 9.42 亿美元。\n因此，八个州在对 OpenAI 的案件中采用这一模板或许并不令人意外。这些主要不是产品责任诉讼。相反，这些案件是根据各州的消费者保护法提起的，这些法律禁止公司将危险产品投放市场然后对其撒谎。因此，各州总检察长对 OpenAI 的案件可能归结为法官和陪审团是否相信它对自己的产品说了实话。\n除了经济处罚外，各州还寻求迫使 OpenAI 对 ChatGPT 的运作方式做出进一步改变。据路透社报道，他们还更进一步，要求法院禁止 OpenAI“开发能够自我改进的 AI 模型，除非它能确保这些模型与人类价值观保持一致”。\n没错：各州还在利用这些儿童安全案件试图禁止递归式自我改进。虽然这看起来像是法官可能会驳回的事情，但值得注意的是，一群共和党总检察长已就存在性风险群体的一个核心诉求达成一致。红州共和党民选官员的中位数与特朗普-扎克伯格-萨克斯寡头加速主义小圈子之间的裂痕继续扩大。\n在法庭上，OpenAI 很可能会提出与 Meta 类似的论点：Chat"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "自媒体作者实测开源 Skill Anatomy：一句话让 AI 生成原理科普动画和讲解视频",
-   "url": "https://aihot.news/items/alrar23ypkk6umkz50eirp35h",
-   "published": "2026-10-15T00:26:00.000Z",
-   "description": "作者数字生命卡兹克分享开源 Skill Anatomy，其理念是\"物体本身，就是解释\"，可将抽象原理做成可交互的机械模型动画，还能在其上生成带讲解配音的科普视频。 🔗 阅读原文 via AIHOT · https://aihot.news/items/alrar23ypkk6umkz50eirp35h",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
    "source": "OpenAI",
    "title": "Sullivan & Cromwell brings legal expertise into agreement review",
    "url": "https://openai.com/index/sullivan-cromwell",
@@ -1201,24 +1255,6 @@
    "published": "2026-10-15T00:00:00.000Z",
    "description": "",
    "excerpt": "Black Forest Labs FLUX.3 Image Klein is here, and it runs in Diffusers from day one. One model does text-to-image and multi-reference image-to-image, and it adds something new, the layout control . You write bounding boxes into the prompt to say where each part of the image should go, or which parts of a reference image to move.\nBoth open checkpoints are in the FLUX.3 Image Klein collection :\nYou can head on to the Hugging Face space and generate some images right now!\nInstall the latest diffusers and transformers (for the Qwen3-VL text encoder):\nLoad the distilled checkpoint and generate an image:\nFLUX.3 responds best to a full scene description with the subject, the setting, the light, the composition, and the style. The official prompting guide from Black Forest Labs has more tips. The distilled checkpoint generates a 1024 × 1024 image in 16 steps by default. Pass height , width , or num_inference_steps to change them.\nPass a reference image (or more) with the image argument. Write the prompt as a caption of the image you want , with the change included.\nWith several references, refer to them in the prompt as , , ... in the order they are passed to image :\nAdd a JSON list of regions after the caption. Each region has an id , a bbox , and a desc , and the caption mentions it as .\nBoxes are written as [y_min, x_min, y_max, x_max] , y first , on a 0–1000 scale. Because the scale is normalized, the same box works at any image size.\nFor edits, each region says where its content comes from ( src_bbox in the reference) and where it goes ( tgt_bbox in the output). A region with the same two boxes stays where it is.\nThis example moves the knitted knight up and to the left, and pins the backdrop, the cliff, the needle, the dragon, and the fire:\nEverything above uses the distilled checkpoint. The base checkpoint runs 50 steps with classifier-free guidance, and it's the one to fine-tune (see LoRA finetuning ).\nBlack Forest Labs also ships the transformer as a single file, in bf16 and in two quantized formats: fp8r (rowwise FP8) and nvfp4 . Load any of them with from_single_file , then load the other components by name so the bf16 transformer isn't downloaded too.\nFor the unquantized single file, use https://huggingface.co/{model_id}/blob/main/model.safetensors and drop quantization_config .\nFLUX.3 works for both text-to-image and image-to-image, which makes it a great base for custom LoRAs. diffusers ships DreamBooth LoRA training scripts for both tasks (you can al"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Black Forest Labs FLUX.3 Image Klein 登陆 Diffusers，支持边界框布局控制",
-   "url": "https://aihot.news/items/ro5zfihp4w9597vt5vz4ihdv2",
-   "published": "2026-10-15T00:00:00.000Z",
-   "description": "Hugging Face 团队介绍 FLUX.3 Image Klein 模型发布首日即可在 Diffusers 中使用，单个模型支持文生图、多参考图生图和边界框布局控制。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ro5zfihp4w9597vt5vz4ihdv2",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Anthropic Code Review 正式可用，面向 Team 和 Enterprise 组织",
-   "url": "https://aihot.news/items/wmxwoemumqiq2yfrjngl3a5rc",
-   "published": "2026-10-15T00:00:00.000Z",
-   "description": "Anthropic 宣布 Claude 的 Code Review 结束研究预览，正式向 Claude Team 和 Enterprise 组织开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wmxwoemumqiq2yfrjngl3a5rc",
-   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1345,105 +1381,6 @@
    "published": "2026-10-14T14:00:00.000Z",
    "description": "Supply-chain risk management is moving from signal accumulation to consequence management. More alerts are not an advantage if the enterprise cannot map them to actual products, suppliers, sites, lanes, inventory, customers, or revenue. The post Supply Chain Risk Management Is Moving From Alert Generation to Operational Response appeared first on Logistics Viewpoints .",
    "excerpt": "Executive thesis. Supply-chain risk management is moving from signal accumulation to consequence management. More alerts are not an advantage if the enterprise cannot map them to actual products, suppliers, sites, lanes, inventory, customers, or revenue.\nSupply chain risk platforms have become capable of collecting external signals about weather, geopolitics, suppliers, cyber events, infrastructure, finance, and other disruption sources. The challenge is that awareness does not equal response. A long queue of alerts can overwhelm the organization unless the system can determine which events intersect with real operational exposure.\nA disruption becomes actionable when it can be mapped to suppliers, sites, products, materials, lanes, customers, inventory, revenue, or service commitments. That requires multi-tier relationship data and a clear understanding of dependencies. Without that context, the enterprise may know that an event occurred but still lack a defensible answer to the question: what does this mean for us?\nRisk scoring is most effective when it helps allocate scarce attention. As a result, considering probability, exposure, time horizon, substitution options, inventory, capacity, and customer impact rather than relying on event severity alone. The same storm, port closure, or supplier issue can be immaterial to one business flow and critical to another.\nOnce material risk is identified, the platform should support the response: investigate, validate, assign an owner, evaluate alternatives, obtain approval, execute mitigation, and track closure. Otherwise the risk platform becomes a notification system whose output has to be managed in separate tools. The value lies in shortening the path from detection to controlled action.\nRisk management improves when the organization can model alternatives before a disruption occurs. Alternate suppliers, substitute materials, inventory buffers, routes, capacity, and manual fallback can be evaluated and exercised in advance. That turns risk technology from a monitoring layer into part of the operating model for resilience.\nThe Logistics Viewpoints Supply Chain Risk Management Software: Buyer’s Guide evaluates external intelligence, multi-tier mapping, dependency and exposure analysis, mitigation workflow, scenarios, integrations, and alert quality as parts of one response system.\nRisk technology should be evaluated by its ability to establish exposure, prioritize consequence, assign ownership, and accelerate e"
-  },
-  {
-   "group": "wh",
-   "source": "Automated Warehouse",
-   "title": "GreyOrange acquires Site Bionics for retail security digital twins",
-   "url": "https://www.automatedwarehouseonline.com/greyorange-acquires-site-bionics-retail-security-digital-twins/",
-   "published": "2026-10-14T13:10:17.000Z",
-   "description": "Site Bionics says its physical AI turns existing security cameras and RFID tags into a unified, real-time view of products and shoppers. The post GreyOrange acquires Site Bionics for retail security digital twins appeared first on Automated Warehouse .",
-   "excerpt": "Expanding from warehouse orchestration and inventory software, GreyOrange Inc. last week acquired Site Bionics Inc., which has developed an AI-powered digital twin platform. The company said that the combination of Site Bionics’ security technology and its own gStore item-level RFID intelligence will give retailers a single view of what is happening in their stores, including both the products on the floor and the people interacting with them.\n“For years, this industry has promised retailers that RFID and computer vision would come together and show them the full story of their stores. That promise has gone unmet,” stated Adam Blair, co-frounder and CEO of Site Bionics. “Don [Gillett] and I built Site Bionics to solve the computer vision side of that equation. GreyOrange has mastered the RFID side. Together, we’re finally delivering on it.”\nBlair, the founding chief technology officer of RADAR, and Gillett, the former head architect of Amazon Go, founded Site Bionics in 2023. The San Diego-based company said its platform uses existing security cameras to understand the physical store and the behavior of the shoppers and staffers within it.\nThe Site Bionics team has joined GreyOrange to deploy its technology first in gStore, with plans to extend it into warehouse operations through the GreyMatter platform. The companies did not disclose financial terms.\nGreyOrange described gStore as “a sensor-agnostic intelligent inventory solution that delivers inventory truth through real-time visibility and actionable insights. The platform helps retailers improve inventory accuracy, store execution, and omnichannel fulfillment by integrating data from RFID, computer vision, and other sensing technologies.”\nSuwanee, Ga.-based GreyOrange added that gStore enables loss intelligence, shopper analytics, and spatial intelligence to reduce shrinkage, understand shopper behavior, optimize store layouts, and deliver positive customer experiences.\n“After years of putting cameras to work across industries, I’ve learned that a camera’s real value is in what it measures, not what it records,” said Gillett, co-founder and CTO of Site Bionics. “Site Bionics brings that thinking to retail, using the cameras already on every store’s ceiling. Paired with gStore’s RFID data, the store’s digital twin knows not just where people are, but what they’re doing with the products around them.”\nRegister now and help us celebrate 20 years of RoboBusiness! GreyOrange to unify product and people int"
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain 24/7 自动化",
-   "title": "Report: Walmart’s Shipping Boxes Are Too Tall for Its Warehouse Robots",
-   "url": "https://www.supplychain247.com/article/walmart-warehouse-automation-packaging-robot-costs",
-   "published": "2026-10-14T13:04:00.000Z",
-   "description": "Walmart’s warehouse automation push faces packaging problems, robot repairs, and higher power bills as the retailer expands its rollout.",
-   "excerpt": "Walmart &rsquo;s multibillion-dollar warehouse automation push is running into packaging problems, robot breakdowns and higher operating costs, according to a recent Wall Street Journal story . The retailer plans to replace shipping boxes that do not fit its automated systems, while some oversized products still require workers to handle them.\nWalmart plans to replace boxes it has used for more than two decades with versions that are 1.5 inches shorter. The new boxes must be taped shut, adding work and expense, although Walmart says they will reduce shelf-stocking time at stores.\nThe transition involves most of Walmart&rsquo;s roughly 200 U.S. supply chain buildings. Its warehouse operations rely on more than 140,000 workers to unload, sort, store and ship merchandise.\nRob Montgomery, Head of Supply Chain Operations for Walmart U.S., described the transition to the Journal: &ldquo;We are kind of in this peak complexity.&rdquo; He also said Walmart is changing its warehouses while keeping them operating, which adds to the difficulty.\nMost of Walmart&rsquo;s supply chain buildings date to the 1980s and &rsquo;90s, and about 80% of its automation construction projects are retrofits. Montgomery said Walmart is installing the equipment while keeping warehouses operating, which complicates the transition.\nDifferent products also require different automated systems, often supplied by different companies. Some goods, including large-screen televisions and jumbo bags of dog food, will need manual assistance for the foreseeable future, Montgomery said.\nSymbotic, the Massachusetts robotics company in which Walmart owns a 12.6% stake, supplies equipment that moves merchandise and builds pallets for shipment to stores. A company spokesman told the Journal that about 5% of its product-moving robots were undergoing repairs at any given time in recent months, down from under 10% last year.\nMonthly electricity bills at Walmart&rsquo;s automated grocery facilities can reach $800,000 or more during peak heating or cooling months, compared with roughly $250,000 under more manual operations, a person familiar with the situation told the Journal. The engineers needed to run the equipment also cost more than workers doing manual warehouse tasks, the Journal reported.\nDespite those challenges, Walmart continues to expand its use of automation. By August, more than 65% of its stores were receiving some automated freight , and over 50% of its e-commerce inventory was moving through"
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "Amp puts AI agents to work beyond code with OpenAI models",
-   "url": "https://openai.com/index/amp-beyond-coding",
-   "published": "2026-10-14T12:00:00.000Z",
-   "description": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "SentinelOne cuts malware analysis from weeks to hours",
-   "url": "https://openai.com/index/sentinelone",
-   "published": "2026-10-14T12:00:00.000Z",
-   "description": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "Mapping the 2026 Warehouse Management Systems Market",
-   "url": "https://logisticsviewpoints.com/2026/10/14/mapping-the-2026-warehouse-management-systems-market/",
-   "published": "2026-10-14T11:00:00.000Z",
-   "description": "Mapping the 2026 Warehouse Management Systems Market is less useful as a league table than as a structured way to understand why providers that share a market label can behave very differently. The post Mapping the 2026 Warehouse Management Systems Market appeared first on Logistics Viewpoints .",
-   "excerpt": "The 2026 warehouse management systems market is more useful as a map of architectural and operating differences than as a league table. Providers can share a WMS label while differing materially in execution depth, extensibility, automation orchestration, decision support, deployment model, and the operating environments they are designed to serve.\nFor warehouse management systems, useful dimensions include operational depth, breadth of supported workflows, architecture and interoperability, intelligence, execution connectivity, and proven outcomes. The relevant metrics include inventory accuracy, order cycle time, throughput, labor productivity, dock-to-stock time, order accuracy, exception volume, automation utilization, and recovery time after disruption. Together these dimensions show where a provider creates value and where additional systems or operating capabilities are still required. The Market Map should therefore be read through the systems principle in Select Technology for the System, Not the Feature List : provider position is useful only when it is translated into fit with the buyer’s actual operating architecture.\nThe 2026 market can be understood through several broad archetypes: enterprise warehouse specialists; broad supply-chain suite providers; cloud-native and midmarket WMS platforms; and execution/automation-centric platforms that increasingly overlap with WES and orchestration. Each archetype carries different strengths, implementation assumptions, ecosystem dependencies, and likely buyer fit.\nA provider that is exceptionally strong in one part of the market may be a poor choice for an organization whose critical requirements sit elsewhere. Market position should therefore be read as analytical context rather than a substitute for requirements-based selection.\nThe surrounding architecture is ERP and OMS upstream; WMS at the inventory-and-work core; WES/WCS, robotics, conveyors, sortation, labor systems, YMS, parcel, and TMS around the execution edge. Providers differ in how much of that architecture they own, how well they connect to it, and how quickly information can move from a changed operating state to a completed response. That difference often matters more than surface-level feature parity.\nBuyers should use the map to narrow the field, then test operational fit, configurability without excessive customization, automation integration, real-time work orchestration, data and API architecture, scalability, implementation model, "
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
-   "url": "https://openai.com/index/third-moment-research",
-   "published": "2026-10-14T07:00:00.000Z",
-   "description": "With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "How Block is building AI-powered security with OpenAI technology",
-   "url": "https://openai.com/index/block-ai-powered-security",
-   "published": "2026-10-14T07:00:00.000Z",
-   "description": "Block is building AI-powered security with OpenAI. Its security team investigates threats faster and proposes patches in minutes.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "BestBlogs 每日早报",
-   "title": "EP205 · Argon 解难题、Anthropic 重设计源控、Meta 发布 Muse Wonder",
-   "url": "https://www.bestblogs.dev/explore/brief/2026-10-14?utm_source=rss&utm_medium=feed&utm_campaign=daily_brief&entry=rss_brief_index",
-   "published": "2026-10-14T06:00:00.000Z",
-   "description": "📝 今日导语 Argon 解难题，Anthropic 重设计源控，Meta 发布 Muse Wonder：判断模型与系统如何配合。 🏷 今日关键词： Gemini 4 Argon Scion 源码控制 Muse Wonder AI 自我复制 开放 AI 网络 📰 今日精选内容 Gemini 4 Argon：为解决棘手难题而生 Google DeepMind News &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 Anthropic 的源码控制系统重设计 Anthropic Engineering &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 Muse Wonder：面向个人与职业 AI 智能体的前沿模型 Meta AI &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 89 AI 模型可能在无需数据中心的情况下实现自我复制 Anthropic Research &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 91 Meta OCP 2026：用开放网络连接大规模 AI 集群 Engineering at Meta &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 模型越来越强，为什么用户没感觉？再访阿里国际站总裁张阔 硅谷101 &nbsp;·&nbsp; 文",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "Latent Space",
-   "title": "[AINews] AI Engineer NYC: Gemini 4 Argon, Vals AI Benchmarks",
-   "url": "https://www.latent.space/p/ainews-ai-engineer-nyc-gemini-4-argon",
-   "published": "2026-10-14T05:40:28.000Z",
-   "description": "Gemini 4 Argon went GA today, but we already gave it title story 2 weeks ago and most benchmarks, like CursorBench, simply independently confirm their claims.",
-   "excerpt": "Gemini 4 Argon went GA today, but we already gave it title story 2 weeks ago and most benchmarks, like CursorBench , simply independently confirm their claims.\nAbout 20,000 joined AIE NYC today for keynotes from the frontier of AI x Finance, from Anthropic showing how they are building the modern AI Financial Services stack , Vals AI CEO discussing their principles behind benchmarking models like Argon, and Coatue’s Head of AI showing how they turn news into investment decisions.\nAll keynotes are transcribed here and all talks/workshops will be released ASAP. Tune in tomorrow for Day 3:\nAI News for 10/12/2026-10/13/2026. We checked 12 subreddits, 544 Twitters and no further Discords. AINews’ website lets you search all past issues. As a reminder, AINews is now a section of Latent Space . You can opt in/out of email frequencies!\nFrontier Model Launches: Gemini 4 Argon and Muse Wonder\nGemini 4 Argon : Google released Argon globally for coding, knowledge work, enterprise workflows and cyber defense. Access spans the paid Gemini API and Gemini platform; Google AI Pro and Ultra in the Gemini app and AI Mode in Search; and Ultra in Antigravity. The official rollout supersedes an earlier newsletter claim that access was restricted to cybersecurity defenders ( announcement ).\nPricing : Introductory API rates are $2/$10 per million input/output tokens , with cached input discounted 95%. Artificial Analysis reports that rates double to $4/$20 after November 30 —an important qualification for cost comparisons ( Google pricing , discount schedule ).\nResearch access : Google is offering 10,000 scientists Antigravity’s highest usage tier free for six months, through an application program; cybersecurity defenders can apply through Fairwind ( scientist program , access programs ).\nGoogle’s internal results : Google says Argon helped separate core webpage handling from a six-million-line legacy Chromium folder, completing months of work in weeks and eliminating a category of browser crashes. It also reports 35% more agentic code submissions , with rollbacks reduced by nearly one-third. These are internal deployment claims, not controlled productivity measurements ( engineering results ).\nPhysical-task demonstration : DeepMind researchers describe Argon deriving a cornhole simulation from human video, performing system identification and refining throws on Apptronik’s Apollo robot before achieving seven consecutive successful throws. Despite “zero-shot” language in one pos"
-  },
-  {
-   "group": "wh",
-   "source": "MH&L",
-   "title": "ALAN Announces 2026 Humanitarian Logistics Awards Winners",
-   "url": "https://www.mhlnews.com/global-supply-chain/news/55411235/alan-announces-2026-humanitarian-logistics-awards-winners",
-   "published": "2026-10-14T04:05:00.000Z",
-   "description": "The winners have \"truly inspired us by repeatedly stepping up to help – all without asking what’s in it for them,\" said Kathy Fulton of ALAN.",
-   "excerpt": "Last week, the American Logistics Aid Network (ALAN) today announced the winners of its 2026 Humanitarian Logistics Awards.\n&ldquo;We recognize a group of outstanding organizations and individuals who exemplify what selfless logistics is all about,&rdquo; said ALAN Executive Director Kathy Fulton in a statement. &ldquo;They have truly inspired us by repeatedly stepping up to help &ndash; all without asking what&rsquo;s in it for them.&rdquo;\nPaul Delp -- ALAN&rsquo;s Lifetime Achievement Award\nPaul Delp received his award for his body of philanthropic work both personally and as president of Lansdale Warehouse. This work included providing Mitzvah Circle with the cost-free loan of a forklift for a year (a contribution that made it possible for the nonprofit to serve more than 500,000 people during 2025) and making a Lansdale warehouse available as a donation collection center for survivors of the September 11 attacks. It also included Paul&rsquo;s service as a board member for the Red Cross Board of Montgomery County.\nLynden Air Cargo -- ALAN&rsquo;s Outstanding Contribution to Disaster Relief Efforts Award\nLynden Air Cargo was honored for donating 61,563 pounds of air cargo capacity to support Bethel Search and Rescue&rsquo;s relief efforts in Western Alaska following last October&rsquo;s Typhoon Halong &ndash; and for working closely with organizations such as GCI, the Alaska Foundation of Natives, Team Rubicon, and other local Alaska air cargo carriers to assist with donation collection, staging and distribution for typhoon survivors.\nNiagara Cares --ALAN&rsquo;s Outstanding Contribution to Disaster Relief Efforts Award\nNiagara Cares received its honor for donating and rapidly distributing more than 220,000 gallons of clean drinking water to the survivors of the 2025 floods in Central Texas&rsquo;s Kerrville region &ndash; and for the financial donation it made to support long-term recovery and rebuilding efforts.\nUPS -- ALAN&rsquo;s Outstanding Contribution To Disaster Relief Efforts Award\nUPS received its award for the ongoing work of its UPS Foundation. In 2025, UPS and The UPS Foundation delivered hope when it mattered most by contributing more than $16 million in grants and logistics support. This support helped humanitarian organizations respond to 80 disasters and crises around the globe, providing relief to more than 1.7 million survivors.\nVector Global Logistics -- ALAN&rsquo;s Outstanding Contribution to Disaster Relief Efforts Award\nVector Gl"
-  },
-  {
-   "group": "ai",
-   "source": "Google DeepMind",
-   "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
-   "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
-   "published": "2026-10-14T02:00:14.000Z",
-   "description": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
-   "excerpt": "Collaborating with the Government Technology Agency of Singapore (GovTech Singapore) to protect users without compromising privacy.\nScams, such as investment fraud, fake job offers, and impersonation of public officials make up over half of Singapore’s reported crimes, and account for more than S$4 billion in losses since 2019 . At the same time, scam tactics have shifted from simple phishing to complex social engineering, whereby attackers manipulate victims with convincing conversations before requesting money. Such scams now account for up to 80% of all losses.\nTo address this, Google DeepMind and the Government Technology Agency of Singapore (GovTech Singapore) have been working together as part of our National AI Partnership with the Singapore Government. Together, we've fine-tuned a privacy-preserving, on-device scam detection model.\nGeneric models often struggle with local deception techniques, making scam detection harder. To address this, Google’s lightweight Gemma model was fine-tuned on local scam conversations. These ranged from impersonations of public institutions, banks, and local figures, to trending regional schemes. This ensures the fine-tuned model will be able to distinguish benign social chatter from genuine manipulation when deployed in applications installed by citizens.\nUnlike traditional threat detection, which relies on server-side scanning of messages in the cloud, this model can process conversation data directly on-device. When integrated into applications, this will allow faster analysis of conversation patterns to detect manipulative intent and help citizens act before financial or credential exposure can occur.\nThe roll out of the model within applications will be carefully phased and developed in partnership with the Singapore Government. When deployed, the model will only be able to access on-device conversations with the user's consent, in accordance with the terms of use of that application. As the model runs entirely on-device, neither the Singapore Government nor Google, will be able to access users’ conversations through its deployment.\nFighting scams shouldn't mean sacrificing personal privacy. Working with Google DeepMind, we're bringing advanced AI protection directly onto citizens' devices. This allows us to catch highly targeted, local scam attempts in real time while keeping personal communications private.\nWhen the model detects manipulative conversational patterns, it triggers a real-time warning directly on t"
   }
  ]
 }
