@@ -1,0 +1,136 @@
+{
+  "type": "x",
+  "date": "2026-10-17",
+  "items": [
+    {
+      "kind": "prompt",
+      "category": "视频",
+      "score": 80,
+      "author": "Jarvis｜AI 商业实验室",
+      "handle": "@jarvis11x",
+      "url": "https://x.com/jarvis11x/status/2111026168526746057",
+      "posted": "2026-10-16",
+      "metrics": "2.1 万查看 · 348 赞 · 503 收藏",
+      "textZh": "作者用 Muse 生成了近 500 条视频后总结出的长视频流程：先让豆包 Work 去网上找同题材爆款视频、查 Seedance 官方提示词技巧，按“10 秒一个镜头”写出整片方案（每镜写清起始画面、10 秒内怎么动、结束构图、下一镜怎么接）；再把方案交给 ChatGPT（GPT Image 2.5）逐镜出首帧图，人物和场景描述定下后一个字都不改；最后 Muse 按首帧逐镜生成视频、逐镜挑片，让它写 ffmpeg 脚本统一画幅后拼接。一镜试 10–15 次还不对就简化动作或换拍法，别硬抽卡。用国内工具就能照做，适合想做 3 分钟左右 AI 短片的人。",
+      "prompt": "按 10 秒一个镜头，写一条三分钟天宫视频的提示词；先去全网找这类爆款视频，总结它们的内容和拍法，再输出提示词。",
+      "promptZh": "（原文即中文）让豆包 Work 先调研同类爆款视频的拍法，再按每镜 10 秒写出 3 分钟视频的分镜提示词。把“天宫”换成你的题材即可。",
+      "video": "https://x.com/jarvis11x/status/2111026168526746057"
+    },
+    {
+      "kind": "prompt",
+      "category": "图片编辑",
+      "score": 72,
+      "author": "Simone Canc",
+      "handle": "@simonecanciello",
+      "url": "https://x.com/simonecanciello/status/2111099437065855376",
+      "posted": "2026-10-16",
+      "metrics": "8.3 万查看 · 1094 赞 · 1739 收藏",
+      "textZh": "做 AI 视频换人时，很多时候不用写长提示词，一句“把视频里的人换成角色设定图里的人”就够了，关键是角色设定图（三视图）要做好，否则只是浪费额度。作者给了一条生成六视图角色设定图的提示词：上传 2–3 张角色照片，生成全身正、侧、背面加脸部特写正、侧、背面，浅灰背景、光线统一。这张图也能用来保证多镜头里人物长相一致。",
+      "prompt": "Character turnaround sheet of the person from the reference photo, six views: full body front, side and back + close-up front, side and back. Strictly keep 100% of face, hair, body, clothing and all details from the reference. Clean light gray background, consistent and natural lighting.",
+      "promptZh": "根据参考照片中的人物生成角色转面设定图，共六个视角：全身正面、侧面、背面，加上脸部特写的正面、侧面、背面。严格 100% 保留参考图中的脸、发型、身材、服装和所有细节。干净的浅灰色背景，光线统一自然。",
+      "images": [
+        "https://pbs.twimg.com/media/HUwhve7W4AA5QfS.jpg",
+        "https://pbs.twimg.com/media/HUwhve0WQAE4Dag.jpg"
+      ]
+    },
+    {
+      "kind": "news",
+      "category": "研究",
+      "score": 85,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2111223306061836484",
+      "posted": "2026-10-16",
+      "metrics": "2.3 万查看 · 179 赞 · 119 收藏",
+      "textZh": "宝玉整理了 Anthropic 10 月 16 日发布的两份报告。招聘：技术部门新招的人里初级岗位占比从 27% 降到 9%，面试评价里提到“会不会用 AI 工具”的次数是 2024 年的 3–4 倍。工作量：到 8 月，员工调用的 AI agent（能自己连续干活的 AI 程序）工作时长已是员工本人的 6 倍，工程师人均代码提交量是半年前的 5 倍；新的瓶颈变成人的注意力，Claude 会话约 80% 时间在等人回复，20% 员工说自己从亲手干活变成“管一群 Claude”。第二份报告对比员工和普通美国人：认为 2030 年 AI 能干自己八成以上工作的，员工过半，美国人约 5%。报告自己也提醒这些数字不能直接套到普通企业。对找实习、考虑 AI 相关岗位的人，这是了解“初级岗在变少、会用 AI 成为面试点”的一手材料。"
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "score": 70,
+      "author": "OpenAI",
+      "handle": "@OpenAI",
+      "url": "https://x.com/OpenAI/status/2111192259073094035",
+      "posted": "2026-10-16",
+      "metrics": "101 万查看 · 1 万赞",
+      "textZh": "OpenAI 宣布 ChatGPT 里的 GPT-6 Astra Pro 升级：回答更快、调用插件和工具更好；新增多个 agent 并行处理一个任务的不同部分，可以看到每个 agent 的进度，并打开已完成的子任务检查结果。目前只对 Pro 用户开放（Chat 标签页）。属于厂商自己的说法。"
+    },
+    {
+      "kind": "news",
+      "category": "研究",
+      "score": 72,
+      "author": "Andrew M. Dai",
+      "handle": "@AndrewDai",
+      "url": "https://x.com/AndrewDai/status/2111142161584628060",
+      "posted": "2026-10-16",
+      "metrics": "167 万查看 · 2762 赞",
+      "textZh": "前 Google DeepMind 研究总监戴明博创办的 Elorian AI 发布第一个“视觉思考”模型 Glimpse，主打看懂会动、会换角度的画面（视频、多视角），号称在主要视觉推理测试上和 GPT-6 Astra 相当。网页版免费可用，也开放 API。有开发者用它看游戏录屏找 bug，能按时间戳列出问题。厂商说法，效果待更多人实测；做视频、图像类工作或想让 AI 检查界面效果的可以试试。"
+    },
+    {
+      "kind": "news",
+      "category": "研究",
+      "score": 66,
+      "author": "Aravind Srinivas",
+      "handle": "@AravSrinivas",
+      "url": "https://x.com/AravSrinivas/status/2111111329536987234",
+      "posted": "2026-10-16",
+      "metrics": "5.3 万查看 · 695 赞",
+      "textZh": "Perplexity CEO 宣布 Google 的 Gemini 4 Argon 已对所有 Perplexity 用户开放（快速搜索和 Computer 代理模式都能用），并称它在“宽而深的研究”测试 WANDR 上刷新最好成绩。同一天还有日本博主介绍 Google 新上线的论文评审服务 Deep Review，用 Gemini 4 Argon 帮你审论文，每周免费 2 次、每次约 20 分钟。查资料、写课程论文时可以多一个工具。"
+    },
+    {
+      "kind": "news",
+      "category": "视频",
+      "score": 68,
+      "author": "OpenDesign",
+      "handle": "@OpenDesignHQ",
+      "url": "https://x.com/OpenDesignHQ/status/2111024434958275063",
+      "posted": "2026-10-16",
+      "metrics": "6.3 万查看 · 1280 赞 · 1128 收藏",
+      "textZh": "开源设计工具 OpenDesign 推出 OpenDesign Motion，定位是 Claude Motion 的开源替代品：用任意 agent、任意模型做动效视频，不必用 Opus 5.5。他们演示了只用便宜的 DeepSeek v4.1 Flash 从第一句提示词到成片的过程。想做产品介绍动画、又不想付高价模型费用的，可以关注。"
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "score": 62,
+      "author": "数字生命卡兹克",
+      "handle": "@Khazix0918",
+      "url": "https://x.com/Khazix0918/status/2111078005330399726",
+      "posted": "2026-10-16",
+      "metrics": "7.9 万查看 · 271 赞",
+      "textZh": "英伟达 RTX Spark 电脑国内开售，华硕 128G 内存版卖 37999 元，线上瞬间售罄。卡兹克实测：本地跑 Qwen3.8-27B 约每秒 30 个 token（token 是模型处理文字的单位），Qwen image 2.1 约 1 分钟一张图；2B 小翻译模型能 6 路并发，接进浏览器插件几乎零延迟翻译。说明“在自己电脑上跑大模型”的需求很旺，但价格不低，学生了解即可。"
+    },
+    {
+      "kind": "opinion",
+      "category": "研究",
+      "score": 64,
+      "author": "Ethan Mollick",
+      "handle": "@emollick",
+      "url": "https://x.com/emollick/status/2111171225418408236",
+      "posted": "2026-10-16",
+      "metrics": "4.1 万查看 · 344 赞",
+      "textZh": "沃顿商学院教授 Mollick 推荐一篇论文：一组 Gemini 4 agent 在没有分工指令的情况下，自发协作打通了《我的世界》（击败末影龙）。他认为这篇论文好读，是观察多个 AI 自发分工合作、以及它们的做法和人类有什么不同的好例子。论文地址 arxiv.org/pdf/2610.22319。做多 Agent 项目的可以看看它们怎么分工。"
+    },
+    {
+      "kind": "opinion",
+      "category": "编程",
+      "score": 68,
+      "author": "lauren",
+      "handle": "@poteto",
+      "url": "https://x.com/poteto/status/2111133080526495985",
+      "posted": "2026-10-16",
+      "metrics": "35.2 万查看 · 4622 赞 · 8723 收藏",
+      "textZh": "怎样才能更放心 AI agent 写的代码？作者给了一个“倒金字塔”：最该花力气的是改代码本身（更好的结构、更严格的类型、清楚的边界，让最省事的写法就是正确写法）；其次是自动检查（lint、测试、CI）；再次是写给 AI 看的规则文档（AGENTS.md、Skill），尽量少而精；最难扩展的是人工审查，应该把精力放在设计一个让 agent 默认就做对的环境上。帖子末尾还附了一段可以直接交给 agent、让它分析你过去的代码评审意见并提出改造方案的指令。用 Claude 写代码、做 Agent 的人值得收藏。"
+    },
+    {
+      "kind": "opinion",
+      "category": "编程",
+      "score": 55,
+      "author": "Thorsten Ball",
+      "handle": "@thorstenball",
+      "url": "https://x.com/thorstenball/status/2111130129355481240",
+      "posted": "2026-10-16",
+      "metrics": "23.5 万查看 · 1310 赞",
+      "textZh": "程序员 Thorsten Ball 发问：现在为什么还要用 Pull Request（提交代码前请同事审查的流程）？他的理由：查 bug 可以让 Opus 5.5、Fable、Astra 多个模型各查几遍；知识分享可以让模型生成讲解视频、演示；agent 推送前已经跑过测试，再在分支和合并后各跑一遍没意义。他也承认开源项目接收外部贡献时情况不同。评论区争议很大，属于个人观点，可以了解行业里关于“AI 时代开发流程怎么变”的讨论。"
+    }
+  ]
+}
