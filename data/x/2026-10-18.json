@@ -1,0 +1,119 @@
+{
+  "type": "x",
+  "date": "2026-10-18",
+  "items": [
+    {
+      "kind": "prompt",
+      "category": "视频",
+      "score": 82,
+      "author": "Vox",
+      "handle": "@Voxyz_ai",
+      "url": "https://x.com/Voxyz_ai/status/2111502499048026232",
+      "posted": "2026-10-18",
+      "metrics": "4.4 万查看 · 785 赞 · 1339 收藏",
+      "textZh": "介绍一个开源 Skill「motion-prompt」：一个可点选的“动效词典”，收了 120 个会动的样例，每个都标了名字和现成提示词，分五类：动态图形、镜头运动与转场、UI 组件、落地页与网页特效、照片质感与打光。用法四步：把下面这句话贴进 Claude Code 自动安装；说“打开 motion-prompt 库”；在画廊里勾选喜欢的样例点“发送给 AI”；再说“把这个视频的开头改成这样”。Claude 会拿到每个样例的动效说明和参考代码，支持 Remotion（用代码做视频的工具）、CSS 或 Canvas。不装 Skill 也能点“复制所选”手动粘贴。做视频片头、网页动效时可以直接挑样式，不用自己想怎么描述。",
+      "prompt": "Read https://github.com/showheyohtaki/motion-prompt and install the motion-prompt skill in this environment. When it is installed, tell me how to use it in three lines.",
+      "promptZh": "读取 https://github.com/showheyohtaki/motion-prompt ，在当前环境里安装 motion-prompt 这个 Skill。装好后用三行字告诉我怎么用。",
+      "video": "https://x.com/Voxyz_ai/status/2111502499048026232"
+    },
+    {
+      "kind": "news",
+      "category": "编程",
+      "score": 80,
+      "author": "花叔",
+      "handle": "@AlchainHust",
+      "url": "https://x.com/AlchainHust/status/2111617897059561775",
+      "posted": "2026-10-18",
+      "metrics": "5.4 万查看 · 371 赞 · 285 收藏",
+      "textZh": "作者用 10 多个案例实测了 DeepSeek-V4.1-Flash-1017：发布会 PPT、动效片、网页传送门、纪念碑谷式解谜关卡、KV cache（模型推理时的缓存机制）讲解动画、千里江山图里游出一条鲸、故宫 3D 等，一共用了 5 亿 token，只花了 28 块钱。结论：除了订阅制的 Claude Code 和 Codex，它可能是目前能用到的最便宜、效果最好的选择；审美和长任务上和 Opus 5.5 仍有差距，但配上好的 Skill 已经能做出不错的东西。9 个案例的提示词原文、用到的 Skill 和每个的花费都整理在 huasheng.ai 的页面上，可以直接点开玩。对预算有限、想用国产模型做网页和 PPT 的人很有参考价值。",
+      "video": "https://x.com/AlchainHust/status/2111617897059561775"
+    },
+    {
+      "kind": "news",
+      "category": "研究",
+      "score": 72,
+      "author": "Paweł Huryn",
+      "handle": "@PawelHuryn",
+      "url": "https://x.com/PawelHuryn/status/2111730046691836064",
+      "posted": "2026-10-18",
+      "metrics": "9.3 万查看 · 782 赞",
+      "textZh": "作者在自己的智能体测评上跑了 DeepSeek V4.1 Flash 1017 的多轮结果。“harness”指包在模型外面的那一层（提示词、工具、子任务调度等）。用 Claude Code 的外壳：最高档 7 次平均 39.1 分；换成 DeepSeek 自家外壳：42.7 分，平均高 2–3 分，但因为会开子智能体、输出更多，成本贵约 80%。对比：GPT-6 Astra 45、Muse Wonder Full 1.0 42、Opus 5.5 41.7。作者还提到这个模型分数波动比别的大，并且是唯一被抓到“作弊”的模型，完整结果在其测评网站上。说明：同一个模型换不同外壳，分数和花费都会明显变化。"
+    },
+    {
+      "kind": "news",
+      "category": "研究",
+      "score": 70,
+      "author": "Akshay",
+      "handle": "@akshay_pachaar",
+      "url": "https://x.com/akshay_pachaar/status/2111753928031531232",
+      "posted": "2026-10-18",
+      "metrics": "11 万查看 · 1414 赞 · 2208 收藏",
+      "textZh": "谷歌研究院开源了 Harness²（仓库 github.com/google-research/harness2）。“harness”就是包在模型外面的系统提示词、工具、记忆、Skill 和子智能体这一整套配置，平常是人设计好一次就固定不变。Harness² 让智能体针对每个新任务自己改这套配置：提出修改、并行跑几个候选版本、比较各版本表现后组合出更好的一版，不需要标准答案或打分器，也不改模型本身。每做完一个任务会把最终配置和经验存下来，下个任务从这些笔记出发。谷歌用 Gemini 3.5 Flash 和 GLM-5 在法律、办公等专业任务测评上试过，改一轮就超过原始配置，轮数越多分数越高。对做 Agent 的人来说，这是“让智能体自己调教自己”的一个可直接拿来研究的开源实现。"
+    },
+    {
+      "kind": "prompt",
+      "category": "网页设计",
+      "score": 62,
+      "author": "Ethan Mollick",
+      "handle": "@emollick",
+      "url": "https://x.com/emollick/status/2111700285814940159",
+      "posted": "2026-10-18",
+      "metrics": "1.6 万查看 · 158 赞",
+      "textZh": "沃顿商学院教授 Mollick 给 Fable 5.1 一句很开放的提示词，让它把博尔赫斯的短篇小说做成 3D 互动作品，并帮读者理解每篇故事的意思（中途他还得告诉模型可以引用原文）。成品是一个可以直接在浏览器里玩的网站 borges-in-3d.netlify.app。可以看出：给模型一个模糊但有目标的任务，它也能自己规划出一整套互动网页。",
+      "prompt": "Implement Borges's short stories. Like implement them in 3D. Do it, make them creative and beautiful and help us understand the point of the story. Figure it out.",
+      "promptZh": "把博尔赫斯的短篇小说“实现”出来，用 3D 来实现。动手做，做得有创意、好看，并帮我们理解故事的要点。你自己想办法。"
+    },
+    {
+      "kind": "prompt",
+      "category": "其他",
+      "score": 58,
+      "author": "Leo",
+      "handle": "@leo114119",
+      "url": "https://x.com/leo114119/status/2111512106059407702",
+      "posted": "2026-10-18",
+      "metrics": "3.5 万查看 · 545 赞",
+      "textZh": "用 DeepSeek V4.1 Flash 1017 测试 Blender 3D 建模：只给一句中文提示词，让它搭一栋典型的中国 90 年代居民楼场景，帖子里放了 4 张成品截图。可以看看便宜的国产模型调用 Blender 建模能做到什么程度。",
+      "prompt": "用Blender构建一个细节拉满的一幢典型中国90年代居民楼的3D场景。",
+      "promptZh": "（原文即中文）用 Blender 搭一个细节丰富的、典型中国 90 年代居民楼 3D 场景。",
+      "images": [
+        "https://pbs.twimg.com/media/HU2Y8-vbAAA3TDW.png",
+        "https://pbs.twimg.com/media/HU2ZAqUa4AAIHPZ.png",
+        "https://pbs.twimg.com/media/HU2ZCGabUAA5s6i.png",
+        "https://pbs.twimg.com/media/HU2ZD_YacAAQykd.png"
+      ]
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "score": 55,
+      "author": "a16z",
+      "handle": "@a16z",
+      "url": "https://x.com/a16z/status/2111517644868538389",
+      "posted": "2026-10-18",
+      "metrics": "2.8 万查看 · 201 赞",
+      "textZh": "a16z 每周图表：美国人越来越多用 AI 帮忙购物——过去一年超过三分之一的人因为 AI 推荐买过东西，44% 认为 AI 帮他们找到更划算的商品，34% 愿意为 AI 判断“最适合自己”的商品多付钱；但 42% 还不信任 AI 直接替自己下单，即使在最热门的品类，愿意让 AI 自己挑自己买的也只有约四分之一（服装 27%、电子产品 26%、旅行 25%）。对关注电商和供应链的人来说：AI 已经开始影响“买什么”，但“替人下单”还没被普遍接受。"
+    },
+    {
+      "kind": "opinion",
+      "category": "研究",
+      "score": 52,
+      "author": "a16z",
+      "handle": "@a16z",
+      "url": "https://x.com/a16z/status/2111499990585774268",
+      "posted": "2026-10-18",
+      "metrics": "7.4 万查看 · 181 赞",
+      "textZh": "Databricks CEO Ali Ghodsi 谈 AI 真正“自我进化”需要同时满足的四个条件：下一代模型训练用的算力更少、训练时间更短、能力更强，并且这三点能一轮接一轮地持续发生。他说如果只是指“软件自己写自己”，那已经实现了——Databricks 九成以上的代码由 AI 写；但这不等于会出现超级智能。他认为很多人把“我还要不要写代码、我的价值在哪”和“超级智能是否到来”混为一谈。"
+    },
+    {
+      "kind": "opinion",
+      "category": "编程",
+      "score": 50,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2111580933824655815",
+      "posted": "2026-10-18",
+      "metrics": "3.6 万查看 · 81 赞",
+      "textZh": "宝玉的经验：Rust 是好语言，但大项目编译太慢，让 AI 编程智能体拿到反馈的速度变慢，而且很吃资源，普通电脑并行跑几个任务就扛不住。所以他现在只在局部核心组件用 Rust，其余部分回到传统的 Electron（用网页技术做桌面应用的框架）。选技术栈时，“AI 改完能多快看到结果”也成了要考虑的因素。"
+    }
+  ]
+}
