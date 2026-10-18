@@ -1,0 +1,256 @@
+{
+ "type": "daily",
+ "date": "2026-10-18",
+ "headline": "周末资讯偏少：Meta 开放 Muse Spark Open 让美国开源模型追近一半差距，DeepSeek 升级 V4.1-Flash；仓储侧多为观点与调研，缺少有分量的一手报道。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "Anthropic 复盘：Claude 写了 Claude Code 约 90% 代码后，代码评审怎么重做",
+     "source": "Anthropic（claude.dev 博客）",
+     "published": "2026-10-16",
+     "readMinutes": 14,
+     "summary": "Anthropic 讲述团队如何在 AI 写绝大部分代码后重新设计评审：6 到 9 月合并的 PR 翻倍以上，回滚（revert）率下降超 40%。做法是七层防线：提交前自验证、每个 PR 过 AI 评审、阻塞式自动检查、按风险分级人工审批、合并队列与灰度、快速回滚。原文英文，文中数字为 Anthropic 自述。",
+     "takeaways": [
+      "不再问“有没有人看过”，而问“哪种检查最适合抓这类风险”；用“每个 PR 的人工审批数”和回滚率做指标",
+      "低风险无需人工、中风险一人、高风险两人，且 AI 的批准不算人工批准",
+      "AI 评审器自己也要评测：用历史事故 PR 做评测集每天跑分",
+      "评审 agent 会陷入死循环（曾一夜 50+ 轮），解法是三轮封顶、后续只看增量 diff"
+     ],
+     "why": "你平时用 Claude 写代码做项目，这套“验证证据 + CLAUDE.md/REVIEW.md + 分级审批”的清单可以直接缩小版用在自己的仓库；也是理解 AI 交付工程师日常工作的好材料。",
+     "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+     "tags": [
+      "案例",
+      "观点"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "Meta 重回前沿：Muse Spark Open 与美国开源模型的格局",
+     "source": "Interconnects",
+     "published": "2026-10-17",
+     "readMinutes": 12,
+     "summary": "Interconnects 分析本周 Meta 开放 Muse Spark Open 权重（816B 总参数/42B 激活，1M 上下文）以及 Reflection 的 Beam，认为美国最好的开源模型与中国模型的差距缩小了约一半；没有这两个模型，会有 20 多个中国开源模型强于最好的西方模型。文章还讨论 Meta 的转向和西方前沿实验室的力量对比。原文英文。",
+     "takeaways": [
+      "Muse Spark Open 是目前最强的美国开源权重模型，但仍在与数月前发布的中国模型（如 GLM-5.3、Kimi K3）竞争",
+      "Mistral Large 4 已公布成绩（指数分 38），权重尚未放出",
+      "“开源”竞争的焦点已从“能不能用”变成“落后多少、是否够用”"
+     ],
+     "why": "想判断以后该选哪类模型做 Agent 项目、国内外开源谁更值得跟，这篇给出行业视角；不用全读，前半部分已够用。",
+     "url": "https://www.interconnects.ai/p/meta-shakes-up-the-frontiers-open",
+     "tags": [
+      "观点",
+      "新模型"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "a16z 图表周报：Agent 被拒之门外——网站对机器人的 403 翻倍",
+     "source": "a16z",
+     "published": "2026-10-16",
+     "readMinutes": 5,
+     "summary": "a16z 引用 Cloudflare 数据：agent 和爬虫收到的 403（禁止访问）响应占比自夏季以来约翻倍。文章推测亚马逊等电商拦截 AI 购物 agent，是怕被“中间人化”、损失广告收入，也怕欺诈和退货问题——NRF 数据显示退货率和退货总成本自 2019 年分别约翻倍、三倍。原文英文。",
+     "takeaways": [
+      "“agentic commerce”（AI 代客下单）正和平台利益冲突",
+      "退货成本自 2019 年约涨三倍，是电商和逆向物流的真实压力",
+      "评论为推测，因果未证实"
+     ],
+     "why": "篇幅短、图表多，5 分钟读完；把 AI Agent 和电商履约、退货物流联系起来，对做物流 + AI 方向的求职思考有启发。",
+     "url": "https://www.a16z.news/p/this-week-in-charts-agents-denied",
+     "tags": [
+      "数据",
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "title": "DeepSeek 发布 V4.1-Flash-1017，价格不变",
+     "source": "DeepSeek API 更新日志",
+     "summary": "编程/智能体类基准全面提升（DeepSWE 77.0、Terminal-Bench 4.0 42.3），输出更短更快；API 价格不变，模型名 deepseek-flash；基准为厂商自测，暂无独立测评。",
+     "url": "https://api-docs.deepseek.com/zh-cn/updates/",
+     "tags": [
+      "新模型"
+     ],
+     "vendorClaim": true,
+     "published": "2026-10-16"
+    },
+    {
+     "title": "Meta Muse Spark Open 登顶 Code Arena WebDev 美国开源第一",
+     "source": "AIHOT 整理（Arena）",
+     "summary": "1511 分，开源总榜第 13；Artificial Analysis 指数 39，为美国开源最高，定价 1.25/4.25 美元每百万 token；Agentic 评测偏弱。",
+     "url": "https://aihot.news/items/bjzjg5k7af07c1c20bc1a8gxp",
+     "tags": [
+      "新模型"
+     ],
+     "published": "2026-10-16"
+    },
+    {
+     "title": "DeepSeek 开放自研搜索 API",
+     "source": "DeepSeek API 更新日志",
+     "summary": "底层为自研搜索引擎，称索引千亿级网页，并过滤 SEO 作弊和低质 AI 内容，可接入 RAG 与 Agent。",
+     "url": "https://api-docs.deepseek.com/zh-cn/updates/",
+     "published": "2026-10-16"
+    },
+    {
+     "title": "Anthropic 向投资者称季度营收升近 50% 至 168 亿美元",
+     "source": "Simon Willison（转引 FT）",
+     "summary": "据 FT 报道，蒸馏（用他人模型输出训练）约占营收 5%–7%，Q3 已大幅压缩；信息来自匿名知情人士。",
+     "url": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/",
+     "published": "2026-10-16"
+    },
+    {
+     "title": "Reflection 发布 501B 开源权重模型 Beam",
+     "source": "Hugging Face 博客",
+     "summary": "Reflection 首个模型 Beam 面向可自托管、可定制的开源使用；本期 Interconnects 一并分析，暂无独立测评。",
+     "url": "https://huggingface.co/blog/reflection-beam",
+     "tags": [
+      "新模型"
+     ],
+     "vendorClaim": true,
+     "published": "2026-10-16"
+    },
+    {
+     "title": "卡兹克实测 37999 元 RTX Spark 笔记本：本地跑大模型",
+     "source": "AIHOT 整理（数字生命卡兹克）",
+     "summary": "128G 统一内存机型一周实测，讲本地部署模型与工作流，价格偏高，仅作了解。",
+     "url": "https://aihot.news/items/ffpkck4k06le4smuaz4slhvcz",
+     "published": "2026-10-16"
+    },
+    {
+     "title": "IBM Granite Switch 4.1：一个端点同时支持对话、决策和语音",
+     "source": "Hugging Face 博客",
+     "summary": "IBM 把多种能力合到单一端点，厂商介绍，暂无独立测评。",
+     "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
+     "vendorClaim": true,
+     "published": "2026-10-16"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "ASCM 报告：83% 的供应链负责人认为员工没准备好用 AI",
+     "source": "Supply Chain 24/7（转述 ASCM 与 DSCI 报告）",
+     "published": "2026-10-16",
+     "readMinutes": 5,
+     "summary": "ASCM 和数字供应链研究所的《The People Paradox》调研 144 份回复（107 份用于详细分析）：83% 认为员工未准备好，91% 计划用 AI 辅助员工，仅 7% 预期直接替代人。准备充分的组织 AI 项目成功率 71%，未准备的为 28%。原文英文，样本较小、62% 在北美。",
+     "takeaways": [
+      "主要障碍：技能资源与不清晰的商业回报各 33%，数据质量 25%",
+      "准备充分的组织平均在 6 个供应链职能用了 AI",
+      "一线员工多数“知道但没参与”AI 项目"
+     ],
+     "why": "数据直接说明供应链企业缺的是懂业务又会落地 AI 的人，对你规划物流 + AI 的就业定位有参考；注意样本偏小。",
+     "url": "https://www.supplychain247.com/article/supply-chain-ai-workforce-readiness-ascm-dsci-report",
+     "tags": [
+      "报告",
+      "数据"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "韧性不等于可视化：关键是能执行替代方案",
+     "source": "Logistics Viewpoints",
+     "published": "2026-10-16",
+     "readMinutes": 6,
+     "summary": "文章主张：可视化只告诉你出了事，韧性取决于有没有可执行的替代方案和事先定好的决策权。备用供应商、替代路线、缓冲库存、冗余产能都需提前投资和资质认证，不能事发再造；预先定义溢价运输、库存调拨等阈值与审批权。原文英文，偏观点。",
+     "takeaways": [
+      "替代方案（备选供应商/路线/缓冲库存/备用设施）需事前建设",
+      "决策权和阈值要预先定，否则审批链拖垮响应",
+      "没演练过的预案常基于过时假设"
+     ],
+     "why": "物流工程课程里的网络设计、库存缓冲正好对应这些概念，可作为理解“韧性”的实务框架，面试和复试聊供应链话题可用。",
+     "url": "https://logisticsviewpoints.com/2026/10/16/supply-chain-resilience-is-not-visibility-it-is-the-ability-to-execute-alternatives/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "超越按路线排序：用 AI 优化托盘拣选任务分配",
+     "source": "MH&L",
+     "published": "2026-10-15",
+     "readMinutes": 5,
+     "summary": "多数 WMS 按路线号、停靠顺序分配任务，却不优化拣选路径：拿双托盘车的拣货员两个托盘的货位可能散在 12 个巷道。文章提出把任务分配做成实时优化问题，在满足负载平衡、品类兼容、订单优先级和送货时限的前提下，从百万级组合中选出重叠最大的托盘配对。原文英文，带有推广性质，具体收益数字需自行核实。",
+     "takeaways": [
+      "问题本质：拣选行走距离最小化 + 约束，属于运筹学经典问题",
+      "路线逻辑适合装车，不适合拣货",
+      "作者来自方案供应商，效果为厂商说法"
+     ],
+     "why": "和物流工程的拣选路径、订单分批课程直接对应，可当作“课本模型落到 WMS”的案例，做项目或考研复试讲案例时可借鉴。",
+     "url": "https://www.mhlnews.com/warehousing/article/55409389/beyond-route-based-sequencing-how-ai-sifts-millions-of-combinations-to-build-smarter-pallet-assignments",
+     "tags": [
+      "案例"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "title": "NAPA 选用 Hy-Tek 与海柔创新（Hai Robotics）的 ASRS 方案",
+     "source": "Automated Warehouse",
+     "summary": "NAPA Auto Parts 与系统集成商 Hy-Tek、Hai Robotics 合作，升级其 flow center 的高密度自动化履约；已在 Hy-Tek 创新实验室验证。",
+     "url": "https://www.automatedwarehouseonline.com/napa-auto-parts-picks-warehouse-automation-from-hy-tek-intralogistics/",
+     "published": "2026-10-16"
+    },
+    {
+     "title": "ISD 推出码垛/拆垛一体化单元",
+     "source": "Automated Warehouse",
+     "summary": "集成机械臂、视觉，可在码垛与拆垛模式间切换，兼容多品牌机器人；节省投资为厂商说法。",
+     "url": "https://www.automatedwarehouseonline.com/isd-combines-palletizing-depalletizing-single-automation-cell/",
+     "vendorClaim": true,
+     "published": "2026-10-16"
+    },
+    {
+     "title": "机器人机会充电为何在机器人规模化时胜出",
+     "source": "The Robot Report（播客）",
+     "summary": "WiBotic CEO 谈 AMR 机队的无线充电与电池管理，节目页面信息很少，且为赞助内容。",
+     "url": "https://www.therobotreport.com/why-opportunity-charging-is-winning-as-robot-fleets-scale/",
+     "vendorClaim": true,
+     "published": "2026-10-16"
+    },
+    {
+     "title": "物流网络正在长出“智能层”",
+     "source": "Logistics Viewpoints",
+     "summary": "文章称遥测、RFID、视觉等信号与业务实体关联后，软件无需人工上报即可掌握物流网络状态。",
+     "url": "https://logisticsviewpoints.com/2026/10/15/the-physical-logistics-network-is-getting-an-intelligence-layer/",
+     "published": "2026-10-16"
+    },
+    {
+     "title": "Q2 供应链获客效率下降 49%",
+     "source": "MH&L（LeadCoverage 指数）",
+     "summary": "指数中位数从 22.39 降至 11.35 美元；运费和油价上涨压缩货主预算，属营销行业数据。",
+     "url": "https://www.mhlnews.com/global-supply-chain/news/55412093/supply-chain-pipeline-efficiency-fell-49-in-q2",
+     "published": "2026-10-16"
+    },
+    {
+     "title": "FedEx、UPS 第四季度派送价格或创新高",
+     "source": "Supply Chain Dive",
+     "summary": "据 TD Cowen/AFS 预测，两家第四季度单件派送价格将创纪录高位。",
+     "url": "https://www.supplychaindive.com/news/fedex-ups-delivery-prices-set-for-record-high-q4-td-cowenafs/832992/",
+     "published": "2026-10-16"
+    },
+    {
+     "title": "普渡从服务机器人扩展到半人形与四足机器人",
+     "source": "Robotics & Automation News",
+     "summary": "普渡拓展产品线，与仓储关联较弱，仅作行业动态了解。",
+     "url": "https://roboticsandautomationnews.com/2026/10/16/pudu-expands-beyond-service-robots-into-semi-humanoids-and-quadrupeds/105988/",
+     "published": "2026-10-16"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "周末且信源更新少，仓储精读仅 3 条且质量一般（含 1 条厂商方案文章）。",
+  "抓取失败信源：Epoch AI（HTTP 403）、Import AI（HTTP 403）、Symbotic IR（HTTP 403）、国家统计局（超时）；36氪快讯与 Interact Analysis 无条目；AIHOT 接口正常。",
+  "Reflection Beam 为 10-16 发布，仅在速览中提及，未单独读原文，暂无独立测评。",
+  "Anthropic 代码评审博客与 DeepSeek 更新日志已用 WebFetch 核对。"
+ ]
+}
