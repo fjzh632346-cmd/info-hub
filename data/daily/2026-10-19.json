@@ -1,0 +1,236 @@
+{
+ "type": "daily",
+ "date": "2026-10-19",
+ "headline": "Anthropic 公开了“AI 写 90% 代码后如何做评审”的做法，并披露内部初级岗位占比下降；Meta 与 DeepSeek 新模型继续拉近开源与前沿的差距。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "Anthropic 如何在 Claude 写了约 90% 代码后重新设计代码评审",
+     "source": "Claude 官方博客（经 AIHOT 推荐）",
+     "published": "2026-10-17",
+     "readMinutes": 14,
+     "summary": "Claude Code 团队没有取消评审，而是把“读代码”大部分交给机器，只把人的注意力留给高风险改动。6–9 月合并 PR 翻倍以上，回滚率下降超 40%；内部 PR 的实质性评审意见占比从 16% 升到 54%。原文为英文（claude.dev 博客），本条依据原文概述与 AIHOT 解读。",
+     "takeaways": [
+      "按风险分级审批：低风险无需人工，中风险 1 人，高风险 2 人，AI 的批准不算人工批准",
+      "多个 agent 并行找 bug，再由投票 agent 筛选后才发出，避免噪音",
+      "评审器本身用历史事故做测试集，每天打分；还要设轮次上限（建议 3 轮）防止 agent 无限互审",
+      "指标看“人均审批次数、等待时间”，用回滚率/事故率当护栏"
+     ],
+     "why": "你平时用 Claude 写代码、做网站和 Agent，这篇是“AI 写大部分代码之后怎么保证质量”的一线实践，可直接借鉴 CLAUDE.md/REVIEW.md 的写法；对想做 AI 交付工程师（FDE）的人也是很好的工程方法素材。",
+     "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+     "tags": [
+      "案例",
+      "教程"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "Anthropic 内部研究：初级技术岗占比下降，AI Agent 工时达员工六倍",
+     "source": "The Decoder / Anthropic 研究",
+     "published": "2026-10-18",
+     "readMinutes": 8,
+     "summary": "Anthropic 技术部门初级员工占比从 2025 年初的 21% 降到 14%，新招中初级占比从 27% 降到 9%；2026 年 8 月全公司 AI Agent 工时约为人类员工的 6 倍（研究部门 19 倍）。研究自己也承认 Anthropic 是特例，结论难以推广到整体经济。这里读的是 The Decoder 的英文报道，Anthropic 原报告是《employment-at-anthropic》。",
+     "takeaways": [
+      "工程师代码提交量约 5.1 倍，数据科学家查询 3.1 倍，法务合同 3.1 倍，销售成交 1.7 倍",
+      "非技术部门岗位结构基本稳定，降得最明显的是复杂度最高的技术岗初级位",
+      "研究承认样本是特例且自愿用 AI，整体经济尚未显示可测的生产力提升"
+     ],
+     "why": "直接关系你找实习和就业的判断：数据说明入门岗要求在变，但它只是一家 AI 公司的内部数据，不必过度焦虑，可以当作提醒自己早点积累真实项目经验。",
+     "url": "https://the-decoder.com/anthropic-has-nearly-stopped-hiring-junior-staff-because-ai-agents-now-work-six-times-as-many-hours/",
+     "tags": [
+      "数据",
+      "报告"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Meta 搅动前沿格局：Muse Spark Open 与美国开源模型的追赶",
+     "source": "Interconnects",
+     "published": "2026-10-17",
+     "readMinutes": 15,
+     "summary": "Interconnects 分析 Meta 发布的 Muse Spark Open（816B 总参数/42B 激活的 MoE，即每次只调用一部分参数的混合专家模型，1M 上下文）：它是目前最强的美国开源模型，性能约在 GLM 5.2 之上、接近 DeepSeek V4.1 Flash，仍落后于最强的中国开源模型。作者认为中美开源模型的差距缩小了约一半。原文英文。",
+     "takeaways": [
+      "没有 Meta 和 Reflection 的新模型，榜上会有 20 多个中国开源模型强于最好的西方模型",
+      "西方开源模型即使发布更晚，采用量仍高于同等性能的中国模型",
+      "开放式 LLM agent 已经可用，推理服务商和企业“自有智能”需求在快速增长"
+     ],
+     "why": "帮你看清开源模型的竞争格局；你做 Agent 项目选底座模型时，需要知道国内外开源模型各处什么水平。英语偏弱可以借助翻译读，重点看图表和结论。",
+     "url": "https://www.interconnects.ai/p/meta-shakes-up-the-frontiers-open",
+     "tags": [
+      "新模型",
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Browser Use：浏览器智能体的工作原理与什么时候该用",
+     "source": "Browser Use 官方",
+     "published": "2026-10-18",
+     "readMinutes": 10,
+     "summary": "浏览器智能体由模型、harness（管上下文、工具和循环的外壳程序）、浏览器三部分组成，按“观察页面、选动作、执行、检查”循环工作。文章对比了 API、脚本和智能体的适用场景，并列出结果不稳、被网站拦截、提示注入、成本不可控等局限。作者是厂商，用的是自家云端使用数据；原文英文，约 2800 词。",
+     "takeaways": [
+      "有 API 用 API，流程固定用脚本，流程不可预测才用智能体",
+      "衡量成本用“总花费（含失败重试）÷ 已验证成功任务数”",
+      "页面内容要当作不可信输入，敏感操作加人工审批",
+      "起步选只读任务，设置时间/步数/成本上限"
+     ],
+     "why": "你在做 Agent，这篇把浏览器自动化的选型与风险讲得很系统，也适合做 FDE 方向时向客户解释“什么场景该用 Agent”。",
+     "url": "https://browser-use.com/posts/browser-agents",
+     "tags": [
+      "教程"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "title": "DeepSeek-V4.1-Flash-1017 发布：基准提升、API 价格不变",
+     "source": "DeepSeek 官方 API 更新日志",
+     "summary": "官方称多项基准提升且输出更短，仍用 deepseek-flash 调用；暂无独立测评（Arena 另有榜单见下条）。",
+     "url": "https://api-docs.deepseek.com/zh-cn/updates/#deepseek-v41-flash-1017-更新"
+    },
+    {
+     "title": "DeepSeek-V4.1-Flash 登顶 Code Arena WebDev 开源榜首",
+     "source": "AIHOT 整理（Arena）",
+     "summary": "Arena 称其超过 Kimi K3（Max），成本低约 10 倍；榜单由 Arena 自家测评给出。",
+     "url": "https://aihot.news/items/bm95oliei5mcgy2tau7e22d59"
+    },
+    {
+     "title": "DeepSeek 开放自研搜索 API",
+     "source": "DeepSeek 官方 API 更新日志",
+     "summary": "官方称索引千亿级网页、每天处理数亿次搜索，并过滤 SEO 作弊和低质 AIGC，可接入 RAG 与智能体。",
+     "url": "https://api-docs.deepseek.com/zh-cn/updates/#开放自研搜索-api"
+    },
+    {
+     "title": "Meta 发布 Muse Spark Open，Code Arena WebDev 美国开源第一",
+     "source": "AIHOT 整理（Arena）",
+     "summary": "816B/42B 激活 MoE、1M 上下文，WebDev 得分 1511；价格每百万 token 输入 1.25/输出 4.25 美元。",
+     "url": "https://aihot.news/items/bjzjg5k7af07c1c20bc1a8gxp"
+    },
+    {
+     "title": "a16z 图表周报：智能体购物被电商平台拦截",
+     "source": "a16z",
+     "summary": "Cloudflare 数据显示智能体收到的 403 拒绝响应比例约翻倍，亚马逊等电商在限制 agent 购物。",
+     "url": "https://www.a16z.news/p/this-week-in-charts-agents-denied"
+    },
+    {
+     "title": "Goodfire 研究：智能体分析可化解多义性难题",
+     "source": "Latent Space AINews",
+     "summary": "Goodfire 的 Nick Cammarata 称神经网络“本来就很干净”，不少多义性案例经 agent 分析即可解释。",
+     "url": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+     "title": "德国两家法院裁定 Google 须为 AI Overview 内容负责",
+     "source": "The Decoder（经 AIHOT）",
+     "summary": "慕尼黑法院认定 AI 摘要属于 Google 自己的陈述；Google 上诉后以和解结案，未获上级裁决。",
+     "url": "https://the-decoder.com/two-german-courts-now-hold-google-liable-for-what-its-ai-overviews-say/"
+    },
+    {
+     "title": "英伟达 RTX Spark 笔记本开售，主打 128GB 统一内存本地 AI",
+     "source": "AIHOT 整理",
+     "summary": "华硕 ProArt 创16 售价 37999 元，卡兹克称实测可在本地跑模型，128G 版本京东几分钟售空。",
+     "url": "https://aihot.news/items/rq32az1hr7zpbipiyega9ehjr"
+    },
+    {
+     "title": "商务部、科技部拟在出口技术目录增列 23 项人工智能技术",
+     "source": "AIHOT 整理",
+     "summary": "目录修订正在征求意见，涉及人工智能相关技术的出口管理。",
+     "url": "https://aihot.news/items/p11tj593iq5nrtiotvoxllop4"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "ASCM/DSCI 报告：83% 供应链负责人认为员工没准备好用 AI",
+     "source": "Supply Chain 24/7",
+     "published": "2026-10-16",
+     "readMinutes": 5,
+     "summary": "ASCM 与数字供应链研究院的《The People Paradox in Supply Chain AI Integration》调查（144 份回复，107 份用于分析）：83% 认为员工没准备好，91% 的组织计划用 AI 辅助人，仅 7% 预期直接替代。最常见的障碍是技能资源和 ROI 不清晰（各 33%），其次是数据质量（25%）。原文英文，样本小且以北美为主。",
+     "takeaways": [
+      "企业的计划是“AI 辅助人”而不是替代人",
+      "障碍主要在人和商业论证，不在技术本身",
+      "基层员工多是“知道但没参与”，推进靠从单一职能试点、让管理者早期参与"
+     ],
+     "why": "你要进供应链/仓储自动化行业，这份数据说明企业更缺会把 AI 落到业务里的人；物流工程背景加上 AI 工具能力是明确的差异点。样本小，只作参考。",
+     "url": "https://www.supplychain247.com/article/supply-chain-ai-workforce-readiness-ascm-dsci-report",
+     "tags": [
+      "报告",
+      "数据"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "供应链韧性不等于可视化，而是能执行替代方案",
+     "source": "Logistics Viewpoints",
+     "published": "2026-10-16",
+     "readMinutes": 6,
+     "summary": "文章主张：可视化只告诉你出了事，韧性取决于有没有“可执行的替代方案”和使用它的决策权。备用供应商、替代物料、合格线路、缓冲库存、柔性产能都需要提前投入和资质认证，不能事发时临时造；需提前定好溢价运输、库存调拨等的授权阈值。原文英文，属观点分析，无数据。",
+     "takeaways": [
+      "韧性是网络设计和运营机制，不是应急反应",
+      "替代方案要提前认证、签约、备好数据与流程",
+      "授权阈值和决策权要事先写清，否则审批链会拖垮响应"
+     ],
+     "why": "物流工程与管理方向的核心思路之一：库存、网络设计、风险管理，可以当作考研专业课和面试聊供应链韧性的框架。",
+     "url": "https://logisticsviewpoints.com/2026/10/16/supply-chain-resilience-is-not-visibility-it-is-the-ability-to-execute-alternatives/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "title": "Hy-Tek 与 Hai Robotics（海柔创新）为 NAPA 部署履约自动化",
+     "source": "Automated Warehouse",
+     "summary": "Hy-Tek Intralogistics 和 Hai Robotics 与 NAPA Auto Parts 合作改造其 flow center，NAPA 称曾在 Hy-Tek 创新实验室评估技术。",
+     "url": "https://www.automatedwarehouseonline.com/napa-auto-parts-picks-warehouse-automation-from-hy-tek-intralogistics/"
+    },
+    {
+     "title": "ISD 推出码垛与拆垛合一的自动化单元",
+     "source": "Automated Warehouse",
+     "summary": "ISD 的 Palletizing Module 含机械臂、视觉和控制，可在码垛与拆垛模式间切换，厂商称可省设备与场地。",
+     "url": "https://www.automatedwarehouseonline.com/isd-combines-palletizing-depalletizing-single-automation-cell/"
+    },
+    {
+     "title": "普渡拓展至半人形机器人与四足机器人",
+     "source": "Robotics & Automation News",
+     "summary": "普渡称已有 13 万台机器人在 85 余国运行；工业半人形 D7 有 23 个关节，可搬 20 公斤。",
+     "url": "https://roboticsandautomationnews.com/2026/10/16/pudu-expands-beyond-service-robots-into-semi-humanoids-and-quadrupeds/105988/"
+    },
+    {
+     "title": "机器人集群规模化后，机会充电为何胜出",
+     "source": "The Robot Report",
+     "summary": "播客访谈 WiBotic CEO，讨论 AMR 等机器人队列的无线充电与电池管理；节目有厂商赞助。",
+     "url": "https://www.therobotreport.com/why-opportunity-charging-is-winning-as-robot-fleets-scale/"
+    },
+    {
+     "title": "Skild AI 让机器人通过自我博弈学习物理技能",
+     "source": "Robotics & Automation News",
+     "summary": "报道 Skild AI 的机器人自我博弈训练方法。",
+     "url": "https://roboticsandautomationnews.com/2026/10/16/skild-ai-trains-robots-to-learn-physical-skills-through-self-play/105994/"
+    },
+    {
+     "title": "LeadCoverage：物流行业二季度销售管道效率下降 49%",
+     "source": "MH&L",
+     "summary": "中位数从 22.39 美元降到 11.35 美元；运价上涨但买方缺乏切换动力。数据来自咨询公司自家指数。",
+     "url": "https://www.mhlnews.com/global-supply-chain/news/55412093/supply-chain-pipeline-efficiency-fell-49-in-q2"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "今天是周一，时间窗口放宽到 72 小时。",
+  "仓储物流方向近 72 小时缺少一手深度内容（无极智嘉/海康/大福/北自等一手更新、36氪快讯也无相关项），精读仅 2 条，宁缺毋滥。",
+  "部分 latest.json 信源的 status 字段缺失，无法逐个确认抓取状态；AIHOT 的 latest24h 接口正常返回。",
+  "Hai Robotics 即海柔创新。",
+  "未单独做 WebSearch 复核新模型，新模型信息来自 DeepSeek 官方更新日志、Arena 和 Interconnects；暂无独立测评。"
+ ]
+}
