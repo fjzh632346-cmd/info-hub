@@ -1,0 +1,127 @@
+{
+  "type": "x",
+  "date": "2026-10-20",
+  "items": [
+    {
+      "kind": "news",
+      "category": "研究",
+      "score": 86,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2112194237211029946",
+      "posted": "2026-10-19",
+      "metrics": "2.7 万查看 · 107 赞 · 122 收藏",
+      "textZh": "宝玉整理了网易办公 Agent 产品 LobsterAI 的第二期《中国办公 Agent 用户行为报告》（只代表这一家产品的用户）。关键数字：9 月用户每次交给 Agent 的任务平均消耗 20.2 万 Token（模型读写文字的计量单位，可理解为“活有多大”），是 3 月的 3.2 倍；日活增幅 83.1%。最实用的一节是“缓存”：同样的活，用 DeepSeek V4.1 Flash 实际只付原价的 4.6%，GLM 5.3 Flash 要 35.1%，差七倍多，主要差在“命中缓存后按几折收费”。用途上编程/IT 占 40.1%，设计创作 17.2% 在上升；北京活跃用户占比第一（5.7%）；77% 的人通过微信给 Agent 派活。想做 AI 产品经理或交付工程师，这是少见的真实用户数据。"
+    },
+    {
+      "kind": "news",
+      "category": "编程",
+      "score": 80,
+      "author": "DeepSeek",
+      "handle": "@deepseek_ai",
+      "url": "https://x.com/deepseek_ai/status/2112476496283775135",
+      "posted": "2026-10-20",
+      "metrics": "149.3 万查看 · 1.9 万赞",
+      "textZh": "DeepSeek 把自家内部用的推理框架 DeepInfer 完整开源了（推理框架 = 让训练好的模型真正对外提供服务、回答请求的那套软件）。它目前在支撑 DeepSeek-V4.1-Flash 的线上服务，主打高吞吐、低延迟，包含高性能算子、分布式推理、投机解码（先用小模型猜、大模型验证，以提速）和结构化输出等。官方说以后新模型的推理代码也会放在这里，目的是帮社区降低算力成本。代码在 GitHub 的 deepseek-ai/DeepInfer。歸藏（@op7418）也转发点评说“可以实现跟他们类似的高吞吐量和低延迟表现”。"
+    },
+    {
+      "kind": "opinion",
+      "category": "研究",
+      "score": 82,
+      "author": "纳米AI",
+      "handle": "@antiAIvo",
+      "url": "https://x.com/antiAIvo/status/2112187842919268835",
+      "posted": "2026-10-19",
+      "metrics": "3.8 万查看 · 676 赞 · 983 收藏",
+      "textZh": "一篇中文长文《大模型学习地铁图》：把大模型知识画成“一条主干线 + 五条支线”。主干线按真实演进顺序走：前置基础（Python、PyTorch、一点线性代数）→ Transformer（2017）→ GPT-2（强调一定要亲手写一个能跑的 GPT-2，后面的新模型基本都是在它上面“换零件”）→ 预训练 → ChatGPT/指令微调 → LLaMA（RMSNorm、SwiGLU、RoPE 等替换）→ MoE 稀疏专家（如 DeepSeek-V3 总参数 6710 亿、每次只激活约 370 亿）→ 推理模型，支线按兴趣换乘。如果你想走 AI 交付工程师方向、又不知道从哪补原理，这是一份顺序清楚、不贩卖焦虑的路线图。"
+    },
+    {
+      "kind": "news",
+      "category": "研究",
+      "score": 72,
+      "author": "Artificial Analysis",
+      "handle": "@ArtificialAnlys",
+      "url": "https://x.com/ArtificialAnlys/status/2112249300860444927",
+      "posted": "2026-10-20",
+      "metrics": "4.9 万查看 · 783 赞",
+      "textZh": "测评机构 Artificial Analysis 发布新榜单 AA-PersonalityBench，不比“答得对不对”，而是比模型的“性格”和说话风格：用 900 道题测 30 种性格特质（归成表达力、条理、信息量、透明度、温暖、坚定、想象力、“套话程度”8 个指数），再用程序统计 21 项说话习惯。部分结果：条理性最强的有 DeepSeek V4.1 Flash；想象力强的有 Claude Opus 5.5、GLM-5.3；“套话”最多的是 Llama 4 Maverick、GPT-4o；Qwen3.8 27B 平均每次回答约 1030 词，接近 GPT-6 Luna 的四倍；GLM-5.3 平均每次用 7 个破折号，Claude 5.5 系列几乎不用。选模型写作文、写报告时可以参考。"
+    },
+    {
+      "kind": "news",
+      "category": "研究",
+      "score": 64,
+      "author": "Vals AI",
+      "handle": "@ValsAI",
+      "url": "https://x.com/ValsAI/status/2112471082397778083",
+      "posted": "2026-10-20",
+      "metrics": "9.0 万查看 · 863 赞",
+      "textZh": "测评机构 Vals AI 在做一个“模拟公司内网攻防”的网络安全测评，先放出一个初步发现：在多步骤的攻击类任务上，DeepSeek V4.1 Flash 1017 版本的表现超过了 GPT 6 Sol（Sol 是通过 OpenAI 的受限访问计划测的）。他们的出发点是评估模型落到坏人手里的风险，完整结果几周后公开。目前只是一条初步结论，没有给出具体分数，看个趋势即可：便宜的国产小模型在复杂多步任务上已经能和顶级模型掰手腕。"
+    },
+    {
+      "kind": "opinion",
+      "category": "其他",
+      "score": 72,
+      "author": "a16z",
+      "handle": "@a16z",
+      "url": "https://x.com/a16z/status/2112302943148097968",
+      "posted": "2026-10-20",
+      "metrics": "4.8 万查看 · 381 赞",
+      "textZh": "风投 a16z 剪了一段前微软 Windows 负责人 Steven Sinofsky 的访谈：AI 智能体（Agent）难以在公司里推广，是因为大部分工作靠的是“说不清的经验”，很难写成一步步的指令。他说大多数上班族画不出自己工作的流程图，一个 50 人的市场团队里可能只有一个人能讲清整个流程；所以让普通员工去“教”Agent 干活，效果很有限，真正能把业务翻译成 Agent 能执行的步骤的，历来都是组织里少数高技能的人。这正好解释了为什么会出现“AI 交付工程师（FDE）”这类岗位——你关注的方向，核心能力就是把业务流程拆清楚。"
+    },
+    {
+      "kind": "opinion",
+      "category": "视频",
+      "score": 70,
+      "author": "Gary曹淦",
+      "handle": "@GaryAIytb",
+      "url": "https://x.com/GaryAIytb/status/2112422551150620733",
+      "posted": "2026-10-20",
+      "metrics": "4.6 万查看 · 428 赞",
+      "textZh": "一篇完整复盘：作者看到抖音上一个千人在线的 AI 实时数字人直播间，花四天用 Claude 搭了一个类似的，并把“场控”工具按 MIT 协议开源（GitHub：garycaogan/ai-live-avatar）。他拆解出：主播本身用 Vidu 的实时数字人模型生成，自己做的是外面一层——过滤低俗和广告弹幕、排队、识别弹幕意图（聊天/换衣服/换背景/比心）、换装、冷场时的待机话题，再用 OBS 拼画面推流。还算了账：Vidu 实时数字人约 1.5 积分/秒，一小时大概 169 元，实播 67 分钟花了 191 元。适合想了解“AI 视频怎么落地成产品”的人。"
+    },
+    {
+      "kind": "news",
+      "category": "视频",
+      "score": 68,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2112439331000328354",
+      "posted": "2026-10-20",
+      "metrics": "1.1 万查看 · 44 赞 · 81 收藏",
+      "textZh": "宝玉贴出了谷歌 NotebookLM“视频概览”功能的系统提示词全文（英文，约一万字符）。从内容看，它把做视频拆成多步“共创”流程：先尽量用资料摘要自动填好选项、只在不够时才去检索；看用户最后一句话判断是要改旧视频还是新做一个；用户说“重来”时必须清空之前所有选择；界面文字要翻译成用户语言、但结构字段不能翻；推荐的主题标签要 3–6 个词、具体有吸引力。想写自己的视频或 PPT 类 Skill，可以参考它“先问清、再生成、可随时推倒重来”的结构。"
+    },
+    {
+      "kind": "opinion",
+      "category": "编程",
+      "score": 60,
+      "author": "kristoff",
+      "handle": "@kristoff_wu",
+      "url": "https://x.com/kristoff_wu/status/2112216903150436383",
+      "posted": "2026-10-20",
+      "metrics": "1.7 万查看 · 225 赞 · 447 收藏",
+      "textZh": "一位做海外小网站的作者复盘“新词站”第一次赚过 1100 美元的经历。“新词”指刚冒出来、之前没人搜过的关键词（比如某个新 AI 视频特效名），用谷歌趋势判断；抢先做一个围绕这个词的网站，不需要外链也能排到搜索前面。他用 Opus 5.5 一小时搭好网站，先上线再完善；生成模型从 Seedance、Wan 2.2 换到 Kling，因为前者对人脸限制严。还提到加“邮箱密码登录”后多了不少订单。适合想用 Claude 做网站试试副业的人了解思路，但收入有偶然性，别当成稳赚。"
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "score": 60,
+      "author": "Numa",
+      "handle": "@numaausaumon",
+      "url": "https://x.com/numaausaumon/status/2112217790870680012",
+      "posted": "2026-10-20",
+      "metrics": "4.8 万查看 · 947 赞 · 982 收藏",
+      "textZh": "作者用 Opus 5.5 加 Jig 做了个小应用：丢进去一份 PDF 说明书，输入“/assembly”，就能生成可旋转查看的 3D 装配步骤。他先把宜家最热门的 20 份说明书转成了 3D，网站可以免费试。对学机械/物流工程的人，可以看看“图纸 → 3D 装配动画”这件事现在被 AI 做到了什么程度。注意这是 Jig 相关的展示帖，带推广性质。"
+    },
+    {
+      "kind": "news",
+      "category": "视频",
+      "score": 58,
+      "author": "lumxss",
+      "handle": "@bkdgiffug",
+      "url": "https://x.com/bkdgiffug/status/2112303527720530034",
+      "posted": "2026-10-20",
+      "metrics": "1.8 万查看 · 354 赞 · 489 收藏",
+      "textZh": "推荐一个免费的 GitHub 仓库“Seedance 2.0 Skill OS”（作者 Emily2040）：给字节的 Seedance 2.0 视频模型配的一套 Skill，把镜头机位、运镜、节奏、分镜、场景、动作、风格这些影视规则整理成体系，让写视频提示词从“随口编”变成按片场规范来。帖子本身没有附成片，效果需要自己试；想做 AI 视频的话可以收藏备用。"
+    }
+  ]
+}
