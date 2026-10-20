@@ -1,0 +1,252 @@
+{
+ "type": "daily",
+ "date": "2026-10-20",
+ "headline": "OpenAI 公开冷门语言与 COBOL 迁移评测，DeepSeek V4.1 Flash 更新登上开源榜前列；仓储侧值得看无人叉车市场格局与人形机器人 ROI。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "OpenAI：新模型在 COBOL 等冷门编程语言上大幅提升，并公开两套评测",
+     "source": "OpenAI",
+     "published": "2026-10-19",
+     "readMinutes": 8,
+     "summary": "OpenAI 发布 GPT-6 系列在 COBOL、Fortran、Visual Basic 等低资源语言（网上可学的代码少）上的结果，并开源 MultiLangBench（用 20 种语言从零写 SQLite 兼容数据库）和 COBOL 迁移评测。GPT-6 Astra 平均通过率 87.4%，上一代 GPT-5.6 Sol 为 26.8%；COBOL 迁移评测 GPT-6.1 Sol 低推理强度 86.6%，对比 5.4%。原文英文，评测集在 GitHub 公开。",
+     "takeaways": [
+      "MultiLangBench 在 GitHub 公开，可自己复现和查看每种语言的差距",
+      "GPT-6 Luna 通过率 40.3%，单样本成本约 $0.77，比 GPT-5.6 Sol 低约 78%",
+      "OpenAI 自己提醒：迁移到生产仍需专家审查和业务规则测试"
+     ],
+     "why": "想做 Agent 和代码类项目，可以看到评测是怎么设计的（以数据库文件做统一接口、隐藏测试逐字节比对），也能判断新模型在遗留系统迁移上的真实水平；物流行业大量老系统，这类能力和 WMS 改造有关。",
+     "url": "https://openai.com/index/low-resource-programming-languages",
+     "tags": [
+      "新模型",
+      "报告"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "Meta 工程团队：用 1300 行“瘦编排器”调度 14 个子智能体",
+     "source": "Meta Engineering",
+     "published": "2026-10-19",
+     "readMinutes": 10,
+     "summary": "Meta 在推荐系统数据管道里最初用一个装满全部知识的单智能体，上下文超过阈值后表现反而下降。他们改成一个约 1300 行、只负责路由和可靠性检查的编排器，把 20+ 工作流分派给 14 个上下文互相隔离的专项子智能体。原文英文。",
+     "takeaways": [
+      "编排器自己不做领域推理，只做排序和校验",
+      "单智能体知识过多会交叉污染概念，这是拆分的直接原因",
+      "文中引用预印本：编排式多智能体 80 任务批次准确率 65.3%，单智能体 16.6%（二手引用，需谨慎）"
+     ],
+     "why": "你常用 Claude 做 Agent，这篇是可直接照搬的架构思路；做 FDE（AI 交付工程师）方向也能当作生产级 Agent 设计的案例。",
+     "url": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/",
+     "tags": [
+      "案例",
+      "教程"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": false,
+     "title": "DeepSeek V4.1 Flash 1017 发布：开源模型并列第二，价格不变",
+     "source": "Artificial Analysis（经 AIHOT）",
+     "published": "2026-10-19",
+     "summary": "第三方指数 45 分，比旧版高 6 分，与 GLM-5.3 并列开源第二；API 约 $0.30/$1.20 每百万 token（输入/输出）。",
+     "url": "https://aihot.news/items/wrlpmwb2tsk1moehp5kpsvovb",
+     "tags": [
+      "新模型"
+     ]
+    },
+    {
+     "pick": false,
+     "title": "Arena：DeepSeek V4.1 Flash 登顶 Agent Arena 开源第一",
+     "source": "Arena（经 AIHOT）",
+     "published": "2026-10-19",
+     "summary": "基于 7.5K 真实会话，综合第 11，中位任务成本 $0.20；暂无更多独立测评。",
+     "url": "https://aihot.news/items/h6okcjroca6s95iemyh7dhpcm",
+     "tags": [
+      "新模型"
+     ]
+    },
+    {
+     "pick": false,
+     "title": "美国国土安全部令联邦文职机构移除 DeepSeek 及其衍生产品",
+     "source": "AIHOT 整理",
+     "published": "2026-10-19",
+     "summary": "命令编号 2026-01，涵盖第三方基于 DeepSeek 开发的产品；军方和情报机构不在此列。",
+     "url": "https://aihot.news/items/p04w1xjk7v6fmlskpf5vsnuka"
+    },
+    {
+     "pick": false,
+     "title": "Meta Muse Wonder Full 登 Code Arena WebDev 第 6，1726 分",
+     "source": "Arena（经 AIHOT）",
+     "published": "2026-10-19",
+     "summary": "Meta 成为该榜第 3 个实验室；榜单方称其高于 Claude Sonnet 5.5（第 17）。",
+     "url": "https://aihot.news/items/qxv5364a77v0d22sab7mq4dha",
+     "tags": [
+      "新模型"
+     ]
+    },
+    {
+     "pick": false,
+     "title": "Inception 扩散模型 Mercury 3：超 1000 tok/s，1M 上下文",
+     "source": "Inception Labs（经 AIHOT）",
+     "published": "2026-10-19",
+     "summary": "厂商称多项基准超过 GPT-6 Luna 和 Haiku 5.5；上线期 $0.10/$0.35 每百万 token；暂无独立测评。",
+     "url": "https://aihot.news/items/osk3jj5jltogwr6zpo09w80j8",
+     "tags": [
+      "新模型"
+     ]
+    },
+    {
+     "pick": false,
+     "title": "fal 与 BFL 发布视频模型 FLUX 3 Max",
+     "source": "fal（经 AIHOT）",
+     "published": "2026-10-19",
+     "summary": "第三方图生视频评测并列第一，10 秒 720p 约 12 秒生成，三周内 75% 折扣；国内可用性未知。",
+     "url": "https://aihot.news/items/qldoluc73m0j8mo7u0ttf95km",
+     "tags": [
+      "新模型"
+     ]
+    },
+    {
+     "pick": false,
+     "title": "Meta 详解 Prometheus 吉瓦级超集群",
+     "source": "Meta Engineering",
+     "published": "2026-10-19",
+     "summary": "一期已用于训练 Muse 模型，预训练 goodput 超 85%，平均无中断时间超 54K GPU 小时。",
+     "url": "https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/"
+    },
+    {
+     "pick": false,
+     "title": "蚂蚁开源语音合成模型 Ming-3.0-tts",
+     "source": "GitHub inclusionAI",
+     "published": "2026-10-19",
+     "summary": "含 0.5B 稠密和 7.9B 总参数 MoE 两版，MIT 协议，权重可在 ModelScope 下载。",
+     "url": "https://github.com/inclusionAI/Ming-3.0-tts",
+     "tags": [
+      "新模型"
+     ]
+    },
+    {
+     "pick": false,
+     "title": "黑客用 AI 智能体入侵 John Deere 等 100 多个网站",
+     "source": "The Verge（经 AIHOT）",
+     "published": "2026-10-19",
+     "summary": "安全公司 Norforge 发现，攻击由开源平台 Cairn 编排、多为自主运行的智能体。",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "自动驾驶叉车：热还是不热？市场与厂商格局",
+     "source": "DC Velocity",
+     "published": "2026-10-19",
+     "readMinutes": 10,
+     "summary": "文章采访多家厂商，梳理无人叉车市场：传统叉车 OEM（丰田、Raymond、Crown 等）与“天生机器人”企业（Seegrid、Fox Robotics、VisionNav 等）两类阵营。全球有数百家厂商，但美国实际采用的车队有限，销量数据不清楚，市场能否养活这么多厂商是存疑的。原文英文。",
+     "takeaways": [
+      "自动牵引车（tugger）水平搬运是最受欢迎的类型之一",
+      "Fox Robotics 等专做拖车装卸",
+      "厂商数量过多，后续可能洗牌"
+     ],
+     "why": "你关注的海康机器人、极智嘉等都在叉车 AMR 赛道，这篇给出海外市场格局和采用瓶颈，是求职面试时能聊的行业判断。",
+     "url": "https://www.dcvelocity.com/material-handling/automated-forklifts-hot-or-not",
+     "tags": [
+      "观点",
+      "数据"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "人形机器人进仓库：能算出投资回报吗？",
+     "source": "Logistics Viewpoints",
+     "published": "2026-10-19",
+     "readMinutes": 6,
+     "summary": "文章以 GXO 部署 Agility Robotics 的 Digit 为例：据 Agility 称已搬运超 10 万个料箱、累计运行超 6.5 万小时，用于自动化系统与输送线之间的搬运。作者认为人形机器人不会取代 AMR、ASRS（自动化立体库）等成熟方案，机会在为人设计的空间里的“空缺环节”。原文英文，数据主要来自厂商。",
+     "takeaways": [
+      "人形机器人要按吞吐、成本、用工三个标准评估",
+      "成熟自动化方案仍是主力，人形填补缝隙",
+      "运行数据为厂商披露，缺独立 ROI 对比"
+     ],
+     "why": "人形机器人是面试常被问到的热点，这篇能帮你分清“演示”和“实际运行数据”。",
+     "url": "https://logisticsviewpoints.com/2026/10/19/humanoid-robots-are-finally-entering-the-warehouse-can-they-deliver-real-roi/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "极智嘉国际业务负责人访谈：仓储机器人市场进入成熟期",
+     "source": "DC Velocity",
+     "published": "2026-10-19",
+     "readMinutes": 5,
+     "summary": "极智嘉（Geek+）国际业务副总裁 Lit Fung 谈到：客户已不再把仓储机器人当成试点创新，而视为战略投资，驱动力是缺工、客户期望上升和 SKU 增多。他强调软件负责任务优先级、交通管理和与 WMS 对接，海外落地需要本地人才和合作伙伴。原文英文，受访者为公司高管，属企业说法。",
+     "takeaways": [
+      "自动化目的从降本变为敏捷、可扩展、可预测",
+      "机器人软件调度是系统的核心",
+      "出海经验：本地化服务和伙伴生态"
+     ],
+     "why": "极智嘉是你的目标企业之一，访谈能让你了解它的海外策略和对软件能力的强调，对准备面试和选方向有参考。",
+     "url": "https://www.dcvelocity.com/material-handling/lit-fung-of-geek",
+     "tags": [
+      "观点",
+      "案例"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": false,
+     "title": "开放物流基金会推出码头预约时间段 API",
+     "source": "Logistics Viewpoints",
+     "published": "2026-10-19",
+     "summary": "Transporeon 和 TradeLink 已实现，更大范围试点计划 2027 年初。",
+     "url": "https://logisticsviewpoints.com/2026/10/19/open-logistics-api-dock-scheduling-interoperability/"
+    },
+    {
+     "pick": false,
+     "title": "beRobox 在 PACK EXPO 发布带 3D 动态安全的码垛机 PALTZ",
+     "source": "Automated Warehouse",
+     "published": "2026-10-19",
+     "summary": "安全检测随机器人移动，而非固定传感器。",
+     "url": "https://www.automatedwarehouseonline.com/berobox-unveils-paltz-palletizer-3d-dynamic-safety-pack-expo-2026/"
+    },
+    {
+     "pick": false,
+     "title": "MIT 研究：AI 正成为全渠道履约的“战略助推器”",
+     "source": "DC Velocity",
+     "published": "2026-10-19",
+     "summary": "MIT CTL 全渠道供应链实验室新研究；正文未读全，仅作线索。",
+     "url": "https://www.dcvelocity.com/supply-chain/new-research-on-omnichannel-fulfillment-shows-ai-becoming-a-strategic-enabler"
+    },
+    {
+     "pick": false,
+     "title": "新 ASTM 标准：测试机器人在真实环境的表现",
+     "source": "Robotics & Automation News",
+     "published": "2026-10-19",
+     "summary": "新标准面向机器人真实场景性能测试。",
+     "url": "https://roboticsandautomationnews.com/2026/10/19/new-astm-standard-aims-to-test-how-robots-perform-in-the-real-world/106063/"
+    },
+    {
+     "pick": false,
+     "title": "Stow Group 开设美国首家货架工厂",
+     "source": "DC Velocity",
+     "published": "2026-10-19",
+     "summary": "仓储货架制造商在美国本土设厂。",
+     "url": "https://www.dcvelocity.com/material-handling/storage/racking/stow-group-opens-first-u-s-rack-making-factory"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "抓取失败信源：Epoch AI、Import AI、Symbotic IR、Interact Analysis（HTTP 403），国家统计局（超时）；36氪快讯无条目。AIHOT 接口正常。",
+  "GPT-6 系列、DeepSeek 等条目依据 excerpt/AIHOT 摘要，未独立核验；仓储精读未全文打开，依据 excerpt。额外 WebSearch 没发现遗漏的重大新模型。"
+ ]
+}
