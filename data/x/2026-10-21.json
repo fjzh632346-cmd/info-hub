@@ -1,0 +1,143 @@
+{
+  "type": "x",
+  "date": "2026-10-21",
+  "items": [
+    {
+      "kind": "prompt",
+      "category": "视频",
+      "score": 82,
+      "author": "Kōda",
+      "handle": "@aimikoda",
+      "url": "https://x.com/aimikoda/status/2112590477144797190",
+      "posted": "2026-10-21",
+      "metrics": "1.1 万查看 · 305 赞 · 254 收藏",
+      "textZh": "作者用 Claude Opus 5.5 把一张静态插画做成了 15 秒的循环动图：画面像监控摄像头在“分析目标”——先锁定、再变剪影、线框、骨架，然后放大标注特征、提取 6 种主色，最后弹出“目标锁定”的身份卡并无缝回到开头。整段是写代码生成的（不是视频模型），原图本身不被重画。想给自己的作品或产品图做一段有科技感的展示动画，可以直接换图套用。",
+      "prompt": "Turn the attached image into a seamless looping GIF (~15s, 15fps)\nstyled as a surveillance-camera \"subject analysis\" sequence:\n\n1. ACQUIRE – desaturated CCTV feed with REC, camera ID, running\n   timecode; a search reticle locks onto the subject.\n2. SILHOUETTE – background dims to a dark grid; AI detection boxes\n   (head, torso, limbs + confidence scores) pop in; a scan line\n   turns the subject into a flat silhouette.\n3. STRUCTURE – silhouette becomes a glowing wireframe (edges +\n   triangle mesh), then a pose skeleton with joint angles.\n4. FEATURES – real colors return; an \"ENHANCE\" zoom on the face;\n   animated callouts with typed labels for 4–5 key features.\n5. PALETTE – extract the 6 dominant colors (k-means); swatches fly\n   from the image into a panel with hex codes and percentages.\n6. IDENTIFY – \"TARGET LOCKED\" + ID card (class, threat level,\n   match %), then a glitch back to frame 1 for a seamless loop.\n\nKeep the original artwork intact (segment it, don't redraw it).\nMinimal HUD: white + one accent color, monospace font, a stage\nprogress panel in the emptiest area of the frame, no text over\nthe face. Export GIF + MP4.",
+      "promptZh": "把附上的图片做成一段无缝循环的 GIF（约 15 秒，15 帧/秒），风格是监控摄像头的\"目标分析\"过程：\n\n1. 捕获——去饱和的监控画面，带 REC 标志、摄像头编号和走动的时间码；一个搜索准星锁定主体。\n2. 剪影——背景暗下来变成深色网格；AI 识别框（头、躯干、四肢 + 置信度分数）弹出；一道扫描线把主体变成平面剪影。\n3. 结构——剪影变成发光的线框（边缘 + 三角网格），再变成标出关节角度的姿态骨架。\n4. 特征——恢复真实颜色；对脸部做\"增强\"放大；用打字动画标注 4–5 个关键特征。\n5. 配色——用 k-means 提取 6 个主色；色块从画面飞进一个面板，标出色值和占比。\n6. 识别——出现\"目标锁定\"和身份卡（类别、威胁等级、匹配度%），然后以一段故障效果切回第 1 帧，形成无缝循环。\n\n保持原图不变（只做抠图分割，不要重画）。界面元素极简：白色 + 一种强调色、等宽字体，把阶段进度面板放在画面最空的位置，不要把文字压在脸上。导出 GIF + MP4。",
+      "images": [
+        "https://pbs.twimg.com/media/HVFtnQJXsAAYrH_.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2112590196453642241/img/k-6y-GwIevo_-OL2.jpg"
+      ],
+      "video": "https://x.com/aimikoda/status/2112590477144797190"
+    },
+    {
+      "kind": "news",
+      "category": "视频",
+      "score": 84,
+      "author": "Kin",
+      "handle": "@KinGao476942",
+      "url": "https://x.com/KinGao476942/status/2112729924943634602",
+      "posted": "2026-10-21",
+      "metrics": "22.8 万查看 · 3803 赞 · 9739 收藏",
+      "textZh": "整理了 8 个用 Opus 5.5 做视频的 GitHub 仓库（星数为作者所写）：① awesome-opus5-5-videos（约 7100 星），爆款视频合集，每条附提示词；② lemo-opuscar（约 4400 星），一个 Claude Code Skill，选一种风格就能用纯代码做短片，51 种风格；③④ pdoom-video / PDoomVideo，同一首歌的两支卡拉 OK 歌词 MV 完整工程，可本地渲染 4K60，适合对照拆解；⑤ mg-styles-15，15 种 MG 动效风格，成片、提示词、源码都有；⑥ ClaudeAnimationBase，手绘卡通角色动画起步包，带 31 种表情；⑦ awesome-claude-5-5-videos，视频工作流合集，标了出处；⑧ opus-video-prompts，中文案例 + 可直接复制的提示词。想要视频类 Skill，从②和⑧入手最快。"
+    },
+    {
+      "kind": "prompt",
+      "category": "照片艺术",
+      "score": 70,
+      "author": "Johnn",
+      "handle": "@john_my07",
+      "url": "https://x.com/john_my07/status/2112737725430554781",
+      "posted": "2026-10-21",
+      "metrics": "7749 查看 · 252 赞 · 229 收藏",
+      "textZh": "用 ChatGPT 里的 GPT Image 2.5 生成的一张 6 宫格人像：模仿卡片机直闪的“随手拍照片合集”风格，同一个人六种姿势表情。提示词写得很完整，值得学的是它的结构：人物设定 → 画面风格（指定相机型号和闪光灯质感）→ 场景造型 → 逐张分镜 → 人物一致性要求 → 摄影细节和要避免的毛病 → 输出比例。把人物换掉，这套结构可以套到任何“同一人物多张图”的需求上。",
+      "prompt": "Create an ultra-realistic 6-photo portrait collage arranged in a seamless 3×2 grid, featuring a naturally beautiful young Portuguese woman in her early 20s. She has warm olive-toned skin, expressive hazel-brown eyes, long chestnut-brown hair with subtle natural highlights, soft face-framing layers, naturally full eyebrows, and delicate, distinctive facial features. Her appearance should feel authentic and individual, with realistic skin texture, tiny imperfections, and minimal everyday makeup.\n\nVisual aesthetic: Effortless European Instagram photo dump, reminiscent of candid photographs taken on a Canon PowerShot G7 X Mark III. Direct built-in camera flash, crisp details, bright facial highlights, hard shadows, slightly imperfect framing, subtle digital noise, and a nostalgic early-2000s point-and-shoot feel.\n\nSetting and styling: A warm off-white bedroom wall with subtle texture, a few natural shadows, and no distracting decorations. She wears a fitted burgundy scoop-neck top, tiny gold hoop earrings, and a delicate necklace. Her makeup is understated, with softly flushed cheeks, natural glossy lips, and lightly defined lashes. Her long hair remains the same color and length but falls differently in every photograph.\n\nSix distinct photographs:\n\n1. Sweet candid: Sitting close to the camera, resting her cheek against one hand, smiling gently with relaxed eyes and loose hair framing her face.\n2. Playful snapshot: Looking directly into the lens with a mischievous half-smile, one eyebrow slightly raised, fingers casually tucked behind her ear.\n3. Messy-girl moment: Eyes closed and laughing softly, both hands lifting her hair away from her shoulders, a few loose strands catching the flash.\n4. Effortless confidence: Turning her face over one shoulder, giving the camera a subtle side-eye, with one hand lightly resting against her neck.\n5. Caught laughing: Looking toward someone outside the frame, laughing naturally with her head tilted to the side and hair falling across one cheek.\n6. Quiet evening mood: Leaning against the wall, gazing thoughtfully into the lens, lips relaxed, fingertips gently twisting a strand of hair.\n\nIdentity consistency: The same Portuguese woman must appear in all six frames, with identical facial proportions, eye color, skin tone, hair color, and recognizable features. Each photograph should have a different pose, expression, head angle, and hair arrangement, as if captured within the same casual photo session.\n\nPhotography details: Realistic compact-camera flash, authentic skin pores, fine baby hairs, natural facial asymmetry, believable hands, sharp eyes, slight variations in exposure, and candid framing. Avoid excessive retouching, artificial skin smoothing, exaggerated beauty standards, duplicated expressions, malformed fingers, distorted anatomy, or the overly polished appearance of AI-generated portraits.\n\nOutput: Vertical 3:4 aspect ratio, exactly six photographs in a balanced 3-column × 2-row grid, clean alignment, no gutters, no text, no watermark. Photorealistic, youthful, spontaneous, intimate, and effortlessly stylish.",
+      "promptZh": "生成一张超写实的 6 宫格人像拼图（3×2 无缝排列），主角是一位二十出头、自然好看的葡萄牙年轻女性：暖橄榄色皮肤、有神的榛棕色眼睛、带自然挑染的栗棕色长发、柔和的修脸层次、自然浓密的眉毛、精致有辨识度的五官。要真实有个性：真实的皮肤纹理、细小瑕疵、日常淡妆。\n\n画面风格：随手发的欧美 Instagram 照片合集，像用佳能 G7 X Mark III 卡片机随手拍的。机身直闪、细节清晰、脸部高光亮、硬阴影、构图略不完美、轻微数码噪点，带 2000 年代初卡片机的怀旧感。\n\n场景与造型：暖米白色、带细微纹理的卧室墙面，少量自然阴影，没有多余装饰。她穿酒红色修身圆领上衣，戴小号金色圈形耳环和细项链。妆容低调：微红脸颊、自然水润的唇、淡淡的睫毛。长发颜色长度不变，但每张照片里垂落方式不同。\n\n六张不同的照片：\n1. 甜美抓拍：离镜头很近，单手托腮，眼神放松地浅笑，散发框住脸。\n2. 俏皮快照：直视镜头，坏坏的半笑，一边眉毛微挑，手指随意把头发别到耳后。\n3. 凌乱时刻：闭眼轻笑，双手把头发从肩上撩起，几缕碎发被闪光灯照亮。\n4. 随性自信：回头越过肩膀，轻轻斜眼看镜头，一只手搭在脖子上。\n5. 笑场：看向画外的人，歪头自然大笑，头发落在一侧脸颊上。\n6. 安静夜晚：靠着墙，若有所思地看镜头，嘴唇放松，指尖轻绕一缕头发。\n\n人物一致性：六张里必须是同一个人，脸部比例、眼睛颜色、肤色、发色和辨识特征完全一致；每张的姿势、表情、头部角度和发型摆放都不同，像同一次随手拍摄。\n\n摄影细节：真实的卡片机闪光、真实毛孔、细碎胎毛、自然的面部不对称、可信的手部、清晰的眼睛、曝光略有差异、抓拍构图。避免过度修图、假磨皮、夸张审美、重复表情、畸形手指、变形身体，以及 AI 人像那种过于精致的感觉。\n\n输出：竖版 3:4，正好六张、3 列 × 2 行均衡排列，对齐干净、没有间隙、没有文字、没有水印。写实、年轻、随性、亲近、毫不费力的时髦感。",
+      "images": [
+        "https://pbs.twimg.com/media/HVHzwmuakAAKdjt.jpg"
+      ]
+    },
+    {
+      "kind": "opinion",
+      "category": "网页设计",
+      "score": 83,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2112598829870575718",
+      "posted": "2026-10-21",
+      "metrics": "5.7 万查看 · 427 赞 · 474 收藏",
+      "textZh": "宝玉谈怎么让 AI 做的网页不“千篇一律”：Claude 这类模型默认就会用 shadcn/ui（一套很流行的现成界面组件），所以大家做出来都一个样。他的建议是先定一套“设计系统”（规定好颜色、字体、间距、组件长相的统一规范），之后做网页、PPT、甚至视频都按这套来，风格就既独特又统一。Claude Design 也是这个思路。他自己直接用 Adobe 开源的设计系统，“至少不算难看”。你在用 Claude 做网站，这条可以马上用上。"
+    },
+    {
+      "kind": "news",
+      "category": "编程",
+      "score": 78,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2112775224236077393",
+      "posted": "2026-10-21",
+      "metrics": "2.4 万查看 · 73 赞",
+      "textZh": "OpenAI 两条省钱更新：一是登录用户在 Codex 和 Work 里的“缓存”会一直保留——几小时后回到旧对话也能命中缓存，不会因为缓存失效被多收钱（缓存 = 模型把读过的内容先存起来，下次再用时便宜很多）；二是 API 的提示缓存现在最长可保留 12 小时（默认仍是 30 分钟），首次写入收原价 2.5 倍，之后读缓存只收原价一成。自己做 Agent 时，长对话反复调用的成本会明显下降。"
+    },
+    {
+      "kind": "news",
+      "category": "编程",
+      "score": 76,
+      "author": "Artificial Analysis",
+      "handle": "@ArtificialAnlys",
+      "url": "https://x.com/ArtificialAnlys/status/2112773422698606736",
+      "posted": "2026-10-21",
+      "metrics": "4.1 万查看 · 361 赞",
+      "textZh": "测评机构 Artificial Analysis 测了 Cognition 的 Devin Fusion：让一个顶级模型（Claude Opus 5.5）当“主管”负责规划、分派和最终检查，同时配一个便宜的“助手”模型（GPT-6 Luna）并行干活。结果在他们的编程 Agent 指数上拿到 68.1 分，比 Claude Code + Opus 5.5 的 66.0 高 2 分，而且每个任务成本 9.01 美元对 13.04 美元，便宜约 31%，平均耗时 55 分钟对 65 分钟。说明“大模型 + 小模型”分工是降本的实用思路。"
+    },
+    {
+      "kind": "news",
+      "category": "编程",
+      "score": 72,
+      "author": "Paweł Huryn",
+      "handle": "@PawelHuryn",
+      "url": "https://x.com/PawelHuryn/status/2112571119412646370",
+      "posted": "2026-10-20",
+      "metrics": "8.4 万查看 · 1093 赞 · 444 收藏",
+      "textZh": "作者用同一个模型 DeepSeek V4.1 Flash，在 9 种不同的“外壳”（harness，即包在模型外面的工具、提示和流程，比如 Claude Code、Codex、OpenCode）里各跑 5 次同一套测试，共 89 次。得分：Pi 40.4、Grok Build CLI 40.4、DeepSeek 自家 39.2、OpenCode 2.0 38.6、OpenCode 36.6、Claude Code 36.4、Codex 33.2、Hermes Agent 32、Kilo Code 31.8。结论：同一个模型换个外壳，分数能差出 8 分多；作者也提醒这不一定能推广到其他模型。"
+    },
+    {
+      "kind": "news",
+      "category": "研究",
+      "score": 70,
+      "author": "Kaggle",
+      "handle": "@kaggle",
+      "url": "https://x.com/kaggle/status/2112560433257181325",
+      "posted": "2026-10-20",
+      "metrics": "1.9 万查看 · 329 赞",
+      "textZh": "Kaggle 和 Rehearsals 发布“人类行为基准”：测 AI 能不能预测真实的人在健康、娱乐、消费、价值观等日常场景里会怎么选。数据来自 1244 名美国成年人的调查，共 750 道题。结论是通用大模型的预测会往“平均值”靠，而真实人群的偏好差异很大；人类自身的一致性上限约 93 分，现有成绩：Rehearsals 的 Engram 1.0 94.1%，Gemini 4 Argon 80.6%，Claude Opus 5 80.2%，GPT-5.6 Sol 79.5%。对想做 AI 产品经理的人，这是“AI 懂不懂用户”的一个参考。"
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "score": 74,
+      "author": "数字生命卡兹克",
+      "handle": "@Khazix0918",
+      "url": "https://x.com/Khazix0918/status/2112838884510048647",
+      "posted": "2026-10-21",
+      "metrics": "1.5 万查看 · 165 赞",
+      "textZh": "卡兹克花两天把自己几十个 Agent 自动化任务做成了一个“工厂流水线”可视化页面：每个项目是一座厂区，每个长期任务是一条产线；中间的分拣大厅代表他的 Webhook 调度中台（和飞书打通）；Claude Code 和 Codex 两个 Agent 在传送带尽头接“包裹”干活，干完把箱子码上托盘；场景还同步现实的昼夜和天气。对物流专业的你来说，这是把仓储分拣的概念反过来用在 Agent 管理上的有趣案例，也可以作为自己做 Agent 监控面板的灵感。",
+      "images": [
+        "https://pbs.twimg.com/media/HVJO02_awAA24Yt.jpg",
+        "https://pbs.twimg.com/media/HVJO3LJbwAAeAxH.jpg"
+      ]
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "score": 68,
+      "author": "Stock Ronin",
+      "handle": "@StockRonin",
+      "url": "https://x.com/StockRonin/status/2112617892525072668",
+      "posted": "2026-10-21",
+      "metrics": "7706 查看 · 71 赞",
+      "textZh": "仓储自动化公司 Symbotic 10 月 13 日宣布收购 cellumation，拿到它的 celluveyor——一种由软件控制的分拣平台。分拣就是把包裹和货物送往下一站的那一步；Symbotic 原本做的是机器人存储和搬运，补上分拣后，配送中心里更多环节可以连成一套系统，在追求吞吐量、场地紧张的仓库里更有意义。发帖账号是投资媒体，帖子本身也提醒：技术收益和客户落地还有待验证，接下来要看产品整合和实际仓库交付。关注大福、极智嘉这类公司的，可以留意这个“存储 + 分拣一体化”的方向。"
+    },
+    {
+      "kind": "opinion",
+      "category": "研究",
+      "score": 62,
+      "author": "a16z",
+      "handle": "@a16z",
+      "url": "https://x.com/a16z/status/2112665201170604185",
+      "posted": "2026-10-21",
+      "metrics": "1.6 万查看 · 66 赞",
+      "textZh": "a16z 的 Christian Keil 写文章讨论：AI 快要比人更会设计硬件了，难点会因此转移——仿真要更准，让实物制造从“做实验”变成“做确认”；需求会转向零部件、机加工和原材料；AI 公司需要把车间老师傅和工厂里的“工艺经验”收集起来。他认为 AI 最难加速的一步是“弄清楚客户到底想要什么”。对机械/机器人方向和制造供应链的就业判断有参考价值。原文在 a16z.news。"
+    }
+  ]
+}
