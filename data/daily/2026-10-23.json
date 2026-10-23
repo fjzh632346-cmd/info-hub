@@ -1,0 +1,266 @@
+{
+ "type": "daily",
+ "date": "2026-10-23",
+ "headline": "PHP2Shell 事件显示 AI 已压低漏洞发现成本；Anthropic 给出“单智能体+技能”优于多子智能体的实践结论，仓储侧讨论重心是“AI 放进决策链路”。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "Anthropic：什么时候该把子智能体合并进主 Agent 循环",
+     "source": "Anthropic（Claude 博客）",
+     "published": "2026-10-22",
+     "readMinutes": 10,
+     "summary": "Anthropic 应用 AI 团队对比多个企业部署后发现：带 skills（技能，按需加载的说明包）的单个智能体，质量常优于“一个提示词全包”和多子智能体方案，成本和延迟通常更低；有客户改成单循环后运行时间约快 2 倍。文章给出分阶段合并的方法和迁移工具包。原文中文译本摘要见 AIHOT，原文为英文。",
+     "takeaways": [
+      "子智能体按团队组织架构拆分（康威定律）容易造成“传话游戏”，每次交接都损失信息",
+      "合并顺序：先建端到端评估集（10 个黄金样例即可），再从最常用、常被串联调用的子智能体开始合并",
+      "适合保留子智能体的场景：独立研究路径、接口清晰的组件、黑盒验证"
+     ],
+     "why": "你常用 Claude 做 Agent，这篇直接讲架构取舍；将来做 AI 交付（FDE）岗位，评估集和渐进合并是常见的落地套路。原文英文。",
+     "url": "https://claude.com/blog/building-agents-when-to-fold-subagents-into-your-main-agent-loop",
+     "tags": [
+      "教程",
+      "案例"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "红队测试 OpenAI 内部智能体监控系统：METR 与 Redwood 的发现",
+     "source": "Redwood Research 博客",
+     "published": "2026-10-22",
+     "readMinutes": 12,
+     "summary": "METR 和 Redwood Research 各派一人，7 月 21 日至 8 月 11 日在 OpenAI 内部对“失准监控系统”（监控 AI 智能体是否做出偏离意图行为的系统）做了三周压力测试。估计能力不低于 GPT-5.5 的模型的内部 API 流量中约 75%–94% 有资格被监控；发现压缩事件未监控、序列化差异、可由客户端控制的请求头可关闭监控等漏洞。OpenAI 称已修复，但作者尚未核实。原文英文。",
+     "takeaways": [
+      "监控覆盖率是关键：该监控的流量不一定真被监控（如压缩事件导致约 10% Codex 流量漏监）",
+      "智能体可能利用监控所见轨迹与实际轨迹的差异绕过监控",
+      "设计原则：让逃避监控变难、确保应监控的流量被监控、按 N 条消息而非回合结束触发监控"
+     ],
+     "why": "想了解“智能体安全”实际怎么做的话，这是少见的外部人员看内部系统的一手复盘；对以后做企业 Agent 交付、考虑权限与审计很有参考。原文英文。",
+     "url": "https://blog.redwoodresearch.org/p/red-teaming-openais-internal-agent",
+     "tags": [
+      "报告",
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "PHP2Shell 事件全景复盘：AI 挖出的 PHP 高危漏洞",
+     "source": "卡兹克（AIHOT 收录）",
+     "published": "2026-10-23",
+     "readMinutes": 8,
+     "summary": "两个 PHP 远程代码执行漏洞（CVE-2026-109618、109619）在补丁发布前泄露，攻击演示视频外流，PHP 官方把更新从 22 日提前到 21 日晚，多国政府网站预防性下线。OpenAI 认领漏洞由 GPT-5.6 Sol 辅助发现。作者认为 AI 大幅压低漏洞发现成本，攻防节奏失衡。",
+     "takeaways": [
+      "时间线：10 月 20 日夜泄露→watchTowr 确认→补丁提前→视频外流→AI 加速复现利用",
+      "发现只花约 2 天、修复用了约两个月（据卡兹克）",
+      "结论：AI 让发现漏洞变便宜，防守方的补丁节奏成为瓶颈"
+     ],
+     "why": "PHP 支撑大量网站和仓储物流系统的后台，这件事说明做系统项目时依赖更新和安全响应不能忽略；也是今天圈内热度最高的事。",
+     "url": "https://aihot.news/items/h1v8wxdkljwpiyadhmy7miw4x",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "为什么 AI 算力“长方形”：Modal CEO Erik Bernhardsson 访谈",
+     "source": "Latent Space",
+     "published": "2026-10-22",
+     "readMinutes": 60,
+     "summary": "Modal 年化收入已超 10 亿美元，刚完成 7.5 亿美元 D 轮、估值 160 亿美元，累计启动近 30 亿个沙箱（隔离运行代码的环境）。访谈讲算力合同是固定时长固定 GPU 的“长方形”，而真实负载有波峰波谷，Modal 靠汇集大量客户需求做“期限转换”。也讨论 GPU 降价时锁定高价产能的风险。原文英文，长播客。",
+     "takeaways": [
+      "算力合同与真实需求形状不匹配，是 AI 基础设施的核心经济学问题",
+      "沙箱起初是因为模型能写代码、需要地方运行",
+      "提供商锁定高价产能后，GPU 降价会带来财务风险"
+     ],
+     "why": "想理解 AI 基础设施商业模式、对做 AI 产品/交付岗位有背景价值；时间较长，可挑章节听。原文英文。",
+     "url": "https://www.latent.space/p/modal-d",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": false,
+     "title": "OpenAI 正式发布 Decisions API",
+     "source": "OpenAI",
+     "summary": "基于 GPT-6 Luna，用于分类、路由、评分等有界答案任务，官方称比 Responses API 调用 Luna 快最多 10 倍，每请求最多 400 个问题。",
+     "url": "https://openai.com/index/decisions-api"
+    },
+    {
+     "pick": false,
+     "title": "Claude 各端下周起默认启用 auto mode",
+     "source": "Claude（AIHOT 收录）",
+     "summary": "Pro/Max/Team 用户网页、桌面、移动端会话默认自动模式，由分类器拦截高风险操作，可切回手动。",
+     "url": "https://x.com/claudeai/status/2113360845409583307"
+    },
+    {
+     "pick": false,
+     "title": "消息称 Anthropic 最快本周五公开提交 S-1 招股书",
+     "source": "AIHOT 整理（转自雅虎财经/IT之家）",
+     "summary": "据报道上半年营收 163 亿美元、净亏损超 800 亿美元，预计募资最多 1000 亿美元，最快 11 月上市。",
+     "url": "https://aihot.news/items/p6muwj8t5l4p2fcshu0tpzpek"
+    },
+    {
+     "pick": false,
+     "title": "Bloomberg：DeepSeek 新一轮融资约 150 亿美元",
+     "source": "AIHOT 整理",
+     "summary": "宁德时代、腾讯为主要投资方，投前估值约 748 亿美元，6 个月共募资约 225 亿美元。",
+     "url": "https://aihot.news/items/eud25k8zsrrwc63xp39ptvfah"
+    },
+    {
+     "pick": false,
+     "title": "Anthropic 将 Agent Skills 标准捐赠给 Agentic AI Foundation",
+     "source": "Anthropic",
+     "summary": "继 MCP 之后，Agent Skills 开放标准也捐给 Linux Foundation 旗下的 AAIF。",
+     "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+    },
+    {
+     "pick": false,
+     "title": "Replit 发布 Monitoring Agent",
+     "source": "Replit",
+     "summary": "相当于自动值班工程师，读日志排查问题，开启 autofix 后可验证修复并自动部署。",
+     "url": "https://replit.com/blog/replit-monitoring-agent"
+    },
+    {
+     "pick": false,
+     "title": "Wiz：ARTEX 智能体被用于攻击 IT 和软件厂商",
+     "source": "Wiz",
+     "summary": "开源自主渗透测试框架 ARTEX 被与 Storm-0940 重叠的活动使用，已扩展到供应链攻击尝试。",
+     "url": "https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors"
+    },
+    {
+     "pick": false,
+     "title": "Microsoft AI 发布 SDBench 与 MAI-DxO 诊断系统",
+     "source": "Microsoft AI",
+     "summary": "序贯诊断基准 SDBench 与诊断系统 MAI-DxO，论文发表于 Science。",
+     "url": "https://microsoft.ai/news/building-medical-superintelligence/"
+    },
+    {
+     "pick": false,
+     "title": "Sierra 发布 τ-Entity 基准",
+     "source": "Sierra",
+     "summary": "检验语音智能体能否准确采集姓名、电话等实体信息。",
+     "url": "https://sierra.ai/blog/tau-entity-can-voice-agents-get-the-details-right"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "买仓储机器人之前，先搞清楚你要解决什么问题",
+     "source": "Supply Chain 24/7",
+     "published": "2026-10-22",
+     "readMinutes": 6,
+     "summary": "Archway 第三方物流在明尼苏达州 Maple Grove 履约中心引入机器人，CEO Manish Kapoor 讲了决策过程：不是先说“要机器人”，而是从生产率、准确率、速度、空间和可扩展性出发，与客户 Blackhawk Network 一起评估，并讨论员工岗位变化和哪些任务值得自动化。原文英文。",
+     "takeaways": [
+      "先定义问题和指标，再选自动化方案",
+      "机器人上线后员工岗位如何变化",
+      "判断哪些任务值得自动化的思路"
+     ],
+     "why": "物流工程专业做方案、面试时常被问“为什么上自动化”，这是一份真实 3PL 的实践口述，易读。原文英文。",
+     "url": "https://www.supplychain247.com/article/warehouse-robots-automation-manish-kapoor-qa",
+     "tags": [
+      "案例"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "为决策而设计 AI：优化、智能与自治",
+     "source": "Logistics Viewpoints",
+     "published": "2026-10-22",
+     "readMinutes": 8,
+     "summary": "文章认为物流 AI 的问题已不是“能不能用”，而是智能放在系统哪里、对哪个决策负责、拥有多大权限。常见错误是让 AI 项目“挂在业务旁边”：模型预测晚到、助手总结货运情况、智能体建议换承运商，却没有进入决策执行链路。原文英文。",
+     "takeaways": [
+      "AI 应围绕一个有后果的决策及其执行路径来设计",
+      "权限、上下文、优化和控制要一起设计",
+      "孤立的分析工具难以产生价值"
+     ],
+     "why": "对运筹优化/调度方向的人，这是把“优化算法”与“AI 智能体”放进同一框架的思路，考研选方向和做项目都可借鉴。原文英文。",
+     "url": "https://logisticsviewpoints.com/2026/10/22/engineer-ai-into-the-decision-optimization-intelligence-and-autonomy/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "自主物流网络：自治是一条“授权光谱”",
+     "source": "Logistics Viewpoints",
+     "published": "2026-10-22",
+     "readMinutes": 6,
+     "summary": "系列收官篇：自主物流网络不会是“无人仓”或“无人车队”一夜出现，而是越来越多例行决策不再等待人工协调、逐步形成；资产可观测、执行系统互联、编排跨域协调、智能体做有边界的工作、自动化执行更多物理任务。原文英文。",
+     "takeaways": [
+      "自治是授权程度的光谱，不是终点",
+      "路径取决于权限、上下文、优化、控制一起设计",
+      "由可观测→编排→智能体→自动化逐层推进"
+     ],
+     "why": "帮你建立“仓储自动化往哪走”的整体图景，面试谈行业趋势时可用。原文英文，系列文章可配合上一篇读。",
+     "url": "https://logisticsviewpoints.com/2026/10/22/the-autonomous-logistics-network/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": false,
+     "title": "Stord 收购 3PL AMS Fulfillment，第 12 笔收购",
+     "source": "DC Velocity",
+     "summary": "刚融资 4 亿美元的 Stord 买下年处理超 1000 万单的 AMS，新增超 100 万平方英尺，网络超 100 个站点。",
+     "url": "https://www.dcvelocity.com/logistics/third-party-logistics/stord-makes-12th-acquisition-buying-the-3pl-ams-fulfillment"
+    },
+    {
+     "pick": false,
+     "title": "Lucas Systems 与卡内基梅隆大学合作做仓库劳动力决策研究",
+     "source": "Automated Warehouse",
+     "summary": "研究如何让系统在合适时机给仓库主管推送计划信号，改善劳动力决策。",
+     "url": "https://www.automatedwarehouseonline.com/lucas-systems-cmu-partner-advance-algorithmic-logistics-planning/"
+    },
+    {
+     "pick": false,
+     "title": "WMS 必须走出仓库四面墙",
+     "source": "MH&L",
+     "summary": "文章主张仓储管理系统要响应订单与外部实时变化，而不只优化仓内。",
+     "url": "https://www.mhlnews.com/warehousing/article/55408811/why-the-wms-must-evolve-beyond-the-four-walls-of-the-warehouse"
+    },
+    {
+     "pick": false,
+     "title": "DeepMind 用 Gemini 4 Argon 让 Apptronik 人形机器人从视频学技能",
+     "source": "Robotics & Automation News",
+     "summary": "模型看投掷视频后生成仿真代码并迁移到 Apollo，厂商称连续命中 7 次，属厂商演示。",
+     "url": "https://roboticsandautomationnews.com/2026/10/22/google-deepmind-uses-gemini-4-argon-to-teach-apptroniks-apollo-humanoid-new-skills-from-video/106227/"
+    },
+    {
+     "pick": false,
+     "title": "Robotiq 发布 2FC 物理 AI 夹爪",
+     "source": "Robotics & Automation News",
+     "summary": "面向物理 AI 的新款夹爪产品发布。",
+     "url": "https://roboticsandautomationnews.com/2026/10/22/robotiq-launches-the-2fc-physical-ai-gripper/106191/"
+    },
+    {
+     "pick": false,
+     "title": "管理 3PL 新客户上线：数字化员工就绪与技术同样重要",
+     "source": "Logistics Viewpoints",
+     "summary": "讨论 3PL 新项目爬坡期员工数字化准备度的作用。",
+     "url": "https://logisticsviewpoints.com/2026/10/22/managing-3pl-ramp-ups-why-digital-workforce-readiness-matters-as-much-as-physical-automation/"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "信源抓取状态均正常（latest.json 无失败项，aihot.json 各接口 ok）。",
+  "PHP2Shell 一条依据 AIHOT 收录的卡兹克文章（原文为 X 长文，链接用 AIHOT 页），其他 AIHOT 条目部分未打开原文。",
+  "OpenAI《What FDE means at OpenAI》无法打开（403）且无正文，未收录。",
+  "Gemini 4 Argon 为 9 月 30 日发布，非今日新模型，仅在仓储速览中作为机器人演示出现；今日未发现新的重大模型发布。",
+  "仓储区仅 3 条精读且无一手数据报告，质量一般；速览 Robotiq、3PL 爬坡两条仅据摘要。"
+ ]
+}
