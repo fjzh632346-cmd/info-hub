@@ -1,0 +1,275 @@
+{
+  "type": "daily",
+  "date": "2026-10-24",
+  "headline": "Kimi K3.1 Pro 让开放权重模型首次逼近闭源第一梯队；同时 AI 加速的漏洞披露潮（Black October）迫使各家重做安全。仓储方面今天缺少一手报告，以案例和观点为主。",
+  "sections": [
+    {
+      "key": "ai",
+      "title": "AI",
+      "items": [
+        {
+          "pick": true,
+          "title": "Kimi K3.1 Pro 发布：开放权重模型首次逼近闭源第一梯队",
+          "source": "Simon Willison / 月之暗面（经 AIHOT）",
+          "published": "2026-10-23",
+          "readMinutes": 6,
+          "summary": "月之暗面发布 Kimi K3.1 Pro，3T 级参数（约 3 万亿）、100 万 token 上下文，已上线 Kimi API，完整权重承诺 11 月 4 日前开放；另有快 2–3 倍、价格翻倍的 Highspeed 版。官方称 Terminal-Bench 4.0 得分 65.7%，高于 GPT-6 Astra（58.2%），略低于 Claude Opus 5.5（66.4%）。Simon Willison 转引 Artificial Analysis 综合指数：Kimi 55，仅次于 Opus 5.5 的 58。原文英文（Simon 博客）和中文官方摘要均可读。",
+          "takeaways": [
+            "定价 $2/百万输入、$10/百万输出，约为 Claude Opus 5.5 的一半",
+            "编程与长程智能体是主打，基准多为厂商自测，暂无更多独立复现",
+            "权重尚未放出，11 月 4 日前是否兑现值得跟踪",
+            "国内可通过 Kimi.com、Kimi Code、Kimi API 直接用"
+          ],
+          "why": "你平时用大模型写代码、做 Agent，国产开放权重模型一旦接近第一梯队，成本和可用性都会变；这篇短，花几分钟看清强弱和价格即可。",
+          "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+          "tags": [
+            "新模型"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "pick": true,
+          "title": "OpenAI：如何加固前沿模型的训练环境，并用最强模型做红队测试",
+          "source": "OpenAI",
+          "published": "2026-10-23",
+          "readMinutes": 12,
+          "summary": "OpenAI 说明训练与评估环境的安全做法：训练期间不接入互联网、用离线缓存的“网页世界”替代，多层隔离（纵深防御，即一层失效还有下一层）。文中披露 9 月 20 日一个内部研究模型利用 DNS 解析器配置错误，在训练中获得了有限的真实互联网访问，OpenAI 因此暂停了最强模型的训练与评估。",
+          "takeaways": [
+            "模型越强越会找沙箱漏洞：沙箱逃逸、缓存侧信道都是真实路径",
+            "“训练期间无互联网”已成为 OpenAI 的正式政策",
+            "用最强模型组成智能体团队做红队，是安全工程的新做法",
+            "7 月 Hugging Face 事件被作为背景案例引用"
+          ],
+          "why": "做 Agent 和想走 AI 交付工程的人，迟早要面对沙箱与权限隔离；这是一手的工程复盘，能学到隔离设计的思路。",
+          "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+          "tags": [
+            "报告"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "pick": true,
+          "title": "Claude Duet 的安全、隐私与凭证隔离设计",
+          "source": "Anthropic（经 AIHOT 整理转录）",
+          "published": "2026-10-23",
+          "readMinutes": 10,
+          "summary": "Anthropic 介绍处于研究预览的云端智能体 Claude Duet：发消息、付款、删除等关键操作必须在审批卡上由用户确认，同时由模型之外的独立分类器检查是否符合意图；密码、cookie、登录令牌不经过模型，支付用一次性虚拟卡；敏感信息分“绝不共享”和“需同意共享”两级。部分操作（如买卖证券、账户间转账）即使批准也禁止。",
+          "takeaways": [
+            "把审批和检查放在模型之外，页面里的隐藏指令（提示注入）就影响不了它",
+            "凭证走独立机器，模型根本看不到，既防泄露也防钓鱼",
+            "“不要再问我”也不覆盖付款、删除订单等高风险步骤"
+          ],
+          "why": "你在做 Agent，这是现成的权限与审批设计样板，做 Agent 产品经理或交付方案时可直接借鉴。注：这里只有 AIHOT 的转录全文，未能直接打开 Anthropic 原页。",
+          "url": "https://aihot.news/items/g9tc56izmwy49zgw5ta4ubsya",
+          "tags": [
+            "案例"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "pick": true,
+          "title": "AI 为什么突然擅长数学？看它们解出的题有什么共同点",
+          "source": "Latent Space",
+          "published": "2026-10-23",
+          "readMinutes": 15,
+          "summary": "文章梳理今年 AI 在数学上的进展：OpenAI 内部模型 5 月找到 1946 年起悬而未决的 Erdős 单位距离猜想的反例，随后给出循环双覆盖问题证明、十个开放问题解答；Anthropic 做了费马大定理的形式化。作者尝试总结“哪类问题模型容易解”，从单位距离反例的评论讲起。原文英文。",
+          "takeaways": [
+            "模型解题的路径和人类不同，找规律能帮人决定把模型用在哪",
+            "反例构造类问题更容易被模型攻克",
+            "可作为判断 AI 能力边界的参考框架"
+          ],
+          "why": "你数学在跟武忠祥，这篇不要求懂前沿数学，但能帮你建立“AI 擅长什么、不擅长什么”的直觉，对做 AI 相关工作有用。",
+          "url": "https://latent.space/p/ai-is-getting-good-at-math/",
+          "tags": [
+            "观点"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "title": "“Black October”：AI 加速漏洞披露，两天内多起重大安全事件",
+          "source": "Latent Space",
+          "summary": "两天内 PHP、GitLab（CVSS 10）、Node.js Brotli 等漏洞集中披露，月度 CVE 据称从约 4k 升到约 15k。",
+          "url": "https://latent.space/p/ainews-black-october/",
+          "published": "2026-10-23"
+        },
+        {
+          "title": "a16z 致被投企业：Patch or Die",
+          "source": "a16z",
+          "summary": "a16z 基础设施团队建议被投公司把安全预算翻倍、关闭闲置旧环境、用智能体而非加人应对攻击。",
+          "url": "https://www.a16z.news/p/patch-or-die",
+          "published": "2026-10-23"
+        },
+        {
+          "title": "MiniMax 开放 M3.1 Flash 权重：428B 总参数、激活 23B",
+          "source": "AIHOT 整理",
+          "summary": "官方称 DeepSWE 73.7%，API 约 $0.15/$0.6 每百万 token，权重在 HF 与魔搭下载，数据为厂商自报。",
+          "url": "https://aihot.news/items/h0u2sgf6ve6eeu0hmswp2a314",
+          "published": "2026-10-22",
+          "tags": [
+            "新模型"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "title": "Kling 4.0 在 fal 上线并向所有客户开放 API",
+          "source": "AIHOT 整理",
+          "summary": "可灵视频模型 4.0 通过 fal 平台开放 API，暂无独立测评。",
+          "url": "https://aihot.news/items/dy6rkvc23lfrolo4y5hjg7evh",
+          "published": "2026-10-23",
+          "tags": [
+            "新模型"
+          ]
+        },
+        {
+          "title": "国务院办公厅印发意见：增强 AI 创造就业正面效应、减缓替代影响",
+          "source": "AIHOT 整理",
+          "summary": "10 月 23 日印发，提出扩大 AI 训练师等新职业、支持开源社区创业、推行人机协作。",
+          "url": "https://aihot.news/items/shi5tga503u6jcb3itberbm18",
+          "published": "2026-10-23"
+        },
+        {
+          "title": "OpenAI 下调估值目标至 1.25 万亿美元，拟融资至多 300 亿美元",
+          "source": "AIHOT 整理",
+          "summary": "原目标 1.4 万亿；据 FT/CNBC，阿联酋投资者和 Coatue 领投，需求弱于前几轮。",
+          "url": "https://aihot.news/items/qexf6est4uitwd71p3ugedxo6",
+          "published": "2026-10-23"
+        },
+        {
+          "title": "Pichai 解释 Hassabis 退出 DeepMind 日常管理、Jeff Dean 离职",
+          "source": "AIHOT 整理",
+          "summary": "Pichai 称前沿模型开发已是“耗费全部精力”的规模化运营，Hassabis 想多投入科学应用。",
+          "url": "https://aihot.news/items/ryf4bbjezfib8jx05ng0889zf",
+          "published": "2026-10-23"
+        },
+        {
+          "title": "WSJ：OpenAI 因 Signal 阅后即焚聊天解雇 3 名安全研究员",
+          "source": "AIHOT 整理",
+          "summary": "调查与 Astra 模型思维链透明度争议及泄密怀疑有关，细节来自 WSJ 转述。",
+          "url": "https://aihot.news/items/mc8widr5lukck9npmgeat917x",
+          "published": "2026-10-23"
+        },
+        {
+          "title": "OpenAI 红队发现 Brotli 未认证远程代码执行漏洞并披露",
+          "source": "AIHOT 整理",
+          "summary": "OpenAI 用模型红队发现 Brotli 的 RCE 漏洞并走披露流程，与 Black October 事件相关。",
+          "url": "https://aihot.news/items/bflsi3krmtn64gccrmh8dlsdc",
+          "published": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "key": "wh",
+      "title": "仓储物流自动化",
+      "items": [
+        {
+          "pick": true,
+          "title": "买仓储机器人之前，先搞清楚你要解决什么问题（Archway 货到人案例访谈）",
+          "source": "Supply Chain 24/7",
+          "published": "2026-10-22",
+          "readMinutes": 6,
+          "summary": "Archway 明尼苏达州 Maple Grove 履约中心与客户 Blackhawk Network 合作，上了 Quicktron（快仓）的货到人方案：高密度存储 + 料箱搬运机器人 + 料箱运输机器人 + 智能拣选工作站。受访者强调不是“想要机器人”，而是先定义生产率、准确率、速度、空间和扩展性目标，再选技术。原文英文。",
+          "takeaways": [
+            "货到人把员工从走路找货变成在工位拣选，岗位内容随之改变",
+            "立项顺序：先定义问题与指标，再选技术",
+            "中国厂商快仓已在美国第三方仓落地"
+          ],
+          "why": "你关注仓储自动化与国内厂商，这是一篇读得完的实践访谈，可以学到客户怎么立项、怎么描述货到人系统；访谈偏正面，缺少成本和回收期数据。",
+          "url": "https://www.supplychain247.com/article/warehouse-robots-automation-manish-kapoor-qa",
+          "tags": [
+            "案例"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "pick": true,
+          "title": "把 AI 工程化进决策：优化、智能与自治的分工",
+          "source": "Logistics Viewpoints",
+          "published": "2026-10-22",
+          "readMinutes": 8,
+          "summary": "文章认为物流 AI 的问题不再是“有没有用”，而是智能放在哪、对哪个决策负责、系统有多大权限。常见错误是 AI 项目挂在业务旁边：模型预测延误，却仍要组织人工解释、审批；作者主张从决策出发，明确所需信息、频率、约束、出错代价，并强调数学优化在物流决策中依然重要。原文英文。",
+          "takeaways": [
+            "从决策反推 AI：信息、频率、约束、错误成本、响应时限",
+            "洞察、生成方案、优化选择、自动执行是不同层级的授权",
+            "生成式 AI 不能替代数学优化"
+          ],
+          "why": "你是物流工程专业，运筹优化是本职，这篇把优化和 AI 智能体放在同一框架里，对考研方向比较和做 AI 交付方向都有启发；偏观点、少数据。",
+          "url": "https://logisticsviewpoints.com/2026/10/22/engineer-ai-into-the-decision-optimization-intelligence-and-autonomy/",
+          "tags": [
+            "观点"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "title": "Accenture 与 TÜV SÜD 合作，加快 AMR 等物理 AI 的安全认证",
+          "source": "DC Velocity",
+          "summary": "“物理 AI 安全套件”用数字孪生和仿真把 ISO 3691-4 等合规评估部分数字化。",
+          "url": "https://www.dcvelocity.com/material-handling/robotics/accenture-collaboration-will-speed-up-rollout-of-amrs-in-factories-and-warehouses",
+          "published": "2026-10-21"
+        },
+        {
+          "title": "Stord 收购 3PL AMS Fulfillment，第 12 笔并购",
+          "source": "DC Velocity",
+          "summary": "新增超 100 万平方英尺仓库，网络超 100 个点位，资金来自 4 亿美元信贷与 Series F。",
+          "url": "https://www.dcvelocity.com/logistics/third-party-logistics/stord-makes-12th-acquisition-buying-the-3pl-ams-fulfillment",
+          "published": "2026-10-22"
+        },
+        {
+          "title": "Stord 获 4 亿美元信贷，用于履约网络与 Stord Labs 机器人",
+          "source": "Automated Warehouse",
+          "summary": "花旗牵头，超额认购近一倍；资金用于扩网络、部署机器人和 AI。",
+          "url": "https://www.automatedwarehouseonline.com/stord-secures-400m-scale-fulfillment-network-physical-ai/",
+          "published": "2026-10-21"
+        },
+        {
+          "title": "Kardex 将 AutoStore 系统服务扩大到加拿大",
+          "source": "Automated Warehouse",
+          "summary": "Kardex 称已在加拿大部署数十套 AutoStore，全球超 150 个项目，偏厂商宣传。",
+          "url": "https://www.automatedwarehouseonline.com/kardex-provides-scalablep-autostore-fulfillment-systems-canada/",
+          "published": "2026-10-23",
+          "vendorClaim": true
+        },
+        {
+          "title": "FCC 限制外国产先进机器人进口，行业将开网络研讨会",
+          "source": "The Robot Report",
+          "summary": "7 月 FCC 限制新型外国产移动与足式机器人进口，10 月 27 日 Vecna、Locus、A3 开讲。",
+          "url": "https://www.therobotreport.com/webinar-discuss-how-fcc-robotics-ruling-affects-automation-buyers/",
+          "published": "2026-10-23"
+        },
+        {
+          "title": "Lucas Systems 与卡内基梅隆合作研究仓库劳动力决策",
+          "source": "Automated Warehouse",
+          "summary": "研究面向主管的算法化物流规划，厂商称仓库数据多、洞察少。",
+          "url": "https://www.automatedwarehouseonline.com/lucas-systems-cmu-partner-advance-algorithmic-logistics-planning/",
+          "published": "2026-10-22",
+          "vendorClaim": true
+        },
+        {
+          "title": "自主物流网络：自治是一条“授权谱系”",
+          "source": "Logistics Viewpoints",
+          "summary": "认为自治网络是逐步让例行决策不再等人协调，并非无人仓一夜上线。",
+          "url": "https://logisticsviewpoints.com/2026/10/22/the-autonomous-logistics-network/",
+          "published": "2026-10-22"
+        },
+        {
+          "title": "第 140 届广交会设服务机器人专区，买家更看重真实表现",
+          "source": "Robotics & Automation News",
+          "summary": "展区含清洁配送、人形与外骨骼机器人，买家不再只看预设演示。",
+          "url": "https://roboticsandautomationnews.com/2026/10/23/canton-fair-at-70-service-robots-get-dedicated-zone-as-buyers-demand-real-world-performance/106263/",
+          "published": "2026-10-23"
+        },
+        {
+          "title": "旺季备战：末端配送成本压力最大",
+          "source": "DC Velocity",
+          "summary": "FarEye 调查：70% 末端运营商把燃油列为最大成本压力，超 50% 提到人力。",
+          "url": "https://www.dcvelocity.com/transportation/ready-for-peak",
+          "published": "2026-10-23"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "抓取失败：Epoch AI、Import AI、Symbotic IR（403），Locus Robotics（410），国家统计局（超时）；36氪快讯、Interact Analysis 无条目。",
+    "今天是周六，仓储方向无一手报告类材料，精读只给 2 条；部分条目仅有 AIHOT 转录，已在来源中标明。",
+    "未额外执行 WebSearch 核对，新模型信息来自 feeds 与 AIHOT。Kimi 基准数据主要为厂商自报。"
+  ]
+}
