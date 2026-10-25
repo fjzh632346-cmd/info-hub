@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>实训仓 A · 作业看板（课程设计示例）</title>
+<style>
+:root{
+  --ground:#eef2f0;
+  --surface:#ffffff;
+  --surface-2:#f6f8f7;
+  --line:#d5ddd9;
+  --line-strong:#b9c6c0;
+  --ink:#16231f;
+  --ink-2:#3d4f49;
+  --ink-3:#5e6f69;
+  --rail:#12352e;
+  --rail-ink:#d7e6e0;
+  --rail-ink-2:#9fbbb1;
+  --lane:#e8b400;
+  --lane-ink:#5a4500;
+  --heat-0:#e3efe9;
+  --heat-1:#b9dccd;
+  --heat-2:#7fc0a8;
+  --heat-3:#3f9c7e;
+  --heat-4:#1d6e57;
+  --warn:#b45309;
+  --warn-bg:#fff4e0;
+  --crit:#b42318;
+  --crit-bg:#fdecea;
+  --ok:#1d6e57;
+  --focus:#e8b400;
+  --radius:6px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC","Source Han Sans SC",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ground);color:var(--ink);font:14px/1.55 var(--font);}
+::selection{background:#f6dd8a;color:var(--ink)}
+input,button,select{font:inherit;color:inherit;caret-color:var(--rail)}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:4px}
+*{scrollbar-width:thin;scrollbar-color:var(--line-strong) transparent}
+::-webkit-scrollbar{height:8px;width:8px}
+::-webkit-scrollbar-thumb{background:var(--line-strong);border-radius:8px}
+.num{font-variant-numeric:tabular-nums}
+.app{display:grid;grid-template-columns:216px minmax(0,1fr);min-height:100vh}
+
+/* 侧栏 */
+.rail{background:var(--rail);color:var(--rail-ink);padding:20px 14px;display:flex;flex-direction:column;gap:22px}
+.brand{display:flex;align-items:center;gap:10px;padding:0 6px}
+.brand svg{flex:none}
+.brand b{font-size:15px;letter-spacing:.02em}
+.brand span{display:block;font-size:12px;color:var(--rail-ink-2)}
+.nav{display:flex;flex-direction:column;gap:2px;margin:0;padding:0;list-style:none}
+.nav a{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:var(--radius);color:var(--rail-ink);text-decoration:none;transition:background-color .18s ease-out}
+.nav a:hover{background:rgba(255,255,255,.07)}
+.nav a[aria-current="page"]{background:rgba(232,180,0,.16);color:#fff;box-shadow:inset 0 -2px 0 var(--lane)}
+.nav svg{flex:none;stroke:currentColor}
+.rail-foot{margin-top:auto;font-size:12px;color:var(--rail-ink-2);padding:0 6px;line-height:1.6}
+
+/* 主区 */
+main{padding:22px 26px 40px;min-width:0}
+.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:14px 24px;margin-bottom:18px}
+h1{font-size:22px;line-height:1.3;margin:0;font-weight:650}
+.sub{margin:4px 0 0;color:var(--ink-3);font-size:13px}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.seg{display:inline-flex;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:2px}
+.seg button{border:0;background:transparent;padding:6px 12px;border-radius:4px;cursor:pointer;color:var(--ink-2);transition:background-color .18s ease-out,color .18s ease-out}
+.seg button:hover{background:var(--surface-2)}
+.seg button[aria-pressed="true"]{background:var(--rail);color:#fff}
+select{border:1px solid var(--line);background:var(--surface);border-radius:var(--radius);padding:6px 30px 6px 10px;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2.5 4.5 6 8l3.5-3.5' fill='none' stroke='%233d4f49' stroke-width='1.6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;cursor:pointer}
+.toggle{display:inline-flex;align-items:center;gap:8px;cursor:pointer;user-select:none;color:var(--ink-2)}
+.toggle input{appearance:none;width:34px;height:20px;border-radius:20px;background:var(--line-strong);position:relative;cursor:pointer;margin:0;transition:background-color .18s ease-out}
+.toggle input::after{content:"";position:absolute;top:3px;left:3px;width:14px;height:14px;border-radius:50%;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.25);transition:transform .2s cubic-bezier(.16,1,.3,1)}
+.toggle input:checked{background:var(--warn)}
+.toggle input:checked::after{transform:translateX(14px)}
+
+.alert{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;background:var(--warn-bg);border:1px solid #f1d29a;border-radius:var(--radius);padding:12px 14px;margin-bottom:18px;color:#5b3104}
+.alert svg{flex:none;stroke:var(--warn)}
+.alert p{margin:0;flex:1 1 320px;min-width:0}
+.alert strong{color:#7a3e05}
+.btn{border:1px solid var(--line-strong);background:var(--surface);border-radius:var(--radius);padding:6px 12px;cursor:pointer;color:var(--ink);transition:background-color .18s ease-out,border-color .18s ease-out}
+.btn:hover{background:var(--surface-2);border-color:var(--ink-3)}
+.btn:disabled{opacity:.55;cursor:default}
+.btn.primary{background:var(--rail);border-color:var(--rail);color:#fff}
+.btn.primary:hover{background:#0c2822}
+
+.grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:18px;align-items:start}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:8px;box-shadow:0 1px 2px rgba(18,53,46,.05),0 4px 14px rgba(18,53,46,.05);min-width:0}
+.panel-h{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 12px;padding:14px 16px 0}
+.panel-h h2{font-size:15px;margin:0;font-weight:650}
+.panel-h p{margin:0;color:var(--ink-3);font-size:12.5px}
+.panel-b{padding:12px 16px 16px}
+
+/* 平面图 */
+.plan svg{display:block;width:100%;height:auto}
+.aisle{cursor:pointer}
+.aisle .slot{transition:stroke .2s ease-out}
+.aisle:hover .frame{stroke:var(--ink-2)}
+.aisle.selected .frame{stroke:var(--lane);stroke-width:3}
+.aisle.dim{opacity:.35}
+.legend{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;margin-top:10px;font-size:12.5px;color:var(--ink-2)}
+.ramp{display:inline-flex;align-items:center;gap:6px}
+.ramp i{display:inline-block;width:18px;height:10px;border-radius:2px}
+.key{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.detail{margin-top:12px;border-top:1px solid var(--line);padding-top:12px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.detail div{min-width:0}
+.detail dt{font-size:12px;color:var(--ink-3)}
+.detail dd{margin:2px 0 0;font-size:17px;font-weight:600}
+
+/* 指标 */
+.metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0}
+.metric{padding:14px 16px;border-top:1px solid var(--line)}
+.metric:nth-child(odd){border-right:1px solid var(--line)}
+.metric:nth-child(-n+2){border-top:0}
+.metric h3{margin:0;font-size:12.5px;font-weight:500;color:var(--ink-3)}
+.metric .v{display:flex;align-items:baseline;gap:6px;margin-top:4px}
+.metric .v b{font-size:22px;font-weight:650}
+.metric .v small{color:var(--ink-3)}
+.delta{font-size:12px}
+.delta.down{color:var(--crit)}
+.delta.up{color:var(--ok)}
+.hist{display:block;width:100%;height:42px;margin-top:8px}
+.hist-cap{display:flex;justify-content:space-between;font-size:11px;color:var(--ink-3)}
+
+/* 表格 */
+.table-wrap{overflow-x:auto;border-top:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;min-width:620px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font-size:12.5px;font-weight:600;color:var(--ink-2);background:var(--surface-2)}
+th button{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:4px}
+th button:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:3px}
+th[aria-sort="ascending"] .arr::after{content:"";border:4px solid transparent;border-bottom-color:currentColor;transform:translateY(-2px)}
+th[aria-sort="descending"] .arr::after{content:"";border:4px solid transparent;border-top-color:currentColor;transform:translateY(2px)}
+.arr{display:inline-flex;width:8px;justify-content:center}
+td.r,th.r{text-align:right}
+tbody tr{cursor:pointer;transition:background-color .15s ease-out}
+tbody tr:hover{background:var(--surface-2)}
+tbody tr.selected{background:#fff8dc}
+.bar{display:inline-block;vertical-align:middle;width:64px;height:6px;border-radius:6px;background:var(--heat-0);margin-left:8px;position:relative;overflow:hidden}
+.bar i{position:absolute;inset:0 auto 0 0;background:var(--heat-3);border-radius:6px}
+.tag{display:inline-flex;align-items:center;gap:5px;font-size:12px;padding:2px 8px;border-radius:20px}
+.tag::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.tag.ok{color:var(--ok);background:#e3f1eb}
+.tag.warn{color:var(--warn);background:var(--warn-bg)}
+.tag.crit{color:var(--crit);background:var(--crit-bg)}
+.empty{padding:28px 16px;text-align:center;color:var(--ink-2)}
+.empty p{margin:0 0 10px}
+.full{grid-column:1 / -1}
+
+/* 波次时刻表 */
+.waves{list-style:none;margin:0;padding:0}
+.waves li{display:grid;grid-template-columns:64px minmax(0,1fr) 54px;gap:10px;align-items:center;padding:9px 0;border-bottom:1px dashed var(--line)}
+.waves li:last-child{border-bottom:0}
+.waves .t{font-weight:600}
+.waves .name{min-width:0}
+.waves .name span{display:block;font-size:12px;color:var(--ink-3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.track{height:6px;background:var(--heat-0);border-radius:6px;margin-top:5px;overflow:hidden}
+.track i{display:block;height:100%;background:var(--heat-3);border-radius:6px}
+.track.late i{background:var(--warn)}
+.waves .p{text-align:right}
+
+.foot{margin-top:22px;font-size:12px;color:var(--ink-3)}
+
+@media (max-width:1080px){
+  .grid{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:860px){
+  .app{grid-template-columns:minmax(0,1fr)}
+  .rail{flex-direction:row;align-items:center;padding:12px 14px;gap:12px;position:sticky;top:0;z-index:5;overflow:hidden}
+  .brand span,.rail-foot{display:none}
+  .nav{flex-direction:row;overflow-x:auto;gap:2px;min-width:0;flex:1}
+  .nav a{padding:7px 9px;white-space:nowrap}
+  .nav a span{display:none}
+  .nav a[aria-current="page"] span{display:inline}
+  main{padding:16px 14px 32px}
+  h1{font-size:19px}
+}
+@media (max-width:520px){
+  .detail{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .metric .v b{font-size:19px}
+  .controls{width:100%}
+  .seg{flex:1 1 auto}
+  .seg button{flex:1;padding:6px 8px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="rail" aria-label="主导航">
+    <div class="brand">
+      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="6" fill="#1d4a40"/><path d="M7 20V11l7-4 7 4v9" fill="none" stroke="#e8b400" stroke-width="1.8" stroke-linejoin="round"/><path d="M10 20v-5h8v5" fill="none" stroke="#d7e6e0" stroke-width="1.6"/></svg>
+      <div><b>实训仓 A</b><span>物流工程课程设计</span></div>
+    </div>
+    <ul class="nav">
+      <li><a href="#" aria-current="page"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="1.75" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span>作业总览</span></a></li>
+      <li><a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="1.75" aria-hidden="true"><path d="M4 20V5M12 20V5M20 20V5M4 9h8M12 14h8M4 15h8M12 9h8"/></svg><span>库位</span></a></li>
+      <li><a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="1.75" aria-hidden="true"><path d="M7 21V4h3v17M7 8h10l-2 3H7"/><path d="M4 21h16"/></svg><span>设备</span></a></li>
+      <li><a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="1.75" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/></svg><span>波次</span></a></li>
+      <li><a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="1.75" aria-hidden="true"><path d="M5 20V10M11 20V4M17 20v-7"/><path d="M3 20h18"/></svg><span>报表</span></a></li>
+    </ul>
+    <p class="rail-foot">本页为课程设计示例，仓库名称与全部数据均为虚构。</p>
+  </aside>
+
+  <main>
+    <div class="top">
+      <div>
+        <h1>今日作业看板</h1>
+        <p class="sub">2026-10-25（周日）· 白班 08:00–20:00 · 数据每 5 分钟刷新（示例数据）</p>
+      </div>
+      <div class="controls" role="group" aria-label="筛选">
+        <div class="seg" id="zoneSeg" role="group" aria-label="区域">
+          <button type="button" data-zone="all" aria-pressed="true">全部</button>
+          <button type="button" data-zone="A" aria-pressed="false">A 区</button>
+          <button type="button" data-zone="B" aria-pressed="false">B 区</button>
+          <button type="button" data-zone="C" aria-pressed="false">C 区</button>
+        </div>
+        <label class="sr" for="shift" style="position:absolute;left:-9999px">班次</label>
+        <select id="shift" aria-label="班次"><option>白班</option><option>夜班</option></select>
+        <label class="toggle"><input type="checkbox" id="onlyIssue"> 仅看异常</label>
+      </div>
+    </div>
+
+    <div class="alert" role="status" id="alert">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="1.9" aria-hidden="true"><path d="M12 3 2.5 20h19L12 3Z" stroke-linejoin="round"/><path d="M12 10v4.5M12 17.2v.1"/></svg>
+      <p><strong>B03 巷道堆垛机 SC-07 停机</strong>：10:40 起货叉定位超时报警，B 区出库改由人工叉车补位，预计 13:30 恢复。B 区待拣行数比计划多 186 行。</p>
+      <button class="btn" type="button" id="viewB03">定位到 B03</button>
+      <button class="btn primary" type="button" id="ackBtn">标记已通知班组</button>
+    </div>
+
+    <div class="grid">
+      <section class="panel plan" aria-labelledby="planTitle">
+        <div class="panel-h"><h2 id="planTitle">库区平面图 · 拣选负荷</h2><p>颜色越深，待拣行数越多；黄色虚线为叉车通道</p></div>
+        <div class="panel-b">
+          <svg id="planSvg" viewBox="0 0 760 330" role="img" aria-label="三个库区共 16 条巷道的平面图，B03 巷道设备故障"></svg>
+          <div class="legend">
+            <span class="ramp">少<i style="background:var(--heat-0)"></i><i style="background:var(--heat-1)"></i><i style="background:var(--heat-2)"></i><i style="background:var(--heat-3)"></i><i style="background:var(--heat-4)"></i>多</span>
+            <span class="key"><svg width="18" height="12" aria-hidden="true"><rect x="1" y="1" width="16" height="10" fill="url(#hatchKey)" stroke="#b45309"/><defs><pattern id="hatchKey" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2" height="4" fill="#f5c46b"/></pattern></defs></svg>设备停机</span>
+            <span class="key"><svg width="22" height="8" aria-hidden="true"><path d="M1 4h20" stroke="#e8b400" stroke-width="3" stroke-dasharray="5 3"/></svg>叉车通道</span>
+          </div>
+          <dl class="detail" id="detail" aria-live="polite"></dl>
+        </div>
+      </section>
+
+      <section class="panel" aria-labelledby="kpiTitle">
+        <div class="panel-h"><h2 id="kpiTitle">当班指标</h2><p>柱为近 12 小时逐时数据</p></div>
+        <div class="metrics" id="metrics"></div>
+      </section>
+
+      <section class="panel full" aria-labelledby="tblTitle">
+        <div class="panel-h"><h2 id="tblTitle">巷道明细</h2><p id="tblCount"></p></div>
+        <div class="panel-b" style="padding:12px 0 0">
+          <div class="table-wrap">
+            <table>
+              <thead><tr>
+                <th aria-sort="none" data-k="id"><button type="button">巷道<span class="arr"></span></button></th>
+                <th aria-sort="none" data-k="zone"><button type="button">区域<span class="arr"></span></button></th>
+                <th class="r" aria-sort="none" data-k="occ"><button type="button">库位占用率<span class="arr"></span></button></th>
+                <th class="r" aria-sort="descending" data-k="pick"><button type="button">待拣行数<span class="arr"></span></button></th>
+                <th class="r" aria-sort="none" data-k="done"><button type="button">当班完成<span class="arr"></span></button></th>
+                <th aria-sort="none" data-k="status"><button type="button">设备状态<span class="arr"></span></button></th>
+              </tr></thead>
+              <tbody id="tbody"></tbody>
+            </table>
+          </div>
+          <div class="empty" id="empty" hidden>
+            <p id="emptyText"></p>
+            <button class="btn" type="button" id="clearIssue">显示全部巷道</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel full" aria-labelledby="waveTitle">
+        <div class="panel-h"><h2 id="waveTitle">出库波次时刻表</h2><p>截单后 90 分钟内须完成拣选复核</p></div>
+        <div class="panel-b"><ul class="waves" id="waves"></ul></div>
+      </section>
+    </div>
+
+    <p class="foot">示例说明：本页用于展示“仓储作业看板”的信息组织方式，数字为虚构，不代表任何真实企业。</p>
+  </main>
+</div>
+
+<script>
+(function(){
+  var aisles=[
+    {id:'A01',zone:'A',occ:91,pick:142,done:388,status:'ok'},
+    {id:'A02',zone:'A',occ:87,pick:118,done:402,status:'ok'},
+    {id:'A03',zone:'A',occ:78,pick:64,done:351,status:'ok'},
+    {id:'A04',zone:'A',occ:83,pick:96,done:367,status:'warn',note:'输送线 CV-A4 速度降至 80%'},
+    {id:'A05',zone:'A',occ:69,pick:41,done:298,status:'ok'},
+    {id:'A06',zone:'A',occ:72,pick:52,done:310,status:'ok'},
+    {id:'B01',zone:'B',occ:88,pick:171,done:276,status:'ok'},
+    {id:'B02',zone:'B',occ:84,pick:203,done:251,status:'ok'},
+    {id:'B03',zone:'B',occ:90,pick:248,done:96,status:'crit',note:'SC-07 货叉定位超时，10:40 停机'},
+    {id:'B04',zone:'B',occ:76,pick:189,done:240,status:'ok'},
+    {id:'B05',zone:'B',occ:71,pick:133,done:262,status:'ok'},
+    {id:'B06',zone:'B',occ:66,pick:97,done:233,status:'ok'},
+    {id:'C01',zone:'C',occ:58,pick:38,done:144,status:'ok'},
+    {id:'C02',zone:'C',occ:62,pick:45,done:151,status:'ok'},
+    {id:'C03',zone:'C',occ:54,pick:22,done:129,status:'ok'},
+    {id:'C04',zone:'C',occ:49,pick:17,done:118,status:'ok'}
+  ];
+  var statusTxt={ok:'正常',warn:'降速',crit:'停机'};
+  var state={zone:'all',onlyIssue:false,sel:'B03',sortK:'pick',sortDir:-1};
+  var NS='http://www.w3.org/2000/svg';
+  function el(n,a,p){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e;}
+  function heat(v){var c=['--heat-0','--heat-1','--heat-2','--heat-3','--heat-4'];var i=v<40?0:v<90?1:v<140?2:v<200?3:4;return 'var('+c[i]+')';}
+
+  /* 平面图 */
+  var svg=document.getElementById('planSvg');
+  var defs=el('defs',{},svg);
+  var pat=el('pattern',{id:'hatch',width:6,height:6,patternUnits:'userSpaceOnUse',patternTransform:'rotate(45)'},defs);
+  el('rect',{width:6,height:6,fill:'#fde9c4'},pat);el('rect',{width:3,height:6,fill:'#f5c46b'},pat);
+  el('rect',{x:0,y:0,width:760,height:330,fill:'#f6f8f7',rx:6},svg);
+  // 叉车通道
+  el('path',{d:'M14 300H746',stroke:'#e8b400','stroke-width':4,'stroke-dasharray':'12 7',fill:'none'},svg);
+  el('path',{d:'M14 26H746',stroke:'#e8b400','stroke-width':4,'stroke-dasharray':'12 7',fill:'none'},svg);
+  // 区域分隔
+  var zones=[{z:'A',x:26,n:6,label:'A 区 · 整箱'},{z:'B',x:300,n:6,label:'B 区 · 拆零'},{z:'C',x:574,n:4,label:'C 区 · 慢动'}];
+  var nodes={};
+  zones.forEach(function(Z){
+    var g=el('g',{},svg);
+    var t=el('text',{x:Z.x,y:52,'font-size':13,'font-weight':600,fill:'#3d4f49'},g);t.textContent=Z.label;
+    var list=aisles.filter(function(a){return a.zone===Z.z;});
+    list.forEach(function(a,i){
+      var x=Z.x+i*42, y=64;
+      var ag=el('g',{class:'aisle','data-id':a.id,tabindex:0,role:'button','aria-label':a.id+' 巷道，待拣 '+a.pick+' 行，'+statusTxt[a.status]},svg);
+      // 两排货架夹一条巷道
+      el('rect',{x:x,y:y,width:12,height:210,fill:a.status==='crit'?'url(#hatch)':heat(a.pick),class:'slot'},ag);
+      el('rect',{x:x+22,y:y,width:12,height:210,fill:a.status==='crit'?'url(#hatch)':heat(a.pick),class:'slot'},ag);
+      el('rect',{x:x-3,y:y-3,width:40,height:216,fill:'none',stroke:'transparent','stroke-width':2,rx:3,class:'frame'},ag);
+      // 货格刻线
+      for(var k=1;k<10;k++){el('path',{d:'M'+x+' '+(y+k*21)+'h12M'+(x+22)+' '+(y+k*21)+'h12',stroke:'#ffffff','stroke-opacity':.55,'stroke-width':1},ag);}
+      // 巷道中的堆垛机
+      var cy=y+40+((i*53)%120);
+      el('rect',{x:x+13.5,y:cy,width:7,height:16,rx:1.5,fill:a.status==='crit'?'#b42318':a.status==='warn'?'#b45309':'#12352e'},ag);
+      var lb=el('text',{x:x+17,y:y+232,'text-anchor':'middle','font-size':12,fill:'#16231f','font-weight':a.status==='ok'?400:700},ag);lb.textContent=a.id;
+      el('rect',{x:x-4,y:y-4,width:42,height:240,fill:'transparent'},ag);
+      nodes[a.id]=ag;
+      ag.addEventListener('click',function(){select(a.id);});
+      ag.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();select(a.id);}});
+    });
+  });
+  var note=el('g',{},svg);
+  el('path',{d:'M401 61 L401 40 L420 40',stroke:'#b42318','stroke-width':1.5,fill:'none'},note);
+  var nt=el('text',{x:424,y:44,'font-size':12,fill:'#b42318','font-weight':600},note);nt.textContent='SC-07 停机 10:40';
+  var dock=el('text',{x:14,y:322,'font-size':12,fill:'#5a4500'},svg);dock.textContent='月台 1–6 →';
+
+  /* 指标 */
+  var metrics=[
+    {t:'出库完成行数',v:'4,316',u:'行',d:'较计划 −6.8%',dir:'down',h:[312,348,371,402,395,180,214,236,251,0,0,0],onset:5,cap:['08时','10:40 B03 停机','19时']},
+    {t:'订单准时率',v:'96.2',u:'%',d:'较昨日 −1.4 个百分点',dir:'down',h:[99,98,99,98,98,94,93,95,96,0,0,0],onset:5,cap:['08时','','19时']},
+    {t:'库位占用率',v:'75.3',u:'%',d:'较昨日 +0.9 个百分点',dir:'up',h:[74,74,74,75,75,75,75,75,75,0,0,0],onset:-1,cap:['08时','','19时']},
+    {t:'人均拣选效率',v:'118',u:'行/人·时',d:'较计划 −4.1%',dir:'down',h:[121,124,126,125,122,104,108,112,115,0,0,0],onset:5,cap:['08时','','19时']}
+  ];
+  var mbox=document.getElementById('metrics');
+  metrics.forEach(function(m){
+    var d=document.createElement('div');d.className='metric';
+    d.innerHTML='<h3>'+m.t+'</h3><div class="v"><b class="num">'+m.v+'</b><small>'+m.u+'</small></div><div class="delta '+m.dir+'">'+m.d+'</div>';
+    var s=el('svg',{class:'hist',viewBox:'0 0 240 42',preserveAspectRatio:'none','aria-hidden':'true'});
+    var vals=m.h.filter(function(x){return x>0;});var mx=Math.max.apply(null,vals),mn=Math.min.apply(null,vals)*0.85;
+    m.h.forEach(function(v,i){
+      var x=i*20+2;
+      if(v===0){el('rect',{x:x,y:38,width:15,height:2,fill:'#d5ddd9'},s);return;}
+      var hgt=6+(v-mn)/(mx-mn||1)*32;
+      el('rect',{x:x,y:40-hgt,width:15,height:hgt,rx:1.5,fill:(m.onset>=0&&i>=m.onset)?'#d38a2a':'#3f9c7e'},s);
+    });
+    if(m.onset>=0){el('path',{d:'M'+(m.onset*20)+' 0V42',stroke:'#b42318','stroke-width':1.2,'stroke-dasharray':'3 2'},s);}
+    d.appendChild(s);
+    var cap=document.createElement('div');cap.className='hist-cap';cap.innerHTML='<span>'+m.cap[0]+'</span><span>'+m.cap[1]+'</span><span>'+m.cap[2]+'</span>';
+    d.appendChild(cap);
+    mbox.appendChild(d);
+  });
+
+  /* 波次 */
+  var waves=[
+    {t:'09:00',n:'W-0901 · 社区团购',s:'412 行 · 6 个门店',p:100},
+    {t:'11:00',n:'W-1102 · 电商小件',s:'1,086 行 · B 区为主',p:71,late:true},
+    {t:'13:30',n:'W-1303 · 门店补货',s:'638 行 · A 区整箱',p:38},
+    {t:'16:00',n:'W-1604 · 电商小件',s:'954 行 · 未开始拣选',p:0}
+  ];
+  var wl=document.getElementById('waves');
+  waves.forEach(function(w){
+    var li=document.createElement('li');
+    li.innerHTML='<span class="t num">'+w.t+'</span><div class="name">'+w.n+(w.late?' <span class="tag warn" style="display:inline-flex;margin-left:6px">受 B03 影响</span>':'')+'<span>'+w.s+'</span><div class="track'+(w.late?' late':'')+'"><i style="width:'+w.p+'%"></i></div></div><span class="p num">'+w.p+'%</span>';
+    wl.appendChild(li);
+  });
+
+  /* 表格 */
+  var tbody=document.getElementById('tbody');
+  function visible(){return aisles.filter(function(a){return (state.zone==='all'||a.zone===state.zone)&&(!state.onlyIssue||a.status!=='ok');});}
+  function render(){
+    var rows=visible().slice().sort(function(a,b){var x=a[state.sortK],y=b[state.sortK];return (x>y?1:x<y?-1:0)*state.sortDir;});
+    tbody.innerHTML='';
+    rows.forEach(function(a){
+      var tr=document.createElement('tr');tr.dataset.id=a.id;tr.tabIndex=0;
+      if(a.id===state.sel)tr.className='selected';
+      tr.innerHTML='<td><b>'+a.id+'</b></td><td>'+a.zone+' 区</td><td class="r num">'+a.occ+'%<span class="bar"><i style="width:'+a.occ+'%"></i></span></td><td class="r num">'+a.pick+'</td><td class="r num">'+a.done+'</td><td><span class="tag '+a.status+'">'+statusTxt[a.status]+'</span>'+(a.note?' <span style="color:var(--ink-3);font-size:12px">'+a.note+'</span>':'')+'</td>';
+      tr.addEventListener('click',function(){select(a.id);});
+      tr.addEventListener('keydown',function(e){if(e.key==='Enter'){select(a.id);}});
+      tbody.appendChild(tr);
+    });
+    var empty=document.getElementById('empty');
+    document.getElementById('tblCount').textContent='共 '+rows.length+' 条巷道'+(state.onlyIssue?'（仅异常）':'');
+    if(rows.length===0){
+      var zn=state.zone==='all'?'全部库区':state.zone+' 区';
+      var total=aisles.filter(function(a){return state.zone==='all'||a.zone===state.zone;}).length;
+      document.getElementById('emptyText').textContent=zn+'当前没有异常巷道。关闭“仅看异常”可查看该区全部 '+total+' 条巷道的负荷。';
+      empty.hidden=false;
+    } else empty.hidden=true;
+    Object.keys(nodes).forEach(function(id){
+      var a=aisles.filter(function(x){return x.id===id;})[0];
+      var on=(state.zone==='all'||a.zone===state.zone)&&(!state.onlyIssue||a.status!=='ok');
+      nodes[id].classList.toggle('dim',!on);
+      nodes[id].classList.toggle('selected',id===state.sel);
+    });
+    detail();
+  }
+  function detail(){
+    var a=aisles.filter(function(x){return x.id===state.sel;})[0];
+    document.getElementById('detail').innerHTML='<div><dt>选中巷道</dt><dd>'+a.id+'</dd></div><div><dt>待拣行数</dt><dd class="num">'+a.pick+'</dd></div><div><dt>库位占用率</dt><dd class="num">'+a.occ+'%</dd></div><div><dt>设备</dt><dd><span class="tag '+a.status+'">'+statusTxt[a.status]+'</span></dd></div>';
+  }
+  function select(id){state.sel=id;render();}
+
+  document.querySelectorAll('th[data-k] button').forEach(function(b){
+    b.addEventListener('click',function(){
+      var th=b.parentNode,k=th.dataset.k;
+      if(state.sortK===k)state.sortDir*=-1;else{state.sortK=k;state.sortDir=(k==='id'||k==='zone'||k==='status')?1:-1;}
+      document.querySelectorAll('th[data-k]').forEach(function(t){t.setAttribute('aria-sort','none');});
+      th.setAttribute('aria-sort',state.sortDir===1?'ascending':'descending');
+      render();
+    });
+  });
+  document.querySelectorAll('#zoneSeg button').forEach(function(b){
+    b.addEventListener('click',function(){
+      state.zone=b.dataset.zone;
+      document.querySelectorAll('#zoneSeg button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});
+      render();
+    });
+  });
+  var oi=document.getElementById('onlyIssue');
+  oi.addEventListener('change',function(){state.onlyIssue=oi.checked;render();});
+  document.getElementById('clearIssue').addEventListener('click',function(){oi.checked=false;state.onlyIssue=false;render();});
+  document.getElementById('viewB03').addEventListener('click',function(){select('B03');nodes.B03.focus();});
+  var ack=document.getElementById('ackBtn');
+  ack.addEventListener('click',function(){ack.textContent='已通知 · 11:02';ack.disabled=true;});
+  render();
+})();
+</script>
+</body>
+</html>
