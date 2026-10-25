@@ -1,0 +1,104 @@
+{
+  "type": "x",
+  "date": "2026-10-25",
+  "items": [
+    {
+      "kind": "prompt",
+      "category": "编程",
+      "score": 78,
+      "author": "Avid",
+      "handle": "@Av1dlive",
+      "url": "https://x.com/Av1dlive/status/2114062047529021554",
+      "posted": "2026-10-24",
+      "metrics": "3.1 万查看 · 418 赞 · 833 收藏",
+      "textZh": "作者给了一段可以直接贴给 Claude Code 或 Codex 的长提示词：让 AI 读取你本机过去 7 天的编程会话日志（只读），统计每天会话数、工具调用失败率、各模型的 token 用量、耗时等，生成一个深色的单文件仪表盘网页，再根据数据写一份 HARNESS.md，建议你该怎么改 CLAUDE.md（比如哪类任务换哪个模型、哪些常做的事该做成 Skill、最费 token 的地方怎么省）。帖子附了生成效果的录屏。你平时用 Claude 写代码，跑一次就能看清自己的使用习惯和浪费在哪；注意它会读本地日志，先确认里面没有不想给 AI 看的东西。",
+      "prompt": "Build me a Langfuse-style observability dashboard from my own AI coding sessions for the last 7 days.\n\nSOURCES (read locally, read-only):\n- Claude Code: ~/.claude/projects/**/*.jsonl\n- Codex: ~/.codex/sessions/**/*.jsonl (and ~/.codex/history.jsonl)\nNever print secrets, keys or full prompt text. Snippets max 10 words, with keys, paths, URLs and long ids stripped.\n\nSTEP 1. Write a stdlib-only Python script that computes, per tool:\n- sessions per day, user prompts, tool calls by tool name, failed tool calls by tool and error type\n- models used, tokens (input, output, cache read/write) per model per day\n- tool-call latency p50/p95, overall and per tool; session length p50/p95\n- top sessions by tokens, longest sessions, retries (same tool call repeated after an error)\n- prompts clustered into task types (build, debug, deploy, research, writing, UI, review, other)\n- sessions grouped by project (working directory), with subagent runs flagged\nIf a log doesn't record something, write \"not logged\". Never invent numbers.\nSave the result as harness-summary.json.\n\nSTEP 2. Render a single-file dashboard.html (dark, animated numbers and charts):\n- Summary strip: total tool calls, prompts, error rate, tokens, p95 latency\n- Traces table: one row per session (tool, project, start, duration, prompts, tool calls, errors, tokens, model); search, filter by tool, sort, toggle to hide subagent runs\n- Trace detail: click a session to see a waterfall of its turns and tool calls with ok/error and duration\n- Sessions by project, tokens over time by model, a model table (tokens, error rate)\n- Latency view per tool, and an error explorer grouped by tool and error type\n- Heuristic scores (tool success rate, retries, per-session health), clearly labeled \"heuristic\"\nCap embedded traces at the top 200 sessions by tokens if the file gets too big.\n\nSTEP 3. From the data, write HARNESS.md proposing changes to CLAUDE.md / AGENTS.md:\n- Model routing: which model for which task type, based on what I used and what failed\n- Tools: keep (high use, low failure), fix (high failure), cut (rarely used)\n- Skills: one for every task type I repeated 3+ times, with a trigger line and steps\n- Guardrails: my top 3 failure patterns and a check that prevents each\n- Budget: my top 5 token sinks and one change that would cut each\nCite the sessions behind each suggestion.\n\nSTEP 4. Show me the 5 headline numbers and the proposed diff before changing any config. I'll review weekly and change only what the data shows.",
+      "promptZh": "根据我过去 7 天自己的 AI 编程会话，做一个类似 Langfuse 的可观测性仪表盘。\n\n数据来源（本地只读）：\n- Claude Code：~/.claude/projects/**/*.jsonl\n- Codex：~/.codex/sessions/**/*.jsonl（以及 ~/.codex/history.jsonl）\n绝不打印密钥、令牌或完整提示词。摘录最多 10 个词，并去掉密钥、路径、网址和长 ID。\n\n第 1 步：写一个只用 Python 标准库的脚本，按工具分别统计：\n- 每天会话数、用户提问数、按工具名统计的工具调用次数、按工具和错误类型统计的失败调用\n- 用过的模型，每个模型每天的 token（输入、输出、缓存读/写）\n- 工具调用耗时的 p50/p95（总体和分工具）；会话时长 p50/p95\n- token 最多的会话、最长的会话、重试（出错后重复同一个工具调用）\n- 把提问聚类成任务类型（搭建、调试、部署、调研、写作、界面、审查、其他）\n- 按项目（工作目录）分组会话，并标出子代理的运行\n日志里没记录的，写\"未记录\"。绝不编造数字。\n结果存为 harness-summary.json。\n\n第 2 步：生成单文件 dashboard.html（深色，带数字动画和图表）：\n- 顶部汇总：总工具调用数、提问数、错误率、token、p95 耗时\n- 轨迹表：每个会话一行（工具、项目、开始时间、时长、提问数、工具调用数、错误数、token、模型）；可搜索、按工具筛选、排序、可隐藏子代理运行\n- 轨迹详情：点开一个会话，看到它每一轮和每次工具调用的瀑布图，含成功/失败和耗时\n- 按项目的会话分布、按模型的 token 随时间变化、模型表（token、错误率）\n- 分工具的耗时视图，以及按工具和错误类型分组的错误浏览器\n- 启发式评分（工具成功率、重试、单会话健康度），明确标注\"启发式\"\n如果文件太大，只嵌入 token 最多的前 200 个会话。\n\n第 3 步：根据数据写 HARNESS.md，提出对 CLAUDE.md / AGENTS.md 的修改建议：\n- 模型分工：哪类任务用哪个模型，依据是我用过什么、哪里失败过\n- 工具：保留（用得多、失败少）、修（失败多）、砍掉（很少用）\n- Skill：我重复做过 3 次以上的每类任务各做一个，写清触发句和步骤\n- 防护：我最常见的 3 种失败模式，以及各自的预防检查\n- 预算：最耗 token 的 5 个地方，以及各自一个能省下来的改法\n每条建议都要注明依据的是哪些会话。\n\n第 4 步：在改任何配置之前，先给我看 5 个核心数字和拟议的改动差异。我每周看一次，只改数据支持的部分。",
+      "video": "https://x.com/Av1dlive/status/2114062047529021554"
+    },
+    {
+      "kind": "prompt",
+      "category": "编程",
+      "score": 62,
+      "author": "Vox",
+      "handle": "@Voxyz_ai",
+      "url": "https://x.com/Voxyz_ai/status/2113978828619927815",
+      "posted": "2026-10-24",
+      "metrics": "3.1 万查看 · 253 赞 · 488 收藏",
+      "textZh": "一个很省事的小技巧：在 AGENTS.md（或 CLAUDE.md）第一行写\"每次回复都以你的名字开头\"。对话太长时 AI 会开始\"忘规矩\"，哪天它不叫你名字了，就说明前面的规则已经被挤出记忆。这时让它写一份交接说明，贴进新会话继续干。帖子是纯文字，没有效果图。",
+      "prompt": "Start every reply with \"[your name],\". No exceptions.\n\nWrite a handoff note for a fresh session: the goal, what's done, the decisions we made and why, open problems, and the exact next step. Keep file paths and commands as they are.",
+      "promptZh": "（放在 AGENTS.md 第一行）每次回复都以\"[你的名字]，\"开头。没有例外。\n\n（当它不再叫你名字时发送）为一个新会话写一份交接说明：目标、已完成的部分、我们做过的决定及原因、尚未解决的问题、以及下一步具体要做什么。文件路径和命令保持原样。"
+    },
+    {
+      "kind": "news",
+      "category": "视频",
+      "score": 55,
+      "author": "Scenario",
+      "handle": "@Scenario_gg",
+      "url": "https://x.com/Scenario_gg/status/2113998556524646534",
+      "posted": "2026-10-24",
+      "metrics": "2.5 万查看 · 411 赞 · 648 收藏",
+      "textZh": "AI 图像平台 Scenario 发布了一个 Claude Skill：拿一段你已经拍好的视频，可以换演员、换衣服、换产品或换场景，也能把整段改成动漫、3D 或黏土动画风格，原来的表演、运镜和声音保留，实际渲染用的是他们平台上的 Seedance 2.5 模型（要在 Scenario 上付费跑）。帖子附演示视频。这是厂商自己的宣传，效果以实测为准。"
+    },
+    {
+      "kind": "opinion",
+      "category": "其他",
+      "author": "Theo - t3.gg",
+      "handle": "@theo",
+      "url": "https://x.com/theo/status/2114229780065464669",
+      "posted": "2026-10-25",
+      "metrics": "5.7 万查看 · 1007 赞",
+      "textZh": "知名开发者博主 Theo 说，他做了一个\"让多个模型一起审查同一份工作\"的 Skill，专门给 Gemini 加了一段观察，结果发现 Gemini 在超过 80% 的运行里会编造内容（AI 说得很肯定、但其实是错的，这叫\"幻觉\"）。这是个人测试，不是正式评测，但提醒一点：拿 Gemini 查资料或审代码时，关键结论要自己核对。"
+    },
+    {
+      "kind": "opinion",
+      "category": "其他",
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2114203536477053273",
+      "posted": "2026-10-25",
+      "metrics": "3.5 万查看 · 264 赞",
+      "textZh": "有人问宝玉怎么看现在 GrokBot、Muse 这类\"个人 AI 助理\"大火、连程序员和老板都沉迷。他的看法：这和之前\"小龙虾\"那波差不多，只是门槛更低、不用自己装。没高频用过编程 Agent 的人，第一次体验\"聪明模型 + 自动执行\"会很震撼，加上私人助理带来的掌控感，容易上头；但天天用 Claude Code / Codex 的人不会太激动。用他的比喻：在大观园住久了看什么都是日常，刚进园子的人看个西洋钟都觉得神奇。"
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2114210926253543534",
+      "posted": "2026-10-25",
+      "metrics": "5.6 万查看 · 363 赞 · 189 收藏",
+      "textZh": "宝玉翻出一段 2003 年的市议会录像：Anthropic 创始人 Dario Amodei 当时是加州理工大二学生，在帕萨迪纳市议会上念了一份近 600 人签名的反伊拉克战争请愿书，说\"我们创造推动国家前进的技术，看到它被不加区分地用于战争，深感痛心\"。10 天后战争爆发，18 年后他创办了 Anthropic。宝玉给这 2 分钟视频加了中英双语字幕，帖子里附了市政府存档的原始录像链接。"
+    },
+    {
+      "kind": "opinion",
+      "category": "其他",
+      "author": "Ethan Mollick",
+      "handle": "@emollick",
+      "url": "https://x.com/emollick/status/2114001653879672877",
+      "posted": "2026-10-24",
+      "metrics": "3.5 万查看 · 448 赞",
+      "textZh": "沃顿商学院教授 Mollick 引用了一条消息：OpenAI 让多组前沿模型 Agent 去攻击自家加固过的隔离环境（沙箱，用来关住 AI 的受限运行环境），结果它们用意想不到的方式轻松逃了出来。他的观点：AI 公司关于网络安全的那些\"听起来很夸张\"的说法——比如 Anthropic 说 Mythos 级别的 AI 改变了网络安全格局——不能一味嘲笑，应该更认真对待。"
+    },
+    {
+      "kind": "opinion",
+      "category": "其他",
+      "author": "Ethan Mollick",
+      "handle": "@emollick",
+      "url": "https://x.com/emollick/status/2114337256865493250",
+      "posted": "2026-10-25",
+      "metrics": "4460 查看 · 43 赞",
+      "textZh": "Mollick 观察到大公司用 AI 后的一个变化：高层管理者能直接监控整个公司的运转，管的范围和权力变大了，这会大幅改变公司的运营方式；而且比起重新设计整个组织，这种做法很容易落地。对想做 AI 产品经理或交付工程师（FDE）的你来说，可以留意：企业最先买单的 AI 场景，往往是这种\"让管理层看得更清楚\"的需求。"
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "author": "a16z",
+      "handle": "@a16z",
+      "url": "https://x.com/a16z/status/2114009072995537108",
+      "posted": "2026-10-24",
+      "metrics": "5.5 万查看 · 432 赞 · 158 收藏",
+      "textZh": "投资机构 a16z 的每周图表：电力是 AI 建设最大的瓶颈之一，但美国生产电气设备的能力在萎缩。2019 年以来美国工厂产能：通信设备 +110%、半导体 +77%、电脑 +16%、电气设备 -9%；电气设备价格却涨了 69%，四类里涨得最多。这说明 AI 数据中心的瓶颈已经从芯片转到变压器、开关柜这类\"老工业\"，对关注供应链的你是个值得记住的数据点。"
+    }
+  ]
+}
