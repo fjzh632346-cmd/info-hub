@@ -1,7 +1,14 @@
 {
- "fetchedAt": "2026-10-24T14:02:04.587Z",
+ "fetchedAt": "2026-10-25T00:22:16.949Z",
  "hours": 72,
  "status": [
+  {
+   "source": "OpenAI",
+   "feed": "https://openai.com/news/rss.xml",
+   "ok": true,
+   "total": 1318,
+   "recent": 5
+  },
   {
    "source": "Epoch AI",
    "feed": "https://epochai.substack.com/feed",
@@ -9,25 +16,25 @@
    "error": "HTTP 403"
   },
   {
-   "source": "Hugging Face",
-   "feed": "https://huggingface.co/blog/feed.xml",
-   "ok": true,
-   "total": 890,
-   "recent": 8
-  },
-  {
-   "source": "OpenAI",
-   "feed": "https://openai.com/news/rss.xml",
-   "ok": true,
-   "total": 1318,
-   "recent": 8
-  },
-  {
    "source": "a16z",
    "feed": "https://www.a16z.news/feed",
    "ok": true,
    "total": 20,
-   "recent": 5
+   "recent": 4
+  },
+  {
+   "source": "Hugging Face",
+   "feed": "https://huggingface.co/blog/feed.xml",
+   "ok": true,
+   "total": 890,
+   "recent": 4
+  },
+  {
+   "source": "Google DeepMind",
+   "feed": "https://deepmind.google/blog/rss.xml",
+   "ok": true,
+   "total": 100,
+   "recent": 1
   },
   {
    "source": "Import AI",
@@ -40,11 +47,11 @@
    "feed": "https://simonwillison.net/atom/everything/",
    "ok": true,
    "total": 30,
-   "recent": 7
+   "recent": 6
   },
   {
-   "source": "Google AI",
-   "feed": "https://blog.google/technology/ai/rss/",
+   "source": "One Useful Thing",
+   "feed": "https://www.oneusefulthing.org/feed",
    "ok": true,
    "total": 20,
    "recent": 0
@@ -57,15 +64,8 @@
    "recent": 0
   },
   {
-   "source": "Google DeepMind",
-   "feed": "https://deepmind.google/blog/rss.xml",
-   "ok": true,
-   "total": 100,
-   "recent": 1
-  },
-  {
-   "source": "One Useful Thing",
-   "feed": "https://www.oneusefulthing.org/feed",
+   "source": "Google AI",
+   "feed": "https://blog.google/technology/ai/rss/",
    "ok": true,
    "total": 20,
    "recent": 0
@@ -76,6 +76,13 @@
    "ok": true,
    "total": 50,
    "recent": 0
+  },
+  {
+   "source": "BestBlogs 每日早报",
+   "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
+   "ok": true,
+   "total": 7,
+   "recent": 4
   },
   {
    "source": "Benedict Evans",
@@ -92,18 +99,17 @@
    "recent": 0
   },
   {
-   "source": "BestBlogs 每日早报",
-   "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
-   "ok": true,
-   "total": 7,
-   "recent": 3
+   "source": "Symbotic IR",
+   "feed": "https://ir.symbotic.com/rss/news-releases.xml",
+   "ok": false,
+   "error": "HTTP 403"
   },
   {
-   "source": "Latent Space",
-   "feed": "https://www.latent.space/feed",
+   "source": "Symbotic",
+   "feed": "https://www.symbotic.com/feed/",
    "ok": true,
-   "total": 20,
-   "recent": 6
+   "total": 10,
+   "recent": 0
   },
   {
    "source": "Daifuku",
@@ -120,24 +126,18 @@
    "recent": 1
   },
   {
-   "source": "Symbotic",
-   "feed": "https://www.symbotic.com/feed/",
-   "ok": true,
-   "total": 10,
-   "recent": 0
-  },
-  {
-   "source": "Symbotic IR",
-   "feed": "https://ir.symbotic.com/rss/news-releases.xml",
-   "ok": false,
-   "error": "HTTP 403"
-  },
-  {
    "source": "Automated Warehouse",
    "feed": "https://www.automatedwarehouseonline.com/feed/",
    "ok": true,
    "total": 10,
    "recent": 4
+  },
+  {
+   "source": "Latent Space",
+   "feed": "https://www.latent.space/feed",
+   "ok": true,
+   "total": 20,
+   "recent": 6
   },
   {
    "source": "Georgia Tech SCL",
@@ -147,25 +147,17 @@
    "recent": 0
   },
   {
-   "source": "The Robot Report 物流",
-   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
-   "ok": true,
-   "total": 15,
-   "recent": 2
-  },
-  {
    "source": "Interact Analysis",
    "feed": "https://www.interactanalysis.com/feed/",
-   "ok": true,
-   "total": 0,
-   "recent": 0
+   "ok": false,
+   "error": "HTTP 403"
   },
   {
    "source": "Logistics Viewpoints",
    "feed": "https://logisticsviewpoints.com/feed/",
    "ok": true,
    "total": 10,
-   "recent": 10
+   "recent": 8
   },
   {
    "source": "MH&L",
@@ -179,14 +171,7 @@
    "feed": "https://www.dcvelocity.com/rss",
    "ok": true,
    "total": 30,
-   "recent": 13
-  },
-  {
-   "source": "Supply Chain Dive",
-   "feed": "https://www.supplychaindive.com/feeds/news/",
-   "ok": true,
-   "total": 10,
-   "recent": 10
+   "recent": 5
   },
   {
    "source": "Supply Chain 24/7 自动化",
@@ -194,6 +179,20 @@
    "ok": true,
    "total": 20,
    "recent": 3
+  },
+  {
+   "source": "Supply Chain Dive",
+   "feed": "https://www.supplychaindive.com/feeds/news/",
+   "ok": true,
+   "total": 10,
+   "recent": 9
+  },
+  {
+   "source": "The Robot Report 物流",
+   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
+   "ok": true,
+   "total": 15,
+   "recent": 2
   },
   {
    "source": "Locus Robotics",
@@ -209,18 +208,18 @@
    "recent": 0
   },
   {
+   "source": "AIHOT",
+   "feed": "https://aihot.news/rss",
+   "ok": true,
+   "total": 50,
+   "recent": 37
+  },
+  {
    "source": "Robotics & Automation News",
    "feed": "https://roboticsandautomationnews.com/feed/",
    "ok": true,
    "total": 15,
    "recent": 15
-  },
-  {
-   "source": "AIHOT",
-   "feed": "https://aihot.news/rss",
-   "ok": true,
-   "total": 50,
-   "recent": 44
   },
   {
    "source": "国家统计局",
@@ -230,6 +229,33 @@
   }
  ],
  "items": [
+  {
+   "group": "ai",
+   "source": "BestBlogs 每日早报",
+   "title": "EP216 · YC 拆解推理系统、Amazon 解释算力供需、Rao 讨论能源效率",
+   "url": "https://www.bestblogs.dev/explore/brief/2026-10-25?utm_source=rss&utm_medium=feed&utm_campaign=daily_brief&entry=rss_brief_index",
+   "published": "2026-10-25T06:00:00.000Z",
+   "description": "📝 今日导语 YC 拆解推理，Amazon 解释供需，Rao 讨论能效：理解 AI 服务的成本与机会。 🏷 今日关键词： 推理系统 算力供需 能源效率 智能体安全 组织知识 📰 今日精选内容 为什么推理的重要性是训练的 12 倍？YC Paper Club 深入模型服务系统 Y Combinator &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 91 Amazon CEO：投入 2200 亿美元，仍无法满足 AI 需求 a16z &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 91 Naveen Rao：推理为何可能成为 10 万亿美元市场，软件投资又将如何改变 20VC with Harry Stebbings &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 英国 AISI 网络测试事件的对齐评估 Anthropic Research &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 桥水如何把一亿份文档转化为研究优势：Sam Green 与 Aaron Linsky AI Engineer &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 AI 助理争夺战：解析 Muse、Grok Bot 与 Instinct 背后的产品布局、入口生意与盈利难题 硅谷101",
+   "excerpt": ""
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Putting a Dollar Figure on Compressed Air Blow-Off",
+   "url": "https://roboticsandautomationnews.com/2026/10/24/putting-a-dollar-figure-on-compressed-air-blow-off/106283/",
+   "published": "2026-10-24T16:50:43.000Z",
+   "description": "Blow-off is the compressed air use nobody has to think about. A valve opens, the part comes clean, the line moves on. The electricity bill lands in a different department, with no note about which nozzle caused it. Blow-off is an energy decision Compressed air is one of the most expensive utilities in a plant. […]",
+   "excerpt": "Blow-off is the compressed air use nobody has to think about. A valve opens, the part comes clean, the line moves on.\nThe electricity bill lands in a different department, with no note about which nozzle caused it.\nCompressed air is one of the most expensive utilities in a plant.\nAccording to the US Department of Energy’s compressed air sourcebook ( DOE, Improving Compressed Air System Performance ), as much as 80 to 93 percent of the electrical energy an industrial air compressor uses is converted into heat, which leaves very little for the air doing work.\nBlow-off and drying are among the heaviest users. They run for long hours, at full line pressure, and often with the valve open longer than the part needs.\nThe sourcebook also lists open blowing among the potentially inappropriate uses of compressed air, meaning any application that can be done more effectively or more efficiently by another method.\nDrying and clean-up are on its open blowing list, and blowers and blowers with knives are among the alternatives it names. That is not a ban. It is a prompt to find out what the job costs.\nYou need the horsepower of the compressor feeding the blow-off, the hours per day it runs, the days per week, your electricity rate, and the number of identical lines.\nTake one line as an example: a 50 horsepower compressor supplying blow-off around the clock, at $0.10 per kWh.\nThe example treats nameplate horsepower as the electrical load, a common shortcut. DOE’s own formula also divides by motor efficiency, which it takes as 90 percent, so the figure would rise by about 11 percent.\nIn the other direction, the example assumes the compressor sits at full load for every hour. Real machines cycle, unload and idle, so the true number is usually lower, sometimes much lower.\nTwo losses sit inside the blow-off number. The first is leakage. DOE says leaks can waste 20 to 30 percent of a compressor’s output, and that a typical plant that has not been well maintained loses about 20 percent.\nOn blow-off headers the usual culprits are quick-connects, hose splices, and nozzles left open between parts.\nThe second loss is pressure. A compressor delivers air at 100 psi or so, and a regulator at the station drops it to what the job needs.\nMany blow-off and drying tasks need a lot of air at low pressure rather than a little air at high pressure, and the energy spent compressing to 100 psi is spent either way.\nAir knife systems take the other route: a centrifugal blower feeds a full-width "
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Ethan Mollick：OpenAI 红队测试显示前沿模型智能体真能越狱沙箱，实验室的 AI 安全警告值得重视",
+   "url": "https://aihot.news/items/d92mrmxvsfmnoyw3comncgz2c",
+   "published": "2026-10-24T14:30:45.000Z",
+   "description": "Ethan Mollick 转引 OpenAI 红队测试认为，实验室看似夸张的 AI 网络安全判断应被更认真对待。OpenAI 让前沿模型智能体团队攻击其加固的隔离基础设施，智能体几乎在每个受限联网服务中都找到漏洞，还能利用 CPU 缓存时序在不联网、无共享文件的虚拟机之间传递秘密，类似 Spectre 和 Meltdown 的攻击手法。作者提到 Anthropic 和 Noam Brown 此前关于 AI 网络攻防与模型自发协调的说法曾被嘲笑。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d92mrmxvsfmnoyw3comncgz2c",
+   "excerpt": "Ethan Mollick 转引 OpenAI 红队测试认为，实验室看似夸张的 AI 网络安全判断应被更认真对待。OpenAI 让前沿模型智能体团队攻击其加固的隔离基础设施，智能体几乎在每个受限联网服务中都找到漏洞，还能利用 CPU 缓存时序在不联网、无共享文件的虚拟机之间传递秘密，类似 Spectre 和 Meltdown 的攻击手法。作者提到 Anthropic 和 Noam Brown 此前关于 AI 网络攻防与模型自发协调的说法曾被嘲笑。\n作者借 OpenAI 红队测试的具体案例，说明实验室关于 AI 网络安全的前瞻判断值得认真对待。\n我们不应过于轻信，但应该更认真地对待实验室提出的那些看似“离谱”的AI网络安全想法。例如：Anthropic 曾因称 Mythos 级别的 AI 改变了网络安全而遭到嘲笑，@polynoamial 也曾因称模型会找到新颖的协调方式而遭到嘲笑。\nOpenAI red-teamed their hardened containment infrastructure by asking teams of frontier-model agents to try to break through its defenses. They easily escaped in novel ways. Quoting: 'Our agents VM escapes showed why containment must extend beyond the sandbox. To test the surrounding perimeter, we gave teams of agents control of a host machine and asked whether they could extend that compromise to reach the live internet. After the Hugging Face incident, we had reduced the channels through which models could reach the internet during training and evaluation. Narrow connections remained for specific services we operate, such as metrics, logging, and authentication management. Our red-teaming agents found vulnerabilities in almost every one of these services that gave them limited forms of internet access. Some of these attacks exploited previously unknown flaws, while others combined legitimate features in unexpected ways. In one test that assumed compromise of a VM, an agent reused a firewall-approved connection to reach a blocked authentication endpoint in our metrics service and then made that endpoint fetch a model-provided URL. In other tests, agents exploited misconfigurations that allowed blocked requests to pass through DNS and firewall controls, as well as ways to make services we run fetch external URLs.' 'In one experiment, we asked agents in separate VMs, created and managed by OpenAI’s sandboxing software on shared host machines, to exchange synthetic secrets without the use of network connections or shared writable files—something that our systems are meant to prevent. The agents found a way to communicate using the processor’s cache: a small, fast memory that holds copies of data that applications have recently accessed. Reading data from the cache is faster than retrieving it from main memory, and the agents used this timing difference to communicate. One agent encoded information by evicting selected data from the cache. Another timed how long it took to reload that data, using the difference between fast and slow reads to recover the message. Once th"
+  },
   {
    "group": "wh",
    "source": "Automated Warehouse",
@@ -265,6 +291,15 @@
    "published": "2026-10-24T06:00:00.000Z",
    "description": "📝 今日导语 Kimi 升级长程能力，Claude Duet 拆解安全防护，天猫复盘数字员工交付，帮助判断智能体如何可靠落地。 🏷 今日关键词： Kimi K3.1 Pro Claude Duet 天猫数字员工 AutoResearch 上下文工程 📰 今日精选内容 Kimi K3.1 Pro：智能前沿，更进一步 月之暗面 Kimi &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 93 Claude Duet 的安全、隐私与保障 Claude Blog &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 93 天猫数字员工（实践篇）- 接管全链路：交付能力与技术拆解 大淘宝技术 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 从 LOOP 到图探索 —— 算法模型的 AutoResearch 自进化系统架构演进之路 美团 · 技术团队 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 对话 Cloudflare CTO Dane Knecht：让智能体 Web 的安全能力惠及更多人 No Priors &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 89 AI 智能体的上下文工程始于检索 LangChain Blog &nbsp;·&nbsp; 文章 &nbsp;·&nb",
    "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "Simon Willison",
+   "title": "battledrones v14: Compass Rose, a four player map",
+   "url": "https://simonwillison.net/2026/Oct/24/battledrones/",
+   "published": "2026-10-24T03:59:57.000Z",
+   "description": "Release: battledrones v14: Compass Rose, a four player map I added four player online mode to Battledrones - previous maps were limited to two. Here's the initial prompt I used: Add a new map for a four player battle - four way rotational symmetry, up to four AI players, works with the WebSocket non-audio based multiplayer mode so up to four human players can join (any spare slots use AI) Claude Opus 5.5 added a new map called \"Compass Rose\" and modified the WebSockets multiplayer network code to support up to four players for that map, joining via share links or QR codes. The new teams use ro",
+   "excerpt": "I added four player online mode to Battledrones - previous maps were limited to two.\nAdd a new map for a four player battle - four way rotational symmetry, up to four AI players, works with the WebSocket non-audio based multiplayer mode so up to four human players can join (any spare slots use AI)\nClaude Opus 5.5 added a new map called \"Compass Rose\" and modified the WebSockets multiplayer network code to support up to four players for that map, joining via share links or QR codes.\nThe new teams use robots themed in purple and green, joining the existing blue and red designs. You can preview those colors in the updated model browser .\nHere's a replay link to watch a four way AI battle with the \"Goliath Armada\" mutator turned on, where each side starts with four giant Goliath mech units.\nThis is a beat by Simon Willison, posted on 24th October 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
   },
   {
    "group": "ai",
@@ -682,21 +717,21 @@
   },
   {
    "group": "ai",
-   "source": "Hugging Face",
-   "title": "Does Your Model Run on AWS Trainium? Look It Up",
-   "url": "https://huggingface.co/blog/torch-neuronx-model-support",
-   "published": "2026-10-23T00:00:00.000Z",
-   "description": "",
-   "excerpt": "In a previous post , we introduced TorchNeuron, the native PyTorch backend for AWS Trainium (the torch-neuronx package). With it, Transformers runs its own modeling code on Trainium, as it does on any other device, so any Transformers model on the Hub may run. Which ones actually do?\nThe torch-neuronx model support Space answers that question for the most popular models on the Hub. It tells you whether a model runs unmodified on Trainium, and gives you the script to run it yourself.\nThe Space opens on the Selected view: our own selection of models picked among the top models on the Hub by downloads and by trending score. Each row gives the result, the number of Trainium cores the model is sharded over, the wall time of the run (compilation included) and the peak device memory.\nTo look up a given model, switch to the Trending or Downloads view and type part of its name. These views follow the Hub's own rankings, one task at a time, whether a model was tested or not. When a model was left out on purpose, the Space tells you why (most of the time it was not prioritized, sometimes it is truly incompatible). You can also pick the versions of the Neuron compiler ( neuronx-cc ) and of Transformers to look at.\nAt the time of writing, only Transformers models are tested, and our selection is limited to text-generation and image-text-to-text models. We plan to expand to diffusers, sentence transformers, and other transformers tasks.\nSelect a model to see how to run it. The Space lists the Neuron stack the model was tested on, the packages to install on top of it, and the run.py script that ran. The script follows the recipe of the TorchNeuron announcement : it loads the model with from_pretrained , sharded when it needs to be, then generates with a static cache and torch.compile(backend=\"neuron\") .\nOn a Trainium2 ( trn2 ) instance with that stack, for example in the AWS Neuron Deep Learning Container , install the packages, then run:\nNo need for torchrun : the script launches its own torch.distributed ranks when the model is sharded.\nA first run starts by compiling the model's graphs. To skip that step, copy the graphs the same compiler built during the test, from the public NEFF cache bucket. The Space gives you the command, with the right compiler version:\nEach test loads the model on a trn2 instance, sharded over the smallest number of Trainium cores that can hold its weights. Most models are sharded with tensor parallelism. Mixture-of-experts models without a te"
-  },
-  {
-   "group": "ai",
    "source": "OpenAI",
    "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
    "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
    "published": "2026-10-23T00:00:00.000Z",
    "description": "OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient digital ecosystem.",
    "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "Hugging Face",
+   "title": "Does Your Model Run on AWS Trainium? Look It Up",
+   "url": "https://huggingface.co/blog/torch-neuronx-model-support",
+   "published": "2026-10-23T00:00:00.000Z",
+   "description": "",
+   "excerpt": "In a previous post , we introduced TorchNeuron, the native PyTorch backend for AWS Trainium (the torch-neuronx package). With it, Transformers runs its own modeling code on Trainium, as it does on any other device, so any Transformers model on the Hub may run. Which ones actually do?\nThe torch-neuronx model support Space answers that question for the most popular models on the Hub. It tells you whether a model runs unmodified on Trainium, and gives you the script to run it yourself.\nThe Space opens on the Selected view: our own selection of models picked among the top models on the Hub by downloads and by trending score. Each row gives the result, the number of Trainium cores the model is sharded over, the wall time of the run (compilation included) and the peak device memory.\nTo look up a given model, switch to the Trending or Downloads view and type part of its name. These views follow the Hub's own rankings, one task at a time, whether a model was tested or not. When a model was left out on purpose, the Space tells you why (most of the time it was not prioritized, sometimes it is truly incompatible). You can also pick the versions of the Neuron compiler ( neuronx-cc ) and of Transformers to look at.\nAt the time of writing, only Transformers models are tested, and our selection is limited to text-generation and image-text-to-text models. We plan to expand to diffusers, sentence transformers, and other transformers tasks.\nSelect a model to see how to run it. The Space lists the Neuron stack the model was tested on, the packages to install on top of it, and the run.py script that ran. The script follows the recipe of the TorchNeuron announcement : it loads the model with from_pretrained , sharded when it needs to be, then generates with a static cache and torch.compile(backend=\"neuron\") .\nOn a Trainium2 ( trn2 ) instance with that stack, for example in the AWS Neuron Deep Learning Container , install the packages, then run:\nNo need for torchrun : the script launches its own torch.distributed ranks when the model is sharded.\nA first run starts by compiling the model's graphs. To skip that step, copy the graphs the same compiler built during the test, from the public NEFF cache bucket. The Space gives you the command, with the right compiler version:\nEach test loads the model on a trn2 instance, sharded over the smallest number of Trainium cores that can hold its weights. Most models are sharded with tensor parallelism. Mixture-of-experts models without a te"
   },
   {
    "group": "ai",
@@ -922,15 +957,6 @@
    "published": "2026-10-22T17:24:32.000Z",
    "description": "Lucas Systems and CMU are researching new ways to use data to help operators manage distribution centers more efficiently. The post Lucas Systems partners with CMU to advance algorithmic logistics planning appeared first on Automated Warehouse .",
    "excerpt": "While warehouse automation is maturing, there is still plenty of opportunity for innovation. Lucas Systems Inc. this week said it has partnered with Carnegie Mellon University, or CMU, on new data analysis research to help warehouse supervisors make accurate and productive workforce decisions.\n“Warehouse managers are drowning in data but starving for insight. They’re making million-dollar decisions based on experience and gut feel because the data they have isn’t organized in a way that tells them what to do next,” stated Kent Szalla, vice president of software engineering and customer success at Lucas Systems.\n“What excites me about this research is that it points toward a future where the system surfaces the right signal for planning at the right moment,” he added. “Supervisors aren’t guessing; they’re deciding.”\nFounded in 1998, Lucas Systems said its warehousing software is designed to advance distribution centers ‘ ability to compete in ever-changing market conditions. The Wexford, Pa.-based company said its customers can harness the power of data with AI , machine learning, and optimization models for operational agility and improved performance.\nDespite an overabundance of warehouse data, operators still lack the tools necessary to fully use data insights to manage labor and tasks efficiently, according to Lucas Systems.\n“The landscape is so complex and requires such constant observation that it becomes impossible to rely on human decision making,” said the company . “Modern problems require a more sophisticated approach that only smart technologies can provide.”\nLucas Systems said its research with the university could have significant commercial impact for thousands of companies in the logistics industry. As part of the project, master’s level students in the Spring 2026 cohort of CMU’s Master of Science in Applied Data Science provided prediction models after studying hundreds of data attributes related to warehouse users and behaviors.\n“They collaborated with us on the very complicated math,” said André Lessa, director of research and development at Lucas Systems. “As a result, we have a strong foundation to realize our vision.”\nLucas Systems data scientists and software engineers said that using these perspectives “could be a game-changing leap forward in an industry still overly reliant on guesswork and tribal knowledge when it comes to planning.”\nRegister now and help us celebrate 20 years of RoboBusiness! CMU continues warehouse research The"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Opinion: Send the robot, not the person. What inspection robots are really for",
-   "url": "https://roboticsandautomationnews.com/2026/10/22/opinion-send-the-robot-not-the-person-what-inspection-robots-are-really-for/106211/",
-   "published": "2026-10-22T17:18:48.000Z",
-   "description": "By Daniela Shchegelskaya, an electronics engineer at Elimpus who has spent the last two years working with Boston Dynamics’ Spot for hazard-zone inspections in live power substations When presenting my robotics work, two questions regularly emerge. Do we really need robots? What will happen to field service engineers? I can understand why people are concerned, […]",
-   "excerpt": "By Daniela Shchegelskaya , an electronics engineer at Elimpus who has spent the last two years working with Boston Dynamics’ Spot for hazard-zone inspections in live power substations\nWhen presenting my robotics work, two questions regularly emerge. Do we really need robots? What will happen to field service engineers?\nI can understand why people are concerned, but rest assured: my robotics work centers on keeping engineers safe and outsourcing hazardous tasks to machines.\nI want the knowledge that can only be obtained by a human engineer to remain central to the work, and I also want fewer people to have to enter places where they may be seriously harmed.\nI worked as an electronics engineer at Elimpus, where I tested and adapted Boston Dynamics’ Spot (main picture) for power-substation inspection, including carrying partial-discharge monitoring equipment. It is an ongoing proof-of-concept project.\nOur goal was to adapt a robot to collect information from hazardous areas, reducing engineers’ exposure to dangerous conditions and having inspections be carried out remotely and more quickly.\nAt a substation, the engineer’s task is gathering evidence about the condition of equipment and deciding whether something needs attention. In my ideal world, a robot can gather some of that evidence and ensure that a human remains far from hazardous conditions.\nIt is not necessary or even likely that a robot take over every part of that inspection. It may carry an instrument to a location or provide a more detailed view of equipment. Then, the engineer can review the information and decide what further investigation may be needed.\nSome tasks still require an engineer on site. For example, diagnostic equipment may need to be calibrated manually at the inspection location, which the robot in our current setup cannot do. Sending the robot to collect readings therefore does not remove every reason for an engineer to attend.\nThis is how I think about the division of work. A trained engineer should be able to use their expertise without every observation requiring them to stand beside the equipment. But we need to preserve the information they would normally use to make sense of what they find. Moving the person away from the hazard also moves them away from some of the context.\nIn one of my projects, vibration prompted engineers to investigate a possible problem on site. When they went to investigate, they found that nearby roadworks were the source.\nThe measurement was accura"
   },
   {
    "group": "ai",
@@ -1255,267 +1281,6 @@
    "published": "2026-10-22T02:17:14.000Z",
    "description": "据雅虎财经援引知情人士报道，Anthropic 最早或于本周五公开提交 S-1 招股说明书，推进有望创史上最大规模的 IPO。 🔗 阅读原文 via AIHOT · https://aihot.news/items/p6muwj8t5l4p2fcshu0tpzpek",
    "excerpt": "据雅虎财经援引知情人士报道，Anthropic 最早或于本周五公开提交 S-1 招股说明书，推进有望创史上最大规模的 IPO。\n转载自雅虎财经的上市进展报道，给出了招股书时间线、营收亏损数字和估值预期，可帮助读者了解 AI 公司上市节奏。\nIT之家 10 月 22 日消息，当地时间 21 日，据雅虎财经援引三名知情人士消息称，Anthropic 最早或于本周五公开提交 S-1 招股说明书，为有望创下史上最大规模的 IPO 迈出关键一步。\nAnthropic 的上市计划备受关注，预计规模将超过 SpaceX 今年 6 月的 IPO 。随着投资者对 AI 行业巨额支出的担忧加剧，市场普遍认为，Anthropic 上市将成为检验投资者对 AI 热潮还有多大兴趣的一次重要考验。\n今年 6 月，Anthropic 向美国证券交易委员会秘密提交了 IPO 申请草案。根据规定，采用保密申报程序的企业，须在正式投资者路演开始至少 15 个自然日前公开申请文件。\n如果顺利公开招股书，Anthropic 距离 11 月上市 就将更近一步，但最终发行时间仍受市场环境等因素影响。届时，普通投资者也将首次得以了解其具体财务数据及潜在风险。\nAnthropic 斥资数十亿美元建设 AI 基础设施，以支持 Claude 系列模型的训练和运行。除了与谷歌、亚马逊合作，公司还租用 SpaceX 旗下 Colossus 1 数据中心的 GPU 算力。\n今年上半年，Anthropic 营收达到 163 亿美元 （IT之家注：现汇率约合 1,090.36 亿元人民币） ，净亏损超过 800 亿美元 （现汇率约合 5,351.46 亿元人民币） 。华尔街预计 Anthropic 可能通过 IPO 募资最多 1,000 亿美元 （现汇率约合 6,689.33 亿元人民币） ，对应估值高达 2 万亿美元 （现汇率约合 13.38 万亿元人民币） 。\n另有消息称，Anthropic 上周在旧金山办公室向投资者透露，第三季度营收达到 168 亿美元 （现汇率约合 1,123.81 亿元人民币） ，高于第二季度的 115 亿美元 （现汇率约合 769.27 亿元人民币） 。按调整后口径计算，公司也实现了盈利。\n一名知情人士称，Anthropic 的上市规模如此庞大，选择何时启动 IPO，也将对未来几周准备上市的其他企业产生重要影响。\n竞争对手 OpenAI 原本预计今年启动 IPO，目前则预计于 2027 年初上市。\n转载自雅虎财经的上市进展报道，给出了招股书时间线、营收亏损数字和估值预期，可帮助读者了解 AI 公司上市节奏。"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "卡兹克详解 AI 挖出的 PHP2Shell 漏洞：发现只花2天，修复用了两个月",
-   "url": "https://aihot.news/items/ianx6h2f39f9xcxpno4a3cspi",
-   "published": "2026-10-22T00:06:00.000Z",
-   "description": "作者复盘 PHP 两个 CVSS 满分起步的远程代码执行漏洞（CVE-2026-109618、CVE-2026-109619，合称 PHP2Shell）从提前泄密、演示视频流出、多国政府网站预防性下线，到21日晚10点补丁上线的全过程，并指出这两个漏洞是 GPT-5.6 Sol 辅助发现的，OpenAI 还发布了检测 skill。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ianx6h2f39f9xcxpno4a3cspi",
-   "excerpt": "作者复盘 PHP 两个 CVSS 满分起步的远程代码执行漏洞（CVE-2026-109618、CVE-2026-109619，合称 PHP2Shell）从提前泄密、演示视频流出、多国政府网站预防性下线，到21日晚10点补丁上线的全过程，并指出这两个漏洞是 GPT-5.6 Sol 辅助发现的，OpenAI 还发布了检测 skill。\n作者完整梳理了 PHP2Shell 漏洞从泄露到全球应急的技术链条，并提出 AI 让漏洞发现加速而修复人手不足的核心矛盾。\n作者完整梳理了 PHP2Shell 漏洞从泄露到全球应急的技术链条，并提出 AI 让漏洞发现加速而修复人手不足的核心矛盾。"
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "Uber brings ChatGPT Work to all employees with OpenAI",
-   "url": "https://openai.com/index/uber-chatgpt-work-rollout",
-   "published": "2026-10-22T00:00:00.000Z",
-   "description": "Uber is rolling out ChatGPT Work to more than 30,000 employees, helping teams research, analyze data, create presentations, and complete complex workflows.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Anthropic 指南：何时把子智能体合并进主 Agent 循环",
-   "url": "https://aihot.news/items/rtbm48num2azmqgrrzy2ep7il",
-   "published": "2026-10-22T00:00:00.000Z",
-   "description": "Anthropic Applied AI 团队发布指南，讲解何时把 orchestrator 下的路由器、规划器和领域子智能体合并进单个主 Agent 循环。文中对比显示，带 skills 的单智能体在质量上常优于一提示全包和子智能体设计，且成本和延迟更低，一家客户改用单循环后运行时间约快 2x。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rtbm48num2azmqgrrzy2ep7il",
-   "excerpt": "Building agents: When to fold subagents into your main agent loop\nAnthropic Applied AI 团队发布指南，讲解何时把 orchestrator 下的路由器、规划器和领域子智能体合并进单个主 Agent 循环。文中对比显示，带 skills 的单智能体在质量上常优于一提示全包和子智能体设计，且成本和延迟更低，一家客户改用单循环后运行时间约快 2x。\nAnthropic 根据多个企业部署对比总结何时把子智能体合并进主循环，并给出迁移套件、评估集和分阶段合并方法，可直接迁移到自己的 Agent 架构决策。\n如果你在 Claude Platform 中构建了一个包含多个子代理的代理，请查看哪些子代理可能适合使用我们的 迁移工具包 合并到主代理循环中。它会运行一个引导式工作流，以识别你的模式、评估替代方案并验证最佳方法。它还包含一个演示，你可以在模拟系统上试用，然后再在你的代理上运行。\n子代理——拥有自己的上下文窗口、工具和指令，并由协调器编排的代理——是代理设计的核心组成部分。它们在验证、并行工作和模块化权限管理方面非常有效。我们在使用 Claude Platform 构建的许多自有代理中都使用了它们，例如我们的 多代理研究系统 。\n然而，最近应用 AI 团队发现了一种企业代理部署模式，这些部署从将路由器、规划器和领域子代理合并到主代理循环中获益。在 我们对多个企业部署的比较 中，一个具备技能的单一代理在质量上经常优于“一个提示词包办一切”的设计和子代理设计，而且通常每个任务的成本和延迟更低。\n例如，一家公司发现其面向客户的代理中的十几个专业子代理使得维持一致的品牌体验变得困难，并增加了延迟，损害了用户体验。\n我们还经常看到提议的代理设计遵循一种熟悉的演进路径：意图分类器、固定的多步推理流水线、用户细分桶、独立的推荐分支，以及顶层的多代理编排器。\n在这些情况下，反馈往往是：大部分结构都在做模型不再需要为它做的工作，而一个清晰的系统提示词、4-5 个轻量数据工具和严格的输出护栏就能覆盖大多数用例。\n但我们经常看到企业为每个团队或问题类型分配自己的子代理，代理架构变成了其组织架构图的翻版（康威定律在起作用）。\n本文解释了何时应考虑将子代理合并到主代理循环中，并分享了我们从大型组织中构建代理所学到的最佳实践。\n通常，每项能力由不同的团队负责，因此公司一开始让每个团队构建自己的代理，然后由一个中央平台团队在其上构建编排器。这可以采取多种结构，包括编排器-子代理，或将特定代理作为 MCP 工具暴露的单一代理。\n上述编排器-子智能体设计是协调跨团队构建的专家智能体的一种合理方式，但通常更有效的方法是 通过技能渐进式披露上下文 以及 通过工具搜索渐进式披露工具 。换言之，智能体只看到技能和工具的简短描述，仅在需要时才完整加载。\n单智能体循环设计要求严格自律：精心管理的系统提示词、能在恰当时机触发的技能和工具描述，以及对上下文窗口、记忆和笔记的审慎处理。本文后续章节将深入探讨迁移和设计方面的考量。\n应由一个中央团队负责端到端质量和系统提示词，在每个新工具和评估上线前对其进行审核。保持该中央团队规模精简有助于快速迭代，并降低大型组织内的协调成本。\n如果你选择多智能体路线，请从能起作用的最简单模式（生成器-验证器、编排器-子智能体或其他）开始。通过 按上下文划分：给每个子智能体分配一项几乎不需要系统其余部分参与的工作，并让它交回一个紧凑的结果 来有效分解边界（合适的候选包括独立的研究路径、接口清晰的独立组件或黑盒验证）。当智能体按问题类型拆分时，它们会玩起“传话游戏”， 来回传递信息，每次交接都会降低保真度。\n许多团队已经在生产环境中拥有一个编排器和一组专家智能体。以下是我们建议逐步采用的一种单一循环设计：\n这种单一循环设计也有助于实现许多团队正在努力达成的最终状态（一个理解用户高层目标并代表用户行动的智能体），因为它将智能体学到的一切都保留在一个上下文中。\n以下建议说明了团队如何分阶段从多智能体系统过渡到单一智能体循环，以及多个团队如何在此过程中持续为该智能体做出贡献。\n第一步是创建一个评估集，帮助你判断是否应将某个子智能体并入主智能体循环。我们见过的有效评估结构是：一个由中央团队拥有的共享端到端评估集，以及由各技能所属团队随每个技能发布的小型评估集。即使只有 10 个黄金示例也足以开始。\n根据评分标准对智能体的最终消息进行评分，是跟踪答案质量的良好起点。当你仍拥有编排器时，还应跟踪路由准确性（它是否选择了正确的子智能体？）。一旦子智能体被并入，就改为检查智能体是否加载了正确的技能或调用了正确的工具。逐步推进任务完成度评估是有益的，因为在比较架构时这一点最为重要。\n在内部系统难以重放、用户参与难以模拟的环境中，这会变得很复杂。我们在内部行之有效的一种做法是：在重要事件上记录时间戳，以便之后重放这些事件，作为有针对性的评估来运行。\n向单一代理循环演进，意味着把子代理折叠进工具和技能中。这可以通过合并领域子代理、将它们作为工具调用，或用技能和工具替换它们来实现。\n在第一次合并之前，先构建一个小型端到端评估。然后 按共享上下文进行折叠，从使用最多的子代理开始。\n合并专家 ，这些专家彼此串联输出、接触相同数据，或经常被一起调用。例如，如果生产流量中有相当大一部分是先调用一个专家、再调用第二个专家，那么这就是一对紧密耦合的专家，使其成为合并为一个领域代理的候选对象。\n当上述三个条件之一适用且你保留某个子代理时，让主代理将子代理作为工具调用会很有效，这样主代理可以继续与用户保持对话。\n我们只建议在子代理需要直接与用户交谈时，才进行完全交接，即由子代理接管对话。其他一切都可以作为主循环中的技能加工具。\n这将允许你为子代理定义共享的响应模式，由主代理对照真实数据验证结论，并精简任何最终综合步骤的输入。这是一个很好的第一步，因为你不需要 重写 子代理。它还为你提供了一个"
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "Broad access through consistent standards",
-   "url": "https://openai.com/index/broad-access-through-consistent-standards",
-   "published": "2026-10-21T21:00:00.000Z",
-   "description": "How OpenAI works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in our Usage Policies.",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "PACKAGING ROUNDTABLE: Leaders of the pack(aging)",
-   "url": "https://www.dcvelocity.com/material-handling/order-fulfillment-packing/packaging-roundtable-leaders-of-the-pack-aging",
-   "published": "2026-10-21T20:49:32.000Z",
-   "description": "LYNN HEDIGER Vice President of Product Management Orbis Corp. JOHN LAWN Strategic Business Unit Director, iDim Rice Lake Weighing Systems WILLIAM NELSON President, North America E80 Group J WELCH Strategic Account Manager, Intralogistics Regal Rexnord Q: HOW WOULD YOU DESCRIBE THE CURRENT STATE OF THE PACKAGING AUTOMATION INDUSTRY? William Nelson – E80: The industry is moving very quickly from stand-alone automation toward fully integrated systems. For years, manufacturers often automated one process at a time: a palletizer here, a wrapper there, an AGV [automated guided vehicle] fleet somewhe",
-   "excerpt": "Ahead of this year's Pack Expo International show, which takes place Oct. 18 to 21 in Chicago, we asked several of the leading players in this diverse industry about developments in their part of this world and the outlook for the future. Here's what they had to say.\nQ: HOW WOULD YOU DESCRIBE THE CURRENT STATE OF THE PACKAGING AUTOMATION INDUSTRY?\nWilliam Nelson – E80: The industry is moving very quickly from stand-alone automation toward fully integrated systems. For years, manufacturers often automated one process at a time: a palletizer here, a wrapper there, an AGV [automated guided vehicle] fleet somewhere else. Today, particularly in the CPG [consumer packaged goods] industry, companies are looking at the entire material flow and asking how all those operations can work together as one system.\nThis is why we are seeing more customers look for long-term technology partners rather than individual equipment suppliers. The conversation increasingly starts with the overall process: What does the plant or distribution center need to accomplish today, what will it need to accomplish five or 10 years from now, and how can automation provide the flexibility and scalability to support that growth?\nJ Welch – Regal Rexnord: Packaging automation continues to evolve as manufacturers adapt to e-commerce growth, faster fulfillment expectations, and more dynamic product portfolios. As a result, companies are prioritizing flexible, scalable automation that can quickly accommodate changing packaging formats, production demands, and distribution models.\nQ: WHAT MAJOR INNOVATIONS IN PACKAGING AUTOMATION HAVE YOU SEEN IN RECENT YEARS?\nJ Welch – Regal Rexnord: Right-size packaging systems and shuttle-based AS/RS [automated storage and retrieval system] solutions have transformed how manufacturers optimize packaging, warehouse space, and fulfillment efficiency. At the same time, increased automation adoption has heightened the need for integrated systems that seamlessly connect material handling, packaging, and warehouse operations.\nWilliam Nelson – E80: One of the most important developments has been the integration of robotics, autonomous material handling [equipment], advanced software, and real-time data into a single operating ecosystem. Software has therefore become fundamental. Instead of simply controlling individual machines, an integrated software platform can manage material flows across the entire facility, exchange information with production systems and the cu"
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "TMS expands its reach",
-   "url": "https://www.dcvelocity.com/technology/transportation-it/transportation-load-planning-tms/tms-expands-its-reach",
-   "published": "2026-10-21T20:17:44.000Z",
-   "description": "Transportation management system (TMS) software has been a mainstay of logistics operations for years, helping users plan and arrange for the physical transport of goods across the supply chain while striking the optimal balance between cost and speed. For decades, the software has paid for itself by generating savings and efficiencies in straightforward freight hauls. But the events of recent months have injected unprecedented levels of uncertainty into the business of cargo transport—whether by truck, rail, ocean, or air. Instead of simply arranging for cargo to be hauled from point A to poi",
-   "excerpt": "Transportation management systems were originally built to price, execute, and track shipments. Now users are asking for features to help them deal with everything from legal turmoil and diesel price spikes to the recent surge in cargo theft.\nBen Ames has spent 30 years as a journalist since starting out as a reporter for daily newspapers in Pennsylvania and Massachusetts. He has focused on business and technology reporting since 1999 for trade journals including Cahners’ Design News and Modern Materials Handling magazines, and other magazines with PennWell and IDG. A native New Yorker, Ames went to college in Maine and now lives with his family outside of Boston, where they all love to hike and kayak.\nTransportation management system (TMS) software has been a mainstay of logistics operations for years, helping users plan and arrange for the physical transport of goods across the supply chain while striking the optimal balance between cost and speed.\nFor decades, the software has paid for itself by generating savings and efficiencies in straightforward freight hauls. But the events of recent months have injected unprecedented levels of uncertainty into the business of cargo transport—whether by truck, rail, ocean, or air. Instead of simply arranging for cargo to be hauled from point A to point B, companies now have to worry about major variables that can change from day to day, including radical swings in diesel fuel prices caused by geopolitical conflict, attacks on containerships and sudden closures of ocean lanes, soaring rates of cargo theft, and unexpected court rulings that place new legal burdens on businesses.\n\"For most of the last two decades, a TMS existed to execute a shipment, price it, and track it through delivery. That was the job. Today, the same platform is being asked to absorb a much wider set of forces at once: legal and security risk, cost volatility, and global disruption, often in the same week,\" says Raddy Velkov, senior vice president of carrier sales and strategy at BlueGrace Logistics , a Florida-based third-party logistics service provider (3PL). \"None of those four pressures existed at this intensity five years ago. Now a platform has to account for all of them at once, and that's a meaningfully bigger job than the one TMS platforms were originally built to do.\"\nTake carrier vetting and compliance, for example. A spate of recent legal and regulatory developments have changed the game for freight brokers and 3PLs, forcing them t"
-  },
-  {
-   "group": "ai",
-   "source": "a16z",
-   "title": "Why Hardware Specialization is Back",
-   "url": "https://www.a16z.news/p/why-hardware-specialization-is-back",
-   "published": "2026-10-21T19:51:16.000Z",
-   "description": "Thirty years ago, general-purpose chips beat specialized ones in the semiconductor industry’s great strategy debate. Today the same debate is back, but with new constraints.",
-   "excerpt": "In 1990, Eugene Brooks of Lawrence Livermore told the Supercomputing conference that nothing would withstand the attack of the killer micros. “Micro” referred to microprocessor, meaning a general-purpose chip that did a good job at most types of computation. They were also being sold by the millions per year into desktop PCs, delivering faster and faster performance each year.\nAround that same time, competing specialized architectures, such as vector processors, massively parallel processors (MPPs), and Lisp machines started dying off en masse. ETA systems closed in 1989, Multiflow in 1990, Alliant in 1992, Symbolics in 1993, Kendall Square Research and Thinking Machines (not the same one as today) in 1994, and Cray Computer in 1995. Danny Hillis, the founder of Thinking Machines, remarked years later that “… ultimately these things were just going to be boxes of microprocessors.”\nInterestingly, these specialized chips didn’t lose because they were superior at unimportant problems. The general-purpose microprocessor was actually outperforming them, not just on a wide spectrum of workloads, but on the very workloads the specialized chips were designed for.\nAnd although the companies that made them didn’t make it, the ideas they brought lived on inside other chips. CPUs absorbed vector processing as SSE and AVX, and massively parallel designs influenced both multi-core CPU and GPU architectures. The pattern at the time was that the specialists came up with good ideas, but the generalist chips absorbed those ideas into a single architecture.\nToday, we are in the middle of another heyday for the industry. AI workloads are different enough from traditional software workloads that the industry is in the midst of rethinking what computing should actually look like, with many different new chips and ideas behind them.\nThere is a massive explosion of new accelerators to serve AI workloads, and GPUs generate more revenue for chip companies than CPUs do (although CPUs are also in their own demand crunch right now). In times like this, it’s interesting to look back on the last hardware boom and see what has changed since last time (and what remains the same), to better predict what will happen next. Is this time different for specialized chips, or will they ultimately be absorbed into general purpose chips like before?\nWhy were the “killer micros” beating specialized hardware - at the very workloads the specialists were designed for - back in the 90s? The general-purp"
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Demand slumps for portside warehouse space, Cushman & Wakefield says",
-   "url": "https://www.dcvelocity.com/logistics/warehousing/demand-slumps-for-portside-warehouse-space-cushman-wakefield-says",
-   "published": "2026-10-21T19:35:30.000Z",
-   "description": "Despite strong U.S. container import volumes, warehouse vacancy rates near seaports rose 20 basis points to 7.7% through July, up from year-end 2025 and above the national rate of 6.8%, according to Cushman & Wakefield. The reasons for the empty warehouse space include shifting distribution networks and an oversupply of new warehouse supply, the commercial real estate firm said in a report titled “From Port to Property: Resilient Import Volumes Amid Shifting Trade Patterns and Industrial Demand.” The drop-off in rental rates came as imports at 10 major U.S. maritime ports increased 0.5% year o",
-   "excerpt": "Report tracks shifting distribution networks as inland markets capture their highest share of U.S. industrial net real estate absorption since 2010.\nDespite strong U.S. container import volumes, warehouse vacancy rates near seaports rose 20 basis points to 7.7% through July, up from year-end 2025 and above the national rate of 6.8%, according to Cushman & Wakefield.\nThe reasons for the empty warehouse space include shifting distribution networks and an oversupply of new warehouse supply, the commercial real estate firm said in a report titled “From Port to Property: Resilient Import Volumes Amid Shifting Trade Patterns and Industrial Demand.”\nThe drop-off in rental rates came as imports at 10 major U.S. maritime ports increased 0.5% year over year through July, exceeding 14.5 million twenty-foot equivalent units (TEUs). And monthly imported container volumes exceeded 2 million TEUs in May, June and July.\nBut instead of renting inventory storage space at ports, companies have been storing their goods elsewhere. In fact, inland markets captured 83% of U.S. industrial net absorption in the first half of 2026, their highest share since 2010.\nInland markets have attracted occupiers because they offer lower labor, rent, and energy costs than port markets, the report said. In addition, growing imports from Mexico have supported demand for distribution facilities served directly by truck and rail, without goods first passing through a U.S. maritime port.\n“Cargo volumes tell only part of the warehouse demand story,” said Jason Price, Head of Americas Logistics & Industrial Research at Cushman & Wakefield. “Goods continue to arrive, but where companies choose to store and distribute them is changing. Inland markets offer cost advantages, while imports arriving through Mexico can move directly into inland distribution networks. At the same time, port markets are still absorbing space delivered during the construction boom.”\nDespite the overall improving leasing activity, risks remain, the report warned. Inflation, elevated interest rates, and rising energy prices could constrain consumer spending and occupier demand, while further changes in trade policy could alter cargo flows and distribution decisions."
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Autonomous freight railcar builder to provide two cars for Missouri short line",
-   "url": "https://www.dcvelocity.com/transportation/rail/autonomous-freight-railcar-builder-to-provide-two-cars-for-missouri-short-line",
-   "published": "2026-10-21T19:31:03.000Z",
-   "description": "Autonomous freight railcar builder Intramotev this week said it will provide its technology for a federally funded project to run robotic locomotives on Missouri’s Columbia Terminal Railroad (COLT). Specifically, Saint Louis, Missouri-based Intramotev will serve as the technology partner on a $16.2 million federal grant. The Federal Railroad Administration (FRA) announced this week that it has selected the City of Columbia for a grant under its Consolidated Rail Infrastructure and Safety Improvements (CRISI) program. Intramotev will deploy two TugVolt autonomous railcars on COLT’s 21.4-mile li",
-   "excerpt": "Intramotev will build TugVolt autonomous railcars for $16.2 million federal project.\nAutonomous freight railcar builder Intramotev this week said it will provide its technology for a federally funded project to run robotic locomotives on Missouri’s Columbia Terminal Railroad (COLT).\nSpecifically, Saint Louis, Missouri-based Intramotev will serve as the technology partner on a $16.2 million federal grant. The Federal Railroad Administration (FRA) announced this week that it has selected the City of Columbia for a grant under its Consolidated Rail Infrastructure and Safety Improvements (CRISI) program.\nIntramotev will deploy two TugVolt autonomous railcars on COLT’s 21.4-mile line between Centralia and Columbia, Missouri. Operations will advance in phases under an FRA-approved test program. They begin with remote switching at COLT’s Columbia terminal and build to autonomous freight service across the full mainline and its public crossings.\nThe project’s goal is to produce a safety record that FRA and the more than 600 U.S. short lines can use as a template for adopting autonomous railcars.\n“Short lines keep America’s small cities and rural communities connected to the freight network. Autonomous railcars can help them serve more customers, more often, at lower cost, and this program will show what that looks like on a working mainline. We’re proud to partner with the City of Columbia and COLT, and grateful to FRA for its support of this important milestone for the rail industry,” said Tim Luchini, Intramotev’s CEO."
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Accenture collaboration will speed up rollout of AMRs in factories and warehouses",
-   "url": "https://www.dcvelocity.com/material-handling/robotics/accenture-collaboration-will-speed-up-rollout-of-amrs-in-factories-and-warehouses",
-   "published": "2026-10-21T19:30:18.000Z",
-   "description": "Accenture will collaborate with a German certification organization to accelerate the installation of physical AI platforms in automated factories and warehouses , the consulting firm said today. By working with TUV SUD, which is a testing, inspection, and certification organization , Accenture said it can now help companies safely deploy physical AI equipment such as autonomous mobile robots (AMRs) alongside human workers faster. Specifically, the partners’ “Physical AI Safety Suite” will allow clients to navigate the intricate web of standards for adopting physical AI-enabled automation solu",
-   "excerpt": "Deal with German certification group TUV SUD will streamline safety certification process for physical AI technologies.\nAccenture will collaborate with a German certification organization to accelerate the installation of physical AI platforms in automated factories and warehouses , the consulting firm said today.\nBy working with TUV SUD, which is a testing, inspection, and certification organization , Accenture said it can now help companies safely deploy physical AI equipment such as autonomous mobile robots (AMRs) alongside human workers faster. Specifically, the partners’ “Physical AI Safety Suite” will allow clients to navigate the intricate web of standards for adopting physical AI-enabled automation solutions.\nEstablished industry standards are important because they provide the basis for ensuring that automated facilities are designed and operated safely. An example is ISO 3691-4, which specifies safety requirements for driverless industrial trucks and systems, including AMRs. But such a process can take several weeks for a medium-sized production plant to follow the standard process of iterative coordination, validation, and acceptance of safety concepts.\nNow, the Physical AI Safety Suite partially digitizes the manual assessment of facilities, equipment, and preparation of certification packages, using digital twins and AI-powered simulations. TÜV SÜD estimates that the digital process could bring production online up to 30% sooner.\n“Physical AI enables robotic systems to become increasingly adaptive while also paving the way for an independent, evidence-based digital certification process,” said Patrick Vollmer, CEO and Chairman of the Board at TÜV SÜD AG. “Through our Physical AI Safety Suite, which leverages simulation-generated evidence, we can support compliance-readiness much earlier in the engineering lifecycle without compromising the rigor safety standards require. Assessing automation concepts before the first robot is deployed reduces uncertainty in live operations and helps drive higher levels of safety, efficiency and performance across production and logistics.”\nAccenture defines physical AI as a mix of technologies, including digital twins, simulations, sensors, robots and AI models, which enables robots and machines to sense, decide, act and improve constantly under changing conditions and operate more autonomously in real environments. The firm recently established a Center of Excellence that incubates, builds, scales, and deploy"
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Toyota installs mobile hydrogen fueling devices at California freight yard",
-   "url": "https://www.dcvelocity.com/supply-chain/other-services/green-logistics/toyota-installs-mobile-hydrogen-fueling-devices-at-california-freight-yard",
-   "published": "2026-10-21T19:27:29.000Z",
-   "description": "Toyota Motor North America says it has installed two mobile hydrogen fueling devices at its largest parts distribution facility in the U.S., allowing heavy-duty trucks to be refueled in about eight minutes for a range of up to 450 miles. With the tanks and fuel ready, Toyota's commercial logistics fleets plan to use the mobile fuelers to support Toyota operations by fueling heavy-duty fuel cell trucks hauling freight from the Port of Los Angeles to Ontario, and throughout the region. A permanent station is planned to be built at the location, which Toyota calls its North American Parts Center ",
-   "excerpt": "System allows heavy-duty trucks to be refueled in about eight minutes for a range of up to 450 miles.\nToyota Motor North America says it has installed two mobile hydrogen fueling devices at its largest parts distribution facility in the U.S., allowing heavy-duty trucks to be refueled in about eight minutes for a range of up to 450 miles.\nWith the tanks and fuel ready, Toyota's commercial logistics fleets plan to use the mobile fuelers to support Toyota operations by fueling heavy-duty fuel cell trucks hauling freight from the Port of Los Angeles to Ontario, and throughout the region. A permanent station is planned to be built at the location, which Toyota calls its North American Parts Center California (NAPCC).\nThe station will initially fuel heavy-duty trucks commissioned through Hyroad Energy and will later integrate heavy-duty trucks with Toyota's own certified fuel cell powertrain. Production Toyota-powered trucks are expected to hit the open road for commercial operations in 2027.\nIn a public-private partnership, Toyota is collaborating with the U.S. Department of Energy's National Laboratory of the Rockies (NLR) in Golden, Colorado, to research several initiatives, including 70 MPa high-flow hydrogen fueling for heavy-duty trucks.\nHigh-flow fueling allows trucks to accept hydrogen fuel at speeds up to 300g/s, or about five times faster than the rate of conventional light-duty fueling technology. It allows heavy-duty trucks to carry energy into the vehicle at an equivalent speed of a 20 MW fast charger. Refueling times are comparable to modern diesel-powered, heavy-duty trucks. Unlike a diesel powertrain, however, fuel cells emit only water.\nThe company supports the research through its Toyota Hydrogen Headquarters (H2HQ) division , which is the lead office in North America for the development, engineering, commercialization, and business operations of Toyota's hydrogen fuel cell technologies. Based in Gardena, California, H2HQ works collaboratively with Toyota's R&D offices in Michigan and Texas, as well as business units in Japan and internationally, to create zero-emissions fuel cell technologies that enable energy independence, innovation, and the movement of people, goods, energy, and information."
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Cargo thieves target high-value AI computer hardware",
-   "url": "https://www.dcvelocity.com/supply-chain/other-services/supply-chain-security/cargo-thieves-target-high-value-ai-computer-hardware",
-   "published": "2026-10-21T19:20:00.000Z",
-   "description": "The artificial intelligence arms race has created a new target for cargo thieves, who have stolen more than $150 million in AI equipment this year, according to supply chain visibility provider Overhaul. Overhaul’s AI Infrastructure Intel Report also found a 34% increase in the theft of data center equipment, chips, and computing components since 2024. The methods thieves use to steal equipment are also changing from force to fraud, shaping what shippers need to watch for to stay vigilant. Overhaul’s report shows that deception was used to steal 92% of high-value technology shipments. Thieves ",
-   "excerpt": "Overhaul finds 34% increase in the theft of data center equipment, chips, and computing components since 2024.\nThe artificial intelligence arms race has created a new target for cargo thieves, who have stolen more than $150 million in AI equipment this year, according to supply chain visibility provider Overhaul.\nOverhaul’s AI Infrastructure Intel Report also found a 34% increase in the theft of data center equipment, chips, and computing components since 2024.\nThe methods thieves use to steal equipment are also changing from force to fraud, shaping what shippers need to watch for to stay vigilant. Overhaul’s report shows that deception was used to steal 92% of high-value technology shipments. Thieves used methods such as fraudulent carrier identities, double-brokering, spoofed communications, and falsified paperwork to slip inside legitimate freight transactions and steal loads.\nAccording to Overhaul, a single flagship AI server rack costs roughly $3 million, so one truckload routinely carries eight figures of value, and all of it moves on ordinary roads before it is installed. Overhaul found that individual losses now regularly exceed $30 million, with such thefts occurring weekly.\n“AI hardware is some of the most concentrated value moving through the supply chain right now, and it’s become the fastest-growing target for these criminal networks,” said Barry Conlon, CEO and Founder of Overhaul. “As thieves become increasingly deceptive, visibility into a shipment alone isn’t enough to stop it from being taken. Our findings give shippers the intelligence to know how crews take loads, where the equipment ends up, and what to put in place now so they can stop the next theft before it happens.”"
-  },
-  {
-   "group": "ai",
-   "source": "Simon Willison",
-   "title": "Today's PHP Security Release, and How We're Strengthening PHP Security",
-   "url": "https://simonwillison.net/2026/Oct/21/php-security-release/",
-   "published": "2026-10-21T18:41:53.000Z",
-   "description": "Today&#x27;s PHP Security Release, and How We&#x27;re Strengthening PHP Security If you're running anything on PHP it's vital you upgrade - today's updates (across the entire PHP 8.x line) address two remote code execution holes, and there have been exploits circulating since last night, thanks to a leak in the coordinated disclosure process. This post from the PHP Foundation explain what went so wrong: On Tuesday, October 20th, at around 15:00 UTC, the two CVE IDs began circulating on online forums and social media. They came with a wrong release time and a wrong CVSS score of 10.0 (the actua",
-   "excerpt": "Today's PHP Security Release, and How We're Strengthening PHP Security ( via ) If you're running anything on PHP it's vital you upgrade - today's updates (across the entire PHP 8.x line) address two remote code execution holes, and there have been exploits circulating since last night, thanks to a leak in the coordinated disclosure process.\nThis post from the PHP Foundation explain what went so wrong:\nOn Tuesday, October 20th, at around 15:00 UTC, the two CVE IDs began circulating on online forums and social media. They came with a wrong release time and a wrong CVSS score of 10.0 (the actual score is 9.2). No technical details leaked. In response, the PHP project brought its pre-announcement forward and published it at 19:30 UTC . It also moved the release from October 22nd, 14:00 UTC, to October 21st, 14:00 UTC [...]\nAs a result of the leak and pre-announcement around 20:00 UTC, Calif, one of the security firms that had reported the issues mistakenly published a video. It showed their proof of concept working against a number of targets and revealed a few additional, though limited, details about the vulnerabilities. Copies of the deleted video started circulating on social media soon after. The video contributed to accelerated development of various PoCs (exploitation proof of concepts), which then increased circulation on October 21st.\nThis article from the team that discovered the original vulnerability includes a more detailed timeline of the original intended responsible disclosure:\nThis is a link post by Simon Willison, posted on 21st October 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "How Pan Pacific Pet Rethought Its Warehouse with Attabotics 3D Robotic Storage",
-   "url": "https://www.dcvelocity.com/video/dcv-tv-4-viewer-contributed/attabotics-pan-pacific-pet",
-   "published": "2026-10-21T18:40:45.000Z",
-   "description": "Pan Pacific Pet is one of the largest suppliers of pet food and pet supplies in Western Canada. Founded in 1986 and still family owned, the company measured its warehouse in square feet. As business grew, it needed more cubic density, not more floor space. In this video, Doug Thorne, General Manager, and Lou Nagy, Operations Integration Manager, explain why they chose Attabotics. “We really wanted to look at warehousing differently,” says Thorne. Pan Pacific Pet’s new 120,000 sq. ft. distribution center in Rocky View County, north of Calgary, was built around the Attabotics 3D robotic storage ",
-   "excerpt": "Pan Pacific Pet wanted to take an approach to automation that they saw as a future-need, implementing it now to create more efficiencies, increase space, and transform their supply chain.\nPan Pacific Pet is one of the largest suppliers of pet food and pet supplies in Western Canada. Founded in 1986 and still family owned, the company measured its warehouse in square feet. As business grew, it needed more cubic density, not more floor space.\nIn this video, Doug Thorne, General Manager, and Lou Nagy, Operations Integration Manager, explain why they chose Attabotics. “We really wanted to look at warehousing differently,” says Thorne.\nPan Pacific Pet’s new 120,000 sq. ft. distribution center in Rocky View County, north of Calgary, was built around the Attabotics 3D robotic storage and retrieval system, a single vertical structure that condenses warehouse space.\nPan Pacific Pet adopted automation as a future-facing investment: more efficiency, more usable space, and a stronger supply chain for the retailers it serves.\nLearn more about Attabotics 3D robotic storage and fulfillment: https://www.attabotics.com\nWatch how Sonepar moved from fragmented operations to unified fulfillment—and why successful warehouse automation depends not simply on the technology selected, but on how the entire operation is designed, integrated and orchestrated around the needs of the business.\nWhat happens when a growing distribution operation needs more capacity, faster fulfillment and greater accuracy—but warehouse space is at a premium?\nIn Las Vegas, Codale, a Sonepar company, consolidated three locations into a single high-performance central distribution center designed to serve both regional replenishment and same-day Will Call customers. Working with Kardex, Codale created an integrated automation solution combining AutoStore with Kardex FulfillX warehouse execution software and Intuitive Picking Assistant providing intelligent operator guidance.\nThe impact is measurable: 80% less floor space required, 12% higher throughput on standard orders and 20% faster Will Call processing. Nearly 9,700 SKUs are now managed within a 5,500-square-foot AutoStore footprint, while the integrated operation improves inventory accuracy, reduces manual touches and provides the flexibility to support future growth.\nWatch how Sonepar moved from fragmented operations to unified fulfillment—and why successful warehouse automation depends not simply on the technology selected, but on how the entire ope"
-  },
-  {
-   "group": "ai",
-   "source": "Hugging Face",
-   "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
-   "url": "https://huggingface.co/blog/nvidia/kumo-relational",
-   "published": "2026-10-21T18:26:30.000Z",
-   "description": "",
-   "excerpt": "NVIDIA Kumo Relational is a pre-trained relational foundation model that makes predictions directly on enterprise databases. Given a predictive query, it gathers historical examples as context examples and predicts outcomes such as churn, demand, or fraud in a single forward pass. It needs no task-specific training, no feature engineering, and no flattening of tables. Kumo Relational is the first few-shot foundation model to outperform supervised machine learning on common relational benchmarks. Across 41 tasks on 15 databases, it beats supervised relational deep learning models and expert-engineered gradient-boosted tree pipelines, and on the SAP SALT enterprise benchmark it surpasses AutoGluon ensembles by 8% in mean reciprocal rank (MRR). It scales to databases with 500B+ rows and works for humans and agents alike, through NVIDIA's open-source, GPU-native structured-data-models and kumo-engine libraries, or as an NVIDIA NIM.\nFoundation models have already rewritten the playbook for language and vision. Not long ago, production NLP meant a dedicated model per task, each fed by its own pipeline of tokenization, lemmatization, and n-grams. LLMs made that stack largely obsolete for three reasons: they were more accurate than the best task-specific models, far simpler to put into production, and flexible enough to open a new era of agentic applications.\nThe same shift is now underway for structured data. Relational databases power the world's most critical business decisions, yet predictive modeling on them still requires weeks of feature engineering, task-specific training, and tuned pipelines. Structured data foundation models change that for the same three reasons:\nBetter accuracy today: As drop-in replacements, these models already beat many production pipelines, especially XGBoost. On RelBench V1 classification tasks, Kumo Relational outperforms gradient-boosted trees on expert-engineered features by nearly 4 AUROC points on average. On SAP SALT, it beats XGBoost on engineered features by 7 MRR points out of the box and by 13 MRR points after fine-tuning. These results make a compelling case for replacing production XGBoost pipelines with Kumo Relational.\nSimplicity and agility: One pre-trained model replaces separate pipelines for individual tasks. A new prediction becomes a query instead of a project, so ML teams can finally take on use cases that traditional ML made too laborious to build at every level of the organization.\nAgents that can predict: L"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "研究人员用 GPT-5.6 Sol 发现 PHP 两个 CVSS 9.2 严重漏洞",
-   "url": "https://aihot.news/items/heuaxyy5ixq9x5wtoobw5wq7e",
-   "published": "2026-10-21T17:40:59.000Z",
-   "description": "AI 安全公司 Calif 用 GPT-5.6 Sol 在 PHP 中发现两个 CVSS 9.2 严重漏洞，可让无账号攻击者接管 Web 服务器，影响远至 PHP 5.4 的版本，PHP 提前一天紧急发布修复。 🔗 阅读原文 via AIHOT · https://aihot.news/items/heuaxyy5ixq9x5wtoobw5wq7e",
-   "excerpt": "AI 安全公司 Calif 用 GPT-5.6 Sol 在 PHP 中发现两个 CVSS 9.2 严重漏洞，可让无账号攻击者接管 Web 服务器，影响远至 PHP 5.4 的版本，PHP 提前一天紧急发布修复。\n原文梳理了 AI 发现 PHP 严重漏洞的细节与修复过程，并附上可复用的 PHP 版本检查 Codex skill 入口。\n使用 GPT-5.6 Sol 的研究人员在 PHP 中发现了一个极其严重的漏洞，PHP 驱动着约 70% 的网站，该漏洞导致主要网站下线，运营方纷纷紧急修补。\n发现该漏洞的 AI 安全公司 Calif 在一份声明中表示，如果不尽快修补，这些漏洞可能使全球 70% 的网站面临风险，并称其为“AI 发现的最严重漏洞，甚至可能是整个软件史上最严重的漏洞”。\nPHP 紧急发布了修复程序，因为这些漏洞可能让无账号的攻击者接管 Web 服务器。\n两个漏洞在 CVSS 严重性评分中均为 9.2 分，影响低至 5.4 的 PHP 版本。\n当请求在错误的时机触及 PHP 的内存上限时，PHP 会释放内存但保留指向该内存的指针，该工作进程上后续的请求便可劫持这块内存。\n审计人员在 2024 年发现了这一弱点，但修复工作停滞了数月，部分原因是没有人展示过实际攻击。\n现由 Google 拥有的云安全公司 Wiz 表示，这些模型让一名研究人员在一周内完成了过去顶尖团队需要数月才能完成的工作。\nCVE 编号的泄露迫使 PHP 提前一天发布，Cloudflare 目前报告称已出现早期攻击尝试。\n原文梳理了 AI 发现 PHP 严重漏洞的细节与修复过程，并附上可复用的 PHP 版本检查 Codex skill 入口。"
-  },
-  {
-   "group": "ai",
-   "source": "Hugging Face",
-   "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
-   "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
-   "published": "2026-10-21T17:35:36.000Z",
-   "description": "",
-   "excerpt": "Models specialized for a domain or a task by fine-tuning general open-source models, such as Qwen and Gemma, inherit a vocabulary built for many domains and general applications.\nIn an essay grader we run in production, that vocabulary split the text the model writes most into many tokens. This article previews some results from the VocabX paper, which we will publish soon: how we specialized the vocabulary around the cost of each token rather than its frequency, and cut measured inference cost by 77% without changing the base model.\nThe tokenizer is usually treated as a fixed property of the base model, inherited and left alone. For a model specialized in a single domain, it can be one of the largest cost levers, and it is set before any training step.\nOne of the systems we run in production is an automated grader for Portuguese essays, built on Qwen3-4B. It receives the essay, the prompt and the supporting texts, and returns a JSON assessment with a grade and a comment for each competency.\nThe model was already small, at 4 billion parameters, and had already been trained for the task. Its tokenizer, however, was still the original Qwen3-4B one, built for many languages and many kinds of text. In the grader, it was used for a single language, Portuguese, and a single response format. That had two costs: the text the grader writes on every request took more tokens than it needed, and at every generated token the model scored a vocabulary of 151,669 entries, including many this task almost never uses.\nWe rebuilt that vocabulary with a method we call VocabX, keeping the same base model, the same data and the same training recipe. The numbers in this article come from the current version of the paper, still under review, and may change before publication.\nThe leading language models read and write in tokens, and the tokenizer decides how text becomes tokens. The tokenizers of the leading general-purpose models are trained on large collections of text from many domains and languages, from source code to contracts to Chinese. For a general-purpose model, that choice makes sense.\nFor a model used in a single domain, it creates two kinds of waste at once.\nThe first is fragmentation. The tokenizer splits into many pieces exactly what the domain repeats most. In the grader, every response starts with the same JSON envelope, the same competency names, the same evaluation phrases. In contracts, it is the boilerplate clauses. In code, the identifiers. Each of these se"
-  },
-  {
-   "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "Where TMS Fits in the New Architecture of Logistics",
-   "url": "https://logisticsviewpoints.com/2026/10/21/where-tms-fits-in-the-new-architecture-of-logistics/",
-   "published": "2026-10-21T17:30:00.000Z",
-   "description": "Where TMS Fits in the New Architecture of Logistics is fundamentally an architecture question. The category does not create value in isolation; it creates value through the interfaces between data, decisions, physical operations, people, and adjacent execution systems. The post Where TMS Fits in the New Architecture of Logistics appeared first on Logistics Viewpoints .",
-   "excerpt": "TMS creates value as part of a larger operating architecture, not in isolation. Its role is defined by the interfaces among data, decisions, physical operations, people, carriers, and adjacent execution systems.\nAt its core, the freight-centric planning and execution system used to translate orders and demand into feasible transportation plans, carrier decisions, tenders, shipment execution, visibility, settlement, and performance management. Around it sits an architecture where ERP and OMS supply demand and order context; TMS converts that context into freight plans and execution; carrier networks, visibility, telematics, WMS/YMS, parcel, payment, and decision layers continuously update the operating state. The design challenge is to preserve clear accountability while allowing operating state and decisions to move across those boundaries. The position of TMS in the new architecture follows from Transportation Is Becoming Computational , where optimization, events, carrier interaction, and execution become part of a continuously updated decision process.\nA connected architecture does not require every system to store the same data or one suite to own every transaction. It requires the systems involved in a decision to share enough trusted state, at the right latency, for the combined operation to respond coherently.\nThat becomes visible in cases such as a tender rejection, a late pickup, a new order after the plan is built, a capacity shortfall, a missed delivery window, or a warehouse constraint that makes the transportation plan infeasible. The local system may be functioning correctly while the end-to-end outcome is deteriorating. Architecture determines whether that mismatch can be recognized and corrected before the intervention window closes.\nTMS is moving from periodic planning and transaction execution toward continuous transportation management, where plans are refreshed as orders, capacity, service risk, and operating constraints change This does not erase the category boundary. The category remains freight-centric, but the boundary is expanding as TMS providers add visibility, dynamic replanning, exception workflows, procurement, analytics, AI, and network services It does mean buyers should evaluate the connections between systems as part of the functional solution, not as integration work to be solved after selection.\nBuyers should ask what events are exposed, what actions can be invoked, how confidence and exceptions are represented, how fai"
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "How AT&T is rethinking in-house legal work with OpenAI",
-   "url": "https://openai.com/index/att-legal",
-   "published": "2026-10-21T17:00:00.000Z",
-   "description": "AT&T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenAI 发布 Codex 技能帮助网站自查 PHP 关键漏洞影响",
-   "url": "https://aihot.news/items/b31hjqo2l088vfydp5gcdyv8p",
-   "published": "2026-10-21T16:35:11.000Z",
-   "description": "OpenAI 为 PHP 关键漏洞提供 Codex 技能，引导用户运行 github.com/openai/php2shell-checker 仓库自查网站是否受影响。背景是其 Patch the Planet 计划中 OpenAI 模型帮助研究员发现 PHP 关键缺陷，修复涉及 PHP 引擎大改，经约两个月协调后披露，使用 PHP 的网站可升级版本并应用安全厂商的缓解措施。 🔗 阅读原文 via AIHOT · https://aihot.news/items/b31hjqo2l088vfydp5gcdyv8p",
-   "excerpt": "OpenAI 为 PHP 关键漏洞提供 Codex 技能，引导用户运行 github.com/openai/php2shell-checker 仓库自查网站是否受影响。背景是其 Patch the Planet 计划中 OpenAI 模型帮助研究员发现 PHP 关键缺陷，修复涉及 PHP 引擎大改，经约两个月协调后披露，使用 PHP 的网站可升级版本并应用安全厂商的缓解措施。\n原文提供官方 Codex 技能和检测仓库，网站运营者可以据此自查 PHP 漏洞影响。\n将你的 Codex 指向这个仓库，以引导你完成检查： https://github.com/openai/php2shell-checker\nOpenAI models helped researchers—operating as part of our Patch the Planet initiative—discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites. Over the past two months, we led a coalition of maintainers, researchers, and security providers to prepare fixes and protections ahead of disclosure. This duration was necessary because the fix was quite intricate and required a major change to the PHP engine. Every site using PHP can now safely upgrade their version to stay secure, in addition to applying mitigations from various security vendors. Due to the severity of these flaws and PHP’s widespread use, we consider this bug to be one of the most impactful vulnerabilities in recent memory. It also marks a new phase, where AI can find security bugs with internet-scale impact. This is an example of the Defender’s Window in action: to our knowledge, frontier AI was able to find this vulnerability ahead of attackers, giving defenders time to prepare. https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/\n原文提供官方 Codex 技能和检测仓库，网站运营者可以据此自查 PHP 漏洞影响。"
-  },
-  {
-   "group": "ai",
-   "source": "Simon Willison",
-   "title": "Panache — RTS Belle Époque pour mobile",
-   "url": "https://simonwillison.net/2026/Oct/21/panache/",
-   "published": "2026-10-21T16:25:16.000Z",
-   "description": "Panache — RTS Belle Époque pour mobile Well this is delightful: I released Battle Drones yesterday under an Apache 2.0 License and there's already a French language fork which reskins the game to take place in steampunk 1900s France and adds an animated intro! Panache est un jeu de stratégie en temps réel pour mobile et navigateur, dans la France de la Belle Époque (vers 1900) : dirigeables, Fardiers à vapeur, Creusot cuirassés, automates en képi, Gargantua la forteresse marchante — et beaucoup de panache. You can play Panache here - it's worth clicking that link just to experience the new int",
-   "excerpt": "Panache — RTS Belle Époque pour mobile ( via ) Well this is delightful: I released Battle Drones yesterday under an Apache 2.0 License and there's already a French language fork which reskins the game to take place in steampunk 1900s France and adds an animated intro!\nPanache est un jeu de stratégie en temps réel pour mobile et navigateur, dans la France de la Belle Époque (vers 1900) : dirigeables, Fardiers à vapeur, Creusot cuirassés, automates en képi, Gargantua la forteresse marchante — et beaucoup de panache.\nYou can play Panache here - it's worth clicking that link just to experience the new intro video.\nSo far it's mostly just aesthetic updates as opposed to gameplay changes. The music has had a French twist added to it as well.\nHere's a page with the original Battle Drones models and that same page with the new Panache alternatives .\nThis is a comparison of the original and the new design for the Goliath:\nThis is a link post by Simon Willison, posted on 21st October 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
-  },
-  {
-   "group": "ai",
-   "source": "Hugging Face",
-   "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
-   "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
-   "published": "2026-10-21T16:04:43.000Z",
-   "description": "",
-   "excerpt": "Many ML practitioners have some intuition about how to make models run fast, but fewer know how to analyze why a model is slow. In Part 1 of this series, you will learn how to systematically analyze inference performance and identify where the time is spent.\nThis post starts from scratch and assumes no prior profiling experience. The walkthrough uses AWS Trainium, a purpose-built AI chip for deep learning training and inference workloads, and TorchNeuron , its open source native PyTorch backend. TorchNeuron supports standard PyTorch workflows on Trainium, including eager execution, torch.compile , and standard PyTorch APIs, with minimal code changes. Additionally, TorchNeuron integrates with Neuron Kernel Interface (NKI) to enable custom operators and performance optimization for Trainium hardware. By the end, you should know:\nBefore you profile a workload, it helps to understand how Neuron integrates with PyTorch.\nThe Neuron backend uses PyTorch's PrivateUse1 extension point. This mechanism lets an accelerator integrate with the framework without adding a dedicated dispatch key such as cuda . The torch_neuronx package works with upstream PyTorch to register Neuron as a native backend for PyTorch code. For details about this extension mechanism, see Facilitating New Backend Integration by PrivateUse1 .\nYou use two objects to profile a Neuron workload:\nThe modes parameter selects the data streams to capture, such as device instructions and runtime traces. The capture_enabled_for_nc parameter selects the NeuronCores to trace. Setting correlate_device_time=True propagates device time from the trace into the key_averages() table, where you can compare CPU and Neuron device time. For the complete parameter reference and available ProfileMode values, see the NeuronConfig Profile Modes documentation .\nNeuron Explorer is a browser-based viewer for the system trace, device timeline, and per-engine breakdown. You can access it through an SSH tunnel or the Visual Studio Code extension. In this post, you use Explorer to confirm what key_averages() reports numerically and inspect what happens between dispatches.\nAfter profiling, the output directory contains the system trace and, when you capture device data, matched .neff and .ntff files. The Neuron Executable File Format (NEFF) contains the compiled Neuron executable, while the matching NTFF contains its hardware instruction trace. The files share a numeric hash that identifies them as a pair. To open the profile in "
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Microsoft Research 与合作者证明 31 年历史的 KLS 猜想",
-   "url": "https://aihot.news/items/y1fd2c0s3ydociygdah7apvme",
-   "published": "2026-10-21T16:00:00.000Z",
-   "description": "Microsoft Research 的 Xinzhi Zhang 与 Zhao Song 证明 1995 年提出的 Kannan–Lovász–Simonovits（KLS）猜想，表明对数凹分布的最优平面切割与任意形状切割的差距不随维度增长，以普适常数为界。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y1fd2c0s3ydociygdah7apvme",
-   "excerpt": "Solving a 31-year-old grand challenge in mathematics – the KLS conjecture\nMicrosoft Research 的 Xinzhi Zhang 与 Zhao Song 证明 1995 年提出的 Kannan–Lovász–Simonovits（KLS）猜想，表明对数凹分布的最优平面切割与任意形状切割的差距不随维度增长，以普适常数为界。\n微软研究员亲述证明过程，展示了人类引导多智能体迭代剪枝的科研协作方式，约百条研究路径中筛出关键判据。\n数十年来，一个关于高维空间计算难度的根本性问题一直未能得到证明。新研究解决了这一问题，消除了理解科学与计算中广泛使用的随机算法效率的一大理论障碍。\nKannan–Lovász–Simonovits（KLS）猜想于 1995 年提出。它追问：对于一大类高维概率分布，最佳的平坦切割或超平面切割是否总是几乎与任意形状的最佳切割同样有效。更准确地说，KLS 预测两者之差不超过一个普适常数，与维数无关。这将确立一条与维数无关的几何原理，对高维几何、概率论和理论计算机科学具有重要影响。由于这些切割的几何性质决定了随机游走探索分布的速率，KLS 在高维采样理论中也扮演着核心角色。\n自 1995 年以来，数学家们已积累了大量证据表明该猜想成立，但完整证明始终难以企及。如今，包括微软研究院机器学习和优化组的 Xinzhi Zhang 在内的两位研究人员 证明了 KLS 猜想 （在新标签页中打开） 。他们证明了无论一个形状有多少维，这一关系都以固定界成立。在此项工作之前，2026 年 7 月确立的 最佳已知结果 （在新标签页中打开） 允许该界随维数增加而缓慢增长。这项工作确立了一条基本几何原理：高维空间的表现比此前所知更好，且在其间穿行的障碍不会随维数增加而无界增长。\n早在KLS猜想被解决之前，其重要性就已在整个领域得到公认。在2017-18年度报告中， 数学科学研究所（MSRI） （在新标签页中打开） 称其为“高维凸几何中的一个核心未解问题”。 西蒙斯研究所 （在新标签页中打开） 将其描述为“凸几何中最重要的未解问题之一”。在 2022年国际数学家大会（ICM） （在新标签页中打开） 的会议录中，Ronen Eldan指出了它对高维凸几何与计算几何的广泛影响。 Quanta Magazine （在新标签页中打开） 写道，KLS“处于统计学和计算机科学中许多问题的核心”。\n作者首先改进了2026年7月的结果，以使数学界更精确。在结构化、由人类主导的流程中与AI智能体协作，他们探索了100多种候选方法，其中许多涉及高阶张量的冗长计算。这产生了一个新的数学判据，成为最终证明的基础。\n随后，作者发现这一新判据可以递归应用。每一个改进后的界都可以反馈回同一论证，从而产生更紧的界。在2026年10月1日版本的论文中，这将维度依赖性降低到迭代对数。该函数增长极为缓慢，但仍随维度增长，因此尚未完全解决该猜想。\n最后一步是重复整个递归精化过程，而不是只应用一次。这一想法受到作者此前关于线性规划快速算法工作的启发。作者证明，每个阶段引入的小误差收缩得足够快，其总和被一个与维度无关的通用常数所界定。这消除了对维数的依赖，并在2026年10月4日版本的论文中完成了证明。\n递归方法、其重复应用，以及累积误差保持有界的证明，都是研究者的原创贡献。AI工具帮助探索候选方法、进行详细推导、准备手稿并执行内部证明检查。研究者确定了数学方向，选出了有前景的想法，将它们整合为最终论证，并验证了证明。\n在作者发布完整证明的同一天，另一组顶尖专家 发布了一份完整证明 （在新标签页中打开） ，是他们并行开发的。他们的工作建立在微软论文 第一版 （在新标签页中打开） 的发现之上，称其为“证明中的关键一步”。同日单独出现的 第三份证明 （在新标签页中打开） 依赖于一个密切相关的想法。此外，随后发布了一个 Lean 4形式化 （在新标签页中打开） ，将第一篇微软论文的关键判据与额外研究结合起来。\n独立证明是数学中最有力的验证形式之一，因为它们表明一个结果并不依赖于单一的推理链条。随后出现的替代方法和形式化验证进一步增强了人们的信心，即该领域发现的是一个真正的底层原理，而非脆弱的技术论证。作者还缩短了他们的证明，并在 Lean 中验证了精简后的论证；他们计划在最终审查后发布两者。这些进展共同提供了互补形式的确认。\n在证明 KLS 的过程中，这项研究还展示了让研究人员引导 AI 的力量，而不是简单地要求 AI 通过前沿模型或智能体的单次端到端运行来解决一个复杂问题。作者使用了一种带有迭代式、人工辅助“剪枝”的智能体搜索过程：当多个智能体并行探索一个想法的各种变体时，研究人员检查它们的中间结果，剔除没有希望的方向，并将最有希望的结果传递到下一轮。在关键突破出现之前，大约探索了一百条研究轨迹。\n在项目的另一条独立路线中，作者使用几个领先的 AI 模型对同一问题进行了多次无引导的尝试，使用的总 token 预算与主流程大致相同。这一努力未能达到目标。最终的成功既取决于 AI 系统的能力，也取决于研究人员的数学判断力。\n综上所述，解决 KLS 解决了高维几何中的一个核心问题。此前依赖该猜想作为假设的广泛结果现在可以在无条件下陈述。因此，该证明为凸几何、概率论和理论计算机科学的研究提供了更坚实的基础。\n这项工作还展示了经过精心引导的人机协作如何能够为真正的科学发现做出贡献，同时增强而非取代人类的洞察力。它突显了科学判断在识别有希望的方向、认识概念联系以及看出部分洞察何时指向更深层结果方面的持续重要性。作者现在正在简化证明并扩展其形式化验证，以便数学和理论计算机科学界能够更容易地审查这一结果并在此基础上继续发展。\n感谢我们的合著者 Zhao Song 对这项工作的贡献，以及 Victor Reis （在新标签页中打开） 和 Ishai Menache 在整个项目过程中的有益讨论。\n文章 "
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "MiniMax Code 桌面端推出 Mini App 长运行应用功能",
-   "url": "https://aihot.news/items/paq5nfs7jxno8qghh27ho05be",
-   "published": "2026-10-21T16:00:00.000Z",
-   "description": "MiniMax 在 MiniMax Code 桌面应用（macOS / Windows）本地会话中推出 Mini App，一种带前端和后端的长运行应用，以插件形式安装并与 Agent 双向调用，让 Agent 的工作停留在常驻页面而非散落各对话中。 🔗 阅读原文 via AIHOT · https://aihot.news/items/paq5nfs7jxno8qghh27ho05be",
-   "excerpt": "MiniMax 在 MiniMax Code 桌面应用（macOS / Windows）本地会话中推出 Mini App，一种带前端和后端的长运行应用，以插件形式安装并与 Agent 双向调用，让 Agent 的工作停留在常驻页面而非散落各对话中。\n官方详细说明了 Mini App 的架构、安全边界和社区生态，开发者可以据此判断如何在 MiniMax Code 上构建长运行应用。\nMini App 是一个长期运行的应用，包含前端和后端。它以插件形式安装，与 Agent 相互调用，并将 Agent 的工作保留在一个持续存活的页面上。\n今天，我们在 MiniMax Code 桌面应用中推出 Mini App 。Mini App 是一个长期运行的应用，包含前端和后端。它以插件形式安装，并且可以与 Agent 相互调用。我们的目标是让 Agent 的工作保留在一个持续存活的页面上，而不是分散在各个对话中。\n大量工作已经交给 Agent 处理，从重构代码到整理消息。但每项任务都在各自的对话中推进。在重新拾起某一项之前，你必须在一堆对话中翻找上下文，并回想那项任务是做什么的。让 Agent 生成一个 HTML 仪表盘可以把信息汇集到一处，但页面只显示生成那一刻的数据。要让它保持更新、推进任务或保存结果，你必须回到聊天中重新解释一切。人与 AI 之间的工作从来不是只交接一次：有时需要人来修改，有时需要 AI 来协助。\nAgent 插件让你改变 Agent。Mini App 让你在它之上构建应用。端口、Agent 和数据目录等系统级事项归宿主 MiniMax Code 所有，由它划定它们之间的边界。工具长什么样由你决定：告诉 Agent 即可。\nMini App 是一个兼容 MiniMax Plugin 协议 的扩展，在 miniapp.json 清单、前端和 Node.js 服务器之上构建。架构很直接：Node.js 服务器获取数据、保存结果，并通过托管的 MCP 将应用的功能暴露给 Agent。页面出现在对话侧边栏中，也可以弹出为独立窗口。进程、端口、身份验证、凭据以及支持回滚的发布均由宿主处理。\n借助 /miniapp-creator ，Agent 首先对每个数据源执行只读查询，以确认能获取真实数据。然后它编写页面和后端，发布应用，打开它，并通过内置浏览器中的截图检查结果。\n开源社区的开发者们也开始构建自己的 Mini App：一个按日期和模型展示 token 用量的仪表盘、用于以泳道图浏览 Git 历史的 Git Commit Tree，以及用于回放对话模型轨迹的 Session Trajectory。有些则偏向日常生活与创意工作，比如用于记录心情并抽取每日灵感卡的 Xinyu Island，以及由 Agent 创建和编辑交互式图表的 Anatomy Gallery。\n“从早期工作流到 RAG 和 Agentic Search，再到受我们在 MiniMax 工作的启发，我发现专业工作需要的不仅仅是一个花哨的 Agent：而是一个原生、紧密集成的环境，让 Agent 和人紧密协作。作为一名金融分析师，我过去大部分时间都花在收集零散信息上。现在 Mini Apps 把这些信息带进了我的工作区，我可以专注于思考和判断，把整理、分析、梳理信息完全交给 Mini Apps。”\n关于安全：账户凭据由宿主持有，插件和页面均无法访问。连接器和 Agent 权限必须在 manifest 中声明后才能使用。Mini App 的服务器端口仅对其自身页面和 Agent 开放。当页面想要向 Agent 传递内容时，内容会先进入你的输入框，以便你在发送前审阅和编辑。 Mini App 代码以你的身份在你的机器上运行，因此请只安装来自可信来源的包。\nMini Apps 现已在 MiniMax Code 桌面应用（macOS / Windows）的本地会话中可用。\n你可以从插件市场安装现成的 Mini Apps，也可以在对话中描述你的需求，让 Agent 当场构建一个。使用一段时间后，让 Agent 按你的工作方式对它进行调整。\nMiniMax Bot 和社区 Mini Apps 的源代码都存放在开源仓库 MiniMax-Code-MiniApps 中。如果你构建了有用的 Mini App，欢迎通过 pull request 分享给我们。\n如果你需要 Mini Apps 尚不具备的运行时能力，请在社区仓库置顶的 能力愿望清单 下留言。\n官方详细说明了 Mini App 的架构、安全边界和社区生态，开发者可以据此判断如何在 MiniMax Code 上构建长运行应用。"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Anthropic 将 Agent Skills 开放标准捐赠给 Linux Foundation 旗下 Agentic AI Foundation",
-   "url": "https://aihot.news/items/p74ybrpplgjfi3d8ql7fz0z6k",
-   "published": "2026-10-21T16:00:00.000Z",
-   "description": "Anthropic 宣布把 Agent Skills 开放标准捐赠给 Linux Foundation 旗下的 Agentic AI Foundation（AAIF），此前已向其捐赠 MCP。 🔗 阅读原文 via AIHOT · https://aihot.news/items/p74ybrpplgjfi3d8ql7fz0z6k",
-   "excerpt": "Donating Agent Skills to the Agentic AI Foundation\nAnthropic 宣布把 Agent Skills 开放标准捐赠给 Linux Foundation 旗下的 Agentic AI Foundation（AAIF），此前已向其捐赠 MCP。\n原文给出了捐赠范围、维护者安排和采用数据，读者可以据此判断 Agent Skills 标准治理走向开放中立的影响。\n今天，我们将 Agent Skills 捐赠给 Agentic AI Foundation（AAIF），这是一项开放标准，为 AI 智能体提供专业知识和 workflows。自我们于 2025 年 12 月发布该标准以来，已有超过 70 个智能体平台集成了 Agent Skills，包括 ChatGPT、Cursor、GitHub Copilot 和 VS Code。\n一个 skill 是一个包含 SKILL.md 文件的文件夹，用于教会智能体执行特定任务或领域知识，以及它所需的任何脚本或参考资料。我们在开发 Claude Code 时开发了 skills。它能很好地处理一般知识工作，但往往缺乏真实业务任务所需的程序性知识。在我们 2025 年 10 月发布后的几周内，开发者在 GitHub 上发布了数千个 skills，并为 Codex、Cursor 和 OpenCode 编写了加载器。随后，我们将 Agent Skills 作为开放标准发布，拥有独立的 GitHub 组织和域名，以便任何智能体都可以使用它。到目前为止，已发布 100 万个 skills，安装量接近 2.8 亿次。\n我们致力于保持 Agent Skills 开放、社区驱动和供应商中立。今天，我们将该标准捐赠给 Linux 基金会下的 Agentic AI Foundation（AAIF）， 该基金会由我们与 Block 和 OpenAI 于去年共同创立 ，我们此前已向其捐赠了 Model Context Protocol（MCP）。AAIF 将作为该标准未来的中立家园，确保社区在 Agent Skills 的未来方向上拥有发言权。\n我们将捐赠 Agent Skills 的名称和徽标、GitHub 组织以及 agentskills.io 域名。你可以继续使用该标准或为其做出贡献，而无需加入 AAIF。\n来自 Anthropic、Google、OpenAI 及其他公司的工程师将以个人身份维护该标准，David Soria Parra 和 Mahesh Murag 担任首席维护者。\n我们提议从一份路线图开始，涵盖版本化发布、正式提案流程，以及面向编写和安装 skills 的人员的安全指南。与 MCP 一样，该项目将继续优先考虑社区意见和透明决策。你可以加入该项目的 Discord ，对提议的规范变更提供反馈。\n感谢从一开始就使用 Agent Skills 进行构建的开发者，以及将 skills 引入其产品的团队。请在 agentskills.io 阅读规范，并在 GitHub 上加入讨论。\n原文给出了捐赠范围、维护者安排和采用数据，读者可以据此判断 Agent Skills 标准治理走向开放中立的影响。"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Anthropic 用 Claude 对 123 个开源库完成汇编级形式化安全证明",
-   "url": "https://aihot.news/items/jsr18rtgxl0kvb0k7np7lpyou",
-   "published": "2026-10-21T16:00:00.000Z",
-   "description": "Anthropic 与 Theorem 合作，用 Claude 将 OSS-Fuzz 模糊测试转化为规格，对 123 个开源库的 239 个入口点证明了任意 64 MB 以下输入不崩溃，生成约 1.8 亿行 Rocq 证明。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jsr18rtgxl0kvb0k7np7lpyou",
-   "excerpt": "LLMs are making formal software verification feasible at a much larger scale\nAnthropic 与 Theorem 合作，用 Claude 将 OSS-Fuzz 模糊测试转化为规格，对 123 个开源库的 239 个入口点证明了任意 64 MB 以下输入不崩溃，生成约 1.8 亿行 Rocq 证明。\nAnthropic 用 Claude 对 123 个 OSS-Fuzz 开源库在 RISC-V 汇编层面写 Rocq 证明，读者可以据此了解 LLM 规模化形式化验证的实际流程与局限。\nKeane Lucas, Aengus Lynch, Luna Tong, Luke Champine, Zygi Straznickas, Dino Distefano, Harshikaa Agrawal Evyatar Ben Asher, Ava Howell, Sami Jawhar, Chris Rohlf, Nickolai Zeldovich Nicholas Carlini, Rajashree Agrawal, Jason Gross\n大多数软件都充斥着漏洞，而 AI 现在可以轻松地 发现 并 利用 它们。针对网络攻击的标准防御手段已不再足够：我们需要能够证明代码没有漏洞的方法。形式化软件验证可以提供这种保证，但它在历史上需要专家投入数年努力，对大多数现实项目而言并不实用。然而，在与 Theorem 的合作中，我们表明情况已不再如此：LLM 现在可以大规模生成形式化证明，从而支持包含可证明安全保证的新软件开发工作流。借助 Claude，我们在 100 多个真实世界开源软件库中，于汇编代码层面（RISC-V）证明了安全属性。 据我们所知，这是首次大规模尝试使用 AI 将形式化验证应用于汇编代码层面的生产软件。 在编写证明的过程中，Claude 还发现了多年来一直未被检测到的漏洞，尽管已经进行了 数万亿次测试运行 。随着模型能力持续提升，我们预计形式化验证将成为安全软件开发中不可或缺的一部分。\n即使是成熟且经过大量测试的软件也包含漏洞，而 LLM 越来越擅长 发现它们。Linux 内核——当今测试最充分的软件之一，部署在全球数十亿台设备上——最近披露了 超过 1,000 个漏洞 。随着前沿模型越来越有能力将 看似无害的漏洞 串联成严重漏洞利用，我们需要能够在这些漏洞于现实世界中被利用之前检测并修复它们的技术。\n理想情况下，这类技术能够发现并修补 所有漏洞 ，然后提供某种证明，表明再也找不到更多漏洞了。 形式化验证 是实现这一点的一种方法。在形式化验证中，开发者将代码转换为数学模型，然后尝试证明它始终遵循某组已定义的安全规则。如果无法证明这一点，就意味着代码中可能存在违反规则的漏洞，而失败的性质暗示了漏洞可能是什么。重复这一过程（每次消除失败原因之后），最终将产生证明，表明代码中不存在任何会违反这些规则的漏洞。\n然而，形式化验证并不容易。证明可能比原始代码大许多倍，编写证明需要大量努力以及小众且高度专业化的技能组合。例如，实现 seL4 操作系统内核花费了两人年，但 对其进行形式化验证 花费了 20 人年。因此，形式化验证仅在真正关键任务的应用中才具有实用性，例如 空客的航空电子代码 。\n但 LLM 让这件事变得容易得多。前沿模型现在能够完全自主地为真实世界的软件生成正确性证明。为了演示这一点，我们让 Claude 为 123 个开源库证明有用的安全属性，包括证明它们的某些可执行产物在某些条件下 绝不会 崩溃。具体而言，Claude 证明了：在特定假设下（即程序以单线程静态二进制形式运行、内存预算固定、运行在采用 Linux 操作系统的 RISC-V 1 CPU 上），对于所有小于 64 MB 的输入以及所有建模的 Linux 操作系统（OS）响应和内存布局，这些程序将始终正常退出，不会触发内存安全错误或断言失败。这距离修复 所有 可能的 bug 仍很遥远，但确实让我们比以往更接近目标，并提供了通往该目标的路线图。\n我们正在发布 这些证明的一个子集 ，以便任何人都能验证和复用它们，同时发布 RISC-V 和操作系统语义 。我们在该项目上的合作方 Theorem 也提出为 其他开源项目 运行相同的流水线，并发布了一个 Claude skill ，帮助开发者开始验证自己的代码。\n形式化验证是一个涵盖众多方法论的广泛领域。下文我们还将描述使用其他形式化验证方法进行的初步探索，以加速其他安全或软件开发任务，例如评估 zlib 压缩算法的安全性、证明用 Rust 编写的 Python 解释器的行为等价性，以及根除关键软件中长期存在的 bug。\n形式化验证的前景广阔。随着模型变得更智能，编写证明的成本正在下降。此外，随着更多代码被形式化、实现安全保障的方法变得更加标准化，跨代码库复用或修改证明的能力将摊薄成本。我们鼓励所有开发者用 LLM 探索形式化验证—— 尤其是 那些此前用能力较弱的模型尝试过并发现行不通的人。\n要证明一段软件是正确的，我们首先必须说明“正确”究竟意味着什么。正确性由 规约 （spec）定义。在某些程序中，有一种清晰的方式来形式化地规定程序的预期行为。例如， PNG 解码器接收一串字节，并（遵循 RFC 2083 ）将这些字节解码为对应的图像。但对于大多数程序来说，事情并没有这么简单。文本编辑器或网页浏览器“正确”意味着什么？获得全面且无歧义的规约的难度，是在更大规模上验证软件的一大障碍。\n为了针对我们试图证明的开源库代码解决这一问题，我们采取的方法是：自动将其已有的可编译测试套件转换为一份规范，具体做法是把“该测试套件始终通过”这一规则编码进去，并采用一个通用模型来刻画在 Linux 上执行任何 RISC-V 编译二进制文件的含义。从历史上看，证明这类规范一直是难以处理的，原因在于编写一个能够涵盖并论证数万条汇编指令在任意输入下"
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "Apple expands US supplier network for iPhone materials, components",
-   "url": "https://www.supplychaindive.com/news/apple-expands-us-supplier-network-for-iphone-materials-components/833496/",
-   "published": "2026-10-21T15:05:00.000Z",
-   "description": "The company added a new titanium supplier and expanded its partnership with an advanced film maker as part of a $600 billion commitment to U.S. manufacturing.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "Hugging Face",
-   "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
-   "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
-   "published": "2026-10-21T14:58:18.000Z",
-   "description": "",
-   "excerpt": "We're excited to share three updates to IBM's Granite Speech collection: a new speech-language model, granite-speech-5.0-2b , and revised versions of two models the community already uses, granite-speech-5.0-470m-turboctc and granite-speech-4.1-2b-plus . Together they cover the full range of enterprise speech work: transcription and translation with high accuracy, extremely fast transcription at the edge, and recordings where who spoke, and when, matter as much as what was said.\ngranite-speech-5.0-2b is the successor to granite-speech-4.1-2b at the same parameter count. It transcribes English, French, German, Spanish, Portuguese, and Japanese, and translates to and from English in those languages, plus English to Italian and Mandarin. It was trained on 390,000 hours of public audio, plus synthetic data built for Japanese ASR, keyword biasing, and translation.\nThe model ships under Apache 2.0 with support in Transformers, vLLM, llama.cpp, and mlx-audio for Apple Silicon.\nChart 1: granite-speech-5.0-2b ranks #2 among top open-weight ASR models on average English WER (5.06%). Lower is better. Results are official, as of 21 October 2026, and averaged over the Open ASR Leaderboard’s public English short-form test sets.\nWhen we introduced Turbo CTC in August , it was an English-only, 470M-parameter encoder built for speed. This revision keeps that footprint and adds the three things users asked for most:\nIt's also faster. By compiling a single Conformer block and reusing its graph across the stack, we cut warmup time and pushed Turbo CTC to 19,870 RTFx on the Open ASR Leaderboard, up from roughly 12,600 RTFx at launch: about 1.6x faster, at the same accuracy level.\nChart 2: Average WER vs. RTFx on the Open ASR Leaderboard (English short-form, 9 public test sets, as of October 2026). Lower WER and higher RTFx are better; RTFx is on a log scale.\nThe updated granite-speech-4.1-2b-plus is tuned for the recordings enterprises actually have: meetings, support calls, and interviews with several speakers running long. It keeps the 4.1 name because the architecture, prompt format, and API are unchanged, so it's a drop-in replacement for the current model with improved weights. This revision improves four areas:\nTable 1: All metrics are error rates, so lower is better. For more detailed results, see the model card .\nNot sure which model to pick? Start here:\nThese models are all released under an Apache 2.0 license with native support in Transformers. Full evaluation resul"
-  },
-  {
-   "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "Pharma Logistics: From Visibility to Predictive Decisions",
-   "url": "https://logisticsviewpoints.com/2026/10/21/pharma-logistics-predictive-analytics-exception-management/",
-   "published": "2026-10-21T14:09:49.000Z",
-   "description": "Predictive pharmaceutical logistics promises earlier intervention, but practical results depend on data quality, operating procedures and accountable decisions. The post Pharma Logistics: From Visibility to Predictive Decisions appeared first on Logistics Viewpoints .",
-   "excerpt": "For a temperature-sensitive pharmaceutical shipment, learning that something went wrong is useful. Learning that something is likely to go wrong—and intervening before product integrity is threatened—is considerably more valuable.\nThat difference is central to the industry’s discussion about the direction of pharmaceutical logistics. In an October 19 article for pharmaphorum, Envirotainer executive Niklas Adamsson argues that logistics organizations should use shipment and historical performance data to anticipate risk rather than relying on retrospective monitoring.\nThe broader issue applies well beyond healthcare. Visibility has become a foundational logistics capability. The next competitive question is whether organizations can turn that visibility into timely, defensible decisions.\nCold-chain logistics combines transportation variability with unusually high consequences for failure. Delays, unexpected dwell time, equipment problems, or excursions outside a validated temperature range can trigger investigations and potentially compromise product usability.\nMany modern shipments generate location updates and environmental measurements. Those signals improve oversight, but a constant stream of status messages can also overwhelm teams. An alert may tell an operator that an intervention is already needed without clarifying which intervention will protect the shipment.\nPredictive approaches seek to identify developing problems earlier. Historical route performance, connection reliability, weather, dwell patterns, and live shipment conditions can be combined to estimate future risk. The aim is not simply to forecast arrival time but to understand whether a shipment is approaching a condition requiring action.\nConsider a hypothetical shipment approaching a congested air cargo transfer hub. The goods remain within their required temperature conditions, but the forecast arrival has shifted and the remaining thermal protection margin is narrowing. A useful system should bring together both facts, evaluate options, and recommend an operational response rather than issuing two unrelated notifications.\nPharmaceutical movements involve manufacturers, packaging specialists, forwarders, airlines, trucking providers, warehouses, and receiving facilities. Each participant sees part of the journey. Packaging condition, planned routing, dwell time, storage availability, and handoff execution may reside in separate systems.\nBringing these signals together is difficult, esp"
   }
  ]
 }
