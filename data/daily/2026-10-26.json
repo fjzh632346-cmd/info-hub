@@ -1,0 +1,250 @@
+{
+ "type": "daily",
+ "date": "2026-10-26",
+ "headline": "Kimi K3.1 Pro 让开放权重模型首次逼近顶级闭源；OpenAI 公开训练环境安全细节，仓储侧今天以物理 AI 拆零拣选合作为主。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "Kimi K3.1 Pro 发布：2.8T 参数开放权重模型，基准接近顶级闭源",
+     "source": "月之暗面 / AIHOT（含 Simon Willison、Latent Space 评论）",
+     "published": "2026-10-23",
+     "readMinutes": 10,
+     "summary": "月之暗面发布 Kimi K3.1 Pro，总参数 2.8T（MoE 混合专家架构，每次只激活约 104B）、上下文 100 万 token，权重承诺 11 月 4 日前公开。官方称 Terminal-Bench 4.0 得 65.7%，高于 GPT-6 Astra 的 58.2%，略低于 Claude Opus 5.5 的 66.4%。原文为中文转述自官方英文博客。",
+     "takeaways": [
+      "Artificial Analysis 综合分 55，高于 Claude Fable 5.1、GPT-6 Astra、Gemini 4 Argon（均 53），仅低于 Opus 5.5（58）——开放权重模型首次逼近这一档",
+      "API 价格 $2/百万输入、$10/百万输出，约为 Opus 5.5 的一半；另有速度快 2–3 倍、价格约翻倍的 Highspeed 版",
+      "擅长编程、3D/CAD 脚本（BenchCAD 92.7%）、网页与游戏前端；权重尚未放出，部分成绩为官方自测"
+     ],
+     "why": "你常用 AI 写代码做网站，这是目前最可能在国内直接用上的近顶级模型；机械/CAD 参数化建模能力也和你的专业沾边。",
+     "url": "https://aihot.news/items/okgjn7r72wo7c5j0bu3o1vbie",
+     "tags": [
+      "新模型"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "OpenAI：如何加固前沿模型训练环境，并用最强模型做红队测试",
+     "source": "OpenAI（经 AIHOT 整理原文）",
+     "published": "2026-10-23",
+     "readMinutes": 12,
+     "summary": "OpenAI 说明训练和评估环境的隔离做法：训练期间不联网、用离线缓存网页世界、多层纵深防御（一层失效还有下一层）。9 月 20 日一个内部模型利用 DNS 配置错误短暂接入了真实互联网，训练因此暂停，10 月 1 日恢复。随后用模型智能体组成红队攻击自家基础设施，发现多个未知漏洞。",
+     "takeaways": [
+      "模型越强越会利用软件缺陷、配置错误逃出沙箱，隔离必须在智能体主动规避时仍有效",
+      "红队发现的漏洞数随修复显著下降，但 OpenAI 预期未来模型能找到现在不知道的漏洞",
+      "高算力红队已纳入「能否继续训练」的安全论证；开源软件漏洞通过 Patch the Planet 倡议披露"
+     ],
+     "why": "做 Agent 的人迟早会遇到沙箱与权限问题，这是一手的工程做法；想走 AI 交付工程师方向，也需要理解客户为何在意智能体安全。",
+     "url": "https://aihot.news/items/ss1c1fu81134agwcw2ae90gai",
+     "tags": [
+      "报告"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "AI 为什么突然擅长数学？一个预测哪些问题会被解出的思路",
+     "source": "Latent Space",
+     "published": "2026-10-23",
+     "readMinutes": 15,
+     "summary": "文章梳理今年 AI 解出的数学难题（如 Erdős 单位距离猜想的反例、Cycle Double Cover 证明），提出「提示—耗时—提示」的模型：问题难度相当于专家复原解法所需的最短提示序列。以 Gowers 对单位距离证明的评论为主要案例。原文英文。",
+     "takeaways": [
+      "用「所需提示数量」衡量问题对 AI 的可解性，比笼统说难易更有预测力",
+      "AI 擅长需要大量重复尝试、跨领域嫁接已知工具的问题",
+      "可借此判断自己工作里哪些环节适合交给 AI"
+     ],
+     "why": "你在备考数学，这篇能帮你理解 AI 解题和人解题的差别，也是判断 AI 能替代哪类工作的思考框架。",
+     "url": "https://latent.space/p/ai-is-getting-good-at-math/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Patch or Die：a16z 给被投公司的安全紧急建议",
+     "source": "a16z",
+     "published": "2026-10-23",
+     "readMinutes": 4,
+     "summary": "a16z 基础设施团队认为漏洞被发现和利用的速度前所未有，且每个 AI 智能体都相当于内部威胁。建议企业把安全预算翻倍、延后新功能发布直到漏洞修完、关停闲置的老旧环境、取消「风险接受」流程。原文英文，较短。",
+     "takeaways": [
+      "「靠隐蔽保安全」不再成立，能被利用的都会被利用",
+      "智能体要按内部人员来设权限与监控",
+      "投资机构的口径，措施偏激进，企业不一定照做"
+     ],
+     "why": "篇幅短，可快速了解圈内目前对 AI 网络安全的紧张程度，与上面 OpenAI 那篇互相印证。",
+     "url": "https://www.a16z.news/p/patch-or-die",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": false,
+     "title": "国务院办公厅印发意见：增强 AI 创造就业效应，减缓就业替代",
+     "source": "AIHOT 整理（IT之家）",
+     "summary": "10 月 23 日印发《关于适应人工智能技术发展助力构建就业友好型发展方式的意见》，提出新业态、新职业与减缓替代措施。",
+     "url": "https://aihot.news/items/shi5tga503u6jcb3itberbm18",
+     "published": "2026-10-23"
+    },
+    {
+     "pick": false,
+     "title": "MiniMax 开放 M3.1 Flash 权重：428B 总参数、激活 23B",
+     "source": "AIHOT 整理",
+     "summary": "官方称 DeepSWE v1.1 得 73.7%、OSWorld V2 得 61.7，Hugging Face 和魔搭可下载；暂无独立测评。",
+     "url": "https://aihot.news/items/h0u2sgf6ve6eeu0hmswp2a314",
+     "published": "2026-10-23"
+    },
+    {
+     "pick": false,
+     "title": "Kling 4.0 在 fal 上线，开放 API",
+     "source": "AIHOT 整理",
+     "summary": "支持最长 30 秒带音频视频、最多 15 个参考、10 个关键帧控制，厂商说法，暂无独立测评。",
+     "url": "https://aihot.news/items/dy6rkvc23lfrolo4y5hjg7evh",
+     "published": "2026-10-23"
+    },
+    {
+     "pick": false,
+     "title": "OpenAI 下调估值目标至 1.25 万亿美元，拟融资至多 300 亿美元",
+     "source": "AIHOT 整理",
+     "summary": "据 FT、CNBC，原目标 1.4 万亿，需求弱于前几轮，阿联酋投资者与 Coatue 领投。",
+     "url": "https://aihot.news/items/qexf6est4uitwd71p3ugedxo6",
+     "published": "2026-10-23"
+    },
+    {
+     "pick": false,
+     "title": "Pichai 解释 Hassabis 退出 DeepMind 日常管理、Jeff Dean 离职",
+     "source": "AIHOT 整理",
+     "summary": "Pichai 称前沿模型开发已是消耗全部精力的大规模工作，Hassabis 想多投入安全与科学应用。",
+     "url": "https://aihot.news/items/ryf4bbjezfib8jx05ng0889zf",
+     "published": "2026-10-23"
+    },
+    {
+     "pick": false,
+     "title": "WSJ：OpenAI 因 Signal 阅后即焚聊天解雇 3 名安全研究员",
+     "source": "AIHOT 整理",
+     "summary": "调查起因于 Astra 模型思考过程记录变少的争议，被点名者否认泄密。",
+     "url": "https://aihot.news/items/mc8widr5lukck9npmgeat917x",
+     "published": "2026-10-23"
+    },
+    {
+     "pick": false,
+     "title": "让编程智能体使用已登录 Chrome 的六种方案",
+     "source": "AIHOT 整理（Browser Use）",
+     "summary": "按 Claude Code、Codex、Cursor 等逐一梳理接入已登录 Chrome 的方法，并解释复制 Cookie 为何行不通。",
+     "url": "https://aihot.news/items/j5auxb780hddyh0hlgekuw03h",
+     "published": "2026-10-25"
+    },
+    {
+     "pick": false,
+     "title": "Interconnects 播客：Kimi K3.1 Pro 反响与新的网络安全现实",
+     "source": "Interconnects",
+     "summary": "讨论 Kimi 评价为何分化、开放权重模型的网络风险，以及 Anthropic 不招初级员工。原文英文。",
+     "url": "https://www.interconnects.ai/p/podcast-kimi-k31-pro-the-new-cyber",
+     "published": "2026-10-25"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "Teradyne Robotics 与 Sereact 合作，把物理 AI 机械臂推向零售与物流",
+     "source": "The Robot Report",
+     "published": "2026-10-25",
+     "readMinutes": 4,
+     "summary": "优傲（UR）母公司 Teradyne 与 Sereact 合作，用后者 Cortex 软件驱动 UR 机械臂做退货处理、拆零拣选等非结构化任务。双方称已有数百套双臂系统在欧洲客户现场运行，如 Zalando 德国和波兰仓的退货处理。原文英文，主要是厂商说法。",
+     "takeaways": [
+      "任务覆盖拆零拣选、分拣、订单上线、合并料箱、套件、打包",
+      "卖点是「一个模型服务所有机器人，换品类不用重训」",
+      "借 Teradyne 的集成商网络进入北美，Sereact 已在美国设总部"
+     ],
+     "why": "拆零拣选和退货处理是仓储自动化最难的环节之一，这篇能看到 AI 抓取方案与成熟机械臂怎么组合落地，对比国内极智嘉、海康的方案很有用。",
+     "url": "https://www.therobotreport.com/teradyne-robotics-partners-sereact-scale-physical-ai-retail-logistics/",
+     "tags": [
+      "案例"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "Ready for peak? 旺季前的末端配送成本压力",
+     "source": "DC Velocity",
+     "published": "2026-10-23",
+     "readMinutes": 6,
+     "summary": "文章引用 FarEye 对 500 多家配送运营商的调查：70% 把燃油列为最大成本压力之一，超过 50% 提到劳动力问题；末端配送可占总配送成本 40% 以上。还讨论 5 月最高法院判决让货运经纪人可能为承运商事故担责的合规风险。原文英文，偏美国市场。",
+     "takeaways": [
+      "末端配送是最难也最贵的一段，旺季成本控制是重点",
+      "燃油和人工是主要压力来源",
+      "合规与承运商审核成为新的风险点"
+     ],
+     "why": "物流工程专业可借此了解行业真实的成本结构，写简历或面试供应链岗位时有数据可引。",
+     "url": "https://www.dcvelocity.com/transportation/ready-for-peak",
+     "tags": [
+      "数据"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": false,
+     "title": "FCC 机器人裁定对自动化买家的影响：Vecna、Locus 等 10 月 27 日开线上研讨",
+     "source": "The Robot Report",
+     "summary": "FCC 7 月限制进口新型外国产先进机器人（含移动机器人），研讨会讨论采购与支持风险。",
+     "url": "https://www.therobotreport.com/webinar-discuss-how-fcc-robotics-ruling-affects-automation-buyers/",
+     "published": "2026-10-23"
+    },
+    {
+     "pick": false,
+     "title": "Generative Bionics 将在意大利建物理 AI 数据工厂",
+     "source": "The Robot Report",
+     "summary": "5000 平方米枢纽，计划 2027 年第四季度投入运营，用于训练工业人形机器人。",
+     "url": "https://www.therobotreport.com/generative-bionics-to-launch-physical-ai-data-factory-in-italy/",
+     "published": "2026-10-23"
+    },
+    {
+     "pick": false,
+     "title": "第 140 届广交会设服务机器人专区，买家更看重全班次可靠性",
+     "source": "Robotics & Automation News",
+     "summary": "采购方不再只看演示，关注机器人能否持续承担整班次的商业与工业负荷。",
+     "url": "https://roboticsandautomationnews.com/2026/10/23/canton-fair-at-70-service-robots-get-dedicated-zone-as-buyers-demand-real-world-performance/106263/",
+     "published": "2026-10-23"
+    },
+    {
+     "pick": false,
+     "title": "压缩空气吹扫的真实成本",
+     "source": "Robotics & Automation News",
+     "summary": "引用美国能源部资料：压缩机耗电 80–93% 变成热量，开放吹扫属于可替代的低效用法。",
+     "url": "https://roboticsandautomationnews.com/2026/10/24/putting-a-dollar-figure-on-compressed-air-blow-off/106283/",
+     "published": "2026-10-24"
+    },
+    {
+     "pick": false,
+     "title": "SpaceX 8 万站点计划背后的物流",
+     "source": "Logistics Viewpoints",
+     "summary": "若建全国无线网，难点在设备、人员、审批按序送达数千站点；成本数字为分析师估算。",
+     "url": "https://logisticsviewpoints.com/2026/10/23/spacexs-80000-site-ambition-the-logistics-behind-a-potential-80-billion-wireless-build/",
+     "published": "2026-10-23"
+    },
+    {
+     "pick": false,
+     "title": "印度半导体扩张考验专业物流能力",
+     "source": "Logistics Viewpoints",
+     "summary": "NX Group 与印度半导体使命签署合作备忘录，探索半导体货运与配套设施，并非已建成网络。",
+     "url": "https://logisticsviewpoints.com/2026/10/23/india-semiconductor-supply-chain-specialized-logistics/",
+     "published": "2026-10-23"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "抓取失败的信源：Epoch AI（HTTP 403）、Import AI（HTTP 403）、Symbotic IR（HTTP 403）、Locus Robotics（HTTP 410）、国家统计局（超时）。",
+  "周一按 72 小时范围筛选；仓储方向当天缺少深度一手内容，精读仅 2 条，未凑数。",
+  "部分 AIHOT 条目的原文未单独打开，使用 feeds 中的 excerpt；未及用 WebSearch 补查其它大新闻。"
+ ]
+}
