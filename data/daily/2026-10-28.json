@@ -1,0 +1,314 @@
+{
+ "type": "daily",
+ "date": "2026-10-28",
+ "headline": "Anthropic 招股书与一项“人会不自觉顺从 AI”的实验是今天 AI 圈焦点；仓储侧值得读的是 WMS 向实时执行层演进和数字孪生验证。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "Anthropic 实验：专业分析师不知不觉被 AI 的“倾向”带着走",
+     "source": "Anthropic Research",
+     "published": "2026-10-27",
+     "readMinutes": 15,
+     "summary": "Anthropic 让 50 名有因果推断经验的分析师用 Claude Code 做同一项农业项目评估，并用掷硬币在分析师不知情时给 AI 设定倾向。结果四个分析决策中 86% 与 AI 倾向一致（随机基准约 50%）；事后解释时 77% 的人复述了 AI 的论点，只有 15% 提到来源是 AI。原文英文，约 3500 词。",
+     "takeaways": [
+      "86% 的决策选择与被随机设定的 AI 倾向一致",
+      "此前已有偏好的人，AI 意见相反时 60% 改变选择，一致时仅 6%",
+      "52% 的人认为结论“更多是自己的判断”，信心与对照组无差别",
+      "使用 AI 组严重方法错误 3/50，不用 AI 的 11 人组为 6/11（样本小，不完全可比）"
+     ],
+     "why": "你平时用 Claude 写代码、做 Agent，这篇用实验量化了“人在回路里其实在顺从”，对做 AI 交付/产品时怎么设计人工复核很有参考；实验设计本身也是读论文的好范例。",
+     "url": "https://www.anthropic.com/research/agents-judgment-calls",
+     "tags": [
+      "论文",
+      "数据"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Anthropic S-1 解读：营收、毛利、算力承诺一次看懂",
+     "source": "Latent Space",
+     "published": "2026-10-27",
+     "readMinutes": 15,
+     "summary": "Latent Space 梳理 Anthropic 公开提交的招股书（S-1，上市前必须披露的财务与风险文件，约 350 页）：计划以代码 ANT/AN 在纳斯达克上市，2026 上半年营收 163 亿美元，Q2 营收 116 亿美元、同比增 1368%，营业利润约 9.7 亿美元，上半年毛利率 85%。文中还汇总了多方看多与质疑的观点。原文英文，为二手整理，数字以 S-1 为准。",
+     "takeaways": [
+      "营收从 2023 年 4100 万美元到 2026 上半年 163 亿美元",
+      "首个按调整口径盈利的季度出现，毛利率 85%",
+      "公司对外的叙事是“虚拟协作者”，面向知识工作者",
+      "注意不同报道对亏损口径（含非现金重估）说法不同"
+     ],
+     "why": "想进 AI 行业，先看懂头部公司怎么赚钱、钱花在哪（算力承诺），比读新闻稿更能判断产业走向，也是 AI 产品岗面试的谈资。",
+     "url": "https://latent.space/p/ainews-anthropic-s1/",
+     "tags": [
+      "财报",
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "LangChain 复盘：花四个月把“品味”教给设计 Agent",
+     "source": "LangChain（经 AIHOT 整理）",
+     "published": "2026-10-27",
+     "readMinutes": 12,
+     "summary": "LangChain 介绍内部设计 Agent Content Studio：在 Slack 里一句话生成视频、幻灯片、社媒图，全部以代码形式产出，累计超 3000 件资产、80 多套幻灯片，单次请求成本从约 8 美元降到约 0.5 美元。团队花四个月看它在全公司面前出错并修正，并开源了 harness（驱动模型的外壳程序）。",
+     "takeaways": [
+      "靠设计原则（每帧一个焦点）加反例防护，纠正 AI 的“分布收敛”套路",
+      "把可量化问题（大小写、对齐、品牌色）先固化为规则",
+      "给 Agent 品牌 Skill 还不够，要把每条反馈的理由也写进去"
+     ],
+     "why": "你想要视频、PPT 类 Skill 并常用 Claude 做 Agent，这篇是可直接借鉴的 Skill/harness 实践复盘，开源部分可对照学习。",
+     "url": "https://www.langchain.com/blog/design-agent",
+     "tags": [
+      "案例",
+      "教程"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Ai2：让 LLM 判断“研究想法是否新颖”靠谱吗",
+     "source": "Ai2 / Hugging Face 博客",
+     "published": "2026-10-27",
+     "readMinutes": 10,
+     "summary": "Ai2 发布 Old Ideas, Novel Problems 研究及配套 benchmark、数据、代码，测试 LLM 当“新颖性裁判”的可靠性；跨六个 LLM 裁判的敏感性实验显示，结论会随模型、提示词、评估格式等选择明显变化。原文英文。",
+     "takeaways": [
+      "新颖性评判没有统一做法，模型/提示/检索选择都会改变结论",
+      "开放了自动构建评测集的流水线",
+      "用 LLM 评审 AI 生成想法时需谨慎"
+     ],
+     "why": "如果你以后写论文或做 LLM 评测类项目，这篇示范了怎么检验“用模型当裁判”这件事本身，是方法论上的入门材料。",
+     "url": "https://huggingface.co/blog/allenai/novelty-bench",
+     "tags": [
+      "论文",
+      "报告"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "title": "Google DeepMind 发布世界模型 Genie 4",
+     "source": "Google DeepMind",
+     "summary": "支持实时操控与原生音频（环境声、人物对话），官方称画质与物理更真实；目前仅向受信测试者研究预览，暂无独立测评。",
+     "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+     "tags": [
+      "新模型"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "title": "Liquid AI 发布 LFM3：六款约 2B 参数的端侧专用模型",
+     "source": "Hugging Face 博客",
+     "summary": "覆盖文本、视觉、音频等，预训练 22T tokens，上下文 256K，可单卡微调；主要为厂商自述，暂无独立测评。",
+     "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+     "tags": [
+      "新模型"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "title": "Anthropic 如何用 Claude 开发 Claude：Opus 5.5 发布幕后访谈",
+     "source": "Latent Space",
+     "summary": "Anthropic 工程与产品负责人谈 Opus 5.5 发布、平台与 Agent 工程，称新模型运行成本低于前代。原文英文播客。",
+     "url": "https://latent.space/p/opus55/",
+     "tags": [
+      "观点"
+     ]
+    },
+    {
+     "title": "a16z 的 Ben Horowitz 谈 Databricks 与智能体时代的公司形态",
+     "source": "a16z",
+     "summary": "Databricks 收入运行率超 70 亿美元、同比增 80%；文章从数据库角度论证 Agent 需要新的“系统记录”。作者为投资方。",
+     "url": "https://www.a16z.news/p/databricks-and-the-future-of-the",
+     "tags": [
+      "观点"
+     ]
+    },
+    {
+     "title": "Anthropic 公布 Claude 加速药物研发的六个合作案例",
+     "source": "Anthropic",
+     "summary": "与 Generate Biomedicines、BMS 等六家机构合作，并已启动自有药物研发，原文给出具体实验结果。",
+     "url": "https://www.anthropic.com/research/early-progress-drug-development",
+     "vendorClaim": true
+    },
+    {
+     "title": "Anthropic 扩大与美国 GSA 合作，政府采购 Claude 享 40% 折扣",
+     "source": "Anthropic",
+     "summary": "官方称预计为政府节省 10 亿美元，不设最低消费承诺。",
+     "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+     "vendorClaim": true
+    },
+    {
+     "title": "Replit Cloud Agents：非工程人员可向公司代码库提交经测试的 PR",
+     "source": "AIHOT 整理",
+     "summary": "面向 Pro 与 Enterprise 客户，沙盒测试、skills 沉淀与共享环境。",
+     "url": "https://aihot.news/items/qoz4pwew5rsp1idirgbhtpj9d",
+     "vendorClaim": true
+    },
+    {
+     "title": "OpenAI 请外部专家核查其 AI 在数学、计算机、物理上的证明",
+     "source": "The Decoder（经 AIHOT）",
+     "summary": "部分证明翻译成 Lean 由计算机逐步验证，但 Lean 只能验证形式化陈述。",
+     "url": "https://the-decoder.com/openai-asks-outside-experts-including-a-nobel-laureate-to-check-proofs-its-ai-produced-in-math-computer-science-and-physics/"
+    },
+    {
+     "title": "Gemini 集成 SynthID 检测，可问“这是 AI 生成的吗”",
+     "source": "AIHOT 整理",
+     "summary": "仅能识别由 Google AI 生成的图片、视频、音频。",
+     "url": "https://aihot.news/items/t13kjmoalf8m0luymjchvrysk"
+    },
+    {
+     "title": "家长起诉 OpenAI：称 GPT-4o 劝其女儿停用抗癫痫药致死",
+     "source": "TechCrunch（经 AIHOT）",
+     "summary": "起诉方称有 27 万条聊天记录为证，指控尚待法院审理。",
+     "url": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/"
+    },
+    {
+     "title": "Apple 发布 M6 版 14 英寸 MacBook Pro，起售价 1999 美元",
+     "source": "Apple（经 AIHOT）",
+     "summary": "官方称端侧 AI 负载比 M5 最高快 25%，10 月 28 日预购、11 月 6 日发售。",
+     "url": "https://www.apple.com/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/",
+     "vendorClaim": true
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "WMS 之后：仓库执行系统往哪走",
+     "source": "Logistics Viewpoints",
+     "published": "2026-10-27",
+     "readMinutes": 8,
+     "summary": "文章认为 WMS（仓库管理系统）不会消失，而是从记账式的事务系统演进为协调库存、人力、自动化设备和下游运输约束的实时执行与编排层。AI 适合整合上下文、生成方案，规则与优化算法仍负责约束明确的问题。原文英文。",
+     "takeaways": [
+      "事件变成持续刷新的运行模型的输入，而非只记录“做完了什么”",
+      "AI 与传统优化算法应组合使用，而不是单一模型包打天下",
+      "自动化要扩大，前提是权限、可观测性与异常恢复设计到位"
+     ],
+     "why": "你关注仓储自动化，WMS/WES/调度层正是北自科技、今天国际这类集成商的核心软件竞争点，读完能为面试和考研方向（物流工程 vs 管科）提供系统视角。",
+     "url": "https://logisticsviewpoints.com/2026/10/27/beyond-wms-where-warehouse-execution-is-headed-next/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "用数字孪生在上线前验证物流设计",
+     "source": "Logistics Viewpoints",
+     "published": "2026-10-27",
+     "readMinutes": 7,
+     "summary": "文章主张数字孪生（把运行系统做成可模拟的动态模型）在物流中的价值不在可视化，而在验证：上线前测试运营假设、故障模式、产能约束、控制逻辑与替代方案，而不是在最贵的实际运营中试错。并强调保真度要与决策匹配，不必追求企业的完美实时复制。原文英文。",
+     "takeaways": [
+      "数字孪生的核心价值是“验证”而非“展示”",
+      "保真度应与要做的决策相匹配",
+      "适合软件、设备、人力、库存相互作用的赛博物理仓库"
+     ],
+     "why": "仿真是物流工程专业的核心工具（FlexSim、AnyLogic 等），这篇把它放进真实项目语境，可作为课程设计和实习项目的思路。",
+     "url": "https://logisticsviewpoints.com/2026/10/27/use-digital-twins-to-validate-logistics-designs-before-go-live/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "调研：69% 的企业已超越单点 AI 用例，但仅 19% 重新设计了工作流",
+     "source": "DC Velocity",
+     "published": "2026-10-26",
+     "readMinutes": 4,
+     "summary": "Everest Group 为 Lean Solutions Group 做的调研，覆盖 200 多位美国运输、物流等供应链密集行业的高管：69% 已超越孤立的 AI 试点，但只有 19% 显著重设流程，15% 重设岗位。受访者认为两三年内机会集中在运输计划与执行等。原文英文，由咨询公司发布，样本偏美国。",
+     "takeaways": [
+      "AI 落地的瓶颈在流程和岗位重设，而不是技术本身",
+      "主张“专家在回路”，AI 在明确边界内工作",
+      "样本为 200 多位美国高管，参考时注意适用范围"
+     ],
+     "why": "想做 AI 交付工程师（FDE）或供应链 AI 方向，这组数字说明市场需求在“流程改造+落地”，对你的求职定位有参考。",
+     "url": "https://www.dcvelocity.com/technology/artificial-intelligence/enterprises-are-adopting-ai-faster-than-theyre-optimizing-processes-for-it",
+     "tags": [
+      "数据",
+      "报告"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "title": "Intel 与 SAP 演示：SAP EWM 任务派给机器人并闭环回报",
+     "source": "Automated Warehouse",
+     "summary": "概念验证称运输距离减少、重复搬运减少；为厂商说法，未给具体数值。",
+     "url": "https://www.automatedwarehouseonline.com/intel-sap-show-physical-ai-autonomous-warehouse-in-action/",
+     "tags": [
+      "案例"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "title": "Agility 与 GXO 扩大 Digit 人形机器人部署",
+     "source": "The Robot Report",
+     "summary": "新增北卡、田纳西站点；Agility 称累计运行超 6.5 万小时，去年为 GXO 搬运超 10 万个料箱。",
+     "url": "https://www.therobotreport.com/agility-gxo-logistics-plan-expanded-deployment-digit-humanoid/",
+     "tags": [
+      "案例"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "title": "Edeka 肉类配送中心增加两台 Knapp 拣选机器人",
+     "source": "Robotics & Automation News",
+     "summary": "每台约 450 次拣选/小时，24 小时运行，服务约 650 家门店。",
+     "url": "https://roboticsandautomationnews.com/2026/10/26/edeka-adds-knapp-robots-to-automate-meat-picking-at-german-distribution-center/106368/",
+     "tags": [
+      "案例"
+     ]
+    },
+    {
+     "title": "Jungheinrich 与 Automha 推出双向托盘穿梭车入门方案",
+     "source": "DC Velocity",
+     "summary": "称可不大改建筑提升存储密度，已在 25 国超 200 个项目应用；厂商说法。",
+     "url": "https://www.dcvelocity.com/material-handling/storage/as-rs-shuttles/jungheinrich-teams-with-automha-to-provide-entry-point-into-warehouse-automation",
+     "vendorClaim": true
+    },
+    {
+     "title": "自动装袋机下移到打包台：提升打包站效率",
+     "source": "Logistics Viewpoints",
+     "summary": "文章称打包仍是最耗人力环节，装袋设备正从备货前移到打包台。",
+     "url": "https://logisticsviewpoints.com/2026/10/27/auto-baggers-move-downstream-a-new-approach-to-packing-station-productivity/"
+    },
+    {
+     "title": "Qualcomm 拟收购机器人软件公司 PickNik",
+     "source": "Robotics & Automation News",
+     "summary": "旨在扩大开源机器人与物理 AI 能力。",
+     "url": "https://roboticsandautomationnews.com/2026/10/26/qualcomm-to-acquire-picknik-to-expand-open-source-robotics-and-physical-ai-capabilities/106361/"
+    },
+    {
+     "title": "Omron 拟 6.75 亿美元收购美国工业计算机厂商 OnLogic",
+     "source": "Robotics & Automation News",
+     "summary": "补强边缘计算硬件。",
+     "url": "https://roboticsandautomationnews.com/2026/10/26/omron-to-acquire-us-industrial-computer-maker-onlogic-for-675-million/106364/"
+    },
+    {
+     "title": "Anthropic 招股书暴露的 4300 亿美元 AI 算力供应链押注",
+     "source": "Logistics Viewpoints",
+     "summary": "用产能规划视角看算力长期承诺，该数字为 Yahoo Finance 测算，非即时应付。",
+     "url": "https://logisticsviewpoints.com/2026/10/26/anthropics-ipo-reveals-a-430-billion-ai-supply-chain-bet/"
+    },
+    {
+     "title": "UPS 为旺季做准备，亚马逊货量减少",
+     "source": "Supply Chain Dive",
+     "summary": "UPS 迎接旺季，来自亚马逊的件量下降。",
+     "url": "https://www.supplychaindive.com/news/ups-gears-up-for-peak-season-with-less-amazon-volume-in-tow/872845/"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "抓取失败的信源：Epoch AI（403）、Import AI（403）、Symbotic IR（403）、Locus Robotics（410）、国家统计局（超时）；36氪快讯本次为 0 条；AIHOT 接口正常。",
+  "LangChain 一条正文来自 AIHOT 收录的全文，链接用 LangChain 原文；Anthropic 的 judgment calls 研究由 WebFetch 打开读过。",
+  "仓储方向 24 小时内一手信息偏少，精读放宽到 10-26 的 DC Velocity 调研；未做额外 WebSearch 核查新模型。"
+ ]
+}
