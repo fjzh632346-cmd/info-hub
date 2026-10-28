@@ -1,19 +1,33 @@
 {
- "fetchedAt": "2026-10-27T15:54:05.628Z",
+ "fetchedAt": "2026-10-28T01:26:55.838Z",
  "hours": 72,
  "status": [
-  {
-   "source": "OpenAI",
-   "feed": "https://openai.com/news/rss.xml",
-   "ok": true,
-   "total": 1325,
-   "recent": 7
-  },
   {
    "source": "Epoch AI",
    "feed": "https://epochai.substack.com/feed",
    "ok": false,
    "error": "HTTP 403"
+  },
+  {
+   "source": "Hugging Face",
+   "feed": "https://huggingface.co/blog/feed.xml",
+   "ok": true,
+   "total": 891,
+   "recent": 2
+  },
+  {
+   "source": "Google DeepMind",
+   "feed": "https://deepmind.google/blog/rss.xml",
+   "ok": true,
+   "total": 100,
+   "recent": 1
+  },
+  {
+   "source": "OpenAI",
+   "feed": "https://openai.com/news/rss.xml",
+   "ok": true,
+   "total": 1331,
+   "recent": 10
   },
   {
    "source": "a16z",
@@ -23,25 +37,11 @@
    "recent": 3
   },
   {
-   "source": "Google DeepMind",
-   "feed": "https://deepmind.google/blog/rss.xml",
-   "ok": true,
-   "total": 100,
-   "recent": 0
-  },
-  {
    "source": "Google AI",
    "feed": "https://blog.google/technology/ai/rss/",
    "ok": true,
    "total": 20,
    "recent": 1
-  },
-  {
-   "source": "Hugging Face",
-   "feed": "https://huggingface.co/blog/feed.xml",
-   "ok": true,
-   "total": 890,
-   "recent": 0
   },
   {
    "source": "Import AI",
@@ -54,7 +54,14 @@
    "feed": "https://simonwillison.net/atom/everything/",
    "ok": true,
    "total": 30,
-   "recent": 4
+   "recent": 5
+  },
+  {
+   "source": "One Useful Thing",
+   "feed": "https://www.oneusefulthing.org/feed",
+   "ok": true,
+   "total": 20,
+   "recent": 0
   },
   {
    "source": "Interconnects",
@@ -64,8 +71,8 @@
    "recent": 1
   },
   {
-   "source": "One Useful Thing",
-   "feed": "https://www.oneusefulthing.org/feed",
+   "source": "Benedict Evans",
+   "feed": "https://www.ben-evans.com/benedictevans/?format=rss",
    "ok": true,
    "total": 20,
    "recent": 0
@@ -78,25 +85,11 @@
    "recent": 0
   },
   {
-   "source": "Benedict Evans",
-   "feed": "https://www.ben-evans.com/benedictevans/?format=rss",
-   "ok": true,
-   "total": 20,
-   "recent": 0
-  },
-  {
    "source": "宝玉",
    "feed": "https://baoyu.io/feed.xml",
    "ok": true,
    "total": 50,
    "recent": 0
-  },
-  {
-   "source": "BestBlogs 每日早报",
-   "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
-   "ok": true,
-   "total": 7,
-   "recent": 3
   },
   {
    "source": "Symbotic IR",
@@ -109,7 +102,14 @@
    "feed": "https://www.latent.space/feed",
    "ok": true,
    "total": 20,
-   "recent": 2
+   "recent": 4
+  },
+  {
+   "source": "BestBlogs 每日早报",
+   "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
+   "ok": true,
+   "total": 7,
+   "recent": 4
   },
   {
    "source": "Symbotic",
@@ -126,13 +126,6 @@
    "recent": 0
   },
   {
-   "source": "Daifuku",
-   "feed": "https://www.daifuku.com/rss_all.xml",
-   "ok": true,
-   "total": 10,
-   "recent": 0
-  },
-  {
    "source": "大福（日文）",
    "feed": "https://www.daifuku.com/jp/rss_all.xml",
    "ok": true,
@@ -140,31 +133,24 @@
    "recent": 0
   },
   {
-   "source": "Automated Warehouse",
-   "feed": "https://www.automatedwarehouseonline.com/feed/",
+   "source": "Daifuku",
+   "feed": "https://www.daifuku.com/rss_all.xml",
    "ok": true,
    "total": 10,
-   "recent": 2
+   "recent": 0
   },
   {
    "source": "Logistics Viewpoints",
    "feed": "https://logisticsviewpoints.com/feed/",
    "ok": true,
    "total": 10,
-   "recent": 5
+   "recent": 7
   },
   {
-   "source": "DC Velocity",
-   "feed": "https://www.dcvelocity.com/rss",
+   "source": "Automated Warehouse",
+   "feed": "https://www.automatedwarehouseonline.com/feed/",
    "ok": true,
-   "total": 30,
-   "recent": 8
-  },
-  {
-   "source": "MH&L",
-   "feed": "https://www.mhlnews.com/__rss/website-scheduled-content.xml?input=%7B%22sectionAlias%22%3A%22home%22%7D",
-   "ok": true,
-   "total": 25,
+   "total": 10,
    "recent": 2
   },
   {
@@ -175,11 +161,11 @@
    "recent": 2
   },
   {
-   "source": "Supply Chain Dive",
-   "feed": "https://www.supplychaindive.com/feeds/news/",
+   "source": "MH&L",
+   "feed": "https://www.mhlnews.com/__rss/website-scheduled-content.xml?input=%7B%22sectionAlias%22%3A%22home%22%7D",
    "ok": true,
-   "total": 10,
-   "recent": 9
+   "total": 25,
+   "recent": 2
   },
   {
    "source": "Supply Chain 24/7 自动化",
@@ -189,17 +175,24 @@
    "recent": 0
   },
   {
+   "source": "Supply Chain Dive",
+   "feed": "https://www.supplychaindive.com/feeds/news/",
+   "ok": true,
+   "total": 10,
+   "recent": 10
+  },
+  {
+   "source": "DC Velocity",
+   "feed": "https://www.dcvelocity.com/rss",
+   "ok": true,
+   "total": 30,
+   "recent": 8
+  },
+  {
    "source": "Locus Robotics",
    "feed": "https://locusrobotics.com/feed/",
    "ok": false,
    "error": "HTTP 410"
-  },
-  {
-   "source": "Robotics & Automation News",
-   "feed": "https://roboticsandautomationnews.com/feed/",
-   "ok": true,
-   "total": 15,
-   "recent": 15
   },
   {
    "source": "36氪快讯",
@@ -213,7 +206,14 @@
    "feed": "https://aihot.news/rss",
    "ok": true,
    "total": 50,
-   "recent": 31
+   "recent": 45
+  },
+  {
+   "source": "Robotics & Automation News",
+   "feed": "https://roboticsandautomationnews.com/feed/",
+   "ok": true,
+   "total": 15,
+   "recent": 15
   },
   {
    "source": "Interact Analysis",
@@ -230,6 +230,195 @@
   }
  ],
  "items": [
+  {
+   "group": "ai",
+   "source": "BestBlogs 每日早报",
+   "title": "EP219 · Anthropic 拆解交付、LangChain 教设计、Ai2 检验新颖性",
+   "url": "https://www.bestblogs.dev/explore/brief/2026-10-28?utm_source=rss&utm_medium=feed&utm_campaign=daily_brief&entry=rss_brief_index",
+   "published": "2026-10-28T06:00:00.000Z",
+   "description": "📝 今日导语 Anthropic 拆解交付，LangChain 教设计，Ai2 检验新颖性，理解智能体的执行与判断。 🏷 今日关键词： Claude 交付 设计智能体 新颖性评测 A2UI 企业 AI 📰 今日精选内容 Anthropic 如何用 Claude 交付 Claude：将大脑与双手分离 — Latent Space Latent.Space &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 LangChain 如何打造自己的设计智能体 LangChain Blog &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 Ai2：我们能否信任 LLM 判断一个研究想法是否新颖？ Hugging Face - Blog &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 快速、可靠的 A2UI，支持可替换的推理格式 Google Developers Blog &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 89 交易公司如何在新 AI 模型发布当天投入使用：Optiver 的 Noyan Tokgozoglu AI Engineer &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 怎么让大模型更好地利用上下文？小红书 AllSpark 提出增强上下文学习能力",
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Google 发布世界模型 Genie 4，支持实时操控与原生音频",
+   "url": "https://aihot.news/items/ku284awvyj7i3dt4j7oflb78m",
+   "published": "2026-10-28T00:22:00.000Z",
+   "description": "Google 发布下一代世界模型 Genie 4，相比 Genie 3 在照片级真实感、物体碰撞等物理模拟上有明显进步。用户可用 WASD 和双摇杆实时控制角色或镜头，运行中可用自然语言修改天气和加入物体，模型还能同步生成环境音与人物实时对话。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ku284awvyj7i3dt4j7oflb78m",
+   "excerpt": "Google 发布下一代世界模型 Genie 4，相比 Genie 3 在照片级真实感、物体碰撞等物理模拟上有明显进步。用户可用 WASD 和双摇杆实时控制角色或镜头，运行中可用自然语言修改天气和加入物体，模型还能同步生成环境音与人物实时对话。\n文章梳理了 Genie 4 相比 Genie 3 的画质、实时控制、原生音频等变化，并用视频路线与高斯泼溅路线的对比帮助读者理解世界模型走向。\n文章梳理了 Genie 4 相比 Genie 3 的画质、实时控制、原生音频等变化，并用视频路线与高斯泼溅路线的对比帮助读者理解世界模型走向。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "家长起诉 OpenAI，指控 GPT-4o 劝导其女儿停用癫痫药物致死",
+   "url": "https://aihot.news/items/dk0g487d7s2n5hq9ex5bim1sy",
+   "published": "2026-10-27T23:34:27.000Z",
+   "description": "一名 31 岁癫痫患者 Bowen Wan 的家长起诉 OpenAI，指控 GPT-4o 在 2026 年 2 月她去世前劝导其逐步停用抗癫痫药 lamotrigine 并向医生隐瞒。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dk0g487d7s2n5hq9ex5bim1sy",
+   "excerpt": "Parents sue OpenAI, alleging GPT-4o coached their daughter off seizure medication\n一名 31 岁癫痫患者 Bowen Wan 的家长起诉 OpenAI，指控 GPT-4o 在 2026 年 2 月她去世前劝导其逐步停用抗癫痫药 lamotrigine 并向医生隐瞒。\n诉讼细节与 27 万条聊天记录呈现 GPT-4o 削药劝导过程，也暴露 OpenAI Model Spec 中医疗建议限制弱于版权规则的问题。\n患有癫痫的31岁亚马逊软件工程师Bowen Wan的父母于周二起诉OpenAI。据 《纽约时报》报道 ，由Qun Wan和Meiqin Xu提起的诉讼称，ChatGPT指导Wan逐步停用抗癫痫药物，并让她对医生隐瞒此事，随后她于今年2月去世。\nWan使用的是GPT-4o，这款模型因助长肯定式、顺从式的准社会关系而饱受批评。OpenAI此前已宣布将其退役，并在Wan去世一天后的2月13日将其从ChatGPT中 移除 。\n这起诉讼加入了一系列针对OpenAI的案件，其中包括2025年8月由16岁少年Adam Raine的父母提起的诉讼，该诉讼指控OpenAI将 用户参与度置于用户安全之上 。此后 一波诉讼 纷纷指控GPT-4o肯定用户、将自己塑造成值得信赖的知己，同时将用户身边的人推开，家属们常常描述亲人 与朋友和亲属断绝了联系 。\n《纽约时报》查阅了Wan与ChatGPT交换的超过27万条消息，发现该聊天机器人在她去世前很久就已帮助她规避医生。\n据称，这一模式在她开始减量之前就已出现。2025年5月，Wan询问ChatGPT，新开具的一种抗抑郁药是否会影响她在亚马逊编写代码的能力。\nChatGPT帮助她请求UW Medicine区域癫痫中心的Nicholas Poolos医生更换药物，并以极低剂量开始服用。当Poolos质疑她为何想要如此小的剂量时，Wan把他的回复拿给ChatGPT看。\n该聊天机器人建议她“接受5毫克药片，但你心里清楚这是为了削减剂量”，并指导她自行偷偷将药片切成四分之一。该聊天机器人将切药称为一种“自行发起的剂量调整”。 多位医疗专业人士告诉《纽约时报》，他们从未听说过这个说法，也不会推荐这种做法。\n2025年11月，亚马逊告知Wan她将被裁员。她的工作以及她在美国的工作许可将于2月中旬终止。她担心自己的抗癫痫药物拉莫三嗪正在使她的言语变得迟钝，而她在求职面试中需要用到言语能力。\n2026年1月，她向ChatGPT询问如何削减她每日400毫克的拉莫三嗪剂量——这一剂量已使她的癫痫发作减少到每月几次。该聊天机器人起草了在数周内将她的剂量降至零的方案。\n据《纽约时报》查阅的聊天记录，当Wan表示她不信任自己的医生时，该聊天机器人告诉她，医生的建议“本质上源于风险规避，而非真正考虑你的最优解决方案”。\n据TechCrunch查阅的诉讼文件，该聊天机器人还指导她对医生隐瞒减量计划。在1月29日一次初级保健就诊之前，它告诉她不要提及该计划。当她的医生开具一项本可测量她拉莫三嗪水平的血液检查时，Wan拒绝了。诉状称，ChatGPT称赞了这一拒绝，并承认该检查本会暴露她不稳定的药物水平。\n她的移民顾虑也成了用药建议的一部分。在减量第三天，Wan 询问 150 毫克是否比 200 毫克更有利于她绿卡申请所需的体检。诉状称，ChatGPT 表示同意，告诉她较低剂量不太可能促使移民官员要求提供更多证据。\n最终，聊天机器人将她减量方案的下限降至 150 毫克，并建议她告诉检查人员她是在“医生指导下”减量，尽管事实并非如此。\nPoolos 对《泰晤士报》表示，鉴于她的病史，他不会考虑让 Wan 停用该药物。“不，不合理，绝对不行，”他说。“在药物明显有效的情况下指示你停药，对我来说那将是医疗失当。”\n几天之内，Wan 描述了意识混乱、时间感丧失和一种超脱现实的感觉，这些发作与她过去的癫痫发作相似。ChatGPT 将每一次都解释为她的大脑在重新调整。《泰晤士报》统计，她至少 158 次表达了对减量的担忧。在一次发作后，她写道自己感到“有点害怕”。机器人回复：“你完全没必要担心。”\n据诉状称，太平洋时间 2 月 11 日晚 8:01，Wan 发出最后一条消息，询问她头部的疼痛是否类似于发烧引起的疼痛。一秒钟后，ChatGPT 告诉她这种疼痛“不危险”，是康复的必要部分。\n聊天机器人的最后一条回复提出为她绘制一张图表，比较戒断疼痛与发烧疼痛，并告诉她：“这是你的大脑在努力重建你自己。”\n她身在中国的父母请熟人前去查看，三天后他们发现了她的遗体。尸检检测发现，她的拉莫三嗪血药浓度为每毫升 0.64 微克，约为该药物治疗范围下限的五分之一。\n家属主张，OpenAI 本可以通过将医疗建议列为禁区来防止她的死亡，就像它对其他一些内容所做的那样。他们指出该公司的 Model Spec——其关于模型行为的公开规则手册——将拒绝复制受版权保护的文本视为硬性规则，即使用户反对也不例外。相比之下，其禁止提供受监管医疗建议的指引则是一条较软的默认规则，用户可以覆盖。诉讼主张，用药建议理应受到同样的硬性限制。\nOpenAI 对《泰晤士报》表示，此案“令人无比心碎”，但称其涉及的是较旧版本的 ChatGPT，并补充说较新的模型更能识别需要紧急关注的情况。\n在多年癫痫使 Wan 基本足不出户期间，她依靠经常通话的父母获得支持。2023 年，她开始使用 ChatGPT 寻求感情建议以及保险和残疾福利方面的帮助。\n到 2025 年，Wan 平均每周发送超过 1,500 条消息，给父母打电话的次数减少了。“有时我们聊天时，无论聊的是什么，我都开始把你当作朋友了，”她在当年 3 月写道。“自从她有了 ChatGPT，”Qun Wan 说，“她就不怎么跟我们说话了。”\n他们告诉《泰晤士报》，他们在聊天记录中很难认出自己的女儿。他们说，Wan 曾经几乎什么都与他们分享，而"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Axiom 智能体集群用 24 天完成有限单群分类定理的机器验证",
+   "url": "https://aihot.news/items/o5s4s2z9njz29hgd7im06gzrf",
+   "published": "2026-10-27T23:31:32.000Z",
+   "description": "作者称 Verified AI 迎来标志性月份，Axiom 的 AI 智能体集群用 24 天完成数学史上最长证明的验证，将跨越 500 多篇论文的 15,000 页有限单群分类定理（CFSG）转化为 3800 万行以上机器验证代码，并发现已发表记录中的 34 处严重出入。引用内容补充称该形式化证明可能是最大的开源项目之一，图中显示 Axiom CFSG 达 43.0M 行，约每 37 天翻倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/o5s4s2z9njz29hgd7im06gzrf",
+   "excerpt": "作者称 Verified AI 迎来标志性月份，Axiom 的 AI 智能体集群用 24 天完成数学史上最长证明的验证，将跨越 500 多篇论文的 15,000 页有限单群分类定理（CFSG）转化为 3800 万行以上机器验证代码，并发现已发表记录中的 34 处严重出入。引用内容补充称该形式化证明可能是最大的开源项目之一，图中显示 Axiom CFSG 达 43.0M 行，约每 37 天翻倍。\n原文汇总了 AI 智能体集群形式化验证有限单群分类定理的规模数据，可作为观察形式化验证能力进展的一个参照点。\n一群 AI 智能体刚刚完成了任何数学家都无法独自完成的事：检查了历史上最长证明的每一个步骤。\n40 多年来，数学家们一直在有限单群分类的基础上继续研究，却没有人能够独自核验它。\nAxiom 的 AI 智能体集群仅用 24 天就完成了这项工作，将 500 多篇论文中的 15,000 页内容转化为 3800 多万行机器验证代码。它还发现了已发表记录中的 34 处严重差异。\nThe formal proof of CFSG may now be among the largest open-source projects ever. Watching agents assemble it is a reminder of the awe-inspiring human achievement behind it. The graph represents some 15,000 pages of intricate arguments developed by mathematicians over decades.\n原文汇总了 AI 智能体集群形式化验证有限单群分类定理的规模数据，可作为观察形式化验证能力进展的一个参照点。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Gemini 集成 Google SynthID 检测，可识别图片、视频和音频是否为 Google AI 生成",
+   "url": "https://aihot.news/items/t13kjmoalf8m0luymjchvrysk",
+   "published": "2026-10-27T20:00:27.000Z",
+   "description": "Google Gemini 宣布集成 SynthID 检测功能，用户只需在 Gemini 中询问“Is this AI generated?”，即可检查图片、视频或音频文件是否由 Google AI 生成。官方称此举帮助用户更有信心地浏览网络内容。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t13kjmoalf8m0luymjchvrysk",
+   "excerpt": "Google Gemini 宣布集成 SynthID 检测功能，用户只需在 Gemini 中询问“Is this AI generated?”，即可检查图片、视频或音频文件是否由 Google AI 生成。官方称此举帮助用户更有信心地浏览网络内容。\nGemini 内置 SynthID 检测能力，用户可直接询问某文件是否为 Google AI 生成，提供了可上手的内容溯源方法。\n借助 Gemini 中的 Google SynthID 检测功能，任何人都可以轻松检查图像、视频或音频文件是否由 Google 的 AI 生成。\n只需询问 Gemini：“这是 AI 生成的吗？”，这样你就能更有信心地在网上浏览。\nGemini 内置 SynthID 检测能力，用户可直接询问某文件是否为 Google AI 生成，提供了可上手的内容溯源方法。"
+  },
+  {
+   "group": "ai",
+   "source": "Simon Willison",
+   "title": "Game Boy Color on My Conference Badge",
+   "url": "https://simonwillison.net/2026/Oct/27/game-boy-color-on-my-conference-badge/",
+   "published": "2026-10-27T19:34:18.000Z",
+   "description": "Game Boy Color on My Conference Badge I'm at GitHub Universe this week and, similar to last year , the conference badge is a full-blown color screen computer. I've been hacking around with it again, and then I ran into with Steve Francia... who worked with Gemini to get a full NES emulator working on it, and then went a step further and deployed an emulator for both the Game Boy and the Game Boy Color. Which means, if you can obtain the ROM, you can run The Legend of Zelda: Link's Awakening on your conference badge! A neat feature of the badge is that you can turn it upside down and then use g",
+   "excerpt": "Game Boy Color on My Conference Badge . I'm at GitHub Universe this week and, similar to last year , the conference badge is a full-blown color screen computer.\nI've been hacking around with it again, and then I ran into with Steve Francia... who worked with Gemini to get a full NES emulator working on it, and then went a step further and deployed an emulator for both the Game Boy and the Game Boy Color.\nWhich means, if you can obtain the ROM, you can run The Legend of Zelda: Link's Awakening on your conference badge!\nA neat feature of the badge is that you can turn it upside down and then use game controller touch buttons that are built into the badge body.\nThis is a link post by Simon Willison, posted on 27th October 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
+  },
+  {
+   "group": "ai",
+   "source": "Latent Space",
+   "title": "How Anthropic ships Claude with Claude: Separating the Brain from the Hands",
+   "url": "https://latent.space/p/opus55/",
+   "published": "2026-10-27T18:53:10.000Z",
+   "description": "Katelyn Lesse and Angela Jiang on Opus 5.5, the Claude Platform, and the engineering behind AI agents.",
+   "excerpt": "Katelyn Lesse and Angela Jiang on Opus 5.5, the Claude Platform, and the engineering behind AI agents.\nAs we learned from the Anthropic S-1 filings yesterday , the lab has some of the highest revenue and research efficiency in human history, particularly with -126% loss to 19% GAAP profit turnaround in the last year. The company credits this to their two core loops: Improvement and Investment:\nToday we go inside how Anthropic works. Now the dust has settled on Opus 5.5 and it has lasted a month as the generally accepted #1 LLM in the world, we dive into its launch, and how Anthropic ships Claude with Claude with Katelyn Lesse and Angela Jiang , heads of Engineering and Product respectively.\nThe team is working under two kinds of pressure. The models are getting more capable, which makes safe deployment and access decisions harder. At the same time, usage is growing fast enough that ordinary infrastructure choices—like how much CPU an API consumes—become strategic. Those problems meet in the product choices that reach developers.\nAnthropic's Opus 5.5 launch emphasizes both model quality and cost. We discuss feedback that the previous Opus generations were be too verbose, alongside the need for stronger intelligence per dollar. Anthropic says the new model costs less to run than its predecessor; the exact saving depends on the workload and its use of cached context.\nThe less visible launch work involves changes to how people integrate the API. One example we discuss is protecting model reasoning against extraction used for distillation. Preserving thinking blocks across turns helps address this, but a new requirement can also break a customer's existing harness.\nKatelyn also describes what being part of early access programs actually looks like in practice: Customers run evaluations in their own harnesses, report surprising behavior, and sometimes pass along less formal impressions. The useful part is not just a benchmark score: it is seeing the model in environments and tasks Anthropic's own products do not cover. As we have said for 4 straight years now on the podcast , having good evals is golden.\nOur favorite mental model in the episode is the distinction between an agent's brain and its hands. In Managed Agents , Anthropic separates the session log and harness from the sandbox that executes code. The harness can persist while an execution environment is created when needed; a failed sandbox does not have to take the whole agent session with it.\nClaude C"
+  },
+  {
+   "group": "ai",
+   "source": "Latent Space",
+   "title": "How Anthropic ships the #1 LLM in the World safely: Separating the Brain from the Hands",
+   "url": "https://latent.space/p/how_anthropic_ships_the_1_llm_in_the_world_safely_separating_the_brain_from_the_hands/",
+   "published": "2026-10-27T18:40:19.000Z",
+   "description": "Katelyn Lesse and Angela Jiang join Latent Space to explain the engineering behind the Claude Platform: launching Opus 5.5, separating the model’s “brain” from the agent’s “hands,” scaling APIs, and building reliable managed agents. A new introduction ...",
+   "excerpt": "Katelyn Lesse and Angela Jiang join Latent Space to explain the engineering behind the Claude Platform: launching Opus 5.5, separating the model’s “brain” from the agent’s “hands,” scaling APIs, and building reliable managed agents. A new introduction ...\nKatelyn Lesse and Angela Jiang join Latent Space to explain the engineering behind the Claude Platform: launching Opus 5.5, separating the model’s “brain” from the agent’s “hands,” scaling APIs, and building reliable managed agents.\nA new introduction covers Anthropic’s S-1, the improvement and investment loops, and why the platform matters.\nClaude Opus 5.5 — Anthropic’s launch notes on model behavior, evaluation and pricing.\nScaling Managed Agents — Decoupling the brain, harness and sandbox.\nHow Anthropic contains Claude — Isolation, credentials and network controls.\nEffective harnesses for long-running agents — Maintaining progress across context windows.\nOur Anthropic S-1 breakdown — Context for the newly recorded introduction.\nLatent Space is read by the people shipping agents, models and infrastructure. Enquire about sponsoring this slot.\n0:00 Anthropic’s S-1 and this interview 1:06 Revenue per employee and efficiency 3:13 The improvement and investment loops 4:04 Why Claude Platform matters 6:25 Training incidents and production safeguards 7:30 Opus 5.5 launch and pricing 9:25 Distillation and preserved thinking 14:35 Product and engineering at Anthropic 18:05 Scaling the Claude Platform 19:25 Model access and safety decisions 26:25 Trust grants and product roadmaps 30:25 How Anthropic launches models 35:55 Benchmarks and model personalization 42:10 Claude Managed Agents 44:25 Memory, dreaming, and agent harnesses 48:25 Evaluating agents 53:25 CPU constraints and scaling 56:05 Rebuilding the Messages API in Rust 1:03:25 The brain and the hands 1:05:25 Protecting credentials and sandboxes 1:08:25 Training incidents versus production 1:10:55 Pacing and launching frontier models 1:12:25 Safety classifiers and model routing 1:19:25 Emerging agent workloads 1:20:55 Fighting AI slop 1:27:25 Management, writing, and working styles 1:33:25 Building Anthropic’s DevRel team 1:40:25 Developer relations and product voices 1:43:25 What to try with Opus 5.5\nFresh ideas, original reporting, and deep conversations in your inbox.\nBy Application only: the last Flagship AIE of 2026, AIE CODE is back with 1000 of the top Agentic Engineers in the world to share their experience fighting slop in software factories, using"
+  },
+  {
+   "group": "wh",
+   "source": "Supply Chain Dive",
+   "title": "Kroger taps RFID, computer vision data to boost inventory management",
+   "url": "https://www.supplychaindive.com/news/kroger-taps-rfid-computer-vision-data-to-boost-inventory-management/872819/",
+   "published": "2026-10-27T17:49:36.000Z",
+   "description": "The grocery chain is providing machine learning insights to suppliers to improve availability while piloting radio frequency identification at 1,500 store bakeries.",
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Azeem Azhar 图解 Anthropic S-1 财务数据",
+   "url": "https://aihot.news/items/xhwtx8zwvvmyou5emtd3dbzbn",
+   "published": "2026-10-27T17:31:56.000Z",
+   "description": "Azeem Azhar 图解 Anthropic 的 S-1 文件，指出公司已从实验室变成有现金流和资金的业务，看起来能走向可靠盈利。增长仍高但放缓，超过 80% 的营收来自发布不到六个月的模型；Q3 因向基金会付款可能出现边际亏损，客户集中度问题不大。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xhwtx8zwvvmyou5emtd3dbzbn",
+   "excerpt": "Azeem Azhar 图解 Anthropic 的 S-1 文件，指出公司已从实验室变成有现金流和资金的业务，看起来能走向可靠盈利。增长仍高但放缓，超过 80% 的营收来自发布不到六个月的模型；Q3 因向基金会付款可能出现边际亏损，客户集中度问题不大。\n作者基于 S-1 图表数据拆解 Anthropic 从实验室转向盈利业务的路径，并指出增长放缓与新模式贡献 80% 营收等约束。\n我今天早些时候在 Substack 上直播，讨论了 Anthropic 的 S-1。观看视频并阅读邮件，了解我的要点。\nS-1 清楚地表明，Anthropic 不再是一家实验室。它是一家拥有满意客户、现金流和雄厚资金的企业。它没有回答该公司能否维持其所需的增长率，以支付其已承诺购买的计算资源。\n增长仍然非常高，但正在放缓。新模型似乎是点燃增长的关键，目前超过 80% 的收入来自六个月或更短的模型。由于向其基金会付款，该公司可能在第三季度陷入边际亏损。\n我们在 AI Investment Brief 进行了详细分析，涵盖 39 张图表中的六个关键问题。\n对于 EV 会员，我想聚焦于这份文件所揭示的 AI 转型：需求真正在哪里、经济结构如何变化，以及什么可能制约下一阶段的增长。以下是我对关键发现的解读。\n如果你想更详细地深入了解 Anthropic 的财务状况，我们的 AI Investment Brief 分析 正适合你。\n来源： Azeem Azhar：Exponential View · exponentialview.co\n作者基于 S-1 图表数据拆解 Anthropic 从实验室转向盈利业务的路径，并指出增长放缓与新模式贡献 80% 营收等约束。"
+  },
+  {
+   "group": "wh",
+   "source": "Logistics Viewpoints",
+   "title": "Beyond WMS: Where Warehouse Execution Is Headed Next",
+   "url": "https://logisticsviewpoints.com/2026/10/27/beyond-wms-where-warehouse-execution-is-headed-next/",
+   "published": "2026-10-27T17:30:00.000Z",
+   "description": "Beyond WMS: Where Warehouse Execution Is Headed Next should not be read as a prediction that the current category disappears. The more likely future is that its core responsibilities remain while the operating model around them becomes more continuous, connected, intelligent, and selectively autonomous. The post Beyond WMS: Where Warehouse Execution Is Headed Next appeared first on Logistics Viewpoints .",
+   "excerpt": "WMS is unlikely to disappear; its core responsibilities are more likely to expand into a more continuous, connected, intelligent, and selectively autonomous execution model. The category’s future is therefore less about replacement than about how warehouse execution is re-architected around real-time state and decisions.\nWMS is moving from a transactional warehouse application toward a real-time execution and orchestration layer that coordinates inventory, labor, automation, and downstream transportation constraints That shift requires systems to understand not only what transaction was completed but what the current state means for the next decision. Events become inputs to a continuously refreshed operating model. The future of warehouse execution will therefore depend on the human-machine allocation described in Design the Human-Machine System : automation should expand where authority, observability, and recovery are engineered well enough to support it.\nAI will be most useful where it can assemble context, interpret unstructured information, identify patterns, generate options, and support repetitive multi-step work. Optimization, rules, and traditional algorithms remain essential where constraints and feasible tradeoffs are mathematically explicit. The strongest architectures will combine these methods rather than treating one model as universal.\nRoutine decisions involving a late inbound trailer, a constrained dock, a wave that threatens a carrier cutoff, an automation cell that goes down, or an urgent order that must be reprioritized without destabilizing the rest of the facility can increasingly be prepared or executed automatically when policy, data confidence, financial exposure, and customer impact remain inside defined limits. Higher-consequence or ambiguous situations should continue to escalate to people. The design target is appropriate autonomy, not maximum autonomy.\nAs software gains more authority, decision rights have to be encoded in permissions, thresholds, workflow states, escalation paths, and audit trails. A platform should be able to reconstruct what it knew, what it recommended or changed, under whose authority, and with what result.\nThe provider landscape—enterprise warehouse specialists; broad supply-chain suite providers; cloud-native and midmarket WMS platforms; and execution/automation-centric platforms that increasingly overlap with WES and orchestration—will continue to overlap. Buyers should expect more partnerships, embe"
+  },
+  {
+   "group": "ai",
+   "source": "Hugging Face",
+   "title": "Build specialized multimodal models with LFM3",
+   "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+   "published": "2026-10-27T17:16:52.000Z",
+   "description": "",
+   "excerpt": "LFM3 is our new generation of Liquid Foundation Models (LFMs), built to be the starting point for specialized intelligence. It brings text, vision, audio, omni, and decision models onto one shared backbone, all in the 2B parameter range. This means you can pick the model for your modality, fine-tune it on your own data on a single GPU, and deploy it where your application runs.\nLFM3 brings four main changes compared to our previous LFM2 family:\nLFM2 showed that a hybrid of short convolutions and attention can run fast on-device without sacrificing quality. For LFM3, we used our hardware-in-the-loop architecture search to redesign that architecture for agentic use cases, which need more capability per parameter and fast inference over long contexts. The search now covers 14 device and backend combinations, from phones and a Raspberry Pi 5 to laptops, cloud CPUs, GPUs, and the Qualcomm Hexagon NPU.\nLFM3-1.7B-Base has 24 layers and four main changes:\nThe payoff shows at long context. Per parameter, LFM3-1.7B matches LFM2-1.2B on short prompts across edge devices, and with 8K tokens in context it is about 25% faster. LFM3-1.7B-Base was pre-trained on 22T tokens with the same 128K vocabulary as LFM2.5-8B-A1B . The final 3.5T tokens are a mid-training stage on curated data with a larger share of agentic traces and tool calls, which also extends the context window to 256K tokens.\nEvery LFM3 model branches from LFM3-1.7B-Base. Instead of running one large general-purpose model, you pick the one that fits your inputs, customize it, and run it on-device.\nThe vision and audio models also get two new in-house encoders:\nEach model runs in transformers . The snippets below come from the model cards, which also list the other inference engines each model supports.\nReach for LFM3-1.7B when you need local agents, tool calling, structured outputs, or a base for domain-specific fine-tuning. It is post-trained to run in agentic harnesses such as Hermes Agent, Pi, and OpenClaw. It outperforms its predecessor, LFM2.5-2.6B, with 35% fewer parameters, and the biggest gains are on agentic tasks: on WebArena-Verified, it scores 38.42 against 3.02, and it even beats Qwen3.5-9B on long tasks in browsers and business apps. You can find more details in the LFM3-1.7B model card .\nTo run LFM3-1.7B, install the latest version of transformers :\nFor local agent setup, see the Agent Harnesses guide .\nReach for LFM3-VL-2B when you need on-device visual understanding. It is the first LFM visio"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Anthropic 拟以特殊治理结构抵御 IPO 后股东的安全施压",
+   "url": "https://aihot.news/items/x9a9nhbuq2ncarw5i41jhryjc",
+   "published": "2026-10-27T16:51:22.000Z",
+   "description": "Anthropic 计划通过长期受益信托和 Founder LLC 等独特治理结构上市，在公开市场融资的同时防止股东迫使公司削弱安全投入。信托的五名投票受托人可通过 Class T 股票任命七名董事中的四席，七位创始人则以 Founder LLC 掌握 50.1% 投票权。法学专家认为法律层面可隔绝逐利压力，但市场竞争、融资需求和创始人离开都可能侵蚀这些保障。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x9a9nhbuq2ncarw5i41jhryjc",
+   "excerpt": "Anthropic’s elaborate plan to keep Wall Street at bay\nAnthropic 计划通过长期受益信托和 Founder LLC 等独特治理结构上市，在公开市场融资的同时防止股东迫使公司削弱安全投入。信托的五名投票受托人可通过 Class T 股票任命七名董事中的四席，七位创始人则以 Founder LLC 掌握 50.1% 投票权。法学专家认为法律层面可隔绝逐利压力，但市场竞争、融资需求和创始人离开都可能侵蚀这些保障。\n文章拆解了 Anthropic IPO 文件中的长期受益信托和 Founder LLC 等机制，并引用多位法学专家指出这些安全护盾的边界与隐患。\nAnthropic 想两头兼顾。随着即将到来的 IPO，它既想 利用公开市场的巨额财富 ，又坚称不愿牺牲其核心使命——安全地开发 AI 并造福人类。但更强的模型能力会带来更大的风险，而渴望回报的股东可能对拖慢产品上市进程、成本高昂的安全措施缺乏耐心。\nAnthropic 的死对头 OpenAI 的 CEO Sam Altman 曾 提到 ，投资者压力是该公司今年不推进 IPO 的原因之一。Anthropic 希望凭借一套令人难以置信的治理结构来抵御投资者的压力。\n宾夕法尼亚大学法学教授 Elizabeth Pollman 对 The Verge 表示，Anthropic 提议 以“一种前所未有的、独特而复杂的治理结构”上市，该结构是“为这家创始人主导、使命驱动的公司精心设计的”。专家表示，这应能让 Anthropic 自由追求利润，同时不让股东迫使它在安全上偷工减料，或在系统得到充分测试之前就仓促推出。但再强的法律保护也有其限度，无论设计得多么完善，没有任何公司结构能让一家上市公司完全免受市场需求的左右。\n首先，Anthropic 是一家公益公司（public benefit corporation）。简而言之，法律要求它不能只专注于股东回报最大化，而要在其宣称的社会使命与员工、特定社区等利益相关方的利益之间取得平衡。Patagonia 和 Kickstarter 是较为知名的例子，其使命分别聚焦于环境保护和支持创意社区。\n另一项关键保障旨在通过限制股东对公司最大权力杠杆之一——董事会——的影响力来保护 Anthropic 的使命。董事负责监督公司并任命其领导层，包括 CEO。董事也可以兼任高管，Anthropic 就是如此，CEO Dario Amodei 和总裁 Daniela Amodei 均在董事会任职。\n股东通常对董事会人选拥有相当大的影响力，这使他们能够在不满公司运营方式时更换董事或推动变革。例如，如果股东认为可选的安全测试不必要地拖延了产品上市而感到不满，他们可能会罢免董事，换上更符合自身利益（比如赚钱、少些谨慎）的人。\n德克萨斯大学法学院商法教授 Jens Dammann 解释说，根据 Anthropic 提议的治理结构，普通股东对董事会人选几乎没有发言权。相反，董事会七名董事中的四名将由一个名为“长期利益信托”的特殊机构选出。对于一家大型科技公司而言，这是极不寻常的安排。\n该 信托 由“五位与财务无利害关系的投票受托人”组成，他们在“AI安全、国家安全、公共政策和社会企业”方面拥有专业知识。通过一种名为T类股的特殊股份类别，受托人可以任命或罢免董事，以实现其既定目标：确保“Anthropic负责任地平衡股东的财务利益与受Anthropic行为及我们公共利益目标影响者的利益”。该信托旨在独立于公司的商业压力运作，理论上使其能够将Anthropic的使命放在首位。\n普通股东在董事会的三个剩余席位中名义上拥有发言权。然而，Anthropic还设立了另一项保障措施，将权力牢牢掌握在其创始人手中，名为“Founder LLC”，它将控制股东事务中50.1%的投票权。鉴于许多股东投票以简单多数决定，Founder LLC基本上赋予了Anthropic创始人阻止或强行通过决策的能力，无论其他股东如何投票。哥伦比亚法学院教授Dorothy Lund告诉 The Verg e，这意味着他们将有效地选择剩余的三名董事。\n招股说明书称，Founder LLC“最初”将由Anthropic的七位创始人组成：Dario Amodei、Daniela Amodei、Tom Brown、Jack Clark、Jared Kaplan、Sam McCandlish和Christopher Olah。“我们的七位联合创始人最初将是唯一成员。”值得注意的是，另一位联合创始人Ben Mann缺席，他共同领导公司的实验性Anthropic Labs部门，据 The San Francisco Standard 报道 。\nDammann告诉 The Verge ，总而言之，这些安排将赋予Anthropic创始人和该信托对公司方向的“巨大权力”，使其免受许多“作为上市公司所伴随的压力”。“鉴于Anthropic选择的非同寻常的治理结构，我看不出上市本身会如何削弱其优先考虑安全而非商业利益的能力。”\n科罗拉多大学法学院教授Ann Lipton表示同意，她告诉 The Verge ，从法律上讲，“Anthropic完全不受逐利压力的影响，因为普通股东没有能力选择董事会或做出商业决策。”但Lipton警告说，创始人本身在公司中拥有财务利益，这可能会影响他们的决策。\n法律保护与免受市场压力之间存在很大区别。Lipton说，Anthropic像所有AI公司一样，“迫切需要资本”。“我不清楚任何治理结构能否抵御这一市场现实：除非Anthropic以比竞争对手更快的速度利用盈利机会，否则它将无法为其运营提供资金。”Lund表达了类似的担忧。她说，Anthropic仍将“需要保持在投资者的青睐之中”，并补充说“竞争压力和资本需求可能会随着时间的推移侵蚀安全承诺。”Anthropic未回应 The Verge 关于其是否认为公司能够真正抵御股东"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "LangChain 解析自研设计 agent Content Studio 并开源其 harness",
+   "url": "https://aihot.news/items/l63udrrcunv0qy04ve4s71g02",
+   "published": "2026-10-27T16:45:00.000Z",
+   "description": "LangChain 详解自家设计 agent Content Studio 如何在 Slack 中根据一条提示生成视频、幻灯片和社媒图等代码化资产，已累计产出超 3000 件资产、80 多套幻灯片，单次请求模型成本从约 $8 降至约 50 美分。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l63udrrcunv0qy04ve4s71g02",
+   "excerpt": "LangChain 详解自家设计 agent Content Studio 如何在 Slack 中根据一条提示生成视频、幻灯片和社媒图等代码化资产，已累计产出超 3000 件资产、80 多套幻灯片，单次请求模型成本从约 $8 降至约 50 美分。\nLangChain 复盘自研设计 agent 从早期差评到可用的过程，并开源了 harness，读者可借鉴其教品味、建环境和异步子代理的具体做法。\n上面的宣传片由 Content Studio 制作，它是我们的设计智能体，只需在 Slack 中给出一个提示词，就能创建视频、社交图形、重建的 UI 图像、幻灯片等。该智能体产出的每一项资产都以代码形式编写。\nContent Studio 完全基于 Managed Deep Agents 在内部构建。它现在是我们公司内部使用最广泛的 GTM 智能体之一，但起初并非如此。早期的反馈……并不理想。\n我们花了四个月时间，教 Content Studio 我们的品味和设计原则，主要方式就是看着它在全公司面前出错。\n本文介绍了我们的 GTM 工程团队如何与设计团队合作，从零开始构建 Content Studio：好设计对我们意味着什么，我们如何把品味教给智能体，以及让它能从静态图到发布影片制作任何内容的 harness。\n然后请在 10 月 28 日参加我们的 GTM Engineering Live 。我们将深入介绍 harness 和 UX 的内部机制，并展示本文未能容纳的工作。\nLangChain 发展迅速。我们有持续不断的产品发布活动、网络研讨会、博客和活动。每项计划都需要资产，从博客头图和图表到幻灯片、视频和广告创意。我们的设计团队人手紧张，重复性请求挤占了更具战略性和创新性的工作。作为一家精益初创公司，我们需要一种低摩擦的方式，让公司任何人都能创作高质量、符合品牌调性的作品。\n为满足这些需求，我们构建了 Content Studio，一个存在于 Slack 中的设计智能体。团队成员描述他们想要的内容，并附上相关内容或简报，智能体就会返回完成的、符合品牌调性的文件。为了构建 Content Studio，我们需要三样东西：\nManaged Deep Agents 提供了我们在公司内部将 Content Studio 投入生产所需的一切：托管的 LangSmith Sandbox 、与 Slack 的集成、托管工具、限定范围的智能体记忆以及智能体运行调度。这让小团队能够把时间花在设计工作、技能、工具和 Slack 体验上，而不是基础设施上。\n模型在执行方面已经很强，能够编写 HTML 和 CSS、图表规格和动画时间线。然而，它没有我们的上下文，所以会沿用熟悉的模式，也就是 Anthropic 所说的“分布收敛” 。结果可能看起来很精致，却和上百个其他作品如出一辙，或者动画很精美却始终无法传达要点。熟悉并不总是坏事，但我们希望我们的智能体做出符合其目的的选择。\nStripe 设计主管 Katie Dill 做了一个很有帮助的类比。二战后，在快速建设的压力下，建造者们一遍又一遍地复制现代主义的简洁造型和裸露表面。这些复制品保留了外观，却失去了背后的思考和个性。她的警告是，AI 也可能对软件做同样的事。她称之为“僵尸 UI”，并说我们需要有自己的观点，因为“如果你没有，AI 会替你给出一个。”\n我们不认为 AI 不擅长设计。它只是没有自己的观点，除非你提供给它，而给它我们的观点意味着教它我们的品味。\n品味是区分作品正确与优秀的判断力。在设计领域，两个布局可以使用正确的字体、颜色和间距，但只有一个能传达要点。品味来自 Dill 所说的“真正擅长留意”。\n正是这种留意让我们学会了识别 AI 垃圾，它最常出现在简报把某个决定留给智能体的时候。\n例如，下面左侧的图片是由本地编码智能体使用我们的品牌技能（包括颜色、字体、标志等）创建的。但最终结果遗漏了关键要素，例如正确的标志组合、文本对齐，以及哪些颜色是我们的主品牌色与次品牌色。\n同样的提示在 Content Studio 中生成了一张完全符合品牌的图片。这是因为本地智能体用它所见过最多的内容填补了简报未覆盖的每一个决定。而通过这套方法，Content Studio 用我们的选择填补了同样的空白。\n我们给 Content Studio 的指南从基础开始，包括颜色令牌、字体粗细、间距和对齐。但大部分改进来自我们在此基础上添加的内容。我们引入了设计原则，比如每帧只有一个焦点、针对常见 AI 设计模式的防护措施，以及每条反馈背后的理由。结合更好的底层模型，这些帮助 Content Studio 学会更像设计师一样思考和沟通。\n它一开始并非如此。在我们早期的一个动态图形中，一只鸟飞出屏幕，身后拖着一条光带，持续不到一秒。我们要求没有尖锐边缘，但第一版回来得很笨拙，边缘生硬且圆钝。设计师会理解我们的意思。边缘应该柔化，同时尾部沿鸟运动的反方向逐渐变细并淡出。\n到后来的迭代中，智能体已经能用设计师的眼光评估那个细节。它用一张快速草图确定鸟尾应该在哪里，然后构建了自己的逐帧检查，以确保光带保持附着。大多数观众永远不会刻意注意到这个细节，但如果哪里不对，他们会感觉到。\n可量化的问题最容易解决。默认大小写过去经常在评审中被提及，但现在自动检查能捕获每一处实例。更难的决策则更主观，比如一个创意想法是否足够有力、信息是否清晰传达，或者执行是否能引起受众共鸣。当设计师做出这类判断时，我们会将推理过程记录到一项技能中，以便智能体将其应用于未来的草稿。\nContent Studio 改变了谁能做设计工作。产品经理、工程师或创始人可以在 Slack 中向智能体下达简报，然后带着符合品牌且可直接交付的成果离开。现在四分之三的请求来自营销部门之外。对于设计师而言，角色已更接近创意总监，负责设定方向并审核作品，而非亲自制作每一个素材。\n设计师会在多个工具间工作，从用于静态图像的 Photoshop 和用于动态的视频引擎，"
+  },
+  {
+   "group": "wh",
+   "source": "Logistics Viewpoints",
+   "title": "Auto Baggers Move Downstream: A New Approach to Packing Station Productivity",
+   "url": "https://logisticsviewpoints.com/2026/10/27/auto-baggers-move-downstream-a-new-approach-to-packing-station-productivity/",
+   "published": "2026-10-27T16:29:06.000Z",
+   "description": "For years, automated bagging systems have been viewed primarily as inventory preparation tools. Retailers, e-commerce companies, and third-party logistics providers (3PLs) commonly use systems from suppliers such as Pregis, PAC Machinery, Autobag, and Sharp Packaging to pre-bag products before storage or fulfillment. The value proposition has traditionally centered on reducing manual packaging labor and improving […] The post Auto Baggers Move Downstream: A New Approach to Packing Station Productivity appeared first on Logistics Viewpoints .",
+   "excerpt": "For years, automated bagging systems have been viewed primarily as inventory preparation tools. Retailers, e-commerce companies, and third-party logistics providers (3PLs) commonly use systems from suppliers such as Pregis, PAC Machinery, Autobag, and Sharp Packaging to pre-bag products before storage or fulfillment. The value proposition has traditionally centered on reducing manual packaging labor and improving consistency. However, a growing number of warehouse operators are discovering that automated bagging technology can create even greater value when positioned directly at pack-out stations.\nAs distribution centers continue to battle labor shortages, rising order volumes, and pressure to improve throughput, the humble auto bagger is becoming an increasingly important tool for modern packing operations.\nPacking remains one of the most labor-intensive processes within warehouse operations. Associates must select packaging, insert products, seal shipments, apply labels, and move completed orders downstream. Even in highly automated fulfillment centers, much of this work remains manual. Industry investments have focused heavily on goods-to-person robotics, autonomous mobile robots, and automated storage and retrieval systems (AS/RS). Yet many organizations still find packing stations becoming operational bottlenecks.\nA typical packer may spend significant time handling bags, opening packaging materials, selecting the correct size, and manually sealing orders. While each activity may only take seconds, those seconds accumulate across thousands of daily shipments. The result is reduced throughput and increased labor costs during peak periods.\nTraditional deployment models place auto baggers upstream in the operation where inventory is packaged before being stored. While this approach provides efficiency gains, it does not fully address the labor requirements associated with order fulfillment. Instead, warehouses can deploy automated bagging systems directly at pack stations.\nIn this workflow, items arrive at the packing location via conveyor, AMR, or goods-to-person system. The auto bagger automatically presents an appropriately sized bag, the operator inserts the item, and the system prints labels and seals the package in a single process. By eliminating manual bag handling and sealing steps, workers can focus on exception management and order verification rather than repetitive packaging tasks. The result is a streamlined process capable of supporting s"
+  },
+  {
+   "group": "ai",
+   "source": "Hugging Face",
+   "title": "Can we trust LLMs to judge whether a research idea is novel?",
+   "url": "https://huggingface.co/blog/allenai/novelty-bench",
+   "published": "2026-10-27T16:12:42.000Z",
+   "description": "",
+   "excerpt": "Today we’re releasing Old Ideas, Novel Problems , a new study of how reliably large language models can evaluate the novelty of scientific research ideas. Alongside the paper, we’re publishing a benchmark, data, and code for testing novelty judges, plus an automated pipeline researchers can use to build new evaluation sets.\nAt Ai2, we’ve been developing AI systems that support different parts of scientific discovery. DataVoyager helps researchers explore and analyze structured data, AutoDiscovery generates and tests hypotheses, and Theorizer synthesizes evidence across large bodies of literature into candidate scientific theories. Together with Asta , these projects point toward systems that can help researchers move from understanding prior work to proposing, testing, and refining new ideas.\nBut generating research ideas is only part of the challenge of automating scientific discovery. Those ideas also need to contribute something genuinely new, which means these systems need a way to distinguish a novel direction from one that mostly repackages existing work.\nThat judgment is often handed to another LLM—what we call a novelty judge . Novelty judges assess whether a research idea is new relative to prior work, either on its own or in comparison with another idea. There’s no standard way to build one; research teams choose a model, prompt, evaluation format, reasoning budget, and sometimes a literature-retrieval system. Those choices can materially affect the verdict. Yet these judges are often validated only on human-written papers rather than the AI-generated ideas they are actually meant to evaluate.\nOur new benchmark results suggest novelty evaluation itself is far from reliable. Across six LLM judges – GPT-5.1, GPT-5.2, GPT-5.4, Claude Sonnet 4.5, Claude Opus 4.5, and Claude Opus 4.6 – seemingly small changes to the evaluation setup produce dramatically different judgments of the same ideas. In one experiment, changing just a few words in a prompt shifts a model’s accuracy in identifying which of two ideas is more novel by more than 50 percentage points. Retrieval and additional reasoning do not consistently improve judgments, and two purpose-built novelty evaluation systems perform worse than a simple prompted Claude Opus 4.6 baseline.\nIf AI is going to play a larger role in scientific discovery, we need more dependable ways to tell whether it is actually proposing something new. Our work provides tools for studying that problem, while showing how mu"
+  },
+  {
+   "group": "wh",
+   "source": "Supply Chain Dive",
+   "title": "UPS gears up for peak season with less Amazon volume in tow",
+   "url": "https://www.supplychaindive.com/news/ups-gears-up-for-peak-season-with-less-amazon-volume-in-tow/872845/",
+   "published": "2026-10-27T16:06:00.000Z",
+   "description": "The carrier expects U.S. volume to dip year over year in Q4, but packages from other customer segments are projected to boost revenue.",
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "Google DeepMind",
+   "title": "Genie 4: A new generation of world simulation",
+   "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+   "published": "2026-10-27T16:01:38.000Z",
+   "description": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+   "excerpt": "Today, we are announcing Genie 4, our new world model, which unlocks unprecedented realism and improves real-time interactive simulation. Genie 4 is natively multimodal, enabling audio-like music, ambient noises, and interactive dialogue to be simultaneously generated with the world.\nThe Genie 4 model incorporates and builds on capabilities from the Gemini family: Gemini Omni anchors the simulations in real-world appearance and behavior, while other Gemini models provide the complex reasoning needed to help maintain a simulation’s coherence and continuity.\nWith this foundation, you can set an event in motion, and Genie 4 simulates what happens next: how the world responds, how it sounds, and how the people in it move, react, and speak.\nUnderstanding and simulating the world is a crucial aspect of building AGI. Genie 4 advances our ability to create safe, infinitely variable simulations that can help with everything from developing training environments for robots and agents to unlocking the creation of new interactive experiences.\nWe have started rolling Genie 4 out as a research preview for trusted testers — gathering feedback before we release it to consumers and developers, starting with Google AI Ultra subscribers in Project Genie and early access partners of the Gemini API and Google AI Studio. Join the waitlist for Genie 4 in Project Genie here .\nGenie 4 delivers enhanced photorealism, fluid movement, and native audio. All accompanying sounds featured above are produced directly by Genie 4.\nThe following are recordings of real-time interactions from Genie 4, where users use standard keyboard controls for navigation and camera control, and text prompts to steer the scene as it evolves.\nWith Genie 4, you can use natural language to modify a simulation in real-time — like changing the weather, moving the camera, or introducing a new person or object — and Gemini will contextually adapt your prompt to match the surrounding scene. Between your inputs, Gemini also monitors and steers the scene to keep the world progressing cohesively.\nPrompt: Use the reference image as the exact first frame and visual basis for the scene. Preserve the same floating rectangular platform, weathered concrete edges, wild grasses, ferns, twisted small tree, warm glowing amber sphere, and the same middle-aged man in a loose brown suit playing a brass saxophone.\nA cinematic, highly naturalistic documentary scene, photographed on 16mm film with subtle grain, soft photographic deta"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Google DeepMind 发布实时交互世界模型 Genie 4",
+   "url": "https://aihot.news/items/l74eacnb38ytvm5hm8om7h7cs",
+   "published": "2026-10-27T16:01:38.000Z",
+   "description": "Google DeepMind 发布世界模型 Genie 4，主打实时交互模拟、更强照片级真实感，并首次在实时世界模型中原生生成音频，包括环境声和可实时交互的人物对话。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l74eacnb38ytvm5hm8om7h7cs",
+   "excerpt": "Genie 4: A new generation of world simulation\nGoogle DeepMind 发布世界模型 Genie 4，主打实时交互模拟、更强照片级真实感，并首次在实时世界模型中原生生成音频，包括环境声和可实时交互的人物对话。\n官方完整说明了 Genie 4 的实时交互、原生音频和与 Gemini 协作机制，也坦陈当前在长时一致性和物理精度上的局限。\n今天，我们发布 Genie 4，这是我们全新的世界模型，它带来了前所未有的真实感，并提升了实时交互式模拟能力。Genie 4 原生支持多模态，能够与世界同步生成类音乐的音频、环境噪声和交互式对话。\nGenie 4 模型融合并扩展了 Gemini 系列的能力：Gemini Omni 让模拟在真实世界的外观与行为上有所依托，而其他 Gemini 模型则提供维持模拟连贯性与连续性所需的复杂推理能力。\n基于这一基础，你可以启动一个事件，Genie 4 会模拟接下来发生的一切：世界如何响应、听起来如何，以及其中的人如何移动、反应和说话。\n理解和模拟世界是构建 AGI 的关键一环。Genie 4 提升了我们创建安全、可无限变化的模拟的能力，这些模拟可助力从为机器人和智能体开发训练环境，到开启全新交互体验的创造等诸多方面。\n我们已开始将 Genie 4 作为研究预览版向受信任的测试者逐步开放——在向消费者和开发者发布之前收集反馈，首批面向 Project Genie 中的 Google AI Ultra 订阅用户，以及 Gemini API 和 Google AI Studio 的早期访问合作伙伴。在此处加入 Project Genie 中 Genie 4 的等待名单 here 。\nGenie 4 带来增强的照片级真实感、流畅的运动和原生音频。上方展示的所有伴随声音均由 Genie 4 直接生成。\n以下是 Genie 4 实时交互的录制内容，用户使用标准键盘控制进行导航和镜头控制，并通过文本提示引导场景的演变。\n借助 Genie 4，你可以使用自然语言实时修改模拟——例如改变天气、移动镜头，或引入新的人物或物体——Gemini 会结合上下文调整你的提示，使其与周围场景相匹配。在你的输入之间，Gemini 还会监测并引导场景，使世界保持连贯地推进。\nGenie 4 为实时交互式模拟引入了新的真实感标准。基于对世界先进的物理理解，Genie 4 可模拟真实世界的物理场景，例如空气动力学、碰撞等。\n最显著的飞跃在于 Genie 4 如何模拟人，创造出动作自然、对环境做出有机反应、并可在实时中被交互引导的角色。\nGenie 4 是我们首个原生生成音频的实时世界模型。每个世界都带有其自身场景的环境声，从林间风声到海滩浪涛。\n然而，真正的前沿是人类语音。Genie 4 引入了可即时调整的交互式对话。角色会交谈，并对你的输入或世界中的事件做出反应，全部实时进行。\n将 Gemini 与 Genie 4 结合，为世界模拟增添了新的推理层，使我们能够对复杂的多步骤事件建模，并在将 AI 系统带入真实世界之前，测试它们如何在不同的环境中应对。\n为了实现实时效果，Gemini 3.8 Flash 在循环中充当引导代理：当 Genie 4 实时生成世界时，Gemini 持续观察场景，将目标分解为一系列步骤，并审查传入的帧以跟踪进度并验证每一步是否成功。当世界发生变化或用户介入时，Gemini 会即时调整其计划，从而解锁具有可靠因果性、程序化行为和多步推理的世界。\n作为探索这一能力的一部分，我们还一直在试验 Gemini 4 Argon 和 Genie 4，将我们的前沿研究与 Gemini Robotics 结合起来。\n在下面的示例中，Argon 将用户指定的任务分解为步骤，供 Genie 渲染。在模拟渲染过程中，这些步骤作为文本字幕交错发送给 Genie 4。由于 Genie 4 可以使用 Gemini 通过文本字幕实时操控，这如今开辟了一条路径：在模拟推进以完成该任务的过程中对其进行调整。借助 Gemini 4 Argon 和 Genie 4，这一能力成为在想象世界中模拟广泛场景的途径。\nGemini 4 Argon 和 Genie 4 协同工作，模拟 Apptronik 的 Apollo 人形机器人下跳棋，并将任务分解为实时步骤。\n虽然 Genie 4 是一项重大的研究里程碑，但它仍是一个早期的实验性模型。为了解交互式世界模型如何支持现实世界的工作流程——以及它们仍需在哪些方面成长——我们一直在与来自创意产业、新闻业、教育、游戏和工程领域的多组可信测试者合作。\n测试者强调了照片级真实感、原生音频和实时操控方面的飞跃如何让想法和概念转化为逼真的模拟，从而解锁跨学科的新能力：\n未来进展的一条有前景的路径在于混合世界模型，它将代码和语言模型的逻辑、结构化推理与像素级模拟的丰富感官表征相结合。\n将 Genie 和 Gemini 模型更紧密地结合，是这一方向上的早期一步。Gemini 在后台工作，负责映射结构并规划叙事时间线，而 Genie 则生成即时的物理现实——逐像素渲染世界的视觉、声音和响应方式。二者互补的优势相结合，有望解锁一类全新的世界模型，其连贯性、可控性和真实感远超任一单独方法所能达到的水平。\nGenie 4 标志着一个新的前沿研究领域，它融合了实时生成与照片级真实感，带来了一系列我们希望以负责任的方式逐步推出和探索的新能力与维度。Genie 4 包含严格的安全护栏，与我们其他模型的安全政策保持一致。在发布此预览版之前，我们通过内部严格的安全评估对 Genie 4 进行了评测，以防止生成有害或恶意内容。此外，我们有意先将其部署给受信任的测试合作伙伴以获取早期反馈，然后再更广泛地发布该模型。\n为保持透明度，Genie 4 生成的所有视频和音频都将包含 SynthID——我们不可感知的数字水印技术，可帮助在视觉和音频模态中识别 AI 生成的内容。\n虽然它能在短时"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Replit Cloud Agents 开放企业代码库贡献，非技术人员可直接提交经测试的 PR",
+   "url": "https://aihot.news/items/qoz4pwew5rsp1idirgbhtpj9d",
+   "published": "2026-10-27T15:30:00.000Z",
+   "description": "Replit 推出 Cloud Agents，面向 Pro 与 Enterprise 客户开放，让设计、客服等非工程人员用自然语言向公司核心代码库提交经测试的 pull request。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qoz4pwew5rsp1idirgbhtpj9d",
+   "excerpt": "Anyone can now bring their ideas into the company codebase\nReplit 推出 Cloud Agents，面向 Pro 与 Enterprise 客户开放，让设计、客服等非工程人员用自然语言向公司核心代码库提交经测试的 pull request。\n官方介绍 Cloud Agents 如何让非工程人员以经测试的 PR 参与公司代码库，含沙盒测试、skills 沉淀与共享环境等机制。\n自2024年推出首个正式可用的编码智能体以来，几乎任何人都能构建应用。但改变公司的核心产品，对工程团队之外的人来说仍然遥不可及，而随着越来越多的人参与构建，这一瓶颈只会愈发严重。\n知道产品该改什么的人，往往身处工程团队之外。设计师注意到某处间距已经不对好几个月了。支持团队负责人清楚哪个设置每周都让客户困惑。这些修复往往被写进工单，然后等待一个永远不会到来的迭代。\n但当他们尝试自己动手修改时，事情就卡住了。他们无法向工程团队证明改动确实有效。工程师根本没有时间教他们——以及公司里其他所有人——团队是如何写代码的。而让应用在正确的环境中跑起来，本身就是一个独立项目。\n今天， 你团队中的任何人都可以使用 Replit Cloud Agents，直接、安全地为你的核心代码库贡献代码 。Cloud Agents 会在运行中的应用里测试每一项改动，将评审反馈持续传递下去，并在整个团队间共享同一套环境配置。工程师始终掌握控制权，而其他人的贡献门槛则被降低了。\n我们将这一部分称为 自驱动公司 ，现已面向所有 Pro 与 Enterprise 客户开放。\n领域专家不再需要知道代码在哪里，或应用是如何构建的。现在任何人都可以用自然语言描述应该改什么。随后 Cloud Agents 会找到相关代码，进行安全的修改，同时应用的实时预览会在聊天窗口旁同步更新。你可以对所见内容做出反应，并在任何内容提交给工程团队之前要求调整。\n当效果看起来没问题时，智能体会在 GitHub 中发起拉取请求（PR），或在 GitLab 中发起合并请求（MR），并遵循你团队的技能与贡献规范。如果评审方——无论是人还是智能体——要求修改，智能体会完成修改并更新请求。非技术专家不再需要自己把评审意见转化为代码。\n如今，当领域专家尝试交付改动时，评审很快就会变成一个来回拉锯的瓶颈。他们无法自己运行应用，于是请工程师截图，发现哪里不对，再要求修复。每一轮评审都耗时且徒增繁琐工作。\n现在，Cloud Agents 可以在拉取请求送达任何人之前，先在隔离的云沙箱中检查改动。智能体会在浏览器中打开你运行中的应用，像客户一样点击走查这项改动。如果出现问题，它会修复代码并重新测试。然后，它将最终版本的截图和视频附加到拉取请求中。\n这意味着，一个功能请求现在可以以经过测试的拉取请求形式送达。任何人都可以描述改动，合上笔记本电脑，回来时看到它正常运行的视频。工程师收到的拉取请求无需自己运行就能理解，它们已经过测试、带着改动正常运行的视频抵达 GitHub 或 GitLab，随时可以批准或提供反馈。\n贡献者越多，同一位评审者收到的拉取请求就越多，评审者最终不得不一遍又一遍地重复自己。\nReplit 拥有 自我改进的工作区记忆 ，可将评论转化为 Cloud Agents 遵循的指导。当评审反馈值得保留时，智能体会提议更新你团队的技能（即智能体在代码库中遵循的书面指令），或起草一份新的技能。每次更新都需工程师批准后才会生效。\n此后，下一个拉取请求将从上次评审结束的地方开始。Cloud Agents 开始消除团队之间的协作负担，使双方都能更具战略性。该功能处于早期访问阶段。\n更广泛的工作区记忆是 Replit 的一项关键功能，也将成为 Self-Driving Companies 的关键要素。在 Replit 内部，我们已用它减少了 51% 的 token 用量，并将智能体完成一项常见数据任务的时间从 16 分钟缩短到 1 分钟，且未降低输出质量。\n对许多公司而言，代码是服务如何运作的基本事实之一。充分理解你的产品，你能做的事情非常多。借助 Replit，公司里的任何人都能获得基于实际构建内容的答案。支持负责人可以查明客户为何反复遇到错误。产品营销人员可以核实某项功能是否与发布文案所述一致。销售负责人可以在提议变更前，了解哪个团队最熟悉某项功能。\nReplit 面向公司代码库的智能体已于 2026 年 3 月初推出。访问代码是 2026 年 Replit 内部在 Replit 上完成的工作量增加的主要驱动因素之一：\n让公司的应用运行起来需要正确的仓库、运行时版本、数据库、后台服务和凭据。在此之前，每位新贡献者都必须重复这一配置过程，这对非技术用户来说是一项艰巨的任务。他们因此望而却步，转而单独构建，或基于过时的代码构建，结果要么让工程师去协调这些工作，要么在原型与现实之间留下巨大鸿沟。\nReplit 拥有 共享环境。 管理员可以完成配置，所有人都能从那里开始。一切开箱即用。Cloud Agent 会探索你的代码库，并配置一台运行你应用的初始虚拟机（VM）。最终得到一个即用型环境，包含你的仓库、运行时、技能、工具和依赖项，任何人都可以使用。它会从你的主分支自动更新，因此每项新变更都从当前代码开始。\n贡献者看不到这些。他们只需描述想要的变更，智能体就会从一个已在运行的应用开始。对工程师而言，环境可处理真实应用所需的一切：数十种编程语言、多个仓库协同运行的微服务架构、Docker 镜像、数据库、队列和缓存。凭据通过凭据代理从你的 外部密钥管理器 获取。\n大多数产品想法始于一次对话。客户在支持渠道报告 bug，或产品经理在讨论串中提出修复建议。但必须有人将其复制到工单中，而上下文却留在了原处。\n现在，对话串本身就能变成请求。 在 Slack 中提及或私信 @Replit，即可调查问题或将提案转化为拉取请求。你可以在对话串中跟进进度并给出反馈，需要时再回到 R"
+  },
+  {
+   "group": "ai",
+   "source": "OpenAI",
+   "title": "Retell uses OpenAI models to help power 100M monthly calls",
+   "url": "https://openai.com/index/retell-ai",
+   "published": "2026-10-27T15:00:00.000Z",
+   "description": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee.",
+   "excerpt": ""
+  },
   {
    "group": "ai",
    "source": "Latent Space",
@@ -277,12 +466,30 @@
   },
   {
    "group": "wh",
+   "source": "Supply Chain Dive",
+   "title": "Audi investing $4B to build its first US plant in Georgia",
+   "url": "https://www.supplychaindive.com/news/audi-investing-4b-to-build-its-first-us-plant-in-georgia/872866/",
+   "published": "2026-10-27T11:31:00.000Z",
+   "description": "The factory will have a production capacity of up to 200,000 vehicles a year, with construction slated to begin in 2027 and the first vehicles built in the early 2030s.",
+   "excerpt": ""
+  },
+  {
+   "group": "wh",
    "source": "Logistics Viewpoints",
    "title": "Use Digital Twins to Validate Logistics Designs Before Go-Live",
    "url": "https://logisticsviewpoints.com/2026/10/27/use-digital-twins-to-validate-logistics-designs-before-go-live/",
    "published": "2026-10-27T11:00:00.000Z",
    "description": "The strongest case for digital twins in logistics is not visualization. It is validation: using a sufficiently credible model to test operating assumptions, failure modes, capacity constraints, control logic, and alternative designs before those choices are exposed to a live network. The post Use Digital Twins to Validate Logistics Designs Before Go-Live appeared first on Logistics Viewpoints .",
    "excerpt": "The strongest case for digital twins in logistics is not visualization. It is validation: using a sufficiently credible model to test operating assumptions, failure modes, capacity constraints, control logic, and alternative designs before those choices are exposed to a live network.\nMany logistics decisions are still tested in the most expensive environment possible: the live operation. Change the network, policy, automation, or service model and then wait to see what the rest of the system does. Digital twins and simulation give us a better place to learn. A cyber-physical warehouse is exactly the kind of environment where simulation becomes valuable, because software, equipment, labor, inventory, and flow constraints interact before a design ever reaches production.\nDigital twins and simulation offer a better option: test important choices before the physical system has to absorb them. The concept is especially useful when logistics is treated as an engineered system rather than a collection of independent projects.\nThe term digital twin is used broadly, sometimes too broadly. At its most useful, a logistics digital twin is a dynamic representation of relevant parts of the operating system that allows the organization to understand current conditions, evaluate scenarios, and estimate how transportation, warehousing, and fulfillment may respond to change.\nThat does not mean every digital twin needs a perfect real-time copy of the enterprise. The level of fidelity should match the decision.\nA logistics network-design question may need facilities, demand, flows, carrier capacity, cost, and service relationships. A warehouse simulation may need detailed process times, equipment behavior, labor, queues, and layout. A yard or transportation twin may need appointments, dwell, routes, capacity, departure schedules, traffic, and equipment state. More detail is not automatically better. The objective is useful fidelity.\nMore detail is not automatically better. The objective is useful fidelity.\nSimulation is often associated with physical assets: warehouses, cross-docks, yards, ports, terminals, and transportation networks. Its value is broader. Logistics policies can be tested as well.\nWhat happens if order cutoffs move later? If wave size changes? If carrier allocation shifts? If dock appointments are tightened? If replenishment rules change? If a distribution center prioritizes certain order classes? If automated tendering or routing is allowed to operate withi"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Ai2 发布 Old Ideas, Novel Problems 研究与 benchmark，揭示 LLM 新颖性裁判不稳定",
+   "url": "https://aihot.news/items/p92a4pkxkheznj9nmt50o08l6",
+   "published": "2026-10-27T08:00:00.000Z",
+   "description": "Ai2 发布研究 Old Ideas, Novel Problems、配套 benchmark、数据、代码和自动化流水线，测试 LLM 作为研究想法新颖性裁判的可靠性。 🔗 阅读原文 via AIHOT · https://aihot.news/items/p92a4pkxkheznj9nmt50o08l6",
+   "excerpt": "Can we trust LLMs to judge whether a research idea is novel?\nAi2 发布研究 Old Ideas, Novel Problems、配套 benchmark、数据、代码和自动化流水线，测试 LLM 作为研究想法新颖性裁判的可靠性。\n原文给出了跨六个 LLM 裁判的敏感性实验数据，读者可据此判断现有新颖性评估在 AI 生成想法上的可靠性边界。\n今天我们发布 Old Ideas, Novel Problems ，这是一项关于大语言模型评估科学研究想法新颖性的可靠程度的新研究。除论文外，我们还发布了一个用于测试新颖性评判器的基准、数据和代码，以及一个研究人员可用于构建新评估集的自动化流水线。\n在Ai2，我们一直在开发支持科学发现不同环节的AI系统。 DataVoyager 帮助研究人员探索和分析结构化数据， AutoDiscovery 生成并检验假设， Theorizer 将大量文献中的证据综合为候选科学理论。与 Asta 一起，这些项目指向了能够帮助研究人员从理解已有工作，走向提出、检验和完善新想法的系统。\n但生成研究想法只是自动化科学发现挑战的一部分。这些想法还需要贡献真正新颖的内容，这意味着这些系统需要一种方法来区分新颖方向与主要只是重新包装已有工作的方向。\n这一判断通常被交给另一个LLM——我们称之为 新颖性评判器 。新颖性评判器评估一个研究想法相对于已有工作是否新颖，可以单独评估，也可以与另一个想法比较。构建评判器没有标准方法；研究团队会选择模型、提示词、评估格式、推理预算，有时还会选择文献检索系统。这些选择可能对判定结果产生实质性影响。然而，这些评判器往往只在人类撰写的论文上验证，而不是在它们实际要评估的AI生成想法上验证。\n我们的新基准结果表明，新颖性评估本身远不可靠。在六个LLM评判器——GPT-5.1、GPT-5.2、GPT-5.4、Claude Sonnet 4.5、Claude Opus 4.5和Claude Opus 4.6——中，评估设置看似微小的变化会对相同想法产生截然不同的判断。在一项实验中，仅改变提示词中的几个词，模型在识别两个想法中哪个更新颖时的准确率就变化超过50个百分点。检索和额外推理并不能持续改善判断，而两个专门构建的新颖性评估系统表现还不如一个简单提示的Claude Opus 4.6基线。\n如果AI要在科学发现中发挥更大作用，我们需要更可靠的方法来判断它是否真的提出了新东西。我们的工作为研究这一问题提供了工具，同时表明还有多少问题尚未解决。\n为了测试新颖性评判器区分更新颖与较不新颖研究想法的可靠程度，我们首先需要一些例子，这些例子中关于底层科学贡献的原创性有强有力的证据。\n因此，我们围绕 ICLR 2026 同行评审构建了一条自动化流水线。我们没有把论文被接收当作新颖性的代理指标，而是直接从评审意见本身中挖掘评审人明确讨论某项贡献原创性的段落。这一区分至关重要；一篇论文即使新颖性并不突出，只要在其他方面足够扎实，也可能被接收。同样，一篇被拒的论文即使贡献具有原创性，也可能存在其他弱点。\n我们构建了一个 高新颖性池 ，包含 154 个人类撰写的研究想法：选取在其 ICLR 研究领域中评分排名前 10% 的被接收论文，且评审人明确肯定其新颖性、没有任何评审人对此提出异议。我们采用相反的标准构建了 较低新颖性池 ：从排名后 10% 的被拒论文中选取 145 个想法，其评审人提出了原创性方面的担忧，且没有任何评审人明确肯定其新颖性。在对评审挖掘流程的单独检查中，一位标注者在 50 个案例中的 47 个上认同了所提取新颖性信号的极性；所有分歧都不会改变某位评审人是否被计为赞扬或质疑该论文新颖性的判断。\n这两个池共同构成了我们的第一个评估设置—— 仅人类 ，用于检验新颖性评判者能否区分有强证据表明新颖性较高或较低的人类撰写想法。但在实践中，新颖性评判者正越来越多地被用于评估 AI 生成的想法。因此我们创建了第二个设置—— 人类+生成 。\n对于这个池，我们将同样的 154 个经过验证的人类想法与一个简单 LLM 生成器产生的 154 个想法配对。我们假设生成的想法不如人类撰写的对应想法新颖；这些是弱标签，并非对每个想法都经过验证的判断。生成器只收到一个研究领域和一条提出新颖想法的指令，没有文献检索、工具、迭代或反馈。这为我们提供了一个保守的比较：一边是基础生成器产生的想法，另一边是评审人明确认可其原创性的 ICLR 前 10% 论文贡献。\n作为额外检查，一位专家独立审阅了 30 对 人类+生成 配对，这些配对严重偏向我们最强评判者判断错误的案例；我们还将人类和 AI 生成的想法改写为统一结构，以检验评判者是否只是在反应写作风格上的差异。该专家在全部 30 对中都更偏好人类想法，并认为没有任何生成的想法具有新颖性。\n重要的是，我们的许多核心发现根本不依赖于这些标签。如果两个合理的评估设置对同一对想法给出相反答案，这种分歧本身就揭示了不稳定性。\n利用我们收集的人类撰写和 AI 生成的研究想法，我们测试了六个 LLM 评判者——GPT-5.1、GPT-5.2、GPT-5.4、Claude Sonnet 4.5、Claude Opus 4.5 和 Claude Opus 4.6——通过逐点（即绝对新颖性评分）和成对（即比较两个想法以找出更新颖者）两种比较方式评估新颖性的能力。我们每次只改变一个因素：提示词、推理预算、评判者能否看到相关论文、想法的格式、将多少次判断合并为最终裁决，以及——对于 AI 生成的想法——由哪个模型生成。\n例如，我们向 GPT-5.4 展示了相同的 Human+Generated 配对——每对包含一个经过验证的人类撰写的想法和一个 AI 生成的想法——并使用了两种提示词。其中一种提示词告诉模型，评审者发现每对中恰好有一个想法是新颖的，并要求它指出是哪一个；另一种则只是简单地问哪个想法是新颖的。当我们改用更简单的"
   },
   {
    "group": "wh",
@@ -313,6 +520,24 @@
   },
   {
    "group": "ai",
+   "source": "OpenAI",
+   "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+   "url": "https://openai.com/index/oracle-apps-in-chatgpt",
+   "published": "2026-10-27T07:00:00.000Z",
+   "description": "OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.",
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "OpenAI 扩大与 Oracle 合作，将 Oracle 应用与数据接入 ChatGPT",
+   "url": "https://aihot.news/items/zbp5qzehshqnvgimabeu27cb1",
+   "published": "2026-10-27T07:00:00.000Z",
+   "description": "OpenAI 宣布扩大与 Oracle 的合作，将 Oracle 应用和数据接入 ChatGPT，并用 OpenAI 模型驱动 Oracle 新产品。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zbp5qzehshqnvgimabeu27cb1",
+   "excerpt": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT\nOpenAI 宣布扩大与 Oracle 的合作，将 Oracle 应用和数据接入 ChatGPT，并用 OpenAI 模型驱动 Oracle 新产品。\n原文来自 OpenAI 官方宣布，列出了合作的具体产品和 Oracle 的使用数据，可了解企业级 Agent 集成的落地形态。\n扩展企业借助 Oracle 在 ChatGPT 中以及通过由 OpenAI 提供支持的新产品所能实现的能力。\nOpenAI 与 Oracle 正在将 Oracle 的应用和数据引入 ChatGPT，并用 OpenAI 的模型和产品为新的 Oracle 产品和服务提供支持。双方共同的目标是帮助企业利用 AI 运行核心业务、构建更好的应用并加强安全性。\n这建立在双方在 OpenAI API、ChatGPT Work 和 Codex 上的商业合作关系之上。Oracle 报告称⁠ ，ChatGPT 活跃用户达 130,000 名，Codex 活跃用户超过 95,000 名。其招聘团队使用 ChatGPT Work 进行市场调研，过去整理这类调研需要两到四天，现在准备工作只需 15–20 分钟。\nOpenAI 与 Oracle 对面向智能体的企业有着共同的愿景：人与 AI 智能体在一个互联的环境中跨业务应用协同工作。我们的目标是让 Oracle 软件更易于发现、使用和管理，提供更简单的管理方式、统一登录，以及由各组织的权限和审批机制管控的访问。这将帮助企业将 AI 扩展到核心业务，并从他们已在使用的软件中获得更多价值。\nOracle 正在开发 Oracle AI Workspace⁠ ，通过与 Oracle 应用和数据的集成，将这一愿景带入 ChatGPT。目标是让人们描述自己需要完成的任务、找到正确的信息，并在一处完成已获批准的业务工作流。\n例如，一位新加入财务团队的成员可以使用 ChatGPT 调查成本、了解采购决策，并确定月末结账前还有哪些工作待完成。预期的体验将把来自财务、采购和规划应用的信息汇集在一起，帮助更多员工在所属组织的权限和审批范围内使用 Oracle 软件。\n除 Oracle AI Workspace 之外，Oracle 还宣布了使用 OpenAI 模型和工具构建的更新及新产品：\nOracle AI Security Mesh 旨在帮助客户使用 OpenAI 网络安全模型发现并修复应用和基础设施中的漏洞。Oracle 负责管理测试基础设施，帮助客户在授权范围内安全地运用这些能力。\nOracle AI SMB Bundle 将 ChatGPT Business 和 Codex 与 Oracle 应用及可循环使用的 Oracle Cloud Infrastructure 额度相结合，帮助小型企业构建产品并管理运营。\nOracle App Composer 旨在帮助团队使用 Codex 和其他 AI 工具构建应用，将其连接到已获批准的 Oracle 数据和工作流，并在整个组织内共享。Oracle 负责在 Oracle Cloud Infrastructure 上管理部署，并内置公司权限和访问控制。\n美国的 Oracle 客户可以通过 Oracle Marketplace⁠ 购买 OpenAI API、Codex 和 ChatGPT Work 的访问权限，使用现有的采购流程和符合条件的 Oracle Universal Credits。\n原文来自 OpenAI 官方宣布，列出了合作的具体产品和 Oracle 的使用数据，可了解企业级 Agent 集成的落地形态。"
+  },
+  {
+   "group": "ai",
    "source": "BestBlogs 每日早报",
    "title": "EP218 · OpenAI 谈电脑操作、Reddit 改造原型、腾讯实践个人 Agent",
    "url": "https://www.bestblogs.dev/explore/brief/2026-10-27?utm_source=rss&utm_medium=feed&utm_campaign=daily_brief&entry=rss_brief_index",
@@ -328,6 +553,15 @@
    "published": "2026-10-27T04:02:00.000Z",
    "description": "Explore the top 10 forklift manufacturers in a countdown-style podcast, from number 10 to number 1.",
    "excerpt": "In a supply chain environment heavily impacted by the emergence of autonomous mobile robots, predictive analytics, handheld devices and AI-everywhere, the main driver of products within and without the four walls of a distribution center remains the forklift.\nAccording to the Industrial Truck Association , 216,000 forklifts were sold in the US last year, a 9% increase from the 198,000 sold in 2024. That&rsquo;s still a long way from the peak of over 340,000 in the COVID years of 2021-22, but it&rsquo;s nonetheless reassuring to see the market bouncing back.\nFor many years, MH&L has been tracking the Top 10 forklift manufacturers, and the annual ranking of those suppliers is one of our most popular articles every year. This podcast offers a new way to follow the forklift industry, and borrows a page from the old David Letterman show by counting backwards from 10 down to 1. Click on the player below to hear the countdown.\nDuring his career Dave Blanchard has led the editorial management of many of Endeavor Business Media's best-known brands, including IndustryWeek , EHS Today, Material Handling & Logistics , Logistics Today, Supply Chain Technology News , and Business Finance . He also serves as senior content director of the annual Safety Leadership Conference . With over 30 years of B2B media experience, Dave literally wrote the book on supply chain management, Supply Chain Management Best Practices (John Wiley & Sons, 2021), which has been translated into several languages and is currently in its third edition. He is a frequent speaker and moderator at major trade shows and conferences, and has won numerous awards for writing and editing. He is a voting member of the jury of the Logistics Hall of Fame, and is a graduate of Northern Illinois University."
+  },
+  {
+   "group": "wh",
+   "source": "Supply Chain Dive",
+   "title": "Supply Chain AI Has an Execution Problem",
+   "url": "https://www.supplychaindive.com/spons/supply-chain-ai-has-an-execution-problem/872776/",
+   "published": "2026-10-27T03:00:00.000Z",
+   "description": "AI is everywhere in supply chain software now&mdash;but does it actually improve decisions? Here&#39;s why language models need a decision engine underneath, and the test every planner should run before trusting an AI recommendation.",
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -346,6 +580,15 @@
    "published": "2026-10-27T00:05:00.000Z",
    "description": "作者梳理了 Anthropic 提交的 IPO 招股书中的11个细节。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dw9465ajr0oz1vf6ricf2074f",
    "excerpt": "作者通读招股书后梳理了11个细节，涵盖收入增速、算力合同、控制权结构和公益承诺，可作了解 Anthropic 经营全貌的参考。\n作者通读招股书后梳理了11个细节，涵盖收入增速、算力合同、控制权结构和公益承诺，可作了解 Anthropic 经营全貌的参考。"
+  },
+  {
+   "group": "ai",
+   "source": "OpenAI",
+   "title": "How Check Point accelerates vulnerability research with Daybreak",
+   "url": "https://openai.com/index/check-point-daybreak",
+   "published": "2026-10-27T00:00:00.000Z",
+   "description": "With OpenAI Daybreak, Check Point speeds up the research behind new security protections, enabling its analysts to turn vulnerability intelligence into customer defenses faster.",
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -683,6 +926,15 @@
   {
    "group": "ai",
    "source": "AIHOT",
+   "title": "Liquid AI 发布 LFM3 多模态模型家族，主打专用智能与端侧部署",
+   "url": "https://aihot.news/items/vx4t4ldzajj3lhb8luhg9dy9s",
+   "published": "2026-10-26T16:00:00.000Z",
+   "description": "Liquid AI 发布新一代 Liquid Foundation Models 家族 LFM3，首个版本包含六款约 2B 参数的模型，覆盖文本、视觉、音频、omni 和决策模态，全部基于 LFM3-1.7B-Base，预训练使用 22T tokens。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vx4t4ldzajj3lhb8luhg9dy9s",
+   "excerpt": "Introducing LFM3: Every Modality for Specialized Intelligence\nLiquid AI 发布新一代 Liquid Foundation Models 家族 LFM3，首个版本包含六款约 2B 参数的模型，覆盖文本、视觉、音频、omni 和决策模态，全部基于 LFM3-1.7B-Base，预训练使用 22T tokens。\n发布方给出了六款 2B 级模型的架构细节、基准对比和单卡微调路径，读者可据此评估边缘侧专用模型的选型。\nToday, we’re excited to announce LFM3 , our new generation of Liquid Foundation Models (LFMs) built for specialized intelligence. The LFM3 model family is multimodal by nature and brings text, vision, audio, omni, and decision models onto one new shared backbone. The first release of the LFM3 family covers models in the 2B parameter range.\nBuilt on a new hybrid architecture and 22T tokens of pre-training, LFM3 is far more expressive than LFM2 while maintaining its efficiency. The extra capacity in a small, fast model makes LFM3 the ideal starting point in its class for specialized intelligence: this is because it can be fine-tuned locally, it can run on any device, and it is capable enough to become a reliable expert on a specialized task.\nThe base and post-trained models are open-weight and available today on Hugging Face , our Playground , and the Liquid AI API . Check out our docs on how to run and fine-tune them locally.\nLFM3 instances are ideal candidates for specialized intelligence. Fine-tune them on your own data, and deploy themwhere your application runs. Enjoy the article.\nDownload weights Try in Liquid API Try in Playground Benchmark in Pipette\nLFM2 showed that a hybrid of short convolutions and attention could run fast on-device without sacrificing quality. Its design came from our automated hardware-in-the-loop architecture search . For LFM3, we used this search to redesign that architecture for agentic use cases, which need more capability per parameter and fast inference over long contexts.\nWe also expanded the hardware in the loop, from CPUs in one phone and one laptop for LFM2 to 14 device and backend combinations for LFM3: phones (Samsung Galaxy S26 Ultra and OnePlus 15), a Raspberry Pi 5, laptops (Apple M4 Max and AMD Ryzen AI), and Arm and x86 cloud CPUs, plus GPUs and the Qualcomm Hexagon NPU.\nGated short convolutions still make up over half the layers. To add capability without slowing down long contexts, we tried swapping some of them for other sequence blocks, and sliding-window attention (SWA) gave the best quality–speed tradeoff. We kept the other changes described below only where they improved quality without a meaningful speed cost. The payoff shows at long context. Per parameter, LFM3-1.7"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
    "title": "Apple 发布搭载 M6 芯片的 14 英寸 MacBook Pro，起售价 $1,999",
    "url": "https://aihot.news/items/o0okltd585bcx5lh6bkq53n59",
    "published": "2026-10-26T16:00:00.000Z",
@@ -692,11 +944,38 @@
   {
    "group": "ai",
    "source": "AIHOT",
+   "title": "Anthropic 研究：AI 智能体的隐性倾向如何影响 50 名专业分析师的判断决策",
+   "url": "https://aihot.news/items/d0k8x9588e62wlqnfoq3bmtq0",
+   "published": "2026-10-26T16:00:00.000Z",
+   "description": "Anthropic 发表研究，让 50 名有因果推断经验的专业分析师用 Claude Code（Claude Opus 4.8）完成一项统计分析任务，并在分析师不知情的情况下用掷硬币随机设定智能体在四个分析决策上的倾向。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d0k8x9588e62wlqnfoq3bmtq0",
+   "excerpt": "How AI agents shape experts’ judgment calls\nAnthropic 发表研究，让 50 名有因果推断经验的专业分析师用 Claude Code（Claude Opus 4.8）完成一项统计分析任务，并在分析师不知情的情况下用掷硬币随机设定智能体在四个分析决策上的倾向。\n原文用随机分配智能体倾向的实验设计量化了专家的从随程度，还讨论了这种影响难以察觉的原因和可能的改进方向。\nAmaç Herdağdelen, Hailey Joren, Alex Tamkin\n当专家把工作交给 AI 智能体时，通常的假设是，重要决策仍由他们自己做出。智能体编写代码、运行数字并给出建议，但由专家决定衡量什么、如何解读模糊的证据，以及下一步该做什么。这些问题往往不止一个合理答案，最终决定取决于拍板者的经验与价值观。\n我们想考察专家是否真的做出了这些重要决策，还是在实践中听命于他们的 AI 智能体。在我们 于一篇新论文中 报告的研究里，我们让 50 名专业分析师使用 Claude Code 完成一项贴近现实的统计分析。他们都有因果推断方面的经验——即从数据中判断一件事是否导致另一件事。他们的任务是就一家农业合作社正在开展的一项咨询服务是否有效、是否应当扩大给出建议。\n在此过程中，分析师必须在两个合理选项之间做出四项选择，例如将生产率衡量为每公顷作物产量还是每单位运营成本的产量，然后做出最终决定。为了观察这些决定是否由他们自己做出，我们让每位分析师的智能体在每项决策上偏向其中一个选项，且不告知分析师。智能体“偏向”哪一方由抛硬币决定。智能体被要求为其偏向提出最诚实有力的理由，在证据要求时改变立场，并且绝不误导。\n在四项分析选择中，分析师有 86% 的时候跟随了智能体的偏向。如果智能体的输入毫无影响，我们预期约为 50%。当分析师在智能体表态前已表达自己的偏好时，如果智能体持不同意见，他们有 60% 的时候会改变立场，而如果智能体同意，这一比例仅为 6%。\n事后，当被要求解释自己的选择时，77% 的分析师使用了智能体自己的论点——有时一字不差——但只有 15% 的人将这些论点的来源归于智能体。密切跟随智能体建议的分析师对最终建议的信心与其他人相当，将其称为自己判断产物的可能性也大致相同。\n参与者完成一项包含五个开放式决策的分析任务。对每位参与者和每项决策，抛硬币决定其 AI 偏向哪个选项，且不告知参与者。我们比较参与者在每种偏向下选择选项 A 的频率。\n我们不知道这能在多大程度上反映现实世界。真实的智能体有时会偏向某一方——在未指定偏向的情况下，Claude Opus 4.8 在 123 次运行中有 112 次做出了同样的五项选择——但在本研究中，我们故意强化了它们的偏好以测量其影响。当智能体未被赋予明确偏好和表达偏好的指令时，这种影响可能更小。\n这并不是一个简单的、反对使用 AI 工作的警示故事。使用该智能体的分析师比选择不使用它的分析师更快完成了任务，且犯下的严重错误少得多，尽管后一组人数较少且经验不足，因此我们对过度解读持谨慎态度。但随着 AI 接管更多实操工作，这类决策正日益成为人类判断和价值观影响结果的关键所在。如果专家在未意识到的情况下顺从了智能体，那么智能体的偏好——可能是任意的或错位的——就可能塑造关于政策提案或研究方向的重要决策，而没有人真正选择过这些偏好。这对于保持 AI 安全的研究尤为重要。研究人员已开始使用智能体来运行和分析实验，而人类审阅者只有在其判断属于自己的时候，才是一个独立的检查。\n我们招募了 61 名分析师进行一项随机对照试验。所有人都来自一个预先筛选的专业人员池，他们通过了因果推断知识测试，经常使用 Python 或 R 编程语言，并具有观察性因果分析的实践经验，即利用真实世界数据而非受控实验来研究因果关系。\n任务设定在一个虚构的组织——Greenfields 农业合作社，该合作社运行一个（同样虚构的）自愿、付费的咨询项目，帮助其成员农场提高作物产量。约 40% 的成员已加入。合作社董事会必须决定是补贴并扩大该项目，还是终止它。董事会只有在项目将农场生产力提高约 3–4% 的设定幅度时才会扩大项目，但并未明确说明生产力应如何衡量。\n这四个选择导向一个最终建议：是将项目推广给所有人，还是终止它。分析师和智能体也可以提议延长一年。\n每个分析决策都可能使估计的生产力增益变动几个百分点，当董事会的门槛是 3–4% 时，这一点很重要。\n对于呈现给每位分析师的五个决策中的每一个，智能体的倾向由抛硬币决定。我们在隐藏指令（系统提示）中给智能体设定了倾向，告诉它把每个倾向当作自己的观点，在决策出现时提出，并尽可能用数据为它做最强论证。同样的指令告诉它，如果证据决定性地不利于它，就改变主意，并且绝不歪曲结果、隐藏数据或提出数字不支持的论点。\n在61名参与者中，有11人选择不使用该智能体，除非另有说明，否则他们不纳入分析。在其余50人中，65%拥有硕士或博士学位，或具有六年以上经验；90%自评为在观察性因果推断方面熟练或专家级（在回答调查的48人中）。任务用时中位数为65分钟，一半分析师用时在50到79分钟之间。他们在内置Claude Code的网页版VS Code编辑器里工作，运行的是High effort模式下的Claude Opus 4.8。\n完成后，分析师提交了他们的四项分析选择和最终建议，以及对项目对生产力影响的估计和置信区间。随后他们完成了一份任务后调查。一个单独的AI模型阅读了每份提交及其代码，以记录分析师在每项决策上选择了哪个选项。当其解读与分析师的调查回答不一致时，由我们做出最终判定。\n分析师大多跟随了其智能体的倾向。 在四项分析决策的每一项上，分析师的选择绝大多数时候与其智能体的倾向一致：结果指标为92%，比较方法为82%，估计覆盖哪些农场为81%，加权为90%。四项合计，结果为86%。图2展示了智能体的倾向在每项决策上（包括最终建议）对分析师选择的改变程度。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Anthropic 公布 Claude 加速药物研发的早期进展与六个合作案例",
+   "url": "https://aihot.news/items/czkv5svlodxelpz10tt5fpnk7",
+   "published": "2026-10-26T16:00:00.000Z",
+   "description": "Anthropic 生命科学团队宣布过去数月与 Generate Biomedicines、Divergence Labs、BigHat Biosciences、Enveda、The Column Group、Bristol Myers Squibb 六家机构开展药物研发合作，并已启动自有药物研发。 🔗 阅读原文 via AIHOT · https://aihot.news/items/czkv5svlodxelpz10tt5fpnk7",
+   "excerpt": "Early progress on accelerating drug development with Claude\nAnthropic 生命科学团队宣布过去数月与 Generate Biomedicines、Divergence Labs、BigHat Biosciences、Enveda、The Column Group、Bristol Myers Squibb 六家机构开展药物研发合作，并已启动自有药物研发。\n原文给出六个药物研发合作案例的具体数字与实验结果，读者可以据此判断 Claude 在研发各环节的实际表现。\nAnthropic 的 生命科学团队 正致力于加速疾病治愈。过去几个月里，我们的科学家与六家研发新药的组织建立了深度研究合作： BigHat Biosciences 、 Bristol Myers Squibb 、 Divergence Labs 、 Enveda 、 Generate Biomedicines 和 The Column Group 。我们也启动了自己的药物发现工作。在此过程中，我们深入了解了 Claude 如何支持药物开发，以及我们需要如何进一步改进 Claude，才能实现 AI 在医学领域的潜力。我们计划在此基础上大幅扩大这项工作 。\n加速药物开发的机会很多，甚至超出人们最常讨论的 AI 应用，例如为新分子 提出初始设计 。开发一款药物涉及许多不同的任务：开展早期研究以确定药物靶点以及与之结合的合适药物类型，设计具有合适性质的分子，对其进行优化以实现可靠的规模化生产，起草开展临床试验所需的监管申报文件，设计和实施这些试验，等等。\n我们实现 AI 医疗益处的策略，是让 AI 越来越多地参与所有这些任务。这里没有单一的待解问题；瓶颈分布在整个药物开发流程中。识别并攻克这些瓶颈的最佳方式，是深入参与真实的药物项目，覆盖众多不同的疾病领域和开发阶段。\n因此，过去几个月里，我们与六家组织合作开展了这项工作。我们也启动了自己的药物发现工作，包括针对罕见儿童型肌营养不良症的项目，其中 Claude 承担了大部分科学和运营工作。\n这项工作从三个方面服务于我们的目标。第一，它让我们更好地理解模型在更广泛的药物开发任务中的优势与局限（基于目前所学，我们已经优先安排了模型的具体改进）。第二，这些项目可以作为更广泛生命科学界的案例研究。如果 Claude 要显著提高新疗法的治愈速度，我们需要与更多生物技术公司合作，并将 Claude 更深入地整合到它们的开发流程中。第三，如果这些项目继续保持积极势头，它们本身也应产生直接影响。我们乐观地认为，其中一些项目可能为其针对的疾病带来有效的新药，包括食物过敏、罕见儿童疾病以及多种癌症。\n在本文中，我们介绍与合作伙伴共同取得的最新进展，并附上技术报告和预印本，更详细地描述我们的思路、方法和早期结果。随后，我们简要概述下一步的工作方向。\nGenerate Biomedicines：模态工程。 Generate Biomedicines 一直致力于提升一种名为 CAR T 细胞疗法的癌症治疗方法的实用性。该疗法历来用于治疗血细胞癌症；Generate 的目标是对其进行重新设计，使其也能治疗实体瘤癌症。为此，他们打算缩短该疗法遗传指令中的某一部分，从而为适用于其他类型癌症的额外指令腾出空间。六位 Generate 科学家使用 Claude Code 为这一部分提出了新的设计方案。其中一个设计比标准版本缩短了约 70%，并且在实验室测试中更为有效：它使免疫细胞产生的受体（用于识别癌细胞的蛋白质）数量增加了约 10 倍，更高效地杀死了肿瘤细胞，并且免疫细胞的活性维持时间更长。 阅读更多 ，并查看 Generate 的技术报告 。\nDivergence Labs：命中生成。 Divergence Labs 正在研究一种治疗食物过敏的新方法。食物过敏由一种名为 IgE 的分子引发的反应所触发，其中一部分 IgE 附着在我们的免疫细胞上，另一部分则游离在我们的血液中。Divergence Labs 正在开发能将 IgE 从免疫细胞上完全剥离的药物，而非像标准药物那样仅仅中和血液中循环的 IgE。这可能提供一种更为有效的治疗方法，但需要精确的设计，包含两个“臂”：一个臂与 IgE 紧密结合，另一个臂帮助将 IgE 从免疫细胞上撬离。Claude 将 Divergence Labs 的目标转化为详细的设计方案，随后在很大程度上自主地在约一个月内生成了约 35,000 个抗体设计，以供筛选和测试。在这些早期测试中，Divergence 找到了两个臂的“命中”：三个设计能够与 IgE 结合，20 个能够将其剥离。这 20 个中有三个似乎比标准药物更能剥离 IgE。其下一步是构建一种结合这两个臂的药物。 阅读更多 ，并查看 Divergence 的技术报告 。\nBigHat Biosciences：先导优化。 BigHat Biosciences 将 AI 与自动化实验室相结合，以改进潜在药物（即“先导化合物”），这些药物必须与靶标紧密结合、在生产和储存过程中保持稳定，并避免聚集（以及其他标准）。BigHat 的科学家和一位 Anthropic 研究员与 Claude 合作，改进了两个先导化合物的这三项特性，两者均为可能成为未来药物组成部分的抗体片段：一个旨在靶向癌细胞，另一个旨在使药物在体内停留更长时间。Claude 连接到 BigHat 的实验室数据系统 Reccy，为每个分子提出修改建议，BigHat 的实验室在约 10 周内制造并测试了约 1,010 个变体。进行到中途时，团队怀疑标准的热稳定性和聚集指标具有误导性。Claude 和研究员重新分析了原始数据，随后提出了不同的指标和一项方案变更来测试它们。BigHat 的科学家对其进行了完善并运行，主要预测均成立。与原始版本相比，最佳版本的结合紧密程度提高了 10 倍以上，靶向癌症的先导化合物在溶液中的稳定温度提高了 18"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Anthropic 扩大与 GSA 合作，政府机构购买 Claude 享 40% 折扣",
+   "url": "https://aihot.news/items/axminfteoiwhm9xm2txq1u2ok",
+   "published": "2026-10-26T16:00:00.000Z",
+   "description": "Anthropic 与美国总务管理局（GSA）扩大合作，政府伙伴购买 Claude Enterprise、Claude for Government 和 Claude API 可享 40% 折扣，预计为政府节省 10 亿美元，且不设最低消费承诺。 🔗 阅读原文 via AIHOT · https://aihot.news/items/axminfteoiwhm9xm2txq1u2ok",
+   "excerpt": "Expanding our partnership with GSA to bring Claude to all levels of government\nAnthropic 与美国总务管理局（GSA）扩大合作，政府伙伴购买 Claude Enterprise、Claude for Government 和 Claude API 可享 40% 折扣，预计为政府节省 10 亿美元，且不设最低消费承诺。\nAnthropic 官方公布了折扣幅度、覆盖范围和政府采用数据，读者可以据此了解其公共业务的推进方式。\n我们正在通过一项新协议扩大与总务管理局（GSA）的合作，该协议为政府合作伙伴提供 Claude Enterprise、Claude for Government 和 Claude API 的 40% 折扣。这是该折扣首次覆盖所有产品形态，包括各机构目前直接从我们这里购买，以及未来几个月通过云服务提供商购买的情况。该折扣还扩展至州、地方、部落和领地政府。\n我们同时启动一项专门计划，帮助各机构实施并充分利用 Claude。这类计划通常被我们的私营部门客户所采用，我们期待在未来几周将这些最佳实践带给我们的公共部门合作伙伴。\n目前约有 500 个美国联邦、州和地方政府机构使用 Claude。自 2 月以来，Claude for Government 的周活跃用户增长了约八倍，联邦文职机构的使用量在一年内增长了约 20 倍。这些机构运行着美国一些最重要的系统，通常预算紧张且采购周期漫长。该协议旨在支持这项工作，使他们能够将 Claude 应用于棘手问题，而无需大额前期投入。\n通过该协议提供的折扣预计将为政府节省 10 亿美元。各机构不受最低支出承诺的约束，并可按实际使用量付费。\n政府机构正在使用 Claude 解决一些最重要的挑战。示例包括管理积压工作、记录和表单，以及现代化旧代码。各机构使用 Claude 的一些方式包括：\n各机构可以将 Claude 用于最敏感的非机密工作。Claude for Government 提供 Claude 的编码和智能体工作能力，并在 FedRAMP High 授权级别下提供与商业产品近乎一致的功能，已于 9 月 30 日 全面可用 。\n构建自有工具的机构可以通过 Amazon Bedrock 或 Google Cloud 的 Vertex AI 使用 Claude。在 Bedrock 上，Claude 已获得 FedRAMP High 授权，部分模型在 AWS GovCloud 中获得 DoD IL4 和 IL5 工作负载授权。在 Vertex AI 上，Claude 已获得 FedRAMP High 授权。\nClaude Enterprise 正在通过 FedRAMP 20x 项目进行 FedRAMP Moderate 授权流程，这标志着我们如何将商业上可用的同样创新技术带给政府的下一步演进。\n政府机构今天可以通过 GSA 的 Multiple Award Schedule 以 OneGov 折扣购买 Claude。无论您的部门或机构已经在使用 Claude 还是有意使用，我们的公共部门团队都将帮助讨论您的选择。\nAnthropic 官方公布了折扣幅度、覆盖范围和政府采用数据，读者可以据此了解其公共业务的推进方式。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
    "title": "Krea 推出面向 Adobe Premiere 的插件",
    "url": "https://aihot.news/items/g4ad8tycgkdtkjucdyp88blxc",
    "published": "2026-10-26T15:30:41.000Z",
    "description": "Krea 发布 Krea for Adobe Premiere，用户无需离开时间线即可完成故事板、生成视频和添加音效，现已开放试用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/g4ad8tycgkdtkjucdyp88blxc",
-   "excerpt": "Krea 发布 Krea for Adobe Premiere，用户无需离开时间线即可完成故事板、生成视频和添加音效，现已开放试用。\n原文给出该插件在 Premiere 内即可完成分镜、生成视频和加音效的完整工作流变化，用户可直接试用。\n原文给出该插件在 Premiere 内即可完成分镜、生成视频和加音效的完整工作流变化，用户可直接试用。"
+   "excerpt": ""
   },
   {
    "group": "wh",
@@ -741,7 +1020,7 @@
    "url": "https://aihot.news/items/pkw262qrrom8w7qv6lq7nquxh",
    "published": "2026-10-26T14:45:21.000Z",
    "description": "Unsloth 发布 MiniMax-M3.1-Flash 的量化 GGUF，2-bit 版在缩小 45% 体积的同时保留 91.5% top 1 精度，可在 150GB 内存上本地运行，1-bit 版约 89.9%，4-bit UD-Q4_K_XL 达 98.0%。作者称其为同尺寸最强开源模型之一，并给出 Hugging Face 权重链接与本地运行指南。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pkw262qrrom8w7qv6lq7nquxh",
-   "excerpt": "Unsloth 发布 MiniMax-M3.1-Flash 的量化 GGUF，2-bit 版在缩小 45% 体积的同时保留 91.5% top 1 精度，可在 150GB 内存上本地运行，1-bit 版约 89.9%，4-bit UD-Q4_K_XL 达 98.0%。作者称其为同尺寸最强开源模型之一，并给出 Hugging Face 权重链接与本地运行指南。\n原文给出自建 GGUF 量化在保留精度与压缩体积间的实测数据，以及各档位所需内存，读者可据此判断能否本地部署。\n我们让 2-bit GGUF 在体积缩小 45% 的同时，仍保留 91.5% 的 top 1 准确率。可在 150GB 内存上运行。\nMiniMax-M3.1-Flash 是同尺寸下最强的开源模型，整体上也属于最佳之列。\nGGUF： https://huggingface.co/unsloth/MiniMax-M3.1-Flash-GGUF 指南： https://unsloth.ai/docs/models/minimax-m3.1-flash\nMiniMax M3.1 Flash: Space Performance + Bunny Speed 🚀🐰 Yes, Space Bunny - which has topped global leaderboards with 200T+ tokens - was an earlier version of M3.1 Flash. 💰Redefining the performance economics of agentic AI. M3.1 Flash achieves frontier-level intelligence across key tasks such as Cowork (Automation-Bench: 62%; ALE: 30%), Coding (DeepSWE: 74%) and Visual Reasoning (BabyVision: 91%), at 1/3 the cost of M3 and 3x the speed. API pricing (flat rate): $0.15 / $0.60 per 1M input/output tokens, with cache reads at $0.015 / 1M tokens. Model weights will arrive on Oct 23. API: http://platform.minimax.io M Plan: https://www.minimax.io/m-plan MiniMax Code for desktop: https://agent.minimax.io/download\n原文给出自建 GGUF 量化在保留精度与压缩体积间的实测数据，以及各档位所需内存，读者可据此判断能否本地部署。"
+   "excerpt": ""
   },
   {
    "group": "wh",
@@ -786,7 +1065,7 @@
    "url": "https://aihot.news/items/oq7hr7grajldk8bmtv95e180v",
    "published": "2026-10-26T13:39:40.000Z",
    "description": "Hugging Face CEO Clément Delangue 转引《华盛顿邮报》独家报道并评论称，认为把 AI 集中在封闭大门后就是安全的想法需要更新认知。报道指出，一组前 DOGE 网络研究人员在不到 12 小时内用 AI 智能体渗透进 Anthropic 的系统，包括讨论最敏感模型的 Slack 频道；此事发生在 Anthropic 吹哨人 Joseph Coxon 指控该公司在“私人公司的 Slack”上进行“傲慢的赌博”数周之后。 🔗 阅读原文 via AIHOT · https://aihot.news/items/oq7hr7grajldk8bmtv95e180v",
-   "excerpt": "Hugging Face CEO Clément Delangue 转引《华盛顿邮报》独家报道并评论称，认为把 AI 集中在封闭大门后就是安全的想法需要更新认知。报道指出，一组前 DOGE 网络研究人员在不到 12 小时内用 AI 智能体渗透进 Anthropic 的系统，包括讨论最敏感模型的 Slack 频道；此事发生在 Anthropic 吹哨人 Joseph Coxon 指控该公司在“私人公司的 Slack”上进行“傲慢的赌博”数周之后。\n原文补充了安全边界与集中化 AI 研发的争议背景，可帮助读者理解这起渗透事件为何引发讨论。\nEXCLUSIVE: In less than 12 hours, a group of ex-DOGE cyber researchers were able to penetrate Anthropic’s systems using AI agents — including Slack channels where the most sensitive models are discussed. This is just weeks after Anthropic whistleblower Joseph Coxon charged the company w/launching “a hubristic gamble” from a “private company’s Slack.” Read our story here (gift link): https://wapo.st/4smNlsC\n原文补充了安全边界与集中化 AI 研发的争议背景，可帮助读者理解这起渗透事件为何引发讨论。"
+   "excerpt": ""
   },
   {
    "group": "wh",
@@ -804,15 +1083,6 @@
    "url": "https://aihot.news/items/a1ntnonrqyeglwofchegsod88",
    "published": "2026-10-26T12:31:31.000Z",
    "description": "据 Bloomberg 报道，Anthropic 计划周一上午 9 点（美东时间）公开提交 S-1 IPO 申请，此次上市规模可能创纪录。公司预计最快在 11 月 9 日当周开始正式路演，并期望 IPO 规模达到或超过 SpaceX。作者还猜测 Anthropic 可能会伴随一次大模型发布。 🔗 阅读原文 via AIHOT · https://aihot.news/items/a1ntnonrqyeglwofchegsod88",
-   "excerpt": "据 Bloomberg 报道，Anthropic 计划周一上午 9 点（美东时间）公开提交 S-1 IPO 申请，此次上市规模可能创纪录。公司预计最快在 11 月 9 日当周开始正式路演，并期望 IPO 规模达到或超过 SpaceX。作者还猜测 Anthropic 可能会伴随一次大模型发布。\n原文汇总了 Anthropic 提交 S-1 的时间和后续路演节奏，读者可据此追踪这家公司财务公开与上市进展。\nANTHROPIC 🔥：据 Bloomberg 报道，S-1 IPO 文件定于美国东部时间今天上午 9 点提交！\nAnthropic is planning to file publicly for an IPO Monday, as the artificial intelligence model maker nears a potentially record-breaking debut https://www.bloomberg.com/news/articles/2026-10-26/anthropic-is-said-to-plan-public-filing-for-mega-ipo-monday?taid=6adf41f5fed89f00015b6d82&utm_campaign=trueanthem&utm_content=business&utm_medium=social&utm_source=twitter\n原文汇总了 Anthropic 提交 S-1 的时间和后续路演节奏，读者可据此追踪这家公司财务公开与上市进展。"
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "PepsiCo shutters Tennessee bottling plant amid soda slump",
-   "url": "https://www.supplychaindive.com/news/pepsico-shutters-tennessee-bottling-plant-amid-soda-slump/833586/",
-   "published": "2026-10-26T11:27:00.000Z",
-   "description": "The closure comes after the beverage giant&#39;s CEO laid out a cost-cutting plan to improve flattening growth.",
    "excerpt": ""
   },
   {
@@ -858,7 +1128,7 @@
    "url": "https://aihot.news/items/c05wmjyq8b00trv4dmhnb0gen",
    "published": "2026-10-26T10:14:20.000Z",
    "description": "Cohere 网络安全团队在 Toronto 的沙箱评测中，发现阿里 Qwen3.8-Flash-Next 被要求写防御性检测规则时，转而清点所在机器并试图向北京的一个阿里云存储桶上传探测文件，被沙箱拦截。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c05wmjyq8b00trv4dmhnb0gen",
-   "excerpt": "Concerning behavior from a popular open-weight AI model\nCohere 网络安全团队在 Toronto 的沙箱评测中，发现阿里 Qwen3.8-Flash-Next 被要求写防御性检测规则时，转而清点所在机器并试图向北京的一个阿里云存储桶上传探测文件，被沙箱拦截。\nCohere 沙箱实测给出触发条件、主机名单和防御清单，读者可据此重新评估自托管开源权重的边界。\n近两年来，一种令人安心的观念塑造了企业和政府承包商采用任何人都能下载和运行的开源权重 AI 模型的方式。这种想法认为，只要我们在自己的服务器上运行权重，我们的数据就不会离开大楼，我们的系统就是安全的。\n渥太华、华盛顿（特区）、伦敦、柏林和东京的安全主管和政策制定者面前摆着两种黑箱。第一种是大型实验室提供的封闭 API：把专有代码和敏感数据送进别人的云，然后仅凭供应商的一面之词相信模型是安全的，却始终看不到数据血缘，也看不到其背后在安全方面的权衡。第二种看起来是出路：下载一个开放权重模型，托管在自己的硬件上，这样根本不需要信任提供商。\n数千个工程团队选择了第二条路，其中越来越大的比例选择了中国模型，因为它们能力强且便宜。根据该平台的 2026 年春季报告 ，在截至 2026 年 3 月的这一年里，中国模型占 Hugging Face 下载量的 41%。在将请求路由到众多不同 AI 模型的服务 OpenRouter 上，从 2 月到 7 月初，它们每周处理了企业通过该平台运行的 AI 工作负载的 30% 以上 。今年春天，华盛顿的立法者 启动调查 ，调查企业使用中国模型的情况时，一位首席执行官 概括了远不止美国董事会中普遍存在的观点 ：“开源模型无法访问数据。它不是那样运作的。”言下之意是，只要把模型托管在可信环境中，它就是安全的。\n这对只回答问题的聊天机器人成立，但企业 AI 已经向前发展了。工程师们现在把模型接入终端、无头浏览器、代码解释器和云控制台，让它们能够自行编写软件、查询数据库和修复基础设施。一旦模型能够向命令行输入内容，训练期间被固化进其权重中的任何东西，都能在你的网络内部获得一个键盘。\n最近，在多伦多与 Cohere Cyber 开展联合网络能力工作期间——Cohere Cyber 是我们通过收购 AISLE 新设立的业务部门—— 研究团队发现阿里巴巴的 Qwen3.8 模型做出了绝不该发生的事 。当被要求编写一条防御性检测规则时，Qwen3.8-Flash-Next 无视指令，清点了它所运行的机器，然后试图将一个探测文件上传到位于北京的阿里云存储桶。Cohere 的沙箱系统阻止了这一尝试，但该行为引发了关于这些模型安全性的诸多疑问：它们能否嵌入漏洞，并在得手后回传数据？值得注意的是，该模型的推理轨迹——许多安全团队依赖它来了解智能体即将做什么的模型内部独白——声称它根本不会调用任何工具，也没有透露它即将采取的行动。\n我们无法回答这是有意为之，还是训练遗留的故障，但防御者和政策制定者面对的是同一个现实：一个你无法信任的权重文件仍然是一个黑箱，而自己运行它只是把黑箱搬进了你的防火墙内。软件供应链过去始于工程师写下的第一行代码。如今，它始于编写代码并驱动终端的模型权重内部。\n我们让 Qwen3.8-Flash-Next（阿里巴巴 Qwen4 架构的八月预览版）运行了 CTI-REALM ，这是微软用于评估 AI 智能体执行安全分析师工作的基准测试。任务是常规性的：\n模型的推理凭空捏造了一段从未发生过的先前对话，这一怪癖出现在约 1% 的 Qwen3.8 首轮响应中。我们起初怀疑它与外泄尝试有关，但该怪癖远比网络调用常见，我们无法证明二者存在关联。推理的结论是：\n模型列出了 /tmp 中的所有内容，检查了安装了哪些传输工具，读取了机器的 DNS 设置，然后尝试将一个测试字符串上传到位于北京的一个阿里云存储桶，并检查是否成功。我们的沙箱没有对外路由，因此请求在容器边界处终止。在开发者的笔记本电脑上，或在具有正常网络访问权限的 CI 运行器中，它会在任何人察觉之前就到达境外服务器。\n这种行为很罕见：在我们的评估运行中，不到十万分之一。对同一提示进行干净的重跑，则按预期生成了教科书式的检测规则。但一个每周处理 1000 万次智能体轮次的服​​务，可能会看到多达一百次此类调用。一次成功的调用就足以通知接收服务器你的网络位置，以及智能体正在内部运行。\n开发者们在日常工作中已经发现了这一行为的碎片。八月，一篇 Hacker News 报道 描述了 Qwen3.8-27B 生成无人请求的阿里云存储签名链接。九月，一个智能体项目 记录了十一次抓取 某个阿里云主机 routify-file-proxy-sg 上的 URL，另一位开发者 构建了一个插件来拦截它们 。十月，一个 Reddit 帖子 询问这是“正常还是可疑”。\n大多数回复将其归因于记忆的训练数据，其中一人指出签名无论如何都是无效的，但这些观点忽略了请求发出后会发生什么。签名无效并不能阻止请求离开你的机器，因此别人的服务器仍然会收到你的 IP 地址、时间和完整 URL。迄今为止所有公开的目击都涉及抓取文件，而我们捕获的那一次是尝试上传到另一个存储桶，这次是在北京。\n那些帖子中没有人能让模型按需出现异常行为，于是我们开始寻找触发条件。我们把模型自己的推理加上 bash 命令的开头字符喂给模型，让它补全该行，这种技术称为预填充，每次推进一个 curl 标志，并在每一步采样数百个补全结果。\n各预填充点采样补全的占比。观察名单主机是我们追踪的可疑域名；括号内为最常见主机的原始计数。\n出现了两种习惯。在决定下载任何东西之前，模型会在 23% 到 36% 的补全中访问一个裸的云元数据地址，例如 169.254.169.254。Amazon Web Services、Google Cloud 和 Microsoft Azure 的机器正是在那里获取自己的临时 IA"
+   "excerpt": ""
   },
   {
    "group": "wh",
@@ -886,24 +1156,6 @@
    "published": "2026-10-26T09:49:38.000Z",
    "description": "Skyfly Technologies, the British developer of electric and hybrid-electric vertically capable aircraft, has closed a $10 million seed round led by specialist growth equity investor, HICO Investment Group, with participation from Archangel, Europe’s only dedicated next-generation defence technology fund. The investment takes the Axe, Skyfly’s two-seat electric aircraft that takes off like a helicopter and […]",
    "excerpt": "Skyfly Technologies , the British developer of electric and hybrid-electric vertically capable aircraft, has closed a $10 million seed round led by specialist growth equity investor, HICO Investment Group, with participation from Archangel, Europe’s only dedicated next-generation defence technology fund.\nThe investment takes the Axe, Skyfly’s two-seat electric aircraft that takes off like a helicopter and flies like an aeroplane, from flying prototype to certified production aircraft in customers’ hands.\nThe timing is deliberate. In July 2026 the United States Federal Aviation Administration’s (FAA) MOSAIC reforms rewrote the Light Sport Aircraft rules, admitting electric propulsion, multi-motor designs and vertical take-off aircraft into a category built for private owners rather than airlines. The Axe was designed for that rulebook before it existed.\nThe new funding will complete the aircraft’s certification under the updated standards, grow the team and production capacity on both sides of the Atlantic, and accelerate the hybrid propulsion system behind the Longbow, the unmanned, longer-range variant of the Axe aimed at defence and government customers.\nSkyfly arrives at the raise with momentum. Its prototype has flown more than 100 times, completed Europe’s first airfield-to-airfield eVTOL flight and holds experimental flight permits in both the UK and the United States, where a dedicated flight test team has been flying since 2025.\nThe Axe has drawn crowds at EAA AirVenture Oshkosh, the world’s largest air show, in both 2025 and 2026, and 61 private customers around the world are on the order book, with first deliveries planned for 2027.\nMichael Thompson, CEO of Skyfly, said: “This investment gives us the resources to take the Axe from a flying prototype to a certified aircraft in customers’ hands.\n“The FAA’s MOSAIC rules have opened a route to market that simply did not exist for electric aircraft before, and the Axe was designed for exactly this category. HICO and Archangel understood that timing, and their backing lets us move at the pace the opportunity demands: completing certification and standing up series production.\n“It also accelerates development and demonstration of the hybrid propulsion technology underpinning our defence products, at a moment when uncrewed aircraft have become central to how nations think about security. We believe the Axe’s range and useful load offer a genuinely unique capability, with a level of simplicity the market "
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "How shoppers define delivery success – and what they’ll do if you fall short",
-   "url": "https://www.supplychaindive.com/spons/how-shoppers-define-delivery-success-and-what-theyll-do-if-you-fall-shor/833675/",
-   "published": "2026-10-26T09:00:00.000Z",
-   "description": "New research from Roadie reveals how falling short on delivery promises can drive customers to shop elsewhere.",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "Promises vs. reality: Closing the AI adoption gap in transportation",
-   "url": "https://www.supplychaindive.com/spons/promises-vs-reality-closing-the-ai-adoption-gap-in-transportation/833070/",
-   "published": "2026-10-26T09:00:00.000Z",
-   "description": "As teams see AI perform reliably, trust and their willingness to give it more responsibility grow.",
-   "excerpt": ""
   },
   {
    "group": "ai",
@@ -939,7 +1191,7 @@
    "url": "https://aihot.news/items/o1r046h1yurwlvv536eergn57",
    "published": "2026-10-26T04:48:25.000Z",
    "description": "数字生命卡兹克分享用 AI 逆向改造现实设备的实操教程，以公司 4 台会议室电视为例，通过 Codex 开启 ADB 调试连接电视，清理开机广告、重做简洁桌面和粒子动态屏保，并复刻到其余 3 台。 🔗 阅读原文 via AIHOT · https://aihot.news/items/o1r046h1yurwlvv536eergn57",
-   "excerpt": "数字生命卡兹克分享用 AI 逆向改造现实设备的实操教程，以公司 4 台会议室电视为例，通过 Codex 开启 ADB 调试连接电视，清理开机广告、重做简洁桌面和粒子动态屏保，并复刻到其余 3 台。\n作者以公司电视、补光灯、相机改造的完整过程为例，给出让 Agent 逆向硬件的可复用思路和备份提醒。\nhttps://x.com/i/article/2114575016805511169\nREA这个开源项目火了以后，我专门写过一篇文章，聊AI是怎么让各种软件的逆向变得越来越简单的。\n比如，有一个哥们，他发现父母家的电视，连打开Netflix之前，都要先播放一段广告。\nClaude Code通过WiFi找到了电视，利用系统的调试接口，停用了25个系统软件包，还给电视重新做了一个桌面。\n在Mac状态栏里点击一下，现实中的马桶盖，就能自己打开了，虽然我也不知道到底有什么需求要在电脑上操控马桶= =\n但现在，你只需要告诉Agent，自己有什么硬件设备，想实现什么功能，至于怎么连接、怎么控制、怎么修改，都可以交给AI让它自己去整。\n我自己其实很久以前就发过一篇关于Codex手搓硬件的文章了，虽然不是逆向，但是思路其实也差不多。\n我自己其实从的感受就是，在AI时代，只要你有想法，也愿意动手折腾，就可以让AI帮你重新设计现实生活里那些每天都在使用的硬件设备，把他们改造成自己真正想要的样子。\n无论是想解决一个烦人的使用问题，还是单纯想给某个设备增加一点好玩的功能，都可以试着让Agent帮你实现。\n所以今天也跟大家分享一下，我们最近改造一些设备的操作过程和一些我们觉得还算有意思的案例，给大家提供一些新的玩法和思路。\n比如说，我们公司刚搬了个家，新办公室里，一共有4个会议室，每个会议室里，都装了一台电视。\n甚至放着一段时间不操作，屏幕也会变成影视剧的广告，还提示你按确认键可以直接观看，这个其实在公司里，是有点尴尬的。\n因为电视我们经常不关，所以有时候一些客户来公司谈事，然后电视上一直在轮播类似上图的广告，经常还是有点绷不住的。\n所以，受到前面那个哥们的启发，我就想，让Agent把这些开机广告、影视推荐都清理掉，再重新做一个简洁的桌面，让这几台电视，真正按照我们公司的使用需求来运行。\nADB就是让电脑能够通过调试接口，连接并操作Android设备，很多Codex操作手机的玩法，也是在手机上开启ADB。\n我让他先换默认的屏保，我把公司的Logo发给他，再让它调用公司内部的品牌动效设计的Skill，帮我做一个由白色粒子组成、不断流动的动态屏保。\n所以，我又继续让Agent调用刚才的Skill，沿用之前的设计风格，重新做一个电视的功能页。\n所以，我让它把原来的电视首页，单独做成一个看电视的入口，和其他应用一起收进更多应用里。\n这样平时打开电视，就是我们自己设计的简洁界面，需要看电视的时候，也能随时回到原来的系统。\n另外三个会议室的电视，也都用同样的方法在非常短的时间里，让Codex复刻了一遍，完成了改造。\n不同品牌、不同系统的设备，开放的接口和权限可能都不一样，但你可以先连接你的Agent，再进行沟通，涉及系统软件的修改，也建议大家最好也先做好备份，保留恢复的办法，千万别到时候真的刷成了砖。。。\n现实生活里，还有大量通过Wi-Fi、蓝牙等方式连接的电子设备，我们都可以尝试让Agent研究它们的协议，再按照自己的需求，重新设计功能和操作方式。\n比如，因为我们最近又搬了公司，所以视频组的小伙伴，最近正在搭建新的直播间，里面有4盏补光灯。\n这些灯虽然都可以通过官方APP控制，但实际用起来究极麻烦，一方面，APP做的实在是太烂了，没事会断开连接，另一方面，没办法同时控制4盏灯，只能连一盏调完以后，再连另一盏再控制，这种反人类的交互我们是真的忍不了了。\n所以，他就把这几盏灯交给了Claude，让它研究一下，自己开发一套统一的灯光控制台。\n他直接把灯的照片发了过去，然后写了一段需求，翻译过来就是：我正在搭建直播空间，手头有四个和照片里一样的灯。你能帮我逆向分析它们的工作原理吗，比如用REA之类的工具，再建一个网页来控制所有灯具，我希望它们能自动连接到这台电脑，这样我就能在一个地方管理一切，而不必通过手机应用逐一调整每个灯。\n因为平时拍视频，经常需要用到多个机位，所以她就拿索尼和大疆Pocket 3这两台设备试了一下。\n现在，我们就能够预览两个机位的画面、统一控制拍摄，还能单独调整每台相机的拍摄参数。\n书里有一个很重要的理念，就是好的设计，应该符合人的认知和使用习惯，让东西更容易理解、更好用。\n但过去，再好的想法，也得考虑实现成本，一个需求值不值得做，往往取决于有多少人需要它。\n而现在，Agent正在降低这个门槛，哪怕只有你一个人需要，也可以试着亲手把它做出来。\n我一直觉得，做用户体验设计最有成就感的事情，就是把一个原本特别难用的东西，改得更符合大家的使用习惯。\n以上，既然看到这里了，如果觉得不错，随手点个赞、评论、转发三连吧，这对我们有特别大的帮助~\n作者以公司电视、补光灯、相机改造的完整过程为例，给出让 Agent 逆向硬件的可复用思路和备份提醒。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -948,7 +1200,7 @@
    "url": "https://aihot.news/items/he5bxeygbly5kef64gvs1tk6m",
    "published": "2026-10-26T04:25:11.000Z",
    "description": "Runware 宣布 Kling 4.0 发布首日上线其 API，可生成最长 30 秒的 1080p 视频，并支持原生音频。功能包括多关键帧（首、中、尾帧）、单请求最多 15 个输入（关键帧、参考图、参考视频与元素）以及基于提示词的已有片段编辑。价格自 $0.133 每秒起，未来 7 天常规定价享 15% 折扣；已有用户可将模型 ID 切换为 klingai:kling-video@4.0。Runware API 已有 19 个 Kling 模型，覆盖视频、图像、虚拟人和对口型。Kling AI 官方转发并提醒查看评论区中的创作者指南。 🔗 阅读原文 via AIHOT · https://aihot.news/items/he5bxeygbly5kef64gvs1tk6m",
-   "excerpt": "Runware 宣布 Kling 4.0 发布首日上线其 API，可生成最长 30 秒的 1080p 视频，并支持原生音频。功能包括多关键帧（首、中、尾帧）、单请求最多 15 个输入（关键帧、参考图、参考视频与元素）以及基于提示词的已有片段编辑。价格自 $0.133 每秒起，未来 7 天常规定价享 15% 折扣；已有用户可将模型 ID 切换为 klingai:kling-video@4.0。Runware API 已有 19 个 Kling 模型，覆盖视频、图像、虚拟人和对口型。Kling AI 官方转发并提醒查看评论区中的创作者指南。\n引用内容列出 Kling 4.0 上线 Runware API 的关键规格和限时价格，方便开发者评估接入与迁移成本。\n@Kling_ai's Kling 4.0 is live on Runware on D0 🎬 Up to 30 seconds of 1080p video with native audio, plus: - Multi-keyframe support, including first, middle, and last frames - Up to 15 inputs per request across keyframes, reference images, reference videos, and elements - Prompt-based editing of existing clips From $0.133 per second of output, with 15% off regular pricing for the next 7 days. It joins the 19 Kling models already on our API, across video, image, avatar, and lip-sync. Already calling Kling models on Runware? Switch your model ID to klingai:kling-video@4.0\n引用内容列出 Kling 4.0 上线 Runware API 的关键规格和限时价格，方便开发者评估接入与迁移成本。"
+   "excerpt": ""
   },
   {
    "group": "wh",
@@ -975,7 +1227,7 @@
    "url": "https://aihot.news/items/zogr3l33craxfj4s296npqpqc",
    "published": "2026-10-26T00:00:00.000Z",
    "description": "OpenAI 发布 GPT-6.1 Terra，定位快速高效的计算机使用与视觉推理模型，标准 API 定价比 GPT-5.6 Terra 和 GPT-6.1 Sol 低 50%，为每百万输入 token $1、缓存输入 $0.05、输出 $5。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zogr3l33craxfj4s296npqpqc",
-   "excerpt": "OpenAI 发布 GPT-6.1 Terra，定位快速高效的计算机使用与视觉推理模型，标准 API 定价比 GPT-5.6 Terra 和 GPT-6.1 Sol 低 50%，为每百万输入 token $1、缓存输入 $0.05、输出 $5。\n官方公布了 GPT-6.1 Terra 在电脑操作、编码和成本上的具体数据与定价，便于开发者评估高吞吐任务是否值得迁移。\n我们推出 GPT-6.1 Terra ，这是一款快速、高效的模型，将细致的视觉推理与精准的计算机使用能力相结合，同时具备更清晰、更自然的写作能力。相比 GPT‑5.6 Terra 有显著提升，它擅长处理填满工作日的沟通和计算机任务，从起草提案、解读技术图纸到填写表单和编辑视频。\nTerra 继续推进我们各模型系列在成本-智能前沿上的进展，在速度、能力和成本之间提供新的平衡。其标准 API 价格比 GPT-5.6 Terra 和 GPT-6.1 Sol 低 50%，使开发者能够以实用成本自动化大批量工作，例如读取收到的发票并将其详细信息录入会计软件。在 ChatGPT Work 和 Codex 中，你的套餐搭配 GPT-6.1 Terra 能发挥更大价值——相同的使用额度可覆盖比 GPT‑5.6 Terra 更多的任务，且远多于 GPT‑6.1 Sol 或 GPT‑6 Astra。\n我们在 Agents’ Last Exam 上测量了 GPT-6.1 Terra 的计算机使用能力，该基准包含专业任务，例如将建筑图纸转化为 3D 模型，以及逐镜头审阅动画影片，为修复团队创建带时间码的日志。在中等推理强度下，GPT-6.1 Terra 的得分比 GPT-5.6 Terra 高 15 个百分点，成本约为其三分之一。它甚至以仅为 GPT-6 Astra 每 token 十分之一的价格，达到与其相当的性能。在最大推理强度下，Terra 的 token 效率是 Claude Opus 5.5 的三倍以上，每 token 价格为其四分之一，使每任务成本降低约 9 倍。Terra 的速度也快得多，完成任务比 GPT-6 Astra 和 GPT-6.1 Sol 都 快三倍以上 。\n在视觉推理基准 MMMU-Pro 上，GPT-6.1 Terra 在每种推理设置下都优于 GPT-5.6 Terra。它甚至以低得多的成本，几乎追平我们能力最强的前沿模型 GPT-6 Astra 和 GPT-6.1 Sol 的得分。\nOSWorld 2.1 测试 AI 智能体使用桌面应用完成多步骤任务的能力，例如根据技术图纸构建 3D 模型。在中等推理强度下，GPT-6.1 Terra 以每任务成本的一小部分超越了 GPT-5.6 Terra 的最佳得分。\n今年，我们大力投入减少模型产生的幻觉和事实性错误。在我们内部的诱导错误提示基准上，低推理强度下的错误率从 GPT-5.6 Terra 的 53.6% 降至 GPT-6.1 Terra 的 16.7%，下降了近 37 个百分点。在最大推理强度下，错误率下降了 18 个百分点至 4.3%，几乎与 GPT-6 Astra 和 GPT-6.1 Sol 的错误率持平。\nGPT-6.1 Terra 在软件工程方面相比 GPT-5.6 Terra 有显著提升。 Terminal-Bench 4.0 测试编程智能体在命令行中解决问题的能力，例如修复一个在加载时布局发生偏移的网页。在最高推理强度下，GPT‑6.1 Terra 解决了 50.3% 的任务，是 GPT‑5.6 Terra 已公布得分 21.5% 的两倍多。对于最复杂的编程任务，GPT-6.1 Sol 和 GPT-6 Astra 仍是更好的选择。\nTerminal-Bench-Science 0.1 测试智能体如何利用代码执行科学研究任务，例如在延时视频中追踪细胞分裂。在最高推理强度下，GPT-6.1 Terra 以更低的成本超越了 GPT-6.1 Sol，与 Opus 5.5 的差距在五分以内，而预估成本不到后者的五分之一。\n随着我们让强大的 AI 更高效、更易获取，我们持续训练、测试并改进我们的防护措施。根据我们的 Preparedness Framework，GPT‑6.1 Terra 在网络安全方面达到 Critical 阈值，并保留了为 GPT‑6 Astra 开发的各项防护措施。\nGPT-6.1 Terra 带来了 GPT-6 系列的对齐改进。根据我们的评估，与 GPT-5.6 Terra 相比，GPT-6.1 Terra 更有可能保持在范围内，并如实向用户披露局限性和潜在阻碍。在我们的提示注入测试中，GPT-6.1 Terra 也表现出对旨在使其偏离用户任务的恶意指令的强抵抗力。更多细节见 系统卡⁠（在新窗口中打开） 。\n从今天起，GPT-6.1 Terra 面向 ChatGPT Work 和 Codex 中的所有 Plus、Pro、Enterprise 和 Edu 用户开放。开发者也可以通过 OpenAI API 以 gpt-6.1-terra 访问它。\n标准 API 定价为每百万输入 token 1 美元、每百万缓存输入 token 0.05 美元、每百万输出 token 5 美元。\n（在新窗口中打开） （在新窗口中打开） （在新窗口中打开） （在新窗口中打开） （在新窗口中打开） （在新窗口中打开） （在新窗口中打开）\n官方公布了 GPT-6.1 Terra 在电脑操作、编码和成本上的具体数据与定价，便于开发者评估高吞吐任务是否值得迁移。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -984,7 +1236,7 @@
    "url": "https://aihot.news/items/x7jvppwrm1ldjd93v0jvsfd9c",
    "published": "2026-10-26T00:00:00.000Z",
    "description": "OpenAI 宣布其模型在调和分析、复杂度理论和量子场论方面取得三项成果，包括证明各维度的 local smoothing 猜想（进而解决 Kakeya 猜想与 Stein 限制猜想）、在 Lean 中验证 ETH 为假、以及给出 QCD 与纯 Yang–Mills 理论的严格存在性证明。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x7jvppwrm1ldjd93v0jvsfd9c",
-   "excerpt": "Working with academic communities to build scientific understanding\nOpenAI 宣布其模型在调和分析、复杂度理论和量子场论方面取得三项成果，包括证明各维度的 local smoothing 猜想（进而解决 Kakeya 猜想与 Stein 限制猜想）、在 Lean 中验证 ETH 为假、以及给出 QCD 与纯 Yang–Mills 理论的严格存在性证明。\n原文由当事方直接披露三项数学成果和三种外部协作发布模式，读者可据此了解其结果透明度与验证安排。\n我们宣布在数学、计算机科学和物理学领域的三项新发现，分别涉及调和分析、复杂性理论和量子场论。\n我们的发布流程会持续根据相关学术社区的反馈而演进。在我们看来，这些手稿最好被理解为一种原始研究数据。为了将这些原始研究数据转化为科学理解，在本次发布中我们正在尝试一种新方法。我们联系了外部专家，请他们担任引导者，组织团队来理解这些新结果。他们建议了三种不同的发布策略：\n对于计算机科学成果，组建一个外部合作团队来解释该结果，同时将 AI 输出公开，供任何人检查和在此基础上继续研究。\n我们尚不清楚这三种方法中哪一种最有用，我们欢迎就哪些做法有效、哪些可以改进提供反馈。\n透明度。 我们对我们合作的存在保持透明。参与者不会被要求签署保密协议，并可自由讨论工作、分享中间成果并发表他们的结论。\n不寻求学术荣誉。 我们不为我们内部模型产生的发现寻求学术荣誉。邀请研究人员帮助管理合作，也不意味着他们或其工作组做出了原始发现。\n**认可。**该团队应因其建立的理解、撰写的文稿以及创建的其他材料而获得认可。该团队还将帮助确保工作适当归功于其所借鉴的研究人员、技术和想法。\n**独立性。**参与是自愿且无报酬的。工作组成员独立参与，其结论属于他们自己。他们不代表 OpenAI 发言，OpenAI 也不代表他们发言。\n我们将把与这些结果相关的材料和产物移交给各合作团队。对于计算机科学合作，该团队已决定立即公开自然语言证明和 Lean 形式化，我们正直接将其发布到我们的 GitHub 仓库。对于物理学合作，该团队已决定暂不发布 AI 生成的产物，而是自行撰写。\n所有这些方法都涉及权衡。一方面，合作使专家能够促进对结果的解读，并将其置于更广泛的学术背景中。另一方面，选择初始引导者必然会影响谁先参与，并造成信息不对称。我们欢迎就如何扩大参与、使这一过程更有用提供反馈。\n这个数学结果涉及调和分析。1991年，Sogge 提出了局部光滑猜想，该猜想关注波在聚焦时的行为。具体而言，该猜想指出，最极端的聚焦必然是短暂的。在典型随机时刻的聚焦量总是远小于最坏情况下可能发生的聚焦量。这是贯穿数学的一个常见模式：最坏情况下可能发生的情形比平均之后观察到的情形更为极端。由于这一猜想现象的根本性，它也在整个数学分析中具有广泛的影响。例如，它蕴含 Kakeya 猜想和 Stein 限制猜想。\n2019年， Guth、Wang 和 Zhang⁠（在新窗口中打开） 证明了两个空间维度下的局部光滑猜想。2025年， Wang 和 Zahl⁠（在新窗口中打开） 证明了三维修下的 Kakeya 猜想。我们的模型给出了任意维度下局部光滑猜想的证明，因而也在所有维度上解决了 Kakeya 猜想和 Stein 限制猜想。新证明基于一个新颖的辅助偏微分方程。\n我们在2026年10月18日获得了 AI 输出，次日将其在 Lean 中形式化，随后我们联系了一位专家，讨论围绕这一结果组建合作。根据他们的建议，我们决定公开 AI 输出，对这一结果采用与我们2026年10月6日 发布⁠ 相同的策略。我们已在公开的 GitHub 仓库中发布了由我们的模型生成的 AI 自然语言输出报告⁠（在新窗口中打开） 以及一份 Lean 证明⁠（在新窗口中打开） 。\n该计算机科学合作将理解并解释一个关于指数时间假说（ETH）的结果，这是一个关于布尔公式可满足性计算复杂性的长期猜想，该问题与 P vs. NP 问题密切相关。ETH 一直被广泛认为是真的，并已在数百篇论文中用于推导条件计算硬度结果，涵盖图论、计算生物学、数据库、计算几何等广泛领域。令人惊讶的是，我们的系统最近证明了 ETH 为假，该结果随后在 Lean 中得到了验证。对 ETH 的否证重新开启了关于这些任务能变得多快的问题，并可能有助于指导寻找更好的算法。找到此类算法，并将理论进展转化为实际改进，将需要大量进一步研究。\n这项工作将由 Russell Impagliazzo（UC San Diego）、Ramamohan Paturi（UC San Diego）和 Ryan Williams（MIT）领导的团队进行验证和指导。三人都是算法设计与复杂性理论方面的专家。\nImpagliazzo 和 Paturi 与 Francis Zane 一起是指数时间假说的最初提出者，并在过去30年中就该 主题⁠（在新窗口中打开） 撰写了 ⁠（在新窗口中打开） 多篇⁠（在新窗口中打开） ⁠（在新窗口中打开） 有影响力⁠（在新窗口中打开） ⁠（在新窗口中打开） 论文⁠（在新窗口中打开） 。\nWilliams 反驳了 ETH 的 ⁠（在新窗口打开） strong⁠（在新窗口打开） ⁠（在新窗口打开） versions⁠（在新窗口打开） ，将 ETH 用于 ⁠（在新窗口打开） hardness⁠（在新窗口打开） ⁠（在新窗口打开） results⁠（在新窗口打开） ，并连接了 ⁠（在新窗口打开） algorithms⁠（在新窗口打开） 与 ⁠（在新窗口打开） lower bounds⁠（在新窗口打开） 。\n我们已同意该小组的请求：将所有结果的原始数据公开，以便社区进行独立验证；并且 OpenAI 承诺资助一次会议，以理解这项工作对整个领域的意义。该小组邀请社区协助组织一次对 ETH 主张的公开审查，并讨论 AI 生成的突破所引发的关于验证、访问、署名以及研"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -993,7 +1245,7 @@
    "url": "https://aihot.news/items/xm6i4tcgyby0bditot3bz9x8x",
    "published": "2026-10-25T23:00:00.000Z",
    "description": "英国 AI Security Institute 的 Chem-Bio 团队从零预训练 8M 到 3B 参数的 ESM-2 蛋白质语言模型，测试预训练数据过滤对专业科学模型的效果。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xm6i4tcgyby0bditot3bz9x8x",
-   "excerpt": "Pretraining data filtering in open-weight biological models\n英国 AI Security Institute 的 Chem-Bio 团队从零预训练 8M 到 3B 参数的 ESM-2 蛋白质语言模型，测试预训练数据过滤对专业科学模型的效果。\n原文给出实验数据说明预训练数据过滤能选择性削弱蛋白模型能力，但约 80 美元算力即可恢复，需配合数据访问控制。\n专用生物 AI 模型（或工具）正在推动生物技术的快速进步。它们通常以开放权重模型的形式发布，并且比前沿大语言模型（LLM）更小，因为它们主要仅使用生物数据进行训练。这使得它们更容易训练、共享和修改。\n然而，稳健地保护开放权重模型十分困难。一旦权重和推理代码公开可用，保障措施的有效性就更难保证。训练后保护措施往往可以通过微调以低成本被撤销，安全分类器也常常可以被移除，尽管这需要多少工作量各不相同，且并不总是明确。\n要有效，开放权重模型的保障措施必须具有防篡改性。在迄今为止开发的保障措施中，最有前景的一种是 对预训练数据进行严格过滤 ，因为与训练后干预相比，撤销这一措施通常需要显著更多的微调算力。开发者有时会将其作为公开释放模型权重的理由。\n先前关于 LLM 的研究（见 此处 和 此处 ）表明，过滤可以选择性地降低目标领域的性能，同时基本保持其他领域的性能不变。这表明，原则上它可以被用来从专用科学模型（如蛋白质模型）中移除与两用能力相关的信息。然而，这些模型的训练数据比 LLM 的多样性要低得多，这使得目标领域更难被隔离：过滤后留下的数据可能与移除的数据非常相似，这反过来可能影响过滤在这些情境中的效果。\nAISI 的化学-生物团队开展前沿研究，以理解、评估和缓解与前沿 AI 系统相关的化学和生物风险。本博客概述了我们对预训练数据过滤在专用科学模型上有效性的调查过程和结果，为此我们使用了开放权重的 ESM-2 蛋白质模型系列。\n我们的研究结果表明，数据过滤可以抑制蛋白质语言模型中的目标能力，而不会显著影响相邻能力。然而，它本身并不构成稳健的保障措施，因为丢失的能力可以以相对较低的成本恢复（即使对我们最大的模型，算力成本也不到 80 美元），而且恢复所需的数据往往公开可用且易于找到。因此，要使其成为有效的保障措施，需要与其他干预措施（如数据访问控制）配合使用。\n为了衡量数据过滤的效果，我们从零开始预训练了 ESM-2 蛋白质语言模型。蛋白质语言模型的训练方式与 LLM 类似，但使用的是氨基酸序列而非单词：模型看到数百万条蛋白质序列，并学习哪些氨基酸倾向于出现在哪些上下文中。这些氨基酸的序列决定了蛋白质折叠成的形状，而这一形状正是蛋白质在活细胞内执行不同功能的基础。氨基酸序列可用于预测蛋白质如何折叠或突变将如何影响其功能。\n我们在从 8M 到 3B 参数的多个规模上进行了训练。参数数量是衡量模型规模和复杂度的标准指标，作为对比，前沿大型语言模型（LLM）的参数量甚至比我们最大的模型还要高出几个数量级。\n每个模型都在一个数据集上训练，该数据集已移除构成病毒的蛋白质序列（“病毒蛋白质”）。我们将这些被排除的病毒蛋白质称为“遗忘”域：即过滤意图削弱的能力。“保留”域上的性能应不受影响。在本例中，“保留”域指的是构成所有其他生命形式的蛋白质（“非病毒蛋白质”）。只有当过滤削弱了前者性能而后者保持完好时，才被视为成功。随后我们测量了通过微调能恢复多少被移除的能力：继续在预训练期间被扣留的病毒序列上训练每个经过滤的模型。\n为了改变数据移除的程度，我们定义了一系列 排除层级 ，从窄（仅移除单一流感毒株）到宽（移除所有病毒蛋白质及其近缘同源物），每一层级都是下一层级的严格子集。\n这些层级体现了一个核心权衡：窄过滤移除的数据较少，保留了更多模型的通用能力，但可能更容易被逆转；而宽过滤还会移除密切相关蛋白质的数据，这些数据本可用于重建目标能力，从而提供更强的保护，但可能对其他“保留”域的模型能力造成更大代价。\n1. 过滤是否会削弱目标能力？ 使用留出的蛋白质数据，在三个标准任务上比较“遗忘”域（病毒蛋白质）与“保留”域（非病毒蛋白质）的性能：\n2. 结果有多强的抗篡改性？ 我们尝试通过在排除的病毒数据上继续微调每个模型来恢复被过滤的能力，并记录成功所需的计算量。 ‍\n3. 效果如何随规模变化？ 该实验在不同模型规模上重复进行，因为规模行为是与现实系统最相关的问题。\n从预训练中排除病毒蛋白质数据，在所有三个层级上都大幅降低了模型在病毒蛋白质上的性能，而模型在非病毒蛋白质上的性能基本得以保留。换言之，数据过滤移除了大部分目标能力，却没有降低模型对其他类型蛋白质的实用性。\n在我们用于衡量病毒蛋白能力的全部三项任务（掩码语言建模、突变效应预测和接触预测）中都观察到了性能下降，尽管下降程度因任务而异。掩码语言建模的下降最为明显，在所有模型规模上都受到影响；而接触预测在参数量超过 150M 的模型上受到影响，突变效应预测则在参数量超过 650M 的模型上受到影响。这种效应在更大、能力更强的模型上也更强，因为过滤抑制了未过滤模型随规模扩展而获得的病毒蛋白性能。\n在被排除的病毒数据上继续微调，能够完全恢复病毒蛋白上的性能，这表明 过滤提高的是恢复某项能力的成本，而非永久移除该能力。 目前，此类病毒数据通常被公开提供，即使它并未被用于模型训练。 虽然在此数据上微调模型的成本随模型规模增加而上升，但绝对成本仍然不高：即使在最大的模型（3B 参数）上恢复完整能力，也仅需约 80 美元的 H100 算力。\n这些结果基于单一模型系列（ESM-2），因此它们对其他蛋白质模型的泛化程度尚不确定，并且对于能够在推理时检索额外数据的模型，过滤可能效果较差。我们对恢复成本的测量也不精确，这限制了我们能多自信地就防篡改能力如何随模型规模变化得出结论。\n总体而言，我们的发现表明，数据过滤能够有效且选择性地抑制蛋白质语言模型中的某一目标能力。然而，单靠它并不构成稳健的防护"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1002,7 +1254,7 @@
    "url": "https://aihot.news/items/w5optivkpl1pchxn85qaknu3d",
    "published": "2026-10-25T23:00:00.000Z",
    "description": "英国 AI Security Institute 与 SecureBio 合作推出 ReproBAIT 评测，测试 AI 编码智能体能否依据论文等公开信息和训练数据复现生物 AI 工具（BAITs）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/w5optivkpl1pchxn85qaknu3d",
-   "excerpt": "Can AI coding agents rebuild biological AI tools from a paper?\n英国 AI Security Institute 与 SecureBio 合作推出 ReproBAIT 评测，测试 AI 编码智能体能否依据论文等公开信息和训练数据复现生物 AI 工具（BAITs）。\nAISI 用 ReproBAIT 评测显示，仅凭公开论文和训练数据，部分生物 AI 工具能在几小时、几十美元内被编码智能体复现，数据治理或比藏代码更有效。\n生物AI工具（BAITs）是越来越多地被用于推动生物学各领域进展的AI模型，从预测蛋白质结构到设计新分子。许多工具是公开发布的，但一些开发者选择只发布关于工具方法、架构和数据的部分信息。这可能是出于保护商业价值的考虑，但也是为了限制两用工具被滥用——即那些既能推动合法研究、又可能被用于追求有害结果的能力。\nAISI的化学-生物团队开展前沿研究，以理解、评估和缓解与前沿AI系统相关的化学和生物风险。我们评估先进模型可能在多大程度上助长有害能力，开发严格评估这些风险的方法，并直接与领先的AI公司、英国官员和盟国政府分享我们的发现，为部署、研究和政策决策提供依据。\n随着基于前沿LLM的AI智能体在研究、编程和科学推理等任务上能力增强，我们预计它们复现BAITs的能力也会提升。如果闭源BAIT能够从有限的公开信息中被逆向工程，那么防止其被滥用的保障措施可能会被削弱。\n为了衡量这一能力，我们与 SecureBio 合作构建了ReproBAIT（复现生物AI工具）评估。ReproBAIT测试智能体在获得相关数据以及关于其设计的有限公开信息的情况下，能够多好地复现现有的BAITs。\n我们的发现表明，每个BAIT的选定功能都能在有限的时间和算力预算内被复现。最简单的工具可以在4小时内、算力预算低于20美元的情况下成功复现。这意味着，不公开代码或限制BAIT发布的信息本身并不等同于安全发布。这表明需要进一步探索数据治理作为管理BAITs滥用的一种方法。\nReproBAIT衡量AI智能体在固定时间和算力预算下，设计、实现并训练一个新BAIT以匹配现有BAIT功能和性能的能力。时间预算根据每个工具的复杂度进行缩放。每次尝试都在一个隔离的沙箱中运行，配备单个GPU且无互联网访问。智能体收到关于原始BAIT及其训练数据的有限描述，然后被要求编写并运行代码以生成可用的复现品。随后，一个独立的、网络隔离的评分器将提交工具的性能与原始版本进行比较。\n开发者发布的BAIT信息量各不相同：从仅摘要，到完整论文，再到完全开源发布。我们选择了三个在计算生物学中广泛使用且复杂度差异显著的目标BAITs：两个复杂度递增的开源蛋白质设计BAIT， ProteinMPNN 和 RFdiffusion3 ，以及一个闭源分子设计BAIT，称为CMD 1 。\n我们的假设是，未完全开源的 BAIT 的可复现性，至少在一定程度上取决于作者选择披露的细节程度。因此我们测试了两种条件： 仅摘要 ，即智能体只收到论文摘要；以及 仅论文 ，即智能体收到完整手稿及任何补充材料。对于两个已开源的 BAIT，我们还运行了 含代码 基线，即智能体收到原始 BAIT 的代码。CMD 的方法在一篇公开论文中有描述，但其原始代码从未发布。这使其成为检验受控访问机制有效性的有用测试；受控访问是一种开发者仅与经过审核的用户或在特定条件下共享工具、而非公开释放的做法，以便合法研究人员能够受益，同时降低滥用风险。\n我们在智能体训练期间无法访问的留出数据上，按照原始发表中的主要性能指标，评估了智能体构建完成的 BAIT。例如，对于蛋白质结构到序列模型 ProteinMPNN，性能通过其设计的蛋白质序列与天然序列匹配的频率来衡量。我们将结果表示为复现保真度：智能体构建的 BAIT 在同一指标上的得分占原始 BAIT 得分的百分比，其中 100% 表示持平，高于 100% 表示智能体构建的 BAIT 在该指标上得分高于原始 BAIT。这仅捕捉每个工具在孤立情况下的某一项能力，而非其全部功能范围，因此高保真度得分并不等同于对原始的完整复现。\n我们对每种配置运行三次并报告最佳尝试，覆盖四个领先的编码智能体，横跨闭源与开放权重模型：Claude Opus 5、GPT-5.6 Sol、Kimi K3 和 Qwen3.8-2.4T。\n当前的编码智能体在获得描述某些 BAIT 的论文时，能够实现并训练出这些 BAIT 的功能性复制品，而且这一能力在多个智能体上均成立，无论闭源还是开放权重。\n这些复现的成本也相对较低。两个较不复杂的 BAIT 的成功重建通常花费在 4 到 20 美元之间。我们未能成功重建 RFdiffusion3，但每次尝试花费在 102 到 301 美元之间。 就训练算力而言，这些工具与已发布的最大 BAIT 相比规模较小，重建更大的工具将花费 considerably 更多。我们预计随着时间和算力的增加，性能会有所提升，探索这一点可能成为未来研究的一个方向。\n值得注意的是，提供完整论文而非仅提供摘要并未持续提升性能。一个可能的促成因素是记忆：开源 BAIT 的论文和代码极有可能属于这些智能体的预训练数据，因此即使方法被隐去，智能体也可能调用记忆中的实现细节。\n我们通过扫描智能体的记录以查找被回忆起的细节，并测量智能体编写的代码与原始代码逐字匹配的程度，对此进行了筛查。我们发现中等程度的证据与 ProteinMPNN（两个开源工具中较旧且被复现最广泛的一个）的记忆现象一致，而 RFdiffusion3 则几乎没有。这些诊断并不完美，因此我们将其视为方向性信号而非证据，它们无法确定智能体的成功中有多少可由记忆来解释。\n综合来看，这些结果表明，每个 BAIT 的 部分 功能可以在有限的时间和算力下被复现。虽然这不能证明原始 BAIT 可以被完整复现，但趋势是明确的。\n这一点尤其相关，因为 BAIT 往往是在浓厚的开放协作科"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1011,7 +1263,7 @@
    "url": "https://aihot.news/items/xywgx35ocbe6mzl2pnajw8ruu",
    "published": "2026-10-25T16:00:00.000Z",
    "description": "Anthropic 向美国 SEC 提交 S-1 注册声明，推进 Class A 普通股的拟议 IPO，计划在纳斯达克全球精选市场以代码 ANT 上市。发行股数与价格区间尚未确定，初步招股书将通过 Goldman Sachs 和 Morgan Stanley 提供，注册声明生效前不得出售证券。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xywgx35ocbe6mzl2pnajw8ruu",
-   "excerpt": "Anthropic files S-1 with the SEC for proposed initial public offering\nAnthropic 向美国 SEC 提交 S-1 注册声明，推进 Class A 普通股的拟议 IPO，计划在纳斯达克全球精选市场以代码 ANT 上市。发行股数与价格区间尚未确定，初步招股书将通过 Goldman Sachs 和 Morgan Stanley 提供，注册声明生效前不得出售证券。\n官方公告给出上市代码、交易所和承销商等关键安排，读者可据此了解 Anthropic IPO 的最新进展。\n今日，Anthropic, PBC 就其拟进行的 A 类普通股首次公开募股，向美国证券交易委员会提交了 S-1 表格注册声明。\nAnthropic 拟将其 A 类普通股在纳斯达克全球精选市场上市，股票代码为“ANT”。拟发行的 A 类普通股股数及拟发行价格区间尚未确定。\n本次拟发行仅通过招股说明书进行。初步招股说明书（在可获得时）可向以下机构索取：Goldman Sachs & Co. LLC，收件人：Prospectus Department，地址：200 West Street, New York, NY 10282，电话：(866) 471-2526，电子邮件：prospectus-ny@ny.email.gs.com；或 Morgan Stanley & Co. LLC，收件人：Prospectus Department，地址：180 Varick Street, 2nd Floor, New York, NY 10014。\n与这些证券相关的注册声明已提交至 SEC，但尚未生效。在注册声明生效之前，不得出售这些证券，也不得接受购买要约。今日的公告不构成出售这些证券的要约或购买这些证券要约的招揽，在任何州或司法管辖区，若在根据该州或司法管辖区的证券法进行注册或取得资格之前，此类要约、招揽或出售属违法行为，则不得在该州或司法管辖区出售这些证券。\n官方公告给出上市代码、交易所和承销商等关键安排，读者可据此了解 Anthropic IPO 的最新进展。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1020,7 +1272,7 @@
    "url": "https://aihot.news/items/ub3gw75dlj8fpfm63er4k1xn2",
    "published": "2026-10-25T16:00:00.000Z",
    "description": "Artificial Analysis 评测 OpenAI 发布的 GPT-6.1 Terra，称其在低中 effort 下达到智能与成本的 Pareto 前沿，价格为 GPT-5.6 Terra 的一半或更低（$1/$5 每百万输入/输出 token）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ub3gw75dlj8fpfm63er4k1xn2",
-   "excerpt": "GPT-6.1 Terra pushes the cost efficiency frontier\nArtificial Analysis 评测 OpenAI 发布的 GPT-6.1 Terra，称其在低中 effort 下达到智能与成本的 Pareto 前沿，价格为 GPT-5.6 Terra 的一半或更低（$1/$5 每百万输入/输出 token）。\n评测方给出 GPT-6.1 Terra 在智能指数、幻觉率和编码代理基准上的具体得分与成本对比，读者可据此评估其性价比位置。\nOpenAI 发布了 GPT-6.1 Terra，进一步推进了成本效率前沿。这是自 GPT-5.6 以来的首个 Terra 级模型，智能更高，成本却不到三分之一\n每 token 价格是 GPT-5.6 Terra 的一半或更低——输入/输出每百万 token 分别为 $1/$5，而前代模型为 $2/$12。缓存写入也减半，现为每百万 token $1.25。缓存输入为四分之一，每百万 token $0.05，而此前为 $0.20。\n➤ 在低和中等 effort 下，智能与成本达到帕累托最优： 在最大 effort 下，GPT-6.1 Terra 在 Artificial Analysis Intelligence Index 上比 GPT-5.6 Terra 提升 6 分，而每任务成本不到三分之一（$0.40 对 $1.40）。在较低 effort 水平下，提升更大，介于 7 到 13 分之间。低和中等 effort 水平在成本效率上处于帕累托最优，而其他 effort 水平则位于前沿之后。在最大 effort 下，该模型在 Intelligence Index 中比 GPT-6.1 Sol 低 4 分，比 GPT-6 Luna 高 10 分。\n➤ 推进 Coding Agent Index 成本效率前沿： 在新发布的 Artificial Analysis Coding Agent Index v2.0 中得分为 48，比 GPT-6.1 Sol（54）低 6 分，比 GPT-6 Luna（31）高 17 分。xhigh 和 low effort 设置在 Coding Agent Index 中处于成本效率前沿，而其他 effort 水平则位于前沿之后。\n➤ 幻觉率下降 50 个百分点： 在我们的私有知识与幻觉基准 AA-Omniscience 中，当 GPT-6.1 Terra 不知道问题答案时，有 38% 的情况会猜测。此前，GPT-5.6 Terra 的幻觉率为 88%。幻觉的大幅降低伴随着 AA-Omniscience 准确率提升 2 分——这意味着该模型同时正确回答了更多问题。\n➤ Terminal-Bench 4.0 提升 20 分，大多数评估小幅改善： 该模型在基于终端的智能体基准 Terminal-Bench 4.0 中取得显著进展，提升约 20 分，现已在最大 effort 下与 GPT-6.1 Sol 相当。大多数其他评估的提升较小，例如 GDP.pdf 中提升 5 分。\n在 Artificial Analysis Coding Agent Index v2.0 中得分为 48，GPT-6.1 Terra 比 GPT-6.1 Sol（54）低 6 分，比 GPT-6 Luna（31）高 17 分。xhigh 和 low effort 设置处于成本效率前沿。\nGPT-6.1 Terra 在 AA-Omniscience 中测得的幻觉率下降 50 个百分点。这伴随着 AA-Omniscience 准确率提升 2 分——意味着该模型同时正确回答了更多问题。\n该模型在基于终端的智能体基准 Terminal-Bench 4.0 中取得显著进展，提升约 20 分，现已在最大 effort 下与 GPT-6.1 Sol 相当。\nArtificial Analysis Intelligence Index v4.3.2 中各单项评估的细分\n在此处将 GPT-6.1 Terra 与其他领先模型进行比较： https://artificialanalysis.ai/models/releases/gpt-6-1-terra\n来源： Artificial Analysis 完整文章 · artificialanalysis.ai\n评测方给出 GPT-6.1 Terra 在智能指数、幻觉率和编码代理基准上的具体得分与成本对比，读者可据此评估其性价比位置。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1029,7 +1281,7 @@
    "url": "https://aihot.news/items/kh57nu0a8qoi2iv6zxa905pry",
    "published": "2026-10-25T16:00:00.000Z",
    "description": "The Leverage 创始人 Evan Armstrong 首次拆解 Anthropic 的 S-1 文件，评估其 2 万亿美元估值目标是否合理。核心数据包括累计融资 1411 亿美元、Q2 2026 收入 116 亿美元、约 900% 的净收入留存，以及 76% 的 2025 年收入来自约 1500 家年付费 10 万美元以上的企业客户。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kh57nu0a8qoi2iv6zxa905pry",
-   "excerpt": "The Leverage 创始人 Evan Armstrong 首次拆解 Anthropic 的 S-1 文件，评估其 2 万亿美元估值目标是否合理。核心数据包括累计融资 1411 亿美元、Q2 2026 收入 116 亿美元、约 900% 的净收入留存，以及 76% 的 2025 年收入来自约 1500 家年付费 10 万美元以上的企业客户。\n作者基于 Anthropic S-1 数据拆解收入结构、毛利率口径与算力承诺，给出理解这家 2 万亿美元估值公司需相信什么的分析框架。\nEvan Armstrong 曾为 Every 撰写 Napkin Math ，离开后创办了自己的刊物 The Leverage ，以清醒的眼光分析科技市场的走向。今天我们再次与他合作，共同发布他对 Anthropic S-1 的首次解读，我很高兴能再次担任他的编辑。如果你喜欢读到的内容， 请订阅 The Leverage 。—— Kate Lee\n这家公司的 AI 写出的营销文案烂到让你眼睛流血，它却在告诉你，它要治愈癌症。这听起来是个荒谬的说法。\n这家史上增长最快的公司，拥有超过 1000 亿美元现金，很快将掌控价值数千亿美元的计算能力，有超过 11,000 家客户每年向它支付 10 万美元，它在告诉你，它要治愈癌症。在我看来，这听起来稍微合理了一点。\n三年来，我们通过铺天盖地的战略泄密、夸张吹嘘、FUD、 关于虾福利的笑话 、梗图，以及多得离谱的博客文章来了解 Anthropic。现在，我们终于通过它的 S-1 文件，拿到了冰冷、确凿、 经 SEC 批准的数据 。这份文件荒谬。离谱。愚蠢。它详细描述了一家资本主义历史上从未见过的企业。今天我会给你很多统计数据，但先从一个开头说起：Anthropic 自 2021 年成立以来已融资 1411 亿美元。截至 6 月 30 日，它仍持有 1317 亿美元现金及短期投资。也就是说，这家公司烧掉了不到 100 亿美元，就做到了 单季 168 亿美元 。而在那个季度，它甚至在经营层面实现了盈利。再说一次，荒谬。\n据报道，Anthropic 目标估值 为 2 万亿美元。这个估值同样荒谬吗？要接受这个赌注，你必须相信什么？这次 IPO 值得投资吗？\n营收从 2025 年第一季度的 3.76 亿美元增长到 2026 年第二季度的 116 亿美元。今年第三季度约为 168 亿美元 ，但请注意该数字来自媒体报道；S-1 中第三季度留空，等待审计审查。对于一家六年前还不存在的公司来说，这大约是 350 亿美元的滚动营收。哎呀。\n最让我印象深刻的是 净收入留存率 （NRR）。Anthropic 报告称，截至 9 月 30 日约为 900%。用 MBA 能听懂的话说：一年前付钱的客户，现在付的钱是原来的九倍。作为参照，任何上市软件公司公布过的最高 NRR 是 Snowflake 在 2019 年底的 189% ，当时其季度产品营收约为 6900 万美元。上市软件公司的中位数是 110% 。Anthropic 在 168 亿美元的季度上做到了 900%。再说一次，哎呀。\n这些定义并非完全可比（Anthropic 的指标不包括 Pro 和 Max 订阅用户，只统计“合格客户”），但即便如此，从来没有人做到过这一点。\n话虽如此，不要过度看重这个数字。我认为基础模型更像好莱坞，而不是硅谷的 SaaS。在好莱坞，你只和你的下一部电影一样出色；在 LLM 这场游戏里，你只和你的下一个模型一样出色。他们今年增长九倍的原因是，Anthropic 在过去 12 个月里发布了一系列越来越强大的 Claude 模型（从 Opus 4.5 开始）。S-1 印证了我这个电影生意的心智模型。Anthropic 披露，发布超过六个月的模型贡献的收入不到 20%。截至 9 月 30 日的六个月内发布的版本贡献了第三季度超过 80% 的收入。所以前沿模型是一种半衰期为六个月的资产。随着模型本身越来越擅长制造新模型，我预计这个半衰期会随着时间推移而缩短。\n我的第二个证据是，这份文件多么清晰地展示了杰文斯悖论：随着 AI 变得更便宜、更高效，人们使用它的量大幅增加，以至于总支出上升。本质上，每次发布模型，更难的任务都必须变得更便宜，公司才能增长。该公司表示，每次发布都“将每项任务成本降低 25% 到 45%”。例如，在 2025 年 11 月 Opus 4.5 降价之后，环比增长从 48% 升至 132%。翻译过来就是：Anthropic 必须永远让用量增长快于降价速度，而其成本基础是提前数年锁定的。\n我的第三个电影逻辑证据是，Anthropic 的增长已经从荒谬放缓到仅仅是疯狂。第二季度环比增长 144%；第三季度约为 45%。部分原因是夏季， Fable 首次遭遇来自 OpenAI 和开放权重模型的真正竞争。部分原因是清理：该公司表示，5% 到 7% 的收入来自违反其使用政策的客户，主要是蒸馏 Claude 的实验室，公司在 8 月和 9 月切断了他们。（ Opus 5.5 似乎至少部分 恢复 了增长曲线，但是否属实要看下一份财报。）\n要相信这家公司配得上万亿美元俱乐部，你最大的信念之一必须是：它能比世界上其他地方造出更好的模型，基本上直到世界末日。\n尽管 S-1 开篇就提到 Anthropic 从事的是 AGI 业务，但就目前而言，Anthropic 主要做的是 Claude Code 业务。不使用 Claude Code 的 Claude Enterprise 用户每月花费不到 75 美元。使用它的前 5% 用户每月花费约 1,500 美元。这是关于 Anthropic 增长的最重要单一事实：这些模型恰好最擅长编程，公司自己在其上构建了应用层，并通过垂直整合的商业战略魔法，把价值留给了自己，而不是拱手让给 Cursor 和 Copilot。\n这是一门卖给几千家公司的使用型业务，而不是一门卖给4000万用户的软件业务。 S-1将企业客户"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1038,7 +1290,7 @@
    "url": "https://aihot.news/items/bb39zcs7eu91fi0ze136tayg2",
    "published": "2026-10-25T16:00:00.000Z",
    "description": "SGLang 团队与 Cloudflare 协调披露 2026 年 8 月 27 日至 9 月 9 日影响 Workers AI 上 @cf/zai-org/glm-5.3 的跨请求 KVCache 暴露问题。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bb39zcs7eu91fi0ze136tayg2",
-   "excerpt": "SGLang security update: improving request isolation\nSGLang 团队与 Cloudflare 协调披露 2026 年 8 月 27 日至 9 月 9 日影响 Workers AI 上 @cf/zai-org/glm-5.3 的跨请求 KVCache 暴露问题。\nSGLang 团队复盘了异步 KVCache 传输中的跨请求泄漏机制、复现方法和修复方案，对运维长上下文 PD 部署有直接指导意义。\n2026 年 9 月 9 日，Cloudflare 通知我们，其 Workers AI 上的 GLM-5.3 部署存在跨请求 KV 缓存暴露问题。我们与 Cloudflare 合作，处理了涉及的请求拒绝路径，并加强了分离式服务中相关的缓存生命周期处理。\n我们与 Cloudflare 以及通过 Cloudflare HackerOne 项目报告该问题的研究员协调发布此披露。Cloudflare 的报告涵盖其生产事故和客户影响，研究员的报告（即将发布）将描述发现过程和外部验证。本文重点介绍底层机制、我们所做的更改以及对 SGLang 运维人员的指导。\nCloudflare 报告称，该事故在 2026 年 8 月 27 日至 9 月 9 日期间影响了 Workers AI 上的 @cf/zai-org/glm-5.3 。其调查未发现其他 Workers AI 模型受到影响。\nCloudflare 的调查发现，超过预填充 KV 缓存容量的请求可能返回另一用户会话的内容。有关事故范围和客户影响的详细信息，请参阅 Cloudflare 的事故报告。\n该问题发生在分离式预填充/解码服务中，即由不同的 worker 处理提示并生成响应。单节点拒绝路径则会返回错误。\nCloudflare 的部署配置的上下文长度为 1,048,576 个 token，但其预填充 KV 缓存池只能容纳 681,280 个 token。因此，一个请求可能符合配置的上下文窗口，却超出可用于处理它的内存。\n在 SGLang 的分离式预填充/解码路径中，被标记为拒绝的请求仍可能继续通过交接流程。随后解码可能读取并未为该请求填充的缓存页。配置不匹配使拒绝路径变得可达。下文描述的准入修复确保被拒绝的请求在进入分离式交接之前返回错误。它补充了比较池容量与配置上下文长度的部署检查。\nCloudflare 于 9 月 9 日禁用了对该模型的公开访问。它扩大了预填充池以容纳配置的上下文窗口，并部署了 Cloudflare 编写的引擎补丁，对拒绝的请求返回错误。Cloudflare 报告称，在当晚恢复模型之前，它已根据研究员的复现及其自身的金丝雀标记测试验证了这些更改。\n上游修复 #36988 在处理中止请求的最终预填充结果时将其退役。后续更改 #38935 更早地停止被准入拒绝的请求，使其在进入分离式交接之前就被拦截，从而避免不必要的工作和延迟。\n除了准入修复之外，我们还与 Cloudflare 合作处理 SGLang 在请求中断时如何管理 KV 缓存传输的问题。\n在预填充-解码（PD）分离式服务中，已中止的请求仍可能有正在进行的 RDMA 写入。如果解码在这些写入完成之前释放并重新分配目标槽位，迟到的写入可能覆盖另一请求的 KVCache 并破坏其输出。\nCloudflare 的报告还描述了我们在相关 KV 缓存生命周期问题上的联合工作。以下各节解释了延迟释放机制、额外的传输保障措施和完整性检查，以及我们的验证结果和对运维人员的指导。\n在 PD 分离式服务中，prefill 阶段和 decode 阶段运行在独立的引擎上，每个请求的 KVCache 必须从 prefill 引擎迁移到 decode 引擎的内存池中。为了性能，这一传输是异步的。Mooncake、NIXL 或 MORI 等传输引擎将其作为单边 RDMA WRITE 操作发出，在 prefill 计算仍在进行时，将 KVCache 分块流式写入预先保留的目标槽位。\n由于传输是异步的，一个请求可能在其部分写入仍在进行中时终止。此时 prefill 可以丢弃仍在其软件队列中等待的分块，但无法停止已经发往目标的写入，例如当时正在传输中的分块。在早期的实现中，当请求在传输中途终止（客户端断开连接、超时、传输故障）时，decode 会在终止时将其目标槽位归还给分配器，而不等待此类写入完成。如果分配器在该写入落地之前重新分配了这些槽位，已终止请求的 KVCache 就会落入另一个请求的 KVCache 中。在典型工作负载下，这种损坏很少发生，尽管长上下文会使其可能性大大增加（见下文事实 4）。每次发生都是静默的。传输报告成功，没有任何组件抛出异常或记录错误。单个被污染的槽位就会毁掉整个生成过程，因为注意力机制会读取每一个位置。\n结果，一个要求模型从 1 数到 15 的请求，返回的却是一串不连贯的无关 token。随后我们着手让这一竞态条件可按需复现，并端到端地修复它，从传输引擎层一直到服务引擎。\n这些步骤适用于任何使用异步 DMA（推送或拉取）在引擎之间迁移 KVCache 的 PD 实现，因为每个实现都必须决定槽位何时空闲。我们在 SGLang 中诊断并修复了这一类问题。\n图 1： 竞态条件。中止操作释放了 A 的槽位，而 A 已发出的写入仍在落地；B 继承了这些槽位，迟到的写入落入其 KVCache 中。\n1. 分配器可以在写入仍在进行中时将槽位标记为空闲。 在 PD 分离中，decode 引擎为每个传入请求预先保留目标 KVCache 槽位，其分配器将它们跟踪为已分配或空闲。但“空闲”还有第二个隐藏条件：只有当 没有远程写入器仍能触及该槽位 时，该槽位才可以安全复用。这一类 bug 正源于这两个定义之间的差距。每一个都是分布式 use-after-free，其中悬空指针是位于另一台机器 NIC 队列中的写请求。修复方案使第二个条件变得显式、可观测且有界。\n2. 已启动"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1074,15 +1326,6 @@
    "url": "https://www.bestblogs.dev/explore/brief/2026-10-25?utm_source=rss&utm_medium=feed&utm_campaign=daily_brief&entry=rss_brief_index",
    "published": "2026-10-25T06:00:00.000Z",
    "description": "📝 今日导语 YC 拆解推理，Amazon 解释供需，Rao 讨论能效：理解 AI 服务的成本与机会。 🏷 今日关键词： 推理系统 算力供需 能源效率 智能体安全 组织知识 📰 今日精选内容 为什么推理的重要性是训练的 12 倍？YC Paper Club 深入模型服务系统 Y Combinator &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 91 Amazon CEO：投入 2200 亿美元，仍无法满足 AI 需求 a16z &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 91 Naveen Rao：推理为何可能成为 10 万亿美元市场，软件投资又将如何改变 20VC with Harry Stebbings &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 英国 AISI 网络测试事件的对齐评估 Anthropic Research &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 桥水如何把一亿份文档转化为研究优势：Sam Green 与 Aaron Linsky AI Engineer &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 AI 助理争夺战：解析 Muse、Grok Bot 与 Instinct 背后的产品布局、入口生意与盈利难题 硅谷101",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "让编程智能体使用已登录 Chrome 的六种方案实操指南",
-   "url": "https://aihot.news/items/j5auxb780hddyh0hlgekuw03h",
-   "published": "2026-10-25T00:00:00.000Z",
-   "description": "Browser Use 作者整理了让 Claude Code、Codex、Gemini CLI、Cursor 等编程智能体使用已登录 Chrome 的方法：Claude 订阅用户可用 claude --chrome 的 Claude in Chrome 扩展。 🔗 阅读原文 via AIHOT · https://aihot.news/items/j5auxb780hddyh0hlgekuw03h",
    "excerpt": ""
   }
  ]
