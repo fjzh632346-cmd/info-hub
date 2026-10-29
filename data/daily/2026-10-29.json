@@ -1,0 +1,263 @@
+{
+ "type": "daily",
+ "date": "2026-10-29",
+ "headline": "谷歌发布 Gemini 4 Carbon，主打网络安全与长程任务；仓储侧 Symbotic 对 Walmart 的 90.5% 依赖值得细读。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "Gemini 4 Carbon 发布：谷歌称网络安全与长程智能体能力最强",
+     "source": "Google DeepMind",
+     "published": "2026-10-29",
+     "readMinutes": 8,
+     "summary": "谷歌 DeepMind 发布 Gemini 4 Carbon，称在 Artificial Analysis 智能指数 v5.0 上以 59 分排第一；漏洞发现 SEC-bench Pro 88.2%、漏洞利用 ExploitGym 54.8%、补丁 CWE-bench 71.0%。定价与两周前的 Argon 相同：每百万输入 token 2 美元、输出 10 美元。目前只对一小批网络安全防御者开放，面向开发者和普通用户的时间未定。原文英文。",
+     "takeaways": [
+      "擅长：网络安全（找漏洞、利用、打补丁）和能连续跑数天的长程工程任务，网页开发在某榜单升至第 4（1768 分）",
+      "价格 $2/$10 每百万 token，与 Argon 一致；目前不对公众开放，国内暂不可直接用",
+      "成绩均为厂商自报，暂无独立测评，需等第三方复现"
+     ],
+     "why": "想知道现在最强的模型能做什么、什么时候能用上，这篇是一手来源；你做 Agent 项目时，长程任务和安全代码的能力会直接影响选型。",
+     "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+     "tags": [
+      "新模型"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "Artificial Analysis v5 与“做榜单的两难”",
+     "source": "Interconnects",
+     "published": "2026-10-28",
+     "readMinutes": 12,
+     "summary": "Nathan Lambert 评论最常被引用的独立评测 Artificial Analysis 刚升级的 v5 智能指数：它把知识工作、编程、科学等按权重（各 25%）合成一个分数，既要方便比较，又要不过时，聚合方式必然有取舍。文章认为单一总分的时代应逐步淡出。原文英文。",
+     "takeaways": [
+      "v5 权重：知识工作 25%、编程 25%、科学 25% 等，编程含 FrontierCode 2.0、Terminal-Bench 4.0",
+      "单一总分会影响市场对“赢家”的判断，也会反过来引导模型训练方向",
+      "看榜单时要看分项，不要只看总分"
+     ],
+     "why": "各家发模型都拿这个榜单说事（包括今天的 Gemini 4 Carbon），读懂它怎么算，才不会被总分带着走。",
+     "url": "https://www.interconnects.ai/p/artificial-analysis-v5-and-the-benchmarkers",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "a16z 调研 100 位 CISO：AI 如何改写 2027 年安全议程",
+     "source": "a16z",
+     "published": "2026-10-28",
+     "readMinutes": 10,
+     "summary": "a16z 调查了 100 家千人以上企业的安全负责人（CISO）：87% 预计 2027 年安全支出增加，2027 年最受关注的七项举措全部与 AI 相关。但 AI 安全运营（SOC）工具的生产使用率仅 18%，不少企业还在试点。近一半预计安全编制增加，只有 4% 预计削减。原文英文。",
+     "takeaways": [
+      "45% 计划 12 个月内采购或升级内部 AI 智能体安全；42% 采购进攻性安全",
+      "83% 认为应更频繁测试，44% 预计五年后测试嵌入 CI/CD",
+      "AI 把典型攻击流程从约四周压缩到约十八小时（引自 Bain 估计）"
+     ],
+     "why": "AI 交付工程师、Agent 方向的岗位会越来越多碰到权限与安全问题，这份调研给出企业真实的预算和采购方向；数据是 a16z 调研，样本只有 100 家。",
+     "url": "https://www.a16z.news/p/the-new-security-agenda",
+     "tags": [
+      "报告",
+      "数据"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "The future of the firm：AI 进入公司组织架构的三种方式",
+     "source": "OpenAI",
+     "published": "2026-10-28",
+     "readMinutes": 15,
+     "summary": "两位 OpenAI 员工（声明为个人观点）提出 AI 进入组织的三种情形：在每个人之下形成一层 AI 劳动力、作为同事嵌入现有组织图、夹在人与人之间做协调层。他们认为三者都会以某种方式出现，并讨论对层级、公司规模和薪酬差距的影响。原文英文。",
+     "takeaways": [
+      "AI 承担越来越多原本的工作时，人的工作可能变成管理更大的产出，而不是被取代",
+      "模型只能做部分任务时，由熟悉业务的基层员工采用最容易",
+      "取决于需求是否随产出一起增长，这点文中也承认并不确定"
+     ],
+     "why": "理解企业怎么用 Agent，对 FDE、AI 产品经理这类岗位的工作内容有参考价值；注意这是个人观点和推演，不是研究数据。",
+     "url": "https://openai.com/index/the-future-of-the-firm",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "title": "GitHub Octoverse 2026：智能体让合并 PR 一年翻三倍",
+     "source": "Simon Willison",
+     "summary": "报告称合并 PR 每月达 2.2 亿、提交每月 73.8 亿，均较一年前约三倍。",
+     "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/"
+    },
+    {
+     "title": "Simon Willison：十月是“氛围编程游戏”的拐点",
+     "source": "Simon Willison",
+     "summary": "他称 Claude Opus 5.5 能做出真正好玩的游戏，自己几周内做了四个，GPT-6 Astra 暂不如它。",
+     "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/"
+    },
+    {
+     "title": "GitHub Universe 2026 发布 Copilot app、Copilot Fusion 等智能体产品",
+     "source": "GitHub Blog",
+     "summary": "GitHub 把自己定位为完整软件交付系统，发布多款面向智能体的新产品。",
+     "url": "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/"
+    },
+    {
+     "title": "微软通过 Foundry 开放 Copilot harness，支持多模型 Agent",
+     "source": "Microsoft",
+     "summary": "GitHub 团队打造的 Copilot harness（智能体运行框架）将经 Foundry 向开发者开放。",
+     "url": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/"
+    },
+    {
+     "title": "Alphabet Q3：年化收入 5000 亿美元，Google Cloud 增长 103%",
+     "source": "Sundar Pichai",
+     "summary": "总收入同比增 25%，模型 API 每分钟处理近 320 亿 token，环比增 40%。",
+     "url": "https://x.com/sundarpichai/status/2115535455156642066"
+    },
+    {
+     "title": "Anthropic 报告：内部 Claude 研究模型发现多平台漏洞并串成 5 条攻击链",
+     "source": "IT之家",
+     "summary": "涉及 Chrome、Safari、Android、Windows、Linux，漏洞已按协调披露流程修复。",
+     "url": "https://www.ithome.com/1/019/268.htm"
+    },
+    {
+     "title": "Anthropic S-1 解读：发布超六个月的模型收入占比不足 20%",
+     "source": "Every",
+     "summary": "文章借招股书数据指出模型“保质期”约六个月，选模型要常换。",
+     "url": "https://every.to/context-window/every-model-has-a-six-month-shelf-life-now"
+    },
+    {
+     "title": "Ed Zitron 拆解 Anthropic S-1，质疑信息披露与算力承诺",
+     "source": "Where’s Your Ed At",
+     "summary": "批评者观点：称其只披露 Q2 盈利、不可撤销算力承诺逾 4300 亿美元，属一家之言。",
+     "url": "https://www.wheresyoured.at/exit-liquidity/"
+    },
+    {
+     "title": "Cathedral 用 AI 智能体渗入 Anthropic 内部系统，双方说法不一",
+     "source": "The Decoder",
+     "summary": "安全公司称经第三方软件接触到会议记录等数据，Anthropic 对范围另有说法。",
+     "url": "https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense/"
+    },
+    {
+     "title": "OpenRouter 重建默认路由：首字延迟降 16.9%、429 错误减 67%",
+     "source": "OpenRouter",
+     "summary": "路由从只看价格改为综合价格、延迟、吞吐、错误率和质量，数据为官方自测。",
+     "url": "https://openrouter.ai/blog/announcements/how-we-rebuilt-provider-routing/"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "Symbotic 对 Walmart 的依赖：机器人创业公司能学到什么",
+     "source": "The Robot Report",
+     "published": "2026-10-28",
+     "readMinutes": 8,
+     "summary": "Symbotic 最近一季营收 7.208 亿美元、净利 5500 万美元，其中 90.5% 的收入来自 Walmart。文章拆解合同条款：Walmart 有派工程师驻场、技术资料托管等“连续性权利”，2025 年协议还限制 Symbotic 向其他客户销售同类系统的数量。净利含 1940 万美元投资收益且自由现金流为负，不能就此断言依赖大客户已经成功。原文英文。",
+     "takeaways": [
+      "大客户既给规模也给约束：驻场工程师权、技术资料托管、对外销售上限",
+      "2025 年 APD 协议：Walmart 承诺 5.2 亿美元开发资金，Symbotic 付 2 亿美元基础价并有两笔各 1.75 亿的里程碑付款",
+      "机器人公司往往随客户增加而加人，约 2000 名员工里约一半在现场交付，规模化靠交付变常规"
+     ],
+     "why": "这是看懂仓储自动化公司商业模式和风险的好案例，面试北自、极智嘉等公司时可以谈“大客户依赖”和“交付成本”。",
+     "url": "https://www.therobotreport.com/what-symbotic-growth-with-walmart-teaches-robotics-startups-about-anchor-customers/",
+     "tags": [
+      "财报",
+      "案例"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Exotec 调研：“机器人后悔”源于三个事前决策",
+     "source": "Automated Warehouse",
+     "published": "2026-10-28",
+     "readMinutes": 5,
+     "summary": "Exotec 调查了美加 250 位供应链决策者：四分之一后悔当初的自动化选择，94% 说换供应商成本过高，只能用 10–15 年。后悔主要来自低估全生命周期成本、责任不清、时机不成熟。属厂商调研，立场偏向“单一供应商”。原文英文。",
+     "takeaways": [
+      "65% 说总拥有成本（TCO）高于预期；70% 说隐性费用推高年维护支出",
+      "60% 的系统由多家公司共同设计，责任不清；27% 说上线时运营还没准备好",
+      "有专职自动化团队和领导层介入的早期采用者，仅 1% 认为选错供应商（跟随者为 11%）"
+     ],
+     "why": "项目选型、TCO 测算和责任划分正是物流工程课程和毕设可用的题材；读时留意这是卖整体方案的厂商做的调研。",
+     "url": "https://www.automatedwarehouseonline.com/exotec-traces-robot-regret-to-three-warehouse-decisions/",
+     "tags": [
+      "报告",
+      "数据"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "设计人机系统：自动化、机器人与人在回路",
+     "source": "Logistics Viewpoints",
+     "published": "2026-10-28",
+     "readMinutes": 7,
+     "summary": "文章主张自动化不是单点工具，而是改变流程、异常、维护、技能和决策权的系统设计问题。物理自动化投入大、事后难改，若流程本身有无效搬运、库位混乱、订单释放不稳，自动化只会把问题固化。应先设计未来流程，再决定哪些环节交给人、传统自动化、机器人或 AI。原文英文。",
+     "takeaways": [
+      "先设计流程，再选自动化手段，不要自动化一个坏流程",
+      "自动化会同时改变异常模式、维护需求、技能和决策权",
+      "AI 智能体的关键问题是：在什么护栏下它能自主执行哪类动作"
+     ],
+     "why": "这是物流工程“系统思维”的实际应用，可直接用在课程设计和面试里讲方案；文章偏观点，无具体数据。",
+     "url": "https://logisticsviewpoints.com/2026/10/28/design-the-human-machine-system-automation-robotics-and-human-in-the-loop/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "title": "Kardex 推出 BinInductAI：AutoStore 料箱入库时间最多缩短 30%",
+     "source": "Automated Warehouse",
+     "summary": "用视觉 AI 自动检查料箱和条码，免去人工预检与扫码，厂商说法。",
+     "url": "https://www.automatedwarehouseonline.com/kardex-ai-powered-bininductai-makes-autostore-faster-more-accurate/"
+    },
+    {
+     "title": "Körber 入股 NAiSE：统一调度多品牌 AGV/AMR",
+     "source": "DC Velocity",
+     "summary": "NAiSE 的车队管理软件不依赖 WMS/WES/WCS，双方还将探索人形机器人场景。",
+     "url": "https://www.dcvelocity.com/technology/warehouse-it/supply-chain-tech-firm-korber-buys-stake-in-robot-fleet-management-startup"
+    },
+    {
+     "title": "Teradyne 与 Sereact 合作：UR 机械臂配物理 AI 做退货与拣选",
+     "source": "Robotics & Automation News",
+     "summary": "已向包括 Zalando 在内的欧洲客户交付数百台双臂系统，厂商说法。",
+     "url": "https://roboticsandautomationnews.com/2026/10/28/teradyne-robotics-and-sereact-partner-to-drive-physical-ai-solutions-for-retail-and-logistics/106406/"
+    },
+    {
+     "title": "Symbotic 与 Walmart 合作带来的锚定客户启示",
+     "source": "Automated Warehouse",
+     "summary": "与 Robot Report 同主题的另一报道，精读已选前者。",
+     "url": "https://www.automatedwarehouseonline.com/symbotic-partnership-walmart-offers-lessons-robotics-anchor-customers/"
+    },
+    {
+     "title": "Neura Robotics 与慕尼黑工大开设 1700 万欧元 RoboGym",
+     "source": "Robotics & Automation News",
+     "summary": "同时发布新款人形机器人。",
+     "url": "https://roboticsandautomationnews.com/2026/10/28/neura-robotics-and-tum-open-e17-million-robogym-and-unveil-new-humanoid/106435/"
+    },
+    {
+     "title": "Maxinsights 融资 3000 万美元，做物理 AI 训练数据平台",
+     "source": "Robotics & Automation News",
+     "summary": "为物理 AI（能操作实物的 AI）提供训练数据。",
+     "url": "https://roboticsandautomationnews.com/2026/10/28/maxinsights-raises-30-million-to-build-training-data-platform-for-physical-ai/106432/"
+    },
+    {
+     "title": "大福宣布自愿适用国际财务报告准则（IFRS）",
+     "source": "Daifuku",
+     "summary": "大福发布 IR 公告，通知将自愿适用 IFRS，仅见公告标题。",
+     "url": "https://www.daifuku.com/ir/assets/20261028_01e.pdf"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "所有信源抓取正常（latest.json 无失败项）；AIHOT 接口正常。",
+  "今日仓储精读仅 3 条，仓储类一手数据较少；Supply Chain Dive、Daifuku 条目无正文，只作速览。",
+  "搜索未发现 Gemini 4 Carbon 之外的重大新模型；Carbon 暂无独立测评，成绩为谷歌自报。",
+  "OpenAI 一文正文来自 AIHOT 的中文转载版本。"
+ ]
+}
