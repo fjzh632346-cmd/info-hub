@@ -4,6 +4,18 @@
   "items": [
     {
       "kind": "news",
+      "category": "PPT",
+      "score": 74,
+      "author": "歸藏",
+      "handle": "@op7418",
+      "url": "https://x.com/op7418/status/2116357353566302376",
+      "posted": "2026-10-31",
+      "metrics": "1.5 万查看 · 115 赞 · 101 收藏",
+      "textZh": "歸藏给 DeepSeek Harness（DeepSeek 出的 AI 编程/做事工具，类似 Claude Code）做了一个新插件 dsh-guizang-design，里面打包了他之前的几个 Skill 并做了更新：PPT Skill 把杂志风格的动态背景加了回来，还大幅优化了性能，不会再卡顿发热；社交媒体卡片 Skill 也有更新。同时新发布了大家一直想要的网页排版 Skill（guizang-pages-skill，同一串帖子里介绍）：把图文、视频排成适合阅读的精美网页，字体、字号、间距专门针对中文做了优化，支持自定义样式和手机端。已经装过旧版 Skill 的建议更新。想用 AI 做 PPT 和网页的可以看看。",
+      "images": []
+    },
+    {
+      "kind": "news",
       "category": "视频",
       "score": 78,
       "author": "启明破晓",
@@ -29,6 +41,21 @@
       "textZh": "设计师把自己“去 AI 味”（unslop，让 AI 做出来的界面不再千篇一律）的流程做成了一个免费的 Claude Skill，可以用在落地页、数据看板和手机 App 界面上。代码在 github.com/heydamir/unslop。帖子附了处理前后的演示视频。你自己用 Claude 做网站时可以装上试试。",
       "images": [],
       "video": "https://x.com/heydamir/status/2116158176336970008"
+    },
+    {
+      "kind": "news",
+      "category": "网页设计",
+      "score": 62,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2116336030584574076",
+      "posted": "2026-10-31",
+      "metrics": "4.1 万查看 · 532 赞 · 533 收藏",
+      "textZh": "宝玉做了一个 DeepSeek Harness 插件，让 Claude Design（Anthropic 的 AI 设计工具，能出网页和界面稿）那套设计流程可以在 DeepSeek Harness 里跑，并且能直接在设计稿上标注、写评论让 AI 改。插件代码在 github.com/JimLiu/baoyu-design 的 dsh-plugins 目录。帖子附演示视频。用 DeepSeek 做网页设计、又想省钱的可以试试。",
+      "images": [
+        "https://pbs.twimg.com/amplify_video_thumb/2116335546905624577/img/YZkunnQotYxJ2Ju2.jpg"
+      ],
+      "video": "https://x.com/dotey/status/2116336030584574076"
     },
     {
       "kind": "news",
@@ -128,28 +155,6 @@
       "posted": "2026-10-30",
       "metrics": "2 万查看 · 124 赞 · 157 收藏",
       "textZh": "夸克网盘推出了 Skill：装上之后 AI 可以直接读取你网盘里的图片、视频和资料，会员还支持智能搜索和相册整理；对话里生成的文件也能让 AI 直接存进网盘、帮你自动备份。相当于网盘可以被 Agent（能自己执行任务的 AI）直接调用了。"
-    },
-    {
-      "kind": "news",
-      "category": "编程",
-      "score": 48,
-      "author": "Sonic的奇思妙想",
-      "handle": "@sonic0828",
-      "url": "https://x.com/sonic0828/status/2116152452781371713",
-      "posted": "2026-10-30",
-      "metrics": "4.8 万查看 · 1383 赞 · 1494 收藏",
-      "textZh": "开源像素特效库 pixelfx：232 个像素动画全部用代码画出来，不用图片，包括火焰、爆炸、魔法、天气、界面效果、小怪物等；可以实时预览、换颜色、镜像，一键导出成游戏常用的精灵图（Sprite Sheet），还自带 Claude Code Skill。地址：github.com/patch-gg/pixelfx。做网页小游戏或像素风页面时用得上。"
-    },
-    {
-      "kind": "opinion",
-      "category": "其他",
-      "score": 50,
-      "author": "Ethan Mollick",
-      "handle": "@emollick",
-      "url": "https://x.com/emollick/status/2116282885112205365",
-      "posted": "2026-10-30",
-      "metrics": "3.2 万查看 · 346 赞",
-      "textZh": "沃顿商学院教授 Mollick 盘点：OpenAI 砍掉了很多自家产品——Sora 只活了 6 个月，Agent Builder 8 个月，群聊 8 个月，Atlas 浏览器 9 个月。他的看法：多数情况是它们自己的产品几个月就被新能力淘汰了，说明连 OpenAI 自己也会看错 AI 进步的速度。启示是围绕某个 AI 产品做的东西，要有它随时被替代的准备。"
     }
   ]
 }
