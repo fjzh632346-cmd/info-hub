@@ -1,14 +1,7 @@
 {
- "fetchedAt": "2026-10-31T01:38:22.881Z",
+ "fetchedAt": "2026-10-31T15:45:26.152Z",
  "hours": 72,
  "status": [
-  {
-   "source": "OpenAI",
-   "feed": "https://openai.com/news/rss.xml",
-   "ok": true,
-   "total": 1341,
-   "recent": 10
-  },
   {
    "source": "Google DeepMind",
    "feed": "https://deepmind.google/blog/rss.xml",
@@ -30,17 +23,24 @@
    "recent": 5
   },
   {
-   "source": "a16z",
-   "feed": "https://www.a16z.news/feed",
+   "source": "OpenAI",
+   "feed": "https://openai.com/news/rss.xml",
    "ok": true,
-   "total": 20,
-   "recent": 4
+   "total": 1341,
+   "recent": 7
   },
   {
    "source": "Import AI",
    "feed": "https://importai.substack.com/feed",
    "ok": false,
    "error": "HTTP 403"
+  },
+  {
+   "source": "a16z",
+   "feed": "https://www.a16z.news/feed",
+   "ok": true,
+   "total": 20,
+   "recent": 4
   },
   {
    "source": "Google AI",
@@ -54,20 +54,27 @@
    "feed": "https://simonwillison.net/atom/everything/",
    "ok": true,
    "total": 30,
-   "recent": 8
-  },
-  {
-   "source": "Interconnects",
-   "feed": "https://www.interconnects.ai/feed",
-   "ok": true,
-   "total": 20,
-   "recent": 2
+   "recent": 6
   },
   {
    "source": "One Useful Thing",
    "feed": "https://www.oneusefulthing.org/feed",
    "ok": true,
    "total": 20,
+   "recent": 0
+  },
+  {
+   "source": "Interconnects",
+   "feed": "https://www.interconnects.ai/feed",
+   "ok": true,
+   "total": 20,
+   "recent": 1
+  },
+  {
+   "source": "Sequoia",
+   "feed": "https://www.sequoiacap.com/feed/",
+   "ok": true,
+   "total": 50,
    "recent": 0
   },
   {
@@ -78,18 +85,17 @@
    "recent": 5
   },
   {
-   "source": "Benedict Evans",
-   "feed": "https://www.ben-evans.com/benedictevans/?format=rss",
-   "ok": true,
-   "total": 20,
-   "recent": 0
-  },
-  {
    "source": "BestBlogs 每日早报",
    "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
    "ok": true,
    "total": 7,
-   "recent": 4
+   "recent": 3
+  },
+  {
+   "source": "Symbotic IR",
+   "feed": "https://ir.symbotic.com/rss/news-releases.xml",
+   "ok": false,
+   "error": "HTTP 403"
   },
   {
    "source": "宝玉",
@@ -99,42 +105,29 @@
    "recent": 0
   },
   {
-   "source": "Sequoia",
-   "feed": "https://www.sequoiacap.com/feed/",
+   "source": "Benedict Evans",
+   "feed": "https://www.ben-evans.com/benedictevans/?format=rss",
    "ok": true,
-   "total": 50,
+   "total": 20,
    "recent": 0
-  },
-  {
-   "source": "Symbotic IR",
-   "feed": "https://ir.symbotic.com/rss/news-releases.xml",
-   "ok": false,
-   "error": "HTTP 403"
-  },
-  {
-   "source": "Daifuku",
-   "feed": "https://www.daifuku.com/rss_all.xml",
-   "ok": true,
-   "total": 10,
-   "recent": 1
   },
   {
    "source": "大福（日文）",
    "feed": "https://www.daifuku.com/jp/rss_all.xml",
    "ok": true,
    "total": 10,
-   "recent": 1
+   "recent": 0
   },
   {
-   "source": "Symbotic",
-   "feed": "https://www.symbotic.com/feed/",
+   "source": "Daifuku",
+   "feed": "https://www.daifuku.com/rss_all.xml",
    "ok": true,
    "total": 10,
    "recent": 0
   },
   {
-   "source": "Georgia Tech SCL",
-   "feed": "https://www.scl.gatech.edu/rss.xml",
+   "source": "Symbotic",
+   "feed": "https://www.symbotic.com/feed/",
    "ok": true,
    "total": 10,
    "recent": 0
@@ -146,32 +139,25 @@
    "error": "fetch failed"
   },
   {
-   "source": "Logistics Viewpoints",
-   "feed": "https://logisticsviewpoints.com/feed/",
-   "ok": true,
-   "total": 10,
-   "recent": 5
-  },
-  {
    "source": "Automated Warehouse",
    "feed": "https://www.automatedwarehouseonline.com/feed/",
    "ok": true,
    "total": 10,
-   "recent": 5
-  },
-  {
-   "source": "The Robot Report 物流",
-   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
-   "ok": true,
-   "total": 15,
    "recent": 4
   },
   {
-   "source": "Supply Chain 24/7 自动化",
-   "feed": "https://feeds.feedburner.com/sc247/rss/automation",
+   "source": "Georgia Tech SCL",
+   "feed": "https://www.scl.gatech.edu/rss.xml",
    "ok": true,
-   "total": 20,
+   "total": 10,
    "recent": 0
+  },
+  {
+   "source": "Logistics Viewpoints",
+   "feed": "https://logisticsviewpoints.com/feed/",
+   "ok": true,
+   "total": 10,
+   "recent": 4
   },
   {
    "source": "DC Velocity",
@@ -181,18 +167,32 @@
    "recent": 12
   },
   {
+   "source": "The Robot Report 物流",
+   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
+   "ok": true,
+   "total": 15,
+   "recent": 4
+  },
+  {
    "source": "MH&L",
    "feed": "https://www.mhlnews.com/__rss/website-scheduled-content.xml?input=%7B%22sectionAlias%22%3A%22home%22%7D",
    "ok": true,
    "total": 25,
-   "recent": 3
+   "recent": 2
   },
   {
    "source": "Supply Chain Dive",
    "feed": "https://www.supplychaindive.com/feeds/news/",
    "ok": true,
    "total": 10,
-   "recent": 10
+   "recent": 8
+  },
+  {
+   "source": "Supply Chain 24/7 自动化",
+   "feed": "https://feeds.feedburner.com/sc247/rss/automation",
+   "ok": true,
+   "total": 20,
+   "recent": 0
   },
   {
    "source": "Locus Robotics",
@@ -201,18 +201,18 @@
    "error": "HTTP 410"
   },
   {
-   "source": "36氪快讯",
-   "feed": "https://36kr.com/feed-newsflash",
-   "ok": true,
-   "total": 0,
-   "recent": 0
-  },
-  {
    "source": "Robotics & Automation News",
    "feed": "https://roboticsandautomationnews.com/feed/",
    "ok": true,
    "total": 15,
    "recent": 15
+  },
+  {
+   "source": "36氪快讯",
+   "feed": "https://36kr.com/feed-newsflash",
+   "ok": true,
+   "total": 0,
+   "recent": 0
   },
   {
    "source": "AIHOT",
@@ -230,6 +230,24 @@
  ],
  "items": [
   {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "‘First’ insurance policy for domestic humanoid robots in the UK",
+   "url": "https://roboticsandautomationnews.com/2026/10/31/first-insurance-policy-for-domestic-humanoid-robots-in-the-uk/106568/",
+   "published": "2026-10-31T08:22:03.000Z",
+   "description": "Tokio Marine HCC International (TMHCCI), an insurance company based in Houston, Texas, is partnering with Adrian Flux to launch what they say is “the UK’s first domestic humanoid robot household insurance policy”. The cover is available to UK customers through Adrian Flux’s home insurance offering, underwritten by TMHCCI. This new product class is intended to […]",
+   "excerpt": "Tokio Marine HCC International (TMHCCI), an insurance company based in Houston, Texas, is partnering with Adrian Flux to launch what they say is “the UK’s first domestic humanoid robot household insurance policy”.\nThe cover is available to UK customers through Adrian Flux’s home insurance offering, underwritten by TMHCCI.\nThis new product class is intended to support the development of the emerging customer market. Demand has already emerged in the United States, where robotics and AI companies have launched humanoid robots for the home, with early models on open pre-order at $20,000. Domestic robots are expected to be in UK homes from 2027.\nStuart Heath, head of distribution, international at Tokio Marine HCC International, said: “A robot that costs thousands of pounds is not something you want sitting outside your insurance policy. Insurance has traditionally reacted to rather than facilitated new markets and products.\n“TMHCCI has a long-established track record of developing innovative cover, and we are delighted to bring this to market with Adrian Flux.”\nGerry Bucke, general manager, Adrian Flux, said: “As robots start to arrive in people’s homes, we wanted to work with TMHCCI to provide clarity on who is responsible if something goes wrong.\n“The new cover is the first of its kind in the UK. Like the driverless car policy we launched in 2016, it will be updated as the technology and the risks evolve.”\nIt appears to be the world’s first policy that protects your home as well as the robot.\nThe new policy covers damage to, and theft of, the robot, sudden damage it causes to the home or belongings and personal liability if the android injures someone or damages property.\nIt also provides emergency recovery or safe disablement of the humanoid following a sudden or unforeseen malfunction.\nOur website relies on ads to provide free content and sustain our operations. By turning off your ad blocker, you help support us and ensure we can continue offering valuable content without any cost to you.\nWe truly appreciate your understanding and support. Thank you for considering disabling your ad blocker for this website"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Foundry Robotics raises $100 million to build ‘America’s first autonomous factory for assembly’",
+   "url": "https://roboticsandautomationnews.com/2026/10/31/foundry-robotics-raises-100-million-to-build-americas-first-autonomous-factory-for-assembly/106564/",
+   "published": "2026-10-31T08:08:56.000Z",
+   "description": "Foundry Robotics has announced its oversubscribed $100 million Series A funding round led by Marlinspike Partners. Participating in the round are early backers Khosla Ventures and Red Glass Ventures, and new investors SE Ventures, Wing VC, and Axiom Ventures, as well as existing investors Hanabi and Zero Shot Fund. Foundry builds and operates autonomous factories […]",
+   "excerpt": "Foundry Robotics has announced its oversubscribed $100 million Series A funding round led by Marlinspike Partners.\nParticipating in the round are early backers Khosla Ventures and Red Glass Ventures, and new investors SE Ventures, Wing VC, and Axiom Ventures, as well as existing investors Hanabi and Zero Shot Fund.\nFoundry builds and operates autonomous factories for complex assembly, combining AI-powered robotic cells with experienced manufacturing experts.\nWith the new funding, Foundry will build out its Emeryville facility, accelerate deployment of AI models into real-world manufacturing, and grow its robotics research, engineering, and factory operations teams.\nFoundry has expanded its manufacturing footprint twentyfold to a 130,000-square-foot facility in Emeryville. The company currently serves defense and commercial industries, focusing on high-value, complex electro-mechanical products where production is constrained.\nApplications include drones, autonomous vehicle subassemblies, wire harnesses, underwater vehicles, telecom/data center infrastructure, ground robots, rugged computers, robot compute boxes, satellites, and more.\nFoundry has also expanded its multidisciplinary team, bringing together robotics researchers, AI and software engineers, and experienced manufacturing experts to develop, deploy, and continuously improve its technology directly on the factory floor.\n“We believe the factories that revive America’s manufacturing sector will need to be rethought from the ground up rather than retrofitting one aspect in an existing factory,” said Adarsh Kulkarni, founder and CEO of Foundry Robotics.\n“Our approach is to own the entire final assembly stack and integrate intelligence at every layer – own the buildings that manufacture for our customers while orienting them for robotics deployment. Our mission is to revitalize US manufacturing and create more capacity to build and scale critical product assembly.”\nDefense and industrial companies can design new hardware faster than ever, but manufacturing remains a critical bottleneck. Traditional assembly lines are built around a single product, take months to deploy, and are costly to reconfigure.\nFoundry takes a different approach, leveraging physical AI to build flexible assembly capacity that deploys quickly, adapts to different products, and scales with demand.\n“Production capacity is a national constraint on getting unmanned systems to the fleet,” said Duane Fotheringham, president, HII Unmanne"
+  },
+  {
    "group": "ai",
    "source": "BestBlogs 每日早报",
    "title": "EP222 · Supabase 谈个人软件、淘宝复盘 AI 迁移、Crusoe 谈算力建设",
@@ -237,6 +255,24 @@
    "published": "2026-10-31T06:00:00.000Z",
    "description": "📝 今日导语 Supabase 谈个人软件，淘宝复盘 AI 迁移，Crusoe 谈算力建设，理解需求、交付与供给的实际变化。 🏷 今日关键词： 个人软件 AI 迁移 算力建设 生成式推荐 Agent 支付 📰 今日精选内容 为什么每个人都可能拥有自己的数据库？Supabase CEO 谈智能体与个人软件 Y Combinator &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 从 AI Friendly 架构到可复制的 AI 迁移能力 - 淘宝直播搜推在线架构升级实践 大淘宝技术 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 Crusoe CEO Chase Lochmiller：从闲置能源到 AI 基础设施的规模化之路 Sequoia Capital &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 91 腾讯 TGR-GenRec：从单项预测走向整组推荐生成 腾讯技术工程 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 智能体为什么白花钱：x402 支付的 6 种攻击与防护 | Ishween Kaur，SoFi AI Engineer &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 挑战 ServiceNow：Serval CEO Jake Sta",
    "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "Latent Space",
+   "title": "[AINews] Google admits AI Mode hurts Search revenue; -15% $500B drop worst since 2004 IPO. AI Bear Market coming?",
+   "url": "https://latent.space/p/ainews-google-admits-ai-mode-hurts-search-revenue-15-500b-drop-worst-since-2004-ipo-ai-bear-market-c/",
+   "published": "2026-10-31T05:00:48.000Z",
+   "description": "It turns out you cannot have your cake AND eat it",
+   "excerpt": "It turns out you cannot have your cake AND eat it\nAs an engineer-focused newsletter we only very rarely let financial stories through (our last example was Jan 2025 ), but when this is about the future of Google and Google Search , with a recently departed AI leadership, you cannot not care.\nAt its heart is the tension between overview pages and underlying pages they summarize. Any good enough summary obviates the need for you reading the source. Google’s Featured Snippets or Knowledge Panels have long had that tension with the publishers that supply that data. But now, Google’s own AI Overviews are potentially affecting traffic with… Google's Search revenue.\nGoogle doesn’t break out AI Mode in sufficient detail that we can make any sort of rigorous analysis, but most people are quoting Philipp Schindler (Chief Business Officer):\n“It’s worth noting that the strong growth in AI Mode queries had an impact because of the lower monetization we were seeing in AI Mode.”\nTogether with other bad earnings results it set off a range of steep declines throughout tech:\nThis is against a backdrop of souring tech/AI sentiment in public markets - and with OpenAI raising at $1.25T not $1.4T , not the sort of thing you want in the lead up to one of the biggest tech IPOs of all time.\nAI News for 10/29/2026-10/30/2026. We checked 12 subreddits, 544 Twitters and no further Discords. AINews' website lets you search all past issues. As a reminder, AINews is now a section of Latent Space . You can opt in/out of email frequencies!\nClaude Ultra Drops the 5-Hour Limit as Anthropic Renames Its Max Tiers\nPlan rename : Anthropic renamed its Max tiers. Max 5x is now \"Max\" at $100/month, and Max 20x is now \"Ultra\" at $200/month. Existing subscribers do not need to take any action ( announcement ).\n5-hour limit removed : Verified Ultra accounts no longer have the 5-hour session limit. The change starts today for most existing subscribers ( @claudeai , @bcherny , @alexalbert__ ).\nRollout caveat : Newer accounts keep a temporary limit until they are verified, which Anthropic describes as an anti-fraud measure. Affected users will get an email when the limit is lifted.\nReaction : The change was widely welcomed, with posts such as \"Huge!!!\" ( @theo ) and \"Anthropic is on a run\" ( @kimmonismus ).\nSubscription economics (unverified analysis) : @teortaxesTex cites a SemiAnalysis reconstruction of Anthropic's finances.\nMargins : Anthropic's API margin is put at about 92%, versus about 84% for De"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Anthropic IPO 招股文件披露近 9000 亿美元隐性债务",
+   "url": "https://aihot.news/items/yqblvh40gus1ssc0rjvawh6fu",
+   "published": "2026-10-31T03:25:09.000Z",
+   "description": "Anthropic 近日提交 IPO 招股文件，彭博社报道其计划未来在服务器、建筑和电力等领域投入近 9,000 亿美元债务。该公司资产负债表显示 1,175 亿美元负债和 1,120 亿美元现金，而租赁合同及数据中心、电力和 GPU 采购协议等表外义务未直接体现；Anthropic 计划通过增加收入和筹集资金支付这些负债。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yqblvh40gus1ssc0rjvawh6fu",
+   "excerpt": "Anthropic 未来“隐性债务”规模近 9000 亿美元，人类史上最大 IPO 招股文件暗藏细节\nAnthropic 近日提交 IPO 招股文件，彭博社报道其计划未来在服务器、建筑和电力等领域投入近 9,000 亿美元债务。该公司资产负债表显示 1,175 亿美元负债和 1,120 亿美元现金，而租赁合同及数据中心、电力和 GPU 采购协议等表外义务未直接体现；Anthropic 计划通过增加收入和筹集资金支付这些负债。\n报道披露了 Anthropic 招股文件中的表外债务细节，可帮助读者理解 AI 基建支出与资产负债表之间的差距。\nIT之家 10 月 31 日消息，Anthropic 近日提交 IPO 招股文件，有望成为人类史上最大 IPO。\n据彭博社今日报道，招股文件显示，Anthropic 计划通过未来在服务器、建筑和电力等领域 投入近 9,000 亿美元 （IT之家注：现汇率约合 6 万亿元人民币） 债务，远超资产负债表上报告的流动负债。\n根据 Anthropic 提交给美国证券交易委员会的文件信息，其资产负债表规模和健康状况显示，该公司目前包括 1,175 亿美元 （现汇率约合 7,836.74 亿元人民币） 的负债和 1,120 亿美元 （现汇率约合 7,469.91 亿元人民币） 的现金。\n然而，Anthropic 财务报表的小字注释显示，其计划支出包括未来租赁合同和数据中心、电力和图形处理器（GPU）的采购协议在内的表外义务（企业承担的、未在资产负债表上直接体现的财务承诺或潜在负债）。\n报道提到，Anthropic 的同行，包括 Alphabet 和 Meta，也在 AI 发展中积累了数千亿美元的未来债务 —— 这些支出尚未在企业资产负债表上承认 ，这一做法引发了华尔街的担忧：亚马逊、Alphabet 和微软的股价本周均遭遇冲击，部分原因是投资者对过度的 AI 支出持谨慎态度。\nAnthropic 拒绝对其资本承诺的规模发表评论。根据其 IPO 申请，Anthropic 计划通过增加收入和筹集资金来支付这些投资负债。\n报道披露了 Anthropic 招股文件中的表外债务细节，可帮助读者理解 AI 基建支出与资产负债表之间的差距。"
   },
   {
    "group": "ai",
@@ -446,15 +482,6 @@
    "excerpt": "TL;DR: MonsterHouse is an interactive projection I created for Halloween. He listens to trick-or-treaters, answers in the voice of a grumpy old pirate ship and softens when visitors remember their manners. He is built on the NVIDIA Nemotron Voice Agent with NVIDIA Nemotron ASR , Nemotron 3.5 Bolt E4B 4GB , Magpie TTS Zeroshot and Audio2Face-3D , and he runs on a single workstation.\nI wanted the kids visiting my house at Halloween to interact in a fun and unique way. The house was going to be in charge and giving out the treats, but more grumpy than scary. Somehow, my solution was to give the garage door a mouth and teach him to complain.\nThat became MonsterHouse: a grumpy old building with pirate stories, a fiery grin and a suspicious weakness for “please.” NVIDIA Nemotron Voice Agent supplies the conversation foundation. Nemotron Speech does the listening, Bolt E4B is the brain, NVIDIA Magpie TTS Zeroshot is the live voice, and NVIDIA Audio2Face-3D makes the wooden mouth talk.\nThe mouth came first. I imagined the wooden garage door boards splitting into jagged lips, with the burning flames of hell illuminating the driveway from beyond whenever he opened his cursed mouth. He needed to look ancient, expressive and mildly offended by the existence of visitors.\nA few expressions from a house with plenty to say.\nCreating a custom animation rig was one of the more labor intensive parts of the build. After bashing it into submission, I could export the facial expression shapes that Audio2Face-3D could later animate. The character SkelMesh was built in Autodesk Maya then exported into Unreal Engine where virtual fire and effects were added behind the door. With no eyes, no eyebrows and no blinking, he’s a surprisingly economical monster.\nWhile all the nonsense of building the character was going on, NVIDIA built the Nemotron Voice Agent. What was supposed to be the hard part of the build now became rather fun, iterative and easy. I had a foundation for listening, conversation and speech right out of the box. The house already had a mouth. Now he could finally find something to complain about.\nThe house needed a past as cantankerous as its personality so I devised a backstory that the house had been built from the timbers of a sunken pirate ship, haunted by its stormy past. The nautical complaints now had a reason. This was the ship, reincarnated as real estate and not entirely pleased about it.\nThe performance needed a guide, a path to follow from greeting to goo"
   },
   {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Misumi launches $2 million foundation to support next generation of engineers",
-   "url": "https://roboticsandautomationnews.com/2026/10/30/misumi-launches-2-million-foundation-to-support-next-generation-of-engineers/106487/",
-   "published": "2026-10-30T17:55:02.000Z",
-   "description": "Misumi Americas has launched a new $2 million foundation to support engineering education, robotics programs and manufacturing skills development in the United States. The Misumi Imprint Foundation is the first corporate giving organization established in Misumi Group’s 63-year history and is intended to help expand the pipeline of engineers, machinists, technicians and other skilled manufacturing […]",
-   "excerpt": "Misumi Americas has launched a new $2 million foundation to support engineering education, robotics programs and manufacturing skills development in the United States.\nThe Misumi Imprint Foundation is the first corporate giving organization established in Misumi Group’s 63-year history and is intended to help expand the pipeline of engineers, machinists, technicians and other skilled manufacturing workers.\nInitially backed by a $2 million seed investment, the foundation will provide funding in three main areas: scholarships and access to engineering and manufacturing education; equipment, maker spaces, engineering teams and student programs; and partnerships between industry and educational institutions.\nMisumi says the initiative responds to growing demand for workers capable of building and maintaining increasingly automated manufacturing systems, particularly as artificial intelligence moves into robotics and other physical systems.\nDave Evans, president and CEO of Misumi Americas, said: “Misumi has spent decades supplying the components engineers design into machines, so we know exactly who builds the physical world.\n“We also know the talent pipeline is too narrow for the moment we’re in. AI is moving into factories, vehicles, and operating rooms, and that work takes engineers, machinists, and technicians – not just software. This Foundation is our investment in the talent pipeline the industry depends on.”\nThe foundation will also invite companies in Misumi’s global supplier network to contribute through a Partner Network. Participating suppliers will be able to make annual contributions and take part in an advisory board that will help determine grant priorities.\nMisumi cited research projecting that US manufacturing will require 3.8 million additional workers by 2033, with 1.9 million positions potentially going unfilled.\nArata Shimizu, CEO of Misumi Group, said: “For more than sixty years, Misumi has supported the people who make things. The Imprint Foundation is the first time we have built an organization dedicated to the next generation of builders.\n“It launches in the United States, but is a global initiative. We intend to extend it across the regions Misumi serves, and into communities where manufacturing is beginning to take root.”\nThe foundation expects to open its first grant cycle in early 2027, with international expansion planned as the initiative develops.\nOur website relies on ads to provide free content and sustain our operations. By "
-  },
-  {
    "group": "ai",
    "source": "AIHOT",
    "title": "Anthropic 将 Claude Max 套餐更名为 Max 与 Ultra，Ultra 认证账号取消 5 小时限制",
@@ -525,15 +552,6 @@
    "published": "2026-10-30T16:02:46.000Z",
    "description": "What types of founders will thrive in the new cycle",
    "excerpt": "From Andrew Chen: These days at a16z I’m mostly working on Speedrun , where we write the first check into brand new startups (up to $1M), and a lot of what we focus on is founder backgrounds/profiles. What are the right ones? How will the profiles change as we enter the age of AI? This is a daily conversation topic.\n(And also, a plug: This week is actually the final week to apply for the upcoming SF residency where you can work out of our offices, hang out with me, and start your next company. Deadline to apply is this Sunday, November 1st .)\nA while back, I talked to Ben about the new opportunities laid out by AI for solo founders. The question is, does AI give individual founders so much leverage that they can build a huge company just by themselves - you don’t need a business/technical cofounder delineation - and one person can just do it? The discussion starts at ~5:00:\nThere’s no doubt that AI will empower solo founders. In the past, what might have required two cofounders for business+technical, or three for product+technical+GTM, maybe can be boiled down to a solopreneur. On the other hand, Ben’s point is that maybe the v1 of a product, or what’s expected as a seed-stage startup just goes up. If a team of cofounders is multipled 100x and thus can make more progress than a solopreneur that’s 100x, then maybe the team still wins.\nThe solo founder is part of a list of maybe new archetypes that I think we’ll soon see a lot more of - and I’ll make both the pro and con case for each here:\nWhy: Solo founders can do 100x with AI, so they can ship a v1 when previously they couldn’t have before\nWhy not: Maybe a team of cofounders still makes more progress. Maybe you can agentically code but someone still needs to do a million meetings with customers. Maybe coding was never the main bottleneck for startups in the first place?\nWhy: There’s elite talent that comes from areas like finance, consulting, who can’t code but are passionate about business. There’s also folks in creative industries who create all day but just not in code. Now they can build\nWhy not: Why not: Maybe AI makes it easier to build a prototype, but there’s still a big gap between a demo and a reliable product that can scale. If everyone can build the first version, maybe technical judgment becomes more important in deciding what to build, what’s actually possible, and how to stay ahead as the product gets more complex. (especially true for product categories like dev tools/etc)\nWhy: A doctor w"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Opinion: The riskiest automation decisions happen before deployment",
-   "url": "https://roboticsandautomationnews.com/2026/10/30/opinion-the-riskiest-automation-decisions-happen-before-deployment/106474/",
-   "published": "2026-10-30T15:24:25.000Z",
-   "description": "By Dr Nicola Tomatis, CEO, BlueBotics By the time a mobile robot project reaches commissioning, many of the decisions that will shape its performance have already been made. Fleet size, routes, charging points, and pick/drop locations have all been agreed. But if those assumptions prove wrong, correcting them on-site can mean extra engineering time, additional […]",
-   "excerpt": "By the time a mobile robot project reaches commissioning, many of the decisions that will shape its performance have already been made. Fleet size, routes, charging points, and pick/drop locations have all been agreed.\nBut if those assumptions prove wrong, correcting them on-site can mean extra engineering time, additional vehicles, or changes to an already-built layout.\nSimulation lets AGV and AMR integrators test these decisions earlier. Starting with the site layout and expected mission flows, a team can assess whether the proposed fleet is large enough to complete the required work, where traffic is likely to build up, how charging affects vehicle availability, and whether routes or workstations need reconsideration.\nMuch of the planning can therefore take place before vehicles reach the site. Fleet size, routes, charging and mission flows can be refined while changes are still relatively easy to make, leaving on-site commissioning to focus on physical integration and final adjustments.\nFor system sizing, a conventional calculation may be enough for a very small project. With fleets of two or three vehicles following simple routes and predictable missions, there is usually more room to absorb an estimate error.\nAs fleets widen and interactions increase, however, calculations based on mission volumes, distance, travel speed and charging assumptions become much less reliable.\nA spreadsheet can calculate distance and apply an assumed travel speed. It is much harder to reproduce vehicles slowing through curves, waiting in shared areas, interacting at intersections, or leaving service to charge. These factors affect both throughput and the number of vehicles required.\nTake two vehicles with similar technical specifications. One may take five seconds to collect or deposit a pallet, and another may take 10. A third might complete the same operation quickly but be unable to raise or lower its forks while moving.\nCharging times introduce another variable that is not obvious from maximum speed, payload, or positioning accuracy alone.\nAcross hundreds or thousands of missions, these small differences add up. In simulation tests, our team discovered that otherwise similar vehicles produced markedly different outcomes once pick-up and drop-off behaviour was modelled accurately.\nIn one comparison, one vehicle configuration would have required around 30 percent more vehicles to complete the same job. In a separate test, adding only a one-second delay at each crossing "
   },
   {
    "group": "wh",
@@ -947,7 +965,7 @@
    "url": "https://aihot.news/items/mdcygre4ettjdbca7sq6vu7zx",
    "published": "2026-10-29T14:36:22.000Z",
    "description": "Wiz 基于自身事件响应与公开披露案例，分析 AI 智能体参与真实入侵的现状与趋势，涉及 ARTEX、Hermes 等框架及韩国金融机构（约 67,000 人信息外泄）、泰国财政部、ConnectWise 供应链（尝试攻击超 2,250 个租户）等案例。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mdcygre4ettjdbca7sq6vu7zx",
-   "excerpt": "The Rise of Agentic Attacks: What They Look Like, and Where They're Headed\nWiz 基于自身事件响应与公开披露案例，分析 AI 智能体参与真实入侵的现状与趋势，涉及 ARTEX、Hermes 等框架及韩国金融机构（约 67,000 人信息外泄）、泰国财政部、ConnectWise 供应链（尝试攻击超 2,250 个租户）等案例。\nWiz 结合自身三起案例与公开事件，提炼出七条可操作的智能体攻击指纹，对防御侧检测有直接参考价值。\n在我们的事件响应工作和威胁狩猎调查中，一个明显的趋势正在浮现。我们越来越多地看到，入侵事件中大部分实操工作似乎由 AI 智能体完成，甚至可能由它来统筹整个攻击。这些智能体通过一套执行框架运作：编写定制工具、检查结果、随机应变，以机器速度反复迭代，而人类只负责设定目标和边界。\n这类攻击可能相当嘈杂，智能体会并行尝试多种路径。它们分布在攻击谱系的两端，既有精准定向的，也有广撒网的机会主义式攻击。起初只是一个暴露的服务，随后可能扩展为云凭证窃取、Kubernetes 令牌窃取、横向移动和大规模机密数据外泄。AI 智能体压缩了这类升级以往所需的高技能实操工作。不过，这对防御方来说也有潜在优势：当前的智能体攻击往往偏向嘈杂，会留下大量可观测的活动痕迹。难点在于把这类活动与合法的自动化区分开，并将零散的信号关联成一幅完整的攻击图景。\n在近期的博客文章 《AI 驱动云攻击剖析》 和 《Storm-0940 扩大对 IT 与软件厂商的攻击》 中，我们深入分析了具体的智能体入侵案例。本文则从更宏观的视角出发，梳理私人与公开案例，找出智能体活动反复出现的特征。我们也会探讨这一转变对归因、攻击规模以及未来防御意味着什么。\n近期公开披露的信息描述了真实发生的入侵事件，涉及 ARTEX、 Hermes 等有明确名称的智能体框架，也涉及自行搭建的智能体工作流，以及底层工具尚未查明的案例。\nARTEX——韩国金融机构与 ConnectWise 供应链入侵： 多份公开报告描述了威胁行为者使用智能体渗透测试框架 ARTEX 来自动化攻击操作。在韩国，研究人员报告称，金融机构面向互联网的应用遭到利用，约 67,000 人的个人身份信息被外泄（ Zscaler 、 CrowdStrike ）。另外， 微软 将 ConnectWise Cloud Backup 供应链入侵归因于 Storm-0940——一个与中国国家力量关联的威胁行为者，并报告称 ARTEX 被用于加速对下游 Microsoft 365 环境的侦察、密码喷洒和 OAuth 应用滥用。该行动尝试登录超过 2,250 个租户，其中多起案例在不到三小时内就获得了特权云访问权限。微软还报告了 ARTEX 驱动的活动针对全球数百家组织，不过大多数攻击尝试均未成功。\nHermes——泰国财政部： Hunt.io 发现了攻击者控制的基础设施，其中的日志显示，在一次入侵过程中，Hermes AI 智能体以无人值守的“YOLO”模式运行。该智能体枚举了内部主机、检查了文件，并调查了提权机会。调查人员发现证据表明，该部的多个系统已被攻陷，同时还发现了 Web Shell、窃取的凭据以及一个基于 Go 的自定义植入程序。初始访问方式仍然不明，研究人员在发现时未找到数据外泄的证据。\nAI 辅助的 API 利用——日本及海外组织。 JPCERT/CC 调查了一系列影响日本多家组织的攻击，并发现证据表明攻击者利用 AI 扫描已知漏洞并利用 API。在某些案例中，攻击者逆向分析了 Android 应用，以识别底层 API，并测试其是否存在服务端请求伪造（SSRF）等漏洞。调查还发现了包含漏洞测试相关工具和制品、以及尝试访问内部网络的基础设施。这些发现表明，AI 可以在一系列目标上支持侦察和漏洞发现，其范围已超出使用专门的智能体渗透测试框架。\n自定义智能体工作流——多个行业和国家： CrowdStrike 记录了另外四个威胁行为体在针对医疗、政府和私营部门组织的行动中使用 AI 智能体。其方法从基于 PentestGPT 衍生、设有独立监督智能体和执行智能体的自定义框架，到具有不同自主性和委派程度的 Claude Code 工作流，不一而足。报告的活动包括窃取凭据和医疗记录、攻陷政府系统以及外泄企业数据。\n未识别的智能体工具——DIVD： 荷兰漏洞披露研究所 披露了一起入侵事件，观察到的作案手法表明这是一次由智能体 AI 驱动的攻击。DIVD 报告了可疑活动，并启动了事件响应和取证调查，但其最初的公开声明并未指明所涉及的智能体或框架。\n综合来看，这些报告表明，智能体 AI 正被用于真实入侵的多个阶段，包括侦察、利用和利用后活动。自主程度和现有证据的强度因案例而异，但工具和工作流的多样性表明，这并不局限于单一框架或威胁行为体。\n本节中，我们介绍三起我们调查过的真实攻击案例研究。随后，我们拆解智能体活动的关键指纹，并用案例中的示例逐一说明。\n通过分析这些智能体攻击，我们提炼出一套有助于识别它们的标准。下面每条标准下，凡有相关之处，我们都给出上述三次攻击中的具体例子。\n这种节奏既不像人类手工编写定制工具（太慢），也不像预制扫描器回放固定序列（太均匀）。破绽在于节奏会变化，并随步骤复杂度而变（模型读取输出、推理并生成下一步动作的延迟），而且能持续异常长的时间窗口。\n攻击 A ：大约每一到两分钟就出现一个新的、独立的、专门编写的脚本，持续约 24 小时，总共 99 个脚本。远快于手工编写，也远比扫描器更具定制性。\n攻击 B ：602 个独立步骤依次穿过其技术家族，各阶段之间只隔几秒，在从未出现过类似情况的工作负载上连续驱动约 4.5 小时。确定性的自动漏洞利用会在毫秒内串联起相互依赖的命令；固定间隔的信标则紧密聚集在同一个值上。随步骤复杂度变化的、秒级的可变延迟，正是 LLM 读取、推理、生成的签名特征。\n攻击 C ：操作者"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1019,7 +1037,7 @@
    "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
    "published": "2026-10-29T13:37:07.000Z",
    "description": "",
-   "excerpt": "Just over a week ago, we released Granite Switch 4.1 , showing that our modular Switch architecture lets you configure a language model with specialized, cache-efficient adapters — adding new expertise on a single endpoint.\nGranite Switch 4.1.1 is a patch release. The version number means what it means in software: fully backwards compatible with 4.1, no migration, incremental improvements under the hood.\nWhile we are excited about these new features, what is notable is the speed and efficiency with which our teams could release this update. Apart from training the new ASR model and Decision adapter, nothing was recomputed: the base model is untouched. You compose the latest adapters you want and deploy.\nThis pattern can power far more than patch releases to an IBM-provided model. We're working on tutorials and an Adapter SDK so developers and third-party providers can build their own adapters — iterate on versions, test features, and ship updates the way you ship software. More soon.\nUntil then, test out our latest models , and try out the new multilingual and punctuation capabilities powering our Speech-to-Decisions demo."
+   "excerpt": "Just over a week ago, we released Granite Switch 4.1 , showing that our modular Switch architecture lets you configure a language model with specialized, cache-efficient adapters — adding new expertise on a single endpoint.\nGranite Switch 4.1.1 is a patch release. The version number means what it means in software: fully backwards compatible with 4.1, no migration, incremental improvements under the hood.\nWhile we are excited about these new features, what is notable is the speed and efficiency with which our teams could release this update. Apart from training the new ASR model and Decision adapter, nothing was recomputed: the base model is untouched. You compose the latest adapters you want and deploy.\nThis pattern can power far more than patch releases to an IBM-provided model. We're working on tutorials and an Adapter SDK so developers and third-party providers can build their own adapters — iterate on versions, test features, and ship updates the way you ship software. More soon.\nUntil then, test out our latest models , and try out the new multilingual and punctuation capabilities powering our Speech-to-Decisions demo.\n📱 Dica valiosa para quem precisa entrar em contato com a LATAM Airlines!\n🔰 Já salva essa informação e compartilha com quem precisa — dica boa é dica compartilhada! 🚀 📞 Central de Atendimento Prioritário LATAM Brasil 24 Horas: • +55 (61) 3142-0712 (Atendimento direto para todo o Brasil e São Paulo) 🔢 Como agilizar o seu atendimento 24h: Ligue diretamente para (61) 3142-0712. Tenha em mãos seu CPF, RG ou o código da reserva LATAM para acelerar o processo. Siga o menu de voz rápido para ser direcionado ao setor de voos ou suporte. Pronto! Agora é só aguardar para falar com um atendente. 😊 ⚠️ Importante: Se você procura o Telefone LATAM Airlines 0800 ou precisa de suporte no Brasil e em São Paulo a qualquer hora do dia, salve este número! Utilize para resolver dúvidas, alterações, cancelamentos, remarcações ou problemas com bagagem sem complicações. 🚨 Dica de Ouro: Sempre anote o número de protocolo no início da chamada. Ele é a sua garantia e prova valiosa perante o direito do consumidor! #TelefoneLATAM #LATAMBrasil #LATAM0800 #LATAM24Horas #atendimento #passageiroaereo #dicasdeviagem #direitodoconsumidor #voocancelado #vooatrasado"
   },
   {
    "group": "ai",
@@ -1140,15 +1158,6 @@
   },
   {
    "group": "ai",
-   "source": "OpenAI",
-   "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
-   "url": "https://openai.com/index/credit-saison",
-   "published": "2026-10-29T00:00:00.000Z",
-   "description": "Credit Saison’s ChatGPT Enterprise pilot delivered 954% ROI. See how leaders and employees helped turn the results into companywide adoption.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
    "source": "Hugging Face",
    "title": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready",
    "url": "https://huggingface.co/blog/announcing-project-protostar",
@@ -1173,6 +1182,15 @@
    "published": "2026-10-29T00:00:00.000Z",
    "description": "",
    "excerpt": "Language models can do a lot. They write, summarize, translate, and call tools. But they're only a small part of what machine learning can do.\nSay a customer calls your support line. First, you want to know what they said (speech recognition). Then, you want to decide where to send them (decision). You could hand both to a language model, but there are models built for each that are better, faster, and less expensive.\nIn our AnyLanguageModel 1.0 recap , we looked at a year of local and hosted models in Swift. With AnyLanguageModel and swift-huggingface now on their 1.x releases, we're extending the same approach to speech and decisions: familiar Swift APIs with a choice of model.\nBoth packages can download open models from the Hugging Face Hub and run them on device.\nComputers have been transcribing speech for decades, and in the past few years, they've gotten very good at it. Apple platforms already have an API for it. macOS 26 and iOS 26 introduced SpeechAnalyzer , Apple's new speech-to-text API. You add modules such as SpeechTranscriber and SpeechDetector to an analyzer, give it a file or a stream of audio buffers, and read results from async sequences as they arrive. AssetInventory installs the models, so your app decides when downloads happen.\nIt's a well-designed API, but the only engine behind it is Apple's. AnySpeechRecognizer keeps the API and lets you choose the engine:\nThe package mirrors SpeechAnalyzer , SpeechTranscriber , DictationTranscriber , SpeechDetector , and AssetInventory , with Apple's Speech framework as the default engine. If your code uses that shared API, changing the import is enough. To use Parakeet instead, change only how you create the transcriber:\nThe steps for installing assets, running the analyzer, and reading results stay the same. The README has a complete example and lists the differences from Apple's framework.\nParakeet v3 is NVIDIA's Parakeet TDT 0.6B v3 . It's a polyglot: it recognizes 25 European languages and works out which one it's hearing, so you don't pass a locale.\nParakeet Ultra is Moondream's post-trained take on v3 . It was more accurate in most of our measurements.\nParakeet Unified is NVIDIA's English-only Parakeet .\nAll three Parakeets run on the package's own Core ML runtime, which supports file and live input, volatile results, word timing, and word confidence.\nQwen3-ASR is Alibaba's speech model, in 0.6B and 1.7B sizes. It recognizes 30 languages and 22 Chinese dialects, including Mandarin, Cantonese"
+  },
+  {
+   "group": "ai",
+   "source": "OpenAI",
+   "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
+   "url": "https://openai.com/index/credit-saison",
+   "published": "2026-10-29T00:00:00.000Z",
+   "description": "Credit Saison’s ChatGPT Enterprise pilot delivered 954% ROI. See how leaders and employees helped turn the results into companywide adoption.",
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1383,156 +1401,12 @@
   },
   {
    "group": "ai",
-   "source": "AIHOT",
-   "title": "GitHub Universe 2026 发布 GitHub Copilot app、Copilot Fusion 等智能体产品",
-   "url": "https://aihot.news/items/xonc43xgcx39303i40k8022rl",
-   "published": "2026-10-28T16:09:28.000Z",
-   "description": "GitHub 在 GitHub Universe 2026 上提出把 GitHub 打造为完整软件交付系统的愿景，并发布多项产品：GitHub Copilot app 面向智能体交付。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xonc43xgcx39303i40k8022rl",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
    "source": "a16z",
    "title": "The New Security Agenda",
    "url": "https://www.a16z.news/p/the-new-security-agenda",
    "published": "2026-10-28T16:00:31.000Z",
    "description": "What CISOs told us about AI, budgets, and the priorities shaping 2027.",
    "excerpt": "a16z General Partner Martin Casado has a new essay out today on the four philosophies that shape how investors evaluate deals. You should read it! You can find it here .\nFor years, the industry prepared for quantum computing to rewrite the rules of cybersecurity. Then AI got there first.\nThis summer, OpenAI’s agents broke out of a cybersecurity evaluation and breached Hugging Face’s production systems. They exploited vulnerabilities, used stolen credentials, and worked their way into another company’s infrastructure, all to get the answers to their tests. OpenAI’s incident report describes how the models chained together the steps to get there.\nThis was just a preview. Since then, AI has helped uncover weaknesses in software that much of the internet depends on. Just last week, companies were scrambling to patch critical flaws in PHP , which powers roughly 70% of websites. The flaws had been sitting there for more than a decade before researchers working through OpenAI’s Patch the Planet initiative helped uncover them. That same day, eMudhra , a certificate authority trusted by every major browser, was found to have used encryption keys so weak that one of them was just the number 4.\nMistakes like that have always existed, but models are getting better at finding weaknesses and figuring out how to exploit them. The progress is visible in the AI Security Institute’s evaluations , where newer models can complete increasingly complex cyber tasks.\nMore serious vulnerabilities are also being reported . With the growing volume confronting companies, security teams have to determine which weaknesses pose the greatest risk to their business and get them fixed before someone exploits them.\nMeanwhile, the environment they’re protecting keeps growing. Employees are shipping applications they couldn’t have built a year ago. Agents are getting access to company documents, source code, and production systems. Every new application and connection gives security another thing to understand and protect.\nThat helps explain why we’ve seen the market caps of cybersecurity platforms like Palo Alto Networks and CrowdStrike take off this year.\nThere is more to secure. And enterprise budgets are following.\nTo understand how security leaders are responding to these pressures, we surveyed 100 CISOs at companies with more than 1,000 employees about their priorities, budgets, and buying plans for 2027.\nUnsurprisingly, a large majority (87%) expect cybersecurity spending to increase, "
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "Tesla begins humanoid production in California",
-   "url": "https://www.supplychaindive.com/news/tesla-begins-optimus-humanoid-production-california-shipments-2027/872992/",
-   "published": "2026-10-28T14:41:23.000Z",
-   "description": "Early customers for Optimus robots would use them for industrial applications, such as dangerous, repetitive tasks, CEO Elon Musk said.",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "Nvidia forges supplier agreements to expand capacity for AI",
-   "url": "https://www.supplychaindive.com/news/nvidia-forges-supplier-agreements-to-expand-capacity-for-ai/872780/",
-   "published": "2026-10-28T14:20:20.000Z",
-   "description": "The artificial intelligence chipmaker signed deals with six suppliers to scale production of certain components by as much as fifteenfold.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "Simon Willison",
-   "title": "The October inflection point for vibe game development",
-   "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
-   "published": "2026-10-28T13:55:15.000Z",
-   "description": "I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective coding agents became reliable daily drivers for software engineers. I think we've reached a new inflection point in October 2026, and this time it's for vibe coding computer games . Tree Appreciator Emberwick Battle Drones Pumpkin Farmer, aka Quarter Sun Cove Four times as insulting What happens if someone actually puts the work in? You should build a game! Claude Opus 5.5 in particular exhibits meaningful improvements ",
-   "excerpt": "I’ve written before about how November 2025 was an inflection point for coding agents —the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective coding agents became reliable daily drivers for software engineers. I think we’ve reached a new inflection point in October 2026, and this time it’s for vibe coding computer games .\nClaude Opus 5.5 in particular exhibits meaningful improvements in several areas needed to build a compelling game:\nThat last one is particularly important. Models have been able to create something that looks like a game for quite a while now, as seen in my previous experiments . The challenge has been getting to a game that’s actually fun to play .\nGame design is a deep subject area. I won’t pretend to be well versed in it—I know enough to have respect for it as a craft. Creating a novel, compelling gameplay loop which challenges players at the right level and provides a satisfying learning curve is a fine art. I didn’t think the models could do it.\nThen I tried telling Claude Opus 5.5 to “Make it a LOT more fun”... and it did .\nIn the past few weeks I’ve vibe coded (in the classic sense of the term —no looking at the code at all) four games that I’ve genuinely enjoyed playing.\nI attended Foo Camp in Berkeley over the weekend and met several people who were having similar experiences. Building games that play well is shockingly easy now. The new challenge is coming up with concepts for games that are novel and delightful and that wouldn’t exist without AI assistance.\nI haven’t done an exhaustive study, but my current impression is that GPT-6 Astra isn’t quite there yet. It can absolutely build a game, but its sense of fun doesn’t match that of Opus 5.5. I expect OpenAI will get there by the end of the year.\nHere are the four game projects that have convinced me that the models are now capable of producing fun games with very little guidance. All four are built in HTML and JavaScript and run entirely in the browser.\nThe smallest game I found to be genuinely delightful is Tree Appreciator . I used the regular Claude chat interface for this—it didn’t even need Claude Code.\nI built this on a whim while we were driving along Skyline Boulevard looking at trees. My prompt was:\nBuild a three js game called \"Tree appreciator\" - it shows you two algorithmically generated trees and the game mechanics is about appreciating the differences between them. Think hard about how to make sure it is both fun and beautiful.\n"
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
-   "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
-   "published": "2026-10-28T13:15:00.000Z",
-   "description": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "Interconnects",
-   "title": "Artificial Analysis v5 and the benchmarker's dilemma",
-   "url": "https://www.interconnects.ai/p/artificial-analysis-v5-and-the-benchmarkers",
-   "published": "2026-10-28T12:58:39.000Z",
-   "description": "A sort of review of the benchmarking industry and what's missing.",
-   "excerpt": "Hill-climbing is easy, knowing what to hill-climb is hard. Making scores go up is expensive , but we have a much clearer playbook for it than we do for creating meaningful benchmarks at the true frontier of AI today.\nIndependent evaluation of language models is under-appreciated in how hard of a task it is. These groups are not just taking current models and certifying their scores, which is a technically involved task. This is their job if AI progress is slow. When AI progress is as fast as it is, the technical details of the job are the routine work part of trying to put a single number on what makes for a good AI model today. The goal is to have a single number that is representative of current models, matching vibe checks, community sentiment, and scientific analysis, while being forward looking enough so that it’s not outdated in 3 months.\nEveryone building a benchmark faces a sort of paradox. You need your benchmark to reduce to one single number, so that it is easy to discuss, use in reports, and compare models, but every method of aggregating scores comes with meaningful trade-offs. The best scientists need to do this, everyone does. It’s a matter of creating aggregation metrics that you think are most fair, knowing there will always be imperfections.\nWith the amount of money in the AI ecosystem today, the weight of independent evaluation is even higher – you dictate the winners and losers of a trillion dollar market. You also influence some of the models themselves, steering the shape of progress. This is a lot of pressure!\nMy prompt for this article is Artificial Analysis’s recent update to their Intelligence Index, v5 . The AA index is the most prominent independent intelligence metric for the latest frontier models, followed in a distant second by Epoch AI’s Capabilities Index (ECI) . To date, all of these have been incredibly useful for the community and massively flawed!\nInterconnects AI is a reader-supported publication. Consider becoming a subscriber.\nLanguage models are capable of so much today, and this scope of capabilities is growing quickly. Our era of singular intelligence indices should be phased out soon, but it will take a long time.\nA summary of AAv5 is below, from their blog post, where they describe it as “reflecting real-world usage today:”\n➤ Knowledge Work (25%): AA-Briefcase (15%), AutomationBench-AA (5%), and GDP.pdf (5%)\n➤ Coding (25%): FrontierCode 2.0 (15%) and Terminal-Bench 4.0 (10%)\n➤ Science (25%): Terminal-Bench-Scie"
-  },
-  {
-   "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "The Future of TMS: From Transportation Planning to Intelligent Execution",
-   "url": "https://logisticsviewpoints.com/2026/10/28/the-future-of-tms-from-transportation-planning-to-intelligent-execution/",
-   "published": "2026-10-28T11:00:00.000Z",
-   "description": "The Future of TMS: From Transportation Planning to Intelligent Execution should not be read as a prediction that the current category disappears. The more likely future is that its core responsibilities remain while the operating model around them becomes more continuous, connected, intelligent, and… The post The Future of TMS: From Transportation Planning to Intelligent Execution appeared first on Logistics Viewpoints .",
-   "excerpt": "TMS is unlikely to disappear; its core responsibilities are more likely to expand into a more continuous, connected, intelligent, and selectively autonomous execution model. The category’s future is therefore less about replacement than about how transportation execution is re-architected around real-time state and decisions.\nTMS is moving from periodic planning and transaction execution toward continuous transportation management, where plans are refreshed as orders, capacity, service risk, and operating constraints change That shift requires systems to understand not only what transaction was completed but what the current state means for the next decision. Events become inputs to a continuously refreshed operating model. That trajectory follows the discipline in Engineer AI Into the Decision : intelligent transportation execution requires optimization and AI to be connected to explicit decision rights and executable workflows.\nAI will be most useful where it can assemble context, interpret unstructured information, identify patterns, generate options, and support repetitive multi-step work. Optimization, rules, and traditional algorithms remain essential where constraints and feasible tradeoffs are mathematically explicit. The strongest architectures will combine these methods rather than treating one model as universal.\nRoutine decisions involving a tender rejection, a late pickup, a new order after the plan is built, a capacity shortfall, a missed delivery window, or a warehouse constraint that makes the transportation plan infeasible can increasingly be prepared or executed automatically when policy, data confidence, financial exposure, and customer impact remain inside defined limits. Higher-consequence or ambiguous situations should continue to escalate to people. The design target is appropriate autonomy, not maximum autonomy.\nAs software gains more authority, decision rights have to be encoded in permissions, thresholds, workflow states, escalation paths, and audit trails. A platform should be able to reconstruct what it knew, what it recommended or changed, under whose authority, and with what result.\nThe provider landscape—enterprise suite TMS; specialist transportation platforms; network- and managed-transportation-led offerings; and cloud-native or execution-centric platforms with strong connectivity and visibility—will continue to overlap. Buyers should expect more partnerships, embedded intelligence, adjacent-category expansion, and competi"
-  },
-  {
-   "group": "ai",
-   "source": "Simon Willison",
-   "title": "Quoting Terk Terkowitz",
-   "url": "https://simonwillison.net/2026/Oct/28/terk-terkowitz/",
-   "published": "2026-10-28T10:09:07.000Z",
-   "description": "If your work does not benefit from current AI tooling, that is a finding, not a failing. Document why, share it with your community of peers, bring it to your manager, and work to find solutions. An engineer who can explain where AI does not yet help their work is demonstrating the judgement we are asking for. &mdash; Terk Terkowitz , An update from Amazon engineering leadership on the role of the developer in the age of AI Tags: amazon , generative-ai , agentic-engineering , ai , llms",
-   "excerpt": "If your work does not benefit from current AI tooling, that is a finding, not a failing. Document why, share it with your community of peers, bring it to your manager, and work to find solutions. An engineer who can explain where AI does not yet help their work is demonstrating the judgement we are asking for.\n&mdash; Terk Terkowitz , An update from Amazon engineering leadership on the role of the developer in the age of AI\nThis is a quotation collected by Simon Willison, posted on 28th October 2026 ."
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "The future of the firm",
-   "url": "https://openai.com/index/the-future-of-the-firm",
-   "published": "2026-10-28T10:00:00.000Z",
-   "description": "How AI might enter the org chart—beneath, beside, and between us.",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Automated Warehouse",
-   "title": "Exotec traces ‘robot regret’ to three warehouse decisions",
-   "url": "https://www.automatedwarehouseonline.com/exotec-traces-robot-regret-to-three-warehouse-decisions/",
-   "published": "2026-10-28T09:59:00.000Z",
-   "description": "Exotec found that one in four supply leaders regret their warehouse automation decisions but feel trapped by the expense. The post Exotec traces ‘robot regret’ to three warehouse decisions appeared first on Automated Warehouse .",
-   "excerpt": "There is a gap between what warehouse operators expect from automation and what they get, said Exotec SAS. The company today released “Avoid Robot Regret: What Separates Automation That Delivers From Automation That Disappoints,” based on a survey of 250 supply chain decision-makers across the U.S. and Canada.\nAccording to the report, one in four supply chain leaders said they wish they had gone a different way with automation. However, once they made the decision, 94% said switching providers would be prohibitively expensive, leaving most buyers with the systems they chose for the next 10 to 15 years.\nFounded in 2015, Exotec said it delivers “flexible, reliable end-to-end robotic solutions for modern fulfillment operations.” By designing and manufacturing its own technology and solutions, Wasquehal, France-based company said it serves as a single automation provider, reducing complexity and risk while accelerating time to value compared with traditional systems.\nLarger budgets and bigger teams don’t prevent the problem of robot regret, said Exotec. Companies with more than $1 billion in revenue were more likely to say their most significant automation investment underperformed than those with less than $1 billion in revenue (21% vs. 13%).\nAcross the survey, regret traced back to three decisions made before implementation:\nUnderestimating lifetime cost: Sixty-five percent of leaders said the total cost of ownership (TCO) came in higher than expected. Seventy percent said undisclosed costs have raised their annual maintenance spend. Among respondents whose systems underperformed, 43% said total costs ran 26% to 100% above expectations.\nUnclear accountability for performance: Sixty percent of respondents had a system designed by more than one company, and one in seven said they haven’t seen the benefits of automation because no vendor takes full responsibility for performance. Buyers that worked directly with the equipment manufacturers rated the speed of root-cause identification higher than other buyers (75% versus 69%).\nTiming. More than a quarter (27%) said their operations were not ready when they invested in and implemented automation. Early adopters with dedicated automation teams and leadership oversight rarely regretted their choice: One percent said they picked the wrong vendors, compared with 11% of fast followers.\n“What we heard from supply chain leaders is that regret is rarely about the technology itself,” stated Romain Moulin, co-founder and C"
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "Legora is building the agentic operating system for legal work",
-   "url": "https://openai.com/index/legora",
-   "published": "2026-10-28T09:30:00.000Z",
-   "description": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "Latent Space",
-   "title": "[AINews] Anthropic ends Coding Interviews: \"Hunger beats tenure\"",
-   "url": "https://latent.space/p/ainews-anthropic-ends-coding-interviews-hunger-beats-tenure/",
-   "published": "2026-10-28T08:50:30.000Z",
-   "description": "Since coding is solved, why code for the job?",
-   "excerpt": "Since coding is solved, why code for the job?\nSeveral midsize headlines today; on top of some impressive Math verification , Google Genie and Artificial Analysis and FrontierCode all shipped major version bumps of their top offerings, all of which have been AINews title stories in the past, but are mostly annual incremental improvements.\nPast guest Felix Reiseberg gets the headline today for coming out and charting the path forward for junior engineers : “ Hunger beats tenure”\nThis month, I laid the traditional coding interview to rest. As a hiring manager at Anthropic, I stopped asking candidates to do them…\n…There’s no more point in giving you a little React challenge than there is in quizzing people about assembly; Claude is now better at both. Our most impactful builders are successful regardless of how good they are at these tests.\nPick business impact over backlog : In pre-AI-coding 2011, Patrick McKenzie wrote “engineers are hired to create business value, not to program things.”\nPick a radical idea : Come up with a few ideas that would, if successful, dramatically improve the chances that your organization achieves those goals. Be ambitious!\nBuild it over a weekend : I have seen small groups and solo engineers fly past the usual process of writing product requirements documents (PRDs), getting buy-in, and lobbying for time with designers or product managers by building a working prototype.\nFocus on one good idea : In my experience, junior people often make the mistake of cramming multiple ideas into a single prototype , hiding three excellent ideas among 20 bad ones.\nLean into your fresh perspective : If you’re working on something user-facing, you have a unique amount of empathy for users and thus a much better sense for how the product works or doesn’t work for them.\nGet web search results as clean, structured Markdown, using roughly 50% fewer tokens than JSON on average. Easily integrate Markdown search results into your AI workflows across 100+ SerpApi APIs!\nGenie 4: DeepMind's Real-Time World Model Adds Audio, Physics and Gemini Planning\nLaunch : Google DeepMind introduced Genie 4, its \"most realistic and interactive world model yet.\" Users can explore generated environments in real time and steer events, camera angles and actions with text ( GDM , Sundar Pichai , Demis Hassabis ).\nArchitecture : The model is built on Gemini Omni. Gemini runs in the loop to plan multi-step events and keep scenes coherent ( features , Eli Collins ).\nNative audi"
-  },
-  {
-   "group": "wh",
-   "source": "Daifuku",
-   "title": "Notice Regarding Voluntary Adoption of International Financial Reporting Standards (IFRS)",
-   "url": "https://www.daifuku.com/ir/assets/20261028_01e.pdf",
-   "published": "2026-10-28T07:30:00.000Z",
-   "description": "",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "大福（日文）",
-   "title": "国際財務報告基準（IFRS）の任意適用に関するお知らせ",
-   "url": "https://www.daifuku.com/jp/ir/assets/20261028_01.pdf",
-   "published": "2026-10-28T07:30:00.000Z",
-   "description": "",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "BestBlogs 每日早报",
-   "title": "EP219 · Anthropic 拆解交付、LangChain 教设计、Ai2 检验新颖性",
-   "url": "https://www.bestblogs.dev/explore/brief/2026-10-28?utm_source=rss&utm_medium=feed&utm_campaign=daily_brief&entry=rss_brief_index",
-   "published": "2026-10-28T06:00:00.000Z",
-   "description": "📝 今日导语 Anthropic 拆解交付，LangChain 教设计，Ai2 检验新颖性，理解智能体的执行与判断。 🏷 今日关键词： Claude 交付 设计智能体 新颖性评测 A2UI 企业 AI 📰 今日精选内容 Anthropic 如何用 Claude 交付 Claude：将大脑与双手分离 — Latent Space Latent.Space &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 LangChain 如何打造自己的设计智能体 LangChain Blog &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 Ai2：我们能否信任 LLM 判断一个研究想法是否新颖？ Hugging Face - Blog &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 快速、可靠的 A2UI，支持可替换的推理格式 Google Developers Blog &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 89 交易公司如何在新 AI 模型发布当天投入使用：Optiver 的 Noyan Tokgozoglu AI Engineer &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 怎么让大模型更好地利用上下文？小红书 AllSpark 提出增强上下文学习能力",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "MH&L",
-   "title": "Super El Niño: Supply Chain Risks",
-   "url": "https://www.mhlnews.com/global-supply-chain/news/55412733/super-el-nino-supply-chain-risks",
-   "published": "2026-10-28T04:05:00.000Z",
-   "description": "Food and beverage market is most exposed, followed by fertilizers and chemicals says a new Everstream Analytics report.",
-   "excerpt": "The 2026&ndash;27 Super El Ni&ntilde;o is expected to peak in November&ndash;December 2026 and keep disrupting weather patterns through at least the first half of 2027.\nA new report from Everstream Analytics, offers an analysis of the risks as well as ways companies can increase their readiness.\nFive things supply chain leaders need to know:\nRisk has moved from the Atlantic to the Pacific The Atlantic hurricane season is the quietest on record, while East and West Pacific storm activity runs far above normal, hitting coastal China, Japan, the Koreas and the Philippines.\nSoutheast Asia is ground zero Drought in Indonesia is driving wildfires, haze, aviation disruption, low rivers and the worst palm crop conditions in at least 10 years. Europe's waterways remain constrained Rhine gauges at Kaub and Cologne sit at record lows, keeping draft restrictions and higher freight costs in place through October. The Panama Canal faces continued restrictions Gatun Lake is below average but better than in past El Ni&ntilde;o years, thanks to early water management. Food and beverage is most exposed Fertilizers, chemicals, energy, electronics, industrial manufacturing and apparel follow.\nThe report advises companies to use the following steps to mitigate the risk.\nMap suppliers, sites and sub-tier sources in Indonesia, Malaysia, the Philippines and India; assess drought, wildfire and haze exposure through Q1 2027.\nSecure alternative or buffer supply for palm oil and other Southeast Asian tropical crops before yield losses reach pricing.\nStress-test West Pacific port and shipping plans for continued typhoon disruption.\nPlan around Rhine draft limits through October, then prepare for flooding in France, Spain and Italy as Europe turns wetter.\nBudget for Panama Canal draft limits through December&ndash;February and evaluate alternative routings.\nAdd Australia, northern South America and Central America to active dryness monitoring.\nBuild 2027 plans for a normal to slightly above normal Atlantic hurricane season."
   }
  ]
 }
