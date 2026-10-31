@@ -1,0 +1,262 @@
+{
+ "type": "daily",
+ "date": "2026-10-31",
+ "headline": "美股因 AI 支出回报担忧连日下跌，同时 AI 安全风险（补丁空窗期攻击、开发平台被攻破）成为本周焦点；仓储侧，沃尔玛追加约 60 亿美元 Symbotic 自动化，北美机器人订单三季度增长近 25%。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "AI 能在补丁发布到用户更新之间的空窗期自动写出 Firefox 攻击",
+     "source": "Epoch AI",
+     "published": "2026-10-30",
+     "readMinutes": 12,
+     "summary": "Epoch AI 用 Z.ai 8 月发布的开源权重模型 GLM 5.3，从 Mozilla 已发布但尚未推送给用户的安全修复中逆向出漏洞，自动做出“访问网页即可读取访客电脑文件”的攻击，攻破 9 月 17 日至 10 月 26 日的全部六个 Firefox 版本。单次攻击算力约 1000 美元，整项研究 API 花费超 10 万美元。原文英文。",
+     "takeaways": [
+      "“补丁空窗期”指修复已公开、用户还没更新的这段时间，过去需要专家或前沿模型才能利用",
+      "开源模型现在就能低成本完成，攻击门槛明显下降",
+      "实验刻意模拟资源有限、水平不高的攻击者，只用各版本发布时已有的信息",
+      "文中给出缩短发布周期等防御建议"
+     ],
+     "why": "你平时用 AI 写代码、做 Agent，这篇用量化数据说明 AI 编程能力的另一面：安全风险。做项目时要更重视依赖更新和密钥管理。",
+     "url": "https://epochai.substack.com/p/glm-patch-gap-exploit-firefox",
+     "tags": [
+      "报告",
+      "数据"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "“黑色十月”：九个 AI 开发者平台接连披露安全事件",
+     "source": "Wiz",
+     "published": "2026-10-30",
+     "readMinutes": 8,
+     "summary": "Wiz 梳理 10 月内至少九个 AI 开发者平台（Fireworks AI、Lightning AI、Railway、Warp、OpenCode 等）披露的安全事件。多数根因指向凭据访问，攻击者专门搜索存放的环境变量，尤其是授予 AI 访问权限的密钥；部分报告还提到“智能体蜂群”攻击和以“蒸馏”（用大模型输出训练小模型）为目的的窃取。文中举例：Railway 中的加密密钥被用于盗走约 37.1 万美元加密货币，被盗的 AI 访问权限造成用户账单高达数百至数千美元。多数事件仍在调查，细节有限。",
+     "takeaways": [
+      "LLMJacking（盗用 LLM 密钥蹭用算力）已形成可变现的黑市",
+      "各事件无单一共同漏洞，但都在找 AI 相关环境变量",
+      "细节仍在分析中，当前结论是阶段性的"
+     ],
+     "why": "你用 Claude 做网站和 Agent，常会把 API Key 放在平台环境变量里；这篇说明为什么要设额度上限、定期轮换密钥。",
+     "url": "https://www.wiz.io/blog/black-october-for-ai-developer-platforms",
+     "tags": [
+      "报告"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "AI 支出热潮出现裂缝：四大巨头资本开支超 7400 亿美元",
+     "source": "TechCrunch",
+     "published": "2026-10-30",
+     "readMinutes": 6,
+     "summary": "Alphabet、亚马逊、Meta、微软今年计划资本开支合计超 7400 亿美元，投资者开始担心自由现金流为负和回报。Alphabet 第三季度自由现金流为负 91 亿美元，周四单日暴跌 12%、市值蒸发约 5000 亿美元；亚马逊过去 12 个月自由现金流为负 424 亿美元；Meta 预计资本开支最高 1450 亿美元。AI Mode 增长正在侵蚀谷歌搜索广告，该业务增速放缓至 12%。",
+     "takeaways": [
+      "资本开支：Alphabet 约 2050 亿、亚马逊约 2200 亿、Meta 最高 1450 亿美元",
+      "市场情绪从奖励投入转向要求回报",
+      "AI 同时在威胁巨头自己的核心业务（搜索广告）"
+     ],
+     "why": "想做 AI 产品经理/FDE，需要理解行业钱从哪来、会不会收缩；这篇数字集中，十分钟读完。",
+     "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+     "tags": [
+      "数据",
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "我之前对开源模型与网络安全风险的判断错了吗？",
+     "source": "Interconnects",
+     "published": "2026-10-30",
+     "readMinutes": 12,
+     "summary": "Interconnects 作者回顾上周“黑色十月”（PHP2Shell、GitLab 等一批严重漏洞披露）之后，自己此前对开源模型网络安全风险的看法是否需要修正。文章认为幕后修补工作在加速，漏洞数量的指数上升要很久才会见顶。（据开头摘录，全文未细读；原文英文。）",
+     "takeaways": [
+      "背景：近期漏洞披露激增，AI 的网络风险开始显现",
+      "可与 Epoch 的 GLM 5.3 实验对照阅读"
+     ],
+     "why": "了解开源模型政策争论的一个业内视角，补充上面两篇的安全背景。",
+     "url": "https://www.interconnects.ai/p/was-i-wrong-about-open-models-and",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "title": "The Verge 解读 Anthropic 335 页 S-1：奇迹叙事与 94 页风险因素",
+     "source": "The Verge（AIHOT 整理）",
+     "summary": "S-1 信中称要“开启奇迹时代”，同时用 94 页写模型可能带来灾难性甚至生存性风险。",
+     "url": "https://aihot.news/items/vyd3tzicoe478uo8njsr8zt2v"
+    },
+    {
+     "title": "Nvidia 洽谈为 Nscale 给 Anthropic 的数据中心做债务担保",
+     "source": "AIHOT 整理",
+     "summary": "Anthropic 已就首栋建筑签署 446 亿美元合同，Nvidia 或为数十亿美元债务担保。",
+     "url": "https://aihot.news/items/fxxkgtzpf2pb8xjnhu4jtis0b"
+    },
+    {
+     "title": "阿里千问接入 Apple 智能，11 月 4 日起开放测试",
+     "source": "千问 APP（AIHOT 整理）",
+     "summary": "中国用户可在 Siri、写作工具和视觉智能中调用千问，12 月 iOS 27.3 正式推出。",
+     "url": "https://aihot.news/items/fxxkgtzpf2pb8xjnhu4jtis0b"
+    },
+    {
+     "title": "Anthropic 将 Max 套餐更名为 Max 与 Ultra",
+     "source": "Ado Kukic（AIHOT 整理）",
+     "summary": "价格不变（100/200 美元每月），多数老用户的认证 Ultra 账号取消 5 小时限制，周限额不变。",
+     "url": "https://aihot.news/items/pd3dehdyyhzkyrjsw4b6bmcyj"
+    },
+    {
+     "title": "Cursor 披露 Claude Code VS Code 扩展被植入恶意软件",
+     "source": "Cursor（AIHOT 整理）",
+     "summary": "非 Anthropic 开发的恶意版本 2.1.313，最多影响约 5000 用户，建议升级到 2.1.314。",
+     "url": "https://aihot.news/items/iu7xvjx1c2c5wqrpn0rwfxcb5"
+    },
+    {
+     "title": "Gemini API 的 Computer Use 工具正式可用（GA）",
+     "source": "Gemini API 更新日志（AIHOT 整理）",
+     "summary": "结束预览，覆盖 Interactions 和 GenerateContent 两套 API。",
+     "url": "https://ai.google.dev/gemini-api/docs/changelog#10-30-2026"
+    },
+    {
+     "title": "Sierra ARR 突破 4 亿美元",
+     "source": "Sierra",
+     "summary": "Q3 单季新增超 1.5 亿美元，从 2 亿到 4 亿只用五个月（公司自述）。",
+     "url": "https://sierra.ai/blog/our-customers-ambition-is-accelerating-our-growth"
+    },
+    {
+     "title": "Pika 基于 MiniMax H3 后训练并开源 Pika H3 Flex 视频模型",
+     "source": "AIHOT 整理",
+     "summary": "采样步数从 50 步降到 6 步，生成更快，已开源。",
+     "url": "https://aihot.news/items/upl3hjjdokqe13w3ieo9opr0v"
+    },
+    {
+     "title": "Kimi 官方教程：用 Kimi K3.1 Pro 做 3D 作品",
+     "source": "月之暗面（AIHOT 整理）",
+     "summary": "介绍参数化与网格化建模两种流程，含 Blender、Unreal 等 4 个案例。",
+     "url": "https://mp.weixin.qq.com/s?__biz=MzkzMTY4NTIyNA%3D%3D&mid=2247484364&idx=1&sn=42491c3f098deb797ee8f2a17d147b3a"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "北美机器人订单 Q3 增长 24.8%，汽车零部件订单近乎翻倍",
+     "source": "DC Velocity / A3",
+     "published": "2026-10-30",
+     "readMinutes": 4,
+     "summary": "A3 数据显示，2026 年第三季度北美订购 10,989 台机器人、价值 7.235 亿美元，同比增 24.8%（台数）和 26.1%（金额），为今年最强季度；前三季度累计 28,984 台、约 18.9 亿美元。汽车整车订单转正（+7.5%），汽车零部件 +90.4%，半导体/电子、生命科学等也大增。",
+     "takeaways": [
+      "三季度订单同比增约四分之一，增长面比此前更广",
+      "前三季度累计台数 +9.6%、金额 +13.3%",
+      "增长集中在制造业，物流场景需另看数据"
+     ],
+     "why": "行业景气的一手数据，写考研或求职时可引用；注意这是工业机器人整体，不仅是仓储。",
+     "url": "https://www.dcvelocity.com/material-handling/robotics/north-american-robot-orders-increased-24-8-in-third-quarter",
+     "tags": [
+      "数据"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "波士顿动力物流机器人负责人谈：哪些场景最适合仓库机器人",
+     "source": "DC Velocity",
+     "published": "2026-10-30",
+     "readMinutes": 8,
+     "summary": "Boston Dynamics 物流机器人业务负责人 Brian Donnelly 访谈，谈 Stretch（卸货机器人）和 Atlas（人形）的部署思路。他认为机器人首先应替代重复、重体力、易致伤的工作；人形机器人要和客户一起找到真正有价值的应用，思路类似当年 Spot 的摸索过程。原文英文，我只读到前半部分。",
+     "takeaways": [
+      "优先替代重复重体力岗位，而不是最“难受”的岗位",
+      "人形机器人的落地场景仍在摸索，需与客户共同迭代",
+      "文中还谈到如何让自动化投资回报最大"
+     ],
+     "why": "了解国外头部厂商如何看人形与专用机器人的分工，为面试“怎么看人形进仓库”提供素材。",
+     "url": "https://www.dcvelocity.com/material-handling/brian-donnelly-of-boston-dynamics",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "观点：最危险的自动化决策发生在部署之前（AGV/AMR 仿真）",
+     "source": "Robotics & Automation News",
+     "published": "2026-10-30",
+     "readMinutes": 5,
+     "summary": "文章认为移动机器人项目到调试阶段时，车队规模、路线、充电点和取放位置早已定好，错了再改成本很高。用仿真从布局和任务流出发，可提前检验车队够不够、哪里会拥堵、充电如何影响可用车辆数。原文英文。",
+     "takeaways": [
+      "车队规模、路线、充电点要在上线前用仿真验证",
+      "仿真可暴露拥堵点和工位设计问题",
+      "很小的项目用常规计算即可"
+     ],
+     "why": "与你的物流工程专业（系统规划与仿真）直接对口，可作为课程设计或项目选题的思路。",
+     "url": "https://roboticsandautomationnews.com/2026/10/30/opinion-the-riskiest-automation-decisions-happen-before-deployment/106474/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "title": "沃尔玛扩大与 Symbotic 合作，初始承诺约 60 亿美元",
+     "source": "Automated Warehouse",
+     "summary": "为 25 个美国区域配送中心增加自动化，涉及 ASRS（自动存取系统）和码垛机器人。",
+     "url": "https://www.automatedwarehouseonline.com/walmart-spend-6b-adding-symbotic-automation-25-distribution-centers/"
+    },
+    {
+     "title": "CBRE：美国工业地产 Q3 净吸纳 1.046 亿平方英尺",
+     "source": "MH&L",
+     "summary": "为 2022 年 Q4 以来最高，空置率同比降 20 个基点至 6.4%。",
+     "url": "https://www.mhlnews.com/warehousing/news/55415003/industrial-demand-accelerates-in-q3"
+    },
+    {
+     "title": "Jungheinrich 与 Automha 合作推出双向托盘穿梭车",
+     "source": "Robotics & Automation News",
+     "summary": "UP-Carrier GTJ 面向现有仓库的高密度托盘存储，作为渐进式自动化入口。",
+     "url": "https://roboticsandautomationnews.com/2026/10/30/jungheinrich-and-automha-enter-strategic-partnership-for-the-gradual-automation-of-existing-warehouses/106507/"
+    },
+    {
+     "title": "Agility 预计 SPAC 融资约 4.65 亿美元",
+     "source": "The Robot Report",
+     "summary": "低于 6 月预期的 6.2 亿美元，预计 11 月 4 日完成交易。",
+     "url": "https://www.therobotreport.com/humanoid-developer-agility-now-expects-raise-465m-spac-deal/"
+    },
+    {
+     "title": "Humanoid 与 Nvidia 扩大合作开发机器人边缘运行时",
+     "source": "Robotics & Automation News",
+     "summary": "集成 Jetson Thor、Isaac OS 等，让 AI 在机器人本体上实时运行。",
+     "url": "https://roboticsandautomationnews.com/2026/10/30/humanoid-expands-collaboration-with-nvidia-to-power-its-next-generation-of-humanoid-robots/106493/"
+    },
+    {
+     "title": "Blue Yonder 调查：用 AI 购物的人 46% 退过货",
+     "source": "DC Velocity",
+     "summary": "主要原因是“与描述不符”（36%），高于整体退货中的 20%。",
+     "url": "https://www.dcvelocity.com/supply-chain/other-services/reverse-logistics/blue-yonder-46-of-people-who-shop-with-ai-have-returned-what-they-bought"
+    },
+    {
+     "title": "UPS 目标让客户端 RFID 标签包裹量翻倍",
+     "source": "Supply Chain Dive",
+     "summary": "仅有标题，正文未读到。",
+     "url": "https://www.supplychaindive.com/news/ups-aims-to-double-rfid-labeled-volume-from-customer-locations/872946/"
+    },
+    {
+     "title": "沃尔玛计划投资 4 亿美元在得州建配送中心",
+     "source": "Supply Chain Dive",
+     "summary": "仅有标题，正文未读到。",
+     "url": "https://www.supplychaindive.com/news/walmart-plans-400m-texas-distribution-center/873218/"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "feeds/latest.json 各信源状态均正常；本期 feeds 中无北自科技、今天国际等国内仓储一手内容。",
+  "今日搜索未确认重大新模型发布，故无新模型条目。",
+  "周六，信息量偏少；Interconnects、波士顿动力访谈仅读到开头摘录，已在摘要中注明。",
+  "Verge、Nvidia/Nscale 等条目只有 AIHOT 摘要，放入速览。"
+ ]
+}
