@@ -1,0 +1,258 @@
+{
+ "type": "daily",
+ "date": "2026-11-01",
+ "headline": "AI 圈本周被安全事故和算力账单占据：开发者平台密钥被盗频发、五巨头 AI 基建承诺超 3 万亿；仓储侧沃尔玛向 Symbotic 追加约 60 亿美元自动化订单。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "Wiz：「黑色十月」——九个 AI 开发者平台接连出安全事故",
+     "source": "Wiz Research（经 AIHOT 收录）",
+     "published": "2026-10-30",
+     "readMinutes": 8,
+     "summary": "Wiz 梳理 10 月内 Fireworks AI、Lightning AI、Railway、Warp、OpenCode 等至少九个 AI 开发者平台披露的安全事件，根因多指向凭据（密钥、环境变量）被盗。文中用两个被盗密钥案例还原了 LLMJacking（盗用他人云上大模型额度牟利）的全过程：首次未授权调用发生在凭据泄露后 30 分钟内，30 多个小时里约 80 万次 Bedrock 调用。",
+     "takeaways": [
+      "攻击者专门搜寻存储的环境变量，尤其是能调用 AI 的密钥",
+      "被盗密钥会先低频验证存活，几天后才批量滥用，发现晚了损失大",
+      "Zeabur 因此次事件将关停，平台依赖链风险真实存在",
+      "自己做 Agent/网站时，API Key 应设额度上限、定期轮换、不要明文放在平台环境变量里"
+     ],
+     "why": "你平时用 Claude 写代码、做网站和 Agent，密钥管理是最直接能用上的安全常识；做 FDE 方向的人也需要懂交付时的凭据风险。链接为 AIHOT 收录页，内含原文摘要。",
+     "url": "https://aihot.news/items/la0qb77ds4znf2r7ub14a3bqz",
+     "tags": [
+      "报告",
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Interconnects：我之前对开源模型与网络安全风险的判断错了吗？",
+     "source": "Interconnects（Nathan Lambert）",
+     "published": "2026-10-30",
+     "readMinutes": 12,
+     "summary": "作者回应一波「黑色十月」漏洞披露潮（PHP2Shell、GitLab 等），重新审视自己此前「开源模型不会带来新网络风险」的观点。他认为 GLM-5.3 在能力上已跨过当初 Claude Mythos 被描述的「网络武器」门槛，但公开证据显示局面并无剧变；漏洞数量在指数上升，修补力量也在增加。原文英文。",
+     "takeaways": [
+      "漏洞披露激增是当下真实趋势，但归因于开源模型的证据尚不足",
+      "作者区分了「能力出现」和「实际危害」两件事",
+      "理解 AI 安全争论里开源与闭源两派的主要论据"
+     ],
+     "why": "想了解圈内怎么讨论开源模型（含国产 GLM）的风险与政策走向，这篇是研究者视角的一手观点；英文，但篇幅适中，可借翻译工具读。",
+     "url": "https://www.interconnects.ai/p/was-i-wrong-about-open-models-and",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "OpenRouter 教程：233 行脚本，让 AI 在 Linux 沙箱里验证 bug 再给补丁",
+     "source": "OpenRouter（经 AIHOT 收录）",
+     "published": "2026-11-01",
+     "readMinutes": 15,
+     "summary": "教程给出只用标准库的 review.py：用 Responses API 组合 Files API、Shell 沙箱工具和 Apply Patch 工具，把改动文件上传到托管 Linux 沙箱，让模型实际运行代码确认 bug 后返回 V4A 格式补丁。文中含四个模型的实测数据，可接入 pre-push 钩子或 GitHub Actions。原文英文。",
+     "takeaways": [
+      "「让模型自己运行代码验证」比纯读代码审查更少误报",
+      "沙箱 + 补丁工具的组合方式可复用到自己的 Agent",
+      "可直接接进 Git 钩子或 CI 做自动审查"
+     ],
+     "why": "你正用 Claude 写代码、做 Agent，这是一份可照搬的小工程范例，代码量小，适合当天动手跑一遍。",
+     "url": "https://openrouter.ai/blog/tutorials/ai-code-review/",
+     "tags": [
+      "教程"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Arca AI 负责人：Agent 如何做跨十天的长周期金融工作",
+     "source": "Latent Space",
+     "published": "2026-10-31",
+     "readMinutes": 10,
+     "summary": "Arca（AI 原生财富管理公司，刚融资 4850 万美元）的 AI 负责人谈生产落地：Agent 任务最长跨十天，为每个客户做持久记忆系统记录进度和责任人；自建 harness（调度框架）按任务自动选模型，主要用 Claude；最终决策仍由人类顾问做，「Agent 提示人多于人提示 Agent」。原文英文播客稿。",
+     "takeaways": [
+      "长周期任务的关键是持久记忆：已发生什么、接下来跟踪什么、谁负责",
+      "自建 harness 按任务选模型是常见做法",
+      "人在回路里做最终决定，Agent 负责后台推进"
+     ],
+     "why": "这是 AI 交付工程师（FDE）和 AI 产品经理日常面对的真实问题：Agent 怎么在业务里长期跑、怎么设人机边界，对找相关实习有直接参考。",
+     "url": "https://latent.space/p/arca/",
+     "tags": [
+      "案例"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "title": "Google 发布 Gemini 4 Carbon，登顶 Artificial Analysis 综合榜（10-29）",
+     "source": "Latent Space",
+     "summary": "主打网络安全与长周期任务，100 万上下文；先开放给安全防御者，标价 $4/$20 每百万 token，暂无独立测评之外信息。",
+     "url": "https://latent.space/p/ainews-gemini-4-carbon/",
+     "tags": [
+      "新模型"
+     ]
+    },
+    {
+     "title": "OpenAI：12 月起 ChatGPT 与 Codex 合并为统一 Token 额度",
+     "source": "数字生命卡兹克（AIHOT 收录）",
+     "summary": "Plus 和 Pro 用户聊天与编码共用额度，仅 Instant 聊天不受影响。",
+     "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647688028&idx=1&sn=e509269da2e0e0b4d4dfbb121b42204b"
+    },
+    {
+     "title": "Parameter Labs 披露如何接管 ChatGPT 账号",
+     "source": "Simon Willison",
+     "summary": "利用 HTML 预览沙箱的 postMessage 注入加 YouTube oEmbed 绕过 CSP，可窃取访问分享链接用户的数据。",
+     "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/"
+    },
+    {
+     "title": "阿里千问接入 Apple 智能，11 月 4 日开放测试",
+     "source": "AIHOT 整理",
+     "summary": "中国用户可在 Siri、写作工具、视觉智能中调用千问。",
+     "url": "https://aihot.news/items/cbggw7imkzd4c01ifblroln6v"
+    },
+    {
+     "title": "彭博：五大科技巨头 AI 基建承诺超 3 万亿美元",
+     "source": "AIHOT 整理",
+     "summary": "谷歌承诺超 1 万亿，Meta 超 8000 亿，甲骨文自由现金流转负。",
+     "url": "https://aihot.news/items/htfc0ler37j2h4hoqll6jewz3"
+    },
+    {
+     "title": "Anthropic IPO 招股文件披露近 9000 亿美元隐性债务",
+     "source": "AIHOT 整理",
+     "summary": "计划在服务器、建筑和电力上投入近 9000 亿美元，来自彭博报道。",
+     "url": "https://aihot.news/items/yqblvh40gus1ssc0rjvawh6fu"
+    },
+    {
+     "title": "Nvidia 洽谈为 Nscale 的 Anthropic 数据中心提供债务担保",
+     "source": "AIHOT 整理",
+     "summary": "涉及数十亿美元融资，Anthropic 已就首栋楼签 446 亿美元合同。",
+     "url": "https://aihot.news/items/hx5dsruslfiiqhbsro2tvg1n8"
+    },
+    {
+     "title": "Figma 发布 Weave：节点化工作流生成与编辑图像视频",
+     "source": "AIHOT 整理",
+     "summary": "支持多模型对比，工作流可打包成团队一键运行的工具。",
+     "url": "https://aihot.news/items/akdeq33m7cpr8m7zsfgvfiz5c"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "上线不等于成功：物流转型里的验证与测试",
+     "source": "Logistics Viewpoints",
+     "published": "2026-10-29",
+     "readMinutes": 6,
+     "summary": "文章借系统工程的「验证（系统做对了吗）」与「确认（做对的系统了吗）」区分，指出 WMS、TMS、控制塔、仓储自动化常常通过技术测试，却没改善业务指标，甚至把瓶颈转移到别处。自主物流网络让机器权限更大，确认的负担只增不减。原文英文。",
+     "takeaways": [
+      "验证看是否按规格实现，确认看是否改善了出资目标",
+      "自动化可能完美运行却在别处造成新瓶颈",
+      "应在真实工况、跨接口和异常场景下测试，并看人是否按预期使用"
+     ],
+     "why": "物流工程的系统思维范例，可直接用在课程设计、案例分析和面试里讲「怎么评价一个自动化项目」。",
+     "url": "https://logisticsviewpoints.com/2026/10/29/go-live-is-not-success-validation-and-testing-in-logistics-transformation/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "DC Velocity 专访波士顿动力 Brian Donnelly：仓库机器人最佳部署与投资回报",
+     "source": "DC Velocity",
+     "published": "2026-10-30",
+     "readMinutes": 8,
+     "summary": "波士顿动力物流机器人业务负责人谈 Stretch（卸货机器人）和 Atlas（人形机器人）的设计目标、最适合部署的场景、最值得创新的环节，以及如何从自动化投资中拿到最大回报。出发点是让机器人承担危险和重复搬运工作。原文英文。",
+     "takeaways": [
+      "机器人的优先目标是把人从危险和劳损性工作里替换出来",
+      "了解厂商如何评估哪些场景适合部署",
+      "自动化 ROI 的厂商视角（注意是厂商自己的说法）"
+     ],
+     "why": "想进仓储自动化行业，需要知道一线厂商怎么讲部署和回报；这篇适合积累面试谈资。",
+     "url": "https://www.dcvelocity.com/material-handling/brian-donnelly-of-boston-dynamics",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "异常积压：供应链被忽视的运营瓶颈",
+     "source": "Logistics Viewpoints",
+     "published": "2026-10-29",
+     "readMinutes": 5,
+     "summary": "作者把未处理的异常看成一条排队系统：到达快于处理，积压就会变老，廉价干预的窗口随之错过。建议按类别、账龄、业务后果和负责人追踪，并先自动化上下文收集和重复处理，再考虑自动化最终决策。原文英文。",
+     "takeaways": [
+      "异常积压和码头拥堵、缺人一样是运营约束",
+      "按类别、账龄、后果、负责人度量",
+      "先自动化整理信息，人保留审批也能明显提效"
+     ],
+     "why": "排队论和运营管理正好对应物流工程专业课，也贴近管理科学与工程考研方向的问题建模。",
+     "url": "https://logisticsviewpoints.com/2026/10/29/the-exception-backlog-supply-chain-s-overlooked-operational-constraint/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "title": "沃尔玛与 Symbotic 扩大合作：约 60 亿美元，覆盖 25 个区域配送中心",
+     "source": "Automated Warehouse",
+     "summary": "首期承诺约 60 亿美元，分多年多地点，含 BreakPack 拆零拣选与 SymMicro 微型履约。",
+     "url": "https://www.automatedwarehouseonline.com/walmart-spend-6b-adding-symbotic-automation-25-distribution-centers/",
+     "tags": [
+      "数据"
+     ]
+    },
+    {
+     "title": "A3：2026 年三季度北美机器人订单 10,989 台，同比增 24.8%",
+     "source": "DC Velocity",
+     "summary": "金额 7.235 亿美元；前三季度累计 28,984 台，增 9.6%。",
+     "url": "https://www.dcvelocity.com/material-handling/robotics/north-american-robot-orders-increased-24-8-in-third-quarter",
+     "tags": [
+      "数据"
+     ]
+    },
+    {
+     "title": "Jungheinrich 与 Automha 合作推双向托盘穿梭车",
+     "source": "Robotics & Automation News",
+     "summary": "UP-Carrier GTJ 面向老仓库改造，先叉车搬运、后逐步自动化。",
+     "url": "https://roboticsandautomationnews.com/2026/10/30/jungheinrich-and-automha-enter-strategic-partnership-for-the-gradual-automation-of-existing-warehouses/106507/"
+    },
+    {
+     "title": "Berkshire Grey 发布 BG Pilot 软件增强",
+     "source": "Automated Warehouse",
+     "summary": "称基于数十亿次拣选数据，应对包装多变与混合 SKU，属厂商说法。",
+     "url": "https://www.automatedwarehouseonline.com/berkshire-grey-unveils-enhanced-ai-capabilities/"
+    },
+    {
+     "title": "Agility 预计通过 SPAC 交易融资 4.65 亿美元",
+     "source": "The Robot Report",
+     "summary": "人形机器人 Agility 上市融资预期调整为 4.65 亿美元。",
+     "url": "https://www.therobotreport.com/humanoid-developer-agility-now-expects-raise-465m-spac-deal/"
+    },
+    {
+     "title": "智元发布 Worken，用于衡量机器人生产力",
+     "source": "The Robot Report",
+     "summary": "在 AGIBOT 创新日上提出机器人生产力度量指标。",
+     "url": "https://www.therobotreport.com/agibot-introduces-worken-measure-robot-productivity-innovation-day-2026/"
+    },
+    {
+     "title": "Foundry Robotics 融资 1 亿美元建美国首个装配自主工厂",
+     "source": "Robotics & Automation News",
+     "summary": "A 轮超额认购，与仓储关系较弱，仅作行业动向参考。",
+     "url": "https://roboticsandautomationnews.com/2026/10/31/foundry-robotics-raises-100-million-to-build-americas-first-autonomous-factory-for-assembly/106564/"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "抓取失败的信源：Epoch AI、Import AI、Symbotic IR、Interact Analysis、Locus Robotics、国家统计局。AIHOT 接口正常。",
+  "周日，过去 24 小时新内容偏少；Gemini 4 Carbon 为 10-29 发布，因是新模型仍收录，价格与评测来自 Latent Space 转述，暂无独立测评。",
+  "WebSearch 未发现 11-01 新增重大模型。Wiz 与 OpenRouter 精读依据为 feeds 中的 excerpt，未打开完整原文。中文信源（36氪等）当日无相关条目。仓储精读只有 3 条，其中 Donnelly 专访仅读到开头部分，其余按摘要概括。"
+ ]
+}
