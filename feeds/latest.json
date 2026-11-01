@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-11-01T01:16:17.427Z",
+ "fetchedAt": "2026-11-01T16:49:51.496Z",
  "hours": 72,
  "status": [
   {
@@ -7,14 +7,14 @@
    "feed": "https://openai.com/news/rss.xml",
    "ok": true,
    "total": 1341,
-   "recent": 6
+   "recent": 4
   },
   {
-   "source": "Google DeepMind",
-   "feed": "https://deepmind.google/blog/rss.xml",
+   "source": "a16z",
+   "feed": "https://www.a16z.news/feed",
    "ok": true,
-   "total": 100,
-   "recent": 0
+   "total": 20,
+   "recent": 2
   },
   {
    "source": "Epoch AI",
@@ -27,27 +27,13 @@
    "feed": "https://huggingface.co/blog/feed.xml",
    "ok": true,
    "total": 894,
-   "recent": 2
-  },
-  {
-   "source": "a16z",
-   "feed": "https://www.a16z.news/feed",
-   "ok": true,
-   "total": 20,
-   "recent": 3
+   "recent": 1
   },
   {
    "source": "Import AI",
    "feed": "https://importai.substack.com/feed",
    "ok": false,
    "error": "HTTP 403"
-  },
-  {
-   "source": "Simon Willison",
-   "feed": "https://simonwillison.net/atom/everything/",
-   "ok": true,
-   "total": 30,
-   "recent": 6
   },
   {
    "source": "Google AI",
@@ -57,11 +43,11 @@
    "recent": 0
   },
   {
-   "source": "Interconnects",
-   "feed": "https://www.interconnects.ai/feed",
+   "source": "Google DeepMind",
+   "feed": "https://deepmind.google/blog/rss.xml",
    "ok": true,
-   "total": 20,
-   "recent": 1
+   "total": 100,
+   "recent": 0
   },
   {
    "source": "One Useful Thing",
@@ -69,6 +55,34 @@
    "ok": true,
    "total": 20,
    "recent": 0
+  },
+  {
+   "source": "Simon Willison",
+   "feed": "https://simonwillison.net/atom/everything/",
+   "ok": true,
+   "total": 30,
+   "recent": 5
+  },
+  {
+   "source": "Interconnects",
+   "feed": "https://www.interconnects.ai/feed",
+   "ok": true,
+   "total": 20,
+   "recent": 1
+  },
+  {
+   "source": "BestBlogs 每日早报",
+   "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
+   "ok": true,
+   "total": 6,
+   "recent": 3
+  },
+  {
+   "source": "Latent Space",
+   "feed": "https://www.latent.space/feed",
+   "ok": true,
+   "total": 20,
+   "recent": 3
   },
   {
    "source": "Sequoia",
@@ -98,13 +112,6 @@
    "error": "HTTP 403"
   },
   {
-   "source": "BestBlogs 每日早报",
-   "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
-   "ok": true,
-   "total": 7,
-   "recent": 4
-  },
-  {
    "source": "Symbotic",
    "feed": "https://www.symbotic.com/feed/",
    "ok": true,
@@ -126,6 +133,12 @@
    "recent": 0
   },
   {
+   "source": "Interact Analysis",
+   "feed": "https://www.interactanalysis.com/feed/",
+   "ok": false,
+   "error": "fetch failed"
+  },
+  {
    "source": "Georgia Tech SCL",
    "feed": "https://www.scl.gatech.edu/rss.xml",
    "ok": true,
@@ -133,31 +146,25 @@
    "recent": 0
   },
   {
-   "source": "Latent Space",
-   "feed": "https://www.latent.space/feed",
-   "ok": true,
-   "total": 20,
-   "recent": 5
-  },
-  {
    "source": "Automated Warehouse",
    "feed": "https://www.automatedwarehouseonline.com/feed/",
    "ok": true,
    "total": 10,
-   "recent": 2
-  },
-  {
-   "source": "Interact Analysis",
-   "feed": "https://www.interactanalysis.com/feed/",
-   "ok": false,
-   "error": "fetch failed"
+   "recent": 1
   },
   {
    "source": "Logistics Viewpoints",
    "feed": "https://logisticsviewpoints.com/feed/",
    "ok": true,
    "total": 10,
-   "recent": 3
+   "recent": 1
+  },
+  {
+   "source": "MH&L",
+   "feed": "https://www.mhlnews.com/__rss/website-scheduled-content.xml?input=%7B%22sectionAlias%22%3A%22home%22%7D",
+   "ok": true,
+   "total": 25,
+   "recent": 1
   },
   {
    "source": "DC Velocity",
@@ -167,31 +174,11 @@
    "recent": 9
   },
   {
-   "source": "MH&L",
-   "feed": "https://www.mhlnews.com/__rss/website-scheduled-content.xml?input=%7B%22sectionAlias%22%3A%22home%22%7D",
-   "ok": true,
-   "total": 25,
-   "recent": 2
-  },
-  {
-   "source": "Supply Chain Dive",
-   "feed": "https://www.supplychaindive.com/feeds/news/",
-   "ok": true,
-   "total": 10,
-   "recent": 8
-  },
-  {
    "source": "Supply Chain 24/7 自动化",
    "feed": "https://feeds.feedburner.com/sc247/rss/automation",
    "ok": true,
    "total": 20,
    "recent": 0
-  },
-  {
-   "source": "Locus Robotics",
-   "feed": "https://locusrobotics.com/feed/",
-   "ok": false,
-   "error": "HTTP 410"
   },
   {
    "source": "The Robot Report 物流",
@@ -201,11 +188,24 @@
    "recent": 3
   },
   {
-   "source": "Robotics & Automation News",
-   "feed": "https://roboticsandautomationnews.com/feed/",
+   "source": "Supply Chain Dive",
+   "feed": "https://www.supplychaindive.com/feeds/news/",
    "ok": true,
-   "total": 15,
-   "recent": 15
+   "total": 10,
+   "recent": 3
+  },
+  {
+   "source": "Locus Robotics",
+   "feed": "https://locusrobotics.com/feed/",
+   "ok": false,
+   "error": "HTTP 410"
+  },
+  {
+   "source": "AIHOT",
+   "feed": "https://aihot.news/rss",
+   "ok": true,
+   "total": 50,
+   "recent": 32
   },
   {
    "source": "36氪快讯",
@@ -215,20 +215,30 @@
    "recent": 0
   },
   {
-   "source": "AIHOT",
-   "feed": "https://aihot.news/rss",
+   "source": "Robotics & Automation News",
+   "feed": "https://roboticsandautomationnews.com/feed/",
    "ok": true,
-   "total": 50,
-   "recent": 42
+   "total": 15,
+   "recent": 15
   },
   {
    "source": "国家统计局",
    "feed": "https://www.stats.gov.cn/sj/zxfb/rss.xml",
-   "ok": false,
-   "error": "This operation was aborted"
+   "ok": true,
+   "total": 500,
+   "recent": 3
   }
  ],
  "items": [
+  {
+   "group": "wh",
+   "source": "The Robot Report 物流",
+   "title": "Why physical AI is the next lucrative frontier",
+   "url": "https://www.therobotreport.com/why-physical-ai-next-lucrative-frontier/",
+   "published": "2026-11-01T13:30:41.000Z",
+   "description": "To prove its commercial value, physical AI must get past funding enthusiasm and move into production environments. The post Why physical AI is the next lucrative frontier appeared first on The Robot Report .",
+   "excerpt": "Genesis AI recently unveiled the Eno robot to bring physical AI into commercial environments. Source: Genesis AI\nThe fastest-growing market categories have humble beginnings. Physical AI, the combination of robotics and advanced artificial intelligence, is just the latest example.\nChatGPT began as a pitch deck at an accelerator before it became a household name in 2023. Before cloud computing became a boardroom imperative, founders were building it, server rack by server rack, cluster by cluster. And, of course, before fintech rewired retail banking, it appeared as a funding surge in deal flow data that most banks weren’t reading.\nYou see the pattern, and I’ve watched it repeat itself across several years of evaluating startups. The startup ecosystem is the world’s most underutilized business intelligence system.\nIncumbents may amass wealth and power, but it’s the founders who choose to build. Which sectors attract a sudden surge of founding activity is a three-to-five-year leading indicator of where enterprise disruption is headed.\nWhile AI agents garner the lion’s share of media attention and VC funding , deal flow suggests the next market for hypergrowth will be of the metallic persuasion. That is physical AI , which includes autonomous machines and smart manufacturing, among other sensor-laden systems.\nRobotics and physical AI startups raised a record $27.6 billion across 1,009 deals in 2025, or more than double the prior year, according to PitchBook. Genesis AI , which emerged from stealth with a $105 million seed round , recently demonstrated a wheeled robot that can bring physical AI into commercially relevant environments without needing to replicate the human body.\nPhysical AI systems can perceive environments, understand spatial context, make operational decisions, and act autonomously in real time across industrial and other settings. Physical AI systems move beyond static automation toward adaptive operations that continuously improve through interaction with the real world.\nAs with most tech trends, physical AI is driven by a coalescence of several technologies that have matured simultaneously. These include: multimodal sensing , edge computing, simulation environments, robotics foundation models, and world modeling systems. These technologies allow machines to collect information from the physical environment, interpret it in context, simulate outcomes before acting, and continuously refine performance through operational feedback loops.\nIn a"
+  },
   {
    "group": "ai",
    "source": "BestBlogs 每日早报",
@@ -300,6 +310,15 @@
    "published": "2026-10-31T15:56:00.000Z",
    "description": "据彭博社10月31日报道，Alphabet、Meta、微软、亚马逊和甲骨文五大巨头承诺未来数年在数据中心等领域投入超过3万亿美元（约20.01万亿元人民币）。其中谷歌支出承诺超1万亿美元、接近一年前的八倍，Meta超8,000亿美元且近半用于最长分30年支付的租约；甲骨文是首家因投资AI数据中心而自由现金流转负的大型科技公司，预计到2028年恢复正自由现金流。 🔗 阅读原文 via AIHOT · https://aihot.news/items/htfc0ler37j2h4hoqll6jewz3",
    "excerpt": "据彭博社10月31日报道，Alphabet、Meta、微软、亚马逊和甲骨文五大巨头承诺未来数年在数据中心等领域投入超过3万亿美元（约20.01万亿元人民币）。其中谷歌支出承诺超1万亿美元、接近一年前的八倍，Meta超8,000亿美元且近半用于最长分30年支付的租约；甲骨文是首家因投资AI数据中心而自由现金流转负的大型科技公司，预计到2028年恢复正自由现金流。\n原文汇总五巨头财报披露的支出承诺构成和自由现金流变化，读者可以据此看清各家AI基建投入的规模差异与回收压力。\nIT之家 10 月 31 日消息，据彭博社今天（31 日）凌晨报道，AI 基础设施建设仍将吸引巨额资金。Alphabet、Meta、微软、亚马逊和甲骨文五大科技巨头承诺，未来数年将在数据中心等领域投入超过 3 万亿美元 （IT之家注：现汇率约合 20.01 万亿元人民币） 。\n随着数据中心建设竞赛愈演愈烈，五家公司披露的租赁、建筑、能源及设备采购承诺大幅增长。这些资金有的将在短期内支出，有的则涉及 未来数十年的长期合同 。\n谷歌的支出承诺规模最大。根据 Alphabet 提交的监管文件，包括技术设备、能源和租赁在内的合同承诺总额 超过 1 万亿美元 （现汇率约合 6.67 万亿元人民币） ， 接近一年前的八倍 。\nMeta 的支出承诺同样大幅攀升，未来支出总额 超过 8,000 亿美元 （现汇率约合 5.34 万亿元人民币） 。其中将近一半用于尚未生效的数据中心租约，最长分 30 年支付。Meta CFO 苏珊 · 李在上周的分析师电话会议上说：“我们预计将继续大举投资，支持核心业务和新兴 AI 项目。”\n今年商界的一大争论，是科技企业斥资数千亿美元建设 AI 数据中心， 究竟能否收回投资 。Alphabet 和 Meta 都是全球最赚钱的企业之一，却因投资有望改变行业格局的新业务，出现 自由现金流由正转负 的情况。\n不过，五家公司的支出并非全部用于数据中心，披露口径也不完全一致，因此很难直接比较。\n例如，Meta 的部分预算用于 Reality Labs 部门的消费级硬件产品，Alphabet 和亚马逊的计划支出则包括内容授权费用。本次统计也没有计入现有租约和债务等其他大额支出。\n五家公司未来的租赁付款承诺合计 1.3 万亿美元 （现汇率约合 8.67 万亿元人民币） ，其他采购承诺合计 1.9 万亿美元 （现汇率约合 12.67 万亿元人民币） 。除微软外，数据均取自各家公司最新财报。微软的采购和建设订单数据来自截至 6 月底的年度报告，该公司此后尚未更新这两项数据。\n甲骨文是首家 因投资 AI 数据中心而陷入自由现金流为负 的大型科技公司。在本周早些时候举行的投资者说明会上，甲骨文预计到 2028 年恢复正自由现金流，并计划通过供应商融资和客户预付款等方式，减少项目初期需要自行承担的资金支出。\n原文汇总五巨头财报披露的支出承诺构成和自由现金流变化，读者可以据此看清各家AI基建投入的规模差异与回收压力。"
+  },
+  {
+   "group": "wh",
+   "source": "国家统计局",
+   "title": "2026年10月中国采购经理指数运行情况",
+   "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261031_1965718.html",
+   "published": "2026-10-31T09:30:01.000Z",
+   "description": "国家统计局服务业调查中心中国物流与采购联合会 一、中国制造业采购经理指数运行情况 10月份，制造业采购经理指数（PMI）为49.3%，比上月下降0.8个百分点，制造业景气水平有所回落。 从企业规模看，大型企业PMI为50.2%，比上月下降0.4个百分点，仍高于临界点；中、小型企业PMI分别为48.4%和47.5%，比上...",
+   "excerpt": "10 月份，制造业采购经理指数（ PMI ）为 49.3% ，比上月下降 0.8 个百分点，制造业景气水平有所回落。\n从企业规模看，大型企业 PMI 为 50.2% ，比上月下降 0.4 个百分点，仍高于临界点；中、小型企业 PMI 分别为 48.4% 和 47.5% ，比上月下降 1.3 个和 1.4 个百分点，低于临界点。\n从分类指数看，构成制造业 PMI 的 5 个分类指数中，供应商配送时间指数高于临界点；生产指数、新订单指数、原材料库存指数和从业人员指数低于临界点。\n生产指数为 49.8% ，比上月下降 1.9 个百分点，表明制造业生产活动有所放缓。\n新订单指数为 49.4% ，比上月下降 1.1 个百分点，表明制造业市场需求景气度下降。\n原材料库存指数为 48.4% ，比上月上升 0.2 个百分点，表明制造业主要原材料库存量降幅有所收窄。\n供应商配送时间指数为 50.2% ，比上月上升 0.1 个百分点，表明制造业原材料供应商交货时间加快。\n10 月份，非制造业商务活动指数为 49.7% ，比上月下降 0.5 个百分点，非制造业景气水平有所下降。\n分行业看，建筑业商务活动指数为 48.0% ，比上月下降 2.3 个百分点；服务业商务活动指数为 50.0% ，比上月下降 0.2 个百分点。从服务业行业看，铁路运输、水上运输、邮政、互联网软件及信息技术服务等行业商务活动指数均位于 55.0% 以上较高景气区间；资本市场服务、保险、房地产等行业商务活动指数均低于临界点。\n新订单指数为 44.4% ，比上月下降 2.1 个百分点，表明非制造业市场需求景气水平回落。分行业看，建筑业新订单指数为 40.0% ，比上月下降 5.7 个百分点；服务业新订单指数为 45.2% ，比上月下降 1.5 个百分点。\n投入品价格指数为 51.5% ，比上月下降 1.0 个百分点，表明非制造业企业用于经营活动的投入品价格总体水平涨幅收窄。分行业看，建筑业投入品价格指数为 52.4% ，比上月下降 1.6 个百分点；服务业投入品价格指数为 51.4% ，比上月下降 0.8 个百分点。\n销售价格指数为 49.5% ，比上月下降 0.8 个百分点，表明非制造业企业销售价格总体水平有所回落。分行业看，建筑业销售价格指数为 48.9% ，比上月上升 0.4 个百分点；服务业销售价格指数为 49.6% ，比上月下降 1.0 个百分点。\n从业人员指数为 46.0% ，比上月上升 0.1 个百分点，表明非制造业企业用工景气度略有改善。分行业看，建筑业从业人员指数为 42.0% ，比上月下降 2.3 个百分点；服务业从业人员指数为 46.7% ，比上月上升 0.5 个百分点。\n业务活动预期指数为 54.7% ，比上月下降 0.8 个百分点，仍高于临界点，表明非制造业企业对市场发展保持信心。分行业看，建筑业业务活动预期指数为 52.3% ，比上月下降 3.1 个百分点；服务业业务活动预期指数为 55.2% ，比上月下降 0.3 个百分点。\n10 月份，综合 PMI 产出指数为 49.7% ，比上月下降 1.0 个百分点，我国企业生产经营活动总体有所放缓。\n采购经理指数（ PMI ），是通过对企业采购经理的月度调查结果统计汇总、编制而成的指数，它涵盖了企业采购、生产、流通等各个环节，包括制造业和非制造业领域，是国际上通用的监测宏观经济走势的先行性指数之一，具有较强的预测、预警作用。综合 PMI 产出指数是 PMI 指标体系中反映当期全行业（制造业和非制造业）产出变化情况的综合指数。 PMI 高于 50% 时，反映经济总体较上月扩张；低于 50% ，则反映经济总体较上月收缩。\n涉及《国民经济行业分类》（ GB/T 4754-2017 ）中制造业的 31 个行业大类， 3200 家调查样本；非制造业的 43 个行业大类， 4300 家调查样本。\n采购经理调查采用 PPS （ Probability Proportional to Size ）抽样方法，以制造业或非制造业行业大类为层，行业样本量按其增加值占全部制造业或非制造业增加值的比重分配，层内样本使用与企业主营业务收入成比例的概率抽取。\n本调查由国家统计局直属调查队具体组织实施，利用国家统计联网直报系统对企业采购经理进行月度问卷调查。\n（ 1 ）分类指数的计算方法。制造业采购经理调查指标体系包括生产、新订单、新出口订单、在手订单、产成品库存、采购量、进口、主要原材料购进价格、出厂价格、原材料库存、从业人员、供应商配送时间、生产经营活动预期等 13 个分类指数。非制造业采购经理调查指标体系包括商务活动、新订单、新出口订单、在手订单、存货、投入品价格、销售价格、从业人员、供应商配送时间、业务活动预期等 10 个分类指数。分类指数采用扩散指数计算方法，即正向回答的企业个数百分比加上回答不变的百分比的一半。由于非制造业没有合成指数，国际上通常用商务活动指数反映非制造业经济发展的总体变化情况。\n（ 2 ）制造业 PMI 指数的计算方法。制造业 PMI 是由 5 个扩散指数（分类指数）加权计算而成。 5 个分类指数及其权数是依据其对经济的先行影响程度确定的。具体包括：新订单指数，权数为 30% ；生产指数，权数为 25% ；从业人员指数，权数为 20% ；供应商配送时间指数，权数为 15% ；原材料库存指数，权数为 10% 。其中，供应商配送时间指数为逆指数，在合成制造业 PMI 指数时进行反向运算。\n（ 3 ）综合 PMI 产出指数的计算方法。综合 PMI 产出指数由制造业生产指数与非制造业商务活动指数加权求和而成，权数分别为制造业和非制造业占 GDP 的比重。\n采购经理调查是一项月度调查，受季节因素影响，数据波动较大。现发布的指数均为季节调整后的数据。\n10 月份，制造业采购经理指数（ PMI ）为 49.3% ，比上月下降 0.8 个百分点，制造业景气水平有所回落。\n从企业规模看，大型企业 PMI 为 "
   },
   {
    "group": "wh",
@@ -698,6 +717,15 @@
    "excerpt": "AI can turn public security fixes into working exploits before users receive an update\nEpoch AI 实验发现，Z.ai 八月发布的开源权重模型 GLM 5.3 能利用 Mozilla 已发布但未推送给用户的安全补丁（patch gap），自主构建网页攻击，仅访问页面即可读取访客电脑文件，攻破 9 月 17 日至 10 月 26 日发布的全部六个 Firefox 版本。\nEpoch AI 用自建实验给出量化数据，展示开源权重模型如何在补丁窗口期内低成本复现漏洞利用，并给出缩短发布周期的防御建议。\n设想你是 Firefox 两亿用户中的一员。你打开一个网站，页面加载完成，你什么都没点就离开了。看起来没什么可担心的。\n只不过，光是加载这个页面，就可能让攻击者获得读取你电脑上任意文件的能力，还能窃取浏览器里保存的密码或身份验证 cookie——不需要下载、不弹窗、不请求任何权限。简而言之，攻击者能拿到足够的信息，冒充你登录某些在线服务。\n我们的新实验发现，Z.ai 于 8 月发布、可公开获取的开放权重模型 GLM 5.3，仅用价值 1000 美元的计算资源就能自主完成这种攻击。它的做法是：从 Mozilla 已发布但尚未推送给用户的安全修复中逆向推导出漏洞。\n从修复发布到送达用户之间的这段时间被称为 补丁空窗期 ，这是软件发布流程中一个已知的薄弱环节。随着 AI 模型的入侵能力不断增强，这个问题愈发重要。Anthropic 的 Glasswing 和 OpenAI 的 Daybreak 等项目让防御方提前接触前沿 AI 模型，以发现并修补漏洞；但已发布的修复也可能向攻击者暴露缺陷，让他们赶在修复推送前下手。过去，利用补丁空窗期漏洞需要大量时间和专业知识，或者需要能接触到具备高级网络攻击能力的 前沿模型 的特殊权限，因此能利用这一空窗期的攻击者寥寥无几。\n但现在，开放权重模型自己就能完成这项工作。GLM 5.3 利用即将发布的安全修复中的信息，构建了一个网页：Firefox 用户一旦访问，该网页就会读取访客电脑上的文件并发送给攻击者，全程无需用户再做任何操作。这种方法足够可靠，仅凭各版本发布时已有的信息，就攻破了 9 月 17 日至 10 月 26 日期间发布的全部六个 Firefox 版本。\n我们的实验环境刻意模拟资源有限、水平不高的黑客，只使用每个版本发布时已有的信息。针对 Firefox 的研究，我们总共在 API 上花费超过 10 万美元，其中包括搭建逼真离线环境的实验和前期测试。但环境搭好之后，成功攻击每个 Firefox 版本只需约 1000 美元的计算成本。我们给 GLM 5.3 最多 48 小时寻找漏洞利用方法，而它最快的一次只用了 12 小时。\n即便如此，过程也并不轻松。在一次尝试中，GLM 5.3 发现 Firefox 即将修复一个内存缺陷，随后开发出读取和修改浏览器内存的方法。但 Firefox 的安全防护仍然阻止模型读取目标文件，于是模型把最初的漏洞利用与多个后续阶段串联起来。它会诊断崩溃原因，放弃行不通的思路，反复迭代，直到仅仅访问网页就足以读取文件。\n针对最新版 Firefox 的所有攻击，都依赖于把补丁空窗期漏洞与另一个未公开漏洞串联起来，从而绕过常规防护。我们把这个漏洞分享给了 Mozilla，它已在 10 月 27 日的 Firefox 159.0 版本 中修复，这应该会让今后的补丁空窗期攻击更难得手。\n以这种方式使用 GLM 5.3 时，我们没有触发任何提供方的防护机制或拒绝响应，包括 Z.ai 在内。我们把任务包装成了一次安全演练，但除此之外，我们的行为与真实攻击者并无区别。\n对 Google Chrome 的类似攻击没有成功，尽管我们同样投入了约 10 万美元的算力。但这并不能有力证明，换用更高级的提示词或能力更强的开放权重模型，攻击就不会成功。例如，Kimi K3.1 Pro 的权重预计 11 月初发布， 早期基准数据 显示，它在这类工作上可能比 GLM 5.3 更强。\n开源项目尤其容易受到补丁空窗期攻击，但 AI 越来越擅长把可运行的程序反编译回可用的代码，这意味着即使代码没有公开，它也能读懂代码修复。Anthropic 演示了 Mythos 能在 Windows 上做到这一点。虽然我们尚未用开放权重模型测试过，但我们预计，随着开放权重模型的网络能力持续提升，这一威胁会愈发严重。（话虽如此，我们并不对开放权重模型将如何影响网络安全领域攻防整体平衡作出断言。）\n这意味着我们需要缩短漏洞修复从公开到全面铺开之间的窗口。防御方可以在准备就绪前对安全修复保密，加快把修复从测试版推进到正式版，并在多个漏洞可能被串联利用时避免一次性全部修补。\nFirefox 和 Google Chrome 现在都每周发布更新，但这可能还不够快。我们在不到两天内就做出了漏洞利用程序，而真实攻击者可能更快。我们应当假定：一旦漏洞修复进入已发布的代码，攻击者就能够、也一定会利用它来攻击当前版本。\n来源： Epoch AI：Gradient Updates · epochai.substack.com\nEpoch AI 用自建实验给出量化数据，展示开源权重模型如何在补丁窗口期内低成本复现漏洞利用，并给出缩短发布周期的防御建议。"
   },
   {
+   "group": "wh",
+   "source": "国家统计局",
+   "title": "2026年前三季度全国规模以上文化及相关产业企业营业收入增长4.3%",
+   "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261030_1965708.html",
+   "published": "2026-10-30T09:30:01.000Z",
+   "description": "据对全国8.3万家规模以上文化及相关产业企业（以下简称“文化企业”）调查，2026年前三季度，文化企业实现营业收入108210亿元，按可比口径计算（详见附注2），同比增长4.3%[1]。其中，文化新业态特征较为明显的16个行业小类[2]实现营业收入53827亿元，同比增长8.9%，快于全部规模以上文化企业4.6个百分点。 分...",
+   "excerpt": "据对全国 8.3 万家规模以上文化及相关产业企业（以下简称“文化企业”）调查， 2026 年前三季度，文化企业实现营业收入 108210 亿元，按可比口径计算（详见附注 2 ），同比增长 4.3% [1] 。其中，文化新业态特征较为明显的 16 个行业小类 [2] 实现营业收入 53827 亿元，同比增长 8.9% ，快于全部规模以上文化企业 4.6 个百分点。\n分产业类型看，文化制造业实现营业收入 26744 亿元，同比下降 0.2% ；文化批发和零售业 15769 亿元，下降 0.1% ；文化服务业 65697 亿元，增长 7.3% 。\n分领域看，文化核心领域 [3] 实现营业收入 75042 亿元，同比增长 5.1% ；文化相关领域 33168 亿元，增长 2.4% 。\n分行业类别看，新闻信息服务实现营业收入 16337 亿元，同比增长 7.3% ；内容创作生产 25129 亿元，增长 4.1% ；创意设计服务 20850 亿元，增长 8.8% ；文化传播渠道 10780 亿元，下降 1.9% ；文化投资运营 412 亿元，增长 11.7% ；文化娱乐休闲服务 1535 亿元，增长 0.3% ；文化辅助生产和中介服务 11673 亿元，增长 4.7% ；文化装备生产 5112 亿元，增长 5.3% ；文化消费终端生产 16383 亿元，同比持平。\n分区域看，东部地区文化企业实现营业收入 88123 亿元，同比增长 5.0% ；中部地区 11165 亿元，增长 1.5% ；西部地区 8044 亿元，增长 2.0% ；东北地区 877 亿元，下降 5.5% 。\n前三季度，文化企业实现利润总额 8317 亿元，同比下降 7.3% ；营业收入利润率为 7.69% ，同比下降 0.96 个百分点。三季度末，文化企业资产总计 235484 亿元，同比增长 6.0% ；每百元资产实现营业收入为 62.0 元，同比减少 1.6 元。\n[2] 新业态特征明显的 16 个行业小类是：广播电视集成播控，互联网搜索服务，互联网其他信息服务，数字出版，其他文化艺术业，动漫、游戏数字内容服务，互联网游戏服务，多媒体、游戏动漫和数字出版软件开发，增值电信文化服务，其他文化数字内容服务，互联网广告服务，互联网文化娱乐平台，版权和文化软件服务，娱乐用智能无人飞行器制造，可穿戴智能文化设备制造，其他智能文化消费设备制造。\n[3] 文化核心领域包括新闻信息服务、内容创作生产、创意设计服务、文化传播渠道、文化投资运营、文化娱乐休闲服务 6 个行业，文化相关领域包括文化辅助生产和中介服务、文化装备生产、文化消费终端生产 3 个行业。\n文化及相关产业指为社会公众提供文化产品和文化相关产品的生产活动的集合。《文化及相关产业分类（ 2018 ）》规定文化及相关产业包括新闻信息服务、内容创作生产、创意设计服务、文化传播渠道、文化投资运营、文化娱乐休闲服务、文化辅助生产和中介服务、文化装备生产、文化消费终端生产 9 个大类。\n营业收入指报告期内企业从事销售商品、提供劳务和让渡资产使用权等生产经营活动形成的经济利益流入。包括“主营业务收入”和“其他业务收入”。\n利润总额指报告期内企业在生产经营过程中各种收入扣除各种耗费后的盈余，反映企业在报告期内实现的盈亏总额。\n资产总计指报告期末企业过去的交易或者事项形成的、由企业拥有或者控制的、预期会给企业带来经济利益的资源。\n每百元资产实现营业收入 = 营业收入÷平均资产÷累计月数× 12 × 100 ，单位：元。\n规模以上文化及相关产业的统计范围为《文化及相关产业分类（ 2018 ）》所规定行业范围内，年主营业务收入在 2000 万元及以上的工业企业；年主营业务收入在 2000 万元及以上的批发企业或年主营业务收入在 500 万元及以上的零售企业；年营业收入在 1000 万元及以上的服务业企业，其中交通运输、仓储和邮政业，信息传输、软件和信息技术服务业，水利、环境和公共设施管理业的年营业收入在 2000 万元及以上，居民服务、修理和其他服务业，文化、体育和娱乐业的年营业收入在 500 万元及以上。\n由于规模以上文化及相关产业企业范围每年发生变化，为保证本年数据与上年可比，计算规模以上文化及相关产业企业营业收入等指标同比增长速度所采用的同期数与本期的企业统计范围相一致，和上年公布的数据存在口径差异。主要原因是每年有部分企业达到规模以上标准纳入调查范围，同时也有部分企业因规模变小而退出调查范围，还有新建投产、破产、注（吊）销企业的影响。\n每季度进行规模以上文化及相关产业法人单位认定，根据国家统计联网直报平台上规模以上工业企业、限额以上批发和零售业企业、规模以上服务业企业全面调查取得的数据进行汇总。\n东部地区包括北京、天津、河北、上海、江苏、浙江、福建、山东、广东、海南 10 个省（直辖市）；中部地区包括山西、安徽、江西、河南、湖北、湖南 6 个省；西部地区包括内蒙古、广西、重庆、四川、贵州、云南、西藏、陕西、甘肃、青海、宁夏、新疆 12 个省（自治区、直辖市）；东北地区包括辽宁、吉林、黑龙江 3 个省。\n据对全国 8.3 万家规模以上文化及相关产业企业（以下简称“文化企业”）调查， 2026 年前三季度，文化企业实现营业收入 108210 亿元，按可比口径计算（详见附注 2 ），同比增长 4.3% [1] 。其中，文化新业态特征较为明显的 16 个行业小类 [2] 实现营业收入 53827 亿元，同比增长 8.9% ，快于全部规模以上文化企业 4.6 个百分点。\n分产业类型看，文化制造业实现营业收入 26744 亿元，同比下降 0.2% ；文化批发和零售业 15769 亿元，下降 0.1% ；文化服务业 65697 亿元，增长 7.3% 。\n分领域看，文化核心领域 [3] 实现营业收入 75042 亿元，同比增长 5.1% ；文化相关领域 33168 亿元，增长 2.4% 。\n分行业类别看，新闻信息服务实现营业收入 "
+  },
+  {
    "group": "ai",
    "source": "OpenAI",
    "title": "Making it easier for websites to express AI training preferences",
@@ -759,6 +787,15 @@
    "published": "2026-10-30T04:04:56.000Z",
    "description": "月之暗面（Kimi）发布官方教程，详解 Kimi K3.1 Pro 的 3D 创作工作流程，说明参数化建模与网格化建模两种方式及对应工具选择。文章分享了 4 个案例的具体操作，包括在 Unreal Engine 中构建东方天宫、制作可 3D 打印的台灯、纯代码调用 Blender 生成建筑、用 Tripo 和 Blender 搭建微缩城市，并给出图胜于言、先搭灰模再细化等 5 个使用技巧。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ykvaq4vx3ydt23josezzan62r",
    "excerpt": "月之暗面（Kimi）发布官方教程，详解 Kimi K3.1 Pro 的 3D 创作工作流程，说明参数化建模与网格化建模两种方式及对应工具选择。文章分享了 4 个案例的具体操作，包括在 Unreal Engine 中构建东方天宫、制作可 3D 打印的台灯、纯代码调用 Blender 生成建筑、用 Tripo 和 Blender 搭建微缩城市，并给出图胜于言、先搭灰模再细化等 5 个使用技巧。\n官方首次公开内部 3D 工作流程，覆盖建模方式、Harness 选择和 5 条可复用技巧，读者可按案例直接上手。\n官方首次公开内部 3D 工作流程，覆盖建模方式、Harness 选择和 5 条可复用技巧，读者可按案例直接上手。"
+  },
+  {
+   "group": "wh",
+   "source": "国家统计局",
+   "title": "社会事业全面发展 民生福祉取得新进步——2025年社会民生统计报告",
+   "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261030_1965711.html",
+   "published": "2026-10-30T03:00:00.000Z",
+   "description": "社会事业全面发展 民生福祉取得新进步 ——2025年社会民生统计报告 2025年，在以习近平同志为核心的党中央坚强领导下，各地区各部门着力推动社会民生事业高质量发展，持续加大民生领域投入力度，民生发展基础更加稳固，基本公共服务均等化稳步推进，重点群体民生保障扎实有力，生态环境和生活品质持续提升，社会...",
+   "excerpt": "2025 年，在以习近平同志为核心的党中央坚强领导下，各地区各部门着力推动社会民生事业高质量发展，持续加大民生领域投入力度，民生发展基础更加稳固，基本公共服务均等化稳步推进，重点群体民生保障扎实有力，生态环境和生活品质持续提升，社会民生事业发展取得新成效。\n人口总量保持较大规模。 2025 年末，全国人口 [1] 总量 140489 万人，继续保持 14 亿以上规模，占全球总人口的 17% 以上。全国 16 — 59 岁人口 85136 万人，占总人口的 60.6% ，劳动力资源丰富。\n人口综合素质持续提升。 2025 年，我国人口健康状况不断改善，平均预期寿命达到 79.25 岁，比上年提高 0.25 岁。教育水平持续提升，全国 16 — 59 岁人口平均受教育年限为 11.3 年，比上年提高 0.1 年。具有大专及以上文化程度人口达到 27233 万人，占全国人口比重为 19.4% ，接近五分之一。公民具备科学素质的比例达 16.7% ，比上年提高 1.4 个百分点。\n城镇和东部发达地区人口占比上升。 2025 年末，城镇常住人口 95380 万人，城镇化率为 67.89% ，比上年末提高 0.89 个百分点。从区域看，东部地区人口保持增长，常住人口达 56748 万人，占全国人口的比重为 40.4% ，比上年末提高 0.1 个百分点。\n城镇就业保持增长。 2025 年末，我国就业人员 72504 万人。其中城镇就业人员 47535 万人，比上年末增加 190 万人，占全国就业人员的比重达 65.6% ，比上年末提高 1.1 个百分点；乡村就业人员 24969 万人，比上年末减少 1125 万人。\n第三产业和东部地区吸纳就业能力增强。 分行业看， 2025 年末，第三产业就业人员 35798 万人，占全国就业人员的比重为 49.4% ，比上年末提高 0.6 个百分点。分区域看，东部地区就业人员 30265 万人，占全国就业人员比重为 41.7% ，比上年末提高 0.2 个百分点。\n调查失业率总体平稳。 2025 年，全国城镇调查失业率平均值为 5.2% ，其中 30 — 59 岁劳动力主体人群失业率平均值为 4.0% ，保持在较低水平。城镇外来农业户籍劳动力失业率平均值为 4.7% ，低于全国城镇整体水平 0.5 个百分点。\n居民收入增长与经济增长同步。 2025 年，全国居民人均可支配收入 43377 元，扣除价格因素，比上年实际增长 5.0% ，与经济增长保持同步。其中，城镇、农村居民人均可支配收入分别为 56502 元、 24456 元，比上年实际增长 4.2% 、 6.0% 。城乡收入差距持续缩小，城乡居民人均可支配收入之比为 2.31 ，比上年下降 0.03 。\n居民发展型改善型消费支出增长较快。 2025 年，居民人均消费支出 29476 元，扣除价格因素，比上年实际增长 4.4% 。居民人均交通通信、教育文化娱乐、其他用品及服务等发展型改善型消费支出增长较快，分别比上年名义增长 8.3% 、 9.4% 、 11.2% 。居民人均食品烟酒、居住、衣着等基础性消费支出平稳增长，分别比上年增长 2.6% 、 2.1% 和 2.2% 。居民人均服务性消费支出比上年增长 4.5% ，占居民人均消费支出比重为 46.1% 。\n养老保险体系建设成效明显。 2025 年末，全国基本养老保险参保人数 10.8 亿人，比上年末增加 308 万人。企业年金参加职工人数、领取人数分别为 3343 万人、 369 万人，分别比上年末增加 101 万人、 27 万人，增长 3.1% 、 7.8% 。\n医疗保险保障水平提升。 2025 年末，全国基本医疗保险参保人数 13.3 亿人，比上年末增加 407 万人。全年基本医疗保险、大病保险、医疗救助累计惠及农村低收入人口就医 2.5 亿人次。长期护理保险参保人数 3.09 亿人，享受待遇人数 192.9 万人。\n失业、工伤、生育保险保障继续扩围。 2025 年末，全国失业保险参保人数 2.49 亿人，比上年末增加 329 万人。工伤保险重点向新就业形态人员、农民工扩围，参保人数 3.05 亿人，比上年末增加 110 万人。生育保险参保人数 2.6 亿人，比上年末增加 659 万人。\n社会救助和社会福利不断优化。 2025 年末，我国城市、农村最低生活保障人数分别为 596 万人、 3340 万人；低保平均标准分别为每人每月 832.0 元、 621.2 元，分别比上年增长 4.2% 、 4.6% 。\n教育普及程度稳步提高。 2025 年，全国学前教育毛入园率 92.9% ，比上年提高 0.9 个百分点，达到世界高收入国家平均水平。九年义务教育巩固率 96.1% ，比上年提高 0.2 个百分点。高中阶段毛入学率 92.0% ，与上年持平。高等教育毛入学率 61.3% ，比上年提高 0.5 个百分点。特殊教育在校生 92.7 万人，义务教育阶段残疾儿童入学率保持在 97% 以上。\n教育保障能力持续强化。 2024 年，全国教育经费总投入达 6.9 万亿元，国家财政性教育经费占 GDP 的比例已连续 13 年实现 4% 的目标。 2025 年，全国各级各类教育专任教师总量达 1870 万人，为教育高质量发展提供坚实的师资保障。\n医疗卫生资源供给持续增加。 2025 年末，全国共有医疗卫生机构 111 万个，床位 1004 万张。 2025 年，每千人口执业（助理）医师由上年的 3.61 人提高到 3.78 人，每千人口注册护士由 4.16 人提高到 4.32 人。\n医疗卫生服务更加均衡普惠。 2025 年，全国医疗卫生机构总诊疗人次 107 亿人次，比上年增长 5.0% ，其中，基层医疗卫生机构诊疗人次为 56.5 亿人次，占医疗卫生机构总诊疗人次的 53.0% ，服务能力稳步提高。目前超过 90% 的居民可在 15 分钟内到达最近的医疗服务点，群众看病就医更加便捷可及。\n疾病"
   },
   {
    "group": "wh",
@@ -975,258 +1012,6 @@
    "published": "2026-10-29T16:56:07.000Z",
    "description": "Tibo 宣布即日起将 Pro 100/200/500 档位与 Business Premium 的所有用量上限翻倍。Pro 200 的上限不会下调，Work 与 Codex 用量保持不变；dots 的扩展用量上限继续提供，且仍与默认用量分开计算，后续还会通过更好的模型和效率改进提升实际可用量。 🔗 阅读原文 via AIHOT · https://aihot.news/items/funx6p4g0gju509j6n0oyxmqu",
    "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "Kroger accelerates direct sourcing efforts for better cost control, visibility",
-   "url": "https://www.supplychaindive.com/news/kroger-accelerates-direct-sourcing-efforts-for-better-cost-control-visibil/872931/",
-   "published": "2026-10-29T16:44:00.000Z",
-   "description": "The grocery chain seeks to boost first-party procurement volumes to more than 10% while working toward a fully owned import and distribution model.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Gemini 新增文档、PDF、演示文稿和表格的直接生成、预览与编辑功能",
-   "url": "https://aihot.news/items/nfbnpnzdrebu4kbq6uqxhkc2h",
-   "published": "2026-10-29T16:36:12.000Z",
-   "description": "Google Gemini 宣布可直接在应用内生成、预览和编辑文档、PDF、演示文稿、表格等多种文件。支持把手写笔记转成 PDF 学习指南、手动调整内容、高亮部分让 Gemini 修改文字或视觉元素，并可继续追问。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nfbnpnzdrebu4kbq6uqxhkc2h",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "Latent Space",
-   "title": "Can Frontier Models See Past a Decoy? Elorian Tests Visual Reasoning",
-   "url": "https://latent.space/p/elorian/",
-   "published": "2026-10-29T16:00:00.000Z",
-   "description": "A new decoy counting benchmark exposes a gap between seeing and reasoning. Elorian’s Glimpse tries to bridge it by thinking with images.",
-   "excerpt": "A new decoy counting benchmark exposes a gap between seeing and reasoning. Elorian’s Glimpse tries to bridge it by thinking with images.\nThis month Elorian launched its first visual reasoning model , Glimpse . It’s being promoted as “a new category of visual thinking model: a system that reasons about the physical world from what it sees.”\nSo how does Glimpse compare to both frontier models and world models in vision tests? A new benchmark called DecoyCount , co-released by Elorian, provides some answers.\nWe quizzed CEO Andrew Dai on the benchmark, and also talked about Elorian’s positioning in a crowded models landscape.\nElorian emerged from stealth in April with $55 million in seed funding , co-led by Striker Venture Partners, Menlo Ventures and Altimeter Capital. Now, in partnership with AI data company Mercor , Elorian is announcing the DecoyCount benchmark, which tests whether language models genuinely count objects or rely on visual shortcuts and substitution heuristics.\nAccording to a paper accompanying the release , frontier models scored below 50% accuracy on DecoyCount — the highest was GPT-6 Astra, with 43.17%. Elorian’s new model isn’t mentioned in the paper, but Dai told us that Glimpse scored 50.48% in an internal test.\nRegarding the frontier models, the paper concludes that “stronger general reasoning does not by itself generalize to aligned visual reasoning.”\nHow the benchmark works: “DecoyCount exposes interpretable counting failures across seven mechanisms.”\nTo make sure it was a like-for-like comparison with the frontier models, we asked whether the paper’s evaluation images were withheld from Glimpse’s training?\n“The evaluation images and text were withheld from our training, and our contamination check found no overlap in the training data checked,” Dai replied, via email. “Without any cues, Glimpse scored 50.48% on the 1,660 DecoyCount items, making it the only model in the comparison to clear 50%. The closest was GPT-6 Astra at 43.17%, about 7 points behind, and Gemini-3.8-flash scored 32.71% while Qwen3.8-max scored 28.31%, and Claude-Fable-5.1 came in at 25.22%.”\nDai did note that Glimpse’s results “come from a single run of the model on its own, without an agent or tool harness,” whereas the six models from the paper were each averaged across three runs under their reported settings.\nDecoyCount benchmark results for frontier models over 3 runs each.\nBut what exactly is DecoyCount revealing that existing model benchmarks miss? Acco"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenAI 详解如何监控前沿模型的失对齐行为",
-   "url": "https://aihot.news/items/e234ewhx82g2zh3z2bgcjxx7d",
-   "published": "2026-10-29T16:00:00.000Z",
-   "description": "OpenAI 在 Alignment 博客介绍其针对前沿模型（如 GPT-6 Astra）的多层失对齐监控系统，覆盖训练、评估、内部使用和部分外部部署。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e234ewhx82g2zh3z2bgcjxx7d",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "FedEx drawing parcel-focused shippers to its air freight services",
-   "url": "https://www.supplychaindive.com/news/fedex-drawing-parcel-focused-shippers-to-its-air-freight-services/873182/",
-   "published": "2026-10-29T15:36:00.000Z",
-   "description": "Air freight demand from traditionally parcel-centric customers is rising as the carrier pushes for more business in high-value segments like AI and data centers.",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "Beyond the Silos: Five MarketMaps Shaping the Next Supply Chain Technology Architecture",
-   "url": "https://logisticsviewpoints.com/2026/10/29/beyond-the-silos-five-marketmaps-shaping-the-next-supply-chain-technology-architecture/",
-   "published": "2026-10-29T15:30:39.000Z",
-   "description": "Supply chain technology is changing, and the traditional boundaries between software applications are becoming less distinct. Warehouse Management Systems manage warehouse operations. Transportation Management Systems manage freight. Supply Chain Planning systems balance demand, supply, inventory, and capacity. These categories remain important, but increasingly, the decisions they support overlap. At the same time, newer technologies such […] The post Beyond the Silos: Five MarketMaps Shaping the Next Supply Chain Technology Architecture appeared first on Logistics Viewpoints .",
-   "excerpt": "Supply chain technology is changing, and the traditional boundaries between software applications are becoming less distinct.\nWarehouse Management Systems manage warehouse operations. Transportation Management Systems manage freight. Supply Chain Planning systems balance demand, supply, inventory, and capacity. These categories remain important, but increasingly, the decisions they support overlap.\nAt the same time, newer technologies such as Autonomous Exception Management and Decision Intelligence are introducing capabilities that extend across traditional application boundaries.\nThe challenge for companies is no longer simply selecting the best software in each category. It is determining how these systems should work together, where responsibility for decisions resides, and how information becomes operational action.\nIn this ARC Advisory Group webinar, Beyond the Silos: Five MarketMaps Shaping the Next Supply Chain Technology Architecture , I examine five technology markets and what their evolution means for enterprise supply chain architecture.\nThe webinar draws on ARC’s MarketMap research across five markets:\nEach market is evolving independently, but some of the most consequential developments are occurring where their capabilities intersect.\nA transportation system identifies the delay. The warehouse may need to adjust labor and outbound processing. Planning may need to reconsider inventory allocation. An exception management application may identify the broader operational consequences, while a Decision Intelligence platform evaluates possible responses.\nSeveral systems may recognize the problem. Several may recommend a solution.\nBut which system should make the decision? Who has authority to act? And how do we know whether the action improved the outcome?\nThese questions become increasingly important as AI and autonomous capabilities enter enterprise operations.\nMore automation does not automatically produce better coordination. Without clear responsibilities, organizations risk introducing new complexity into already complicated operating environments.\nARC MarketMaps evaluate technology suppliers across solution capabilities and strategic vision. They provide a structured way to understand supplier strengths, competitive positioning, and market direction.\nBut selecting technology requires more than identifying highly positioned suppliers.\nCompanies need to assess operational requirements, integration capabilities, decision ownership, implementat"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Wiz 分析智能体攻击的七大指纹与发展趋势",
-   "url": "https://aihot.news/items/mdcygre4ettjdbca7sq6vu7zx",
-   "published": "2026-10-29T14:36:22.000Z",
-   "description": "Wiz 基于自身事件响应与公开披露案例，分析 AI 智能体参与真实入侵的现状与趋势，涉及 ARTEX、Hermes 等框架及韩国金融机构（约 67,000 人信息外泄）、泰国财政部、ConnectWise 供应链（尝试攻击超 2,250 个租户）等案例。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mdcygre4ettjdbca7sq6vu7zx",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Unsloth 发布 Mistral Le Chonk 1-bit GGUF 量化版，可本地运行 1T 参数模型",
-   "url": "https://aihot.news/items/rph54wkrnzjpvov4cv0mxqatl",
-   "published": "2026-10-29T14:27:32.000Z",
-   "description": "Unsloth 发布 Mistral Le Chonk（Mistral Large 4，1T 参数 MoE，52B 激活）的 Dynamic 1-bit GGUF，可在 Mac Studio 上本地运行，保留 91% top-1 准确率，体积约 233GB（较 1.1TB FP8 小 80%）。图为各量化档位给出硬件需求，1-bit 需 256-270GB 内存，最小 UD-IQ1_S 约占 233GB 磁盘，并支持文本与图像输入、1M 上下文和 160+ 语言。GGUF 与指南见 huggingface.co/unsloth/Mistral-Large-4-1T-A52B-GGUF 和 unsloth.ai/docs/models/mistral-large-4。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rph54wkrnzjpvov4cv0mxqatl",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "OPI, Nioxin owner appoints chief supply chain officer",
-   "url": "https://www.supplychaindive.com/news/opi-nioxin-owner-appoints-chief-supply-chain-officer/872796/",
-   "published": "2026-10-29T14:26:34.000Z",
-   "description": "Javier Huerta will oversee The Wella Company&rsquo;s sourcing, manufacturing and logistics capabilities, effective Dec. 1",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "Fed holds main interest rate steady despite accelerating inflation",
-   "url": "https://www.supplychaindive.com/news/fed-holds-main-interest-rate-steady-despite-accelerating-inflation/873147/",
-   "published": "2026-10-29T14:20:00.000Z",
-   "description": "Two policymakers on the Federal Open Market Committee dissented in favor of raising the federal funds rate by 0.25 percentage point.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "Simon Willison",
-   "title": "Quoting Ben Hylak",
-   "url": "https://simonwillison.net/2026/Oct/29/ben-hylak/",
-   "published": "2026-10-29T14:06:27.000Z",
-   "description": "every product i use should just be a headless mcp, that feeds into an agent, where i never have to think about anything underneath. except for our product, of course. in our product, customers love the ui and love us very much. we're special that way. &mdash; Ben Hylak Tags: model-context-protocol , ai",
-   "excerpt": "every product i use should just be a headless mcp, that feeds into an agent, where i never have to think about anything underneath.\nin our product, customers love the ui and love us very much.\nThis is a quotation collected by Simon Willison, posted on 29th October 2026 ."
-  },
-  {
-   "group": "ai",
-   "source": "a16z",
-   "title": "AD 50 2026: Production is Deterrence",
-   "url": "https://www.a16z.news/p/ad-50-2026-production-is-deterrence",
-   "published": "2026-10-29T14:00:21.000Z",
-   "description": "50 Companies Rebuilding and Protecting America",
-   "excerpt": "We’re excited to present a16z American Dynamism’s annual list of 50 companies that are rebuilding and protecting America. To learn more, watch our companion podcasts here .\nAmerica’s ability to prevent conflict depends on what it can build, how fast it can deliver and how long it can keep going. A new generation of defense companies is moving advanced systems from testing prototypes to full-scale production. Now the industrial base has to keep pace. That means factories that build at scale, suppliers that ship on time, and domestic sources for critical materials and energy.\nThe pressure is real. Russia’s war in Ukraine has sent NATO allies racing to expand weapons production and rebuild stockpiles. The conflict with Iran has exposed gaps in U.S. munitions inventories. China’s rare earth export restrictions have rattled manufacturers around the world. Strength is measured by the ability to keep producing under pressure.\nThere is no scaled defense industrial base without a strong industrial base. Founders must design for mass production from day one, weighing cost and manufacturability alongside performance. And bringing production onshore means rebuilding the full chain, from processing raw materials to machining precision components to assembling finished systems.\nThat is the theme behind this year’s American Dynamism 50: Production is Deterrence. The list is organized around three connected pillars: Systems, Factories and Inputs.\nSystems deliver capability. Factories provide the plants, tools and software to build them at volume. Inputs supply the materials and power that keep the line moving.\nThe payoff reaches well beyond defense. The same capacity that arms the country also creates skilled jobs, revitalizes communities and makes the supply chains behind energy, housing, and everyday goods more resilient.\nThe companies on this list are rebuilding the industrial foundation that protects America and strengthens her allies.\nAmbrosia Energy builds solar and battery plants for businesses that can’t wait for grid power, aiming to deliver electricity roughly a year after signing a contract at about $100 per megawatt-hour. Founders Ben Longmier and Sara Spangelo previously led Starlink Mobile after SpaceX acquired their company Swarm. Construction began in West Texas in January 2026. At their June launch, Ambrosia said completed sections were running and the next phase was funded, with 200 megawatts of solar designed to deliver 20 megawatts continuously.\nEl Seg"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "SemiAnalysis 分析师解读 Anthropic S-1 招股书背后的 AI 经济账",
-   "url": "https://aihot.news/items/r9bmkfh02wkycc8zmhw87h4q9",
-   "published": "2026-10-29T14:00:00.000Z",
-   "description": "The Verge Decoder 节目邀请 SemiAnalysis 分析师 Joey Brookhart 解读 Anthropic 提交的 S-1 招股书，公司拟在纳斯达克上市，估值区间 1.5 万亿至 2 万亿美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r9bmkfh02wkycc8zmhw87h4q9",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "纽约时报称中国情报人员瞄准英伟达 CEO 黄仁勋",
-   "url": "https://aihot.news/items/lq97h52ctxw2nkri4qqxj5lbx",
-   "published": "2026-10-29T13:42:38.000Z",
-   "description": "据《纽约时报》报道，美国情报机构认为英伟达 CEO 黄仁勋身边一名高管为中国提供情报，此人是新加坡数据中心运营商 Megaspeed 的 Alice Huang（黄乐）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lq97h52ctxw2nkri4qqxj5lbx",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "Hugging Face",
-   "title": "Granite Switch 4.1.1 — Update models like you update software",
-   "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
-   "published": "2026-10-29T13:37:07.000Z",
-   "description": "",
-   "excerpt": "Just over a week ago, we released Granite Switch 4.1 , showing that our modular Switch architecture lets you configure a language model with specialized, cache-efficient adapters — adding new expertise on a single endpoint.\nGranite Switch 4.1.1 is a patch release. The version number means what it means in software: fully backwards compatible with 4.1, no migration, incremental improvements under the hood.\nWhile we are excited about these new features, what is notable is the speed and efficiency with which our teams could release this update. Apart from training the new ASR model and Decision adapter, nothing was recomputed: the base model is untouched. You compose the latest adapters you want and deploy.\nThis pattern can power far more than patch releases to an IBM-provided model. We're working on tutorials and an Adapter SDK so developers and third-party providers can build their own adapters — iterate on versions, test features, and ship updates the way you ship software. More soon.\nUntil then, test out our latest models , and try out the new multilingual and punctuation capabilities powering our Speech-to-Decisions demo.\n📱 Dica valiosa para quem precisa entrar em contato com a LATAM Airlines!\n🔰 Já salva essa informação e compartilha com quem precisa — dica boa é dica compartilhada! 🚀 📞 Central de Atendimento Prioritário LATAM Brasil 24 Horas: • +55 (61) 3142-0712 (Atendimento direto para todo o Brasil e São Paulo) 🔢 Como agilizar o seu atendimento 24h: Ligue diretamente para (61) 3142-0712. Tenha em mãos seu CPF, RG ou o código da reserva LATAM para acelerar o processo. Siga o menu de voz rápido para ser direcionado ao setor de voos ou suporte. Pronto! Agora é só aguardar para falar com um atendente. 😊 ⚠️ Importante: Se você procura o Telefone LATAM Airlines 0800 ou precisa de suporte no Brasil e em São Paulo a qualquer hora do dia, salve este número! Utilize para resolver dúvidas, alterações, cancelamentos, remarcações ou problemas com bagagem sem complicações. 🚨 Dica de Ouro: Sempre anote o número de protocolo no início da chamada. Ele é a sua garantia e prova valiosa perante o direito do consumidor! #TelefoneLATAM #LATAMBrasil #LATAM0800 #LATAM24Horas #atendimento #passageiroaereo #dicasdeviagem #direitodoconsumidor #voocancelado #vooatrasado"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "The Verge 解读 Anthropic S-1：约 8500 亿美元 compute 承诺押注递归自我改进",
-   "url": "https://aihot.news/items/iuma7p8unle567lzy6hp5jpw9",
-   "published": "2026-10-29T13:30:00.000Z",
-   "description": "The Verge 作者分析 Anthropic S-1，认为其商业模式依赖高速增长：2026 上半年营收同比增长 14 倍至 $16.3 billion，净收入留存率 900%，但不可撤销采购承诺合计 $265.6 billion，加上未开始的租赁协议 $321.4 billion 及其他协议，未来 20 年承诺至少约 $850 billion。 🔗 阅读原文 via AIHOT · https://aihot.news/items/iuma7p8unle567lzy6hp5jpw9",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "MH&L",
-   "title": "Q3 Shipping Rates Fall, but Operators See Little Relief",
-   "url": "https://www.mhlnews.com/transportation-distribution/news/55414971/q3-shipping-rates-fall-but-operators-see-little-relief",
-   "published": "2026-10-29T12:28:34.000Z",
-   "description": "\"Every margin conversation we’re having right now comes back to what actually shipped. That’s where the money went and where operators should focus,\" said Eric Lemus of Deposco.",
-   "excerpt": "Carrier rates fell 3.3% per package from Q2, while what operators actually paid declined just 0.6%, according to the Q3 2026 issue of Commerce Signal from Deposco, a provider of AI-based supply chain software solutions.\n\"Rates came down, but operators didn&rsquo;t feel it. That&rsquo;s the story of the quarter,\" said Eric Lemus, vice president of Strategy and Data Analytics at Deposco, in a statement. \"Every margin conversation we&rsquo;re having right now comes back to what actually shipped. That&rsquo;s where the money went and where operators should focus.\"\nThe gap is not contracts; it is what shipped. Heavier packages, faster services and more residential deliveries absorbed most of the potential rate relief. An outside index on a different set of shippers found the same pattern: the TD Cowen/AFS Freight Index put ground parcel cost per package down 2.6% from Q2 and 5.2% above a year earlier.\nThe report also revisits a call from July, when Deposco's inaugural Commerce Signal report predicted parcel inflation would continue rising into the third quarter. Instead, rates peaked the day the data closed and declined throughout the quarter. The new issue explains why and how the methodology was adjusted.\nGrowth held its pace . GMV growth closed the quarter at 11.7% and order growth at 5.3%. Read month by month, GMV growth has run near 10% and order growth near 3% to 5% since spring, all while pushing through a record low in consumer sentiment.\nInventory caught up . Median days on hand closed at 93, level with last year for the first time since the destocking began, after a three-week build in September. Peak will cost more per package than Q 3. Peak surcharges begin October 25, and crude was back to about 40% above its July low by mid-October.\nThe issue's advice to operators: if rates are still 3.3% below their Q2 average, explore a new contracted rate on the longest term available; if rising fuel costs have already pushed them back up, trade for a cap on the fuel surcharge instead.\nCommerce Signal is built on activity flowing through the Deposco platform, from more than 4,900 supply chain operators representing over $84 billion in GMV and 485 million orders a year."
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "Trump opts for trade talks over tariffs for robotics, industrial machinery",
-   "url": "https://www.supplychaindive.com/news/trump-opts-for-trade-talks-over-tariffs-for-robotics-industrial-machinery/873166/",
-   "published": "2026-10-29T12:14:00.000Z",
-   "description": "For the second time this month, the president directed cabinet officials to negotiate over imports deemed a threat to U.S. commerce and security by a Section 232 probe.",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Automated Warehouse",
-   "title": "Berkshire Grey unveils enhanced AI capabilities",
-   "url": "https://www.automatedwarehouseonline.com/berkshire-grey-unveils-enhanced-ai-capabilities/",
-   "published": "2026-10-29T12:00:00.000Z",
-   "description": "BG Pilot unifies robotic intelligence and warehouse orchestration using Berkshire Grey's expertise in physical AI and workflow automation. The post Berkshire Grey unveils enhanced AI capabilities appeared first on Automated Warehouse .",
-   "excerpt": "Berkshire Grey has unveiled major AI-driven software enhancements across its warehouse robotics portfolio, using a decade of real-world operational data and billions of automated picks to help enterprise logistics operators navigate packaging variability and labor constraints.\nDeveloped and continuously refined through a decade of real-world warehouse operations, BG Pilot software draws on insights from billions of robotic picks and one of the industry’s largest proprietary datasets of real-world robotic picking in commercial warehouse operations.\nThe company said BG Pilot addresses one of the most persistent and costly challenges in robotic warehouse automation: variability. The platform enables robots to handle diverse packaging and mixed SKUs while helping warehouse operations adapt to unexpected conditions, changing workflows and fluctuating labor availability.\nLong before today’s surge of interest in physical AI , Berkshire Grey has been deploying intelligent robotic systems in complex, high-volume environments for customers including FedEx , Meijer, and Fanatics. That production experience is embedded in BG Pilot, enabling robots to perceive, decide, and act with enterprise-grade reliability, without turning customers’ operations into a training ground.\nThe enhanced AI capabilities come amid growing demand for Berkshire Grey’s robotic automation solutions, with new business opportunities increasing by more than 65% over the past six months.\n“Growing demand for warehouse automation and accelerating interest in physical AI are creating significant opportunities for Berkshire Grey,” said Dave Paratore , CEO of Berkshire Grey. “BG Pilot software is central to our ability to meet that demand, enabling us to continually advance our AI capabilities and help enterprises deploy robotic automation against high variability workflows with greater confidence.”\nSubmit your innovation now! Berkshire Grey advances AI capabilities across the warehouse BG Pilot is deployed in customer operations today, providing the foundation for new AI-enabled enhancements across Berkshire Grey’s Scoop , Stride , and Core products.\nTogether, these capabilities demonstrate how the software combines advanced machine learning with a decade of real-world operational experience to deliver intelligent automation built for the demands of modern warehouses.\nAutomated storage and retrieval systems (ASRS)\nGet weekly updates on warehouse industry news, tips and events."
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Cursor 通报 VS Code 扩展市场出现恶意 Anthropic.claude-code 2.1.313 版本",
-   "url": "https://aihot.news/items/pg7avew3q9ekdp3ydzhiuh9y4",
-   "published": "2026-10-29T12:00:00.000Z",
-   "description": "Cursor 通报其 VS Code 扩展市场出现恶意修改的 Anthropic.claude-code 2.1.313 版本，非 Anthropic 官方开发，最多影响 4100 名用户。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pg7avew3q9ekdp3ydzhiuh9y4",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "Go-Live Is Not Success: Validation and Testing in Logistics Transformation",
-   "url": "https://logisticsviewpoints.com/2026/10/29/go-live-is-not-success-validation-and-testing-in-logistics-transformation/",
-   "published": "2026-10-29T11:00:00.000Z",
-   "description": "A logistics transformation can be technically successful and operationally disappointing. That happens when the implementation team proves that the system was built correctly but nobody proves that it improved the logistics outcome the business funded it to improve. The post Go-Live Is Not Success: Validation and Testing in Logistics Transformation appeared first on Logistics Viewpoints .",
-   "excerpt": "A logistics transformation can be technically successful and operationally disappointing. That happens when the implementation team proves that the system was built correctly but nobody proves that it improved the logistics outcome the business funded it to improve.\nSystems engineering separates two ideas that logistics programs should take more seriously: verification and validation. Verification asks whether the system was built correctly. Validation asks whether the right system was built. The move toward the Autonomous Logistics Network raises the validation burden rather than reducing it, because greater machine authority increases the consequence of untested assumptions and failure paths.\nA new TMS can calculate routes correctly and still fail to improve transportation performance. A WMS can execute transactions correctly and still fail to improve order cycle time. A control tower can display every exception and still fail to reduce decision latency.\nA warehouse automation system can operate exactly as specified and still create a bottleneck somewhere else in the building. A control tower can ingest all required data and still fail to reduce decision latency. An AI model can be accurate and still produce recommendations that users cannot execute.\nThese systems may pass technical tests. They have not necessarily passed the business test.\nValidation returns to the original requirements. Did the new system improve the outcome it was designed to improve? Does it perform under realistic operating conditions? Do people use it as intended? Does it work across interfaces and exceptions, not just inside the core application?\nThat is the standard transformation should meet.\nTechnology projects naturally test components. Logistics networks need end-to-end tests.\nA customer order should be able to move through allocation, warehouse, yard, transportation, delivery, and customer-service processes. A carrier-capacity disruption should trigger the expected information flow and decision response. A route, cutoff, or priority change should reach execution in time to matter.\nThe test is not whether each system processed its transaction. The test is whether the total operating flow produced the intended result.\nThis is especially important where multiple systems and organizations are involved. The interfaces often contain more risk than the individual applications. A perfect transaction inside one platform is of little value if the next system receives the wrong data th"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Google 三季度搜索增速不及预期，投资者担忧 AI 搜索变现拖累核心业务",
-   "url": "https://aihot.news/items/wry19y87ktlbmfwu581jjffj7",
-   "published": "2026-10-29T10:16:34.000Z",
-   "description": "Google 三季度搜索收入增长约 12%，低于分析师预期的 15%，市值一度缩水最多 10%。高管 Philipp Schindler 承认 AI mode 查询的强劲增长因变现率较低产生了影响，同时公司称搜索查询年增速达五年来最高，并计划在美国及国际市场扩大聊天机器人广告项目。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wry19y87ktlbmfwu581jjffj7",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "How we detect frontier model misalignment",
-   "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
-   "published": "2026-10-29T09:00:00.000Z",
-   "description": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "How Ropes & Gray is developing AI for transactional diligence",
-   "url": "https://openai.com/index/ropes-gray-ai-diligence",
-   "published": "2026-10-29T07:00:00.000Z",
-   "description": "Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Addy Osmani 谈你可能对 Claude 过度提示了",
-   "url": "https://aihot.news/items/m1cx9dfhpep0da323x3tk7vht",
-   "published": "2026-10-29T06:13:39.000Z",
-   "description": "Addy Osmani 撰文称新版 Claude 模型所需提示词比多数人习惯的更少，针对 Opus 5.5 建议用单一明确目标加验证条件让 Claude 自主工作，从 /effort medium 起步按需调整。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m1cx9dfhpep0da323x3tk7vht",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "BestBlogs 每日早报",
-   "title": "EP220 · Gemini Carbon 强化防御、Gamma 复盘智能体、Titus 谈工程教育",
-   "url": "https://www.bestblogs.dev/explore/brief/2026-10-29?utm_source=rss&utm_medium=feed&utm_campaign=daily_brief&entry=rss_brief_index",
-   "published": "2026-10-29T06:00:00.000Z",
-   "description": "📝 今日导语 Carbon 推进自主防御，Gamma 复盘产品取舍，Titus 重审工程教育：理解能力如何转化为可靠交付。 🏷 今日关键词： Gemini Carbon Gamma 工程教育 专家判断 AI 交付 📰 今日精选内容 Gemini 4 Carbon：我们的下一代前沿模型 Google DeepMind News &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 93 Gamma 创始人谈：如何打造智能体运行框架 Greg Isenberg &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 与 Titus Winters 谈 Google 软件工程经验与 CS 教育改革 The Pragmatic Engineer &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 92 AI 智能体如何影响专家的判断决策 Anthropic Research &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 91 NVIDIA Nemotron 3.5 Transcribe 与 Granary v2：可提示、可适配的智能多语言转录 NVIDIA · Hugging Face &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 GitHub Universe 2026：演进技术栈的每",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "Latent Space",
-   "title": "[AINews] Gemini 4 Carbon tops leaderboards, launches for cyber defenders",
-   "url": "https://latent.space/p/ainews-gemini-4-carbon/",
-   "published": "2026-10-29T05:55:19.000Z",
-   "description": "Google’s new frontier model leads independent evals, with access initially limited to trusted defenders.",
-   "excerpt": "Google’s new frontier model leads independent evals, with access initially limited to trusted defenders.\nIt’s a good thing we published our Opus 5.5 podcast calling it the world’s best model before today’s launch.\nIn a very pleasant surprise, Gemini announced Carbon , a newer frontier model than the 3 week old Argon , with fantastic benchmarks:\nTaking it to the new #1 on the Artificial Analysis consolidated benchmark, putting GDM in the lead for possibly the first time in AAII history:\nAI News for 10/27/2026-10/28/2026. We checked 12 subreddits, 544 Twitters and no further Discords. AINews' website lets you search all past issues. As a reminder, AINews is now a section of Latent Space . You can opt in/out of email frequencies!\nGemini 4 Carbon Tops Independent Leaderboards, with Access Limited to Cyber Defenders\nLaunch : Google DeepMind announced Gemini 4 Carbon two weeks after Argon. It is positioned as state of the art on cybersecurity and long-horizon tasks ( @sundarpichai , @GoogleDeepMind ).\nClaimed cyber results : 88.2% on SEC-bench Pro for vulnerability finding, 54.8% on ExploitGym for exploitation and 71.0% on CWE-bench for patching ( @sundarpichai ).\nAvailability : Carbon first goes to trusted cyber defenders through the Fairwind Program, with wider developer access promised \"as soon as possible\" ( @GoogleAI ).\nPricing : Phil Schmid quotes $2/$10 per million input/output tokens with an asterisk ( @_philschmid ). Artificial Analysis lists $4/$20 standard pricing with a 50% launch discount that has no end date. Cached input costs $0.20 per million tokens ( @ArtificialAnlys ).\nSpecs : The model has a 1M-token context window and 1M max output. Inputs are text, image, video and speech; output is text ( @ValsAI ).\nSafety claims (Google) : Successful cheating on Terminal-Bench 4.0 fell to 0.0%, and cheating attempts fell to 0.4%. Unsupported claims are down about 2x versus Argon. Overreach fell 26% and under-service fell 29% ( @OfficialLoganK ).\nArtificial Analysis : Carbon is #1 on Intelligence Index v5 with a score of 59. It leads 4 of the 9 index evals: HLE-Diamond, TB-Science, AA-Omniscience and AutomationBench ( @ArtificialAnlys ).\nCoding : On the Coding Agent Index, Carbon scores 59 using Antigravity CLI, versus 62 for Claude Code with Opus 5.5 [max]. It scores 51% on FrontierCode v1.1, versus 56% for Opus.\nKnowledge work : Carbon reaches 1609 Elo on AA-Briefcase, up 126 points from Argon. It still trails Grok 4.7, Muse Wonder and Kimi K3.1 Pro (167"
-  },
-  {
-   "group": "wh",
-   "source": "The Robot Report 物流",
-   "title": "AGIBOT introduces Worken to measure robot productivity at AGIBOT Innovation Day 2026",
-   "url": "https://www.therobotreport.com/agibot-introduces-worken-measure-robot-productivity-innovation-day-2026/",
-   "published": "2026-10-29T04:01:46.000Z",
-   "description": "AGIBOT unveiled its AHA3 integrated platform, GO-3 Preview, and WITA-Omni 1.0 model, as well as the G2 Max robot and Link-U OS 1.0 framework. The post AGIBOT introduces Worken to measure robot productivity at AGIBOT Innovation Day 2026 appeared first on The Robot Report .",
-   "excerpt": "Peng Zhihui, president, CTO, and director of AGIBOT, introduces Worken at AGIBOT Innovation Day 2026. Source: AGIBOT\nAGIBOT today introduced Worken, a proposed framework for measuring the productivity of robots in real-world environments, at AGIBOT Innovation Day 2026 in Shanghai. Combining the words “Work” and “Token,” the concept seeks to shift attention beyond the number of robots manufactured or deployed toward how much useful work they can perform autonomously and consistently.\nThe company also unveiled AHA3, its integrated “three intelligences in one” hardware platform, and highlighted advances in its AGILE motion intelligence framework, including a new self-evolving agent capability. AGIBOT debuted GO-3 Preview, its next-generation embodied AI foundation model, showcased its WITA-Omni 1.0 omni-modal interaction model, and launched the G2 Max industrial robot and Link-U OS 1.0.\nThe event also featured actual applications across manufacturing and commercial services, demonstrating AGIBOT’s focus on translating robotics innovation into productive work. The company said they reflect its deployment-first focus, with practical innovation spanning robot hardware, locomotion, task and interaction intelligence, operations, and an ecosystem intended to support real-world deployment at scale.\nFounded in 2023 as Zhiyuan Xinchuang Technology Co., AGIBOT is focused on embodied AI. The Shanghai-based company ‘s portfolio spans humanoid robots, quadrupeds , dexterous systems, and commercial cleaning systems. Last month, AGIBOT said its 20,000th robot had rolled off the production line, and IDC reported that the company led global humanoid robot shipments in the first half of 2026.\nAs robots move from large-scale production into increasingly diverse applications, AGIBOT said there is another dimension of progress: the productive work robots can deliver once deployed. In addition to manufacturing scale, technological capabilities, and deployment milestones, the company said sustained autonomous operation and measurable task output are increasingly important indicators of robotic value.\n“Over the past few years, the robotics industry has made remarkable progress in hardware, AI models, and large-scale manufacturing,” stated Peng Zhihui, co-founder, president, and chief technology officer of AGIBOT. “But as robots begin working in factories, warehouses, and service environments, we need to answer a more practical question: How much productive work are they actually del"
   }
  ]
 }
