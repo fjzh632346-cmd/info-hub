@@ -1,0 +1,105 @@
+{
+  "type": "x",
+  "date": "2026-11-01",
+  "items": [
+    {
+      "kind": "news",
+      "category": "视频",
+      "score": 86,
+      "author": "硅基废话",
+      "handle": "@DDJCXX",
+      "url": "https://x.com/DDJCXX/status/2116700727443882226",
+      "posted": "2026-11-01",
+      "metrics": "4.5 万查看 · 869 赞 · 1284 收藏",
+      "textZh": "整理了这个月 GitHub 上 8 个让 Claude Code 做视频、做动画的 Skill（Skill 就是给 AI 的一套固定做法说明），都能直接用：① pixelfx：244 个用代码写的像素特效（火、爆炸、天气等）；② huashu-motion（约 1900 星）：一句话做 30 秒产品发布片，不满意的地方在画面上点一下只改那一处；③ mg-styles-15（约 2700 星）：15 种 MG 动效风格，每种附 10 秒成片、提示词和源码；④ motion-prompt：192 种动效/运镜/网页特效的叫法和样例，有简体中文版，不知道某种效果怎么跟 AI 描述时可以查；⑤ animate：纯代码做讲解短片，内置剪纸、钢笔排线等 7 种画风；⑥ vibe-knowledge-film：做抖音式知识短片，先出 30 秒样片再做全片；⑦ story-studio：历史人物口播，一路做到剪映草稿；⑧ video-editor-skills：让 Claude Code 在达芬奇里粗剪 vlog（需要付费版达芬奇）。想做视频类 Skill 的可以从 ②③④ 开始试。"
+    },
+    {
+      "kind": "news",
+      "category": "网页设计",
+      "score": 80,
+      "author": "歸藏",
+      "handle": "@op7418",
+      "url": "https://x.com/op7418/status/2116711094622593292",
+      "posted": "2026-11-01",
+      "metrics": "2.3 万查看 · 157 赞 · 174 收藏",
+      "textZh": "歸藏推荐一位 Twitter 设计师做的 Skill：Stageshow，能让 AI 做出更好的界面效果图、动效和“便当盒”式的卡片排版（bento grid），在动效、交互和排版上都有优化。安装命令写在被引用的原帖里：npx skills add benjitaylor/skills --skill stageshow。做网页、作品集页面时可以试试。"
+    },
+    {
+      "kind": "news",
+      "category": "PPT",
+      "score": 72,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2116623097839149231",
+      "posted": "2026-11-01",
+      "metrics": "1.4 万查看 · 139 赞 · 69 收藏",
+      "textZh": "宝玉的 baoyu-design 加了局域网团队共享：做好的设计稿或幻灯片可以生成一个“内网 IP + 端口”的链接，同一个网络里的同事、老板打开就能编辑、评论，而且实时同步。注意要放开防火墙。适合课程小组一起改 PPT。"
+    },
+    {
+      "kind": "news",
+      "category": "研究",
+      "score": 78,
+      "author": "数字生命卡兹克",
+      "handle": "@Khazix0918",
+      "url": "https://x.com/Khazix0918/status/2116801460579234047",
+      "posted": "2026-11-01",
+      "metrics": "1.7 万查看 · 89 赞",
+      "textZh": "卡兹克把 AIHOT 模型榜用到的公开测评从 39 份加到 56 份，重新算了 ELO 排名（类似下棋积分，模型两两比较算分），并剔除了还没正式上线的模型。结果：综合第一和编程第一都是 Claude Opus 5.5；科研、知识类第一是 GPT-6 Astra；办公类第一是 Gemini 4 Argon。榜单地址 aihot.news/leaderboard。这是第三方汇总，适合当选模型的参考，不是官方结论。"
+    },
+    {
+      "kind": "news",
+      "category": "编程",
+      "score": 74,
+      "author": "DeepSeek Harness",
+      "handle": "@DeepSeekHarness",
+      "url": "https://x.com/DeepSeekHarness/status/2116857257245987236",
+      "posted": "2026-11-01",
+      "metrics": "9.5 万查看 · 1844 赞 · 1845 收藏",
+      "textZh": "一篇讲“超级智能体（Super-agent）”设计思路的长文，文中说明是架构设想，不是在介绍现有功能。核心观点：现在的 AI 智能体以“一次对话”为单位，人同时最多盯 3–5 个对话，多任务被人的注意力卡住。他们设想的智能体应当：一直在线、在聊天群和 GitHub 等多个地方都像同一个助手、能同时做几件事、没人 @ 它也会主动发现问题并提修复。文章给出五个模块：两层架构（路由层分派任务 + 工作层执行）、事件驱动、多渠道同时交互、把计算/状态/运行环境拆开，并附消融实验（逐个去掉模块看效果）。想做 Agent 或关注 AI 交付工程师方向的值得读。"
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "score": 66,
+      "author": "a16z",
+      "handle": "@a16z",
+      "url": "https://x.com/a16z/status/2116598588172374141",
+      "posted": "2026-11-01",
+      "metrics": "4.2 万查看 · 402 赞",
+      "textZh": "a16z 每周图表：从 5 月到现在，AI 的平均 token（模型按字数计费的单位）价格降了 67%，但企业在 token 上的总花费反而涨了 120% 以上——便宜了用得更多，账单更高。另一条视频里他们还讲到 GPU 租价在涨、token 价格在降，这个差距叫“机架价差”。"
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "score": 68,
+      "author": "a16z",
+      "handle": "@a16z",
+      "url": "https://x.com/a16z/status/2116523102821908595",
+      "posted": "2026-10-31",
+      "metrics": "25.3 万查看 · 797 赞 · 382 收藏",
+      "textZh": "a16z 每周图表（美国招聘数据）：和疫情前相比，工程类岗位招聘多了约 45%，医疗约 30%，制造业约 25%，HR 回到持平；过去 12 个月工程 +30%、软件开发 +26%、制造 +13%。他们的结论是“AI 正在消灭工作”目前在数据上看不出来，技术岗招聘反而偏热。这是美国数据，对国内只能当趋势参考。"
+    },
+    {
+      "kind": "opinion",
+      "category": "其他",
+      "score": 62,
+      "author": "Ethan Mollick",
+      "handle": "@emollick",
+      "url": "https://x.com/emollick/status/2116681050747248955",
+      "posted": "2026-11-01",
+      "metrics": "5.6 万查看 · 687 赞",
+      "textZh": "沃顿商学院教授 Mollick：GPT-6 Pro 在一次性解决需要复杂计算、引用资料或深奥概念的问题上很强，不快也不算好用，但有“向神谕问一个问题”的感觉。他补充说 Pro 模式只在聊天界面里有；Codex 和 ChatGPT Work 里最高档叫 Ultra，做的是另一件事——同时派出很多个智能体一起解题，别混淆。"
+    },
+    {
+      "kind": "opinion",
+      "category": "其他",
+      "score": 58,
+      "author": "Ethan Mollick",
+      "handle": "@emollick",
+      "url": "https://x.com/emollick/status/2116526543346483419",
+      "posted": "2026-10-31",
+      "metrics": "3.5 万查看 · 599 赞",
+      "textZh": "Mollick 观察：把老旧软件系统迁移到新系统的市场每年只有约 300 亿美元，因为迁移太贵、维护更省事。但他跟一些老牌企业聊下来，发现一批原本嫌贵的迁移项目正被 AI 快速做成便宜的方案。这对想做 AI 交付工程师（到企业现场落地 AI）的人是个需求信号。"
+    }
+  ]
+}
