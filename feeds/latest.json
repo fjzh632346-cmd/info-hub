@@ -1,13 +1,20 @@
 {
- "fetchedAt": "2026-10-31T15:45:26.152Z",
+ "fetchedAt": "2026-11-01T01:16:17.427Z",
  "hours": 72,
  "status": [
+  {
+   "source": "OpenAI",
+   "feed": "https://openai.com/news/rss.xml",
+   "ok": true,
+   "total": 1341,
+   "recent": 6
+  },
   {
    "source": "Google DeepMind",
    "feed": "https://deepmind.google/blog/rss.xml",
    "ok": true,
    "total": 100,
-   "recent": 1
+   "recent": 0
   },
   {
    "source": "Epoch AI",
@@ -20,34 +27,20 @@
    "feed": "https://huggingface.co/blog/feed.xml",
    "ok": true,
    "total": 894,
-   "recent": 5
-  },
-  {
-   "source": "OpenAI",
-   "feed": "https://openai.com/news/rss.xml",
-   "ok": true,
-   "total": 1341,
-   "recent": 7
-  },
-  {
-   "source": "Import AI",
-   "feed": "https://importai.substack.com/feed",
-   "ok": false,
-   "error": "HTTP 403"
+   "recent": 2
   },
   {
    "source": "a16z",
    "feed": "https://www.a16z.news/feed",
    "ok": true,
    "total": 20,
-   "recent": 4
+   "recent": 3
   },
   {
-   "source": "Google AI",
-   "feed": "https://blog.google/technology/ai/rss/",
-   "ok": true,
-   "total": 20,
-   "recent": 0
+   "source": "Import AI",
+   "feed": "https://importai.substack.com/feed",
+   "ok": false,
+   "error": "HTTP 403"
   },
   {
    "source": "Simon Willison",
@@ -57,8 +50,8 @@
    "recent": 6
   },
   {
-   "source": "One Useful Thing",
-   "feed": "https://www.oneusefulthing.org/feed",
+   "source": "Google AI",
+   "feed": "https://blog.google/technology/ai/rss/",
    "ok": true,
    "total": 20,
    "recent": 0
@@ -71,35 +64,15 @@
    "recent": 1
   },
   {
-   "source": "Sequoia",
-   "feed": "https://www.sequoiacap.com/feed/",
+   "source": "One Useful Thing",
+   "feed": "https://www.oneusefulthing.org/feed",
    "ok": true,
-   "total": 50,
+   "total": 20,
    "recent": 0
   },
   {
-   "source": "Latent Space",
-   "feed": "https://www.latent.space/feed",
-   "ok": true,
-   "total": 20,
-   "recent": 5
-  },
-  {
-   "source": "BestBlogs 每日早报",
-   "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
-   "ok": true,
-   "total": 7,
-   "recent": 3
-  },
-  {
-   "source": "Symbotic IR",
-   "feed": "https://ir.symbotic.com/rss/news-releases.xml",
-   "ok": false,
-   "error": "HTTP 403"
-  },
-  {
-   "source": "宝玉",
-   "feed": "https://baoyu.io/feed.xml",
+   "source": "Sequoia",
+   "feed": "https://www.sequoiacap.com/feed/",
    "ok": true,
    "total": 50,
    "recent": 0
@@ -109,6 +82,33 @@
    "feed": "https://www.ben-evans.com/benedictevans/?format=rss",
    "ok": true,
    "total": 20,
+   "recent": 0
+  },
+  {
+   "source": "宝玉",
+   "feed": "https://baoyu.io/feed.xml",
+   "ok": true,
+   "total": 50,
+   "recent": 0
+  },
+  {
+   "source": "Symbotic IR",
+   "feed": "https://ir.symbotic.com/rss/news-releases.xml",
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  {
+   "source": "BestBlogs 每日早报",
+   "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
+   "ok": true,
+   "total": 7,
+   "recent": 4
+  },
+  {
+   "source": "Symbotic",
+   "feed": "https://www.symbotic.com/feed/",
+   "ok": true,
+   "total": 10,
    "recent": 0
   },
   {
@@ -126,11 +126,25 @@
    "recent": 0
   },
   {
-   "source": "Symbotic",
-   "feed": "https://www.symbotic.com/feed/",
+   "source": "Georgia Tech SCL",
+   "feed": "https://www.scl.gatech.edu/rss.xml",
    "ok": true,
    "total": 10,
    "recent": 0
+  },
+  {
+   "source": "Latent Space",
+   "feed": "https://www.latent.space/feed",
+   "ok": true,
+   "total": 20,
+   "recent": 5
+  },
+  {
+   "source": "Automated Warehouse",
+   "feed": "https://www.automatedwarehouseonline.com/feed/",
+   "ok": true,
+   "total": 10,
+   "recent": 2
   },
   {
    "source": "Interact Analysis",
@@ -139,39 +153,18 @@
    "error": "fetch failed"
   },
   {
-   "source": "Automated Warehouse",
-   "feed": "https://www.automatedwarehouseonline.com/feed/",
-   "ok": true,
-   "total": 10,
-   "recent": 4
-  },
-  {
-   "source": "Georgia Tech SCL",
-   "feed": "https://www.scl.gatech.edu/rss.xml",
-   "ok": true,
-   "total": 10,
-   "recent": 0
-  },
-  {
    "source": "Logistics Viewpoints",
    "feed": "https://logisticsviewpoints.com/feed/",
    "ok": true,
    "total": 10,
-   "recent": 4
+   "recent": 3
   },
   {
    "source": "DC Velocity",
    "feed": "https://www.dcvelocity.com/rss",
    "ok": true,
    "total": 30,
-   "recent": 12
-  },
-  {
-   "source": "The Robot Report 物流",
-   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
-   "ok": true,
-   "total": 15,
-   "recent": 4
+   "recent": 9
   },
   {
    "source": "MH&L",
@@ -201,6 +194,13 @@
    "error": "HTTP 410"
   },
   {
+   "source": "The Robot Report 物流",
+   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
+   "ok": true,
+   "total": 15,
+   "recent": 3
+  },
+  {
    "source": "Robotics & Automation News",
    "feed": "https://roboticsandautomationnews.com/feed/",
    "ok": true,
@@ -219,7 +219,7 @@
    "feed": "https://aihot.news/rss",
    "ok": true,
    "total": 50,
-   "recent": 50
+   "recent": 42
   },
   {
    "source": "国家统计局",
@@ -229,6 +229,78 @@
   }
  ],
  "items": [
+  {
+   "group": "ai",
+   "source": "BestBlogs 每日早报",
+   "title": "EP223 · FurtherAI 改造工程组织、imec 比较部署成本、小红书验证 AI 测试",
+   "url": "https://www.bestblogs.dev/explore/brief/2026-11-01?utm_source=rss&utm_medium=feed&utm_campaign=daily_brief&entry=rss_brief_index",
+   "published": "2026-11-01T06:00:00.000Z",
+   "description": "📝 今日导语 FurtherAI 改造交付、imec 比较部署成本、小红书验证测试，理解 AI 提效的条件与方法。 🏷 今日关键词： FurtherAI 部署成本 小红书 质量工程 AI 原生 📰 今日精选内容 FurtherAI CTO：构建 AI 原生工程组织 FurtherAI &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 什么时候自托管 AI 模型比购买 API 更划算：imec 的任务级基准研究 AI Engineer &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 QECon 北京 2026｜小红书创新产品的 AI Native 质量工程实践 小红书技术REDtech &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 问错一句就可能违规：Upstart 与 Coval 的语音 AI 评估闭环 AI Engineer &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 AWS CEO Garman：AI 需求有望推动未来两年增长逾 40% Bloomberg Tech &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 78% 的用户想要，实际却很少使用：Bumble 的 AI 功能实验教训 AI Engineer &nbsp;·&nbsp; 视",
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "OpenAI 12月起将ChatGPT与Codex合并为统一Token额度",
+   "url": "https://aihot.news/items/f6dxzur6d4pwjdhvm1x6m5rfp",
+   "published": "2026-11-01T00:22:41.000Z",
+   "description": "作者引述OpenAI凌晨更新的帮助文档称，从12月开始Plus和Pro用户的ChatGPT聊天与Codex用量将合并为同一Token额度，仅Instant聊天不受影响。作者回顾此前按条数计费的历史、一个月内Codex Pro额度先降后恢复的运营反复，以及社区在GitHub上提issue抗议的反应，认为合并与IPO预期下的算力成本压力有关。 🔗 阅读原文 via AIHOT · https://aihot.news/items/f6dxzur6d4pwjdhvm1x6m5rfp",
+   "excerpt": "作者引述OpenAI凌晨更新的帮助文档称，从12月开始Plus和Pro用户的ChatGPT聊天与Codex用量将合并为同一Token额度，仅Instant聊天不受影响。作者回顾此前按条数计费的历史、一个月内Codex Pro额度先降后恢复的运营反复，以及社区在GitHub上提issue抗议的反应，认为合并与IPO预期下的算力成本压力有关。\n作者以重度用户视角梳理额度合并对聊天和编码习惯的实际冲击，并回溯按条数与按 Token 计费的机制差异，便于理解订阅策略变化的影响。\n作者以重度用户视角梳理额度合并对聊天和编码习惯的实际冲击，并回溯按条数与按 Token 计费的机制差异，便于理解订阅策略变化的影响。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "OpenRouter 教程：用 Responses API 构建可在 Linux 沙箱验证 bug 的 AI 代码审查脚本",
+   "url": "https://aihot.news/items/yww15c701iat30p8ttjf029ij",
+   "published": "2026-11-01T00:00:00.000Z",
+   "description": "OpenRouter 发布教程，介绍一个 233 行、仅用标准库的 review.py，通过 Responses API 组合 Files API、Shell 沙箱工具和 Apply Patch 工具，把变更文件上传到托管 Linux 沙箱，让模型实际运行检查确认 bug 并返回 V4A 补丁。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yww15c701iat30p8ttjf029ij",
+   "excerpt": "Build an AI Code Reviewer with OpenRouter\nOpenRouter 发布教程，介绍一个 233 行、仅用标准库的 review.py，通过 Responses API 组合 Files API、Shell 沙箱工具和 Apply Patch 工具，把变更文件上传到托管 Linux 沙箱，让模型实际运行检查确认 bug 并返回 V4A 补丁。\n教程给出在沙箱中运行代码验证 bug 的完整脚本与四模型实测数据，读者可照搬接入 pre-push 钩子或 GitHub Actions。\nAI 代码审查器会在你推送或合并之前，检查 Git 变更中的缺陷和安全问题。只读 diff 的审查器不得不猜测文件其余部分长什么样，以及怀疑的缺陷在运行时是否真的会失败，而且它给出的修复建议是以文本形式返回，需要你手动复制进去。\n本指南中的审查器使用 OpenRouter 的 Responses API ，在 Linux 沙箱中运行你改动的文件，通过运行检查来确认每个缺陷，并以补丁形式返回修复，你可以用参数直接应用。在我们用五个缺陷的变更测试的四个模型中，一次审查耗时一到四分钟，费用在 0.015 到 0.045 美元之间。\n该脚本在 Responses API 上组合了三个 OpenRouter 服务器工具 和一个函数工具：\n你需要 Python 3.11 或更新版本、Git，以及一个从 快速入门 获取、已在 shell 中导出的 OpenRouter API 密钥：\nFiles API、Shell 工具和 Apply Patch 工具运行在全局端点上（ https://openrouter.ai/api/v1 ）；区域端点会返回 403 。你修改过的文件和上下文文件会被上传到你的 OpenRouter 工作区，并发送给模型提供商，因此只能对允许分享的代码运行该脚本，并确保这些文件中不含机密信息。\n两个现有测试仍然通过，因为它们没有覆盖 diff 所改动的部分。（我们的沙箱使用 Python 3.11.14 和 SQLite 3.50.4； unittest 开箱即用，而 pytest 未安装。）\n以下是我们某次 anthropic/claude-haiku-5.5 运行的输出：\n脚本退出时返回 1 ，因为有三项发现是 HIGH 。另有四项发现是通过在沙箱中运行代码 confirmed 的，其命令和输出保存在 .git/ai-review.json 下的 evidence 中。被移除的 conn.close() 是 unconfirmed ，因为 CPython 在函数返回时会关闭本地连接。传入 --apply 即可把打过补丁的 app/orders.py 复制到你的工作树中。\n把这个脚本保存为 .git/hooks/pre-push ，然后运行 chmod +x .git/hooks/pre-push ：\n当我们在 main 上提交 review.py 、在其上提交包含五个 bug 的改动，并运行 git push origin main 时，钩子执行了审查（ 5 findings, 1 patch, $0.0117, 96 s ），以 1 退出，Git 打印出 error: failed to push some refs 。远端仍停留在上一个提交。\n把这个工作流保存为 .github/workflows/ai-review.yml 。我们没有在 GitHub Actions 中运行过这个工作流；我们是在本地运行了相同的 git show 和 review.py 命令。\n运行 git show \"$BASE:review.py\" 时会使用基础分支中的脚本副本，这样拉取请求就无法修改检查它的审查器；而 python -I 会让拉取请求中的文件不出现在 Python 的导入路径上。来自 fork 的拉取请求会跳过该任务， timeout-minutes: 15 则覆盖一到四分钟的审查时间。\n在 Settings、Secrets and variables、Actions 下添加 OPENROUTER_API_KEY ，并在你的 分支保护规则 中把 review 设为必需的状态检查。如需更全面的 CI 门禁配置，参见 如何在 CI 中基于 LLM 评估对拉取请求做门禁 。\n我们用默认设置和 --context tests/test_orders.py 对上面的示例为每个模型各跑了三次审查。“发现的 bug”统计的是已完成的审查中发现的五个植入 bug。“通过运行代码确认”指模型在沙箱中运行了检查并显示出该 bug。“补丁修复了全部五个”指我们把被接受的补丁应用到一份干净的副本上，并且我们自己的测试对全部五个 bug 都通过。\n想要每次审查成本最低（$0.0153），就从 anthropic/claude-haiku-5.5 开始；想要更快的审查（60 秒）以及每次运行都能修复全部五个 bug 的补丁（$0.0447），就用 anthropic/claude-sonnet-5.5 （ --model anthropic/claude-sonnet-5.5 ）。你可以在 模型目录 中比较更多模型，并用 Ori Eval 在你自己的仓库上测试它们。\n每份评审账单都包含模型 token 费用，再加上 容器 沙箱时间，每秒 $0.0001。Files API 不单独收费（每个文件上限 100 MiB，每个工作区上限 10 GiB，工作区文件不会过期）。\n沙箱计费从第一条 shell 命令开始，一直到响应结束，所以评审期间模型思考的时间也算在内。因此，即使 token 便宜，模型越慢，沙箱费用就越高：每次 Haiku 评审的沙箱费用为 $0.0074 到 $0.0159，而更快的 Sonnet 运行为 $0.0047 到 $0.0068。\n在 Haiku 5.5 上，只处理 diff 的 Chat Comp"
+  },
+  {
+   "group": "ai",
+   "source": "Simon Willison",
+   "title": "How We Took Over ChatGPT Accounts",
+   "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/",
+   "published": "2026-10-31T23:15:22.000Z",
+   "description": "How We Took Over ChatGPT Accounts Parameter Labs describe an exploit they found against ChatGPT's implementation of the artifacts pattern (OpenAI used to call this \"Canvas\" but it looks like the latest revision is called HTML previews ), where interactive custom HTML apps are displayed in a sandboxed iframe. It's important that HTML in these stays tightly sandboxed to avoid untrusted code interacting with OpenAI APIs and accessing private data. Parameter found quite a complex attack chain. OpenAI use the MathLive JavaScript library as part of their graph support, and that library includes its ",
+   "excerpt": "How We Took Over ChatGPT Accounts ( via ) Parameter Labs describe an exploit they found against ChatGPT's implementation of the artifacts pattern (OpenAI used to call this \"Canvas\" but it looks like the latest revision is called HTML previews ), where interactive custom HTML apps are displayed in a sandboxed iframe.\nIt's important that HTML in these stays tightly sandboxed to avoid untrusted code interacting with OpenAI APIs and accessing private data.\nParameter found quite a complex attack chain. OpenAI use the MathLive JavaScript library as part of their graph support, and that library includes its own virtual keyboard , which can be triggered in the parent page via postMessage() from the sandboxed iframe.\nThat message receiving code uses innerHTML , so anything that sends a message can add custom HTML to the parent - and there was no mechanism to prevent other sandboxed frames, including HTML preview frames, from calling that method.\nThis meant untrusted code in an iframe could insert HTML, and while innerHTML doesn't directly execute script elements it could be used to inject a new iframe without sandbox restrictions.\nOpenAI’s CSP rules blocked inline scripts entirely, and only allowed script loading from a handful of domains, but one of those was YouTube - and the YouTube oEmbed endpoint could be used to reflect JavaScript back in a way that executed it.\nOnce the attack had JavaScript execution on ChatGPT, it was trivial to fetch private user data from APIs and exfiltrate it via an image reference.\nThe end result: you could create a ChatGPT share URL which, when visited by another signed-in user, could exfiltrate their private data or take actions on their behalf.\nOpenAI closed the hole and paid out a $5,000 bug bounty, which I think was a bit cheap for a vulnerability this serious.\nThis is a link post by Simon Willison, posted on 31st October 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "美国白宫科技顾问萨克斯称 Anthropic 可能成为资本主义史上最伟大企业",
+   "url": "https://aihot.news/items/dpm21l66z2iizblehsdg09c8t",
+   "published": "2026-10-31T22:56:28.000Z",
+   "description": "美国白宫科学与技术顾问会议主席戴维·萨克斯在 All-In 播客分析 Anthropic 的 S-1 文件，称其很可能成为资本主义历史上最伟大企业，也可能是回报最高的风险投资项目。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dpm21l66z2iizblehsdg09c8t",
+   "excerpt": "美国白宫科学与技术顾问会议主席：Anthropic 很可能成为资本主义历史最伟大企业\n美国白宫科学与技术顾问会议主席戴维·萨克斯在 All-In 播客分析 Anthropic 的 S-1 文件，称其很可能成为资本主义历史上最伟大企业，也可能是回报最高的风险投资项目。\n萨克斯基于 S-1 财务数据分析 Anthropic 的现金储备与 IPO 融资需求，读者可借此了解其看多逻辑和资本效率论点。\nIT之家 11 月 1 日消息，美国白宫科学与技术顾问会议主席戴维 · 奥利弗 · 萨克斯（David Oliver Sacks）最近出席 All-In 播客，深入分析 Anthropic 的 S-1 注册文件， 称这家人工智能初创公司很可能成为资本主义历史上最伟大的企业 。\nAnthropic 在文件中透露，公司 2026 年上半年营收 163 亿美元 （IT之家注：现汇率约合 1,087.14 亿元人民币） ，账面现金 1,120 亿美元 （现汇率约合 7,469.91 亿元人民币） ，预计 2026 年度经常性收入达 1,000 亿美元 （现汇率约合 6,669.57 亿元人民币） 。通过发行 F 类股票，公司七位创始人将持有 50.1% 的投票权。\n戴维 · 萨克斯表示：“我认为，这很可能成为有史以来回报最高的风险投资项目，尤其考虑到这家公司仅成立六年。这也可能是史上价值创造速度最快的风险投资支持企业。”\n他继续说道：“Anthropic 拥有超 1000 亿美元现金，他们几乎没有烧掉筹集的钱，简直是资本使用效率的典范。“现在有很多看空 Anthropic 的人认为，这家公司未来承诺的资本开支太高，根本不可能兑现。”\n“但这次 IPO 反而为这些承诺提供了保障，因为他们现在已经拥有足够的资金，可以为所有算力订单以及预计中的资本开支提供资金支持。他们实际上只需要募集 800 亿、900 亿或者 1000 亿美元，对吧？这与募集 1500 亿、1750 亿甚至 2000 亿美元完全是两回事，而我之前认为他们需要募集这么多资金。”\n“因此，他们在 IPO 过程中对资本市场提出的融资需求会更低，这意味着他们将拥有更强的定价能力，也能够更好地控制流通股数量。我认为，所有这些因素都让我们有理由对 Anthropic 的 IPO 持积极态度。”\n萨克斯基于 S-1 财务数据分析 Anthropic 的现金储备与 IPO 融资需求，读者可借此了解其看多逻辑和资本效率论点。"
+  },
+  {
+   "group": "ai",
+   "source": "Simon Willison",
+   "title": "datasette-llm 0.1a9",
+   "url": "https://simonwillison.net/2026/Oct/31/datasette-llm/",
+   "published": "2026-10-31T22:10:01.000Z",
+   "description": "Release: datasette-llm 0.1a9 I have some big upgrades to Datasette Agent in the pipeline, but in the meantime here's a tiny user experience improvement to the underlying datasette-llm plugin. It now picks up the default model used by LLM , which means you can start using Datasette Agent without needing to explicitly configure a default model: uvx --with datasette-agent datasette content.db --internal internal.db Previously you would also need to specify a model with -s plugins.datasette-agent.default_model gpt-6-astra . Tags: datasette , llm , datasette-agent",
+   "excerpt": "I have some big upgrades to Datasette Agent in the pipeline, but in the meantime here's a tiny user experience improvement to the underlying datasette-llm plugin.\nIt now picks up the default model used by LLM , which means you can start using Datasette Agent without needing to explicitly configure a default model:\nPreviously you would also need to specify a model with -s plugins.datasette-agent.default_model gpt-6-astra .\nThis is a beat by Simon Willison, posted on 31st October 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
+  },
+  {
+   "group": "ai",
+   "source": "Latent Space",
+   "title": "Agents Prompt People: Using Agents for Long-Horizon Financial Work",
+   "url": "https://latent.space/p/arca/",
+   "published": "2026-10-31T16:05:00.000Z",
+   "description": "Arca's head of AI discusses persistent memory, the benefits of a custom harness, and agentic workflows that span days.",
+   "excerpt": "Arca's head of AI discusses persistent memory, the benefits of a custom harness, and agentic workflows that span days.\nAt AI Engineer New York this month, we sat down with Aman Singh , the lead AI Engineer at Arca , an “AI-native” company providing wealth management services.\nWe discovered that while agents do most of the background work in the firm, there are guardrails in place to ensure that human advisors are making the final decisions. The goal is for AI to guide the process; or as Singh nicely put it, “agents prompt people more than people prompt agents.”\nArca recently raised $48.5 Million in a round led by General Catalyst, with participation from Index Ventures and Venrock.\nOne of the features of using AI in financial services, explained Singh, is that it’s typically long-horizon work — although not long-running. In his AIE presentation, Singh noted that agent tasks at Arca can take up to ten days. “It's very stop-start, there's many actors in between, many decision points, many handoffs,” he said.\nFor this reason, Arca has developed an internal memory system .\n“So we have this persistence for every client ,” Singh said in our podcast discussion. “What has happened so far? What are we tracking for next? What needs to happen immediately in the next couple of days [and] what are we tracking for the long term? Which individual is responsible for which action? All of this is being tracked by our memory systems that our agents contribute to.”\nArca uses models from frontier labs like Anthropic and OpenAI, with Claude its primary model provider. The company has built its own harness , which automatically selects the best model to use for a particular task, based on the company’s internal benchmarks.\nOwning the harness, rather than using a managed agent harness, also means that Arca has the flexibility to change model providers if it needs to.\nSafety is obviously key for financial services. Singh noted that although agents do much of the work, an agent’s role is limited to analysis and proposing solutions. Trading and any other money movement is handled by a human advisor.\n“All of our safety restrictions are fully deterministic,” he said. “And they take the decision making off the agent's hands.”\nIn other words, there are certain tools and tasks the agent can execute by itself — but not ones that involve risk to the client. Arca also runs verification checks on known AI security issues, such as prompt injections.\nLatent Space is read by the people shipping"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "彭博社统计：Alphabet、Meta、微软、亚马逊、甲骨文承诺投入超3万亿美元建AI基础设施",
+   "url": "https://aihot.news/items/htfc0ler37j2h4hoqll6jewz3",
+   "published": "2026-10-31T15:56:00.000Z",
+   "description": "据彭博社10月31日报道，Alphabet、Meta、微软、亚马逊和甲骨文五大巨头承诺未来数年在数据中心等领域投入超过3万亿美元（约20.01万亿元人民币）。其中谷歌支出承诺超1万亿美元、接近一年前的八倍，Meta超8,000亿美元且近半用于最长分30年支付的租约；甲骨文是首家因投资AI数据中心而自由现金流转负的大型科技公司，预计到2028年恢复正自由现金流。 🔗 阅读原文 via AIHOT · https://aihot.news/items/htfc0ler37j2h4hoqll6jewz3",
+   "excerpt": "据彭博社10月31日报道，Alphabet、Meta、微软、亚马逊和甲骨文五大巨头承诺未来数年在数据中心等领域投入超过3万亿美元（约20.01万亿元人民币）。其中谷歌支出承诺超1万亿美元、接近一年前的八倍，Meta超8,000亿美元且近半用于最长分30年支付的租约；甲骨文是首家因投资AI数据中心而自由现金流转负的大型科技公司，预计到2028年恢复正自由现金流。\n原文汇总五巨头财报披露的支出承诺构成和自由现金流变化，读者可以据此看清各家AI基建投入的规模差异与回收压力。\nIT之家 10 月 31 日消息，据彭博社今天（31 日）凌晨报道，AI 基础设施建设仍将吸引巨额资金。Alphabet、Meta、微软、亚马逊和甲骨文五大科技巨头承诺，未来数年将在数据中心等领域投入超过 3 万亿美元 （IT之家注：现汇率约合 20.01 万亿元人民币） 。\n随着数据中心建设竞赛愈演愈烈，五家公司披露的租赁、建筑、能源及设备采购承诺大幅增长。这些资金有的将在短期内支出，有的则涉及 未来数十年的长期合同 。\n谷歌的支出承诺规模最大。根据 Alphabet 提交的监管文件，包括技术设备、能源和租赁在内的合同承诺总额 超过 1 万亿美元 （现汇率约合 6.67 万亿元人民币） ， 接近一年前的八倍 。\nMeta 的支出承诺同样大幅攀升，未来支出总额 超过 8,000 亿美元 （现汇率约合 5.34 万亿元人民币） 。其中将近一半用于尚未生效的数据中心租约，最长分 30 年支付。Meta CFO 苏珊 · 李在上周的分析师电话会议上说：“我们预计将继续大举投资，支持核心业务和新兴 AI 项目。”\n今年商界的一大争论，是科技企业斥资数千亿美元建设 AI 数据中心， 究竟能否收回投资 。Alphabet 和 Meta 都是全球最赚钱的企业之一，却因投资有望改变行业格局的新业务，出现 自由现金流由正转负 的情况。\n不过，五家公司的支出并非全部用于数据中心，披露口径也不完全一致，因此很难直接比较。\n例如，Meta 的部分预算用于 Reality Labs 部门的消费级硬件产品，Alphabet 和亚马逊的计划支出则包括内容授权费用。本次统计也没有计入现有租约和债务等其他大额支出。\n五家公司未来的租赁付款承诺合计 1.3 万亿美元 （现汇率约合 8.67 万亿元人民币） ，其他采购承诺合计 1.9 万亿美元 （现汇率约合 12.67 万亿元人民币） 。除微软外，数据均取自各家公司最新财报。微软的采购和建设订单数据来自截至 6 月底的年度报告，该公司此后尚未更新这两项数据。\n甲骨文是首家 因投资 AI 数据中心而陷入自由现金流为负 的大型科技公司。在本周早些时候举行的投资者说明会上，甲骨文预计到 2028 年恢复正自由现金流，并计划通过供应商融资和客户预付款等方式，减少项目初期需要自行承担的资金支出。\n原文汇总五巨头财报披露的支出承诺构成和自由现金流变化，读者可以据此看清各家AI基建投入的规模差异与回收压力。"
+  },
   {
    "group": "wh",
    "source": "Robotics & Automation News",
@@ -893,7 +965,7 @@
    "url": "https://aihot.news/items/rccreyesa3aeph7jasj5spv29",
    "published": "2026-10-29T17:00:00.000Z",
    "description": "OpenAI 更新其公开的 Model Spec，将指导原则重组为五项核心价值观：忠实于人类意图、最小化伤害、诚实透明、促进人类自主和关怀。更新新增了关于上下文理解、监督和自主性的指导，调整了部分行为默认值，退出了大部分详细风格指南，并将模型称呼从 the assistant 改为 GPT。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rccreyesa3aeph7jasj5spv29",
-   "excerpt": "An updated Model Spec for more capable and beneficial AI\nOpenAI 更新其公开的 Model Spec，将指导原则重组为五项核心价值观：忠实于人类意图、最小化伤害、诚实透明、促进人类自主和关怀。更新新增了关于上下文理解、监督和自主性的指导，调整了部分行为默认值，退出了大部分详细风格指南，并将模型称呼从 the assistant 改为 GPT。\n随着我们的模型越来越智能，在现实世界中采取的行动也越来越有分量，它们不能只停留在理解收到的具体指令上，这一点正变得愈发重要。模型还需要理解人类的意图和价值观，这样才能在指令没有明确覆盖的情况下做出良好判断，同时始终忠于人类意图并接受人类监督。\n今天我们更新了 模型规范（在新窗口打开） ，这是我们公开说明希望模型如何行为的文件。此次更新围绕五项基本价值重新组织了规范内容： 忠于人类意图 、 尽量减少伤害 、 诚实与透明 、 尊重人的自主性 以及 关怀 。这体现了我们在 价值对齐 方面的工作目标：让模型在陌生情境中理解并运用人类价值观，同时始终忠于人类意图。除了对现有原则作出更清晰的解释，本次修订还新增了关于情境、监督和自主性的指引，调整了一些默认行为，并删去了大部分详细的风格指引。\n上述五项价值阐明了模型规范中早已体现的广泛承诺：服务于人类目的、保持真实、尽量减少伤害、尊重人们形成自身观点的自由，以及认真对待人们的处境。把这些承诺汇聚在一起，有助于解释规范为何要求模型以特定方式行事，也帮助我们在这些承诺表达得不够充分的地方制定更清晰的指引。此次更新是我们 完善规范工作 的又一步，依托于研究、部署模型的经验、 公众对规范及模型行为的反馈 ，以及与用户和外部专家的讨论。\n忠于人类意图 是这一方法的根基：理解并帮助人们追求对他们重要的事情。OpenAI 负责撰写规范、设定边界，并训练模型遵守这些边界；开发者在这一边界内指导应用；用户则在上述约束下指导模型的工作。我们的模型应当 拓展人们塑造自身生活的能力 ，帮助他们理解世界、发现可能性、追求自己选定的目标，同时认真对待这种协助对他人造成的影响。忠于人类意图与其余四项价值共同构成了规范的组织框架，指导模型如何权衡它们面临的一些最重要取舍。这些价值并不意在涵盖模型应当尊重并帮助人们追求的全部人类价值。\n忠实意味着不止于字面执行指令，而是深入理解 OpenAI、开发者和用户的意图与价值取向，并在这种理解不完整时做出明智判断。它还意味着要认识到人们的信念和价值观会变化，帮助他们以自己认可的方式反思和成长，而不是悄悄引导他们或替他们做选择。例如，在帮人比较工作机会时，模型可以援引对方此前分享过的优先考虑——比如希望工作时间可预测——同时把这些假设摆到明面上，方便对方纠正。\n我们的使命是确保通用人工智能造福全人类。这要求我们不仅考虑某人当下的意图，还要考虑其长远利益以及对他人造成的影响。另外四项价值观把这些考量明确表达出来：\n诚实与透明 ，意味着如实说明模型知道什么、做了什么、对什么不确定，让人们能够理解和评估它的推理与工作。\n关怀 ，意味着关注受影响者的处境，遵循相关的社会与职业规范，并让人们可以信赖模型的工作。\n《模型规范》把这些价值观转化为可操作的指引：在需要保护人和社会的地方设定明确边界，其余部分大多以默认规则的形式呈现，用户和开发者可以覆盖。\n在更新《模型规范》的同时，我们一直在探索新的训练方法，帮助模型学习这些核心价值观，更好地理解和遵循规范中的具体行为原则。目标是让模型理解这些原则为何重要，以及如何在新情境中运用它们： 做正确的事 ， 出于正确的理由 。我们希望这种理解能支撑模型在重大决策上做出合理判断，在日常决策中保持审慎——这些日常决策累积起来，可以 为人和社会带来持久益处（在新窗口打开） 。我们会在后续更新中分享这项训练工作的成果和经验。\n这次重组还帮助我们找出了哪些地方需要补充指引，据此制定新原则，并按需修订或停用原有指引。\n新增的“忠实于人类意图”一节，出发点是：人们所看重的东西是第一位的，而指令通常是这些价值最清晰、最重要的信号。这一思路借鉴了对齐研究中的“协助博弈”框架（参见 早期工作（在新窗口打开） 和 后续综述（在新窗口打开） ）。该节纳入了更新后的 指令链（在新窗口打开） ，说明哪些指令适用、冲突如何解决。新增小节 仔细考虑上下文（在新窗口打开） 则说明对话、记忆和其他上下文证据应如何帮助模型理解人们的意图和偏好。\n我们还为 支持人的能动性⁠（在新窗口打开） 和 遵循相关社会规范⁠（在新窗口打开） 补充了默认要求，并扩充了关于 控制并沟通副作用⁠（在新窗口打开） 的现有指引。这些原则涵盖了其余价值观在模型行为中体现的更多方式——它们往往细微却重要：考虑工作成果对他人的影响、增强用户的能力、产出人们可以信赖的成果，同时尊重用户的目标和指令。\n与此同时，我们删去了规范中大部分详细的风格指引。风格应当顺应人们的偏好——既包括语言和文化层面的整体偏好，也包括每个人的个人偏好——而用户反馈和具体情境则为这些偏好提供依据。规范保留了更强的默认要求，例如 客观地探讨问题⁠（在新窗口打开） 。用户和开发者可以明确要求模型采取特定视角，但模型不应仅仅因为觉得对方想听什么，就推断出这种偏好。\n最后，考虑到模型用例和部署场景日益广泛，我们在规范中现在称模型为“GPT”，而不再称“助手”。\n随着模型能力不断增强，本次更新是让规范背后的价值观和推理更加明确的第一步。模型规范描述的是我们努力实现的行为，我们的模型尚未完全体现这一点。我们将从研究、实际使用和反馈中不断学习，持续改进规范与模型。\n我们想知道你认为规范中哪些部分有说服力、哪些地方你不认同其权衡取舍，以及它忽略了什么或哪些地方表述不清。关于价值观、权衡取舍和具体措辞的反馈，能帮助我们改进规范。欢迎阅读 更新后的模型规范⁠（在新窗口打开） 并 分享你的看法⁠（在新窗口打开） 。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -902,7 +974,7 @@
    "url": "https://aihot.news/items/funx6p4g0gju509j6n0oyxmqu",
    "published": "2026-10-29T16:56:07.000Z",
    "description": "Tibo 宣布即日起将 Pro 100/200/500 档位与 Business Premium 的所有用量上限翻倍。Pro 200 的上限不会下调，Work 与 Codex 用量保持不变；dots 的扩展用量上限继续提供，且仍与默认用量分开计算，后续还会通过更好的模型和效率改进提升实际可用量。 🔗 阅读原文 via AIHOT · https://aihot.news/items/funx6p4g0gju509j6n0oyxmqu",
-   "excerpt": "Tibo 宣布即日起将 Pro 100/200/500 档位与 Business Premium 的所有用量上限翻倍。Pro 200 的上限不会下调，Work 与 Codex 用量保持不变；dots 的扩展用量上限继续提供，且仍与默认用量分开计算，后续还会通过更好的模型和效率改进提升实际可用量。\n作者以官方身份宣布用量上限调整的具体方案，涉及多个订阅档位，使用者可据此核对自身配额变化。\n从今天起，我们将把所有 Pro 100/200/500 档位和 Business Premium 的所有使用限额翻倍。\n我们听取了大家的善意反馈，不会降低 Pro 200 的使用限额，因此你的 Work 和 Codex 用量将保持不变。我们目前也会继续为 dots 提供扩展限额，并且你的 dot 用量仍将与你的默认用量分开计算。\n当然，我们也会继续推出更好的模型和其他效率改进，从而随着时间的推移提高你的实际可用用量。\n作者以官方身份宣布用量上限调整的具体方案，涉及多个订阅档位，使用者可据此核对自身配额变化。"
+   "excerpt": ""
   },
   {
    "group": "wh",
@@ -920,7 +992,7 @@
    "url": "https://aihot.news/items/nfbnpnzdrebu4kbq6uqxhkc2h",
    "published": "2026-10-29T16:36:12.000Z",
    "description": "Google Gemini 宣布可直接在应用内生成、预览和编辑文档、PDF、演示文稿、表格等多种文件。支持把手写笔记转成 PDF 学习指南、手动调整内容、高亮部分让 Gemini 修改文字或视觉元素，并可继续追问。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nfbnpnzdrebu4kbq6uqxhkc2h",
-   "excerpt": "Google Gemini 宣布可直接在应用内生成、预览和编辑文档、PDF、演示文稿、表格等多种文件。支持把手写笔记转成 PDF 学习指南、手动调整内容、高亮部分让 Gemini 修改文字或视觉元素，并可继续追问。\n官方宣布文档、PDF、演示文稿等可直接在 Gemini 内生成、预览和编辑，读者可据此判断它能否替代部分办公工具流程。\n你现在可以直接在 Gemini 中生成、预览和编辑文档、PDF、演示文稿、电子表格等。\n轻松将你的手写笔记变成 PDF 学习指南，手动调整内容，高亮部分让 Gemini 编辑文本或视觉效果，甚至还可以追问。\n官方宣布文档、PDF、演示文稿等可直接在 Gemini 内生成、预览和编辑，读者可据此判断它能否替代部分办公工具流程。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -938,7 +1010,7 @@
    "url": "https://aihot.news/items/e234ewhx82g2zh3z2bgcjxx7d",
    "published": "2026-10-29T16:00:00.000Z",
    "description": "OpenAI 在 Alignment 博客介绍其针对前沿模型（如 GPT-6 Astra）的多层失对齐监控系统，覆盖训练、评估、内部使用和部分外部部署。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e234ewhx82g2zh3z2bgcjxx7d",
-   "excerpt": "How we detect frontier model misalignment\nOpenAI 在 Alignment 博客介绍其针对前沿模型（如 GPT-6 Astra）的多层失对齐监控系统，覆盖训练、评估、内部使用和部分外部部署。\nOpenAI 公开了内部失对齐监控系统的分层架构、检出率数据和红队结果，读者可以据此了解前沿模型监控的实际做法与局限。\n随着我们训练能力越来越强的 AI 模型，我们需要可靠的手段来发现模型行为何时偏离了我们的预期。智能体可能在训练、评估或部署过程中出现不当行为、采取未经授权的操作，后果可能很严重。为了发现这些故障，并在必要时及时干预，我们会监控智能体的推理过程、它采取的行动，以及这些行动对其环境造成的影响。\n我们 监控内部编程智能体 已有一段时间，但 Hugging Face 事件 暴露出我们覆盖范围中的一个缺口：该事件始于内部网络安全评估，而我们当时并未在这些评估中运行失准行为监控。针对这起事件，也考虑到我们模型 整体能力的提升 ，我们大幅扩展了智能体行为监控系统。如今，我们的失准监控覆盖前沿模型在更多场景下的行为，包括训练、评估、内部使用，以及外部部署（具体会视产品场景做相应调整）。\n为了检验这套扩展后的系统本可以如何帮助阻止 Hugging Face 事件，我们用强化后的监控重放了该事件中记录的行为。在模拟中，智能体首次逃出沙箱约 30 分钟后，监控系统就向安全团队发出了警报，比实际事件中 Hugging Face 系统被攻破的时间早了 30 多个小时。我们认为，这一预警本可以让响应人员有充足时间，在我们的模型能够访问外部服务之前就中断相关活动。\n9 月，我们看到了响应人员如何利用一次实时训练运行中的警报。一个模型找到了从本应隔离的环境中 接入互联网 的方法。监控在 15 分钟内标记了这次突破，响应人员三分钟后就着手审查。随后我们暂停了前沿强化学习，同时加固用于约束智能体的系统。\n这套监控系统需要消耗大量算力，但我们认为，随着模型能力增强、模型失准的潜在后果加重，这笔成本值得付出。监控是我们 纵深防御 策略中抵御模型失准行为危害的若干层之一。对齐训练旨在降低模型做出有害行为的倾向；安全控制 限制智能体能够访问或影响的系统 ；而当这些防护措施失效时，监控帮助我们发现有遗漏的故障，在危害发生前介入，并从问题中吸取教训。我们认为， 所有模型开发者 都应监控其最强模型的行为。\n对于能力至少与 GPT-6 Astra 相当的模型，我们会监控每一次强化学习（RL）运行和评估，以及任何支持工具使用的运行框架。对于大多数工作负载（包括 RL 和评估），我们还会监控那些我们评估为能力超过 GPT-5.5 Thinking 的模型。此外，无论使用哪个模型，我们都会监控所有内部 Codex 流量。这套系统的一个版本还会监控能力超过我们 预备框架 中网络安全能力关键阈值的模型的外部工具使用情况，详见本文下文。\n为了在高效利用算力的同时检测事件，我们把监控系统设计成多层架构。第一层筛查阶段投入的算力相对较少，目标是在这一层尽可能多地捕获可疑案例：这些阶段的设计原则是宁可放行、也不漏掉，即使证据尚不明确也先往下传。后续阶段则可以在每个案例上投入更多算力，弄清发生了什么、模型行为是否值得担忧，以及我们是否需要介入。\n我们的第一层（L0）使用一类轻量级分类器，称为 激活探针 。它们会在模型的内部激活中寻找可疑模式，并把标记出的案例交给下一层审查。我们把这些探针调向高召回率，宁可接受一些误报，也要降低漏掉可疑行为的概率。\n由于我们仍在评估这些探针检测陌生失准形式的效果，我们还会把探针未标记的流量随机抽取 5% 送给下一层。审查这部分样本有助于我们发现探针可能漏掉的可疑行为。考虑到探针的敏感度，我们让前沿 RL 运行和内部 Codex 流量跳过这一层，直接进入下一层。\n在下一层（L1），一个基于模型的审查器会检查智能体近期的对话、思维链和工具使用情况，寻找欺骗、未经授权的操作以及试图操纵评估的迹象。审查器使用的是智能体行动时所处的同一个上下文窗口。如果智能体早先的工作已被摘要压缩进受审查的上下文窗口，审查器看到的就是那份摘要。\n对于前沿 RL 运行和内部 Codex 流量，我们在每一轮结束时执行一次 L1 检查，并在智能体为腾出上下文窗口空间而摘要其早先工作时也执行一次。我们目前正转向一种新安排：两次检查之间的间隔不超过 30 分钟。\n一旦知道智能体被要求做什么，它的行为看起来可能就大不一样了。当 L1 审查器标记出某个案例时，该案例会被送到下一层（L2），由我们的调查智能体进一步检查。这个调查智能体可以核查评估的目的，并且在完整记录可用时，回读智能体所有上下文窗口，弄清它是如何做出这些行动的。调查智能体还能在隔离环境中编写并运行代码来检查相关证据，然后利用发现的结果还原事件经过、识别重复报告，并判断该案例的严重程度。\n我们针对不同目的使用不同的调查智能体。安全调查员负责寻找可能需要人工介入的迹象，比如智能体逃出沙箱，或未经授权访问系统。对齐调查员则负责寻找值得研究的行为，即便这些行为没有直接的安全风险。在两类调查员同时启用的场景下，每个被 L1 层标记的案例都会由两者分别审查。我们目前正在把对齐调查推广到更多内部工作负载中。\n对于敏感工作负载，包括内部的 Codex 使用、评估和强化学习（RL）运行，下一层（L3）会做进一步检查，依据的是对话之外的证据。安全调查员会把对话记录与网络日志、其他系统遥测数据以及以往案例的证据进行比对，判断是否需要通知人工响应人员。在 L3，对齐审查员还会跨案例比对报告，找出严重故障和反复出现的模式，并对前沿 RL 运行做更深入的检查。\n在开启寻呼的情况下，最高优先级的安全警报会送达我们的安全和训练团队成员，通常在初始警报发出后 15 分钟内。响应人员会审查证据、检查受影响的系统，并采取措施控制事件。对于不那么紧急的发现，比如不构成直接安全风险的对齐故障，后续如何处理取决于"
+   "excerpt": ""
   },
   {
    "group": "wh",
@@ -1155,258 +1227,6 @@
    "published": "2026-10-29T04:01:46.000Z",
    "description": "AGIBOT unveiled its AHA3 integrated platform, GO-3 Preview, and WITA-Omni 1.0 model, as well as the G2 Max robot and Link-U OS 1.0 framework. The post AGIBOT introduces Worken to measure robot productivity at AGIBOT Innovation Day 2026 appeared first on The Robot Report .",
    "excerpt": "Peng Zhihui, president, CTO, and director of AGIBOT, introduces Worken at AGIBOT Innovation Day 2026. Source: AGIBOT\nAGIBOT today introduced Worken, a proposed framework for measuring the productivity of robots in real-world environments, at AGIBOT Innovation Day 2026 in Shanghai. Combining the words “Work” and “Token,” the concept seeks to shift attention beyond the number of robots manufactured or deployed toward how much useful work they can perform autonomously and consistently.\nThe company also unveiled AHA3, its integrated “three intelligences in one” hardware platform, and highlighted advances in its AGILE motion intelligence framework, including a new self-evolving agent capability. AGIBOT debuted GO-3 Preview, its next-generation embodied AI foundation model, showcased its WITA-Omni 1.0 omni-modal interaction model, and launched the G2 Max industrial robot and Link-U OS 1.0.\nThe event also featured actual applications across manufacturing and commercial services, demonstrating AGIBOT’s focus on translating robotics innovation into productive work. The company said they reflect its deployment-first focus, with practical innovation spanning robot hardware, locomotion, task and interaction intelligence, operations, and an ecosystem intended to support real-world deployment at scale.\nFounded in 2023 as Zhiyuan Xinchuang Technology Co., AGIBOT is focused on embodied AI. The Shanghai-based company ‘s portfolio spans humanoid robots, quadrupeds , dexterous systems, and commercial cleaning systems. Last month, AGIBOT said its 20,000th robot had rolled off the production line, and IDC reported that the company led global humanoid robot shipments in the first half of 2026.\nAs robots move from large-scale production into increasingly diverse applications, AGIBOT said there is another dimension of progress: the productive work robots can deliver once deployed. In addition to manufacturing scale, technological capabilities, and deployment milestones, the company said sustained autonomous operation and measurable task output are increasingly important indicators of robotic value.\n“Over the past few years, the robotics industry has made remarkable progress in hardware, AI models, and large-scale manufacturing,” stated Peng Zhihui, co-founder, president, and chief technology officer of AGIBOT. “But as robots begin working in factories, warehouses, and service environments, we need to answer a more practical question: How much productive work are they actually del"
-  },
-  {
-   "group": "ai",
-   "source": "Hugging Face",
-   "title": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready",
-   "url": "https://huggingface.co/blog/announcing-project-protostar",
-   "published": "2026-10-29T00:00:00.000Z",
-   "description": "",
-   "excerpt": "An initiative bringing together universities, research organizations, industry, and the open science community to make publicly funded research easier to discover, reuse, and build upon.\nToday, we're announcing Project ProtoStar , an initiative to unlock the potential of publicly funded scientific research by making datasets, models, and code more accessible and reusable, particularly for AI-driven research. ProtoStar brings together research institutions, industry, and the open science community to support the release of scientific artifacts in AI-ready, machine-actionable formats, and to demonstrate their value through a series of open challenges. The first challenge, hosted by Carnegie Mellon University , opens on November 2. See How to Participate below.\nThe initiative's founding partners include Carnegie Mellon University , Purdue University , Georgia Institute of Technology , Arizona State University , and The George Washington University , all working through the Open Forum for AI (OFAI) as the university coalition partner; the Astera Institute ; Hugging Face as the infrastructure partner; and the Open Research Community Accelerator (ORCA) , through its Fostering Innovation Network , as the community partner.\nParticipating organizations formalize their involvement through a memorandum of understanding supporting the release of suitable scientific datasets, models, and code in AI-ready formats on open infrastructure. Organizations interested in joining Project ProtoStar can reach out to protostar@orcaopen.org .\nThe U.S. federal government invests approximately $190 billion annually in research and development , and federal policy increasingly expects the results to be shared publicly. Agencies such as the National Institutes of Health (NIH) and National Science Foundation (NSF) have strengthened public-access requirements for funded research publications and require researchers to plan for sharing the underlying data. Hugging Face is among the ten generalist repositories listed by NIH for sharing research data.\nBut making research publicly available does not automatically make it usable. Scientific datasets, models, and code are often scattered across incompatible systems, stored in static or legacy formats, or released without the documentation, metadata, and provenance needed to understand and reuse them. These limitations make it harder for researchers to build on existing work, and harder still for AI systems to discover, interpret, and combine s"
-  },
-  {
-   "group": "ai",
-   "source": "Hugging Face",
-   "title": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
-   "url": "https://huggingface.co/blog/mistral-large4",
-   "published": "2026-10-29T00:00:00.000Z",
-   "description": "",
-   "excerpt": "Mistral Large 4 (aka Le Chonk) is a multimodal, multilingual, Mixture-of-Experts (MoE) model from Mistral. It takes text and images as input and generates text. It has about 1T total, 49B active parameter , and a context window of 1M tokens .\nThe model is released in two official variants:\nThere are also GGUFs created by Unsloth and the llama.cpp team. It’s distributed under the Mistral Ecosystem Open-Weight License (an MIT derivative that establishes limitations for model-as-a-service offerings).\nMistral Large 4 is particularly strong for cybersecurity, coding agents, and multimodality. In this post, we look at how the model works, its capabilities, architecture and more!\nMistral Large 4 combines a large pool of experts with sparse attention and a Pixtral vision encoder. The language model selects a small group of experts for each token, while its attention indexer selects which earlier token positions to attend to. These are two different forms of sparsity, where one selects feed-forward networks, the other selects context positions.\nYou can find all the checkpoints in the Mistral Large 4 collection .\nMistral Large 4 scores 82% on the Artificial Analysis Cyber Index test that asks a model to reproduce a real vulnerability in open-source software and then patch the software. Mistral reports that several closed frontier models score near zero on the same test because they refuse to attempt the work. This is super important for defenders, because fixing a vulnerability usually requires reproducing the vulnerability. In Mistral’s internal testing, Mistral Large 4 was also useful for malware analysis, vulnerability prioritisation and writing detection rules, which the model was not explicitly trained for.\nMistral mainly positions the model for defensive security work. Vulnerability research and incident response often appear like attacks in model input, so closed source filters can block them. A team that depends on an API can also lose access in the middle of an incident. Crucially, open weight models put both the usage policy and the deployment under the user’s control. That said, the model still declines harmful requests: on cyber prompts from JailbreakBench, StrongREJECT and AgentHarm, its average refusal rate is higher than any other open weight model.\nFor community builders, an open weight model like Mistral Large 4 unlocks a load of downstream use cases. You could build your own cyber system around your code base, crash logs, and malware samples. For e"
-  },
-  {
-   "group": "ai",
-   "source": "Hugging Face",
-   "title": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
-   "url": "https://huggingface.co/blog/anydecisionmodel",
-   "published": "2026-10-29T00:00:00.000Z",
-   "description": "",
-   "excerpt": "Language models can do a lot. They write, summarize, translate, and call tools. But they're only a small part of what machine learning can do.\nSay a customer calls your support line. First, you want to know what they said (speech recognition). Then, you want to decide where to send them (decision). You could hand both to a language model, but there are models built for each that are better, faster, and less expensive.\nIn our AnyLanguageModel 1.0 recap , we looked at a year of local and hosted models in Swift. With AnyLanguageModel and swift-huggingface now on their 1.x releases, we're extending the same approach to speech and decisions: familiar Swift APIs with a choice of model.\nBoth packages can download open models from the Hugging Face Hub and run them on device.\nComputers have been transcribing speech for decades, and in the past few years, they've gotten very good at it. Apple platforms already have an API for it. macOS 26 and iOS 26 introduced SpeechAnalyzer , Apple's new speech-to-text API. You add modules such as SpeechTranscriber and SpeechDetector to an analyzer, give it a file or a stream of audio buffers, and read results from async sequences as they arrive. AssetInventory installs the models, so your app decides when downloads happen.\nIt's a well-designed API, but the only engine behind it is Apple's. AnySpeechRecognizer keeps the API and lets you choose the engine:\nThe package mirrors SpeechAnalyzer , SpeechTranscriber , DictationTranscriber , SpeechDetector , and AssetInventory , with Apple's Speech framework as the default engine. If your code uses that shared API, changing the import is enough. To use Parakeet instead, change only how you create the transcriber:\nThe steps for installing assets, running the analyzer, and reading results stay the same. The README has a complete example and lists the differences from Apple's framework.\nParakeet v3 is NVIDIA's Parakeet TDT 0.6B v3 . It's a polyglot: it recognizes 25 European languages and works out which one it's hearing, so you don't pass a locale.\nParakeet Ultra is Moondream's post-trained take on v3 . It was more accurate in most of our measurements.\nParakeet Unified is NVIDIA's English-only Parakeet .\nAll three Parakeets run on the package's own Core ML runtime, which supports file and live input, volatile results, word timing, and word confidence.\nQwen3-ASR is Alibaba's speech model, in 0.6B and 1.7B sizes. It recognizes 30 languages and 22 Chinese dialects, including Mandarin, Cantonese"
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
-   "url": "https://openai.com/index/credit-saison",
-   "published": "2026-10-29T00:00:00.000Z",
-   "description": "Credit Saison’s ChatGPT Enterprise pilot delivered 954% ROI. See how leaders and employees helped turn the results into companywide adoption.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "vLLM 发布 Mistral Large 4 Day 0 支持",
-   "url": "https://aihot.news/items/x6x8nkxn5mqc55umit3clj1tf",
-   "published": "2026-10-29T00:00:00.000Z",
-   "description": "vLLM 团队宣布对 Mistral 新旗舰模型 Mistral Large 4 提供 Day 0 支持，该模型为 1T 参数、每 token 激活 49B 的原生多模态 MoE 模型，采用 MLA 稀疏注意力加 DSA top-k 索引器、跨层 KV 共享、NoPE、SSMax 和 LeRoPE 等新架构，并内置 DSpark 推测解码草稿器与 Pixtral 视觉编码器。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x6x8nkxn5mqc55umit3clj1tf",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Mistral Large 4（Le Chonk）登陆 Hugging Face：1T 参数 MoE 多模态开源权重模型",
-   "url": "https://aihot.news/items/upsd8u37hkkquohy3w3sjvszi",
-   "published": "2026-10-29T00:00:00.000Z",
-   "description": "Hugging Face 发布 Mistral Large 4（Le Chonk）的上线博客，模型为多模态多语言 MoE 架构，总参数约 1T、激活 49B、上下文窗口 1M token。 🔗 阅读原文 via AIHOT · https://aihot.news/items/upsd8u37hkkquohy3w3sjvszi",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenRouter 教程：用 LLM 从 PDF 中抽取表格",
-   "url": "https://aihot.news/items/l928e49lwysm0ymgmhyjrkc3z",
-   "published": "2026-10-29T00:00:00.000Z",
-   "description": "OpenRouter 发布教程，讲解如何把 PDF 以文件形式连同严格 JSON schema 发给能读文件的模型，让表格以带类型的行返回，括号亏损、千分位和脚注标记等清理都写进字段描述。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l928e49lwysm0ymgmhyjrkc3z",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Factory 发布 Droid 1.0，以程序化工具调用构建企业级 Agent harness",
-   "url": "https://aihot.news/items/gjz7lj8j6ojjyj80vkkhy786v",
-   "published": "2026-10-29T00:00:00.000Z",
-   "description": "Factory 发布 Droid 1.0，一个模型无关的 agent harness，主打程序化工具调用（PTC），模型通过编写 JavaScript 程序在沙箱中一次执行数百个工具调用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gjz7lj8j6ojjyj80vkkhy786v",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "Simon Willison",
-   "title": "Quoting Ted Sanders",
-   "url": "https://simonwillison.net/2026/Oct/28/ted-sanders/",
-   "published": "2026-10-28T23:23:21.000Z",
-   "description": "In general, LLM performance is incredibly multidimensional. There's no guarantee of a fixed ordering where the model that is best at math is also the model that's best at jokes. Despite that complexity, much of the variation in performance is explained by just a single variable: model size. In general, models that are bigger will (a) be more performant / reliable, (b) cost more per token, and (c) have better recall of esoteric facts. As you note, our models are ordered: Luna &lt; Terra &lt; Sol &lt; Astra [ ... ] These days, version number signifies a few things at once: the order of release, ",
-   "excerpt": "In general, LLM performance is incredibly multidimensional. There's no guarantee of a fixed ordering where the model that is best at math is also the model that's best at jokes. Despite that complexity, much of the variation in performance is explained by just a single variable: model size. In general, models that are bigger will (a) be more performant / reliable, (b) cost more per token, and (c) have better recall of esoteric facts. As you note, our models are ordered:\n[ ... ] These days, version number signifies a few things at once: the order of release, the relationship to other releases, and the magnitude of improvement. So something like 6.1 would indicate it was launched after 5.6, may share some similarities to other 6.1 models in terms of training data / personality (which is why it's not 5.7), and isn't a giant enough leap to merit the headlines and expectations that would come with a 7.\n&mdash; Ted Sanders , explaining OpenAI's model naming conventions\nThis is a quotation collected by Simon Willison, posted on 28th October 2026 ."
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Anthropic 报告：Claude 研究模型在 Chrome、Safari、Android、Windows、Linux 发现漏洞并串联 5 条攻击链",
-   "url": "https://aihot.news/items/jpt1eeuj2p1mgrxbufuv3ntdn",
-   "published": "2026-10-28T22:35:25.000Z",
-   "description": "Anthropic 于 10 月 27 日发布研究报告，称一个未公开的内部 Claude 研究模型在 Chrome、Safari、Android、Windows 和 Linux 中发现漏洞，串联出 5 条可实际运行的攻击链，相关漏洞已按协调披露流程报告并修复。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jpt1eeuj2p1mgrxbufuv3ntdn",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Automated Warehouse",
-   "title": "Kardex AI-powered BinInductAI makes AutoStore faster and more accurate",
-   "url": "https://www.automatedwarehouseonline.com/kardex-ai-powered-bininductai-makes-autostore-faster-more-accurate/",
-   "published": "2026-10-28T21:07:15.000Z",
-   "description": "Kardex’s new BinInductAI intelligent bin induction innovation uses vision and AI-based image analysis to improve quality control. The post Kardex AI-powered BinInductAI makes AutoStore faster and more accurate appeared first on Automated Warehouse .",
-   "excerpt": "Kardex has launched BinInductAI, an artificial intelligence and computer vision-driven system designed to streamline the AutoStore bin induction process by eliminating manual pre-checks and scanning, ultimately cutting on-site induction time by up to 30%.\nThe company said its innovations in BinInductAI are intended to enhance performance and efficiency across the system lifecycle – from implementation and orchestration to picking , maintenance, and inventory validation.\nThe Kardex Intuitive Picking Assistant (IPA) projects all relevant picking information onto the AutoStore port to enhance throughput, reduce errors, and improve inventory control, while the recently launched PortScale precision weighing system double-checks accuracy.\nThe net result is a reduction in manual effort and improved accuracy while unlocking greater value from the automated storage and retrieval system ( ASRS ), asserted Kardex.\nThe use of computer vision and AI-based image analysis simplifies the induction process, Kardex said.\nOperators simply place the bin in the induction port, with no manual scanning or pre-checks required, it explained. Before induction, the system automatically performs a series of quality checks, verifying and inspecting bin presence, bin walls, robot pickup holes, and barcode readability.\nOnce the barcode is validated, BinInductAI confirms with the ASRS that the bin is not already registered to prevent duplicates before automatically sending the insertion commands and inducting the bin into the AutoStore grid.\nSubmit your innovation now! Reducing risk during bin induction BinInductAI standardizes verification for every bin, ensuring that quality checks are thorough and consistent, said Kardex.\nBefore a bin enters the system , BinInductAI automatically identifies damaged or out-of-spec bins, preventing potential problems from affecting the AutoStore grid and reducing the risk of downstream disruptions. By automating what has traditionally been a manual process, the solution reduces operator workload and minimizes the potential for human error during implementation, the company said.\nThe result is a more reliable and efficient induction process that helps improve system readiness and supports smoother AutoStore implementation, particularly during critical go-live and startup phases, claimed Kardex. Designed to handle high induction volumes, BinInductAI enables fast, repeatable, and scalable verification, making quality assurance easier to maintain across eve"
-  },
-  {
-   "group": "wh",
-   "source": "Automated Warehouse",
-   "title": "Symbotic partnership with Walmart offers robotics lessons about anchor customers",
-   "url": "https://www.automatedwarehouseonline.com/symbotic-partnership-walmart-offers-lessons-robotics-anchor-customers/",
-   "published": "2026-10-28T20:53:52.000Z",
-   "description": "The growing Symbotic partnership with Walmart shows how an anchor customer can help a startup’s scale but also creates risks. The post Symbotic partnership with Walmart offers robotics lessons about anchor customers appeared first on Automated Warehouse .",
-   "excerpt": "Symbotic Inc.’s recent quarterly filing lists its largest customer, together with affiliates, as “Customer A,” and its annual report named that customer as Walmart. Customer A supplied 90.5% of revenue in the quarter that ended June 27, 2026. Symbotic reported $720.8 million in revenue and $55 million in net income for the same quarter.\nFew robotics companies have turned one demanding customer into a business this size, and this profit follows earlier profits . The quarter also included $19.4 million of investment gains and negative non-GAAP free cash flow, so one quarter’s profit can’t settle whether leaning so heavily on Walmart has paid off.\nFor a startup founder deciding whether to sign a second customer soon, Walmart’s 90.5% share says little about the cost of serving another account. I’d look at how many people that account pulls into the field and what the contract obliges each side to do when plans change. I’d also ask how easily the anchor could get the same work done another way.\nSymbotic can’t afford to lose Walmart, and that dependence already gives the retailer some protection. Walmart’s contracts show that it didn’t rely on that incentive alone. The 2022 master automation agreement gives Walmart continuity rights, including the right to embed engineers with Symbotic and technical material held in escrow, which Walmart can use under specified conditions.\nThe 2025 agreement for Walmart’s store-level Accelerated Pickup and Delivery (APD) systems repeats those protections. During the APD build-out, it also caps, at a redacted number, how many comparable APD systems Symbotic can sell to each outside customer every year. The filings don’t show whether Walmart has ever tested these rights, so they read more like preparation than a proven fallback.\nWhen the APD deal closed in January 2025, Walmart committed $520 million of development funding. Symbotic paid Walmart a $200 million base price for its robotics business in the same transaction and agreed to two possible milestone payments of $175 million each.\nSymbotic gained funded development and the prospect of a large rollout, although the additional purchase commitment depends on performance milestones. In return, the Wilmington, Mass.-based company accepted delivery obligations and limits on comparable APD sales to other customers.\nOperations-heavy robotics companies tend to add people as they add customers, at least until deployment becomes routine. Symbotic reported about 2,000 employees at the e"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Alphabet Q3 财报：年化收入达 5000 亿美元，Google Cloud 增长 103%",
-   "url": "https://aihot.news/items/m5st8pvirbas7phreshbzkrc9",
-   "published": "2026-10-28T20:05:31.000Z",
-   "description": "Sundar Pichai 发布 Alphabet Q3 业绩：年化收入 run rate 达 5000 亿美元，总收入同比增长 25%。Google Cloud 收入增长 103%，1P 模型 API 每分钟处理近 32B tokens（环比增 40%）；Search 查询同比增速为五年来最高，并提到 Argon、Carbon 领跑前沿及最新世界模型 Genie 4。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m5st8pvirbas7phreshbzkrc9",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "Latent Space",
-   "title": "Why Agents Love Supabase",
-   "url": "https://latent.space/p/supabase/",
-   "published": "2026-10-28T19:48:05.000Z",
-   "description": "Paul Copplestone and Ant Wilson on building the backend for AI agents",
-   "excerpt": "Paul Copplestone and Ant Wilson on building the backend for AI agents\nI first met Paul Copplestone and Ant Wilson in Singapore, shortly after they finished YC as the hottest startup of YC S20 . Six years later, we finally got them on the podcast! This is their first podcast together, after taking an open-source, fully remote company from zero to a $10 billion valuation.\nThe title is a question I wanted to understand for myself: why do agents love Supabase? There are plenty of managed databases. Postgres hosting is competitive. Being familiar to a model is useful distribution, but it doesn't explain all the work needed to turn a generated application into something that runs. But when I ran my frontier AEO tracker , it was an almost complete sweep of first choice for app backends (and in contention for managed db ) for every frontier model from Astra to Fable to Muse.\nAt Select, Supabase grouped its announcements into Build, Operate and Scale.\nThe things that stood out to me were surprisingly practical: start a local backend without Docker, keep the desired database schema in Git, and run compute beside the database. Each removes a piece of work that developers have been doing for years. Agents make that friction harder to ignore.\nWatch the full conversation, including my opening commentary →\nMy favorite developer-tool announcements make me think: of course I want this today. The new alpha runtime for running Supabase locally without Docker is one of those. I use Colima rather than Docker Desktop, and even then, removing another dependency from the path to a working database is welcome. Local setup is a small part of a human developer's week; an agent that repeatedly creates and tests environments encounters it over and over.\nDeclarative schemas are the bigger idea. The familiar SQL workflow accumulates a history: create the schema, then migrate, migrate, migrate. A declarative representation gives the agent a description of the state you want, in files it can inspect and edit alongside the application.\nIn the commentary, I compare this to a Terraform moment for the database. Put the desired state in Git and the agent can read it, change it, fork it and work against it as part of the repository. Humans get the same advantage: the backend becomes easier to understand without reconstructing its entire history.\nThat is the part I like most about the agent-friendly direction. These are improvements I wanted as a developer already. Making them useful to agents g"
-  },
-  {
-   "group": "wh",
-   "source": "The Robot Report 物流",
-   "title": "What Symbotic’s Walmart growth teaches robotics startups about anchor customers",
-   "url": "https://www.therobotreport.com/what-symbotic-growth-with-walmart-teaches-robotics-startups-about-anchor-customers/",
-   "published": "2026-10-28T18:40:57.000Z",
-   "description": "Symbotic’s growth with Walmart shows how an anchor customer can fund a robotics startup’s scale while creating risks around customer concentration, contractual restrictions and the challenge of building a diversified, repeatable business. The post What Symbotic’s Walmart growth teaches robotics startups about anchor customers appeared first on The Robot Report .",
-   "excerpt": "Symbotic’s recent quarterly filing lists its largest customer, together with affiliates, as “Customer A,” and the annual report names that customer as Walmart. Customer A supplied 90.5% of revenue in the quarter that ended June 27, 2026. Symbotic reported $720.8 million in revenue and $55 million in net income for the same quarter.\nFew robotics companies have turned one demanding customer into a business this size, and this profit follows earlier profits . The quarter also included $19.4 million of investment gains and negative non-GAAP free cash flow, so one quarter’s profit can’t settle whether leaning so heavily on Walmart has paid off.\nFor a startup founder deciding whether to sign a second customer soon, Walmart’s 90.5% share says little about the cost of serving another account. I’d look at how many people that account pulls into the field and what the contract obliges each side to do when plans change. I’d also ask how easily the anchor could get the same work done another way.\nSymbotic can’t afford to lose Walmart, and that dependence already gives the retailer some protection. Walmart’s contracts show that it didn’t rely on that incentive alone. The 2022 master automation agreement gives Walmart continuity rights, including the right to embed engineers with Symbotic and technical material held in escrow, which Walmart can use under specified conditions. The 2025 agreement for Walmart’s store-level Accelerated Pickup and Delivery (APD) systems repeats those protections. During the APD build-out, it also caps, at a redacted number, how many comparable APD systems Symbotic can sell to each outside customer every year. The filings don’t show whether Walmart has ever tested these rights, so they read more like preparation than a proven fallback.\nWhen the APD deal closed in January 2025, Walmart committed $520 million of development funding. Symbotic paid Walmart a $200 million base price for its robotics business in the same transaction and agreed to two possible milestone payments of $175 million each. Symbotic gained funded development and the prospect of a large rollout, although the additional purchase commitment depends on performance milestones. In return, it accepted delivery obligations and limits on comparable APD sales to other customers.\nOperations-heavy robotics companies tend to add people as they add customers, at least until deployment becomes routine. Symbotic reported about 2,000 employees at the end of fiscal 2025, with roughly half w"
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "DOT awards $498 million for port improvement projects in 19 states",
-   "url": "https://www.dcvelocity.com/transportation/maritime-ocean/ports/dot-awards-498-million-for-port-improvement-projects-in-19-states",
-   "published": "2026-10-28T18:35:25.000Z",
-   "description": "The U.S. Department of Transportation (DOT) on Tuesday announced the 35 projects that will receive funding for port infrastructure improvements, covering a total of $498 million in 19 states. The grant money was awarded through the Maritime Administration (MARAD)’s Port Infrastructure Development Program (PIDP) grants. In a statement, the American Association of Port Authorities (AAPA) praised the move, calling it vital to our economic and national security. However, AAPA also warned that this year’s Fiscal Year 2026 application cycle awards include the final advanced appropriations funding fo",
-   "excerpt": "AAPA warns that project funding from Bipartisan Infrastructure Law will “dramatically decline” next year, unless Congress adds new backing in surface transportation bill.\nBen Ames has spent 30 years as a journalist since starting out as a reporter for daily newspapers in Pennsylvania and Massachusetts. He has focused on business and technology reporting since 1999 for trade journals including Cahners’ Design News and Modern Materials Handling magazines, and other magazines with PennWell and IDG. A native New Yorker, Ames went to college in Maine and now lives with his family outside of Boston, where they all love to hike and kayak.\nThe U.S. Department of Transportation (DOT) on Tuesday announced the 35 projects that will receive funding for port infrastructure improvements, covering a total of $498 million in 19 states.\nThe grant money was awarded through the Maritime Administration (MARAD)’s Port Infrastructure Development Program (PIDP) grants. In a statement, the American Association of Port Authorities (AAPA) praised the move, calling it vital to our economic and national security.\nHowever, AAPA also warned that this year’s Fiscal Year 2026 application cycle awards include the final advanced appropriations funding for PIDP from the Bipartisan Infrastructure Law, a source of funds that will soon be exhausted.\n“Funding for PIDP is set to dramatically decline next year, barring much-needed Congressional action. AAPA maintains that the next Surface Transportation Reauthorization should include advanced appropriations for PIDP so America’s ports have the funding they need to keep our nation’s supply chains strong and fluid,” the group said.\nIn the meantime, AAPA noted some examples of the projects funded by this round of awards:\nIn another example, Broward County, Florida’s Port Everglades was awarded $30.75 million for a plan to relocate a structural bulkhead and widen the slip to 450 feet. Project improvements would allow the port to accommodate significantly larger, more economical vessels such as the Aframax class. This will further strengthen the port’s resilience and enhance safety while maintaining the port’s critical fuel operations during severe weather, port leaders said. That total public-private project is projected to cost $184.5 million and take three to four years to complete, with Phase 1 construction scheduled to begin in 2028."
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Supply chain tech firm Korber buys stake in robot fleet management startup",
-   "url": "https://www.dcvelocity.com/technology/warehouse-it/supply-chain-tech-firm-korber-buys-stake-in-robot-fleet-management-startup",
-   "published": "2026-10-28T18:31:17.000Z",
-   "description": "The supply chain technology company Körber is acquiring a stake in NAiSE GmbH, a Germany-based software company specializing in vendor-agnostic fleet management, saying the two partners will now combine their capabilities to enable customers to orchestrate mixed vehicle fleets across production and warehouse environments. Founded in 2017, NAiSE says its fleet management software (FMS) brings together automated guided vehicles (AGVs) and autonomous mobile robots (AMRs) from different vendors and manually operated industrial trucks on a shared control layer, regardless of which Warehouse Managem",
-   "excerpt": "German firm NAiSE provides a single software layer to control AGVs and AMRs from different vendors.\nThe supply chain technology company Körber is acquiring a stake in NAiSE GmbH, a Germany-based software company specializing in vendor-agnostic fleet management, saying the two partners will now combine their capabilities to enable customers to orchestrate mixed vehicle fleets across production and warehouse environments.\nFounded in 2017, NAiSE says its fleet management software (FMS) brings together automated guided vehicles (AGVs) and autonomous mobile robots (AMRs) from different vendors and manually operated industrial trucks on a shared control layer, regardless of which Warehouse Management System (WMS), Warehouse Execution System (WES), or Warehouse Control System (WCS) is running in the background. That capability has become more important as companies are increasingly relying on larger vehicle fleets from different vendors. Without a higher-level control layer, such fleets remain isolated stand-alone solutions, limiting their efficiency, transparency, and scalability.\nTogether, NAiSE and Körber also intend to develop new use cases for intralogistics applications, including humanoid robotics.\n“With NAiSE, we are gaining a partner that addresses the orchestration of mixed fleets with an approach that is vendor-agnostic, standardized, and field-proven, exactly what the market needs today. Together with the founding team, we will unlock this potential and offer our customers an end-to-end automation solution,” said Helena Garriga, Körber Executive Board Member and responsible for the Business Area Supply Chain.\nDetails of the investment were not disclosed, but the companies said that NAiSE will continue its business with existing and new partners unchanged. Operational management of the company will remain with the founding team of Kai Przybysz-Herz, Robert Libert, and Raphael Kusumoto. And Körber will act as a strategic investor and sparring partner, supporting NAiSE in its next phase of growth."
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Returns could surge as Gen Z apparel shoppers “bracket” their purchases",
-   "url": "https://www.dcvelocity.com/supply-chain/other-services/reverse-logistics/returns-could-surge-as-gen-z-apparel-shoppers-bracket-their-purchases",
-   "published": "2026-10-28T18:24:03.000Z",
-   "description": "Retailers will face new fulfillment requirements from surging returns in the coming peak season, as younger shoppers are reshaping purchasing and returns behaviors across apparel, beauty, and skincare, according to a survey from Locus Robotics. Notably, 61% of Gen Z apparel shoppers “bracket” their purchases, buying multiple sizes or styles to keep just one, compared to only 15% of Baby Boomers. Younger shoppers are also far more likely to discover products through social media and make purchases quickly after discovery. The data is based on a quantitative survey of 1,000 U.S. consumers 18+ ex",
-   "excerpt": "61% of Gen Z apparel shoppers buy multiple sizes or styles to keep just one, creating additional returns volume that retailers must absorb without slowing or disrupting order fulfillment, Locus Robotics survey finds.\nRetailers will face new fulfillment requirements from surging returns in the coming peak season, as younger shoppers are reshaping purchasing and returns behaviors across apparel, beauty, and skincare, according to a survey from Locus Robotics.\nNotably, 61% of Gen Z apparel shoppers “bracket” their purchases, buying multiple sizes or styles to keep just one, compared to only 15% of Baby Boomers. Younger shoppers are also far more likely to discover products through social media and make purchases quickly after discovery.\nThe data is based on a quantitative survey of 1,000 U.S. consumers 18+ examining purchase frequency, shopping channels, delivery expectations, and returns behavior.\nAccording to Wilmington, Massachusetts-based Locus Robotics, those generational behaviors reinforce the need for retailers to use flexible automation systems that can adapt as volume, order profiles, and channels change."
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Ed Zitron 长文解析 Anthropic S-1：称其把散户当作退出流动性",
-   "url": "https://aihot.news/items/x2h1bp5shee6v508nw7pjtvas",
-   "published": "2026-10-28T17:51:00.000Z",
-   "description": "Ed Zitron 撰文批评 Anthropic 的 S-1 招股书，指其仅披露 Q2 盈利数据、省略 Q3 现金状况和付款明细，是在公司基本面变化前误导投资者。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x2h1bp5shee6v508nw7pjtvas",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "Design the Human-Machine System: Automation, Robotics, and Human-in-the-Loop",
-   "url": "https://logisticsviewpoints.com/2026/10/28/design-the-human-machine-system-automation-robotics-and-human-in-the-loop/",
-   "published": "2026-10-28T17:30:00.000Z",
-   "description": "Automation is easy to admire in isolation. The harder question is what it does to the operating system around it. A robot, sorter, autonomous vehicle, optimization engine, or AI agent changes process flow, exception patterns, skills, maintenance, data, and decision rights at the same time. The post Design the Human-Machine System: Automation, Robotics, and Human-in-the-Loop appeared first on Logistics Viewpoints .",
-   "excerpt": "Automation is easy to admire in isolation. The harder question is what it does to the operating system around it. A robot, sorter, autonomous vehicle, optimization engine, or AI agent changes process flow, exception patterns, skills, maintenance, data, and decision rights at the same time.\nThose are legitimate questions, but they are not enough. Automation changes the operating system. It changes process flow, exception patterns, maintenance requirements, skills, decision rights, safety considerations, data needs, and the role of the people who remain. That makes automation a systems design problem. The AI-agents-in-logistics discussion makes this human-machine boundary operational: the key design question is not whether software can act, but which classes of action it should own under defined guardrails.\nA familiar warning in technology projects is not to automate a bad process. In logistics networks, the warning deserves more attention because physical automation is expensive and relatively inflexible after deployment.\nIf a warehouse process contains unnecessary movement, unclear priorities, poor slotting, or unstable order-release logic, automation may simply lock those problems into equipment and software. If a transportation-approval workflow includes unnecessary handoffs, an AI agent can make the recommendation instantly and still wait in the same approval queue.\nThe first design question should be what the future process should look like. Only then should the organization determine which portions are best performed by people, conventional automation, robotics, optimization, or AI.\nThe objective is not to prove that one is better. Machines are excellent at repetition, speed, precision, scale, monitoring, and operating within defined rules. Humans remain strong at handling ambiguity, interpreting context, negotiating competing objectives, dealing with novel conditions, and recognizing when the system itself may be wrong. A mature automation design assigns work accordingly.\nIn a warehouse, robots may handle repetitive movement while people manage irregular items, exceptions, maintenance coordination, and flow balancing. In transportation, optimization may build the baseline plan while humans resolve capacity crises, commercial tradeoffs, and unusual service exceptions. In yards and docks, automation may sequence trailers while supervisors manage safety and disruptions. The operating model should make those boundaries clear.\nThe phrase human-in-the-loop"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Anthropic IPO 文件披露现金及短期投资达 131.7B 美元，超过 Amazon 和 Microsoft",
-   "url": "https://aihot.news/items/vidjbhx5bf45wdl488kst1wv8",
-   "published": "2026-10-28T17:11:27.000Z",
-   "description": "Anthropic 的 IPO 文件显示其现金及短期投资达 $131.7B，超过 Amazon 和 Microsoft，在美国非银行公司中仅次于 Berkshire Hathaway 和 Alphabet。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vidjbhx5bf45wdl488kst1wv8",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "犹他州 10 个州政府部门 34 名开发者试点使用 Claude Code",
-   "url": "https://aihot.news/items/fbxzb7x7fzbjn0dmf367ywxrm",
-   "published": "2026-10-28T17:09:54.000Z",
-   "description": "Boris Cherny 介绍犹他州向 10 个州政府部门的 34 名开发者提供了 Claude Code。试点显示 80% 的开发者在 30 分钟内搭好可用环境，71% 的开发者在为期四周的试点结束前报告节省了 20 小时以上时间。该推文引用了 Anthropic 与 GSA 合作将 Claude 以 40% 折扣提供给联邦及各级政府的公告作为背景。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fbxzb7x7fzbjn0dmf367ywxrm",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Google 发布 Gemini 4 Carbon：AA Index v5.0 登顶，网络安全基准领先",
-   "url": "https://aihot.news/items/hoim4l9scskfj0obspicyucpw",
-   "published": "2026-10-28T17:01:48.000Z",
-   "description": "Sundar Pichai 宣布 Google 推出 Gemini 4 Carbon，称其在更新后的 Artificial Analysis Intelligence Index v5.0 以 59 分排名第一。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hoim4l9scskfj0obspicyucpw",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "Google DeepMind",
-   "title": "Gemini 4 Carbon: Our next frontier model",
-   "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
-   "published": "2026-10-28T17:00:58.000Z",
-   "description": "",
-   "excerpt": "Gemini 4 Carbon is our strongest model with state-of-the-art cybersecurity and long horizon capabilities.\nSVP, Google DeepMind and Chief AI Architect, Google\nToday, we’re announcing the next frontier model: Gemini 4 Carbon, our strongest model with state-of-the-art cybersecurity and long horizon capabilities.\nCarbon ranks #1 on the recently updated v5.0 of Artificial Analysis Intelligence Index at 59. It shows significant gains across coding and agentic tasks as well as across key capabilities critical for cybersecurity defense, landing a firm lead in SEC-bench Pro (88.2%) for finding vulnerabilities, ExploitGym (54.8%) for exploitation, and CWE-bench (71.0%) for patching. On internal benchmarks, Carbon drives a strong uplift in generating secure code, and in live coding environments with our own teams it shows reduced misalignment and fabrication rates.\nBuilding on Gemini 4 Argon , which was launched two weeks ago, Carbon illustrates the pace at which we’re pushing the frontier forward. Our researchers and models are working hand in hand to advance capabilities faster, while strengthening our safeguards in tandem.\nWe're taking a deliberate approach to rollout and are actively engaged in the U.S. government’s voluntary process for pre-release model testing. Starting this week, we will make Carbon available to a subset of cyber defenders and will gradually phase access to additional trusted partners through our Fairwind Program . We’re continuing to gather feedback and iterate on guardrails before making Carbon available to developers, businesses, and consumers via our product surfaces as soon as possible.\nGemini 4 Carbon will launch at the same introductory price 1 as Argon at $2 per million input tokens and $10 per million output tokens, with cached input tokens priced at 95% off input token price.\nDesigned to take on much harder, long-horizon engineering problems, Carbon is built for sustained agentic workflows. Internally, our teams have seen Carbon run for days to persist through dead ends to tackle complex, multi-step engineering tasks like root-causing and patching subtle bugs across large codebases and low-level systems.\nBuilding on user feedback, we focused on improving model performance across a variety of domains, including coding, agentic, and scientific tasks, as well as full-stack web development and multimodal understanding. With improved quality of output and artifacts in web development, Carbon jumps +89 elo points to land at #4 (1768) on W"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Google DeepMind 发布 Gemini 4 Carbon 前沿模型",
-   "url": "https://aihot.news/items/fjeloaahylonpc0pv5tduusud",
-   "published": "2026-10-28T17:00:58.000Z",
-   "description": "Google DeepMind 发布 Gemini 4 Carbon，定位为最强前沿模型，主打网络安全与长程智能体能力，在 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0% 取得领先，并以 59 分登顶 Artificial Analysis Intelligence Index v5.0。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fjeloaahylonpc0pv5tduusud",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Microsoft 通过 Foundry 开放 Copilot harness，支持多模型 Agent 开发",
-   "url": "https://aihot.news/items/tdp7qmrh74fdfarxbi4jaoc6v",
-   "published": "2026-10-28T16:51:35.000Z",
-   "description": "Microsoft 宣布将 GitHub 团队打造的 Copilot harness 通过 Microsoft Foundry 向开发者和企业开放，该 harness 已驱动 Copilot Code、Copilot Studio、GitHub Copilot app 和 CLI 等产品。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tdp7qmrh74fdfarxbi4jaoc6v",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "Simon Willison",
-   "title": "GitHub Octoverse 2026",
-   "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/",
-   "published": "2026-10-28T16:45:23.000Z",
-   "description": "GitHub Octoverse 2026 I'm at GitHub Universe today (GitHub gave me a free ticket through their \"GitHub Stars\" program). EVP Jay Parikh just announced this year's Octoverse report, and highlighted these numbers in particular: This is a pretty stark representation of the impact of agentic engineering on GitHub. In 2026, merged pull requests tripled in less than a year to 220 million per month. Commits more than tripled to 7.38 billion per month, with most of that increase in the second half of this year. New repository rate doubled this year, to 30.3 million per month. The report includes new nu",
-   "excerpt": "GitHub Octoverse 2026 . I'm at GitHub Universe today (GitHub gave me a free ticket through their \"GitHub Stars\" program). EVP Jay Parikh just announced this year's Octoverse report, and highlighted these numbers in particular:\nThis is a pretty stark representation of the impact of agentic engineering on GitHub. In 2026, merged pull requests tripled in less than a year to 220 million per month. Commits more than tripled to 7.38 billion per month, with most of that increase in the second half of this year. New repository rate doubled this year, to 30.3 million per month.\nThe report includes new numbers by industry, and breaks out numbers for repositories that involve \"interoperability or reverse engineering\". The methodology section includes notes about how they did this:\nTop countries by pushes to public repositories, adjusted by profile location . Pushes from each country were summed across the Octoverse year. To adjust for biases caused by VPN usage, LLM classification was used to extract the ISO 3166-1 alpha-2 code from the profiles of GitHub users who contributed pushes during this period [...]\nIndustry . Public repositories created 2022 to 2026 were sorted into NAICS sectors by a fine-tuned multilingual embedding model using name, description, topics, and README, from random samples per year. [...]\nInteroperability . Counts public repositories created each year whose name, description, topics, or README mention interoperability or reverse engineering, or related terms, such as clean room implementation, drop-in replacement, or protocol re-implementation.\nThis is a link post by Simon Willison, posted on 28th October 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
-  },
-  {
-   "group": "ai",
-   "source": "a16z",
-   "title": "The New Security Agenda",
-   "url": "https://www.a16z.news/p/the-new-security-agenda",
-   "published": "2026-10-28T16:00:31.000Z",
-   "description": "What CISOs told us about AI, budgets, and the priorities shaping 2027.",
-   "excerpt": "a16z General Partner Martin Casado has a new essay out today on the four philosophies that shape how investors evaluate deals. You should read it! You can find it here .\nFor years, the industry prepared for quantum computing to rewrite the rules of cybersecurity. Then AI got there first.\nThis summer, OpenAI’s agents broke out of a cybersecurity evaluation and breached Hugging Face’s production systems. They exploited vulnerabilities, used stolen credentials, and worked their way into another company’s infrastructure, all to get the answers to their tests. OpenAI’s incident report describes how the models chained together the steps to get there.\nThis was just a preview. Since then, AI has helped uncover weaknesses in software that much of the internet depends on. Just last week, companies were scrambling to patch critical flaws in PHP , which powers roughly 70% of websites. The flaws had been sitting there for more than a decade before researchers working through OpenAI’s Patch the Planet initiative helped uncover them. That same day, eMudhra , a certificate authority trusted by every major browser, was found to have used encryption keys so weak that one of them was just the number 4.\nMistakes like that have always existed, but models are getting better at finding weaknesses and figuring out how to exploit them. The progress is visible in the AI Security Institute’s evaluations , where newer models can complete increasingly complex cyber tasks.\nMore serious vulnerabilities are also being reported . With the growing volume confronting companies, security teams have to determine which weaknesses pose the greatest risk to their business and get them fixed before someone exploits them.\nMeanwhile, the environment they’re protecting keeps growing. Employees are shipping applications they couldn’t have built a year ago. Agents are getting access to company documents, source code, and production systems. Every new application and connection gives security another thing to understand and protect.\nThat helps explain why we’ve seen the market caps of cybersecurity platforms like Palo Alto Networks and CrowdStrike take off this year.\nThere is more to secure. And enterprise budgets are following.\nTo understand how security leaders are responding to these pressures, we surveyed 100 CISOs at companies with more than 1,000 employees about their priorities, budgets, and buying plans for 2027.\nUnsurprisingly, a large majority (87%) expect cybersecurity spending to increase, "
   }
  ]
 }
