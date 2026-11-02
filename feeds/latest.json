@@ -1,14 +1,7 @@
 {
- "fetchedAt": "2026-11-01T16:49:51.496Z",
+ "fetchedAt": "2026-11-02T01:33:54.016Z",
  "hours": 72,
  "status": [
-  {
-   "source": "OpenAI",
-   "feed": "https://openai.com/news/rss.xml",
-   "ok": true,
-   "total": 1341,
-   "recent": 4
-  },
   {
    "source": "a16z",
    "feed": "https://www.a16z.news/feed",
@@ -17,8 +10,21 @@
    "recent": 2
   },
   {
+   "source": "OpenAI",
+   "feed": "https://openai.com/news/rss.xml",
+   "ok": true,
+   "total": 1341,
+   "recent": 2
+  },
+  {
    "source": "Epoch AI",
    "feed": "https://epochai.substack.com/feed",
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  {
+   "source": "Import AI",
+   "feed": "https://importai.substack.com/feed",
    "ok": false,
    "error": "HTTP 403"
   },
@@ -30,30 +36,10 @@
    "recent": 1
   },
   {
-   "source": "Import AI",
-   "feed": "https://importai.substack.com/feed",
-   "ok": false,
-   "error": "HTTP 403"
-  },
-  {
-   "source": "Google AI",
-   "feed": "https://blog.google/technology/ai/rss/",
-   "ok": true,
-   "total": 20,
-   "recent": 0
-  },
-  {
    "source": "Google DeepMind",
    "feed": "https://deepmind.google/blog/rss.xml",
    "ok": true,
    "total": 100,
-   "recent": 0
-  },
-  {
-   "source": "One Useful Thing",
-   "feed": "https://www.oneusefulthing.org/feed",
-   "ok": true,
-   "total": 20,
    "recent": 0
   },
   {
@@ -64,6 +50,13 @@
    "recent": 5
   },
   {
+   "source": "One Useful Thing",
+   "feed": "https://www.oneusefulthing.org/feed",
+   "ok": true,
+   "total": 20,
+   "recent": 0
+  },
+  {
    "source": "Interconnects",
    "feed": "https://www.interconnects.ai/feed",
    "ok": true,
@@ -71,11 +64,25 @@
    "recent": 1
   },
   {
+   "source": "Google AI",
+   "feed": "https://blog.google/technology/ai/rss/",
+   "ok": true,
+   "total": 20,
+   "recent": 0
+  },
+  {
    "source": "BestBlogs 每日早报",
    "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
    "ok": true,
-   "total": 6,
-   "recent": 3
+   "total": 7,
+   "recent": 4
+  },
+  {
+   "source": "Sequoia",
+   "feed": "https://www.sequoiacap.com/feed/",
+   "ok": true,
+   "total": 50,
+   "recent": 0
   },
   {
    "source": "Latent Space",
@@ -85,8 +92,14 @@
    "recent": 3
   },
   {
-   "source": "Sequoia",
-   "feed": "https://www.sequoiacap.com/feed/",
+   "source": "Symbotic IR",
+   "feed": "https://ir.symbotic.com/rss/news-releases.xml",
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  {
+   "source": "宝玉",
+   "feed": "https://baoyu.io/feed.xml",
    "ok": true,
    "total": 50,
    "recent": 0
@@ -99,21 +112,15 @@
    "recent": 0
   },
   {
-   "source": "宝玉",
-   "feed": "https://baoyu.io/feed.xml",
+   "source": "Symbotic",
+   "feed": "https://www.symbotic.com/feed/",
    "ok": true,
-   "total": 50,
+   "total": 10,
    "recent": 0
   },
   {
-   "source": "Symbotic IR",
-   "feed": "https://ir.symbotic.com/rss/news-releases.xml",
-   "ok": false,
-   "error": "HTTP 403"
-  },
-  {
-   "source": "Symbotic",
-   "feed": "https://www.symbotic.com/feed/",
+   "source": "Daifuku",
+   "feed": "https://www.daifuku.com/rss_all.xml",
    "ok": true,
    "total": 10,
    "recent": 0
@@ -126,8 +133,15 @@
    "recent": 0
   },
   {
-   "source": "Daifuku",
-   "feed": "https://www.daifuku.com/rss_all.xml",
+   "source": "Automated Warehouse",
+   "feed": "https://www.automatedwarehouseonline.com/feed/",
+   "ok": true,
+   "total": 10,
+   "recent": 1
+  },
+  {
+   "source": "Logistics Viewpoints",
+   "feed": "https://logisticsviewpoints.com/feed/",
    "ok": true,
    "total": 10,
    "recent": 0
@@ -146,18 +160,18 @@
    "recent": 0
   },
   {
-   "source": "Automated Warehouse",
-   "feed": "https://www.automatedwarehouseonline.com/feed/",
+   "source": "The Robot Report 物流",
+   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
    "ok": true,
-   "total": 10,
-   "recent": 1
+   "total": 15,
+   "recent": 2
   },
   {
-   "source": "Logistics Viewpoints",
-   "feed": "https://logisticsviewpoints.com/feed/",
+   "source": "DC Velocity",
+   "feed": "https://www.dcvelocity.com/rss",
    "ok": true,
-   "total": 10,
-   "recent": 1
+   "total": 30,
+   "recent": 3
   },
   {
    "source": "MH&L",
@@ -167,11 +181,11 @@
    "recent": 1
   },
   {
-   "source": "DC Velocity",
-   "feed": "https://www.dcvelocity.com/rss",
+   "source": "Supply Chain Dive",
+   "feed": "https://www.supplychaindive.com/feeds/news/",
    "ok": true,
-   "total": 30,
-   "recent": 9
+   "total": 10,
+   "recent": 3
   },
   {
    "source": "Supply Chain 24/7 自动化",
@@ -181,31 +195,10 @@
    "recent": 0
   },
   {
-   "source": "The Robot Report 物流",
-   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
-   "ok": true,
-   "total": 15,
-   "recent": 3
-  },
-  {
-   "source": "Supply Chain Dive",
-   "feed": "https://www.supplychaindive.com/feeds/news/",
-   "ok": true,
-   "total": 10,
-   "recent": 3
-  },
-  {
    "source": "Locus Robotics",
    "feed": "https://locusrobotics.com/feed/",
    "ok": false,
    "error": "HTTP 410"
-  },
-  {
-   "source": "AIHOT",
-   "feed": "https://aihot.news/rss",
-   "ok": true,
-   "total": 50,
-   "recent": 32
   },
   {
    "source": "36氪快讯",
@@ -213,6 +206,13 @@
    "ok": true,
    "total": 0,
    "recent": 0
+  },
+  {
+   "source": "AIHOT",
+   "feed": "https://aihot.news/rss",
+   "ok": true,
+   "total": 50,
+   "recent": 22
   },
   {
    "source": "Robotics & Automation News",
@@ -230,6 +230,51 @@
   }
  ],
  "items": [
+  {
+   "group": "ai",
+   "source": "BestBlogs 每日早报",
+   "title": "EP224 · DeepSeek 探索常驻智能体、Wispr 复盘增长、DeepLearning.AI 谈安全",
+   "url": "https://www.bestblogs.dev/explore/brief/2026-11-02?utm_source=rss&utm_medium=feed&utm_campaign=daily_brief&entry=rss_brief_index",
+   "published": "2026-11-02T06:00:00.000Z",
+   "description": "📝 今日导语 DeepSeek 探索常驻智能体，Wispr 复盘增长，DeepLearning.AI 拆解安全机制，提供实践参照。 🏷 今日关键词： 常驻智能体 创作者增长 AI 安全 数据库授权 轻量 OCR 📰 今日精选内容 DeepSeek Super-agent 设计探索：迈向更自主的 Agent 系统 DeepSeek Harness 团队 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 91 86 分钟付费 UGC 实操：Hector Serrano 如何在 Wispr Flow 搭建创作者增长体系 Lenny&apos;s Podcast &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 92 僵尸智能体、吸血鬼模型、猎巫行动与木乃伊诅咒：2026 万圣节的 AI 恐惧 The Batch | DeepLearning.AI &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 AI 智能体想访问你的数据？Oracle 的 Jeff Smith 谈安全开放数据库 AI Engineer &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 89 小尺寸全能王：小米开源 0.8B 卷王 OCR 模型 小米技术 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 给智能定价",
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "数字生命卡兹克分享折腾一年的Agent自动化系统架构",
+   "url": "https://aihot.news/items/dzwfvd9xp6v4qaj6olxezpier",
+   "published": "2026-11-02T00:19:00.000Z",
+   "description": "自媒体作者卡兹克分享自己搭建近一年的Agent自动化系统，核心是把任务起点从人身上移开，由事件触发Agent工作。系统分为自动化中台、Agent执行、CI中台和飞书决策四层：中台用rules.json统一管理事件触发和Agent调度，本地MacMini跑Agent任务，自建CI中台完成审查、检查、合并、发布、核实五步，只在删数据、花钱、改方向等关键决策时通过飞书卡片找作者拍板。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dzwfvd9xp6v4qaj6olxezpier",
+   "excerpt": "自媒体作者卡兹克分享自己搭建近一年的Agent自动化系统，核心是把任务起点从人身上移开，由事件触发Agent工作。系统分为自动化中台、Agent执行、CI中台和飞书决策四层：中台用rules.json统一管理事件触发和Agent调度，本地MacMini跑Agent任务，自建CI中台完成审查、检查、合并、发布、核实五步，只在删数据、花钱、改方向等关键决策时通过飞书卡片找作者拍板。\n作者把自己一年搭建的Agent自动化架构拆成事件中台、执行、CI和飞书决策四层，给出可复用的规则与流程细节。\n作者把自己一年搭建的Agent自动化架构拆成事件中台、执行、CI和飞书决策四层，给出可复用的规则与流程细节。"
+  },
+  {
+   "group": "ai",
+   "source": "Simon Willison",
+   "title": "If in doubt, delete the uv.lock file",
+   "url": "https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/",
+   "published": "2026-11-01T23:24:22.000Z",
+   "description": "I've been getting the occasional confusing Python dependency error since switching over to Python 3.15 and the rule I'm having to remember is: If in doubt, delete the uv.lock file Most of my projects are libraries which don't include a uv.lock file, since it's rude for a library dependency to lock versions for anything else that uses it. Running uv run pytest etc tends to leave uv.lock files lying around, which are listed in .gitignore and so do not get committed to my repositories. But... sometimes that uv.lock pins a version of a dependency that doesn't yet have a Python 3.15 wheel. An examp",
+   "excerpt": "I've been getting the occasional confusing Python dependency error since switching over to Python 3.15 and the rule I'm having to remember is:\nMost of my projects are libraries which don't include a uv.lock file, since it's rude for a library dependency to lock versions for anything else that uses it.\nRunning uv run pytest etc tends to leave uv.lock files lying around, which are listed in .gitignore and so do not get committed to my repositories.\nBut... sometimes that uv.lock pins a version of a dependency that doesn't yet have a Python 3.15 wheel. An example from earlier today:\nDeleting that file and running uv run pytest again usually fixes the problem.\nThis is a note by Simon Willison, posted on 1st November 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Claude Code 技巧：任务变难时输入 ultrathink 提升当前回合推理努力",
+   "url": "https://aihot.news/items/mhw3rtr5o13p5777y7el9tczk",
+   "published": "2026-11-01T20:09:49.000Z",
+   "description": "Addy Osmani 分享 Claude Code 技巧：当任务比预期更难时，在 Claude 工作期间输入 ultrathink，可提升该回合剩余部分的推理努力，该功能适用于最新版本的终端。他引用 @dmwlff 的帖子，其中提到 ultrathink 已回归 Claude Code CLI，此前因显得怪异且可能令人困惑曾被关闭。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mhw3rtr5o13p5777y7el9tczk",
+   "excerpt": "Addy Osmani 分享 Claude Code 技巧：当任务比预期更难时，在 Claude 工作期间输入 ultrathink，可提升该回合剩余部分的推理努力，该功能适用于最新版本的终端。他引用 @dmwlff 的帖子，其中提到 ultrathink 已回归 Claude Code CLI，此前因显得怪异且可能令人困惑曾被关闭。\n原文给出了一个 Claude Code 实用技巧，输入 ultrathink 可提升当前回合的推理努力，适合编码工作流直接复用。\nClaude Code 提示：如果一项任务变得比你预期的更难，在 Claude 工作时输入 ultrathink。它会提高该轮剩余部分的努力程度。在最新版本的终端中可用。\nultrathink is back in the CC CLI. We turned this off for a while because it's weird and maybe confusing. But I like weird, and I don't think it's that confusing. I mostly run Opus 5.5 on medium. Some turns, though, I want to put a little extra mustard on it. ultrathink!\n原文给出了一个 Claude Code 实用技巧，输入 ultrathink 可提升当前回合的推理努力，适合编码工作流直接复用。"
+  },
+  {
+   "group": "ai",
+   "source": "Simon Willison",
+   "title": "Quoting Kyle Kingsbury",
+   "url": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/",
+   "published": "2026-11-01T16:49:04.000Z",
+   "description": "More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to rely on as markers of a mature system are now easier to counterfeit. [...] In the age of LLMs, what can maintainers do to ensure correct software and accurate documentation? Having done that work, how can they demonstrate its quality to users? &mdash; Kyle Kingsbury , Jepsen results for ParticleDB 1.1.4 Tags: kyle-kingsbury , llms , ai , generative-ai , ai-misuse",
+   "excerpt": "More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to rely on as markers of a mature system are now easier to counterfeit. [...]\nIn the age of LLMs, what can maintainers do to ensure correct software and accurate documentation? Having done that work, how can they demonstrate its quality to users?\n&mdash; Kyle Kingsbury , Jepsen results for ParticleDB 1.1.4\nThis is a quotation collected by Simon Willison, posted on 1st November 2026 ."
+  },
   {
    "group": "wh",
    "source": "The Robot Report 物流",
@@ -587,8 +632,8 @@
    "title": "Was I wrong about open models & cyber risks?",
    "url": "https://www.interconnects.ai/p/was-i-wrong-about-open-models-and",
    "published": "2026-10-30T17:36:56.000Z",
-   "description": "Last week coined the term “Black October“ after an onslaught of critical vulnerability disclosures, including PHP2Shell and GitLab, signified the moment when the cyber risks of AI models started to materialize.",
-   "excerpt": "Last week coined the term “ Black October “ after an onslaught of critical vulnerability disclosures, including PHP2Shell and GitLab, signified the moment when the cyber risks of AI models started to materialize. It seemed like the news cycle had stabilized a bit when I started writing this, but then there was news about another major crypto security incident at Binance . The crypto industry has a very long history of hacks , so it’s not the best industry to indicate vulnerabilities translating into new societal harm. Still, we are very much still living through the implications of this.\nThe best guess for what is happening in the cybersecurity space is that the behind the scenes work has only accelerated, bringing more people and resources in to try and patch the internet — the Wall Street Journal reported that cyber first responders are strained , which seems like the system working. We’re living through this plot of an exponential rise in vulnerabilities, which will take a long time to level off at the top of the sigmoid.\nA few weeks ago, before the rapid acceleration in vulnerability disclosures and the uptick in reported hacks, I wrote the following take. It’s been getting a pretty consistent barrage of feedback, some hopeless dunk attempts and some reasonable discussion, so I wanted to unpack where I stand.\nWhen Claude Mythos was announced, it was previewed as if it was a new class of cyber weapon, where if it ended up in the wrong hands it would’ve caused mass societal destabilization.\nBy all measures, GLM-5.3 is the model that crosses that threshold of capability, and there’s little public evidence that much has changed, and we’re over a month out of the model weight release.\nIn fact, I would go further. If Claude Mythos was accidentally released as open-weight, it seems like the world would have been more or less fine. Yes, there would be a clear increase in cybersecurity incidents and it would be bad for society if the model leaked, but it would be a scenario that looks more like an acceleration than a step change in risk.\nThe leading proponents of this new wave of open-weight fear mongering have effectively been making a falsifiable prediction — that the current open-weight models are going to cause substantial, not seen before AI harms by crippling our cyber infrastructure.\nBased on all the evidence I have, which I’ve unpacked above, they’re set up to be wrong. At least now, after so many years of debating open weight risks, we will start to ge"
+   "description": "Last week coined the term “Black October“ after an onslaught of critical vulnerability disclosures, including PHP2Shell and a long-standing GitLab bug, signified the moment when the cyber risks of AI models started to materialize.",
+   "excerpt": "Last week coined the term “ Black October “ after an onslaught of critical vulnerability disclosures, including PHP2Shell and a long-standing GitLab bug, signified the moment when the cyber risks of AI models started to materialize. It seemed like the news cycle had stabilized a bit when I started writing this, but then there was news about another major crypto security incident at Binance . The crypto industry has a very long history of hacks , so it’s not the best industry to indicate vulnerabilities translating into new societal harm. Still, we are very much still living through the implications of this transition.\nThe best guess for what is happening in the cybersecurity space is that the behind the scenes work has only accelerated, bringing more people and resources in to try and patch the internet — the Wall Street Journal reported that cyber first responders are strained , which seems like the system working. We’re living through this plot of an exponential rise in vulnerabilities, which will take a long time to level off at the top of the sigmoid.\nA few weeks ago, before the rapid acceleration in vulnerability disclosures and the uptick in reported hacks, I wrote the following take. It’s been getting a pretty consistent barrage of feedback, some hopeless dunk attempts and some reasonable discussion, so I wanted to unpack where I stand.\nWhen Claude Mythos was announced, it was previewed as if it was a new class of cyber weapon, where if it ended up in the wrong hands it would’ve caused mass societal destabilization.\nBy all measures, GLM-5.3 is the model that crosses that threshold of capability, and there’s little public evidence that much has changed, and we’re over a month out of the model weight release.\nIn fact, I would go further. If Claude Mythos was accidentally released as open-weight, it seems like the world would have been more or less fine. Yes, there would be a clear increase in cybersecurity incidents and it would be bad for society if the model leaked, but it would be a scenario that looks more like an acceleration than a step change in risk.\nThe leading proponents of this new wave of open-weight fear mongering have effectively been making a falsifiable prediction — that the current open-weight models are going to cause substantial, not seen before AI harms by crippling our cyber infrastructure.\nBased on all the evidence I have, which I’ve unpacked above, they’re set up to be wrong. At least now, after so many years of debating open we"
   },
   {
    "group": "ai",
@@ -796,222 +841,6 @@
    "published": "2026-10-30T03:00:00.000Z",
    "description": "社会事业全面发展 民生福祉取得新进步 ——2025年社会民生统计报告 2025年，在以习近平同志为核心的党中央坚强领导下，各地区各部门着力推动社会民生事业高质量发展，持续加大民生领域投入力度，民生发展基础更加稳固，基本公共服务均等化稳步推进，重点群体民生保障扎实有力，生态环境和生活品质持续提升，社会...",
    "excerpt": "2025 年，在以习近平同志为核心的党中央坚强领导下，各地区各部门着力推动社会民生事业高质量发展，持续加大民生领域投入力度，民生发展基础更加稳固，基本公共服务均等化稳步推进，重点群体民生保障扎实有力，生态环境和生活品质持续提升，社会民生事业发展取得新成效。\n人口总量保持较大规模。 2025 年末，全国人口 [1] 总量 140489 万人，继续保持 14 亿以上规模，占全球总人口的 17% 以上。全国 16 — 59 岁人口 85136 万人，占总人口的 60.6% ，劳动力资源丰富。\n人口综合素质持续提升。 2025 年，我国人口健康状况不断改善，平均预期寿命达到 79.25 岁，比上年提高 0.25 岁。教育水平持续提升，全国 16 — 59 岁人口平均受教育年限为 11.3 年，比上年提高 0.1 年。具有大专及以上文化程度人口达到 27233 万人，占全国人口比重为 19.4% ，接近五分之一。公民具备科学素质的比例达 16.7% ，比上年提高 1.4 个百分点。\n城镇和东部发达地区人口占比上升。 2025 年末，城镇常住人口 95380 万人，城镇化率为 67.89% ，比上年末提高 0.89 个百分点。从区域看，东部地区人口保持增长，常住人口达 56748 万人，占全国人口的比重为 40.4% ，比上年末提高 0.1 个百分点。\n城镇就业保持增长。 2025 年末，我国就业人员 72504 万人。其中城镇就业人员 47535 万人，比上年末增加 190 万人，占全国就业人员的比重达 65.6% ，比上年末提高 1.1 个百分点；乡村就业人员 24969 万人，比上年末减少 1125 万人。\n第三产业和东部地区吸纳就业能力增强。 分行业看， 2025 年末，第三产业就业人员 35798 万人，占全国就业人员的比重为 49.4% ，比上年末提高 0.6 个百分点。分区域看，东部地区就业人员 30265 万人，占全国就业人员比重为 41.7% ，比上年末提高 0.2 个百分点。\n调查失业率总体平稳。 2025 年，全国城镇调查失业率平均值为 5.2% ，其中 30 — 59 岁劳动力主体人群失业率平均值为 4.0% ，保持在较低水平。城镇外来农业户籍劳动力失业率平均值为 4.7% ，低于全国城镇整体水平 0.5 个百分点。\n居民收入增长与经济增长同步。 2025 年，全国居民人均可支配收入 43377 元，扣除价格因素，比上年实际增长 5.0% ，与经济增长保持同步。其中，城镇、农村居民人均可支配收入分别为 56502 元、 24456 元，比上年实际增长 4.2% 、 6.0% 。城乡收入差距持续缩小，城乡居民人均可支配收入之比为 2.31 ，比上年下降 0.03 。\n居民发展型改善型消费支出增长较快。 2025 年，居民人均消费支出 29476 元，扣除价格因素，比上年实际增长 4.4% 。居民人均交通通信、教育文化娱乐、其他用品及服务等发展型改善型消费支出增长较快，分别比上年名义增长 8.3% 、 9.4% 、 11.2% 。居民人均食品烟酒、居住、衣着等基础性消费支出平稳增长，分别比上年增长 2.6% 、 2.1% 和 2.2% 。居民人均服务性消费支出比上年增长 4.5% ，占居民人均消费支出比重为 46.1% 。\n养老保险体系建设成效明显。 2025 年末，全国基本养老保险参保人数 10.8 亿人，比上年末增加 308 万人。企业年金参加职工人数、领取人数分别为 3343 万人、 369 万人，分别比上年末增加 101 万人、 27 万人，增长 3.1% 、 7.8% 。\n医疗保险保障水平提升。 2025 年末，全国基本医疗保险参保人数 13.3 亿人，比上年末增加 407 万人。全年基本医疗保险、大病保险、医疗救助累计惠及农村低收入人口就医 2.5 亿人次。长期护理保险参保人数 3.09 亿人，享受待遇人数 192.9 万人。\n失业、工伤、生育保险保障继续扩围。 2025 年末，全国失业保险参保人数 2.49 亿人，比上年末增加 329 万人。工伤保险重点向新就业形态人员、农民工扩围，参保人数 3.05 亿人，比上年末增加 110 万人。生育保险参保人数 2.6 亿人，比上年末增加 659 万人。\n社会救助和社会福利不断优化。 2025 年末，我国城市、农村最低生活保障人数分别为 596 万人、 3340 万人；低保平均标准分别为每人每月 832.0 元、 621.2 元，分别比上年增长 4.2% 、 4.6% 。\n教育普及程度稳步提高。 2025 年，全国学前教育毛入园率 92.9% ，比上年提高 0.9 个百分点，达到世界高收入国家平均水平。九年义务教育巩固率 96.1% ，比上年提高 0.2 个百分点。高中阶段毛入学率 92.0% ，与上年持平。高等教育毛入学率 61.3% ，比上年提高 0.5 个百分点。特殊教育在校生 92.7 万人，义务教育阶段残疾儿童入学率保持在 97% 以上。\n教育保障能力持续强化。 2024 年，全国教育经费总投入达 6.9 万亿元，国家财政性教育经费占 GDP 的比例已连续 13 年实现 4% 的目标。 2025 年，全国各级各类教育专任教师总量达 1870 万人，为教育高质量发展提供坚实的师资保障。\n医疗卫生资源供给持续增加。 2025 年末，全国共有医疗卫生机构 111 万个，床位 1004 万张。 2025 年，每千人口执业（助理）医师由上年的 3.61 人提高到 3.78 人，每千人口注册护士由 4.16 人提高到 4.32 人。\n医疗卫生服务更加均衡普惠。 2025 年，全国医疗卫生机构总诊疗人次 107 亿人次，比上年增长 5.0% ，其中，基层医疗卫生机构诊疗人次为 56.5 亿人次，占医疗卫生机构总诊疗人次的 53.0% ，服务能力稳步提高。目前超过 90% 的居民可在 15 分钟内到达最近的医疗服务点，群众看病就医更加便捷可及。\n疾病"
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Brian Donnelly of Boston Dynamics",
-   "url": "https://www.dcvelocity.com/material-handling/brian-donnelly-of-boston-dynamics",
-   "published": "2026-10-30T01:28:53.000Z",
-   "description": "Brian Donnelly is vice president and general manager of logistics robotics at Boston Dynamics , a company that’s working to reinvent global logistics with its Stretch and Atlas warehouse robots. Donnelly personally led the transition of the Atlas robot from a research prototype to a productive platform designed for “superhuman capability.” Before joining Boston Dynamics, Donnelly spent nearly 20 years in leadership roles at semiconductor manufacturer Analog Devices. He was also a leader in product management and engineering for a Covid testing and vaccination startup. He holds a B.S. in electr",
-   "excerpt": "In our continuing series of discussions with top supply-chain company executives, Brian Donnelly discusses the best deployments for warehouse robots, the areas most ripe for robotic innovation, and how to get the biggest return from automation investments.\nBrian Donnelly, vice president and general manager, Boston Dynamics\nBrian Donnelly is vice president and general manager of logistics robotics at Boston Dynamics , a company that’s working to reinvent global logistics with its Stretch and Atlas warehouse robots. Donnelly personally led the transition of the Atlas robot from a research prototype to a productive platform designed for “superhuman capability.”\nBefore joining Boston Dynamics, Donnelly spent nearly 20 years in leadership roles at semiconductor manufacturer Analog Devices. He was also a leader in product management and engineering for a Covid testing and vaccination startup. He holds a B.S. in electrical and computer engineering from the Worcester Polytechnic Institute.\nQ: MANY OF YOUR ROBOTS ARE DESIGNED FOR DANGEROUS AND STRENUOUS TASKS. WHAT ARE YOUR OBJECTIVES WHEN YOU DESIGN ROBOTS FOR JOBS HUMAN WORKERS DON’T WANT TO DO?\nA: Our primary objective in designing robots for tasks human workers do not want to do is to keep people safe and out of harm’s way. Many operational environments are far too dangerous for humans to operate in or involve repetitive, heavy lifting that increases the risk of chronic injury. I was once in a manufacturing plant that had huge aluminum brazing ovens, with flames licking out the sides and a human loading the machines manually. I commented to our host that it must be the job people disliked the most. He responded that while it’s hot, it’s not the job people most hate—it’s repetitive, heavy lifting tasks where they get injured.\nQ: HUMANOID ROBOTS ARE GETTING A LOT OF ATTENTION, BUT ARE THEY THE BEST FIT FOR DISTRIBUTION TASKS OR ARE THERE OTHER TYPES OF ROBOTS THAT ARE BETTER SUITED FOR WAREHOUSES?\nA: A lot of companies are jumping into the humanoid race right now, which is great, but frankly, finding the exact applications where humanoids deliver real-world value takes time. In fact, when we launched Spot as a general-purpose platform, it took us a while to figure out what it was best at, and it was only by working closely with our customers that we “iterated” on the product to make it the reliable inspection robot it is today.\nWe are taking that exact same approach with our humanoid, Atlas. We will partner with "
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Google 与 Reddit 同日股价大跌，AI 搜索变现困境冲击开放网络",
-   "url": "https://aihot.news/items/kzenjo9w2bfhpsr0ub1gr95xj",
-   "published": "2026-10-30T00:51:00.000Z",
-   "description": "Casey Newton 分析 Google 与 Reddit 同日遭遇的股市重挫：Alphabet 股价跌 12.6%，蒸发约 $5000 亿市值，为史上第二大单日市值缩水；高管承认 AI Mode 变现能力低于传统搜索，尽管 AI Mode 月用户约 10 亿、搜索收入仍增长 12% 至 $633.5 亿。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kzenjo9w2bfhpsr0ub1gr95xj",
-   "excerpt": "What Google and Reddit's bad days have in common\nCasey Newton 分析 Google 与 Reddit 同日遭遇的股市重挫：Alphabet 股价跌 12.6%，蒸发约 $5000 亿市值，为史上第二大单日市值缩水；高管承认 AI Mode 变现能力低于传统搜索，尽管 AI Mode 月用户约 10 亿、搜索收入仍增长 12% 至 $633.5 亿。\n作者把 Google 和 Reddit 同日财报放在一起分析，指出 AI Mode 变现弱于传统搜索正在推动网站加门槛、让开放网络收缩。\n这是一篇关于 AI 的专栏。我的未婚夫在 Anthropic 工作。完整伦理披露见 此处 。\n周四下午，Demis Hassabis 庆祝 了 Google AI 事业的一个里程碑：Gemini 4 Carbon——一款目前仅向网络防御人员开放的新大语言模型——登顶 Artificial Analysis 智能指数。此前新模型发布接连延期，外界越来越觉得这家公司正在掉出前沿阵营，而早期迹象显示，Carbon 标志着 Google 重回正轨。对 Alphabet 的首席科学家来说，这消息想必像是一场正名。\n然而，投资者的看法远没有那么笃定。就在同一天，Google 母公司迎来了上市以来最糟糕的一个交易日。Alphabet 股价下跌 12.6%，市值蒸发约 5000 亿美元。这是史上第二大股市暴跌，仅次于英伟达 2025 年 1 月的 5930 亿美元缩水，也是 Google 自金融危机以来最大的单日跌幅。\n抛售主要源于投资者对 Google AI 基础设施扩建规模的担忧。公司今年计划在资本支出上投入高达 2050 亿美元，并承诺 2027 年 还会花得更多 。同时它报告的自由现金流为负 90 亿美元——上一季度开始的下降趋势进一步加速。\n通常我不太在意股价的单日下跌，无论跌幅多大。（英伟达股价目前比 1 月时还高出 10% 以上。）但在财报电话会上，Google 首席商务官对一位分析师的提问给出了值得关注的回答。这位分析师问，为什么查询量在增长，搜索收入增长却在放缓。Philipp Schindler 说，原因之一是 Google AI Mode 使用量增加反而拖累了公司，因为它 比传统搜索赚得少 。\n几小时后，Reddit 公布了自己的季度财报——股价 下跌 15% 。公司称来自搜索的流量明显下滑，到第四季度日活用户可能下降百分之十几。因此，Reddit CEO Steve Huffman 在致股东信中表示，公司将 越来越多地推动用户登录 后使用网站。几十年来人们（和机器人）都能免费浏览 Reddit，如今他们得先注册账号。\n“这对我们的业务更有利，因为我们会获得更多用于广告定向的信号，而且登录通常带来更高的参与度，”Huffman 说 。“这也能让我们保护 Reddit 极有价值的数据语料库的访问权限，并帮助我们更好地适应世界各地不断出台的监管规定。”\n长期以来，Google 一直反驳“AI 答案对网络不利”的说法，称 AI 答案会促使人们进行更深入、更广泛的搜索，从而为网站带来更高质量的点击。今天的消息表明，这套说法正在瓦解：广告主从 AI Mode 得到的比传统搜索少，像 Reddit 这样的大型内容平台也是如此。\n不过，虽然人们很容易指责谷歌在战略上犯了错，但我最终觉得它还是会胜出。而网络及其内容发布者将继续挣扎，谷歌则基本可以把这当作别人的问题一推了之。\n到现在，大多数人已经熟悉谷歌与互联网之间那笔不断变化的交易。过去，发布者允许谷歌抓取自己的页面，谷歌则回馈以海量流量。谷歌从搜索结果中嵌入的广告里赚得盆满钵满，发布者则从访问其页面的人那里获得较少的收益。（去年，美国政府在一桩反垄断诉讼中胜诉，认定谷歌利用自身地位在广告市场建立了非法垄断，但按美国的一贯做法，该公司的垄断力量 几乎原封不动地保留了下来 。）\nReddit一直是谷歌所能输送流量的最大受益者之一。随着网络上大量内容被粗制滥造的东西淹没，真人撰写的对话变得更有价值，谷歌也开始在搜索结果中突出论坛讨论。Reddit的搜索流量随之激增；在该公司姗姗来迟地关闭了论坛对无休止抓取其内容的机器人的访问之后，据报道谷歌每年支付6000万美元来获得这些数据的授权。\n但到2022年ChatGPT成为爆款时，谷歌已经花了很多年时间努力让用户在自己的页面上停留更久。这个最初作为通往更广阔网络的跳板，随着时间推移变成了一个可以直接在搜索结果页上找到答案的地方。发布者再也无法享有像“ 超级碗几点开始 ”这样利润丰厚的套利机会；谷歌会自己回答你的问题。这或许在某种程度上是谷歌的贪婪，但也是对用户需求的明确回应。\n我第一次使用ChatGPT时， 在我看来很明显 ，它在各种谷歌搜索上的答案都明显更好。谷歌迟早必须做出回应，而它也确实回应了，推出了AI概览和AI模式。概览是显示在传统搜索顶部的那种方框；AI模式则是一个独立界面，可以从概览进入。无论如何，一年前谷歌高管 曾表示 ，概览的变现效果与传统搜索大致相当；今天这条新闻之所以引起这么多人注意，一个原因就是它暗示AI模式——显然代表着许多高价值品类中搜索的未来——的变现效果并非如此。\n需要说明的是，谷歌搜索仍然是一项庞大的业务：其搜索及相关广告收入增长了12%，达到633.5亿美元。但这低于第一季度的19%和第二季度的17%。与上一季度相比，这一数字 基本持平 ，尽管AI模式现在约有 10亿月活用户 ，AI概览约有25亿。（辛德勒没有说明AI模式的收入低多少，也没有说明他具体是在跟什么比较。）\n另外，不管这有没有参考价值：今年7月，谷歌CEO桑达尔·皮查伊告诉投资者，谷歌搜索中的AI功能 每周向网站发送数十亿次点击 。而他本季度准备好的发言中，完全没有提到向网站发送点击一事。\n皮查伊试图安抚投资者，把当下比作谷歌转向移动端的时刻——当时公司先专注产品，之后再大规模投放广告。而"
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "Fair use benefits everyone",
-   "url": "https://openai.com/index/fair-use-benefits-everyone",
-   "published": "2026-10-30T00:00:00.000Z",
-   "description": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Gemini API 的 Computer Use 工具正式开放（GA）",
-   "url": "https://aihot.news/items/qit1hgequ8pknedqqvuei5wfh",
-   "published": "2026-10-30T00:00:00.000Z",
-   "description": "Google 于 10 月 30 日宣布 Gemini API 的 Computer Use 工具正式可用（GA），覆盖 Interactions 和 GenerateContent 两套 API。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qit1hgequ8pknedqqvuei5wfh",
-   "excerpt": "Google 于 10 月 30 日宣布 Gemini API 的 Computer Use 工具正式可用（GA），覆盖 Interactions 和 GenerateContent 两套 API。\n官方更新日志确认 Computer Use 结束预览进入正式可用，关注 Gemini API 智能体操作能力的读者可查此入口。\n官方更新日志确认 Computer Use 结束预览进入正式可用，关注 Gemini API 智能体操作能力的读者可查此入口。"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenAI 汇编各方法庭之友意见，主张 AI 训练应适用合理使用原则",
-   "url": "https://aihot.news/items/oas684tt9kpeds9cq7vgjvo1x",
-   "published": "2026-10-30T00:00:00.000Z",
-   "description": "OpenAI 整理了在《纽约时报》诉讼中提交给法院的多份支持合理使用的法庭之友意见摘要，作者包括图书馆协会、法律学者、独立创作者和美国政府等。各意见书主张 AI 训练具有转换性、不构成版权法认可的市场损害，并警告限缩合理使用将阻碍科研进展与美国经济繁荣；完整文件可在法院公开卷宗查阅。 🔗 阅读原文 via AIHOT · https://aihot.news/items/oas684tt9kpeds9cq7vgjvo1x",
-   "excerpt": "OpenAI 整理了在《纽约时报》诉讼中提交给法院的多份支持合理使用的法庭之友意见摘要，作者包括图书馆协会、法律学者、独立创作者和美国政府等。各意见书主张 AI 训练具有转换性、不构成版权法认可的市场损害，并警告限缩合理使用将阻碍科研进展与美国经济繁荣；完整文件可在法院公开卷宗查阅。\nOpenAI 汇编多领域法庭之友意见，读者可据此了解 AI 训练合理使用抗辩的核心论点与《纽约时报》诉讼的争议焦点。\n作者、记者、创作者、学者、无障碍倡导者、法律专家、图书馆员、经济学家和企业领袖纷纷发声，支持合理使用这一由来已久的原则，以及该原则在 AI 训练中的适用。\n几十年来，合理使用在推动惠及所有人的创新方面发挥了关键作用。它促成了重要的医学和科学突破，也催生了新技术，为无数人——包括作者和记者——带来了实实在在的积极改变。与此同时， 《纽约时报》的诉讼 却要求所有人无视半个世纪的法律历史与进步，为了自己狭隘的一己之利——一笔本不该得的赔偿——抛弃合理使用这一由来已久的原则。\n来自广泛领域的专家和领袖已经认识到，合理使用是一种双赢，惠及所有人；他们向法院提交了支持合理使用的意见书，阐述了自己的观点。\n下面摘录了其中部分意见书的内容，均按原文呈现。完整的提交文件可在公开的法院案卷中查阅，你也可以 在这里 进一步了解合理使用与 AI。\n美国盲人理事会、研究图书馆协会、美国图书馆协会、消费者技术协会 & 商业软件联盟⁠\n法院应当驳回原告试图将版权延伸至既定边界之外的请求。AI 训练对受版权保护作品的使用目的截然不同，不会向公众提供这些作品的替代性获取途径，也不会造成《版权法》所认定的市场损害。相反，它催生了一系列广泛的变革性技术，这些技术已经在带来公共利益。版权的存在是为了促进创造力和进步，而不是压制合法创新，也不是保护作者免受竞争。因此，既定的合理使用原则必然得出这样的结论：生成式 AI 训练属于合理使用。\n本案涉及的远不止开发大语言模型（LLM）的公司。它关系到医学研究人员和患者，关系到为有不同学习需求的学生提供服务的教育工作者，关系到寻求更大独立性的残障人士，关系到运用农业知识的农民，关系到探索新表达形式的独立创作者，也关系到从软件到法律等各个行业。这些群体有一个共同利益：能够研究和学习广泛而多样的知识来源，并能获得让这种学习发挥作用的工具。许多人依赖他人开发的系统（包括开源 AI 系统），而不是自己训练模型。合理使用支撑着他们学习、发现、交流和创造的能力。限制对合理使用作品的训练，既会影响构建 AI 的机构，也会影响使用 AI 的人。\n市场稀释理论要求版权法保护权利人免受一种它此前从未限制过的经济现象的影响。新作品可能降低旧作品的销量、曝光度或价值，却并未复制其受保护的表达。《版权法》有意将这种竞争置于版权人的控制之外。因此，法庭之友恳请法院裁定：“市场稀释”，即来自非侵权输出的总体竞争压力——包括那些占据相同主题或体裁、具有相同不受保护特征或争夺相同受众的输出——不属于《美国法典》第17编第107条第4款意义上的可认知市场损害。驳回该理论将维护第二巡回法院一贯坚持的区分：版权保护作者免受对其受保护表达的替代，而非免受仅仅与之竞争的新表达的成功。\n初创公司对基础模型的使用表明，使用受版权保护的作品训练AI模型属于合理使用，而非版权侵权。训练基础模型的目的是构建一个通用工具，供他人适配新用途，而非复制其学习到的作品。初创公司所选择的用途与任何训练数据集中作品的用途毫无相似之处。\n在AI训练能够创造新知识、表达、软件及其他能力的范围内，这些益处会影响第四要素对使用市场影响的评估。这一推理支持在此处的一种新颖应用：考虑那些能够实现新分析、软件及其他生产性工作的能力所具有的国家安全价值。\n版权不仅支持创作内容的激励，也支持构建从这些内容中学习的工具的激励；而一项将每一次被替代的销售都视为可诉的规则，可能削弱后者，却无法可靠地保护前者。\nAI 是一项变革性技术，能加速艺术与科学无数学科中新作品的创作。Kelly 先生对 AI 如何推动文学领域发展有切身体会。在他看来，每个 AI 模型都可以理解为一个全新的媒介，让作者有能力创作新的文本和思想，并进行推理。因此，若在合理使用问题上判原告胜诉，给予原告的将远远超出国会意图赋予其原创表达的有限垄断权。这会阻碍能够传播前所未有海量信息的技术的发展，也会妨碍新的思维模式以及艺术与科学领域新原创作品的创作。法庭之友提交本意见书，支持被告的论点，即为训练大语言模型而使用受版权保护的作品属于 17 U.S.C. § 107 下的合理使用。基于他毕生从事写作的经历，版权所有者获得的保护对 Kelly 先生很重要。同样至关重要的是，为版权材料的允许使用和变革性技术的发展保留空间。否则，版权将扼杀它本应鼓励的创造力、创新和知识传播。合理使用原则对于确保这种平衡至关重要。\n根据本案记录，被告使用原告作品进行 AI 训练具有高度转换性，强烈支持认定合理使用，因为在现实条件下，被告模型的输出与训练过程中产生的不可见中间副本在任何相关方面都不相似。\n本意见书通过两位独立创作者的亲身经历，让人一窥这句话在实践中的含义——他们既依赖版权保护， 也 依赖 AI 工具来维持生计。 法庭之友 Sarah Rose Siskind 和 Michael Wall 是创作并授权原创作品的艺术家。但他们用 AI 处理创作过程周边的工作，并在一个充斥着资源更雄厚竞争者的市场中发展自己的事业。对 法庭之友 而言，AI 并未取代创造力，也没有让他们走创作捷径。AI 帮助他们创作更多作品，并将作品延伸到新的表达形式。 法庭之友 的经历印证了美国的观点：AI 工具“能够也应该有助于拉平主流出版商与独立出版商之间的竞争环境”。Siskind 在业务的方方面面都用 AI，从日常行政事务到构思创意、招揽新客户。有了 AI，她的非创作工作更快、成本更低，创作工作也更好。用她的话说：“我觉得现在没有 AI，我的生意根本做不下去。”同样，AI 帮"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenRouter 实测 Claude Opus vs Sonnet vs Haiku 5.5 该选哪个",
-   "url": "https://aihot.news/items/gzcwy89nkjreenv5eu1qaysdi",
-   "published": "2026-10-30T00:00:00.000Z",
-   "description": "OpenRouter 实测 Claude Opus 5.5、Sonnet 5.5 与 Haiku 5.5 三档模型，建议默认用 Sonnet 5.5，高频与子智能体任务用 Haiku 5.5，长且容错成本高的任务用 Opus 5.5。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gzcwy89nkjreenv5eu1qaysdi",
-   "excerpt": "Claude Opus vs Sonnet vs Haiku: Which Should You Use?\nOpenRouter 实测 Claude Opus 5.5、Sonnet 5.5 与 Haiku 5.5 三档模型，建议默认用 Sonnet 5.5，高频与子智能体任务用 Haiku 5.5，长且容错成本高的任务用 Opus 5.5。\n把 Claude Sonnet 5.5 设为默认模型，高并发和子智能体任务用 Claude Haiku 5.5 ，任务耗时长、需求模糊或出错代价高时用 Claude Opus 5.5 。\n对多数团队来说，选择其实是在 Opus 和 Sonnet 之间做，问题在于 Opus 每 token 的价格是 Sonnet 的两倍，值不值。在我们测试的编程任务上，答案是不值。我们给每个模型都安排了同样的 11 个带隐藏测试的编程任务，以及 Claude Code 里同一个修 bug 任务。所有模型全部通过，所以拉开差距的是成本。按任务算，Haiku 比 Opus 便宜 19 到 30 倍，Sonnet 的成本则是 Opus 的一半到三分之二。\n这些结果只说明三款模型在我们任务上的表现。要知道哪款最适合你的工作流，唯一的办法是在你自己的工作上测试。 Ori Eval 可以帮你做这件事。你问编程智能体哪个模型最适合你的项目，它就会在你的代码里找测试素材、编写评测、运行你想对比的模型，并给出推荐，同时附上分数、耗时和成本。后面讲模型切换的那一节会说明如何让它指向这三个层级。\nOpus 5.5、Sonnet 5.5 和 Haiku 5.5 是同一代模型的三个层级。Anthropic 于 2026 年 9 月 22 日发布 Opus 5.5 ，9 月 28 日发布 Sonnet 5.5 ，10 月 7 日发布 Haiku 5.5 。三者都有 100 万 token 上下文窗口 ，都接受文本、图片和 PDF。它们的主要差异在价格，另外 Haiku 的基准测试分数更低。\n价格是 2026 年 10 月 21 日我们的标价，来自 Opus 5.5 、 Sonnet 5.5 和 Haiku 5.5 的模型页面。基准测试各行来自我们的 benchmarks 接口 ，数据于 10 月 21 日拉取（我们的测试运行于 10 月 17 日）。 Artificial Analysis 智能指数 是独立基准测试公司 Artificial Analysis 对 10 项评测给出的综合分数。T 表示万亿 token，数据来自我们的 每日排名数据集 。\n在我们跑的基准测试里，Claude Opus 5.5 并没有胜过 Claude Sonnet 5.5。在我们跑的 GPQA Diamond 上 Sonnet 得分更高，这是一组 198 道研究生水平的科学题（92.4% 对 90.4%）。在 τ-bench airline 上它同样更高，这是一个多轮客服智能体基准（78.7% 对 75.5%）。在 Artificial Analysis 指数上 Opus 领先 1.6 分。在我们两次运行中，Sonnet 每个任务的成本都不到一半：GPQA 每题 $0.025，Opus 是 $0.054；τ-bench 每任务 $0.16，Opus 是 $0.34。\n10 月 12 日那一周，Opus 5.5 在 OpenRouter 上的 token 用量约为 Sonnet 的 2.5 倍。Opus 还是 Claude Code 在多数套餐下的 默认模型 ，在我们的测试中，没有指定模型时 Claude Code 会通过 OpenRouter 使用 Opus 5.5。如果你没改过模型，那你跑的就是 Opus。\n对于需求明确、常规性的工作，Haiku 5.5 可以取代 Sonnet。它在 τ-bench airline 上得分 76.0%，比 Opus 高半分，比 Sonnet 低 2.7 分，每任务成本 $0.011，约为 Sonnet 的十四分之一。我们每个模型跑了 100 到 200 个任务，所以这个基准上几分之差可能是噪声。在 GPQA Diamond 上 Haiku 落后 Sonnet 5.8 分，在 Artificial Analysis 指数上落后 12.6 分——该指数中智能体任务和通用知识各占 30%，编程和科学推理各占 20%。在常规编程上，我们下面的测试没有发现差距。\n我们测了两件事：按规格写函数，以及用 Claude Code 修一个代码仓库。三个模型在两项测试中都通过了全部测试。\n我们写了 11 个 Python 任务，每个都配一个隐藏测试文件。8 个日常任务是：解析时长、合并区间、LRU 缓存、不用 eval 的算术求值器、cron 表达式的下次运行时间、自动换行、 语义化版本 排序，以及 JSON 路径读取器。3 个困难任务分别是：不用 re 模块的正则引擎、带三值 NULL 逻辑的 SQL WHERE 过滤器，以及夏令时切换日跨时区的空闲日程时段。每个模型对每个日常任务作答两次、每个困难任务作答三次，使用模型默认设置，每个模型共 25 次尝试。\nHaiku 用的推理最多，却仍然最快完成困难任务。在困难任务上它平均用了 3,202 个 推理 token ，Opus 是 1,252 个。推理 token 是模型在写出答案之前用于推演问题的 token。即便推理更多，Haiku 每个困难任务的成本也只有 Opus 的二十七分之一。\n我们给 Claude Code 一个小型发票库，里面有三个 bug 和五个测试。三个 bug 分别是：用了 银行家舍入 （四舍六入五成双）的舍入逻辑、在引号内的逗号处错误分割的 CSV 解析器，以及用覆盖而非累加数量的汇总逻辑。我们通过 OpenRouter 让每个模型跑了三次，用 ANTHROPIC_MODEL 环境变量 选择模型。\n一轮指会话中的一次模型响应。我们按自己的价格、根据"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Jassy 称 AWS 五到十年内将成为万亿美元营收业务，2026 年 capex 约 2200 亿美元",
-   "url": "https://aihot.news/items/fxmexzrmo7pw52vc5j6ej17kl",
-   "published": "2026-10-29T23:42:22.000Z",
-   "description": "Amazon CEO Andy Jassy 在周四的季度财报电话会议上表示，AWS 未来五到十年内可以成为年营收万亿美元的业务，2026 年现金 capex 预计约 2200 亿美元，大部分投向 AWS，2027 年还将大幅增加。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fxmexzrmo7pw52vc5j6ej17kl",
-   "excerpt": "AWS will be a $1T business, Jassy says — but first, it will spend big\nAmazon CEO Andy Jassy 在周四的季度财报电话会议上表示，AWS 未来五到十年内可以成为年营收万亿美元的业务，2026 年现金 capex 预计约 2200 亿美元，大部分投向 AWS，2027 年还将大幅增加。\n原文给出 AWS 最新财报数字、2026 约 2200 亿美元 capex 计划和 Jassy 的万亿营收时间表，可帮助读者判断云厂商 AI 投入节奏。\nAndy Jassy 已经 公开表示 ，他相信 AWS 能成为一项年收入达万亿美元的业务。在周四亚马逊的季度财报电话会议上，他重申了这一雄心。\n“我们在亚马逊打造的东西是前所未有的。历史上从来没有一家企业做到过一万亿美元的年度营收，”他说。\n不过，在云业务达到那一步之前，亚马逊需要加大资本支出，建设支撑这项蓬勃业务所需的基础设施。\n“我们仍预计 2026 年的现金资本支出约为 2200 亿美元——其中大部分用于 AWS——并预计 2027 年的支出会明显更多，而且我们清楚地看到这些投入能带来财务回报，”Jassy 周四透露。\n亚马逊在 AI 基础设施上的巨额投入，今年一直是 投资者担忧的来源 。在周四的电话会议上，华尔街分析师确实反复要求 Jassy 解释这些支出、增长真的会到来的信号，以及预期的利润率。\nJassy 告诉他们，这些钱都花得值，因为这家电商巨头计划抓住由 AI 驱动的全球云需求的历史性时刻。AWS 收入同比增长 39%，这已是 连续第六个季度 保持稳步增长。\n“AWS 是一项年化收入运行率达到 1840 亿美元的业务，但机会依然非同寻常，”这位 CEO 兴奋地说。“凭借我们持续的创新步伐、新的核心功能和 AI 功能、企业希望在 AWS 上运行其核心和 AI 工作负载，以及我们每年新增的容量，我们相信 AWS 在 2027 年和 2028 年都能增长 40% 以上，并在未来五到十年内成为一项万亿美元收入的业务。”\nJassy 还补充说，企业采用 AI 仍处于“非常早期的阶段”，并表示到目前为止，“这一战略正在奏效”。\n后来，当被问及为何发展 AWS 所需的投资如此巨大时，Jassy 将 AI 热潮形容为“一生一次的机会”，认为现在需要、也值得做出如此巨大的财务承诺。\n“我们会继续投资，以保持领先地位，”他说。“我们有能力为这一计划提供资金，我认为它将永远改变亚马逊的规模。它将永远改变我们的收入。”\nAI 热潮对云行业来说喜忧参半，因为支撑这股热潮的 AI 服务依赖云基础设施。和亚马逊一样，其他云服务商也在 大举支出 ，但同时也在大把赚钱。例如，微软 刚刚公布 了又一份创纪录的收入增长，主要由其云业务驱动。它同样 花了一大笔钱 。\n当您通过我们文章中的链接购买时， 我们可能会赚取少量佣金 。这不会影响我们的编辑独立性。\nLucas 是 TechCrunch 的高级撰稿人，负责报道人工智能、消费科技和初创企业。他此前在 Gizmodo 报道 AI 和网络安全。 您可以通过发送邮件至 [email protected] 联系 Lucas。\n原文给出 AWS 最新财报数字、2026 约 2200 亿美元 capex 计划和 Jassy 的万亿营收时间表，可帮助读者判断云厂商 AI 投入节奏。"
-  },
-  {
-   "group": "ai",
-   "source": "Simon Willison",
-   "title": "API credits benefit for eligible ChatGPT subscriptions",
-   "url": "https://simonwillison.net/2026/Oct/29/api-credits/",
-   "published": "2026-10-29T22:48:29.000Z",
-   "description": "API credits benefit for eligible ChatGPT subscriptions Earlier this month Anthropic announced a generous new benefit for their Max and Team subscriptions: $100, $200, and $500 per month subscribers would get the equivalent quantity of (expiring) credits to use with the Anthropic API. OpenAI have now launched pretty much exactly the same deal: if you have a $100, $200, or $500 subscription plan with them you now get that same quantity of credits to apply to one of your API organizations. I maintain subscriptions with both companies, so this is great news for me! I may even ship some public-faci",
-   "excerpt": "API credits benefit for eligible ChatGPT subscriptions . Earlier this month Anthropic announced a generous new benefit for their Max and Team subscriptions: $100, $200, and $500 per month subscribers would get the equivalent quantity of (expiring) credits to use with the Anthropic API.\nOpenAI have now launched pretty much exactly the same deal: if you have a $100, $200, or $500 subscription plan with them you now get that same quantity of credits to apply to one of your API organizations.\nI maintain subscriptions with both companies, so this is great news for me! I may even ship some public-facing demos now that the credits are already covered by my existing subscriptions.\nThis is a link post by Simon Willison, posted on 29th October 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Google 市值蒸发 5000 亿美元，AI 概要冲击搜索广告引发华尔街担忧",
-   "url": "https://aihot.news/items/puushryi79v0flh2um3a70xnw",
-   "published": "2026-10-29T21:29:51.000Z",
-   "description": "Alphabet 因 AI 搜索概要影响广告收入，单日市值从 3.97 万亿跌至 3.46 万亿美元，缩水超 5000 亿美元。该季度总营收增 25% 至 1276 亿美元，云业务营收增 103% 至近 310 亿美元，但利润下降 25%，自由现金流为负超 90 亿美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/puushryi79v0flh2um3a70xnw",
-   "excerpt": "Google value plunges by $500B as AI fears rattle Wall Street\nAlphabet 因 AI 搜索概要影响广告收入，单日市值从 3.97 万亿跌至 3.46 万亿美元，缩水超 5000 亿美元。该季度总营收增 25% 至 1276 亿美元，云业务营收增 103% 至近 310 亿美元，但利润下降 25%，自由现金流为负超 90 亿美元。\n原文梳理了 Google、Amazon、Microsoft 三家财报中 AI 投入与现金流变化的具体数字，读者可对比资本市场的不同反应。\n谷歌母公司Alphabet周四市值蒸发逾5000亿美元（3740亿英镑），此前其年内最后一次业务运营更新令华尔街大为震动。\n谷歌披露其搜索业务中的人工智能（AI）摘要正在影响广告收入，这让投资者如此恐慌，以至于公司股价跌至六个月低点。\n微软和亚马逊本周也向投资者做了更新，并与谷歌一道，计划在这场持续进行的人工智能竞赛中继续投入天文数字的资金。\n总营收同比增长25%，达到1276亿美元。这得益于谷歌云业务的持续成功，其营收增长103%，接近310亿美元。\n然而，公司本季度利润大幅下滑25%。而且，作为上市公司， 历史上第二次 出现负自由现金流，这次超过90亿美元，几乎是Alphabet三个月前现金亏损额的两倍。\n现金流代表公司在支付运营和投资费用后留存的资金，这意味着Alphabet如今花的钱比赚的钱还多。这一新增的支出水平几乎全部用于谷歌的人工智能投资。\n谷歌无处不在的搜索引擎如今默认对用户的查询给出AI摘要，这影响了本季度它能够售出的广告数量。\nForrester首席分析师特蕾西·吴表示，Alphabet令人失望的搜索业务业绩“凸显了在为大规模AI投资提供资金的同时维持成熟业务实力所面临的挑战”。\n尽管谷歌首席商务官菲利普·辛德勒周三表示，他对搜索引擎以AI为核心的版本“非常看好我们的发展轨迹”，但公司股价周四仍下跌近13%，为今年第二低的表现。\n除了季度销售额增长11%、达到2010亿美元之外，公司还公布了一个惊人的现金流数字：负420亿美元。\n首席执行官安迪·贾西称，公司加大支出部分是因为它有机会拥有不止一项、而是两项未来可能为亚马逊带来1万亿美元收入的业务。\n贾西没有具体说明这两项业务是什么。但在与金融分析师的电话会议上，他多次提到亚马逊自研自销电脑芯片带来的财务机会，以及其AI开发者平台Bedrock——该平台让付费用户可以使用大多数主流AI模型和工具。\n“20多年来我们学到的一个教训是，没有哪一种工具能统治世界，”贾西说。“人们总是以为早期领先的东西就会是人们唯一使用的东西——从来都不是这样。”\n贾西被多次要求解释公司的支出，他承认如果这笔钱分摊到未来25年“会更方便”。“但现实并非如此，”他补充道。\n“我们有能力为这个计划提供资金，我认为它将永远改变亚马逊的规模、营收和自由现金流。”\n该公司也是OpenAI最大的投资者之一，其在专门用于AI的投资上少花了约50亿美元。本周早些时候它还透露 计划裁减数千名员工 ，这将进一步降低公司成本。\n与此同时，其营收同比增长19%，本季度达到923亿美元。其关键的云业务增长30%，达到630亿美元。\n首席执行官萨提亚·纳德拉表示，微软的AI聊天机器人和工具Copilot的使用量“自7月以来自动化任务几乎翻了一番”，日活用户同比增长500%。\n“微软的业绩印证了企业对AI的需求依然强劲，但也凸显出科技行业面临的一个更大的问题：AI的价值最终将在哪里被捕获，”Woo说。\n原文梳理了 Google、Amazon、Microsoft 三家财报中 AI 投入与现金流变化的具体数字，读者可对比资本市场的不同反应。"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Figma 讲解如何训练专用画布编辑模型",
-   "url": "https://aihot.news/items/z9kqlhsgiz11fvlk3aodm6seg",
-   "published": "2026-10-29T21:00:00.000Z",
-   "description": "Figma 介绍其为 agent 自研 Figma 编辑模型的训练方法，先用超过 25 万条合成样本做 SFT，让早期 Llama 3.3 70B 在编辑任务上接近当时顶级模型，后转向 RL 并结合确定性校验器与视觉评委做评测。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9kqlhsgiz11fvlk3aodm6seg",
-   "excerpt": "How we’re training a Figma-fluent editing model\nFigma 介绍其为 agent 自研 Figma 编辑模型的训练方法，先用超过 25 万条合成样本做 SFT，让早期 Llama 3.3 70B 在编辑任务上接近当时顶级模型，后转向 RL 并结合确定性校验器与视觉评委做评测。\n原文拆解了 Figma 自研编辑模型从 SFT 到 RL 的训练路径与内部评测维度，可作专业领域后训练的参考方法。\n原文拆解了 Figma 自研编辑模型从 SFT 到 RL 的训练路径与内部评测维度，可作专业领域后训练的参考方法。"
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "MIT Report: Corporate commitment to sustainability soars, but roadblocks to execution remain",
-   "url": "https://www.dcvelocity.com/editorial/featured/mit-report-corporate-commitment-to-sustainability-soars-but-roadblocks-to-execution-remain",
-   "published": "2026-10-29T20:17:03.000Z",
-   "description": "Corporate commitment to sustainability has reached a record high, but oversight is lagging and external disruptions are keeping companies from delivering transformational results. That’s according to the 2026 State of Supply Chain Sustainability report from the MIT Sustainable Supply Chain Lab at the MIT Center for Transportation and Logistics (MIT CTL), released this month. Researchers surveyed 1,810 supply chain professionals across 91 countries and found that 83% rate sustainability as important or very important to long-term business success, the highest level in the report’s seven-year hi",
-   "excerpt": "Tariffs and geopolitical pressures are among the key external factors slowing progress, but internal gaps persist as well, State of Supply Chain Sustainability report shows.\nCorporate commitment to sustainability has reached a record high, but oversight is lagging and external disruptions are keeping companies from delivering transformational results. That’s according to the 2026 State of Supply Chain Sustainability report from the MIT Sustainable Supply Chain Lab at the MIT Center for Transportation and Logistics (MIT CTL), released this month.\nResearchers surveyed 1,810 supply chain professionals across 91 countries and found that 83% rate sustainability as important or very important to long-term business success, the highest level in the report’s seven-year history. What’s more, the report found that corporate commitment has grown despite recent shifts in U.S. climate policy, with 59% saying they have become more committed to sustainability while just 13% say they have become less committed.\nThose advances are being tempered by outside factors. Nearly 70% of respondents said that tariff uncertainty has forced their organizations to delay, scale back, or compromise sustainability strategies, and more than eight in 10 said that geopolitical conflict is reducing the effectiveness of climate action.\nInternal problems exist as well: The study also found that companies’ public sustainability ambition is outpacing the governance and accountability needed to deliver results.\n“Companies with formal cross-functional sustainability teams are far more likely to embed sustainability in everyday decisions: 57% do so frequently or always, compared with 13% where responsibility sits within a single function,” according to the report. “Yet only 51% of companies with public sustainability goals have a formal cross-functional team, and only 33% place oversight at board level. Many companies have set the direction but have not yet built the internal structures needed to turn those commitments into consistent action.”\nThe effects of geopolitics and governance is just one of four themes examined in the report. The research also evaluates where sustainability efforts “live” in the supply chain, how artificial intelligence is affecting sustainability goals, and how warehousing and freight transportation operations are progressing toward decarbonization.\nOne of the key findings is that logistics is emerging as a prime area for sustainability action: The research identified dai"
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Georgia Ports Authority opens $134 million Gainesville Inland Port",
-   "url": "https://www.dcvelocity.com/transportation/rail/georgia-ports-authority-opens-134-million-gainesville-inland-port",
-   "published": "2026-10-29T20:09:51.000Z",
-   "description": "Georgia Ports Authority leaders this week opened its $134 million Gainesville Inland Port , saying the new terminal will allow customers to choose rail for greater affordability and heavier loads, or choose truck-only for faster transit. The Georgia Ports Authority (GPA) expects to shift 26,000 containers to rail in the terminal’s first year of operation, improving emissions and reducing trucks on Atlanta and Georgia highways. Serving North Georgia and the Carolinas, the Gainesville Inland Port is presently handling a mix of home and retail goods as well as manufacturing components for imports",
-   "excerpt": "New terminal will shift container traffic from trucks to rail by linking Port of Savannah to Gainesville with Norfolk Southern rail service, GPA says.\nGeorgia Ports Authority leaders this week opened its $134 million Gainesville Inland Port , saying the new terminal will allow customers to choose rail for greater affordability and heavier loads, or choose truck-only for faster transit.\nThe Georgia Ports Authority (GPA) expects to shift 26,000 containers to rail in the terminal’s first year of operation, improving emissions and reducing trucks on Atlanta and Georgia highways. Serving North Georgia and the Carolinas, the Gainesville Inland Port is presently handling a mix of home and retail goods as well as manufacturing components for imports. Exports consist of farm and forest products, as well as manufacturing.\nSpecifically, the Gainesville Inland Port links customers to the Port of Savannah’s 40 weekly vessel calls with Norfolk Southern rail service. The inland port has an annual capacity of 200,000 containers and offers convenient access for trucks to interstates 85 and 985. On-terminal storage and truck gate access from 7 a.m. to 8 p.m. Monday through Friday gives inland port customers greater inventory flexibility. And grounded storage means customers can also reduce chassis fees compared to wheeled storage at their facilities.\nAccording to GPA, Northeast Georgia is home to a growing manufacturing and logistics corridor, with a consumer market of 2 million and more than 300 manufacturers. Since 2020, 78 new and expanding firms have added more than 4,800 jobs and $2 billion in capital investment to Gainesville-Hall County. The area's largest employment segment, at 33% of overall workforce, is concentrated in manufacturing, processing and logistics.\n“We view this as a high growth market where we can improve supply chain performance and make customers more competitive long-term. We’re bringing the Port of Savannah closer to Gainesville,” said Georgia Ports CEO Griff Lynch."
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Blue Yonder: 46% of people who shop with AI have returned what they bought",
-   "url": "https://www.dcvelocity.com/supply-chain/other-services/reverse-logistics/blue-yonder-46-of-people-who-shop-with-ai-have-returned-what-they-bought",
-   "published": "2026-10-29T20:07:51.000Z",
-   "description": "Nearly half of Americans who use artificial intelligence to help them shop have later returned the AI-recommended item, a survey from supply chain software firm Blue Yonder has found. Online shoppers increasingly come in contact with an AI tool or assistant, such as a consumer chatbot. Of the 24% of U.S. consumers who have purchased a product after receiving an AI recommendation from that source, nearly half (46%) have returned one in the past year. The top reasons for U.S. shoppers returning an AI-recommended purchase are that it was different than described (36%) or was an incorrect size or ",
-   "excerpt": "Of the 24% of U.S. consumers who have purchased a product after receiving an AI recommendation, nearly half later returned it.\nNearly half of Americans who use artificial intelligence to help them shop have later returned the AI-recommended item, a survey from supply chain software firm Blue Yonder has found.\nOnline shoppers increasingly come in contact with an AI tool or assistant, such as a consumer chatbot. Of the 24% of U.S. consumers who have purchased a product after receiving an AI recommendation from that source, nearly half (46%) have returned one in the past year. The top reasons for U.S. shoppers returning an AI-recommended purchase are that it was different than described (36%) or was an incorrect size or fit (23%).\nThat order reverses for U.S. returns overall, where incorrect size or fit leads at 42% and different than described accounts for only 20%. The pattern suggests AI tools struggle less with fit than with describing products accurately.\nThose numbers came from Dallas-based Blue Yonder’s fourth annual “2026 Consumer Retail Returns Survey,” which polled more than 5,000 consumers across the U.S., Australia, France, Germany and the U.K., including 2,000 Americans.\n“Shoppers are taking AI’s advice faster than retailers are getting ready for it, and nearly half of them are sending something back,” said Duncan Angove, CEO of Blue Yonder. “That’s not really an AI problem. It’s a data problem. An AI assistant is only as good as the product information it can find, and most product data was written for a search bar, not for a machine suggesting products for someone. When what arrives doesn’t match what the shopper expected, it goes back in the box.”\nThe trend is significant because it means that retailers could soon be dealing with increasing volumes of returns, and the survey also found that shoppers continue to be highly sensitive to retailers’ policies.\nOver half of U.S. respondents (51%) said that they have decided to buy from one retailer over another purely because it had a better returns policy. Nearly one-third (29%) have gone further and stopped shopping altogether at a retailer that implemented a stricter return policy in the last year. While Gen Z (47%) and Millennials (40%) were more likely to have stopped shopping at a retailer that implemented stricter returns policies in the past year, that number declines significantly among Gen X (24%) and Baby Boomers (17%).\nIn response, retailers are adopting new tracking technologies, such as"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Pika 基于MiniMax H3后训练并开源 Pika H3 Flex 视频生成模型",
-   "url": "https://aihot.news/items/eq47lph0rzobf8cr950saiu8r",
-   "published": "2026-10-29T20:07:09.000Z",
-   "description": "Pika Labs 在 MiniMax H3 上做后训练，推出并开源 Pika H3 Flex，采样步数从 50 步压缩到 6 步，生成时间大幅降低且质量有所提升。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eq47lph0rzobf8cr950saiu8r",
-   "excerpt": "Pika Labs 在 MiniMax H3 上做后训练，推出并开源 Pika H3 Flex，采样步数从 50 步压缩到 6 步，生成时间大幅降低且质量有所提升。\n@pika_labs 在Minimax的H3上做了后训练，推出了Pika H3 Flex，把视频生成的采样步数从50步压缩到了6步，生成时间大大降低，而且质量甚至还有提升，非常酷的工作，并且直接开源了。\n详情可看： https://github.com/Pika-Labs/Pika-H3-Flex"
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Study: smaller companies struggle to pass on costs of fuel and tariffs to customers",
-   "url": "https://www.dcvelocity.com/finance-strategy/study-small-companies-struggle-to-pass-on-costs-of-fuel-and-tariffs-to-customers",
-   "published": "2026-10-29T20:03:16.000Z",
-   "description": "Tariff-exposed industries with significant fuel, freight, and industrial-energy requirements experienced the clearest pressure on profitability following tariff actions in 2025, even when their sales trends remained resilient, according to analysis by Abrigo , a provider of risk management and lending software for U.S. financial institutions. The study, based on private-company financial statements in Abrigo Connect, examined 17 selected industries with tariff exposure, comparing a 2024 pre-tariff baseline with 2025 results. The analysis found that in several industries, median sales-growth ra",
-   "excerpt": "Abrigo analysis shows that tariff-exposed industries with significant fuel, freight, and industrial-energy requirements experienced the clearest pressure on profitability following tariff actions in 2025.\nTariff-exposed industries with significant fuel, freight, and industrial-energy requirements experienced the clearest pressure on profitability following tariff actions in 2025, even when their sales trends remained resilient, according to analysis by Abrigo , a provider of risk management and lending software for U.S. financial institutions.\nThe study, based on private-company financial statements in Abrigo Connect, examined 17 selected industries with tariff exposure, comparing a 2024 pre-tariff baseline with 2025 results. The analysis found that in several industries, median sales-growth rates improved while median gross profit margins declined, suggesting cost pressures may have absorbed gains that otherwise would have supported profitability.\n“Small businesses typically have less margin to absorb the impact that tariffs may have on their input costs,” said Rob Newberry, an Abrigo Senior Consultant. “That can create larger year-over-year swings in financial performance, and some may require additional funding until businesses can pass those increases on to customers.”\nTo distinguish tariff-related cost pressure from broader fuel and energy pressures, Abrigo grouped the industries into three cohorts. One cohort included import-reliant industries with relatively lower energy intensity, such as computer and electronic product manufacturing and merchant wholesalers of durable goods. A second cohort included 10 industries with both tariff-sensitive inputs and meaningful energy or transportation costs, such as fabricated metals, food manufacturing, construction, and restaurants. And a third cohort included industries with tariff exposure plus high fuel, freight, or industrial-energy requirements: primary metal manufacturing, heavy and civil engineering construction, truck transportation, and warehousing and storage.\nThe four individual industries with the greatest combined exposure to tariffs and energy-related costs recorded a median 3.1-percentage-point improvement in sales-growth rates alongside a 166.3-basis-point decline in gross margins, the sharpest cohort-level divergence in the study. Primary metal manufacturing recorded the sharpest margin contraction, down 583.1 basis points, even as its sales-growth rate improved 6.7 percentage points. Truck tra"
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "3PLs could feel the impact of mid-term elections",
-   "url": "https://www.dcvelocity.com/logistics/third-party-logistics/3pls-could-feel-the-impact-of-mid-term-elections",
-   "published": "2026-10-29T19:55:46.000Z",
-   "description": "Third-party logistics (3PL) providers are keeping a close eye on the results of next week’s mid-term elections, since the results could have a big effect on the American business climate for the coming two years, according to an analysis from market research firm Armstrong & Associates. American voters will go to the polls on November 3 to cast their votes for every sitting member of the U.S. House and one-third of the Senate. Of course, logistics policies aren’t on the ballot, but many of the decisions that shape costs and demand for the 3PL sector in 2027 are, including: tariffs and trade po",
-   "excerpt": "Armstrong & Associates says political results could determine business policy in four areas: tariffs and trade policy, highway and infrastructure funding, freight broker liability, and driver supply and labor.\nThird-party logistics (3PL) providers are keeping a close eye on the results of next week’s mid-term elections, since the results could have a big effect on the American business climate for the coming two years, according to an analysis from market research firm Armstrong & Associates.\nAmerican voters will go to the polls on November 3 to cast their votes for every sitting member of the U.S. House and one-third of the Senate. Of course, logistics policies aren’t on the ballot, but many of the decisions that shape costs and demand for the 3PL sector in 2027 are, including: tariffs and trade policy, highway and infrastructure funding, freight broker liability, and driver supply and labor.\nMany of those issues are complex, but the results of the vote should be clear by the following day, since America has a long tradition of free and fair elections, and modern courts have never found significant fraud in national vote counts.\nAccording to Armstrong & Associates, 3PLs can judge the results for themselves by keeping an eye on three basic scenarios for the outcome:\nDigging into the policy details, Armstrong & Associates described the possible impacts of the election for each of the four topics it is tracking.\nThe first is tariffs. Since the Supreme Court struck down the IEEPA-based tariffs and the Section 122 surcharge expired on July 24, tariff policy has moved to Section 301 and Section 232 actions. Those don't need a vote in Congress, so tariffs will largely stay an executive-branch decision whatever the outcome. What changes is the oversight: a Congress controlled by the President's party is less likely to limit tariff authority, while a split Congress brings hearings, pressure for tariff exemptions, and more uncertainty for importers. That uncertainty means more stop-and-go ordering, which helps freight forwarders and warehouse operators in the short term, but makes planning harder for everyone.\nThe second is highway funding. The bipartisan 2021 Infrastructure Investment and Jobs Act's highway and transit authorization was set to expire September 30 until Congress passed a short-term extension that runs to December 11. The next long-term bill will be written either by the outgoing Congress in its final weeks or by the new one in 2027. That bill sets "
-  },
-  {
-   "group": "wh",
-   "source": "The Robot Report 物流",
-   "title": "2026 Robotics Handbook looks at humanoids, AI, and design choices",
-   "url": "https://www.therobotreport.com/2026-robotics-handbook-looks-at-humanoids/",
-   "published": "2026-10-29T19:36:12.000Z",
-   "description": "The 2026 Robotics Handbook examines design choices behind dexterous manipulation, humanoid robots, and construction automation. The post 2026 Robotics Handbook looks at humanoids, AI, and design choices appeared first on The Robot Report .",
-   "excerpt": "This year, The Robot Report continued to share developments in design, engineering, and deployment of commercial systems, but the pace of change has accelerated. This is due to advances in hardware, scale, and most of all, artificial intelligence. The 2026 Robotics Handbook curates some of the top trends in the space.\nAs labor shortages drive demand for automation, markets become more knowledgeable about robots’ capabilities, and the systems themselves get easier to use, robotics adoption is growing. According to the International Federation of Robotics (IFR) and the Association for Advancing Automation (A3), both global and U.S. orders are climbing after a post-pandemic pause.\nThis free download looks at the engineering challenges, component choices, and market opportunities for robotics. While humanoid robots are still in development and commercial trials, massive amounts of funding have led to stiff competition as big tech companies and emerging startups try different form factors and use cases.\nAI is the other prominent topic of 2026, as it changes how robots are designed, programmed, and managed. From large language models and vision-language-action models to world models, AI is already starting to make robots more autonomous, easier to use, and safer for people to interact with. However, the devil is in the details, as concerns around data, cybersecurity, and national sovereignty persist.\nThe 2026 Robotics Handbook also looks at advances in dexterous manipulation and spotlights an industry where automation is just getting started — construction. In this issue, you can learn about:\nSponsors for the 2026 Robotics Handbook include DigiKey , All Motion , CS Hyde Co. , Boker’s Inc. , SIKO Products Inc. , and ElectroCraft .\nThis site uses Akismet to reduce spam. Learn how your comment data is processed."
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Anthropic S-1 文件解读：财务表现强劲但增长放缓存隐忧",
-   "url": "https://aihot.news/items/wb6emxuh5ob2wh96egtwawgfu",
-   "published": "2026-10-29T19:10:41.000Z",
-   "description": "作者通读 Anthropic 公开版 S-1 文件，认为公司财务状况好于预期：2026 年第二季度收入从一季度的 47 亿美元增至 116 亿美元，并录得首个运营利润，截至 6 月底现金储备仅次于 Google 和 Berkshire Hathaway。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wb6emxuh5ob2wh96egtwawgfu",
-   "excerpt": "Anthropic’s financials are surprisingly strong\n作者通读 Anthropic 公开版 S-1 文件，认为公司财务状况好于预期：2026 年第二季度收入从一季度的 47 亿美元增至 116 亿美元，并录得首个运营利润，截至 6 月底现金储备仅次于 Google 和 Berkshire Hathaway。\n作者通读 Anthropic 公开的 S-1 文件，用现金流和季度收入数据说明其财务状况与算力承诺之间的张力。\n今年6月，Anthropic向美国证券交易委员会 秘密提交了S-1表格的草稿 ，这是其向公众发行股票的关键一步。周一，Anthropic 宣布 已提交同一文件的公开版本。我通读了全文，从中了解到不少关于公司财务状况的信息——至少截至今年6月30日的情况是如此。\n总体来看，公司的财务状况出奇地好。2025年至2026年初，营收大幅飙升，使公司在第二季度首次实现营业利润。截至6月底，Anthropic的现金储备超过了除谷歌和伯克希尔·哈撒韦之外的所有非银行企业。\n不过，未来几年对这家AI巨头来说可能充满挑战。出于对持续增长的预期，Anthropic已承诺向亚马逊、谷歌、SpaceXAI、博通等公司投入数千亿美元用于算力。要收回这些支出，Anthropic的年营收需要增长到数千亿美元。\nAnthropic尚未正式公布第三季度营收，但 媒体 报道 显示其营收增速有所放缓。营收从2026年第一季度的47亿美元跃升至第二季度的116亿美元，第三季度为168亿美元。按常规企业标准衡量，这仍是惊人的增长，但增速已低于上一季度。\n因此，Anthropic财务状况最大的悬念在于：第三季度营收为何没有增长得更快——以及这对未来意味着什么。或许Anthropic的营收将在未来一年继续指数级增长，那样的话，公司轻松就能支付其算力承诺。\n但也可能Claude Code和Anthropic其他产品的需求正接近饱和。若果真如此，第四季度及以后的营收增速可能进一步放缓，届时公司可能难以兑现已经做出的数千亿美元支出承诺。\n来源： Timothy B. Lee：Understanding AI · understandingai.org\n作者通读 Anthropic 公开的 S-1 文件，用现金流和季度收入数据说明其财务状况与算力承诺之间的张力。"
-  },
-  {
-   "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "The Exception Backlog: Supply Chain’s Overlooked Operational Constraint",
-   "url": "https://logisticsviewpoints.com/2026/10/29/the-exception-backlog-supply-chain-s-overlooked-operational-constraint/",
-   "published": "2026-10-29T17:30:00.000Z",
-   "description": "The Exception Backlog: Supply Chain's Overlooked Operational Constraint identifies a queue that many logistics organizations feel every day but rarely measure: unresolved exceptions waiting for human attention. The post The Exception Backlog: Supply Chain’s Overlooked Operational Constraint appeared first on Logistics Viewpoints .",
-   "excerpt": "Unresolved exceptions form a queue that many logistics organizations feel every day but rarely measure. When exceptions arrive faster than planners can investigate, coordinate, and close them, the backlog becomes an operating constraint just like dock congestion, labor shortage, or insufficient carrier capacity.\nEach exception has an arrival time, service time, priority, and outcome. Some take seconds; others require multiple systems, partners, approvals, and calls. When arrival rate exceeds resolution capacity, work accumulates. Aging increases and more cases miss the window in which an inexpensive intervention was still possible. The backlog is another form of the decision bottleneck : unresolved work consumes operating capacity even when the physical network still has trucks, doors, labor, and inventory available.\nPlanner attention is finite. Time spent assembling context, chasing status, copying information, and routing approvals is capacity that cannot be used for optimization, relationship management, or novel problems. The organization can have sufficient physical assets and still underperform because decision work is queued.\nAEM is moving toward selective autonomy: routine, high-frequency, bounded exceptions are increasingly handled by software while people focus on ambiguity, relationships, policy conflicts, and high-consequence decisions The highest leverage often comes from automating context assembly and repetitive resolution steps before automating the final decision. Even when a human retains approval, reducing research and administrative work can materially increase throughput.\nTrack open exceptions by class, age, business consequence, and owner. Measure median and tail resolution times, percentage resolved before the intervention deadline, recurrence, and auto-resolution rate. These measures make the constraint visible and help distinguish a technology problem from a policy, data, or staffing problem.\nNot every exception deserves the same service level. High-value, time-sensitive issues should move through a fast lane. Low-consequence deviations may be suppressed or handled automatically. The operating model should allocate human judgment where its marginal value is highest.\nOnce the backlog is treated as a real queue, exception management becomes measurable. The objective is not to eliminate every exception; it is to build enough decision-and-action capacity that important exceptions are resolved before they become expensive.\nAn unresolved"
-  },
-  {
-   "group": "ai",
-   "source": "Simon Willison",
-   "title": "Building a multiplayer game world with autonomous Fable-class models",
-   "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
-   "published": "2026-10-29T17:00:26.000Z",
-   "description": "How I Built the Most AI-Pilled Company in the World Don't be put off by the clickbait headline, this piece by Jacob Sansbury describing how they are building Spawn is a fascinating exploration of the bleeding edge of what's possible with agentic engineering against frontier models. Spawn is a massively multiplayer gaming environment where players can use prompts (to the in-game agent, Savi) to modify the game world. I fired it up on my phone for a few minutes and was able to prompt a castle into existence, then a dragon, then ride the dragon to fly around that castle. By Jacob's telling, Spawn",
-   "excerpt": "How I Built the Most AI-Pilled Company in the World . Don't be put off by the clickbait headline, this piece by Jacob Sansbury describing how they are building Spawn is a fascinating exploration of the bleeding edge of what's possible with agentic engineering against frontier models.\nSpawn is a massively multiplayer gaming environment where players can use prompts (to the in-game agent, Savi) to modify the game world.\nI fired it up on my phone for a few minutes and was able to prompt a castle into existence, then a dragon, then ride the dragon to fly around that castle.\nBy Jacob's telling, Spawn is now being developed autonomously by a swarm of Fable-powered agents costing over $3 million in tokens per month (\"we spend 30x payroll on AI tokens\").\nOur agents change the live code directly and ship to production hourly, so they read every error, bug report and metric themselves. About 60% of our work starts from a production error, a Savi bug report (Savi is the AI you build games with in Spawn), something odd in our logs, or a feature request.\nSavi files bugs herself. When a user hits one, or Savi hits one in the product, she files it. It goes straight to an agent that decides whether it's a real bug to fix, something we won't fix, or intentional design that needs a decision. Usually it becomes a change, delivered to that user within an hour, with a message in the same chat.\nThis is continuous deployment turned up to 11:\nA loop this tight only works if it never stops, so we treat an hour without a ship as a SEV-0, our most severe kind of incident. Unshipped changes pile up, and every problem already in production lasts longer. The feedback slows down too. An agent can only keep a few hours of work in its head, so shipping faster than that actually helps it stay coherent. [...]\nWe can roll back a broken change in 30 seconds, exactly where it's broken and nowhere else. When a monitor or a log alert fires, it starts or wakes an agent that owns the incident, and we break things on purpose to test that those recovery paths work.\nMy eyebrows raised at least a dozen times reading this. I have trouble imagining this style of development working on software with higher stakes for when something goes wrong, but for a game this appears to be working surprisingly well.\nJacob says that Fable 5 (and then 5.1) was the model that made this level of autonomy possible. Opus 5.5 doesn't quite hack it for them, and when they tried GPT-6 Astra to apply fixes from a security revi"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "腾讯混元发布 Hy-Nomas 技术报告并开源 Hy-Nomas-Bench",
-   "url": "https://aihot.news/items/nb40aoihhydhoo0acp0rcyaol",
-   "published": "2026-10-29T17:00:03.000Z",
-   "description": "腾讯混元发布 Hy-Nomas 开源交互式视频世界模型的技术报告（arXiv:2610.36729），并开源 Hy-Nomas-Bench 数据集用于可复现研究。官方还用 Hy-Nomas 重现 Genie 4 示例并放出对比视频，演示无需排队即可试用，地址为 https://hy-nomas.hy.tencent.com/。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nb40aoihhydhoo0acp0rcyaol",
-   "excerpt": "腾讯混元发布 Hy-Nomas 开源交互式视频世界模型的技术报告（arXiv:2610.36729），并开源 Hy-Nomas-Bench 数据集用于可复现研究。官方还用 Hy-Nomas 重现 Genie 4 示例并放出对比视频，演示无需排队即可试用，地址为 https://hy-nomas.hy.tencent.com/。\n官方补充技术报告和 Hy-Nomas-Bench 数据集，还放出与 Genie 4 的对比视频，便于研究者复现和评估该视频世界模型。\n上周五发布的 Hy-Nomas 技术报告： https://arxiv.org/abs/2610.36729\nHy-Nomas-Bench 也已开源，用于可复现研究： https://huggingface.co/datasets/tencent/Hy-Nomas-Bench\n我们还用 Hy-Nomas 重新创建了 Genie 4 示例。观看完整对比视频：Hy-Nomas vs Genie 4 👇\n立即试用我们的演示！无需等待名单！ https://hy-nomas.hy.tencent.com/\n#Hy-Nomas #Genie 4 #WorldModels #VideoGeneration #GenerativeAI\n🚀 Introducing Hy-Nomas: An Open Source Free-Form Interactive Video World Model Key Features: * Free-form interaction with text prompts and camera trajectories * Long-horizon generation with world memory * Lightweight LoRA adaptation for specialized domains such as robotics * Optimized for Inference on Consumer GPUs Test it and drop feedback anytime！ 🔗 Website: https://hy-nomas.hy.tencent.com/ 💻 GitHub:https://github.com/Tencent-Hunyuan/Hy-Nomas 🤗 Hugging Face: https://huggingface.co/tencent/Hy-Nomas 🎥 Demo: https://hy-nomas.hy.tencent.com/demo #Hy#WorldModels #VideoGeneration #GenerativeAI\n官方补充技术报告和 Hy-Nomas-Bench 数据集，还放出与 Genie 4 的对比视频，便于研究者复现和评估该视频世界模型。"
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "An updated Model Spec for more capable and beneficial AI",
-   "url": "https://openai.com/index/updated-model-spec",
-   "published": "2026-10-29T17:00:00.000Z",
-   "description": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenAI 更新 Model Spec，围绕五项核心价值观重组模型行为准则",
-   "url": "https://aihot.news/items/rccreyesa3aeph7jasj5spv29",
-   "published": "2026-10-29T17:00:00.000Z",
-   "description": "OpenAI 更新其公开的 Model Spec，将指导原则重组为五项核心价值观：忠实于人类意图、最小化伤害、诚实透明、促进人类自主和关怀。更新新增了关于上下文理解、监督和自主性的指导，调整了部分行为默认值，退出了大部分详细风格指南，并将模型称呼从 the assistant 改为 GPT。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rccreyesa3aeph7jasj5spv29",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Codex 宣布即日起 Pro 及 Business Premium 各档位用量上限翻倍",
-   "url": "https://aihot.news/items/funx6p4g0gju509j6n0oyxmqu",
-   "published": "2026-10-29T16:56:07.000Z",
-   "description": "Tibo 宣布即日起将 Pro 100/200/500 档位与 Business Premium 的所有用量上限翻倍。Pro 200 的上限不会下调，Work 与 Codex 用量保持不变；dots 的扩展用量上限继续提供，且仍与默认用量分开计算，后续还会通过更好的模型和效率改进提升实际可用量。 🔗 阅读原文 via AIHOT · https://aihot.news/items/funx6p4g0gju509j6n0oyxmqu",
-   "excerpt": ""
   }
  ]
 }
