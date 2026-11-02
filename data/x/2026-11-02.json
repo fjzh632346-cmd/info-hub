@@ -1,0 +1,86 @@
+{
+  "type": "x",
+  "date": "2026-11-02",
+  "items": [
+    {
+      "kind": "opinion",
+      "category": "编程",
+      "score": 88,
+      "author": "数字生命卡兹克",
+      "handle": "@Khazix0918",
+      "url": "https://x.com/Khazix0918/status/2117054043868860521",
+      "posted": "2026-11-02",
+      "metrics": "19.7 万查看 · 1762 赞 · 3039 收藏",
+      "textZh": "卡兹克长文分享自己用了一年的 Agent 自动化系统（Agent 就是能自己动手干活的 AI 助手）。核心思路：别让每件事都从“你打开对话框”开始，而是让各种信号自动叫醒 AI。他做了三块：① 自动化中台——定时任务、飞书消息、报错告警等所有“事件”先统一成一种短格式，再按 rules.json 里的规则分派给不同 AI（复杂开发给 Claude Opus 5.5，运维修 Bug 给 GPT-6.1 Sol，操作浏览器给 GPT-6.1 Terra），还负责去重，只有需要他拍板时才在飞书弹卡片（他叫“批奏折”）；② 每个自动化任务配一个专属 Skill，相当于写成文件的工作手册，改流程只改 Skill；③ 在家里旧 Mac mini 上自建 CI（代码自动审查、测试、上线的流水线），Claude 写的代码先让 Codex 审一遍再合并，省下 GitHub 额度费用。他的会员开销约 200 美元 Claude + 100 美元 GPT。想做 Agent、关注 AI 交付工程师方向的，这篇是很具体的实战参考。"
+    },
+    {
+      "kind": "news",
+      "category": "编程",
+      "score": 84,
+      "author": "Andrej Karpathy",
+      "handle": "@karpathy",
+      "url": "https://x.com/karpathy/status/2116957135661945283",
+      "posted": "2026-11-02",
+      "metrics": "372 万查看 · 4.2 万赞 · 3.6 万收藏",
+      "textZh": "Karpathy（前 OpenAI、特斯拉 AI 负责人）周末用约 2 小时做了个视频网站 HackerTube（hackertube.org）：他嫌 YouTube 推荐太差，就让 Claude 从 Hacker News（程序员社区）20 年、4300 万条评论里筛出被反复推荐的 6454 个视频。特点：不用登录、缩略图取视频中段画面而不是博主精心设计的封面、底层数据打包可下载，让你的 Claude 自己做一版。他说日常用 Claude Code 桌面版、Opus 5.5 中等推理强度，自己只手动做了三件事：申请 YouTube 接口密钥、开一台服务器、买域名，部署和加固都交给 Claude。适合当“一个人用 AI 做完整项目”的范例看。"
+    },
+    {
+      "kind": "news",
+      "category": "研究",
+      "score": 76,
+      "author": "Ethan Mollick",
+      "handle": "@emollick",
+      "url": "https://x.com/emollick/status/2117142297934757916",
+      "posted": "2026-11-02",
+      "metrics": "1.7 万查看 · 201 赞",
+      "textZh": "研究机构 SemiAnalysis 发布新测评 GDPx，测 AI 智能体在高价值行业任务上的能力，最好的模型也只拿到 12%。他们还指出 Opus 5.5、GPT-6 Astra 的总分被安全拦截机制拉低了，去掉网络安全、生物、对齐这三类后排名会变（详见 gdpx.semianalysis.com）。沃顿商学院教授 Mollick 评价：值得关注，但缺少像前身 GDPval 那样的“人类专家对照分”，而且 GPT-6 Pro 还挑出了评分里的几处错误，很多 0 分也掩盖了模型之间实际的差别。看榜单时记住：新测评刚出，分数先当参考。"
+    },
+    {
+      "kind": "news",
+      "category": "视频",
+      "score": 74,
+      "author": "岚叔",
+      "handle": "@LufzzLiz",
+      "url": "https://x.com/LufzzLiz/status/2116848033526935596",
+      "posted": "2026-11-01",
+      "metrics": "3.5 万查看 · 347 赞",
+      "textZh": "岚叔开源了“无限流数字人口播”项目 lanshu-infinite-stream-koubo。思路是把生成视频变成一次性投入：先用 Wan 3.0 生成一套固定人物的视频素材，按动作、表情切成小段建成“镜头库”；以后每条新视频只需配音（Seed Audio 1.0）+ 只给露脸说话的片段对口型（阿里百炼 VideoRetalk，0.08 元/秒），剪辑和动效交给 Codex 在本地做。实测一段 1 分 49 秒口播，花约 7 元做出 6 种风格成片。文中还列了几个可配合的口播剪辑 Skill（talking-head-editor、lanshu-create-ai-presenter-video、digital-human-koubo）。想做讲解类短视频的可以参考这套省钱流程。"
+    },
+    {
+      "kind": "prompt",
+      "category": "视频",
+      "score": 72,
+      "author": "m4lka",
+      "handle": "@m4lkxx",
+      "url": "https://x.com/m4lkxx/status/2116893154322284929",
+      "posted": "2026-11-01",
+      "metrics": "2.1 万查看 · 424 赞 · 499 收藏",
+      "textZh": "作者用 Opus 5.5 把同一个角色动画改成 12 种画风，每种只需一句话提示词（让 Claude 用代码渲染出动画，效果见原帖视频）。适合做动画、视频 Skill 时当“风格词典”用。",
+      "prompt": "1. Claymation → \"Make it claymation: soft clay with fingerprints, lumpy edges, stop-motion at 12 fps\"\n2. Pixel art → \"Make it 32x32 pixel art: 8-color palette, no anti-aliasing, 4-frame idle loop\"\n3. Low-poly → \"Make it low-poly: under 300 flat-shaded faces, hard light, pastel gradient sky\"\n4. Anime → \"Make it anime cel-shaded: two-tone shading, bold outline, speed lines on every move\"\n5. Isometric → \"Make it an isometric diorama: 30-degree camera, tiny world on a floating block, soft shadows\"\n6. Voxel → \"Make it voxel: 1-unit cubes only, beveled edges, warm studio light\"\n7. Paper cutout → \"Make it paper cutout: layered cardstock, drop shadows, paper grain, jittery stop-motion\"\n8. Neon → \"Make it a neon sign: glowing tube outlines on a dark brick wall, flicker, bloom\"\n9. Risograph → \"Make it risograph: two inks, orange and blue, halftone dots, misregistered layers\"\n10. Watercolor → \"Make it watercolor: wet soft edges, paper texture, pigment pooling at the rims\"\n11. Liquid chrome → \"Make it liquid chrome: mirror metal, studio reflections, slow ripples across the surface\"\n12. Blueprint → \"Make it a blueprint: white line wireframe on a blue grid, dimension callouts, drawn stroke by stroke\"",
+      "promptZh": "1. 黏土动画：“改成黏土动画：带指纹的软黏土、凹凸不平的边缘、每秒 12 帧定格动画”\n2. 像素风：“改成 32x32 像素画：8 色调色板、不做抗锯齿、4 帧待机循环”\n3. 低多边形：“改成低多边形：少于 300 个平面着色面、硬光、粉彩渐变天空”\n4. 动漫：“改成动漫赛璐璐风：两层明暗、粗描边、每个动作都加速度线”\n5. 等距视角：“改成等距微缩场景：30 度机位、漂浮方块上的小世界、柔和阴影”\n6. 体素：“改成体素风：只用 1 单位立方体、倒角边缘、暖色影棚光”\n7. 剪纸：“改成剪纸风：多层卡纸、投影、纸张纹理、抖动的定格动画”\n8. 霓虹：“改成霓虹灯牌：深色砖墙上发光的灯管轮廓、闪烁、泛光”\n9. 孔版印刷：“改成 Risograph 印刷风：橙蓝两色油墨、网点、套色错位”\n10. 水彩：“改成水彩：湿润柔和的边缘、纸张纹理、颜料在边缘堆积”\n11. 液态金属：“改成液态铬：镜面金属、影棚反射、表面缓慢波纹”\n12. 蓝图：“改成蓝图：蓝色网格上的白色线框、尺寸标注、一笔一笔画出来”",
+      "video": "https://x.com/m4lkxx/status/2116893154322284929"
+    },
+    {
+      "kind": "news",
+      "category": "视频",
+      "score": 62,
+      "author": "方知微",
+      "handle": "@superfang119",
+      "url": "https://x.com/superfang119/status/2116912804527526245",
+      "posted": "2026-11-01",
+      "metrics": "3.0 万查看 · 673 赞 · 1002 收藏",
+      "textZh": "开源 ComfyUI 插件 ComfyUI-MiniMaxH3-PrefixStream（github.com/knoic/ComfyUI-MiniMaxH3-PrefixStream），给本地跑的 MiniMax H3 视频模型加“接力生成”：上一段视频的画面和声音作为下一段的上下文，让几十秒到几分钟的长视频人物、动作更连贯。还能把每段结果存进素材箱、从任意历史片段分叉出不同剧情、把长视频切段重绘再拼回去、边生成边写盘。附 42 个节点的示例工作流，不用改 ComfyUI 和模型本身。需要本地显卡，门槛偏高，先收藏了解。"
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "score": 55,
+      "author": "Techniahqrobot",
+      "handle": "@techniahqrobot",
+      "url": "https://x.com/techniahqrobot/status/2116897567833215379",
+      "posted": "2026-11-01",
+      "metrics": "3516 查看 · 55 赞",
+      "textZh": "仓储仿真方向的小动态：作者展示了英伟达 Isaac Sim（机器人仿真软件）里的 PhysicalAI SimReady Warehouse 01 仓库场景，场景里用了真实的机器人模型——宇树 G1 人形机器人、库卡 KR210 和发那科 CRX 机械臂、UR10 协作臂，G1 用 NVIDIA MotionBricks 控制。作者对比说以前用的是 Factory I/O 这类教学仿真软件。学物流工程、对仓库布局仿真或机器人方向感兴趣的，可以了解一下这类现成的仿真场景。"
+    }
+  ]
+}
