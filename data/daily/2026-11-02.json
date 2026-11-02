@@ -1,0 +1,267 @@
+{
+ "type": "daily",
+ "date": "2026-11-02",
+ "headline": "AI 圈安全话题集中：Epoch 与 Wiz 的报告都显示 AI 正在降低攻击门槛；仓储侧，沃尔玛向 Symbotic 追加约 60 亿美元，北美 Q3 机器人订单增 24.8%。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "Epoch AI 实验：开源模型 GLM 5.3 能在补丁空窗期自动攻破 Firefox",
+     "source": "Epoch AI（经 AIHOT 收录）",
+     "published": "2026-10-30",
+     "readMinutes": 8,
+     "summary": "Epoch AI 让开源权重模型 GLM 5.3 从 Mozilla 已发布但未推送给用户的安全修复里反推漏洞，自动写出网页攻击，用户只要打开页面就会被读取本机文件，9 月 17 日至 10 月 26 日的六个 Firefox 版本全部被攻破。环境搭好后每个版本约 1000 美元算力，最快 12 小时完成；同样做法对 Chrome 没成功。原文英文，此处据 AIHOT 收录的全文译本。",
+     "takeaways": [
+      "“补丁空窗期”= 修复代码已公开、但用户还没更新的时间段，AI 让利用这段时间的门槛大幅降低",
+      "成本很具体：搭环境花了超 10 万美元，之后每个版本约 1000 美元",
+      "给 Z.ai 等厂商的防护没拦住——任务包装成安全演练即可绕过",
+      "建议防御方缩短从测试版到正式版的时间，避免一次性补完能被串联利用的多个漏洞"
+     ],
+     "why": "想做 AI 交付或 Agent 项目，必须知道代码类 Agent 的安全边界已经变了；数据和实验设计也适合学习如何读 AI 研究报告。",
+     "url": "https://epochai.substack.com/p/glm-patch-gap-exploit-firefox",
+     "tags": [
+      "报告",
+      "数据"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Wiz：“黑色十月”——九个 AI 开发者平台接连出安全事件",
+     "source": "Wiz（经 AIHOT 收录）",
+     "published": "2026-10-30",
+     "readMinutes": 10,
+     "summary": "Wiz 梳理 10 月内 Fireworks AI、Lightning AI、Railway、Warp、OpenCode 等至少九个平台的安全事件，多起根因是凭据（密钥）被拿到，攻击者专门搜环境变量里授予 AI 访问权的密钥。文中两个被盗密钥案例：其中一把约 30 小时内产生约 80 万次 Bedrock 调用，另一把 13 小时约 170 万次。原文英文，此处据中文译本。",
+     "takeaways": [
+      "LLMJacking（盗用他人 AI 密钥转卖算力）已形成变现产业链",
+      "首次未授权调用都发生在供应商泄露后 30 分钟内，密钥泄露后要立即轮换",
+      "限制密钥可用的区域/配置（如只允许 us.*）确实拦住了一部分滥用",
+      "多数事件仍在调查，技术细节有限"
+     ],
+     "why": "你平时用 Claude 做网站和 Agent，API 密钥放哪、怎么限权是马上能用上的习惯；做 FDE 方向也会被客户问安全问题。",
+     "url": "https://www.wiz.io/blog/black-october-for-ai-developer-platforms",
+     "tags": [
+      "报告",
+      "案例"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Interconnects：我对开源模型与网络安全风险的判断错了吗？",
+     "source": "Interconnects",
+     "published": "2026-10-30",
+     "readMinutes": 12,
+     "summary": "作者 Nathan Lambert 回应对其“开源模型网络风险被夸大”观点的批评：他认为 GLM-5.3 已达到当初描述 Claude Mythos 时所说的能力门槛，但一个多月来并没有公开证据表明发生了质变，更像加速而非阶跃。他把反对者的主张视为可证伪的预测，并认为对方大概率会被证伪。原文英文。",
+     "takeaways": [
+      "“黑色十月”漏洞披露激增，但他判断这是现有趋势加速",
+      "把“开源模型会带来前所未有危害”当作可检验的预测来看",
+      "可与上面 Epoch 的实验对读，看双方证据如何不同"
+     ],
+     "why": "这是理解 AI 安全与开源之争的一篇有论证的观点文，对读者以后判断行业新闻的真假和轻重很有帮助。",
+     "url": "https://www.interconnects.ai/p/was-i-wrong-about-open-models-and",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Agents Prompt People：用 Agent 做跨数天的长周期金融工作",
+     "source": "Latent Space",
+     "published": "2026-10-31",
+     "readMinutes": 15,
+     "summary": "Latent Space 在 AI Engineer 纽约大会上访谈了 AI 原生财富管理公司 Arca 的 AI 工程负责人 Aman Singh。Arca 的 Agent 任务最长可跨十天，期间有多方参与、多次交接，所以自建了记忆系统和定制 harness（Agent 运行框架），最终决策仍由人类顾问做。原文英文，为访谈长文。",
+     "takeaways": [
+      "“长周期”不是一直在跑，而是走走停停、多人交接",
+      "持久记忆与自定义运行框架是长任务 Agent 的关键",
+      "护栏设计：Agent 推动流程，人类拍板"
+     ],
+     "why": "FDE/AI 产品经理要做的正是这类“把 Agent 嵌进真实业务流程”的活，这是难得的一线实践复盘。",
+     "url": "https://latent.space/p/arca/",
+     "tags": [
+      "案例"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "title": "OpenAI 12 月起将 ChatGPT 与 Codex 合并为统一 Token 额度",
+     "source": "AIHOT 整理",
+     "summary": "Plus 和 Pro 用户的聊天与 Codex 用量合并为同一 Token 额度，仅 Instant 聊天不受影响。",
+     "url": "https://aihot.news/items/f6dxzur6d4pwjdhvm1x6m5rfp"
+    },
+    {
+     "title": "Anthropic 将 Max 套餐更名为 Max 与 Ultra，Ultra 认证账号取消 5 小时限制",
+     "source": "AIHOT 整理",
+     "summary": "Max 5x 改称 Max（100 美元/月），Max 20x 改称 Ultra（200 美元/月），新账号验证前暂有限制。",
+     "url": "https://aihot.news/items/pd3dehdyyhzkyrjsw4b6bmcyj"
+    },
+    {
+     "title": "Anthropic S-1 招股书 335 页，含 94 页风险因素",
+     "source": "AIHOT 整理（The Verge 解读）",
+     "summary": "The Verge 解读：招股书一边写“奇迹时代”，一边警告灾难性风险，缺第三季度业绩。",
+     "url": "https://aihot.news/items/vyd3tzicoe478uo8njsr8zt2v"
+    },
+    {
+     "title": "Google 承认 AI Mode 拉低搜索变现，股价单日跌约 15%",
+     "source": "Latent Space",
+     "summary": "Google 称 AI Mode 查询增长因变现较低影响了收入，科技股随之下挫；文中称 OpenAI 以 1.25 万亿美元估值融资。",
+     "url": "https://latent.space/p/ainews-google-admits-ai-mode-hurts-search-revenue-15-500b-drop-worst-since-2004-ipo-ai-bear-market-c/"
+    },
+    {
+     "title": "ChatGPT 账号接管漏洞：沙箱 iframe 经 postMessage 与 YouTube oEmbed 链式突破",
+     "source": "Simon Willison",
+     "summary": "Parameter Labs 披露攻击链，OpenAI 已修复并付 5000 美元赏金。",
+     "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/"
+    },
+    {
+     "title": "Cursor：Claude Code VS Code 扩展被植入恶意软件，最多影响 5000 用户",
+     "source": "AIHOT 整理",
+     "summary": "Cursor 披露一起扩展投毒事件，称最多约 5000 名用户受影响。",
+     "url": "https://aihot.news/items/iu7xvjx1c2c5wqrpn0rwfxcb5"
+    },
+    {
+     "title": "Claude Code 技巧：任务变难时输入 ultrathink 提升推理力度",
+     "source": "AIHOT 整理（Addy Osmani）",
+     "summary": "在 Claude 工作期间输入 ultrathink，可提高当前回合剩余部分的推理努力。",
+     "url": "https://aihot.news/items/mhw3rtr5o13p5777y7el9tczk"
+    },
+    {
+     "title": "阿里千问集成进 Apple 智能，11 月 4 日开放测试",
+     "source": "AIHOT 整理",
+     "summary": "阿里与 Apple 合作，千问将接入 Apple 智能，11 月 4 日起开放测试。",
+     "url": "https://aihot.news/items/cbggw7imkzd4c01ifblroln6v"
+    },
+    {
+     "title": "Sierra 宣布 ARR 突破 4 亿美元，Q3 单季新增超 1.5 亿",
+     "source": "AIHOT 整理",
+     "summary": "客服 Agent 公司 Sierra 披露年化收入突破 4 亿美元。",
+     "url": "https://aihot.news/items/hfhskyex3cjrs3huvpmi1z7bg"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "Walmart 投入约 60 亿美元，把 Symbotic 自动化加到 25 个配送中心",
+     "source": "Automated Warehouse",
+     "published": "2026-10-30",
+     "readMinutes": 4,
+     "summary": "沃尔玛与 Symbotic 扩大合作：沃尔玛初步承诺数年内在多个地点花约 60 亿美元，为 25 个区域配送中心增加 Symbotic 自动化。双方 2017 年起合作，2022 年计划规模曾到 42 个设施。Symbotic 称按 Interact Analysis 是仓储自动化市占第一，今年还收购了 Fox Robotics 等三家公司。原文英文。",
+     "takeaways": [
+      "60 亿美元是“初步承诺、数年内”，不是一次性已落地",
+      "产品线：ASRS（自动存取系统）+ 码垛机器人 + BreakPack 拆零拣选",
+      "Symbotic 通过收购补齐叉车、软件、分拣",
+      "一个客户从单品试点走到端到端合作的路径"
+     ],
+     "why": "你关注北自、今天国际、大福这类系统集成商，Symbotic 是对标案例，能看到头部客户怎样按“系统 + 软件 + 收购”买自动化。",
+     "url": "https://www.automatedwarehouseonline.com/walmart-spend-6b-adding-symbotic-automation-25-distribution-centers/",
+     "tags": [
+      "案例"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "A3：北美 Q3 机器人订单同比增 24.8%，为今年最强季度",
+     "source": "DC Velocity（引 A3 数据）",
+     "published": "2026-10-30",
+     "readMinutes": 4,
+     "summary": "A3 数据显示，北美 Q3 订购 10,989 台机器人、价值 7.235 亿美元，同比分别增长 24.8% 和 26.1%；前三季度累计 28,984 台、约 18.9 亿美元。汽车整车订单转正（+7.5%），汽车零部件增 90.4%，半导体/电子、生命科学等也大幅增长。原文英文。",
+     "takeaways": [
+      "前三季度累计增幅为 9.6%（台数）、13.3%（金额），Q3 明显加速",
+      "增长来自多行业，而非单一行业",
+      "注意数据范围是北美工业机器人订单，不等于仓储物流"
+     ],
+     "why": "写考研或面试时需要行业景气的真实数据，这篇给了可引用的数字，也提醒区分工业机器人和仓储机器人。",
+     "url": "https://www.dcvelocity.com/material-handling/robotics/north-american-robot-orders-increased-24-8-in-third-quarter",
+     "tags": [
+      "数据"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "物理 AI 为什么是下一个高增长赛道",
+     "source": "The Robot Report",
+     "published": "2026-11-01",
+     "readMinutes": 6,
+     "summary": "作者用创业融资数据判断趋势：PitchBook 称 2025 年机器人与物理 AI 初创公司融资创纪录的 276 亿美元、1009 笔，是上年两倍多。文章把物理 AI 定义为能感知、理解空间、决策并行动的系统，并列出多模态感知、边缘计算、仿真、机器人基础模型、世界模型等技术的同时成熟。原文英文，偏观点。",
+     "takeaways": [
+      "融资数据：276 亿美元 / 1009 笔（PitchBook，2025）",
+      "物理 AI = 感知 + 空间理解 + 决策 + 行动的闭环",
+      "创业热度被视作 3–5 年的行业领先指标（作者观点）"
+     ],
+     "why": "帮你建立“机器人 + AI”的大图景，选考研方向（机械·机器人 vs 物流工程）和实习时可作参考；注意这是作者观点而非严谨研究。",
+     "url": "https://www.therobotreport.com/why-physical-ai-next-lucrative-frontier/",
+     "tags": [
+      "观点",
+      "数据"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "title": "Jungheinrich 与 Automha 合作推出双向托盘穿梭车 UP-Carrier GTJ",
+     "source": "Robotics & Automation News",
+     "summary": "面向存量仓库的高密度托盘存储入门方案，初期叉车搬运，后续可升级到自动化。",
+     "url": "https://roboticsandautomationnews.com/2026/10/30/jungheinrich-and-automha-enter-strategic-partnership-for-the-gradual-automation-of-existing-warehouses/106507/",
+     "why": "可看作“存量仓库渐进自动化”的做法。"
+    },
+    {
+     "title": "10 月制造业 PMI 49.3%，较上月降 0.8 个百分点",
+     "source": "国家统计局",
+     "summary": "生产指数 49.8%、新订单 49.4%；铁路、水上运输、邮政等行业商务活动指数在 55% 以上。",
+     "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261031_1965718.html"
+    },
+    {
+     "title": "CBRE：美国工业地产 Q3 净吸纳 1.046 亿平方英尺，为 2022 年 Q4 以来最高",
+     "source": "MH&L",
+     "summary": "空置率同比降 20 个基点到 6.4%，租赁活动同比增 27.1%。",
+     "url": "https://www.mhlnews.com/warehousing/news/55415003/industrial-demand-accelerates-in-q3"
+    },
+    {
+     "title": "Agility 预计通过 SPAC 融资约 4.65 亿美元，11 月 4 日拟完成",
+     "source": "The Robot Report",
+     "summary": "低于 6 月宣布时预计的 6.2 亿美元（估值 25 亿美元）；人形机器人 Digit 面向商用。",
+     "url": "https://www.therobotreport.com/humanoid-developer-agility-now-expects-raise-465m-spac-deal/"
+    },
+    {
+     "title": "Walmart 计划投资 4 亿美元建德州配送中心",
+     "source": "Supply Chain Dive",
+     "summary": "沃尔玛规划新的德克萨斯配送中心，投资约 4 亿美元。",
+     "url": "https://www.supplychaindive.com/news/walmart-plans-400m-texas-distribution-center/873218/"
+    },
+    {
+     "title": "UPS 计划使客户端 RFID 标签包裹量翻倍",
+     "source": "Supply Chain Dive",
+     "summary": "UPS 目标是把来自客户场地的 RFID 标签包裹量提高一倍。",
+     "url": "https://www.supplychaindive.com/news/ups-aims-to-double-rfid-labeled-volume-from-customer-locations/872946/"
+    },
+    {
+     "title": "货主运输成本创五年新高，货运需求停滞",
+     "source": "DC Velocity",
+     "summary": "货主成本升至五年高位，而货运需求没有起色。",
+     "url": "https://www.dcvelocity.com/transportation/trucking/shipper-costs-hit-five-year-high-as-freight-demand-stalls"
+    },
+    {
+     "title": "Humanoid 扩大与 Nvidia 合作，为下一代人形机器人供能",
+     "source": "Robotics & Automation News",
+     "summary": "人形机器人公司 Humanoid 与 Nvidia 深化合作。",
+     "url": "https://roboticsandautomationnews.com/2026/10/30/humanoid-expands-collaboration-with-nvidia-to-power-its-next-generation-of-humanoid-robots/106493/"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "Epoch AI、Import AI 两个信源抓取失败（HTTP 403）；Epoch 文章通过 AIHOT 收录的全文阅读，链接为其原文。",
+  "今天（周一）按 72 小时范围筛选。",
+  "WebSearch 未发现确切的新模型发布；Epoch 文中提到 Kimi K3.1 Pro 权重预计 11 月初发布，未核实。",
+  "中文信源和北自/今天国际/极智嘉/海康的动态本期没有符合条件的新内容；Wiz、Epoch 等引用文为 AIHOT 提供的中文译本，Verge 条目仅有 AIHOT 摘要故放速览。"
+ ]
+}
