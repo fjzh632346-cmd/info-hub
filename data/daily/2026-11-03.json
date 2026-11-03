@@ -1,0 +1,214 @@
+{
+  "type": "daily",
+  "date": "2026-11-03",
+  "headline": "Anthropic 更新招股书显示营收暴增但转亏，沃尔玛向 Symbotic 追加 60 亿美元仓库自动化承诺。",
+  "sections": [
+    {
+      "key": "ai",
+      "title": "AI",
+      "items": [
+        {
+          "pick": true,
+          "title": "Legora CTO 访谈：看不到客户数据时，怎么做和测试法律智能体",
+          "source": "Latent Space",
+          "published": "2026-11-02",
+          "readMinutes": 30,
+          "summary": "法律 AI 公司 Legora（估值 88 亿美元，ARR 即年度经常性收入已超 1 亿美元，客户 1800+）的 CTO 讲如何做能起草 Word、一次审万份合同的 Agent。因为数据属于律所客户，团队看不到任何 trace（运行轨迹），只能由 3 名工程师 + 3 名律师搭建仿真测试环境来评测。原文为英文播客文字稿。",
+          "takeaways": [
+            "看不到用户数据时，用“按客户工作场景建模的测试世界”做评测，思路类似强化学习的 environment",
+            "一个引用准确率任务从 70% 升到 99%，是模型换代带来的，团队什么都没改——说明要给模型升级留空间",
+            "Legora 估计模型已能做好约 60% 的法律工作，其余需要更强模型",
+            "访谈涉及法务工程师与 FDE（驻场交付工程师）如何分工，以及按小时计费模式受到冲击"
+          ],
+          "why": "你关注 FDE 和 AI 产品经理，这篇是一家高速增长的垂直 Agent 公司内部如何评测、交付、分工的一手讲述；原文英文，可先看节目摘要部分。",
+          "url": "https://latent.space/p/building-ai-for-lawyers-jacob-lauritzen-cto-of-legora/",
+          "tags": [
+            "观点",
+            "案例"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "pick": true,
+          "title": "OpenAI：用“激活分类器”给最强模型加一层实时安全监控",
+          "source": "OpenAI Alignment 博客",
+          "published": "2026-11-02",
+          "readMinutes": 20,
+          "summary": "OpenAI 自 GPT-5.6 起在最强模型的内外部流量上部署 probes（探针，即读取模型内部激活值的轻量分类器），逐 token 打分，可在生成中途拦截违规回复和工具调用。实验称探针比大得多的文本分类器更抗越狱，且效率更高。局限：只能检测可明确训练的已知违规，新基础模型要重新训练。原文英文，数据为 OpenAI 内部实验。",
+          "takeaways": [
+            "探针支持流式拦截，不用等整段回答生成完",
+            "架构是 MLP + QV-attention，并用指数移动平均降低流式状态内存",
+            "准确率随模型能力提升，在后训练各检查点间迁移较好",
+            "局限：依赖标注数据，换基础模型需重训"
+          ],
+          "why": "想做 Agent 的人迟早会遇到安全护栏设计；这篇给出了大厂生产环境里“纵深防御”的具体做法，可对比自己做项目时只靠文本过滤的方案。",
+          "url": "https://alignment.openai.com/training-activation-classifiers/",
+          "tags": [
+            "报告"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "pick": true,
+          "title": "a16z：AI 应用公司靠什么收取溢价",
+          "source": "a16z",
+          "published": "2026-11-02",
+          "readMinutes": 10,
+          "summary": "文章讨论推理成本下降和模型变强后，AI 应用的哪些部分容易被通用模型替代，客户到底还愿意为什么付费。作者认为领域专长、深度集成、可靠执行和难获取的上下文是可定价的护城河，并以 Repsol 法务团队盲测 Harvey、Copilot 和自研原型为例（Harvey 在 50 名律师、8 周试点中表现最好）。原文英文，投资机构视角。",
+          "takeaways": [
+            "判断易替代性：客户能否用通用模型低成本复现核心输出",
+            "四类可定价能力：领域专长、集成、可靠执行、独占上下文",
+            "build-vs-buy 测试可以用盲测加试点来做"
+          ],
+          "why": "做 AI 产品经理方向的求职准备时，可以用这套框架分析任何 AI 产品“凭什么收费”。",
+          "url": "https://www.a16z.news/p/how-ai-applications-earn-their-premium",
+          "tags": [
+            "观点"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "title": "Anthropic 更新招股书：季度营收近 170 亿美元，却转为经营亏损",
+          "source": "The Decoder（引 Bloomberg 等）",
+          "summary": "Q3 营收约为去年同期 12 倍，成本 175 亿美元，净亏损 233 亿美元；算力承诺总额约 8950 亿美元。",
+          "url": "https://the-decoder.com/anthropic-grows-revenue-twelvefold-but-posts-23-billion-loss/"
+        },
+        {
+          "title": "Claude Platform 推出 message threads 公测",
+          "source": "Anthropic",
+          "summary": "长会话智能体每轮只发新增消息，50 万–100 万 token 请求首 token 延迟中位数降约 35%，token 计费不变。",
+          "url": "https://claude.com/blog/message-threads"
+        },
+        {
+          "title": "腾讯混元发布 Hyra 2.0 科研 Agent",
+          "source": "AIHOT 整理",
+          "summary": "把自动化科研重点从直接解题转向由 Agent 研发科学工具，采用三层分工，成果已开源。",
+          "url": "https://aihot.news/items/l37ydaic43icz85huclc2io6c"
+        },
+        {
+          "title": "OpenAI 推出 Grid Protectors 计划",
+          "source": "OpenAI",
+          "summary": "未来算力园区在电网紧张时主动降低用电，首站为 Georgia 的 Effingham County 校园。",
+          "url": "https://openai.com/index/grid-protectors-program"
+        },
+        {
+          "title": "OpenAI 任命前美国陆军部长 Dan Driscoll 为国家安全顾问",
+          "source": "OpenAI",
+          "summary": "新设国家安全现代化高级顾问，就 AI 加强国家与网络安全提供建议。",
+          "url": "https://openai.com/index/dan-driscoll-joins-openai"
+        },
+        {
+          "title": "Simon Willison：美国人口普查局 AI 采用率数据与“超级智能”行政令",
+          "source": "Simon Willison",
+          "summary": "他用最新 BTOS 调查数据重做大企业 AI 采用率图，并发现调查口径变化与行政令有关。",
+          "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/"
+        },
+        {
+          "title": "数字生命卡兹克：DeepSeek Harness 养鱼教程",
+          "source": "AIHOT 整理",
+          "summary": "教你在 QQ、微信、飞书接入 DeepSeek Harness 智能体，并让它在 B 站、抖音活动。",
+          "url": "https://aihot.news/items/v41vn9hb5ywv10e68wycj1bjk"
+        }
+      ]
+    },
+    {
+      "key": "wh",
+      "title": "仓储物流自动化",
+      "items": [
+        {
+          "pick": true,
+          "title": "Exotec 调研“机器人后悔”：四分之一决策者希望当初选了别的自动化方案",
+          "source": "Supply Chain 24/7",
+          "published": "2026-11-02",
+          "readMinutes": 6,
+          "summary": "Exotec 调查 250 位美加供应链决策者：25% 后悔自动化选择，94% 认为更换供应商代价过高，65% 称总拥有成本超预期，而 69% 承认投资前没算全生命周期成本。大企业（营收超 10 亿美元）不满意比例 21%，高于小企业 13%。原文英文，Exotec 是仓储机器人厂商，倾向“单一供应商负责整体性能”。",
+          "takeaways": [
+            "后悔多源于买前：成本测算不全、出问题责任不清",
+            "多厂商系统“不像一个整体运行”是主要痛点",
+            "全生命周期成本（TCO，即总拥有成本）应在立项时就算"
+          ],
+          "why": "物流工程方向的项目选型、方案评估正是这类问题；样本和结论带厂商立场，读时注意。",
+          "url": "https://www.supplychain247.com/article/warehouse-automation-regret-exotec-report",
+          "tags": [
+            "报告",
+            "数据"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "pick": true,
+          "title": "买机器人只是第一步：仓库现代化需要重新设计运营模式",
+          "source": "Logistics Viewpoints",
+          "published": "2026-11-02",
+          "readMinutes": 8,
+          "summary": "文章指出 AS/RS（自动化立体库）、AMR（自主移动机器人）、机器人拣选和新软件往往叠加在为人工作业设计的流程、人员结构和决策方式上，导致技术跑在运营模式前面。核心问题不再是“买哪种技术”，而是人、软件、自动化协同作业时运营本身如何改变。原文英文。",
+          "takeaways": [
+            "仓库最初围绕“人的移动”设计，自动化后流程要重构",
+            "技术分点引入易形成孤岛，需要整体运营设计",
+            "评价现代化应看运营模式，而非设备清单"
+          ],
+          "why": "对仓储规划与系统设计课程和就业面试都是可用的分析视角。",
+          "url": "https://logisticsviewpoints.com/2026/11/02/buying-the-robots-is-the-easy-part-why-warehouse-modernization-requires-an-operating-model-rethink/",
+          "tags": [
+            "观点"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "title": "沃尔玛向 Symbotic 追加承诺 60 亿美元",
+          "source": "Supply Chain Dive",
+          "summary": "沃尔玛将在 25 个美国区域配送中心部署 Symbotic 自动化，另投 1.25 亿美元研发货架技术。",
+          "url": "https://www.supplychaindive.com/news/walmart-commits-6b-to-up-distribution-center-automation-with-symbotic/873356/"
+        },
+        {
+          "title": "ISO 21423:2026 发布：不同厂商移动机器人互联互通",
+          "source": "Robotics & Automation News",
+          "summary": "新国际标准规定工业移动机器人与车队管理系统如何交换位置、状态、任务信息。",
+          "url": "https://roboticsandautomationnews.com/2026/11/02/new-iso-standard-enables-mobile-robots-from-different-vendors-to-work-together/106635/"
+        },
+        {
+          "title": "Agility 人形机器人 Digit 扩展到 GXO 两个新仓",
+          "source": "Robotics & Automation News",
+          "summary": "Digit 在 GXO 佐治亚仓已搬运超 10 万个料箱；新增两仓 2027 初启用，潜在客户超 30 家。",
+          "url": "https://roboticsandautomationnews.com/2026/11/02/agility-robotics-says-more-than-30-companies-considering-digit-humanoid-robot/106595/"
+        },
+        {
+          "title": "北美 2026 年 Q3 机器人订单同比增 25%",
+          "source": "Robotics & Automation News",
+          "summary": "A3 数据：Q3 订单 10989 台、7.235 亿美元，前三季度累计 28984 台，台数同比增 9.6%。",
+          "url": "https://roboticsandautomationnews.com/2026/11/02/north-american-robot-orders-increase-25-percent-in-third-quarter-of-2026/106606/"
+        },
+        {
+          "title": "Tutor Intelligence 完成 7500 万美元 B 轮",
+          "source": "The Robot Report",
+          "summary": "MIT 孵化的通用机器人公司，用真实数据、人工“导师”和仿真训练模型，称机器人产能跟不上需求。",
+          "url": "https://www.therobotreport.com/tutor-intelligence-raises-series-b-to-scale-model-training-robot-deployments/"
+        },
+        {
+          "title": "2026 年 10 月仓储自动化十大热门报道",
+          "source": "Automated Warehouse",
+          "summary": "含 Symbotic 收购 cellumation、Maven Robotics 移动操作机器人量产案例等。",
+          "url": "https://www.automatedwarehouseonline.com/top-10-automated-warehouse-stories-october-2026/"
+        },
+        {
+          "title": "Foundry Robotics 融资 1 亿美元建自主工厂",
+          "source": "DC Velocity",
+          "summary": "以物理 AI 机器人单元提供柔性装配产能，面向国防和工业硬件。",
+          "url": "https://www.dcvelocity.com/logistics/manufacturing/foundry-robotics-raises-100-million-for-its-autonomous-factory"
+        },
+        {
+          "title": "评论：机器人判断出错时，操作员能否提出质疑",
+          "source": "Robotics & Automation News",
+          "summary": "讨论自动化上线前应测试员工与系统意见相左时的升级流程；引 IFR 数据：2025 年全球工业机器人存量超 500 万台。",
+          "url": "https://roboticsandautomationnews.com/2026/11/02/opinion-what-happens-when-the-robot-is-wrong/106641/"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "信源抓取状态均为 ok，无失败；AIHOT 接口正常。",
+    "今日仓储方向一手中文信源（北自、今天国际、极智嘉、海康）无更新，精读仅 2 条，不凑数。",
+    "WebSearch 未发现 11 月 2–3 日的重大新模型发布；OpenAI 部分原文 excerpt 为空，仅依据 AIHOT 提供的正文和标题。",
+    "Walmart/Symbotic 一条已用 WebFetch 核实原文。"
+  ]
+}
