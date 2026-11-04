@@ -1,0 +1,105 @@
+{
+  "type": "x",
+  "date": "2026-11-04",
+  "items": [
+    {
+      "kind": "news",
+      "category": "编程",
+      "score": 88,
+      "author": "数字生命卡兹克",
+      "handle": "@Khazix0918",
+      "url": "https://x.com/Khazix0918/status/2117776745688646139",
+      "posted": "2026-11-04",
+      "metrics": "17 万查看 · 873 赞 · 1604 收藏",
+      "textZh": "卡兹克把自己用了一年的“Agent 自动化系统”重写后开源，叫 Agent-Autoloop（github.com/KKKKhazix/agent-autoloop）。思路是：任何事（定时、GitHub 有人提 Issue、系统报错）都先变成一条统一格式的“事件”，交给一个约 1600 行、无第三方依赖的 Node 小内核，内核按 rules.json 决定派给哪个 Agent（Claude Code、Codex 等都行）去哪个目录干活；能自己搞定的自动做完，删数据、花钱、对外发消息这类要人拍板的，就发飞书卡片等你点。文中用白话讲了四个防坑设计：等人回复时直接存档不耗 Token；像银行账本一样只追加记录，断网重试也不会重复执行；把外部人写的内容和给 Agent 的指令分开放，防“提示词注入”（别人在文字里夹带命令骗 AI）；Agent 互相叫醒超过 8 层自动停，防死循环烧钱。想自己搭自动化 Agent 的话，这是一篇很好的中文架构范例。"
+    },
+    {
+      "kind": "news",
+      "category": "研究",
+      "score": 82,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2117706197797114009",
+      "posted": "2026-11-04",
+      "metrics": "2.3 万查看 · 212 赞 · 268 收藏",
+      "textZh": "宝玉解读了一篇 arXiv 论文：让 Claude Code（Opus 5.5）每次修完代码后用 /retro Skill 自我复盘、改自己的工作说明（CLAUDE.md、Skill 文件），到底有没有用。作者在 SWE-bench 的 30 道真实修 bug 题上得到 125 条建议，挑 12 项实测：有参考意义的 7 次里只有 2 项彻底解决了问题（比如写明“这个项目用 bin/test 跑测试、没装 pytest”）；有的改动反而让 AI 在无关任务上多做检查，耗时从 82 秒涨到 245 秒，成功率看不出提高。结论：项目通用的信息（用什么命令跑测试）值得记下来；只对某一次任务成立的信息，换个任务就不准，还可能添乱。对自己写 CLAUDE.md、Skill 很有参考价值。"
+    },
+    {
+      "kind": "news",
+      "category": "视频",
+      "score": 78,
+      "author": "饭饭猛猛炫、",
+      "handle": "@ganfanren_ai",
+      "url": "https://x.com/ganfanren_ai/status/2117595672497291411",
+      "posted": "2026-11-03",
+      "metrics": "2 万查看 · 496 赞 · 726 收藏",
+      "textZh": "介绍开源工具 rea-video（github.com/JuneYaooo/rea-video）：给 Claude Code、Codex 用的“视频逆向”工具，把一条成片逐个镜头拆开，判断每个镜头是实拍、AI 生成还是代码做的动效，反推提示词、运镜、剪辑节奏、字幕和音效，最后给一份复刻方案。例子：一条 70 秒宣传片 83% 是代码动效，用 Remotion（用代码做视频的工具）就能做，不用买视频模型额度。用法是在 Claude Code 里说“安装这个仓库，然后拆解这条视频：路径”，电脑需要 ffmpeg 和 Python 3.10+。注意：准确率是作者自测的；仓库没有开源许可证，自学可以，商用要先问作者。"
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "score": 76,
+      "author": "a16z",
+      "handle": "@a16z",
+      "url": "https://x.com/a16z/status/2117703434459812031",
+      "posted": "2026-11-04",
+      "metrics": "2.4 万查看 · 88 赞",
+      "textZh": "a16z 领投机器人公司 Tutor Intelligence 7500 万美元 B 轮。这家公司按小时出租机器人，在美国 20 个州的工厂和仓库里干真实班次，累计参与生产和发货超过 2.5 亿件商品；机器人卡住时由远程的人类“导师”接管指导，这些操作就成了训练数据，让整个机队变聪明。团队 160 人，自己造机器人、训练模型，机队规模比去年涨了 4 倍。和仓储物流自动化方向直接相关：代表了“机器人即服务 + 远程人工兜底”这条落地路线。"
+    },
+    {
+      "kind": "news",
+      "category": "研究",
+      "score": 70,
+      "author": "Daniel van Strien",
+      "handle": "@vanstriendaniel",
+      "url": "https://x.com/vanstriendaniel/status/2117661605336928668",
+      "posted": "2026-11-04",
+      "metrics": "4 万查看 · 910 赞 · 535 收藏",
+      "textZh": "Hugging Face 的工程师让 Claude Opus 去修一个 OCR（图片转文字）小模型“卡在循环里一直输出点点点”的毛病，方法不是重新训练，而是直接改模型权重：只改了 0.0085% 的参数，模型就能正常读出一页 1881 年的文献，而不是输出 1.6 万个点。他给的提示词大意是“读这篇、找个小 OCR 模型、修好重复循环，最多花 5 小时和 100 美元算力”，实际不到 3 小时、约 10 美元。它引用的是 MIT 学生用 GPT-6 Astra 改 Qwen 小模型权重提升数学能力的“权重空间编程”实验。属于早期有趣尝试，不是成熟方法。"
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "score": 68,
+      "author": "OpenAI",
+      "handle": "@OpenAI",
+      "url": "https://x.com/OpenAI/status/2117692475775258785",
+      "posted": "2026-11-04",
+      "metrics": "94.7 万查看 · 6787 赞",
+      "textZh": "OpenAI 发文介绍 ChatGPT 和 Codex 在机械设计、电子工程、仿真等“物理世界”工程上的进展，包括帮自家硬件团队加快迭代、和行业伙伴试新流程。同一串帖子里举例：两名员工业余时间用 GPT-6 Astra 在不到一周内设计出一个和 Codex 对话的原型设备，外壳、电路板、界面和软件都由 AI 设计，但真正投产还需要多轮人工审核和修改。属于厂商自己的说法。"
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "score": 62,
+      "author": "歸藏",
+      "handle": "@op7418",
+      "url": "https://x.com/op7418/status/2117804545829171299",
+      "posted": "2026-11-04",
+      "metrics": "2.3 万查看 · 89 赞",
+      "textZh": "苹果推出 App Intents 更新，所有开发者都可以把自己 App 的功能开放给 Siri AI 调用，比如打车后让 Siri 改上车点、把购物 App 里收藏的商品发给聊天软件里的朋友。Siri 还内置了一个 Agent Skill 格式的子集：先读 Skill 判断是否匹配请求，再按 Skill 里写的能做/不能做去操作。iOS 27.3 测试版开始可测。歸藏提到，之前国内超级应用大多拒绝豆包手机助手自动操作，这次要看它们怎么应对 Siri。"
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "score": 55,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2117739064455463086",
+      "posted": "2026-11-04",
+      "metrics": "13.1 万查看 · 391 赞",
+      "textZh": "Claude Code 和 Cowork 的产品负责人 Cat Wu 离开 Anthropic，她本人在 X 上说上周五是最后一天，没有说原因和去向。她早年在 Scale AI、Dagster 做工程师，后来在风投 Index Ventures，2024 年 8 月加入 Anthropic。"
+    },
+    {
+      "kind": "opinion",
+      "category": "研究",
+      "score": 50,
+      "author": "Ethan Mollick",
+      "handle": "@emollick",
+      "url": "https://x.com/emollick/status/2117659011373756509",
+      "posted": "2026-11-04",
+      "metrics": "2.6 万查看 · 275 赞",
+      "textZh": "沃顿商学院教授 Mollick 认为：学术界还在争论该不该用 AI 审稿，但你可以自己验证一下——把自己的一篇论文交给 GPT-6 Pro 或 Opus 5.5（高推理强度），让它给出有实质内容的修改意见，会发现用得好的话它相当有洞见。对写课程论文、毕业设计也适用：让 AI 当挑刺的审稿人，而不是代写。"
+    }
+  ]
+}
