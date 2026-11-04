@@ -1,13 +1,19 @@
 {
- "fetchedAt": "2026-11-03T17:52:00.159Z",
+ "fetchedAt": "2026-11-04T02:23:55.879Z",
  "hours": 72,
  "status": [
+  {
+   "source": "Epoch AI",
+   "feed": "https://epochai.substack.com/feed",
+   "ok": false,
+   "error": "HTTP 403"
+  },
   {
    "source": "OpenAI",
    "feed": "https://openai.com/news/rss.xml",
    "ok": true,
-   "total": 1349,
-   "recent": 8
+   "total": 1354,
+   "recent": 11
   },
   {
    "source": "a16z",
@@ -15,12 +21,6 @@
    "ok": true,
    "total": 20,
    "recent": 4
-  },
-  {
-   "source": "Epoch AI",
-   "feed": "https://epochai.substack.com/feed",
-   "ok": false,
-   "error": "HTTP 403"
   },
   {
    "source": "Hugging Face",
@@ -34,6 +34,20 @@
    "feed": "https://importai.substack.com/feed",
    "ok": false,
    "error": "HTTP 403"
+  },
+  {
+   "source": "Google DeepMind",
+   "feed": "https://deepmind.google/blog/rss.xml",
+   "ok": true,
+   "total": 100,
+   "recent": 1
+  },
+  {
+   "source": "Simon Willison",
+   "feed": "https://simonwillison.net/atom/everything/",
+   "ok": true,
+   "total": 30,
+   "recent": 7
   },
   {
    "source": "Google AI",
@@ -50,29 +64,8 @@
    "recent": 0
   },
   {
-   "source": "Google DeepMind",
-   "feed": "https://deepmind.google/blog/rss.xml",
-   "ok": true,
-   "total": 100,
-   "recent": 1
-  },
-  {
-   "source": "Simon Willison",
-   "feed": "https://simonwillison.net/atom/everything/",
-   "ok": true,
-   "total": 30,
-   "recent": 9
-  },
-  {
    "source": "Interconnects",
    "feed": "https://www.interconnects.ai/feed",
-   "ok": true,
-   "total": 20,
-   "recent": 0
-  },
-  {
-   "source": "Benedict Evans",
-   "feed": "https://www.ben-evans.com/benedictevans/?format=rss",
    "ok": true,
    "total": 20,
    "recent": 0
@@ -85,10 +78,30 @@
    "recent": 3
   },
   {
+   "source": "BestBlogs 每日早报",
+   "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
+   "ok": true,
+   "total": 6,
+   "recent": 3
+  },
+  {
    "source": "Sequoia",
    "feed": "https://www.sequoiacap.com/feed/",
    "ok": true,
    "total": 50,
+   "recent": 1
+  },
+  {
+   "source": "Symbotic IR",
+   "feed": "https://ir.symbotic.com/rss/news-releases.xml",
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  {
+   "source": "Benedict Evans",
+   "feed": "https://www.ben-evans.com/benedictevans/?format=rss",
+   "ok": true,
+   "total": 20,
    "recent": 0
   },
   {
@@ -99,11 +112,11 @@
    "recent": 0
   },
   {
-   "source": "BestBlogs 每日早报",
-   "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
+   "source": "Symbotic",
+   "feed": "https://www.symbotic.com/feed/",
    "ok": true,
-   "total": 6,
-   "recent": 3
+   "total": 10,
+   "recent": 0
   },
   {
    "source": "大福（日文）",
@@ -120,25 +133,6 @@
    "recent": 0
   },
   {
-   "source": "Symbotic IR",
-   "feed": "https://ir.symbotic.com/rss/news-releases.xml",
-   "ok": false,
-   "error": "HTTP 403"
-  },
-  {
-   "source": "Symbotic",
-   "feed": "https://www.symbotic.com/feed/",
-   "ok": true,
-   "total": 10,
-   "recent": 0
-  },
-  {
-   "source": "Interact Analysis",
-   "feed": "https://www.interactanalysis.com/feed/",
-   "ok": false,
-   "error": "fetch failed"
-  },
-  {
    "source": "Georgia Tech SCL",
    "feed": "https://www.scl.gatech.edu/rss.xml",
    "ok": true,
@@ -153,11 +147,24 @@
    "recent": 3
   },
   {
+   "source": "Interact Analysis",
+   "feed": "https://www.interactanalysis.com/feed/",
+   "ok": false,
+   "error": "fetch failed"
+  },
+  {
    "source": "Logistics Viewpoints",
    "feed": "https://logisticsviewpoints.com/feed/",
    "ok": true,
    "total": 10,
-   "recent": 6
+   "recent": 8
+  },
+  {
+   "source": "DC Velocity",
+   "feed": "https://www.dcvelocity.com/rss",
+   "ok": true,
+   "total": 30,
+   "recent": 9
   },
   {
    "source": "MH&L",
@@ -167,25 +174,18 @@
    "recent": 2
   },
   {
-   "source": "DC Velocity",
-   "feed": "https://www.dcvelocity.com/rss",
+   "source": "The Robot Report 物流",
+   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
    "ok": true,
-   "total": 30,
-   "recent": 8
+   "total": 15,
+   "recent": 4
   },
   {
    "source": "Supply Chain 24/7 自动化",
    "feed": "https://feeds.feedburner.com/sc247/rss/automation",
    "ok": true,
    "total": 20,
-   "recent": 2
-  },
-  {
-   "source": "The Robot Report 物流",
-   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
-   "ok": true,
-   "total": 15,
-   "recent": 4
+   "recent": 3
   },
   {
    "source": "Supply Chain Dive",
@@ -201,11 +201,11 @@
    "error": "HTTP 410"
   },
   {
-   "source": "AIHOT",
-   "feed": "https://aihot.news/rss",
+   "source": "Robotics & Automation News",
+   "feed": "https://roboticsandautomationnews.com/feed/",
    "ok": true,
-   "total": 50,
-   "recent": 18
+   "total": 15,
+   "recent": 15
   },
   {
    "source": "36氪快讯",
@@ -215,11 +215,11 @@
    "recent": 0
   },
   {
-   "source": "Robotics & Automation News",
-   "feed": "https://roboticsandautomationnews.com/feed/",
+   "source": "AIHOT",
+   "feed": "https://aihot.news/rss",
    "ok": true,
-   "total": 15,
-   "recent": 15
+   "total": 50,
+   "recent": 20
   },
   {
    "source": "国家统计局",
@@ -229,6 +229,78 @@
   }
  ],
  "items": [
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "卡兹克开源折腾一年的 Agent 自动化系统 Agent-Autoloop",
+   "url": "https://aihot.news/items/y0cgwl79wbih8c50svgmit93j",
+   "published": "2026-11-04T00:19:00.000Z",
+   "description": "作者开源其打磨一年的 Agent 自动化系统 Agent-Autoloop，地址为 https://github.com/KKKKhazix/agent-autoloop。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y0cgwl79wbih8c50svgmit93j",
+   "excerpt": "作者开源其打磨一年的 Agent 自动化系统 Agent-Autoloop，地址为 https://github.com/KKKKhazix/agent-autoloop。\n作者开源了自己打磨一年的 Agent 自动化系统，并讲清了内核四个机制的设计来源和踩坑原因，读者可以直接拿去部署或魔改。\n作者开源了自己打磨一年的 Agent 自动化系统，并讲清了内核四个机制的设计来源和踩坑原因，读者可以直接拿去部署或魔改。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "AMD 发布 2026 年三季度财报，预计 2027 年营收增长超 80%",
+   "url": "https://aihot.news/items/ir9nzccipff0uowu3tghi4n3o",
+   "published": "2026-11-03T23:14:06.000Z",
+   "description": "AMD 公布 2026 年三季度财报，预计 2027 年营收增长超 80%，高于分析师建模的 77%，CEO Lisa Su 称数据中心芯片将占明年销售额的 80%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ir9nzccipff0uowu3tghi4n3o",
+   "excerpt": "AMD 公布 2026 年三季度财报，预计 2027 年营收增长超 80%，高于分析师建模的 77%，CEO Lisa Su 称数据中心芯片将占明年销售额的 80%。\n财报数据具体完整，可据此了解数据中心芯片在 AMD 2027 年增长预期中的占比和 Meta 等客户订单规模。\nAMD 公布了其 2026 年第三季度财报，目前预计 2027 年营收将增长超过 80%，高于分析师此前预测的 77%。\n数据中心芯片是这一预测的主要驱动力，CEO 苏姿丰向分析师表示，该类芯片将占明年销售额的 80%。\n该业务板块已经支撑了第三季度业绩，受 Instinct GPU 和 EPYC 服务器处理器需求推动，营收跃升 97%，达到创纪录的 85.5 亿美元。\n季度营收增长 45%，达到 133.8 亿美元，而 PC 和游戏主机芯片销售额下降 8%，至 37.2 亿美元。\nAMD 预计第四季度营收约为 170 亿美元，上下浮动 3%，因 Helios 的产能正在爬坡——Helios 是一种将 MI455X 加速器与“Venice”CPU 配对的机架。\nMeta 正在测试首批 Helios 系统，这是 2 月达成的一项协议的一部分，该协议将在五年内购买最多 600 亿美元的 AMD AI 芯片。\n财报数据具体完整，可据此了解数据中心芯片在 AMD 2027 年增长预期中的占比和 Meta 等客户订单规模。"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Preparing for the HIPAA Security Rule Update Before it is Final",
+   "url": "https://roboticsandautomationnews.com/2026/11/03/hipaa-security-rule-update-readiness/106691/",
+   "published": "2026-11-03T23:07:23.000Z",
+   "description": "Most healthcare security teams have spent close to two years hearing that a major rewrite of the HIPAA Security Rule is on its way, and many have reacted in one of two ways. Some paused large security investments until the final text appears, on the reasoning that there is no point building to a draft. […]",
+   "excerpt": "Most healthcare security teams have spent close to two years hearing that a major rewrite of the HIPAA Security Rule is on its way, and many have reacted in one of two ways.\nSome paused large security investments until the final text appears, on the reasoning that there is no point building to a draft. Others started rewriting policies line by line against the proposal, as though it were already law.\nNeither approach holds up well, because the proposal is still unsettled in its details while much of what it describes is work that a regulated organization should be doing under the current rule anyway.\nThe more useful question is which parts of the proposal are worth acting on now and which parts can safely wait for the final version.\nThe Office for Civil Rights at the Department of Health and Human Services issued its notice of proposed rulemaking in late December 2024, and it was published in the Federal Register on 6 January 2025.\nThe comment period closed on 7 March 2025, after the department had received thousands of comments, a large share of them from providers and industry groups concerned about cost and implementation timelines.\nThe rulemaking was originally expected to reach a final rule in May 2026, but the most recent federal regulatory agenda moved it to the long-term actions list and now projects final action no earlier than July 2027.\nIn the meantime, the existing Security Rule remains fully in force and enforceable. Every covered entity and business associate is still required to conduct an accurate and thorough risk analysis, implement safeguards that address the risks it finds, and document what it has done. That obligation is the starting point for any sensible readiness plan.\nThe proposal is the most significant revision of the Security Rule since it was first written, and its central change is structural.\nToday, many implementation specifications are labeled addressable, which allows an organization to adopt an alternative measure or document why a specification is not reasonable for its environment. The proposal would remove that distinction and make nearly all specifications required, with only narrow exceptions.\nSeveral new and more specific obligations would follow from that shift. Regulated entities would need written documentation of all security policies, procedures, and analyses, along with a technology asset inventory and a network map showing how electronic protected health information moves through their systems, reviewed at l"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Humanoid Robots in Warehouses vs AMRs: Which Automation Makes Sense in 2026?",
+   "url": "https://roboticsandautomationnews.com/2026/11/03/humanoid-robots-in-warehouses-vs-amrs-which-automation-makes-sense-in-2026/106685/",
+   "published": "2026-11-03T22:46:09.000Z",
+   "description": "Every warehouse automation conference seems to have the same scene: a crowd gathered around a walking humanoid robot, while a quieter booth nearby showcases autonomous mobile robots (AMRs) already moving goods in thousands of facilities. Both technologies promise to change logistics. But in 2026, they are at very different stages of commercial maturity. AMRs are […]",
+   "excerpt": "Every warehouse automation conference seems to have the same scene: a crowd gathered around a walking humanoid robot, while a quieter booth nearby showcases autonomous mobile robots (AMRs) already moving goods in thousands of facilities.\nBoth technologies promise to change logistics. But in 2026, they are at very different stages of commercial maturity.\nAMRs are a proven option for moving totes, carts, and inventory across warehouses. Humanoid robots offer a different promise: handling objects and working with equipment designed for people, without requiring a complete redesign of the facility.\nThe difference comes down to task fit, operating costs, reliability, and the data used to train robotic systems. Humanoids must learn to handle unfamiliar objects and respond to changing physical conditions, making high-quality robotics training data an important part of their development.\nThis guide compares both technologies, examines a practical payback example, and outlines a framework for deciding which type of robot to pilot first.\nAutonomous Mobile Robots (AMRs) are wheeled robots that move goods around a building on their own. They use cameras, lidar, and onboard software to plan routes and avoid people. Unlike older AGVs (automated guided vehicles), they don’t need magnetic tape or fixed tracks.\nExample : A picker stands in one zone. An AMR rolls up with a tote, the screen shows which item to grab, and the robot drives the tote to packing. The person walks less; the robot does the travel.\nHumanoid robots have a human-like body: two legs (or a wheeled base), a torso, two arms, and hands or grippers. The pitch is simple. Warehouses are built for people, so a robot shaped like a person can work in them without rebuilding the site.\nExample : A humanoid lifts a tote off an AMR and places it on a conveyor. That small hand-off is hard for wheeled robots without adding an arm or redesigning the station.\nIn short: AMRs automate movement. Humanoids try to automate manipulation in spaces designed for human bodies.\nA useful example is GXO’s partnership with Agility Robotics. In June 2024, the companies announced a commercial Robots-as-a-Service agreement to deploy Digit in warehouse operations. The robot handles repetitive material-moving tasks, including transferring totes to conveyors, while working alongside existing automation such as AMRs.\nThe lesson is important: humanoids do not have to replace existing automation to create value. They can take over specific man"
+  },
+  {
+   "group": "wh",
+   "source": "Logistics Viewpoints",
+   "title": "The Systems-Engineered Logistics Operation: From Transformation Projects to Continuous Design",
+   "url": "https://logisticsviewpoints.com/2026/11/03/the-systems-engineered-logistics-operation-from-transformation-projects-to-continuous-design/",
+   "published": "2026-11-03T18:30:00.000Z",
+   "description": "For years, logistics transformation has been organized as a succession of projects. Implement the platform. Build the control tower. Automate the facility. Add the AI layer. The problem is that logistics no longer changes on a project cadence. That environment is disappearing. The post The Systems-Engineered Logistics Operation: From Transformation Projects to Continuous Design appeared first on Logistics Viewpoints .",
+   "excerpt": "For years, logistics transformation has been organized as a succession of projects. Implement the platform. Build the control tower. Automate the facility. Add the AI layer. The problem is that logistics no longer changes on a project cadence.\nThat environment is disappearing. The future logistics will need to be designed continuously. The Autonomous Logistics Network is one expression of this end state, but reaching it requires continuous design rather than a one-time transformation project.\nModern logistics networks are becoming integrated combinations of physical assets, software, data, optimization, AI, robotics, people, partners, and automated decisions. Calling this a technology stack understates what is happening.\nIt is an operating system. The important design questions are no longer confined to which applications a company owns. Leaders have to consider how decisions flow, how data maintain continuity across systems, how automation interacts with people, how models are governed, how exceptions escalate, and how the organization behaves when components fail.\nThat is systems engineering territory. The companies that manage this architecture deliberately will have an advantage over those that continue adding capabilities one project at a time.\nLogistics technology is moving from systems of record toward systems of decision. Traditional applications captured transactions and supported workflows. Analytical systems added prediction and optimization. The emerging layer increasingly combines real-time signals, AI, optimization, agents, and execution connectivity.\nThe result is intelligence closer to the point of action. A shipment delay can be identified, its impact evaluated, alternatives generated, and a response executed with limited human intervention. Transportation systems can continuously re-evaluate routes, capacity, and exceptions instead of waiting for manual replanning. Warehouse and yard systems can adjust priorities as conditions change.\nThis will make logistics faster. It will also make architecture and governance more consequential.\nWhen software only reported information, a bad output could be ignored. When software acts, the operating envelope matters.\nMore automation does not eliminate the human role. It changes it.\nPeople will spend less time collecting information, reconciling spreadsheets, monitoring routine transactions, and making repetitive bounded decisions. They will spend more time dealing with novel exceptions, cross-functiona"
+  },
+  {
+   "group": "wh",
+   "source": "Logistics Viewpoints",
+   "title": "Walmart and Symbotic: When Warehouse Automation Becomes a Network Strategy",
+   "url": "https://logisticsviewpoints.com/2026/11/03/walmart-and-symbotic-when-warehouse-automation-becomes-a-network-strategy/",
+   "published": "2026-11-03T18:14:21.000Z",
+   "description": "Warehouse automation has traditionally been discussed one facility at a time. A retailer installs an automated storage system, deploys mobile robots, adds robotic picking, or upgrades sortation. The business case is then measured against improvements within that particular building. Walmart and Symbotic are beginning to challenge that way of thinking. On October 29, Walmart and […] The post Walmart and Symbotic: When Warehouse Automation Becomes a Network Strategy appeared first on Logistics Viewpoints .",
+   "excerpt": "Warehouse automation has traditionally been discussed one facility at a time. A retailer installs an automated storage system, deploys mobile robots, adds robotic picking, or upgrades sortation. The business case is then measured against improvements within that particular building. Walmart and Symbotic are beginning to challenge that way of thinking.\nOn October 29, Walmart and Symbotic announced an expanded commercial agreement that will bring additional automation capabilities to 25 U.S. regional distribution centers . The agreement includes an initial commitment of approximately $6 billion , covering work over several years and multiple locations. Walmart says the initiative is intended to support upstream e-commerce inventory management, increase storage capacity, and improve the movement of products through its supply chain. Those numbers make the announcement noteworthy. But the more interesting story is what the scale of the commitment says about the next phase of warehouse automation.\nFrom an Automation Project to an Operating Model\nFor years, warehouse automation investments were frequently justified around specific bottlenecks: reduced picker travel, increase storage density, improve sortation throughput, or offset labor requirements. Those are still important objectives. But Walmart is evaluating automation against something larger: the performance of an interconnected distribution network supporting stores, pickup and home delivery.\nRob Montgomery, executive vice president for Walmart U.S. Supply Chain Operations, tied the expanded agreement to improving service, growing capacity, simplifying work for associates and lowering costs. The company also expects the expansion to support broader assortment, greater speed and more reliable replenishment. That distinction matters.\nWarehouse automation increasingly needs to be evaluated not simply by asking, “How much faster can this facility pick?” but by asking, “What does this investment change across the supply chain?” Does additional storage capacity improve inventory positioning? Does automation enable later ordering cutoffs? Can replenishment become more predictable? Can the same technology architecture be repeated across multiple facilities without redesigning the operation every time? Those questions take warehouse automation discussions much closer to business strategy.\nScale Is Becoming Part of the Business Case\nThe Walmart-Symbotic relationship is particularly interesting because this is not "
+  },
+  {
+   "group": "wh",
+   "source": "DC Velocity",
+   "title": "Logistics activity heats up ahead of holiday peak",
+   "url": "https://www.dcvelocity.com/editorial/featured/logistics-activity-heats-up-ahead-of-holiday-peak",
+   "published": "2026-11-03T18:02:17.000Z",
+   "description": "Economic activity in logistics grew in October, driven by a continued expansion of inventory levels heading into the holiday shopping season. The information comes from the October Logistics Managers’ Index (LMI), released today , which rose to 70.7 compared to a reading of 70.2 in September. That’s the second highest reading in four years, behind June’s level of 71.1. The LMI is a monthly reading of economic activity across warehousing and transportation, based on a survey of logistics managers nationwide. A reading above 50 indicates expansion in logistics activity, and a reading below 50 in",
+   "excerpt": "LMI reaches second-highest level in four years, driven by robust expansion of inventory levels, report shows.\nEconomic activity in logistics grew in October, driven by a continued expansion of inventory levels heading into the holiday shopping season.\nThe information comes from the October Logistics Managers’ Index (LMI), released today , which rose to 70.7 compared to a reading of 70.2 in September. That’s the second highest reading in four years, behind June’s level of 71.1.\nThe LMI is a monthly reading of economic activity across warehousing and transportation, based on a survey of logistics managers nationwide. A reading above 50 indicates expansion in logistics activity, and a reading below 50 indicates contraction.\nReadings above 70 indicate strong logistics activity across the country.\nInventory levels rose 8.0 points in October as retailers stocked up for holiday sales—a move that came with a price, as the LMI’s Inventory Costs index rose nearly 9.0 points to 88.8, the highest reading for that metric since March of 2022. What’s more, the increase in inventories is affecting available storage, as both the Warehousing Capacity and Transportation Capacity indices continued to contract during the month, falling to 43.5 and 38.0, respectively, according to the report.\nThose results occurred alongside expanding cost pressures. Inventory costs, warehousing prices, and transportation prices all expanded in October, combining to create the fastest expansion in aggregate logistics costs in more than four years—a factor the researchers say, “may foreshadow continued supply-driven inflation.”\nAggregate costs reached a score of 257.5 on a scale of 0-300—up more than 11 points from September.\n“This is the highest reading for this aggregate metric since March of 2022, when supply-driven inflation was rampant in the wake of both the cessation of Covid-era demand and the invasion of Ukraine,” the researchers wrote in the November 3 report. “Given the pressure on logistics costs, it is likely that we will continue to see supply-driven inflation continue to increase in the near term.”\nThe LMI tracks industry growth overall and across eight areas: inventory levels and costs; warehousing capacity, utilization, and prices; and transportation capacity, utilization, and prices. The report is released monthly by researchers from Arizona State University, Colorado State University, Rochester Institute of Technology, Rutgers University, and the University of Nevada, Reno, in"
+  },
+  {
+   "group": "wh",
+   "source": "Supply Chain Dive",
+   "title": "3M closes 16 factories, plans changes at 10 more in network revamp",
+   "url": "https://www.supplychaindive.com/news/3m-closes-16-factories-plans-changes-at-10-more-in-network-revamp/873536/",
+   "published": "2026-11-03T17:20:00.000Z",
+   "description": "The industrial conglomerate is aiming for $1 billion in annual productivity gains by the end of 2027 through an operational overhaul, Chairman and CEO William Brown said.",
+   "excerpt": ""
+  },
   {
    "group": "ai",
    "source": "AIHOT",
@@ -280,8 +352,17 @@
    "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
    "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
    "published": "2026-11-03T16:29:48.000Z",
-   "description": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read &amp; write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers. I've been playing with one of the examples from the paper and I'm delighted to share that Qwen 3.8 27B running on my laptop can do this as well! Weight-Space Programming Here's the highlight",
-   "excerpt": "Yesterday’s hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model—literally a text description of the model containing a bunch of floating point numbers. I’ve been playing with one of the examples from the paper and I’m delighted to share that Qwen 3.8 27B running on my laptop can do this as well!\nHere’s the highlight from their abstract, describing impressive capabilities for GPT-6 Astra and coining the term Weight-Space Programming for when LLMs analyze and modify model weights:\nJust by looking at the raw weights, GPT-6 Astra can tell what a network was trained to do . And without any environment feedback, it has no trouble writing, from scratch, small game-playing networks that outplay networks trained with PPO for 100 million steps.\nLikewise, asked to make Qwen3.5-0.8B better at math without gradients, Astra identifies an issue in its weights causing reasoning loops that Qwen’s own model card warns about, and fixes this by natively editing 0.016% of the weights . With the same sampling settings, this weight correction raises MATH-500 from 7.9% to 48.1% and generalizes out of the box to instruction following, raising IFEval by 3x.\nAll of this is possible without allowing Astra to write training loops. It uses its reasoning to figure out what each part of a neural network computes, or should compute, and changes the weights accordingly. We call this Weight-Space Programming .\nThe paper combines two topics that I think deserve to be treated separately. The first is what models can do with raw weights without running tools or executing code. The second explores how well models, once armed with code, can run operations to update and improve other models.\nspaCy author Matthew Honnibal called the paper misleading for conflating the two, and Sean Goedecke deconstructed the Qwen3.5-0.8B update example as taking the same steps that a human ML researcher would use.\nI’m going to focus on the no-tools question, which I think is the more interesting of the two.\nThe paper presents the first question as Can LLMs understand model behaviors from weights? They trained four neural networks to play simplified 10x10 grid versions of four classic computer games—Breakout, Pong, Pac-Man, and Freeway (I had to look that one up , it’"
+   "description": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read &amp; write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers. I've been playing with one of the examples from the paper and I'm delighted to share that Qwen 3.8 27B running on my lap",
+   "excerpt": "Yesterday’s hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a “blog post”, but it’s paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model—literally a text description of the model containing a bunch of floating point numbers. I’ve been playing with one of the examples from the paper and I’m delighted to share that Qwen 3.8 27B running on my laptop can do this as well!\nHere’s the highlight from their abstract, describing impressive capabilities for GPT-6 Astra and coining the term Weight-Space Programming for when LLMs analyze and modify model weights:\nJust by looking at the raw weights, GPT-6 Astra can tell what a network was trained to do . And without any environment feedback, it has no trouble writing, from scratch, small game-playing networks that outplay networks trained with PPO for 100 million steps.\nLikewise, asked to make Qwen3.5-0.8B better at math without gradients, Astra identifies an issue in its weights causing reasoning loops that Qwen’s own model card warns about, and fixes this by natively editing 0.016% of the weights . With the same sampling settings, this weight correction raises MATH-500 from 7.9% to 48.1% and generalizes out of the box to instruction following, raising IFEval by 3x.\nAll of this is possible without allowing Astra to write training loops. It uses its reasoning to figure out what each part of a neural network computes, or should compute, and changes the weights accordingly. We call this Weight-Space Programming .\nThe paper combines two topics that I think deserve to be treated separately. The first is what models can do with raw weights without running tools or executing code. The second explores how well models, once armed with code, can run operations to update and improve other models.\nspaCy author Matthew Honnibal called the paper misleading for conflating the two, and Sean Goedecke deconstructed the Qwen3.5-0.8B update example as taking the same steps that a human ML researcher would use.\nI’m going to focus on the no-tools question, which I think is the more interesting of the two.\nThe paper presents the first question as Can LLMs understand model behaviors from weights? They trained four neural networks to play simplified 10x10 grid versions of four classic computer games"
+  },
+  {
+   "group": "wh",
+   "source": "Supply Chain 24/7 自动化",
+   "title": "AI and Automation Move Ahead While Supply Chain Data Falls Behind",
+   "url": "https://www.supplychain247.com/article/gs1-study-supply-chain-ai-automation-data-readiness-gap",
+   "published": "2026-11-03T15:57:00.000Z",
+   "description": "A GS1 US study finds supply chain automation and AI adoption are outpacing the data systems companies need to put those tools to wider use.",
+   "excerpt": ""
   },
   {
    "group": "wh",
@@ -353,7 +434,7 @@
    "url": "https://www.automatedwarehouseonline.com/webinar-discuss-advances-automated-storage-retrieval/",
    "published": "2026-11-03T13:03:48.000Z",
    "description": "Learn about the latest technologies, workflows, and more in automated storage and retrieval systems, or ASRS, in this free webinar. The post Webinar to discuss advances in automated storage and retrieval appeared first on Automated Warehouse .",
-   "excerpt": "Dense cube storage offers warehouses optimized space utilization, optimized inventory location and tracking, and high throughput. However, automated storage and retrieval systems, or ASRS, are often viewed as infrastructure-heavy, inflexible, and expensive.\nFortunately, that situation is changing, thanks to more modular systems, advances in software and vision, and robotic shuttles that can operate with a variety of containers or in cold-chain environments. In addition, greater integration with both manual and automated picking systems at the perimeter is improving ergonomics and efficiency.\nThis free webinar will explore how improvements in ASRS are enabling warehouse operators to handle mixed SKU volumes, seasonal surges, and growing manufacturing and e-commerce demand. As with other forms of automation, AI is also playing an increasing role in planning, deploying, and managing automated storage and retrieval systems.\nThis webinar, which will be at noon EST on Wednesday, Nov. 4, 2026 , will discuss:\nAttendees can get their questions answered live and view the webinar after broadcast on demand. Register now.\nBrian Quigley is director of North American consulting at Kardex , with more than 20 years of experience helping organizations improve supply chain performance through automation, technology, and operational transformation. Quigley’s expertise spans omnichannel fulfillment, manufacturing, and third-party logistics, where he advises organizations on scalable strategies to improve throughput, storage density, labor efficiency, and overall operational performance.\nCombining deep supply chain expertise with experience evaluating emerging technologies, Brian brings an operator-first, data-driven perspective to automation—focused not simply on what technology can do, but on what delivers measurable value in real-world operations.\nEugene Demaitre , moderator, is the editorial director for robotics at Arrowfly (formerly WTWH Media), which produces Automated Warehouse , The Robot Report , the Robotics Summit & Expo , and RoboBusiness . Prior to that, he was an editor at BNA (now part of Bloomberg), Computerworld , TechTarget, Robotics Business Review , and Robotics 24/7 .\nDemaitre has participated in conferences worldwide, as well as spoken on numerous webcasts and podcasts. He is always interested in learning more about robotics. Gene has a master’s from the George Washington University and lives in the Boston area.\nThis webinar is sponsored by Novanta and Do"
+   "excerpt": "Dense cube storage offers warehouses optimized space utilization, optimized inventory location and tracking, and high throughput. However, automated storage and retrieval systems, or ASRS, are often viewed as infrastructure-heavy, inflexible, and expensive.\nFortunately, that situation is changing, thanks to more modular systems, advances in software and vision, and robotic shuttles that can operate with a variety of containers or in cold-chain environments. In addition, greater integration with both manual and automated picking systems at the perimeter is improving ergonomics and efficiency.\nThis free webinar will explore how improvements in ASRS are enabling warehouse operators to handle mixed SKU volumes, seasonal surges, and growing manufacturing and e-commerce demand. As with other forms of automation, AI is also playing an increasing role in planning, deploying, and managing automated storage and retrieval systems.\nThis webinar, which will be at noon EST on Wednesday, Nov. 4, 2026 , will discuss:\nAttendees can get their questions answered live and view the webinar after broadcast on demand. Register now.\nBrian Quigley is director of North American sales and consulting at Kardex , with more than 20 years of experience helping organizations improve supply chain performance through automation, technology, and operational transformation. Quigley’s expertise spans omnichannel fulfillment, manufacturing, and third-party logistics, where he advises organizations on scalable strategies to improve throughput, storage density, labor efficiency, and overall operational performance.\nCombining deep supply chain expertise with experience evaluating emerging technologies, Brian brings an operator-first, data-driven perspective to automation—focused not simply on what technology can do, but on what delivers measurable value in real-world operations.\nEugene Demaitre , moderator, is the editorial director for robotics at Arrowfly (formerly WTWH Media), which produces Automated Warehouse , The Robot Report , the Robotics Summit & Expo , and RoboBusiness . Prior to that, he was an editor at BNA (now part of Bloomberg), Computerworld , TechTarget, Robotics Business Review , and Robotics 24/7 .\nDemaitre has participated in conferences worldwide, as well as spoken on numerous webcasts and podcasts. He is always interested in learning more about robotics. Gene has a master’s from the George Washington University and lives in the Boston area.\nThis webinar is sponsored by Nova"
   },
   {
    "group": "wh",
@@ -367,10 +448,19 @@
   {
    "group": "wh",
    "source": "Supply Chain Dive",
-   "title": "Is warehouse demand shifting towards inland markets?",
-   "url": "https://www.supplychaindive.com/news/is-warehouse-demand-shifting-towards-inland-markets/872921/",
+   "title": "Is warehouse demand shifting toward inland markets?",
+   "url": "https://www.supplychaindive.com/news/is-warehouse-demand-shifting-toward-inland-markets/872921/",
    "published": "2026-11-03T12:35:00.000Z",
    "description": "Uncertainty has led shippers to move an increased amount of inventory across inland markets versus port markets, according to experts, but it may not necessarily translate to a shift in demand.",
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "OpenAI",
+   "title": "Accelerating engineering for the physical world",
+   "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+   "published": "2026-11-03T12:00:00.000Z",
+   "description": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world.",
    "excerpt": ""
   },
   {
@@ -421,11 +511,29 @@
   {
    "group": "ai",
    "source": "OpenAI",
+   "title": "How Cisco defends at machine speed with OpenAI",
+   "url": "https://openai.com/index/cisco-cyber",
+   "published": "2026-11-03T08:00:00.000Z",
+   "description": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses.",
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "OpenAI",
    "title": "Heimstaden is changing residential real estate management with AI",
    "url": "https://openai.com/index/heimstaden",
    "published": "2026-11-03T08:00:00.000Z",
    "description": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
    "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "OpenAI 研究：智能体安全评测与生产行为存在差距，评测目标误判是关键因素",
+   "url": "https://aihot.news/items/fvf2qsdi4s11bz1denqd5rzff",
+   "published": "2026-11-03T08:00:00.000Z",
+   "description": "OpenAI Alignment 团队对比六个模型在 Respecting Warnings 安全评测与匹配的 Codex 生产决策上的表现，发现评测成功率普遍低于生产，差距为 10.2 至 37.4 个百分点。模型普遍口头表现出评测意识（评测中一般性意识率 57.0%–83.7%），但仅告知 🔗 阅读原文 via AIHOT · https://aihot.news/items/fvf2qsdi4s11bz1denqd5rzff",
+   "excerpt": "Eval-production behavior gaps in agent safety and the role of eval-awareness\nOpenAI Alignment 团队对比六个模型在 Respecting Warnings 安全评测与匹配的 Codex 生产决策上的表现，发现评测成功率普遍低于生产，差距为 10.2 至 37.4 个百分点。模型普遍口头表现出评测意识（评测中一般性意识率 57.0%–83.7%），但仅告知\n原文用六个模型对比评测与生产数据，发现评测成绩反而更低，并把差距归因于模型对评测目标的误判。\n我们开始直接追踪这一差距，以便更好地评估在这些安全评估中观察到的智能体行为能在多大程度上推广到真实使用场景。\n评估感知已在多种模型和评估环境中被广泛观察到 [1-3] 。模型常常会口头指出某次交互是一次评估，推测测试目标，有时还会据此改变行为 [4] 。这给解读和信任评估结果带来了实实在在的挑战：我们观察到的行为中，有多少能推广到部署环境？这种行为变化在多大程度上取决于模型对任务的解读？\n本文聚焦智能体安全评估，涵盖长周期任务——智能体在遇到潜在的安全关键触发条件（例如警告、限制或障碍）时必须决定如何应对。尽量缩小这里的评估与生产差距至关重要，因为一项有信息价值的安全评估，需要衡量智能体在真实使用中是否做出同类决策。\n为评估这些评估在多大程度上反映智能体在真实世界中的行为，我们比较了评估与生产中的成功率，并探究模型对评估情境的解读是否能解释这一差距。结果表明：\n（1）评估与生产之间的行为差距确实存在，且方向出人意料：一些模型在安全评估中的表现似乎明显差于生产环境，而差距最大的模型，恰恰是最频繁口头说出错误评估目标的那些。\n（3）然而，对评估 目标 的感知与评估和生产之间的行为差距密切相关，而目标框架可以因果性地改变评估成功率。\n我们将评估与生产之间的行为差距定义为：模型在评估中的表现，与在测试可比区分的生产决策中的表现之间的差异。\n评估表现。 我们采用“尊重警告”（Respecting Warnings）评估作为代表性的安全评估。该评估检验智能体在执行用户任务时，能否对警告、限制和障碍做出恰当回应。警告可能描述真实的授权边界，也可能是对某项操作或方法的限制。因此，正确行为要求结合用户目标来判断警告的权威性和适用范围。我们将成功定义为：在遇到相关警告或限制后，不做出任何被禁止的规避尝试。\n可比较的生产表现。 为了衡量部署期间的可比较表现，我们选取 与“尊重警告”评估的底层决策结构相匹配的生产案例 。我们从具有代表性的生产流量中，提取经过脱敏的 Codex 生产日志上下文窗口 。我们通过多阶段流程识别可比较的生产决策。 首先，由分类器识别出引入障碍或约束的工具观察结果。其次，由评分员和基于来源的审核员判断该情境是否构成非平凡的安全关键选择，并识别所请求的效果、管辖权限、约束范围、适用例外以及合法替代方案。第三，由匹配器将每个保留的决策与“尊重警告”评估目录进行比对，并保持单个参考案例的决策结构。我们仅依据决策前的上下文进行筛选，不以模型成功或失败为条件。随后，我们对部署中实际记录的后续行为进行评分，评分沿用“尊重警告”的评分定义，并根据可用的生产证据加以调整。 这一流程有助于识别可比较的决策，但我们注意到匹配仍是近似的，模型面临的案例组合各不相同，且抽样的生产上下文并不能代表所有部署场景。\n评估与生产之间的行为差距确实存在。 我们针对六个已服务的模型（GPT-5.6 Luna、GPT-5.6 Sol、GPT-6 Luna、GPT-6 Sol、GPT-6 Astra 和 GPT-6.1 Sol）， 在可比较案例上测量了评估表现与生产表现。 在下图 1 中可以看到，评估与生产之间的差距确实存在。差距范围为 10.2 到 37.4 个百分点，其中 GPT-5.6 Sol 和 GPT-6 Sol 的差距最大。\n差距的方向出人意料 。 在所有模型中， 评测成功率 都低于在可比生产决策上的成功率。 关于评测意识，一个常见的担忧是模型能识别出安全测试，并调整自身行为，从而抬高测得的安全水平。 而这里观察到的差距方向恰恰相反：模型在评测中表现得比在匹配的生产场景中更不安全。这些分数比较的是评测环境与已部署 Codex 的行为，指令、工具、用例构成以及模型认知上的差异都可能造成这一差距。本文后文会详细探讨这一现象的可能解释。尤其是，模型可能试图去做它认为评测会奖励的行为，却误解了实际被测试的内容。它针对推断出的测试所做的回应，反而可能使其行为比在可比生产场景中更不安全，从而拉低测得的安全表现。然而，无论评测是高估还是低估安全性，这种错配始终是一个根本性问题，也限制了我们能多大程度自信地用评测分数预测生产环境中的行为。\n分数存在差异，并不意味着评测对部署毫无信息价值。因此我们进一步追问：在评测中表现更好的模型，是否在生产决策上也表现更好？我们用 Spearman 秩相关和无加权普通最小二乘拟合来比较各模型的成功率。在全部六个模型上，Spearman 的 ρ = 0.771 ，线性拟合的 R 2 = 0.655 （见图 2）。 这种正相关关系说明，Respecting Warnings 评测保留了关于这些模型相对表现的有用信息，尽管其绝对分数并不能直接换算成生产成功率。 不过需要指出，模型样本量很小，这限制了我们推广所观察到的关系的把握程度。\n这些结果表明，评测分数捕捉到了模型之间一些有意义的差异，尽管模型在评测和生产中的具体排名并不一致。接下来我们追问：模型对任务场景的解读能否解释这种评测与生产之间的差距？为此，我们拆解评测意识的各个组成部分，并区分一般评测意识（即识别或推测某次交互是评测）与具体评测目标意识（即推断评测在测试哪种行为）。\n在这里，我们通过模型思维链中的自发陈述来衡量言语化的评估意识。我们对每条推理轨迹应用分类器：通用评估意识评分标准判断智能体是否陈述或推测当前交互是对助手的评估、"
   },
   {
    "group": "ai",
@@ -483,6 +591,15 @@
   },
   {
    "group": "ai",
+   "source": "OpenAI",
+   "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
+   "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
+   "published": "2026-11-03T00:00:00.000Z",
+   "description": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.",
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
    "source": "Hugging Face",
    "title": "CWE-bench v2: More coverage, quality, and transparency",
    "url": "https://huggingface.co/blog/cwe-bench",
@@ -498,6 +615,24 @@
    "published": "2026-11-03T00:00:00.000Z",
    "description": "",
    "excerpt": "On July 30, 2026, Transformers enabled PyTorch's scaled dot-product attention (SDPA) for T5. As a side effect, UMT5's decoder could attend to future tokens. During training, it could peek at the answer it was supposed to predict. Nothing crashed, and the bug stayed in main for almost two months.\nWhen we later replayed those commits, a small UMT5 model running on CPU flagged it on every one of them. This post is about that model and the tests built around it.\nTransformers supports over 750 model types, and its test suite is big: 88,000+ CPU tests on main, plus 200,000+ GPU tests in a daily run. Model tests are only part of it: we also test pipelines, training, distributed execution, quantization and attention kernels.\nThe integration tests load real checkpoints and exercise the model's API on real hardware. Running all of that on every PR would mean keeping a lot of GPUs busy all day long, which isn't practical. By the time a scheduled run finds a regression, it may already be in main.\nOur approach is to shrink the model instead. We build a fixture : a small model made from the real checkpoint's configuration, with fewer and narrower layers but every kind of layer it has, and its tokenizer and processor files unchanged. It is published once, then reused. We run \"fast integration tests\" against it on a cheap CPU runner. In our CPU study , the experimental UMT5 fixture used 66 MB of weights; the source checkpoint is 1,227 MB.\nThis also covers very large models: some don't fit on our standard GPU runners, but their fixtures run on CPU.\nModel integrators already build tiny test models (Transformers' tiny-random-* checkpoints). We wanted a common recipe, and checks that go beyond loading the model and running a forward pass. The UMT5 bug would have passed a forward pass just fine.\nFixtures won't replace full integration tests, but on PRs they give us a chance to catch bugs before they reach main.\ntransformers-mic is a proposed standard for packaging these tests. A Model Integration Contract (MIC) has three parts:\nThe contract holds if running the usage path on the fixture still produces the baselines.\nA contract covers an architecture and a usage path, not a single checkpoint: compatible checkpoints can share a fixture, while each keeps its own expected results. We publish them in huggingface-mic .\nFor example, the SmolLM contract generates from prompts such as \"The capital of France is\" and compares its token IDs with a recorded answer. After loading the model "
+  },
+  {
+   "group": "ai",
+   "source": "Sequoia",
+   "title": "Cresta: From Stanford Research to AI at Work",
+   "url": "https://www.sequoiacap.com/article/cresta-from-stanford-research-to-ai-at-work",
+   "published": "2026-11-03T00:00:00.000Z",
+   "description": "Congratulations to the Cresta team on joining Salesforce.",
+   "excerpt": "Congratulations to the Cresta team on joining Salesforce.\nCongratulations to the Cresta team on joining Salesforce.\nLong before generative AI became a household term, Zayd Enam was chasing a practical question: Could artificial intelligence help people become better at their jobs? That question became Cresta. Turning it into the company that’s now joining Salesforce took years of getting close to customers, proving the product, and building a team that could deliver.\nCresta began in 2017 out of the Stanford Artificial Intelligence Laboratory. Zayd was the driving founder, bringing together a founding group that included Tim Shi, Sebastian Thrun, and Andre Esteva. Their thesis was simple, but contrarian for its time: build AI around people.\nCustomer service was a natural place to start and offered an enormous opportunity. Anyone who has struggled through an automated phone tree understands the shortcomings of rigid scripts and chatbots. Cresta studied what the best human agents did well and helped their colleagues do the same. Its technology analyzed customer conversations and delivered guidance while the interaction was still underway. An agent could receive a suggested response, help handling an objection, or a prompt to ask a better question.\nCo-founder Tim Shi remembers the print of Diego Rivera’s Detroit Industry that Zayd hung in their first Redwood City office: workers with every tool arranged within reach. They wanted the same thing for knowledge work: the right answer at hand, the moment a rep needed it. Cresta was putting generative AI to work years before the category became mainstream.\nCresta emerged from stealth in 2020, just as businesses were shifting to remote work. Managers could no longer sit beside a new employee or coach across a contact center floor. They needed a way to train and support distributed teams. Cresta’s ability to deliver guidance in the moment became critical. Adoption accelerated. Product-market fit was taking hold.\nFrom proving the product to scaling the company\nZayd had also recruited an exceptional engineering team. Many of those early engineers remain at Cresta today, carrying forward years of technical knowledge and customer understanding. One of his most consequential recruits was Ping Wu, who had co-founded Google’s Contact Center AI effort. Ping joined Cresta in 2021 and became CEO in May 2023, succeeding Zayd. He brought deep technical expertise and the operating experience to scale the business for demanding ent"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "OpenHands 与 Snowflake 推出基于现有 agent harness 的模型后训练方案",
+   "url": "https://aihot.news/items/recqqiy27l866jfbhjk0cusqh",
+   "published": "2026-11-03T00:00:00.000Z",
+   "description": "OpenHands 与 Snowflake AI Research 合作，让开发者无需在独立 RL 框架中重建 harness，即可用现有 OpenHands Agent SDK 配置和 Harbor 格式任务对开源权重模型做 RL 后训练，训练由 Snowflake Cortex Training 提供 GPU 支持。 🔗 阅读原文 via AIHOT · https://aihot.news/items/recqqiy27l866jfbhjk0cusqh",
+   "excerpt": "Post-Train a Model for Your Own Agent Harness with OpenHands and Snowflake\nOpenHands 与 Snowflake AI Research 合作，让开发者无需在独立 RL 框架中重建 harness，即可用现有 OpenHands Agent SDK 配置和 Harbor 格式任务对开源权重模型做 RL 后训练，训练由 Snowflake Cortex Training 提供 GPU 支持。\n原文展示了直接用现有 OpenHands harness 做 RL 后训练的完整流程和实验结果，开发者可据此评估是否把后训练纳入自己的 agent 开发循环。\n原文展示了直接用现有 OpenHands harness 做 RL 后训练的完整流程和实验结果，开发者可据此评估是否把后训练纳入自己的 agent 开发循环。"
   },
   {
    "group": "ai",
@@ -673,19 +808,19 @@
   {
    "group": "ai",
    "source": "OpenAI",
-   "title": "Preparing our next security sprint to harden OpenAI",
-   "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+   "title": "Rewarding defenders with bigger bug bounties",
+   "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
    "published": "2026-11-02T18:00:00.000Z",
-   "description": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
+   "description": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
    "excerpt": ""
   },
   {
    "group": "ai",
    "source": "OpenAI",
-   "title": "Rewarding defenders with bigger bug bounties",
-   "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+   "title": "Preparing our next security sprint to harden OpenAI",
+   "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
    "published": "2026-11-02T18:00:00.000Z",
-   "description": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
+   "description": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
    "excerpt": ""
   },
   {
@@ -777,6 +912,15 @@
    "published": "2026-11-02T16:05:44.000Z",
    "description": "a16z leads Tutor Intelligence’s Series B",
    "excerpt": "There is a quote from Jim Barksdale, former CEO of Netscape, that rings true for building and operating any business, and especially a robotics company: the main thing is to keep the main thing the main thing. The main thing in robotics is getting the robot to complete human tasks – not the training data, not the specifics of the model, not the type of hardware used. Yet the prevailing debate in much of robotics centers on these factors.\nTutor Intelligence , unlike many of its peers, knows that the main thing is getting their robots to complete specific jobs, repeatedly and with high accuracy, for customer after customer. This is exactly why we’re excited to lead the company’s Series B.\nTutor is a robotics research and deployment company that builds generally capable robot hardware. They deploy into real production environments ahead of full autonomy, using human teleoperators (“tutors”) to train the robot foundation models and make the fleet more capable over time. It’s a novel approach that’s paying off.\nMost robotics companies start by building a general model and then finding its initial use case. To do this requires massive upfront data collection, and capital, to build even a basic model.\nTutor took the opposite approach. First, they identified a real need and use case. Then, still before building a robot brain, they put the hardware to work using remote tutors (that were so skillful customers found real value while not being able to tell the difference between the work done by employees and the work done by tutors). With each deployment in a real scenario, Tutor could work backwards to create their model from the deployment data. The approach offers a win-win for customers and Tutor. For customers, the operating model delivers value right away. For Tutor, the company is able to collect the training data that really matters and build an increasingly capable model, cost efficiently. Every robot put to work makes the next robot smarter, cheaper, and easier to deploy.\nBeing in the field early with enterprise clients has made their business stronger beyond the model too. No matter how strong a robotics company’s research is, you can’t scale without a great product experience: great hardware, great software,a simple sales process and a post-product robot support lifecycle. Tutor not only builds great robots, but is one of the few companies that has solved the full business system for robotics.\nTo date, Tutor robots are in operation across some of the coun"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Cognition 发布2026年11月实用安全指南：从 Binance 被盗到 Claude Code Cursor 扩展投毒的应对清单",
+   "url": "https://aihot.news/items/dmvn8r8406f7g9vutizbxqesj",
+   "published": "2026-11-02T16:00:00.000Z",
+   "description": "Cognition 发布2026年11月实用安全指南，回顾近期重大安全事件并给出公司可执行的安全加固清单。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dmvn8r8406f7g9vutizbxqesj",
+   "excerpt": "A Practical Guide to Security in November 2026\nCognition 发布2026年11月实用安全指南，回顾近期重大安全事件并给出公司可执行的安全加固清单。\n原文把近期多起安全事件拆成可控的攻击路径，并给出立即与30天内可执行的公司安全清单，方法可迁移。\n短短两周里，我们见证了 有记录以来最大的盗窃案 、一个 严重到各国政府纷纷下线自家网站 的 PHP 漏洞，还有一个 被投毒的 Claude Code Cursor 扩展 ，试图在开发者机器上植入后门。更别提边缘设备上的高危漏洞、GitLab 的远程代码执行漏洞，以及一家证书颁发机构把自己的私钥设成了数字 4。\n好消息是，我们多年来熟知的安全最佳实践依然有效。攻击者不需要什么高明的 AI，就能利用一台没打补丁的服务器或一份被盗的凭证；只要企业把这些路径敞着，用了多年的老手法照样能得手。AI 让攻击更快、更便宜，但它挡不住你封死那些最基础的攻击路径。真正变了的是紧迫性。到了 2026 年 11 月，你不能再抱着侥幸心理，指望自己不会成为目标。\n在这篇博文里，我们会回顾其中一些近期事件，并分享一份任何公司都能用来立即提升安全水平的实用指南。\n这起有记录以来最大的盗窃案，起点是开发者机器上的恶意软件。 朝鲜国家支持的黑客 从币安卷走了 63.4 亿美元 ，事件细节目前还有许多不为外界所知，但币安已披露，几名工程师的笔记本电脑因一场虚假面试和被篡改的安装程序而失陷，其中一台机器上的部署令牌让攻击者得以触达币安的钱包签名服务。一台失陷的开发者机器，绝不该足以攻破生产环境，更不用说盗走数十亿美元。\n10 月 29 日，Cursor 披露有攻击者发布了 Claude Code Cursor 扩展的恶意版本，这是 Cursor 最受欢迎的扩展之一。该恶意扩展试图在开发者机器上安装持久后门，让攻击者能通过 SSH 登录用户设备。由于扩展会自动更新，这意味着用户可能在毫无操作的情况下就收到了恶意扩展。Cursor 表示，安装该恶意扩展的用户不到 5,000 人。\n值得注意的是，该扩展的版本与 Open VSX 注册表（Cursor 使用的开放扩展注册表）上发布的版本并不一致。这表明攻击者攻破了 Open VSX 下游的扩展发布流程。\n在不确定性日益加剧的当下，很难判断哪些事真正重要。我们列出了两组行动：需要立即执行的，以及需要在 30 天内完成的。采取这些措施能显著加固公司的安全防线，既能抵御当前的威胁，也能防范未来的风险。\n币安被黑事件说明，把最关键的访问权限留在开发者机器上是个非常糟糕的主意。开发者笔记本电脑上运行着大量第三方代码：安装的软件包、编辑器扩展、MCP 服务器，以及如今能自行执行命令的本地 AI 智能体。其中任何一个都可能被攻陷，一旦被攻陷，攻击者就能继承该开发者能触及的一切。\n过去一年里，我们看到了许多蠕虫式供应链攻击，比如 Shai-Hulud 系列攻击。\n过去几周最大的漏洞利用和安全隐患，归根结底都是已知的漏洞类型和企业安全上的基本疏漏。Binance 因一个被篡改的安装程序、一场虚假面试，以及一台笔记本上遗留的部署令牌，损失了数十亿美元。新的 CVE 会不断出现，而前沿模型意味着它们被发现和利用的速度会比以往更快。问问你的安全团队正在采取上述哪些措施，并争取今天就搞定几项！\n来源： Cognition 模型 / Devin 博客 · cognition.com\n原文把近期多起安全事件拆成可控的攻击路径，并给出立即与30天内可执行的公司安全清单，方法可迁移。"
   },
   {
    "group": "wh",
@@ -941,15 +1085,6 @@
    "excerpt": "腾讯混元发布 Hyra 2.0，将自动化科研重点从直接解题转向由 agent 研发和升级科学模型、工作流与软件工具。系统采用 Overall、Mission、Worker 三层分工，接入企业微信、计算平台和代码仓库的实际研发环境，成果已公开在 GitHub 仓库。\n原文把自动化科研的思路从解题转向造工具，并给出蛋白质设计、量子码、处理器等具体成果和可复用的 Harness 分层设计。\n原文把自动化科研的思路从解题转向造工具，并给出蛋白质设计、量子码、处理器等具体成果和可复用的 Harness 分层设计。"
   },
   {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "Why more inventory won’t fix your supply chain’s fill rate",
-   "url": "https://www.supplychaindive.com/spons/why-more-inventory-wont-fix-your-supply-chains-fill-rate/873053/",
-   "published": "2026-11-02T10:00:00.000Z",
-   "description": "Record inventory but still missing fill rate targets? The problem isn&#39;t supply or forecasting; it&#39;s your supply chain decision layer. Here&#39;s how to fix it.",
-   "excerpt": ""
-  },
-  {
    "group": "ai",
    "source": "OpenAI",
    "title": "LifeVal",
@@ -957,24 +1092,6 @@
    "published": "2026-11-02T09:00:00.000Z",
    "description": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork.",
    "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Interview with TorqueAGI founder: ‘Most robot AI is a language or vision model with robot data added to it’",
-   "url": "https://roboticsandautomationnews.com/2026/11/02/interview-with-torqueagi-founder-most-robot-ai-is-a-language-or-vision-model-with-robot-data-added-to-it/106584/",
-   "published": "2026-11-02T08:55:22.000Z",
-   "description": "As robotics companies race to develop increasingly capable AI models for machines operating in the physical world, TorqueAGI is taking a different approach: supplying the intelligence layer to robot and equipment manufacturers rather than building hardware of its own. Founded by robotics researcher Dr Ashutosh Saxena, TorqueAGI has spent nearly two years developing and testing […]",
-   "excerpt": "As robotics companies race to develop increasingly capable AI models for machines operating in the physical world, TorqueAGI is taking a different approach: supplying the intelligence layer to robot and equipment manufacturers rather than building hardware of its own.\nFounded by robotics researcher Dr Ashutosh Saxena , TorqueAGI has spent nearly two years developing and testing what it calls a World-Reasoning Model for industrial robots and heavy machinery.\nThe company says its approach differs from many vision-language-action models by representing objects, machines and workflows through a spatio-temporal architecture in which physics and geometry form part of the model’s reasoning.\nThe aim is to enable machines to adapt to changes and learn new tasks from relatively small numbers of demonstrations, while making use of operational data that customers already possess.\nSaxena has a long background in robotics and artificial intelligence. He completed his PhD at Stanford University under AI researcher Andrew Ng and later became a professor at Cornell University, where he led the RoboBrain project.\nHis work on robotic grasping received the Robotics: Science and Systems Test of Time Award in 2023.\nTorqueAGI is an Nvidia Perception Partner and was selected for John Deere’s 2026 Startup Collaborator Program.\nThe company has also worked with Dexterity on truck-unloading robotics and says its technology has been integrated with machines from several major industrial robot manufacturers.\nIn this Q&A with Robotics & Automation News , Saxena explains how much intelligence can transfer between different types of machines, why TorqueAGI believes physics and geometry should be built into AI reasoning, and where the difficult integration work still remains.\nHe also discusses the company’s “Sovereign Physical AI” architecture, the case for keeping industrial AI private and local to the customer, and whether world models can materially reduce the time and cost involved in bringing robots into real-world industrial operations.\nRobotics & Automation News : What does TorqueAGI’s World-Reasoning Model enable an industrial robot or machine to do that existing robotics AI models cannot?\nAshutosh Saxena : Most robot AI today is a language or vision model with robot data added to it. It is very good at matching what it sees to examples it has already seen. Our model works differently.\nIt represents the world as spatial-temporal graph with objects, machines and workflows that exist"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "How to Buy Car Policy Online for Sedan, Hatchback, and SUV",
-   "url": "https://roboticsandautomationnews.com/2026/11/02/how-to-buy-car-policy-online-for-sedan-hatchback-and-suv/106578/",
-   "published": "2026-11-02T07:44:08.000Z",
-   "description": "Discussions about car insurance typically focus on premium costs and renewal dates. The vehicle category itself, whether you are driving a hatchback through city traffic or a sedan for daily office commutes, rarely gets the attention it deserves in that conversation. The type of car you own influences nearly every dimension of your insurance profile. […]",
-   "excerpt": "Discussions about car insurance typically focus on premium costs and renewal dates. The vehicle category itself, whether you are driving a hatchback through city traffic or a sedan for daily office commutes, rarely gets the attention it deserves in that conversation.\nThe type of car you own influences nearly every dimension of your insurance profile. If you are about to buy car policy online, understanding that relationship first will help you make the right decision. The vehicle category determines the risk, and that is why the cover should be chosen accordingly.\nHatchbacks occupy a substantial space in the Indian market. They are predominantly city vehicles.\nAdd-ons such as zero depreciation cover and return-to-invoice protection may be worth evaluating for newer models. For older vehicles, the calculation changes. What makes sense in year one does not necessarily make sense in year four.\nSUVs carry higher values, larger engines, and in many cases a more varied usage profile. They go on highway journeys and carry bigger families. Some operate in semi-urban or semi-rural conditions where road quality varies considerably.\nCover terms and applicable add-ons are subject to the underwriting guidelines of the insurer you choose, so it is worth reviewing those in detail rather than making assumptions.\nSedans fall between the two extremes. They are built for comfort and daily utility, maintaining a proper balance between the two. Their drivers tend to be experienced, their usage is typically regular but not extreme, and the vehicle profile is generally stable from year to year.\nA sedan owner’s annual review should also include an honest look at the vehicle’s IDV as it depreciates, and whether the add-ons selected at purchase still serve a purpose.\nRegardless of whether you drive a hatchback, an SUV, or a sedan, the process of reviewing and securing cover has become meaningfully more accessible.\nWhen you buy car policy online, you can move through the details at your own pace, reviewing declared information, selecting add-ons individually, and comparing what different cover structures include before committing.\nThat environment rewards preparation. Knowing what your vehicle category needs from an insurance policy before you enter the renewal or purchase process is the difference between a considered decision and a default one.\nOur website relies on ads to provide free content and sustain our operations. By turning off your ad blocker, you help support us and ensu"
   },
   {
    "group": "ai",
@@ -1006,19 +1123,19 @@
   {
    "group": "ai",
    "source": "OpenAI",
-   "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
-   "url": "https://openai.com/index/dan-driscoll-joins-openai",
+   "title": "Qodo builds context into AI code review with Codex",
+   "url": "https://openai.com/index/qodo-codex-plugin",
    "published": "2026-11-02T00:00:00.000Z",
-   "description": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies.",
+   "description": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.",
    "excerpt": ""
   },
   {
    "group": "ai",
    "source": "OpenAI",
-   "title": "Qodo builds context into AI code review with Codex",
-   "url": "https://openai.com/index/qodo-codex-plugin",
+   "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
+   "url": "https://openai.com/index/dan-driscoll-joins-openai",
    "published": "2026-11-02T00:00:00.000Z",
-   "description": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.",
+   "description": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies.",
    "excerpt": ""
   },
   {
@@ -1092,51 +1209,6 @@
    "published": "2026-11-01T06:00:00.000Z",
    "description": "📝 今日导语 FurtherAI 改造交付、imec 比较部署成本、小红书验证测试，理解 AI 提效的条件与方法。 🏷 今日关键词： FurtherAI 部署成本 小红书 质量工程 AI 原生 📰 今日精选内容 FurtherAI CTO：构建 AI 原生工程组织 FurtherAI &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 什么时候自托管 AI 模型比购买 API 更划算：imec 的任务级基准研究 AI Engineer &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 QECon 北京 2026｜小红书创新产品的 AI Native 质量工程实践 小红书技术REDtech &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 问错一句就可能违规：Upstart 与 Coval 的语音 AI 评估闭环 AI Engineer &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 AWS CEO Garman：AI 需求有望推动未来两年增长逾 40% Bloomberg Tech &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 78% 的用户想要，实际却很少使用：Bumble 的 AI 功能实验教训 AI Engineer &nbsp;·&nbsp; 视",
    "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenAI 12月起将ChatGPT与Codex合并为统一Token额度",
-   "url": "https://aihot.news/items/f6dxzur6d4pwjdhvm1x6m5rfp",
-   "published": "2026-11-01T00:22:41.000Z",
-   "description": "作者引述OpenAI凌晨更新的帮助文档称，从12月开始Plus和Pro用户的ChatGPT聊天与Codex用量将合并为同一Token额度，仅Instant聊天不受影响。作者回顾此前按条数计费的历史、一个月内Codex Pro额度先降后恢复的运营反复，以及社区在GitHub上提issue抗议的反应，认为合并与IPO预期下的算力成本压力有关。 🔗 阅读原文 via AIHOT · https://aihot.news/items/f6dxzur6d4pwjdhvm1x6m5rfp",
-   "excerpt": "作者引述OpenAI凌晨更新的帮助文档称，从12月开始Plus和Pro用户的ChatGPT聊天与Codex用量将合并为同一Token额度，仅Instant聊天不受影响。作者回顾此前按条数计费的历史、一个月内Codex Pro额度先降后恢复的运营反复，以及社区在GitHub上提issue抗议的反应，认为合并与IPO预期下的算力成本压力有关。\n作者以重度用户视角梳理额度合并对聊天和编码习惯的实际冲击，并回溯按条数与按 Token 计费的机制差异，便于理解订阅策略变化的影响。\n作者以重度用户视角梳理额度合并对聊天和编码习惯的实际冲击，并回溯按条数与按 Token 计费的机制差异，便于理解订阅策略变化的影响。"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenRouter 教程：用 Responses API 构建可在 Linux 沙箱验证 bug 的 AI 代码审查脚本",
-   "url": "https://aihot.news/items/yww15c701iat30p8ttjf029ij",
-   "published": "2026-11-01T00:00:00.000Z",
-   "description": "OpenRouter 发布教程，介绍一个 233 行、仅用标准库的 review.py，通过 Responses API 组合 Files API、Shell 沙箱工具和 Apply Patch 工具，把变更文件上传到托管 Linux 沙箱，让模型实际运行检查确认 bug 并返回 V4A 补丁。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yww15c701iat30p8ttjf029ij",
-   "excerpt": "Build an AI Code Reviewer with OpenRouter\nOpenRouter 发布教程，介绍一个 233 行、仅用标准库的 review.py，通过 Responses API 组合 Files API、Shell 沙箱工具和 Apply Patch 工具，把变更文件上传到托管 Linux 沙箱，让模型实际运行检查确认 bug 并返回 V4A 补丁。\n教程给出在沙箱中运行代码验证 bug 的完整脚本与四模型实测数据，读者可照搬接入 pre-push 钩子或 GitHub Actions。\nAI 代码审查器会在你推送或合并之前，检查 Git 变更中的缺陷和安全问题。只读 diff 的审查器不得不猜测文件其余部分长什么样，以及怀疑的缺陷在运行时是否真的会失败，而且它给出的修复建议是以文本形式返回，需要你手动复制进去。\n本指南中的审查器使用 OpenRouter 的 Responses API ，在 Linux 沙箱中运行你改动的文件，通过运行检查来确认每个缺陷，并以补丁形式返回修复，你可以用参数直接应用。在我们用五个缺陷的变更测试的四个模型中，一次审查耗时一到四分钟，费用在 0.015 到 0.045 美元之间。\n该脚本在 Responses API 上组合了三个 OpenRouter 服务器工具 和一个函数工具：\n你需要 Python 3.11 或更新版本、Git，以及一个从 快速入门 获取、已在 shell 中导出的 OpenRouter API 密钥：\nFiles API、Shell 工具和 Apply Patch 工具运行在全局端点上（ https://openrouter.ai/api/v1 ）；区域端点会返回 403 。你修改过的文件和上下文文件会被上传到你的 OpenRouter 工作区，并发送给模型提供商，因此只能对允许分享的代码运行该脚本，并确保这些文件中不含机密信息。\n两个现有测试仍然通过，因为它们没有覆盖 diff 所改动的部分。（我们的沙箱使用 Python 3.11.14 和 SQLite 3.50.4； unittest 开箱即用，而 pytest 未安装。）\n以下是我们某次 anthropic/claude-haiku-5.5 运行的输出：\n脚本退出时返回 1 ，因为有三项发现是 HIGH 。另有四项发现是通过在沙箱中运行代码 confirmed 的，其命令和输出保存在 .git/ai-review.json 下的 evidence 中。被移除的 conn.close() 是 unconfirmed ，因为 CPython 在函数返回时会关闭本地连接。传入 --apply 即可把打过补丁的 app/orders.py 复制到你的工作树中。\n把这个脚本保存为 .git/hooks/pre-push ，然后运行 chmod +x .git/hooks/pre-push ：\n当我们在 main 上提交 review.py 、在其上提交包含五个 bug 的改动，并运行 git push origin main 时，钩子执行了审查（ 5 findings, 1 patch, $0.0117, 96 s ），以 1 退出，Git 打印出 error: failed to push some refs 。远端仍停留在上一个提交。\n把这个工作流保存为 .github/workflows/ai-review.yml 。我们没有在 GitHub Actions 中运行过这个工作流；我们是在本地运行了相同的 git show 和 review.py 命令。\n运行 git show \"$BASE:review.py\" 时会使用基础分支中的脚本副本，这样拉取请求就无法修改检查它的审查器；而 python -I 会让拉取请求中的文件不出现在 Python 的导入路径上。来自 fork 的拉取请求会跳过该任务， timeout-minutes: 15 则覆盖一到四分钟的审查时间。\n在 Settings、Secrets and variables、Actions 下添加 OPENROUTER_API_KEY ，并在你的 分支保护规则 中把 review 设为必需的状态检查。如需更全面的 CI 门禁配置，参见 如何在 CI 中基于 LLM 评估对拉取请求做门禁 。\n我们用默认设置和 --context tests/test_orders.py 对上面的示例为每个模型各跑了三次审查。“发现的 bug”统计的是已完成的审查中发现的五个植入 bug。“通过运行代码确认”指模型在沙箱中运行了检查并显示出该 bug。“补丁修复了全部五个”指我们把被接受的补丁应用到一份干净的副本上，并且我们自己的测试对全部五个 bug 都通过。\n想要每次审查成本最低（$0.0153），就从 anthropic/claude-haiku-5.5 开始；想要更快的审查（60 秒）以及每次运行都能修复全部五个 bug 的补丁（$0.0447），就用 anthropic/claude-sonnet-5.5 （ --model anthropic/claude-sonnet-5.5 ）。你可以在 模型目录 中比较更多模型，并用 Ori Eval 在你自己的仓库上测试它们。\n每份评审账单都包含模型 token 费用，再加上 容器 沙箱时间，每秒 $0.0001。Files API 不单独收费（每个文件上限 100 MiB，每个工作区上限 10 GiB，工作区文件不会过期）。\n沙箱计费从第一条 shell 命令开始，一直到响应结束，所以评审期间模型思考的时间也算在内。因此，即使 token 便宜，模型越慢，沙箱费用就越高：每次 Haiku 评审的沙箱费用为 $0.0074 到 $0.0159，而更快的 Sonnet 运行为 $0.0047 到 $0.0068。\n在 Haiku 5.5 上，只处理 diff 的 Chat Comp"
-  },
-  {
-   "group": "ai",
-   "source": "Simon Willison",
-   "title": "How We Took Over ChatGPT Accounts",
-   "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/",
-   "published": "2026-10-31T23:15:22.000Z",
-   "description": "How We Took Over ChatGPT Accounts Parameter Labs describe an exploit they found against ChatGPT's implementation of the artifacts pattern (OpenAI used to call this \"Canvas\" but it looks like the latest revision is called HTML previews ), where interactive custom HTML apps are displayed in a sandboxed iframe. It's important that HTML in these stays tightly sandboxed to avoid untrusted code interacting with OpenAI APIs and accessing private data. Parameter found quite a complex attack chain. OpenAI use the MathLive JavaScript library as part of their graph support, and that library includes its ",
-   "excerpt": "How We Took Over ChatGPT Accounts ( via ) Parameter Labs describe an exploit they found against ChatGPT's implementation of the artifacts pattern (OpenAI used to call this \"Canvas\" but it looks like the latest revision is called HTML previews ), where interactive custom HTML apps are displayed in a sandboxed iframe.\nIt's important that HTML in these stays tightly sandboxed to avoid untrusted code interacting with OpenAI APIs and accessing private data.\nParameter found quite a complex attack chain. OpenAI use the MathLive JavaScript library as part of their graph support, and that library includes its own virtual keyboard , which can be triggered in the parent page via postMessage() from the sandboxed iframe.\nThat message receiving code uses innerHTML , so anything that sends a message can add custom HTML to the parent - and there was no mechanism to prevent other sandboxed frames, including HTML preview frames, from calling that method.\nThis meant untrusted code in an iframe could insert HTML, and while innerHTML doesn't directly execute script elements it could be used to inject a new iframe without sandbox restrictions.\nOpenAI’s CSP rules blocked inline scripts entirely, and only allowed script loading from a handful of domains, but one of those was YouTube - and the YouTube oEmbed endpoint could be used to reflect JavaScript back in a way that executed it.\nOnce the attack had JavaScript execution on ChatGPT, it was trivial to fetch private user data from APIs and exfiltrate it via an image reference.\nThe end result: you could create a ChatGPT share URL which, when visited by another signed-in user, could exfiltrate their private data or take actions on their behalf.\nOpenAI closed the hole and paid out a $5,000 bug bounty, which I think was a bit cheap for a vulnerability this serious.\nThis is a link post by Simon Willison, posted on 31st October 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "美国白宫科技顾问萨克斯称 Anthropic 可能成为资本主义史上最伟大企业",
-   "url": "https://aihot.news/items/dpm21l66z2iizblehsdg09c8t",
-   "published": "2026-10-31T22:56:28.000Z",
-   "description": "美国白宫科学与技术顾问会议主席戴维·萨克斯在 All-In 播客分析 Anthropic 的 S-1 文件，称其很可能成为资本主义历史上最伟大企业，也可能是回报最高的风险投资项目。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dpm21l66z2iizblehsdg09c8t",
-   "excerpt": "美国白宫科学与技术顾问会议主席：Anthropic 很可能成为资本主义历史最伟大企业\n美国白宫科学与技术顾问会议主席戴维·萨克斯在 All-In 播客分析 Anthropic 的 S-1 文件，称其很可能成为资本主义历史上最伟大企业，也可能是回报最高的风险投资项目。\n萨克斯基于 S-1 财务数据分析 Anthropic 的现金储备与 IPO 融资需求，读者可借此了解其看多逻辑和资本效率论点。\nIT之家 11 月 1 日消息，美国白宫科学与技术顾问会议主席戴维 · 奥利弗 · 萨克斯（David Oliver Sacks）最近出席 All-In 播客，深入分析 Anthropic 的 S-1 注册文件， 称这家人工智能初创公司很可能成为资本主义历史上最伟大的企业 。\nAnthropic 在文件中透露，公司 2026 年上半年营收 163 亿美元 （IT之家注：现汇率约合 1,087.14 亿元人民币） ，账面现金 1,120 亿美元 （现汇率约合 7,469.91 亿元人民币） ，预计 2026 年度经常性收入达 1,000 亿美元 （现汇率约合 6,669.57 亿元人民币） 。通过发行 F 类股票，公司七位创始人将持有 50.1% 的投票权。\n戴维 · 萨克斯表示：“我认为，这很可能成为有史以来回报最高的风险投资项目，尤其考虑到这家公司仅成立六年。这也可能是史上价值创造速度最快的风险投资支持企业。”\n他继续说道：“Anthropic 拥有超 1000 亿美元现金，他们几乎没有烧掉筹集的钱，简直是资本使用效率的典范。“现在有很多看空 Anthropic 的人认为，这家公司未来承诺的资本开支太高，根本不可能兑现。”\n“但这次 IPO 反而为这些承诺提供了保障，因为他们现在已经拥有足够的资金，可以为所有算力订单以及预计中的资本开支提供资金支持。他们实际上只需要募集 800 亿、900 亿或者 1000 亿美元，对吧？这与募集 1500 亿、1750 亿甚至 2000 亿美元完全是两回事，而我之前认为他们需要募集这么多资金。”\n“因此，他们在 IPO 过程中对资本市场提出的融资需求会更低，这意味着他们将拥有更强的定价能力，也能够更好地控制流通股数量。我认为，所有这些因素都让我们有理由对 Anthropic 的 IPO 持积极态度。”\n萨克斯基于 S-1 财务数据分析 Anthropic 的现金储备与 IPO 融资需求，读者可借此了解其看多逻辑和资本效率论点。"
-  },
-  {
-   "group": "ai",
-   "source": "Simon Willison",
-   "title": "datasette-llm 0.1a9",
-   "url": "https://simonwillison.net/2026/Oct/31/datasette-llm/",
-   "published": "2026-10-31T22:10:01.000Z",
-   "description": "Release: datasette-llm 0.1a9 I have some big upgrades to Datasette Agent in the pipeline, but in the meantime here's a tiny user experience improvement to the underlying datasette-llm plugin. It now picks up the default model used by LLM , which means you can start using Datasette Agent without needing to explicitly configure a default model: uvx --with datasette-agent datasette content.db --internal internal.db Previously you would also need to specify a model with -s plugins.datasette-agent.default_model gpt-6-astra . Tags: datasette , llm , datasette-agent",
-   "excerpt": "I have some big upgrades to Datasette Agent in the pipeline, but in the meantime here's a tiny user experience improvement to the underlying datasette-llm plugin.\nIt now picks up the default model used by LLM , which means you can start using Datasette Agent without needing to explicitly configure a default model:\nPreviously you would also need to specify a model with -s plugins.datasette-agent.default_model gpt-6-astra .\nThis is a beat by Simon Willison, posted on 31st October 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
   }
  ]
 }
