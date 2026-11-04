@@ -1,0 +1,302 @@
+{
+ "type": "daily",
+ "date": "2026-11-04",
+ "headline": "OpenAI 发布评测与真实表现存在差距的研究，Mistral Large 4 开放权重；仓储侧沃尔玛向 Symbotic 追加约 60 亿美元，ISO 21423 统一多厂商机器人通信。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "OpenAI 研究：智能体安全评测成绩和真实使用中的表现为什么对不上",
+     "source": "OpenAI Alignment 博客",
+     "published": "2026-11-03",
+     "readMinutes": 15,
+     "summary": "OpenAI 对比六个模型在“尊重警告”安全评测和匹配的 Codex 真实生产决策中的表现，评测成功率普遍低于生产，差距 10.2–37.4 个百分点。模型在评测中常口头说出“这是在测试”（意识率 57.0%–83.7%），但差距最大的模型恰恰常误判评测目标。改变评测的目标表述，可以因果性地改变成功率。",
+     "takeaways": [
+      "评测分数不等于真实行为，方向还可能反过来（评测更差）",
+      "模型对“评测在考什么”的误解，是差距的关键因素",
+      "评测里的目标框架会直接改变结果，读榜单要留意评测设计"
+     ],
+     "why": "你平时用 Claude 做 Agent，这篇告诉你怎么看待“安全/能力评测”的可信度，也是理解 AI 评测方法的一手材料。原文英文，正文有较多术语。",
+     "url": "https://alignment.openai.com/eval-production-behavior-gap/",
+     "tags": [
+      "报告"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Ed Zitron：钱快烧完了——OpenAI 融资缩水与 Anthropic S-1/A 的算力承诺",
+     "source": "Where’s Your Ed At",
+     "published": "2026-11-03",
+     "readMinutes": 25,
+     "summary": "作者认为 AI 行业资金正在枯竭：OpenAI 上周以 1.25 万亿美元估值融资 110 亿美元，低于此前传闻的 300 亿美元、1.4 万亿估值；据 The Information，其 Q1 2026 成本与研发支出合计 121 亿美元，3 月底持有现金及有价证券逾 730 亿美元。文章并拆解 Anthropic 修订后 S-1/A（上市申请文件）里的万亿级算力承诺。观点鲜明偏空，需和事实数据分开看。",
+     "takeaways": [
+      "OpenAI 融资规模和估值都低于此前报道的计划",
+      "两家公司的成本、承诺、依赖结构有可核对的财务数字",
+      "作者立场是看空 AI 泡沫，结论是观点而非定论"
+     ],
+     "why": "想做 AI 方向的就业判断，需要同时看到行业热度和资金面；这篇给出偏空的一面，帮你不被单一叙事带跑。原文为中文转述版（AIHOT 收录），原站为英文长文。",
+     "url": "https://www.wheresyoured.at/running-dry/",
+     "tags": [
+      "观点",
+      "数据"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "StateBench：长文档里语言模型能追踪多少“状态变化”",
+     "source": "Hugging Face / Allen AI",
+     "published": "2026-11-03",
+     "readMinutes": 10,
+     "summary": "Allen AI 提出长上下文状态追踪基准 StateBench，分四个难度，类比程序里不同复杂度的变量赋值。结果：循环/混合架构模型在直接训练后泛化得比 Transformer 远得多；而 Gemini 3.8 Flash、Claude Opus 5.5、GPT-6 Sol/Luna 等前沿模型在输入变长后，难的状态追踪仍会失效。原文英文。",
+     "takeaways": [
+      "状态追踪是读代码、读长故事的底层能力",
+      "Transformer 在长依赖链上有理论局限，循环/混合架构是应对方向",
+      "前沿模型在难题型上仍会崩，做长任务 Agent 要加外部状态管理"
+     ],
+     "why": "做 Agent 时常遇到“长任务中途忘了状态”，这篇解释原因并给出实测，对设计记忆/状态机制有直接启发。",
+     "url": "https://huggingface.co/blog/allenai/statebench",
+     "tags": [
+      "报告"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "LLM 能直接读写神经网络权重？“权重空间编程”及 Qwen 3.8 27B 本地复现",
+     "source": "Simon Willison / Latent Space",
+     "published": "2026-11-03",
+     "readMinutes": 8,
+     "summary": "一篇热门文章称前沿模型（文中为 GPT-6 Astra）仅看原始权重文本就能判断网络用途，还能从零写出小型游戏网络，表现超过用 PPO 训练一亿步的网络。Simon Willison 称自己在笔记本上用 Qwen 3.8 27B 也复现了其中一个例子。原文英文，属于早期观察，尚待更多验证。",
+     "takeaways": [
+      "“权重空间编程”：让强模型直接读写弱模型的权重",
+      "本地 27B 开源模型也能做到其中的例子",
+      "对“自动化研究”流程的影响还需观察"
+     ],
+     "why": "属于圈内今天讨论最多的技术话题，Simon 的文章短、可动手，适合了解前沿但不需要数学门槛。",
+     "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "title": "Mistral Large 4 开放权重，附技术报告",
+     "source": "AIHOT 整理",
+     "published": "2026-11-03",
+     "summary": "官方称在代码智能体与网络安全方向具备前沿能力，比三周前预览版更高效紧凑；模型名 1T-A52B。暂无独立测评，国内可用性未知，厂商说法。",
+     "url": "https://aihot.news/items/bfx52184e0ssnqgdq42o8dg36",
+     "tags": [
+      "新模型"
+     ]
+    },
+    {
+     "title": "Addy Osmani：Agent 时代如何保持批判性思维",
+     "source": "AIHOT 整理",
+     "published": "2026-11-03",
+     "summary": "提出认知卸载、拖延、认知投降三段光谱，建议先写假设、验证标准前置为测试、用测验收尾。",
+     "url": "https://aihot.news/items/uinaiwkzg4u2exkfgv4oha9p7"
+    },
+    {
+     "title": "AMD 三季报：预计 2027 年营收增长超 80%",
+     "source": "AIHOT 整理",
+     "published": "2026-11-03",
+     "summary": "高于分析师模型的 77%，CEO 称数据中心芯片将占明年销售额 80%。",
+     "url": "https://aihot.news/items/ir9nzccipff0uowu3tghi4n3o",
+     "tags": [
+      "财报"
+     ]
+    },
+    {
+     "title": "Revolut 约 2000 名工程师迁到自托管 GLM 写代码",
+     "source": "AIHOT 整理",
+     "published": "2026-11-03",
+     "summary": "Claude Code 和 Codex 列为例外，案例显示自托管开源模型改变使用习惯。",
+     "url": "https://aihot.news/items/op93lgz2xx0ck3znfm724ebfu",
+     "tags": [
+      "案例"
+     ]
+    },
+    {
+     "title": "Google AI Studio 弃用 Gemini 2.5 Pro/Flash，12 月 1 日起自动路由",
+     "source": "AIHOT 整理",
+     "published": "2026-11-03",
+     "summary": "依赖旧模型的 API 项目需提前迁移。",
+     "url": "https://aihot.news/items/ewvepczpb5fewcbzo2tkqdldm"
+    },
+    {
+     "title": "OpenHands 与 Snowflake：用现有 agent harness 对开源模型做 RL 后训练",
+     "source": "AIHOT 整理",
+     "published": "2026-11-03",
+     "summary": "无需在独立 RL 框架重建 harness，训练 GPU 由 Snowflake 提供。",
+     "url": "https://aihot.news/items/recqqiy27l866jfbhjk0cusqh",
+     "tags": [
+      "教程"
+     ]
+    },
+    {
+     "title": "卡兹克开源 Agent 自动化系统 Agent-Autoloop",
+     "source": "AIHOT 整理",
+     "published": "2026-11-03",
+     "summary": "作者开源打磨一年的 Agent 自动化系统，可直接部署或魔改。",
+     "url": "https://aihot.news/items/y0cgwl79wbih8c50svgmit93j",
+     "tags": [
+      "教程"
+     ]
+    },
+    {
+     "title": "IBM 的 Palette：教小模型按设计规范做 PPT",
+     "source": "Hugging Face / IBM Research",
+     "published": "2026-11-03",
+     "summary": "训练小模型按 IBM 设计语言生成幻灯片，在 PresentBench 两个领域排第一（原文英文）。",
+     "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
+     "tags": [
+      "教程"
+     ]
+    },
+    {
+     "title": "DeepMind 用 Antigravity 的化学信息学 Skills 做科研工作流",
+     "source": "Google DeepMind",
+     "published": "2026-11-03",
+     "summary": "模型负责编排，确定性化学工具（RDKit 等）负责计算，是 Skill 设计的案例。",
+     "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+     "tags": [
+      "案例"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "沃尔玛与 Symbotic：仓储自动化变成网络战略",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-03",
+     "readMinutes": 6,
+     "summary": "10 月 29 日沃尔玛与 Symbotic 宣布扩大合作，为美国 25 个区域配送中心增加自动化，初期承诺约 60 亿美元，分多年多地点实施。文章认为自动化的评估单位正从“单个仓库项目”转向“整个网络的运营模式”。原文英文。",
+     "takeaways": [
+      "25 个 RDC、约 60 亿美元的体量",
+      "ROI 从单体仓库改为网络层面衡量",
+      "自动化与库存、上游电商库存管理绑定"
+     ],
+     "why": "物流工程专业做自动化案例分析、写面试故事时，“网络层规划”比单仓选型更有深度。",
+     "url": "https://logisticsviewpoints.com/2026/11/03/walmart-and-symbotic-when-warehouse-automation-becomes-a-network-strategy/",
+     "tags": [
+      "案例",
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "ISO 21423:2026 发布：不同厂商移动机器人的通信与互操作标准",
+     "source": "The Robot Report",
+     "published": "2026-11-03",
+     "readMinutes": 5,
+     "summary": "A3 发布 ISO 21423:2026，规定 AGV、AMR 等工业移动机器人、车队管理系统及其他设备如何交换位置、速度、状态、任务等信息，也涵盖与 ERP、电梯、自动门等对接。A3 称这是其参与制定的首个非安全类机器人标准。原文英文，A3 自述为主。",
+     "takeaways": [
+      "统一协议后多厂商机器人可同场作业",
+      "覆盖机器人、调度、ERP 和楼宇设备",
+      "可能增加市场竞争，对北自、极智嘉等调度系统有影响"
+     ],
+     "why": "和你关注的 AMR/调度方向直接相关，可作为考研复试或面试里“多车调度与互操作”的素材。",
+     "url": "https://www.therobotreport.com/new-iso-interoperability-standard-covers-collaboration-among-mobile-robots-from-multiple-vendors/",
+     "tags": [
+      "数据"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "人形机器人 vs AMR：2026 年仓库先试点哪个",
+     "source": "Robotics & Automation News",
+     "published": "2026-11-03",
+     "readMinutes": 6,
+     "summary": "文章比较两类机器人：AMR（自主移动机器人，靠视觉/激光导航搬运）成熟，人形机器人尝试在为人设计的空间里做操作。以 GXO 与 Agility Robotics 的 Digit 租赁合作为例，说明人形可补充而非替代现有自动化，并给出回收期示例与试点决策框架。原文英文，带推广性质。",
+     "takeaways": [
+      "AMR 自动化“移动”，人形尝试自动化“操作”",
+      "人形更适合先接手具体搬运工位",
+      "决策看任务匹配、运营成本、可靠性和训练数据"
+     ],
+     "why": "对比框架清晰，适合快速建立对人形热度的冷静判断；注意其中有训练数据厂商视角。",
+     "url": "https://roboticsandautomationnews.com/2026/11/03/humanoid-robots-in-warehouses-vs-amrs-which-automation-makes-sense-in-2026/106685/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "title": "10 月物流经理人指数（LMI）70.7，第二高",
+     "source": "DC Velocity",
+     "published": "2026-11-03",
+     "summary": "库存扩张推动，库存成本指数升至 88.8，为 2022 年 3 月以来最高。",
+     "url": "https://www.dcvelocity.com/editorial/featured/logistics-activity-heats-up-ahead-of-holiday-peak",
+     "tags": [
+      "数据"
+     ]
+    },
+    {
+     "title": "美国 10 月 ISM 制造业 PMI 55.5%，连续 10 个月扩张",
+     "source": "MH&L",
+     "published": "2026-11-03",
+     "summary": "较 9 月 54.5% 上升 1 个百分点，六大行业中五个扩张。",
+     "url": "https://www.mhlnews.com/global-supply-chain/news/55416016/manufacturing-expands-again-in-september",
+     "tags": [
+      "数据"
+     ]
+    },
+    {
+     "title": "Tutor Intelligence 完成 7500 万美元 B 轮，a16z 领投",
+     "source": "Robotics & Automation News",
+     "published": "2026-11-03",
+     "summary": "累计融资 1.17 亿美元，用远程操作员“教”机器人，训练机器人基础模型。",
+     "url": "https://roboticsandautomationnews.com/2026/11/03/tutor-intelligence-raises-75-million-to-scale-robot-workforce/106645/"
+    },
+    {
+     "title": "Cutter & Buck 新配送中心用 Kardex 的 AutoStore 方案",
+     "source": "Automated Warehouse",
+     "published": "2026-11-03",
+     "summary": "德州新仓延续 AutoStore 方案，按长期履约规划设计。",
+     "url": "https://www.automatedwarehouseonline.com/cutter-buck-opens-new-distribution-center-with-kardex-automation-help/",
+     "tags": [
+      "案例"
+     ]
+    },
+    {
+     "title": "系统工程化的物流运营：从转型项目到持续设计",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-03",
+     "summary": "物流软件从记录系统走向决策系统，自动行动让架构与治理更重要。",
+     "url": "https://logisticsviewpoints.com/2026/11/03/the-systems-engineered-logistics-operation-from-transformation-projects-to-continuous-design/",
+     "tags": [
+      "观点"
+     ]
+    },
+    {
+     "title": "为失效而设计：物流网络的韧性与失效模式",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-03",
+     "summary": "强调做依赖映射，识别共用网关、枢纽等隐藏的共同故障点。",
+     "url": "https://logisticsviewpoints.com/2026/11/03/design-for-failure-resilience-risk-and-failure-modes/",
+     "tags": [
+      "观点"
+     ]
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "未发现抓取失败的信源（latest.json 与 aihot.json 各接口均成功）。",
+  "WebSearch 未搜到当天额外的重大新模型，仅依据 feeds 与 AIHOT。",
+  "Mistral Large 4 只有 AIHOT 摘要，未读到原文，放速览。",
+  "部分 AIHOT 条目的原文为 X 链接，未能打开，链接用 AIHOT。",
+  "国家统计局与 36氪今日无相关条目；Supply Chain 24/7 的 GS1 研究无正文，未收录。"
+ ]
+}
