@@ -1,0 +1,264 @@
+{
+ "type": "daily",
+ "date": "2026-11-06",
+ "headline": "OpenAI 与 a16z 同日聚焦 AI 网络安全，美股因中期选举担忧 AI 监管而重挫；仓储侧则是 AutoStore 二次部署和旺季备战的实操案例。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "漏洞利用曾是瓶颈：AI 让攻击成本从数月降到数小时",
+     "source": "a16z",
+     "published": "2026-11-05",
+     "readMinutes": 15,
+     "summary": "a16z 用 23 年的漏洞数据论证：过去网络攻击的瓶颈是把漏洞写成可用攻击程序（exploit）所需的专业能力和时间，2025–2026 年这一步降到几分钟到几小时。文中举例：8 月底一名操作者用数百个 AI 智能体攻击打印管理服务器，395 个组织、48 个国家被攻陷，用的还是便宜的开源模型。作者认为不会出现“电网全黑”的灾难，但会出现类似 2003 蠕虫、2017 WannaCry 的爆发，打击补丁慢的系统。原文英文。",
+     "takeaways": [
+      "漏洞披露到被利用的时间窗口从“天/月”变成“小时”，7 天、30 天的补丁 SLA（服务时限承诺）已不适用",
+      "受冲击最大的是无法快速更新的系统（工控、医院、水电等）",
+      "a16z 内部有“坏十年”和“Metasploit/Shodan 式虚惊”两派，结论偏温和但承认成本结构已变"
+     ],
+     "why": "你做网站和 Agent，安全是绕不开的基本功；仓储自动化设备（WMS、AGV 控制系统）也常是更新慢的系统，这篇能帮你理解为什么 AI 时代安全会变成交付的硬要求。",
+     "url": "https://www.a16z.news/p/the-exploit-was-the-bottleneck",
+     "tags": [
+      "观点",
+      "数据"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "OpenAI 发布 GPT-6 Cyber：专为发现并验证漏洞训练的安全智能体",
+     "source": "OpenAI（经 AIHOT 整理）",
+     "published": "2026-11-05",
+     "readMinutes": 10,
+     "summary": "OpenAI 发布网络安全专用模型 GPT-6 Cyber。ExploitGym（测模型能否利用指定漏洞）得分 48.5%，高于 GPT-5.6 Cyber 的 32.1%；不开部署提示词时 99.93% 的测试里不碰范围外服务。官方称用它在 Linux 里做出 948 个提权利用，在 Firefox 找到 81 个此前未知的高危漏洞，Mozilla 已修复其中不少。仅通过 Daybreak Red/Blue 平台向审核通过的安全团队开放，国内不可直接使用；暂无独立测评。原文英文，OpenAI 官网页面本次未能抓取正文，内容据 AIHOT 收录的官方原文整理。",
+     "takeaways": [
+      "模型“守边界”能力被单独训练和评测，是智能体可用于生产的关键指标",
+      "访问分级：Blue 面向防御者，Red 面向进攻性研究，需审核",
+      "数字全部来自 OpenAI 自己的评测，需等第三方复测"
+     ],
+     "why": "和上一篇配着读：一边是攻击成本骤降，一边是厂商把同样能力做成防御产品。对想做 FDE（客户现场的 AI 交付工程）的你，能看到“能力 + 权限边界”是怎样包装成产品的。",
+     "url": "https://aihot.news/items/u904yv6dn7sw6lwjgxxedqd3b",
+     "tags": [
+      "新模型"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "Thinking Machines Lab 发布 Inkling 2 Small：594B 参数 MoE，下周开放 Apache 2.0 权重",
+     "source": "Thinking Machines Lab（经 AIHOT 整理）",
+     "published": "2026-11-05",
+     "readMinutes": 12,
+     "summary": "第二代模型 Inkling 2 Small 是混合专家（MoE，每次只激活一部分参数）模型，总参数 594B、激活 17B，支持图像输入和可调推理强度。Artificial Analysis 智能指数 31 分，官方称较上一代大幅提升，尤其是长时程自主编程；训练用了数十万个长任务做强化学习。目前只能通过 Tinker 使用，外部安全测试后计划下周以 Apache 2.0 开放权重。对比：同日 Hy4 为 35 分，Kimi K3.1 Pro 为 46 分，所以它是开源中的追赶者而非领先者。原文英文。",
+     "takeaways": [
+      "训练细节披露较完整：强化学习评分不再只看单元测试是否通过，还评估解题过程",
+      "开放权重要等下周，到时才能看到真实可用性",
+      "31 分低于同期多个国产模型，价格和国内可用性暂无信息"
+     ],
+     "why": "想知道“强化学习训练编程智能体”具体怎么做，这是少见的公开配方；你平时用 Claude 写代码，也能据此理解各家编程模型的差距。",
+     "url": "https://aihot.news/items/bu8612ca3e1uyxjppk56ef1wl",
+     "tags": [
+      "新模型"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "NVIDIA Cosmos 3：四个开放权重世界模型，用于机器人与自动驾驶仿真",
+     "source": "Hugging Face / NVIDIA",
+     "published": "2026-11-05",
+     "readMinutes": 8,
+     "summary": "NVIDIA 为 Cosmos 3 增加四个开放权重检查点，均基于 Cosmos 3 Nano、16B 可训练参数，采用 OpenMDW 1.1 许可，可商用。Sim-Bimanual 根据动作预测双臂操作的视觉后果，Sim-Transfer 把物理仿真器的控制量转成生成画面，另有摄像头加激光雷达同步生成的驾驶场景。原文英文，厂商自述，暂无独立测评。",
+     "takeaways": [
+      "“世界模型”= 让模型预测动作会带来什么画面，用来低成本造训练环境",
+      "机器人场景是双臂操作和仿真到真实的迁移",
+      "权重开放，有技术报告可查"
+     ],
+     "why": "机器人方向是你考研三个候选之一，世界模型是具身智能的训练基础设施，值得了解其概念。",
+     "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+     "tags": [
+      "新模型"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": false,
+     "title": "Google 发布 Gemini Omni 1.2 Flash：原生 15 秒视频，降价 30% 至 $0.07/秒（720p）",
+     "source": "Google AI",
+     "summary": "支持多轮对话式编辑和更好的参考图遵循，已在 Gemini API 与企业版上线；价格为官方数据。",
+     "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+    },
+    {
+     "pick": false,
+     "title": "腾讯混元 Hy4 获 Artificial Analysis 智能指数 35 分",
+     "source": "AIHOT 整理",
+     "summary": "国产模型中仅次于 Kimi K3.1 Pro（46）；编程 FrontierCode 2.0 得 31%，但幻觉率 89%，100 万 token 上下文。",
+     "url": "https://aihot.news/items/fj4zi12biz0b62ckhzg5awcxx"
+    },
+    {
+     "pick": false,
+     "title": "Kimi K3.1 Pro 开放权重；Cat Wu 离开 Anthropic 加入 OpenAI",
+     "source": "Latent Space",
+     "summary": "11 月 4 日 AI 动态汇总：Kimi 开权重、多起人事和收购（Factory 收购 HumanLayer、Meta 收购 Conductor）。",
+     "url": "https://latent.space/p/ainews-it-s-swapping-season/"
+    },
+    {
+     "pick": false,
+     "title": "中期选举后美股 AI 板块暴跌，纳指单日跌 5.52%",
+     "source": "AIHOT 整理",
+     "summary": "11 月 5 日市场担心民主党控国会放缓 AI 投资，英伟达跌 9.3%，费城半导体指数跌 12.3%。",
+     "url": "https://aihot.news/items/czctc3kqzf5wru8fhsbnhvxt7"
+    },
+    {
+     "pick": false,
+     "title": "蓝潮冲击 AI 行业：44 项数据中心暂停提案通过 43 项",
+     "source": "The Verge（AIHOT 整理）",
+     "summary": "民调显示 76% 选民反对社区建数据中心，州级 AI 监管前景生变。",
+     "url": "https://aihot.news/items/vkfrtci1ufbtbydsqersys6lx"
+    },
+    {
+     "pick": false,
+     "title": "OpenAI：ChatGPT 与 API 每周生成图像超 40 亿张",
+     "source": "AIHOT 整理",
+     "summary": "8 周前为 30 亿张；API 将上线两个生成速度提升 50% 的图像模型。",
+     "url": "https://aihot.news/items/z16tksw5l40w2edrohnozslkl"
+    },
+    {
+     "pick": false,
+     "title": "Cursor 推出应用构建功能：描述需求即可构建并部署在线应用",
+     "source": "AIHOT 整理",
+     "summary": "云端智能体自动搭建、配 Postgres 数据库、SSO 登录并托管部署。",
+     "url": "https://aihot.news/items/m5s02uukcl0id6rn7t08f6ya3"
+    },
+    {
+     "pick": false,
+     "title": "METR 评审 Anthropic 8 月风险报告：可能已触及 2 倍加速预警阈值",
+     "source": "AIHOT 整理",
+     "summary": "METR 同意直接灾难风险为“低”，但认为自动化研发加速的判断依据被弱化。",
+     "url": "https://aihot.news/items/k53ssxx8ie3n6fzyqmky4izv7"
+    },
+    {
+     "pick": false,
+     "title": "World Labs 发布 Frameboy：实时体验 Atlas 世界模型",
+     "source": "AIHOT 整理",
+     "summary": "优化版自回归世界模型，云端流式传输最高 15 帧/秒，支持像素级相机控制。",
+     "url": "https://aihot.news/items/m725rhhdt7a38zdd3aappeofn"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "第二座自动化仓库可能比第一座更说明问题：Cutter & Buck、Kardex 与 AutoStore",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-05",
+     "readMinutes": 6,
+     "summary": "服装企业 Cutter & Buck 在得州新建配送中心，第二次采用 Kardex 实施的 AutoStore 货到人系统：50,502 个料箱、32 台 R5 Pro 机器人、13 个工作站，设计每小时 1,256 次料箱呈现，仿真平均 1,284。作者强调重点是“做过一次后怎么设计下一座”。首个 Renton 仓 2023 年 7 月上线（3.4 万+料箱、54 台机器人），厂商报告旺季人力需求降 60%（12 人替代 30 人），订单最快 10 分钟发出。原文英文，效果数字来自 Kardex 案例。",
+     "takeaways": [
+      "评价自动化应看二次投资，看是否复用运营数据而非照搬",
+      "关键指标：料箱数、机器人数、工作站数、每小时料箱呈现数（port 吞吐）",
+      "案例数据多为厂商提供，需谨慎看待"
+     ],
+     "why": "AutoStore 型 ASRS 的配置参数和指标，正是物流工程课设和面试讲方案时会用到的语言，且是大福、极智嘉等同类方案的参照。",
+     "url": "https://logisticsviewpoints.com/2026/11/05/cutter-buck-kardex-and-autostore-why-the-second-automated-warehouse-may-matter-more-than-the-first/",
+     "tags": [
+      "案例"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "Ambi Robotics 如何帮客户备战旺季",
+     "source": "The Robot Report",
+     "published": "2026-11-05",
+     "readMinutes": 6,
+     "summary": "Ambi 联合创始人兼 COO 称，物流商旺季吞吐量通常增 25%–40%，今年预计其客户增 9%–10%。公司旺季前要在 8 个设施上线新系统，多数是新版 AmbiSort；团队一半人出差巡检、一半待命排障，客户常靠加班次、加人和旺季前加训来扩产能。原文英文。",
+     "takeaways": [
+      "旺季产能靠加班次、加人、加训练，而非只靠加设备",
+      "机器人公司的现场服务（巡检 + 待命）是交付的重要部分",
+      "系统表现既取决于设备本身，也取决于操作员熟练度"
+     ],
+     "why": "能看到分拣机器人厂商的现场交付与运维是怎么做的，对你关注的“交付工程”岗位很有参考。",
+     "url": "https://www.therobotreport.com/how-ambi-robotics-helps-customers-prepare-peak-season/",
+     "tags": [
+      "案例"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "OpenAI 收购 Pierre：当写代码不再是瓶颈，供应链软件的约束转向变更管理",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-05",
+     "readMinutes": 5,
+     "summary": "OpenAI 11 月 4 日宣布拟收购代码审查与存储工具公司 Pierre，此前 11 月 2 日发布内部源代码管理后端 Pando。作者用“瓶颈转移”类比：编程智能体让代码产出变快，但评审、集成、回归测试跟不上。对 TMS、WMS、计划软件厂商意味着现代化更快，同时 AI 辅助开发的风险管理变得重要。原文英文，属评论分析。",
+     "takeaways": [
+      "瓶颈从“写代码”转向“验证和合并变更”",
+      "WMS/TMS 这类复杂系统更需要变更控制",
+      "企业采购软件时应问厂商如何管控 AI 生成代码"
+     ],
+     "why": "把你平时用 Claude 写代码的体验，和仓储软件行业连起来，对 AI 产品经理、FDE 求职有话题价值。",
+     "url": "https://logisticsviewpoints.com/2026/11/05/openais-pierre-acquisition-signals-a-new-era-for-supply-chain-software-development/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": false,
+     "title": "Agility Robotics 登陆纳斯达克（代码 AGLT）首日收 $11.49",
+     "source": "The Robot Report",
+     "summary": "开盘 $11.26，盘中 $8.40–$12.15，称是首家上市的纯腿式人形机器人公司；Symbotic 当日跌 2.47%。",
+     "url": "https://www.therobotreport.com/how-did-agility-robotics-perform-on-its-first-day-on-the-stock-market/"
+    },
+    {
+     "pick": false,
+     "title": "Kearney：2027 上半年全球供应链成本预计升 2.7%，上行情形 6.7%",
+     "source": "MH&L",
+     "summary": "印度最高可能升 8.3%、中国 5.9%、美国 5%；地缘风险是最大变量。",
+     "url": "https://www.mhlnews.com/global-supply-chain/news/55416363/global-supply-chain-costs-to-rise-27-67-kearney"
+    },
+    {
+     "pick": false,
+     "title": "Kinaxis 2026 年 Q3 SaaS 收入增长 22%，上调全年预期",
+     "source": "Logistics Viewpoints",
+     "summary": "供应链计划软件厂商财报，上调全年展望。",
+     "url": "https://logisticsviewpoints.com/2026/11/05/kinaxis-reports-22-saas-growth-in-q3-2026-raises-full-year-outlook/"
+    },
+    {
+     "pick": false,
+     "title": "Blue Yonder 推出面向零售与分销商的 AI 原生订单管理",
+     "source": "Logistics Viewpoints",
+     "summary": "厂商新品发布，属营销性质。",
+     "url": "https://logisticsviewpoints.com/2026/11/05/blue-yonder-launches-ai-native-order-management-for-retailers-and-distributors/"
+    },
+    {
+     "pick": false,
+     "title": "智元 AGIBOT 发布 GO-3 预览版，称在三项具身智能基准登顶",
+     "source": "Robotics & Automation News",
+     "summary": "厂商自述成绩，暂无独立测评。",
+     "url": "https://roboticsandautomationnews.com/2026/11/05/agibot-unveils-go-3-preview-and-takes-top-spot-on-three-embodied-ai-benchmarks/106711/"
+    },
+    {
+     "pick": false,
+     "title": "仓库布局怎么选？考虑作业类型、SKU、设备与未来自动化",
+     "source": "Automated Warehouse",
+     "summary": "入门级科普，列出动态货位等布局决策要点。",
+     "url": "https://www.automatedwarehouseonline.com/which-warehouse-layout-is-right-for-your-business/"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "抓取失败的信源：Epoch AI（HTTP 403）、Import AI（HTTP 403）、Symbotic IR（HTTP 403）、Interact Analysis（fetch failed）、Locus Robotics（HTTP 410）、国家统计局（超时）。",
+  "GPT-6 Cyber、Inkling 2 Small 的 OpenAI/Thinking Machines 官网原文未直接抓取，内容依据 AIHOT 收录的官方正文，已在条目中说明。",
+  "本次未额外进行 WebSearch 核查，仅依据信源与 AIHOT；今日仓储一手信源较少，精读只给 3 条。",
+  "国内未见中文一手仓储信源当天更新。"
+ ]
+}
