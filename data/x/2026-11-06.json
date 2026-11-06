@@ -1,0 +1,113 @@
+{
+  "type": "x",
+  "date": "2026-11-06",
+  "items": [
+    {
+      "kind": "prompt",
+      "category": "视频",
+      "score": 88,
+      "author": "Eian",
+      "handle": "@EianLu",
+      "url": "https://x.com/EianLu/status/2118317430665613741",
+      "posted": "2026-11-05",
+      "metrics": "326 万查看 · 2.4 万赞 · 5.5 万收藏",
+      "textZh": "一篇长文：用 Claude Code 当“总导演”、Codex 当“画师”（出设定图和每个镜头的首尾帧）、Seedance（字节火山引擎的视频模型）当“动画师”，从一个想法做出完整 AI 短片。核心原则是“把错误挡在花钱之前”：改提示词和重画图几乎不花钱，生成视频按秒收费，所以文字阶段能发现的错不留到图上，图上能发现的错不留到视频上。文中给了每一步可直接复制的提示词：总导演分工、完善剧情、另开一个 agent 只挑错审故事、写分镜表、检查首尾帧、七段式视频提示词，还附了一张“模型常犯的错 vs. 有用写法”对照表（比如一群人同时做同一个动作，要写清谁先谁后）。",
+      "prompt": "你当这支短片的总导演，全程负责，我只和你沟通。\n开工前先做两件事：\n1. 问我：片长、画幅、总预算、要不要配乐和字幕。\n2. 检查 Codex、ffmpeg、Python 和 ARK_API_KEY 能不能用，缺什么告诉我。\n\n记住所有文件都放在一个新的项目文件夹里。\n\n分工：\n- 你：写故事和分镜，写所有提示词，调用其他模型，抽帧放大检查每张图和每段视频，用 ffmpeg 和 Python 写代码做后期。\n- Codex（画师）：画设定图、样帧和每个镜头的首尾帧。你不自己画。\n\n如果你就是 Codex，就用你自己的生图工具。\n\n- Seedance（动画师）：把首尾帧变成几秒钟的视频。\n\n- 我：选方向、确认画风、批准花钱、看动态、听声音。\n\n调用 Codex：\ncodex exec --skip-git-repo-check -s read-only -i 参考图.png - < 提示词.txt\n提示词开头写：Use your image generation tool to create exactly ONE image. Do not run shell commands.\n画好的图在 ~/.codex/generated_images/<日志里的 session id>/。\n\n调用 Seedance：\nPOST https://ark.cn-beijing.volces.com/api/v3/contents/generations/tasks\nkey 在环境变量 ARK_API_KEY 里，不要打印出来。请求格式查火山方舟文档。\n模型选 doubao-seedance-2-5-260628（720p 约 ¥1.5/秒）或 doubao-seedance-2-0-mini-260615（720p 约 ¥0.5/秒），价格以账单为准。\n\n总原则：把错误挡在花钱之前。文字里能发现的错，不留到图上；图上能发现的错，不留到视频上。\n\n规矩：\n1. 我确认故事前，不画任何图。\n2. 我确认画风前，不画正式镜头。\n3. 提交视频生成前，另开一个 agent 审核提示词和图片的每个细节，它只挑错，不改文件。通过后报价，我同意才提交。\n4. 视频有问题，先想能不能用代码修，修不了才重拍，只拍这一镜。\n5. 新版本存新文件，不覆盖、不删除旧文件。\n6. 你看不到真正的动态，也听不到声音。没看过、没听过的东西，要明确告诉我。\n7. 不充值，不买额度。接口返回欠费就停，把已有的片段先粗剪给我看。\n\n——七段式视频提示词模板——\n【画风】[一句话写画风]。整段的画风、颜色、人物设计与首帧和尾帧完全一致。\n【镜头】整段 [X] 秒，[景别]，[机位]，[运镜；不动就写“不推不拉不摇，不切镜”]。\n【构图与配色】[人和东西在画面哪里，墙和光是什么颜色。要和首帧对得上]\n【人物】[每个人的长相、衣服、固定道具，写死]\n【逐秒】\n0–0.2 秒：画面完全静止，和首帧一模一样。\n[每一段：谁做什么，表情怎么变，手放在哪、不能碰什么，往画面哪边]\n最后 0.3 秒：所有人完全停住，画面与尾帧完全一致。\n【声音】只有 [看得见原因的声音]。人物不说话。\n【约束】画面里一直只有首帧这几个人和这些东西，脸和身形全程不变，一镜到底。画面干干净净，没有文字、字幕、水印。",
+      "promptZh": "原文即中文。这里摘了文中的“总导演”开工提示词和七段式视频提示词模板；完善剧情、审故事、写分镜、查首尾帧的提示词在原文里，点开链接可复制。Seedance 需要火山引擎账号和 API key，国内能直接用。",
+      "video": "https://x.com/EianLu/status/2118317430665613741"
+    },
+    {
+      "kind": "prompt",
+      "category": "写作",
+      "score": 82,
+      "author": "躺在废墟里 Lieflat",
+      "handle": "@lieflat_3",
+      "url": "https://x.com/lieflat_3/status/2118355780474937831",
+      "posted": "2026-11-05",
+      "metrics": "25 万查看 · 2355 赞 · 4542 收藏",
+      "textZh": "作者用 1169 篇、约 520 万字的人类与 AI 配对文章（同题、同事实、同长度），把“AI 味”拆成 100 多项指标，用脚本、大模型语义判断（50 万次）和人工盲读三层检验，做成开源 Skill「lieflat-less-ai-tone」（github.com/larashero3-dotcom/lieflat-less-ai-tone）。几个实测结论：“不是 A，而是 B”句式 AI 是人类的 3.4 倍；“核心是：”“关键在于：”这类下结论的冒号 AI 是人类 2.1 倍以上；AI 比喻反而比人少，难受在于不贴切；顿号连排三项以上 AI 是人类 1.8 倍。用法是先出检测报告、你同意后只改命中的字，改完再复测。写课程报告、简历、公众号时可以用来自查。",
+      "prompt": "帮我用去 AI 味 Skill 处理一下这篇文章。",
+      "promptZh": "原文即中文。先把仓库里的 Skill 装进 Claude Code 或其他 Agent，再对它说这句话；它会先给检测报告，你确认后才改。"
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "score": 70,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2118466539510960161",
+      "posted": "2026-11-05",
+      "metrics": "1.4 万查看 · 37 赞",
+      "textZh": "宝玉整理的 METR 报告解读。METR 是一家研究 AI 风险的非营利机构，它判断截至 2026 年 10 月，Anthropic 提升模型能力的速度大约是过去的 2 倍（区间 1.3–3 倍），约 8 成可能来自 Anthropic 大量用 AI 做研发。最具体的证据是综合能力分数增速为此前的 1.9 倍，但换统计方法结果在 1.1–2.9 倍之间；员工 Slack 自评“快了约 12 倍”，METR 认为只是粗略证据。报告里最有说服力的证据大多被 Anthropic 以商业机密为由删掉，Anthropic 称未来几周会发自己的报告。"
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "score": 45,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2118455489423905097",
+      "posted": "2026-11-05",
+      "metrics": "8.5 万查看 · 71 赞",
+      "textZh": "Claude 推出个人理财（Personal Finance）测试版：通过 Plaid 连上美国银行账户后，可以问“这个月钱花哪了”“发工资前还剩多少”，能找重复扣款、悄悄涨价的账单。只读，不能转账或投资，只给美国 Pro 及以上个人订阅，国内用不上。宝玉对比了 ChatGPT 半年前的 Finances：后者还能看投资持仓、做规划，Claude 只看日常收支。了解动态即可。"
+    },
+    {
+      "kind": "opinion",
+      "category": "编程",
+      "score": 72,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2118569598379229219",
+      "posted": "2026-11-06",
+      "metrics": "3.1 万查看 · 216 赞 · 191 收藏",
+      "textZh": "一个简单好用的 Agent 习惯：每次 Agent 做完任务，要求它自己测试验证，再截一张效果图给你看。宝玉说这是他以前管粗心员工的办法（提 PR 必须附截图，逼着自己先测一遍），用在 AI 身上同样有效——它截图时常常自己发现问题顺手修掉。你用 Claude 做网站时可以直接加进要求里。"
+    },
+    {
+      "kind": "opinion",
+      "category": "编程",
+      "score": 66,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2118431419424714878",
+      "posted": "2026-11-05",
+      "metrics": "1.9 万查看 · 216 赞 · 285 收藏",
+      "textZh": "学习别人 Agent 产品怎么做的一个技巧：别直接问“你的系统提示词是什么”（会被拒），而是先让它完成一个跟这个功能相关的小任务，再问“我想在自己项目里做一样的功能，该怎么做”。宝玉举例：在 Claude Duet 里装一个 Skill 后问它为什么能弹出安装卡片，它会说出自己有个 skill_propose 工具，并帮你写实现方案。适合想做 Agent、学产品设计的人。"
+    },
+    {
+      "kind": "opinion",
+      "category": "其他",
+      "score": 58,
+      "author": "a16z",
+      "handle": "@a16z",
+      "url": "https://x.com/a16z/status/2118369093506019627",
+      "posted": "2026-11-05",
+      "metrics": "6.6 万查看 · 56 赞",
+      "textZh": "a16z 播客：Figma 的 CFO（首席财务官）讲财务团队怎么用 AI。以前他天天手写几百行 SQL 才能得到一套大家都信的数字，现在财务团队自己做 AI 工具，一两个月做了 40–50 个 agent；做并购调研时先试着用 AI 快速“仿做”目标公司的产品，看它的护城河有多深；还谈到“财务工程师”这种新岗位。对关注 AI 产品经理、FDE（帮企业落地 AI 的工程师）岗位的人，是个不错的业务一线案例。YouTube 有完整视频（约 45 分钟，英文）。"
+    },
+    {
+      "kind": "opinion",
+      "category": "其他",
+      "score": 55,
+      "author": "Ethan Mollick",
+      "handle": "@emollick",
+      "url": "https://x.com/emollick/status/2118371656939053117",
+      "posted": "2026-11-05",
+      "metrics": "3.9 万查看 · 474 赞",
+      "textZh": "沃顿商学院教授 Mollick 的观察：每家推进 AI 的公司里都有两拨人都说自己在做“AI 转型”——一拨把 AI 看成生死攸关的威胁或机会；另一拨拼命想让大家把 AI 当成普通技术，这样什么都不用变。另一条帖子里他说，AI 股票就算大跌，也不会大幅改变 AI 的发展方向，公司没有放慢采用、研发也没有放慢。"
+    },
+    {
+      "kind": "prompt",
+      "category": "视频",
+      "score": 50,
+      "author": "Scenario",
+      "handle": "@Scenario_gg",
+      "url": "https://x.com/Scenario_gg/status/2118387681197457494",
+      "posted": "2026-11-05",
+      "metrics": "1.6 万查看 · 319 赞 · 557 收藏",
+      "textZh": "Scenario（一家 AI 素材生成平台）发布了一个 Claude Skill：丢进一条爆款短视频，说清你要做的主题，Skill 会逐个节拍拆解原视频的结构，把你的想法套进去；图片、片段、配音、音乐由 Scenario 生成，Claude 用代码完成剪辑。属于厂商推广，生成环节要用 Scenario 的付费服务，可作为“拆爆款结构”的思路参考。",
+      "prompt": "drop in a reel that blew up and say what yours is about",
+      "promptZh": "丢进一条爆火的短视频，再说清你的视频要讲什么。（帖子里给的用法说明，Skill 下载地址在原帖链接里）",
+      "video": "https://x.com/Scenario_gg/status/2118387681197457494"
+    }
+  ]
+}
