@@ -1,0 +1,90 @@
+{
+  "type": "x",
+  "date": "2026-11-07",
+  "items": [
+    {
+      "kind": "prompt",
+      "category": "视频",
+      "score": 74,
+      "author": "Nyxera",
+      "handle": "@Nyxera0x",
+      "url": "https://x.com/Nyxera0x/status/2118689860437315679",
+      "posted": "2026-11-06",
+      "metrics": "19.8 万查看 · 505 赞 · 1187 收藏",
+      "textZh": "一篇长文：先用 ChatGPT 生成一张“机械动物”产品图当参考，再让 Claude Code（Opus 5.5）用 three.js 在网页里把它一块块“写”成可拆解的 3D 模型，最后自动录成约 20 秒的拆解短片。关键不是提示词，而是一份“岗位说明书”文件：每张图先写 10–12 条可核对的检查清单，静帧至少对照参考图打分 3 轮，“我点头之前不许录视频”，每次踩坑都把修正写回这份文件。作者的经验很具体：判断“机械感够不够”要让 Claude 量化测算而不是凭感觉；比例要先从参考图量出数字；一张静帧大约耗 40 万 token，别同时跑 4 个。整套方法已做成免费 Claude Code Skill：github.com/Nyxera0x/cutaway。",
+      "prompt": "A robotic [hammerhead shark] as a precision machine, studio product shot on a near-white background with a soft floor shadow.\nWhite glossy shells with clearcoat, green only on tips, rims, edges and joint rings.\nDense dark mechanism showing through cut-outs and clear glass: gears, pistons, hoses, small screws.\nEyes as glossy black lenses with a thin green ring. Fins and membranes milky and frosted with thin veins.\nFront three-quarter view, the whole subject in frame.",
+      "promptZh": "一台精密机械做成的[锤头鲨]，影棚产品照，近白色背景，地面有柔和阴影。\n外壳是带清漆的白色亮面，只有尖端、边缘、棱线和关节环是绿色。\n透过镂空和透明玻璃能看到密集的深色机械结构：齿轮、活塞、软管、小螺丝。\n眼睛是亮黑色镜头，外圈一道细绿环。鳍和膜是乳白磨砂质感，带细细的脉络。\n正面四分之三视角，主体完整入画。\n（这是第一步生成参考图的提示词，方括号里可换成摩托车发动机、无人机、机械表等；后续的岗位说明书、检查清单和全部提示词在 Skill 仓库里。）",
+      "images": [
+        "https://pbs.twimg.com/amplify_video_thumb/2118656610188787712/img/GCQvvmsM468teheQ.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2118656790703321088/img/HJuqFekZIHimssRq.jpg"
+      ],
+      "video": "https://x.com/Nyxera0x/status/2118689860437315679"
+    },
+    {
+      "kind": "news",
+      "category": "视频",
+      "score": 78,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2118820452038557790",
+      "posted": "2026-11-07",
+      "metrics": "1.5 万查看",
+      "textZh": "Google 11 月 5 日发布视频模型 Gemini Omni 1.2 Flash 并正式商用：一次最长生成 15 秒带声音的视频，720p 每秒 0.07 美元（15 秒约 1 美元），比 1.1 版降价 30%；可以先用 360p 打草稿（15 秒约 0.35 美元）。能对同一条视频连续提修改（换背景、换产品、改光线），最多参考 6 张图加一段 3 秒动作视频。对比 Runway 平台上的报价，它是目前带声音视频里最便宜的。注意：API 免费层不能用；官方只对英文做过完整评估，中文提示词效果没保证。另据 OpenAI 帮助中心，Sora 的 API 已于 9 月停服。"
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "score": 70,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2118773706402967960",
+      "posted": "2026-11-07",
+      "metrics": "1.6 万查看",
+      "textZh": "整理 TechCrunch 报道的 Ramp（美国企业财务软件公司）数据：企业用的 token 还在猛涨（8 月初到 10 月中多了约 65%），但花的钱几乎没涨（只多 1.5%），主要因为模型降价、企业给员工设预算并把简单活分给便宜小模型。OpenAI 和 Anthropic 的综合单价一个月降了 27%。Anthropic 拿走企业 token 支出的 60.5%，三季度收入 169.6 亿美元、环比涨 47%，但据彭博社，投资者对它上市估值的预期已从 2 万亿美元降到 1.2–1.3 万亿。样本偏美国科技公司，不代表全部。"
+    },
+    {
+      "kind": "opinion",
+      "category": "编程",
+      "score": 76,
+      "author": "dax",
+      "handle": "@thdxr",
+      "url": "https://x.com/thdxr/status/2118755687274532893",
+      "posted": "2026-11-07",
+      "metrics": "7.3 万查看 · 1672 赞",
+      "textZh": "开源编程工具 opencode 的开发者分享团队省钱做法：主 Agent 用 Opus 5.5，所有具体活都派给便宜的 DeepSeek Flash 子 Agent（子 Agent：主 Agent 分派出去干活的小助手）。要点：每个项目保持一个长期会话；派任务时严格限定范围；要求子 Agent 交“干完活的证据”而不是一段总结；最后对代码改动做一步检查，确认没跑偏。他说 Opus 很擅长当这种“包工头”。"
+    },
+    {
+      "kind": "news",
+      "category": "编程",
+      "score": 62,
+      "author": "Tony",
+      "handle": "@EnvolDev",
+      "url": "https://x.com/EnvolDev/status/2118742203371573615",
+      "posted": "2026-11-07",
+      "metrics": "15 万查看 · 1168 赞",
+      "textZh": "同一个提示词、同一个模型 Claude Opus 5.5，只改“思考强度”档位做一段 25 秒短片：High 花 26 美元、2 小时 17 分；Extra High 46 美元、3 小时 11 分；Max 85 美元、3 小时 38 分；Ultra 682 美元、近 11 小时，是 High 的 26 倍。作者自己的选择是 Extra High，认为质量、时间和花费最平衡。只是个人单次测试，但能帮你对各档位的成本有个直观概念。"
+    },
+    {
+      "kind": "news",
+      "category": "研究",
+      "score": 60,
+      "author": "Ethan Mollick",
+      "handle": "@emollick",
+      "url": "https://x.com/emollick/status/2118859591798980657",
+      "posted": "2026-11-07",
+      "metrics": "3.3 万查看",
+      "textZh": "沃顿商学院教授转发 Anthropic 新研究（研究人员如何使用 Claude）：按各学科估算，以现有能力如果普及，AI 能承担完成一项新研究所需研究者时间的 27%–52%，各学科中位数 38%。原文：anthropic.com/research/how-researchers-use-claude。"
+    },
+    {
+      "kind": "news",
+      "category": "编程",
+      "score": 58,
+      "author": "Anthropic",
+      "handle": "@AnthropicAI",
+      "url": "https://x.com/AnthropicAI/status/2118814753154064501",
+      "posted": "2026-11-07",
+      "metrics": "109 万查看 · 9841 赞",
+      "textZh": "Anthropic 工程博客新文章：讲 Claude 的记忆功能如何用“做梦”（空闲时整理记忆）来归纳学到的东西、纠正之前的错误，下次更快找到需要的信息。做 Agent 时想让它“越用越聪明”，可以参考这种设计思路。"
+    }
+  ]
+}
