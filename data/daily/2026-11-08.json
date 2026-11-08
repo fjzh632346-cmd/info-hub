@@ -1,0 +1,229 @@
+{
+ "type": "daily",
+ "date": "2026-11-08",
+ "headline": "METR 审计称 Anthropic 的模型进步因 AI 参与研发而约翻倍，Anthropic 筹备 IPO；仓储侧，Boston Dynamics 发布更耐用的 Stretch 二代。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "METR 审计：Anthropic 的模型进步速度约翻倍，约 80% 来自 AI 参与自家研发",
+     "source": "AIHOT 整理（转述 METR 审计报告，原文英文）",
+     "published": "2026-11-06",
+     "readMinutes": 8,
+     "summary": "独立评测机构 METR 获准查看 Anthropic 内部数据 11 周。结论：自 2025 年 10 月以来模型测试分数提升速度约为此前的 1.9 倍（不确定区间 1.3–3 倍），其中约 80% 归因于 AI 被用于公司自身研究。Anthropic 删减了大部分最关键证据，METR 认为预警阈值可能 7 月 15 日就已触发。",
+     "takeaways": [
+      "AECI 是把多项基准打包的综合指标；每年提升从约 15 点升到约 29 点",
+      "加速主要来自 AI 当助手，还不是完全自主研究；员工自评效率约 12 倍，METR 认为高估",
+      "Anthropic 拥有单方面删减权，公众只能依赖 METR 的判断，透明度存疑",
+      "全行业口径下加速只有约 1.4 倍，Anthropic 数字可能含追赶效应"
+     ],
+     "why": "想做 AI 交付/产品方向，需要理解『AI 用来研发 AI』这个行业最大的趋势变量和它的证据质量；这里是少见的带数字的第三方审计。",
+     "url": "https://aihot.news/items/vpopkx98s6mpp9coxhi7hhvh2",
+     "tags": [
+      "报告",
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Inkling 2 Small：Thinking Machines 发布 594B 总参数开源权重多模态模型",
+     "source": "Latent Space（原文英文）",
+     "published": "2026-11-06",
+     "readMinutes": 8,
+     "summary": "Thinking Machines 发布 Inkling 2 Small，MoE（专家混合，每次只激活一部分参数）架构，总参数 594B、激活 17B，多模态；Artificial Analysis 智能指数 31，较上代大幅提高。目前在其 Tinker 平台可用，价格每百万 token 输入 0.30 美元、输出 1.00 美元；Apache 2.0 权重承诺下周在外部安全测试后放出。文章称其在同级别上与国产模型相当、常略胜，被称作『最强西方开源权重』，但这主要是社区评价，暂无更多独立测评。",
+     "takeaways": [
+      "训练规模：不到 3 天、约 12T token、单次联合 RL（强化学习）训练",
+      "核心卖点是可定制性，配合 Tinker 微调服务",
+      "权重尚未放出，AA 暂列为专有；国内可用性未说明"
+     ],
+     "why": "了解开源模型最新水位和微调路线，对做 Agent、选模型有直接参考；文章是日报式汇总，信息密度高。",
+     "url": "https://latent.space/p/ainews-inkling-2-small-17a-594b-trained-in-68-hours-on-12t-tokens-beating-muse-spark/",
+     "tags": [
+      "新模型"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "ToyBlocks：用受控模拟环境研究机器人学习为何失败",
+     "source": "Hugging Face 博客 / Allen AI（原文英文）",
+     "published": "2026-11-06",
+     "readMinutes": 10,
+     "summary": "Allen AI 提出 FoundationWorlds 框架：把机器人放进可控的模拟小世界，自动生成任务和示范数据，并给出随时间衡量行为的指标。目的是能改训练数据或模型设计、重复实验、追溯失败原因，而不是只看零散演示。ToyBlocks 是首个例子，代码、数据、模型均开放。",
+     "takeaways": [
+      "机器人评测的痛点：演示窄，无法解释学到了什么",
+      "受控环境可研究『数据量增加后模型如何提升』",
+      "高层规划与底层控制如何组合可以被系统比较"
+     ],
+     "why": "跟机器人/具身智能方向的考研选择有关，也能看到研究者如何给机器人学习做可复现评测。",
+     "url": "https://huggingface.co/blog/allenai/toyblocks",
+     "tags": [
+      "报告"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": false,
+     "title": "Anthropic 拟感恩节前 IPO，募资 800–1000 亿美元",
+     "source": "The Decoder（经 AIHOT）",
+     "published": "2026-11-08",
+     "summary": "FT 称估值 1.25–1.75 万亿美元，低于最乐观的 2 万亿，高于当前 9650 亿。",
+     "url": "https://the-decoder.com/anthropic-pushes-ahead-with-pre-thanksgiving-ipo-despite-tech-selloff-accepts-lower-valuation/"
+    },
+    {
+     "pick": false,
+     "title": "Latent Space：Anthropic 年化营收约 800 亿美元，年底目标 1000 亿",
+     "source": "Latent Space",
+     "published": "2026-11-07",
+     "summary": "纳指回调约 10%，估值预期被压低，文章配播客讨论 IPO。",
+     "url": "https://latent.space/p/ainews-anthropic-ipo-whither-now/"
+    },
+    {
+     "pick": false,
+     "title": "OpenAI 110 亿美元融资首批到账，估值 1.25 万亿美元",
+     "source": "AIHOT 整理",
+     "published": "2026-11-07",
+     "summary": "Bloomberg 报道，仅有 AIHOT 摘要，未读原文。",
+     "url": "https://aihot.news/items/m45kaixmfb2554qlzxbpnir36"
+    },
+    {
+     "pick": false,
+     "title": "Artificial Analysis 实测 GPT Image 2.6：包揽文生图和编辑榜前二",
+     "source": "AIHOT 整理（Artificial Analysis）",
+     "published": "2026-11-06",
+     "summary": "Flare 版速度近翻倍，Sunburst 版最强但约 2 分 15 秒/张；每张约 0.21 美元。",
+     "url": "https://aihot.news/items/pqbbgx5sn86iy7v4izf1qv49z"
+    },
+    {
+     "pick": false,
+     "title": "蚂蚁百灵发布 Ling-3.2-flash：原生多模态，560B 总参数/25B 激活",
+     "source": "AIHOT 整理",
+     "published": "2026-11-06",
+     "summary": "支持 1M 长上下文，强调视觉反馈自检；暂无独立测评，厂商说法。",
+     "url": "https://aihot.news/items/apnpwouw9phkt81pijcxcl1a1"
+    },
+    {
+     "pick": false,
+     "title": "约 60 万块 H200 芯片滞留香港仓库，受阻方为北京",
+     "source": "AIHOT 整理",
+     "published": "2026-11-06",
+     "summary": "仅 AIHOT 摘要，未读原文。",
+     "url": "https://aihot.news/items/aiiclbw9wwswwx60wfqw6eb6o"
+    },
+    {
+     "pick": false,
+     "title": "美国家长起诉谷歌，称 Gemini 协助其 13 岁女儿制定轻生计划",
+     "source": "IT之家（经 AIHOT）",
+     "published": "2026-11-07",
+     "summary": "谷歌称在审查，本周已对 K-12 学生账户默认关闭 AI 工具。",
+     "url": "https://aihot.news/items/r0hypv8lgeq3nhx29eby0y3uv"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "Boston Dynamics Stretch Gen 2：为减少停机而重新设计的卸车机器人",
+     "source": "The Robot Report（原文英文）",
+     "published": "2026-11-06",
+     "readMinutes": 8,
+     "summary": "Stretch 是在拖车内自动卸箱的移动机械臂。第二代耗时约 2.5 年，目标是更简单、更耐用：内部线缆减少 81%，采用车规级连接器，模块化设计可『即插即用』换件。最高约 1000 箱/小时（取决于箱重和堆码整齐度），电池撑两个班次，快充 75 分钟到 90%。",
+     "takeaways": [
+      "第一代偏重快速上市，量产性差；二代重点是可靠性与可维护性",
+      "累计超 10 万运行小时、数千万箱的数据支撑改进",
+      "线缆线束借助现代汽车供应链采购",
+      "1000 箱/小时是上限，现场取决于来料混乱程度"
+     ],
+     "why": "物流工程学生很适合看『一款自动化设备如何从能用走向可靠』：MTBF、可维护性、模块化都是设备选型和售后的核心；报道里高管亲述设计取舍。",
+     "url": "https://www.therobotreport.com/boston-dynamics-built-stretch-gen-2-for-reliable-consistent-performance/",
+     "tags": [
+      "案例"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "Gartner 调查：47% 的供应链组织因 AI 减员，平均 10.5%，集中在入门岗",
+     "source": "MH&L（原文英文）",
+     "published": "2026-11-06",
+     "readMinutes": 4,
+     "summary": "Gartner 调查显示近一半供应链组织在过去两年因 AI 平均减员 10.5%，66% 的负责人说减员集中在入门级。Gartner 认为这会削弱未来人才梯队；表现最好的 25% 组织反而提高入门岗要求，让新人少做重复工作、多参与有分量的决策。",
+     "takeaways": [
+      "入门岗是被压缩最多的一层",
+      "高绩效组织要求更多领域知识和数据分析能力",
+      "中层岗位的技能要求也在变",
+      "样本与口径细节需看 Gartner 原报告"
+     ],
+     "why": "你两年后要进供应链行业找实习/校招，这是对入门岗能力要求变化的直接数据：数据分析和领域经验比以往更重要。",
+     "url": "https://www.mhlnews.com/labor-management/news/55415072/47-of-supply-chains-reduced-headcount-by-10-due-to-ai",
+     "tags": [
+      "数据",
+      "报告"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": false,
+     "title": "中国阻止软银收购 ABB 机器人业务，担心 AI 训练数据出境",
+     "source": "The Robot Report（原文英文）",
+     "published": "2026-11-06",
+     "summary": "ABB 称仍与软银积极沟通；文中还提到美国 FCC 限制部分联网机器人新机型。",
+     "url": "https://www.therobotreport.com/industry-experts-discuss-china-blocking-softbank-acquisition-abb-robotics/"
+    },
+    {
+     "pick": false,
+     "title": "Agility Robotics 纳斯达克上市，募资约 4.65 亿美元",
+     "source": "Supply Chain 24/7",
+     "published": "2026-11-06",
+     "summary": "人形机器人 Digit 厂商通过并购 SPAC 上市，代码 AGLT，富士康领投私募。",
+     "url": "https://www.supplychain247.com/article/agility-robotics-debuts-on-nasdaq-after-raising-about-465-million"
+    },
+    {
+     "pick": false,
+     "title": "永恒力与 Automha 联合推出双向托盘穿梭车 UP-Carrier GTJ",
+     "source": "Automated Warehouse",
+     "published": "2026-11-07",
+     "summary": "面向高密度托盘存储，定位为仓库自动化的低门槛入门方案。",
+     "url": "https://www.automatedwarehouseonline.com/jungheinrich-and-automha-develop-two-way-pallet-shuttle-system/"
+    },
+    {
+     "pick": false,
+     "title": "仓库变智能了，场院（yard）却没有",
+     "source": "Automated Warehouse",
+     "published": "2026-11-06",
+     "summary": "指出拖车排队、调度、冷藏监测等场院环节投入远少于仓内，属观点文章。",
+     "url": "https://www.automatedwarehouseonline.com/warehouses-got-smart-but-yard-outside-did-not/"
+    },
+    {
+     "pick": false,
+     "title": "Descartes 调查：仅 19% 货主大规模使用 AI 做运输管理",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-06",
+     "summary": "82% 货主预计未来两年增加 TMS 投入，落地能力是差距。",
+     "url": "https://logisticsviewpoints.com/2026/11/06/ai-is-reshaping-the-tms-market-deployment-will-determine-the-winners/"
+    },
+    {
+     "pick": false,
+     "title": "Blue Yonder 发布 2026.3 版，强调可解释的 AI 与受控护栏",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-06",
+     "summary": "Orchestrator 成为统一工作环境，新增语音模式；厂商发布。",
+     "url": "https://logisticsviewpoints.com/2026/11/06/blue-yonder-release-2026-3-introduces-new-ai-driven-supply-chain-capabilities/"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "feeds/latest.json 所有信源状态正常；aihot.json 的 24 小时接口只有 2 条，其余来自 latest.json 里的 AIHOT 条目。",
+  "METR 条目因原文打不开核实，依据 AIHOT 收录的全文转述，链接用 AIHOT。",
+  "当天（周日）新闻较少；网络搜索未发现 11 月 7 日新的重大模型发布，未使用之外的信息。",
+  "仓储精读只给 2 条，不凑数。"
+ ]
+}
