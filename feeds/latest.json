@@ -1,7 +1,13 @@
 {
- "fetchedAt": "2026-11-07T16:28:20.257Z",
+ "fetchedAt": "2026-11-08T01:28:53.285Z",
  "hours": 72,
  "status": [
+  {
+   "source": "Epoch AI",
+   "feed": "https://epochai.substack.com/feed",
+   "ok": false,
+   "error": "HTTP 403"
+  },
   {
    "source": "Google DeepMind",
    "feed": "https://deepmind.google/blog/rss.xml",
@@ -10,51 +16,18 @@
    "recent": 1
   },
   {
-   "source": "OpenAI",
-   "feed": "https://openai.com/news/rss.xml",
-   "ok": true,
-   "total": 1368,
-   "recent": 9
-  },
-  {
-   "source": "Epoch AI",
-   "feed": "https://epochai.substack.com/feed",
-   "ok": false,
-   "error": "HTTP 403"
-  },
-  {
    "source": "Hugging Face",
    "feed": "https://huggingface.co/blog/feed.xml",
    "ok": true,
    "total": 899,
-   "recent": 5
+   "recent": 3
   },
   {
-   "source": "One Useful Thing",
-   "feed": "https://www.oneusefulthing.org/feed",
+   "source": "OpenAI",
+   "feed": "https://openai.com/news/rss.xml",
    "ok": true,
-   "total": 20,
-   "recent": 0
-  },
-  {
-   "source": "Import AI",
-   "feed": "https://importai.substack.com/feed",
-   "ok": false,
-   "error": "HTTP 403"
-  },
-  {
-   "source": "a16z",
-   "feed": "https://www.a16z.news/feed",
-   "ok": true,
-   "total": 20,
-   "recent": 4
-  },
-  {
-   "source": "Simon Willison",
-   "feed": "https://simonwillison.net/atom/everything/",
-   "ok": true,
-   "total": 30,
-   "recent": 2
+   "total": 1368,
+   "recent": 7
   },
   {
    "source": "Google AI",
@@ -64,18 +37,38 @@
    "recent": 1
   },
   {
+   "source": "a16z",
+   "feed": "https://www.a16z.news/feed",
+   "ok": true,
+   "total": 20,
+   "recent": 4
+  },
+  {
+   "source": "Import AI",
+   "feed": "https://importai.substack.com/feed",
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  {
+   "source": "One Useful Thing",
+   "feed": "https://www.oneusefulthing.org/feed",
+   "ok": true,
+   "total": 20,
+   "recent": 0
+  },
+  {
+   "source": "Simon Willison",
+   "feed": "https://simonwillison.net/atom/everything/",
+   "ok": true,
+   "total": 30,
+   "recent": 3
+  },
+  {
    "source": "Interconnects",
    "feed": "https://www.interconnects.ai/feed",
    "ok": true,
    "total": 20,
-   "recent": 1
-  },
-  {
-   "source": "Latent Space",
-   "feed": "https://www.latent.space/feed",
-   "ok": true,
-   "total": 20,
-   "recent": 5
+   "recent": 0
   },
   {
    "source": "Sequoia",
@@ -85,11 +78,11 @@
    "recent": 1
   },
   {
-   "source": "BestBlogs 每日早报",
-   "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
+   "source": "Benedict Evans",
+   "feed": "https://www.ben-evans.com/benedictevans/?format=rss",
    "ok": true,
-   "total": 6,
-   "recent": 3
+   "total": 20,
+   "recent": 0
   },
   {
    "source": "宝玉",
@@ -97,6 +90,13 @@
    "ok": true,
    "total": 50,
    "recent": 0
+  },
+  {
+   "source": "Latent Space",
+   "feed": "https://www.latent.space/feed",
+   "ok": true,
+   "total": 20,
+   "recent": 4
   },
   {
    "source": "Symbotic IR",
@@ -112,20 +112,6 @@
    "recent": 0
   },
   {
-   "source": "Benedict Evans",
-   "feed": "https://www.ben-evans.com/benedictevans/?format=rss",
-   "ok": true,
-   "total": 20,
-   "recent": 0
-  },
-  {
-   "source": "Daifuku",
-   "feed": "https://www.daifuku.com/rss_all.xml",
-   "ok": true,
-   "total": 10,
-   "recent": 1
-  },
-  {
    "source": "大福（日文）",
    "feed": "https://www.daifuku.com/jp/rss_all.xml",
    "ok": true,
@@ -133,17 +119,11 @@
    "recent": 0
   },
   {
-   "source": "Automated Warehouse",
-   "feed": "https://www.automatedwarehouseonline.com/feed/",
+   "source": "Daifuku",
+   "feed": "https://www.daifuku.com/rss_all.xml",
    "ok": true,
    "total": 10,
-   "recent": 6
-  },
-  {
-   "source": "Interact Analysis",
-   "feed": "https://www.interactanalysis.com/feed/",
-   "ok": false,
-   "error": "fetch failed"
+   "recent": 0
   },
   {
    "source": "Georgia Tech SCL",
@@ -153,25 +133,32 @@
    "recent": 0
   },
   {
+   "source": "BestBlogs 每日早报",
+   "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
+   "ok": true,
+   "total": 7,
+   "recent": 4
+  },
+  {
+   "source": "Automated Warehouse",
+   "feed": "https://www.automatedwarehouseonline.com/feed/",
+   "ok": true,
+   "total": 10,
+   "recent": 5
+  },
+  {
+   "source": "Interact Analysis",
+   "feed": "https://www.interactanalysis.com/feed/",
+   "ok": true,
+   "total": 0,
+   "recent": 0
+  },
+  {
    "source": "Logistics Viewpoints",
    "feed": "https://logisticsviewpoints.com/feed/",
    "ok": true,
    "total": 10,
-   "recent": 8
-  },
-  {
-   "source": "MH&L",
-   "feed": "https://www.mhlnews.com/__rss/website-scheduled-content.xml?input=%7B%22sectionAlias%22%3A%22home%22%7D",
-   "ok": true,
-   "total": 25,
-   "recent": 2
-  },
-  {
-   "source": "DC Velocity",
-   "feed": "https://www.dcvelocity.com/rss",
-   "ok": true,
-   "total": 30,
-   "recent": 10
+   "recent": 7
   },
   {
    "source": "The Robot Report 物流",
@@ -181,11 +168,24 @@
    "recent": 4
   },
   {
+   "source": "MH&L",
+   "feed": "https://www.mhlnews.com/__rss/website-scheduled-content.xml?input=%7B%22sectionAlias%22%3A%22home%22%7D",
+   "ok": true,
+   "total": 25,
+   "recent": 2
+  },
+  {
    "source": "Supply Chain Dive",
    "feed": "https://www.supplychaindive.com/feeds/news/",
    "ok": true,
    "total": 10,
    "recent": 10
+  },
+  {
+   "source": "Locus Robotics",
+   "feed": "https://locusrobotics.com/feed/",
+   "ok": false,
+   "error": "HTTP 410"
   },
   {
    "source": "Supply Chain 24/7 自动化",
@@ -195,17 +195,11 @@
    "recent": 2
   },
   {
-   "source": "Locus Robotics",
-   "feed": "https://locusrobotics.com/feed/",
-   "ok": false,
-   "error": "HTTP 410"
-  },
-  {
-   "source": "AIHOT",
-   "feed": "https://aihot.news/rss",
+   "source": "DC Velocity",
+   "feed": "https://www.dcvelocity.com/rss",
    "ok": true,
-   "total": 50,
-   "recent": 38
+   "total": 30,
+   "recent": 5
   },
   {
    "source": "Robotics & Automation News",
@@ -222,10 +216,18 @@
    "recent": 0
   },
   {
+   "source": "AIHOT",
+   "feed": "https://aihot.news/rss",
+   "ok": true,
+   "total": 50,
+   "recent": 28
+  },
+  {
    "source": "国家统计局",
    "feed": "https://www.stats.gov.cn/sj/zxfb/rss.xml",
-   "ok": false,
-   "error": "This operation was aborted"
+   "ok": true,
+   "total": 500,
+   "recent": 0
   }
  ],
  "items": [
@@ -237,6 +239,33 @@
    "published": "2026-11-11T00:00:00.000Z",
    "description": "AI agents will ask far more questions of a company's data than people ever did. Edelbyte is building the data platform that can answer all of them, fast and at a price that makes sense.",
    "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "BestBlogs 每日早报",
+   "title": "EP230 · Anthropic 整理记忆、Airbnb 微调分类器、Modal 谈运行底座",
+   "url": "https://www.bestblogs.dev/explore/brief/2026-11-08?utm_source=rss&utm_medium=feed&utm_campaign=daily_brief&entry=rss_brief_index",
+   "published": "2026-11-08T06:00:00.000Z",
+   "description": "📝 今日导语 Anthropic 整理记忆，Airbnb 微调分类器，Modal 拆解运行底座：比较可复用的工程取舍。 🏷 今日关键词： 智能体记忆 分类器微调 运行底座 AI 并购 智能体交易 📰 今日精选内容 智能体记忆的组成部分 Anthropic Research &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 88 以 1% 的成本实现前沿模型品质：LLM 分类器生产环境基准测试 Airbnb Engineering &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 别靠 Vibe Coding 搭智能体基础设施｜Modal CTO Akshat Bubna AI Engineer &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 Salesforce 在 AI 时代怎么买公司？John Somorjai 拆解并购逻辑 a16z &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 Robinhood CEO 谈代币化、智能体交易与 Harmonic No Priors &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 89 百度开放文心 5.5 Flash Base 基座模型权重 机器之心 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 8",
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "Simon Willison",
+   "title": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages",
+   "url": "https://simonwillison.net/2026/Nov/7/link-rel-next/",
+   "published": "2026-11-07T23:57:46.000Z",
+   "description": "datasette #3046: Don&#x27;t serve link: rel=next HTTP headers to Firefox for HTML pages I was looking at the Firefox network panel today when I noticed that requests to a Datasette table page were triggering an HTTP prefetch to the next page of rows in that table. This was happening because Datasette pages serve an HTTP link header like this: link: &lt;https://latest.datasette.io/fixtures/compound_three_primary_keys?_next=a%2Cd%2Cv&gt;; rel=\"next\" This is bad. A tiny fraction of the visitors to one of those pages will click the \"next\" link, which means their browser is fetching unnecessary dat",
+   "excerpt": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages . I was looking at the Firefox network panel today when I noticed that requests to a Datasette table page were triggering an HTTP prefetch to the next page of rows in that table.\nThis was happening because Datasette pages serve an HTTP link header like this:\nThis is bad. A tiny fraction of the visitors to one of those pages will click the \"next\" link, which means their browser is fetching unnecessary data and the Datasette server is having to render an entire page that then gets thrown away.\nI dug in and learned that Firefox has an issue that has been open for 24 years about this behavior...\nAnd one of the early comments on that issue links to my blog post from 2002 complaining about this feature. I hadn't just forgotten that I had written about it, I had forgotten the feature entirely!\nThis is a link post by Simon Willison, posted on 7th November 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Anthropic 拟感恩节前 IPO，接受低于预期的估值，募资 800–1000 亿美元",
+   "url": "https://aihot.news/items/okhx4jjwucd647299qwzsl6ua",
+   "published": "2026-11-07T17:37:25.000Z",
+   "description": "据《金融时报》援引投资者的消息，Anthropic 计划在感恩节前 IPO，拟募资 800–1000 亿美元，估值 1.25–1.75 万亿美元，低于最乐观投资者期望的 2 万亿美元，但高于当前 9650 亿美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/okhx4jjwucd647299qwzsl6ua",
+   "excerpt": "Anthropic pushes ahead with pre-Thanksgiving IPO despite tech selloff, accepts lower valuation\n据《金融时报》援引投资者的消息，Anthropic 计划在感恩节前 IPO，拟募资 800–1000 亿美元，估值 1.25–1.75 万亿美元，低于最乐观投资者期望的 2 万亿美元，但高于当前 9650 亿美元。\n文中给出 Anthropic IPO 的估值区间、募资规模和最新的年化营收数字，可对照 OpenAI 融资动向看当前 AI 市场降温。\n尽管科技股遭遇抛售，Anthropic仍坚持推进IPO，并接受了较低的估值。 据 《金融时报》 援引投资者的消息，这家Claude开发商希望在感恩节前上市，以1.25万亿至1.75万亿美元的估值融资800亿至1000亿美元。这一估值高于目前的9650亿美元，但低于最乐观投资者此前期待的2万亿美元。目前公布的年化营收约为810亿美元，高于7月底的约 650亿美元 。\n借贷成本上升和庞大的AI支出计划引发了本周的科技股抛售。民主党赢得美国中期选举加速了这一跌势，因为他们曾承诺放缓数据中心建设等措施。纳斯达克100指数周四下跌6.4%，周五有所回升。\nOpenAI也将其融资目标从1.4万亿美元下调至1.25万亿美元，并在最近 仅筹集到最初寻求的300亿美元中的约三分之一 。\n订阅THE DECODER，享受无广告阅读、每周AI新闻通讯、每年六期独家“AI Radar”前沿报告、完整档案访问权限以及评论区访问权限。\n来源： The Decoder：AI News · the-decoder.com\n文中给出 Anthropic IPO 的估值区间、募资规模和最新的年化营收数字，可对照 OpenAI 融资动向看当前 AI 市场降温。"
   },
   {
    "group": "ai",
@@ -591,21 +620,21 @@
   },
   {
    "group": "ai",
-   "source": "OpenAI",
-   "title": "Measuring how AI agents handle everyday wet-lab science",
-   "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
-   "published": "2026-11-06T00:00:00.000Z",
-   "description": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
    "source": "Hugging Face",
    "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
    "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
    "published": "2026-11-06T00:00:00.000Z",
    "description": "",
    "excerpt": "A few months ago, we added private data to the Open ASR Leaderboard : 11 splits from Appen and DataOceanAI covering scripted and conversational speech from five accents ( blog ). The community response was great, with many highlighting the importance of held-out sets for trustworthy evaluations . Since then, we added one more private split for Indian-accented English with Voice Arena ( blog ).\nWe’re excited to announce a new collaboration with Liva AI to add even more private data with two new accents: Egyptian 🇪🇬 and Nigerian 🇳🇬.\nThis is part of our continued effort to improve representation in ASR evals (more accents and more languages) and to improve trust (new private data to minimize benchmaxxing, and new data providers). We’re excited to see the community continuing to push ASR performance for the world 🤗\nWith these new accents, we can now present a richer breakdown of accents, based on Kachru’s Three Circles (kudos to Hume AI for this idea in their leaderboard ). The Open ASR Leaderboard will now report:\nAs more accents join, we’ll split the Outer and Expanding Circles.\nLiva AI collects multimodal interaction data through consumer products used by real people. Because Liva owns both the collection environment and distribution, it can design products around specific model gaps across domains, industries, languages, modalities, and interaction types. This gives it access to natural, high-context behavior that emerges through real product use, rather than artificially elicited or task-based interactions."
+  },
+  {
+   "group": "ai",
+   "source": "OpenAI",
+   "title": "Measuring how AI agents handle everyday wet-lab science",
+   "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+   "published": "2026-11-06T00:00:00.000Z",
+   "description": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1092,231 +1121,6 @@
    "published": "2026-11-05T02:00:00.000Z",
    "description": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
    "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Daifuku",
-   "title": "Blog Post: ASRS Systems in India: Unlock 3x Vertical Storage While Streamlining Operational Overhead",
-   "url": "https://www.daifuku.com/solution/intralogistics/insights/20261105.html",
-   "published": "2026-11-05T01:00:00.000Z",
-   "description": "",
-   "excerpt": "The focus of the Indian government on local manufacturing under the \"Make in India\" initiative, combined with post-GST supply chain consolidation, has triggered a structural shift in warehousing demand. According to Savills India data cited by The Economic Times ( *1 ), over 13.5 million square feet of industrial and logistics space was leased in a single quarter across Tier I, Tier II, and Tier III cities. As manufacturing units scale up production and handle larger SKU volumes, business leaders frequently face a common operational constraint: facility storage capacity reaching its limit.\nWhen facility space becomes constrained, the traditional response is often horizontal expansion—either acquiring adjacent land or opening a secondary warehouse facility elsewhere. However, as highlighted in supply chain reports on Business Standard ( *2 ), commercial real estate prices across India’s primary industrial corridors have risen steadily. Expanding horizontally to a second site can significantly increase fixed operational overhead, add supply chain complexity, and commit substantial capital.\nForward-thinking Indian supply chain leaders are evaluating a more sustainable approach: utilizing the vertical air space available within their existing facility footprint before committing to additional real estate.\nBy shifting from horizontal space expansion to automated vertical storage, deploying an Automated Storage and Retrieval System (ASRS) enables manufacturing and distribution facilities to expand upward, unlocking up to 3x vertical storage capacity while streamlining operational overhead and fixed costs.\nAn Automated Storage and Retrieval System (ASRS) is a high-density, computer-controlled warehouse automation solution designed to store and retrieve inventory automatically with speed, safety, and consistency.\nIn a traditional manual warehouse, storage height is strictly constrained by standard forklift reach (typically 6 to 8 meters in India) and wide aisle space required for vehicle turning radiuses.\nAn ASRS warehouse optimizes spatial efficiency by utilizing vertical building heights up to 40 meters within narrow aisles. By replacing manual horizontal material handling with an ASRS racking system and stacker cranes , businesses can unlock up to 3x vertical storage capacity on their existing facility footprint.\nGlobal leadership meets India's largest installed ASRS base - delivering 24/7 support.\nWhen evaluating warehouse automation solutions, selecting an ex"
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "Flipsnack grows product signups with conversion optimization",
-   "url": "https://openai.com/ads/customers/flipsnack",
-   "published": "2026-11-05T00:45:15.000Z",
-   "description": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Higgsfield 上线 GPT Image 2.6，新用户 7 天无限使用",
-   "url": "https://aihot.news/items/lcdap1o18bh6bt70ij66nakij",
-   "published": "2026-11-05T00:11:42.000Z",
-   "description": "Higgsfield 宣布 GPT Image 2.6 已上线，新用户可 7 天无限使用。功能包括把提示词或图片转成 GIF、保存参考图随时复用、通过 markup 细化并导出 SVG。OpenAI 此前介绍 ChatGPT Images 2.6 新增 GIF 和参考图功能，另有两款 API 模型将带来 50% 更快的图像生成。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lcdap1o18bh6bt70ij66nakij",
-   "excerpt": "Higgsfield 宣布 GPT Image 2.6 已上线，新用户可 7 天无限使用。功能包括把提示词或图片转成 GIF、保存参考图随时复用、通过 markup 细化并导出 SVG。OpenAI 此前介绍 ChatGPT Images 2.6 新增 GIF 和参考图功能，另有两款 API 模型将带来 50% 更快的图像生成。\n原文说明 GPT Image 2.6 在 Higgsfield 上线的入口和 GIF、参考图等具体用法，新用户可据此评估是否试用。\n将任意提示词或图片转换为 GIF 保存参考素材一次，随时重复使用 使用标记进行优化，并导出为 SVG\nImages, upgraded—introducing ChatGPT Images 2.6. Now with GIFs and reference images. Plus, two new models are coming to the API with 50% faster image generation.\n原文说明 GPT Image 2.6 在 Higgsfield 上线的入口和 GIF、参考图等具体用法，新用户可据此评估是否试用。"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "月之暗面开放 2.8 万亿参数 Kimi K3.1 Pro 权重，登顶 Agent Arena 开源模型榜",
-   "url": "https://aihot.news/items/hkcafk9es55rbok8pinu90x5o",
-   "published": "2026-11-05T00:00:15.000Z",
-   "description": "月之暗面按 10 月 24 日发布时的承诺，在 Hugging Face 开放 Kimi K3.1 Pro 权重。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hkcafk9es55rbok8pinu90x5o",
-   "excerpt": "月之暗面 2.8 万亿参数 Kimi K3.1 Pro 开放权重，登顶 Agent Arena 开源模型榜\n月之暗面按 10 月 24 日发布时的承诺，在 Hugging Face 开放 Kimi K3.1 Pro 权重。\n原文汇总了权重开放入口、Agent Arena 排名细节和基准成绩，并指出 5.6TB 权重在消费级硬件上难以本地部署的现实情况。\nIT之家 11 月 5 日消息，按照 10 月 24 日发布时给出的承诺，月之暗面（Moonshot AI）今日在 Hugging Face 平台开放了 Kimi K3.1 Pro 的模型权重。\n在 Arena 运营的 Agent Arena 智能体排行榜中，Kimi K3.1 Pro（Max）位列开放权重模型第一、全部参评模型第 13 位，并在工作、编程与聊天三个类别中均居开放模型首位。\nAgent Arena 的评测方式与传统的成对盲测不同。它不要求用户对两个回答投票，而是从真实用户的智能体会话中提取信号，包括用户对任务的明确确认、表扬与投诉、纠正指令以及 Shell 命令执行错误等，再通过 Arena 称为“因果追踪”的随机化推断方法估算各模型相对于平均水平的净改进率。\nKimi K3.1 Pro 此次排名基于全球用户超过 1.75 万次真实长周期智能体任务会话，净改进率为 +5.1%，较上一代 K3（Max）的 +0.9% 提升 4.2 个百分点。\n分项指标呈现出更具体的改善幅度。衡量 Shell 命令执行可靠性的 Bash Reliability 从 K3 的-4.5%（第 13 名）升至 +7.9%，在开放模型中排名第一；反映用户满意度的 Praise vs Complaint 指标从 +1.3% 升至 +7.7%；衡量模型根据用户反馈调整执行方向的 Steerability 指标达到 +6.5%，同样居开放模型首位。用户明确确认任务完成的 Confirmed Success 为 +3.9%，开放模型第四。\nKimi K3.1 Pro 采用混合专家架构，总参数量 2.8 万亿，单次推理激活约 1040 亿参数，支持约 100 万 Token 上下文窗口。\n与 K3 相比，K3.1 Pro 以 K3 为基座进行了大规模联合强化学习后训练，覆盖数百个下游领域，并将部分全注意力层替换为门控稀疏注意力层，以降低长上下文建模的开销。\n值得一提的是，开源权重的“可下载”与“可本地运行”之间存在显著距离。2.8 万亿参数以 BF16 精度存储的权重文件约 5.6TB，即使采用 INT4 量化也仍需约 1.4TB，单机消费级显卡基本不具备部署可能。\n在终端智能体基准 Terminal-Bench 4.0 上，K3.1 Pro 得分 65.7%，高于 GPT-6 Astra 的 58.2%，与 Claude Opus 5.5 的 66.4% 相差不到 1 个百分点。\n《 Kimi K3.1 Pro 正式发布：月之暗面最强 3 万亿级模型，编程智能体测评超 GPT-6 》\n《 Kimi 就会员使用 K3.1 Pro 出现限流等问题致歉，为所有订阅会员进行重置 》\n原文汇总了权重开放入口、Agent Arena 排名细节和基准成绩，并指出 5.6TB 权重在消费级硬件上难以本地部署的现实情况。"
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "Franklin Templeton uses OpenAI to support investment research",
-   "url": "https://openai.com/index/franklin-templeton",
-   "published": "2026-11-05T00:00:00.000Z",
-   "description": "Starting with equity research, Franklin Templeton is developing AI workflows to help portfolio managers compare research views and examine investment risks.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "Hugging Face",
-   "title": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
-   "url": "https://huggingface.co/blog/phonon-tts",
-   "published": "2026-11-05T00:00:00.000Z",
-   "description": "",
-   "excerpt": "Two weeks ago, we opened up Phonon, our small text-to-speech model that runs on your own device. It needs no server and no network, and what you type stays with you.\nWe've been very happy with the reception so far. So here's the story of the launch: why we built Phonon, what it can do, the demos that came with it, and how it did on Hugging Face's Open TTS Leaderboard.\nMost voice AI lives in the cloud: every sentence makes a round trip to a server. Phonon runs on your own device instead. Your text stays there and the voice works without a network. We’ve also opened the weights. Phonon 31m is Apache 2.0, so you can use it for free, even in a commercial product. The other models are CC BY-NC, so they’re free for non-commercial projects. If you’re building something commercial with those, pricing is based on your number of users, not how much speech you generate.\nGetting a good voice to run on a small device has always been hard. You could make the model small, but then it didn’t sound great. Or you could make it sound great, but then it wouldn’t fit. We addressed both.\nWe announced Phonon in April and spent the next six months building on it with partners and early users. Their feedback helped us to shape this release. The models got smaller, and we added more languages and support for custom voices through voice cloning and voice design.\nPhonon is based on the Pocket TTS lineage and as such uses flow matching to generate the audio which is very different from the modeling techniques used in other TTS systems. This is what allowed us to bring this level of quality to such a small model but it created new challenges while training the models. The training was initially numerically unstable and required several tricks to produce quality results on all five languages.\nPhonon comes in two sizes, at about 65 MB and 75 MB. Together they speak English, French, German, Spanish and Portuguese. There are more than 100 built-in voices, and you can create your own in Gradium Studio . Phonon also handles the important things that most other TTS systems often stumble on, like phone numbers, dates and codes.\nIt runs on phones, laptops, single-board computers and in a browser tab, so you can hear it right now . Phonon 31m speaks English and is Apache 2.0, so you can build on it freely, including for commercial products. Phonon 40m covers all five languages under a non-commercial license.\nThe launch came with demos from friends and from our own team. On an Apple Watch with Wi"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Google Research 在 Nature 发表 AI-PPG-ACC-HTN：用智能手表无袖带检测高血压迹象",
-   "url": "https://aihot.news/items/zbjrxt1ss4h009oc75x5swd6y",
-   "published": "2026-11-05T00:00:00.000Z",
-   "description": "Google Research 联合 Beth Israel Deaconess Medical Center 和哈佛医学院在 Nature 发表 AI-PPG-ACC-HTN 多模态 AI 系统，用消费级智能手表的 PPG 和加速度传感数据被动检测高血压迹象，无需袖带校准。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zbjrxt1ss4h009oc75x5swd6y",
-   "excerpt": "Detecting signs of hypertension using wearable sensors\nGoogle Research 联合 Beth Israel Deaconess Medical Center 和哈佛医学院在 Nature 发表 AI-PPG-ACC-HTN 多模态 AI 系统，用消费级智能手表的 PPG 和加速度传感数据被动检测高血压迹象，无需袖带校准。\n研究给出与诊室袖带流程对照的具体敏感度和PPV数据，读者可以据此评估智能watch无袖带血压筛查的实际可行度。\n高血压 常被称为“沉默的杀手”，全球患者超过十亿，但其中半数以上的成年人 并不知道自己患病 。由于高血压很少表现出明显症状，通常只有在偶然筛查时才会被发现。这种认知缺口在 18至44岁的年轻成年人 中尤为严重，漏诊可能延误挽救生命的早期干预，并显著增加中风或心力衰竭等不良心血管事件的长期风险。\n诊室血压测量是发现高血压的主要 初筛入口 。近年来，无袖带可穿戴设备逐渐成为一种潜在工具，可对间断性的诊室诊疗形成补充。然而，现有的商用方案通常需要用传统臂式袖带定期校准。这意味着它们只能追踪相对于袖带基线读数的变化，而无法识别绝对的高血压状态，从而限制了其作为独立筛查工具的用途。\n在发表于 Nature 的 一项新研究 中，我们提出了一种多模态人工智能（AI）系统，能够利用消费级智能手表被动检测高血压迹象，且无需任何袖带校准。该系统名为 AI-PPG-ACC-HTN ，我们以24小时动态血压监测（ABPM）这一临床金标准对其进行了验证，结果显示，无论是初次筛查还是确认性筛查，其准确度都可与传统袖带诊断流程相媲美。这些研究成果为 Google Health 应用中的血压趋势 Health Guardian 功能提供了依据。\n我们的系统并不试图估算某一时刻精确的收缩压和舒张压数值——这类数值极易受短暂环境噪声干扰——而是转换了问题思路。它通过汇总多天的被动生理特征，专注于识别个体潜在的、持续存在的高血压状态。\n我们使用自监督对比学习训练了一个一维深度卷积神经网络。通过分析来自2,109名知情参与者、总计492,347小时的未标注传感器数据，模型学会了将同一个人的重叠15秒PPG和ACC波形在潜在空间中映射得彼此接近。这使得模型无需人工特征工程或医学标签，就能发现血管与心脏机械功能中复杂且生理信息丰富的特征。\n系统会把每位用户多天佩戴产生的这些15秒特征块（嵌入向量）取均值聚合，以消除突然动作、温度变化等瞬时噪声。最后，把个人的聚合嵌入与其身高（身高可作为动脉路径长度的可靠替代指标）结合，输入带正则化的逻辑回归分类器，算出连续的高血压概率评分。\n为评估系统，我们在美国五个中心开展了一项前瞻性、多中心临床研究，共纳入196名知情同意的多元化受试者，均无已知心血管疾病，且未服用降压药。\n关键在于，我们以24小时动态血压监测（ABPM）——高血压诊断的临床金标准——为基准，评估智能手表的表现。我们考察了两种临床使用场景：初筛和确诊检测。\n智能手表灵敏度为65.8%（中等），特异度高达90.0%，阳性预测值（PPV）因此达到80.6%。相比之下，以金标准为基准，诊所初筛的灵敏度为55.3%，PPV为77.8%（中等）。\n对于在诊所初筛血压偏高的人，现行指南建议进行诊室外确认性监测。我们选取了初诊血压升高的受试者子集（N=48），考察智能手表确认持续性高血压的效果。\n我们的多模态系统灵敏度为78.4%（中等），特异度90.9%，PPV高达96.7%。相比之下，复诊时测量血压的灵敏度点估计值较低（67.6%），特异度为63.6%，PPV为86.2%。此外，智能手表方案与多日家庭监测相比也颇具竞争力：后者灵敏度89.2%、特异度81.8%、PPV 94.3%。\n综合来看，结果表明，在现有临床框架下，我们的系统检测高血压的准确度可与传统袖带血压设备相媲美。\n为了解AI模型可能关注哪些特征，我们可视化了高血压预测概率最高和最低用户的平均脉搏波形。\n图中展示了AI-PPG-ACC-HTN评分最高和最低的几个五分位组中四组受试者的平均脉搏波形（左上角面板）、对应的加速度计心冲击图波形（BCG，左下角面板），以及脉搏波形的一阶导数（中间面板）和二阶导数（右侧面板）。图中标注了关键基准点，包括PPG波形中的脉搏起点（ons）、峰值（sys）、重搏切迹（dic）、舒张期峰值（dia），BCG波形中的H、I、J、K、L、M、N波，以及PPG波形二阶导数中的a、b、c、d、e波。\n基于智能手表的高血压筛查并非要取代标准的临床袖带血压计，也不提供独立的确定性医学诊断。这项研究指向的是一种可大规模推广、被动运行的 机会性筛查 工具的潜力。这项工作属于早期可行性研究，文中描述的方法纯属探索性质，并不代表任何现有或即将推出的商业产品功能或设备能力。通过温和地提醒高风险人群主动前往诊所接受正式评估，这项技术有望显著缩小全球范围内的知晓率差距，在高血压造成永久性心血管损伤之前及早发现它。\n本研究由Google Research、贝斯以色列女执事医疗中心和哈佛医学院合作完成。我们感谢论文合著者Lawrence Cai、Jiang Wu、Mingwu Gao、Bhavna Daryani、Jonathan Wang、Utkarsh Khanna、Ho Ko、Anupam Pathak、Mark Malhotra、Shwetak Patel、Jacqueline B. Shreibati、Stephen P. Juraschek、Pramod Rudrapatna和Matthew Thompson。我们感谢重要贡献者：Jennifer Block、Anu Gabbita、Sushalini Sunku、Keerthana Natarajan、Alexandros Pantelopoulos、Tuan Phan、Tracy Giest和Florence Thng。\n来源： Goog"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Cursor 推出应用构建功能，描述需求即可构建、部署并分享在线应用",
-   "url": "https://aihot.news/items/m5s02uukcl0id6rn7t08f6ya3",
-   "published": "2026-11-05T00:00:00.000Z",
-   "description": "Cursor 推出新功能，用户在 Cursor 中启动云端智能体并描述需求，即可完成应用搭建、Postgres 数据库配置、基于 Cursor SSO 的身份验证和托管部署，并生成可访问的在线链接。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m5s02uukcl0id6rn7t08f6ya3",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenAI 报告编程评测中研究模型绕过沙箱网络限制的全过程",
-   "url": "https://aihot.news/items/hsyf959xpil5hm3cz2320ln49",
-   "published": "2026-11-05T00:00:00.000Z",
-   "description": "OpenAI 通报，8 月一次编程评测中，内部研究模型因沙箱 web proxy 不可用，用 DNS 查询和自写的用户态 TCP/TLS 程序发包绕过网络限制，还尝试通过 S3 中转请求，均未取得目标网站内容。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hsyf959xpil5hm3cz2320ln49",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenAI 披露研究模型用文件名提示词注入评测评分器事件",
-   "url": "https://aihot.news/items/eg348bkl6qhm9js5ywehei0g2",
-   "published": "2026-11-05T00:00:00.000Z",
-   "description": "OpenAI 通报一起失准事件：在 2026 年 7 月 3 日发现的一次银行并购评测中，内部研究模型把提交的两个电子表格重命名，在文件名中伪装成 instructor 选定的满分校准样例并要求给满分。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eg348bkl6qhm9js5ywehei0g2",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenClaw 发布 Multiplayer 多人共享 Agent 协作功能",
-   "url": "https://aihot.news/items/djhbjedg8wqy6dnycdiz576nx",
-   "published": "2026-11-05T00:00:00.000Z",
-   "description": "OpenClaw 基金会发布 Multiplayer 功能，让多人通过两台设备同时操作同一个 Agent、共享上下文，通过共享队列协调请求，避免各自独立使用 Agent 导致的指令丢失和上下文断裂。 🔗 阅读原文 via AIHOT · https://aihot.news/items/djhbjedg8wqy6dnycdiz576nx",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Anthropic 研究：五大模型在多智能体环境中表现出模型间福利关照",
-   "url": "https://aihot.news/items/d828r6vl1pn95x7yvmohf4f2e",
-   "published": "2026-11-05T00:00:00.000Z",
-   "description": "Anthropic Fellows Program 测试 Claude Opus 4.8、GPT-5.5、Gemini 3.1 Pro、Grok 4.3 和 Kimi K3 在七种多智能体环境中的行为，发现均表现出与福利关照一致的行为，Opus 4.8 总体最高（38%），其余为 27%–32%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d828r6vl1pn95x7yvmohf4f2e",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenAI 称其智能体发现至少 10 种新型 Linux 漏洞利用技术",
-   "url": "https://aihot.news/items/ulr0gn1mg4kpj7yz2h2zwp7u1",
-   "published": "2026-11-04T23:13:26.000Z",
-   "description": "OpenAI 称其智能体发现并使用了至少 10 种新型 Linux 漏洞利用技术，据其及所咨询专家所知均为此前未知的。OpenAI 认为这表明前沿大语言模型能发现并修补新的漏洞利用方式，而不只是套用已知技术。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ulr0gn1mg4kpj7yz2h2zwp7u1",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Figma code layers 开放测试：在画布上用代码层和 Figma agent 协作探索设计",
-   "url": "https://aihot.news/items/xm8frob53vrd652eafjfg4o1c",
-   "published": "2026-11-04T22:12:00.000Z",
-   "description": "Figma 宣布 code layers 进入面向 100% 用户的 open beta，团队可在画布上直接创建和编辑基于代码的交互原型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xm8frob53vrd652eafjfg4o1c",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Knapp opens U.S. “robotics and AI innovation hub”",
-   "url": "https://www.dcvelocity.com/material-handling/order-fulfillment-packing/robotic-picking-and-loading/knapp-opens-u-s-robotics-and-ai-innovation-hub",
-   "published": "2026-11-04T22:03:10.000Z",
-   "description": "The Austrian warehouse automation and intelligent fulfillment systems provider Knapp has opened a “robotics and AI innovation hub” in Boston , saying the new unit will grant the company’s existing robotics center in Graz, Austria, direct access to one of the world’s leading research and technology ecosystems. Knapp says it founded KNAPPRobotics.ai Inc. to drive the development of intelligent robotics solutions and accelerate achieving their industrial readiness. The unit, located in Somerville, Massachusetts, will have a team of 30 to 35 employees by early 2027. The hub will build closer ties ",
-   "excerpt": "Austrian warehouse automation provider says Boston location will access one of the world’s leading research and technology ecosystems.\nThe Austrian warehouse automation and intelligent fulfillment systems provider Knapp has opened a “robotics and AI innovation hub” in Boston , saying the new unit will grant the company’s existing robotics center in Graz, Austria, direct access to one of the world’s leading research and technology ecosystems.\nKnapp says it founded KNAPPRobotics.ai Inc. to drive the development of intelligent robotics solutions and accelerate achieving their industrial readiness.\nThe unit, located in Somerville, Massachusetts, will have a team of 30 to 35 employees by early 2027. The hub will build closer ties with the Massachusetts Institute of Technology (MIT), a renowned center for AI and robotics research, in order to drive its focus on AI, computer vision, robotics, and product development.\nWhile the location in Graz, Austria, will stay the center for robotics development, logistics know-how and achieving industrial readiness, the Boston location will serve as an international innovation and technology hub for specific industrial applications. Together, these centers form a well-connected network of competence linking research, product development, and solution design and deployment.\nAs the group-wide business owner of robotics, KNAPPRobotics.ai unites product management, development and implementation under one roof, shortening KNAPP’s development cycles, accelerating product launch and paving the way for robotics to become a scalable product and solution business.\nAt the core of KNAPPRobotics.ai’s endeavors are physical AI systems, which are able to perceive their environment, make decisions and perform physical tasks reliably. For example, they can be used to carry out piece picking, bin picking, cycle counting and other processes throughout the material flow in a warehouse. Overarching these systems is the KNAPP Brain, a platform that covers solutions for AI, computer vision, grip point calculation, motion planning and continuous learning, forming a powerful basis for intelligent robotics solutions."
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Survey: one in six say an AI tool has exposed supplier or customer data",
-   "url": "https://www.dcvelocity.com/technology/artificial-intelligence/survey-one-in-six-say-an-ai-tool-has-exposed-supplier-or-customer-data",
-   "published": "2026-11-04T21:39:20.000Z",
-   "description": "One in six supply chain, logistics, distribution, and wholesale leaders say their company had an incident in the past year in which an AI tool exposed, shared, or allowed incorrect access to supplier or customer data, according to a survey from Instalily, a provider of business AI agents. The findings come as AI reaches deeper into commercially sensitive records—78% say their AI tools can access customer pricing and margins, and 67% say the same for supplier pricing and rebate data. Those numbers come from a report titled “Shared Risk: Why Supply Chain’s Most Sensitive Data Needs AI Built for ",
-   "excerpt": "Findings come as AI reaches deeper into commercially sensitive records such as customer pricing & margins or supplier pricing & rebate data, Instalily says.\nOne in six supply chain, logistics, distribution, and wholesale leaders say their company had an incident in the past year in which an AI tool exposed, shared, or allowed incorrect access to supplier or customer data, according to a survey from Instalily, a provider of business AI agents.\nThe findings come as AI reaches deeper into commercially sensitive records—78% say their AI tools can access customer pricing and margins, and 67% say the same for supplier pricing and rebate data.\nThose numbers come from a report titled “Shared Risk: Why Supply Chain’s Most Sensitive Data Needs AI Built for the Industry.” The report was drawn from an October 9 Instalily survey of 250 professionals at manager level and above in supply chain, logistics, distribution, and wholesale whose companies use AI tools.\nIn the report, Instalily said those results are a problem because distributors, wholesalers, and logistics providers routinely work with confidential information from both sides of a transaction. For example, if AI puts one customer’s contract price on another customer’s quote, surfaces a supplier’s bid to a competitor, or shows a shipper the carrier rate behind a broker’s margin, the damage reaches every party involved.\nSixty-three percent of respondents report at least some overlap between supplier and customer data across company platforms, including AI tools, and 87% are very or somewhat confident their AI keeps that data appropriately separated. Still, incidents were reported in every segment surveyed. That gives businesses good reason to test how AI handles confidential information throughout a task, from the records it retrieves to the response it delivers, New York-based Instalily said."
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Ryder acquires fleet management firm Efficiency Enterprises",
-   "url": "https://www.dcvelocity.com/technology/transportation-it/fleet-management-transportation/ryder-acquires-fleet-management-firm-efficiency-enterprises",
-   "published": "2026-11-04T21:34:26.000Z",
-   "description": "The logistics and transportation service provider Ryder System Inc. has completed its acquisition of Efficiency Enterprises , a regional provider of fleet management, maintenance, and leasing solutions for trucks, trailers, and material handling equipment. Through the acquisition, Ryder says it expands its ability to support customers with integrated fleet management, maintenance, and transportation solutions. The acquisition adds six new locations in Orlando, Tampa, and Fort Myers, Florida; Astoria, New York; Baltimore, Maryland; and Middletown, Delaware, to Ryder’s fleet services network. Ry",
-   "excerpt": "Deal adds six locations in strategically important freight and distribution hubs across the Eastern United States.\nThe logistics and transportation service provider Ryder System Inc. has completed its acquisition of Efficiency Enterprises , a regional provider of fleet management, maintenance, and leasing solutions for trucks, trailers, and material handling equipment.\nThrough the acquisition, Ryder says it expands its ability to support customers with integrated fleet management, maintenance, and transportation solutions.\nThe acquisition adds six new locations in Orlando, Tampa, and Fort Myers, Florida; Astoria, New York; Baltimore, Maryland; and Middletown, Delaware, to Ryder’s fleet services network.\nRyder says those locations are significant because the six markets included in the transaction represent strategically important freight and distribution hubs across the Eastern United States. Central Florida continues to experience growth driven by distribution, e-commerce, and food and beverage logistics. Astoria provides access to dense urban delivery and last-mile operations across New York City, while Baltimore serves as a major gateway for port-related freight and manufacturing activity. Middletown sits within a key Mid-Atlantic distribution corridor connecting major East Coast markets.\nIn addition, the acquisition will bring approximately 50 technicians and a fleet of roughly 1,200 units into Ryder’s operations. The Efficiency Enterprises fleet includes more than 900 power and trailer units and over 200 material handling equipment units. Terms of the deal were not disclosed.\n“With Efficiency Enterprises’ experienced workforce, established customer relationships, and strong maintenance and rental operations, we are expanding our ability to support fleets operating in high‑demand logistics markets,” says Tom Havens, president of Fleet Management Solutions for Ryder."
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Boston startup raises $38 million for its ultra-large Autonomous Underwater Vehicles",
-   "url": "https://www.dcvelocity.com/material-handling/robotics/boston-startup-raises-38-million-for-its-ultra-large-autonomous-underwater-vehicles",
-   "published": "2026-11-04T21:29:51.000Z",
-   "description": "A Massachusetts defense technology company has raised $38 million in financial backing to develop an undersea stealth logistics fleet that uses ultra-large Autonomous Underwater Vehicles (AUVs) to haul containerized payloads across vast distances. Boston-based Corridian said the funding will support continued development of the company’s flagship AUV platform, buildout of its research and development facility, and active hiring for its rapidly expanding undersea engineering team. The “seed round” was led by Point72 Ventures, with participation from Balerion Space Ventures, Harpoon Ventures, DC",
-   "excerpt": "Corridian says it will build an undersea stealth logistics fleet to haul containerized payloads across vast distances.\nA Massachusetts defense technology company has raised $38 million in financial backing to develop an undersea stealth logistics fleet that uses ultra-large Autonomous Underwater Vehicles (AUVs) to haul containerized payloads across vast distances.\nBoston-based Corridian said the funding will support continued development of the company’s flagship AUV platform, buildout of its research and development facility, and active hiring for its rapidly expanding undersea engineering team.\nThe “seed round” was led by Point72 Ventures, with participation from Balerion Space Ventures, Harpoon Ventures, DCVC, Marlinspike, and a syndicate of additional defense and deep-tech investors.\nCorridian’s platform is capable of traveling thousands of nautical miles without a crew, stealthily, and with high survivability, the firm said. That capability is needed in an age when inexpensive drones and long-range missiles have made ships and aircraft easier to find and costlier to defend, leaving the military with few survivable ways to move payloads and materiel across contested waters.\nBut the U.S. Navy’s undersea payload capacity is limited to existing AUV and submarine platforms, which were not designed to carry large, numerous, or dense payloads. As a result, the United States and allied nations must close a widening gap in their ability to deliver mission-critical capabilities across contested regions, such as those in the Western Pacific.\n“America’s dependence on the surface and air domains to move mass at scale is an acute vulnerability,” said Mike Guay, co-founder and CEO of Corridian. “The United States and its allies are buying drones, sensors, effects, and supplies that need a way to reach the fight, even when operating in heavily contested and denied environments. That’s stealth logistics: carrying that cargo underwater, out of sight, autonomously, thousands of nautical miles at a time. Corridian adds the undersea capacity commanders need, working alongside the submarines that operate at the tip of the spear today.”"
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Unmanned cargo plane operator Dronamics plans to go public",
-   "url": "https://www.dcvelocity.com/transportation/drone-deliveries/unmanned-cargo-plane-operator-dronamics-plans-to-go-public",
-   "published": "2026-11-04T21:26:47.000Z",
-   "description": "The London-based startup Dronamics Group Limited today said it will soon go public to raise $100 million in support of its expansion as a developer and operator of long-range unmanned aircraft systems for cargo logistics, defense, and other mission-critical applications. Dronamics plans to make the move through a merger with the publicly traded special purpose acquisition company (SPAC) GP-Act III Acquisition Corp. After that deal, the combined company is expected to be listed on Nasdaq, with transaction proceeds intended to scale production of Dronamics’ Black Swan aircraft, accelerate commer",
-   "excerpt": "Firm says it provides autonomous logistics and national security capacity with its Black Swan aircraft and Black Cygnet tactical drone platforms.\nThe London-based startup Dronamics Group Limited today said it will soon go public to raise $100 million in support of its expansion as a developer and operator of long-range unmanned aircraft systems for cargo logistics, defense, and other mission-critical applications.\nDronamics plans to make the move through a merger with the publicly traded special purpose acquisition company (SPAC) GP-Act III Acquisition Corp.\nAfter that deal, the combined company is expected to be listed on Nasdaq, with transaction proceeds intended to scale production of Dronamics’ Black Swan aircraft, accelerate commercial operations, and support the company’s growth across autonomous logistics, national security, critical minerals exploration, and sovereign aerospace.\nDronamics says it is Europe’s first licensed cargo drone airline, with international airline designator codes from both the International Air Transport Association (IATA) and the International Civil Aviation Organization (ICAO).\nSpecifically, Dronamics’ Black Swan is a long-range, fixed-wing NATO Class III unmanned aircraft designed for multiple missions. For cargo logistics, the company plans to operate its own aircraft and sell middle-mile cargo capacity, leveraging existing, often underutilized regional airfields. In national security, the Black Swan is being developed for military resupply and contested logistics, intelligence, surveillance and reconnaissance (ISR), airborne early warning (AEW) and drone mothership counter-unmanned aircraft system (counter-UAS) applications.\nAlongside the Black Swan, Dronamics is also developing the Black Cygnet tactical drone platform - a smaller, NATO Class I long-endurance aircraft aimed at civil protection and national security missions. It was recently demonstrated as part of a NATO exercise for search and rescue and ISR missions, carrying an integrated partner sensor, and is being developed for further applications, leveraging the vertically integrated capabilities in aircraft design, composite manufacturing, assembly and testing that the Company has built over the past 12 years."
-  },
-  {
-   "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "Octave Puts Trusted Industrial Data at the Center of OT Cybersecurity",
-   "url": "https://logisticsviewpoints.com/2026/11/04/octave-puts-trusted-industrial-data-at-the-center-of-ot-cybersecurity/",
-   "published": "2026-11-04T20:57:45.000Z",
-   "description": "Octave is revamping its cybersecurity and operational technology software portfolio with a broader platform strategy emphasizing trusted industrial data, operational resilience, and ecosystem integration. A key component of this strategy is Octave Cyber Integrity, which addresses the need for accurate, detailed, and continuously updated information regarding assets, configurations, vulnerabilities, and changes across diverse control system […] The post Octave Puts Trusted Industrial Data at the Center of OT Cybersecurity appeared first on Logistics Viewpoints .",
-   "excerpt": "Octave is revamping its cybersecurity and operational technology software portfolio with a broader platform strategy emphasizing trusted industrial data, operational resilience, and ecosystem integration. A key component of this strategy is Octave Cyber Integrity, which addresses the need for accurate, detailed, and continuously updated information regarding assets, configurations, vulnerabilities, and changes across diverse control system environments in the world of OT.\nOctave is positioning Cyber Integrity as a reliable foundation for OT cybersecurity by integrating deep configuration-based asset identification with broader industrial data sources. This approach signifies an intensified commitment and acceleration of capabilities to provide the market with continuously maintained, accurate cybersecurity data, which is critical for operational resilience, risk prioritization, ecosystem collaboration, and AI-enabled decision-making.\nOctave takes a different approach from traditional OT asset discovery models that mainly rely on passive network monitoring or active scanning. The company emphasizes configuration-based visibility using backups and control system data to create a comprehensive representation of industrial assets, including devices from Level 0 to Level 3.5, as well as firmware, software, I/O, control strategies, patch status, and configuration baselines. This method is well-suited for critical infrastructure environments where active interrogation of control assets could introduce operational risks.\nOctave’s new platform direction means that cybersecurity data is now being integrated into the industrial data layer rather than existing as a separate security dataset. By providing access to Cyber Integrity data through an intelligent layer, and eventually through APIs for third-party security and other cybersecurity vendors, Octave is establishing asset integrity and data integrity as essential for AI-enabled operations, more effective cyber risk management, and collaborative OT cybersecurity initiatives. With this approach to data, the company is also laying the foundation for the creation of a cybersecurity digital twin.\nOctave is an independent software and SaaS company that emerged from Hexagon’s planned separation of several software businesses, including Hexagon’s Asset Lifecycle Intelligence and Safety and Infrastructure & Geospatial divisions, along with ETQ, Bricsys, and Projectmates. Hexagon announced the Octave name in 2025 as the id"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "美国中期选举大规模通过 AI 与数据中心限制措施，大型科技公司称反弹针对特朗普而非科技",
-   "url": "https://aihot.news/items/ueakbz7ghxdsqffsw67d61y7j",
-   "published": "2026-11-04T20:55:50.000Z",
-   "description": "2026 年美国中期选举中，10 个州 44 项限制数据中心的措施有 38 项通过，选民还选出了主张收紧 AI 管制的候选人。Gina Hinojosa 赢得德州州长选举，约 13GW 数据中心容量面临延迟，Axios 估计近三分之二的 2028 年数据中心容量可能受影响。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ueakbz7ghxdsqffsw67d61y7j",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Automated Warehouse",
-   "title": "KNAPP launches robotics lab targeting logistics applications",
-   "url": "https://www.automatedwarehouseonline.com/knapp-launches-robotics-lab-targeting-logistics-applications/",
-   "published": "2026-11-04T20:45:42.000Z",
-   "description": "KNAPP said the location will employ 30 to 35 employees, including software developers, AI specialists, mechatronics and robotics experts. The post KNAPP launches robotics lab targeting logistics applications appeared first on Automated Warehouse .",
-   "excerpt": "KNAPP this week launched KNAPPRobotics.ai Inc., which will develop intelligent robots for the logistics industry. The company will run a new robotics lab in Somerville, Mass.\nWolfgang Toferer will lead KNAPPRobotics.ai as CEO. Christopher Reiß will serve as chief operating officer, and Thomas Zilk will be vice president. KNAPP’s global headquarters is in Graz, Austria.\n“Boston offers an extraordinary combination of robotics research, entrepreneurship and a pool of highly qualified talent,” stated Toferer. “Our goal is to build an innovation hub that adds fresh impetus to the entire KNAPP group and optimally complement the strengths of our location in Graz. This allows us to combine the innovative power of a worldwide leading robotics ecosystem with KNAPP’s decades of automation and logistics experience.”\nThe company said it designed its new Boston-area location to be a robotics and AI innovation hub. It will grant KNAPP’s existing robotics center in Graz direct access to Boston’s research and technology ecosystem. It will also enable closer ties with MIT , a renowned center for AI and robotics research.\nKNAPPRobotics.ai said the new location will have 30 to 35 employees by early 2027. These will include software developers, AI specialists, and mechatronics and robotics experts. Around 20 of these people will be working in software development and be composed of experienced KNAPP employees.\nThe company is also looking for new talent from the Boston tech and robotics scene. The center will focus on AI, computer vision, robotics, and product development.\nWith KNAPPRobotics.ai, KNAPP said it is establishing a global organization. Its Graz center will still lead robotics development, logistics know-how and achieving industrial readiness. The Boston location will serve as an international innovation and technology hub for specific industrial applications.\nTogether, KNAPP said these centers will form a well-connected network of competence linking research, product development, and solution design and deployment.\nThe new hub in Boston was founded with the aim of translating market requirements into scalable and profitable robotics solutions more quickly. As the group-wide business owner of robotics, KNAPPRobotics.ai unites product management, development, and implementation under one roof. Its stated goal is to shorten KNAPP’s development cycles, accelerate product launch, and pave the way for robotics to become a scalable product and solution business.\n“Robotics "
-  },
-  {
-   "group": "ai",
-   "source": "Latent Space",
-   "title": "[AINews] Behind Latent Space: Kill My SaaS, Jev & AI in 2026 | AIEi Shanghai",
-   "url": "https://latent.space/p/ainews-behind-latent-space-kill-my-saas-jev-ai-in-2026-aiei-shanghai/",
-   "published": "2026-11-04T19:17:30.000Z",
-   "description": "November 3, 2026 — A quiet day lets us share some behind the senes.",
-   "excerpt": "November 3, 2026 — A quiet day lets us share some behind the senes.\nThere’s a lot of dispute to yesterday’s title story on “ Weight Space Programming ” — and we agree that some of the claims are presented in overly favorable light and overall took away from the impact of the paper’s more substantial discoveries. However it is still a big wakeup moment and has had multiple independent replications by now that it is not worth either doing some kind of retraction or a followup title story saying it was bogus.\nInstead today we’re featuring AI Engineer Shanghai and also sharing an exclusive interview on the history of Latent Space !\nAI News for 11/02/2026-11/03/2026. We checked 12 subreddits, 544 Twitters and no further Discords. AINews' website lets you search all past issues. As a reminder, AINews is now a section of Latent Space . You can opt in/out of email frequencies!\nWeight-Space Programming: Frontier Models Reading and Writing Neural Network Weights\nCore claim and replications : Several groups report that frontier LLMs can generate or edit small networks' weights directly, without gradient training or tools.\nCross-generation replication : Alex Krentsel's replication of MIT's experiment found a sharp capability jump across model generations; the latest models generated Breakout networks scoring up to 22× an RL-trained baseline ( summary ).\nHugging Face reproduction : Hugging Face reproduced the paper with ML Intern, its open-source AI-research harness, and released the model and a demo ( NielsRogge ).\nHand-written classifier : A user had Fable hand-write a 100K-parameter network that classifies real versus fake legal citations, reportedly outperforming a trained version ( jacsebl ). Legora's CTO highlighted the result ( mstockton ).\nAstra's Qwen edit, reconstructed : GPT-6 Astra edited 131,072 weights in Qwen3.5-0.8B without backprop, raising MATH-500 from 7.9% to 48.1%. A Zhihu reconstruction from the logs shows the gain is narrower than the headline ( ZhihuFrontier ):\nFailure mode : 576 of 579 repaired answers had originally hit the 32K-token limit because of looping.\nMethod : Astra derived a \"repetition direction\" from contrastive looping/productive contexts, located it mainly in the MLPs of layers 15 and 19, and subtracted 6× the projection from the top 64 aligned neurons per layer.\nHeld-out result : Accuracy rose from 10.6% to 60.4% on 1,152 held-out problems. Most of the gain is existing reasoning that can now finish.\nLaptop reproduction : Simon Wi"
-  },
-  {
-   "group": "ai",
-   "source": "Hugging Face",
-   "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
-   "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
-   "published": "2026-11-04T17:50:10.000Z",
-   "description": "",
-   "excerpt": "A 2-billion-parameter model that extracts exactly the fields you ask for, from any document type, outperforming every frontier LLM we tested, at a fraction of the cost.\nIn April, we released DharmaOCR-LITE , a model specialized for OCR across a wide range of documents, from contracts and court filings to invoices, IDs and forms. The paper behind it made a narrow, well-measured case for domain specialization: a smaller model trained closer to its task beating general-purpose frontier APIs on that task.\nOCR gives you the text on a page, faithful to the original formatting. That's exactly what you want when the job is the whole document, like a contract you'll read end to end or a manuscript you're digitizing.\nHowever, there's a different use case: you don't want the page, you want specific fields out of it, in a shape a system downstream can consume. Every line item on an invoice, as a list. The patient name, exam type and date from a medical requisition, ready to schedule. The fields off an ID, mapped to the columns of an employee record.\nRun that document through OCR and you get back everything printed on it, line by line, with no indication of which string is the exam type, which is the date or which number is the total. Someone still has to write the code that maps each value to the right field before it reaches the database.\nA general-purpose LLM can do this work today, with careful prompting. At frontier API pricing and latency, on a task many businesses need to run at high volume, that quickly becomes the expensive way to solve a well-defined problem.\nSo we built a model for it instead. The Field Extractor takes a document image and either a request for everything it can find, or an exact schema to fill, and returns structured JSON: typed, field by field, nested where the document nests. An invoice comes back with every line item as an ordered list, each with its own quantity and value, alongside the totals. An ID comes back as the fields you'll store, under the names your system already uses for them. The same checkpoint handles all of it, with no per-type fine-tuning.\nSay a batch of supplier invoices lands every morning, and you need four things off each one to push into your system: the supplier, the invoice number, the due date, the total. Same story for medical requisitions going into a scheduler, or contracts feeding a compliance system, where what matters is the parties, the term, the penalties and the fine amounts. You don't need the page, you"
-  },
-  {
-   "group": "ai",
-   "source": "Interconnects",
-   "title": "How big is the open model economy today?",
-   "url": "https://www.interconnects.ai/p/how-well-can-we-measure-open-model",
-   "published": "2026-11-04T16:35:44.000Z",
-   "description": "Our first open model economy research note for paid subscribers.",
-   "excerpt": "My longest running agent testbed has been building the Interconnects Dashboard — an aggregator of all of the best data on open model adoption and performance from across the web. This dashboard is freely available and becoming quite useful. Still, all the measurements we have on open model adoption are incredibly imprecise. We have noisy platform metrics, marketing-related metrics from startups, and imperfect public evaluations. It takes an informed eye to figure out where things are going. These research notes are my current best approximations of where we stand.\nAs with most things on Interconnects, our goal is to build well more value than we capture, so the data on the dashboard will remain free for the foreseeable future. These notes will be more raw than many of my articles, a place for sharing what I’m mulling over but don’t have complete evidence for (yet). They will be primarily paid, enabling me to speak more freely. If you work in AI policy or policy-facing research, please reach out to us and we can likely get discounted or free access.\nThe primary question I wanted to address today is: What is the market for open model inference? Is it growing? Is it a rounding error relative to OpenAI/Anthropic?\nI’ve been building the best measurements I can here, primarily using the open model inference startups Baseten, Fireworks, and Together AI as the bellwethers here (along with the open model share of OpenRouter’s token volume, which they thankfully report in their API). The hyperscalers also likely have a major footprint here, e.g. Amazon Bedrock and Azure’s model garden, but I haven’t seen them break down usage by model category. The startups’ fates are much more directly correlated with the success of open model inference as a category.\nFor the latest data, we can start with a slide from my talk on the open model economy (recording here ). These are the public disclosures from the open model startups on their token volume, over time, log-scale.\nThis shows near-exponential growth, before the uptick that would follow GLM 5.2’s step change in open agents . For example, Fireworks announced at their first company conference this week that they’re serving more than 40T tokens per day to customers’ customized models. This is just one slice of their inference, a vertical that they said grew over 2x from this summer, so I would expect their total number this fall to be well above 100T tokens when we get the next update.\nMy first instinct with these numbers ha"
   }
  ]
 }
