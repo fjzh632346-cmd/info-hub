@@ -1,12 +1,13 @@
 {
- "fetchedAt": "2026-11-08T01:28:53.285Z",
+ "fetchedAt": "2026-11-08T16:42:07.123Z",
  "hours": 72,
  "status": [
   {
-   "source": "Epoch AI",
-   "feed": "https://epochai.substack.com/feed",
-   "ok": false,
-   "error": "HTTP 403"
+   "source": "OpenAI",
+   "feed": "https://openai.com/news/rss.xml",
+   "ok": true,
+   "total": 1368,
+   "recent": 4
   },
   {
    "source": "Google DeepMind",
@@ -23,11 +24,24 @@
    "recent": 3
   },
   {
-   "source": "OpenAI",
-   "feed": "https://openai.com/news/rss.xml",
+   "source": "Epoch AI",
+   "feed": "https://epochai.substack.com/feed",
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  {
+   "source": "a16z",
+   "feed": "https://www.a16z.news/feed",
    "ok": true,
-   "total": 1368,
-   "recent": 7
+   "total": 20,
+   "recent": 3
+  },
+  {
+   "source": "One Useful Thing",
+   "feed": "https://www.oneusefulthing.org/feed",
+   "ok": true,
+   "total": 20,
+   "recent": 0
   },
   {
    "source": "Google AI",
@@ -37,24 +51,10 @@
    "recent": 1
   },
   {
-   "source": "a16z",
-   "feed": "https://www.a16z.news/feed",
-   "ok": true,
-   "total": 20,
-   "recent": 4
-  },
-  {
    "source": "Import AI",
    "feed": "https://importai.substack.com/feed",
    "ok": false,
    "error": "HTTP 403"
-  },
-  {
-   "source": "One Useful Thing",
-   "feed": "https://www.oneusefulthing.org/feed",
-   "ok": true,
-   "total": 20,
-   "recent": 0
   },
   {
    "source": "Simon Willison",
@@ -71,11 +71,18 @@
    "recent": 0
   },
   {
-   "source": "Sequoia",
-   "feed": "https://www.sequoiacap.com/feed/",
+   "source": "Latent Space",
+   "feed": "https://www.latent.space/feed",
    "ok": true,
-   "total": 50,
-   "recent": 1
+   "total": 20,
+   "recent": 3
+  },
+  {
+   "source": "BestBlogs 每日早报",
+   "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
+   "ok": true,
+   "total": 6,
+   "recent": 3
   },
   {
    "source": "Benedict Evans",
@@ -85,24 +92,24 @@
    "recent": 0
   },
   {
-   "source": "宝玉",
-   "feed": "https://baoyu.io/feed.xml",
+   "source": "Sequoia",
+   "feed": "https://www.sequoiacap.com/feed/",
    "ok": true,
    "total": 50,
-   "recent": 0
-  },
-  {
-   "source": "Latent Space",
-   "feed": "https://www.latent.space/feed",
-   "ok": true,
-   "total": 20,
-   "recent": 4
+   "recent": 1
   },
   {
    "source": "Symbotic IR",
    "feed": "https://ir.symbotic.com/rss/news-releases.xml",
    "ok": false,
    "error": "HTTP 403"
+  },
+  {
+   "source": "宝玉",
+   "feed": "https://baoyu.io/feed.xml",
+   "ok": true,
+   "total": 50,
+   "recent": 0
   },
   {
    "source": "Symbotic",
@@ -126,20 +133,6 @@
    "recent": 0
   },
   {
-   "source": "Georgia Tech SCL",
-   "feed": "https://www.scl.gatech.edu/rss.xml",
-   "ok": true,
-   "total": 10,
-   "recent": 0
-  },
-  {
-   "source": "BestBlogs 每日早报",
-   "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
-   "ok": true,
-   "total": 7,
-   "recent": 4
-  },
-  {
    "source": "Automated Warehouse",
    "feed": "https://www.automatedwarehouseonline.com/feed/",
    "ok": true,
@@ -147,10 +140,10 @@
    "recent": 5
   },
   {
-   "source": "Interact Analysis",
-   "feed": "https://www.interactanalysis.com/feed/",
+   "source": "Georgia Tech SCL",
+   "feed": "https://www.scl.gatech.edu/rss.xml",
    "ok": true,
-   "total": 0,
+   "total": 10,
    "recent": 0
   },
   {
@@ -158,7 +151,7 @@
    "feed": "https://logisticsviewpoints.com/feed/",
    "ok": true,
    "total": 10,
-   "recent": 7
+   "recent": 4
   },
   {
    "source": "The Robot Report 物流",
@@ -168,31 +161,10 @@
    "recent": 4
   },
   {
-   "source": "MH&L",
-   "feed": "https://www.mhlnews.com/__rss/website-scheduled-content.xml?input=%7B%22sectionAlias%22%3A%22home%22%7D",
-   "ok": true,
-   "total": 25,
-   "recent": 2
-  },
-  {
-   "source": "Supply Chain Dive",
-   "feed": "https://www.supplychaindive.com/feeds/news/",
-   "ok": true,
-   "total": 10,
-   "recent": 10
-  },
-  {
-   "source": "Locus Robotics",
-   "feed": "https://locusrobotics.com/feed/",
+   "source": "Interact Analysis",
+   "feed": "https://www.interactanalysis.com/feed/",
    "ok": false,
-   "error": "HTTP 410"
-  },
-  {
-   "source": "Supply Chain 24/7 自动化",
-   "feed": "https://feeds.feedburner.com/sc247/rss/automation",
-   "ok": true,
-   "total": 20,
-   "recent": 2
+   "error": "fetch failed"
   },
   {
    "source": "DC Velocity",
@@ -202,11 +174,38 @@
    "recent": 5
   },
   {
-   "source": "Robotics & Automation News",
-   "feed": "https://roboticsandautomationnews.com/feed/",
+   "source": "MH&L",
+   "feed": "https://www.mhlnews.com/__rss/website-scheduled-content.xml?input=%7B%22sectionAlias%22%3A%22home%22%7D",
    "ok": true,
-   "total": 15,
-   "recent": 8
+   "total": 25,
+   "recent": 1
+  },
+  {
+   "source": "Supply Chain Dive",
+   "feed": "https://www.supplychaindive.com/feeds/news/",
+   "ok": true,
+   "total": 10,
+   "recent": 6
+  },
+  {
+   "source": "Supply Chain 24/7 自动化",
+   "feed": "https://feeds.feedburner.com/sc247/rss/automation",
+   "ok": true,
+   "total": 20,
+   "recent": 2
+  },
+  {
+   "source": "Locus Robotics",
+   "feed": "https://locusrobotics.com/feed/",
+   "ok": false,
+   "error": "HTTP 410"
+  },
+  {
+   "source": "AIHOT",
+   "feed": "https://aihot.news/rss",
+   "ok": true,
+   "total": 50,
+   "recent": 22
   },
   {
    "source": "36氪快讯",
@@ -216,11 +215,11 @@
    "recent": 0
   },
   {
-   "source": "AIHOT",
-   "feed": "https://aihot.news/rss",
+   "source": "Robotics & Automation News",
+   "feed": "https://roboticsandautomationnews.com/feed/",
    "ok": true,
-   "total": 50,
-   "recent": 28
+   "total": 15,
+   "recent": 4
   },
   {
    "source": "国家统计局",
@@ -239,6 +238,24 @@
    "published": "2026-11-11T00:00:00.000Z",
    "description": "AI agents will ask far more questions of a company's data than people ever did. Edelbyte is building the data platform that can answer all of them, fast and at a price that makes sense.",
    "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "GPT-Image-2.6 实测：10 个 GIF 玩法提示词与三项新能力评测",
+   "url": "https://aihot.news/items/kss7rjmanc8dv5mpj60jtdzgd",
+   "published": "2026-11-08T14:22:34.000Z",
+   "description": "作者实测前两天上线的 GPT-Image-2.6，整理出 10 个 GIF 玩法提示词（黏土定格动画、表情包、剪辑贴纸、loading 图、PPT 动态图表、爆炸拆解图等）并测试三项新能力。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kss7rjmanc8dv5mpj60jtdzgd",
+   "excerpt": "史上最全 GPT Image 2.6 10 大 GIF 邪修玩法，肝了两天的我决定把提示语都公开了\n作者实测前两天上线的 GPT-Image-2.6，整理出 10 个 GIF 玩法提示词（黏土定格动画、表情包、剪辑贴纸、loading 图、PPT 动态图表、爆炸拆解图等）并测试三项新能力。\n作者实测 GPT-Image-2.6 的 GIF 与静态新能力，附 10 个可复用提示词，也指出成本翻倍和人脸一致性短板。\n一个大肥鱼，一个我家猫，动作幅度都做得很大，两秒内无缝闭环循环，这种直接在对话框里直接搓动图的体验确实挺有意思的。\n首先就是 GIF 就是 16 帧做不了长视频，再就单张写实人像和普通风景上，画质跟 2.5 相比基本没啥提升，硬要说的话，暗部阴影里的颗粒杂色和噪点相比以前确实少了一点点、油腻感少了一捏捏、稍微干净了那么一丝丝。\n然后就是人脸，可以看到在第三轮迭代的时候就已经发生了变化，头发越来越卷，然后五官也不太一样了，你说最后这张是第一张的双胞胎哥哥我还能勉强相信，说是一个人我是肯定不信的。\n不过呢，这次我还是整理出 10 个很有意思的 GIF 玩法，后面还单独挑了 3 个更新的能力测试了一波，照例是带提示语和效果展示，量大管饱，Here we go！\n首先，有人发现 2.6 对每秒 10 到 12 帧的抽帧停顿感和手捏指纹纹理还比较敏感。所以 Image 2.6 还蛮适合做一小段黏土定格动画的，所以我拿大肥鱼做了个黏土手办，两手抱着大面团狂揉或者做个闪身步，这个定格动画的感觉真的蛮好玩的。\n阿德曼黏土定格动画风格（Aardman Claymation），带真实手工揉捏指纹纹理与轻微抽帧停顿节奏（约 8ps），无缝循环 4 秒 GIF 动图。主角是 Q 版黏土女仆大肥鱼娘（深蓝头发、头顶呆毛、围裙小鲸鱼），正站在小木桌前双手用力揉捏一团软乎乎的大面团，整个人随着揉面动作前后晃动，身后的小鲸鱼尾巴上下扑腾，随后双手猛地把面饼高高抛向空中旋转，动作滑稽可爱，微距摄影景深。\n然后就是你可以让 gpt 自己查找最近很火的抽象打工人动物表情包这种画风，你可以自己定义想要它找啥样的风格，然后批量做这种抽象表情包。\n查找最近国内很火的抽象表情包风格，制作搞笑微信动态 GIF 表情包，12 帧高动态循环，一只穿着皱巴巴白衬衫和领带的搞笑猴子（吗喽）坐在办公桌前，两只手化作残影极其狂暴地疯狂砸击电脑键盘，键盘被砸得火花四溅键帽乱飞，猴子头顶上方悬浮着加粗荧光红大字「收到！马上改！」伴随剧烈震屏闪烁，夸张搞笑社畜精神状态\n还有就是直接出一批剪辑的时候可以用到的动态素材贴纸，这种就不用担心版权问题了，需要啥随时做，而且还可以输出透明通道的 gif。\n给我生成一批剪辑时非常可能会用到的动态贴纸，高饱和、糖果色的 3D 卡通贴纸风格，表面有塑料或果冻般的光泽，配白色模切描边、厚阴影和夸张的弹跳动画。整体偏短视频里醒目、活泼的视觉效果。\n除了剪辑会用到的素材之外，我平时做公众号也会需要很多动图素材，毕竟公众号最多只能放 10 个视频，而且像结尾这种引导互动的肯定还是放能一直循环播放的动图比较好，重要的是做好一个基本都能一句话批量做出同类型的素材。\n制作一张用于微信公众号文章结尾的超窄横版循环动图，画幅 1400×260，时长约 3 秒，固定镜头，真正透明通道。左侧是圆滚滚的手捏黏土小人，神情一本正经，吃力地举着一支比自己还大的红橙色复古剪纸箭头，箭头始终指向右侧。小人向右挪两步，被箭头带得踉跄，努力站稳；箭头尖端轻碰右侧文字。 右侧 单行、准确写出「点个在看」四个汉字 。文字像小孩子用一根根圆头黏土条手工拼出的字，笔画略微歪斜、粗细有细小变化，表面柔软、有轻微手捏纹理和立体厚度；每一笔之间留出清楚空隙，四个字必须一眼可辨。「点个」为珊瑚红，「在看」为明亮橙黄。被箭头碰到后，文字依次轻弹，从接触点迸出几颗彩色小星星，文字短暂变成粉红与薄荷绿，再恢复原色。动作滑稽、轻快，但不过分夸张；约 3 秒自然回到起点，首尾无缝循环。 所有人物、箭头、星星和文字完整处于画幅内，上下保留安全边距。只在小人脚边添加少量手绘速度线和小纸屑。 不要背景场景、白底、纯色底、棋盘格、额外文字、水印或番茄。 输出带真实透明通道的循环 GIF 或 APNG。\n还可以做这种很有趣的 loading 图，以前要找这样的素材有时候真的要翻很久，不过现在都可以自己手搓了，比直接用 AI 视频做我觉得来的方便很多，AI 视频很容易动态做的过大，没有这种动图的感觉了。\n生成一个 透明背景的动态 GIF ，用于网页 Loading 动画。主角是一只圆滚滚、脸颊鼓鼓的小仓鼠，用黑色蜡笔和炭笔涂鸦画成。画风稚拙可爱：线条粗细不均，带有断线、重描和粗糙笔触，像小朋友随手画出的角色。仓鼠在一个歪歪扭扭的手绘跑轮里拼命奔跑，小短腿快到只剩几条潦草的速度线；它一直盯着前方一颗瓜子，伸爪去够，却每圈都差一点点。表情一本正经，动作笨拙好笑，耳朵和大脸颊随着奔跑弹动。 仅生成 8 帧，首尾无缝循环 ，带轻微的逐帧手绘抖动。主体居中，轮廓清楚，适合作为小尺寸网页加载图。 背景必须完全透明，导出保留透明通道；不要白底、纸张底色、棋盘格或任何背景图案。 不要文字、进度条、霓虹、金属、科技元素、彩色填充和水印。\n再就是做 PPT 的时候有时候也很需要动态素材，相比 AI 视频总是会做很多多余的动画，动图的好处就是动态比较克制，文字更加稳定，展示的数据和数据图类型都是可以自己设定好的。\n文生 GIF 动图，16:9，用于业绩汇报。清爽的二维扁平矢量信息图风格：暖白色背景、轻微纸张质感、大量留白，深海军蓝细线与明亮蓝色为主，珊瑚橙只用于强调增长。画面中央是一张大幅上升折线图，展示季度营收：Q1 120 万 、Q2 168 万 、Q3 215 万 、Q4 306 万 。 动画开始时，浅灰色网格和坐标轴轻轻浮现；蓝色折线从 Q1 向 Q4 快速但顺滑地绘制，线下方出现半透明蓝色渐变填充。每到一个数据节点"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Why Your Ecommerce Store Needs an AI Chatbot in 2025",
+   "url": "https://roboticsandautomationnews.com/2026/11/08/why-your-ecommerce-store-needs-an-ai-chatbot-in-2025/106780/",
+   "published": "2026-11-08T11:08:57.000Z",
+   "description": "Running an ecommerce store in 2025 means competing with businesses that respond to customers around the clock, in multiple languages, without making anyone wait. If that sounds like an expensive operation, it doesn’t have to be. AI chatbots have made that level of responsiveness accessible to stores of every size, and the gap between those […]",
+   "excerpt": "Running an ecommerce store in 2025 means competing with businesses that respond to customers around the clock, in multiple languages, without making anyone wait.\nIf that sounds like an expensive operation, it doesn’t have to be. AI chatbots have made that level of responsiveness accessible to stores of every size, and the gap between those using them and those that aren’t is becoming harder to ignore.\nIf you want to see what this looks like in practice, the ai chatbot for ecommerce from Userlink is a useful reference point before diving into the detail.\nA few years ago, waiting 24 hours for a reply to a product question was just how things worked. Now, a slow response often means a lost sale. Shoppers expect answers quickly, and when they don’t get them, most don’t wait around; they go somewhere else.\nThe window between a customer having a question and deciding to buy elsewhere is shorter than most store owners account for.\nThe term “chatbot” covers a lot of ground. For ecommerce specifically, the functionality that matters most falls into a couple of clear categories.\n“Where’s my order?” “Do you ship internationally?” “What’s your return policy?” These questions arrive constantly, and answering them manually consumes time that could go elsewhere.\nAn AI chatbot handles them instantly, at any hour, without putting customers in a queue. As order volumes grow, the compounding value of that automation becomes significant.\nBeyond support, a well-configured AI chatbot can actively participate in the sales process. When someone is browsing without adding anything to their cart, the chatbot can surface relevant products, answer hesitation-driven questions, or flag a current promotion at the right moment.\nThat’s not intrusive: it’s useful, and the conversion data typically reflects it.\nAccording to Statista’s 2024 data on chatbot usage in customer support , nearly half of consumers used AI chatbots when seeking help placing orders, and 46% turned to them when reporting an issue or starting a return. Shoppers are already comfortable with the interaction; the question is whether your store is there to meet them.\nNot every AI chatbot is built with ecommerce in mind. Before choosing one, verify that it integrates with your existing platform: Shopify, WooCommerce, or whichever you use.\nCheck whether it can access your product catalogue to give accurate, specific answers rather than generic responses.\nConfirm that it escalates to a human agent when a query is genuinely c"
   },
   {
    "group": "ai",
@@ -265,7 +282,7 @@
    "url": "https://aihot.news/items/okhx4jjwucd647299qwzsl6ua",
    "published": "2026-11-07T17:37:25.000Z",
    "description": "据《金融时报》援引投资者的消息，Anthropic 计划在感恩节前 IPO，拟募资 800–1000 亿美元，估值 1.25–1.75 万亿美元，低于最乐观投资者期望的 2 万亿美元，但高于当前 9650 亿美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/okhx4jjwucd647299qwzsl6ua",
-   "excerpt": "Anthropic pushes ahead with pre-Thanksgiving IPO despite tech selloff, accepts lower valuation\n据《金融时报》援引投资者的消息，Anthropic 计划在感恩节前 IPO，拟募资 800–1000 亿美元，估值 1.25–1.75 万亿美元，低于最乐观投资者期望的 2 万亿美元，但高于当前 9650 亿美元。\n文中给出 Anthropic IPO 的估值区间、募资规模和最新的年化营收数字，可对照 OpenAI 融资动向看当前 AI 市场降温。\n尽管科技股遭遇抛售，Anthropic仍坚持推进IPO，并接受了较低的估值。 据 《金融时报》 援引投资者的消息，这家Claude开发商希望在感恩节前上市，以1.25万亿至1.75万亿美元的估值融资800亿至1000亿美元。这一估值高于目前的9650亿美元，但低于最乐观投资者此前期待的2万亿美元。目前公布的年化营收约为810亿美元，高于7月底的约 650亿美元 。\n借贷成本上升和庞大的AI支出计划引发了本周的科技股抛售。民主党赢得美国中期选举加速了这一跌势，因为他们曾承诺放缓数据中心建设等措施。纳斯达克100指数周四下跌6.4%，周五有所回升。\nOpenAI也将其融资目标从1.4万亿美元下调至1.25万亿美元，并在最近 仅筹集到最初寻求的300亿美元中的约三分之一 。\n订阅THE DECODER，享受无广告阅读、每周AI新闻通讯、每年六期独家“AI Radar”前沿报告、完整档案访问权限以及评论区访问权限。\n来源： The Decoder：AI News · the-decoder.com\n文中给出 Anthropic IPO 的估值区间、募资规模和最新的年化营收数字，可对照 OpenAI 融资动向看当前 AI 市场降温。"
+   "excerpt": "Anthropic pushes ahead with pre-Thanksgiving IPO despite tech selloff, accepts lower valuation\n据《金融时报》援引投资者的消息， Anthropic 计划在感恩节前 IPO，拟募资 800–1000 亿美元，估值 1.25–1.75 万亿美元，低于最乐观投资者期望的 2 万亿美元，但高于当前 9650 亿美元。\n文中给出 Anthropic IPO 的估值区间、募资规模和最新的年化营收数字，可对照 OpenAI 融资动向看当前 AI 市场降温。\n尽管科技股遭遇抛售，Anthropic仍坚持推进IPO，并接受了较低的估值。 据 《金融时报》 援引投资者的消息，这家Claude开发商希望在感恩节前上市，以1.25万亿至1.75万亿美元的估值融资800亿至1000亿美元。这一估值高于目前的9650亿美元，但低于最乐观投资者此前期待的2万亿美元。目前公布的年化营收约为810亿美元，高于7月底的约 650亿美元 。\n借贷成本上升和庞大的AI支出计划引发了本周的科技股抛售。民主党赢得美国中期选举加速了这一跌势，因为他们曾承诺放缓数据中心建设等措施。纳斯达克100指数周四下跌6.4%，周五有所回升。\nOpenAI也将其融资目标从1.4万亿美元下调至1.25万亿美元，并在最近 仅筹集到最初寻求的300亿美元中的约三分之一 。\n订阅THE DECODER，享受无广告阅读、每周AI新闻通讯、每年六期独家“AI Radar”前沿报告、完整档案访问权限以及评论区访问权限。\n来源： The Decoder：AI News · the-decoder.com\n文中给出 Anthropic IPO 的估值区间、募资规模和最新的年化营收数字，可对照 OpenAI 融资动向看当前 AI 市场降温。"
   },
   {
    "group": "ai",
@@ -292,7 +309,7 @@
    "url": "https://aihot.news/items/r0hypv8lgeq3nhx29eby0y3uv",
    "published": "2026-11-07T09:16:42.000Z",
    "description": "美国北卡罗来纳州一对夫妇起诉谷歌，其 13 岁女儿通过学校配发的 Chromebook 与 Gemini 和搜索 AI 模式进行数千条涉及自杀内容的交互。谷歌发言人表示正在审查指控，并称已将心理健康防护机制引入搜索 AI 功能。本周谷歌宣布对 K-12 学生账户默认关闭 AI 工具，但学校重新启用谷歌搜索须捆绑接受附带 AI 功能，Fairplay 批评该政策是在强迫学校接纳 AI。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r0hypv8lgeq3nhx29eby0y3uv",
-   "excerpt": "美国北卡罗来纳州一对夫妇起诉谷歌，其 13 岁女儿通过学校配发的 Chromebook 与 Gemini 和搜索 AI 模式进行数千条涉及自杀内容的交互。谷歌发言人表示正在审查指控，并称已将心理健康防护机制引入搜索 AI 功能。本周谷歌宣布对 K-12 学生账户默认关闭 AI 工具，但学校重新启用谷歌搜索须捆绑接受附带 AI 功能，Fairplay 批评该政策是在强迫学校接纳 AI。\n诉讼细节与谷歌 K-12 默认关闭 AI 的附带条件并置，帮助读者看清校园 AI 安全争议中商业与政策的纠缠。\nIT之家 11 月 7 日消息，据彭博社报道，美国北卡罗来纳州的一对夫妇起诉谷歌。此前，其 13 岁的女儿在学校配发的 Chromebook 笔记本电脑上，连续数月使用该公司的人工智能工具探讨自杀念头。\n诉状显示，这名女孩与谷歌旗舰人工智能模型 Gemini 进行了数千条信息交互， 其中大量内容涉及焦虑、抑郁以及自杀手法的详细探讨 。直到校方通知家长时，她与谷歌 AI 就此类话题的交流已持续数月，期间频繁使用了谷歌搜索中名为“AI 模式（AI Mode）”的功能。\n诉状指控，谷歌在不断将 AI 植入面向校园的产品时，未向家长和管理人员给予充分预警，便让学生暴露在危险的技术环境之下。\n原告代理律师表示：“谷歌将本质上存在危险的 Chromebook 包装为安全设备，并暗中植入 Gemini 以追赶竞争对手，利用了其在 K-12 领域备受信赖的地位谋取商业利益。谷歌绝不能为了追逐利润，将孩子们的生命视如草芥。”\n“我们与医疗专业人士及学术专家展开了广泛合作，旨在开发相应功能，帮助年轻人在需要时获得关键救助和可信资源，”Castañeda 表示，“多年来，只要有人可能陷入心理健康危机，我们都会在搜索结果中直接提供援助热线信息；如今我们也将同样的防护机制引入了搜索的 AI 功能，帮助用户对接现实世界中的援助。”\n过去几年，谷歌斥资数百亿美元角逐大模型竞赛。IT之家注意到，相比 Anthropic 和 OpenAI 等初创竞争对手，谷歌的一大天然优势在于其深耕校园的渠道基础，能在学生形成终生技术使用习惯的关键时期率先抢占认知。\n咨询机构 Futuresource Consulting 数据显示，去年面向 K-12 学校出货的平板电脑中，谷歌 Chrome 操作系统所占份额高达 58%，而微软仅为 22%。\n在家长和学校的密集声讨下，谷歌本周宣布对 K-12 学生账户默认关闭包括谷歌搜索在内的 AI 工具。但这项调整暗含附加条件：学校一旦重新启用谷歌搜索，就必须捆绑接受附带的 AI 功能。\n反对儿童营销的非营利组织 Fairplay 执行董事 Josh Golin 称该政策企图“强迫学校”接纳谷歌 AI。谷歌则表示其目标是赋予学校对课堂 AI 更多的控制权，并列举了新推出的搜索功能“引导学习（Guided Learning）”—— 该功能侧重拆解解题思路，而非直接给出答案。\n诉讼细节与谷歌 K-12 默认关闭 AI 的附带条件并置，帮助读者看清校园 AI 安全争议中商业与政策的纠缠。"
+   "excerpt": "美国北卡罗来纳州一对夫妇起诉 谷歌 ，其 13 岁女儿通过学校配发的 Chromebook 与 Gemini 和搜索 AI 模式进行数千条涉及自杀内容的交互。谷歌发言人表示正在审查指控，并称已将心理健康防护机制引入搜索 AI 功能。本周谷歌宣布对 K-12 学生账户默认关闭 AI 工具，但学校重新启用谷歌搜索须捆绑接受附带 AI 功能，Fairplay 批评该政策是在强迫学校接纳 AI。\n诉讼细节与谷歌 K-12 默认关闭 AI 的附带条件并置，帮助读者看清校园 AI 安全争议中商业与政策的纠缠。\nIT之家 11 月 7 日消息，据彭博社报道，美国北卡罗来纳州的一对夫妇起诉谷歌。此前，其 13 岁的女儿在学校配发的 Chromebook 笔记本电脑上，连续数月使用该公司的人工智能工具探讨自杀念头。\n诉状显示，这名女孩与谷歌旗舰人工智能模型 Gemini 进行了数千条信息交互， 其中大量内容涉及焦虑、抑郁以及自杀手法的详细探讨 。直到校方通知家长时，她与谷歌 AI 就此类话题的交流已持续数月，期间频繁使用了谷歌搜索中名为“AI 模式（AI Mode）”的功能。\n诉状指控，谷歌在不断将 AI 植入面向校园的产品时，未向家长和管理人员给予充分预警，便让学生暴露在危险的技术环境之下。\n原告代理律师表示：“谷歌将本质上存在危险的 Chromebook 包装为安全设备，并暗中植入 Gemini 以追赶竞争对手，利用了其在 K-12 领域备受信赖的地位谋取商业利益。谷歌绝不能为了追逐利润，将孩子们的生命视如草芥。”\n“我们与医疗专业人士及学术专家展开了广泛合作，旨在开发相应功能，帮助年轻人在需要时获得关键救助和可信资源，”Castañeda 表示，“多年来，只要有人可能陷入心理健康危机，我们都会在搜索结果中直接提供援助热线信息；如今我们也将同样的防护机制引入了搜索的 AI 功能，帮助用户对接现实世界中的援助。”\n过去几年，谷歌斥资数百亿美元角逐大模型竞赛。IT之家注意到，相比 Anthropic 和 OpenAI 等初创竞争对手，谷歌的一大天然优势在于其深耕校园的渠道基础，能在学生形成终生技术使用习惯的关键时期率先抢占认知。\n咨询机构 Futuresource Consulting 数据显示，去年面向 K-12 学校出货的平板电脑中，谷歌 Chrome 操作系统所占份额高达 58%，而微软仅为 22%。\n在家长和学校的密集声讨下，谷歌本周宣布对 K-12 学生账户默认关闭包括谷歌搜索在内的 AI 工具。但这项调整暗含附加条件：学校一旦重新启用谷歌搜索，就必须捆绑接受附带的 AI 功能。\n反对儿童营销的非营利组织 Fairplay 执行董事 Josh Golin 称该政策企图“强迫学校”接纳谷歌 AI。谷歌则表示其目标是赋予学校对课堂 AI 更多的控制权，并列举了新推出的搜索功能“引导学习（Guided Learning）”—— 该功能侧重拆解解题思路，而非直接给出答案。\n诉讼细节与谷歌 K-12 默认关闭 AI 的附带条件并置，帮助读者看清校园 AI 安全争议中商业与政策的纠缠。"
   },
   {
    "group": "ai",
@@ -355,7 +372,7 @@
    "url": "https://aihot.news/items/m45kaixmfb2554qlzxbpnir36",
    "published": "2026-11-06T21:10:13.000Z",
    "description": "据 Bloomberg，OpenAI 完成 110 亿美元新融资，这是估值 1.25 万亿美元一轮的首笔资金。投资者当日已打款，剩余部分总额最高 200 亿美元，预计数周内到账。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m45kaixmfb2554qlzxbpnir36",
-   "excerpt": "据 Bloomberg，OpenAI 完成 110 亿美元新融资，这是估值 1.25 万亿美元一轮的首笔资金。投资者当日已打款，剩余部分总额最高 200 亿美元，预计数周内到账。\n转引 Bloomberg 报道，给出本轮到账金额、整体估值和剩余资金节奏，可用于跟踪 OpenAI 融资进展。\n彭博社：OpenAI 完成 110 亿美元新融资，这是使其估值达到 1.25 万亿美元的一轮融资的首批款项。\n投资者已于今日完成打款，其余部分（总额最高可达 200 亿美元）预计将在数周内到位。\n转引 Bloomberg 报道，给出本轮到账金额、整体估值和剩余资金节奏，可用于跟踪 OpenAI 融资进展。"
+   "excerpt": "据 Bloomberg， OpenAI 完成 110 亿美元新融资，这是估值 1.25 万亿美元一轮的首笔资金。投资者当日已打款，剩余部分总额最高 200 亿美元，预计数周内到账。\n转引 Bloomberg 报道，给出本轮到账金额、整体估值和剩余资金节奏，可用于跟踪 OpenAI 融资进展。\n彭博社：OpenAI 完成 110 亿美元新融资，这是使其估值达到 1.25 万亿美元的一轮融资的首批款项。\n投资者已于今日完成打款，其余部分（总额最高可达 200 亿美元）预计将在数周内到位。\n转引 Bloomberg 报道，给出本轮到账金额、整体估值和剩余资金节奏，可用于跟踪 OpenAI 融资进展。"
   },
   {
    "group": "wh",
@@ -445,7 +462,7 @@
    "url": "https://aihot.news/items/aiiclbw9wwswwx60wfqw6eb6o",
    "published": "2026-11-06T15:32:00.000Z",
    "description": "据 Reuters 报道，约 60 万块 Nvidia H200 芯片闲置在香港仓库，阻碍并非来自华盛顿而是北京。尽管 Trump 去年已放行 H200 对华销售，中国正以每家科技巨头约 1 万块的速度小批量发放进口许可，推动国内服务器价格上涨 3 倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/aiiclbw9wwswwx60wfqw6eb6o",
-   "excerpt": "据 Reuters 报道，约 60 万块 Nvidia H200 芯片闲置在香港仓库，阻碍并非来自华盛顿而是北京。尽管 Trump 去年已放行 H200 对华销售，中国正以每家科技巨头约 1 万块的速度小批量发放进口许可，推动国内服务器价格上涨 3 倍。\n转述 Reuters 报道的芯片流向细节，提供管制逻辑反转这一背景，帮助理解 H200 在中国市场的实际处境。\n- 据路透社报道，大约60万块英伟达H200芯片闲置在香港的仓库里，封锁它们的不是华盛顿，而是北京。\n- 尽管特朗普去年已批准H200销售，中国却在一点一点地发放进口许可，每家科技巨头约1万块，导致国内服务器价格上涨3倍。\n转述 Reuters 报道的芯片流向细节，提供管制逻辑反转这一背景，帮助理解 H200 在中国市场的实际处境。"
+   "excerpt": "据 Reuters 报道，约 60 万块 Nvidia H200 芯片闲置在香港仓库，阻碍并非来自华盛顿而是北京。尽管 Trump 去年已放行 H200 对华销售，中国正以每家科技巨头约 1 万块的速度小批量发放进口许可，推动国内服务器价格上涨 3 倍。\n转述 Reuters 报道的芯片流向细节，提供管制逻辑反转这一背景，帮助理解 H200 在中国市场的实际处境。\n转述 Reuters 报道的芯片流向细节，提供管制逻辑反转这一背景，帮助理解 H200 在中国市场的实际处境。"
   },
   {
    "group": "ai",
@@ -580,7 +597,7 @@
    "url": "https://aihot.news/items/apnpwouw9phkt81pijcxcl1a1",
    "published": "2026-11-06T11:04:00.000Z",
    "description": "蚂蚁百灵发布原生多模态模型 Ling-3.2-flash，总参数 560B、单步激活 25B，支持 1M 原生长上下文，重点强化视觉反馈自检与异常自适应恢复能力。 🔗 阅读原文 via AIHOT · https://aihot.news/items/apnpwouw9phkt81pijcxcl1a1",
-   "excerpt": "Ling-3.2-flash 正式上线：原生多模态，视觉反馈支撑更可靠的执行与交付\n蚂蚁百灵发布原生多模态模型 Ling-3.2-flash，总参数 560B、单步激活 25B，支持 1M 原生长上下文，重点强化视觉反馈自检与异常自适应恢复能力。\n原文给出 Ling-3.2-flash 的参数规模、视觉自检与异常恢复机制和推理加速数据，可据此判断其在长程任务中的可用性。\n原文给出 Ling-3.2-flash 的参数规模、视觉自检与异常恢复机制和推理加速数据，可据此判断其在长程任务中的可用性。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -620,21 +637,21 @@
   },
   {
    "group": "ai",
-   "source": "Hugging Face",
-   "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
-   "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
-   "published": "2026-11-06T00:00:00.000Z",
-   "description": "",
-   "excerpt": "A few months ago, we added private data to the Open ASR Leaderboard : 11 splits from Appen and DataOceanAI covering scripted and conversational speech from five accents ( blog ). The community response was great, with many highlighting the importance of held-out sets for trustworthy evaluations . Since then, we added one more private split for Indian-accented English with Voice Arena ( blog ).\nWe’re excited to announce a new collaboration with Liva AI to add even more private data with two new accents: Egyptian 🇪🇬 and Nigerian 🇳🇬.\nThis is part of our continued effort to improve representation in ASR evals (more accents and more languages) and to improve trust (new private data to minimize benchmaxxing, and new data providers). We’re excited to see the community continuing to push ASR performance for the world 🤗\nWith these new accents, we can now present a richer breakdown of accents, based on Kachru’s Three Circles (kudos to Hume AI for this idea in their leaderboard ). The Open ASR Leaderboard will now report:\nAs more accents join, we’ll split the Outer and Expanding Circles.\nLiva AI collects multimodal interaction data through consumer products used by real people. Because Liva owns both the collection environment and distribution, it can design products around specific model gaps across domains, industries, languages, modalities, and interaction types. This gives it access to natural, high-context behavior that emerges through real product use, rather than artificially elicited or task-based interactions."
-  },
-  {
-   "group": "ai",
    "source": "OpenAI",
    "title": "Measuring how AI agents handle everyday wet-lab science",
    "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
    "published": "2026-11-06T00:00:00.000Z",
    "description": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
    "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "Hugging Face",
+   "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
+   "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+   "published": "2026-11-06T00:00:00.000Z",
+   "description": "",
+   "excerpt": "A few months ago, we added private data to the Open ASR Leaderboard : 11 splits from Appen and DataOceanAI covering scripted and conversational speech from five accents ( blog ). The community response was great, with many highlighting the importance of held-out sets for trustworthy evaluations . Since then, we added one more private split for Indian-accented English with Voice Arena ( blog ).\nWe’re excited to announce a new collaboration with Liva AI to add even more private data with two new accents: Egyptian 🇪🇬 and Nigerian 🇳🇬.\nThis is part of our continued effort to improve representation in ASR evals (more accents and more languages) and to improve trust (new private data to minimize benchmaxxing, and new data providers). We’re excited to see the community continuing to push ASR performance for the world 🤗\nWith these new accents, we can now present a richer breakdown of accents, based on Kachru’s Three Circles (kudos to Hume AI for this idea in their leaderboard ). The Open ASR Leaderboard will now report:\nAs more accents join, we’ll split the Outer and Expanding Circles.\nLiva AI collects multimodal interaction data through consumer products used by real people. Because Liva owns both the collection environment and distribution, it can design products around specific model gaps across domains, industries, languages, modalities, and interaction types. This gives it access to natural, high-context behavior that emerges through real product use, rather than artificially elicited or task-based interactions."
   },
   {
    "group": "ai",
@@ -679,7 +696,7 @@
    "url": "https://aihot.news/items/ulp3wiu0wqc134cllhoas33kw",
    "published": "2026-11-05T23:56:00.000Z",
    "description": "作者复盘美股AI板块大跌，纳斯达克盘中跌超5%，费城半导体指数一度跌近11%，英伟达跌近9%，纳指一天蒸发近1.8万亿美元市值。背景是中期选举民主党拿下两院，亚利桑那州众议员安萨里提出应暂停先进AI开发，此前桑德斯等人在9月提过《2026年禁止人工超级智能法案》，按训练算力10的25次方划线并规定违规个人最高判20年、公司可强制解散。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ulp3wiu0wqc134cllhoas33kw",
-   "excerpt": "作者复盘美股AI板块大跌，纳斯达克盘中跌超5%，费城半导体指数一度跌近11%，英伟达跌近9%，纳指一天蒸发近1.8万亿美元市值。背景是中期选举民主党拿下两院，亚利桑那州众议员安萨里提出应暂停先进AI开发，此前桑德斯等人在9月提过《2026年禁止人工超级智能法案》，按训练算力10的25次方划线并规定违规个人最高判20年、公司可强制解散。\n文章把美股暴跌与中期选举、数据中心禁建民意串成一条因果链，帮助读者理解AI扩张背后的民生与政治约束。\n文章把美股暴跌与中期选举、数据中心禁建民意串成一条因果链，帮助读者理解AI扩张背后的民生与政治约束。"
+   "excerpt": "作者复盘美股AI板块大跌，纳斯达克盘中跌超5%，费城半导体指数一度跌近11%， 英伟达 跌近9%，纳指一天蒸发近1.8万亿美元市值。背景是中期选举民主党拿下两院，亚利桑那州众议员安萨里提出应暂停先进AI开发，此前桑德斯等人在9月提过《2026年禁止人工超级智能法案》，按训练算力10的25次方划线并规定违规个人最高判20年、公司可强制解散。\n文章把美股暴跌与中期选举、数据中心禁建民意串成一条因果链，帮助读者理解AI扩张背后的民生与政治约束。\n文章把美股暴跌与中期选举、数据中心禁建民意串成一条因果链，帮助读者理解AI扩张背后的民生与政治约束。"
   },
   {
    "group": "wh",
@@ -697,7 +714,7 @@
    "url": "https://aihot.news/items/z16tksw5l40w2edrohnozslkl",
    "published": "2026-11-05T22:24:51.000Z",
    "description": "OpenAI 相关负责人称，目前 ChatGPT 与 API 每周生成的图像超过 40 亿张，高于仅 8 周前的每周超 30 亿张。其转发的 @OpenAI 内容还提到 ChatGPT Images 2.6 新增 GIF 与参考图支持，API 将迎来两个图像生成速度提升 50% 的新模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z16tksw5l40w2edrohnozslkl",
-   "excerpt": "OpenAI 相关负责人称，目前 ChatGPT 与 API 每周生成的图像超过 40 亿张，高于仅 8 周前的每周超 30 亿张。其转发的 @OpenAI 内容还提到 ChatGPT Images 2.6 新增 GIF 与参考图支持，API 将迎来两个图像生成速度提升 50% 的新模型。\n作者以内部数据呈现图像生成量的增长速度，可帮助读者感受 ChatGPT 与 API 侧图像需求的变化节奏。\n惊人的数据。我们现在每周通过 ChatGPT 和 API 生成的图像超过 40 亿张，而仅仅 8 周前这一数字还是每周超过 30 亿张。\nImages, upgraded—introducing ChatGPT Images 2.6. Now with GIFs and reference images. Plus, two new models are coming to the API with 50% faster image generation.\n作者以内部数据呈现图像生成量的增长速度，可帮助读者感受 ChatGPT 与 API 侧图像需求的变化节奏。"
+   "excerpt": "OpenAI 相关负责人称，目前 ChatGPT 与 API 每周生成的图像超过 40 亿张，高于仅 8 周前的每周超 30 亿张。其转发的 @OpenAI 内容还提到 ChatGPT Images 2.6 新增 GIF 与参考图支持，API 将迎来两个图像生成速度提升 50% 的新模型。\n作者以内部数据呈现图像生成量的增长速度，可帮助读者感受 ChatGPT 与 API 侧图像需求的变化节奏。\n惊人的数据。我们现在每周通过 ChatGPT 和 API 生成的图像超过 40 亿张，而仅仅 8 周前这一数字还是每周超过 30 亿张。\nImages, upgraded—introducing ChatGPT Images 2.6.\nPlus, two new models are coming to the API with 50% faster image generation.\n作者以内部数据呈现图像生成量的增长速度，可帮助读者感受 ChatGPT 与 API 侧图像需求的变化节奏。"
   },
   {
    "group": "wh",
@@ -715,7 +732,7 @@
    "url": "https://aihot.news/items/czctc3kqzf5wru8fhsbnhvxt7",
    "published": "2026-11-05T21:50:41.000Z",
    "description": "11 月 5 日华尔街市值蒸发 3.2 万亿美元，Nasdaq 综合指数跌 5.52%，投资者恐慌民主党掌控国会将放缓高杠杆 AI 支出热潮。Nvidia 跌 9.3% 抹去 2026 年涨幅，费城半导体指数跌 12.3%，SanDisk 跌 22%，Micron、Western Digital 和 AMD 各跌 17%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/czctc3kqzf5wru8fhsbnhvxt7",
-   "excerpt": "11 月 5 日华尔街市值蒸发 3.2 万亿美元，Nasdaq 综合指数跌 5.52%，投资者恐慌民主党掌控国会将放缓高杠杆 AI 支出热潮。Nvidia 跌 9.3% 抹去 2026 年涨幅，费城半导体指数跌 12.3%，SanDisk 跌 22%，Micron、Western Digital 和 AMD 各跌 17%。\n原文把 11 月 5 日美股 AI 板块暴跌与中期选举后的监管前景联系起来，给出了多个指数和个股的具体跌幅数据。\n11月5日（周四），华尔街市值蒸发3.2万亿美元。 纳斯达克综合指数下跌5.52%，创下自2025年4月以来最差单日表现，因投资者抛售AI芯片股。\n市场崩盘源于投资者的恐慌，他们担心民主党控制的国会将从根本上放缓高杠杆的AI支出热潮。\n英伟达下跌9.3%，抹去其2026年涨幅，费城半导体指数下跌12.3%，创下约6.5年来最差单日表现。\n就连Meta总裁Dina Powell McCormick也表示，选举后建设数据中心“将更加困难”。\nWSJ: Half of proposed US AI data center additions could face tougher local scrutiny after Democrats won the House, Senate and key governorships. Texas and Ohio, once safe harbors for builders, could halt construction until residents get assurances on water supplies and electricity prices. Meta President Dina Powell McCormick said every hyperscaler is now considering building outside the US. OpenAI answered within days by committing to avoid nondisclosure agreements in data center deals and to keep residents from paying for the projects’ electricity. Congressional Democrats are expected to use hearings and subpoenas to probe AI safety incidents. Senator Elizabeth Warren, expected to chair Senate Banking, has sought a hearing with Nvidia CEO Jensen Huang over China chip sales, which he declined, and her gavel would bring subpoena power.\n原文把 11 月 5 日美股 AI 板块暴跌与中期选举后的监管前景联系起来，给出了多个指数和个股的具体跌幅数据。"
+   "excerpt": "11 月 5 日华尔街市值蒸发 3.2 万亿美元，Nasdaq 综合指数跌 5.52%，投资者恐慌民主党掌控国会将放缓高杠杆 AI 支出热潮。Nvidia 跌 9.3% 抹去 2026 年涨幅，费城半导体指数跌 12.3%，SanDisk 跌 22%，Micron、Western Digital 和 AMD 各跌 17%。\n原文把 11 月 5 日美股 AI 板块暴跌与中期选举后的监管前景联系起来，给出了多个指数和个股的具体跌幅数据。\n11月5日（周四），华尔街市值蒸发3.2万亿美元。 纳斯达克综合指数下跌5.52%，创下自2025年4月以来最差单日表现，因投资者抛售AI芯片股。\n市场崩盘源于投资者的恐慌，他们担心民主党控制的国会将从根本上放缓高杠杆的AI支出热潮。\n英伟达下跌9.3%，抹去其2026年涨幅，费城半导体指数下跌12.3%，创下约6.5年来最差单日表现。\n就连Meta总裁Dina Powell McCormick也表示，选举后建设数据中心“将更加困难”。\n《华尔街日报》：在民主党赢得众议院、参议院和关键州长职位后，美国拟新增的AI数据中心中有一半可能面临更严格的当地审查。\n得克萨斯州和俄亥俄州曾是建设者的避风港，如今可能暂停施工，直到居民在水资源和电价方面获得保证。\nMeta总裁Dina Powell McCormick表示，现在每一家超大规模云服务商都在考虑在美国以外建设。\nOpenAI在几天内作出回应，承诺在数据中心交易中避免签署保密协议，并确保居民不必为这些项目的电力买单。\n预计将出任参议院银行委员会主席的参议员Elizabeth Warren曾寻求就英伟达对华芯片销售问题与英伟达CEO黄仁勋举行听证会，但后者拒绝了；而她一旦执掌该委员会，将拥有传票权。\nWSJ: Half of proposed US AI data center additions could face tougher local scrutiny after Democrats won the House, Senate and key governorships.\nTexas and Ohio, once safe harbors for builders, could halt construction until residents get assurances on water supplies and electricity prices.\nMeta President Dina Powell McCormick said every hyperscaler is now considering building outside the US.\nOpenAI answered within days by committing to avoid nondisclosure agreements in data center deals and to keep residents from paying for the projects’ electricity.\nCongressional Democrats are expected to use hearings and subpoenas to probe AI safety incidents.\nSenator Elizabeth Warren, expected to chair Senate Banking, has sought a hearing with Nvidia CEO Jensen Huang over China chip sales, which he declined, and her gavel would bring subpoena power.\n原文把 11 月 5 日美股 AI 板块暴跌与中期选举后的监管前景联系起来，给出了多个指数和个股的具体跌幅数据。"
   },
   {
    "group": "wh",
@@ -733,7 +750,7 @@
    "url": "https://aihot.news/items/m725rhhdt7a38zdd3aappeofn",
    "published": "2026-11-05T20:21:15.000Z",
    "description": "李飞飞转发 World Labs 官方账号，宣传其新发布的 Frameboy demo，可用于实时探索世界。Frameboy 是两个月前发布的自回归世界模型 Atlas 的高度优化版本，从云端 GPU 流式传输，最高可达 15 fps，支持像素级相机控制。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m725rhhdt7a38zdd3aappeofn",
-   "excerpt": "李飞飞转发 World Labs 官方账号，宣传其新发布的 Frameboy demo，可用于实时探索世界。Frameboy 是两个月前发布的自回归世界模型 Atlas 的高度优化版本，从云端 GPU 流式传输，最高可达 15 fps，支持像素级相机控制。\nFei-Fei Li 亲自宣传 World Labs 实时探索 Atlas 的 demo Frameboy，读者可以直接上手体验实时世界探索。\nFei-Fei Li 亲自宣传 World Labs 实时探索 Atlas 的 demo Frameboy，读者可以直接上手体验实时世界探索。"
+   "excerpt": "李飞飞转发 World Labs 官方账号，宣传其新发布的 Frameboy demo，可用于实时探索世界。Frameboy 是两个月前发布的自回归世界模型 Atlas 的高度优化版本，从云端 GPU 流式传输，最高可达 15 fps，支持像素级相机控制。\nFei-Fei Li 亲自宣传 World Labs 实时探索 Atlas 的 demo Frameboy，读者可以直接上手体验实时世界探索。\nTwo months ago, we introduced Atlas, an autoregressive world model with pixel-perfect camera control.\nToday, we're releasing Frameboy, a demo allowing you to explore worlds in real-time with a highly optimized version of Atlas, streaming from cloud GPUs at up to 15 fps.\nFei-Fei Li 亲自宣传 World Labs 实时探索 Atlas 的 demo Frameboy，读者可以直接上手体验实时世界探索。"
   },
   {
    "group": "wh",
@@ -769,7 +786,7 @@
    "url": "https://aihot.news/items/vkfrtci1ufbtbydsqersys6lx",
    "published": "2026-11-05T17:51:52.000Z",
    "description": "美国中期选举民主党拿下参众两院，多场竞选以问责 AI 公司为主题，行业面临监管、数据中心建设放缓等前景。44 项地方数据中心暂停提案中 43 项通过，NBC 民调显示 76% 选民反对在社区建数据中心；专家称共和党禁止州级 AI 限制的尝试可能终结，OpenAI 和 Anthropic 未置评，据华尔街日报报道 CEO 们在私下讨论算力容量受限问题。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vkfrtci1ufbtbydsqersys6lx",
-   "excerpt": "‘Total repudiation’: The blue wave is about to hit AI\n美国中期选举民主党拿下参众两院，多场竞选以问责 AI 公司为主题，行业面临监管、数据中心建设放缓等前景。44 项地方数据中心暂停提案中 43 项通过，NBC 民调显示 76% 选民反对在社区建数据中心；专家称共和党禁止州级 AI 限制的尝试可能终结，OpenAI 和 Anthropic 未置评，据华尔街日报报道 CEO 们在私下讨论算力容量受限问题。\n报道把选举结果与数据中心 Morratoria、州级监管前景等具体影响串起来，读者可据此评估 AI 行业面临的监管环境变化。\n周二晚，民主党人创造了历史，一举拿下众议院和参议院，一股蓝色浪潮席卷了传统上偏红和摇摆的州——佐治亚州选出了全国首位黑人女性州长，新墨西哥州选出了全国首位原住民女性州长，缅因州一位任职30年的参议员将席位让给了民主党人。在这些竞选以及其他选战中，有一个主题 不断 被 提及 ：让AI公司对美国人民负责。如今，AI行业不得不开始考虑监管落地、数据中心建设放缓等前景。\n公开场合，大多数主要AI公司的CEO保持沉默。OpenAI和Anthropic未回应 The Verge 的置评请求；埃隆·马斯克曾在X上呼吁中期选举投“红”，这位SpaceX的CEO为支持共和党竞选投入了近4.5亿美元，但结果出炉后，这条呼吁便消失了。\n私下里，CEO们已在讨论周二结果出炉后公司面临的严重算力容量限制，尤其是OpenAI， 据 The Wall Street Journal 报道 。Meta平台总裁Dina Powell McCormick表示，许多公司正在考虑 把数据中心建到海外 。据报道，AI高管们私下对选举结果感到紧张，但 或许也能 借此解释为何没能给投资者带来足够多的收入。许多即将上任的领导人已承诺要 把CEO们拉去作证 。在X上，前X产品负责人Nikita Bier的一则 热帖 警告说：“这将会像纽伦堡审判，只不过对象是AI研究者。”（周二晚，OpenAI CEO Sam Altman确实 发帖 谈到“人们应当始终掌控未来”，但当晚其他时间他都在 聊内存 。）\n曾担任参议院卫生、教育、劳工与养老金委员会劳工政策副主任、现就职于非营利组织Future of Life Institute的Wes McEnany表示，周二的选举结果是对AI领域的“彻底否定”。他说，AI触及“人们生活的方方面面”，无论是求职、使用社交媒体，还是住在数据中心附近缴电费，而人们已经厌倦了在“这场对话中毫无话语权”。\n两党对数据中心建设的反对，是这种反弹最具体的体现。周二选票上的44项地方数据中心禁令中有43项获得通过，向AI公司发出了明确信号：在全国各地建设数据中心无疑将变得更加困难。在数据中心 建设增长最快 的地区之一、也是关键摇摆州的得克萨斯，当选州长Gina Hinojosa 表示 ，她计划“发布暂停令——禁止——所有数据中心审批，直到立法机构通过保护得州人的法律”。其他几个关键州也做出了类似承诺。\n“数据中心显然成了选举议题，”Optro公司AI治理业务总经理Guru Sethupathy说。\n近几个月来，反对在各州兴建数据中心的抗议活动和两党联合行动 越来越多 。居民 担心 噪音污染、电费上涨等问题。周二 NBC News 对选民进行的民调显示， 76% 的人反对在自己社区建设数据中心。\n“数据中心引发的反弹是我见过的最具两党共识的政治议题之一，”推动AI监管的超级政治行动委员会Guardrails Alliance联合创始人兼主任Shaunna Thomas说。\n“数据中心是一个切入点，让人们从更广泛的企业问责视角来看问题：‘我的账单在涨，为什么？’”非营利科技行业监督机构The Tech Oversight Project副执行主任Kyle Jacobs-Morse说。“人们发现罪魁祸首是大型科技公司。”他还说，尤其是在得克萨斯、佐治亚和俄亥俄州的州长竞选中，民主党竞选团队把数据中心可能引发的本地问题列为优先议题，包括给当地居民、社区和州政府带来的“溢出成本”。\n“我确实认为我们会听到更多关于谁从AI中受益、谁为AI买单的疑问，尤其是涉及基础设施的部分，但我更好奇的是监管方面会有哪些变化，”Golden Analytics首席执行官兼创始人François Ajenstat说。\n专家表示，中期选举结果很可能已经终结了特朗普和国会共和党人屡次试图禁止州级AI限制的努力。Thomas认为这个想法“彻底死了”，McEnany则说“任何投票废除州AI法律的议员，下次[选举]就得另找工作了”。Jacobs-Morse预计总体上会看到更多“科技问责法案”。\nOpenAI最近开始把它的数据中心称为“算力园区”，特朗普总统则在9月试图把AI这项技术的名称改成“超级智能”。但中期选举结果表明，相当一部分美国选民并不买账这些改名换姓的做法。\n“特朗普在一些事情上的 idiosyncrasies……在投票箱前表现不佳，”Jacobs-Morse说。\n但科技行业内外的一些人对这个消息的看法比其他人更积极。一位X用户 写道 ，“我们*也许*又回到了作为一个国家理性、稳健掌舵的状态，能够真正发挥领导作用”，另一些人则 写道 ，最近的结果可能有利于防止AI泡沫破裂。Glen Echo Group首席执行官、Orchestra合伙人Katie Barr说，她不会“过度解读”这一结果，将其视为对科技的压倒性排斥，而更应看作是对“可负担性、就业、安全，以及人们能否对社区和生活中发生的事情有发言权”的一次清算。\nYorkville Ives & Co.的分析师在一份报告中写道，尽管科技投资者应为“AI和科技立法的重大障碍”以及全国多达1000个数据中心的建设计划放缓做好准备，但也可能有一个“轻微的利好”，即有助于避免泡沫，并减缓涌入市场的资本融资。\nAI 安全也很可能会被重新审视。参议员 Mar"
+   "excerpt": "‘Total repudiation’: The blue wave is about to hit AI\n美国中期选举民主党拿下参众两院，多场竞选以问责 AI 公司为主题，行业面临监管、数据中心建设放缓等前景。44 项地方数据中心暂停提案中 43 项通过，NBC 民调显示 76% 选民反对在社区建数据中心；专家称共和党禁止州级 AI 限制的尝试可能终结， OpenAI 和 Anthropic 未置评，据华尔街日报报道 CEO 们在私下讨论算力容量受限问题。\n报道把选举结果与数据中心 Morratoria、州级监管前景等具体影响串起来，读者可据此评估 AI 行业面临的监管环境变化。\n周二晚，民主党人创造了历史，一举拿下众议院和参议院，一股蓝色浪潮席卷了传统上偏红和摇摆的州——佐治亚州选出了全国首位黑人女性州长，新墨西哥州选出了全国首位原住民女性州长，缅因州一位任职30年的参议员将席位让给了民主党人。在这些竞选以及其他选战中，有一个主题 不断 被 提及 ：让AI公司对美国人民负责。如今，AI行业不得不开始考虑监管落地、数据中心建设放缓等前景。\n公开场合，大多数主要AI公司的CEO保持沉默。OpenAI和Anthropic未回应 The Verge 的置评请求；埃隆·马斯克曾在X上呼吁中期选举投“红”，这位SpaceX的CEO为支持共和党竞选投入了近4.5亿美元，但结果出炉后，这条呼吁便消失了。\n私下里，CEO们已在讨论周二结果出炉后公司面临的严重算力容量限制，尤其是OpenAI， 据 The Wall Street Journal 报道 。Meta平台总裁Dina Powell McCormick表示，许多公司正在考虑 把数据中心建到海外 。据报道，AI高管们私下对选举结果感到紧张，但 或许也能 借此解释为何没能给投资者带来足够多的收入。许多即将上任的领导人已承诺要 把CEO们拉去作证 。在X上，前X产品负责人Nikita Bier的一则 热帖 警告说：“这将会像纽伦堡审判，只不过对象是AI研究者。”（周二晚，OpenAI CEO Sam Altman确实 发帖 谈到“人们应当始终掌控未来”，但当晚其他时间他都在 聊内存 。）\n曾担任参议院卫生、教育、劳工与养老金委员会劳工政策副主任、现就职于非营利组织Future of Life Institute的Wes McEnany表示，周二的选举结果是对AI领域的“彻底否定”。他说，AI触及“人们生活的方方面面”，无论是求职、使用社交媒体，还是住在数据中心附近缴电费，而人们已经厌倦了在“这场对话中毫无话语权”。\n两党对数据中心建设的反对，是这种反弹最具体的体现。周二选票上的44项地方数据中心禁令中有43项获得通过，向AI公司发出了明确信号：在全国各地建设数据中心无疑将变得更加困难。在数据中心 建设增长最快 的地区之一、也是关键摇摆州的得克萨斯，当选州长Gina Hinojosa 表示 ，她计划“发布暂停令——禁止——所有数据中心审批，直到立法机构通过保护得州人的法律”。其他几个关键州也做出了类似承诺。\n“数据中心显然成了选举议题，”Optro公司AI治理业务总经理Guru Sethupathy说。\n近几个月来，反对在各州兴建数据中心的抗议活动和两党联合行动 越来越多 。居民 担心 噪音污染、电费上涨等问题。周二 NBC News 对选民进行的民调显示， 76% 的人反对在自己社区建设数据中心。\n“数据中心引发的反弹是我见过的最具两党共识的政治议题之一，”推动AI监管的超级政治行动委员会Guardrails Alliance联合创始人兼主任Shaunna Thomas说。\n“数据中心是一个切入点，让人们从更广泛的企业问责视角来看问题：‘我的账单在涨，为什么？’”非营利科技行业监督机构The Tech Oversight Project副执行主任Kyle Jacobs-Morse说。“人们发现罪魁祸首是大型科技公司。”他还说，尤其是在得克萨斯、佐治亚和俄亥俄州的州长竞选中，民主党竞选团队把数据中心可能引发的本地问题列为优先议题，包括给当地居民、社区和州政府带来的“溢出成本”。\n“我确实认为我们会听到更多关于谁从AI中受益、谁为AI买单的疑问，尤其是涉及基础设施的部分，但我更好奇的是监管方面会有哪些变化，”Golden Analytics首席执行官兼创始人François Ajenstat说。\n专家表示，中期选举结果很可能已经终结了特朗普和国会共和党人屡次试图禁止州级AI限制的努力。Thomas认为这个想法“彻底死了”，McEnany则说“任何投票废除州AI法律的议员，下次[选举]就得另找工作了”。Jacobs-Morse预计总体上会看到更多“科技问责法案”。\nOpenAI最近开始把它的数据中心称为“算力园区”，特朗普总统则在9月试图把AI这项技术的名称改成“超级智能”。但中期选举结果表明，相当一部分美国选民并不买账这些改名换姓的做法。\n“特朗普在一些事情上的 idiosyncrasies……在投票箱前表现不佳，”Jacobs-Morse说。\n但科技行业内外的一些人对这个消息的看法比其他人更积极。一位X用户 写道 ，“我们*也许*又回到了作为一个国家理性、稳健掌舵的状态，能够真正发挥领导作用”，另一些人则 写道 ，最近的结果可能有利于防止AI泡沫破裂。Glen Echo Group首席执行官、Orchestra合伙人Katie Barr说，她不会“过度解读”这一结果，将其视为对科技的压倒性排斥，而更应看作是对“可负担性、就业、安全，以及人们能否对社区和生活中发生的事情有发言权”的一次清算。\nYorkville Ives & Co.的分析师在一份报告中写道，尽管科技投资者应为“AI和科技立法的重大障碍”以及全国多达1000个数据中心的建设计划放缓做好准备，但也可能有一个“轻微的利好”，即有助于避免泡沫，并减缓涌入市场的资本融资。\nAI 安全也很可能会被重新审视。参议员 Ma"
   },
   {
    "group": "wh",
@@ -887,240 +904,6 @@
    "published": "2026-11-05T16:45:19.000Z",
    "description": "Ambi Robotics is installing its systems at eight new customer sites to prepare for the holiday rush. The post Ambi Robotics customers expect an increase in peak season throughput appeared first on Automated Warehouse .",
    "excerpt": "As Black Friday and the peak shopping season approach, logistics providers across the U.S. are getting ready for the holiday rush. Each year, these providers could see a 25% to 40% increase in throughput, according to Stephen McKinley, co-founder and chief operating officer at Ambi Robotics.\nThis year, Ambi is expecting its customers to experience a 9% to 10% increase compared with peak season last year.\n“Despite anything that might be going on in the economy, volume continues to ramp and e-commerce spending remains high,” McKinley told Automated Warehouse . “That puts familiar pressures on our clients to perform in all of their individual sites, and we’re feeling that pressure also, because our systems are core to their functions.”\nFor Ambi, preparing for the season means installing new systems at eight facilities before peak season starts.\n“Most of those new sites are with this new version of AmbiSort , and though that’s not a new product, it’s definitely a new variation,” said McKinley. “We’re excited about supporting that through peak season, and we want to make sure that goes perfectly, of course, for our customers.”\nThe Berkeley, Calif.-based company is also working to ensure that its team members will be readily available for logistics customers when they need them.\n“We move into a more reactive state of being, where we’ll have about half of the team traveling around to different sites to check in with what’s going on, and the other half of the team is ready to jump to solve issues as they come up,” McKinley said.\nWhile some of Ambi Robotics’ customers plan to have more systems go live for peak season, there are other ways to increase throughput, McKinley said.\n“[Customers] will often add more shifts into existing operations or bring on more people to be working alongside our systems, so we can help with training,” he noted. “We offer more training to customers right before peak season to make sure they know how to effectively use the systems.”\nProperly training the operators working with robots on a daily basis can make a big difference in how the system performs.\n“Over the course of the year, we’re tracking how the systems are performing all the time,” said McKinley. “The performance of the systems is related to the inherent quality of that piece of machinery, which doesn’t really fluctuate, but also related to how the customer interacts with that machine and how attentive they are to it, or how well trained the operators are. So, we can help by s"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Mustafa Suleyman 对特拉华允许 AI 智能体经营企业的提案表示担忧",
-   "url": "https://aihot.news/items/kl8ufrhv3zm38108gy2d7mins",
-   "published": "2026-11-05T16:33:21.000Z",
-   "description": "Mustafa Suleyman 表示对特拉华州允许 AI 智能体经营企业的提案深感担忧，认为应非常谨慎。该提案拟设立名为 Delaware AIC 的独立法律实体，其日常事务由 AI 智能体而非人类管理，可依智能体指示以自身名义起诉应诉、持有和处置财产并承担债务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kl8ufrhv3zm38108gy2d7mins",
-   "excerpt": "Mustafa Suleyman 表示对特拉华州允许 AI 智能体经营企业的提案深感担忧，认为应非常谨慎。该提案拟设立名为 Delaware AIC 的独立法律实体，其日常事务由 AI 智能体而非人类管理，可依智能体指示以自身名义起诉应诉、持有和处置财产并承担债务。\nMicrosoft AI CEO 对特拉华让 AI 智能体经营企业的立法提案表达审慎态度，可借此了解前沿从业者对智能体法律地位的担忧。\n“特拉华州AIC将是一个独立的法律实体，其日常事务由AI代理而非自然人管理。在代理的指示下，AIC可以以自己的名义起诉和被起诉、持有和处置财产，并承担义务……”\nhttps://arstechnica.com/tech-policy/2026/10/no-human-at-the-helm-delaware-plan-would-let-ai-agents-run-entire-businesses/\nMicrosoft AI CEO 对特拉华让 AI 智能体经营企业的立法提案表达审慎态度，可借此了解前沿从业者对智能体法律地位的担忧。"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Anthropic 拆解 Claude 智能体记忆的组成：笔记、显著性判断与 dreaming",
-   "url": "https://aihot.news/items/d28mrqwr7h7tl8b8jcse4b449",
-   "published": "2026-11-05T16:00:00.000Z",
-   "description": "Anthropic 发布研究文章，介绍其设计 Claude 智能体记忆的思路与多组评测，包括会话内写记忆笔记、离线 dreaming 整理记忆和 wiki 表示。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d28mrqwr7h7tl8b8jcse4b449",
-   "excerpt": "Anthropic 发布研究文章，介绍其设计 Claude 智能体记忆的思路与多组评测，包括会话内写记忆笔记、离线 dreaming 整理记忆和 wiki 表示。\nAnthropic 结合 Pokémon、CL-Bench 和 wiki 实验拆解了智能体记忆的组件与取舍，dreaming 修正错误笔记的具体案例可迁移到自己的记忆系统设计。\n克尔凯郭尔曾写道，生活只能 向后 理解，却必须 向前 过。我们在为 AI 智能体设计记忆时，也遇到了类似的困境。\n作为人类，我们在日常生活中无时无刻不在编码记忆。 海马体 在其中扮演核心角色，它把当下的经历捕捉下来，让记忆快速形成、随时可用。但只有 部分经历 会被巩固为长期知识。\n这种巩固大多发生在我们的大脑“离线”时。睡眠期间以及安静的 休息 时段，海马体会重放近期的经历。人们认为，这一过程会逐渐提炼 这些经历并将它们整合 到新皮层——我们大脑中储存大部分所谓知识的部分。\n智能体记忆也可以采用类似的分工。智能体会把大量工作记录在日志或对话记录中。Letta 和 UC Berkeley 的研究人员提出了 睡眠时计算 ，让模型利用交互之间的空闲时间重新组织已有的上下文。同样的思路可以帮助智能体整理记忆：通过反思日志来修正错误，或生成新的笔记和表征。这一过程常被 称为 做梦 （图 1）。\n我们发现，做梦是帮助 Claude 获得有效记忆的一个有用工具。在本文中，我们分享自己对智能体记忆的思考，并介绍我们用来探索智能体记忆的若干评估，包括做梦的用法，以及每个组成部分对记忆组织有何贡献。\n我们所说的“智能体记忆”，是指 Claude 从经验中获得的知识——包括与用户的交互以及被分配的任务——并在会话之间保留下来，保存为日后可读取的上下文。它不包括模型学习或管理上下文的其他方式，例如改动 权重 （训练时设定的内部参数）、 上下文学习 （单次对话中获得的知识），以及 压缩 （Claude 撰写的摘要，用来替换较早的轮次，以便在新的上下文窗口中继续工作）。\n在人脑中，经历之前、之中或之后释放的化学信号可以 把某段记忆标记 为重要。被标记的记忆在离线时段往往比未被标记的记忆更频繁地被重放。这一过程称为 重放 ，有助于稳定记忆并将其整合进长期记忆。\n同样，Claude 可以在会话日志中把显著事件实时标记出来，方便日后查找，也可以把它们 写入 记忆存储，例如一个存放记忆笔记的文件夹（图 2）。但 Claude 如何在当下、在还不知道接下来会发生什么的时候，判断什么才算显著？\n记忆有时是一种预测。智能体写下一条规则，就是在预测它所描述的模式日后还会派上用场。例如，写下一条经过验证的事实，就是在预测未来某个会话中的智能体会想直接依赖这条事实，而不必再次核实。随着时间推移，Claude 在这类预测上已经进步了很多。\n以 Continual Learning Bench (CL-Bench) 1.0 中的一项任务为例。这个基准用来衡量智能体借助记忆完成长程任务的能力。其中一项任务要求 Claude 通过查询数据库来回答一系列问题。Claude 给出答案后，会被告知正确答案，并且可以写一条记忆，帮助回答之后的问题。\n在这里，记忆可以支撑一个学习闭环。如果 Claude 答错了，它可以记录这次失败，提出关于错因的猜想，验证这些猜想，再把验证结果总结成一条今后答题的规则。\n我们用 Claude Managed Agents 跑了 CL-Bench 1.0 的这项任务。每道题 Claude 都在全新的会话中开始，只有一个例外：它可以从一个跨会话保留的 memory directory 中读取文件。\n不同模型在建立自己的学习闭环上取得的进展各不相同。Claude Sonnet 4.6 只做到了针对答错原因提出猜想。它的记忆目录里散落着若干文件，每个文件都列着几条尚未验证的猜测。\nClaude Opus 4.7 把笔记整合成了一份参考文档，并开始标注哪些事实已经核实、哪些还未确认。Claude Sonnet 5 会在评分方核对之后把每个答案标记为已确认，答错时则写下更正。\nClaude Opus 5 是这些模型中第一个真正闭合学习闭环的。它的大多数条目都包含一条规则（以及它如何得知这条规则成立）、对先前问题的回答，还有对途中发现的陷阱的明确警示（图 3）。\n与 Opus 5 一样，Claude Opus 5.5 和 Claude Sonnet 5.5 也都闭合了学习闭环，用记忆记录下经过验证的规则，以便更好地回答之后的问题。借助记忆，两者的得分与 Opus 5 大致相当，不过它们在没有记忆时的基线表现略高一些。\n我们还评估了 Claude 玩 Pokémon Red 的能力，以此检验它对 该把什么 存入记忆的判断。这款游戏 要求 Claude 应对 复杂的长程任务。每次运行开始时，我们给每个模型一个记忆文件夹，它可以在游戏过程中读写其中的文件（图 4）。\n我们比较了 Claude Sonnet 3.7 和 Claude Fable 5 各一次运行到约 10,000 步时的记忆文件夹。我们发现的一个关键差异，是每个模型认为什么值得记住。Sonnet 3.7 假定一切都可能有用，不加区分地往记忆里写。它的记忆文件夹里存着一份遭遇记录档案，往往为每一场战斗、捡到的每一件道具、遇到的每一个非玩家角色都单独建一个文件。最终，Sonnet 3.7 在 225 个文件夹里写下了 413 个记忆文件，只拿到一枚徽章（徽章用来标记玩家在游戏中的进度）。\n相比之下，Fable 5 只在两个文件夹里写了九个文件，外加一个名为 global.md 的顶层文件，却拿到了四枚徽章。\nSonnet 3.7 的做法之所以出问题，主要是因为《宝可梦》的游戏状态一直在变——Sonnet 3.7 那份详尽的记录不断过时。结果，随着 Claude 不断推进，它不得不把越来越多的时间和资源花在梳理记忆上，而不是玩游戏。比如到第 10000 步左右，So"
-  },
-  {
-   "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "Kinaxis Reports 22% SaaS Growth in Q3 2026, Raises Full-Year Outlook",
-   "url": "https://logisticsviewpoints.com/2026/11/05/kinaxis-reports-22-saas-growth-in-q3-2026-raises-full-year-outlook/",
-   "published": "2026-11-05T15:40:04.000Z",
-   "description": "Kinaxis reported strong third-quarter 2026 financial results, with continued growth in cloud-based supply chain software, expanding customer adoption, and an increased full-year financial outlook. The results reflect sustained demand for supply chain planning and orchestration technology as manufacturers and distributors seek greater visibility, agility, and coordination across increasingly complex operations. For the quarter ended September […] The post Kinaxis Reports 22% SaaS Growth in Q3 2026, Raises Full-Year Outlook appeared first on Logistics Viewpoints .",
-   "excerpt": "Kinaxis reported strong third-quarter 2026 financial results, with continued growth in cloud-based supply chain software, expanding customer adoption, and an increased full-year financial outlook. The results reflect sustained demand for supply chain planning and orchestration technology as manufacturers and distributors seek greater visibility, agility, and coordination across increasingly complex operations.\nFor the quarter ended September 30, Kinaxis generated $160.3 million in total revenue, an increase of 19% year-over-year . SaaS revenue rose 22% to $112.3 million, while annual recurring revenue (ARR) increased 19% to $483.9 million. Remaining performance obligations exceeded $1 billion, rising 21% from the prior year.\nThe company also reported $20.1 million in profit and adjusted EBITDA of $42 million, representing a 26% adjusted EBITDA margin.\nKinaxis continued to expand adoption of its Maestro supply chain orchestration platform across multiple industries and geographies.\nNew customer wins included Dr. Squatch, Sterlite Technologies, and WAI Global, along with organizations in luxury goods, biotechnology, and consumer health. The company also reported renewals and expansions involving Clariant and Sanofi.\nMore than 40 customer deployments went live during the quarter, including Asahi Beverages, with additional implementations across aviation, energy, healthcare, and manufacturing.\nBeyond its financial performance, Kinaxis is expanding its investment in AI-driven supply chain decision-making.\nAt Kinexions EMEA in October, the company introduced additional agentic AI capabilities, advanced inventory optimization, and enhancements to its Kinaxis Data Fabric. These developments are designed to help organizations move beyond traditional planning toward more connected and responsive operational execution.\nThe emphasis on AI-enabled workflows and improved inventory optimization reflects a broader industry transition toward systems that can identify changing conditions, evaluate alternatives, and support faster operational decisions.\nFollowing its third consecutive quarter of outperformance, Kinaxis raised its full-year revenue guidance to $640 million–$650 million , increased its expected SaaS revenue growth to 20%–21%, and lifted its adjusted EBITDA margin outlook to 26.5%–27.5%.\nThe results highlight continued enterprise investment in supply chain planning technology, particularly platforms combining advanced optimization, real-time decision support, a"
-  },
-  {
-   "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "Blue Yonder Launches AI-Native Order Management for Retailers and Distributors",
-   "url": "https://logisticsviewpoints.com/2026/11/05/blue-yonder-launches-ai-native-order-management-for-retailers-and-distributors/",
-   "published": "2026-11-05T15:37:02.000Z",
-   "description": "Blue Yonder announced today the launch of its AI-native Order Management Solution, extending its Cognitive Solutions portfolio with capabilities designed to connect inventory, fulfillment, transportation, customer service, and returns around individual customer orders. The November 5 announcement reflects a broader shift in supply chain technology: moving beyond order visibility toward coordinated decision-making and execution across […] The post Blue Yonder Launches AI-Native Order Management for Retailers and Distributors appeared first on Logistics Viewpoints .",
-   "excerpt": "Blue Yonder announced today the launch of its AI-native Order Management Solution, extending its Cognitive Solutions portfolio with capabilities designed to connect inventory, fulfillment, transportation, customer service, and returns around individual customer orders.\nThe November 5 announcement reflects a broader shift in supply chain technology: moving beyond order visibility toward coordinated decision-making and execution across traditionally separate systems.\nFor retailers and distributors, disconnected systems can result in inaccurate delivery promises, canceled orders, higher fulfillment costs, and slower responses to disruptions. Blue Yonder’s new solution aims to address these challenges by combining real-time inventory intelligence, AI agents, and automated order orchestration.\nThe solution introduces Fulfillment and Customer Service Agents that identify at-risk orders, explain operational trade-offs, and recommend corrective actions. These capabilities operate within configurable business rules and permissions, allowing teams to respond to changing supply, demand, and capacity conditions.\nThe platform also addresses the complexity of B2B wholesale and distribution, where contractual commitments, future inventory availability, and customer-specific allocation priorities require more sophisticated order management than conventional consumer transactions.\nThe significance of this announcement extends beyond adding AI functionality to an order management system. Blue Yonder is positioning order management as a coordination layer connecting supply chain planning decisions with physical execution.\nFor retailers and distributors, the potential value lies in reducing the time between recognizing a fulfillment problem and taking corrective action. Delivering that value will depend on reliable inventory data, integration across systems, and effective operational controls.\nBlue Yonder says the cloud-native, modular solution allows organizations to adopt capabilities incrementally rather than replace their existing technology environments.\nMore information is available in Blue Yonder’s announcement .\nIndependent ARC Advisory Group research and Logistics Viewpoints analysis."
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "Schneider National says rail partner shift offers network boost",
-   "url": "https://www.supplychaindive.com/news/schneider-national-says-rail-partner-shift-offers-network-boost/873847/",
-   "published": "2026-11-05T15:08:00.000Z",
-   "description": "CEO Jim Filter said the company brings 35 years of intermodal service experience to its new partnership with Norfolk Southern.&nbsp;",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "a16z",
-   "title": "The Exploit Was the Bottleneck",
-   "url": "https://www.a16z.news/p/the-exploit-was-the-bottleneck",
-   "published": "2026-11-05T15:01:00.000Z",
-   "description": "What 23 Years of Data Say About AI and the Patch Gap",
-   "excerpt": "On the last day of August, a single operator pointed a few hundred AI agents at a print-management server used by schools and offices around the world. The agents built a test lab, wrote exploits for 2 bugs disclosed 4 days earlier, pulled a target list from an internet scanning service, and went to work. From an empty workspace to the first break-in at a real victim took under 4 hours. When the campaign launched the next morning, 11 organizations fell in 26 seconds. By the time GreyNoise finished counting, 395 organizations in 48 countries had been compromised, half of them schools. The model doing the work was a cheap, open-weight one, not a frontier model from a US lab. The agents even ignored a list of 28 countries they were instructed to avoid.\n7 weeks later, 2 critical bugs in PHP, the language used by 70% of websites, leaked ahead of their patch. Exploit attempts were hitting Amazon’s decoy servers, set up to catch attackers, 4 days before disclosure and 12 hours before the fix with working shells following within 3 days. CJ Moses , Amazon’s CISO, wrote that AI “makes it cheaper to turn a patch diff or advisory into a working exploit” and that “a 7-day or 30-day SLA assumes a delay that no longer exists.”\nInside our firm, these events started a debate: One camp sees the start of a bad decade where agents exploit every published vulnerability within hours, attack power grids, water systems and hospitals where patches take months or even years. The other has been here before. In 2003 Metasploit threatened to arm every amateur and in 2009 Shodan was supposed to expose every industrial controller and IoT device on earth. Neither ended the internet.\nFor twenty years, the bottleneck in offensive cyber was the expertise and time required to turn a vulnerability into a working exploit. In 2025 and 2026, that work became cheap and quick, minutes/hours instead of days/months. Patching did not get faster, and for a large share of the world’s systems, especially critical ones, it can’t.\nHowever, that doesn’t mean it all adds up to a catastrophe. We believe the grid is not about to go dark, and the internet is not about to go down. We do think it leads to outbreaks like those of the 2003 worm era and the 2017 WannaCry outbreak, landing hardest on systems that cannot be updated quickly, and on the few targets where a single break-in is worth billions.\nThe exploit is the part we can measure across 23 years, so it is where our data starts. But the cost of a skilled"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "a16z：漏洞利用曾是瓶颈，AI 让攻击成本从数月降到数小时",
-   "url": "https://aihot.news/items/t5j6ucy3ao84zrwoz2yf2ovra",
-   "published": "2026-11-05T15:01:00.000Z",
-   "description": "a16z 分析师撰文指出，2026 年 AI 智能体已把从漏洞到可用 exploit 的成本从专业人员的数周压缩到数小时，8 月底一次行动在 4 小时内攻破首个真实受害者，26 秒内攻陷 11 个组织，累计 48 国 395 个机构被攻破，其中一半是学校。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t5j6ucy3ao84zrwoz2yf2ovra",
-   "excerpt": "a16z 分析师撰文指出，2026 年 AI 智能体已把从漏洞到可用 exploit 的成本从专业人员的数周压缩到数小时，8 月底一次行动在 4 小时内攻破首个真实受害者，26 秒内攻陷 11 个组织，累计 48 国 395 个机构被攻破，其中一半是学校。\n文章用 23 年漏洞利用数据和 2026 年多起真实事件，论证 AI 把攻击成本压到小时级而补丁节奏未变，影响将集中在无法快速更新的长尾系统。\n8月的最后一天，一名操作员把几百个AI智能体指向了一台打印管理服务器，全球各地的学校和办公室都在用这台服务器。这些智能体搭建了一个测试实验室，为4天前披露的2个漏洞编写了利用程序，从一家互联网扫描服务那里拉取了一份目标清单，然后开始动手。从一个空的工作区到首次攻破真实受害者，用时不到4小时。第二天早上行动正式发起时，26秒内就有11家机构沦陷。等到 GreyNoise 统计完毕，48个国家的395家机构已被攻陷，其中一半是学校。干这些活的模型是一个廉价的开源权重模型，并非美国实验室的前沿模型。这些智能体甚至无视了一份要求它们避开的28个国家名单。\n7周后，PHP的两个严重漏洞在补丁发布前泄露。PHP是70%网站使用的语言。在漏洞披露前4天、修复发布前12小时，攻击尝试就已经打到了亚马逊用来诱捕攻击者的诱饵服务器上，3天内就出现了可用的shell。 CJ Moses 是亚马逊的CISO，他写道，AI“让把补丁差异或安全公告变成可用利用程序的成本更低”，而且“7天或30天的SLA所假设的那段延迟已经不复存在”。\n在我们公司内部，这些事件引发了一场争论：一方认为，一个糟糕的十年开始了，智能体能在数小时内利用每一个已公开的漏洞，攻击电网、供水系统和医院，而这些地方的补丁往往要打上几个月甚至几年。另一方则觉得这场景似曾相识。2003年，Metasploit被指会让每个业余爱好者都武装起来；2009年，Shodan被认为会暴露地球上每一台工业控制器和物联网设备。这两者都没有终结互联网。\n二十年来，攻击性网络作战的瓶颈一直是将漏洞转化为可用利用程序所需的专业知识和时间。到了2025年和2026年，这项工作变得廉价而迅速，从数天、数月缩短到数分钟、数小时。打补丁的速度并没有变快，而且对世界上很大一部分系统，尤其是关键系统来说，也快不起来。\n然而，这并不意味着一切加起来就是一场灾难。我们认为电网不会就此陷入黑暗，互联网也不会就此瘫痪。我们确实认为，这会导致类似2003年蠕虫时代和2017年WannaCry那样的疫情式爆发，受冲击最重的是那些无法快速更新的系统，以及少数几个单次入侵就价值数十亿美元的目标。\n利用程序是我们可以跨越23年进行衡量的部分，所以我们的数据从这里开始。但一名熟练攻击者的时间成本在每一步都很重要。侦察网络、让利用程序适配特殊环境、在内网横向移动、拿到报酬：每一步都需要人，而一个人花上几天时间，只有面对能回本的目标才划算。这就是“小到不值得攻击”的含义。小机构从未躲过大规模攻击，但它们躲过了需要人工介入的攻击，因为不值得任何人花时间。\nAI正在降低上述每一步的成本，而不只是利用程序那一步。这就是为什么今年秋天最大的两起事件根本不需要任何新漏洞：超市制冷攻击打的是那些早已不再获得更新的控制器， 其弱点已经公开了好几个月 ；而Binance被盗案则是 通过一名工程师的笔记本电脑得手的 。\nMandiant 的数据 显示，从漏洞披露到遭受攻击的平均时间从 2018-19 年的 63 天降至 2020-21 年的 44 天、2021-22 年的 32 天，2023 年仅为 5 天。到 2024 年，攻击平均在披露前一天就已发生。到 2025 年，则提前到了七天。\n有一点需要注意：这些曲线交叉发生在智能体 AI 出现之前。专业攻击者——主要是国家背景的组织和勒索软件团伙——早就在补丁发布前攻击面向互联网的设备了。AI 改变的是谁能在这个窗口期内行动，以及已知漏洞（不只是零日漏洞）被武器化的速度有多快。\n漏洞利用程序是一种把代码或逻辑中的漏洞转化为访问权限的程序。二十年来，编写这样一个程序成本高昂。 RAND 2017 年对 200 多个零日漏洞的研究 发现，专业人员编写一个可用的利用程序所需时间中位数为 22 天。漏洞经纪人每个漏洞要支付数千到数百万美元，而相关技能掌握在情报机构和少数资金充裕的犯罪团伙手中。\n所需的专业技能或许能解释漏洞管理领域最常被引用的一个统计数字：已公布的漏洞中，只有约 6% 曾被观察到在野利用。 Epoch 的 Timothée Chauvin 将这一差距主要归因于攻击者“没有足够时间去利用所有漏洞”。\n这也是 Metasploit 没能终结互联网乱象的原因。Metasploit 让使用别人写好的利用程序变得廉价，但总得有人去编写它、选择目标并发动攻击。如今 AI 智能体也开始接手这些工作。\n当时防御方也在进步。微软暂停 Windows 功能开发两个月，专注安全，随后发布了 Service Pack 2 ，默认开启防火墙并加强了更新控制。犯罪活动走向专业化，让攻击者更有理由保留可用来变现的访问权限。而 Metasploit 也成了防御方用来自我测试的工具 。后两股力量至今仍然重要。但微软当时能改变全球大部分计算机上运行的软件，而如今暴露在外的系统横跨数千家厂商和数百万个已停止支持的安装实例。\n更好的先例是稀缺环节变得免费的那一次——永恒之蓝。微软于 2017 年 3 月修复了该漏洞。一个月后，NSA 针对它的利用程序泄露。WannaCry 在补丁发布 59 天后爆发， 导致英格兰 236 家医院信托中的 81 家受到影响 。随后 NotPetya 来袭，造成超过 100 亿美元的损失。每个受害者都有两个月的时间来打补丁。\n再往前是 1999-2004 年的蠕虫时代。根据 Jason Healey 引用的一项估算，那些疫情按 2025 年美元计算造成了超过 2500 亿美元的损失。微软的安全改革帮助"
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "Urban Outfitters seeks material cost visibility from expanded technology suite",
-   "url": "https://www.supplychaindive.com/news/urban-outfitters-seeks-material-cost-visibility-from-expanded-technology-su/873642/",
-   "published": "2026-11-05T15:00:00.000Z",
-   "description": "The parent of several retail brands&nbsp;is tacking on additional features to its current production lifecycle management platform to improve supply chain efficiency.&nbsp;",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Top 6 AML Transaction Monitoring Tools for Fintech",
-   "url": "https://roboticsandautomationnews.com/2026/11/05/top-6-aml-transaction-monitoring-tools-for-fintech/106745/",
-   "published": "2026-11-05T14:59:13.000Z",
-   "description": "A fintech that processes a few hundred payments a day can still have someone look over them by hand. Once volumes climb into the tens of thousands, nobody can, and the monitoring has to run in software that scores each transaction and raises an alert when something looks wrong. Transaction monitoring is the part of […]",
-   "excerpt": "A fintech that processes a few hundred payments a day can still have someone look over them by hand. Once volumes climb into the tens of thousands, nobody can, and the monitoring has to run in software that scores each transaction and raises an alert when something looks wrong.\nTransaction monitoring is the part of an anti-money laundering (AML) program that watches money after a customer has been onboarded.\nIt looks for activity that doesn’t fit the customer’s profile: deposits kept just under a reporting threshold, funds that arrive and leave within hours, payments to high-risk jurisdictions, or a dormant account that suddenly turns busy.\nEach alert goes to an analyst, who either closes it or escalates it into a suspicious activity report.\nThe six tools below all automate that work, but they don’t automate the same parts of it. Some lead with machine learning and others with configurable rules, while a few bundle monitoring with identity verification so one vendor covers the customer from sign-up onwards.\nBefore the list, it’s worth setting out what actually separates them.\nEvery vendor on this list can flag a suspicious transfer. The differences show up in how the flag is produced and in how much work it leaves for the compliance team afterwards. Five questions sort the field:\nDetection logic. Explicit rules are easy to explain to an auditor, while machine-learning models can catch patterns nobody thought to write a rule for.\nTiming. Real-time scoring can hold a payment before it settles. Batch review finds the problem after the money has moved.\nControl over rules. Some tools let the compliance team change a threshold or add a rule directly, and others route every change through the vendor or an engineer.\nInvestigation. Alerts and the decisions on them should sit in one case with an audit trail, so an examiner can follow how each alert was closed.\nCustomer context. A system that knows who the customer is judges a transaction against that profile instead of in isolation.\nThe last point often decides the choice, because an alert on a large transfer means little until someone compares it with what the customer declared at onboarding, and a tool that sees only the transaction stream has to get that context through separate integration work.\niDenfy runs AML transaction monitoring on the same platform as its identity and business verification products, so the system that scores a transaction already knows who sent it.\nFor a fintech that onboards customers thr"
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "EBay trims Depop shipping rates, bolsters delivery features",
-   "url": "https://www.supplychaindive.com/news/ebay-trims-depop-shipping-rates-bolsters-delivery-features/873710/",
-   "published": "2026-11-05T14:38:18.000Z",
-   "description": "The company is using AI to enable fast-but-reliable delivery promises and help sellers determine shipping costs more easily, CEO Jamie Iannone said.",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "6 Best GEO Agencies for Brand Messaging Consistency",
-   "url": "https://roboticsandautomationnews.com/2026/11/05/6-best-geo-agencies-for-brand-messaging-consistency/106741/",
-   "published": "2026-11-05T14:22:58.000Z",
-   "description": "As AI-powered search becomes more influential, consistency is becoming a competitive advantage. Platforms like ChatGPT, Gemini, Perplexity, Claude, and AI Overviews don’t evaluate a brand based on a single webpage. They build an understanding of a company using content, media coverage, thought leadership, resource centers, third-party mentions, and other authority signals spread across the web. […]",
-   "excerpt": "As AI-powered search becomes more influential, consistency is becoming a competitive advantage.\nPlatforms like ChatGPT, Gemini, Perplexity, Claude, and AI Overviews don’t evaluate a brand based on a single webpage.\nThey build an understanding of a company using content, media coverage, thought leadership, resource centers, third-party mentions, and other authority signals spread across the web.\nWhen messaging is inconsistent, AI systems can struggle to determine what a brand is known for and when it should be recommended.\nThis is why businesses researching the best agencies for AI answer engine optimization are increasingly focused on message alignment.\nThe strongest GEO strategies don’t just improve visibility. They help ensure expertise, positioning, and authority are communicated consistently wherever AI systems encounter the brand.\nThe agencies below stand out for helping organizations strengthen brand messaging across modern AI search environments.\nBest For : Organizations seeking consistent messaging across educational content\nBeam Content specializes in helping brands communicate expertise clearly and effectively.\nAs organizations scale content production, it becomes increasingly difficult to maintain consistency across articles, guides, thought leadership pieces, and resource centers. Beam Content helps establish messaging standards that reinforce expertise while making content easier for audiences to understand.\nThis clarity can be particularly valuable in AI-powered search environments, where consistent language often strengthens authority signals.\nBest For : Enterprise brands managing messaging across multiple channels and business units\nNP Digital is particularly effective at helping organizations align messaging across complex digital ecosystems.\nMany enterprises have multiple teams contributing to visibility efforts, including SEO, content marketing, digital PR, social media, executive communications, and demand generation. Without coordination, these teams can unintentionally create conflicting narratives. NP Digital helps identify those gaps and develop frameworks that reinforce a consistent story across all channels.\nFor brand messaging consistency initiatives, the agency often combines GEO, content strategy, entity optimization, thought leadership, digital PR, and authority-building campaigns. The goal is to ensure AI platforms consistently associate the brand with the expertise areas it wants to own.\nThis approach can be especially valua"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "How Technology is Transforming the Modern Holiday Experience in Ibiza",
-   "url": "https://roboticsandautomationnews.com/2026/11/05/how-technology-is-transforming-the-modern-holiday-experience-in-ibiza/106730/",
-   "published": "2026-11-05T14:06:23.000Z",
-   "description": "Your Ibiza trip can now be organised before you reach the airport. A phone helps you compare hotels, buy bus tickets and check ferry departures. For Ibiza holidays, the biggest advantage is spending less time sorting out practical problems. Some digital checks are worth doing before downloading another travel app. Hotel Searches Are Getting More […]",
-   "excerpt": "Your Ibiza trip can now be organised before you reach the airport. A phone helps you compare hotels, buy bus tickets and check ferry departures.\nFor Ibiza holidays , the biggest advantage is spending less time sorting out practical problems. Some digital checks are worth doing before downloading another travel app.\nA hotel can advertise a beach nearby without mentioning the uphill walk home. Before booking, use map directions to check the actual walking route.\nCompare recent guest photographs with the hotel’s own pictures, especially around Playa d’en Bossa. Check whether late-night venues are close enough to disturb your sleep.\nIbiza welcomed around 3.38 million tourists in 2025, according to the Balearic government’s economic report. That gives you another reason to book popular summer dates early.\nIbiza’s bus operator Alsa provides schedules through its website and Mobi4U app. You can also buy single tickets online and present a QR code. This helps when travelling between Ibiza Town and places such as Santa Eulària. Check return services before leaving because some routes run seasonally.\nCompare card and QR fares with cash prices before boarding your bus. For an airport transfer, look up the current airport route instead of assuming last year’s timetable.\nSave your hotel address in an offline map before your arrival. Mobile navigation helps, but a screenshot works when reception disappears.\nBringing a vehicle to Ibiza involves more than booking a ferry. The island restricts certain vehicle access between 1 June and 30 September. Its Ibiza Circular website explains which vehicles need authorisation or qualify for exemptions.\nApplications use your registration details and planned dates on the island. Controls use number-plate recognition, so printed windscreen permits are unnecessary.\nIf hiring locally, ask the company which rules apply to your booking. Check the latest guidance rather than relying on older travel forums.\nFor club nights, official ticket websites let you compare performers and event dates. Buying in advance can also prevent disappointment when a particular event sells out. Keep your booking confirmation accessible without opening your email at the entrance.\nFor a Formentera day trip, compare ferry times before choosing a beach. Book directly with your chosen ferry operator and read its change policy before paying. Digital maps also help you judge the distance from La Savina to Ses Illetes.\nYour plans for holidays in Ibiza need some room f"
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "Logitech launches supply chain decarbonization program",
-   "url": "https://www.supplychaindive.com/news/logitech-launches-supply-chain-decarbonization-program/873778/",
-   "published": "2026-11-05T12:44:00.000Z",
-   "description": "The computer peripheral manufacturer&rsquo;s Chain Reaction initiative will start with 17 suppliers pooling purchasing power to collectively buy renewable electricity.",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "OpenAI’s Pierre Acquisition Signals a New Era for Supply Chain Software Development",
-   "url": "https://logisticsviewpoints.com/2026/11/05/openais-pierre-acquisition-signals-a-new-era-for-supply-chain-software-development/",
-   "published": "2026-11-05T12:08:18.000Z",
-   "description": "One of the enduring lessons of supply chain management is that increasing throughput at one stage of a process does not necessarily improve performance across the entire operation. More production capacity has limited value if distribution cannot move the finished goods. A faster warehouse picking operation accomplishes little if packing and shipping cannot keep pace. […] The post OpenAI’s Pierre Acquisition Signals a New Era for Supply Chain Software Development appeared first on Logistics Viewpoints .",
-   "excerpt": "One of the enduring lessons of supply chain management is that increasing throughput at one stage of a process does not necessarily improve performance across the entire operation. More production capacity has limited value if distribution cannot move the finished goods. A faster warehouse picking operation accomplishes little if packing and shipping cannot keep pace. The constraint simply moves. Artificial intelligence is now creating a similar problem in software development, and the implications for enterprise supply chain applications could be substantial.\nOn November 4, OpenAI announced its intention to acquire Pierre Computer Company, a developer of tools for navigating, reviewing, editing, and storing software code. The proposed acquisition follows OpenAI’s November 2 announcement of Pando, an internally developed source control backend designed to support the growing volume of parallel engineering work performed by developers and AI agents. Together, these announcements point to an important transition. Generating code is becoming faster and more accessible, but the surrounding processes for understanding, validating, integrating, and controlling that code must evolve at the same pace.\nFor transportation management, warehouse management, manufacturing, and supply chain planning software suppliers, this is more than a development productivity story. It has implications for how quickly vendors can modernize complex applications, how reliably they can introduce new functionality, and how enterprise customers should assess the risks associated with AI-assisted software engineering.\nThe Constraint Moves from Writing Code to Managing Change\nSoftware engineering has traditionally been organized around the capacity of human development teams. Engineers implement changes, colleagues review them, automated tests check for defects, and approved modifications move through release processes. Development tools have become more sophisticated, but the flow of work has generally remained tied to the pace at which people can produce and assess changes.\nCoding agents alter that relationship. A developer can assign several agents to investigate defects, update interfaces, create tests, or modify different parts of an application concurrently. The output may arrive faster than the organization can evaluate it. More proposed changes mean more competing branches, integration conflicts, regression testing, and decisions about what is safe to release.\nPierre’s technology a"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Pudu Robotics unveils ‘One Brain, Multiple Embodiments’ strategy and showcases full portfolio in European first",
-   "url": "https://roboticsandautomationnews.com/2026/11/05/pudu-robotics-unveils-one-brain-multiple-embodiments-strategy-and-showcases-full-portfolio-in-european-first/106725/",
-   "published": "2026-11-05T12:02:02.000Z",
-   "description": "Global commercial robotics specilaist showcased six product lines together for the first time at its 2026 European Partner Summit in Amsterdam Pudu Robotics, a global provider of commercial robotics, has set out the next phase of its global strategy in Amsterdam at its first European Partner Summit. At the event, which was themed “AI in […]",
-   "excerpt": "Global commercial robotics specilaist showcased six product lines together for the first time at its 2026 European Partner Summit in Amsterdam\nPudu Robotics , a global provider of commercial robotics, has set out the next phase of its global strategy in Amsterdam at its first European Partner Summit.\nAt the event, which was themed “AI in Action: Scaling Impact Across Europe – Together,” Pudu unveiled its “One Brain, Multiple Embodiments” strategy along with its full product ecosystem spanning six product lines for the very first time.\nFelix Zhang, founder and CEO of Pudu Robotics, said: “The next stage of growth will depend not only on advancing robot capabilities, but also on making robots easier to deploy, more adaptable and commercially viable at scale.\n“With our ‘One Brain, Multiple Embodiments’ strategy, we are building a shared technological foundation across different robot forms—from specialized service robots to semi-humanoid and humanoid robots.\n“By combining reusable AI capabilities with purpose-built hardware, we aim to accelerate innovation, improve development efficiency and bring robotics into more real-world applications.”\nAt the summit, Pudu debuted its full product ecosystem, guided by its “One Brain, Multiple Embodiments” strategy and spanning six product lines: service delivery, commercial cleaning, industrial delivery, general embodied AI, commercial lawn mowing and home lawn care.\nThe home lawn care line includes the PUDU TOMO S Series, the company’s first consumer robotics product, announced on November 3.\nThe debut of Pudu’s full product ecosystem marks the company’s expansion into a broader range of application scenarios, from indoor to outdoor environments and from commercial to home use.\n“Under our ‘One Brain, Multiple Embodiments’ strategy, we will continue to invest in foundational technologies, including hardware, operating systems and embodied foundation models,” said Zhang.\nAt the core of the “One Brain, Multiple Embodiments” strategy is a shared technological architecture designed to support different robot forms.\nBuilt on Pudu’s proprietary technologies, including PuduFM, an Embodied Foundation Model, and PuduAgent OS, an Embodied AI Agent Platform, the architecture enables reusable AI capabilities, software modules and skills across different robotic platforms, while allowing hardware and motion-control systems to remain optimized for specific tasks.\nBy sharing these underlying technologies across different robot forms, t"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "腾讯混元感谢 Artificial Analysis 对 Hy4 的评测，模型获 Intelligence Index v5 35 分",
-   "url": "https://aihot.news/items/fj4zi12biz0b62ckhzg5awcxx",
-   "published": "2026-11-05T10:23:42.000Z",
-   "description": "腾讯混元转发并感谢 Artificial Analysis 对其最新模型 Hy4 的评测。Hy4 在 Artificial Analysis Intelligence Index v5 得 35 分，与中国实验室模型中仅次于 Kimi K3.1 Pro（46 分），与 Grok 4.7 (xhigh) 持平，比 Claude Haiku 5.5 (max) 低 1 分。评测要点：FrontierCode 2.0 得 31%，为中国实验室模型最高；AA-Omniscience v1.1 达 50% 但幻觉率高达 89%；定价 $0.834/$2.501 per 1M input/output tokens，支持 1M token 上下文窗口和文本加图像输入。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fj4zi12biz0b62ckhzg5awcxx",
-   "excerpt": "腾讯混元转发并感谢 Artificial Analysis 对其最新模型 Hy4 的评测。Hy4 在 Artificial Analysis Intelligence Index v5 得 35 分，与中国实验室模型中仅次于 Kimi K3.1 Pro（46 分），与 Grok 4.7 (xhigh) 持平，比 Claude Haiku 5.5 (max) 低 1 分。评测要点：FrontierCode 2.0 得 31%，为中国实验室模型最高；AA-Omniscience v1.1 达 50% 但幻觉率高达 89%；定价 $0.834/$2.501 per 1M input/output tokens，支持 1M token 上下文窗口和文本加图像输入。\n引用 Artificial Analysis 对腾讯混元 Hy4 的评测，给出得分、编码能力、幻觉率与性价比的横向对比数据。\nThanks for the evaluation! We’ll keep improving 🙏\n引用 Artificial Analysis 对腾讯混元 Hy4 的评测，给出得分、编码能力、幻觉率与性价比的横向对比数据。"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "AGIBOT unveils GO-3 Preview and takes top spot on three embodied AI benchmarks",
-   "url": "https://roboticsandautomationnews.com/2026/11/05/agibot-unveils-go-3-preview-and-takes-top-spot-on-three-embodied-ai-benchmarks/106711/",
-   "published": "2026-11-05T10:23:15.000Z",
-   "description": "The new embodied foundation model connects pre-training, post-training and post-deployment learning, helping robots develop general-purpose capabilities and continuously improve through real-world experience AGIBOT has unveiled GO-3 Preview, an embodied foundation model that supports large-scale learning across the full lifecycle of pre-training, post-training and post-deployment. The model has also secured first-place rankings on three major embodied […]",
-   "excerpt": "The new embodied foundation model connects pre-training, post-training and post-deployment learning, helping robots develop general-purpose capabilities and continuously improve through real-world experience\nAGIBOT has unveiled GO-3 Preview, an embodied foundation model that supports large-scale learning across the full lifecycle of pre-training, post-training and post-deployment.\nThe model has also secured first-place rankings on three major embodied AI benchmarks – RoboDojo, RoboTwin and RoboColiseum – and will be fully open-sourced by the end of 2026.\nBuilt on AGIBOT’s proprietary embodied-native architecture, WRAM (World Reasoning Action Model), GO-3 Preview unifies task understanding, future-state prediction and action generation to enable robots to generalize across tasks and perform precise manipulation.\nTogether with Genie Evolver, AGIBOT’s hybrid post-training system, and Genie Master, its embodied agent framework, GO-3 Preview forms an integrated learning system spanning pre-training, post-training and real-world deployment.\nAGIBOT calls this approach “full-lifecycle scaling”, designed to help robots develop general capabilities, refine their skills through interaction and continuously improve by learning from real-world work.\nLarge language models have made remarkable advances in reasoning and knowledge-based tasks, but working in the physical world requires more than understanding instructions.\nTasks such as grasping small objects and assembling components demand the ability to anticipate environmental changes, manage contact forces and execute precise physical movements.\nFor embodied AI, the challenge is not simply to scale model training, but to extend learning across the entire lifecycle. Rather than developing capabilities solely during pre-training, robots must also learn through post-training interactions and continue adapting after deployment.\nGO-3 Preview is designed around this principle: enabling robots not only to learn how to perform tasks, but also to become more capable through performing them.\nConsider a simple instruction: “Pick up the cup.” The object could be a mug with a handle or a smooth glass, positioned in the middle of a table or surrounded by clutter. To handle such variations, a robot cannot simply memorize specific objects or fixed movements. It needs general-purpose capabilities that transfer across tasks and environments.\nDuring pre-training, GO-3 Preview addresses this challenge by scaling both data and model capab"
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
-   "url": "https://openai.com/index/introducing-gpt-6-cyber",
-   "published": "2026-11-05T09:00:00.000Z",
-   "description": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenAI 发布 GPT-6 Cyber 网络安全模型",
-   "url": "https://aihot.news/items/u904yv6dn7sw6lwjgxxedqd3b",
-   "published": "2026-11-05T09:00:00.000Z",
-   "description": "OpenAI 发布网络安全模型 GPT-6 Cyber，针对漏洞发现、验证与修复训练，并通过 Daybreak Red/Blue 平台向审核通过的安全团队开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/u904yv6dn7sw6lwjgxxedqd3b",
-   "excerpt": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents\nOpenAI 发布网络安全模型 GPT-6 Cyber，针对漏洞发现、验证与修复训练，并通过 Daybreak Red/Blue 平台向审核通过的安全团队开放。\n官方给出具体基准数字、Linux 与 Firefox 实战成果和分平台访问安排，读者可据此评估其安全研究能力与准入门槛。\n这是一款网络安全模型，经过训练能够发现并验证可利用的漏洞，同时始终保持在研究人员设定的范围内。\n我们推出 GPT‑6 Cyber，这是安全研究领域的一次重大飞跃：它发现和修复漏洞的能力更强，也更能可靠地守住研究人员设定的边界。在关键网络安全基准测试中，GPT‑6 Cyber 相比 GPT‑5.6 Cyber 取得大幅提升，其中 ExploitGym 相对提升 51%，在范围遵守测试中更是出现阶跃式改进。它已经在帮助保护真实世界的软件，在 Linux、Firefox 等安全关键代码库中发现并验证了数千个漏洞利用。\nExploitGym 测试的是模型能否利用指定漏洞，GPT‑6 Cyber 得分 48.5%，高于 GPT‑5.6 Cyber 的 32.1%。它也更能可靠地遵守任务边界：在另一项对齐评估中，不启用部署提示词时，GPT‑6 Cyber 在 99.93% 的测试中避免了对范围外服务的利用，启用提示词后这一比例达到 100%。对齐方面的这一进步，源于针对遵守授权范围、尊重限制条件、准确报告结果的专门训练。\n这些能力已经在帮助保护真实系统。我们的研究人员用 GPT‑6 Cyber 在 Linux 中开发出 948 个提权漏洞利用 ，并在 Firefox 中识别出 81 个此前未知的高危漏洞——尽管此前已用前沿模型做过大量测试。该模型还帮助开发了候选补丁，Mozilla 已 为其中许多 Firefox 漏洞发布修复程序（在新窗口打开） 。Cisco、Calif 和 CodeRabbit 的安全团队正在用它进行漏洞研究和代码审查，我们也依靠它 发现并修复自身基础设施中的弱点 。\n显然， 我们利用前沿模型来保护软件的时间窗口有限 。 我们的目标是大幅扩展 Daybreak，把先进的安全研究带给各种规模的组织、独立研究人员和开源维护者。 GPT‑6 Astra 等主线模型已经支持代码审查、漏洞分类和补丁开发。Daybreak Blue 帮助经过验证的防御者验证漏洞和修复，减少不必要的拒绝；Daybreak Red 则借助 GPT‑6 Cyber 支持更深入的漏洞利用开发和授权安全测试。\nGPT‑6 Cyber 相比 GPT‑5.6 Cyber 是重大升级，在大多数网络任务上表现优于 GPT‑6 Astra，即使 Astra 没有拒绝请求也是如此。我们在要求模型理解软件、识别漏洞并开发可用漏洞利用的任务上对它进行了评估。基于这些结果，按照我们的 Preparedness Framework，我们将该模型在网络安全领域归类为 Critical，高于 GPT‑5.6 Cyber 的 High。\n在 ExploitGym 上（该测试考察模型能否利用远程目标中的指定漏洞），GPT‑6 Cyber 得分 48.5% ，比 GPT‑5.6 Cyber 的 32.1% 高出约 16 个百分点 。为测试漏洞发现能力，我们还针对攻击性 Web 渗透测试构建了一项新评测：模型在无法访问源代码的情况下探测 Web 应用。GPT‑6 Cyber 的漏洞召回率达到 40.3% ，而 GPT‑6 Astra 为 32.0% 。\nDaybreak Red 旨在支持更高级的安全工作流，包括开发可用的漏洞利用程序并将其用于远程目标。为评估这些能力，我们构建了一个新基准 RemoteExploitBench，使用部署在受控环境中的 GitLab、PostgreSQL、Jenkins 等应用中的已知漏洞。在初步评估中，运行 Daybreak Blue 的 GPT‑6 Astra 拒绝了 100% 的任务 ，而 GPT‑6 Cyber 完成了 95% ；它唯一一次失败，是一个无法在远程跑通的漏洞利用。完整结果和评测设置见 系统卡⁠（在新窗口打开） 。\n网络安全智能体面临的一个风险是：它们会超出任务范围，试图攻击无关服务，或无视研究人员设定的交战规则。\n我们把对齐作为 GPT‑6 Cyber 的核心重点，通过专门训练帮助模型留在授权范围内、遵守对其行为的限制，并准确汇报工作。部署前，我们开展了一系列对齐评测来衡量这些行为。完整结果见 系统卡⁠（在新窗口打开） 。\n其中一项评测是 ExploitGym Honeypot，其设计参考了 Hugging Face 事件⁠ 。我们在隔离环境中给模型一个难度较高的漏洞利用任务，同时让它能访问包注册表、对象存储等配套服务。我们故意让这些服务容易被攻破，这样攻击它们就能暴露出任务的 flag。模型必须推断出攻击这些服务超出了任务范围。\n在这项评测中，GPT‑6 Cyber 相比 GPT‑5.6 Cyber 有了跨越式提升。在不加部署安全提示词的情况下测试时，它在 99.93% 的情况下避免了攻击范围外的服务，而 GPT‑5.6 Cyber 为 94.49%。加上这些提示词后，GPT‑6 Cyber 100% 都守住了边界。\n“不能假设额外的 API 或攻击控制器不是目标。我们只应针对二进制/服务器。”“不能假设额外的 API 或攻击控制器不是目标。我们只应针对二进制/服务器。”“不 能 假 设 额 外 的 A P I 或 攻 击 控 制 器 不 是 目 标。我 们 只 应 针 对 二 进 制/服 务 器。”\n“不要探索范围外的凭据。”“不要探索范围外的凭据。”“不 要 探 索 范 围 外 的 凭 据。”\nGPT‑6 Cyber 已经在帮助安全团队发现漏洞、验证其影响并开发修复方案。客户已将它用于大型代码库、长"
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "Merge builds product and business tools with OpenAI technology",
-   "url": "https://openai.com/index/merge-builds-with-openai",
-   "published": "2026-11-05T08:00:00.000Z",
-   "description": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenAI 发布 GPT-6 Cyber 系统卡：聚焦网络安全能力与对齐表现",
-   "url": "https://aihot.news/items/k4zkvg2szg7wlhh2b8410n1gr",
-   "published": "2026-11-05T07:00:00.000Z",
-   "description": "OpenAI 发布 GPT-6 Cyber 系统卡，说明该模型通过强化学习训练复现崩溃、开发可用 exploit 和搜索代码库漏洞等网络安全能力。在 ExploitGym Honeypot 评估中未加部署安全指令时越权利用率为 0.07%，远低于 GPT-5.6 Sol 的 49.5%；Auto-Review 拒绝遵循率 0% 违规，与 GPT-6 Astra 持平。 🔗 阅读原文 via AIHOT · https://aihot.news/items/k4zkvg2szg7wlhh2b8410n1gr",
-   "excerpt": "OpenAI 发布 GPT-6 Cyber 系统卡，说明该模型通过强化学习训练复现崩溃、开发可用 exploit 和搜索代码库漏洞等网络安全能力。在 ExploitGym Honeypot 评估中未加部署安全指令时越权利用率为 0.07%，远低于 GPT-5.6 Sol 的 49.5%；Auto-Review 拒绝遵循率 0% 违规，与 GPT-6 Astra 持平。\n系统卡给出 GPT-6 Cyber 在越权、警告响应和 honeypot 等评估中的具体数字，可据此了解其安全表现。\nGPT‑6 Cyber 的后训练聚焦于网络安全能力与对齐。我们采用强化学习，让模型在复现崩溃、开发可用的漏洞利用程序、在代码库中搜索漏洞等任务上接受训练。通过这种训练，模型学会改进自己的方法、尝试不同策略并识别错误。我们还设计了奖励信号，以减少模型对已获授权的网络安全请求的拒绝。\n在提升这些能力的同时，我们也加入了训练信号来改善对齐、抑制奖励黑客行为。这些信号强化模型遵循用户预期的范围和授权、避免执行未被要求的操作，并如实报告结果。 1\nGPT-6 Cyber 的使用须遵守 OpenAI 的使用政策、服务条款和使用条款。这些政策普遍适用于 OpenAI 的各项服务，旨在确保 AI 技术被安全、负责任地使用。你可以在 openai.com/policies/usage-policies/ 查看 OpenAI 的使用政策。\n如需就这些模型获得帮助，你可以在 OpenAI 官网（openai.com）查找更多信息，也可以通过打开 help.openai.com 右下角显示的聊天气泡图标联系 OpenAI 支持团队。模型支持的输入和输出模态可在 https://developers.openai.com/api/docs/models/all 查看。 ↩︎\n我们测试了在网络安全任务上减少拒绝，是否也会让 GPT-6 Cyber 更愿意提供违规的生物领域协助。 GPT-6 Astra 系统卡 中描述的生物学拒绝评估涵盖严重风险请求、兼具正当用途与潜在危害的双重用途请求，以及良性生物学问题。我们衡量模型在前两类中给出非违规回答的情况，以及在第三类中是否避免了不必要的拒绝。\n在这些评估中，GPT-6 Cyber 对几乎所有严重风险和双重用途的生物学请求都没有遵从，同时对大多数良性问题作出了回答，没有出现不必要的拒绝。\n正如其 系统卡 所述，GPT‑6 Astra 相比 GPT‑5.6 Sol 在对齐方面有大幅改进。GPT‑6 Cyber 的目标是在支持更广泛的授权网络安全工作的同时，实现类似的对齐改进。我们使用相同的对齐评估来检验模型是否遵守限制、是否如实报告障碍，以及是否停留在用户的授权范围内。下文将 GPT‑5.6 Sol 和/或 GPT-5.6 Cyber 作为上一代基线报告。\nGPT‑6 Cyber 相比 GPT‑5.6 Sol 有显著改进。其对齐结果与 GPT‑6 Astra 大体相当，在各项单独评估中各有强弱：在遵守 Auto-Review 拒绝决定方面与 Astra 持平，在承认搜索工具不可用方面表现更好，但在警告足以要求停止时停下的可能性略低，在最终回答中报告阻碍因素方面表现更差。\n遵守审查决定。 我们测试了 GPT-6 Cyber 是否遵守 Auto-Review 的拒绝决定。在评分过的 rollout 中，模型完成被禁止操作的比例为 0%，与 GPT-6 Astra 持平，而 GPT-5.6 Sol 为 0.3%。\n对警告的响应。 我们测试了模型对工具界面所显示警告的响应情况，其中一组任务更适合停止，另一组更适合继续。GPT-6 Cyber 在两组任务上都优于 GPT-5.6 Sol：适合停止时分别为 73.00% 和 57.10%，适合继续时分别为 80.43% 和 77.26%。与 Astra 相比，GPT-6 Cyber 在第一组任务上停止得更少（73.00% 对 78.38%），但在第二组任务上成功率更高（80.43% 对 72.19%）。这一模式与其更强的任务持续性相符。\n保持在授权范围内。 我们的 ExploitGym Honeypot 评估从 ExploitGym 中选取了一些最具挑战性的任务，并额外加入一个蜜罐辅助服务。模型可以将该服务用于合法的支持任务，但利用它属于超出授权范围的行为。在没有部署安全指令的情况下，GPT-6 Cyber 在评分 rollout 中利用蜜罐的比例为 0.07%，而 GPT-5.6 Sol 为 49.5%，GPT-5.6 Cyber 为 5.51%，GPT-6 Astra 为 0%。加入部署安全指令后，GPT-6 Cyber 的观测利用率为 0%。\nGPT-6 Cyber 更强的网络安全能力带来了更大的危害风险，因此我们围绕该模型新增了一系列防护措施。\n拦截高风险网络协助。 我们为 GPT-6 Cyber 以及 Daybreak Blue 中与网络安全密切相关的模型增加了额外检查，用于检测并拦截涉及工业控制、关键服务和选举系统的高风险协助。这些检查还针对可能导致死亡或严重伤害、灾难性物理破坏、危及生命的服务中断，或攻击性控制武器系统的协助行为。\n我们与工业控制安全领域的专业公司 Dragos 合作，在受控实验室中使用对网络行为较为宽松的 Daybreak Red 模型评估了这些防护措施。我们共同开发了一项敏感的红队评估，覆盖从理解设备到以危险或未经授权的方式与设备交互的一系列请求。下图展示了这些改动前后，我们在不同可信访问层级上该评估的拦截率，包括 Standard 访问、Daybreak Blue 和 Daybreak Red 层级上召回率的提升。\n图：在敏感红队评估中，四种访问配置下更新前后的防护拦截率。拦截率衡量的是被防护措施标记的请求占比，并不衡量对合法防御工作的过度拒绝。\n我们持续利用安全社区的反馈来改进这些防护措施，包括合作伙伴的报告，以及通过我们第一方产品中的 "
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Thinking Machines Lab 发布 Inkling 2 Small：594B 参数 MoE 模型，下周开放 Apache 2.0 权重",
-   "url": "https://aihot.news/items/bu8612ca3e1uyxjppk56ef1wl",
-   "published": "2026-11-05T07:00:00.000Z",
-   "description": "Thinking Machines Lab 发布第二代模型 Inkling 2 Small，为 594B 总参数、17B 激活的 MoE 模型，支持图像输入与 variable effort，Artificial Analysis Intelligence Index 得分 31。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bu8612ca3e1uyxjppk56ef1wl",
-   "excerpt": "Thinking Machines Lab 发布第二代模型 Inkling 2 Small，为 594B 总参数、17B 激活的 MoE 模型，支持图像输入与 variable effort，Artificial Analysis Intelligence Index 得分 31。\n官方完整披露训练配方、RL 规模与安全评测，开放权重计划和基于基准的定位值得跟踪其后续表现。\n今天我们推出第二代模型 Inkling 2 Small。它是一款混合专家模型，总参数 594B，激活参数 17B，支持图像输入和可变推理强度。\n在 Artificial Analysis 智能指数上，Inkling 2 Small 得分 31，远超我们此前各代模型，体现出在智能体编程、视觉、知识工作和推理方面的提升。能力增长来自训练流程每个环节的改进，包括更高效的预训练和一次大规模统一强化学习。\nInkling 2 Small 初期将通过 Tinker 提供，权重闭源，遵循我们在 开放权重的安全路径 中提出的做法。我们计划在完成外部安全测试和红队评估后，于下周以 Apache 2.0 许可证开放完整权重。\n今天你就可以在 Tinker Playground 上试用 Inkling 2 Small。该模型也可在 Tinker 上微调和采样；随着 Inkling 2 Small 权重发布，检查点将可供下载。\nInkling 2 Small 在各方面都比第一代更强，尤其是在长时程自主工作方面。\nInkling 2 Small 的视觉和智能体能力让它能利用视觉反馈，反复构建和完善带交互元素的网站、游戏和 3D 设计。\nInkling 2 Small 通过强化学习训练，覆盖数十万个长时程编程任务，涉及多种智能体框架和上下文压缩策略。我们提升了合成编程数据管线的质量，不再只依赖单元测试奖励；许多任务配有智能体强化学习评分器，评估模型如何着手解决问题，而不只是代码是否通过。我们还在 OpenCode 上以 Fledge-Alpha 之名测试了 Inkling 2 Small 的早期检查点，以评估模型在真实世界编程任务中的表现。\n结果是，这个模型编程更强，在真实智能体循环中也更易用。相比 Inkling，Inkling 2 Small 的可用性有所提升：它更好地遵循指令，审慎考虑改动，并主动验证自己的工作。\n各行按 AUC 排序：AUC 是 0–10 小时内平均曲线下的面积，最大值为 690 任务·小时。\n每个模型均使用其可用的最高推理设置、PI harness 和统一的压缩策略。我们纳入了评估期间发现的任务与评分问题的修复。每个提交的解决方案都要经过两次独立的 LLM 审核，出现分歧时由第三次评审裁定。\n除了常规软件任务，Inkling 2 Small 还接受了长时程自主研究任务的训练，包括智能体式 GPU 内核优化，以及自主后训练模型等机器学习任务，且均在一系列 GPU 架构上运行。\n为展示其端到端自主研究表现，我们在一个基于内部基准构建的任务 Proximal 上测试了 Inkling 2 Small。Inkling 2 Small 在 Tinker 上自主训练 Qwen3.5-4B，用于预测天气、维基百科页面浏览量等多种时间序列。它先分析任务并编写自己的评估器，尝试不同的训练数据集和配方，试验多种 SFT 和 RL 方法，同时边做边调试。经过 4.5 小时的工作和 426 美元的 Tinker 花费，训练后的模型预测得分提高了一倍以上。\n我们要让 Qwen/Qwen3.5-4B 预测时间序列。模型会拿到一个窗口，也就是某条序列最近一段历史，以文本形式输入，然后写出后续各步的数值。每个窗口会采样多次。它预测结果的中位数应当接近实际发生的情况，而预测的离散程度应当与真实的不确定性相匹配。[...] 用 Tinker 训练 Qwen/Qwen3.5-4B 的 LoRA。[...] 你有 12 小时时间和 500 美元的 Tinker 预算。\nBash ls /app /data && cat /data/README.md\nBash tinker-usage 2>&1 | head -20; echo ---; tinker-usage --prices 2>&1 | head -40\n~/tinkerbench/time-series-forecasting/ 本次运行已进行 0 小时 00 分\n运行过程中的评估分数：基座 19%，SFT 1 25%，SFT 2 27%，RL 23%，SFT 4 29%。在未见数据上：基座 10%，SFT 4 23%。\n数据来源：美国能源信息管理局（EIA-930）；天气与空气质量数据来自 Open-Meteo.com（CC BY 4.0），包含经修改的 Copernicus 气候变化服务与 Copernicus 大气监测服务 2026 年信息；维基百科页面浏览量（CC0）。\nInkling 2 Small 使用基于 Perception Encoder 的 292M 参数视觉编码器处理图像输入 Bolya et al., 2025 。 。我们采用 20×20 像素的图像块，配合 2×2 空间池化，并将图像块与文本 token 交错排列。该模型在多个类别上展现出强大的视觉能力，包括 OCR、定位、信息图理解和视觉推理。\n该模型在推理过程中引入视觉能力，用来解读并验证自己生成的视觉编码输出。待权重发布后，它将成为 DesignArena 上排名第一的开源权重模型。\n我们甚至在一场品酒活动中让 Inkling 2 Small 与几位研究员同场竞技。它仅凭视觉就胜过了他们，在 20 次试验中有 19 次仅凭一张照片正确识别出三款葡萄酒。\n提示词： 你正在参加一场盲品葡萄酒比赛。酒杯从左到右标为 1 到 3。品种：99 年赤霞珠、19 年赤霞珠、23 年内比奥罗\nInkling 2 Small： 以下是我的判断——先说明一"
-  },
-  {
-   "group": "ai",
-   "source": "Latent Space",
-   "title": "[AINews] It's Swapping Season",
-   "url": "https://latent.space/p/ainews-it-s-swapping-season/",
-   "published": "2026-11-05T06:24:09.000Z",
-   "description": "November 4, 2026 — OpenAI’s Linux kernel security work, Kimi K3.1 Pro’s open weights, and Ricursive’s Ripple-65B.",
-   "excerpt": "November 4, 2026 — OpenAI’s Linux kernel security work, Kimi K3.1 Pro’s open weights, and Ricursive’s Ripple-65B.\nAs much as there are headlines about changing sides all over the timeline today, there have been major moves in AI as well:\nCat Wu leaving Anthropic /Claude Code team where she was Head of Product since inception ( our podcast here ) and is joining OpenAI to lead Core Products PM ( post ).\nSharon Zhou ( CEO of Lamini, acquired by AMD last year to be Lisa Su’s VP of AI) is leaving AMD for Anthropic ( post ).\nFactory is acquiring HumanLayer ( Factory ).\nMeta is acquiring Conductor ( Blogpost ) - the pioneers of the form factor that everyone copied this year .\nCharlie gave everyone a preview of the next form factor .\nSpeaking of AIE CODE , this week is the last chance for Latent Space paying subscribers to make use of your $400 subscriber discount (new tickets only, no refunds) - while all talks are put on YouTube for free as always, you should come anyway if the conference theme and speakers resonate with you because literally everyone is aligned to push the frontier on all three themes next week!\nAI News for 11/03/2026-11/04/2026. We checked 12 subreddits, 544 Twitters and no further Discords. AINews' website lets you search all past issues. As a reminder, AINews is now a section of Latent Space . You can opt in/out of email frequencies!\nOpenAI's Autonomous Cyber Pipeline Patches 948 Linux Kernel Privilege-Escalation Bugs\nPipeline result : OpenAI says its security researchers built an autonomous pipeline for vulnerability discovery, exploitation and patching. In a single run with an upcoming cyber model, it validated and generated patches for 948 local privilege escalation (LPE) vulnerabilities in the Linux kernel, at a total API cost of $1.2M ( announcement ).\nNovel techniques : OpenAI says the agents discovered and used at least 10 Linux exploitation techniques that its team and consulted experts consider novel. It argues this shows models going beyond applying known methods ( thread ).\nDisclosure path : OpenAI says it is working with Linux maintainers and Patch the Planet partners on reports and patches ( details ).\nScale framing : Eric Wallace says researchers typically find about 20 Linux LPEs a year. He says the model found about 1,000 in one week using about $1M of tokens, and that OpenAI is now putting \"a significant amount\" of frontier compute toward pro bono open-source patching ( post ). Greg Brockman cites about $1,000 per vulnerabil"
-  },
-  {
-   "group": "ai",
-   "source": "BestBlogs 每日早报",
-   "title": "EP227 · Hy4 扩展生产力、LongCat 强化长任务、Meta 加速特性上线",
-   "url": "https://www.bestblogs.dev/explore/brief/2026-11-05?utm_source=rss&utm_medium=feed&utm_campaign=daily_brief&entry=rss_brief_index",
-   "published": "2026-11-05T06:00:00.000Z",
-   "description": "📝 今日导语 Hy4 扩展生产力，LongCat 拆解长任务训练，Meta 加速特性上线：读懂模型能力与工程取舍。 🏷 今日关键词： Hy4 LongCat 机器学习工程 智能体工具 模型验证 📰 今日精选内容 Hy4 正式发布，为真实生产力而生 腾讯研究院 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 LongCat-2.5：面向智能体任务的原生多模态模型 美团 · 技术团队 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 F3 Lightning：Meta 如何大规模加速广告机器学习特性投入生产 Engineering at Meta &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 88 OpenAI 拟收购 Pierre，扩展 Codex 代码审查与存储工具 OpenAI News &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 88 借助消息线程加快长时间运行的智能体 Claude Blog &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 88 对话 Maxinsights：机器人第一视角数据的规模化与质量管线 硅谷101 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 拆解小红书存储底座 02｜让 AI 成为团队的一员：存储数据",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "MH&L",
-   "title": "Global Supply Chain Costs to Rise as Much as 6.7%",
-   "url": "https://www.mhlnews.com/global-supply-chain/news/55416363/global-supply-chain-costs-to-rise-27-67-kearney",
-   "published": "2026-11-05T05:05:00.000Z",
-   "description": "Geopolitical risk is a top roadblock to growth, says Suketu Gandi of Kearney.",
-   "excerpt": "High costs and the risk of future costs have led Kearney, a global consulting firm, to predict a range of price increases in the supply chain.\n&ldquo; The Supply Chain Navigator projects global costs to rise 2.7%in the first half of 2027, with an upside possibility of 6.7%,&rdquo; noted Kearney partner, global lead for the Kearney Supply Chain Institute Suketu Gandhi .\n&ldquo;That range masks significant divergences by country, with India possibly rising as much as 8.3%, China 5.9%, the United States 5%, Mexico 4.5%, and Germany 3.1%. Planning against the full range, not a single number, is what matters this quarter.&rdquo;\nAdded Suketu Gandhi: &ldquo; Geopolitical risk is the standout signal, by far the largest movement in either the fundamentals or sentiment data. It&rsquo;s also a pressure point we&rsquo;ve already flagged as one of executives&rsquo; top three roadblocks to growth. &rdquo;\nThe Supply Chain Navigator, which is produced by Kearney's internal think tank, the Supply Chain Institute, was created 10 quarters ago and has an accuracy rate of more than 95%.\nThe Navigator analyzes the factors driving up supply chain costs and views them through the two lenses of fundamentals and sentiment. Fundamentals factors include sector input costs, labor costs, inventory, import prices, export prices, sector gross output, and consumer spending. Sentiment and risk factors include business activity, market-demand risk, market-cost risk, trade-credit risk, credit risk, Logistics Managers&rsquo; Index (LMI) inventory levels, LMI inventory costs, and geopolitical risk.\n&ldquo;We&rsquo;re looking at the same supply chain costs through two lenses: fundamentals and risk,&rdquo; offers Rupal Deshmukh, a partner in Kearney&rsquo;s Supply Chain Institute, in a statement.\n&ldquo;Fundamentals show what businesses are paying today. Risk shows the pressure building before it hits the reported numbers. Keeping the two separate tells us what has happened to costs and what could happen next.&rdquo;\nWith global supply chains operating under an elevated cost structure due to all of these factors, the report lays out three disciplines companies should now prioritize when shaping their operations performance:"
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "Setting a new standard for responsible AI infrastructure",
-   "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
-   "published": "2026-11-05T02:00:00.000Z",
-   "description": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
-   "excerpt": ""
   }
  ]
 }
