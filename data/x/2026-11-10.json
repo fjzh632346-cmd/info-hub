@@ -1,0 +1,113 @@
+{
+  "type": "x",
+  "date": "2026-11-10",
+  "items": [
+    {
+      "kind": "news",
+      "category": "其他",
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2119873970920997274",
+      "posted": "2026-11-09",
+      "metrics": "3.6 万查看",
+      "textZh": "11 月 9 日 Anthropic 发布了 Claude Fable 5.2 和 Mythos 5.2 两个新模型。同一天 OpenAI 在周边商店上架 Codex 版 Chromatic 复古掌机（200 美元，能插原版 Game Boy 卡带）：在 Codex 里装插件，一句话描述想做的游戏就能生成 Game Boy 游戏（底层用开源的 GB Studio），可在浏览器模拟器里玩，也能写进卡带。不买掌机也能用免费账号做游戏试玩；掌机不发货到中国大陆。"
+    },
+    {
+      "kind": "opinion",
+      "category": "研究",
+      "author": "Ethan Mollick",
+      "handle": "@emollick",
+      "url": "https://x.com/emollick/status/2119870150845599972",
+      "posted": "2026-11-09",
+      "metrics": "65 万查看",
+      "textZh": "沃顿商学院教授 Mollick 提前用了一段时间 Fable 5.2，认为它已经算得上一种“参差不齐的通用人工智能（Jagged AGI）”——很多事做得超强，但能力分布不均匀。他在长文里让它开公司、做学术研究、折腾硬件、建 3D 模型等，用这些例子说明它的强项和短板。另一条帖子提到，他让 2.5 万个 AI 代理自动造了 450 多个 3D 世界，代理们后来竟然自发形成了“官僚体系”，把开发拖得很慢。"
+    },
+    {
+      "kind": "news",
+      "category": "研究",
+      "author": "Ethan Mollick",
+      "handle": "@emollick",
+      "url": "https://x.com/emollick/status/2120000888974766501",
+      "posted": "2026-11-10",
+      "metrics": "5.6 万查看",
+      "textZh": "Mollick 汇总了三个还没被“刷满分”的测评：ECI（多个测评的综合分）、Remote Labor（能否端到端完成真实的自由职业外包活）、RoboDojo（控制机器人）。Fable 5.2 在这三项上都高于原本就很陡的进步趋势线。对关心机器人和自动化的人来说，RoboDojo 这项值得留意。"
+    },
+    {
+      "kind": "prompt",
+      "category": "编程",
+      "score": 82,
+      "author": "Vox",
+      "handle": "@Voxyz_ai",
+      "url": "https://x.com/Voxyz_ai/status/2119943123250078141",
+      "posted": "2026-11-10",
+      "metrics": "27.6 万查看",
+      "textZh": "Anthropic 发布了选模型的官方指南（Fable 5.2 / Opus 5.5 / Sonnet / Haiku 各适合什么活）。作者提醒：Claude Code 内置的 Explore 子代理（负责读文件、搜代码的小助手）以前固定用便宜的 Haiku，现在改成跟随主模型，如果你主模型是 Opus 5.5 或 Fable 5.2，它会白白烧大模型额度——解决办法是自己定义一个叫 Explore 的子代理并设 model: haiku。下面这段提示词可以让 Claude 对照指南体检你的 Claude Code 配置，先出建议不改动。",
+      "prompt": "Read this guide: https://claude.dev/blog/which-claude-model-should-you-build-with\n\nThen review my Claude Code setup against it: my user and project settings, the subagents in ~/.claude/agents and .claude/agents, and CLAUDE.md. Find three kinds of problems:\n1. Subagents on the wrong model. Subagents that only search files, read logs or run tests but set no model, so they run on my main model. If I haven't defined my own subagent named Explore with model: haiku, count that too. The other way around, subagents that edit code or make judgment calls should stay on the main model, so check whether CLAUDE_CODE_SUBAGENT_MODEL is pushing them down to a small model too (check only that one variable, in the env block of my settings and in my shell).\n2. A model or effort level that doesn't fit the work. Use the guide's table: Opus 5.5 at medium for everyday engineering and debugging, Sonnet 5.5 for well-scoped work like a bug fix or a feature built against a spec, and Fable 5.2 for major refactors, migrations and leading many subagents. Flag a default effort above high, and suggest testing the next model up at a lower effort first. Flag opusplan as my default too, because it puts code edits on Sonnet.\n3. No way for you to verify your own work in this project: CLAUDE.md doesn't say how to run the tests or the build, or there's no check to run at all. The guide's order is to make sure you can verify your work first, then raise effort one level, and only then move to the next model up.\n\nFor each issue, quote my setting and the matching line from the guide, explain what it costs and where it will go wrong, and suggest the smallest change, written as config I can paste.\n\nThen look at this project's code and recent commits and give me a table: which kinds of work here fit which model and which effort level.\n\nLast, tell me how to use /model and /usage to run one task from my backlog on two models and compare the cost.\n\nShow me the recommendations first. Don't change anything yet.",
+      "promptZh": "读一下这份指南：https://claude.dev/blog/which-claude-model-should-you-build-with\n\n然后对照它检查我的 Claude Code 配置：我的用户和项目设置、~/.claude/agents 和 .claude/agents 里的子代理，以及 CLAUDE.md。找出三类问题：\n1. 子代理用错了模型。只负责搜文件、读日志、跑测试的子代理却没设模型，于是跑在我的主模型上。如果我没有自己定义一个叫 Explore、model 设为 haiku 的子代理，也算一条。反过来，负责改代码或做判断的子代理应该留在主模型上，所以检查 CLAUDE_CODE_SUBAGENT_MODEL 有没有把它们也压到小模型（只查这一个变量，在设置的 env 块和我的 shell 里）。\n2. 模型或思考强度和工作不匹配。按指南的表：日常开发和调试用 Opus 5.5 中等强度；范围明确的活（修 bug、照需求做功能）用 Sonnet 5.5；大重构、迁移、指挥很多子代理用 Fable 5.2。默认强度高于 high 的要标出来，并建议先试更高一档模型配更低强度。默认用 opusplan 也要标出来，因为它会把改代码交给 Sonnet。\n3. 你在这个项目里没法自己验证工作：CLAUDE.md 没写怎么跑测试或构建，或者根本没有可跑的检查。指南的顺序是：先确保能验证，再把强度提一级，最后才换更大的模型。\n\n每个问题都引用我的设置和指南里对应的那句，说明代价和会在哪出错，并给出最小改法，写成我能直接粘贴的配置。\n\n然后看这个项目的代码和最近的提交，给我一张表：这里哪类工作适合哪个模型、哪个强度。\n\n最后告诉我怎么用 /model 和 /usage 把待办里的一个任务分别用两个模型跑一遍，比较花费。\n\n先给我看建议，暂时什么都别改。",
+      "images": []
+    },
+    {
+      "kind": "news",
+      "category": "编程",
+      "author": "Felix Rieseberg",
+      "handle": "@felixrieseberg",
+      "url": "https://x.com/felixrieseberg/status/2119925633564463609",
+      "posted": "2026-11-09",
+      "metrics": "120 万查看",
+      "textZh": "Anthropic 的 Felix Rieseberg 测试 Fable 5.2 只靠一次性提示、中途不给人工反馈能做到什么程度：做出一整个游戏，模型、音效、贴图全部从零生成。花了约 8 小时，按 API 价格约 550 美元（输出约 270 万 token、输入 4.45 亿 token，大量走缓存）。游戏放在 claude.ai 的 artifact 页面上可以直接玩。",
+      "video": "https://x.com/felixrieseberg/status/2119925633564463609"
+    },
+    {
+      "kind": "news",
+      "category": "视频",
+      "author": "数字生命卡兹克",
+      "handle": "@Khazix0918",
+      "url": "https://x.com/Khazix0918/status/2119902325460590834",
+      "posted": "2026-11-09",
+      "metrics": "6.8 万查看",
+      "textZh": "卡兹克用 Fable 5.2 给即将四周年的 ChatGPT 做了一支庆生视频，觉得节奏和动效进步很大。评论里他说没有用任何 Skill，“就一句 Prompt”，但没公开这句提示词。可作为“大模型直接写代码出动画视频”能力的参考样例。",
+      "video": "https://x.com/Khazix0918/status/2119902325460590834"
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "author": "歸藏",
+      "handle": "@op7418",
+      "url": "https://x.com/op7418/status/2120085300185833878",
+      "posted": "2026-11-10",
+      "metrics": "2.9 万查看",
+      "textZh": "歸藏只让 Fable 5.2“做一个体现你能力的项目”，没给具体要求，它做出一个水墨网页：打一个字，就在鼠标位置生成对应的水墨形象；墨是实时流体模拟，拖动鼠标有手感，还配了音效和音乐，画里的物品和天气会动态变化、相互影响。",
+      "video": "https://x.com/op7418/status/2120085300185833878"
+    },
+    {
+      "kind": "opinion",
+      "category": "编程",
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2120064894376558646",
+      "posted": "2026-11-10",
+      "metrics": "3.5 万查看",
+      "textZh": "宝玉转译了 Reddit 上一篇彭博社“AI 编程面试”经历：给一个很大的 Django 代码库，前 30 分钟是行为面试，只剩 30 分钟写代码；允许用 AI 但边界说不清，作者用 AI 一个功能一个功能推进、过了几个测试，仍被拒；想一句提示词让 AI 一次搞定也会被拒。宝玉的评价：不考 LeetCode 了，改考 AI Coding，并不更容易，反而更玄学。对找实习/校招的人的启示：要练的是快速读懂陌生代码库、边用 AI 边和面试官沟通。"
+    },
+    {
+      "kind": "opinion",
+      "category": "编程",
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2119894229581508868",
+      "posted": "2026-11-09",
+      "metrics": "4.4 万查看",
+      "textZh": "宝玉的小建议：每次新模型发布，都是清理、精简旧提示词和项目的好时机（前提是以后一直用新模型）。他给的一句话提示词：“阅读整个项目，找出所有损坏、不一致、低效或不再需要的东西。修复你确信的部分，并将其余部分列出供我审查。”"
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "author": "a16z",
+      "handle": "@a16z",
+      "url": "https://x.com/a16z/status/2119845639110734193",
+      "posted": "2026-11-09",
+      "metrics": "13.8 万查看",
+      "textZh": "a16z 的图表：Roblox 上的 AI 游戏开发正在爆发——热门游戏里近 90 天新上线的占比越来越高，Roblox MCP（让 AI 工具直接操作 Roblox 开发环境的接口）日活猛涨，开发时间里用 AI 的比例上升，素材上传量大增。结论是：很多 AI 做的应用没人用，但在 Roblox 上，AI 做的游戏真有人玩。"
+    }
+  ]
+}
