@@ -1,0 +1,281 @@
+{
+ "type": "daily",
+ "date": "2026-11-12",
+ "headline": "Anthropic IPO 与 OpenAI 营收数据同日曝光；Google 推出专做“快速判断”的 Gemini Decision 1，Runway 开源能控制仓储机器人的世界动作模型。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "Google 发布 Gemini Decisions API：一次判断最多 1000 道是非/选择题，延迟 150–250 毫秒",
+     "source": "Google AI",
+     "published": "2026-11-12",
+     "readMinutes": 8,
+     "summary": "Google 推出新模型 Gemini Decision 1（gemini-decision-1）和配套接口。它不逐字生成答案，而是一次前向计算直接给出各选项的概率和置信度，可处理文本、图片、音频、视频和 PDF（最多 256K token），单次最多 1000 个问题。价格每百万输入 token 0.10 美元，输出不计费。原文为英文。",
+     "takeaways": [
+      "适用场景是路由、策略检查、内容打分等“封闭式决策”，不是聊天或写作",
+      "150–250 ms 延迟 + 零输出计费，适合替代自己训练的小分类器",
+      "基准成绩和“校准误差最低”均为 Google 自测，暂无独立测评；国内能否直接调用未说明"
+     ],
+     "why": "做 Agent 时经常要“选哪个工具/要不要拦截”，这类接口是很实用的新积木；读原文能看到它适合与不适合的边界。",
+     "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+     "tags": [
+      "新模型",
+      "产品"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "如何阻止 AI Agent 陷入无限循环烧钱：OpenRouter 六模型实测的四层防护",
+     "source": "OpenRouter",
+     "published": "2026-11-12",
+     "readMinutes": 10,
+     "summary": "工具反复失败时，Agent 会带着越来越长的对话一直重试，成本逐轮上涨（实测输入从 131 涨到 3,262 token）。OpenRouter 在六个模型上测试：不开死循环检测时 18 次运行有 4 次跑满 40 步上限；开启后 18 次中 16 次在两次真实调用后结束。原文英文（AIHOT 有中文整理）。",
+     "takeaways": [
+      "四层防护：死循环检测、参数归一化的 loopKey、步数/成本上限、API key 额度上限",
+      "有的模型会微调参数绕过检测，需要归一化后再比对",
+      "额度上限由服务端执行，即使自己代码有 bug 也能封顶"
+     ],
+     "why": "你平时用 Claude 做 Agent，这套防护思路和配置可以直接搬进自己的代码，避免半夜空转烧钱。",
+     "url": "https://openrouter.ai/blog/tutorials/ai-agent-infinite-loop/",
+     "tags": [
+      "教程",
+      "数据"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "a16z：欢迎来到 B2A 经济——AI 智能体正在成为新的“用户”和分发渠道",
+     "source": "a16z",
+     "published": "2026-11-11",
+     "readMinutes": 12,
+     "summary": "文章认为智能体已占网络流量的多数、写了过半的新文章和大部分上线代码，并将从回答问题转向替人选产品、订服务、花钱。作者以 Shopify、Vercel、Stripe 等增长数据说明：把智能体当作一等客户的企业有机会获得新增长。原文英文，属投资机构的观点文章。",
+     "takeaways": [
+      "B2A（Business to Agent）：企业的客户从人变成替人办事的 AI",
+      "产品要提供机器可读的接口、文档和支付方式",
+      "论断带有投资机构立场，数据口径需自行核对"
+     ],
+     "why": "对想走 AI 产品经理 / FDE 路线的人，这是理解“为智能体做产品”的一个框架，可当面试谈资，但别当结论。",
+     "url": "https://www.a16z.news/p/welcome-to-the-b2a-economy",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Runway 开源 27B 世界动作模型 Praxis-1：同时预测视频和动作，Apache 2.0",
+     "source": "Runway",
+     "published": "2026-11-12",
+     "readMinutes": 8,
+     "summary": "Praxis-1 是 270 亿参数的混合专家扩散 Transformer，同时预测视频和机器人动作；在 NVIDIA RoboLab-120 榜单 1,200 回合中成功率 46.2%，高于 FLUX 3 Action（42.9%）、Cosmos3 Nano（36.8%）、π0.5（28.0%）。发布伙伴已在人形机器人、六轴机械臂和双臂仓储机器人上运行。原文英文。",
+     "takeaways": [
+      "权重开放且许可宽松（Apache 2.0），可商用、可改",
+      "榜单成绩来自 Runway 引用，暂无独立复测；46.2% 说明离可靠落地仍有距离",
+      "有仓储双臂机器人的实际部署案例"
+     ],
+     "why": "把 AI 与仓储机器人连起来的一个样本，可了解“视频预训练 → 机器人动作”这条路线，对机器人方向的考研选择有参考价值。",
+     "url": "https://runwayml.com/news/company-news/praxis-1-is-now-available",
+     "tags": [
+      "新模型",
+      "开源"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": false,
+     "title": "Anthropic IPO 拟募资最高 904 亿美元",
+     "source": "AIHOT 整理",
+     "summary": "Bloomberg 报道认购数倍超额，目标完全稀释估值约 1.4 万亿美元，代码 ANT，纳斯达克上市。",
+     "url": "https://aihot.news/items/r5kn7uexy6jx97qwxwvnpqrom"
+    },
+    {
+     "pick": false,
+     "title": "Anthropic 路演视频披露算力策略",
+     "source": "Simon Willison",
+     "summary": "联合创始人称 Claude 同时在 AWS Trainium、Google TPU、英伟达和 AMD GPU 上训练与推理。",
+     "url": "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/"
+    },
+    {
+     "pick": false,
+     "title": "OpenAI 第三季度营收 100 亿美元",
+     "source": "AIHOT 整理",
+     "summary": "环比增约 50%，调整后经营亏损 109 亿美元；报道称 Anthropic 营收 170 亿、效率更高。",
+     "url": "https://aihot.news/items/mzxxannvi5wge7wz0c0jfdyz5"
+    },
+    {
+     "pick": false,
+     "title": "Anthropic 发布 MAMUBench 多智能体协调基准",
+     "source": "AIHOT 整理",
+     "summary": "四类多用户环境中，单一智能体统一协调胜过各用户各自的智能体团队，三个环境已开放为基准。",
+     "url": "https://aihot.news/items/z9u4n1e7zfapxjozcn97quhdp"
+    },
+    {
+     "pick": false,
+     "title": "Claude Code 里怎么选 Fable 5.2、Opus 5.5 等模型",
+     "source": "AIHOT 整理",
+     "summary": "官方视频按任务难度和成本，给出 Fable 5.2、Opus 5.5、Sonnet 5.5、Haiku 5.5 的选用场景。",
+     "url": "https://aihot.news/items/ep5oqt7m4l7gn3tqieilznmuk"
+    },
+    {
+     "pick": false,
+     "title": "Mercor 获 7.5 亿美元 D 轮，估值 200 亿美元",
+     "source": "Latent Space",
+     "summary": "年化收入达 30 亿美元，称有 500 万专家为模型评测与训练提供数据。",
+     "url": "https://latent.space/p/ainews-mercor-750m-series-d-at-20b-valuation-3b-run-rate/"
+    },
+    {
+     "pick": false,
+     "title": "DeepMind 发布 AlphaGenome 2",
+     "source": "Google DeepMind",
+     "summary": "新一代 DNA 序列模型，预测基因变异对数百种人类细胞类型的影响。",
+     "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
+    },
+    {
+     "pick": false,
+     "title": "安全公司称 94.7% 的 Grok 构建应用可被任意访问",
+     "source": "AIHOT 整理",
+     "summary": "Claroc 称这些应用暴露患者数据和内部文件；xAI 另因生成不当图像面临集体诉讼。",
+     "url": "https://aihot.news/items/wlmgb3vb5ycgom7wq44felnin"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "仓储自动化的真实经济账：别只看 ROI 表格",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-11",
+     "readMinutes": 8,
+     "summary": "文章指出自动化常被简化成“投入—减人—算回本”，更好的问题是未来 5–10 年这套系统要花多少钱、带来哪些约束、能支持什么业务。引用 2026 年 MHI/德勤年度报告：56% 的供应链负责人在加大技术投入，52% 计划投入超过 100 万美元。原文英文。",
+     "takeaways": [
+      "不少收益（柔性、扩容、抗波动）不在节省人工的算式里",
+      "评估要看全生命周期成本与对业务的约束",
+      "投资意愿数据来自 MHI/德勤调查"
+     ],
+     "why": "物流工程专业的方案评估、技术经济分析都会用到这种思路，做项目或面试时能讲出“ROI 之外的账”。",
+     "url": "https://logisticsviewpoints.com/2026/11/11/beyond-the-roi-spreadsheet-the-real-economics-of-warehouse-automation/",
+     "tags": [
+      "观点",
+      "数据"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "AMR 互操作性如何从 MassRobotics 工作组变成国际标准 ISO 21423:2026",
+     "source": "Automated Warehouse",
+     "published": "2026-11-11",
+     "readMinutes": 6,
+     "summary": "A3 宣布发布 ISO 21423:2026，规定工业移动机器人、车队管理器等系统在共享环境中的通信要求。它建立在 MassRobotics 2020 年起制定的互操作标准之上，目标是让不同厂商的 AMR 能在同一场地协同。原文英文。",
+     "takeaways": [
+      "AMR（自主移动机器人）：无需轨道自主行走的搬运车",
+      "标准让多品牌机器人混用、调度系统对接更容易",
+      "文章为 MassRobotics 自述，立场偏正面"
+     ],
+     "why": "极智嘉、海康机器人这类多机调度公司的产品都会受影响，是了解行业“接口层”趋势的好材料，也是毕设选题线索。",
+     "url": "https://www.automatedwarehouseonline.com/how-amr-interoperability-went-from-massrobotics-working-group-global-standard/",
+     "tags": [
+      "报告"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "闲置挂车的经济学：物流利润是怎么在等待中流失的",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-11",
+     "readMinutes": 7,
+     "summary": "作者指出行业很擅长优化“在途货物”，但车辆到达与离场之间的交接仍是成本黑洞：司机等待、月台变更、场内找不到挂车，损失的是司机、挂车、月台和人手的有效产能，而不仅是滞留费。文中引用美国运输研究所（ATRI）的滞留研究。原文英文，偏美国场景。",
+     "takeaways": [
+      "效率衡量常忽略到达到离场之间的等待",
+      "问题出在场站（yard）与月台的决策衔接",
+      "可结合月台预约、场站管理系统理解"
+     ],
+     "why": "物流工程的月台/场站布局与调度课题，这是一个来自行业的真实切入点。",
+     "url": "https://logisticsviewpoints.com/2026/11/11/the-economics-of-an-idle-trailer-where-logistics-profits-disappear/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": false,
+     "title": "菜鸟升级爬升机器人：四面取货、双深位存储",
+     "source": "Robotics & Automation News",
+     "summary": "CeMAT Asia 展出；转弯更顺、效率提升 15%、存储密度提升 20%，并带仓库规划仿真工具。",
+     "url": "https://roboticsandautomationnews.com/2026/11/12/cainiao-introduces-upgraded-climbing-robot-with-four-side-retrieval-and-denser-storage/107042/"
+    },
+    {
+     "pick": false,
+     "title": "大福发布 2026 财年第三季度财报",
+     "source": "Daifuku",
+     "summary": "官网已发布 Q3 决算资料和股票回购、人事变动公告；摘要页无正文，未读到具体数字。",
+     "url": "https://www.daifuku.com/ir/library/results/"
+    },
+    {
+     "pick": false,
+     "title": "Gideon 的 TREY 叉车可自主装卸整车托盘",
+     "source": "Automated Warehouse",
+     "summary": "称可完成挂车内全部托盘装卸，已在北美上市；挂车装卸是最难自动化的环节之一。",
+     "url": "https://www.automatedwarehouseonline.com/trey-forklift-from-gideon-autonomously-loads-unloads-trailers/"
+    },
+    {
+     "pick": false,
+     "title": "Agility Robotics 完成合并，融资约 4.65 亿美元",
+     "source": "Robotics & Automation News",
+     "summary": "人形机器人 Digit 厂商将以 AGLT 在纳斯达克交易，富士康领投 2.01 亿美元 PIPE。",
+     "url": "https://roboticsandautomationnews.com/2026/11/11/agility-robotics-completes-merger-and-secures-465-million-in-capital-ahead-of-nasdaq-listing/107039/"
+    },
+    {
+     "pick": false,
+     "title": "北美机器人订单创 2022 年以来新高",
+     "source": "DC Velocity",
+     "summary": "仓储物流是推动机器人需求回升的核心领域，2026 年订单延续增长。",
+     "url": "https://www.dcvelocity.com/material-handling/robotics/material-handling-drives-automation-demand"
+    },
+    {
+     "pick": false,
+     "title": "Crown 收购锂电池系统厂商 Green Cubes",
+     "source": "DC Velocity",
+     "summary": "后者为叉车、AGV、AMR 等提供锂电池，用于扩充 Crown 的能源方案。",
+     "url": "https://www.dcvelocity.com/material-handling/internal-movement/lift-trucks-personnel-burden-carriers/crown-equipment-acquires-lithium-ion-power-system-maker"
+    },
+    {
+     "pick": false,
+     "title": "美国 10 月集装箱进口创纪录",
+     "source": "DC Velocity",
+     "summary": "Descartes 数据：2,674,808 TEU，自中国进口连续四月上升至 987,805 TEU。",
+     "url": "https://www.dcvelocity.com/supply-chain/other-services/global-logistics/u-s-container-imports-hit-record-volume-in-october"
+    },
+    {
+     "pick": false,
+     "title": "Google 研究：Agent“分心”让步数多 70%、token 多 77%",
+     "source": "Logistics Viewpoints",
+     "summary": "文章解读 Google 编码智能体研究对供应链 AI 的启示。",
+     "url": "https://logisticsviewpoints.com/2026/11/11/when-ai-agents-lose-focus-what-googles-research-means-for-supply-chain-operations/"
+    },
+    {
+     "pick": false,
+     "title": "Serve Robotics 开放配送机器人开发者接口",
+     "source": "The Robot Report",
+     "summary": "推出 AV Delivery Developer Portal 与沙盒，第三方可用 API 调度其人行道配送机器人。",
+     "url": "https://www.therobotreport.com/serve-robotics-opens-robot-delivery-network-for-others-to-build-on/"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "feeds/latest.json 全部信源抓取状态正常；AIHOT 五个接口均 ok。",
+  "OpenRouter、Runway 两条读自 AIHOT 转录的原文 excerpt，链接已指向原文。",
+  "大福财报页只有摘要，未读到具体数字；Nvidia CEO 传闻仅来自社交媒体转述，未收录。",
+  "未单独做 WebSearch 复核，以 AIHOT 与信源为准。"
+ ]
+}
