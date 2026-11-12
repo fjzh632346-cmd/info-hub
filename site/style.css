@@ -231,3 +231,8 @@ td.d.stale { color: var(--warn); }
   .hist li a { grid-template-columns: 6em 3.5em minmax(0, 1fr); gap: 8px; }
 }
 @media (prefers-reduced-motion: reduce) { .toast { transition: none; } }
+
+/* 断更提醒 */
+.stale { margin: 18px 0 0; padding: 10px 14px; border-radius: 6px; font-size: 14.5px; line-height: 1.7;
+  background: color-mix(in srgb, var(--warn) 10%, var(--paper)); border: 1px solid color-mix(in srgb, var(--warn) 45%, var(--line)); color: var(--ink); }
+.stale b { color: var(--warn); font-size: 16px; }

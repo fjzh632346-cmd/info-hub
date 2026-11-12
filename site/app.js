@@ -205,6 +205,16 @@
     return h;
   }
 
+  // 日报 / 周报断更提醒：超过 2 天 / 9 天没更新就在每个页面顶上提示
+  function staleBanner() {
+    var msgs = [], d = latest('dailies'), w = latest('weeklies');
+    var dd = d ? -daysUntil(d.date) : null, wd = w ? -daysUntil(w.date) : null;
+    if (dd !== null && dd >= 2) msgs.push('日报已 <b>' + dd + '</b> 天没更新（最后一期 ' + esc(cnDate(d.date, true)) + '）');
+    if (wd !== null && wd >= 9) msgs.push('周报已 <b>' + wd + '</b> 天没更新');
+    if (!msgs.length) return '';
+    return '<p class="stale" role="alert">⚠ ' + msgs.join('；') + '。自动生成可能出错了，可以把这句话发给 Claude 排查。</p>';
+  }
+
   // ---------- 页面：AI / 仓储（按天） ----------
   function viewZone(key, name) {
     var days = (D.dailies || []).slice(0, 14);
@@ -443,7 +453,7 @@
     var registry = byId;
     renderNav(cur);
     byId = Object.assign({}, byId, registry);
-    $main.innerHTML = html;
+    $main.innerHTML = staleBanner() + html;
     window.scrollTo(0, keepScroll ? y : 0);
   }
 
