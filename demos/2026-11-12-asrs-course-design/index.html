@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>小件电商仓 · 料箱立库方案比选（课程设计示例）</title>
+<style>
+:root {
+  color-scheme: light dark;
+  --ink-light: oklch(24% 0.02 250);
+  --ink-dark: oklch(93% 0.01 250);
+  --paper-light: oklch(98.5% 0.004 90);
+  --paper-dark: oklch(19% 0.015 250);
+  --panel-light: oklch(100% 0 0);
+  --panel-dark: oklch(24% 0.018 250);
+  --line-light: oklch(88% 0.01 250);
+  --line-dark: oklch(36% 0.02 250);
+  --muted-light: oklch(48% 0.02 250);
+  --muted-dark: oklch(74% 0.02 250);
+  --accent-light: oklch(55% 0.16 45);
+  --accent-dark: oklch(76% 0.14 55);
+  --blue-light: oklch(48% 0.12 245);
+  --blue-dark: oklch(75% 0.11 235);
+
+  --ink: light-dark(var(--ink-light), var(--ink-dark));
+  --paper: light-dark(var(--paper-light), var(--paper-dark));
+  --panel: light-dark(var(--panel-light), var(--panel-dark));
+  --line: light-dark(var(--line-light), var(--line-dark));
+  --muted: light-dark(var(--muted-light), var(--muted-dark));
+  --accent: light-dark(var(--accent-light), var(--accent-dark));
+  --blue: light-dark(var(--blue-light), var(--blue-dark));
+
+  accent-color: var(--accent);
+  font-family: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  line-height: 1.6;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); }
+h1, h2, h3 { line-height: 1.25; text-wrap: balance; margin: 0; }
+p { text-wrap: pretty; }
+a { color: var(--blue); }
+.wrap { max-inline-size: 1120px; margin-inline: auto; padding-inline: clamp(16px, 4vw, 40px); }
+
+/* 顶部 */
+.masthead { border-block-end: 1px solid var(--line); padding-block: 20px; }
+.masthead .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline; justify-content: space-between; }
+.brand { font-weight: 700; letter-spacing: .02em; }
+.brand span { color: var(--accent); }
+.masthead nav { display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: .92rem; }
+.masthead nav a { color: var(--muted); text-decoration: none; }
+.masthead nav a:hover { color: var(--ink); text-decoration: underline; }
+
+.hero { padding-block: clamp(32px, 6vw, 64px) 24px; display: grid; gap: 28px; grid-template-columns: minmax(0, 1fr); }
+@media (width >= 900px) { .hero { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); align-items: center; } }
+.eyebrow { font-size: .85rem; color: var(--accent); font-weight: 600; letter-spacing: .06em; margin: 0 0 10px; }
+.hero h1 { font-size: clamp(1.7rem, 4.2vw, 2.6rem); }
+.hero p.lead { color: var(--muted); font-size: 1.05rem; margin-block: 14px 0; }
+.disclaimer { font-size: .85rem; color: var(--muted); border-inline-start: 3px solid var(--accent); padding-inline-start: 10px; margin-block-start: 16px; }
+
+.plan { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 12px; }
+.plan svg { display: block; inline-size: 100%; block-size: auto; }
+.plan figcaption { font-size: .82rem; color: var(--muted); padding: 8px 4px 0; }
+.svg-zone { fill: light-dark(oklch(95% 0.01 250), oklch(29% 0.02 250)); stroke: var(--line); }
+.svg-rack { fill: light-dark(oklch(88% 0.03 245), oklch(38% 0.05 245)); }
+.svg-robot { fill: var(--accent); }
+.svg-flow { stroke: var(--accent); stroke-width: 2.5; fill: none; stroke-dasharray: 6 5; }
+.svg-label { fill: var(--ink); font-size: 13px; }
+.svg-small { fill: var(--muted); font-size: 11px; }
+.svg-station { fill: var(--blue); }
+
+/* 指标卡：卡片自身作为尺寸容器 */
+section { padding-block: 28px; }
+section > .wrap > h2 { font-size: 1.35rem; margin-block-end: 6px; }
+.section-note { color: var(--muted); margin-block: 0 18px; font-size: .95rem; }
+.kpis { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); }
+.card {
+  container-type: inline-size;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+  padding: 16px 18px; display: grid; gap: 4px;
+}
+.card h3 { font-size: .9rem; color: var(--muted); font-weight: 600; }
+.card p { margin: 0; }
+.card .num { font-size: 1.9rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.card .num small { font-size: .95rem; font-weight: 500; color: var(--muted); margin-inline-start: 4px; }
+.card footer { font-size: .82rem; color: var(--muted); }
+@container (width >= 300px) {
+  .card .num { font-size: 2.2rem; }
+}
+
+/* 比选表：可滚动区域 + 窄容器堆叠 */
+.table-wrapper {
+  overflow: auto; max-inline-size: 100%;
+  container-type: inline-size;
+  border: 1px solid var(--line); border-radius: 12px; background: var(--panel);
+}
+.table-wrapper:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+table { border-collapse: separate; border-spacing: 0; inline-size: 100%; font-variant-numeric: tabular-nums; }
+caption { text-align: start; padding: 14px 16px 6px; font-weight: 600; }
+th, td { padding: 10px 14px; border-block-end: 1px solid var(--line); text-align: start; vertical-align: middle; }
+thead th { font-size: .85rem; color: var(--muted); font-weight: 600; white-space: nowrap; background: var(--panel); }
+th:has(> button) { padding: 0; }
+th > button {
+  all: unset; box-sizing: border-box; display: flex; align-items: center; gap: 6px;
+  inline-size: 100%; min-block-size: 40px; padding: 10px 14px; cursor: pointer;
+  font: inherit; color: inherit;
+}
+th > button:focus-visible { outline: 3px solid var(--blue); outline-offset: -3px; }
+th > button svg { inline-size: 12px; block-size: 12px; opacity: .35; flex: none; }
+th[aria-sort] > button { color: var(--ink); }
+th[aria-sort] > button svg { opacity: 1; color: var(--accent); }
+th[aria-sort="descending"] > button svg { rotate: 180deg; }
+tbody th { font-weight: 600; }
+tbody tr:last-child > * { border-block-end: 0; }
+td.num { text-align: end; }
+.tag { display: inline-block; font-size: .78rem; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
+.tag.good { color: var(--accent); border-color: var(--accent); }
+.more { font: inherit; font-size: .88rem; padding: 6px 12px; min-block-size: 32px; border-radius: 8px; border: 1px solid var(--line); background: transparent; color: var(--blue); cursor: pointer; white-space: nowrap; }
+.more:hover { border-color: var(--blue); }
+.more:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+tbody tr { view-transition-name: match-element; }
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none; }
+}
+@container (width < 640px) {
+  table, thead, tbody, tr, th, td, caption { display: block; }
+  /* 窄屏：表头不再按列对齐，改成一排可点的排序按钮，排序功能不丢 */
+  thead tr { display: flex; flex-wrap: wrap; gap: 6px; padding: 4px 14px 12px; border-block-end: 1px solid var(--line); }
+  thead th { border: 0; padding: 0; }
+  thead th:not(:has(> button)) { display: none; }
+  th > button { min-block-size: 32px; padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; font-size: .82rem; inline-size: auto; }
+  th[aria-sort] > button { border-color: var(--accent); }
+  tbody tr { padding: 12px 14px; border-block-end: 1px solid var(--line); }
+  tbody tr:last-child { border-block-end: 0; }
+  tbody th, tbody td { border: 0; padding: 3px 0; display: flex; justify-content: space-between; gap: 12px; text-align: end; }
+  tbody th { font-size: 1.02rem; text-align: start; padding-block-end: 6px; }
+  tbody td::before { content: attr(data-label); color: var(--muted); font-size: .85rem; text-align: start; }
+  td.num { text-align: end; }
+  td.action { padding-block-start: 8px; }
+}
+.sort-help { font-size: .85rem; color: var(--muted); margin-block: 10px 0; }
+.visually-hidden { position: absolute; inline-size: 1px; block-size: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* 流程步骤 */
+.steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); counter-reset: step; }
+.steps li { counter-increment: step; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
+.steps li::before { content: "第 " counter(step) " 步"; display: block; font-size: .8rem; color: var(--accent); font-weight: 700; margin-block-end: 4px; }
+.steps h3 { font-size: 1rem; margin-block-end: 4px; }
+.steps p { margin: 0; color: var(--muted); font-size: .92rem; }
+
+/* 对话框 */
+dialog { border: 1px solid var(--line); border-radius: 14px; padding: 0; background: var(--panel); color: var(--ink); inline-size: min(560px, calc(100vw - 32px)); max-block-size: calc(100dvh - 48px); }
+dialog:modal { overscroll-behavior: contain; }
+dialog::backdrop { background: oklch(15% 0.02 250 / .55); overflow: hidden; overscroll-behavior: contain; }
+dialog .d-body { padding: 20px 22px 8px; }
+dialog h2 { font-size: 1.2rem; margin-block-end: 8px; }
+dialog dl { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 6px 14px; margin: 12px 0; font-size: .95rem; }
+dialog dt { color: var(--muted); }
+dialog dd { margin: 0; }
+dialog form { display: flex; justify-content: flex-end; padding: 12px 22px 18px; }
+dialog form button { font: inherit; padding: 8px 18px; border-radius: 8px; border: 0; background: var(--accent); color: light-dark(white, oklch(20% 0.02 250)); cursor: pointer; }
+dialog form button:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+
+.foot { border-block-start: 1px solid var(--line); margin-block-start: 24px; padding-block: 22px 40px; color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <div class="brand">物流系统设计 · 课程设计<span> / 第 3 组</span></div>
+    <nav aria-label="页面导航">
+      <a href="#demand">需求</a>
+      <a href="#compare">方案比选</a>
+      <a href="#process">设计流程</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <div>
+      <p class="eyebrow">课程设计展示</p>
+      <h1>一个小件电商仓，该选哪种料箱立库？</h1>
+      <p class="lead">按日均出库量、SKU 数和峰值系数，比较四向穿梭车、料箱机器人、网格式立库和人工货架四种方案的能力、投资和扩展性。</p>
+      <p class="disclaimer">仓库与所有数字均为课程设计虚构，用于演示方案比选的方法，不代表任何真实公司或产品报价。</p>
+    </div>
+    <figure class="plan">
+      <svg viewBox="0 0 560 300" role="img" aria-labelledby="plan-title">
+        <title id="plan-title">仓库平面示意：收货区、料箱存储区、拣选工作站、打包区和发货区依次相连</title>
+        <rect class="svg-zone" x="10" y="20" width="90" height="260" rx="8"/>
+        <text class="svg-label" x="55" y="46" text-anchor="middle">收货</text>
+        <text class="svg-small" x="55" y="64" text-anchor="middle">上架缓存</text>
+        <rect class="svg-zone" x="120" y="20" width="250" height="260" rx="8"/>
+        <text class="svg-label" x="245" y="46" text-anchor="middle">料箱存储区</text>
+        <g>
+          <rect class="svg-rack" x="140" y="62" width="210" height="22" rx="3"/>
+          <rect class="svg-rack" x="140" y="98" width="210" height="22" rx="3"/>
+          <rect class="svg-rack" x="140" y="134" width="210" height="22" rx="3"/>
+          <rect class="svg-rack" x="140" y="170" width="210" height="22" rx="3"/>
+          <rect class="svg-rack" x="140" y="206" width="210" height="22" rx="3"/>
+          <rect class="svg-robot" x="196" y="86" width="14" height="10" rx="2"/>
+          <rect class="svg-robot" x="282" y="158" width="14" height="10" rx="2"/>
+          <rect class="svg-robot" x="232" y="194" width="14" height="10" rx="2"/>
+        </g>
+        <text class="svg-small" x="245" y="256" text-anchor="middle">约 3.6 万个料箱位（虚构）</text>
+        <rect class="svg-zone" x="390" y="20" width="76" height="260" rx="8"/>
+        <text class="svg-label" x="428" y="46" text-anchor="middle">工作站</text>
+        <rect class="svg-station" x="408" y="70" width="40" height="26" rx="4"/>
+        <rect class="svg-station" x="408" y="120" width="40" height="26" rx="4"/>
+        <rect class="svg-station" x="408" y="170" width="40" height="26" rx="4"/>
+        <rect class="svg-station" x="408" y="220" width="40" height="26" rx="4"/>
+        <rect class="svg-zone" x="484" y="20" width="66" height="122" rx="8"/>
+        <text class="svg-label" x="517" y="46" text-anchor="middle">打包</text>
+        <rect class="svg-zone" x="484" y="158" width="66" height="122" rx="8"/>
+        <text class="svg-label" x="517" y="184" text-anchor="middle">发货</text>
+        <path class="svg-flow" d="M100 150 H140"/>
+        <path class="svg-flow" d="M350 145 H408"/>
+        <path class="svg-flow" d="M448 83 H484"/>
+        <path class="svg-flow" d="M517 142 V158"/>
+      </svg>
+      <figcaption>橙色虚线为主物流方向；橙色小块示意搬运机器人，蓝色为拣选工作站。</figcaption>
+    </figure>
+  </div>
+
+  <section id="demand" aria-labelledby="demand-h">
+    <div class="wrap">
+      <h2 id="demand-h">设计输入</h2>
+      <p class="section-note">课程给定的需求参数（虚构），所有方案都按同一组参数测算。</p>
+      <ul class="kpis">
+        <li><article class="card"><h3>日均出库订单行</h3><p class="num">12,000<small>行</small></p><footer>按 2 班、每班 8 小时</footer></article></li>
+        <li><article class="card"><h3>在库 SKU</h3><p class="num">18,000<small>个</small></p><footer>以服饰配件、日化小件为主</footer></article></li>
+        <li><article class="card"><h3>峰值系数</h3><p class="num">2.2<small>倍</small></p><footer>大促日相对平日</footer></article></li>
+        <li><article class="card"><h3>可用面积</h3><p class="num">4,800<small>㎡</small></p><footer>净高 9 米，不考虑扩建</footer></article></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="compare" aria-labelledby="compare-h">
+    <div class="wrap">
+      <h2 id="compare-h">四种方案比选</h2>
+      <p class="section-note">点表头可以按该列排序；点“看详情”查看测算假设和主要风险。</p>
+      <div class="table-wrapper" tabindex="0" role="region" aria-labelledby="cmp-caption">
+        <table id="cmp">
+          <caption id="cmp-caption">方案比选表（课程设计虚构数据）</caption>
+          <thead>
+            <tr>
+              <th scope="col" data-type="text"><button type="button" commandfor="cmp" command="--sort">方案<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M6 2 L10 8 H2 Z" fill="currentColor"/></svg></button></th>
+              <th scope="col" data-type="number"><button type="button" commandfor="cmp" command="--sort">储位（个）<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M6 2 L10 8 H2 Z" fill="currentColor"/></svg></button></th>
+              <th scope="col" data-type="number"><button type="button" commandfor="cmp" command="--sort">峰值能力（箱/时）<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M6 2 L10 8 H2 Z" fill="currentColor"/></svg></button></th>
+              <th scope="col" data-type="number"><button type="button" commandfor="cmp" command="--sort">投资（万元）<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M6 2 L10 8 H2 Z" fill="currentColor"/></svg></button></th>
+              <th scope="col" data-type="number"><button type="button" commandfor="cmp" command="--sort">静态回收期（年）<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M6 2 L10 8 H2 Z" fill="currentColor"/></svg></button></th>
+              <th scope="col">扩展性</th>
+              <th scope="col"><span class="visually-hidden">操作</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">A 四向穿梭车立库</th>
+              <td class="num" data-label="储位（个）" data-value="36000">36,000</td>
+              <td class="num" data-label="峰值能力（箱/时）" data-value="1500">1,500</td>
+              <td class="num" data-label="投资（万元）" data-value="1680">1,680</td>
+              <td class="num" data-label="静态回收期（年）" data-value="3.4">3.4</td>
+              <td data-label="扩展性"><span class="tag">中：加层难</span></td>
+              <td class="action" data-label="详情"><button type="button" class="more" command="show-modal" commandfor="d-a">看详情</button></td>
+            </tr>
+            <tr>
+              <th scope="row">B 料箱机器人（ACR）</th>
+              <td class="num" data-label="储位（个）" data-value="30000">30,000</td>
+              <td class="num" data-label="峰值能力（箱/时）" data-value="1300">1,300</td>
+              <td class="num" data-label="投资（万元）" data-value="1150">1,150</td>
+              <td class="num" data-label="静态回收期（年）" data-value="2.6">2.6</td>
+              <td data-label="扩展性"><span class="tag good">高：加车即可</span></td>
+              <td class="action" data-label="详情"><button type="button" class="more" command="show-modal" commandfor="d-b">看详情</button></td>
+            </tr>
+            <tr>
+              <th scope="row">C 网格式立库</th>
+              <td class="num" data-label="储位（个）" data-value="42000">42,000</td>
+              <td class="num" data-label="峰值能力（箱/时）" data-value="1700">1,700</td>
+              <td class="num" data-label="投资（万元）" data-value="1950">1,950</td>
+              <td class="num" data-label="静态回收期（年）" data-value="3.8">3.8</td>
+              <td data-label="扩展性"><span class="tag good">高：模块化</span></td>
+              <td class="action" data-label="详情"><button type="button" class="more" command="show-modal" commandfor="d-c">看详情</button></td>
+            </tr>
+            <tr>
+              <th scope="row">D 人工 + 轻型货架</th>
+              <td class="num" data-label="储位（个）" data-value="20000">20,000</td>
+              <td class="num" data-label="峰值能力（箱/时）" data-value="700">700</td>
+              <td class="num" data-label="投资（万元）" data-value="240">240</td>
+              <td class="num" data-label="静态回收期（年）" data-value="0">—</td>
+              <td data-label="扩展性"><span class="tag">低：靠加人</span></td>
+              <td class="action" data-label="详情"><button type="button" class="more" command="show-modal" commandfor="d-d">看详情</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="sort-help">结论（小组意见）：按峰值 2.2 倍测算，D 方案在大促日能力不足；B 方案投资最低、回收期最短、可以分期加车，作为推荐方案；C 方案储位最多，适合 SKU 继续增长的情形。</p>
+      <p class="visually-hidden" role="status" id="sort-status"></p>
+    </div>
+  </section>
+
+  <section id="process" aria-labelledby="process-h">
+    <div class="wrap">
+      <h2 id="process-h">设计流程</h2>
+      <p class="section-note">从需求到方案的四步，对应课程设计报告的四章。</p>
+      <ol class="steps">
+        <li><h3>EIQ 分析</h3><p>按订单（E）、品项（I）、数量（Q）拆分出库结构，找出 20% 的高频 SKU。</p></li>
+        <li><h3>能力测算</h3><p>峰值订单行 ÷ 每箱命中行数 = 需要的出入库箱次，再反推工作站和机器人数量。</p></li>
+        <li><h3>布局与仿真</h3><p>画出平面图和物流路线，用简单的排队模型检查工作站是否成为瓶颈。</p></li>
+        <li><h3>经济性比较</h3><p>投资、年运营成本、回收期之外，加上扩展性和停机风险一起打分。</p></li>
+      </ol>
+    </div>
+  </section>
+</main>
+
+<dialog id="d-a" aria-labelledby="d-a-h" closedby="any">
+  <div class="d-body">
+    <h2 id="d-a-h">A 四向穿梭车立库</h2>
+    <p>穿梭车在货架层内四个方向行驶，配提升机换层。</p>
+    <dl><dt>测算假设</dt><dd>8 层、24 台穿梭车、4 台提升机</dd><dt>瓶颈</dt><dd>提升机换层次数</dd><dt>主要风险</dt><dd>提升机故障会影响整列；后期加层需要停产改造</dd></dl>
+  </div>
+  <form method="dialog"><button value="close" autofocus>知道了</button></form>
+</dialog>
+<dialog id="d-b" aria-labelledby="d-b-h" closedby="any">
+  <div class="d-body">
+    <h2 id="d-b-h">B 料箱机器人（ACR）</h2>
+    <p>机器人沿货架攀升或伸叉取箱，一次可背多个料箱送到工作站。</p>
+    <dl><dt>测算假设</dt><dd>36 台机器人、8 个工作站，货架高 7 米</dd><dt>瓶颈</dt><dd>工作站拣选速度</dd><dt>主要风险</dt><dd>机器人数量多时的交通调度；需要平整地面</dd></dl>
+  </div>
+  <form method="dialog"><button value="close" autofocus>知道了</button></form>
+</dialog>
+<dialog id="d-c" aria-labelledby="d-c-h" closedby="any">
+  <div class="d-body">
+    <h2 id="d-c-h">C 网格式立库</h2>
+    <p>料箱垂直堆叠成网格，机器人在顶部轨道上挖取，存储密度最高。</p>
+    <dl><dt>测算假设</dt><dd>堆叠 16 层、40 台顶部机器人、10 个工作站</dd><dt>瓶颈</dt><dd>深层料箱的翻箱次数</dd><dt>主要风险</dt><dd>投资最高；高频 SKU 需要定期上浮整理</dd></dl>
+  </div>
+  <form method="dialog"><button value="close" autofocus>知道了</button></form>
+</dialog>
+<dialog id="d-d" aria-labelledby="d-d-h" closedby="any">
+  <div class="d-body">
+    <h2 id="d-d-h">D 人工 + 轻型货架</h2>
+    <p>人到货拣选，作为对照基准。</p>
+    <dl><dt>测算假设</dt><dd>平日 60 名拣货员，大促临时工翻倍</dd><dt>瓶颈</dt><dd>行走距离与招工</dd><dt>主要风险</dt><dd>大促日能力不足；差错率高于自动化方案</dd></dl>
+  </div>
+  <form method="dialog"><button value="close" autofocus>知道了</button></form>
+</dialog>
+
+<footer class="foot">
+  <div class="wrap">示例页面：用 Modern Web Guidance Skill 的指南（dialog、sortable-table、responsive-table、card、dark-mode）制作。单文件，不加载任何外部资源；全部数据为虚构。</div>
+</footer>
+
+<script>
+(() => {
+  const table = document.getElementById('cmp');
+  const tbody = table.tBodies[0];
+  const status = document.getElementById('sort-status');
+  const collator = new Intl.Collator('zh-CN', { numeric: true, sensitivity: 'base' });
+
+  function sortRows(rows, index, type, direction) {
+    const factor = direction === 'ascending' ? 1 : -1;
+    const value = (row) => row.cells[index].dataset.value ?? row.cells[index].textContent.trim();
+    return rows.sort((a, b) =>
+      factor * (type === 'number' ? value(a) - value(b) : collator.compare(value(a), value(b))));
+  }
+  function reorder(container, rows) {
+    const move = Object.hasOwn(Element.prototype, 'moveBefore')
+      ? (n) => container.moveBefore(n, null)
+      : (n) => container.append(n);
+    for (const r of rows) move(r);
+  }
+  function reorderWithTransition(rows) {
+    if (typeof table.startViewTransition === 'function') table.startViewTransition(() => reorder(tbody, rows));
+    else if (typeof document.startViewTransition === 'function') document.startViewTransition(() => reorder(tbody, rows));
+    else reorder(tbody, rows);
+  }
+  function sortBy(button) {
+    const th = button.closest('th');
+    const direction = th.getAttribute('aria-sort') === 'ascending' ? 'descending' : 'ascending';
+    for (const h of table.tHead.rows[0].cells) h.removeAttribute('aria-sort');
+    th.setAttribute('aria-sort', direction);
+    const rows = sortRows([...tbody.rows], th.cellIndex, th.dataset.type, direction);
+    reorderWithTransition(rows);
+    status.textContent = `已按${button.textContent.trim()}${direction === 'ascending' ? '升序' : '降序'}排列，共 ${rows.length} 行`;
+  }
+
+  const hasInvokers = 'commandForElement' in HTMLButtonElement.prototype;
+  if (hasInvokers) {
+    table.addEventListener('command', (e) => { if (e.command === '--sort') sortBy(e.source); });
+  } else {
+    // 不支持 Invoker Commands 时：同一个排序函数挂到点击上；详情按钮改用 showModal()
+    for (const b of table.querySelectorAll('th > button')) b.addEventListener('click', () => sortBy(b));
+    for (const b of document.querySelectorAll('button[command="show-modal"]')) {
+      b.addEventListener('click', () => document.getElementById(b.getAttribute('commandfor')).showModal());
+    }
+  }
+
+  // closedby 不支持时补上点击遮罩关闭（按指针位置判断）
+  if (!('closedBy' in HTMLDialogElement.prototype)) {
+    const outside = (e, d) => { const r = d.getBoundingClientRect(); return e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom; };
+    for (const d of document.querySelectorAll('dialog[closedby="any"]')) {
+      let pressedOutside = false;
+      d.addEventListener('pointerdown', (e) => { pressedOutside = outside(e, d); });
+      d.addEventListener('pointerup', (e) => { if (pressedOutside && outside(e, d)) d.close(); });
+    }
+  }
+})();
+</script>
+</body>
+</html>
