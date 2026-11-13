@@ -1,0 +1,271 @@
+{
+ "type": "daily",
+ "date": "2026-11-13",
+ "headline": "Google 发布更快更便宜的 Gemini 4 Hydrogen，黄仁勋辞任英伟达 CEO、Anthropic 官宣 IPO；仓储方面 GXO 拟引入最多 1000 台人形机器人。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "Google 发布 Gemini 4 Hydrogen：主打快和便宜的执行型模型",
+     "source": "Google DeepMind",
+     "published": "2026-11-12",
+     "readMinutes": 8,
+     "summary": "Hydrogen 是 Gemini 4 家族里偏“执行”的模型，官方称在 Artificial Analysis 智能指数上默认档 51 分，超过上一档 Argon（50），最高 xhigh 档 54 分。上下文 100 万 token，统一定价每百万 token 输入 1.5 美元、输出 7.5 美元。同时在 Antigravity 里推出 Orchestrator，让 Carbon 等大模型当协调者、Hydrogen 当干活和验证的子智能体，官方称 Terminal-Bench 4.0 上接近 Carbon 的成功率，少用 24% 额度、快 19%。原文英文。",
+     "takeaways": [
+      "第三方 Artificial Analysis 评测：比 Claude Sonnet 5.5（max）和 GPT-6.1 Sol（max）低 1 分，每任务成本约为 Sonnet 的 32%，但约为 GPT-6.1 Sol 的 2.5 倍",
+      "“大模型规划 + 小模型执行”的多模型协作正在变成产品功能，做 Agent 时可以参考这种分工",
+      "Hydrogen 面向 AI Studio、Gemini API、Gemini app 和 Search 全面开放；国内可用性文中未提，暂无独立测评"
+     ],
+     "why": "你平时用 Claude 写代码、做 Agent，这篇能帮你判断什么时候用便宜的执行模型、什么时候上大模型，成本差异有第三方数据可对照。",
+     "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+     "tags": [
+      "新模型"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "如何拦住陷入无限循环的 AI Agent：四层防护与六模型实测",
+     "source": "OpenRouter（经 AIHOT 收录）",
+     "published": "2026-11-12",
+     "readMinutes": 10,
+     "summary": "Agent 在工具反复失败时会用相同参数一遍遍重试，每轮都要重发整段对话，一夜空转可烧掉数千美元。文章给出四道防线：死循环检测（doomLoop）、参数归一化判重（loopKey）、步数与成本上限（stopWhen）、API key 额度上限，并在六个模型上实测。原文英文，此处依据 AIHOT 收录的原文内容。",
+     "takeaways": [
+      "开启死循环检测后，六个模型全部在第三次相同调用时被拦下；不开启时 18 次运行中有 4 次一路重试到 40 步上限",
+      "有的模型会微调参数绕过检测，需要用 loopKey 对参数做归一化",
+      "最后一道是 key 上的额度上限，即使自己的代码有 bug 也能封顶花费"
+     ],
+     "why": "你在做 Agent 项目，这些防护配置基本可以直接照搬到自己的代码里，避免被账单吓到，也是面试 AI 交付岗位时能讲的工程细节。",
+     "url": "https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde",
+     "tags": [
+      "教程"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Anthropic：把 Claude Opus 5.5 当作知识工作的日常主力模型",
+     "source": "Anthropic（经 AIHOT 收录）",
+     "published": "2026-11-12",
+     "readMinutes": 8,
+     "summary": "Opus 5.5 成为 Pro、Max、Ultra 和 Team 套餐默认模型。官方给出各档定位：Haiku 5.5 做快速窄任务，Sonnet 5.5 做需求明确的任务，Opus 5.5 做需要判断的研究、分析和成品文档，Fable 5.2 留给最重的长时间推理和多子智能体任务。",
+     "takeaways": [
+      "Sonnet 推到 Extra high 或 Max 档时，每任务成本会接近 Opus，此时官方建议直接换 Opus",
+      "效果不好先调高 effort（推理投入档位），再考虑换更强模型",
+      "更贵的模型会更快消耗套餐额度，Pro 套餐默认额度不含 Fable 5.2"
+     ],
+     "why": "你每天用 Claude，这篇直接告诉你不同模型怎么选、额度怎么省；注意这是厂商自己的建议，带有推广高价档位的倾向。",
+     "url": "https://aihot.news/items/t5pucqx6ac58z0ed1b0875ci0",
+     "tags": [
+      "教程"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "SemiAnalysis：黄仁勋辞任英伟达 CEO 背后的出口管制博弈",
+     "source": "SemiAnalysis（经 AIHOT 收录）",
+     "published": "2026-11-12",
+     "readMinutes": 15,
+     "summary": "英伟达董事会宣布黄仁勋即刻辞去总裁、CEO 和董事职务，CFO Colette Kress 出任临时 CEO。SemiAnalysis 认为这与大规模 GPU 走私和美国推进针对中国远程访问 GPU 的 RASA 法案有关，称其追踪数据显示超过 1.5GW 受限芯片流入中国。这是该机构的判断，不是官方结论；原文英文。",
+     "takeaways": [
+      "官方公告只确认了人事安排，原因由 SemiAnalysis 推断，需区分事实与观点",
+      "文章认为对华 AI 和芯片限制可能加速收紧，并分析了对供应链和开源生态的影响",
+      "中国实验室远程使用 GPU 与开源研究（如 DeepEP、DeepGEMM）之间的关系"
+     ],
+     "why": "算力政策会影响国内可用模型和云服务的价格与供给，了解这条线索有助于看懂 AI 行业走向；不需要为此焦虑。",
+     "url": "https://aihot.news/items/n73ab4h9gqlu6ucv69ynzxln4",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": false,
+     "title": "英伟达官方：黄仁勋辞任，Colette Kress 任临时 CEO",
+     "source": "AIHOT 整理",
+     "summary": "董事会即刻生效，Harvey Jones 任首位董事会主席，已启动内外部继任者遴选。",
+     "url": "https://aihot.news/items/qsbjbz754aodhcijq56puh6va"
+    },
+    {
+     "pick": false,
+     "title": "Anthropic 官宣启动 IPO，已向 SEC 提交注册声明",
+     "source": "AIHOT 整理",
+     "summary": "初步招股说明书可经高盛、摩根士丹利获取，注册生效前不得出售证券。",
+     "url": "https://aihot.news/items/k99zjo9hbtous9r6vmmz7pxyh"
+    },
+    {
+     "pick": false,
+     "title": "Anthropic 推出 Claude Meetings 测试版",
+     "source": "AIHOT 整理",
+     "summary": "Claude 以可见参会者身份加入视频会议，可答问、共建文档白板并生成纪要，先对 Team/Enterprise 开放。",
+     "url": "https://aihot.news/items/l36ne5q2gsdx6thyia7fi10kn"
+    },
+    {
+     "pick": false,
+     "title": "Edge0 开源 145B 端侧模型，称可在笔记本本地运行",
+     "source": "AIHOT 整理",
+     "summary": "官方称笔记本上 80+ tokens/s、峰值内存 28GB；数据为厂商自测，暂无独立测评。",
+     "url": "https://aihot.news/items/icmwp7qazk244f7fn6zlw8882"
+    },
+    {
+     "pick": false,
+     "title": "World Labs 开放世界模型 Atlas",
+     "source": "AIHOT 整理",
+     "summary": "可通过应用和 API 生成关键帧、视频片段或 3D Gaussian splats（一种 3D 场景表示）。",
+     "url": "https://aihot.news/items/lazmov9ciw8y5uqpuda9qcizm"
+    },
+    {
+     "pick": false,
+     "title": "OpenAI 用自动化红队训练提升 GPT-6 Astra 和 Sol 的安全鲁棒性",
+     "source": "AIHOT 整理",
+     "summary": "通过扩大攻击者模型算力并要求攻击多次复现（worst@n）生成对抗训练数据，用于网络、生物等高风险领域。",
+     "url": "https://aihot.news/items/yg97h3u5vthadivuv5po5f0aw"
+    },
+    {
+     "pick": false,
+     "title": "Gemini 4 Hydrogen 上线 Cursor，CursorBench 得分 54.3%",
+     "source": "AIHOT 整理",
+     "summary": "编程工具 Cursor 已接入新模型，成绩为 AIHOT 转述，暂无独立复核。",
+     "url": "https://aihot.news/items/mt013742fhedisepp2i31h1r4"
+    },
+    {
+     "pick": false,
+     "title": "Anthropic 发布 Claude Tag 创业公司使用指南",
+     "source": "AIHOT 整理",
+     "summary": "基于 8 家创业公司访谈，总结 Slack 中告警分诊、Thread 转 PR、公司知识库等五类用法。",
+     "url": "https://aihot.news/items/djhxmxr9hq0ekn8iwdqt5usih"
+    },
+    {
+     "pick": false,
+     "title": "Google 智能眼镜开放预购，12 月 10 日发货",
+     "source": "AIHOT 整理",
+     "summary": "开放预购，预计 12 月 10 日开始发货。",
+     "url": "https://aihot.news/items/hjhcsj440ym8b7ynttcx4433j"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "为什么仓储自动化的 ROI 可能在机器人开始工作之前就失败了",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-12",
+     "readMinutes": 7,
+     "summary": "文章指出设备额定产能不等于配送中心的实际产能，差距来自托盘质量、标签、数据准确度、软件集成、人工异常处理和下游工序能否接得住。用 XPO（荷兰自动化立体库前的托盘检验）、Staples、Del Papa Distributing 的例子说明“周边运营系统”决定投资回报。原文英文。",
+     "takeaways": [
+      "做自动化项目的商业论证，要把输入品质和异常处理成本算进去，而不是只看设备参数",
+      "XPO 例子：托盘拒收标准与设备实际要求不匹配，会引发换托盘、重装，吃掉人工",
+      "这些案例讲的是在补齐周边系统，不是自动化失败的证据"
+     ],
+     "why": "物流工程专业的课程设计和面试常被问“自动化为什么没达到预期”，这篇给了一个可直接引用的分析框架。",
+     "url": "https://logisticsviewpoints.com/2026/11/12/why-warehouse-automation-roi-can-fail-before-the-robot-starts-working/",
+     "tags": [
+      "观点",
+      "案例"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Symbotic 新任 CTO Kuffner 访谈：仓储自动化的前景",
+     "source": "Automated Warehouse",
+     "published": "2026-11-12",
+     "readMinutes": 8,
+     "summary": "2026 年 6 月出任 Symbotic CTO 的 James Kuffner（曾任职谷歌、Toyota Research Institute）谈公司进展：目前网络每天处理超过 1000 万箱，业务拓展到医疗用品、饮料等新行业，并有海外需求。文中还提到近一个月 Symbotic 收购分拣系统商 cellumation、扩大与沃尔玛的商业协议。原文英文，访谈带有公司立场。",
+     "takeaways": [
+      "Symbotic 的组合：ASRS（自动存取系统）、自主穿梭车、包装码垛设备、AI 与自动叉车",
+      "Interact Analysis 称其为“美国最大的仓储自动化供应商”",
+      "技术人才路径：机器人/AI 研究者进入仓储自动化企业担任技术负责人"
+     ],
+     "why": "你关注北自科技、今天国际、大福这类公司，这篇能看到海外头部系统商怎么布局产品和行业，可对照写求职或面试的行业认知。",
+     "url": "https://www.automatedwarehouseonline.com/symbotic-cto-james-kuffner-sees-strong-prospects-for-warehouse-automation/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "回程正在变成一种物流产品：可循环包装的运营逻辑",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-12",
+     "readMinutes": 6,
+     "summary": "文章认为可循环托盘、周转箱不只是环保话题：预测、回收、清洗检验、再定位、在需要时有足够数量，每一步都是有成本和服务水平的运营义务。以 IFCO 与 Whole Foods Market 2022 年起合作并于 2026 年 11 月扩大为例。原文英文。",
+     "takeaways": [
+      "可循环包装的价值取决于能否以可用状态按时回来，而不是“设计成可重复使用”",
+      "逆向物流需要资产管理、预测和网络设计，是可做成服务的产品",
+      "这是评论文章，数据支撑有限"
+     ],
+     "why": "逆向物流和循环包装是物流工程里常见的课题方向，可作为选题或考研复试谈资的素材。",
+     "url": "https://logisticsviewpoints.com/2026/11/12/the-return-trip-is-becoming-a-logistics-product/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": false,
+     "title": "GXO 与 Apptronik 签意向书：4 年内最多部署 1000 台 Apollo 人形机器人",
+     "source": "DC Velocity",
+     "summary": "2027 年起先做试点，覆盖拣选、箱/料箱搬运、打包、分拣，以 RaaS（机器人即服务）模式、达到 KPI 才推进。",
+     "url": "https://www.dcvelocity.com/material-handling/robotics/gxo-could-deploy-1000-apptronik-humanoid-robots-over-four-years"
+    },
+    {
+     "pick": false,
+     "title": "菜鸟升级爬升机器人：四面取箱、双深位存储",
+     "source": "Robotics & Automation News",
+     "summary": "CeMAT Asia 展出，称效率提升 15%、存储密度提升 20%，并推出自助布局仿真工具。",
+     "url": "https://roboticsandautomationnews.com/2026/11/12/cainiao-introduces-upgraded-climbing-robot-with-four-side-retrieval-and-denser-storage/107042/"
+    },
+    {
+     "pick": false,
+     "title": "Runway 开放机器人世界动作模型 Praxis-1",
+     "source": "The Robot Report",
+     "summary": "Apache 2.0 开放权重；官方称在仓库抓取任务上半小时示范即学会，据称居 NVIDIA RoboLab 榜首，为厂商说法。",
+     "url": "https://www.therobotreport.com/runways-praxis-1-world-action-model-for-robotics-is-now-available/"
+    },
+    {
+     "pick": false,
+     "title": "IFR：全球制造业机器人密度达每万人 152 台",
+     "source": "DC Velocity",
+     "summary": "韩国 1066、新加坡 873、德国 469；美国 323，居第 8。",
+     "url": "https://www.dcvelocity.com/material-handling/robotics/global-robot-density-reaches-152-units-per-10000-employees"
+    },
+    {
+     "pick": false,
+     "title": "Gartner：能源供给正成为供应链增长的主要约束",
+     "source": "MH&L",
+     "summary": "预测到 2029 年缺乏先进能源管理能力的制造商成本将高 20%–30%。",
+     "url": "https://www.mhlnews.com/global-supply-chain/news/55416970/access-to-energy-is-major-constraint-on-supply-chain-growth"
+    },
+    {
+     "pick": false,
+     "title": "ISG 报告：北美制造商重组区域生产与供应网络以增强韧性",
+     "source": "DC Velocity",
+     "summary": "受贸易政策和供应中断影响，企业推进 AI 部署和旧厂改造。",
+     "url": "https://www.dcvelocity.com/logistics/manufacturing/isg-manufacturers-in-north-american-are-strengthening-factory-resilience"
+    },
+    {
+     "pick": false,
+     "title": "埃斯顿与 RoboDK 达成战略合作",
+     "source": "Robotics & Automation News",
+     "summary": "中国最大工业机器人厂商埃斯顿接入仿真与离线编程软件，用于欧洲扩张。",
+     "url": "https://roboticsandautomationnews.com/2026/11/12/estun-robotics-and-robodk-announce-strategic-partnership-at-dfactory-barcelona-to-simplify-and-accelerate-the-adoption-of-industrial-robots-in-europe/107047/"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "抓取失败的信源：Epoch AI（HTTP 403）、Import AI（HTTP 403）、Symbotic IR（HTTP 403）、Interact Analysis（fetch failed）、Locus Robotics（HTTP 410）、国家统计局（超时）。",
+  "aihot.json 无 ok 字段，但各接口内容可读取。",
+  "本次未做额外网络搜索核实，也未打开全文，精读均依据 feeds 的 excerpt 与 AIHOT 收录内容；标注“经 AIHOT 收录”的条目链接为 AIHOT 页面。",
+  "仓储方向中文信源当日只有菜鸟一条，精读 3 条以英文行业评论为主。"
+ ]
+}
