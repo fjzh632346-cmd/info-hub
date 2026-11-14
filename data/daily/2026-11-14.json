@@ -1,0 +1,245 @@
+{
+ "type": "daily",
+ "date": "2026-11-14",
+ "headline": "NVIDIA 黄仁勋辞任 CEO、Google 推出便宜快速的 Gemini 4 Hydrogen；仓储侧，沃尔玛 60 亿美元与 DHL 的两条自动化路线值得对比读。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "AINews：黄仁勋辞任 NVIDIA CEO，Google 发布 Gemini 4 Hydrogen",
+     "source": "Latent Space (AINews)",
+     "published": "2026-11-13",
+     "readMinutes": 15,
+     "summary": "这期日报（原文英文）汇总 11 月 11–12 日 AI 圈：NVIDIA 宣布黄仁勋辞去 CEO、总裁和董事职务，CFO Colette Kress 任临时 CEO；同时 Google DeepMind 发布主打速度的 Gemini 4 Hydrogen，上下文 1M，价格每百万输入/输出 token 1.5/7.5 美元。",
+     "takeaways": [
+      "Hydrogen 在 Artificial Analysis 智能指数 xhigh 档 54 分，比 Claude Sonnet 5.5 和 GPT-6.1 Sol 各低 1 分；成本约为 Sonnet 的 32%",
+      "幻觉率（AA-Omniscience）8%，对比 Sonnet 43%、Sol 52%；但 Terminal-Bench 4.0 只有 54%，低于 Sonnet 的 64%",
+      "已在 Gemini API 全部层级（含 AI Studio 免费层）上线；国内可用性文中未提，暂无独立测评",
+      "另有中国开源模型是否在 Blackwell 芯片上训练的争议，规模仍有分歧"
+     ],
+     "why": "一篇读完就能掌握当天多条主线和各方数据，也方便你判断写代码、做 Agent 该选哪个模型；英文原文，可借机练科技英语阅读。",
+     "url": "https://www.latent.space/p/ainews-jensen-huang-resigns-after",
+     "tags": [
+      "新模型",
+      "数据"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "llama.cpp v1.0.0：本地 AI 生态有了稳定的底座",
+     "source": "Hugging Face 博客",
+     "published": "2026-11-13",
+     "readMinutes": 6,
+     "summary": "llama.cpp 是在手机、笔记本到服务器上本地跑大模型的 C/C++ 库（原文英文）。项目满 3.5 年后发布 v1.0.0 库版本，承诺此后 llama.cpp 和 ggml 的 API/ABI 不兼容改动都会通过主版本号升级体现。",
+     "takeaways": [
+      "稳定的接口意味着下游应用不用再担心小版本更新就改坏",
+      "官方定位：量化、优化后端、可移植，面向隐私和跨平台产品",
+      "想在本机跑模型、做离线 Agent 的人可以放心依赖它"
+     ],
+     "why": "你用 Claude 做 Agent 和网站，之后想在本地跑小模型做原型，这是最常用的底层工具，读一遍能弄清它的版本承诺。",
+     "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "XYBench：AI 能识别你问错了问题吗",
+     "source": "Hugging Face 博客 / Ai2",
+     "published": "2026-11-13",
+     "readMinutes": 8,
+     "summary": "Ai2 与 CMU、NVIDIA、约翰斯·霍普金斯合作发布含 8000+ 问题的基准（原文英文），测试助手面对“基于误解的提问”（XY 问题：想达成 X，却只问自己以为可行的做法 Y）如何回应。论文获 EMNLP 2026 最佳资源论文奖。",
+     "takeaways": [
+      "例子：问怎么让糖霜不下滑，真问题是蛋糕还没凉",
+      "大模型在识别隐含误解、回到真实目标上存在明显缺口",
+      "这是评测‘会不会追问需求’的思路，对做 Agent 的需求澄清有参考"
+     ],
+     "why": "做 AI 产品经理或交付工程师，核心就是澄清用户真正的需求，这篇给了一个可量化的视角。",
+     "url": "https://huggingface.co/blog/allenai/xybench",
+     "tags": [
+      "报告"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "title": "研究称 DeepSeek V4、Kimi K3 带有 Blackwell 芯片训练痕迹",
+     "source": "AIHOT 整理",
+     "summary": "非营利机构 Unemployment Labs 分析开源权重，称带有被禁出口的 Blackwell 训练指纹，规模仍有争议。",
+     "url": "https://aihot.news/items/q92ir58jcjtp3g9fn11jlb6ei"
+    },
+    {
+     "title": "Anthropic 预计 9000 亿美元算力支出，Dario 称购买“相对较少”",
+     "source": "AIHOT 整理",
+     "summary": "IPO 路演期间与 Jamie Dimon 对谈：截至 9 月底现金超 1300 亿美元，需求强劲时到现货市场补算力。",
+     "url": "https://aihot.news/items/dl9ehywczofu8vp5sj62s6j4n"
+    },
+    {
+     "title": "WSJ：黄仁勋去职更多与高风险商业担保有关",
+     "source": "AIHOT 整理",
+     "summary": "报道称 NVIDIA 向 AI 云厂商提供数十亿美元担保换营收分成，含对 OpenAI 俄亥俄数据中心的 2500 亿美元担保，临时 CEO 将其减半。",
+     "url": "https://aihot.news/items/s59xfwl0atld8vs7xq0pdx6hw"
+    },
+    {
+     "title": "Cursor 披露安全事件：恶意 Claude Code 扩展波及最多 5000 用户",
+     "source": "AIHOT 整理",
+     "summary": "攻击者利用 Fireworks 暴露的密钥读取 agent trace，不到 0.01% 客户 API 凭证暴露。",
+     "url": "https://aihot.news/items/e9o5h2c1o5f0xuh2bgqtc2w7k"
+    },
+    {
+     "title": "腾讯混元发布实时语音模型 Hy Realtime",
+     "source": "AIHOT 整理",
+     "summary": "新增工具调用与唱歌能力，已在元宝语音通话、腾讯客服上线，近期上线腾讯云 API。",
+     "url": "https://aihot.news/items/qp41q77z9ge5hsyrh9kra0c7k",
+     "tags": [
+      "新模型"
+     ]
+    },
+    {
+     "title": "ChatGPT Wallet 上线：智能体 dot 可经批准代为购买",
+     "source": "AIHOT 整理",
+     "summary": "先向美国 Pro 订阅用户推出，智能体不接触真实卡号，每笔需安全检查。",
+     "url": "https://aihot.news/items/vot1htumxjgnb0i88rbq3zsuq"
+    },
+    {
+     "title": "Claude Code 小技巧：Stop hook 用 exit code 2 触发自动重试",
+     "source": "AIHOT 整理",
+     "summary": "exit 2 会把 stderr 返回给 Claude 重试；exit 1 非阻塞，检查失败也会直接结束。",
+     "url": "https://aihot.news/items/p0jsxs2bnv6tmnmn1soi56759",
+     "tags": [
+      "教程"
+     ]
+    },
+    {
+     "title": "Sierra 发布个人智能体协议 Poppy v1.0",
+     "source": "AIHOT 整理",
+     "summary": "基于 MCP、OpenAPI 等标准，定义个人智能体如何与企业智能体、网站和 API 交互。",
+     "url": "https://aihot.news/items/z4wsrxr1xmhg3lq3y0ouq5rmr"
+    },
+    {
+     "title": "Claude Duet 邀请已发完美国等待名单",
+     "source": "AIHOT 整理",
+     "summary": "Pro、Max、Ultra 订阅者均已收到邀请，官方计划很快向美国以外开放。",
+     "url": "https://aihot.news/items/ajfypca37l5knyrnij49v5ofz"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "沃尔玛 60 亿美元自动化押注 vs DHL 的编排策略：两种打法",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-13",
+     "readMinutes": 8,
+     "summary": "原文英文。10 月 29 日沃尔玛与 Symbotic 扩大协议，为 25 个美国区域配送中心上自动化，初始承诺约 60 亿美元；11 天后 DHL Supply Chain 披露另一条路：扩大已有机器人规模，把 AI 编排（调度多种机器人和系统协同）放进真实仓库。",
+     "takeaways": [
+      "沃尔玛走“整合”：Symbotic 提供高密度存储、拆零拣选 BreakPack、店内 SymMicro，软硬件一家包",
+      "Symbotic 财年第三季度营收 7.21 亿美元，同比增 22%，56 套系统运行、77 套部署中；但这是承诺而非成果，下一个营收拐点预计在 2027 财年下半年",
+      "DHL 称已部署 9000+ 机器人、完成 15 亿次机器人拣选、用 Stretch 卸了 1000 万+ 箱，超 95% 仓库已用先进数字工具",
+      "对大多数不是沃尔玛或 DHL 的运营方，两种思路的差别比金额更重要"
+     ],
+     "why": "你关注仓储自动化，这篇把‘单一供应商整合’和‘多系统编排’两条路线摆在一起，写考研复试或面试的行业观点时很好用。",
+     "url": "https://logisticsviewpoints.com/2026/11/13/walmarts-6-billion-automation-bet-and-dhls-orchestration-strategy-two-playbooks-one-hard-question/",
+     "tags": [
+      "观点",
+      "案例"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "下一笔物流产能投资可能不是再盖一栋楼",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-13",
+     "readMinutes": 6,
+     "summary": "原文英文。作者提出：仓库“不够用”前，先问产能是不是在各环节之间被损耗——月台等晚到的拖车、调度不出下一个挂车、发运排不上计划。扩建与‘找回产能’是两种不同的投资。",
+     "takeaways": [
+      "案例：Red Gold 把 6 万+ 年度预约迁到在线承运商自助预约，预约提前期降 90%（从十几天到 1–2 天），箱量吞吐提升 18%（来自 Opendock 与 Loadsmart 的案例）",
+      "判断标准：看月台、场地、调度的协同，而非只看面积和库位",
+      "适用情形下，改善现有系统的回报更快、占用资本更少"
+     ],
+     "why": "这是物流工程的典型思路（瓶颈识别、月台与场地管理），可直接用在课程设计和面试案例里；文中案例来自软件厂商，注意其立场。",
+     "url": "https://logisticsviewpoints.com/2026/11/13/the-next-logistics-capacity-investment-may-not-be-another-building/",
+     "tags": [
+      "观点",
+      "案例"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "Rhoda AI 用视频数据训练通用机器人模型",
+     "source": "The Robot Report",
+     "published": "2026-11-13",
+     "readMinutes": 8,
+     "summary": "原文英文。Rhoda AI 在 18 个月隐身后拿到 4.5 亿美元 A 轮融资，客户覆盖汽车、制造、物流和电商，主推“直接视频动作”（DVA）模型：用互联网规模视频预训练，建立对运动和物理交互的先验。CEO 称目前真正能解决现实问题的自主操作机器人“实际上为零”。",
+     "takeaways": [
+      "问题：物理世界没有互联网规模的数据集，遥操作采集的演示不够稳健",
+      "对比主流 VLA（视觉-语言-动作）模型，Rhoda 称后者应对真实世界变化仍吃力",
+      "这些主要是公司自己的说法，缺少独立验证"
+     ],
+     "why": "想了解拣选、抓取类机器人下一代 AI 怎么做，这篇能帮你判断‘具身智能进仓库’的现实进度，对机械/机器人方向有参考。",
+     "url": "https://www.therobotreport.com/how-rhoda-ai-is-using-video-data-to-create-generalized-ai-models-for-robots/",
+     "tags": [
+      "案例"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "title": "GXO 与 Apptronik 签意向书：四年内最多部署 1000 台 Apollo 人形机器人",
+     "source": "Automated Warehouse",
+     "summary": "以部署成功及达到约定性能、安全和运营 KPI 为前提。",
+     "url": "https://www.automatedwarehouseonline.com/gxo-to-deploy-up-to-1000-apollo-humanoids-from-apptronik-in-the-next-four-years/"
+    },
+    {
+     "title": "Crown Equipment 收购锂电池系统厂商 Green Cubes",
+     "source": "MH&L",
+     "summary": "叉车巨头补强能源方案产品线。",
+     "url": "https://www.mhlnews.com/warehousing/news/55418121/crown-equipment-acquires-green-cubes-technology"
+    },
+    {
+     "title": "FlexLink 推出协作式码垛单元 RC20",
+     "source": "Automated Warehouse",
+     "summary": "搭配发那科 CRX-20iA/L，用末端护罩和接触感应垫替代传统围栏。",
+     "url": "https://www.automatedwarehouseonline.com/flexlink-designs-robotic-palletizer-to-balance-safety-and-throughput/"
+    },
+    {
+     "title": "自动化仓库为何更需要安全基础设施",
+     "source": "Robotics & Automation News",
+     "summary": "AMR、AGV 与人共处同一场地，需防撞与保护措施（泛述，信息量一般）。",
+     "url": "https://roboticsandautomationnews.com/2026/11/13/automated-warehouses-why-safety-infrastructure-matters-more-than-ever/107070/"
+    },
+    {
+     "title": "2027 年货运管理六大趋势：系统要主动发现问题",
+     "source": "Supply Chain 24/7",
+     "summary": "托运人不再满足于“知道货在哪”，希望系统提前预警并自动处理承运商跟进。",
+     "url": "https://www.supplychain247.com/article/freight-management-trends-2027"
+    },
+    {
+     "title": "沃尔玛将无人机配送站点计划增加一倍多",
+     "source": "Supply Chain Dive",
+     "summary": "仅据标题收录，未读到正文。",
+     "url": "https://www.supplychaindive.com/news/walmart-more-than-doubles-planned-drone-delivery-sites/874580/"
+    },
+    {
+     "title": "JD Sports 用技术加快补货",
+     "source": "Supply Chain Dive",
+     "summary": "仅据标题收录，未读到正文。",
+     "url": "https://www.supplychaindive.com/news/jd-sports-leverages-tech-for-faster-replenishment/874427/"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "feeds/latest.json 各信源状态均正常；aihot.json 的 ok 字段缺失，已按其条目文本使用。",
+  "AIHOT 条目多数无法直接打开原文，只放速览；Latent Space 日报为英文，Hydrogen 数据主要来自厂商及 Artificial Analysis 等转述，暂无独立测评。",
+  "未执行额外 WebSearch/WebFetch 核实；Supply Chain Dive 两条正文为空，仅按标题收录。今天为周六，未发现新增中文大厂旗舰模型。"
+ ]
+}
