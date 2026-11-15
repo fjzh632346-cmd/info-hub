@@ -1,0 +1,923 @@
+{
+  "type": "weekly",
+  "date": "2026-11-15",
+  "headline": "本周模型侧最实用的变化是 Google 发了便宜又不太胡编的 Gemini 4 Hydrogen，写代码和智能体仍是 Claude Fable 5.2、Opus 5.5 领先；黄仁勋辞任英伟达 CEO 是最大新闻。仓储侧值得读的是沃尔玛与 DHL 两条自动化路线的对比，以及“机器人开工前回报就可能输了”。",
+  "reading": [
+    {
+      "key": "ai",
+      "title": "AI",
+      "items": [
+        {
+          "title": "Anthropic 工程博客：常驻智能体（always-on agent）由哪五个部件组成",
+          "source": "Claude Blog",
+          "published": "2026-11-13",
+          "readMinutes": 14,
+          "summary": "“常驻智能体”指一直在后台待命、会被事件或定时器唤醒、能主动干活的智能体。文章把它拆成五个部件：事件收件箱（统一接收 webhook、定时任务，去重、防止两个任务抢同一件事）、定时器（智能体给自己设的提醒和周期任务）、记忆（只存查不到的东西，可选“做梦”整理）、权限（凭证代理、自动模式分类器拦危险操作、等用户批准的延迟调用）、发件箱（后台跑完怎么通知人，默认少打扰）。文中给出 Opus 5.5 在一个长程编码基准上每解决一个任务的成本比 Opus 5 低 78%。",
+          "takeaways": [
+            "做定时/后台 Agent 时，先设计“谁叫醒它、它记住什么、它能动什么、它怎么汇报”，再写提示词",
+            "事件先落库再由单个 worker 处理，可以避免重复触发和丢事件",
+            "密钥不进智能体的运行环境，用代理注入；高风险动作改成“暂停等确认”",
+            "通知量先从少开始，用评测去调"
+          ],
+          "why": "你在做 Agent，这篇几乎是一份可以照抄的架构清单；以后面试 AI 交付工程师（FDE）时，能讲清这五块比只会写提示词有说服力。",
+          "url": "https://claude.com/blog/building-always-on-agents",
+          "tags": [
+            "教程"
+          ],
+          "vendorClaim": false,
+          "pick": true
+        },
+        {
+          "title": "Cursor 公布安全事件调查：供应商泄露密钥，恶意 Claude Code 扩展最多波及 5000 人",
+          "source": "Cursor Blog",
+          "published": "2026-11-13",
+          "readMinutes": 6,
+          "summary": "攻击者先拿到 Cursor 发给供应商 Fireworks 的访问密钥，读到一批 2025 年的编程智能体运行记录，其中有些记录里有没打码的凭证；再顺着这些凭证进入 SaaS 工具，10 月 29 日往 Cursor 扩展市场的缓存里放了篡改过的 Claude Code 扩展 2.1.312 和 2.1.313，挂了约 11 小时。最多 5000 名在这段时间请求过这两个版本的用户可能装到恶意版；不到 0.01% 的客户 API 凭证外泄。开了隐私模式的提示词和代码不受影响。",
+          "takeaways": [
+            "在 Cursor 里于 10 月 29 日装过或更新到这两个版本的，要按官方 10 月 29 日的安全通知处理，只卸载可能不够",
+            "没收到通知说明你的数据不在泄露的记录里",
+            "教训：别把密钥贴进和 AI 的对话或客服工单，运行记录会被存下来"
+          ],
+          "why": "你天天用 Claude Code，这是离你最近的一次真实供应链攻击，6 分钟读完，顺便检查一下自己的扩展版本和密钥习惯。",
+          "url": "https://cursor.com/blog/security-incident-update",
+          "tags": [
+            "案例"
+          ],
+          "pick": true
+        },
+        {
+          "title": "Epoch AI：从华为和林格尔数据中心看中美算力差距",
+          "source": "Epoch AI（经 AIHOT 收录）",
+          "published": "2026-11-12",
+          "readMinutes": 12,
+          "summary": "Epoch 用卫星图、冷却设备数量和华为芯片销量估算：和林格尔四栋已建成楼约 286 兆瓦可用于 AI，跑着约 10.5 万颗昇腾 910C 和 8000 颗 910B，折合约 8.1 万张 H100（90% 区间 3.6–14.1 万）。它是国内最大的 AI 园区之一，但算力只有美国 xAI 孟菲斯 Colossus 2 的约 7%；美国数据中心每单位电力产出的 AI 算力约是中国的 2.5 倍。作者判断两年内中国的算力约束不太会缓解。",
+          "takeaways": [
+            "“缺的不是电，是好芯片”：同样的电，国产芯片能提供的算力少一截",
+            "用其中 10% 的算力一个月可训一个 DeepSeek-V4-Pro 规模的模型",
+            "估算方法本身值得学：用公开的卫星图和设备数量反推产能"
+          ],
+          "why": "方法比结论更值得看：用公开数据（卫星图、设备、销量）反推一座设施的产能，和物流里估算仓库吞吐是同一种思路，写报告、做调研都用得上。",
+          "url": "https://aihot.news/items/adkgofriq3tvp6qrawfc63yw4",
+          "tags": [
+            "报告",
+            "数据"
+          ],
+          "pick": true
+        },
+        {
+          "title": "Nathan Lambert：黄仁勋离开后，美国开源模型谁来撑",
+          "source": "Interconnects",
+          "published": "2026-11-14",
+          "readMinutes": 6,
+          "summary": "英伟达是美国开源模型的重要资助方，作者认为黄仁勋辞职后公司会先求稳，开源投入大概率缩水。同时开源模型并没有真正“白菜价”：算力被 Anthropic、OpenAI 买走，托管商拿不到卡，价格竞争不充分。他列出风险（州级监管、可能的网络攻击事件）和现状：西方最好的开源权重模型 Inkling 2 Small 仍落后于月之暗面的 Kimi K3.1 Pro。",
+          "takeaways": [
+            "开源模型的“便宜”取决于托管商能不能拿到算力",
+            "美国开源阵营目前没有能和 Kimi、DeepSeek 正面比的前沿玩家",
+            "监管和安全叙事比开源科研更容易上新闻"
+          ],
+          "why": "帮你理解为什么国内开源模型（Kimi、DeepSeek）在海外也被当作标杆，以及以后选模型时“开源=便宜”不一定成立。",
+          "url": "https://www.interconnects.ai/p/open-source-ai-without-jensen",
+          "tags": [
+            "观点"
+          ],
+          "pick": true
+        },
+        {
+          "title": "Google 发布 Gemini 4 Hydrogen：主打快和便宜，日常写代码和跑 Agent",
+          "source": "Google",
+          "summary": "每百万 token 1.5/7.5 美元、100 万上下文；Artificial Analysis 智能指数默认档 51、最高档 54。",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+          "tags": [
+            "新模型"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "title": "黄仁勋辞任英伟达 CEO，CFO Colette Kress 任临时 CEO",
+          "source": "Latent Space",
+          "summary": "董事会 11 月 11 日接受辞呈；同期日报还汇总了 Hydrogen 发布等多条主线。",
+          "url": "https://latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia/"
+        },
+        {
+          "title": "Anthropic 官宣 IPO，Amodei：算力要提前一两年买，是最深的两难",
+          "source": "The Decoder",
+          "summary": "买少影响收入、买多有财务风险；他称明年存在巨大不确定性。",
+          "url": "https://the-decoder.com/anthropic-ceo-amodei-admits-theres-a-huge-uncertainty-in-whats-going-to-happen-next-year-days-before-a-record-ipo/"
+        },
+        {
+          "title": "XYBench：AI 能不能识别你“问错了问题”",
+          "source": "Hugging Face / Ai2",
+          "summary": "8115 道题测“想做 X 却只问 Y”的情况；模型给出真正目标解法的比例只有 59–71%，均不如人类答案。",
+          "url": "https://huggingface.co/blog/allenai/xybench",
+          "tags": [
+            "数据"
+          ]
+        },
+        {
+          "title": "llama.cpp 发布 1.0：本地跑模型有了第一个稳定大版本",
+          "source": "Hugging Face",
+          "summary": "此后 API/ABI 不兼容改动都会通过主版本号体现，方便在其上做应用。",
+          "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
+        },
+        {
+          "title": "DeepSeek 开放应用 API：联网搜索、文件输入、读链接",
+          "source": "DeepSeek（经 AIHOT 收录）",
+          "summary": "把 App 端能力开放给开发者，开参数即可用，扩展调用另收费。",
+          "url": "https://aihot.news/items/nnbnoebf6mvo97usmwj5wziyl"
+        },
+        {
+          "title": "OpenAI 推出 ChatGPT Wallet：智能体经批准可代你付款",
+          "source": "OpenAI",
+          "summary": "先给美国 Pro 用户；智能体不接触真实卡号，每笔要过安全检查。",
+          "url": "https://openai.com/index/introducing-chatgpt-wallet"
+        },
+        {
+          "title": "阿里云百炼上架 Qwen4-Max-Preview（预览版）",
+          "source": "阿里云帮助中心",
+          "summary": "11 月 11 日上架，新一代旗舰多模态模型，目前只支持 Token Plan 订阅。",
+          "url": "https://help.aliyun.com/zh/model-studio/newly-released-models",
+          "tags": [
+            "新模型"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "wh",
+      "title": "仓储物流自动化",
+      "items": [
+        {
+          "title": "沃尔玛 60 亿美元押注 Symbotic，DHL 押“编排层”：两种自动化打法",
+          "source": "Logistics Viewpoints",
+          "published": "2026-11-13",
+          "readMinutes": 6,
+          "summary": "沃尔玛 10 月 29 日扩大与 Symbotic 的合作，覆盖 25 个区域配送中心、初期投入约 60 亿美元，走“一家供应商、一套系统”的路线；11 天后 DHL 供应链公布已部署 9000 多台机器人、完成 15 亿次机器人拣选，下一步用 AI 编排层把多品牌机器人、包装设备和 WMS 串起来。文章引用数据：北美约 63% 的仓库仍完全人工，高度自动化只有约 6%，系统集成常要 12–18 个月。",
+          "takeaways": [
+            "单一供应商的一体化方案适合货量大且稳定的自营网络；多品牌加编排层适合合同物流、客户多、合同短的 3PL",
+            "选型四问：货量稳不稳、谁掌握控制软件、上线 18 个月后的吞吐和故障恢复有没有证据、人在流程里放哪",
+            "沃尔玛的 60 亿美元是承诺不是结果，下一代 SymMicro 还在验证"
+          ],
+          "why": "这正是你关注的“集成商 vs 编排”路线之争，北自、今天国际做的是前者那类集成；面试或写论文时，用这四个问题分析一个项目很加分。",
+          "url": "https://logisticsviewpoints.com/2026/11/13/walmarts-6-billion-automation-bet-and-dhls-orchestration-strategy-two-playbooks-one-hard-question/",
+          "tags": [
+            "观点",
+            "案例"
+          ],
+          "pick": true
+        },
+        {
+          "title": "仓储自动化的回报，可能在机器人开工前就已经输了",
+          "source": "Logistics Viewpoints",
+          "published": "2026-11-12",
+          "readMinutes": 7,
+          "summary": "机器人的额定能力不等于仓库的实际产出：托盘质量、包装、主数据、系统集成、异常处理和下一道工序都会卡住它。例子：XPO 荷兰仓与 CHEP 重新校准来货托盘检验标准，被拒托盘和垫托盘用量降约 50%；一个饮料批发商把机器人码垛和缠膜机打通，避免“码垛每小时 100 托、缠膜只能 70 托，实际只有 70”的瓶颈。",
+          "takeaways": [
+            "把“额定产能与实际产出的差距”作为投资回报计算的起点",
+            "上线前就定好托盘、包装、标签标准，并测短少、破损、替换等“麻烦单”",
+            "给异常留预算：多常发生、恢复多久、会不会堵关键路径",
+            "有时改流程比加设备便宜"
+          ],
+          "why": "这是课本“瓶颈工序”在自动化项目里的真实版本，课程设计或实习做方案时可以直接套用它的检查清单。",
+          "url": "https://logisticsviewpoints.com/2026/11/12/why-warehouse-automation-roi-can-fail-before-the-robot-starts-working/",
+          "tags": [
+            "观点"
+          ],
+          "pick": true
+        },
+        {
+          "title": "Symbotic CTO Kuffner 长访谈：每天搬 1000 万箱，六个九的可靠性还不够",
+          "source": "Automated Warehouse",
+          "published": "2026-11-12",
+          "readMinutes": 10,
+          "summary": "Symbotic 累计搬运超过 20 亿箱，现在每天超过 1000 万箱，大型站点有 1000–1600 台机器人在搬箱。Kuffner 谈到：部分部件可靠性超过“六个九”（百万次不到一次故障），但在这个量级下仍可能不够；总部有远程操作员帮机器人处理疑难情况，这些记录再拿去训练自动行为；用数字孪生做回归测试和生成罕见故障数据；他认为人形机器人做单一任务是“过度设计”，仓库里轮式和腿式会并存。",
+          "takeaways": [
+            "大规模下可靠性要按“故障代价和恢复时间”定目标，而不是一个统一的数字",
+            "远程接管 + 记录训练是当前机器人落地的常见做法",
+            "数字孪生用来测回归、造罕见故障数据",
+            "模块化软件栈让一套系统扩展到冷链、单件拆零等新场景"
+          ],
+          "why": "一手的技术负责人视角，讲的都是仓储机器人工程里真正难的地方，适合你判断“仓储自动化”和“具身智能”哪个方向更落地。",
+          "url": "https://www.automatedwarehouseonline.com/symbotic-cto-james-kuffner-sees-strong-prospects-for-warehouse-automation/",
+          "tags": [
+            "观点"
+          ],
+          "pick": true
+        },
+        {
+          "title": "下一笔物流产能投资，也许不是再盖一栋仓库",
+          "source": "Logistics Viewpoints",
+          "published": "2026-11-13",
+          "readMinutes": 7,
+          "summary": "扩建前先看现有月台和人力有多少被排队、排班不准和交接浪费掉。案例：食品企业 Red Gold 把每年 6 万多次月台预约改为承运商线上自助预约，旺季预约提前期从两位数天数降到 1–2 天，箱量吞吐升 18%（同期还有其他改动）。文中示意算法：30 个月台、16 小时、每次占 2 小时，理论 240 车次/天，有效占用从 70% 提到 80% 就多出约 14%。",
+          "takeaways": [
+            "先量化“被困住的产能”，再和扩建按净现值比较",
+            "用小范围试点在真实旺季验证",
+            "月台快了，瓶颈可能转到拣选、暂存或出库"
+          ],
+          "why": "月台排程是物流工程课里的经典题，这篇给了可以照着算的例子，适合拿来做课程作业或面试时的案例。",
+          "url": "https://logisticsviewpoints.com/2026/11/13/the-next-logistics-capacity-investment-may-not-be-another-building/",
+          "tags": [
+            "观点",
+            "案例"
+          ],
+          "pick": true
+        },
+        {
+          "title": "GXO 与 Apptronik 签意向书：4 年内最多部署 1000 台人形机器人",
+          "source": "DC Velocity",
+          "summary": "2027 年起试点拣选、搬运、打包、分拣，以机器人即服务模式、达标才推进。",
+          "url": "https://www.dcvelocity.com/material-handling/robotics/gxo-could-deploy-1000-apptronik-humanoid-robots-over-four-years"
+        },
+        {
+          "title": "IFR：全球制造业机器人密度升至每万人 152 台",
+          "source": "DC Velocity",
+          "summary": "韩国 1066、新加坡 873、德国 469；美国 323，排第 8。",
+          "url": "https://www.dcvelocity.com/material-handling/robotics/global-robot-density-reaches-152-units-per-10000-employees",
+          "tags": [
+            "数据"
+          ]
+        },
+        {
+          "title": "Rhoda AI 拿到 4.5 亿美元，用互联网视频训练通用机器人模型",
+          "source": "The Robot Report",
+          "summary": "客户覆盖汽车、制造、物流和电商；CEO 称目前真正能解决现实问题的自主操作机器人“实际上为零”。",
+          "url": "https://www.therobotreport.com/how-rhoda-ai-is-using-video-data-to-create-generalized-ai-models-for-robots/"
+        },
+        {
+          "title": "ABB 推出面向服装物流的视觉物理 AI 方案",
+          "source": "Robotics & Automation News",
+          "summary": "把 AI Robot Trainer 集成进 Fashion Inductor 上件模块，面向系统集成商。",
+          "url": "https://roboticsandautomationnews.com/2026/11/14/abb-robotics-brings-industrial-grade-physical-ai-to-fashion-logistics/107087/",
+          "vendorClaim": true
+        },
+        {
+          "title": "Zipline 融资 15 亿美元，投后估值 215 亿美元",
+          "source": "Robotics & Automation News",
+          "summary": "用于扩建美国工厂、铺全国无人机配送网络。",
+          "url": "https://roboticsandautomationnews.com/2026/11/14/zipline-raises-an-unbelievable-1-5-billion-to-build-nationwide-drone-delivery-network/107104/"
+        },
+        {
+          "title": "Crown 收购锂电池系统厂商 Green Cubes",
+          "source": "DC Velocity",
+          "summary": "后者为叉车、AGV、AMR 供锂电池，补强 Crown 的能源方案。",
+          "url": "https://www.dcvelocity.com/material-handling/internal-movement/lift-trucks-personnel-burden-carriers/crown-equipment-acquires-lithium-ion-power-system-maker"
+        }
+      ]
+    }
+  ],
+  "models": {
+    "news": [
+      {
+        "title": "Google 发布 Gemini 4 Hydrogen：价格约为 Sonnet 5.5 的三分之一，幻觉率低",
+        "source": "Google / Artificial Analysis",
+        "published": "2026-11-12",
+        "summary": "官方定位是“日常干活”的执行模型，Carbon、Argon 负责深度推理。每百万 token 1.5/7.5 美元，100 万上下文。Artificial Analysis 实测：最高档智能指数 54（比 Sonnet 5.5、GPT-6.1 Sol 最高档低 1 分），每任务 3.16 美元，约为 Sonnet 5.5 的 32%；幻觉测试 8%（Sonnet 5.5 为 43%）；但终端类智能体任务偏弱（Terminal-Bench 4.0 54%，Sonnet 5.5 64%）。Gemini App 免费用户只能通过自动选模型用到它。",
+        "why": "对你：做网页、跑批量任务时一个便宜又不太胡编的选择；复杂调试仍用 Claude。",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+        "tags": [
+          "新模型"
+        ],
+        "vendorClaim": false
+      },
+      {
+        "title": "Arena 中文分榜（11-11）：Hydrogen 暂列第一，但只有 329 票",
+        "source": "LMArena 数据集",
+        "published": "2026-11-11",
+        "summary": "中文分榜 Gemini 4 Hydrogen 1631 分第 1（329 票，误差大），Carbon 1613、Argon 1605 第 2–3，Claude Fable 5.1 1582、Opus 5.5 1573；国产最高 Qwen3.8-Max 1543 第 13。文本总榜 Gemini 4 Carbon 1538 第 1，Hydrogen 1502 第 8。",
+        "why": "对你：中文写作 Gemini 4 系列整体领先，Hydrogen 的名次要等票数多了再看。",
+        "url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+        "tags": [
+          "数据"
+        ]
+      },
+      {
+        "title": "阿里 Qwen4-Max-Preview 上架百炼：只给 Token Plan，没公布跑分",
+        "source": "阿里云 / 21 世纪经济报道",
+        "published": "2026-11-11",
+        "summary": "新一代旗舰多模态预览版，最大输出 393216 token，是 Qwen3.8-Max 的三倍；未公布价格、参数和跑分，仅限 Token Plan 订阅，预览版 11 月 25 日后退役。",
+        "why": "对你：国内直连的新选项，但没有独立测评前先别换主力。",
+        "url": "https://help.aliyun.com/zh/model-studio/newly-released-models",
+        "tags": [
+          "新模型"
+        ]
+      },
+      {
+        "title": "百度发布 ERNIE 5.5 Flash Preview：八项基准两项第一（多为自测）",
+        "source": "21 世纪经济报道",
+        "published": "2026-11-11",
+        "summary": "AutomationBench 61.9、SpreadsheetBench V2 36.4 排第一，但 Terminal-Bench 4.0 46.5 低于 Opus 5.5 的 63.6；千帆上忙时每百万 token 输入 2 元、输出 8 元（目前五折）。百度称这是后训练中间版本。",
+        "why": "对你：便宜的国产办公/表格类模型可以试，数据主要是厂商自报。",
+        "url": "https://m.21jingji.com/article/20261112/herald/7c72efb4a0d93ac55f8c52b325bc6457.html",
+        "tags": [
+          "新模型"
+        ],
+        "vendorClaim": true
+      },
+      {
+        "title": "Epoch FrontierMath（11-15 数据包）：Fable 5.2 第 1–3 级 95.1% 仍居首",
+        "source": "Epoch AI",
+        "published": "2026-11-15",
+        "summary": "第 1–3 级：Claude Fable 5.2 95.1%、GPT-6.1 Sol 93.7%、Opus 5.5 91.2%、GPT-6.1 Terra 90.9%、Gemini 4 Carbon 90.5%；国产最高 Kimi K3.1 Pro 78.2%（11-06 评测），DeepSeek V4.1 Flash 1017 71.2%。",
+        "why": "对你：数学题（比如考研数学的难题讲解）用 Fable 或 Carbon，国产用 Kimi。",
+        "url": "https://epoch.ai/benchmarks/frontiermath",
+        "tags": [
+          "数据"
+        ]
+      }
+    ],
+    "table": [
+      {
+        "use": "写代码/做网页",
+        "picks": [
+          "Claude Fable 5.2",
+          "Claude Opus 5.5"
+        ],
+        "basis": "Arena WebDev 榜（2026-11-11）：Claude Fable 5.2（xHigh）1838 分第 1（1215 票，置信区间仍较宽），Claude Opus 5.5（Max）1815 第 2，Sonnet 5.5 1772 第 3，Gemini 4 Carbon 1768 第 4，GPT-6 Astra 1764 第 5；新出的 Gemini 4 Hydrogen 1704 第 10，国产最高 Kimi K3.1 Pro 1687 第 12。Artificial Analysis 智能指数（11-15 读取）Fable 5.2 最高档 65、Opus 5.5 59。Fable 订阅额度紧，日常大量写代码 Opus 5.5 更实际。核对：Anthropic 最新旗舰 Fable 5.2，Opus 最新 5.5。",
+        "asOf": "2026-11-11",
+        "released": [
+          "2026-11-09",
+          "2026-09-22"
+        ],
+        "link": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset"
+      },
+      {
+        "use": "长文写作",
+        "picks": [
+          "Gemini 4 Carbon",
+          "Claude Opus 5.5"
+        ],
+        "basis": "Arena 文本榜「创意写作」分榜（2026-11-11）：Gemini 4 Argon 1533、Gemini 4 Carbon 1533、Claude Opus 5.5 1532 并列在误差范围内；「长提问」分榜 Carbon 1549 第 1、Argon 1547、Opus 5.5 1528。Carbon 已向付费用户开放，且是 Google 的当前前沿型号，本周换成 Carbon；Fable 5.2 仍未进文本榜。这是投票榜，不是专门的长报告评测。",
+        "asOf": "2026-11-11",
+        "released": [
+          "2026-11-10",
+          "2026-09-22"
+        ],
+        "link": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset"
+      },
+      {
+        "use": "中文能力",
+        "picks": [
+          "Gemini 4 Carbon",
+          "Gemini 4 Argon"
+        ],
+        "basis": "Arena 中文分榜（2026-11-11）：Gemini 4 Hydrogen 1631 暂列第 1 但只有 329 票，Carbon 1613（426 票）第 2，Argon 1605（1676 票）第 3，Claude Fable 5.1 1582、Opus 5.5 1573；国产最高 Qwen3.8-Max 1543 第 13。SuperCLUE 11 月榜（11-05 发布）Gemini-4-Argon 73.62 第一，国内 Kimi-K3.1-Pro 61.46 第一。Hydrogen 票数太少，暂不推荐。",
+        "asOf": "2026-11-11",
+        "released": [
+          "2026-11-10",
+          "2026-10-13"
+        ],
+        "link": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset"
+      },
+      {
+        "use": "数学推理",
+        "picks": [
+          "Claude Fable 5.2",
+          "Gemini 4 Carbon"
+        ],
+        "basis": "Epoch AI 官方数据包（2026-11-15 下载）FrontierMath：Claude Fable 5.2（max）第 1–3 级 95.1%、第 4 级 100%（11-06 评测），均为第一；Gemini 4 Carbon（high）90.5% / 95.1%（11-02 评测），价格低得多。GPT-6.1 Sol 93.7% / 100% 也很强，但评测是 9-29 的、超过 30 天，只作参照。",
+        "asOf": "2026-11-06",
+        "released": [
+          "2026-11-09",
+          "2026-11-10"
+        ],
+        "link": "https://epoch.ai/benchmarks/frontiermath"
+      },
+      {
+        "use": "智能体",
+        "picks": [
+          "Claude Fable 5.2",
+          "Claude Opus 5.5"
+        ],
+        "basis": "Arena Agent 榜（2026-11-11）：Claude Fable 5.2（Max）30.4% 第 1，Opus 5.5（Max）19.5% 第 2，Gemini 4 Carbon 17.0% 第 3（每任务中位成本 1.46 美元，Opus 5.5 为 5.47、Fable 5.2 为 7.43），Sonnet 5.5 15.9%，GPT-6 Astra 14.5%。Artificial Analysis 智能指数（11-15 读取）Fable 5.2 65、Carbon 60、Opus 5.5 59。Hydrogen 尚未进 Arena Agent 榜（Google 自称 Agent Arena 第 5）。想省钱用 Carbon。",
+        "asOf": "2026-11-11",
+        "released": [
+          "2026-11-09",
+          "2026-09-22"
+        ],
+        "link": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset"
+      },
+      {
+        "use": "性价比",
+        "picks": [
+          "GPT-6.1 Sol",
+          "Gemini 4 Hydrogen"
+        ],
+        "basis": "Artificial Analysis 智能指数（2026-11-15 读取，页面不显示数据日期）：GPT-6.1 Sol（max）55 分、每任务 1.27 美元；新出的 Gemini 4 Hydrogen（xhigh）54 分、3.16 美元，（high）51 分、1.87 美元，幻觉测试 8% 明显低于同档（Sonnet 5.5 为 43%）；对比 Opus 5.5（max）59 分、10.04 美元。更便宜的批量任务可用 Muse Ember（36 分、0.14 美元）或 Claude Haiku 5.5（36 分、0.41 美元）。",
+        "asOf": "2026-11-15",
+        "released": [
+          "2026-09-29",
+          "2026-11-12"
+        ],
+        "link": "https://artificialanalysis.ai/leaderboards/models"
+      },
+      {
+        "use": "国内可直接使用",
+        "picks": [
+          "Kimi K3.1 Pro",
+          "DeepSeek V4.1 Flash 1017"
+        ],
+        "basis": "Kimi K3.1 Pro：网页、App、API 国内可用，阿里云百炼 11-05 上架；Artificial Analysis（11-15 读取）46 分国产第一（腾讯 Hy4 35、Qwen3.8 Max 34、DeepSeek V4.1 Flash 1017 33、GLM-5.3 32），SuperCLUE 11 月榜 61.46 国内第一，Epoch FrontierMath 第 1–3 级 78.2% 国产第一（11-06 评测）。DeepSeek V4.1 Flash 1017：每任务 0.60 美元，本周 API 还开放了联网搜索、读文件。新出的 Qwen4-Max-Preview（只给 Token Plan、无跑分）和 ERNIE 5.5 Flash Preview（多为自测）暂不推荐。",
+        "asOf": "2026-11-15",
+        "released": [
+          "2026-10-23",
+          "2026-10-17"
+        ],
+        "link": "https://artificialanalysis.ai/leaderboards/models"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "name": "Hallmark：反“AI 味”的网页设计 Skill（50 个主题 + 浏览器里自动查错）",
+      "category": "网页设计",
+      "score": 88,
+      "scoreWhy": "你常用 Claude 做网站，这个 Skill 直接解决“一看就是 AI 做的”问题，自带检查脚本；上手要装 Node，主题默认引用国外字体需要自己换。",
+      "what": "先从 50 个“材质主题”里按需求发三个让你挑，再按页面要完成的任务（下载、预约、购买、试用……）抽一套版式，最后用 sloplint 脚本在 8 种宽度下检查常见的 AI 套路：每个标题上的小字眉标、全大写字距标签、一行里只有一个词变色、首屏放不下主按钮、编造的数据和客户 logo 等。",
+      "scene": "个人作品集、课程设计展示页、项目落地页；也能对已有页面做 audit 只出报告。",
+      "howto": [
+        "npx skills add nutlope/hallmark -g 安装（Claude Code 里用 /hallmark 加需求）",
+        "让它发主题：theme.mjs deal 给三个，选一个再 draw 抽版式",
+        "写完跑 node scripts/sloplint.mjs 页面 --render（需要 puppeteer-core 和 Chrome；在 Linux 无沙箱环境要给 Chrome 加 --no-sandbox）",
+        "国内用：把主题里的 Google Fonts 换成系统字体，图片换成 CSS/SVG"
+      ],
+      "url": "https://github.com/nutlope/hallmark",
+      "author": "Together AI（nutlope）",
+      "stars": "55.1k",
+      "demo": "demos/2026-11-15-pick-route-lab/index.html"
+    },
+    {
+      "name": "jinba-consulting-pptx：咨询公司风格的 PPT Skill（65 种版式 + 规则检查）",
+      "category": "PPT",
+      "score": 82,
+      "scoreWhy": "课程汇报、实习答辩都要做 PPT，它的“结论写进标题、先定故事线再排版、机器查错”很适合你；文档是日文，默认字体偏日文，需要让 Claude 翻译着用。",
+      "what": "核心是一份幻灯片设计规约（结论写在标题、不用圆角、填色框不加边框、前提在左结论在右等），配 65 种 16:9 HTML 版式部件、一个按规约找违规的检查脚本，最后用 Chrome 导出 PDF，需要时转成可编辑 PPTX。",
+      "scene": "课程设计答辩、实习周报、方案汇报这类“要让人做判断”的 PPT。",
+      "howto": [
+        "git clone 到 ~/.claude/skills/consulting-pptx-skill，再 npm run setup",
+        "先让它写每页一句话的故事线，确认后再选部件组版",
+        "python3 scripts/check_deck.py 查违规，FAIL 清零",
+        "要 PPT 文件时运行 html_to_pptx.py（需 python-pptx）"
+      ],
+      "url": "https://github.com/carnot-tech/jinba-consulting-pptx-skill",
+      "author": "carnot-tech（Jinba 团队）",
+      "stars": "1.6k"
+    },
+    {
+      "name": "Lemo-Opuscar 2.0：99 种影片风格，让 Claude 用代码做整支短片（大更新）",
+      "category": "视频",
+      "score": 80,
+      "scoreWhy": "往期收过 1.x，本周 2.0 新增 33 种风格、做了中文画廊，值得重看；只适配 Claude，做一支片要较多额度。",
+      "what": "挑一种风格（字幕新闻、白板讲解、黑板粉笔、水墨、像素游戏等 15 类 99 种），说一句故事，Claude 用代码把画面、配音、音乐做成成片；每种风格都有示范片和 STYLE.md。",
+      "scene": "给课程项目、社团活动做 30–60 秒介绍片；把物流流程做成白板讲解视频。",
+      "howto": [
+        "claude plugin marketplace add lemomo-ai/lemo-opuscar",
+        "claude plugin install lemo-opuscar@lemolab",
+        "在中文画廊里挑风格",
+        "对 Claude 说“用白板讲解风格做一支 40 秒的片子，讲……”，推理强度设 high"
+      ],
+      "url": "https://github.com/lemomo-ai/lemo-opuscar",
+      "author": "Lemomo",
+      "stars": "16.4k",
+      "video": "https://lemomo-ai.github.io/lemo-opuscar/zh/"
+    },
+    {
+      "name": "Opus 5.5 做“带配音、能拖滑块”的交互讲解课件（网络效应）",
+      "category": "视频",
+      "score": 78,
+      "scoreWhy": "提示词很短、一个 HTML 就能跑，把“网络效应”换成“牛鞭效应”“安全库存”就能做课堂展示，复用性高。",
+      "what": "一份单文件 HTML 交互演示：讲解“用户数翻 5 倍、连接数约翻 27 倍”的网络效应，观众拖滑块改用户数，连线密度实时变化，并有与画面同步的旁白。",
+      "scene": "课程展示、组会讲概念、把公式变成可以拖动的演示。",
+      "howto": [
+        "复制提示词交给 Claude",
+        "把主题换成你的概念，并写清要哪个滑块、看什么变化",
+        "要求只用 HTML 和 JS、不用外部图片"
+      ],
+      "url": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/main/prompts/drake5112-661428.md",
+      "author": "@Drake5112",
+      "stars": "15.2k（合集）",
+      "video": "https://x.com/Drake5112/status/2108394129000661428",
+      "prompt": "Create an interactive HTML presentation explaining the concept of 'Network Effects' where connections grow exponentially as user count increases (e.g., 5x users = 27x connections). The interface should include a slider allowing the viewer to manually adjust the number of users and see the resulting change in connection density in real-time. Use only HTML and JavaScript without external image assets. Include voice narration synchronized with the visual changes.",
+      "promptZh": "做一个交互式 HTML 演示，讲解“网络效应”：用户数增加时连接数呈指数增长（例如用户 5 倍、连接 27 倍）。界面要有一个滑块，观众可以手动调整用户数，实时看到连接密度的变化。只用 HTML 和 JavaScript，不用外部图片素材。加入与画面变化同步的语音旁白。"
+    },
+    {
+      "name": "GPT Image 2.6 户外运动杂志封面通用提示词",
+      "category": "照片艺术",
+      "score": 76,
+      "scoreWhy": "结构清楚（概念/摄影/字体/杂志细节/版式），只换一个主题词就能出图，也是学写海报类提示词的好范本。",
+      "what": "给一个运动主题，生成满版运动照片 + 超大窄体英文标题、人物压住部分字母的竖版杂志封面，带期号、栏目标签等细节。",
+      "scene": "社团海报、运动会宣传、个人作品集封面。",
+      "howto": [
+        "复制提示词",
+        "末尾写上主题（如“攀岩”“越野跑”）",
+        "在 GPT Image 2.6 里出 4:5 竖图"
+      ],
+      "url": "https://x.com/Goodmanprotocol/status/2119083132691615772",
+      "author": "Saul Goodman（@Goodmanprotocol）",
+      "images": [
+        "https://pbs.twimg.com/media/HWh-25hbUAAfIUl?format=jpg&name=360x360",
+        "https://pbs.twimg.com/media/HWh-3nZakAAb8Zn?format=jpg&name=360x360"
+      ],
+      "prompt": "Create a premium, photorealistic editorial magazine poster inspired by high-end outdoor adventure photography, contemporary sports campaigns, and minimalist Swiss graphic design.\n\nCORE CONCEPT: Automatically identify the main subject, activity, environment, and visual characteristics from the provided subject or concept. Transform it into a striking editorial cover that combines dramatic full-frame photography with oversized, bold typography.\n\nPHOTOGRAPHY & COMPOSITION: Capture the subject in an extraordinary, visually dynamic moment. Use professional sports and lifestyle photography, realistic anatomy, precise details, natural textures, dramatic environmental elements, and authentic movement.\n\nThe main photograph should occupy the upper and middle sections of the poster. Use an immersive composition with the subject prominently positioned and the environment providing visual depth.\n\nTYPOGRAPHIC DESIGN:\n\n- Add an enormous, bold, uppercase headline featuring the main subject or activity.\n- Use condensed extra-bold sans-serif typography.\n- Position the headline across the lower-middle portion of the poster.\n- Allow the subject to overlap and partially obscure the typography, creating an integrated photographic-editorial effect.\n- Choose typography colors that contrast beautifully with the photograph.\n- Include subtle microtypography, thin horizontal divider lines, and editorial labels.\n\nEDITORIAL DETAILS: Include sophisticated magazine-style elements:\n\n- Small uppercase category label at the top.\n- Edition number: EDITION 01.\n- Small subtitle describing the activity or environment.\n- Minimalist footer branding: VISUAL STUDIES.\n- Short editorial tagline: THE ART OF [MAIN SUBJECT].\n- Subtle technical coordinates or location details where appropriate.\n\nVISUAL STYLE: Luxury outdoor adventure magazine, contemporary editorial art direction, premium sports photography, cinematic natural lighting, rich realistic colors, crisp details, sophisticated typography, professional graphic design, and carefully balanced negative space.\n\nLAYOUT: Vertical 4:5 poster composition. Clean rectangular layout with subtle rounded corners, carefully aligned typography, strong visual hierarchy, and professional magazine-cover aesthetics.\n\nIMPORTANT: The design must feel like a professionally art-directed magazine cover, not a generic AI-generated image. Ensure all typography is correctly spelled, legible, properly integrated, and visually balanced. Avoid unnecessary text, logos, watermarks, and decorative clutter.",
+      "promptZh": "制作一张高级、照片级真实的杂志封面海报，灵感来自高端户外探险摄影、当代运动品牌广告和极简的瑞士平面设计。\n\n核心概念：根据给出的主题或概念，自动识别主体、活动、环境和视觉特点，把它变成一张抢眼的杂志封面——满版的戏剧化照片 + 超大号粗体字。\n\n摄影与构图：抓拍主体最有动感的非凡瞬间。用专业运动/生活方式摄影的手法，人体结构真实、细节精准、质感自然，环境元素有张力，动作真实。\n主照片占海报上部和中部。构图要有沉浸感，主体位置突出，环境负责制造纵深。\n\n字体设计：\n- 加一个巨大的全大写粗体标题，内容是主体或活动名称。\n- 用窄体特粗无衬线字体。\n- 标题横跨海报中下部。\n- 让主体压住、挡住一部分标题，形成照片和排版融为一体的效果。\n- 字的颜色要和照片形成好看的对比。\n- 加一些精致的小号文字、细横分隔线和栏目标签。\n\n杂志细节：\n- 顶部一个小号全大写栏目标签。\n- 期号：EDITION 01。\n- 一行小副标题，描述活动或环境。\n- 底部极简署名：VISUAL STUDIES。\n- 一句简短标语：THE ART OF [主体]。\n- 合适的话加上细小的坐标或地点信息。\n\n视觉风格：高端户外探险杂志、当代编辑艺术指导、顶级运动摄影、电影感自然光、浓郁真实的色彩、锐利细节、讲究的字体、专业平面设计、精心平衡的留白。\n\n版式：竖版 4:5。干净的矩形版面，带轻微圆角，文字对齐严谨，视觉层级清楚，像专业杂志封面。\n\n重要：成品要像专业美术指导做出来的杂志封面，而不是一张普通的 AI 图。所有文字拼写正确、清晰可读、和画面融合、整体平衡。不要多余的文字、logo、水印和装饰杂物。\n（用法：在提示词后面写上你想要的主题，比如“攀岩”“冲浪”“越野跑”。）"
+    },
+    {
+      "name": "旧杂志手绘涂鸦风角色海报（中文提示词）",
+      "category": "照片艺术",
+      "score": 75,
+      "scoreWhy": "中文、分段写得很细，换一个【角色】就能用，适合你喜欢的风格化海报；对写实照片类需求帮助不大。",
+      "what": "把任意角色画成大眼圆脸、粗墨线、黑色马克笔填涂的样子，配旧纸、残墨、英文手写大字和多个小动作拼贴，像一本翻旧的独立同人志。",
+      "scene": "头像、社团周边、同人海报。",
+      "howto": [
+        "把开头的【角色】换成你的角色名",
+        "直接粘贴到支持中文的生图模型",
+        "想更干净就删掉“做旧痕迹”那一段"
+      ],
+      "url": "https://x.com/VoxcatAI/status/2120545838153834866",
+      "author": "VoxCat（@VoxcatAI）",
+      "images": [
+        "https://pbs.twimg.com/media/HW2hIovaUAE6fin.jpg",
+        "https://pbs.twimg.com/media/HW2hIoragAEGet4.jpg"
+      ],
+      "prompt": "【角色】，稚拙手绘涂鸦 × 粗糙马克笔 × 复古旧化印刷 × 独立杂志排版。\n\n角色保留最核心的发型轮廓、发色、瞳色、代表色、服装特征与身份配饰，转译为圆润、略微不规则的可爱造型。五官极简，夸张圆眼，小巧鼻嘴，表情自然呆萌，同时保持角色一眼可辨。\n\n使用黑色粗细不均的自由墨线勾勒主体，线条带明显手绘抖动与断续感。大面积粗糙黑色马克笔填涂，结合干笔刮擦、重叠笔触、白色露底与不均匀墨色，形成原始、直接的手作质感。\n\n暖灰白旧纸张作为底色，角色代表色被压缩为少量低饱和点缀，并加入褪色砖红、玫瑰棕、灰蓝或暗紫等旧印刷色。整体保持有限色盘。\n\n同一角色以多个不同可爱动作散布于整张海报中，例如托腮、睡觉、抱东西、喝饮料、发呆、惊讶、战斗、回头、趴着、举起角色专属道具等，动作根据角色性格与身份自动设计。\n\n画面中央或上方加入巨大手绘主题图形，可由角色武器、元素、宠物、阵营徽记、身份符号或代表性道具放大转译。角色小动作穿插在大型图形周围，形成丰富但松散的杂志拼贴结构。\n\n加入自由英文标题、角色名、作品名、短句、数字与手写批注，字形像粗马克笔、油性笔或复印手写字体，大小不一、略微倾斜、部分被主体遮挡。\n\n周围随机加入爱心、星星、蝴蝶结、箭头、花朵、闪电、猫爪、对话框与随意曲线等稚拙涂鸦，装饰密集但不覆盖人物面部。\n\n纸张边缘带折痕、磨损、残缺油墨、错位套色、复印颗粒、脏点、刮擦与旧杂志印刷痕迹，形成明显的复古复印机与地下独立刊物质感。\n\n9:16 竖版独立手绘海报，主体角色为第一视觉中心，大标题与主题图形为第二视觉中心，多动作小角色作为节奏点。\n\n右下角极小 voxCAT 签名，末尾一颗青金石蓝小圆点。",
+      "promptZh": "原文为中文，无需翻译。"
+    },
+    {
+      "name": "Claude Fable 5.2 把素材和歌剪成动画片头 / MV",
+      "category": "视频",
+      "score": 74,
+      "scoreWhy": "展示了“让 Claude 当剪辑师”的完整思路，能迁移到用自己的素材剪视频；但要有 Fable 5.2 额度和现成片段、音乐。",
+      "what": "作者用 MiniMax H3 生成动画片段、Suno v6 做歌，再把素材和歌交给 Claude Fable 5.2：卡点剪辑、动态文字、转场，还把角色画成像素风小人跟着跳舞。",
+      "scene": "活动回顾视频、社团招新短片、项目演示视频剪辑。",
+      "howto": [
+        "准备好片段和一首歌放进同一文件夹",
+        "把剪辑提示词交给 Claude Code",
+        "让它先列出选用的片段和卡点时间，确认后再渲染"
+      ],
+      "url": "https://x.com/aimikoda/status/2121362621274177726",
+      "author": "Kōda（@aimikoda）",
+      "video": "https://x.com/aimikoda/status/2121362621274177726",
+      "prompt": "Using these clips and the song, create a highly polished, professional anime opening / music video (MV) edit, perfectly synchronized with the music's beats and rhythm.\nIncorporate dynamic kinetic typography, creative transitions, stylish visual effects, speed ramps, match cuts and impactful beat-synced editing.\nDesign pixel-art versions of the characters and animate them dancing to the music. Get creative with different visual styles, motion graphics and playful sequences while maintaining a cohesive anime opening aesthetic.\nCarefully review all the footage and select only the best moments. Trim and rearrange the clips to match the song's energy, pacing and emotional progression. Avoid any frames with incorrect anatomy, awkward poses, visual glitches or animation errors.\nMake the final result feel like a professionally directed, high-budget anime opening with exceptional timing, seamless transitions, strong visual storytelling and meticulous attention to detail.",
+      "promptZh": "用这些片段和这首歌，剪一支精致、专业的动画片头 / MV，剪辑点要和音乐的鼓点、节奏完全对上。加入动态文字、有创意的转场、有风格的特效、变速、匹配剪辑和卡点剪辑。把角色设计成像素风版本，让它们跟着音乐跳舞。可以尝试不同的视觉风格和动态图形，但整体保持统一的动画片头风格。仔细看完所有素材，只挑最好的瞬间，按歌曲的能量和情绪起伏裁剪重排，避开人体结构错误、姿势别扭、画面故障的帧。最终效果要像专业导演、高预算的动画片头。",
+      "images": [
+        "https://pbs.twimg.com/amplify_video_thumb/2121362055395434496/img/serl3Gty-ybPTGUD.jpg"
+      ]
+    },
+    {
+      "name": "Q 版纯色块随手涂（上传照片改画风）",
+      "category": "图片编辑",
+      "score": 73,
+      "scoreWhy": "中文短提示词、上传一张图就能用，做头像和表情贴纸很快；效果偏可爱，用途窄一些。",
+      "what": "把角色图或自拍改成几乎没有轮廓线、由几块歪歪扭扭的纯色拼成的 Q 版画，只保留最好认的特征。",
+      "scene": "头像、群聊表情、社团吉祥物草图。",
+      "howto": [
+        "上传一张人物图",
+        "粘贴提示词",
+        "不满意就加一句“保留眼镜/发型”等关键特征"
+      ],
+      "url": "https://x.com/nanyuan0412/status/2119397494971126132",
+      "author": "南鸢 nuyoah（@nanyuan0412）",
+      "prompt": "参考原角色，绘制极简稚拙的日系萌系纯色块手绘插画。人物由少量大面积不规则色块拼接而成，色块边缘略微歪斜，带有随手涂抹的笔触感。几乎不使用轮廓线，头发、五官和衣服高度概括，仅保留主要辨识特征。有限色盘，无渐变、无复杂光影和细碎纹理。整体像用粗画笔几分钟随手完成的可爱涂鸦，纯白背景，正方形半身像。",
+      "promptZh": "（原文即中文。）",
+      "images": [
+        "https://pbs.twimg.com/media/HWmbBKdbAAAQ4QL?format=jpg&name=360x360",
+        "https://pbs.twimg.com/media/HWmbBKfaYAAL3Qn?format=jpg&name=360x360"
+      ]
+    },
+    {
+      "name": "对照 Anthropic 选模型指南体检你的 Claude Code 配置",
+      "category": "编程",
+      "score": 73,
+      "scoreWhy": "直接帮你省额度：查出读文件、跑测试的子代理是不是在白烧大模型；只出建议不改动，风险低。",
+      "what": "让 Claude 读官方选模型指南，再检查你的设置、子代理和 CLAUDE.md：哪些子代理用错模型、默认强度是否过高、项目里有没有让它自我验证的测试命令，并给出可直接粘贴的最小改法。",
+      "scene": "刚开始用 Opus 5.5 / Fable 5.2，额度消耗得很快时。",
+      "howto": [
+        "在项目目录打开 Claude Code",
+        "粘贴提示词",
+        "逐条看建议，自己决定改哪几条"
+      ],
+      "url": "https://x.com/Voxyz_ai/status/2119943123250078141",
+      "author": "Vox（@Voxyz_ai）",
+      "prompt": "Read this guide: https://claude.dev/blog/which-claude-model-should-you-build-with\n\nThen review my Claude Code setup against it: my user and project settings, the subagents in ~/.claude/agents and .claude/agents, and CLAUDE.md. Find three kinds of problems:\n1. Subagents on the wrong model. Subagents that only search files, read logs or run tests but set no model, so they run on my main model. If I haven't defined my own subagent named Explore with model: haiku, count that too. The other way around, subagents that edit code or make judgment calls should stay on the main model, so check whether CLAUDE_CODE_SUBAGENT_MODEL is pushing them down to a small model too (check only that one variable, in the env block of my settings and in my shell).\n2. A model or effort level that doesn't fit the work. Use the guide's table: Opus 5.5 at medium for everyday engineering and debugging, Sonnet 5.5 for well-scoped work like a bug fix or a feature built against a spec, and Fable 5.2 for major refactors, migrations and leading many subagents. Flag a default effort above high, and suggest testing the next model up at a lower effort first. Flag opusplan as my default too, because it puts code edits on Sonnet.\n3. No way for you to verify your own work in this project: CLAUDE.md doesn't say how to run the tests or the build, or there's no check to run at all. The guide's order is to make sure you can verify your work first, then raise effort one level, and only then move to the next model up.\n\nFor each issue, quote my setting and the matching line from the guide, explain what it costs and where it will go wrong, and suggest the smallest change, written as config I can paste.\n\nThen look at this project's code and recent commits and give me a table: which kinds of work here fit which model and which effort level.\n\nLast, tell me how to use /model and /usage to run one task from my backlog on two models and compare the cost.\n\nShow me the recommendations first. Don't change anything yet.",
+      "promptZh": "读一下这份选模型指南，然后对照它检查我的 Claude Code 配置（用户和项目设置、两个 agents 目录里的子代理、CLAUDE.md），找三类问题：1. 子代理用错模型（只搜文件、读日志、跑测试的却跑在主模型上；没自定义 model: haiku 的 Explore 子代理也算；反过来改代码的子代理不该被压到小模型）；2. 模型或强度和工作不匹配（日常开发 Opus 5.5 中等、范围明确的活 Sonnet 5.5、大重构和指挥多个子代理 Fable 5.2；默认强度高于 high、默认 opusplan 都要标出）；3. 项目里没有让你自我验证的办法。每条引用我的设置和指南原句，说明代价，给可直接粘贴的最小改法。再按项目代码给一张“哪类工作配哪个模型和强度”的表，最后教我用 /model 和 /usage 比较两个模型的花费。先给建议，什么都别改。"
+    },
+    {
+      "name": "Opus 5.5 做可拆解的 3D 涡扇发动机（Three.js）",
+      "category": "视频",
+      "score": 72,
+      "scoreWhy": "提示词短，结构清楚（逐级标注 + 爆炸视图），换成 AGV 驱动单元、堆垛机就能做机械方向的展示；Three.js 效果调优要多轮对话。",
+      "what": "浏览器里的交互 3D 涡扇发动机：风扇进气、压气机压缩约 40 倍、燃烧、涡轮冷却、双轴转速不同，每级都有标注，最后整机炸开成各级部件。",
+      "scene": "机械原理课展示、把设备结构讲给非专业的人听、作品集里的 3D 小项目。",
+      "howto": [
+        "复制提示词",
+        "把发动机换成你要讲的设备，列出每一级要标注的一句话",
+        "要求单个 HTML、用 Three.js"
+      ],
+      "url": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/main/prompts/0xspikez-483865.md",
+      "author": "@0xSpikez",
+      "stars": "15.2k（合集）",
+      "video": "https://skillry.dev/ai-videos/opus-5-5/0xspikez-483865",
+      "prompt": "an interactive 3D turbofan you can take apart in the browser, built with Three.js.\n\nsuck, squeeze, bang, blow, every stage labelled:\n> the fan pulls in a huge mass of air. most of it bypasses the core and makes most of the thrust\n> compressor stages squeeze the air about 40 times, heating it\n> fuel burns hotter than the turbine metal's melting point\n> the blades survive on cooling air and heat-resistant coatings\n> two shafts, one inside the other, spinning at different speeds\n\nthen it explodes into every stage.",
+      "promptZh": "用 Three.js 做一个能在浏览器里拆开的交互式 3D 涡扇发动机。吸气、压缩、燃烧、排气，每一级都要标注：风扇吸入大量空气，大部分绕过核心机，产生大部分推力；压气机把空气压缩约 40 倍并加热；燃料燃烧温度高于涡轮金属的熔点；叶片靠冷却空气和耐热涂层存活；两根轴一根套在另一根里，以不同转速旋转。最后整机炸开，展示每一级。"
+    },
+    {
+      "name": "角色三视图资产图（让人物在多张图、视频里保持一致）",
+      "category": "照片艺术",
+      "score": 72,
+      "scoreWhy": "做 AI 视频时人物前后长得不一样是最常见的问题，这段短提示词先出一张设定图就能缓解；本身不是成片。",
+      "what": "一张图里并排三张棚拍照片：正面全身、背面全身、头肩特写，同一个人、同一套衣服、中性灰背景。",
+      "scene": "做短片、海报系列前先给角色定型；后续图生视频时当参考图。",
+      "howto": [
+        "把提示词放在开头",
+        "后面接你的人物描述（年龄、发型、服装）",
+        "出图后把这张当参考图喂给视频模型"
+      ],
+      "url": "https://x.com/AIGCxxx/status/2119456599962275993",
+      "author": "就爱迟到（@AIGCxxx）",
+      "prompt": "Character turnaround reference sheet: three studio photographs side by side against a seamless neutral grey backdrop, even soft lighting, minimal shadows. Left: full body front view. Middle: full body back view. Right: large head and shoulders close up. Same person, face, and outfit across all three panels.",
+      "promptZh": "角色三视图参考图：三张棚拍照片并排，背景是无缝的中性灰，柔和均匀的光，阴影很少。左：正面全身；中：背面全身；右：大幅头肩特写。三格里是同一个人、同一张脸、同一套衣服。",
+      "images": [
+        "https://pbs.twimg.com/media/HWnSiMrbEAAzbRj?format=jpg&name=900x900",
+        "https://pbs.twimg.com/media/HWnSiMoboAESU4I?format=jpg&name=900x900"
+      ]
+    },
+    {
+      "name": "手绘草图一键变高保真 App 界面图",
+      "category": "图片编辑",
+      "score": 71,
+      "scoreWhy": "想做 AI 产品经理时，画个草图就能出像样的界面效果图，做需求文档和作品集很省事；生成的是图片不是可用代码。",
+      "what": "上传手绘线框草图，按 iOS / Material 风格把方块变按钮、线条变文字、涂鸦变占位图，放进手机样机里。",
+      "scene": "产品作业、比赛方案、给 Claude 写网页前先定视觉方向。",
+      "howto": [
+        "拍下或扫描手绘草图",
+        "上传到 Nano Banana / GPT Image",
+        "粘贴提示词，可以改成你想要的主色"
+      ],
+      "url": "https://github.com/ZeroLu/awesome-nanobanana-pro#52-ui-hand-drawn-sketch-to-high-fidelity-prototype",
+      "author": "ZeroLu 整理（来源：微信公众号文章）",
+      "stars": "10.4k（合集）",
+      "prompt": "Transform this rough wireframe sketch into a high-fidelity UI design mockups for a mobile app. Design System : Apply a modern, clean aesthetics similar to iOS 18 or Material Design 3 . Use rounded corners, soft drop shadows, and a vibrant primary color. Components : Intelligently interpret the sketch: turn scribbles into high-quality placeholder images , convert rough rectangles into proper buttons with gradients , and turn lines into realistic text blocks . Layout : Ensure perfect padding and consistent spacing between elements. Context : Place the design inside a realistic iPhone 16 frame mockups.",
+      "promptZh": "把这张粗糙的线框草图变成手机 App 的高保真界面效果图。设计系统：采用类似 iOS 18 或 Material Design 3 的现代简洁风格，圆角、柔和投影、一个鲜明的主色。组件：聪明地理解草图——涂鸦变成高质量占位图，粗略的方框变成带渐变的按钮，线条变成真实的文字块。布局：内边距合适、元素间距一致。场景：把设计放进逼真的 iPhone 16 样机里。",
+      "images": [
+        "https://github.com/user-attachments/assets/67690896-22f8-4abc-8e89-d4779233a7ad"
+      ]
+    },
+    {
+      "name": "GSAP 官方 Agent Skills：让 Claude 写对网页动画",
+      "category": "视频",
+      "score": 70,
+      "scoreWhy": "Opus 5.5 做的 HTML 视频很多都用 GSAP，装上能少踩时间轴和滚动动画的坑；本身不出成片，是做视频/网页动画的底层工具。",
+      "what": "GSAP 团队维护的 8 个 Skill：核心 API、时间轴、ScrollTrigger 滚动动画、插件、React/Vue 用法、性能，教智能体按官方写法写动画。",
+      "scene": "用 HTML 做讲解视频、做带滚动动画的作品集页面。",
+      "howto": [
+        "npx skills add https://github.com/greensock/gsap-skills",
+        "或在 Claude Code 里 /plugin marketplace add greensock/gsap-skills",
+        "提需求时说明“用 GSAP 时间轴”"
+      ],
+      "url": "https://github.com/greensock/gsap-skills",
+      "author": "GreenSock",
+      "stars": "18.5k"
+    },
+    {
+      "name": "电梯对镜自拍：写实“手机随手拍”提示词（GPT Image 2.6 / Seedream 5.5 对比）",
+      "category": "照片艺术",
+      "score": 68,
+      "scoreWhy": "核心技巧“反复强调不要 AI 感”对所有写实生图都有用；提示词针对一张具体参考图，需要自己改场景。",
+      "what": "同一提示词分别用 GPT Image 2.6 和 Seedream 5.5 出图对比；作者称 Seedream 5.5 每张约 0.01 美元。写法是把场景、人物、穿搭、构图、拍摄质感写全，最后明确禁止电影光、磨皮、HDR、调色。",
+      "scene": "需要“像真实手机照片”的写实图，比如产品使用场景图。",
+      "howto": [
+        "保留“Photography”和“CRITICAL”两段",
+        "把场景、人物、穿搭换成你的",
+        "两个模型各出一张对比"
+      ],
+      "url": "https://x.com/simonecanciello/status/2120189335194706023",
+      "author": "Simone Canciello（@simonecanciello）",
+      "images": [
+        "https://pbs.twimg.com/media/HWxs9f0WoAACu7U.jpg",
+        "https://pbs.twimg.com/media/HWxs9foXwAQzped.jpg"
+      ],
+      "prompt": "Create this image with maximum photographic accuracy.\nScene: A casual full-body mirror selfie inside a modern, dimly lit elevator. Dark navy geometric patterned wall panels on the left, warm brown wood-paneled walls on the right, black reflective elevator doors in the center, illuminated elevator buttons, horizontal silver handrails, and a light gray tiled floor.\nSubject: A young woman with straight, shoulder-length dark brown hair parted in the middle, natural facial features, and minimal makeup. She is standing slightly angled toward the mirror, holding a black iPhone with a transparent protective case high above her head with her right arm fully extended. Her phone is positioned in the upper-left corner of the composition. She looks slightly downward at the mirror with puffed cheeks and a playful, serious expression. Her left arm hangs naturally beside her body.\nOutfit: A fitted dark charcoal-gray short-sleeve athletic jersey with white side stripes, white sports logos and lettering across the chest, loose oversized gray pinstriped pajama-style pants, and simple black flip-flops. A thin black hair tie around her raised wrist.\nComposition: Vertical 9:16 smartphone photo, full-body framing from a slightly elevated mirror-selfie perspective. Subject positioned slightly left of center, raised arm creating a strong diagonal, legs relaxed and slightly apart. Preserve the exact pose, body proportions, camera angle, perspective, outfit, background layout, and framing of the reference.\nPhotography: Authentic unedited iPhone mirror selfie. Warm overhead elevator lighting mixed with cool ambient reflections, slightly underexposed shadows, realistic skin texture, subtle smartphone grain, natural reflections, imperfect sharpness, and ordinary indoor white balance.\nCRITICAL: The result must look like a real spontaneous smartphone snapshot, NOT an AI-generated photograph. No cinematic lighting, no professional photography, no beauty filters, no skin smoothing, no HDR, no artificial sharpness, no color grading, no stylization. Preserve the original reference's realistic colors, exposure, shadows, visual imperfections, and casual everyday aesthetic.",
+      "promptZh": "以最高的摄影真实度生成这张图。\n场景：在一部现代、光线昏暗的电梯里随手拍的全身对镜自拍。左侧是深海军蓝几何花纹墙板，右侧是暖棕色木饰墙面，中间是黑色反光电梯门，亮着的楼层按钮，水平银色扶手，浅灰色瓷砖地面。\n人物：一位年轻女子，中分齐肩深棕直发，五官自然，淡妆。她身体微微侧向镜子，右臂完全伸直，把装着透明手机壳的黑色 iPhone 高举过头，手机位于画面左上角。她略微低头看镜子，鼓着腮帮，表情俏皮又一本正经。左臂自然垂在身侧。\n穿搭：修身深炭灰短袖运动球衣，侧边白色条纹，胸前有白色运动标志和字样；宽松的灰色细条纹睡裤式长裤；简单的黑色人字拖。举起的手腕上戴着一根细黑发圈。\n构图：竖版 9:16 手机照片，从稍高的对镜自拍视角拍全身。人物略偏左，举起的手臂形成明显斜线，双腿放松微微分开。严格保留参考图的姿势、身体比例、机位、透视、服装、背景布局和取景。\n摄影：真实未修过的 iPhone 对镜自拍。电梯顶部暖光混合冷色环境反光，阴影略欠曝，真实皮肤质感，轻微手机噪点，自然反光，不完美的清晰度，普通室内白平衡。\n关键：结果必须像真实的随手抓拍，而不是 AI 生成的照片。不要电影感光线，不要专业摄影感，不要美颜滤镜，不要磨皮，不要 HDR，不要人工锐化，不要调色，不要风格化。保留参考图真实的颜色、曝光、阴影、瑕疵和日常随意感。"
+    }
+  ],
+  "future": [
+    {
+      "type": "实习",
+      "title": "字节跳动｜AI 产品实习生（企业服务方向）- 集团信息系统",
+      "org": "字节跳动",
+      "city": "北京",
+      "deadline": "未注明",
+      "summary": "规划企业内采购、差旅、职场服务的 AI Agent 和知识问答，把高频任务拆成 Agent 可接管的步骤，搭评测集跟踪任务完成率、人工介入率。要求熟悉 Claude Code、Cursor、扣子等工具，有 Agent 作品集加分；对供应链、采购这类实体业务有理解是加分项。日常实习，3 个月以上，地点北京或上海。",
+      "why": "和你最对口的一条：会用 Claude Code 做 Agent、又懂供应链业务，正是它写的加分项；面向全体在校生，大三可投。实习期至少 3 个月，要和课程、考研复习时间协调。11-04 发布。",
+      "url": "https://jobs.bytedance.com/campus/position/7704215600839854389/detail",
+      "tags": [
+        "大三可投",
+        "AI 产品"
+      ]
+    },
+    {
+      "type": "实习",
+      "title": "字节跳动｜履约配送商家工具产品实习生 - 抖音电商",
+      "org": "字节跳动",
+      "city": "北京",
+      "deadline": "未注明",
+      "summary": "设计抖音电商商家履约链路的工具产品（订单管理、库存管理等），做市场调研、商家走访、需求分析和产品需求设计。要求里写明管理科学、物流工程、运筹学、计算机等专业优先。日常实习，3 个月以上。",
+      "why": "岗位要求点名物流工程专业，是“物流 + 互联网产品”的直接入口，大三可投；如果走管理科学与工程考研，这段经历也能在复试里讲。9-10 发布，投递前确认仍在招。",
+      "url": "https://jobs.bytedance.com/campus/position/7683804391681640709/detail",
+      "tags": [
+        "大三可投",
+        "物流相关"
+      ]
+    }
+  ],
+  "kaoyanTable": [
+    {
+      "school": "北京交通大学",
+      "college": "交通运输学院",
+      "program": "物流工程与管理（125604）",
+      "degree": "专硕",
+      "exam": "199 管理类综合能力 + 204 英语二（不考数学；政治在复试考）",
+      "quota": "全日制拟招 42 人，无推免（2027 年招生目录）",
+      "line": "2026 年复试线 239 分（单科 39/78）",
+      "fit": "应届报不了：教育部 2027 年招生规定把整个工程管理专业学位（含 125604）列入“须本科毕业后 3 年以上工作经验”，北交简章同样写明。考试本身最友好（不考数学、英语二），只能作为“先工作 3 年再考”的备选。",
+      "url": "https://yzb.bjtu.edu.cn/sszs/abfc77ee4c1b44d9bc8c18dc38cbb16b.htm",
+      "checked": "2026-10-25"
+    },
+    {
+      "school": "北京交通大学",
+      "college": "经济管理学院",
+      "program": "工程管理（125601）· 04 智慧物流工程管理（2027 目录已不再列 125604）",
+      "degree": "专硕",
+      "exam": "199 管理类综合能力 + 204 英语二（政治在复试考）",
+      "quota": "全日制拟招 85 人（4 个方向合计，无推免）",
+      "line": "2026 年复试线 166 分（单科 39/78，经管学院 125601，全日制）",
+      "fit": "复试线只有 166 分，但这是“先工作再考”的分数：125601 同样要求 3 年以上工作经验，应届生报不了。只作为工作后的备选记下。",
+      "url": "https://yzb.bjtu.edu.cn/sszs/537f8eb85d004e9d81bb09eaf3f9e03f.htm",
+      "checked": "2026-10-25"
+    },
+    {
+      "school": "北京交通大学",
+      "college": "经济管理学院",
+      "program": "管理科学与工程（120100）",
+      "degree": "学硕",
+      "exam": "101 政治 + 201 英语一 + 303 数学三 + 804 管理科学与工程综合",
+      "quota": "全日制拟招 64 人，其中推免 48 人，统考约 16 人（4 个方向）",
+      "line": "2026 年复试线 370 分（单科 41/62）",
+      "fit": "有“物流管理与工程”方向，和你本科衔接最好，北京本地，是“留在物流方向又能应届考”的主要选项。难点：统考只剩约 16 个名额、要英语一和 370 分左右，对英语偏弱、排名靠后的你需要提前一年抓英语。",
+      "url": "https://yzb.bjtu.edu.cn/sszs/abfc77ee4c1b44d9bc8c18dc38cbb16b.htm",
+      "checked": "2026-10-25"
+    },
+    {
+      "school": "北京交通大学",
+      "college": "机械与电子控制工程学院",
+      "program": "机械工程（080200）",
+      "degree": "学硕",
+      "exam": "101 政治 + 201 英语一 + 301 数学一 + 866 机械原理",
+      "quota": "全日制拟招 88 人，其中推免 72 人，统考约 16 人",
+      "line": "2026 年复试线 360 分（单科 35/53）",
+      "fit": "有“机器人与智能制造技术”“工业与系统工程”方向，对口仓储自动化和机器人；但要考数学一和机械原理，物流本科要从头补专业课，统考名额也少。",
+      "url": "https://yzb.bjtu.edu.cn/sszs/abfc77ee4c1b44d9bc8c18dc38cbb16b.htm",
+      "checked": "2026-10-25"
+    },
+    {
+      "school": "北京交通大学",
+      "college": "机械与电子控制工程学院",
+      "program": "机械工程（专业学位，085501）",
+      "degree": "专硕",
+      "exam": "101 政治 + 204 英语二 + 302 数学二 + 866 机械原理",
+      "quota": "全日制拟招 51 人，其中推免 24 人，统考约 27 人",
+      "line": "2026 年复试线 394 分（单科 35/53）",
+      "fit": "考数学二、英语二，科目比学硕轻，但 2026 年线 394 分反而比学硕高 34 分，竞争非常激烈；以你的排名和英语，不建议主报。",
+      "url": "https://yzb.bjtu.edu.cn/sszs/abfc77ee4c1b44d9bc8c18dc38cbb16b.htm",
+      "checked": "2026-10-25"
+    },
+    {
+      "school": "北京理工大学",
+      "college": "管理学院",
+      "program": "物流工程与管理（125604）",
+      "degree": "专硕",
+      "exam": "2027 年目录没有这个专业",
+      "quota": "不招（管理学院专业学位只列工商管理、会计、非全日制工程管理）",
+      "line": "不适用（2026 年学校线中工程管理类为 166 分，单科 78/39，仅供参考）",
+      "fit": "北理工 2027 年不招物流工程与管理专硕，这个组合可以从候选里划掉；想去北理工，只能考管科或机械。",
+      "url": "https://grd.bit.edu.cn/zsgz/ssyjs/bslc_ss/3f58f00b45a24926bc5ba25f9682e0b3.htm",
+      "checked": "2026-10-25"
+    },
+    {
+      "school": "北京理工大学",
+      "college": "管理学院",
+      "program": "管理科学与工程（120100）",
+      "degree": "学硕",
+      "exam": "101 政治 + 201 英语一 + 303 数学三 + 858 运筹学",
+      "quota": "统考 13 人（6 个方向合计，2027 年招生目录）",
+      "line": "2026 年管理学院复试线 384 分（单科 45/68），招生计划 13 人；学校基本线 335 分",
+      "fit": "目标档院校，考数学三加运筹学，和物流本科学过的运筹学有衔接；但 2026 年学院线 384 分、比学校线高近 50 分，复试名单只有 19 人，英语一要过 45。对英语偏弱、排名靠后的你是冲刺档，需要数学和专业课都拿高分。",
+      "url": "https://som.bit.edu.cn/gbjxxm/gbyjsjxzx/zsxxyjs/1018904bd4bd468498320cb33176d1f0.htm",
+      "checked": "2026-10-25"
+    },
+    {
+      "school": "北京理工大学",
+      "college": "机械与车辆学院",
+      "program": "机械工程（专业学位，085501）",
+      "degree": "专硕",
+      "exam": "101 政治 + 204 英语二 + 301 数学一 + 844 机械制造工程基础",
+      "quota": "统考 30 人（含全日制异地科研机构联合培养 20 人）",
+      "line": "2026 年机械与车辆学院 085501 复试线 300 分（与学校线相同；单科 40/40/60/60）；同院工业与系统工程 0802J1 也是 300 分",
+      "fit": "学院没有在学校线上加分，300 分即可进复试，是北理工里分数门槛最低的选择；英语二友好。代价是 30 人里 20 人为异地联合培养，且要考数学一和机械制造工程基础，物流本科需要从头补专业课。",
+      "url": "https://me.bit.edu.cn/tzgg/48736dd488dc4f209c038b18429ca67b.htm",
+      "checked": "2026-10-25"
+    },
+    {
+      "school": "北京航空航天大学",
+      "college": "经济管理学院",
+      "program": "管理科学与工程（120100）",
+      "degree": "学硕",
+      "exam": "101 政治 + 201 英语一 + 301 数学一 + 808 管理科学基础",
+      "quota": "2027 年目录查询系统显示拟招 8 人（含专项，上期读取）；2026 年一志愿拟招 16 人",
+      "line": "2026 年学院复试资格线 370 分（单科 50 / 50 / 85，满分 100 和 150 的科目分别要求）",
+      "fit": "有“综合交通与智慧物流管理”方向，北京本地、学校层次高；但考数学一和英语一，2026 年线 370 分；2027 年目录拟招 8 人，比 2026 年一志愿 16 人少一半，竞争会更激烈。只适合数学和英语都很强时冲刺。",
+      "url": "https://sem.buaa.edu.cn/info/1093/10250.htm",
+      "checked": "2026-11-01"
+    },
+    {
+      "school": "北京航空航天大学",
+      "college": "机械工程及自动化学院",
+      "program": "机械工程（专业学位，085501）",
+      "degree": "专硕",
+      "exam": "101 政治 + 204 英语二 + 301 数学一 + 807 机械工程专业综合",
+      "quota": "拟招 46 人（方向 01 含具身智能 29 人、02 智能制造 9 人、03 航空制造 8 人）",
+      "line": "未查到（2026-11-15 再查：学院“硕士招生”栏目和公告公示栏目仍只有 2027 级统考大纲；复试方案写明 2026 年复试线于 3 月 24 日左右在学院网站公布，但现在网站上找不到这份公告）",
+      "fit": "有“具身智能及驱传感控一体化”方向，和机器人就业方向最贴；英语二友好，但数学一加机械综合对物流本科是跨考。同学院“机器人工程”（085510）另招 11 人，科目相同。",
+      "url": "https://yzb.buaa.edu.cn/xlss/zymlcx.htm",
+      "checked": "2026-11-15"
+    },
+    {
+      "school": "同济大学",
+      "college": "经济与管理学院",
+      "program": "管理科学与工程（120100）",
+      "degree": "学硕",
+      "exam": "101 政治 + 201 英语一 + 301 数学一 + 879 管理科学与工程理论（研招网 2027 目录）",
+      "quota": "统考 32 人（6 个方向合计；01 供应链管理与决策分析 8 人）",
+      "line": "2026 年复试线 365 分（政治 55、外语 55、业务课 90/90）；中德平台全球供应链管理方向 345 分",
+      "fit": "有供应链方向、名额比北京几所多，但在上海，且考数学一、外语单科线 55 分，对英语偏弱是硬门槛。",
+      "url": "https://yz.tongji.edu.cn/tongjidaxuejingjiyuguanlixueyuan2026nianxueshuxingshuoshiyanjiushengjinrufushidechushichengjijibenyaoqiu.pdf",
+      "checked": "2026-10-25"
+    },
+    {
+      "school": "同济大学",
+      "college": "机械工程与机器人学院",
+      "program": "机械（085500）",
+      "degree": "专硕",
+      "exam": "101 政治 + 201 英语一 + 301 数学一 + 812 机械设计（04 工业工程方向考工业工程，05、06 方向考自动控制原理）",
+      "quota": "统考 35 人（6 个方向合计；05 智能装备与机器人 2 人）",
+      "line": "2026 年复试线 345 分（政治 55、外语 55、业务课 85/90）",
+      "fit": "注意同济机械专硕考英语一而不是英语二；分数线比北交机械专硕低，但在上海、外语单科线 55。04 工业工程方向（1 人）和物流本科最接近，名额太少。",
+      "url": "https://yz.tongji.edu.cn/030-tongjidaxuejixiegongchengyujiqirenxueyuan2026nianshuoshifushifenshuxianyaoqiu-2.pdf",
+      "checked": "2026-10-25"
+    },
+    {
+      "school": "天津大学",
+      "college": "管理与经济学部",
+      "program": "管理科学与工程（120100）",
+      "degree": "学硕",
+      "exam": "101 政治 + 201 英语一 + 301 数学一 + 832 运筹学基础（研招网 2027 目录）",
+      "quota": "统考 11 人（另有中外合作的亨利国际学院 35 人）",
+      "line": "2026 年学校基本线（管理学）350 分（50/50/90/90）；学部线未查到（2026-11-15 再搜仍只找到学部 MEM 166 分、MBA 146 分等专业学位线，没有 120100 的学部线）",
+      "fit": "在天津；考数学一和运筹学，统考只有 11 人，业务课单科要 90，对你门槛偏高。",
+      "url": "https://yzb.tju.edu.cn/xwzx/zxxx/202603/t20260313_324567.htm",
+      "checked": "2026-11-15"
+    },
+    {
+      "school": "天津大学",
+      "college": "机械工程学院",
+      "program": "机械（085500）",
+      "degree": "专硕",
+      "exam": "101 政治 + 204 英语二 + 301 数学一 + 803 机械原理与机械设计（研招网 2027 目录）",
+      "quota": "全日制统考 108 人（6 个方向共用，含“智能装备与医疗机器人”“具身智能”）",
+      "line": "2026 年学校基本线（工程类专硕）315 分（50/50/80/80）；学院线未查到（2026-11-15 再搜仍未找到）",
+      "fit": "名额在表里最多、考英语二，机器人方向齐全，是机械路线里相对现实的 985 选择；但在天津，且机械原理与机械设计要从头学。",
+      "url": "https://yzb.tju.edu.cn/xwzx/tkss_xw/202601/W020260121351354696357.pdf",
+      "checked": "2026-11-15"
+    },
+    {
+      "school": "华北电力大学（211，参照）",
+      "college": "经济与管理学院",
+      "program": "物流工程与管理（125604）",
+      "degree": "专硕",
+      "exam": "199 管理类综合能力 + 204 英语二（不考数学）",
+      "quota": "全日制 35 人（01 物流与供应链优化），另有非全日制 80 人",
+      "line": "未查到",
+      "fit": "作参照意义已不大：按教育部 2027 年规定，125604 属工程管理专业学位，须 3 年以上工作经验，研招网目录备注没写不代表应届可报。不考数学、英语二、学校非 985，只适合工作后再考。",
+      "url": "https://yz.chsi.com.cn/zsml/",
+      "checked": "2026-10-25"
+    }
+  ],
+  "notes": [
+    "本期覆盖 11-08 至 11-15；上一期 11-12 才出，两期时间重叠 4 天，所以精读尽量选了上一期没有的文章（AI 4 篇、仓储 4 篇都不与上期重复）。Epoch 和林格尔一文原文打不开（HTTP 403），按 AIHOT 收录的全文转述写，链接用 AIHOT。仓储速览多据日报摘要和 feeds 摘要，没有逐篇打开原文。中文仓储深度长文本周仍没搜到（结果多为付费报告推广页）。",
+    "模型：Arena 用 Hugging Face 上的 lmarena-ai/leaderboard-dataset（文本、WebDev、Agent 为 11-11，生图 11-12，视觉 11-09）；Epoch 用官方数据包（11-15 下载），其中 Gemini 4 Carbon 的发布日期已从上期的 10-28 改为 11-10（付费用户开放日），本期 released 跟着改；Gemini 4 Argon 的发布日期 Epoch 记为 10-13，与上期写的 09-30 不一致，本期按 Epoch。Artificial Analysis 页面不显示数据日期，按读取日 11-15。Hydrogen 在 Arena 中文榜第一但只有 329 票，未据此推荐。Qwen4-Max-Preview、ERNIE 5.5 Flash Preview 没有独立测评，只放新闻。",
+    "模型核对“是否最新同级”：Anthropic 旗舰 Fable 5.2（11-09），Opus/Sonnet/Haiku 仍为 5.5；Google Gemini 4 Carbon、Argon、Hydrogen（11-12 新增，定位低一档的执行模型）；OpenAI GPT-6.1 Sol、GPT-6.1 Terra、GPT-6 Astra（“GPT-6.1 Astra”只见于聚合站传闻，未采用）；月之暗面 Kimi K3.1 Pro；DeepSeek V4.1 Flash 1017。",
+    "Skill：示例网站 demos/2026-11-15-pick-route-lab 按 Hallmark 的 SKILL.md 流程做：theme.mjs deal 发了 Formwork、Broadside、Almanac 三个主题，选了适合表格和数据的 Almanac；draw 抽到 Index-First 结构、Ledge 首屏、两端对齐导航、版权信息式页脚，任务为“试用”；用 scaffold 生成的 tokens.css 和 base.css 内联进单个 HTML。两处有意偏离：主题字体（Google Fonts 的 Hanken Grotesk、Newsreader、IBM Plex Mono）换成系统字体；抽签要求的“下载按钮”换成模拟器里的“换一张拣货单”按钮。页面内容是一个拣货路径模拟器（S 形、返回式、最大间隙），表格和曲线的数字由页面里的同一段脚本随机生成（种子写在页面上），不是真实仓库数据。sloplint --render（Chrome 加 --no-sandbox）在 8 种宽度检查结果 0 FAIL、0 REFLEX、0 WARN；另用 Playwright 在 1366 和 390 宽度截图：无横向溢出、无外部请求、无控制台报错，切换策略、换单、拖滑块都正常。Hallmark 要求的“新上下文审稿子代理”这一步没有做。",
+    "Skill：awesome-opus5-5-videos 本周无新提交（最后 10-13），从中挑了 2 条往期没收过的；其中 Drake5112 那条在 skillry 上没有对应页面，video 用原帖。HyperFrames、Remotion 本周只有修复类提交，没有新 Skill；joeseesun/opus-video-prompts 最后更新 9-27。Lemo-Opuscar 往期收过，本周 2.0 新增 33 种风格，按“大更新”重新收录。awesome-gpt-image 和 awesome-nanobanana-pro 本周只更新了时间戳，图片编辑类从 nanobanana 里选了一条往期没收的。anthropics/skills 11-14 更新了 pptx、docx、xlsx 等（pptx 增加 apply_theme、slide_text 等脚本），因往期已收、属于小幅更新，本期没有重复收录。skills.sh 的 trending 页抓到的仍是总榜数据。stars 来自 GitHub API（11-15）。视频成片的样子根据提示词和帖子描述写，没有逐帧观看。",
+    "考研：本周没有和候选方向、目标院校相关的新公告（2027 年考研网报 10 月已结束），future 里没有考研条目。对比表本周新补上的格子为 0：北航机械学院 085501 复试线、天大管经学部 120100 和机械学院 085500 的学院线再查仍未找到（已在格子里写明本次查找情况）；其余行沿用上期核对结果，没有重新下载招生目录。",
+    "实习：两条字节岗位来自 jobs.bytedance.com 页面（用浏览器渲染读取，地点含北京），截止日期页面没写。北科就业网本周之后的宣讲会只看到比亚迪（11-16）和学而思（11-19），与方向关系不大，没有收录；易大宗供应链（11-14）已过。京东物流、极智嘉、海康机器人、北自科技、今天国际、大福、菜鸟、美团、顺丰科技、明略科技本周没有查到可确认的北京实习（搜索结果多为第三方聚合站或已过期）。趋势：本周没有找到新发布、数据可靠的招聘趋势，没有写。"
+  ]
+}

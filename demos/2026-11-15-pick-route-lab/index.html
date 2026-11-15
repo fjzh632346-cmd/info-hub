@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>拣货路径实验：同一张拣货单，三种走法</title>
+<meta name="description" content="一份物流工程课程设计的示例页面：在 10 条巷道的仓库里，比较 S 形、返回式和最大间隙三种拣货路径的行走距离，可以直接在页面上换单试算。">
+<style>
+/* Hallmark · shape: Index-First · genre: editorial · theme: Almanac (deal 3/3, seed course-project-logistics-engineering-78ee·dfae4f2d·2026-11-15·r0) · job: try · draw: 2a6021
+ * hero: Ledge · nav: edge-aligned · footer: colophon block · imagery: the product built (the simulator drawn in SVG) · signature: the pick route redrawn live in magenta as you switch strategy
+ * axes: mid/grotesk-sans/chromatic-magenta · posture: restrained · contrast: pass · fold: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P4 H4 E4 S4 R3 V4 · weakest: R, the draw's download became the simulator's own button because a course page has nothing to download */
+/* swap: draw asked for a download beside the screen; the try action here is the "换一张拣货单" control inside the sheet. Fonts: theme faces replaced by system stacks because the page must not load Google Fonts. */
+:root {
+  color-scheme: light;
+  --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px; --space-4xl: 144px;
+  --text-xs: 0.8125rem; --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.25rem; --text-xl: 1.5625rem; --text-2xl: 1.953rem; --text-3xl: 2.441rem;
+  --text-display-s: clamp(2.25rem, 4vw + 0.5rem, 3.75rem); --text-display: clamp(2.25rem, 3.4vw + 1rem, 4rem);
+  --text-section: clamp(1.75rem, 2.2vw + 1rem, 3rem); --text-title: clamp(1.25rem, 0.75vw + 0.875rem, 1.625rem); --text-lead: clamp(1.0625rem, 0.35vw + 1rem, 1.3125rem);
+  --container: 1280px; --gutter: 64px; --gap-columns: 32px; --section-gap: 128px;
+  --color-paper: oklch(84% 0.012 245); --color-paper-2: oklch(81% 0.012 245); --color-paper-3: oklch(77% 0.012 245);
+  --color-ink: oklch(16% 0.020 245); --color-ink-2: oklch(24% 0.018 245); --color-muted: oklch(38% 0.016 245);
+  --color-rule: oklch(73% 0.013 240); --color-rule-2: oklch(32% 0.018 240);
+  --color-accent: oklch(45% 0.180 350); --color-accent-2: oklch(37% 0.160 350); --color-accent-ink: oklch(97% 0.006 245); --color-focus: oklch(46% 0.190 350);
+  --color-sheet: oklch(93.5% 0.008 245);
+  --font-display: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "SimSun", ui-serif, Georgia, serif;
+  --font-outlier: ui-monospace, "SFMono-Regular", "Cascadia Mono", Menlo, Consolas, monospace;
+  --radius-pill: 2px; --rule-hair: 1px; --rule-bar: 2px;
+  --tracking-display: -0.01em; --display-weight: 600;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html, body { overflow-x: clip; }
+html { scroll-padding-top: var(--space-xl); scrollbar-color: var(--color-muted) var(--color-paper); }
+::selection { background: color-mix(in oklab, var(--color-accent) 22%, transparent); color: var(--color-ink); }
+body { margin: 0; background: var(--color-paper); color: var(--color-ink-2); font-family: var(--font-body); font-size: var(--text-md); line-height: 1.6; -webkit-font-smoothing: antialiased; caret-color: var(--color-accent); }
+:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+a { color: var(--color-ink); text-decoration-color: var(--color-accent); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+a:hover { text-decoration-thickness: 2px; }
+h1, h2, h3 { margin: 0; font-family: var(--font-display); font-weight: var(--display-weight); color: var(--color-ink); letter-spacing: var(--tracking-display); line-height: 1.1; overflow-wrap: break-word; min-width: 0; text-wrap: balance; }
+h1 { font-size: var(--text-display); line-height: 1.08; }
+h1 .line { display: block; }
+h2 { font-size: var(--text-section); max-width: 18em; }
+p { margin: 0; text-wrap: pretty; }
+svg { display: block; }
+.container { width: 100%; max-width: var(--container); margin-inline: auto; padding-inline: var(--gutter); }
+.num { font-family: var(--font-outlier); font-variant-numeric: tabular-nums; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* nav: edge-aligned */
+.nav { display: flex; align-items: center; justify-content: space-between; gap: var(--space-lg); padding-block: var(--space-lg); border-bottom: var(--rule-hair) solid var(--color-rule); }
+.wordmark { font: 600 var(--text-lg)/1 var(--font-display); color: var(--color-ink); text-decoration: none; }
+.nav ul { display: flex; gap: var(--space-lg); list-style: none; margin: 0; padding: 0; font-size: var(--text-sm); }
+.nav a { text-decoration: none; color: var(--color-ink-2); }
+.nav a:hover { text-decoration: underline; text-decoration-color: var(--color-accent); }
+
+/* hero: Ledge */
+.hero { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--space-2xl); align-items: end; min-height: calc(100dvh - 74px); padding-block: var(--space-lg); }
+.hero-text { display: grid; gap: var(--space-lg); padding-bottom: var(--space-md); }
+.lead { font-size: var(--text-lead); line-height: 1.5; max-width: 26em; }
+.actions { display: flex; flex-wrap: wrap; gap: var(--space-sm); }
+.btn { display: inline-flex; align-items: center; min-height: 44px; padding: var(--space-sm) var(--space-lg); border: var(--rule-hair) solid var(--color-ink); border-radius: var(--radius-pill); background: transparent; color: var(--color-ink); font: 500 var(--text-sm)/1 var(--font-display); text-decoration: none; cursor: pointer; transition: background-color var(--dur, 120ms) ease, color var(--dur, 120ms) ease; }
+.btn:hover { background: var(--color-paper-2); }
+.btn:active { background: var(--color-paper-3); }
+.btn--primary { background: var(--color-accent); border-color: var(--color-accent); color: var(--color-accent-ink); }
+.btn--primary:hover { background: var(--color-accent-2); }
+.btn--primary:active { background: var(--color-accent-2); color: var(--color-sheet); }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.sheet { background: var(--color-sheet); border-top: var(--rule-bar) solid var(--color-ink); padding: var(--space-md) var(--space-lg); min-width: 0; }
+.sheet-head { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-md); padding-bottom: var(--space-sm); border-bottom: var(--rule-hair) solid var(--color-rule); }
+.sheet-head h2 { font-size: var(--text-lg); }
+.sheet-head .meta { color: var(--color-muted); font-size: var(--text-sm); }
+.plan { width: 100%; height: min(40vh, 360px); margin-block: var(--space-sm); }
+.plan .rack { fill: var(--color-paper-2); }
+.plan .lane { fill: none; stroke: var(--color-rule); stroke-width: 1; vector-effect: non-scaling-stroke; stroke-dasharray: 2 3; }
+.plan .pick { fill: var(--color-ink); }
+.plan .route { fill: none; stroke: var(--color-accent); stroke-width: 2.5; vector-effect: non-scaling-stroke; stroke-linejoin: round; }
+.plan .depot { fill: var(--color-ink); }
+.plan text { font: 500 0.9px var(--font-body); fill: var(--color-muted); }
+.controls { display: grid; gap: var(--space-sm); }
+.switcher { display: flex; flex-wrap: wrap; gap: var(--space-xs); }
+.switcher button { min-height: 44px; padding: var(--space-xs) var(--space-md); border: var(--rule-hair) solid var(--color-rule-2); border-radius: var(--radius-pill); background: transparent; color: var(--color-ink); font: 500 var(--text-sm)/1 var(--font-display); cursor: pointer; transition: background-color 120ms ease, color 120ms ease; }
+.switcher button:hover { background: var(--color-paper-2); }
+.switcher button[aria-pressed="true"] { background: var(--color-paper-2); border-color: var(--color-ink); box-shadow: inset 0 -2px 0 var(--color-accent); }
+.row-ctl { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-md); }
+.row-ctl label { font-size: var(--text-sm); color: var(--color-muted); display: flex; align-items: center; gap: var(--space-sm); }
+input[type="range"] { accent-color: var(--color-accent); width: 160px; }
+.readout { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
+.readout th { text-align: left; font-weight: 500; color: var(--color-muted); padding: var(--space-2xs) 0; border-bottom: var(--rule-bar) solid var(--color-rule-2); }
+.readout td { padding: var(--space-2xs) 0; border-top: var(--rule-hair) solid var(--color-rule); }
+.readout td.num, .readout th.num { text-align: right; }
+.readout tr.on td { color: var(--color-accent); font-weight: 500; }
+
+/* sections */
+.section { padding-block: var(--section-gap) 0; }
+.section-head { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--gap-columns); align-items: end; padding-bottom: var(--space-lg); border-bottom: var(--rule-bar) solid var(--color-rule-2); }
+.section-head p { color: var(--color-muted); max-width: 30em; }
+.index { list-style: none; margin: 0; padding: 0; }
+.index li { border-bottom: var(--rule-hair) solid var(--color-rule); }
+.index a { display: grid; grid-template-columns: 4rem minmax(0, 1fr) minmax(0, 1.4fr); gap: var(--gap-columns); align-items: baseline; padding-block: var(--space-lg); text-decoration: none; transition: background-color 120ms ease; }
+.index a:hover { background: var(--color-paper-2); }
+.index .num { color: var(--color-muted); }
+.index strong { font: 600 var(--text-title)/1.2 var(--font-display); color: var(--color-ink); }
+.index span:last-child { color: var(--color-ink-2); }
+
+.rules { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gap-columns); margin-top: var(--space-xl); }
+.rules h3 { font-size: var(--text-title); padding-bottom: var(--space-sm); border-bottom: var(--rule-bar) solid var(--color-rule-2); margin-bottom: var(--space-md); }
+.rules p { max-width: 24em; }
+
+.table-sheet { margin-top: var(--space-xl); }
+.data { width: 100%; border-collapse: collapse; }
+.data caption { text-align: left; caption-side: bottom; padding-top: var(--space-md); color: var(--color-muted); font-size: var(--text-sm); }
+.data th { text-align: right; font: 500 var(--text-sm)/1.3 var(--font-body); color: var(--color-muted); padding: var(--space-sm) var(--space-sm); border-bottom: var(--rule-bar) solid var(--color-rule-2); }
+.data th:first-child, .data td:first-child { text-align: left; padding-left: 0; }
+.data td { text-align: right; padding: var(--space-sm) var(--space-sm); border-top: var(--rule-hair) solid var(--color-rule); }
+.data td:last-child, .data th:last-child { padding-right: 0; }
+.data tr.point td { color: var(--color-accent); }
+.data td.best { font-weight: 600; color: var(--color-ink); }
+.data tr.point td.best { color: var(--color-accent); }
+
+.band { background: var(--color-ink); color: var(--color-paper); margin-top: var(--section-gap); padding-block: var(--space-3xl); }
+.band h2 { color: var(--color-sheet); }
+.band .section-head { border-bottom-color: var(--color-muted); }
+.band .section-head p { color: var(--color-paper-3); }
+.chart { width: 100%; height: auto; margin-top: var(--space-xl); }
+.chart .axis { stroke: var(--color-muted); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.chart .zero { stroke: var(--color-paper-3); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.chart .grid { stroke: var(--color-ink-2); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.chart .series { fill: none; stroke: var(--color-accent); stroke-width: 3; vector-effect: non-scaling-stroke; stroke-linejoin: round; }
+.chart .shade { fill: var(--color-ink-2); }
+.chart text { font: 400 13px var(--font-outlier); fill: var(--color-paper-3); }
+.chart text.mark { fill: var(--color-sheet); font-weight: 500; }
+.chart circle { fill: var(--color-accent); }
+
+.limits { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--space-2xl); margin-top: var(--space-xl); align-items: start; }
+.limits ul { margin: 0; padding: 0; list-style: none; }
+.limits li { padding-block: var(--space-md); border-bottom: var(--rule-hair) solid var(--color-rule); }
+.limits li:first-child { border-top: var(--rule-hair) solid var(--color-rule); }
+.close { display: grid; gap: var(--space-md); padding: var(--space-lg); background: var(--color-paper-2); border-top: var(--rule-bar) solid var(--color-rule-2); }
+
+.colophon { margin-top: var(--section-gap); padding-block: var(--space-xl) var(--space-2xl); border-top: var(--rule-bar) solid var(--color-rule-2); display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--gap-columns); font-size: var(--text-sm); color: var(--color-muted); }
+.colophon p { max-width: 40em; }
+
+@media (max-width: 60rem) {
+  :root { --gutter: 24px; --section-gap: 88px; }
+  .hero { grid-template-columns: minmax(0, 1fr); min-height: 0; gap: var(--space-xl); align-items: start; }
+  .section-head, .limits, .colophon { grid-template-columns: minmax(0, 1fr); }
+  .rules { grid-template-columns: minmax(0, 1fr); }
+  .index a { grid-template-columns: 3rem minmax(0, 1fr); }
+  .index span:last-child { grid-column: 2; }
+}
+@media (max-width: 40rem) {
+  :root { --gutter: 16px; --section-gap: 64px; --gap-columns: 16px; }
+  .nav ul { gap: var(--space-md); }
+  .nav li:nth-child(n+3) { display: none; }
+  .sheet { padding: var(--space-md); }
+  .data th, .data td { padding-inline: var(--space-xs); font-size: var(--text-sm); }
+  input[type="range"] { width: 120px; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; } }
+</style>
+</head>
+<body>
+<header class="container nav">
+  <a class="wordmark" href="#top">拣货路径实验</a>
+  <nav aria-label="页面目录">
+    <ul>
+      <li><a href="#sim">模拟器</a></li>
+      <li><a href="#results">结果</a></li>
+      <li><a href="#cross">交叉点</a></li>
+      <li><a href="#limits">局限</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="container hero" aria-labelledby="hero-title">
+    <div class="hero-text">
+      <h1 id="hero-title"><span class="line">同一张拣货单，</span><span class="line">三种走法</span></h1>
+      <p class="lead">10 条巷道、每条 20 个货位，比较三种路径各要走多少米。</p>
+      <div class="actions">
+        <a class="btn btn--primary" href="#sim">打开模拟器</a>
+        <a class="btn" href="#results">看 200 单的平均</a>
+      </div>
+    </div>
+
+    <div class="sheet" id="sim">
+      <div class="sheet-head">
+        <h2>示例仓库</h2>
+        <span class="meta" id="order-label">第 1 单，12 个拣货点</span>
+      </div>
+      <svg class="plan" id="plan" viewBox="-1.5 -0.6 33 24.6" role="img" aria-labelledby="plan-desc">
+        <desc id="plan-desc">仓库平面：10 条竖向巷道，黑色方块是拣货点，洋红线是当前策略的行走路线，左下角是出发点。</desc>
+        <rect class="rack" x="-1.00" y="1.50" width="2" height="20"/><rect class="rack" x="2.00" y="1.50" width="2" height="20"/><rect class="rack" x="5.00" y="1.50" width="2" height="20"/><rect class="rack" x="8.00" y="1.50" width="2" height="20"/><rect class="rack" x="11.00" y="1.50" width="2" height="20"/><rect class="rack" x="14.00" y="1.50" width="2" height="20"/><rect class="rack" x="17.00" y="1.50" width="2" height="20"/><rect class="rack" x="20.00" y="1.50" width="2" height="20"/><rect class="rack" x="23.00" y="1.50" width="2" height="20"/><rect class="rack" x="26.00" y="1.50" width="2" height="20"/><rect class="rack" x="29.00" y="1.50" width="2" height="20"/><line class="lane" x1="0" y1="22.00" x2="31" y2="22.00"/><line class="lane" x1="0" y1="1.00" x2="31" y2="1.00"/><polyline class="route" points="0.00,22.00 1.50,22.00 1.50,1.00 10.50,1.00 10.50,4.00 10.50,1.00 13.50,1.00 13.50,8.00 13.50,1.00 25.50,1.00 25.50,22.00 13.50,22.00 13.50,18.00 13.50,22.00 10.50,22.00 10.50,15.00 10.50,22.00 7.50,22.00 7.50,18.00 7.50,22.00 4.50,22.00 4.50,12.00 4.50,22.00 0.00,22.00"/><rect class="pick" x="13.15" y="7.65" width="0.7" height="0.7"/><rect class="pick" x="25.15" y="10.65" width="0.7" height="0.7"/><rect class="pick" x="25.15" y="11.65" width="0.7" height="0.7"/><rect class="pick" x="7.15" y="17.65" width="0.7" height="0.7"/><rect class="pick" x="10.15" y="18.65" width="0.7" height="0.7"/><rect class="pick" x="10.15" y="3.65" width="0.7" height="0.7"/><rect class="pick" x="13.15" y="17.65" width="0.7" height="0.7"/><rect class="pick" x="4.15" y="11.65" width="0.7" height="0.7"/><rect class="pick" x="25.15" y="9.65" width="0.7" height="0.7"/><rect class="pick" x="13.15" y="1.65" width="0.7" height="0.7"/><rect class="pick" x="10.15" y="14.65" width="0.7" height="0.7"/><rect class="pick" x="1.15" y="1.65" width="0.7" height="0.7"/><rect class="depot" x="-0.5" y="21.5" width="1" height="1"/><text x="-1.2" y="23.3">出发点</text><text x="12" y="23.3">前通道</text><text x="12" y="0.5">后通道</text>
+      </svg>
+      <div class="controls">
+        <div class="switcher" role="group" aria-label="路径策略">
+          <button type="button" data-k="s" aria-pressed="false">S 形</button>
+          <button type="button" data-k="r" aria-pressed="false">返回式</button>
+          <button type="button" data-k="g" aria-pressed="true">最大间隙</button>
+        </div>
+        <div class="row-ctl">
+          <label for="k">每单拣货点 <output class="num" id="k-out" for="k">12</output></label>
+          <input id="k" type="range" min="3" max="40" value="12">
+          <button class="btn btn--primary" type="button" id="reroll">换一张拣货单</button>
+        </div>
+        <table class="readout" aria-live="polite">
+          <thead><tr><th scope="col">策略</th><th scope="col" class="num">这一单行走距离（米）</th></tr></thead>
+          <tbody id="readout"><tr><td>S 形</td><td class="num">177.0</td></tr><tr><td>返回式</td><td class="num">219.0</td></tr><tr class="on"><td>最大间隙</td><td class="num">163.0</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="container section" aria-labelledby="idx-title">
+    <div class="section-head">
+      <h2 id="idx-title">报告四节，按阅读顺序</h2>
+      <p>每一节都能单独读；数字全部由本页脚本算出。</p>
+    </div>
+    <ol class="index">
+      <li><a href="#rules"><span class="num">01</span><strong>三种走法</strong><span>每种策略在巷道里怎么进、怎么出。</span></a></li>
+      <li><a href="#results"><span class="num">02</span><strong>200 单的平均</strong><span>拣货点从 3 个到 40 个，各走多少米。</span></a></li>
+      <li><a href="#cross"><span class="num">03</span><strong>交叉点</strong><span>单子多大时，S 形反超最大间隙。</span></a></li>
+      <li><a href="#limits"><span class="num">04</span><strong>局限与运行</strong><span>这个模型没算什么，以及怎么打开。</span></a></li>
+    </ol>
+  </section>
+
+  <section class="container section" id="rules" aria-labelledby="rules-title">
+    <div class="section-head">
+      <h2 id="rules-title">三种走法</h2>
+      <p>都是教材里常见的拣货路径启发式规则，不是最优解。</p>
+    </div>
+    <div class="rules">
+      <div><h3>S 形</h3><p>有货的巷道一条条整条穿过，像蛇一样来回；巷道数是奇数时，最后一条走到最远点再折回。</p></div>
+      <div><h3>返回式</h3><p>每条有货的巷道都从前通道进，走到最远的货位再原路退出。</p></div>
+      <div><h3>最大间隙</h3><p>第一条和最后一条整条穿过，中间的巷道从前后两头各取一段，跳过两个货位之间最长的那段空档。</p></div>
+    </div>
+  </section>
+
+  <section class="container section" id="results" aria-labelledby="res-title">
+    <div class="section-head">
+      <h2 id="res-title">200 单的平均行走距离</h2>
+      <p>每个拣货点数随机生成 200 张单，货位均匀分布，单位：米。</p>
+    </div>
+    <div class="sheet table-sheet">
+      <table class="data">
+        <caption>加粗为该行最短；洋红行是本页默认的 10 点单。随机种子 20261115。</caption>
+        <thead><tr><th scope="col">拣货点</th><th scope="col">S 形</th><th scope="col">返回式</th><th scope="col">最大间隙</th></tr></thead>
+        <tbody><tr><td class="num">3</td><td class="num">102.0</td><td class="num">104.5</td><td class="num best">94.6</td></tr><tr><td class="num">5</td><td class="num">135.3</td><td class="num">141.2</td><td class="num best">116.0</td></tr><tr class="point"><td class="num">10</td><td class="num">191.2</td><td class="num">211.9</td><td class="num best">156.8</td></tr><tr><td class="num">20</td><td class="num">244.5</td><td class="num">297.0</td><td class="num best">214.6</td></tr><tr><td class="num">30</td><td class="num">261.7</td><td class="num">343.2</td><td class="num best">251.5</td></tr><tr><td class="num">40</td><td class="num best">265.6</td><td class="num">369.2</td><td class="num">272.9</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="band" id="cross" aria-labelledby="cross-title">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="cross-title">单子越大，S 形越追得上</h2>
+        <p>纵轴是最大间隙比 S 形多走或少走的百分比，每个点是 200 张随机单的平均。</p>
+      </div>
+      <svg class="chart" viewBox="0 0 1000 400" role="img" aria-labelledby="chart-desc"><desc id="chart-desc">最大间隙相对 S 形的行走距离差，拣货点 1 到 40 个。最低点在 8 个拣货点，少走 18.6%；到 37 个点时两者持平，40 个点时最大间隙多走 3.8%。</desc><rect class="shade" x="900.8" y="40" width="69.2" height="300"/><line class="grid" x1="70" x2="970" y1="50.7" y2="50.7"/><text x="60" y="54.7" text-anchor="end">+5%</text><line class="zero" x1="70" x2="970" y1="104.3" y2="104.3"/><text x="60" y="108.3" text-anchor="end">0%</text><line class="grid" x1="70" x2="970" y1="157.9" y2="157.9"/><text x="60" y="161.9" text-anchor="end">-5%</text><line class="grid" x1="70" x2="970" y1="211.4" y2="211.4"/><text x="60" y="215.4" text-anchor="end">-10%</text><line class="grid" x1="70" x2="970" y1="265.0" y2="265.0"/><text x="60" y="269.0" text-anchor="end">-15%</text><line class="grid" x1="70" x2="970" y1="318.6" y2="318.6"/><text x="60" y="322.6" text-anchor="end">-20%</text><text x="70.0" y="366" text-anchor="middle">1</text><text x="277.7" y="366" text-anchor="middle">10</text><text x="508.5" y="366" text-anchor="middle">20</text><text x="739.2" y="366" text-anchor="middle">30</text><text x="970.0" y="366" text-anchor="middle">40</text><text x="970" y="392" text-anchor="end">每单拣货点数</text><polyline class="series" points="70.0,104.3 93.1,104.3 116.2,181.9 139.2,227.7 162.3,255.4 185.4,264.9 208.5,283.3 231.5,303.2 254.6,288.5 277.7,285.4 300.8,297.3 323.8,288.8 346.9,283.5 370.0,290.3 393.1,272.5 416.2,256.5 439.2,261.4 462.3,256.1 485.4,250.6 508.5,238.8 531.5,224.9 554.6,227.1 577.7,219.7 600.8,205.7 623.8,193.1 646.9,189.2 670.0,187.8 693.1,163.0 716.2,154.0 739.2,153.3 762.3,137.2 785.4,137.7 808.5,126.0 831.5,119.3 854.6,106.9 877.7,104.8 900.8,94.8 923.8,81.3 946.9,81.2 970.0,63.6"/><circle cx="231.5" cy="303.2" r="5"/><text class="mark" x="241.5" y="325.2">8 点：-18.6%</text><circle cx="900.8" cy="94.8" r="5"/><text class="mark" x="890.8" y="80.8" text-anchor="end">37 点起 S 形更短</text><text class="mark" x="970.0" y="51.6" text-anchor="end">40 点：+3.8%</text></svg>
+    </div>
+  </section>
+
+  <section class="container section" id="limits" aria-labelledby="lim-title">
+    <div class="section-head">
+      <h2 id="lim-title">局限与运行</h2>
+      <p>写进课程设计报告时，这几条要先说清楚。</p>
+    </div>
+    <div class="limits">
+      <ul>
+        <li>货位只算巷道一侧，没有区分左右两排。</li>
+        <li>没有考虑拣货车容量、拥堵和多人同时作业。</li>
+        <li>出发点固定在左下角，换到中间结论可能变化。</li>
+        <li>货位均匀随机；真实仓库按 ABC 分类放货，热门货靠前。</li>
+      </ul>
+      <div class="close">
+        <p>整页是一个 HTML 文件，不加载任何外部资源，浏览器直接打开即可。</p>
+        <a class="btn btn--primary" href="#sim">回到模拟器换一单</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="container colophon">
+  <p>示例页面，用来演示课程设计的展示方式；仓库、数据与作者都是虚构的，不对应任何真实企业。</p>
+  <p>排版：系统字体；图形：内联 SVG；算法写在页面底部的脚本里，可以直接查看源码。</p>
+</footer>
+
+<script>
+// 仓库：10 条巷道，每条 20 个货位（1 米一个），巷道中心间距 3 米；前通道 y=0，后通道 y=21；出发点在 x=0 的前通道
+const A = 10, L = 20, W = 3, X0 = 1.5, BACK = L + 1;
+const ax = a => X0 + W * a; // a 从 0 开始
+function rng(seed) { let s = seed >>> 0; return () => { s = (s * 1664525 + 1013904223) >>> 0; return s / 4294967296; }; }
+function makeOrder(k, r) { const picks = []; for (let i = 0; i < k; i++) picks.push({ a: Math.floor(r() * A), d: 1 + Math.floor(r() * L) }); return picks; }
+function byAisle(picks) { const m = new Map(); for (const p of picks) { if (!m.has(p.a)) m.set(p.a, []); m.get(p.a).push(p.d); } const as = [...m.keys()].sort((x, y) => x - y); return as.map(a => ({ a, ds: [...new Set(m.get(a))].sort((x, y) => x - y) })); }
+function len(pts) { let s = 0; for (let i = 1; i < pts.length; i++) s += Math.abs(pts[i][0] - pts[i - 1][0]) + Math.abs(pts[i][1] - pts[i - 1][1]); return s; }
+function sShape(picks) { const g = byAisle(picks); const pts = [[0, 0]]; let up = true; g.forEach((v, i) => { const x = ax(v.a); const last = i === g.length - 1; if (up) { pts.push([x, 0]); if (last) { pts.push([x, Math.max(...v.ds)]); pts.push([x, 0]); } else { pts.push([x, BACK]); up = false; } } else { pts.push([x, BACK]); pts.push([x, 0]); up = true; } }); pts.push([0, 0]); return pts; }
+function ret(picks) { const g = byAisle(picks); const pts = [[0, 0]]; for (const v of g) { const x = ax(v.a); pts.push([x, 0], [x, Math.max(...v.ds)], [x, 0]); } pts.push([0, 0]); return pts; }
+function largestGap(picks) { const g = byAisle(picks); if (g.length === 1) return ret(picks); const first = g[0], lastA = g[g.length - 1], mid = g.slice(1, -1); const pts = [[0, 0], [ax(first.a), 0], [ax(first.a), BACK]]; const lows = []; for (const v of mid) { const stops = [0, ...v.ds, BACK]; let gi = 0, best = -1; for (let i = 0; i < stops.length - 1; i++) { const gap = stops[i + 1] - stops[i]; if (gap > best) { best = gap; gi = i; } } const low = stops[gi], high = stops[gi + 1]; const x = ax(v.a); if (high < BACK) pts.push([x, BACK], [x, high], [x, BACK]); lows.push({ x, low }); } pts.push([ax(lastA.a), BACK], [ax(lastA.a), 0]); for (const v of lows.reverse()) if (v.low > 0) pts.push([v.x, 0], [v.x, v.low], [v.x, 0]); pts.push([0, 0]); return pts; }
+
+
+// 生成平面图 SVG 片段（浏览器和 node 共用）
+function planSVG(order, pts) {
+  var Y = function (y) { return (22 - y).toFixed(2); };
+  var s = '';
+  for (var a = -1; a < A; a++) { var x = X0 + W * a + 0.5; s += '<rect class="rack" x="' + x.toFixed(2) + '" y="' + Y(20.5) + '" width="2" height="20"/>'; }
+  s += '<line class="lane" x1="0" y1="' + Y(0) + '" x2="31" y2="' + Y(0) + '"/><line class="lane" x1="0" y1="' + Y(BACK) + '" x2="31" y2="' + Y(BACK) + '"/>';
+  s += '<polyline class="route" points="' + pts.map(function (p) { return p[0].toFixed(2) + ',' + Y(p[1]); }).join(' ') + '"/>';
+  order.forEach(function (p) { s += '<rect class="pick" x="' + (ax(p.a) - 0.35).toFixed(2) + '" y="' + (22 - p.d - 0.35).toFixed(2) + '" width="0.7" height="0.7"/>'; });
+  s += '<rect class="depot" x="-0.5" y="' + (22 - 0.5) + '" width="1" height="1"/><text x="-1.2" y="' + (22 + 1.3) + '">出发点</text>';
+  s += '<text x="12" y="' + (22 + 1.3) + '">前通道</text><text x="12" y="' + (22 - BACK - 0.5) + '">后通道</text>';
+  return s;
+}
+
+
+(function () {
+  var NAMES = { s: 'S 形', r: '返回式', g: '最大间隙' };
+  var FN = { s: sShape, r: ret, g: largestGap };
+  var state = { k: 12, strat: 'g', n: 1, seed: 20261115 };
+  var rand = rng(state.seed);
+  var order = makeOrder(state.k, rand);
+  var plan = document.getElementById('plan');
+  var readout = document.getElementById('readout');
+  var label = document.getElementById('order-label');
+  function draw() {
+    plan.innerHTML = planSVG(order, FN[state.strat](order)) ;
+    var rows = '';
+    ['s', 'r', 'g'].forEach(function (key) {
+      var d = len(FN[key](order)).toFixed(1);
+      rows += '<tr' + (key === state.strat ? ' class="on"' : '') + '><td>' + NAMES[key] + '</td><td class="num">' + d + '</td></tr>';
+    });
+    readout.innerHTML = rows;
+    label.textContent = '第 ' + state.n + ' 单，' + state.k + ' 个拣货点';
+    document.querySelectorAll('.switcher button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.k === state.strat)); });
+  }
+  document.querySelectorAll('.switcher button').forEach(function (b) { b.addEventListener('click', function () { state.strat = b.dataset.k; draw(); }); });
+  var k = document.getElementById('k'), kout = document.getElementById('k-out');
+  k.addEventListener('input', function () { state.k = +k.value; kout.textContent = k.value; order = makeOrder(state.k, rand); state.n += 1; draw(); });
+  document.getElementById('reroll').addEventListener('click', function () { order = makeOrder(state.k, rand); state.n += 1; draw(); });
+})();
+</script>
+</body>
+</html>
