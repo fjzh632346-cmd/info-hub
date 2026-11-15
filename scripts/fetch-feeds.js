@@ -10,8 +10,6 @@ const path = require('path');
 const FEEDS = [
   // AI · 一手
   ['ai', 'a16z', 'https://www.a16z.news/feed'],
-  // claude.com/blog 没有官方 RSS，用个人维护的非官方镜像（每天 06:00 UTC 更新，含全文）
-  ['ai', 'Claude 官方博客', 'https://tim-hilde.github.io/anthropic-rss/rss.xml'],
   ['ai', 'Anthropic Engineering', 'https://znck.github.io/feeds/anthropic-engineering.xml'],
   ['ai', 'OpenAI', 'https://openai.com/news/rss.xml'],
   ['ai', 'Google DeepMind', 'https://deepmind.google/blog/rss.xml'],
@@ -121,6 +119,34 @@ async function pool(list, n, fn) {
   return out;
 }
 
+// 没有 RSS 的官网：直接读文章列表页，再逐篇读文章页里的标题、摘要和发布日期。
+// claude.com/blog 会跳转到 /resources/articles；非官方 RSS 镜像在 2026-10 停更，所以改为直接抓。
+const PAGES = [
+  { group: 'ai', source: 'Claude 官方博客', list: 'https://claude.com/resources/articles', base: 'https://claude.com', re: /\/resources\/articles\/([a-z0-9][a-z0-9-]+)/g },
+  { group: 'ai', source: 'Anthropic 新闻', list: 'https://www.anthropic.com/news', base: 'https://www.anthropic.com', re: /\/news\/([a-z0-9][a-z0-9-]+)/g, prefix: '/news/' },
+];
+function meta(html, re) { const m = html.match(re); return m ? decode(m[1]).trim() : ''; }
+async function scrapePage(cfg, since) {
+  const raw = await get(cfg.list, 25000);
+  const slugs = [...new Set([...raw.matchAll(cfg.re)].map(m => m[1]))].slice(0, 20);
+  const prefix = cfg.prefix || (cfg.list.replace(cfg.base, '') + '/');
+  const all = [];
+  await pool(slugs, 4, async slug => {
+    const url = cfg.base + prefix + slug;
+    try {
+      const html = await get(url, 20000);
+      const published = isoDate(meta(html, /article:published_time"\s+content="([^"]+)"/) ||
+        meta(html, /datePublished\\?"\s*:\s*\\?"([0-9][^"\\]+)/));
+      const title = meta(html, /og:title"\s+content="([^"]+)"/) || meta(html, /<title>([^<]+)</).replace(/\s*[|｜\\]\s*(Anthropic|Claude)$/, '');
+      if (!published || !title) return;   // 分类页、标签页没有发布日期，跳过
+      const description = meta(html, /og:description"\s+content="([^"]+)"/) || meta(html, /name="description"\s+content="([^"]+)"/);
+      all.push({ title, url, published, description: description.slice(0, 600) });
+    } catch (e) { /* 单篇失败不影响其它 */ }
+  });
+  const recent = all.filter(x => Date.parse(x.published) >= since);
+  return { all, recent };
+}
+
 // AIHOT（aihot.news，卡兹克团队）的精选接口：它已经从大量 AI 资讯里挑过一遍，
 // 作为日报和周报 AI 部分的补充材料。按其说明，个人非商业使用免费。
 const AIHOT = {
@@ -160,6 +186,16 @@ async function fetchAihot() {
       status.push({ source, feed, ok: false, error: String(e.message || e).slice(0, 120) });
     }
   });
+  await pool(PAGES, 2, async cfg => {
+    try {
+      const { all, recent } = await scrapePage(cfg, since);
+      if (!all.length) throw new Error('列表页里没找到带日期的文章，页面结构可能变了');
+      recent.forEach(x => items.push(Object.assign({ group: cfg.group, source: cfg.source }, x)));
+      status.push({ source: cfg.source, feed: cfg.list, ok: true, total: all.length, recent: recent.length });
+    } catch (e) {
+      status.push({ source: cfg.source, feed: cfg.list, ok: false, error: String(e.message || e).slice(0, 120) });
+    }
+  });
   items.sort((a, b) => b.published.localeCompare(a.published));
   // 36氪快讯条目多且短，不抓正文
   await pool(items, 6, async it => { it.excerpt = it.source === '36氪快讯' ? '' : await excerpt(it.url); });
@@ -167,5 +203,5 @@ async function fetchAihot() {
   fs.writeFileSync(OUT, JSON.stringify({ fetchedAt: new Date().toISOString(), hours: HOURS, status, items }, null, 1));
   await fetchAihot();
   const bad = status.filter(s => !s.ok).length;
-  console.log(`共 ${FEEDS.length} 个信源，失败 ${bad} 个；最近 ${HOURS} 小时条目 ${items.length} 条`);
+  console.log(`共 ${FEEDS.length + PAGES.length} 个信源，失败 ${bad} 个；最近 ${HOURS} 小时条目 ${items.length} 条`);
 })();
