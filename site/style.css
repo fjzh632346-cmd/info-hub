@@ -127,6 +127,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .filters button span { font: 600 13px/1 var(--num); color: var(--muted); margin-left: 4px; }
 .filters button[aria-pressed="true"] { background: var(--ink); color: var(--page); border-color: var(--ink); }
 .filters button[aria-pressed="true"] span { color: var(--tape); }
+.filters.sorts { margin-bottom: 10px; }
+.filters.sorts button { border-radius: 6px; }
 
 /* ---------- Skill 库 ---------- */
 .card { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 0 18px; padding: 0 0 26px; margin: 0 0 26px; border-bottom: 1px dashed var(--line); }

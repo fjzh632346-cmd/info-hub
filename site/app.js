@@ -5,6 +5,8 @@
 
   var D = null, byId = {}, saved = {}, auth = false, pass = '';
   var skillFilter = '全部', futureFilter = '全部';
+  var skillSort = 'score';
+  try { if (localStorage.getItem('skillSort') === 'time') skillSort = 'time'; } catch (e) {}
   var $main = document.getElementById('main'), $zones = document.getElementById('zones');
   var WEEK = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
   var SKILL_CATS = ['网页设计', '视频', '图片编辑', '照片艺术', 'PPT', '写作', '研究', '编程', '其他'];
@@ -309,10 +311,18 @@
   function viewSkills() {
     var all = skillsAll();
     var shown = skillFilter === '全部' ? all : all.filter(function (s) { return s.category === skillFilter; });
+    if (skillSort === 'time') shown = shown.slice().sort(function (a, b) {
+      var sa = typeof a.score === 'number' ? a.score : -1, sb = typeof b.score === 'number' ? b.score : -1;
+      return (a.date < b.date ? 1 : a.date > b.date ? -1 : 0) || sb - sa;
+    });
     var cats = ['全部'].concat(SKILL_CATS).filter(function (c) { return c === '全部' || all.some(function (s) { return s.category === c; }) || ['视频', '图片编辑', 'PPT'].indexOf(c) >= 0; });
-    var h = '<header class="mast wordy"><p class="day word">Skill 库</p><div class="meta"><b>共 ' + all.length + ' 个</b><br>历次周报和 X 精选里的 Skill、提示词，按适合你的程度从高到低</div>' +
+    var h = '<header class="mast wordy"><p class="day word">Skill 库</p><div class="meta"><b>共 ' + all.length + ' 个</b><br>历次周报和 X 精选里的 Skill、提示词，' + (skillSort === 'time' ? '最新收录的在前' : '按适合你的程度从高到低') + '</div>' +
       '<p class="lead">适合度是生成周报时按"你用得上的频率、上手难度、效果、和你方向的相关性"打的分，只是参考。早期收录的没有评分，排在后面。</p></header>';
-    h += '<div style="margin-top:22px" class="filters" role="group" aria-label="按类别筛选">' + cats.map(function (c) {
+    h += '<div style="margin-top:22px" class="filters sorts" role="group" aria-label="排序方式">' +
+      [['score', '按适合度'], ['time', '按收录时间']].map(function (o) {
+        return '<button type="button" data-sort="' + o[0] + '" aria-pressed="' + (o[0] === skillSort) + '">' + o[1] + '</button>';
+      }).join('') + '</div>';
+    h += '<div class="filters" role="group" aria-label="按类别筛选">' + cats.map(function (c) {
       var n = c === '全部' ? all.length : all.filter(function (s) { return s.category === c; }).length;
       return '<button type="button" data-skill="' + esc(c) + '" aria-pressed="' + (c === skillFilter) + '">' + esc(c) + '<span>' + n + '</span></button>';
     }).join('') + '</div>';
@@ -460,6 +470,7 @@
   // ---------- 交互 ----------
   $main.addEventListener('click', function (ev) {
     var t;
+    if ((t = ev.target.closest('[data-sort]'))) { skillSort = t.getAttribute('data-sort'); try { localStorage.setItem('skillSort', skillSort); } catch (e) {} return route(true); }
     if ((t = ev.target.closest('[data-skill]'))) { skillFilter = t.getAttribute('data-skill'); return route(true); }
     if ((t = ev.target.closest('[data-future]'))) { futureFilter = t.getAttribute('data-future'); return route(true); }
     if ((t = ev.target.closest('.clip'))) { t.classList.remove('clip'); return; }
