@@ -10,6 +10,9 @@ const path = require('path');
 const FEEDS = [
   // AI · 一手
   ['ai', 'a16z', 'https://www.a16z.news/feed'],
+  // claude.com/blog 没有官方 RSS，用个人维护的非官方镜像（每天 06:00 UTC 更新，含全文）
+  ['ai', 'Claude 官方博客', 'https://tim-hilde.github.io/anthropic-rss/rss.xml'],
+  ['ai', 'Anthropic Engineering', 'https://znck.github.io/feeds/anthropic-engineering.xml'],
   ['ai', 'OpenAI', 'https://openai.com/news/rss.xml'],
   ['ai', 'Google DeepMind', 'https://deepmind.google/blog/rss.xml'],
   ['ai', 'Google AI', 'https://blog.google/technology/ai/rss/'],
