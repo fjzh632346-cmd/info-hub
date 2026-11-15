@@ -1,34 +1,40 @@
 {
- "fetchedAt": "2026-11-15T01:58:33.732Z",
+ "fetchedAt": "2026-11-15T15:10:27.875Z",
  "hours": 72,
  "status": [
   {
-   "source": "OpenAI",
-   "feed": "https://openai.com/news/rss.xml",
+   "source": "Claude 官方博客",
+   "feed": "https://tim-hilde.github.io/anthropic-rss/rss.xml",
    "ok": true,
-   "total": 1387,
-   "recent": 5
+   "total": 20,
+   "recent": 0
   },
   {
    "source": "a16z",
    "feed": "https://www.a16z.news/feed",
    "ok": true,
    "total": 20,
+   "recent": 2
+  },
+  {
+   "source": "OpenAI",
+   "feed": "https://openai.com/news/rss.xml",
+   "ok": true,
+   "total": 1387,
    "recent": 3
   },
   {
-   "source": "Google DeepMind",
-   "feed": "https://deepmind.google/blog/rss.xml",
+   "source": "Anthropic Engineering",
+   "feed": "https://znck.github.io/feeds/anthropic-engineering.xml",
    "ok": true,
-   "total": 100,
-   "recent": 1
+   "total": 26,
+   "recent": 0
   },
   {
    "source": "Epoch AI",
    "feed": "https://epochai.substack.com/feed",
-   "ok": true,
-   "total": 20,
-   "recent": 1
+   "ok": false,
+   "error": "HTTP 403"
   },
   {
    "source": "Hugging Face",
@@ -40,6 +46,19 @@
   {
    "source": "Import AI",
    "feed": "https://importai.substack.com/feed",
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  {
+   "source": "Google DeepMind",
+   "feed": "https://deepmind.google/blog/rss.xml",
+   "ok": true,
+   "total": 100,
+   "recent": 1
+  },
+  {
+   "source": "One Useful Thing",
+   "feed": "https://www.oneusefulthing.org/feed",
    "ok": true,
    "total": 20,
    "recent": 0
@@ -59,13 +78,6 @@
    "recent": 1
   },
   {
-   "source": "Sequoia",
-   "feed": "https://www.sequoiacap.com/feed/",
-   "ok": true,
-   "total": 50,
-   "recent": 0
-  },
-  {
    "source": "Google AI",
    "feed": "https://blog.google/technology/ai/rss/",
    "ok": true,
@@ -73,10 +85,10 @@
    "recent": 1
   },
   {
-   "source": "One Useful Thing",
-   "feed": "https://www.oneusefulthing.org/feed",
+   "source": "Sequoia",
+   "feed": "https://www.sequoiacap.com/feed/",
    "ok": true,
-   "total": 20,
+   "total": 50,
    "recent": 0
   },
   {
@@ -91,14 +103,7 @@
    "feed": "https://www.latent.space/feed",
    "ok": true,
    "total": 20,
-   "recent": 5
-  },
-  {
-   "source": "宝玉",
-   "feed": "https://baoyu.io/feed.xml",
-   "ok": true,
-   "total": 50,
-   "recent": 0
+   "recent": 3
   },
   {
    "source": "Symbotic IR",
@@ -114,15 +119,22 @@
    "recent": 0
   },
   {
+   "source": "宝玉",
+   "feed": "https://baoyu.io/feed.xml",
+   "ok": true,
+   "total": 50,
+   "recent": 0
+  },
+  {
    "source": "BestBlogs 每日早报",
    "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
    "ok": true,
    "total": 7,
-   "recent": 4
+   "recent": 3
   },
   {
-   "source": "Georgia Tech SCL",
-   "feed": "https://www.scl.gatech.edu/rss.xml",
+   "source": "Daifuku",
+   "feed": "https://www.daifuku.com/rss_all.xml",
    "ok": true,
    "total": 10,
    "recent": 0
@@ -135,36 +147,8 @@
    "recent": 0
   },
   {
-   "source": "Automated Warehouse",
-   "feed": "https://www.automatedwarehouseonline.com/feed/",
-   "ok": true,
-   "total": 10,
-   "recent": 4
-  },
-  {
-   "source": "The Robot Report 物流",
-   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
-   "ok": true,
-   "total": 15,
-   "recent": 2
-  },
-  {
-   "source": "Logistics Viewpoints",
-   "feed": "https://logisticsviewpoints.com/feed/",
-   "ok": true,
-   "total": 10,
-   "recent": 4
-  },
-  {
-   "source": "AIHOT",
-   "feed": "https://aihot.news/rss",
-   "ok": true,
-   "total": 50,
-   "recent": 48
-  },
-  {
-   "source": "Daifuku",
-   "feed": "https://www.daifuku.com/rss_all.xml",
+   "source": "Georgia Tech SCL",
+   "feed": "https://www.scl.gatech.edu/rss.xml",
    "ok": true,
    "total": 10,
    "recent": 0
@@ -172,23 +156,43 @@
   {
    "source": "Interact Analysis",
    "feed": "https://www.interactanalysis.com/feed/",
+   "ok": false,
+   "error": "fetch failed"
+  },
+  {
+   "source": "Automated Warehouse",
+   "feed": "https://www.automatedwarehouseonline.com/feed/",
    "ok": true,
-   "total": 0,
-   "recent": 0
+   "total": 10,
+   "recent": 4
+  },
+  {
+   "source": "Logistics Viewpoints",
+   "feed": "https://logisticsviewpoints.com/feed/",
+   "ok": true,
+   "total": 10,
+   "recent": 3
+  },
+  {
+   "source": "The Robot Report 物流",
+   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
+   "ok": true,
+   "total": 15,
+   "recent": 1
   },
   {
    "source": "MH&L",
    "feed": "https://www.mhlnews.com/__rss/website-scheduled-content.xml?input=%7B%22sectionAlias%22%3A%22home%22%7D",
    "ok": true,
    "total": 25,
-   "recent": 2
+   "recent": 1
   },
   {
-   "source": "Supply Chain Dive",
-   "feed": "https://www.supplychaindive.com/feeds/news/",
+   "source": "DC Velocity",
+   "feed": "https://www.dcvelocity.com/rss",
    "ok": true,
-   "total": 10,
-   "recent": 8
+   "total": 30,
+   "recent": 6
   },
   {
    "source": "Supply Chain 24/7 自动化",
@@ -198,10 +202,10 @@
    "recent": 1
   },
   {
-   "source": "DC Velocity",
-   "feed": "https://www.dcvelocity.com/rss",
+   "source": "Supply Chain Dive",
+   "feed": "https://www.supplychaindive.com/feeds/news/",
    "ok": true,
-   "total": 30,
+   "total": 10,
    "recent": 7
   },
   {
@@ -211,13 +215,6 @@
    "error": "HTTP 410"
   },
   {
-   "source": "36氪快讯",
-   "feed": "https://36kr.com/feed-newsflash",
-   "ok": true,
-   "total": 0,
-   "recent": 0
-  },
-  {
    "source": "Robotics & Automation News",
    "feed": "https://roboticsandautomationnews.com/feed/",
    "ok": true,
@@ -225,14 +222,108 @@
    "recent": 15
   },
   {
+   "source": "36氪快讯",
+   "feed": "https://36kr.com/feed-newsflash",
+   "ok": true,
+   "total": 0,
+   "recent": 0
+  },
+  {
+   "source": "AIHOT",
+   "feed": "https://aihot.news/rss",
+   "ok": true,
+   "total": 50,
+   "recent": 44
+  },
+  {
    "source": "国家统计局",
    "feed": "https://www.stats.gov.cn/sj/zxfb/rss.xml",
-   "ok": true,
-   "total": 500,
-   "recent": 1
+   "ok": false,
+   "error": "This operation was aborted"
   }
  ],
  "items": [
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Zacua Ventures raises $135 million to invest in robotics, physical AI and industrial technology",
+   "url": "https://roboticsandautomationnews.com/2026/11/15/zacua-ventures-raises-135-million-to-invest-in-robotics-physical-ai-and-industrial-technology/107166/",
+   "published": "2026-11-15T14:57:29.000Z",
+   "description": "Venture capital firm Zacua Ventures has closed its second investment fund at $135 million, more than doubling the size of its original $56 million fund as it expands its focus on robotics, physical AI and technologies for industrial applications. The San Francisco-based firm says Fund II was 35 percent oversubscribed, attracting commitments from more than […]",
+   "excerpt": "Venture capital firm Zacua Ventures has closed its second investment fund at $135 million, more than doubling the size of its original $56 million fund as it expands its focus on robotics, physical AI and technologies for industrial applications.\nThe San Francisco-based firm says Fund II was 35 percent oversubscribed, attracting commitments from more than 30 corporate and institutional investors across over 20 countries.\nOriginally focused on construction technology, Zacua is broadening its investment strategy to include manufacturing, energy, mining, infrastructure and other sectors it collectively describes as the “Physical Industries”.\nThe firm believes these sectors offer substantial opportunities for technologies that combine robotics, artificial intelligence and software with practical industrial expertise.\nVivin Hegde, founding partner at Zacua Ventures, says: “The industries that underpin modern life are entering a forced transformation cycle. Housing is out of reach. Energy grids are under pressure. Workforces are aging out. The AI infrastructure buildout is placing even greater demands on the industries already struggling to keep pace.\n“These are not isolated problems; they’re converging across the Physical Industries, a category venture capital has largely overlooked. We built Zacua in construction because we saw these challenges firsthand. Fund II takes what we learned there and applies it to the broader physical world.”\nZacua has already invested in 34 early-stage companies across 11 markets, with several investments demonstrating its interest in industrial automation.\nAmong its portfolio companies is Gravis Robotics, an ETH Zurich spinout developing physical AI for autonomous construction equipment. The company raised $200 million in Series A funding from SoftBank earlier this year, reaching a reported valuation of $1 billion.\nAnother investment is Origin Robotics, whose OG1 robot autonomously finishes interior walls. The company emerged from stealth with $20 million in seed and Series A financing, with Zacua leading the latter round.\nOther investments include Flexnode, which develops modular data centers, and CURA Climate, which is working on technologies to reduce emissions from cement production.\nZacua’s first exit came earlier this year when construction risk-management software company Document Crunch was acquired by Trimble.\nFund II’s investors include Volvo Group Venture Capital, Holcim Maqer Ventures, Hilti Venture, Trimble Ventures, "
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "GITEX Global to showcase latest humanoid robots and physical AI technologies in Dubai",
+   "url": "https://roboticsandautomationnews.com/2026/11/15/gitex-global-to-showcase-latest-humanoid-robots-and-physical-ai-technologies-in-dubai/107161/",
+   "published": "2026-11-15T14:51:36.000Z",
+   "description": "GITEX Global 2026 will introduce a dedicated robotics exhibition, GITEX World RobotiX, bringing together humanoid robot manufacturers, embodied AI developers and industrial automation companies in Dubai from December 8 to 11. Taking place at the Dubai Exhibition Centre in Expo City Dubai, the event will feature demonstrations of humanoid robots, autonomous mobile systems, quadrupeds, wearable […]",
+   "excerpt": "GITEX Global 2026 will introduce a dedicated robotics exhibition, GITEX World RobotiX , bringing together humanoid robot manufacturers, embodied AI developers and industrial automation companies in Dubai from December 8 to 11.\nTaking place at the Dubai Exhibition Centre in Expo City Dubai, the event will feature demonstrations of humanoid robots, autonomous mobile systems, quadrupeds, wearable exoskeletons and robotics development technologies.\nThe new exhibition comes amid growing interest in physical AI, which combines artificial intelligence with machines capable of interacting with the physical world.\nAccording to Counterpoint Research, global humanoid robot shipments exceeded 22,000 units in the first half of 2026, representing a 300 percent increase year on year. The research firm expects shipments to exceed 50,000 by the end of the year.\nMajor exhibitors will include Unitree, UBTECH, AiMOGA, DEEP Robotics and UAE-based Micropolis Robotics.\nChinese manufacturer Lumos Robotics will make the Middle East debut of its MOS 2, a wheeled, dual-arm robot designed for industrial tasks. The company says the machine can handle payloads of up to 50 kg and operate for more than eight hours.\nLumos will also demonstrate its NIX S3 humanoid, which features 21 degrees of freedom and will perform live demonstrations of dynamic movement.\nUAE-based Mangobot will present autonomous robots for industrial, security and customer-facing applications, alongside multilingual robotic receptionists and wearable exoskeletons.\nLootah Robotics will showcase products from manufacturers including Unitree, AGIBOT, Pudu Robotics, UBTECH and EngineAI, demonstrating applications ranging from industrial automation to cleaning and telepresence.\nOther attractions will include Light Origins’ new consumer-oriented robot, which has a bunny-shaped design, and Raydiculous’ TP01 humanoid and DINOBOT bipedal robotic dinosaur.\nBeyond the robots themselves, the exhibition will highlight the computing hardware and software needed to develop autonomous machines.\nJWIPC will introduce robotic controllers based on Nvidia’s Thor computing module, while Songying Technology will demonstrate its ORCA software environment for robotics simulation, synthetic data generation, AI training and validation.\nTaiwanese computing specialist Vecow will also present industrial edge AI platforms designed for robotics applications.\nEducation will feature prominently, with UAE-based Besomi Robotics & AI presenting six human"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Merec Industries builds new pasta factory in Mozambique to expand production capacity",
+   "url": "https://roboticsandautomationnews.com/2026/11/15/merec-industries-builds-new-pasta-factory-in-mozambique-to-expand-production-capacity/107156/",
+   "published": "2026-11-15T14:44:08.000Z",
+   "description": "Invictus Investment Company, a UAE-based holding company specialised in agro-food commodities across the Middle East and Africa, has announced that its subsidiary Merec Industries is building the first pasta manufacturing plant in the northern region of Mozambique, in Nacala. Once the plant is complete, Merec will be the only company in Mozambique with pasta manufacturing […]",
+   "excerpt": "Invictus Investment Company , a UAE-based holding company specialised in agro-food commodities across the Middle East and Africa, has announced that its subsidiary Merec Industries is building the first pasta manufacturing plant in the northern region of Mozambique, in Nacala.\nOnce the plant is complete, Merec will be the only company in Mozambique with pasta manufacturing facilities in all three regions of the country: the north, central and south.\nTogether with the expansion of its Machava industrial facility in the south, the new plant will take Merec’s total pasta production capacity beyond Mozambique’s national demand, enabling the country to meet its pasta demand from local production and export the surplus. Nacala is home to a deep-water port and is the gateway to the Nacala Logistics Corridor, which links Mozambique to Malawi and Zambia.\nThe Governor of Nampula Province, His Excellency Eduardo Abdula, visited Merec’s facilities to view construction progress and learn more about the developments of this investment.\nThe plant will significantly expand Mozambique’s pasta production capacity and bring production closer to consumers in the north, while increasing the availability of high-quality fortified pasta in line with the country’s national food fortification requirements.\nIt will also create direct and indirect jobs, develop local skills and involve businesses across the value chain, from production and logistics to distribution and sales.\nMerec’s operating performance has improved significantly since it joined Invictus Investment in January 2025, prompting a more ambitious growth strategy to expand it beyond its core operations into new food categories in Mozambique and across the wider Southern African Development Community (SADC) region.\nIn October 2026, Invictus Investment and Helios Investment Partners announced that Helios Fund V had entered into an agreement to acquire up to a 49 percent interest in Merec’s holding company, with Invictus Investment remaining the majority shareholder. The transaction is expected to close by the end of 2026, subject to customary closing conditions, including regulatory approvals.\nMerec and Invictus Investment also signed cooperation agreements with the International Finance Corporation (IFC), a member of the World Bank Group, at the Lusophone Africa Investment Forum in Cabo Verde last month, to advance agribusiness in Mozambique and across Africa.\nCommenting on the announcement, Amir Daoud Abdellatif, CEO of"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Robbyant launches LingBot-Touch to give robots a sense of touch",
+   "url": "https://roboticsandautomationnews.com/2026/11/15/robbyant-launches-lingbot-touch-to-give-robots-a-sense-of-touch/107152/",
+   "published": "2026-11-15T14:34:52.000Z",
+   "description": "Robbyant, an embodied AI company within Ant Group, has announced the open-source release of LingBot-Touch, a tactile foundation model that gives robots a critical missing sense by enabling robust touch perception. Pre-trained on nearly 5,000 hours of real-world tactile data, the model covers three mainstream sensing modalities – magnetic tactile, visual tactile, and piezoresistive sensing […]",
+   "excerpt": "Robbyant , an embodied AI company within Ant Group, has announced the open-source release of LingBot-Touch, a tactile foundation model that gives robots a critical missing sense by enabling robust touch perception.\nPre-trained on nearly 5,000 hours of real-world tactile data, the model covers three mainstream sensing modalities – magnetic tactile, visual tactile, and piezoresistive sensing – and translates their diverse signals into a unified tactile representation.\nThis allows different dexterous hands and action models to share and reuse tactile understanding, enabling robots to not only “see clearer” and “think deeper,” but also “feel sharper” during fine manipulation tasks, such as turning pages, unscrewing bottle caps, and identifying Mahjong tiles.\nEquipping robots with tactile sensors does not automatically give them useful touch perception. Commercial tactile sensors are still in an early stage of development, with visual tactile, magnetic tactile, and piezoresistive approaches each carrying distinct advantages and limitations. Given differing cost structures and application scenarios, multiple technical routes are likely to coexist for the foreseeable future.\nA more fundamental challenge lies in data compatibility. The same physical contact can produce different raw signals depending on sensing principles and contact-point layouts.\nIf a model learns to interpret only one type of sensor, its tactile experience may become difficult to reuse when the sensor or dexterous hand changes, forcing teams to re-collect data, retrain models, and re-adapt their systems.\nAmid rapid hardware iteration, this tight coupling creates repeated development work and raises integration costs for hardware vendors, robot integrators, and model developers.\nFor tactile perception to scale, robots must move beyond dependence on specific sensor signals. Data from different sources should be trainable together, and accumulated tactile capabilities should be reusable across sensors, dexterous hands, models, and tasks.\nLingBot-Touch addresses this challenge through a unified architecture. It provides separate encoding pathways for different sensing principles, processes heterogeneous raw signals, and maps contact points from different layouts into a shared fingertip coordinate space. A shared model then learns contact location, force distribution, and their temporal evolution, producing unified tactile tokens.\nThis design enables data collected from humans wearing tactile gloves"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "CoreWeave partners with Wayve to accelerate AI training for autonomous vehicles",
+   "url": "https://roboticsandautomationnews.com/2026/11/15/coreweave-partners-with-wayve-to-accelerate-ai-training-for-autonomous-vehicles/107148/",
+   "published": "2026-11-15T12:50:34.000Z",
+   "description": "CoreWeave, a provider of cloud computing for AI, has announced a multi-year agreement with Wayve, a developer of embodied intelligence building the AI Driver for autonomous vehicles. Wayve will train its foundation models on CoreWeave Cloud with Nvidia Blackwell GPUs, expanding its AI infrastructure for training, evaluation, and simulation. Wayve began using Weights & Biases […]",
+   "excerpt": "CoreWeave , a provider of cloud computing for AI, has announced a multi-year agreement with Wayve , a developer of embodied intelligence building the AI Driver for autonomous vehicles.\nWayve will train its foundation models on CoreWeave Cloud with Nvidia Blackwell GPUs, expanding its AI infrastructure for training, evaluation, and simulation. Wayve began using Weights & Biases and has now scaled into leveraging CoreWeave Cloud.\nWayve’s AI Driver is becoming the driving intelligence layer the automotive industry is choosing to build on, from personally-owned cars to robotaxis. It learns to drive from real-world data collected in more than 70 countries, which makes it a frontier training workload with physics and safety attached.\nModels of that kind demand purpose-built cloud solutions , with reliability across long training runs and enough observability to prove one version is better than the last and validate safety at scale.\nSilvius Rus, SVP of engineering at Wayve, says: “Our AI Driver gets better by running this data flywheel: gathering real-world driving experience, training on it, evaluating it, and deploying only what outperforms what is already on the road.\n“Being able to access CoreWeave’s AI cloud, purpose-built for workloads like ours, helps accelerate the commercial deployment of our AI Driver.”\nGavin Jackson, VP of international at CoreWeave, says: “This agreement brings one of the most demanding physical AI programs in the world onto a platform purpose-built for it.\n“As AI moves from the screen into the physical world, the companies leading that shift need training, evaluation, and simulation infrastructure designed to work together from the start.”\nCoreWeave consistently delivers industry-leading performance, demonstrated by record-breaking MLPerf benchmark results in inference and training, its position as the only AI cloud to earn the top Platinum ranking in SemiAnalysis ClusterMAX three times in a row, and its number-one ranking for inference speed and price-performance for Moonshot AI’s Kimi K2.6 and Kimi K2.7 Code in independent inference benchmarking conducted by Artificial Analysis.\nOur website relies on ads to provide free content and sustain our operations. By turning off your ad blocker, you help support us and ensure we can continue offering valuable content without any cost to you.\nWe truly appreciate your understanding and support. Thank you for considering disabling your ad blocker for this website"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "AGV Expo attracts more than 1,000 visitors as industrial automation gathers pace",
+   "url": "https://roboticsandautomationnews.com/2026/11/15/agv-expo-attracts-more-than-1000-visitors-as-industrial-automation-gathers-pace/107142/",
+   "published": "2026-11-15T12:43:23.000Z",
+   "description": "The inaugural AGV Expo, held in Piacenza, Italy, at the end of October, 2026, attracted more than 1,000 visitors and provided a useful snapshot of developments in automated material handling, mobile robotics and industrial logistics. Organized by Mediapoint & Exhibitions, the three-day event brought together manufacturers, systems integrators and technology suppliers working with automated guided […]",
+   "excerpt": "The inaugural AGV Expo , held in Piacenza, Italy, at the end of October, 2026, attracted more than 1,000 visitors and provided a useful snapshot of developments in automated material handling, mobile robotics and industrial logistics.\nOrganized by Mediapoint & Exhibitions, the three-day event brought together manufacturers, systems integrators and technology suppliers working with automated guided vehicles (AGVs), autonomous mobile robots (AMRs) and associated technologies.\nThe exhibition highlighted a market that continues to develop beyond traditional automated warehouses, with increasing interest in flexible systems that can operate within existing factories and logistics facilities.\nAmong the product launches was PROXAUT’s UNDER-X, a compact AGV introduced as the Italian manufacturer celebrated its 30th anniversary.\nMeasuring just 96 cm long and 42 cm wide, UNDER-X can transport loads of up to 1,500 kg using interchangeable platforms, conveyors and other attachments.\nIts LiDAR-based navigation eliminates the need for magnetic strips or reflectors, illustrating the industry’s continuing move toward more adaptable automation.\nLifter Mobile Robotics presented its X-ACT range of autonomous pallet-handling vehicles, while VHIT Robotics demonstrated cleaning robots, autonomous stackers and pallet trucks.\nVHIT also explored potential applications for humanoid robots in repetitive industrial tasks, including depalletizing, machine loading and component sorting.\nOne of the clearest themes emerging from the exhibition was that successful automation depends as much on integration as on the robots themselves.\nLCS Group reported growing demand for AGVs, particularly among manufacturers seeking to automate existing facilities without extensive structural modifications.\nIts fleet management software supports the VDA 5050 standard, allowing compatible vehicles from different manufacturers to operate within a common management environment.\nSigma Motion similarly emphasized the importance of adapting autonomous vehicles to existing factory conditions, including non-standard pallets, restricted spaces and established production workflows.\nThe wider supporting infrastructure also featured prominently. Bolzoni demonstrated forklift attachments designed for automated applications, EKT Europe presented lithium-ion battery technologies, and Anco Pavimenti highlighted the importance of industrial flooring for reliable vehicle operation.\nConference sessions addressed cybersecur"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "DP World partners with Dubai Future Foundation to develop autonomous port logistics",
+   "url": "https://roboticsandautomationnews.com/2026/11/15/dp-world-partners-with-dubai-future-foundation-to-develop-autonomous-port-logistics/107137/",
+   "published": "2026-11-15T12:02:06.000Z",
+   "description": "Dubai Future Foundation (DFF) has announced a partnership with DP World, which becomes the first strategic partner of the recently launched self-driving logistics joint venture, SHIFFT. Established in collaboration with Oxa, a global autonomous vehicle technology company, the venture forms part of the Dubai Research, Development and Innovation Programme. It aims to harness the latest […]",
+   "excerpt": "Dubai Future Foundation (DFF) has announced a partnership with DP World , which becomes the first strategic partner of the recently launched self-driving logistics joint venture, SHIFFT.\nEstablished in collaboration with Oxa , a global autonomous vehicle technology company, the venture forms part of the Dubai Research, Development and Innovation Programme.\nIt aims to harness the latest future technologies and advanced applications across service and logistics sectors, reinforcing Dubai’s leadership as a global hub for developing and delivering best-in-class smart, autonomous logistics services and solutions.\nThe partnership between Dubai Future Foundation and DP World will accelerate the development and deployment of the next generation of autonomous logistics solutions across ports, terminals, industrial zones and DP World facilities, beginning at Jebel Ali Port, with the potential to expand these solutions across the Group’s network of more than 60 ports and terminals worldwide.\nThe work will focus on a range of logistics solutions, including vehicle integration, autonomous driving capabilities, safety and assurance frameworks, fleet management and orchestration, traffic management and routing, operations in complex mixed-use environments, digital twin capabilities, situational intelligence systems and operational performance optimisation.\nSHIFFT will develop integrated solutions designed to operate within DP World’s current and future technology environments. DP World operates more than 900 vehicles at Jebel Ali Port for inter-terminal container movement and shuttling cargo between quay cranes, yard stacks and terminal gates – and thousands globally across more than 60 ports and terminals.\nIt views the transition to autonomous operations as a key component of its long-term operating strategy.\nKhalifa Al Qama, chief of research, development and innovation at DFF, said: “The selection of DP World as the first strategic partner of SHIFFT marks an important step in developing and implementing autonomous logistics solutions from Dubai.\n“This collaboration brings together world-leading operational expertise and advanced technologies to develop practical solutions that can be deployed and scaled globally.”\nIbrahim Al Najjar, SVP – information technology at DP World GCC, said: “For our customers and partners, autonomous technology translates into more predictable, resilient supply chains that keep cargo moving reliably and at speed.\n“It also creates opportuniti"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Embodied AI unveils AIR humanoid robot designed to learn factory tasks on the job",
+   "url": "https://roboticsandautomationnews.com/2026/11/15/embodied-ai-unveils-air-humanoid-robot-designed-to-learn-factory-tasks-on-the-job/107133/",
+   "published": "2026-11-15T11:53:06.000Z",
+   "description": "Swiss robotics company Embodied AI has unveiled AIR at Humanoid Europe 2026, a humanoid robot built to share the factory floor with people. As many as 1.9 million US manufacturing jobs could go unfilled by 2033, according to Deloitte and the Manufacturing Institute. AIR takes on the repetitive manual tasks that change too often for […]",
+   "excerpt": "Swiss robotics company Embodied AI has unveiled AIR at Humanoid Europe 2026, a humanoid robot built to share the factory floor with people. As many as 1.9 million US manufacturing jobs could go unfilled by 2033, according to Deloitte and the Manufacturing Institute .\nAIR takes on the repetitive manual tasks that change too often for conventional robots, so the people already on the line can focus on work that needs their skill.\nEmbodied AI went from research to an industrial humanoid in 9 months, and signed contracts with major OEMs globally with just a fraction of the spending needed by other robotics companies to achieve this. AIR is now being tested with global manufacturers, and the company is starting plans for scaled production.\nThe market appetite is growing. Some 22 percent of manufacturers plan to use physical AI, such as humanoid robots, within two years, more than double today’s 9 percent, according to the Manufacturing Leadership Council.\nBut Deloitte found that more than 80 percent of factory task hours are expected to stay human-driven. The opportunity is in helping those people, not replacing them.\nYet most humanoids today are still demonstrations, and most industrial robots are built for heavy-duty tasks, so they work behind cages, away from the people who know the job best.\nAIR is built to be safe and to complete the high-dexterity tasks that currently are still performed manually. It goes onto the factory floor as it is, next to the team already there.\nAIR is designed with a tendon-driven architecture. Motors, gearboxes and electronics sit in its torso. Its arms are light and moved by tendons, so they carry almost no mass and give way on contact.\nIt runs on wheels rather than legs, because factory floors are flat and wheels are more stable. Safety comes from how it is built, not from software holding it back. AIR is designed under ISO/TS 15066:2016 with CE marking planned for 2027.\nTo learn and guarantee factory uptime, AIR starts every job under the control of a human operator, so it is productive from its first shift. Every run is recorded, and Embodied AI’s own AI stack learns from those demonstrations until AIR can do the task itself, typically within a month. The operator then stays on hand to cover for anything it hasn’t seen before. What one robot learns, the next can use.\nEmbodied AI’s AI stack is already proven in paid factory deployments with its two-arm industrial cell. When a leading consumer electronics manufacturer tested fi"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "University of Rhode Island showcases underwater robotics and autonomous systems",
+   "url": "https://roboticsandautomationnews.com/2026/11/15/university-of-rhode-island-showcases-underwater-robotics-and-autonomous-systems/107124/",
+   "published": "2026-11-15T11:38:04.000Z",
+   "description": "By Mackensie duPont Crowley, digital communications coordinator at University of Rhode Island’s Graduate School of Oceanography The National Oceanic and Atmospheric Administration Ocean Exploration Cooperative Institute, based at the University of Rhode Island Narragansett Bay Campus, hosted an underwater systems and autonomy showcase with two blue technology companies, Sonardyne and Voyis, in October. The two-day […]",
+   "excerpt": "By Mackensie duPont Crowley , digital communications coordinator at University of Rhode Island ’s Graduate School of Oceanography\nThe National Oceanic and Atmospheric Administration Ocean Exploration Cooperative Institute , based at the University of Rhode Island Narragansett Bay Campus, hosted an underwater systems and autonomy showcase with two blue technology companies, Sonardyne and Voyis, in October.\nThe two-day event brought together oceanographers, ocean engineers, industry experts, and other participants to share knowledge about advances in subsea technology and explore new possibilities for ocean exploration and monitoring.\nSonardyne develops underwater technology for tracking, navigation, communication, and subsea positioning. Voyis designs and manufactures high-resolution underwater laser scanners, optical cameras, and stereo vision systems for subsea vehicles.\nBy bringing these companies together with researchers at URI, the showcase highlighted how their devises are supporting ocean science and enabling new approaches to underwater observation.\n“Federal, academic, and industrial collaborators each bring specific advantages to the ocean exploration and science enterprise, but also face unique challenges,” said Adam Soule , executive director of NOAA OECI.\n“By collaborating, these groups can align their missions, technologies, and access to the ocean to overcome challenges they might struggle to address on their own.”\nThe showcase provided a forum for sharing field experience, demonstrating new capabilities, and exploring how advances in underwater systems can support future ocean exploration. For industry partners, these exchanges also offer valuable insight into researchers’ needs and the challenges they face in the field.\n“Bringing the ocean research community together in one place is invaluable,” said Michelle Barnett, ocean science business development manager at Sonardyne.\n“For Sonardyne and Voyis, being part of this community gives us a much deeper understanding of how our systems support research, and the challenges researchers face in the field. That insight informs how we develop our technologies and how we configure them for scientific work.”\nThe first day featured talks from researchers using Sonardyne and Voyis technologies in the field, demonstrating how these systems are advancing their work.\nURI Graduate School of Oceanography Professor Kathleen Donohue shared how her team has used Sonardyne instruments to collect and transmit da"
+  },
   {
    "group": "ai",
    "source": "BestBlogs 每日早报",
@@ -297,15 +388,6 @@
    "excerpt": "A new release of Datasette's longest untouched plugin, for rendering charts (using Vega-Lite ) against data in a table or custom query. The last release was in July 2018!\nI finally bumped it for compatibility with the latest Datasette alphas, plus some cosmetic tweaks to make it work better with Datasette Lite .\n(Datasette Lite just gained the ability to run JavaScript plugins like this! I'll write more about that soon.)\nSince it works with Datasette Lite, the live demo in the README now links to this demo on Datasette Lite .\nThis is a beat by Simon Willison, posted on 14th November 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
   },
   {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "黄仁勋离开 Nvidia 后，亚洲各国政府如何回应",
-   "url": "https://aihot.news/items/ni18shok3lh70l1e49nazmgdc",
-   "published": "2026-11-14T16:34:15.000Z",
-   "description": "黄仁勋离开 Nvidia 后，亚洲多国政府相继回应：韩国科技部称 Nvidia 重申将向韩国供应 260,000 块先进 GPU 并继续联合 AI 项目，台湾经济部长龚明鑫认为此事不太可能显著改变全球 AI 产业增长，日本产业省表示将密切关注 Nvidia。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ni18shok3lh70l1e49nazmgdc",
-   "excerpt": "Asian governments react to Nvidia CEO Jensen Huang’s exit\n黄仁勋离开 Nvidia 后，亚洲多国政府相继回应：韩国科技部称 Nvidia 重申将向韩国供应 260,000 块先进 GPU 并继续联合 AI 项目，台湾经济部长龚明鑫认为此事不太可能显著改变全球 AI 产业增长，日本产业省表示将密切关注 Nvidia。\n黄仁勋离开英伟达一事在亚洲各地引发不同反应：一些政府着手确认芯片供应承诺，另一些则在评估对本地项目的影响，或应对正在进行的调查。\n11月8日周日， 英伟达董事会启动了一项独立调查 ，此前有报道称黄仁勋在一起中国间谍行动中被盯上；黄仁勋承认与Alice Huang有婚外情，后者曾是新加坡芯片公司Megaspeed的高管。\n英伟达的影响力远不止于美国。这家芯片巨头与全球各地的公司建立了紧密联系，尤其是在亚洲，许多关键合作伙伴在全球AI产业中扮演着重要角色。\n中国外交部 11月10日驳斥了有关一名与英伟达前CEO黄仁勋有关联的中国女商人从事间谍活动的指控，称其毫无根据，是对北京的抹黑。 周五 ，一位发言人重申反对扰乱全球供应链的出口管制，并表示外交部并不知晓有关受限英伟达芯片与Alice Huang相关的一个上海数据中心存在关联的报道。\n据路透社对采购公告、投资计划和企业披露文件的梳理，黄仁勋的离职还给 逾30亿美元依赖英伟达受限处理器的中国AI算力 项目增添了不确定性。这些芯片大多受美国出口管制，中国企业难以获得。\n据 新加坡内政部 称，2025年6月，新加坡当局扣押了新加坡云计算公司Megaspeed前CEO Alice Huang的护照，这是对服务器采购可能存在虚假申报的调查的一部分。\n新加坡内政部表示，警方扣押她的护照是为了确保她能随时接受问询，因为她并不常驻新加坡。 这项调查 审查的是从新加坡运往马来西亚的服务器是否后来在未如实申报的情况下被转运至其他国家。\n据内政部称，2026年2月， 警方认定证据不足 ，无法证实Alice Huang实施了与涉嫌虚假申报相关的违法行为。但当局表示，她明知故犯地提供了关于其在Megaspeed职务的不准确信息。她被予以警告，并被禁止再次入境新加坡。她的护照于当月归还。新加坡 还表示 ，尽管多次请求美方提供有关美国服务器制造商Supermicro的信息，但获得的协助有限。新加坡内政部称，对Megaspeed及其他六名个人的调查仍在进行中。 该部 未公布这六人的身份，也 未说明他们在此案中被指控的角色。\n韩国与英伟达关系密切，三星电子和SK海力士等主要芯片制造商在为其AI处理器供应存储芯片方面扮演着重要角色。黄仁勋离任后，韩国科学技术部表示，英伟达已重申向韩国供应26万块先进GPU的计划，并将继续推进联合AI项目。 除此之外，据 当地媒体报道 ，韩国政府AI战略委员会周五召开紧急会议，评估黄仁勋离职对本国AI产业可能造成的影响。\n台湾经济部长龚明鑫表示，黄仁勋的离职不太可能显著改变全球AI产业的增长态势， 据当地媒体报道 。与此同时，台北市政府 表示 ，尽管领导层发生变动，英伟达在该市设立海外总部的计划仍按原定进度推进。该公司迄今已履行合同义务，官员们表示将继续支持这一项目。\n据路透社报道，日本经济产业省表示，黄仁勋辞职后政府将密切关注英伟达，并称这家芯片制造商是日本AI半导体产业的重要参与者。 内阁官房副长官尾崎正直 表示，现在评估对全球AI产业的影响还为时过早，同时强调日本致力于确保半导体稳定供应。\n当您通过我们文章中的链接购买时， 我们可能会获得少量佣金 。这不会影响我们的编辑独立性。"
-  },
-  {
    "group": "wh",
    "source": "Automated Warehouse",
    "title": "DeCicco & Sons expands deployment of Simbe’s Tally robots",
@@ -340,15 +422,6 @@
    "published": "2026-11-14T12:00:00.000Z",
    "description": "The Verge 长文回顾黄仁勋因走私丑闻和婚外情指控离开 Nvidia，分析这位执掌首家 5 万亿美元公司、占标普 500 约 6% 的创始人的离去意味着什么。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gslfz6uqr2sqy68cgv38i4tf0",
    "excerpt": "Jensen Huang and the decline of the visionary showman founder CEO\nThe Verge 长文回顾黄仁勋因走私丑闻和婚外情指控离开 Nvidia，分析这位执掌首家 5 万亿美元公司、占标普 500 约 6% 的创始人的离去意味着什么。\n文章梳理了黄仁勋从创办 Nvidia 到押注 CUDA 的关键决策，并结合多位分析师判断其离开后公司的路线图与风险。\n2025年1月6日，英伟达CEO黄仁勋终于迎来了属于他的巨星时刻。他意气风发地大步走上舞台，高举手臂，迎接 一座容纳14000人的场馆里 满坑满谷的网红和粉丝的掌声与欢呼。他身穿一件在体育场灯光下闪闪发亮的黑色皮夹克登场，台下众人的脸庞都映在一片蓝色的光晕之中。\n如今为黄仁勋欢呼的人已经寥寥无几。 他已离开英伟达 ，此前他似乎牵涉了 两起芯片走私丑闻 ，并被指有 三段婚外情 ，其中一段的对象据称是一名中国间谍，而与此同时他还在与总统唐纳德·特朗普往来。\n全世界都在关注 这场丑闻是否会冲击整个美国AI产业 ，甚至可能连带动摇股市。这是因为黄仁勋掌舵的不只是 首家市值5万亿美元的公司 ，他更是那位有远见的领导者，掌控着驱动全球AI热潮的必备GPU，而这家公司单凭一己之力就占了标普500指数约6%的权重。而且他从未为卸任做过任何接班安排。\n这位63岁的掌门人曾说过 他宁愿死在岗位上 ；他还曾表示要工作到 90岁或100岁 ，然后以机器人的形态继续领导公司。\n要替代黄仁勋并不容易，部分原因是他没有副手。 约有60名员工直接向他汇报 。“他是围绕自己来打造这家公司的，那里发生的一切都要经过他，”IDC分析师、前计算行业记者Tom Mainelli说。\n“黄仁勋就是英伟达，英伟达就是黄仁勋，”自英伟达创立之初就一直跟踪报道它的计算机行业分析师Jon Peddie对我说。\n但英伟达已经不再是黄仁勋的英伟达了。他已离开这家自己33年前联合创办的公司。一个时代就此落幕，而且不只是对英伟达而言——因为黄仁勋是大型科技公司中最后一位真正意义上的有远见的表演型创始人CEO。\n“他既是有远见的领导者，也是战术层面的掌舵人，是科技界最接近史蒂夫·乔布斯的人，”Moor Insights & Strategy首席分析师Pat Moorhead对我说。\n埃隆·马斯克 其实算不上特斯拉的创始人 ，而且食言的记录相当可观；Meta的马克·扎克伯格至今 既算不上有远见，也算不上表演型领袖 。谷歌的拉里·佩奇和谢尔盖·布林在2019年 公司内部员工动荡加剧之际 退居幕后，把公司交到了桑达尔·皮查伊手中；而微软和苹果自比尔·盖茨和史蒂夫·乔布斯时代以来，各自都已经完成了两次权力交接。\n有人说苹果的史蒂夫·乔布斯打破了CEO的固有模板，但他其实创造了一个属于自己的模板。黄仁勋就是无数效仿他的科技领袖之一：用主题演讲发布产品，选定一件标志性的单品服装（就像乔布斯那件标志性的黑色高领衫），甚至偶尔在演讲结尾抛出“还有一件事”制造惊喜。在新闻编辑部里，我们有时会拿那些乔布斯模仿者开玩笑；其中不少人都是西装革履、刻板拘谨，根本没有那种说服力来撑起这套做派。\n第一次看到黄仁勋把黑色皮衣当成制服穿，我也以为他是在模仿乔布斯。（那件外套并不一直是 皮 的； 更早 的 版本 是一件印着英伟达标志的软壳外套。）后来，即便天气炎热，黄仁勋也坚持穿着外套——我不止一次看到他汗流浃背，却不肯把外套脱下来。与乔布斯不同的是，他还在没有多少新消息可分享的时候，举办过不少场主题演讲；他喜欢把公司过去的成就翻出来讲，仿佛那些都是全新的。\n但即便黄仁勋没有乔布斯那样的分量，他手里确实有令人兴奋的技术，而且喜欢在台上现场演示。他懂得如何用让人眼前一亮的游戏图形、物理与光照演示，以及后来的图像识别、AI 天气模拟、真实工厂的数字副本，还有能在其中进行虚拟训练的机器人，来点燃人们对视觉计算未来的热情。\n他的英伟达也努力向人们普及 GPU 的原理和意义；我至今还记得 2008 年，英伟达请来《流言终结者》团队， 用一把 1,100 个喷嘴的彩弹枪开火 ，一枪“画”出《蒙娜丽莎》，以此演示串行处理与并行处理的差别。\n当时我不知道的是：黄仁勋 确实 是一位有远见的创始人。他通过一连串豪赌，把英伟达带向了名利双收。\n1996 年，也就是他在一家 Denny’s 餐厅联合创办公司三年后，英伟达在为世嘉 Dreamcast 游戏机开发一款图形芯片时遭遇失败，公司几乎倒闭。但据《华尔街日报》2024 年 报道 ，尽管黄仁勋没能交付那款芯片，他后来还是亲自说服世嘉投资了 500 万美元。\n“对接下来一年来说，这是股价冲击，不是业务冲击。路线图和制造计划已经锁定到 2027 年，” Moor Insights & Strategy 的 Pat Moorhead 说。“问题是，这些计划用完之后，英伟达还能不能保持黄仁勋那样的创新节奏。比任何竞争对手的芯片更大的风险，是客户在真空期对冲风险。这就是为什么下一任 CEO 需要技术公信力、一套不依赖单个人的运营模式，以及保护 CUDA 的计划。”\n“创始人远见、文化塑造者、领导者、AI 行业代言人等等，这些才是真正的损失。我们不认为战略上会有任何改变，” Creative Strategies 分析师 Ben Bajarin 说。“产品路线图已经确定，并且依然强劲，未来几代产品已经在设计、流片或下单阶段。英伟达仍然是最有能力大规模交付其路线图的公司，因为它花了多年时间锁定背后的供应链，从先进晶圆和 CoWoS 级封装到 HBM 和机架级合作伙伴。这种供应地位不会因为一个人离开而消失。”\n“对英伟达来说，他是完美的表演者、销售员和远见者，所以很难被取代，” IDC 分析师 Tom Mainelli 说。“但公司的技术路线图是稳健的，他身后的团队也还在。选对替代他的人将是关键，过程中无疑会有波折。但公司会挺过去。”\nHotTech Vision and Anal"
-  },
-  {
-   "group": "wh",
-   "source": "国家统计局",
-   "title": "2026年11月上旬流通领域重要生产资料市场价格变动情况",
-   "url": "https://www.stats.gov.cn/sj/zxfb/202611/t20261113_1965820.html",
-   "published": "2026-11-14T09:30:00.000Z",
-   "description": "中国统计信息服务中心 卓创资讯 据对全国流通领域9大类50种重要生产资料市场价格的监测显示，2026年11月上旬与10月下旬相比，16种产品价格上涨，32种下降，2种持平。 2026年11月上旬流通领域重要生产资料市场价格变动情况 产品名称单位本期价格（元）比上期价格涨跌（元）涨跌幅（%）一、黑色金属 螺纹钢...",
-   "excerpt": "据对全国流通领域 9 大类 50 种重要生产资料市场价格的监测显示， 2026 年 11 月上旬与 10 月下旬相比， 16 种产品价格上涨， 32 种下降， 2 种持平。\n流通领域重要生产资料市场价格，是指重要生产资料经营企业的批发和销售价格。与出厂价格不同，生产资料市场价格既包含出厂价格，也包含有经营企业的流通费用、利润和税费等。出厂价格与市场价格互相影响，存在时滞，两者的变动趋势在某一时间段内有可能会出现不完全一致的情况。\n流通领域重要生产资料市场价格监测内容包括9大类50种产品的价格。类别与产品规格说明详见附表。\n监测范围涵盖全国31个省（区、市）300多个交易市场的近2000家批发商、代理商、经销商等经营企业。\n据对全国流通领域 9 大类 50 种重要生产资料市场价格的监测显示， 2026 年 11 月上旬与 10 月下旬相比， 16 种产品价格上涨， 32 种下降， 2 种持平。\n流通领域重要生产资料市场价格，是指重要生产资料经营企业的批发和销售价格。与出厂价格不同，生产资料市场价格既包含出厂价格，也包含有经营企业的流通费用、利润和税费等。出厂价格与市场价格互相影响，存在时滞，两者的变动趋势在某一时间段内有可能会出现不完全一致的情况。\n流通领域重要生产资料市场价格监测内容包括9大类50种产品的价格。类别与产品规格说明详见附表。\n监测范围涵盖全国31个省（区、市）300多个交易市场的近2000家批发商、代理商、经销商等经营企业。\n版权所有: 国家统计局&emsp;&emsp; 联系我们 &emsp;&emsp; 服务条款 &emsp;&emsp; 网站地图"
   },
   {
    "group": "ai",
@@ -403,51 +476,6 @@
    "published": "2026-11-14T03:48:43.000Z",
    "description": "Neura Robotics, E.ON and German energy company enviaM have announced a partnership to develop physical AI applications for electricity networks, with initial real-world trials planned for 2027. The collaboration will focus on using intelligent robots to inspect and monitor energy infrastructure, including substations, and support workers performing physically demanding, repetitive or potentially hazardous tasks. Mitnetz […]",
    "excerpt": "Neura Robotics , E.ON and German energy company enviaM have announced a partnership to develop physical AI applications for electricity networks, with initial real-world trials planned for 2027.\nThe collaboration will focus on using intelligent robots to inspect and monitor energy infrastructure, including substations, and support workers performing physically demanding, repetitive or potentially hazardous tasks.\nMitnetz Strom, a subsidiary of enviaM and one of eastern Germany’s largest electricity distribution network operators, will serve as the pilot partner.\nDavid Reger, founder and CEO of Neura Robotics, says: “Physical AI and cognitive robotics will fundamentally reshape the energy sector. The key is to combine technological progress with the practical expertise of the people who operate our energy infrastructure every day.”\nThe partners will develop robotic capabilities at TUM RoboGym powered by Neura, a 2,300-square-meter robotics training facility opened in October 2026 at Munich Airport in collaboration with the Technical University of Munich.\nThe facility combines human demonstrations, real-world robotic data and simulation to teach robots new skills.\nEnergy infrastructure specialists will demonstrate tasks using motion capture systems, sensor-equipped suits and teleoperation. Robots will then practice these activities, generating additional training data before their capabilities are tested in operational environments.\nThe training process will use Neura’s Neuron AI multimodal foundation model, which combines vision, touch, audio, language and robot-state information.\nThe company’s Neuraverse platform will connect the training environment with real-world applications, allowing robotic skills to be refined and potentially reused across compatible systems.\nOne potential application involves Neura’s 4NE1 humanoid robot, designed to navigate environments originally built for human workers, including stairs, doors and control cabinets.\nThis could allow robots to undertake inspection and maintenance-support activities without requiring extensive modifications to existing facilities.\nStephan Lowis, CEO of the enviaM Group, says: “Humanoid robots can provide targeted support, particularly for physically demanding tasks or those with specific safety requirements.”\nThe partners will initially identify suitable applications and develop the necessary robotic skills before moving to operational testing.\nMitnetz Strom expects to gain its first practical expe"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Gecko Robotics unveils faster Raptor inspection robot, with ADNOC as first customer",
-   "url": "https://roboticsandautomationnews.com/2026/11/14/gecko-robotics-unveils-faster-raptor-inspection-robot-with-adnoc-as-first-customer/107096/",
-   "published": "2026-11-14T03:15:32.000Z",
-   "description": "Gecko Robotics has unveiled Raptor, its next-generation industrial inspection robot, designed to collect data on the condition of critical infrastructure significantly faster than existing systems. Introduced at ADIPEC 2026, the new robot will initially be used by ADNOC in the United Arab Emirates, supporting the energy company’s efforts to integrate artificial intelligence and robotics into […]",
-   "excerpt": "Gecko Robotics has unveiled Raptor, its next-generation industrial inspection robot, designed to collect data on the condition of critical infrastructure significantly faster than existing systems.\nIntroduced at ADIPEC 2026, the new robot will initially be used by ADNOC in the United Arab Emirates, supporting the energy company’s efforts to integrate artificial intelligence and robotics into asset maintenance operations.\nRaptor is designed to inspect pipelines, storage tanks and other steel infrastructure, collecting detailed information about their structural condition to help operators identify potential problems and plan maintenance.\nAccording to Gecko Robotics, Raptor can collect data three to five times faster than the company’s existing robots and perform inspections up to 20 times faster than other automated inspection tools currently available.\nThe robot is also capable of capturing millions of data points from individual industrial assets, providing information that can be analyzed using Gecko’s AI-powered software.\nAlongside its increased inspection speed, Raptor features improved mobility designed to help it navigate complex industrial environments.\nThe company says the robot can perform a three-point turn similar to a car, allowing it to maneuver around obstacles and operate in confined or challenging spaces.\nGecko Robotics develops robotic systems capable of climbing, crawling, flying and swimming to inspect infrastructure that would otherwise be difficult, dangerous or expensive to assess manually.\nIts technology combines robotic data collection with software designed to help industrial operators understand the condition of their equipment and make more informed maintenance decisions.\nThe initial Raptor rollout with ADNOC will be followed by installations at other industrial customers internationally.\nGecko says the increased speed and data-collection capabilities will allow operators to inspect more infrastructure in less time, potentially improving workplace safety, reducing maintenance costs and supporting more reliable industrial operations.\nOur website relies on ads to provide free content and sustain our operations. By turning off your ad blocker, you help support us and ensure we can continue offering valuable content without any cost to you.\nWe truly appreciate your understanding and support. Thank you for considering disabling your ad blocker for this website"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Expoline completes international logistics project for humanoid robots",
-   "url": "https://roboticsandautomationnews.com/2026/11/14/expoline-successfully-completes-multimodal-logistics-project-for-advanced-physical-ai-robots/107092/",
-   "published": "2026-11-14T03:08:04.000Z",
-   "description": "Expoline, a South Korean specialist in international exhibition and special cargo logistics, has successfully completed a multimodal transportation and on-site logistics project involving advanced humanoid robots developed by a global physical AI robotics company. The project supported the company’s participation in the 2026 Seoul AI Robot Show, held last month and organized by the Seoul […]",
-   "excerpt": "Expoline , a South Korean specialist in international exhibition and special cargo logistics, has successfully completed a multimodal transportation and on-site logistics project involving advanced humanoid robots developed by a global physical AI robotics company.\nThe project supported the company’s participation in the 2026 Seoul AI Robot Show, held last month and organized by the Seoul Metropolitan Government and the Seoul Business Agency (SBA).\nExpoline managed the transportation of the advanced robotic equipment from China to South Korea, including customs clearance, exhibition booth delivery, and the safe return shipment to China following the event.\nFollowing the successful handling of the same customer’s robotic exhibits at Smart Tech Korea 2026, held at COEX in Seoul in June, Expoline was once again entrusted with the logistics operations for the Seoul AI Robot Show.\nThe consecutive projects demonstrated the company’s specialized capabilities in advanced robotics logistics and its continued partnership with the customer.\nThe shipment consisted of sophisticated physical AI robots equipped with high-sensitivity sensors, precision joint actuators, and integrated battery systems. Due to the sensitive nature of the equipment, the operation required specialized protective packaging, careful handling, and precise coordination throughout the transportation process.\nTo meet the exhibition’s tight schedule, Expoline arranged expedited air freight transportation from China to South Korea under the ATA Carnet system, which facilitates the temporary importation of exhibition goods. Following customs clearance, the robots were safely delivered directly to their designated exhibition booths through a room-to-room logistics service.\nAfter the exhibition, Expoline adopted a different transportation strategy to optimize logistics costs while maintaining cargo safety. Instead of returning the equipment by air, the company arranged ocean freight transportation back to China, successfully executing an air import–ocean return multimodal logistics solution.\nChanging transportation modes for goods temporarily imported under an ATA Carnet can require additional customs verification and careful documentation management. Drawing on its extensive experience in ATA Carnet procedures and international exhibition logistics, Expoline completed the entire return operation without customs-related administrative delays.\nExpoline project manager, says: “Being entrusted with the tran"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "ABB Robotics brings industrial-grade physical AI to fashion logistics",
-   "url": "https://roboticsandautomationnews.com/2026/11/14/abb-robotics-brings-industrial-grade-physical-ai-to-fashion-logistics/107087/",
-   "published": "2026-11-14T02:59:04.000Z",
-   "description": "ABB Robotics has launched its first end-to-end vision-based industrial-grade physical AI solution, integrating AI Robot Trainer into its Fashion Inductor module to help system integrators deploy, scale and continuously optimize AI-powered fashion logistics applications with significantly reduced effort and risk. “Physical AI fundamentally changes what robots can do in industrial applications,” said Craig McDonnell, managing […]",
-   "excerpt": "ABB Robotics has launched its first end-to-end vision-based industrial-grade physical AI solution, integrating AI Robot Trainer into its Fashion Inductor module to help system integrators deploy, scale and continuously optimize AI-powered fashion logistics applications with significantly reduced effort and risk.\n“Physical AI fundamentally changes what robots can do in industrial applications,” said Craig McDonnell, managing director, business line industries, ABB Robotics.\n“Some of the greatest opportunities for physical AI are in applications that have traditionally been difficult to automate because of high variability.\n“Fashion Inductor with AI Robot Trainer is our first end-to-end vision-based physical AI solution, demonstrating how intelligent automation can be deployed, operated and continuously optimized at industrial scale, helping system integrators accelerate deployment, reduce project risk and maintain performance over time.”\nDesigned to meet the extreme variability of fashion and apparel logistics, where products, packaging and operating conditions change continuously, Fashion Inductor already delivers high-performance sorting for real-world logistics environments, with throughput of up to 1,300 items per hour per cell and picking accuracy targets above 99.5 percent, enabled by ABB Robotics’ AI-powered Automatic Path Planning, motion accuracy and application-specific vision technology.\nThe addition of AI Robot Trainer introduces vision-based physical AI capabilities that reduce engineering and commissioning effort by up to 75 percent, providing pre-trained, fashion-specific AI vision models, application-specific tools and rapid retraining capabilities that help system integrators deploy, adapt and continuously optimize applications as requirements evolve, without specialist AI expertise.\nThe upgraded Fashion Inductor also introduces a new digital twin, an exact replica of the module software, connecting Application Controller Platform, Automatic Path Planning, AI Robot Trainer and RobotStudio.\nThis accelerates commissioning and gives greater flexibility in set-up, including the ability to integrate third-party components such as grippers.\nAI models are not only developed, but continually improved throughout the system lifecycle, against real performance targets and changing operating conditions.\nAI Robot Trainer enables structured, rapid cell‑specific retraining through a continuous closed-loop workflow that monitors robot performance, identifi"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Queue introduces robotic pharmacy kiosk that fills prescriptions in 30 seconds",
-   "url": "https://roboticsandautomationnews.com/2026/11/14/queue-introduces-robotic-pharmacy-kiosk-that-fills-prescriptions-in-30-seconds/107084/",
-   "published": "2026-11-14T02:52:19.000Z",
-   "description": "California-based healthcare technology company Queue has introduced an autonomous robotic pharmacy kiosk designed to fill, verify and label prescription medications in approximately 30 seconds. The system can accommodate 340 different medications and uses machine vision to verify every pill before dispensing. According to the company, the kiosk can be installed in less than a day […]",
-   "excerpt": "California-based healthcare technology company Queue has introduced an autonomous robotic pharmacy kiosk designed to fill, verify and label prescription medications in approximately 30 seconds.\nThe system can accommodate 340 different medications and uses machine vision to verify every pill before dispensing. According to the company, the kiosk can be installed in less than a day and does not require patients to purchase a membership.\nQueue is targeting community pharmacies, retail pharmacy chains, urgent care centers and outpatient clinics, offering a way to dispense medications without the need for a conventional pharmacy storefront.\nWhen a healthcare provider submits a prescription, the patient receives a pickup code. The kiosk prepares the medication, while Queue’s software handles insurance processing and payment. The patient then scans the code to collect the prescription.\nThe system includes dual-stage verification, an auditable chain of custody and security measures designed to prevent tampering. Pharmacists remain available to patients by telephone or text.\nQueue says its technology could help address pharmacy closures and improve access to medications in underserved communities.\nNick Desai, CEO and cofounder of Queue, says: “Where you live shouldn’t determine whether you can get your medicine. Our goal is to put medicine at the point of care and give pharmacists their time back for patients.”\nResearch published through the US National Institutes of Health indicates that almost 18 percent of Americans live in areas with limited access to pharmacy services.\nFounded in 2025 by Desai and Josh Liu, Queue has raised $18.6 million from investors including AlleyCorp, Riot Ventures, Ubiquity Ventures and House Capital.\nThe company plans to demonstrate its robotic pharmacy kiosk at the J.P. Morgan Healthcare Conference in San Francisco, January 11–14, 2027.\nOur website relies on ads to provide free content and sustain our operations. By turning off your ad blocker, you help support us and ensure we can continue offering valuable content without any cost to you.\nWe truly appreciate your understanding and support. Thank you for considering disabling your ad blocker for this website"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "NEXCOM expands RoboWIZ robotics platform with new technology partners",
-   "url": "https://roboticsandautomationnews.com/2026/11/14/nexcom-expands-robowiz-robotics-platform-with-new-technology-partners/107080/",
-   "published": "2026-11-14T02:44:21.000Z",
-   "description": "NEXCOM and its robotics subsidiary NexCOBOT have showcased their RoboWIZ AI Robotics Platform at Nvidia GTC Berlin, highlighting an open development ecosystem designed to simplify the integration of artificial intelligence, motion control, perception and safety technologies into robotic systems. The presentation, held during the October 21–22 event in Berlin, brought together technology partners RealSense, Stereolabs, […]",
-   "excerpt": "NEXCOM and its robotics subsidiary NexCOBOT have showcased their RoboWIZ AI Robotics Platform at Nvidia GTC Berlin, highlighting an open development ecosystem designed to simplify the integration of artificial intelligence, motion control, perception and safety technologies into robotic systems.\nThe presentation, held during the October 21–22 event in Berlin, brought together technology partners RealSense, Stereolabs, Synapticon and Reynolds & Moore, alongside NEXCOM’s robotics computing platform based on Nvidia IGX Thor.\nRoboWIZ is intended to address one of the challenges facing robotics developers: bringing together the many different hardware and software technologies required to build an intelligent robot.\nRather than providing a complete robot with a fixed configuration, the platform allows developers to combine components, control systems and engineering services from different suppliers.\nThe approach is designed to support a range of applications, including humanoid robots, quadrupeds, mobile manipulators, collaborative robots and autonomous mobile robots.\nNEXCOM first introduced RoboWIZ at Automation Taipei in August 2026, where it demonstrated humanoid, quadruped and dual-arm robotic applications developed with technology partners.\nIts appearance at GTC Berlin marked a further step in the development of the platform, with NEXCOM emphasizing its international partner ecosystem and the integration of additional robotics technologies.\nRoboWIZ brings together five main areas of robot development: AI core control, functional safety and cybersecurity, visual perception, real-time control, and actuation and robot systems.\nThe AI computing layer supports technologies from Nvidia, Intel and Qualcomm, while other elements include cameras, sensors, servo drives, joints, grippers, dexterous hands and robotics software.\nDevelopers can select components according to the requirements of their particular robot rather than being restricted to a single hardware architecture.\nThrough its RoboWIZ partner program, NEXCOM also provides a framework for technology suppliers to integrate their products with NexCOBOT controllers.\nThe company says this modular approach can help developers reduce the complexity of combining technologies from different suppliers, potentially shortening development and integration times.\nFour technology partners featured prominently in NEXCOM’s presentation at GTC Berlin, each addressing a different part of the robotics development process.\nR"
   },
   {
    "group": "ai",
@@ -520,33 +548,6 @@
    "published": "2026-11-13T22:30:54.000Z",
    "description": "Release: datasette-leaflet 0.3 OpenStreetMap have a very reasonable policy that hits to their hosted tile server should send a referrer header . Datasette table pages used the Referrer-Policy: no-referrer HTTP header, causing plugins that loaded tiles from OpenStreetMap to violate that policy. datasette-leaflet is the plugin that loads a bundled Leaflet so other Datasette plugins can depend on it. It now sets the referrer policy on the tile requests themselves to strict-origin-when-cross-origin , passing the host but not the full path to the page. Tags: leaflet , datasette , openstreetmap",
    "excerpt": "OpenStreetMap have a very reasonable policy that hits to their hosted tile server should send a referrer header . Datasette table pages used the Referrer-Policy: no-referrer HTTP header, causing plugins that loaded tiles from OpenStreetMap to violate that policy.\ndatasette-leaflet is the plugin that loads a bundled Leaflet so other Datasette plugins can depend on it. It now sets the referrer policy on the tile requests themselves to strict-origin-when-cross-origin , passing the host but not the full path to the page.\nThis is a beat by Simon Willison, posted on 13th November 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Why Build a Humanoid Robot From the Sensor Up? The Thinking Behind GENTO’s CoRL 2026 Debut",
-   "url": "https://roboticsandautomationnews.com/2026/11/13/why-build-a-humanoid-robot-from-the-sensor-up-the-thinking-behind-gentos-corl-2026-debut/107075/",
-   "published": "2026-11-13T22:18:16.000Z",
-   "description": "At CoRL 2026 in Austin, GENTO showed humanoid robots and a new dexterous hand that sit on top of a stack Tianji Intelligence has been building since 2015, starting with a single component most people never see. Most conversations about humanoid robots start with the AI model. Far fewer start with the torque sensor inside […]",
-   "excerpt": "At CoRL 2026 in Austin , GENTO showed humanoid robots and a new dexterous hand that sit on top of a stack Tianji Intelligence has been building since 2015, starting with a single component most people never see.\nMost conversations about humanoid robots start with the AI model. Far fewer start with the torque sensor inside each joint, even though that part decides how a robot reacts when it pushes against something. For GENTO , that is exactly where the story begins.\nGENTO , an independent humanoid robot brand incubated by Tianji Intelligence, develops humanoid robot systems, dexterous hands and teleoperation and data-collection platforms. Its humanoid systems incorporate Tianji Intelligence’s TIANJI-branded force-controlled arms.\nAt CoRL 2026, one result of that approach appeared on a bigger stage. A TIANJI Marvin Pro platform, built for NVIDIA by Tianji Intelligence, was used in demonstrations accompanying NVIDIA’s GR00T 2 launch on Nov. 9. GR00T 2 is an open world action model built on NVIDIA Cosmos, and NVIDIA’s published research demonstrations show the platform assembling a toy truck and scooping granola with two hands.\nA model like GR00T 2 needs a physical body to execute and evaluate what it has learned. Behind that body is a chain of components that starts inside each joint.\nTianji Intelligence was founded in Shenzhen in 2015 as an industrial robotics and motion-control company, incubated by Yaskawa Electric and Everwin Precision. In-house development of MEMS torque sensors began the same year. The company reports that these sensors offer 10 times the sensitivity of conventional strain-gauge designs without frequent recalibration.\nWhen Tianji Intelligence moved into force-controlled humanoid arms in 2023 and 2024, it already had the sensing layer in house, along with four-loop closed-loop control and compliant impedance control, which regulates how a robot responds to contact.\nThe company describes its products as a five-tier stack, with each tier building on the one below. MEMS joint torque sensors handle perception. Integrated joint modules, which combine motor, reducer, driver, encoder and brake in one unit and weigh about 25% less than comparable modules, handle actuation. TIANJI dual arms come next, followed by GENTO whole-body systems and, at the top, the GENTO 21-degree-of-freedom dexterous hand.\nThe arms are matched to different jobs. The TIANJI M6-Lite, rated for 3 kg, is aimed at data collection and light tasks, the M6 at data collection "
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Automated Warehouses: Why Safety Infrastructure Matters More Than Ever",
-   "url": "https://roboticsandautomationnews.com/2026/11/13/automated-warehouses-why-safety-infrastructure-matters-more-than-ever/107070/",
-   "published": "2026-11-13T21:48:47.000Z",
-   "description": "Automated warehouses are changing how logistics work through intelligent material-handling systems, robotics and autonomous vehicles. However, increased automation in the workplace is introducing new safety challenges as machinery, moving equipment and people share the same complex environment. The section below tries to highlight the importance of safety infrastructure in terms of protecting workers, preventing collisions […]",
-   "excerpt": "Automated warehouses are changing how logistics work through intelligent material-handling systems, robotics and autonomous vehicles. However, increased automation in the workplace is introducing new safety challenges as machinery, moving equipment and people share the same complex environment.\nThe section below tries to highlight the importance of safety infrastructure in terms of protecting workers, preventing collisions and keeping warehouse operations running seamlessly.\nWarehouse operations involve plenty of activities, from sorting inventory and receiving deliveries to packing goods, picking orders and preparing shipments. Demand for faster fulfilment has resulted in businesses turning to automation with the aim of managing repetitive, time-consuming tasks and enhancing accuracy.\nBecause of that, automated mobile robots (AMRs), automated guided vehicles (AGVs) and robotic picking tools can aid in transporting materials, moving goods and supporting inventory management with less manual handling. However, the introduction of these technologies comes with great change in how equipment and people operate in a workplace.\nWith effective warehouse safety infrastructure , companies can deal with the physical risks associated with a busy automated environment (where pedestrian and moving machinery routes meet).\nAutomation also plays an important role in improving workplace safety. This is done particularly by taking over tasks that expose employees to heavy lifting, frequent vehicle traffic and repetitive movements.\nMachines can easily identify obstacles through cameras, sensors and collision-detection systems. On the other hand, automated processes can minimise unnecessary movement around the warehouse floor.\nWhile these technologies are helpful, they don’t always eliminate every hazard. This means that a well-designed safety environment should combine physical protection measures with intelligent technology.\nA well-organised warehouse floor supports both employees and automated equipment to move around without unnecessary risks. Therefore, clear traffic routes and flooring choices become an essential part of workplace safety.\nPlenty of things in the warehouse (trailing cables, spilled liquids, loose packaging and misplaced pallets) can obstruct automated vehicles and create slip or trip hazards.\nTherefore, keeping pathways clear allows robots to navigate more efficiently and reliably while giving employees safe access to different parts of the warehouse, in"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "What Makes Modern Dentistry an Appealing Career Choice",
-   "url": "https://roboticsandautomationnews.com/2026/11/13/what-makes-modern-dentistry-an-appealing-career-choice/107065/",
-   "published": "2026-11-13T21:38:23.000Z",
-   "description": "Modern dentistry combines patient care, practical problem-solving, and opportunities to work with evolving technology. It offers several professional directions, from general practice to education and research, rather than one fixed career track. For anyone exploring a modern dentistry career, the appeal deserves a balanced look at both the opportunities and the commitment involved. Why does […]",
-   "excerpt": "Modern dentistry combines patient care, practical problem-solving, and opportunities to work with evolving technology. It offers several professional directions, from general practice to education and research, rather than one fixed career track.\nFor anyone exploring a modern dentistry career, the appeal deserves a balanced look at both the opportunities and the commitment involved.\nModern dentistry appeals to students who want to combine science, precise hands-on work, and meaningful interaction with people. Dentists need to evaluate evidence, solve problems, communicate clearly, and earn patients’ trust. That combination makes the profession worth exploring if you enjoy both analytical thinking and helping others directly.\nThe attraction is not simply working with teeth. Consider whether you would enjoy explaining a finding to someone who feels nervous, comparing treatment approaches, or concentrating on a small, technically demanding task. These are useful questions because compassion, communication, dexterity, and problem-solving all feature in the work.\nWhen considering what makes modern dentistry an appealing career choice, start with those daily activities rather than the profession’s image. Prestige alone is a weak reason to commit to demanding training. Curiosity about the work itself gives you a stronger starting point.\nDentists diagnose and treat conditions affecting the teeth, gums, and related parts of the mouth. Their responsibilities also include advising patients about oral care and prevention. The profession therefore combines treatment with education: doing the clinical work is only part of the job.\nFor prospective students, that creates an important distinction. You should be interested not only in performing a procedure, but also in explaining why it matters and listening to the person receiving care. ADEA identifies compassion, ethical behavior, and the ability to earn trust as important qualities for future dentists.\nDuring shadowing, pay attention to the conversations around treatment. Ask yourself whether you find the explanations, questions, and reassurance as interesting as the instruments. That reflection can help separate an interest in dental science from an interest in clinical practice.\nModern dentistry includes tools such as intraoral scanners and computer-aided design and manufacturing systems. These technologies introduce new workflows, but they also require thoughtful selection and training. The American Dental Associatio"
   },
   {
    "group": "ai",
@@ -753,7 +754,7 @@
    "url": "https://www.supplychain247.com/article/freight-management-trends-2027",
    "published": "2026-11-13T14:01:00.000Z",
    "description": "Six freight management trends to watch in 2027 include more driverless trucks and new ways to spot delays, find carriers, and reroute shipments.",
-   "excerpt": ""
+   "excerpt": "This story originally appeared in the November 2026 edition of Logistics Management .\nFor decades, transportation managers have asked their systems to tell them where their freight was. They usually got their answer, but only after some sleuthing, a few phone calls to carriers and waiting while someone on the other end tracked it down.\nInnovations like GPS, telematics and real-time transportation platforms sped up the process, and Amazon was raising the bar by making fast, trackable deliveries an everyday expectation. Around the same time, transportation platforms began generating little dots on the map that let shippers watch their freight make its way from Point A to Point B.\nFast-forward to today and we&rsquo;ve reached a point where &ldquo;knowing&rdquo; where your freight is just isn&rsquo;t enough anymore. Shippers also expect their systems to flag problems earlier, prioritize problem solving and handle previously manual tasks like carrier follow-ups and delivery schedule adjustments.\nToss artificial intelligence (AI), more precise analytics and automation into the mix, and you get a recipe for a more active freight management approach that goes well beyond basic visibility .\n&ldquo;Visibility in and of itself is just a means to an end, because you need visibility to start taking actions,&rdquo; says Nathan Lease, senior director, logistics technology research and advisory at Gartner . &ldquo;But just knowing that the truck is going to be late doesn&rsquo;t do anything. The real question is: Can you act on that information?&rdquo;\nSo, instead of tracking &ldquo;where&rsquo;s my truck?&rdquo; companies now want to know &ldquo;where&rsquo;s my stuff?&rdquo; &ldquo;They want product SKU -level details of what&rsquo;s on that container , what&rsquo;s on that trailer and what the upstream and downstream implications of that visibility data are,&rdquo; Lease explains. &ldquo;Then, they&rsquo;re using that information to make decisions about production planning, customer impacts and other operations.&rdquo;\nAnd that&rsquo;s just one example of how freight management is changing. Technology, automation and AI now support everything from procurement and carrier management to routing and planning, while autonomous trucks are getting closer to reality. Here are six trends experts say are pushing freight management into its next phase.\nMost companies using AI for freight management are still asking it questions about their operations and waiting for answers. Ang"
   },
   {
    "group": "wh",
@@ -866,6 +867,15 @@
   {
    "group": "ai",
    "source": "AIHOT",
+   "title": "美团 LongCat 开源 LongCat-Video-Avatar 1.6 音频驱动数字人视频生成模型",
+   "url": "https://aihot.news/items/habommgck5ql3tdf688ca370s",
+   "published": "2026-11-13T02:45:33.000Z",
+   "description": "美团 LongCat 团队发布开源音频驱动人体视频生成模型 LongCat-Video-Avatar 1.6，改进口型自然度、唇音同步、面部与肢体动作协调及长视频视觉一致性，缓解自回归续写误差累积，可生成超过 10 分钟的视频，并加入端到端推理优化。 🔗 阅读原文 via AIHOT · https://aihot.news/items/habommgck5ql3tdf688ca370s",
+   "excerpt": "美团 LongCat 团队发布开源音频驱动人体视频生成模型 LongCat-Video-Avatar 1.6，改进口型自然度、唇音同步、面部与肢体动作协调及长视频视觉一致性，缓解自回归续写误差累积，可生成超过 10 分钟的视频，并加入端到端推理优化。\n原文给出 1.6 版能力改进、33,051 票人工评测排名和完整部署参数，读者可据此评估升级幅度与推理配置。\n我们很高兴宣布推出 LongCat-Video-Avatar 1.6，这是我们开源音频驱动数字人视频生成框架的最新升级版本。在 LongCat-Video-Avatar 1.5 的基础上，1.6 版本提升了表现自然度、唇音同步、面部与身体动作的协调性，以及长视频生成过程中的视觉一致性。同时，该版本还引入了全面的推理优化，使部署更快、更高效。\n更多细节请参阅完整的 LongCat-Video-Avatar-1.6 技术报告 。\nLongCat-Video-Avatar 1.6 带来更自然的唇部动作和更具表现力的动态，同时在超过 10 分钟的视频中保持视觉质量与时间一致性。\n我们将 LongCat-Video-Avatar 1.6 与前代 LongCat-Video-Avatar 1.5 以及四个商业系统 OmniHuman-2.0、HeyGen、OmniHuman-1.5 和 Kling Avatar 2.0 进行了对比。全配对人工偏好研究覆盖全部 15 组模型配对，共收集 33,051 张有效个人投票。在包含 33,051 张有效个人投票的人工偏好竞技场中，LongCat-Video-Avatar 1.6 在六个参评系统中排名第二。其 Bradley–Terry Elo 得分为 1068.1，排在 OmniHuman-2.0 之后，领先于 LongCat-Video-Avatar 1.5、HeyGen、OmniHuman-1.5 和 Kling Avatar 2.0。\n模型配置中默认启用 FlashAttention-2；你也可以修改模型配置，改用 FlashAttention-3 或 xformers。\nLongCat-Video-Avatar 1.6 采用与 LongCat-Video-Avatar 1.5 相同的基础架构，并包含两个任务专用的 LoRA 适配器：\n检查点包还提供了 base_model_int8 ，这是一个可选的仅权重量化 INT8 DiT，可通过 --use_int8 启用。\n使用 --mix_steps=N 时，前 N 个去噪步骤使用 mix_alpha * DMD + (1 - mix_alpha) * OPSD ，其余 8 - N 个步骤仅使用 OPSD。增大 --mix_steps 或 --mix_alpha 会让 DMD LoRA 在早期去噪步骤中发挥更大作用，这可能提升结构稳定性并减少视觉失真。\n在默认设置下， --mix_steps=4 --mix_alpha=1.0 ，前四个去噪步骤仅使用 DMD，其余四个步骤仅使用 OPSD。\n启用 --use_fp8 之前，请先安装支持 PyTorch 和 CUDA 的 Transformer Engine。不要同时使用 --use_fp8 和 --use_int8 ，一次只启用一种量化模式。如果优先考虑输出质量，可以减少使用 FP8 的层数。\n启用 --compile_dit 和 --compile_vae 后，前几次推理会包含图追踪和编译开销，因此可能较慢。之后使用相同输入形状运行时，会复用已编译的图，速度明显更快。新的输入形状可能触发重新编译。\n对于 H20、H100、H200、H800 等 Hopper GPU，请安装并启用 FlashAttention 3。相比 FA2，FA3 能显著提升推理速度。请确认模型配置中包含：\n在超过两块 GPU 上运行时，启用优化后的 All-to-All 工作区，以降低上下文并行通信开销：\n将 --nproc_per_node 和 --context_parallel_size 设为用于推理的 GPU 数量。\n除非另有说明，对本仓库的任何贡献均按 MIT 许可证授权。该许可证不授予使用美团商标或专利的任何权利。\n开发者应考虑到大语言模型的已知局限，包括在不同语言上的性能差异，并在敏感或高风险场景中部署模型前，仔细评估准确性、安全性和公平性。 开发者及下游用户有责任了解并遵守与其使用场景相关的所有适用法律法规，包括但不限于数据保护、隐私和内容安全要求。\n本模型卡中的任何内容均不应被解释为改变或限制模型发布所依据的 MIT 许可证条款。\n感谢 Wan 、 UMT5-XXL 、 Diffusers 和 HuggingFace 仓库的贡献者所做的开放研究。\n如有任何问题，请通过 longcat-team@meituan.com 联系我们，或加入我们的微信群。\n来源： 美团 LongCat：HuggingFace 新模型 · huggingface.co\n原文给出 1.6 版能力改进、33,051 票人工评测排名和完整部署参数，读者可据此评估升级幅度与推理配置。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
    "title": "Anthropic 详解常驻智能体的五个核心架构原语",
    "url": "https://aihot.news/items/ypeap2t8w4fqqfuvt7mw3wg79",
    "published": "2026-11-13T00:00:00.000Z",
@@ -943,15 +953,6 @@
    "published": "2026-11-12T20:50:50.000Z",
    "description": "Google Gemini 宣布 Gemini 4 Hydrogen 今日起向全球所有用户推送，覆盖桌面、移动和网页端。免费用户无需单独选择模型，当提示词适合该模型时可通过自动模型选择使用它，详情见 https://goo.gle/4AxH40q。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zlbngirpqifhhi3bd5pbmixu4",
    "excerpt": "Google Gemini 宣布 Gemini 4 Hydrogen 今日起向全球所有用户推送，覆盖桌面、移动和网页端。免费用户无需单独选择模型，当提示词适合该模型时可通过自动模型选择使用它，详情见 goo.gle/4AxH40q 。\n官方说明免费用户的获取方式，读者可以据此了解 Gemini 4 Hydrogen 的开放范围和自动模型选择机制。\nGemini 4 Hydrogen 今天面向全球所有用户推出，覆盖桌面端、移动端和网页端。\n免费用户将在提示适合该模型时，通过自动模型选择获得 Gemini 4 Hydrogen 的访问权限。了解有关 Gemini 模型和自动模型选择的更多信息： goo.gle/4AxH40q\n官方说明免费用户的获取方式，读者可以据此了解 Gemini 4 Hydrogen 的开放范围和自动模型选择机制。"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "XPENG expands UK operations with new vehicles, robotaxis and humanoid robots",
-   "url": "https://roboticsandautomationnews.com/2026/11/12/xpeng-expands-uk-operations-with-new-vehicles-robotaxis-and-humanoid-robots/107054/",
-   "published": "2026-11-12T20:00:28.000Z",
-   "description": "XPENG is taking its ambitions in the UK to the next level, setting out a long-term growth strategy that extends beyond expanding its electric vehicle presence to bringing its vision for physical AI to British consumers. At its first UK Brand Day, introduced by Brian Gu, vice chairman and president of XPENG, the company outlined […]",
-   "excerpt": "XPENG is taking its ambitions in the UK to the next level, setting out a long-term growth strategy that extends beyond expanding its electric vehicle presence to bringing its vision for physical AI to British consumers.\nAt its first UK Brand Day, introduced by Brian Gu, vice chairman and president of XPENG, the company outlined the next phase of its development in the market.\nBuilding on the establishment of its direct operations, XPENG is stepping up its investment in the UK through an expanded vehicle portfolio, a stronger nationwide retail and service network, and plans to introduce its next generation of intelligent driving technology.\nThe strategy reflects XPENG’s ambition to build a lasting presence in the UK, while bringing its wider technological capabilities closer to British consumers.\nAlongside new flagship locations and partnerships with established UK automotive businesses, the company is preparing to introduce a new generation of intelligent mobility experiences to the market.\nAlongside its technology roadmap, XPENG plans to introduce five new right-hand-drive models to the UK over the next 12 months, broadening its line-up and offering greater choice to private and business customers.\nBeginning with the new L03 and the G9L, XPENG’s range is being developed with the requirements of the UK’s right-hand-drive market in mind.\nThe expanded line-up will bring together three key technology pillars: ultra on every model, making electric mobility more convenient, intelligent cockpit technologies for a more connected and intuitive driving experience, and dual-energy solutions that offer customers greater flexibility through both battery-electric (BEV) and Kunpeng extended-range (REEV) options.\nXPENG sees intelligent vehicles as one part of a much broader physical AI ecosystem, built on shared capabilities in AI, autonomous driving, robotics and advanced manufacturing.\nAs part of this vision, XPENG is working towards 2027 for the introduction of its Next Generation Pilot (NGP) intelligent driving system, powered by VLA 2.0, while also exploring the potential for its Robotaxi services and IRON humanoid robot in the UK market.\nTogether, these developments reflect XPENG’s ambition to develop technology that makes people’s lives easier, creates greater freedoms and opens up possibilities that haven’t been imagined before.\nGu said: “The UK is a strategically important market for XPENG, and we see significant opportunities to build a strong, long-term presen"
   },
   {
    "group": "ai",
@@ -1144,15 +1145,6 @@
   },
   {
    "group": "ai",
-   "source": "Epoch AI",
-   "title": "What Huawei’s Horinger data center reveals about China’s compute gap",
-   "url": "https://epochai.substack.com/p/what-huaweis-horinger-data-center",
-   "published": "2026-11-12T16:03:15.000Z",
-   "description": "Satellite imagery puts Huawei’s flagship AI data center compute at roughly 7% of SpaceX’s Colossus 2’s",
-   "excerpt": "This is a condensed version of a longer report on our website\nHuawei, China’s biggest AI chip developer, is drawing on China’s abundant energy to build data centers. However, because of US export controls, it lags behind its US competitor Nvidia in both chip performance and efficiency.\nAs a case study, Huawei’s AI data center in Horinger, Inner Mongolia is one of the largest data centers in China by AI computing capacity, yet it has less than one-tenth the capacity of the world’s largest AI data center, Colossus 2 in Tennessee. Projected future development suggests it will remain far behind Colossus until at least 2028.\nThis post examines the Horinger facility and Huawei’s broader AI infrastructure plans using satellite imagery and public sources, showing how we came to the above conclusions.\nThe Huawei Horinger campus consists of three zones (West, South, and North) within the Horinger New Area. Satellite imagery shows that villages have been demolished to make way for data centers there.\nWhile the campus likely serves a diverse set of end users and applications, Huawei documentation indicate it is equipped with “hypernode” servers that are primarily designed for large-model training and inference, which suggests a large portion of the campus is specialized for AI.\nWe acquired commercial high-resolution satellite images of these zones to help estimate the power capacity of the buildings. Our primary method is a cooling equipment model: based on the type, size, and number of cooling units visible, we estimate their heat rejection capacity and, in turn, the buildings’ IT power capacity.\nThe satellite imagery revealed that each zone contains nearly identical three-story buildings. However, the North zone has far fewer cooling towers than the West and South zones, suggesting that its buildings are unlikely to house powerful AI chips — modern AI servers tend to be more than 10 times as power-dense as the industry average.\nExcluding the low-density North zone, we were left with four apparently complete buildings with dense cooling infrastructure: two in the South and two in the West. Our cooling model estimates a total of 286 megawatts (MW) of IT power capacity across these four buildings.\nWe’ve observed several clues suggesting the buildings are operational. As a prerequisite, the buildings appear more or less complete from the outside, including cooling, backup generators, and carparks, with no signs of ongoing construction. Second, one satellite image shows "
-  },
-  {
-   "group": "ai",
    "source": "AIHOT",
    "title": "Epoch AI 分析华为和林格尔数据中心，揭示中美算力差距",
    "url": "https://aihot.news/items/adkgofriq3tvp6qrawfc63yw4",
@@ -1195,141 +1187,6 @@
    "published": "2026-11-12T15:34:00.000Z",
    "description": "Even with a potential clash a ways out, shippers should ensure they have other established carrier relationships to mitigate strike risk, experts say.",
    "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "a16z",
-   "title": "Gaming’s Next Origin Stories",
-   "url": "https://www.a16z.news/p/gamings-next-origin-stories",
-   "published": "2026-11-12T15:03:24.000Z",
-   "description": "What AI makes possible for indie developers, toolmakers, and studios",
-   "excerpt": "To hear more from Elena Burger , Anish A , and Jon Lai on this topic, check out the companion podcast to this piece here .\nIf you want to understand an industry, study its favorite archetypes.\nIn the case of gaming, first there’s the indie dev. This category includes guys like Eric Barone (the creator of Stardew Valley ), Jonathan Blow ( Braid , The Witness , and Order of the Sinking Star ), and small teams like Tarn and Zach Adams (co-creators of the epic, sprawling world-sim Dwarf Fortress ). People like these developers and the games they create because despite all odds they were able to create a commercial success well outside of the warm confines of a conventional studio. They are the gaming equivalent of the nerdy guy getting the girl. The fact that these games could succeed at all is part of their appeal (they are also, of course, quite fun).\nThen there is the prophetic toolmaker: guys like Tim Sweeney and John Carmack. These are people whose experiments programming bare-metal and pushing the boundaries of hardware later expanded what other people could build. Their work produced engines, editors, and simulations that eventually became environments for other people to build in.\nFinally, there is the world-building studio. These are teams like Rockstar Games ( Red Dead Redemption 2 and the upcoming GTA VI ) or Larian Studios ( Baldur’s Gate 3 ) who spend years constructing a place whose detail and verisimilitude (not to mention tiny easter eggs) exceed anything one player is likely to notice. As examples: Red Dead’s wildlife includes possums playing dead and bears bluff-charging and GTA VI will have six in-game radio stations (including one hosted by fictional characters voiced by Lana Del Rey and her husband). People love these games because of how lived-in they feel.\nThese archetypes gesture at different values: indie devs get to toil away at their specific vision, and occasionally strike gold when that vision resonates. The prophetic toolmakers are responsible for pushing a technical boundary. And the world-building studios construct a game of extraordinary depth.\nUsually, when a scary new disruptive technology gets introduced to an industry, the first things to suffer are the archetypes. But this may not be the case for AI. In fact, the most compelling case for AI in games is that it can accelerate all three. The same technology that helps one person realize a strange idea can help an engineer investigate a game’s internals, or give a studio more"
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Jim Mozer of Crown Equipment Corp.",
-   "url": "https://www.dcvelocity.com/material-handling/jim-mozer-of-crown-equipment-corp",
-   "published": "2026-11-12T14:00:04.000Z",
-   "description": "Jim Mozer has nearly four decades of experience in engineering, sales, and marketing management. As senior vice president for lift-truck manufacturer Crown Equipment Corp., he is responsible for the strategic leadership of the company’s sales, marketing, and retail operations. Mozer joined Crown Equipment in his current role in 2012 and oversees the commercialization of material handling products, services, and automation technologies as well as the company’s retail sales and service network of 500 dealers in 84 countries. Before joining Crown, he held multiple engineering and management roles",
-   "excerpt": "In our continuing series of discussions with top supply-chain company executives, Jim Mozer talks about innovations within the forklift industry, the accelerating shift to electric forklifts, and his work with the Industrial Truck Association.\nJim Mozer has nearly four decades of experience in engineering, sales, and marketing management. As senior vice president for lift-truck manufacturer Crown Equipment Corp., he is responsible for the strategic leadership of the company’s sales, marketing, and retail operations.\nMozer joined Crown Equipment in his current role in 2012 and oversees the commercialization of material handling products, services, and automation technologies as well as the company’s retail sales and service network of 500 dealers in 84 countries. Before joining Crown, he held multiple engineering and management roles with Monsanto and Emerson Climate Technologies.\nMozer currently serves as chair of the board of directors of the Industrial Truck Association (ITA) and as task force chairman of its National Forklift Safety Day. He holds a B.S. in mechanical engineering from Wright State University and an MBA from Washington University.\nQ: HOW WOULD YOU DESCRIBE THE CURRENT STATE OF THE MARKET FOR INDUSTRIAL TRUCKS?\nA: In today’s market, customers continue to look for ways to improve productivity while making the most of their resources. Labor availability and employee turnover remain important considerations, and operations are looking closely at technologies that can help their people work more efficiently while supporting training and the overall operator experience.\nQ: DO YOU VIEW AUTONOMOUS MOBILE ROBOTS (AMRs) AS COMPETITORS TO FORKLIFTS FOR MOVING GOODS WITHIN FACILITIES? HOW DO THEY DIFFER IN APPLICATION?\nA: Automated lift trucks and traditional forklifts aren’t necessarily direct competitors, and they often work together well within the same operation. It’s also important to remember that we’re talking about two different types of technology. The terms “AMR” and “AGV” (automated guided vehicle) describe navigation and traffic-management approaches for mobile equipment. In practice, these systems are separate considerations from the vehicle’s material handling capabilities.\nAn automated workflow can make a lot of sense for consistent, repetitive routes, especially in high-volume applications. Manually operated forklifts still offer the most flexibility, so they make more sense when processes are less consistent, have unpredictable trave"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Figma 3D transforms 开放测试上线，品牌团队分享用它制作发布视频的过程",
-   "url": "https://aihot.news/items/x751c9ptxg9qviw1ts32aoa79",
-   "published": "2026-11-12T14:00:00.000Z",
-   "description": "Figma 宣布 3D transforms 进入 open beta，面向所有 Full seat 用户开放，可用 3D transform 和 perspective 效果在空间中倾斜、旋转和排布文本、图像、矢量与框架，效果非破坏性，原稿保持可编辑。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x751c9ptxg9qviw1ts32aoa79",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "NVIDIA 宣布 CEO 变动：Jensen Huang 辞任，CFO Colette Kress 出任临时 CEO",
-   "url": "https://aihot.news/items/qsbjbz754aodhcijq56puh6va",
-   "published": "2026-11-12T13:48:00.000Z",
-   "description": "NVIDIA 董事会宣布 Jensen Huang 即刻辞去总裁、CEO 及董事职务，CFO Colette Kress 被任命为临时 CEO，直至选定永久继任者，董事会已启动内外部人选遴选。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qsbjbz754aodhcijq56puh6va",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "The Robot Report 物流",
-   "title": "Runway’s Praxis-1 world action model for robotics is now available",
-   "url": "https://www.therobotreport.com/runways-praxis-1-world-action-model-for-robotics-is-now-available/",
-   "published": "2026-11-12T13:18:47.000Z",
-   "description": "Runway launched Praxis-1 with partners including Noble Machines, Standard Bots, and Ultra. Developers can now use it with open weights. The post Runway’s Praxis-1 world action model for robotics is now available appeared first on The Robot Report .",
-   "excerpt": "Praxis-1 builds on Runway’s work as a founding member of the Cosmos Coalition, advancing open world models for physical AI. | Source: Runway\nRunway AI Inc. yesterday released Praxis-1, its world action model for robotics. The model is now available to developers with open weights under the Apache 2.0 license.\nRunway first announced Praxis-1 in September with launch partners including Noble Machines , Standard Bots , and Ultra . Since then, these companies have been running the model on their own hardware, including a legged humanoid , a six-axis industrial arm, and a dual-arm warehouse robot.\n“A strong base model goes a long way. Earlier, with Noble Machines, our previous model needed a lot of training to learn their warehouse task: picking up wooden planks one at a time and placing them in a container,” Andy Chen, the head of robotics at Runway, told The Robot Report . “Praxis-1, built with more compute and data, learned it from half an hour of examples and got it right 15 times out of 15. Then we gave it a messy pile of planks it had never seen to clear into bins, and it cleared the whole pile six times out of 10.”\n“Iterating on feedback from partners makes our models better,” he continued. “Today, Praxis-1 is the top-ranked world action model on NVIDIA’s RoboLab leaderboard , and the top-ranked open-source, end-to-end policy.”\nPraxis-1 is available on GitHub , on Hugging Face with native LeRobot support , and in vLLM-Omni, with hosted inference on Reactor . Runway said it released everything developers need to run and adapt the model on their own hardware under Apache 2.0, including for commercial use. That covers the weights and the inference and fine-tuning code, with support for both full fine-tuning and low-rank adaptation ( LoRA ).\nPraxis-1 runs out of the box across NVIDIA hardware, from data center GPUs such as the H100 and B200, to workstation GPUs like the RTX 5090 and RTX PRO 6000, to Jetson Thor on the robot itself.\nPraxis-1 is a 27B-parameter mixture-of-experts diffusion transformer that predicts video and actions together.\nOn RoboLab-120 , Praxis-1 reached 46.2% success across 1,200 episodes, compared with 42.9% for FLUX 3 Action, 36.8% for Cosmos3 Nano and 28.0% for π0.5. It ranks fifth overall on the leaderboard.\n“The core piece is that a model trained to predict video really understands a lot about the physical world: how objects behave, how hands move, what a task looks like partway through, and so on,” Chen said.\n“Praxis-1 is built on "
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "Bipartisan push possible to curb Trump tariffs",
-   "url": "https://www.supplychaindive.com/news/bipartisan-push-possible-to-curb-trump-tariffs/874347/",
-   "published": "2026-11-12T12:25:00.000Z",
-   "description": "Three bills in Congress would significantly restrict presidential tariff power if they become law, and experts say there&#39;s appetite for change in trade policy.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "Gondola doubles revenue as its team builds more with Codex",
-   "url": "https://openai.com/business/customer-stories/gondola",
-   "published": "2026-11-12T12:00:00.000Z",
-   "description": "Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Anthropic 官宣首次公开募股（IPO）",
-   "url": "https://aihot.news/items/k99zjo9hbtous9r6vmmz7pxyh",
-   "published": "2026-11-12T11:30:46.000Z",
-   "description": "Anthropic 官方宣布启动首次公开募股（IPO），并公布入口 ipo.anthropic.com。Anthropic 已向 SEC 提交注册声明及招股说明书，证券在注册声明生效前不得出售，初步招股说明书可经高盛与摩根士丹利获取。 🔗 阅读原文 via AIHOT · https://aihot.news/items/k99zjo9hbtous9r6vmmz7pxyh",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "Holiday Extras is rethinking what it can build with Codex",
-   "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
-   "published": "2026-11-12T09:30:00.000Z",
-   "description": "With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth.",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "The Return Trip Is Becoming a Logistics Product",
-   "url": "https://logisticsviewpoints.com/2026/11/12/the-return-trip-is-becoming-a-logistics-product/",
-   "published": "2026-11-12T08:55:00.000Z",
-   "description": "A truck delivers fresh produce to a supermarket and heads toward its next assignment. The produce has been received, but the logistics transaction is not complete. There are empty crates in the store that belong somewhere else, must be cleaned before being reused, and need to return to circulation before the next shipping cycle. In […] The post The Return Trip Is Becoming a Logistics Product appeared first on Logistics Viewpoints .",
-   "excerpt": "A truck delivers fresh produce to a supermarket and heads toward its next assignment. The produce has been received, but the logistics transaction is not complete. There are empty crates in the store that belong somewhere else, must be cleaned before being reused, and need to return to circulation before the next shipping cycle. In a disposable packaging model, much of that work ended with a recycling or waste stream. In a reusable model, it becomes an operating obligation with its own assets, service levels, and economics.\nReusable pallets, crates, and consumer containers are commonly discussed in environmental terms. That is understandable, given the potential to avoid single-use material. But for logistics executives, a more interesting development is taking place: the return trip itself is becoming a product. Someone must forecast the containers, retrieve them, inspect or sanitize them, reposition them, and have the right quantity available at the next point of use. A reusable package is not an environmental benefit simply because it was designed to be reused. It has to come back, in usable condition, often enough to justify the system around it.\nIn November 2026, IFCO described an expansion of its program with Whole Foods Market . The initiative began in 2022, initially replacing disposable corrugated cartons for products such as root vegetables with reusable plastic containers. IFCO said the collaboration had avoided nearly four million pounds of cardboard waste since inception and that use of the containers had increased substantially over the period.\nThose are supplier-reported environmental and scale figures, but they point to a practical network-design question. A crate arriving with produce must eventually be separated from the merchandise, consolidated, collected, inspected, cleaned, and released for another trip. It also has to arrive back in circulation in the right geography and at the right time. A container sitting in a stockroom is an unavailable transportation asset, even if it has not physically left the supply chain.\nThis is why a returnable-packaging program cannot be managed solely as a procurement substitution—plastic instead of cardboard, one unit price instead of another. Store operations, food safety, transportation planning, distribution, and the pooling provider all influence whether the loop works. The more locations a program serves, the more important container visibility, loss prevention, route density, and balancing of emp"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenAI 用自动化红队训练提升 GPT-6 Astra 和 Sol 在高风险领域的模糊鲁棒性",
-   "url": "https://aihot.news/items/yg97h3u5vthadivuv5po5f0aw",
-   "published": "2026-11-12T08:00:00.000Z",
-   "description": "OpenAI 研究团队介绍如何用自动化红队提升模型在网络、生物等高风险双用途领域的模糊鲁棒性，通过扩大攻击者模型的测试时算力迭代搜索越狱，并要求攻击在多次重复测试中成功（worst@n），生成可靠的对抗训练数据用于 RL 训练。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yg97h3u5vthadivuv5po5f0aw",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "BestBlogs 每日早报",
-   "title": "EP234 · A2UI 生成界面、Codex 持续排障、Muse 优化 TPU 推理",
-   "url": "https://www.bestblogs.dev/explore/brief/2026-11-12?utm_source=rss&utm_medium=feed&utm_campaign=daily_brief&entry=rss_brief_index",
-   "published": "2026-11-12T06:00:00.000Z",
-   "description": "📝 今日导语 A2UI 生成交互界面、Codex 持续排障、Muse 优化 TPU 推理：理解智能体产品与工程取舍。 🏷 今日关键词： 生成式界面 持续执行 推理优化 代码验收 多模态 📰 今日精选内容 A2UI 1.0：打造愉悦、快速、可靠的智能体体验 Google Developers Blog &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 89 用 Codex 做持续数周的工程工作｜DevDay 2026 OpenAI &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 92 在 TPU v7 上优化 Muse Spark Open：解码加速与会话缓存实践 PyTorch &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 从淘小蜜分流模型的实践，聊聊 Jev 与 System One 阿里技术 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 AI 10 分钟写完代码，你 2 小时还在验？用验收 Agent 补上最后一公里 腾讯云开发者 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 美团 LongCat-2.5 正式开源：从看见，到抵达 美团 · 技术团队 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 生成更真实，百轮编辑更稳定｜",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "Latent Space",
-   "title": "[AINews] D-Day (Decision Models Day)",
-   "url": "https://latent.space/p/ainews-d-day-decision-models-day/",
-   "published": "2026-11-12T05:26:54.000Z",
-   "description": "November 11, 2026 — Google enters the decision model market. At AI Engineer, Cloudflare showed which parts of a build failure a classifier could handle. TypeSafe AI showed off their production customers.",
-   "excerpt": "November 11, 2026 — Google enters the decision model market. At AI Engineer, Cloudflare showed which parts of a build failure a classifier could handle. TypeSafe AI showed off their production customers.\nToday was the “System One day” of the second annual AIE CODE event , and somehow everything aligned:\nCloudflare’s Michelle Chen walked through their Clef and Clairic models\nRichard covered Diogo’s triumphant return to AIE talking about the Jevolution with their most notable production customers since crossing $100M ARR\nIn a BIG surprise, Google beat Anthropic to launching a production decision model, with Sundar and Logan announcing Gemini Decision 1 , a calibrated multimodal decision model capable of taking up to 1000 questions and costing $0.10 per million input with ~200ms e2e latency.\nBenchmarks are good ( usual caveat about benchmarks ):\nAnd you can hear all this and more on today’s System One track.\nAnd support AINews by giving your agent SerpApi to read and crawl the web!\nSponsored by SerpApi Give Your AI Agents the Full Page, Not Just the Link Retrieve public web pages by URL as clean Markdown, structured JSON, or raw HTML with SerpApi’s Extract API . Extract a single page, map a site’s URLs, or run a bounded same-site crawl. Simply set engine=extract with a URL, and add output=md for Markdown. Pair it with 100+ SerpApi search APIs to go from query to page content with one provider.\nGoogle Launches Gemini Decision 1 for Single-Pass Classification\nGemini Decisions API : Google introduced a new API backed by Gemini Decision 1 . The model handles closed-set decisions, so it scores choices in a single pass instead of generating text token by token ( Sundar Pichai , Logan Kilpatrick , Google ).\nSpecs : It supports yes/no, multiple-choice and rubric scoring, with up to 255 multiple-choice options. It accepts text, image, audio, video and PDF inputs, handles up to 1,000 questions per request, has 256K context, returns answers in 150–250 ms end to end, and attaches a confidence score to every answer ( @_philschmid ).\nPricing : $0.10 per 1M input tokens, with $0 billed for output. Google says that is about 5x cheaper than Flash-Lite ( Sundar ).\nOrigin : The project started as an internal Google DeepMind prototype. A small team shipped the model and API about six weeks later ( @_philschmid ).\nGoogle's comparison with TypeSafe's Jev : Google's own tests show Decision 1 beating Jev 1.14 on 5 of 7 shared benchmarks, including 92.2% vs 90.0% on JevBench. Jev cos"
-  },
-  {
-   "group": "ai",
-   "source": "Latent Space",
-   "title": "The Jev Revolution: What Engineers Are Already Building with System One Models",
-   "url": "https://latent.space/p/jev-revolution/",
-   "published": "2026-11-12T05:08:20.000Z",
-   "description": "At AI Engineer Code Summit, lead Jev creator Diogo Almeida called on developers to automate everything. Also, Glean and others showed how they’re using Jev.",
-   "excerpt": "At AI Engineer Code Summit, lead Jev creator Diogo Almeida called on developers to automate everything. Also, Glean and others showed how they’re using Jev.\nToday at the AI Engineer Code Summit , the main theme was system one models — non-generative models that return structured choices, scores, or probabilities. They’re also typically much faster and cheaper than reasoning LLMs (a.k.a. system two models).\nAnd who better to give an inspirational rallying cry for system one models than Diogo Almeida , co-founder and CEO of TypeSafe AI . Almeida was lead creator of Jev , the product that kicked off this trend less than two months ago.\nJev was an instant revelation for AI engineers when it was released in September. In a podcast with Latent Space on launch (which quickly became our most popular episode of the year), Almeida explained the core problem with making LLMs the heart of software: reliability .\nIn his keynote at AIE Code today, he took it a step further by claiming that Jev is “reliable intelligence” that should be used for “just automating everything.”\nOf particular interest to AI engineers is Almeida’s point that system one models should become integrated with code. As he put it in his keynote, “code is the language of automation , therefore you need to integrate with code.”\nLatent Space founder swyx interprets this as a call to “liberally sprinkle ‘System One’ model calls everywhere INSIDE application code to make smarter software instead of increasingly convoluted forms of ‘concat strings together and hope for the best\" AI engineering.’”\nThe term “smart software” was used throughout Almeida’s presentation. It sounds like the kind of term used by companies like Microsoft or IBM during Web 2.0, but in the AI era it does actually signify a harsh reality about LLM-driven software: sometimes it’s just not very smart. As Almeida quipped during his presentation, “you get Einstein 95% of the time, but Mr. Bean 5% of the time.”\n“And if you can't tell which is which, how the fuck are you going to automate anything,” he added.\nAlmeida ended with an impassioned plea to “automate everything.” Like an AI-pilled, pink-haired Steve Jobs, he called out to “the dreamers and the people who don't want to be limited by everything that has happened so far,” promising that TypeSafe AI wants to “really fight for you, and we want this to be as reliable as a fourth logic gate. ”\nWith the unenviable task of immediately following Almeida on stage, Chinmay Goyal from Glean p"
-  },
-  {
-   "group": "wh",
-   "source": "MH&L",
-   "title": "Access to Energy Is Major Constraint on Supply Chain Growth",
-   "url": "https://www.mhlnews.com/global-supply-chain/news/55416970/access-to-energy-is-major-constraint-on-supply-chain-growth",
-   "published": "2026-11-12T05:05:00.000Z",
-   "description": "“Many supply chains continue to operate under the assumption that energy is an always-available input,” said Marta Muñoz of Gartner.",
-   "excerpt": "Gartner predicts that by 2029, most manufacturers without advanced energy management capabilities will experience 20% to 30% higher costs due to price and supply volatility, network congestion, and capacity constraints.\nThat is because supply chain growth is increasingly being constrained by energy availability. As electricity demand rises, and energy infrastructure faces mounting capacity and reliability challenges, organizations may encounter higher operating costs, delays in expansion plans and obstacles to electrification initiatives.\nGartner predicts that by 2029, most manufacturers without advanced energy management capabilities will experience 20% to 30% higher costs due to price and supply volatility, network congestion, and capacity constraints.\n&ldquo;Many supply chains continue to operate under the assumption that energy is an always-available input,&rdquo; said Marta Mu&ntilde;oz , senior director analyst, in Gartner's supply chain practice, in a statement.\n&ldquo;That assumption is becoming increasingly difficult to sustain. Energy availability is emerging as a factor that can influence where organizations operate, how they expand, and whether they can execute automation and electrification strategies as planned.&rdquo;\nEnergy constraints are no longer confined to procurement cost considerations. Rising electricity demand from industrial electrification, AI-enabled data centers and fleet transitions are colliding with aging infrastructure, transmission bottlenecks and lengthy interconnection processes. As a result, energy availability is becoming a structural constraint that affects operational resilience, cost-to-serve, and long-term growth.\nTraditional approaches to energy management often rely on financial procurement contracts and assumptions of historical grid reliability. However, these strategies do not address physical limitations such as grid congestion, local capacity shortages or interconnection delays. Gartner research indicates that these constraints are increasingly shaping network design decisions, capacity planning and facility expansion strategies.\nEnergy constraints can affect supply chain operations in several ways:\nAs energy constraints become a more significant factor in supply chain performance, Gartner advises CSCOs to incorporate energy considerations into strategic planning, network design and resilience initiatives. Organizations that proactively account for energy availability and grid reliability may be better posit"
   }
  ]
 }
