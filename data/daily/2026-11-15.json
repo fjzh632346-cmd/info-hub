@@ -1,0 +1,320 @@
+{
+ "type": "daily",
+ "date": "2026-11-15",
+ "headline": "Gemini 4 Hydrogen 以低价抢占“日常执行”模型位置，黄仁勋辞任余波持续；仓储方面沃尔玛/Symbotic 与 DHL 路线对比值得细读。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "Anthropic：常驻智能体的五个架构原语",
+     "source": "Anthropic（Claude 官方博客）",
+     "published": "2026-11-13",
+     "readMinutes": 14,
+     "summary": "Anthropic 拆解“一直在后台待命、能主动干活”的智能体（always-on agent）怎么搭：它和普通 agent 共用同一个核心循环，区别在外围架构。文中给出五个构件：事件收件箱、定时器、记忆、权限、发件箱，并附实现建议。原文英文。",
+     "takeaways": [
+      "事件收件箱：所有触发源（webhook、定时任务）先入库再由 worker 处理，避免并发冲突和事件丢失，用关系型数据库即可",
+      "定时器与收件箱分开存储，分“自己设的跟进”和“固定日程（如每日简报）”，由调度器轮询触发",
+      "凭证放在 agent 环境外的代理里注入，高风险操作让用户确认；记忆只存查不到的信息",
+      "文中称长周期编码任务上 Opus 5.5 每个任务成本比 Opus 5 低 78%（厂商数据）"
+     ],
+     "why": "你平时用 Claude 做 Agent，这篇是官方给的工程骨架，做“每日简报”这类定时 Agent 项目时可以直接对照；也是 AI 交付工程师面试常被问到的架构思路。",
+     "url": "https://claude.com/blog/building-always-on-agents",
+     "tags": [
+      "教程",
+      "案例"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "Google 发布 Gemini 4 Hydrogen：主打快、便宜的日常编码与智能体模型",
+     "source": "Google DeepMind",
+     "published": "2026-11-12",
+     "readMinutes": 8,
+     "summary": "Hydrogen 是 Gemini 4 系列里面向日常执行的模型（旗舰为 Carbon、Argon，负责深度推理）。官方称它在 Artificial Analysis 智能指数上默认档 51 分超过 Argon 的 50，最高思考档 54；1M token 上下文统一定价，输入 1.5 美元、输出 7.5 美元/百万 token。已覆盖 AI Studio、Gemini API、Gemini 应用和搜索。原文英文。",
+     "takeaways": [
+      "定位：写代码、跑测试、验证修改的“执行模型”，深层架构判断仍建议交给 Carbon/Argon",
+      "价格 1.5/7.5 美元每百万 token，不因上下文长度加价",
+      "AIHOT 转引 Artificial Analysis 评测：智能指数 54，接近 Sonnet 5.5，成本约其 32%（未打开原始评测，暂无其他独立测评）",
+      "国内可用性：原文未提，需自行确认网络与账号条件"
+     ],
+     "why": "你做网站、做 Agent 要考虑 API 成本，这是当前性价比参照；读原文能看到官方怎么划分“规划模型”和“执行模型”的分工。",
+     "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+     "tags": [
+      "新模型"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "Epoch AI：华为和林格尔数据中心揭示的中美算力差距",
+     "source": "Epoch AI",
+     "published": "2026-11-12",
+     "readMinutes": 10,
+     "summary": "Epoch 用高分辨率卫星图，根据冷却设备的类型、大小、数量估算建筑功率，研究华为在内蒙古和林格尔的 AI 数据中心。结论：它是中国算力最大的数据中心之一，但容量不到全球最大的 Colossus 2（美国田纳西）的十分之一，预计至少到 2028 年仍差距明显。这是浓缩版，完整报告在其官网。原文英文。",
+     "takeaways": [
+      "出口管制下华为芯片在性能和能效上落后英伟达",
+      "方法可学：用卫星图+冷却设备模型估算数据中心功率",
+      "能源充裕是中国建数据中心的优势，但没能抵消芯片差距"
+     ],
+     "why": "想了解 AI 产业格局的话，这是有方法、有数据的一手分析，比新闻转述可靠；内容也和今天英伟达风波、芯片走私的讨论互相印证。",
+     "url": "https://epochai.substack.com/p/what-huaweis-horinger-data-center",
+     "tags": [
+      "报告",
+      "数据"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Nathan Lambert：没有黄仁勋的开源 AI",
+     "source": "Interconnects",
+     "published": "2026-11-14",
+     "readMinutes": 8,
+     "summary": "作者认为黄仁勋辞任 Nvidia CEO 对美国开源模型生态是重大打击：Nvidia 支持开源模型有商业动机（避免少数大客户自研芯片、集中话语权），但这是需要长期经营的难题；此前砸钱式的资助很可能干涸。公司首要目标会是稳住局面、24 个月内向客户交付。原文英文，为观点文章。",
+     "takeaways": [
+      "Nvidia 运营高度依赖黄仁勋个人，业界共识是接下来挑战不少",
+      "开源模型资助是创始人式的大胆押注，后续很可能收缩",
+      "这是个人判断而非已发生事实，需与其他分析对照"
+     ],
+     "why": "你用开源模型和 Agent 工具，了解上游资金变化有助判断未来模型生态；作者长期跟踪开源模型，视角可信。",
+     "url": "https://www.interconnects.ai/p/open-source-ai-without-jensen",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": false,
+     "title": "黄仁勋辞任 Nvidia CEO，CFO Kress 任临时 CEO",
+     "source": "AIHOT 整理",
+     "summary": "因走私指控与私人关系风波离任；周末请愿书获超 11.5 万签名，马斯克联署。",
+     "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+     "published": "2026-11-14"
+    },
+    {
+     "pick": false,
+     "title": "Anthropic 官宣 IPO，Amodei 称明年存在巨大不确定性",
+     "source": "The Decoder",
+     "summary": "算力要提前 1–2 年采购，买少影响收入、买多有财务风险，是最深的两难。",
+     "url": "https://the-decoder.com/anthropic-ceo-amodei-admits-theres-a-huge-uncertainty-in-whats-going-to-happen-next-year-days-before-a-record-ipo/",
+     "published": "2026-11-14"
+    },
+    {
+     "pick": false,
+     "title": "研究称 DeepSeek、Kimi 等模型权重带有 Blackwell 训练痕迹",
+     "source": "TechCrunch",
+     "summary": "非营利机构 Unemployment Labs 分析权重得出，未必意味着违反出口管制。",
+     "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+     "published": "2026-11-13"
+    },
+    {
+     "pick": false,
+     "title": "Cursor 披露安全事件：恶意 Claude Code 扩展波及最多 5000 用户",
+     "source": "AIHOT 整理",
+     "summary": "攻击者利用暴露的密钥读取 agent trace，不到 0.01% 客户 API 凭证暴露。",
+     "url": "https://aihot.news/items/e9o5h2c1o5f0xuh2bgqtc2w7k",
+     "published": "2026-11-13"
+    },
+    {
+     "pick": false,
+     "title": "llama.cpp 发布 1.0，本地运行模型有了首个稳定大版本",
+     "source": "Hugging Face",
+     "summary": "声明接口稳定，移除 35 个废弃函数；SGLang 同期也发 1.0。",
+     "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+     "published": "2026-11-13"
+    },
+    {
+     "pick": false,
+     "title": "OpenAI 推出 ChatGPT Wallet",
+     "source": "OpenAI",
+     "summary": "可在用户批准下由 agent 代为完成购买。",
+     "url": "https://openai.com/index/introducing-chatgpt-wallet",
+     "published": "2026-11-13"
+    },
+    {
+     "pick": false,
+     "title": "DeepSeek 开放应用 API：联网搜索、文件输入、读链接",
+     "source": "AIHOT 整理",
+     "summary": "把 App 端能力开放给开发者调用。",
+     "url": "https://aihot.news/items/nnbnoebf6mvo97usmwj5wziyl",
+     "published": "2026-11-12"
+    },
+    {
+     "pick": false,
+     "title": "腾讯混元发布实时语音模型 Hy Realtime",
+     "source": "AIHOT 整理",
+     "summary": "新增工具调用与唱歌，已用于元宝语音通话，API 将上线腾讯云。",
+     "url": "https://aihot.news/items/qp41q77z9ge5hsyrh9kra0c7k",
+     "published": "2026-11-13"
+    },
+    {
+     "pick": false,
+     "title": "Latent Space：“No AI Slop”宣言与 LangChain 融资 3 亿美元",
+     "source": "Latent Space",
+     "summary": "宣言源于 AIE CODE 大会，LangChain 估值 30 亿美元。",
+     "url": "https://latent.space/p/ainews-the-no-ai-slop-manifesto/",
+     "published": "2026-11-14"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "沃尔玛 60 亿美元自动化押注 vs DHL 编排策略：两种打法，一个难题",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-13",
+     "readMinutes": 8,
+     "summary": "10 月 29 日沃尔玛与 Symbotic 扩大合作，覆盖 25 个美国区域配送中心，初期承诺约 60 亿美元；11 天后 DHL 供应链则说要把已有机器人规模化，把 AI 编排（统一调度不同设备）放进在线仓库并试点自适应机器人。文章对比“单一供应商整体方案”与“多系统编排”两条路线。原文英文。",
+     "takeaways": [
+      "Symbotic 方案：高密度箱式存储、BreakPack 拆零拣选、SymMicro 门店电商履约，软件自有，减少系统交接",
+      "DHL 路线：不押单一系统，重在调度和持续优化已有机器人",
+      "对非沃尔玛级别的运营方，选哪种思路比金额大小更重要"
+     ],
+     "why": "你关注仓储自动化厂商，这篇把“整体交付商”和“集成编排”两种商业模式摆在一起，有助于你理解北自、今天国际、极智嘉各自的定位，也是写物流工程课设/面试案例的好素材。",
+     "url": "https://logisticsviewpoints.com/2026/11/13/walmarts-6-billion-automation-bet-and-dhls-orchestration-strategy-two-playbooks-one-hard-question/",
+     "tags": [
+      "观点",
+      "案例"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "为什么仓储自动化的 ROI 可能在机器人开工前就失败",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-12",
+     "readMinutes": 7,
+     "summary": "核心观点：设备额定产能不等于配送中心的实际产能，差距来自货物呈现、包装、托盘质量、数据准确、软件集成、人工异常处理以及下游工序能否接得住。文中以 XPO 荷兰 Nieuwegein 生鲜仓、Staples、Del Papa 为例，说明它们都在处理设备之外的“运营系统”。原文英文。",
+     "takeaways": [
+      "额定产能与实现产能不是一回事",
+      "托盘不规整、标签破损等异常会拖慢整条线",
+      "做自动化方案评估要把上下游和异常处理计入"
+     ],
+     "why": "这正是物流工程专业的“系统视角”，做仿真、方案设计或实习面试谈项目时，能用来说明为什么要看瓶颈而不只看设备参数。",
+     "url": "https://logisticsviewpoints.com/2026/11/12/why-warehouse-automation-roi-can-fail-before-the-robot-starts-working/",
+     "tags": [
+      "观点",
+      "案例"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Symbotic CTO Kuffner 访谈：看好仓储自动化前景",
+     "source": "Automated Warehouse",
+     "published": "2026-11-12",
+     "readMinutes": 8,
+     "summary": "访谈 Symbotic CTO James Kuffner（前 Google、Toyota Research 背景）。他称 Symbotic 累计搬运超 20 亿箱，目前网络日均处理超 1000 万箱；近一个月收购分拣系统商 cellumation 并扩大与沃尔玛合作。原文英文，为企业高管自述，带有宣传性。",
+     "takeaways": [
+      "Symbotic 技术栈：ASRS（自动存取系统）、自主穿梭车、包装/码垛、AI、自动叉车",
+      "Interact Analysis 称其为“美国最大仓储自动化供应商”",
+      "可看出头部企业把 AI 与“物理智能”当作下一阶段重点"
+     ],
+     "why": "了解头部厂商的技术路线和自我叙事，对比国内厂商做行业研究；注意区分高管表态与事实。",
+     "url": "https://www.automatedwarehouseonline.com/symbotic-cto-james-kuffner-sees-strong-prospects-for-warehouse-automation/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "下一笔物流产能投资可能不是再建一栋楼",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-13",
+     "readMinutes": 6,
+     "summary": "文章主张在申请扩建前先问：产能是真短缺，还是现有产能在活动之间被浪费？晚到的拖车让月台门空等、调度员不知下一辆该移哪个。食品企业 Red Gold 原先靠大量电话邮件协调月台预约，是“挖掘已有产能”的例子。原文英文。",
+     "takeaways": [
+      "区分“扩大物理系统”和“回收被浪费的产能”两类投资",
+      "月台预约、场内调度是常见的隐性瓶颈",
+      "后者资金风险更小、见效可能更快，但不能取代所有扩建"
+     ],
+     "why": "对应你学的设施规划与运作管理，是把“效率提升 vs 扩容”落到真实场景的短案例。",
+     "url": "https://logisticsviewpoints.com/2026/11/13/the-next-logistics-capacity-investment-may-not-be-another-building/",
+     "tags": [
+      "案例"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": false,
+     "title": "GXO 拟四年内部署至多 1000 台 Apptronik Apollo 人形机器人",
+     "source": "Automated Warehouse",
+     "summary": "仅为意向书，需达到性能、安全和运营 KPI 才推进，覆盖拣选、搬运、分拣。",
+     "url": "https://www.automatedwarehouseonline.com/gxo-to-deploy-up-to-1000-apollo-humanoids-from-apptronik-in-the-next-four-years/",
+     "published": "2026-11-13"
+    },
+    {
+     "pick": false,
+     "title": "IFR：全球制造业机器人密度升至每万人 152 台",
+     "source": "DC Velocity",
+     "summary": "韩国 1066、新加坡 873、德国 469 居前三；美国 323 排第 8。",
+     "url": "https://www.dcvelocity.com/material-handling/robotics/global-robot-density-reaches-152-units-per-10000-employees",
+     "published": "2026-11-12"
+    },
+    {
+     "pick": false,
+     "title": "Runway 开源机器人世界动作模型 Praxis-1",
+     "source": "The Robot Report",
+     "summary": "Apache 2.0 开放权重；称仓库木板拣放任务半小时示范后 15/15 成功（厂商数据）。",
+     "url": "https://www.therobotreport.com/runways-praxis-1-world-action-model-for-robotics-is-now-available/",
+     "published": "2026-11-12"
+    },
+    {
+     "pick": false,
+     "title": "Rhoda AI 用视频数据训练通用机器人模型",
+     "source": "The Robot Report",
+     "summary": "A 轮融资 4.5 亿美元，面向制造、物流、电商，采用 DVA 视频动作模型。",
+     "url": "https://www.therobotreport.com/how-rhoda-ai-is-using-video-data-to-create-generalized-ai-models-for-robots/",
+     "published": "2026-11-13"
+    },
+    {
+     "pick": false,
+     "title": "ABB 推出面向服装物流的视觉物理 AI 方案",
+     "source": "Robotics & Automation News",
+     "summary": "把 AI Robot Trainer 集成进 Fashion Inductor 模块，面向系统集成商。",
+     "url": "https://roboticsandautomationnews.com/2026/11/14/abb-robotics-brings-industrial-grade-physical-ai-to-fashion-logistics/107087/",
+     "published": "2026-11-14"
+    },
+    {
+     "pick": false,
+     "title": "Simbe 的 Tally 货架机器人在 DeCicco & Sons 全链部署",
+     "source": "Automated Warehouse",
+     "summary": "数据接入门店运营、电商和 BI 系统。",
+     "url": "https://www.automatedwarehouseonline.com/decicco-sons-expands-deployment-of-simbes-tally-robots/",
+     "published": "2026-11-14"
+    },
+    {
+     "pick": false,
+     "title": "沃尔玛无人机配送站点计划翻倍以上",
+     "source": "Supply Chain Dive",
+     "summary": "沃尔玛扩大无人机配送布局。",
+     "url": "https://www.supplychaindive.com/news/walmart-more-than-doubles-planned-drone-delivery-sites/874580/",
+     "published": "2026-11-13"
+    },
+    {
+     "pick": false,
+     "title": "USPS 准备 2027 年涨价并设永久燃油附加费",
+     "source": "Supply Chain Dive",
+     "summary": "对电商发货成本有影响。",
+     "url": "https://www.supplychaindive.com/news/usps-readies-2027-rate-increase-permanent-fuel-surcharge/874524/",
+     "published": "2026-11-13"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "抓取失败的信源：Symbotic IR（HTTP 403）、Locus Robotics；aihot.json 五个接口均正常。",
+  "AIHOT 部分条目无原文，速览中的 Cursor、DeepSeek、腾讯混元链接为 AIHOT 页面。",
+  "Anthropic 常驻智能体一文已用 WebFetch 打开核对；其余精读依据 excerpt。Gemini 4 Hydrogen 的第三方测评数字来自 AIHOT 转述，未核实原始评测。",
+  "WebSearch 结果多为低质量聚合站、相互矛盾，未采纳。",
+  "当日无北自科技、今天国际、极智嘉、海康机器人相关一手内容，仓储中文源较少。"
+ ]
+}
