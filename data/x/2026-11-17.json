@@ -1,0 +1,89 @@
+{
+  "type": "x",
+  "date": "2026-11-17",
+  "items": [
+    {
+      "kind": "opinion",
+      "category": "PPT",
+      "score": 90,
+      "author": "Tintycke",
+      "handle": "@Tynric_carter",
+      "url": "https://x.com/Tynric_carter/status/2122546747457335787",
+      "posted": "2026-11-17",
+      "metrics": "269 赞 · 443 收藏 · 2.8 万查看",
+      "textZh": "一篇长文：作者把 GitHub 上 39 个“办公类” Claude Skill（可以理解为给 Claude 装的现成技能包）按 PPT、Word、Excel、PDF、会议纪要、邮件、日程、简历、翻译、视觉素材十类排了个主观榜。PPT 类最推荐：PPT Master（出原生可编辑 PPTX，能套自己的模板）、Anthropic 官方 pptx（稳但不惊艳）、歸藏的 guizang-ppt-skill（杂志风/瑞士风网页幻灯片，设计感最强，但不适合数据多的汇报，AGPL 授权）；其次 frontend-slides、MiniMax 的 pptx-generator。Word 类推荐官方 docx 和国标公文排版的 dyz-gongwen-skills；Excel 推荐官方 xlsx（只写活公式、自己校验）。文末给了装法：官方套件在 Claude Code 里用 /plugin marketplace add anthropics/skills 和 /plugin install document-skills@anthropic-agent-skills 两行装好。作者说星数是 11 月 17 日逐个核过的，排名纯主观。适合拿来挑一个做课程汇报、答辩 PPT 的 Skill。"
+    },
+    {
+      "kind": "news",
+      "category": "视频",
+      "score": 78,
+      "author": "DEXTUNE",
+      "handle": "@dextune",
+      "url": "https://x.com/dextune/status/2122374142439899203",
+      "posted": "2026-11-17",
+      "metrics": "601 赞 · 1061 收藏 · 2.7 万查看",
+      "textZh": "推荐一个免费的 Claude Skill：Claude Animated Shorts（仓库 github.com/mromidev/claude-animated-shorts），不用 AI 视频生成模型，而是让 Claude 写代码，用 three.js（网页 3D 库）放进 Remotion（用代码做视频的工具）里，在自己电脑上渲染出 55–70 秒的动画短片：2D 角色放在彩色 3D 小镇里，带描边、镜头虚化、运镜、配乐和音效。风格是从 20 支参考短片里量化总结出的 7 份报告（动作、景深、材质、角色、灯光、描边、调色），并让子代理逐帧对照检查。仓库附一支 67 秒示例短片的完整源码，可渲染 2K 成片。适合想用 Claude 做视频但不想花钱买视频模型额度的人，需要本地装 Node 环境。",
+      "video": "https://x.com/dextune/status/2122374142439899203"
+    },
+    {
+      "kind": "prompt",
+      "category": "编程",
+      "score": 72,
+      "author": "何笠同学",
+      "handle": "@HeLi8866",
+      "url": "https://x.com/HeLi8866/status/2122374395834622408",
+      "posted": "2026-11-17",
+      "metrics": "1258 赞 · 2039 收藏 · 15.8 万查看",
+      "textZh": "介绍在 Claude Code 里让几个模型分工的思路：Sonnet 5.5 跑主会话写代码，Haiku 5.5 做三个只读或隔离的子代理（search 梳理仓库、grep 定位调用点、audit 在临时 worktree 里检查改动），Opus 5.5 只在定方案前、同一报错第二次出现时、宣布完工前出手审一遍，从而省 token。帖子给了一段可直接贴进 Claude Code 的配置提示词，最后要求“先给我看 diff，我说开始之前不要改文件”，这个习惯值得学。注意：帖子说的 claude --model sonnet --advisor opus 启动参数和“JEV”是作者的说法，没给出处，未核实；子代理（.claude/agents）本身是官方功能，帖子附了官方文档 code.claude.com/docs/en/sub-agents。",
+      "prompt": "按这个结构重新配置我的 Claude Code：\n1. 主会话用 Sonnet 5.5，顾问用 Opus 5.5。\n2. 在 .claude/agents 里建三个 Haiku 5.5 子代理：search（梳理仓库）、grep（定位调用点）、audit（检查 diff）。\n3. 给 audit 设置 isolation: worktree，检查时不碰我的工作分支。\n4. 在 CLAUDE.md 里加一条规则：所有仓库搜索和测试都交给 Haiku 5.5 子代理，让主上下文保持精简。\n5. 快速、确定性的分叉（选工具、选路径、重试）交给 JEV 处理。\n每处改动先用 diff 给我看，我说开始之前不要改任何文件。",
+      "promptZh": "（原文即中文）第 5 条里的 JEV 来源不明，使用时可以删掉这一条。",
+      "video": "https://x.com/HeLi8866/status/2122374395834622408"
+    },
+    {
+      "kind": "prompt",
+      "category": "编程",
+      "score": 55,
+      "author": "Vox",
+      "handle": "@Voxyz_ai",
+      "url": "https://x.com/Voxyz_ai/status/2122465585984332276",
+      "posted": "2026-11-17",
+      "metrics": "350 赞 · 717 收藏 · 3.7 万查看",
+      "textZh": "Claude 官方开发者账号宣布：桌面版 Claude Code 的 iOS 模拟器现在支持折叠屏 iPhone Duo（公开测试），Claude 可以自己折叠、展开设备来测每种布局。作者补充一个坑：同时开几个会话又不指定模拟器，它们会挤到同一台模拟器上。并给了一段“让 Claude 自己点遍整个 App 找界面 bug”的提示词，要求截图、说明用户会看到什么、给最小改法，涉及付款和删数据的改动单独列出，先只给建议不改代码。思路（让 AI 先测、先报告、后动手）也适用于测网页。",
+      "prompt": "Read this guide, then build my app and run it in the simulator. Tap through every main screen. Then run the app on the iPhone Duo simulator and check each screen closed, half open, and open. Find three kinds of problems: layouts that break or get cut off; buttons and links that don't work or can't be reached; and screens that throw errors or don't match what the code is meant to do.\n\nFor each issue, take a screenshot, explain what the user would see, and suggest the smallest change needed. If a screen needs signing in, stop and ask me for a test account. If there's no iPhone Duo simulator, skip that step and tell me how to add one. List any changes involving payments or deleting data separately for me to decide.\n\nShow me the recommendations first. Don't modify anything yet.",
+      "promptZh": "先读这份指南，然后构建我的 App 并在模拟器里运行，把每个主要页面点一遍。再在 iPhone Duo 模拟器上运行，分别检查每个页面在合上、半开、全开三种状态下的样子。找三类问题：布局错乱或被截断；按钮和链接点不动或够不着；页面报错或和代码本意不符。\n\n每个问题都截图，说明用户会看到什么，并给出最小的修改办法。如果某个页面需要登录，停下来向我要测试账号。如果没有 iPhone Duo 模拟器，跳过这一步并告诉我怎么添加。涉及付款或删除数据的改动单独列出来由我决定。\n\n先给我看建议，暂时不要改任何东西。"
+    },
+    {
+      "kind": "opinion",
+      "category": "研究",
+      "score": 70,
+      "author": "Casey Handmer",
+      "handle": "@CJHandmer",
+      "url": "https://x.com/CJHandmer/status/2122609626588061816",
+      "posted": "2026-11-17",
+      "metrics": "1648 赞 · 558 收藏 · 4.5 万查看",
+      "textZh": "前加州理工、NASA JPL 物理学家 Casey Handmer 让 Opus 5.5 “审计”自己的老本行理论天体物理：索引约 15 万篇论文，审查 5 万篇，再对几千篇做更细的复查，找出近 1000 处被多次引用、且大多至今没被更正的重大错误。他据此认为同行评审纠错效果很差，并整理了几十个“有 Claude 额度的人今天就能动手解决”的开放问题（附 .md 上下文文件，网址 science.caseyhandmer.com/physics/）。他的结论很激进：不需要模型再进步，AI 就能把定量科研提速 1000 倍以上，论文作为“科研单位”已经过时。这是个人观点，结论偏夸张，但“用 AI 批量查文献错误”的做法对写论文、做文献综述有参考价值。"
+    },
+    {
+      "kind": "opinion",
+      "category": "其他",
+      "score": 62,
+      "author": "a16z",
+      "handle": "@a16z",
+      "url": "https://x.com/a16z/status/2122452854963306970",
+      "posted": "2026-11-17",
+      "metrics": "90 赞 · 2.3 万查看",
+      "textZh": "经济学家 Tyler Cowen 在 a16z 访谈里说：AI 短期内让招聘变难了。以前企业靠学校、成绩、面试这些不完美的指标判断人；现在最关心的是“这个人脑子够不够灵活、能不能用好 AI”，而这一点很难看出来，所以人岗匹配更难、找人更慢。他认为这是过渡期问题，以后会有衡量 AI 能力的认证；过渡期里“大家都是新手”。对找实习的启示：简历和面试里拿得出“用 AI 做成过什么”的具体作品，会是区分点。同一场对话里他和 Alex Imas 还讨论了为什么模型变聪明不一定带来经济爆发式增长。"
+    },
+    {
+      "kind": "opinion",
+      "category": "其他",
+      "score": 50,
+      "author": "Bee",
+      "handle": "@thtbee_",
+      "url": "https://x.com/thtbee_/status/2122375462970331442",
+      "posted": "2026-11-17",
+      "metrics": "590 赞 · 2.5 万查看",
+      "textZh": "一位用户对谷歌上周发布的两个新 Gemini 模型 Carbon 和 Hydrogen 的使用感受：Carbon 能力不错但很慢，偶尔会编造，需要盯着；Hydrogen（快速版）反而让人惊喜，又快又聪明、做事更主动，幻觉也比 Carbon 少。作者认为谷歌已经很接近“像 Opus 5.5 那样可以放心把任何任务交给它”的水平，同时提到谷歌的 Antigravity 编程工具在快速更新。这是个人测试印象，不是正式测评；关于下一代型号的说法是作者的猜测。"
+    }
+  ]
+}
