@@ -1,0 +1,236 @@
+{
+ "type": "daily",
+ "date": "2026-11-18",
+ "headline": "OpenAI 发布 GPT-6.2 并降价、微软一次推七款自研模型，Anthropic 即将在纳斯达克上市；仓储侧 MIT 调研显示 AI 正在接手更多仓库决策。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "OpenAI 发布 GPT-6.2 Astra 与 Sol：旗舰降价 20%，主打更少 token 完成更多工作",
+     "source": "Simon Willison（引用 OpenAI 发布页）",
+     "published": "2026-11-17",
+     "readMinutes": 8,
+     "summary": "OpenAI 推出旗舰 GPT-6.2 Astra 和日常款 GPT-6.2 Sol（原文英文）。Astra API 价格 8 美元/百万输入 token、40 美元/百万输出，比 GPT-6 Astra 低 20%，与 Claude Fable 5.2 同价；Sol 维持 2/10 美元。OpenAI 称 Astra 在 Agents' Last Exam 上比 Fable 5.2 高 5.5 分、成本约为其 5%；Simon 自测的 Three.js 机甲动画，两者都不如 Fable 5.2 和 Gemini 4 Carbon。",
+     "takeaways": [
+      "价格：Astra 8/40 美元，缓存输入 0.40 美元，长时间智能体任务更划算；Sol 2/10 美元",
+      "OpenAI 自报：Sol 与 Astra 在 FrontierCode 2.0 上仅差 0.5 分，成本约五分之一，日常任务可优先考虑 Sol",
+      "成绩来自厂商自选基准，Simon 的实测并未全面领先，选型要自己跑一遍",
+      "API 与 Codex 均已可用，OpenRouter、Perplexity 同步上线"
+     ],
+     "why": "你平时用 Claude 写代码做 Agent，这篇帮你快速判断新模型的价格和真实差距，值得对照自己的项目试一次。国内直连可用性原文未提，暂无独立测评。",
+     "url": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/",
+     "tags": [
+      "新模型"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "Anthropic 复盘：用 chaos loop 让 Claude 压测并自修复，支撑 Claude Docs 上线",
+     "source": "Claude.dev 开发者博客",
+     "published": "2026-11-17",
+     "readMinutes": 12,
+     "summary": "工程师 Vivek Nair 在上线前两周让 Claude Code 会话驱动镜像生产的预发布集群，每天生成超 100 万份合成文档并故意破坏组件（chaos loop，即不断制造故障再修复的循环）。最忙时约 11 个、峰值 30 个子智能体并行。上线后一周 460 万份文档、20 亿次请求仅 60 次服务器错误，约 50 个 pod 承载。原文英文，中文为 AIHOT 收录版本。",
+     "takeaways": [
+      "循环：选场景→跑测试框架→读遥测→提方案→部署预发布→重复",
+      "难以回退的决策（改数据库 schema 等）先约定必须由人批准",
+      "让服务对 Claude 可读：每次迭代补遥测，让它自己拉崩溃报告并复现",
+      "提示词“提高高度”：要结果（不崩溃），而不是单个任务"
+     ],
+     "why": "这是 Agent 工程化的真实案例，对你做 Agent 项目和面向 FDE（交付工程师）岗位都有参考价值，不需要大预算也能借鉴。",
+     "url": "https://claude.dev/blog/chaos-loop-claude-docs-launch/",
+     "tags": [
+      "案例"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "微软 MAI 在 Ignite 发布七款新模型：编码、安全、图像、实时语音，主打性价比",
+     "source": "Microsoft MAI（经 AIHOT 整理）",
+     "published": "2026-11-17",
+     "readMinutes": 6,
+     "summary": "微软自研模型线 MAI 一次发布七款：MAI Code 2（称以 GPT-6.1 Sol 40% 的价格拿到其 98% 的性能）、Code 2 Flash、Cyber 2 Flash（输出价比上代低 86%）、Image 2.7（称在 Artificial Analysis 图像编辑榜第一）、首个语音到语音模型 Realtime 1（每分钟 0.01 美元起）等。官方承认尚未针对科研和超长智能体任务调优。",
+     "takeaways": [
+      "Code 2 与 Code 2 Flash 已在 GitHub Copilot 上线，可直接体验",
+      "所有对比为微软自家基准与自选对手，暂无独立测评",
+      "价格是核心卖点：Flash 价格只有 GPT-6 Luna 的 65%、Claude Haiku 5.5 的 20%",
+      "国内可用性原文未提"
+     ],
+     "why": "想知道 Copilot 背后的模型变化和价格走向，这篇是一手发布说明；做 AI 产品经理方向可以看它怎么讲“性价比”叙事。",
+     "url": "https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
+     "tags": [
+      "新模型"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "title": "Anthropic IPO 获准在纳斯达克上市，代码 ANT",
+     "source": "IT之家（经 AIHOT）",
+     "published": "2026-11-17",
+     "summary": "SEC 文件显示发行价区间 70–78 美元；WSJ 称可能上调到 80 美元以上，估值或达 1.5–1.6 万亿美元。",
+     "url": "https://aihot.news/items/cxpq4gwitsj6r05zjpphx9agc"
+    },
+    {
+     "title": "Nvidia 停止向中国销售 H200，并设立董事会级国家安全委员会",
+     "source": "TechCrunch（经 AIHOT）",
+     "published": "2026-11-17",
+     "summary": "代理 CEO Colette Kress 称将不再向中国销售 H200，此前经美国中转并缴 25% 关税的通道结束。",
+     "url": "https://aihot.news/items/ulwhtxvx986i1rjdkk2mxgzdl"
+    },
+    {
+     "title": "Nvidia 第三财季营收 1158 亿美元，数据中心占 93%",
+     "source": "AIHOT 整理",
+     "published": "2026-11-17",
+     "summary": "营收超预期，数据中心业务占比 93%。",
+     "url": "https://aihot.news/items/vgopllkh4so1p1q01nefg1364"
+    },
+    {
+     "title": "Gemini 4 Hydrogen 上线全球 Google Search",
+     "source": "Google（经 AIHOT）",
+     "published": "2026-11-17",
+     "summary": "称是 Search 迄今最大模型升级，改进意图理解、查询扩展和可视化回复。",
+     "url": "https://aihot.news/items/vxcsjujkrvgpqxl56xkjgdfqf"
+    },
+    {
+     "title": "Gemini 任务功能向美日韩等六国免费开放，可打电话、付款",
+     "source": "Google AI",
+     "published": "2026-11-17",
+     "summary": "基于 Gemini 4 Hydrogen，可自动打电话预约、查账单、购物，接入 60 多款应用。",
+     "url": "https://aihot.news/items/k036fkz6s64y292ovwq2qrx39"
+    },
+    {
+     "title": "Claude Code 推出实验性 Code Mode",
+     "source": "AIHOT 整理",
+     "published": "2026-11-17",
+     "summary": "设环境变量 CLAUDE_CODE_EXPERIMENTAL_CODE_MODE=1 开启，Claude 写脚本串联工具，长命令运行时仍可回复。",
+     "url": "https://aihot.news/items/z3n160k1v5vsc90udwjd8x7pp",
+     "why": "你天天用 Claude Code，值得开来试试。"
+    },
+    {
+     "title": "Microsoft agent-framework 的 PyPI 恶意版本窃取 Azure 与 CI 凭据",
+     "source": "Wiz（经 AIHOT）",
+     "published": "2026-11-17",
+     "summary": "1.26.1/1.26.2 经 .pth 文件在 Python 启动时窃取凭据，已下架；用过请检查版本并轮换密钥。",
+     "url": "https://aihot.news/items/ekt4wsp34savbuzq0vafnlhpw"
+    },
+    {
+     "title": "外部沙箱模式：让编码智能体在独立沙箱里执行代码",
+     "source": "Simon Willison",
+     "published": "2026-11-17",
+     "summary": "与 Prime Radiant 发布三个沙箱服务实现，带域名白名单代理和凭据替换，可接 Claude Code、Codex。",
+     "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/"
+    },
+    {
+     "title": "Perplexity 年化收入突破 10 亿美元",
+     "source": "Latent Space",
+     "published": "2026-11-17",
+     "summary": "CEO 称年化收入破 10 亿美元，年初不足 2.5 亿；原文英文。",
+     "url": "https://latent.space/p/ainews-perplexity-hits-a-1b-revenue-run-rate-up-4x-in-2026/"
+    },
+    {
+     "title": "可灵发布 Kling Image 4.0 图像模型并开放 API",
+     "source": "AIHOT 整理",
+     "published": "2026-11-17",
+     "summary": "可灵新图像模型，同时开放 API。",
+     "url": "https://aihot.news/items/e871ammlz8gpx1oozsswidzt0"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "MIT 与 Mecalux 调研：过半企业预计 2028 年 AI 自主做出四分之一以上仓库决策",
+     "source": "Supply Chain 24/7（MIT CTL × Mecalux 报告）",
+     "published": "2026-11-17",
+     "readMinutes": 6,
+     "summary": "MIT 运输与物流中心智能物流系统实验室联合 Mecalux，调查 21 国 1967 名供应链和仓储从业者（原文英文）。已落地的智能体 AI 应用中，51% 能不经审批调整库存位置，42% 能自行修正数据，22% 能对客户作承诺，仅 12% 能做财务决策；90% 的企业预计未来 2–3 年增加仓库 AI 投入。",
+     "takeaways": [
+      "生成式 AI 多用于写培训文档（57%）和设计仓库布局（53%）",
+      "智能体 AI 最常见任务是异常处理和库存管理",
+      "主流模式：智能体在公司规则内行动，人监控并可介入",
+      "涉及客户和资金的决策权限被收得更紧"
+     ],
+     "why": "想做仓储自动化，这份数据说明 AI 正从“看板”走向“决策”，是简历和面试里能引用的行业趋势；找原报告也方便你做毕设选题。",
+     "url": "https://www.supplychain247.com/article/warehouse-ai-decisions-mit-mecalux-survey",
+     "tags": [
+      "报告",
+      "数据"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Prologis 研究：AI 数据中心建设到 2030 年将带来 1.5 亿平方英尺仓储租赁需求",
+     "source": "MH&L（Prologis Research）",
+     "published": "2026-11-17",
+     "readMinutes": 5,
+     "summary": "Prologis 预测到本十年末与 AI 建设相关的物流地产租赁将超 1.5 亿平方英尺；2026 年至今此类企业占美国前 30 市场新租赁的近 15%，预计全年净吸纳 4000–5000 万平方英尺，最多关联 15 万个岗位，其中约一半是长期岗位（原文英文）。同时土地、电力、劳动力竞争也在抬高物流开发门槛。",
+     "takeaways": [
+      "需求来自建造和运营数据中心的制造商、承包商、3PL 等整条供应链",
+      "约 50% 的需求和岗位是长期维护、设备更换类",
+      "风险：监管、物料短缺、土地与电力紧张可能拖慢节奏"
+     ],
+     "why": "物流工程专业可以从中看到仓储需求的新来源，对判断就业和研究方向（物流地产、设备物流）有参考。",
+     "url": "https://www.mhlnews.com/technology-automation/news/55418572/logistics-impact-of-ai-buildout",
+     "tags": [
+      "数据",
+      "报告"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "企鹅兰登书屋西语区用 Locus 机器人把拣选效率翻倍",
+     "source": "Robotics & Automation News",
+     "published": "2026-11-17",
+     "readMinutes": 4,
+     "summary": "巴塞罗那仓库的部署从 14 台机器人、100 个 SKU 货位，扩展到 40 台、近 1000 个货位，月处理超 150 万件，拣选效率超 510 件/小时，人工时为 253 件/小时（原文英文，数据来自 Locus 发布）。书籍 SKU 多、订单小批量混合，是典型的高变动场景。",
+     "takeaways": [
+      "部署路径：先小规模试点，再随新仓库扩到近 10 倍货位覆盖",
+      "效率对比：253 → 510+ 件/小时",
+      "场景特点：多 SKU、小批量、促销和季节波动大"
+     ],
+     "why": "这是 AMR（自主移动机器人）拣选的完整规模化案例，可作为你理解“货到人/人到货”方案选型的参考，注意数据来自厂商。",
+     "url": "https://roboticsandautomationnews.com/2026/11/17/penguin-random-house-doubles-book-picking-productivity-with-locus-robotics/107220/",
+     "tags": [
+      "案例"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "title": "美国 Foods 将在另外 6 个仓库试用库存扫描机器人",
+     "source": "Supply Chain Dive",
+     "published": "2026-11-17",
+     "summary": "食品分销商 US Foods 扩大库存盘点机器人试点范围。",
+     "url": "https://www.supplychaindive.com/news/us-foods-to-test-inventory-scanning-robots-at-6-more-warehouses/874829/"
+    },
+    {
+     "title": "Cass 数据：10 月货运支出同比增 26.5%，货量增 5.9%；GXO 扩大人形机器人合作",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-17",
+     "summary": "本周物流周报，含京东物流盈利改善、GXO 人形机器人合作扩展。",
+     "url": "https://logisticsviewpoints.com/2026/11/17/freight-costs-rise-as-warehouse-ai-advances-supply-chain-logistics-news-of-the-week/"
+    },
+    {
+     "title": "The Robot Report：AI 如何改变供应链机器人",
+     "source": "The Robot Report",
+     "published": "2026-11-17",
+     "summary": "inVia、Gideon、Ambi Robotics 创始人讨论 AI 在拣选和物料搬运中的应用。",
+     "url": "https://www.therobotreport.com/learn-how-ai-is-changing-supply-chain-robotics/"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "抓取失败：Epoch AI（HTTP 403）、Import AI（HTTP 403）、Symbotic IR（HTTP 403）、Interact Analysis、Locus Robotics（HTTP 410）、国家统计局（超时）；36氪快讯无条目。",
+  "仓储方向当天一手内容偏少，已精读 3 条，其中企鹅兰登书屋案例为厂商说法。",
+  "微软 MAI 条目用 AIHOT 链接（未找到原文链接）；未做 WebSearch 额外检索，新模型以 feeds 内容为准。"
+ ]
+}
