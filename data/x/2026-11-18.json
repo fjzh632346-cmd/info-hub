@@ -1,0 +1,97 @@
+{
+  "type": "x",
+  "date": "2026-11-18",
+  "items": [
+    {
+      "kind": "opinion",
+      "category": "其他",
+      "score": 88,
+      "author": "数字生命卡兹克",
+      "handle": "@Khazix0918",
+      "url": "https://x.com/Khazix0918/status/2122858329248825669",
+      "posted": "2026-11-18",
+      "metrics": "701 赞 · 319 收藏 · 14.3 万查看",
+      "textZh": "卡兹克的长文实测：OpenAI 同时发布 GPT-6.2 Astra（旗舰，给最难的项目）和 GPT-6.2 Sol（日常主力），ChatGPT、Codex 和 API 已同步上线。价格：Astra 降价 20%，每百万输入 8 美元、输出 40 美元，缓存读取从 1 美元降到 0.4 美元；Sol 不变（输入 2、输出 10 美元）。OpenAI 这次主打“每个任务花多少钱”：官方图表里，在多步骤专业工作评测 Agents' Last Exam 上，Astra 约 78%、每任务约 3 美元，Claude Fable 5.2 约 73%、每任务约 60 美元，差距主要来自 GPT 完成任务用的 token（可理解为字数）少得多。作者实测：①写方案、和人沟通仍是短板，同一个“给网站加留言区”的规划问题，Astra 跑了 24 分钟，回答读起来云里雾里，不如 Gemini 4 Carbon 5 分钟给的方案清楚；②代码审查进步很大，在他自建的小测试里，找出问题的比例 GPT-6.2 Sol 从上一代的 65% 升到 84%，Astra 到 96%，他打算以后默认用 Sol 做审查；③做视频的审美明显不如 Claude 和 Gemini，但 Three.js（网页 3D 库）做 3D 游戏和场景反而很强。结论：GPT 越来越像给科研和工程“精英”用的严谨工具，普通人更适合用 Claude 或 Gemini 去指挥它。适合想知道新模型该怎么分工的人：写代码交给 Claude，审代码交给 GPT。"
+    },
+    {
+      "kind": "opinion",
+      "category": "其他",
+      "score": 74,
+      "author": "Ethan Mollick",
+      "handle": "@emollick",
+      "url": "https://x.com/emollick/status/2122755693191287009",
+      "posted": "2026-11-18",
+      "metrics": "1283 赞 · 269 收藏 · 11.9 万查看",
+      "textZh": "沃顿商学院教授 Ethan Mollick（长期测试 AI 模型的早期用户）对 GPT-6.2 Astra 的评价：发布前用了一段时间，感觉“很不稳定、很怪”。一方面它比其他模型更难引导、更难合作；另一方面给它一个大项目（用 Blender 和 Unity 从零做一个太空电梯乘坐体验），它能交出不错的成果，作品可以在浏览器里玩，还模拟了失重物理。但他说自己并不会主动去用 6.2，因为要花更多指导和推动才能把活干完；他认为这是自 GPT-4.5 以来 OpenAI 第一次发布了“不是明显进步”的前沿模型。他在后续帖子里也提醒：天天盯 AI 新闻的人容易从单个模型过度推断，Anthropic 和谷歌也都有过低谷期。可以和上面卡兹克的实测对照着看。"
+    },
+    {
+      "kind": "news",
+      "category": "视频",
+      "score": 62,
+      "author": "歸藏(guizang.ai)",
+      "handle": "@op7418",
+      "url": "https://x.com/op7418/status/2122925281514303836",
+      "posted": "2026-11-18",
+      "metrics": "24 赞 · 1.7 万查看",
+      "textZh": "歸藏试了 GPT-6.2 Sol 新上的 Ultra Fast（超快）模式：让它剪一条 8 分钟的视频，总共用了 27 分钟，其中模型实际响应约 14 分钟；平均速度每秒 126 个 token，最快一次每秒 252 个。他的看法是：大家对 Astra 反馈不太好，但 Sol 开快速模式后确实快很多，“6.2 Sol 还是挺不错的”。评论里他补了一句：对比之下 DeepSeek 每秒 300 多 token 的速度更夸张。一条个人实测，数字可做参考。"
+    },
+    {
+      "kind": "prompt",
+      "category": "视频",
+      "score": 76,
+      "author": "Vini",
+      "handle": "@Viniai_",
+      "url": "https://x.com/Viniai_/status/2122916879824306422",
+      "posted": "2026-11-18",
+      "metrics": "495 赞 · 249 收藏 · 2.4 万查看",
+      "textZh": "作者用 Fable 5.2 写提示词、Seedance 2.5 生成视频，做了一段约 50 秒的暗黑奇幻战斗短片（黑斗篷女剑士大战骷髅怨灵），完整提示词公开在第一条回复里。这条提示词的结构很值得学：先锁定角色和场景（配参考图），再统一画面风格和调色，然后按 4 个镜头、每个 12–13 秒写清楚动作和机位，最后单独写音效要求。想自己做 AI 视频时可以直接套这个“角色—场景—风格—分镜—声音”的框架，换成自己的题材。",
+      "prompt": "Cinematic dark-fantasy battle, 16:9, ~50s, built in 4 shots (12–13s each). Same characters, location and grade in every shot.\n\nCHARACTERS (lock with reference images):\n• HEROINE: young woman, pale skin, long straight black hair, calm cold expression. Layered tattered black hooded cloak, wet and heavy, frayed edges. Wields a very long thin katana (nodachi). Moves low and fast, often crouched or kneeling in water.\n• WRAITH: floating skeletal spirit, bone-white skull, black smoke and torn rags for a body (no legs). Ribcage glows molten orange like embers inside. Rusted chains hang from bony wrists. Long clawed fingers. Leaves a trail of black ash particles. Eyes glow red when enraged.\n\nLOCATION: destroyed shoreline after a war. Ankle-deep grey seawater, wet rocks, broken wooden palisade walls, piles of splintered timber, a wrecked wooden sailing ship on the shore, a tall dark pagoda tower in the distance. Overcast sky with breaking clouds and soft sun rays behind.\n\nLOOK: photoreal, AAA game-cinematic. Desaturated teal-grey grade, crushed blacks, warm orange only from the ribcage glow. Anamorphic lens, shallow depth of field, heavy motion blur, handheld chase camera that whips, dives and orbits with the action. Water spray, ash and splinters in every shot.\n\nSHOT 1 (0–13s): Wide low angle. Heroine kneels in water, sword drawn. The wraith dives at her out of black smoke. She rolls; it smashes through a palisade, wood explodes. It swings its chains, she dodges, they clash. Fast push-in to an extreme close-up of the glowing ribcage as her blade stabs into it, embers burst out.\n\nSHOT 2 (13–26s): The wraith screams, arms spread, and blasts her back. She skids across the water and stops crouched, one hand on the surface. Black ink swirls in a circle around her hand. Front close-up of her face, emotionless. She charges; the camera races low over the water behind her. Mid-air clash, the wraith bursts into black ash and re-forms behind her.\n\nSHOT 3 (26–39s): The wraith hurls a giant ball of spiky black smoke. It hits the water next to her and blasts a huge white water explosion. She stays kneeling, unmoved. Slow-motion close-up of her gripping the sword over her shoulder. She leaps out of the spray and slashes; the wraith spins into a vortex of black smoke. Its skull lunges at the camera, red eyes ignite, red mist behind.\n\nSHOT 4 (39–50s): She leaps high, sword raised, and slams down into a huge splash. Chaotic close fight, black smoke whips past the lens. The wraith rises from wreckage and grows into a giant hulking skeletal demon draped in rags and chains, burning debris behind it. Its eyes flare red. It charges straight at the camera through the water, arms spread wide, chains swinging. Hard cut to black.\n\nSOUND (premium, loud, crisp, full-range, never muffled): deep epic orchestral score with taiko drums and low brass, rising to a huge hit at every clash. Sharp metallic sword swings and ringing steel. Bone and chain clatter. Heavy water splashes and impacts with deep sub-bass booms. Wood cracking and exploding. A distorted demonic wraith scream with a reverb tail. Wind and ash hiss. Wide stereo field, punchy transients, cinema-trailer mix. No dialogue.",
+      "promptZh": "电影感暗黑奇幻战斗，16:9，约 50 秒，分 4 个镜头（每个 12–13 秒）。每个镜头里人物、场景、调色保持一致。\n\n角色（用参考图锁定）：\n• 女主：年轻女性，皮肤苍白，黑色长直发，表情冷静冰冷。层层叠叠、破烂的黑色连帽斗篷，湿透沉重，边缘磨损。手持一把很长很细的武士刀（野太刀）。动作低而快，常常蹲伏或单膝跪在水里。\n• 怨灵：漂浮的骷髅幽灵，骨白色头骨，身体由黑烟和破布构成（没有腿）。肋骨内部像余烬一样发出熔岩般的橙光。骨腕上挂着生锈的铁链。长长的利爪手指。身后拖着黑色灰烬粒子。暴怒时眼睛发红光。\n\n场景：战后被摧毁的海岸。没过脚踝的灰色海水，湿漉漉的礁石，残破的木栅栏墙，成堆的碎木料，岸边一艘失事的木帆船，远处一座高大的暗色宝塔。阴天，云层裂开，背后有柔和的阳光光束。\n\n画面风格：照片级写实，3A 游戏过场动画质感。低饱和青灰色调，压暗的黑位，暖橙色只来自肋骨的光。变形宽银幕镜头，浅景深，强烈运动模糊，手持跟拍镜头随动作甩动、俯冲、环绕。每个镜头都有水花、灰烬和木屑。\n\n镜头 1（0–13 秒）：低角度广角。女主跪在水中，刀已出鞘。怨灵从黑烟中俯冲向她。她翻滚躲开；怨灵撞穿木栅栏，木头炸裂。它甩动铁链，她闪避，两者交锋。快速推进到发光肋骨的大特写，她的刀刺入其中，余烬迸出。\n\n镜头 2（13–26 秒）：怨灵张开双臂尖叫，把她震飞。她在水面上滑行，最后单手撑水蹲停。黑色墨迹在她手边绕圈旋转。正面特写她的脸，毫无表情。她冲锋；镜头贴着水面在她身后高速追随。空中交锋，怨灵炸成黑灰，又在她身后重新成形。\n\n镜头 3（26–39 秒）：怨灵掷出一个巨大的带刺黑烟球，砸在她身边的水面上，炸起巨大的白色水柱。她依旧跪着，纹丝不动。慢动作特写她把刀握在肩后。她从水雾中跃出挥砍；怨灵旋转成黑烟漩涡。它的头骨猛扑向镜头，红眼燃起，身后红雾弥漫。\n\n镜头 4（39–50 秒）：她高高跃起，举刀重重劈下，溅起巨大水花。混乱的近身搏斗，黑烟从镜头前掠过。怨灵从残骸中升起，长成一个披着破布和铁链的巨大骷髅恶魔，身后是燃烧的残骸。它双眼红光暴涨，张开双臂、甩着铁链，踏水直冲镜头。硬切黑屏。\n\n声音（高品质、响亮、清晰、全频段、绝不发闷）：深沉史诗管弦配乐，加太鼓和低音铜管，每次交锋时推到一个巨大的重击。锐利的金属挥刀声和钢铁鸣响。骨头和铁链的碰撞声。沉重的水花与撞击声，带深沉的超低音轰鸣。木头开裂和爆炸声。失真的恶魔怨灵尖叫，带混响尾音。风声和灰烬的嘶嘶声。宽广的立体声场，冲击感强，电影预告片式混音。无对白。",
+      "video": "https://x.com/Viniai_/status/2122916879824306422"
+    },
+    {
+      "kind": "news",
+      "category": "研究",
+      "score": 70,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2122855192358178891",
+      "posted": "2026-11-18",
+      "metrics": "87 赞 · 53 收藏 · 3.1 万查看",
+      "textZh": "Jason Wei 离开 Meta，加入 AI 数据公司 Mercor 任首席科学家，负责组建研究团队，管数据和评测。他是“思维链”论文（让模型先写推理步骤再给答案）的第一作者，在 OpenAI 参与过 o1 和深度研究，还主导过 SimpleQA（测模型会不会瞎编）、BrowseComp（测 AI 能否翻网页找冷门答案）等常用评测。他说“训练 AI 模型的公司比以往任何时候都多，数据会决定下一个前沿”。Mercor 的生意是让平台上 500 多万医生、律师、工程师帮 AI 公司出题、写标准答案、给模型打分，11 月 10 日刚以 200 亿美元估值融资 7.5 亿美元。宝玉还提到这对 Meta 有点尴尬：Meta 持股的 Scale AI 正是 Mercor 的主要对手。对关注 AI 行业方向的人：顶尖研究员去做“数据和评测”，说明这块越来越值钱。"
+    },
+    {
+      "kind": "opinion",
+      "category": "研究",
+      "score": 64,
+      "author": "a16z",
+      "handle": "@a16z",
+      "url": "https://x.com/a16z/status/2122747826983866425",
+      "posted": "2026-11-18",
+      "metrics": "699 赞 · 836 收藏 · 18.2 万查看",
+      "textZh": "a16z 新节目 Working Theory 第一期，请来 OpenAI 首席研究官 Mark Chen 和 Thinking Machines Lab 首席科学家、OpenAI 联合创始人 John Schulman，聊“递归自我改进”（RSI，即 AI 自己做 AI 研究、自己变强）。要点：AI 已经在帮前沿实验室跑实验、写代码、验证想法；Mark Chen 认为“今天已经造出了 AI 研究实习生”，适合做范围清楚的任务，但方向仍需人来定；两人都认为“研究品味”（判断哪些想法长期重要）最难教给模型；他们还讨论了 AI 可能是解决对齐问题的最好工具。有 YouTube 完整视频（约 15 分钟，英文）。"
+    },
+    {
+      "kind": "news",
+      "category": "网页设计",
+      "score": 68,
+      "author": "Lucas",
+      "handle": "@lucass0x",
+      "url": "https://x.com/lucass0x/status/2122800357965213986",
+      "posted": "2026-11-18",
+      "metrics": "2076 赞 · 2660 收藏 · 9.9 万查看",
+      "textZh": "一份做网页设计时可以参考的网站清单：scrolltide.co（600 多个提示词和 200 多个组件，带 3D 网站和滚动动效的完整代码）、scrollshaders.com（117 个动画着色器，11 种风格）、footer.design（页脚设计合集）、cta.gallery（按钮/行动号召区的设计灵感）、styles.refero.design（从真实产品里整理的风格）。用 Claude 做网站时，可以从这些站里挑一个风格或组件，截图或复制描述给 Claude 让它照着做，比只说“做得好看点”有效。部分网站在国内访问可能较慢。"
+    },
+    {
+      "kind": "news",
+      "category": "其他",
+      "score": 48,
+      "author": "歸藏(guizang.ai)",
+      "handle": "@op7418",
+      "url": "https://x.com/op7418/status/2122977451500523892",
+      "posted": "2026-11-18",
+      "metrics": "87 赞 · 1.9 万查看",
+      "textZh": "歸藏转述腾讯财报里的一个数字：腾讯的 AI 工作助手 WorkBuddy 日活跃用户超过 1000 万。只是一句话的转述，具体以腾讯财报原文为准；可以看出国内大厂的 AI 办公类产品用户量已经不小。"
+    }
+  ]
+}
