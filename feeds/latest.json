@@ -1,13 +1,13 @@
 {
- "fetchedAt": "2026-11-17T19:12:14.482Z",
+ "fetchedAt": "2026-11-18T03:44:16.700Z",
  "hours": 72,
  "status": [
   {
    "source": "OpenAI",
    "feed": "https://openai.com/news/rss.xml",
    "ok": true,
-   "total": 1405,
-   "recent": 16
+   "total": 1406,
+   "recent": 17
   },
   {
    "source": "Anthropic Engineering",
@@ -30,6 +30,12 @@
    "error": "HTTP 403"
   },
   {
+   "source": "Import AI",
+   "feed": "https://importai.substack.com/feed",
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  {
    "source": "Hugging Face",
    "feed": "https://huggingface.co/blog/feed.xml",
    "ok": true,
@@ -37,30 +43,10 @@
    "recent": 1
   },
   {
-   "source": "Google AI",
-   "feed": "https://blog.google/technology/ai/rss/",
-   "ok": true,
-   "total": 20,
-   "recent": 2
-  },
-  {
-   "source": "Import AI",
-   "feed": "https://importai.substack.com/feed",
-   "ok": false,
-   "error": "HTTP 403"
-  },
-  {
    "source": "Google DeepMind",
    "feed": "https://deepmind.google/blog/rss.xml",
    "ok": true,
    "total": 100,
-   "recent": 0
-  },
-  {
-   "source": "Interconnects",
-   "feed": "https://www.interconnects.ai/feed",
-   "ok": true,
-   "total": 20,
    "recent": 0
   },
   {
@@ -71,11 +57,25 @@
    "recent": 0
   },
   {
+   "source": "Interconnects",
+   "feed": "https://www.interconnects.ai/feed",
+   "ok": true,
+   "total": 20,
+   "recent": 0
+  },
+  {
+   "source": "Google AI",
+   "feed": "https://blog.google/technology/ai/rss/",
+   "ok": true,
+   "total": 20,
+   "recent": 2
+  },
+  {
    "source": "Simon Willison",
    "feed": "https://simonwillison.net/atom/everything/",
    "ok": true,
    "total": 30,
-   "recent": 9
+   "recent": 10
   },
   {
    "source": "Sequoia",
@@ -88,29 +88,8 @@
    "source": "BestBlogs 每日早报",
    "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
    "ok": true,
-   "total": 6,
-   "recent": 3
-  },
-  {
-   "source": "大福（日文）",
-   "feed": "https://www.daifuku.com/jp/rss_all.xml",
-   "ok": true,
-   "total": 10,
-   "recent": 0
-  },
-  {
-   "source": "Daifuku",
-   "feed": "https://www.daifuku.com/rss_all.xml",
-   "ok": true,
-   "total": 10,
-   "recent": 0
-  },
-  {
-   "source": "Benedict Evans",
-   "feed": "https://www.ben-evans.com/benedictevans/?format=rss",
-   "ok": true,
-   "total": 20,
-   "recent": 0
+   "total": 7,
+   "recent": 4
   },
   {
    "source": "Latent Space",
@@ -126,8 +105,22 @@
    "error": "HTTP 403"
   },
   {
-   "source": "Symbotic",
-   "feed": "https://www.symbotic.com/feed/",
+   "source": "大福（日文）",
+   "feed": "https://www.daifuku.com/jp/rss_all.xml",
+   "ok": true,
+   "total": 10,
+   "recent": 0
+  },
+  {
+   "source": "Benedict Evans",
+   "feed": "https://www.ben-evans.com/benedictevans/?format=rss",
+   "ok": true,
+   "total": 20,
+   "recent": 0
+  },
+  {
+   "source": "Daifuku",
+   "feed": "https://www.daifuku.com/rss_all.xml",
    "ok": true,
    "total": 10,
    "recent": 0
@@ -137,6 +130,20 @@
    "feed": "https://baoyu.io/feed.xml",
    "ok": true,
    "total": 50,
+   "recent": 0
+  },
+  {
+   "source": "Symbotic",
+   "feed": "https://www.symbotic.com/feed/",
+   "ok": true,
+   "total": 10,
+   "recent": 0
+  },
+  {
+   "source": "Automated Warehouse",
+   "feed": "https://www.automatedwarehouseonline.com/feed/",
+   "ok": true,
+   "total": 10,
    "recent": 0
   },
   {
@@ -160,20 +167,6 @@
    "recent": 8
   },
   {
-   "source": "The Robot Report 物流",
-   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
-   "ok": true,
-   "total": 15,
-   "recent": 0
-  },
-  {
-   "source": "DC Velocity",
-   "feed": "https://www.dcvelocity.com/rss",
-   "ok": true,
-   "total": 30,
-   "recent": 3
-  },
-  {
    "source": "MH&L",
    "feed": "https://www.mhlnews.com/__rss/website-scheduled-content.xml?input=%7B%22sectionAlias%22%3A%22home%22%7D",
    "ok": true,
@@ -181,11 +174,18 @@
    "recent": 2
   },
   {
-   "source": "Automated Warehouse",
-   "feed": "https://www.automatedwarehouseonline.com/feed/",
+   "source": "The Robot Report 物流",
+   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
    "ok": true,
-   "total": 10,
-   "recent": 0
+   "total": 15,
+   "recent": 1
+  },
+  {
+   "source": "DC Velocity",
+   "feed": "https://www.dcvelocity.com/rss",
+   "ok": true,
+   "total": 30,
+   "recent": 4
   },
   {
    "source": "Supply Chain Dive",
@@ -199,7 +199,7 @@
    "feed": "https://feeds.feedburner.com/sc247/rss/automation",
    "ok": true,
    "total": 20,
-   "recent": 2
+   "recent": 3
   },
   {
    "source": "Locus Robotics",
@@ -226,14 +226,13 @@
    "feed": "https://aihot.news/rss",
    "ok": true,
    "total": 50,
-   "recent": 47
+   "recent": 50
   },
   {
    "source": "国家统计局",
    "feed": "https://www.stats.gov.cn/sj/zxfb/rss.xml",
-   "ok": true,
-   "total": 500,
-   "recent": 7
+   "ok": false,
+   "error": "This operation was aborted"
   },
   {
    "source": "Anthropic 新闻",
@@ -252,40 +251,229 @@
  ],
  "items": [
   {
+   "group": "ai",
+   "source": "BestBlogs 每日早报",
+   "title": "EP240 · Claude Code 验证交付、Astra 深耕法律、ChatPRD 反欺诈",
+   "url": "https://www.bestblogs.dev/explore/brief/2026-11-18?utm_source=rss&utm_medium=feed&utm_campaign=daily_brief&entry=rss_brief_index",
+   "published": "2026-11-18T06:00:00.000Z",
+   "description": "📝 今日导语 Claude Code 验证交付，Astra 深耕法律，ChatPRD 复盘反欺诈：看清验收方法与运营取舍。 🏷 今日关键词： 代码验证 法律智能 推理反欺诈 团队协作 排序系统 📰 今日精选内容 Claude Code 团队如何看待验证 / claude.dev 博客 Claude Code &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 Astra for Law 在法律智能领域领先 OpenAI News &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 推理账单被刷了怎么办？ChatPRD 创始人的反欺诈实战 How I AI &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 腾讯开源云端研发平台 LoopForge 腾讯技术工程 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 面向延迟敏感型搜索与推荐工作负载扩展基于 LLM 的排序系统 InfoQ &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 Google 推出 Antigravity Robotics 插件：接通仿真与机械臂控制 Google Developers Blog &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 88 Photon：帮硅谷最火的",
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Anthropic 拟将 IPO 定价上调至 $80 以上，估值或达 $1.6T",
+   "url": "https://aihot.news/items/hpczcbqe8agr7jffko2cnsp31",
+   "published": "2026-11-18T00:15:01.000Z",
+   "description": "据 WSJ，Anthropic 预计将 IPO 定价上调至 $70 至 $78 区间之上，可能超过 $80 一股，其顾问已讨论 $1.5T 或 $1.6T 的估值，高于此前约 $1.33T。按申报区间计算，IPO 规模约 $61B，另有 $26B 私募配售，其中 Google 和 Nvidia 各以 IPO 价格认购约 $10B。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hpczcbqe8agr7jffko2cnsp31",
+   "excerpt": "据 WSJ， Anthropic 预计将 IPO 定价上调至 $70 至 $78 区间之上，可能超过 $80 一股，其顾问已讨论 $1.5T 或 $1.6T 的估值，高于此前约 $1.33T。按申报区间计算，IPO 规模约 $61B，另有 $26B 私募配售，其中 Google 和 Nvidia 各以 IPO 价格认购约 $10B。\n转述 WSJ 报道，给出 IPO 定价区间上调和 Google、Nvidia 各约 $10B 认购等具体数字，便于跟踪 Anthropic 估值走向。\nWSJ：Anthropic 预计其 IPO 定价将高于每股 70 至 78 美元的区间，可能超过每股 80 美元，其顾问已讨论过 1.5 万亿或 1.6 万亿美元的估值，高于约 1.33 万亿美元。\n按申报区间计算，此次 IPO 总额约为 610 亿美元，同时还有一项 260 亿美元的私募配售，其中 Google 和 Nvidia 各以 IPO 价格购买约 100 亿美元。\n转述 WSJ 报道，给出 IPO 定价区间上调和 Google、Nvidia 各约 $10B 认购等具体数字，便于跟踪 Anthropic 估值走向。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Anthropic 获准在纳斯达克上市，代码 ANT，发行价每股 70~78 美元",
+   "url": "https://aihot.news/items/cxpq4gwitsj6r05zjpphx9agc",
+   "published": "2026-11-18T00:12:10.000Z",
+   "description": "根据 SEC 11 月 17 日公示的文件，Anthropic 的 A 类普通股获准在纳斯达克全球精选市场上市，代码 ANT，发行价区间维持每股 70 至 78 美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cxpq4gwitsj6r05zjpphx9agc",
+   "excerpt": "冲击人类史上最大 IPO、发行价每股 70~78 美元：Anthropic 已获准上市，代码为“ANT”\n根据 SEC 11 月 17 日公示的文件， Anthropic 的 A 类普通股获准在纳斯达克全球精选市场上市，代码 ANT，发行价区间维持每股 70 至 78 美元。\n原文汇总 SEC 注册文件的发行规模、私募配售和股权结构等细节，读者可据此了解这起大型 IPO 的具体安排。\nIT之家 11 月 18 日消息，根据美国证券交易委员会（SEC）昨日（11 月 17 日）公示的上市注册文件，Anthropic 的 A 类普通股已获准在纳斯达克全球精选市场上市， 股票代码为“ANT”，IPO 发行价区间维持每股 70 至 78 美元 （现汇率约合 467.5 至 521 元人民币） 不变。\nForm 8-A12B：公司申请证券在纳斯达克等交易所挂牌的登记表，通常会写明交易所、证券类别和拟用股票代码。Form S-1 / S-1/A：IPO 招股说明书及修订稿，包含发行股数、价格区间、募资用途、风险因素和财务资料。\nIT之家注：纳斯达克全球精选市场（Nasdaq Global Select Market）是纳斯达克旗下三个股票市场层级中要求最高的一档，通常被视为“优质大型公司”的上市板块。\n纳斯达克的三个市场都在同一个交易所交易系统内进行买卖，投资者在券商下单时通常不会感到明显差别；差别主要在于上市资格标准、持续合规要求和市场定位。\n文件显示，公司拟公开发行 8.25 亿股 A 类普通股，其中公司发行约 8.014 亿股，现有股东出售约 2,365 万股；发行价区间维持每股 70 美元至 78 美元 （现汇率约合 467.5 元至 521 元人民币） 。\n按 74 美元 （现汇率约合 494.3 元人民币） 中值估算，本次公开发行规模约 611 亿美元 （现汇率约合 4,081.03 亿元人民币） ；若承销商全额行使至多 1.2375 亿股的额外配售选择权，发行规模将进一步扩大。\n除公开募股外，公司还安排了一笔 260 亿美元 （现汇率约合 1,736.61 亿元人民币） 的同步私募配售，参与方包括谷歌、英伟达、AMD、微软、博通、美光及台积电等科技企业。按中值计算，IPO 与私募配售合计预计带来约 846 亿美元 （现汇率约合 5,650.65 亿元人民币） 净募资；若承销商超额配售权全部行使，则约达 937 亿美元 （现汇率约合 6,258.46 亿元人民币） 。\n最新文件还披露了股权激励成本：按 74 美元 （现汇率约合 494.3 元人民币） 中值估算，此前批准的约 4,700 万份限制性股票单位对应约 35 亿美元 （现汇率约合 233.77 亿元人民币） 费用；另因约 6,700 万份 RSU 归属时间调整，新增约 30 亿美元 （现汇率约合 200.38 亿元人民币） 费用，合计约 65 亿美元 （现汇率约合 434.15 亿元人民币） 。\n股权结构方面，IPO 后亚马逊预计持有约 14.7% 的流通股本，谷歌约持有 13.7%；若亚马逊可转债全部转换，其持股比例最高可达 23.8%。\n市场对这次发行反应热烈。据报道，Anthropic 的 IPO 认购需求接近发行股份数量的七倍；公司优先向现有投资者配售股份，因此部分新投资者可能获得低于预期的配额。\n原文汇总 SEC 注册文件的发行规模、私募配售和股权结构等细节，读者可据此了解这起大型 IPO 的具体安排。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Nvidia 宣布停售 H200 芯片至中国，并设立董事会级国家安全委员会",
+   "url": "https://aihot.news/items/ulwhtxvx986i1rjdkk2mxgzdl",
+   "published": "2026-11-17T23:37:48.000Z",
+   "description": "代理 CEO Colette Kress 周二表示，Nvidia 将不再在中国销售 H200 芯片，结束此前由 Jensen Huang 与特朗普斡旋、需经美国境内并缴纳 25% 关税的出口通道。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ulwhtxvx986i1rjdkk2mxgzdl",
+   "excerpt": "Nvidia is abandoning China after Jensen Huang’s ouster\n代理 CEO Colette Kress 周二表示，Nvidia 将不再在中国销售 H200 芯片，结束此前由 Jensen Huang 与特朗普斡旋、需经美国境内并缴纳 25% 关税的出口通道。\n原文梳理了 H200 停售安排的前因、新出口规则与 44 亿至 62 亿美元收入影响预测，可帮助读者理解该决定对市场格局的含义。\n英伟达将不再在中国销售H200芯片，代理CEO Colette Kress周二表示，此举意味着该公司不再参与美国对华先进芯片销售禁令中一个备受争议的漏洞。\n在中国获取领先AI加速器的问题，成为公司自CEO兼联合创始人黄仁勋上周卸任以来的首次财报电话会上的重要议题。这一披露恰逢英伟达同日宣布设立董事会级别的委员会， 负责监督国家安全政策 、出口管制合规以及全球贸易风险。\n英伟达在华销售H200芯片的交易由黄仁勋与总统唐纳德·特朗普促成。该安排要求芯片经由美国转运，使政府得以征收25%的关税。\n这条路径激怒了主张对华强硬的鹰派人士，他们希望切断中国实验室的算力来源、维持美国在AI领域的领先地位；但黄仁勋长期主张，美国在中国市场竞争更为重要。今年4月，他 对 播客Dwarkesh Patel表示：“把这一市场拱手让给美国科技产业，是对我们国家的不负责任。”\n黄仁勋的下台——部分原因是他与一家因向中国走私芯片而接受调查的公司的CEO有婚外情——恰逢周一出台的新规，禁止美国先进芯片用于远程服务中国客户的境外数据中心。\n投资银行Jefferies预测，这些规定可能使英伟达明年的数据中心收入减少440亿至620亿美元。谈及新的出口管制，Kress表示，Vera Rubin等先进芯片的需求积压意味着这些规定不会影响公司的总营收。\n长期来看，公司可能面临失去新加坡、马来西亚、泰国和印度尼西亚潜在客户的风险。批评英伟达依赖中国的人士称，其多达20%的收入来自与中国相关的需求——其新加坡子公司的年收入在2025年 达到1040亿美元 ，此后英伟达不再披露这些数字——但这一局面显然将会改变。\n甚至在英伟达决定停止出货H200之前，中国就已基本拒绝接收这些芯片。乔治城大学安全与新兴技术中心研究员Jacob Feldgoise表示，政府更希望为本国芯片产业创造需求，即便主要AI算力用户仍想要性能更优的英伟达设备。\n与此同时，中国的前沿实验室正在设法从其他渠道获取英伟达芯片。中国所有领先的AI模型都有证据显示，曾使用被禁止出口到中国的英伟达Grace Blackwell芯片 进行训练 。\n这些训练可能是在中国境外的数据中心完成的，但根据新规，向这些设施销售芯片将被禁止。出口管制律师Dan Fisher-Owens对TechCrunch表示，适合训练AI模型的大型数据中心如果想购买英伟达芯片，就必须证明它们没有为任何中国客户提供服务。\n如果无法提供这一证明，新规可能迫使它们转向其他芯片选项，进一步蚕食英伟达的市场份额。\n当您通过我们文章中的链接购买时， 我们可能会获得少量佣金 。这不会影响我们的编辑独立性。\n原文梳理了 H200 停售安排的前因、新出口规则与 44 亿至 62 亿美元收入影响预测，可帮助读者理解该决定对市场格局的含义。"
+  },
+  {
+   "group": "ai",
+   "source": "Simon Willison",
+   "title": "External sandboxes for coding agents",
+   "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/",
+   "published": "2026-11-17T22:52:29.000Z",
+   "description": "External sandboxes for coding agents I've been exploring new ways to sandbox code that is executed by agents, with a focus on making it safer to try out local models without worrying that a mistake or prompt injection attack might cause them to take damaging actions on a machine. I worked on this project with Prime Radiant , the AI research lab behind Superpowers and other projects . My post on the Prime Radiant blog introduces the external sandbox pattern, where code executed by the agent runs inside a dedicated sandbox while the agent itself lives outside of that sandbox. To demonstrate this",
+   "excerpt": "External sandboxes for coding agents . I've been exploring new ways to sandbox code that is executed by agents, with a focus on making it safer to try out local models without worrying that a mistake or prompt injection attack might cause them to take damaging actions on a machine.\nI worked on this project with Prime Radiant , the AI research lab behind Superpowers and other projects .\nMy post on the Prime Radiant blog introduces the external sandbox pattern, where code executed by the agent runs inside a dedicated sandbox while the agent itself lives outside of that sandbox.\nTo demonstrate this pattern we've released three sandbox server implementations:\nEach of these implementations offers the same localhost API. You can then configure Pi, Claude Code, or Codex to send API calls to that sandbox any time they want to execute code.\nThe sandboxes also include an optional HTTP/HTTPS allow-list proxy, so you can control exactly which hosts your agent's code is allowed to communicate with - plus a credential replacement mechanism to make authenticated API calls without sharing a secret with the agent. Here's the UI you can use to reconfigure that proxy while the sandbox is still running:\nI continue to be fascinated by the challenge of safely running untrusted code. This external sandbox pattern provides a neat way to experiment with different approaches.\nThis is a link post by Simon Willison, posted on 17th November 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
+  },
+  {
+   "group": "wh",
+   "source": "DC Velocity",
+   "title": "MIT Report: Corporate commitment to sustainability soars, but roadblocks to execution remain",
+   "url": "https://www.dcvelocity.com/supply-chain/other-services/supply-chain-strategy/mit-report-corporate-commitment-to-sustainability-soars-but-roadblocks-to-execution-remain",
+   "published": "2026-11-17T22:41:47.000Z",
+   "description": "Corporate commitment to sustainability has reached a record high, but oversight is lagging and external disruptions are keeping companies from delivering transformational results. That’s according to the 2026 State of Supply Chain Sustainability report from the MIT Sustainable Supply Chain Lab at the MIT Center for Transportation and Logistics (MIT CTL), released this month. Researchers surveyed 1,810 supply chain professionals across 91 countries and found that 83% rate sustainability as important or very important to long-term business success, the highest level in the report’s seven-year hi",
+   "excerpt": "Tariffs and geopolitical pressures are among the key external factors slowing progress, but internal gaps persist as well, State of Supply Chain Sustainability report shows.\nCorporate commitment to sustainability has reached a record high, but oversight is lagging and external disruptions are keeping companies from delivering transformational results. That’s according to the 2026 State of Supply Chain Sustainability report from the MIT Sustainable Supply Chain Lab at the MIT Center for Transportation and Logistics (MIT CTL), released this month.\nResearchers surveyed 1,810 supply chain professionals across 91 countries and found that 83% rate sustainability as important or very important to long-term business success, the highest level in the report’s seven-year history. What’s more, the report found that corporate commitment has grown despite recent shifts in U.S. climate policy, with 59% saying they have become more committed to sustainability while just 13% say they have become less committed.\nThose advances are being tempered by outside factors. Nearly 70% of respondents said that tariff uncertainty has forced their organizations to delay, scale back, or compromise sustainability strategies, and more than eight in 10 said that geopolitical conflict is reducing the effectiveness of climate action.\nInternal problems exist as well: The study also found that companies’ public sustainability ambition is outpacing the governance and accountability needed to deliver results.\n“Companies with formal cross-functional sustainability teams are far more likely to embed sustainability in everyday decisions: 57% do so frequently or always, compared with 13% where responsibility sits within a single function,” according to the report. “Yet only 51% of companies with public sustainability goals have a formal cross-functional team, and only 33% place oversight at board level. Many companies have set the direction but have not yet built the internal structures needed to turn those commitments into consistent action.”\nThe effects of geopolitics and governance is just one of four themes examined in the report. The research also evaluates where sustainability efforts “live” in the supply chain, how artificial intelligence is affecting sustainability goals, and how warehousing and freight transportation operations are progressing toward decarbonization.\nOne of the key findings is that logistics is emerging as a prime area for sustainability action: The research identified dai"
+  },
+  {
+   "group": "ai",
+   "source": "Simon Willison",
+   "title": "GPT‑6.2 Astra and GPT‑6.2 Sol",
+   "url": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/",
+   "published": "2026-11-17T22:38:52.000Z",
+   "description": "GPT‑6.2 Astra and GPT‑6.2 Sol OpenAI: We’re introducing GPT‑6.2 Astra, our new frontier model for your hardest projects, and GPT‑6.2 Sol, our efficient, versatile model for everyday work. They're available in the API as gpt-6.2-astra and gpt-6.2-sol . I shipped LLM 0.38 with support for the new models. 6.2 Astra is 80% of the price of 6 Astra - $8/MTok input and $40/MTok output, the same price as Claude Fable 5.2 (which was also 80% of its predecessor). 6 Astra and Fable 5 were both $10/$50. The cached price is an even bigger discount - $0.40/million compared to $1/million for the older model.",
+   "excerpt": "We’re introducing GPT‑6.2 Astra, our new frontier model for your hardest projects, and GPT‑6.2 Sol, our efficient, versatile model for everyday work.\nThey're available in the API as gpt-6.2-astra and gpt-6.2-sol . I shipped LLM 0.38 with support for the new models.\n6.2 Astra is 80% of the price of 6 Astra - $8/MTok input and $40/MTok output, the same price as Claude Fable 5.2 (which was also 80% of its predecessor). 6 Astra and Fable 5 were both $10/$50. The cached price is an even bigger discount - $0.40/million compared to $1/million for the older model. This is great news for longer running agentic sessions.\nGPT-6.2 Sol is the same $2/$10 price as 6.1 Sol and 6 Sol - which are half the price of GPT-5.6 Sol ($4/$20).\nHere are the pelicans for GPT-6.2 Sol and for GPT-6.2 Astra . The 6.2 Astra max pelican looks like this:\nI have a full comparison grid here , but here's how the high/xhigh/max pelicans compare with the previous Sol and Astra releases:\nI also ran my most recent benchmark prompt against the two models, using \"Ultra' effort levels in the Codex CLI:\nMake a three js animation where yonkers stands up as a big mech (cool stand up motion) and stomps around manhattan and queens and Brooklyn, use openstreetmap mapping data\nHere's Sol and here's Astra . Neither of them did a good enough job of morphing Yonkers into a big mech, at least in comparison to Claude Fable 5.2 and Gemini 4 Carbon .\nThis video showing the Astra and Sol animations playing out at the same time:\nI created that video using GPT-6.2 Astra (Ultra) in the Codex desktop app by prompting:\nhttps://static.simonwillison.net/static/2026/yonkers-gpt-6.2-astra-ultra/index.html and https://static.simonwillison.net/static/2026/yonkers-gpt-6.2-sol-ultra/index.html are two videos of the same thing by two different models\nI need a video of the first 10 seconds where the top half of the video plays the first and the bottom half plays the second\nI need an overlaid label of \"GPT-6.2 Astra\" on the top half and \"GPT-6.2 Sol\" on the bottom half. These labels should be tastefully positioned.\nMake the video square and 2000x2000 pixels\nThe buzz around these new models is mixed at the moment. Astra 6.2 isn't scoring quite as high as Fable 5.2 on various benchmarks, and I've seen a few complaints that its communication style can be confusing. Theo Browne's review (in the form of a feedback letter he sent OpenAI during pre-release) has this useful example:\nWhen this model is working on long tasks, it can pull "
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "深度实测GPT-6.2 Astra：极致省钱但偏科严重，沟通可读性依旧拉胯",
+   "url": "https://aihot.news/items/n125mhueen4ul4elntsa1kk1v",
+   "published": "2026-11-17T22:36:45.000Z",
+   "description": "OpenAI 发布 GPT-6.2 Astra 与 Sol，已同步上线 ChatGPT、Codex 和 API。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n125mhueen4ul4elntsa1kk1v",
+   "excerpt": "OpenAI 发布 GPT-6.2 Astra 与 Sol，已同步上线 ChatGPT、Codex 和 API。\n作者用真实项目实测了新模型的定价、Token 消耗与短板，给出代码审查选型和用 Claude、Gemini 指挥 GPT 的可行用法。\n作者用真实项目实测了新模型的定价、Token 消耗与短板，给出代码审查选型和用 Claude、Gemini 指挥 GPT 的可行用法。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Gemini 4 Hydrogen 全面上线 Google Search",
+   "url": "https://aihot.news/items/vxcsjujkrvgpqxl56xkjgdfqf",
+   "published": "2026-11-17T22:35:20.000Z",
+   "description": "Google 宣布 Gemini 4 Hydrogen 已在全球范围的 Google Search 中上线，称为 Search 迄今最大的一次模型升级。升级包括更好地理解用户意图、更智能的 query fan-out 与链接、更可视化自适应的回复，以及更强的多语言能力。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vxcsjujkrvgpqxl56xkjgdfqf",
+   "excerpt": "Google 宣布 Gemini 4 Hydrogen 已在全球范围的 Google Search 中上线，称为 Search 迄今最大的一次模型升级。升级包括更好地理解用户意图、更智能的 query fan-out 与链接、更可视化自适应的回复，以及更强的多语言能力。\n官方列出 Search 中 Gemini 4 Hydrogen 带来的意图理解、查询分发和可视化回复等具体变化，可对照自己的搜索体验。\n这是我们迄今为止对搜索最大的一次模型升级，带来： 🔹 更好地理解你的意图 🔹 更智能的查询扇出与链接 🔹 更具视觉化、自适应的响应 🔹 更丰富的多语言能力\n官方列出 Search 中 Gemini 4 Hydrogen 带来的意图理解、查询分发和可视化回复等具体变化，可对照自己的搜索体验。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Wiz 解读 OpenJDK 远程代码执行漏洞 CVE-2026-114938（Java4Shell）",
+   "url": "https://aihot.news/items/r30kdvujcakiutm7umgxmije7",
+   "published": "2026-11-17T22:29:57.000Z",
+   "description": "2026 年 11 月 17 日披露的 OpenJDK 关键 RCE 漏洞 CVE-2026-114938（Java4Shell）CVSSv4.0 评分 9.2，源于 AVX-512 Base64 解码的汇编代码在处理结尾填充字符时输出数组边界计算下溢，导致堆内存越界写入，已证实可对 Jenkins、Confluence、Apache Tomcat 等实现远程利用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r30kdvujcakiutm7umgxmije7",
+   "excerpt": "CVE-2026-114938 RCE in OpenJDK: Everything You Need to Know\n2026 年 11 月 17 日披露的 OpenJDK 关键 RCE 漏洞 CVE-2026-114938（Java4Shell）CVSSv4.0 评分 9.2，源于 AVX-512 Base64 解码的汇编代码在处理结尾填充字符时输出数组边界计算下溢，导致堆内存越界写入，已证实可对 Jenkins、Confluence、Apache Tomcat 等实现远程利用。\n原文给出漏洞成因、影响范围和可执行的检测命令与 JVM 缓解参数，运维团队可据此排查和处置。\n2026年11月17日，有细节披露了OpenJDK中一个严重的远程代码执行（RCE）漏洞，编号为CVE-2026-114938（被称为“Java4Shell”），CVSSv4.0评分为9.2。该漏洞存在于处理AVX-512 Base64解码的优化汇编代码中，可让远程未认证攻击者造成堆内存破坏。在受影响系统上触发该缺陷可能导致远程代码执行。\nCVE-2026-114938是一个内存破坏漏洞，位于Java虚拟机（JVM）的优化Base64解码intrinsic引擎中。为最大化性能，OpenJDK在支持的x86-64处理器上使用了基于AVX-512 VBMI指令的优化实现。然而，当处理包含意外数量尾部填充字符（=）的输入时，优化汇编代码会错误计算输出数组边界。\n当解析包含特定序列的输入时——例如64个A字符后跟一个=——解码器的长度计算会下溢为负值。这种计算不匹配会导致越界写入，越过已分配的堆内存缓冲区。攻击者可利用这一点覆盖相邻对象元数据，进而可能导致代码执行。我们已证明，针对Jenkins、Confluence和Apache Tomcat等标准Java应用的远程利用是可行的。\n与其他内存安全问题一样，借助AI可以实现利用，但并非易事。我们基于AI的漏洞研究框架 Wiz Atlas 在完整细节披露之前，就在2小时内找到并构建了该漏洞的概念验证利用。话虽如此，将利用泛化到任意目标仍然困难。我们应预期攻击者会瞄准常见的Java应用，因为特定构建和内存布局在这些目标之间会重复出现。有动机的攻击者可能会借助AI为特定目标（包括自研应用）定制利用。\nWeb应用防火墙可以在一些利用出现于野外时帮助缓解。由于该漏洞根植于OpenJDK本身，许多使用用户输入的代码路径都可能进入易受攻击的代码路径，因此WAF规则不太可能覆盖所有可能路径，也永远无法完全覆盖自研应用。最佳解决方案是升级到最新OpenJDK版本。\n优先处理对外暴露的打包Java应用，确保它们已打补丁或被限制公开访问。升级自研Java应用，并更新到包含修复的最新OpenJDK版本。\n该漏洞影响OpenJDK 17.0.6及更高版本，以及下游发行版，前提是它们运行在支持AVX-512 VBMI指令集的x86-64硬件上（ARM64处理器不受影响）。受影响的软件发行版和硬件包括：\nOpenJDK发行版：Amazon Corretto、Eclipse Temurin、Microsoft Build of OpenJDK、Azul Zulu、BellSoft Liberica、SAP SapMachine、Red Hat OpenJDK和Oracle Java SE（具体版本为8u511b33-perf、17.0.21.0.3、21.0.13.0.3、25.0.5.0.3、27.0.1.0.3）。\n存在漏洞的 CPU 架构：Intel Xeon（Ice Lake、Sapphire Rapids、Emerald Rapids、Granite Rapids）以及 AMD EPYC/Ryzen（Zen 4 及更新版本）。\n已证实存在漏洞的应用（可未授权远程代码执行）：Atlassian Jira、Atlassian Confluence、Keycloak、JFrog Artifactory、Jenkins，以及基于 Spring Boot、Apache Struts、Apache Kafka Broker、Apache Solr、Elasticsearch、Gerrit、Netflix Spinnaker 和 Apache Tomcat 构建的自定义框架。\n审计并打补丁： 找出所有在支持 AVX-512 的 x86-64 硬件上运行 OpenJDK 17.0.6 或更高版本的系统。立即安装 2026 年 11 月 17 日发布的官方安全补丁，或升级到下游厂商提供的构建版本。\n核实硬件是否存在漏洞： 在 Linux 系统上运行以下命令，检查你的基础设施是否在物理层面受到影响：\n实施 JVM 运行时规避方案： 如果无法立即打补丁，可在 JVM 启动参数中加入以下任一标志，彻底消除该漏洞的影响。这些标志可能会影响应用性能。\n禁用 Base64 内建函数（推荐）： -XX:-UseBASE64Intrinsics\n隔离面向互联网的服务： 在部署缓解措施或更新之前，暂时限制外部网络访问存在漏洞的管理门户（例如 Jira、Jenkins、Keycloak）。\nWiz 客户可以使用 Wiz 威胁中心 中预置的查询和公告，在自身环境中搜索存在漏洞的实例。\n原文给出漏洞成因、影响范围和可执行的检测命令与 JVM 缓解参数，运维团队可据此排查和处置。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Perplexity 上线 GPT-6.2 Astra 和 GPT-6.2 Sol，并公布 WANDR 基准成绩",
+   "url": "https://aihot.news/items/zy931jr86bk2nk5cv8ww6seah",
+   "published": "2026-11-17T22:10:02.000Z",
+   "description": "Perplexity 宣布 GPT-6.2 Astra 和 GPT-6.2 Sol 已在 Perplexity Search 和 Computer 中可用。在其 WANDR 基准上，GPT-6.2 Astra 得分 0.783、单任务约 $12.54，较 GPT-6 Astra 提升 0.095；GPT-6.2 Sol 得分 0.746、约 $2.65，较 GPT-6.1 Sol 提升 0.065。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zy931jr86bk2nk5cv8ww6seah",
+   "excerpt": "Perplexity 宣布 GPT-6.2 Astra 和 GPT-6.2 Sol 已在 Perplexity Search 和 Computer 中可用。在其 WANDR 基准上，GPT-6.2 Astra 得分 0.783、单任务约 $12.54，较 GPT-6 Astra 提升 0.095；GPT-6.2 Sol 得分 0.746、约 $2.65，较 GPT-6.1 Sol 提升 0.065。\n官方给出两款新模型在其自建 WANDR 基准上的得分与单任务成本，并与前代和其他模型对比，便于判断性价比。\nGPT-6.2 Astra 和 GPT-6.2 Sol 现已在 Perplexity Search 和 Computer 中上线。\n在我们的 WANDR 基准测试中，GPT-6.2 Astra 得分 0.783，每项任务成本约 $12.54，较 GPT-6 Astra 提升 0.095。\nGPT-6.2 Sol 得分 0.746，成本约 $2.65，较 GPT-6.1 Sol 提升 0.065。\n官方给出两款新模型在其自建 WANDR 基准上的得分与单任务成本，并与前代和其他模型对比，便于判断性价比。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Microsoft agent-framework 1.26.1/1.26.2 恶意版本被发布至 PyPI，窃取 Azure 与 CI 凭据",
+   "url": "https://aihot.news/items/ekt4wsp34savbuzq0vafnlhpw",
+   "published": "2026-11-17T22:03:37.000Z",
+   "description": "Wiz 报告，PyPI 上的 agent-framework 出现恶意版本 1.26.1 和 1.26.2（上传于 2026-11-17，约 21:30 UTC 后已下架），植入 .pth 文件在 Python 启动时运行凭据窃取器，收集环境变量、凭据文件及 Azure 与 Azure DevOps 托管标识和 OIDC 令牌，并回传至 webhook.site。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ekt4wsp34savbuzq0vafnlhpw",
+   "excerpt": "Microsoft agent-framework Compromised: Credential Stealer Targets Azure and CI Pipelines\nWiz 报告，PyPI 上的 agent-framework 出现恶意版本 1.26.1 和 1.26.2（上传于 2026-11-17，约 21:30 UTC 后已下架），植入 .pth 文件在 Python 启动时运行凭据窃取器，收集环境变量、凭据文件及 Azure 与 Azure DevOps 托管标识和 OIDC 令牌，并回传至 webhook.site。\nWiz 对供应链投毒事件给出完整时间线、载荷机制和处置清单，安全团队可直接据此排查与轮换凭据。\n2026 年 11 月 17 日 20:35 UTC，一个恶意版本（ 1.26.1 ）的 agent-framework 包（Microsoft Agent Framework）被上传到 PyPI。21:08 UTC，第二个版本 1.26.2 接踵而至。截至 21:30 UTC，这两个版本都已从 PyPI 下架。该包每周下载量约 41,000 次。\n安装恶意版本后，它会将一个 .pth 文件放入 site-packages 根目录（1.26.1 中是 agent_framework_meta.pth ，1.26.2 中是 af_runtime_diag.pth ）。Python 每次启动解释器都会运行 .pth 文件，因此只要在该环境中启动 Python，凭据窃取程序就会运行，即使从未导入 agent-framework 。\nmicrosoft/agent-framework 中没有 python-1.26.1 标签或发布版本，主分支也不包含恶意代码。\n正常发布时会同时发布 wheel 和 sdist，并附带同一版本的 agent-framework-core 。而 1.26.1 只有 wheel，且仍然依赖 agent-framework-core[all]==1.26.0。\n这表明 1.26.1 可能是在项目正常发布流程之外构建，并直接上传到 PyPI 的。\n今年早些时候，另一个微软 Python 包 durabletask 在其 PyPI 令牌被盗后遭到入侵。我们尚未将这两起事件关联起来。\nagent_framework_meta.pth 只包含一行： import agent_framework_meta\n在 1.26.1 中， agent_framework_meta/__init__.py 随后调用 _telemetry._start() 。窃取程序会 fork 出一个分离会话（ os.setsid()) ，在不支持 fork 的环境中则回退为守护线程。它会设置 _AF_TEL=1 ，以免在子进程中再次运行。\n文件名和函数名（ _telemetry 、“轻量级运行时诊断钩子”、user-agent af-runtime-diagnostics/1 ）都被伪装成正常的 SDK 遥测。\n环境变量 ：名称中包含 TOKEN、SECRET、PASSWORD、KEY、AZURE、AWS、GITHUB、OPENAI、HF_、FOUNDRY、NPM、PIP、NUGET、SYSTEM、BUILD、AGENT 等字符串的变量\n其他进程的环境变量 ：从最多 300 个 /proc/*/environ 文件中读取疑似机密的值\n.npmrc、pip.conf、.netrc、.git-credentials、.docker/config.json\nAzure DevOps OIDC 令牌 ：如果设置了 SYSTEM_ACCESSTOKEN 和 SYSTEM_OIDCREQUESTURI ，它会为 api://AzureADTokenExchange 请求 OIDC 令牌\nAzure 托管标识令牌 ：从 IMDS 或 App Service 标识端点获取 12 种资源的令牌：ARM、Graph、Key Vault、Storage、Cognitive Services、Azure AI/ML、Search、Container Registry、Azure DevOps 和 AzureADTokenExchange\n所有内容会被放入一个 JSON 文档，经 zlib 压缩、base64 编码后，通过一次 HTTPS POST 发送到 webhook[.]site 。该 URL 是硬编码的，载荷没有备用通道。失败会被静默忽略，不会重试。\n1.26.2 于 21:08 UTC 上传，比 1.26.1 晚 33 分钟。它是重新打包的 1.26.1 ，发送到同一个 webhook.site URL，改动如下：\n新的触发方式。 agent_framework_meta/__init__.py 被恢复为干净的 1.26.0 文件。取而代之的是，一个新的顶层 af_runtime_diag.pth 导入了一个新的顶层模块 af_runtime_diag.py ，该模块一经导入就会启动窃取程序。只搜索 1.26.1 的文件名会漏掉这个版本。\nGitHub Actions OIDC 窃取。 在启用了 id-token: write 的工作流中，它会为 api://AzureADTokenExchange 和 https://management.azure.com/ 申请 OIDC 令牌。如果某个 Entra ID 联合凭据信任该工作流，这些令牌就能换取 Azure 访问权限，全程无需存储任何密钥。\n收集范围扩大。 环境变量匹配现在涵盖 ACTIONS、OIDC、RUNNER 和 ARM_。新增了 GitHub 托管运行器的路径（ /home/runner/work/_temp/* 、 /home/runner/.azure/ ），文件数量上限也从 60 提高到 80。\nwebhook.site 是一个公开的请求检"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Nvidia 第三财季营收 $115.8B 超预期，数据中心占 93%",
+   "url": "https://aihot.news/items/vgopllkh4so1p1q01nefg1364",
+   "published": "2026-11-17T22:02:23.000Z",
+   "description": "Nvidia 第三财季营收 $115.8B，同比增长 103%，其中数据中心收入 $107.6B 占 93%，季度利润 $65.3B 翻倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vgopllkh4so1p1q01nefg1364",
+   "excerpt": "Nvidia 第三财季营收 $115.8B，同比增长 103%，其中数据中心收入 $107.6B 占 93%，季度利润 $65.3B 翻倍。\n原文汇总了 Nvidia 财报的关键数字，包括数据中心占比和不含中国销售的季度指引，便于快速把握其 AI 业务结构。\n季度营收一年内翻倍以上，从 570 亿美元增至 1158 亿美元，增长 103%，其中 AI 数据中心贡献了总营收的 93%。\n数据中心营收一年内增长 110%，从 512 亿美元增至 1076 亿美元，英伟达开始向 CoreWeave、Google Cloud、Microsoft Azure 和 Oracle 出货其 Vera Rubin NVL72 机架。\n对 AI 云、工业和企业客户的销售额几乎增长两倍，增长 195% 至 475 亿美元，增速几乎是超大规模云巨头的三倍，后者增长 71% 至 601 亿美元。\n季度利润翻倍以上，从 319 亿美元增至 653 亿美元，现已超过其一年前 570 亿美元的整个季度营收。\n第四季度 1300 亿美元的业绩指引假设对中国没有任何数据中心算力销售，尽管第三季度有 24 亿美元的 Hopper 芯片出货到中国。\n原文汇总了 Nvidia 财报的关键数字，包括数据中心占比和不含中国销售的季度指引，便于快速把握其 AI 业务结构。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "OpenClaw 的 Sign in with ChatGPT 结束测试，支持 ChatGPT Business 及 GPT-6.2 Astra 与 Sol",
+   "url": "https://aihot.news/items/fatxhu2tz1d0g2g8412axx3k5",
+   "published": "2026-11-17T21:49:52.000Z",
+   "description": "OpenClaw 宣布 Sign in with ChatGPT 功能结束测试，用户可在 OpenClaw 中使用自己的 ChatGPT 套餐，包括 ChatGPT Business。作者还确认支持新模型 GPT-6.2 Astra 和 Sol。引用的 @OpenAIDevs 内容显示，ChatGPT Business 套餐现已可通过 Sign in with ChatGPT 用于 Notion、v0、OpenClaw 等多种工具。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fatxhu2tz1d0g2g8412axx3k5",
+   "excerpt": "OpenClaw 宣布 Sign in with ChatGPT 功能结束测试，用户可在 OpenClaw 中使用自己的 ChatGPT 套餐，包括 ChatGPT Business。作者还确认支持新模型 GPT-6.2 Astra 和 Sol。引用的 @OpenAIDevs 内容显示，ChatGPT Business 套餐现已可通过 Sign in with ChatGPT 用于 Notion、v0、OpenClaw 等多种工具。\nOpenClaw 官宣登录功能结束测试，读者可以据此确认自己的 ChatGPT 订阅现已可用，包括新模型 GPT-6.2 Astra 和 Sol。\n在 OpenClaw 中使用你的 ChatGPT 套餐，包括 ChatGPT Business。\n现在，你可以在 @NotionHQ、@v0、@ampcode、@kilocode、@warpdotdev、来自 @NousResearch 的 Hermes、@openclaw、@opencode 等工具中使用你的 ChatGPT Business 套餐。\nNow, you can use your ChatGPT Business plan in tools like @NotionHQ, @v0, @ampcode, @kilocode, @warpdotdev, Hermes from @NousResearch, @openclaw, @opencode, and more.\nConnect with Sign in with ChatGPT to get started.\nOpenClaw 官宣登录功能结束测试，读者可以据此确认自己的 ChatGPT 订阅现已可用，包括新模型 GPT-6.2 Astra 和 Sol。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "WSJ 报道 SEC 对 Nvidia 披露问题启动民事调查，恰逢 CEO 黄仁勋离任",
+   "url": "https://aihot.news/items/ko07avibxdjfqycfyj5i04c0e",
+   "published": "2026-11-17T21:28:43.000Z",
+   "description": "据 WSJ，SEC 正以民事调查核实 Nvidia 的披露是否误导投资者，图片中的 WSJ 标题显示此事发生于 CEO 黄仁勋离任之际。Nvidia 在截至 2025 年 7 月的季度后停止单独披露新加坡收入，该季度新加坡账单达 $10.2B、占总数 22%，公司称客户通过新加坡开票而芯片几乎都发往别处。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ko07avibxdjfqycfyj5i04c0e",
+   "excerpt": "据 WSJ，SEC 正以民事调查核实 Nvidia 的披露是否误导投资者，图片中的 WSJ 标题显示此事发生于 CEO 黄仁勋离任之际。Nvidia 在截至 2025 年 7 月的季度后停止单独披露新加坡收入，该季度新加坡账单达 $10.2B、占总数 22%，公司称客户通过新加坡开票而芯片几乎都发往别处。\n原文汇总了 SEC 民事调查、新加坡收入披露调整和财政部限期说明三项事实，可帮读者快速把握 Nvidia 面临的监管压力全貌。\nWSJ：美国证券交易委员会（SEC）正在对英伟达的披露是否误导投资者展开民事调查。\n这项审查与一项报告变更存在重叠：在截至2025年7月的季度结束后，英伟达不再单独披露新加坡收入，当时该地区账单金额达到102亿美元，占总收入的22%，而公司表示客户通过新加坡开票，但芯片几乎总是运往其他地方。\n财政部长斯科特·贝森特给董事会和外部律师10天时间，要求其解释公司是否施压进行“看似非法的销售”以抬高收益。\n原文汇总了 SEC 民事调查、新加坡收入披露调整和财政部限期说明三项事实，可帮读者快速把握 Nvidia 面临的监管压力全貌。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Claude Code 推出实验性 Code Mode 工具调用方式",
+   "url": "https://aihot.news/items/z3n160k1v5vsc90udwjd8x7pp",
+   "published": "2026-11-17T21:18:55.000Z",
+   "description": "Claude Code 推出实验性 Code Mode，一种新的工具使用方式：Claude 会编写脚本以复杂方式串联多个工具，并能在长命令仍在运行时回复用户。可通过设置环境变量 CLAUDE_CODE_EXPERIMENTAL_CODE_MODE=1 开启，文档见 http://code.claude.com/docs/en/code-mode。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z3n160k1v5vsc90udwjd8x7pp",
+   "excerpt": "Claude Code 推出实验性 Code Mode，一种新的工具使用方式： Claude 会编写脚本以复杂方式串联多个工具，并能在长命令仍在运行时回复用户。可通过设置环境变量 CLAUDE_CODE_EXPERIMENTAL_CODE_MODE=1 开启，文档见 code.claude.com/docs/en/code-… 。\n原文介绍了 Claude Code 实验性 Code Mode 的玩法和环境变量入口，读者可以据此尝试脚本化编排工具的新工作流。\n来看看 Code Mode，这是 Claude Code 与工具协作的一种全新实验性方式。Claude 会编写脚本，以精巧的方式将你的工具串联起来，并且能在长命令仍在运行时回答你。\n通过 CLAUDE_CODE_EXPERIMENTAL_CODE_MODE=1 启用 code.claude.com/docs/en/code-…\n原文介绍了 Claude Code 实验性 Code Mode 的玩法和环境变量入口，读者可以据此尝试脚本化编排工具的新工作流。"
+  },
+  {
+   "group": "wh",
+   "source": "The Robot Report 物流",
+   "title": "Learn how AI is changing supply chain robotics",
+   "url": "https://www.therobotreport.com/learn-how-ai-is-changing-supply-chain-robotics/",
+   "published": "2026-11-17T19:58:18.000Z",
+   "description": "The live webinar, \"Robots in the Supply Chain,\" will take place Wednesday, November 18, 2026, at 12 P.M. ET. The post Learn how AI is changing supply chain robotics appeared first on The Robot Report .",
+   "excerpt": "From left to right: Lior Elazary, the co-founder and CEO of inVia Robotics, Josip Cesic, the co-founder and CEO of Gideon, and Jeff Mahler, the co-founder and CTO of Ambi Robotics.\nSupply chain robotics is undergoing rapid transformation. Companies hope to address labor shortages, improve efficiency, and build resilience against disruptions. Increasingly, they’re turning to robotics to solve these challenges.\nCurrently, available technologies include warehouse automation, picking and packing systems, autonomous mobile robots for material handling, and AI-powered inventory management. These systems can work together and help organizations adapt to changing demand patterns and product variations.\nNow, the integration of artificial intelligence is enabling predictive analytics, demand forecasting, and dynamic routing optimization. With AI, robots can learn from operational data to improve performance, reduce errors, and optimize energy consumption.\nEven manufacturers already using robots stand to gain from these advancements, achieving higher quality, reduced downtime, better predictability, and cost optimization. This transition is a strategic necessity, supporting the shift towards high-volume, high-mix production and resilient supply chains.\nLearn about all of the latest advancements in the webinar , “Robots in the Supply Chain.” The live webinar will take place Wednesday, November 18, 2026, at 12 P.M. ET. If you can’t attend live, registered attendees will be able to watch a recording of the webinar at their convenience.\nThe webinar will feature insights from three robotics experts: Lior Elazary, co-founder and CEO of InVia Robotics; Josip Cesic, co-founder and CEO of Gideon; and Jeff Mahler, co-founder and CTO of Ambi Robotics.\nIn this webinar, attendees will learn how:\nLior Elazary is the co-founder and CEO of inVia Robotics . At inVia, he leads the company’s vision for applying AI, software, and robotics to improve warehouse operations. With more than 20 years of experience in technology and entrepreneurship, he has built and scaled companies across robotics, software, networking, and enterprise technology.\nJosip Cesic is the co-founder and CEO of Gideon , a pioneering robotics and AI company. Gideon revolutionizes supply chains with their Physical-AI platform, automating some of the hardest automation problems such as loading and unloading truck trailers with autonomous forklifts.\nCesic holds a PhD in autonomy technologies from the University of Zagre"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "OpenClaw 上线 OpenAI GPT-6.2 Astra 和 Sol 模型",
+   "url": "https://aihot.news/items/e4x7s78pcoe8yhieqmns68q0g",
+   "published": "2026-11-17T19:47:03.000Z",
+   "description": "OpenClaw 宣布 OpenAI 的 GPT-6.2 Astra 和 Sol 现已在 OpenClaw 中可用。运行 v2026.10.1 或更新版本的用户无需更新 OpenClaw 即可直接使用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e4x7s78pcoe8yhieqmns68q0g",
+   "excerpt": "OpenClaw 宣布 OpenAI 的 GPT-6.2 Astra 和 Sol 现已在 OpenClaw 中可用。运行 v2026.10.1 或更新版本的用户无需更新 OpenClaw 即可直接使用。\n原文说明 OpenClaw 已可用 GPT-6.2 Astra 和 Sol，并给出所需版本，老用户可据此判断是否需要升级。\n来自 @OpenAI 的 GPT-6.2 Astra 和 Sol 现已在 OpenClaw 中可用！🦞\nSome of you have been asking very politely. Some of you have just been asking.\nSuper efficient and built to perform where it counts—the real world.\n原文说明 OpenClaw 已可用 GPT-6.2 Astra 和 Sol，并给出所需版本，老用户可据此判断是否需要升级。"
+  },
+  {
+   "group": "wh",
+   "source": "Supply Chain Dive",
+   "title": "US Foods to test inventory-scanning robots at 6 more warehouses",
+   "url": "https://www.supplychaindive.com/news/us-foods-to-test-inventory-scanning-robots-at-6-more-warehouses/874829/",
+   "published": "2026-11-17T19:18:00.000Z",
+   "description": "The food service distributor plans to begin piloting the technology in each of the facilities by year-end, CEO David Flitman told investors.",
+   "excerpt": ""
+  },
+  {
    "group": "wh",
    "source": "Robotics & Automation News",
    "title": "Conference report: Construction industry on the verge of a robotics revolution",
    "url": "https://roboticsandautomationnews.com/2026/11/17/conference-report-construction-industry-on-the-verge-of-a-robotics-revolution/107197/",
    "published": "2026-11-17T18:57:38.000Z",
    "description": "The construction industry has been slow to adopt robotics, despite decades of technological progress in manufacturing and logistics. At the inaugural Groundworks Summit in London, robotics companies, contractors and investors discussed what it will take to bring automation into everyday building operations. Now may not be the best time for advanced robotics technology to enter […]",
-   "excerpt": "The construction industry has been slow to adopt robotics, despite decades of technological progress in manufacturing and logistics.\nAt the inaugural Groundworks Summit in London, robotics companies, contractors and investors discussed what it will take to bring automation into everyday building operations.\nNow may not be the best time for advanced robotics technology to enter and revolutionize the construction industry.\nIn London, England, at least, property developers are scaling back their activities, postponing major developments or abandoning projects altogether.\nIn October 2026, FTSE 100 property developer British Land reportedly paused the second phase of its £4 billion Canada Water regeneration project in southeast London.\nThe company had completed the first phase of the development, but rising construction costs and disappointing residential sales prompted it to postpone further work until market conditions improve.\nThe decision illustrates a wider problem facing London’s construction industry.\nThe capital has a chronic shortage of affordable housing, yet developers are finding it increasingly difficult to make new residential projects financially viable.\nCanada Water was intended to deliver thousands of homes, alongside offices, retail space and other facilities. Although much of the development was aimed at the private market, affordable housing was also included in its plans.\nLandsec also decided in October to deprioritise its proposed redevelopment of Lewisham shopping center, another major southeast London project, citing concerns about financial viability.\nAcross the industry, high financing costs, expensive materials, labor shortages and regulatory requirements have made new construction projects increasingly difficult to justify.\nThe situation varies internationally, but the problems are familiar to developers in many markets.\nYet the underlying demand for buildings has not disappeared. People still need homes, businesses need offices and industrial facilities, and governments need infrastructure.\nConstruction activity will eventually recover, although when and how strongly remains uncertain.\nAnd perhaps, counterintuitively, this is precisely the right time to introduce robots to building sites.\nWhen the industry becomes busy again, project managers may be less inclined to experiment with unfamiliar technologies. Under pressure to meet deadlines, they may prefer established working methods, even if those methods are comparatively inefficie"
+   "excerpt": "The construction industry has been slow to adopt robotics, despite decades of technological progress in manufacturing and logistics.\nAt the inaugural Groundworks Summit in London, robotics companies, contractors and investors discussed what it will take to bring automation into everyday building operations.\nNow may not be the best time for advanced robotics technology to enter and revolutionise the construction industry.\nIn London, England, at least, property developers are scaling back their activities, postponing major developments or abandoning projects altogether.\nIn October 2026, FTSE 100 property developer British Land reportedly paused the second phase of its £4 billion Canada Water regeneration project in southeast London.\nThe company had completed the first phase of the development, but rising construction costs and disappointing residential sales prompted it to postpone further work until market conditions improve.\nThe decision illustrates a wider problem facing London’s construction industry.\nThe capital has a chronic shortage of affordable housing, yet developers are finding it increasingly difficult to make new residential projects financially viable.\nCanada Water was intended to deliver thousands of homes, alongside offices, retail space and other facilities. Although much of the development was aimed at the private market, affordable housing was also included in its plans.\nLandsec also decided in October to deprioritise its proposed redevelopment of Lewisham shopping center, another major southeast London project, citing concerns about financial viability.\nAcross the industry, high financing costs, expensive materials, labor shortages and regulatory requirements have made new construction projects increasingly difficult to justify.\nThe situation varies internationally, but the problems are familiar to developers in many markets.\nYet the underlying demand for buildings has not disappeared. People still need homes, businesses need offices and industrial facilities, and governments need infrastructure.\nConstruction activity will eventually recover, although when and how strongly remains uncertain.\nAnd perhaps, counterintuitively, this is precisely the right time to introduce robots to building sites.\nWhen the industry becomes busy again, project managers may be less inclined to experiment with unfamiliar technologies. Under pressure to meet deadlines, they may prefer established working methods, even if those methods are comparatively inefficie"
   },
   {
    "group": "ai",
    "source": "AIHOT",
-   "title": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，定价 $0.01 每分钟音频",
+   "title": "Microsoft Ignite 2026：Copilot 新形态、Microsoft IQ、Agent 365 与 Cobalt 200 VMs 等多项发布",
+   "url": "https://aihot.news/items/jj0ftew61l69qvcrmww6gcxjt",
+   "published": "2026-11-17T18:36:03.000Z",
+   "description": "Satya Nadella 在 Ignite 2026 开幕主题演讲中宣布构建 frontier 生态的多项产品更新。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jj0ftew61l69qvcrmww6gcxjt",
+   "excerpt": "Ignite 2026: Building the frontier ecosystem\nSatya Nadella 在 Ignite 2026 开幕主题演讲中宣布构建 frontier 生态的多项产品更新。\n微软官方 keynote 全文，读者可从中梳理 Copilot、Microsoft IQ、Agent 365 与自研芯片的产品线全貌。\n微软董事长兼首席执行官萨提亚·纳德拉今早在 旧金山 Ignite 大会 上发表开幕主题演讲。以下是其演讲的编辑版本。\n本周聚焦两件事：第一，我们如何利用呈指数级增长的新能力；第二，我们如何构建应对这些指数级增长所带来的后果的能力。\n在这样的时刻，我总觉得回归我们的使命很有帮助：赋能地球上的每一个人和每一个组织，成就不凡。在当今世界，这意味着构建一个前沿生态。我们需要把任何技术进步转化为实实在在的成果，为个人、组织乃至整个社会创造新的杠杆点。\nCopilot 是 工作的新操作系统 。它把人机交互的各种新形态——无论是 Chat、Cowork、Code 还是 Autopilot——整合为一种体验，也把知识工作、编程和业务流程这些原本割裂的类别汇聚到一起。正因如此，我们把功能丰富的整套 Office 融入 Copilot。而其底层是一个模型系统，能够为合适的场景、合适的交互形态匹配恰当的智能，从而完成任务。\nHome 为你提供一个统一的起点，无论是需要快速得到答案，还是要指派并完成复杂的多步骤任务。Code 把无限 SaaS 工厂的能力带给每个人，让你能构建自己的定制 SaaS 应用、仪表盘等等。Autopilot 则是一个自主智能体，在你和团队协作的各个场所，7×24 小时持续推动工作向前。\n这一切的底层是 Work IQ。你可以把它看作任何组织最重要的数据库，它深入理解人员、人员之间的关系，以及构成工作肌理的文档、邮件、会议、聊天和项目。\n我们还在更进一步。我们正为特定角色扩展 Copilot：销售、法务、财务、服务。我们正在 Copilot 的整个界面上，为这些角色组织技能、连接器和插件。\n这也包括第三方系统。事实上，我们今天宣布面向业务应用推出新插件，先从 Dynamics 365 开始。而且不只是 Dynamics。我们非常高兴与 Salesforce 合作， 把 Salesforce 引入 Copilot 。\n我们还在超越这一点。迄今为止，我们大多处于单人世界——人与自己的智能体循环和集群。但真正的多人形态已经到来：人、人的智能体以及其他的人，在共享上下文下共同朝着一个目标推进。这就是 Copilot Workspaces：\nIQ 的理念，是帮助每个组织 构建、保留并持续改进 自身的智能。本质上，我们是在把 Copilot 底层构建的系统外化为一个一等平台，将组织的智能作为一项资产来体现，由你持续构建并掌控。\n我们将把你在 Fabric、Foundry 和 Microsoft 365 中的所有数据汇聚到一起，当然也包括所有第三方上下文。Microsoft IQ 随我们今天发布的上百个新连接器一同推出，让智能体能够在业务实际发生的地方获取完整的企业上下文。这些丰富的上下文会以业务插件的形式呈现，可以在整个组织内共享和继承。\n对我们来说，关键是为特定任务匹配最合适的智能，并实现最佳的经济性。这一点只有我们能做到：针对真实世界的任务，端到端地调优产品、harness 和工具以及模型系统。\n今天，我们非常高兴地宣布 Microsoft-Decision-1.1 正式可用，已准备好投入企业部署。我们新增了多模态支持，并提升了性能，让决策更准确、响应更迅速。目前已有超过 4,000 家客户在使用它。我们自己也把它用于路由、数据标注、个性化、内容过滤等核心任务以及数百个其他场景。\nFoundry 当然也汇集了所有最热门的闭源和开放权重模型。我们非常兴奋地把 GPT 6.2 引入 Foundry。这是一款出色的模型，为专业工作中的 AI 树立了新标杆。今天我们还要宣布，Meta 的最新模型也将全部登陆 Foundry。\n我们同时也在前沿领域创新，推出了自己的 MAI 模型家族，在预训练阶段算力高效，在产品部署阶段 token 高效。我们的目标是依据真实世界的任务表现，在前沿曲线上再添几个点。\n我们还要更进一步。我们宣布推出 MAI Licensed Weights，这意味着我们信赖的客户将可以通过我们的 Frontier Co. 获取 Microsoft AI 模型权重。\n首先是 Code。我们推出全新的旗舰级智能体编程模型系列：Code 2。Code 2 在日常企业编程任务上处于成本效益的前沿。它擅长将代码推向生产、深度调试、多文件实现、全仓库推理和 UI，而成本仅为前沿模型的一小部分。\nCode 2 Flash 专为快速、高吞吐的工作而设计，比如代码解释、定向编辑、常规修复和快速迭代。它以低得多的成本带来接近旗舰级的水准。这两款模型今天都已在 GitHub Copilot 上正式可用，既出现在模型选择器中，也作为 Copilot Fusion 的一部分提供。它们同样已在 Foundry 中上线。\n我们在网络安全领域也采取同样的思路。Cyber 2 Flash 是我们迄今能力最强的安全模型。它是一款 Flash 级别的模型，性能超越前沿模型，而每任务成本仅为其一小部分。而且，正如我们在编程领域的做法一样，我们正与模型将要投入使用的工具和系统协同设计。我们正在将 Cyber 2 与 Perception 集成。\n成功部署 AI 系统，首先要确保在技术栈的每一层都具备可观测性。这正是 Agent 365 的用武之地。它是一个控制平面，把你现有的治理、身份、安全和管理系统延伸到企业中的智能体上。目前 Agent 365 中已有超过 5,000 万个智能体。\n其中也包括 FinOps。随着 AI 规模扩大，每个组织都需要在 AI 的投入与它创造的价值之间划出一条清晰的界线。正因如此，"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，每分钟音频 $0.01 起",
    "url": "https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
    "published": "2026-11-17T18:16:17.000Z",
-   "description": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，起价 $0.01 每音频分钟，称在 Big Bench Audio 和 Tau-Voice 公开基准及微软产品评估中于质量、速度和价格上超过 GPT Realtime 2.1。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
-   "excerpt": "MAI Realtime 1: Leading voice AI at $0.01 per audio minute\nMicrosoft AI 发布首个语音到语音模型 MAI Realtime 1，起价 $0.01 每音频分钟，称在 Big Bench Audio 和 Tau-Voice 公开基准及微软产品评估中于质量、速度和价格上超过 GPT Realtime 2.1。\n官方给出了与 GPT Realtime 2.1 的基准对比、具体定价和 API 兼容性，读者可以直接评估迁移成本与适用场景。\nMAI Realtime 1 是我们的首个语音到语音模型，专为真实企业应用中自然流畅的对话而打造，起价为 每分钟音频 0.01 美元 。 1\n在公开基准测试和微软产品评估中，我们的模型在质量、速度和价格上均优于 GPT Realtime 2.1。在 Big Bench Audio 语音推理和 Tau -Voice 智能体任务完成基准上，它都处于性能与价格的帕累托前沿。 2\n打造一个人们真正愿意与之交谈的语音智能体，光有好嗓音远远不够，还需要对话、智能和行动三者恰到好处地同时配合。MAI Realtime 1 通过以下能力实现了这一点：\nMAI Realtime 1 还兼容 OpenAI Realtime API，开发者可以轻松测试该模型并迁移现有的语音应用。\nAgoda 和 Reservations.ai 等公司已经开始试用 MAI Realtime 1。\n我们还将把 MAI Realtime 1 引入 Dynamics 365 Contact Center 用于客户服务 应用 ，并 引入 Dragon Copilot， 以 支持 AI 模拟的患者对话，帮助 护士 练习 临床互动 。\n在 MAI Labs 试用 MAI Realtime 1，或 注册 参与 Foundry 限量 访问 预览 。 预览期间，客 户 不会 被计费，直到公开预览开 始。\n文章 MAI Realtime 1：以每分钟 $0.01 引领语音 AI 首次发表于 Microsoft AI 。\n官方给出了与 GPT Realtime 2.1 的基准对比、具体定价和 API 兼容性，读者可以直接评估迁移成本与适用场景。"
+   "description": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，起步价 $0.01 每分钟音频，称其在 Big Bench Audio 和 τ-Voice 基准上于质量、速度和价格上超过 GPT Realtime 2.1。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
+   "excerpt": "MAI Realtime 1: Leading voice AI at $0.01 per audio minute\nMicrosoft AI 发布首个语音到语音模型 MAI Realtime 1，起步价 $0.01 每分钟音频，称其在 Big Bench Audio 和 τ-Voice 基准上于质量、速度和价格上超过 GPT Realtime 2.1。\n官方给出了与 GPT Realtime 2.1 的基准对比、定价细节和企业接入方式，读者可以据此评估语音 Agent 的成本与选型。\nMAI Realtime 1 是我们的首个语音到语音模型，专为真实企业应用中自然流畅的对话而打造，起价仅为 每分钟音频 0.01 美元 。 1\n在公开基准测试和 Microsoft 产品评估中，我们的模型在质量、速度和价格上均优于 GPT Realtime 2.1。在 Big Bench Audio 语音推理和 Tau -Voice 智能体任务完成基准上，它都处于性能-价格帕累托前沿。 2\n打造一个人们真正愿意与之交谈的语音智能体，光有好嗓音远远不够，还需要对话、智能与行动三者恰到好处地同时配合。MAI Realtime 1 通过以下能力实现了这一点：\nMAI Realtime 1 还兼容 OpenAI Realtime API，开发者可以轻松测试该模型并迁移现有的语音应用。\nAgoda 和 Reservations.ai 等公司已经开始试用 MAI Realtime 1。\n我们还将把 MAI Realtime 1 引入 Dynamics 365 Contact Center 用于客户服务 应用 ，并 引入 Dragon Copilot， 以 支持 AI 模拟的患者对话，帮助 护士 练习 临床互动 。\n在 MAI Labs 试用 MAI Realtime 1，或 注册 参与 Foundry 限量 访问 预览 。 预览期间，客 户 不会 被计费，直到公开预览开 始。\n文章 MAI Realtime 1：以每分钟 $0.01 引领语音 AI 首次发表于 Microsoft AI 。\n官方给出了与 GPT Realtime 2.1 的基准对比、定价细节和企业接入方式，读者可以据此评估语音 Agent 的成本与选型。"
   },
   {
    "group": "ai",
    "source": "AIHOT",
-   "title": "Microsoft MAI 发布七款新模型，主打低价高性能",
+   "title": "Microsoft MAI 在 Ignite 2026 发布七款高性价比新模型",
    "url": "https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
    "published": "2026-11-17T18:16:05.000Z",
-   "description": "Microsoft MAI 在 Ignite 2026 发布七款新模型，包括 MAI Cyber 2 Flash、MAI Code 2、MAI Code 2 Flash、MAI Image 2.7、MAI Realtime 1、Dragon Copilot Transcribe（基于 MAI Transcribe 2）和 Decision 1.1。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
-   "excerpt": "Seven new world class models at scalable price-performance\nMicrosoft MAI 在 Ignite 2026 发布七款新模型，包括 MAI Cyber 2 Flash、MAI Code 2、MAI Code 2 Flash、MAI Image 2.7、MAI Realtime 1、Dragon Copilot Transcribe（基于 MAI Transcribe 2）和 Decision 1.1。\n官方公布的七款新模型给出了具体基准对比和价格比例，读者可以据此评估企业级编码、图像与语音场景的成本取舍。\n在 MAI，我们的使命是为您打造世界上最好的模型，让每一位开发者和每一家企业都站在能力的最前沿。\n但随着 token 开销飞涨，我们知道客户也希望模型的价格能支撑智能体全天候运行、承担真正的工程工作。\n安全、对齐与管控是 2027 年及以后智能体开发最重要的优先事项。这也是我们的首要任务。我们需要运行监控与控制智能体，全天候防御并修补线上生产系统。因此，MAI Cyber 2 Flash 的设计目标就是以极低的成本提供前沿智能。\n我们的模型基于 Microsoft 数十年的专有数据和世界级安全专业能力构建，帮助防御者在攻击者拥有廉价而丰富的进攻工具的新时代保持安全。\n它建立在防御者已经依赖的早期 MAI Cyber 模型之上。在 MDASH 中，MAI Cyber 占扫描量的近 40%，而从 MAI 开始的扫描中有 90% 继续使用它。我们最新模型的输出 token 价格比 MAI Cyber 1.1 Flash 低 86%，让现有 MDASH 客户以更低价格获得更强的模型。\nMAI Code 2 专为日常企业编码任务打造最佳价格性能比。在四项广泛使用的基准（DeepSWE 1.1、Terminal Bench 2.1、SWE-Atlas 和 FrontierCode v1.1）上取平均——这些基准针对我们在 GitHub Copilot 中看到的日常企业编码任务——MAI Code 2 以 40% 的价格提供 GPT-6.1 Sol 98% 的性能，以仅 5% 的价格提供 Claude Opus 5.5 96% 的性能。\n我们打造这些模型，是为了优先满足客户日常的编程工作需求。它们目前明确还没有针对更难的题目做调优，比如基础科学研究，以及跨度很长的智能体任务。\n它还针对生成出色的仪表盘和可视化做了调优。在一项前端工作的盲测对比中，开发者在 68% 的情况下更青睐 MAI Code 2，而不是 GPT-6 Sol。现在就可以在 GitHub Copilot 中试用 MAI Code 2。 点此了解更多 。\nMAI Code 2 Flash 面向高并发量的日常任务，比如代码讲解、定向修改、常规修复和快速迭代，同时以低得多的成本带来高质量。在三项衡量日常高并发常规编程任务的基准测试（DeepSWE 1.1、Terminal Bench 2.1 和 SWE-Atlas）中，它的表现与 GPT-6 Luna 和 Claude Haiku 5.5 相当，价格却只有后两者的 65% 和 20%。它已在 GitHub Copilot 中上线，并在 Microsoft Foundry 中提供限量访问预览。\nMAI Image 2.7 是全球最好的图像编辑模型，在 Artificial Analysis 上排名第一，以仅五分之一的价格胜过 GPT Image 2.6 Sunburst（max）。在文生图方面，我们的模型排名第四，使我们成为第二强的实验室。而 MAI Image 2.7 Flash 为高并发场景带来世界级的图像生成能力，价格约为每 1,000 张图像 10 美元。两者均可在 Microsoft Foundry 此处 获取。\nMAI Realtime 1 是我们的首个实时语音到语音模型，专为自然、低延迟的对话而设计。在我们的评测中，它在外部基准和 Dynamics 365 基准上都优于 GPT-Realtime 2.1。它的定价面向企业级规模使用，起步价为每分钟音频 0.01 美元，相当省钱。你可以在 MAI Labs 试用，并 在此登记意向 。\nDragon Copilot Transcribe 基于 MAI-Transcribe-2 构建，现已在 Dragon Copilot 中上线，承担了 100% 的医患对话转写。它每月覆盖 1,000 万次就诊，将多语言工作流中的错误率减半，目前已为三分之一的美国医生所用。\nDecision 1.1 将模型路由直接集成到你的应用中，只在确实需要时才调用更大、更贵的模型。在 AA Decision Index 上，微软领先于 Jev、Google 和 OpenAI，同时速度更快、成本更低。它已被 4,000 家客户使用，比 GPT-Sol 6.1 快 50 倍、便宜 79 倍。\n而如果你基于开放权重来构建，你真的能信任它们的来源吗？当你把它们作为自己最宝贵的知识产权和数据的基础时，又真的能信任它们的行为方式吗？\n我们听到了你们的声音。我们从自定义模型起步。AT&T 为 5G 网络运营分析开发了一个 MAI 自定义模型，其表现优于 GPT-6.1 Sol，成本却便宜 50 倍。在复杂场景中，他们发现 Code 2 以显著低于其他方案的价格，交付了前沿水平的性能。\n今天，我们凭借 MAI Licensed Weights 迈出了一大步：模型由你掌控。\n拿一个前沿的 MAI 模型，需要的话用你的专有数据对它做定制，然后在自己的 Azure 环境里安全运行。\n访问权限由你掌控。你的数据和定制成果始终归你所有。我们还会通过 Frontier Company 与你合作，交付定制模型，并把它嵌入你自己的产品和智能体中。\n这就是 MAI，一个兼具卓越性价比的世界级模型家族：全球最好的图像编辑模型；全球最好的转写模型；成本仅"
+   "description": "Microsoft MAI 在 Ignite 2026 发布七款新模型，主打可扩展的性价比。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
+   "excerpt": "Seven new world class models at scalable price-performance\nMicrosoft MAI 在 Ignite 2026 发布七款新模型，主打可扩展的性价比。\n官方公布了七款新模型的基准对比与定价细节，读者可以据此评估在企业编码、安全和多模态任务上的成本替代空间。\n在 MAI，我们的使命是为您打造世界上最好的模型，让每一位开发者和每一家企业都站在能力的最前沿。\n但随着 token 开销飙升，我们知道客户也希望模型的价格点能支撑智能体全天候运行、承担真正的工程工作。\n安全、对齐与管控是 2027 年及以后智能体开发最重要的优先事项。这是我们的首要任务。我们需要运行监控与控制智能体，全天候防御并修补在线生产系统。正因如此，MAI Cyber 2 Flash 的设计目标是以极低成本提供前沿智能。\n我们的模型基于微软数十年的专有数据和世界级安全专业能力构建，帮助防御者在这个攻击者拥有廉价而充足攻击工具的新时代保持安全。\n它建立在防御者已经依赖的早期 MAI Cyber 模型之上。在 MDASH 中，MAI Cyber 占扫描量近 40%，而从 MAI 开始的扫描中有 90% 继续使用它。我们最新模型的输出 token 价格比 MAI Cyber 1.1 Flash 低 86%，让现有 MDASH 客户以更低价格获得更强模型。\nMAI Code 2 专为日常企业编码任务打造最佳价格性能比。在四项广泛使用的基准（DeepSWE 1.1、Terminal Bench 2.1、SWE-Atlas 和 FrontierCode v1.1）上取平均——这些基准针对我们在 GitHub Copilot 中看到的日常企业编码任务——MAI Code 2 以 40% 的价格提供 GPT-6.1 Sol 98% 的性能，以仅 5% 的价格提供 Claude Opus 5.5 96% 的性能。\n我们打造这些模型，是为了优先满足客户日常的编程工作需求。它们目前明确还没有针对更难的题目做调优，比如基础科学研究，以及跨度很长的智能体任务。\n它还经过调优，能生成出色的仪表盘和可视化图表。在一次前端工作的盲测对比中，开发者在 64% 的情况下更青睐 MAI Code 2，而非 GPT-6 Sol。现在就可以在 GitHub Copilot 中试用 MAI Code 2。 点此了解更多 。\nMAI Code 2 Flash 面向高频的日常任务，比如代码讲解、定向修改、常规修复和快速迭代，同时以低得多的成本带来不错的质量。在三项衡量日常高频常规编程任务的基准测试（DeepSWE 1.1、Terminal Bench 2.1 和 SWE-Atlas）中，它的表现与 GPT-6 Luna 和 Claude Haiku 5.5 相当，价格却只有后两者的 65% 和 20%。它已在 GitHub Copilot 中上线，并在 Microsoft Foundry 中提供限量访问预览。\nMAI Image 2.7 是全球最好的图像编辑模型，在 Artificial Analysis 榜单上排名第一，以仅五分之一的价格胜过 GPT Image 2.6 Sunburst（max）。在文生图方面，我们的模型排名第四，使我们成为第二强的实验室。而 MAI Image 2.7 Flash 为高频场景带来世界级的图像生成能力，价格约为每 1,000 张图像 10 美元。两者均可在 Microsoft Foundry 此处 获取。\nMAI Realtime 1 是我们的首个实时语音到语音模型，专为自然、低延迟的对话而设计。在我们的评测中，它在外部基准和 Dynamics 365 基准上都优于 GPT-Realtime 2.1。它的定价面向企业级规模使用，起步价为每分钟音频 0.01 美元，相当省钱。你可以在 MAI Labs 中试用，并 在此登记意向 。\nDragon Copilot Transcribe 基于 MAI-Transcribe-2 构建，现已在 Dragon Copilot 中上线，承担全部医患对话转写。它每月覆盖 1,000 万次就诊，将多语言工作流的错误率减半，目前已为三分之一的美国医生所用。\nDecision 1.1 将模型路由直接集成到你的应用中，让更大、更贵的模型只在你真正需要时才被调用。在 AA Decision Index 上，微软领先于 Jev、Google 和 OpenAI，同时速度更快、成本更低。它已被 4,000 家客户使用，比 GPT-Sol 6.1 快 50 倍、便宜 79 倍。\n而如果你基于开放权重来构建，你真的能信任它们的来源吗？当你把它们作为自己最宝贵的知识产权和数据的基础时，你又能信任它们会如何表现吗？\n我们听到了你们的声音。我们从自定义模型起步。AT&T 为 5G 网络运营分析开发了一个 MAI 自定义模型，它以低 50 倍的成本胜过了 GPT-6.1 Sol。在复杂场景中，他们发现 Code 2 以显著低于其他方案的价格，交付了前沿水平的性能。\n今天，我们凭借 MAI Licensed Weights 迈出了一大步：模型由你掌控。\n拿一个前沿的 MAI 模型，需要的话用你的专有数据对它做定制，然后在自己的 Azure 环境里安全运行。\n访问权限由你掌控，数据和定制成果始终归你所有。我们还会通过 Frontier Company 与你合作，交付定制模型，并把它嵌入你自己的产品和智能体中。\n这就是 MAI，一个兼具卓越性价比的世界级模型家族：全球最好的图像编辑模型、全球最好的转写模型、成本仅为 2% 的前沿网络防御，以及价格可随规模扩展的世界级日常编程模型。\n文章 七款全新世界级模型，兼具可扩展的价格与性能 首发于 Microsoft AI 。\n官方公布了七款新模型的基准对比与定价细节，读者可以据此评估在企业编码、安全和多模态任务上的成本替代空间。"
   },
   {
    "group": "ai",
    "source": "AIHOT",
-   "title": "Microsoft AI 发布 MAI Code 2 与 Code 2 Flash 编码模型",
+   "title": "Microsoft AI 发布 MAI Code 2 与 MAI Code 2 Flash 编码模型",
    "url": "https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
    "published": "2026-11-17T18:15:16.000Z",
-   "description": "Microsoft AI 发布 MAI Code 2 和 MAI Code 2 Flash 两款面向日常企业编码任务的编码模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
-   "excerpt": "MAI Code 2 and Code 2 Flash: Everyday coding at scalable prices\nMicrosoft AI 发布 MAI Code 2 和 MAI Code 2 Flash 两款面向日常企业编码任务的编码模型。\n官方给出与 GPT 6.1 Sol、Claude Opus 5.5 对比的性能价格数据，读者可据此评估日常企业编码场景的成本取舍。\nMAI Code 2 与 MAI Code 2 Flash ： 两款全新的编码模型， 专为 日常 企业编码任务打造 ，以竞品模型零头的成本带来领先的性能。\n在常见企业编码任务上，MAI Code 2 处于性价比前沿，尤其擅长代码上线、深度调试、多文件实现、仓库级推理和 UI。与此同时，它产出的改动是代码维护者愿意合并的，而成本仅为前沿模型的一小部分。\n而 MAI Code 2 Flash 面向高吞吐场景，例如代码讲解、定向修改、常规修复和快速迭代，以低得多的成本带来可靠质量。\n为实现最佳性价比，我们在构建这些模型时优先考虑客户每天实际进行的编码工作。它们目前明确尚未针对更难的题目调优，例如基础科学研究，以及超长周期的智能体任务。\n在四项广泛使用的基准测试上取平均（DeepSWE 1.1、Terminal Bench 2.1、SWE-Atlas 和 FrontierCode v1.1，均针对我们在 GitHub Copilot 中见到的日常企业编码任务），MAI Code 2 的性能达到 GPT 6.1 Sol 的 98% ，成本仅为其 40% ；性能达到 Claude Opus 5.5 的 96% ，成本仅为其 5% 。 1\nMAI Code 2 还针对生成优质仪表盘和可视化做了调优，在可视化编码方面表现出色。在盲测的前端应用评估中，评审有 67% 的情况下更青睐它的结果，而非 GPT-6 Sol。 2\n此外，在衡量日常高吞吐常规编码任务的三项编码基准测试中，MAI Code 2 Flash 的性能与 GPT-6 Luna 和 Claude Haiku 5.5 相当，成本分别为二者的 65% 和 20% 。 3\nMAI Code 2 也正在成为微软产品背后的主力。我们基于 Code 2 Flash 进一步优化出单一模型 MAI Work Flash ，为 M365 和 Fabric IQ 中的多款微软产品提供服务。\nExcel： 在关键的内部 Excel 客户场景基准测试中，我们的模型在准确率和 token 效率上与 GPT 6 Luna 持平。\nPowerPoint： 在衡量高频 PowerPoint 任务的关键生产基准场景中，我们的 模型 在质量和 token 效率上均与 GPT 6 Luna 持平。\nWord： 在 5 项关键内部基准测试中，我们的模型表现与 GPT 6.1 Sol 相近（而体积显著更小），生产环境中每次调用的输入 token 数比 GPT6.1 Sol 少约 42%。\n团队： 我们的模型在跟踪决策、填补知识空白以及适配自定义指令方面优于 GPT 6 Luna，在指令遵循和工具调用上最多可少用 28% 的 token。\nFabricIQ： 在离线评测中，我们的 MAI 模型在 DAX 查询生成上优于 GPT-5.6-sol、GPT-6-astra 和 Opus-5.5。DAX 查询生成是 Power BI 语义模型“Chat with your Data”功能背后的核心能力。\nMAI Code 2 和 Code 2 Flash 已在 GitHub Copilot 中可用，Code 2 Flash 正在 Microsoft Foundry 中限量预览。很快， 我们 还将在 Open Router、Vercel、Hermes、Open Code 和 Kilo 上发布它。\n关于这些结果 结果反映的是在特定编码任务和配置下的评测。性能与成本对比会因工作负载、模型配置、推理强度以及定价假设的不同而有所差异。\n文章 MAI Code 2 和 Code 2 Flash：以可扩展的价格实现日常编码 首次发表于 Microsoft AI 。\n官方给出与 GPT 6.1 Sol、Claude Opus 5.5 对比的性能价格数据，读者可据此评估日常企业编码场景的成本取舍。"
+   "description": "Microsoft AI 发布 MAI Code 2 和 MAI Code 2 Flash 两款编码模型，面向日常企业编码任务，定价远低于竞品。MAI Code 2 在四项基准平均下达到 GPT 6.1 Sol 98% 的性能但成本仅 40%，达到 Claude Opus 5.5 96% 的性能而成本仅 5%；盲测前端评审中 64% 的情况下胜过 GPT-6 Sol。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
+   "excerpt": "MAI Code 2 and Code 2 Flash: Everyday coding at scalable prices\nMicrosoft AI 发布 MAI Code 2 和 MAI Code 2 Flash 两款编码模型，面向日常企业编码任务，定价远低于竞品。MAI Code 2 在四项基准平均下达到 GPT 6.1 Sol 98% 的性能但成本仅 40%，达到 Claude Opus 5.5 96% 的性能而成本仅 5%；盲测前端评审中 64% 的情况下胜过 GPT-6 Sol 。\n原文给出具体基准与成本对比数据，读者可据此评估这两款模型是否适合替代现有主力编码模型。\nMAI Code 2 与 MAI Code 2 Flash ： 两款全新的编码模型，专为 日常 企业编码任务打造 ，以竞品模型零头的成本带来领先的性能。\nMAI Code 2 在常见企业编码任务上处于性价比前沿，擅长将代码推向生产、深度调试、多文件实现、仓库级推理以及 UI。在完成这些工作的同时，它还能给出代码维护者愿意合并的改动，而成本仅为前沿模型的一小部分。\n与此同时，MAI Code 2 Flash 面向高吞吐量的工作，例如代码解释、定向修改、常规修复和快速迭代，以低得多的成本带来出色的质量。\n为了实现最佳性价比，我们在构建这些模型时优先考虑客户每天进行的编码工作。它们目前明确尚未针对更困难的问题进行调优，例如基础科学研究以及超长周期的智能体工作。\n在四项广泛使用的基准测试（DeepSWE 1.1、Terminal Bench 2.1、SWE-Atlas 和 FrontierCode v1.1）上取平均，这些基准针对我们在 GitHub Copilot 中看到的日常企业编码任务，MAI Code 2 以 GPT 6.1 Sol 40% 的成本提供了其 98% 的性能，并以 Claude Opus 5.5 仅 5% 的成本提供了其 96% 的性能。 1\nMAI Code 2 还针对生成出色的仪表盘和可视化进行了调优，在视觉编码方面表现优异。在盲测的前端应用评估中，评审者在 64% 的情况下更青睐它的结果，而非 GPT-6 Sol。 2\n此外，在衡量日常高吞吐量常规编码任务的三项编码基准测试中，MAI Code 2 Flash 以 GPT-6 Luna 和 Claude Haiku 5.5 的 65% 和 20% 的成本，提供了与二者相当的性能。 3\nMAI Code 2 也正在成为微软产品背后的主力。我们在 Code 2 Flash 的基础上进一步优化出单一模型 MAI Work Flash， 为 M365 和 Fabric IQ 中的多款微软产品提供服务。\nExcel： 在关键的内部 Excel 客户场景基准测试中，我们的模型在准确性和 token 效率上与 GPT 6 Luna 相当。\nPowerPoint： 在衡量高频 PowerPoint 任务的关键生产基准场景中，我们的 模型 在质量和 token 效率上均与 GPT 6 Luna 相当。\nWord： 在 5 项关键内部基准测试中，我们的模型表现与 GPT 6.1 Sol 相近（而体积显著更小），在生产环境中每次调用使用的输入 token 比 GPT6.1 Sol 少约 42%。\n团队： 我们的模型在跟踪决策、填补知识空白、适配自定义指令方面优于 GPT 6 Luna，在指令遵循和工具调用上最多可少用 28% 的 token。\nFabricIQ： 在离线评测中，我们的 MAI 模型在 DAX 查询生成上优于 GPT-5.6-sol、GPT-6-astra 和 Opus-5.5。DAX 查询生成是 Power BI 语义模型“Chat with your Data”功能背后的核心能力。\nMAI Code 2 和 Code 2 Flash 已在 GitHub Copilot 中上线，Code 2 Flash 正在 Microsoft Foundry 中限量预览。不久后， 我们 还将在 Open Router、Vercel、Hermes、Open Code 和 Kilo 上发布它。\n关于这些结果 结果反映的是在特定编码任务和配置下的评测。性能与成本对比会因工作负载、模型配置、推理强度以及定价假设的不同而变化。\n文章 MAI Code 2 和 Code 2 Flash：以可扩展的价格实现日常编码 首发于 Microsoft AI 。\n原文给出具体基准与成本对比数据，读者可据此评估这两款模型是否适合替代现有主力编码模型。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Microsoft Ignite 2026：MAI 发布多款模型并推出 Licensed Weights 可控权重方案",
+   "url": "https://aihot.news/items/y7f42y59ahf4hjlf4ptoprfq3",
+   "published": "2026-11-17T18:14:55.000Z",
+   "description": "微软 MAI 在 Ignite 2026 主题演讲中发布一系列强调性价比的模型，并推出 MAI Licensed Weights，可定制后在自己的 Azure 环境中运行、掌控权重与数据。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y7f42y59ahf4hjlf4ptoprfq3",
+   "excerpt": "Microsoft Ignite 2026: MAI keynote transcript\n微软 MAI 在 Ignite 2026 主题演讲中发布一系列强调性价比的模型，并推出 MAI Licensed Weights，可定制后在自己的 Azure 环境中运行、掌控权重与数据。\n官方主题演讲给出各模型相对竞品的价格与性能对比数字，并宣布可控权重的 Licensed Weights 交付方式，便于评估成本取舍。\nMAI 的使命，是为你们打造全世界最好的模型，让每一位开发者和每一家组织都稳稳站在能力的最前沿。\n但我从每一位 CIO 和 CFO 那里反复听到的是，眼下 token 开销 正在一路飙升。按前沿模型的价格来算，这笔账根本撑不下去。\n所以我们的承诺是：给你们市面上最好的性价比，让你们能 真正 把智能体规模化跑起来。\n在四项广泛使用的基准测试上取平均——这些基准针对的正是我们在 GitHub Copilot 中看到的 日常企业编程 任务——MAI Code 2 的性能达到 GPT 6.1 Sol 的 98%，成本却只有 40%；对比 Opus 5.5，成本更是低到惊人的 5%。\nCode 2 Flash 也是如此。在这些日常任务上，它与 6 Luna 和 Haiku 5.5 持平，价格分别只有后两者的 65% 和 20%。\n所以 Decision 1.1 把模型路由直接集成进了你的应用。在 AA Decision Index 上，它击败了 Jev、Google 和 OpenAI。\n需要说明的是，我们打造这些模型时，优先考虑的是客户每天在做的编程工作。所以它们目前还没有针对更难的题目做专门调优，比如基础科学研究，以及超长周期的智能体任务。\n我们不会以牺牲你们的利益为代价去追逐那些更小众的能力。毕竟，如果同一个模型还要用来推动科学前沿，那你在每一项任务上都要为这份能力买单，哪怕只是修一个普通的 bug。\n一个很好的例子是 AT&T 定制版的 Code 2 Flash。在标准 5G 网络分析任务上，它超过了 6.1 Sol，而成本足足低了 50 倍。\n网络安全领域也是同样的故事。过去几个月，对我们所有人来说都是一记警告，也是一次警醒。\n我们正面对一个新的现实：攻击和漏洞利用比以往任何时候都更便宜、更容易、更无处不在。\nMAI Cyber 2 Flash 就是我们的回应。在 Cyber Gym 端到端测试中，它领先于 GPT 6 Astra，而每项任务的成本不到后者的 2%。实在了不起。\n这就是微软数十年专有数据和世界级安全专长带来的力量，让我们能给你一个不仅能发现漏洞、还能推荐正确修复方案的模型，而且价格低得惊人。\n我们在多模态上同样跑得飞快。我们现在是图像生成领域的第二大实验室，而就在今天早上，MAI Image 2.7 成为全球第一的图像编辑模型，成本只有竞争对手的五分之一。\nAdobe、Sports Illustrated 和 Manus 等客户表示，它带来了专业级品质，编辑精准又响应迅速。\n我们的转写模型是全球最快、最准确的。当然，在所有 AI 应用中，医疗大概是最重要、最复杂、也最高风险的领域。\nMAI Transcribe 目前每月已部署到 1000 万次 Dragon Copilot 患者问诊中，同时将错误率减半。\n正如 Judson 在开场时所说：在这轮新平台迁移中，你的核心资产是你的知识产权和工作流，是你多年积累的商业数据，本质上是一切让你的公司成为今天这个样子的事物。你的 IQ。\n而如果你基于开放权重构建，你真的能信任它们的来源吗？当你把它们作为你最宝贵的知识产权和数据的基础时，你真的能信任它们会如何表现吗？\n所以我们听到了你的声音。我们从自定义模型起步，正如我们刚刚在 Alaska 和 AT&T 上看到的，还有 Docusign、Rakuten 和 Woven by Toyota——在满足你 特定 需求的任务上更快、更好。\n你拿一个前沿的 MAI 模型，如果需要，用你的专有数据对它进行定制。然后在你自己的 Azure 环境中安全运行它。\n你控制谁可以访问它。你的数据和适配结果完全属于你。我们将通过 Frontier Company 与你合作，交付定制模型，并将其嵌入你自己的产品和智能体中。\n这就是 MAI，一个世界级模型家族，具有卓越的性价比：全球最好的图像编辑模型、最好的转写模型、成本仅为 2% 的前沿网络防御；以及价格真正可扩展的世界级日常编程模型。\n文章 Microsoft Ignite 2026：MAI 主题演讲文字记录 首次发表于 Microsoft AI 。\n官方主题演讲给出各模型相对竞品的价格与性能对比数字，并宣布可控权重的 Licensed Weights 交付方式，便于评估成本取舍。"
   },
   {
    "group": "ai",
@@ -304,15 +492,6 @@
    "published": "2026-11-17T18:00:00.000Z",
    "description": "Replit 发布 Replit Missions，用户设定目标、预算和边界后，由智能体集群并行规划、构建、测试并迭代，独立 AI 裁判按约定标准验收。 🔗 阅读原文 via AIHOT · https://aihot.news/items/io0nmdphe40k919fuw1h28kg3",
    "excerpt": "Replit 发布 Replit Missions，用户设定目标、预算和边界后，由智能体集群并行规划、构建、测试并迭代，独立 AI 裁判按约定标准验收。\n官方给出了 Missions 的运作机制、预算控制方式，以及 DataCat 等可验证的实测结果和开源版本，便于评估多智能体协作的实际能力。\n官方给出了 Missions 的运作机制、预算控制方式，以及 DataCat 等可验证的实测结果和开源版本，便于评估多智能体协作的实际能力。"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Artificial Analysis 评测 GPT-6.2 Astra 与 GPT-6.2 Sol：智能指数第二，编码代理无提升",
-   "url": "https://aihot.news/items/vop48ebueqjbpzs25hyrsi02m",
-   "published": "2026-11-17T17:56:04.000Z",
-   "description": "Artificial Analysis 评测 OpenAI 新发布的 GPT-6.2 Astra 和 GPT-6.2 Sol：Astra 在 Artificial Analysis Intelligence Index 上涨 5 分至 62。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vop48ebueqjbpzs25hyrsi02m",
-   "excerpt": "Artificial Analysis 评测 OpenAI 新发布的 GPT-6.2 Astra 和 GPT-6.2 Sol ：Astra 在 Artificial Analysis Intelligence Index 上涨 5 分至 62。\n第三方评测给出了 GPT-6.2 Astra 与 Sol 在智能指数、成本前沿和编码代理上的具体分数变化，可对照选型。\nOpenAI 发布 GPT-6.2 Astra 和 GPT-6.2 Sol，在 Artificial Analysis 智能指数中位列第 2，并占据了每任务成本帕累托前沿的大部分区域\n@OpenAI 的 GPT-6.2 Astra 定价为 $8/$40，比 GPT-6 Astra 低 20%，缓存输入从每百万 token $1.00 降至 $0.40。GPT-6.2 Sol 的定价与 GPT-6.1 Sol 保持不变，为每百万输入/输出 token $2/$10。\n要点： ➤ 智能指数排名第二：在 Artificial Analysis 智能指数中，OpenAI 现在仅落后于 Anthropic 的 Claude Fable 5.2。GPT-6.2 Astra 较 GPT-6 Astra 提升 5 分，在最高努力设置下超过了 Gemini 4 Carbon（60）和 Claude Opus 5.5（59）。GPT-6.2 Sol 提升 2 分至 57，与 GPT-6 Astra 持平，而每任务成本约为后者的 15%。\n第三方评测给出了 GPT-6.2 Astra 与 Sol 在智能指数、成本前沿和编码代理上的具体分数变化，可对照选型。"
   },
   {
    "group": "wh",
@@ -469,6 +648,15 @@
   },
   {
    "group": "wh",
+   "source": "Supply Chain 24/7 自动化",
+   "title": "Most Firms Expect AI to Handle More Warehouse Decisions by 2028",
+   "url": "https://www.supplychain247.com/article/warehouse-ai-decisions-mit-mecalux-survey",
+   "published": "2026-11-17T14:55:00.000Z",
+   "description": "A MIT and Mecalux survey finds that companies are giving AI more authority over warehouse decisions such as moving inventory and correcting records.",
+   "excerpt": "More than half of companies surveyed expect artificial intelligence to make or carry out more than a quarter of their day-to-day warehouse decisions on its own by 2028. That&rsquo;s the finding of a new report from the Intelligent Logistics Systems Lab at MIT&rsquo;s Center for Transportation & Logistics and Mecalux.\nSome of those decisions are already being handed to AI. In 51% of the agentic AI applications described in the study, the software could decide to move inventory without a person&rsquo;s approval. In 42% of cases, it could correct data on its own. Companies gave agents less authority over customer commitments and financial decisions.\nNinety percent of surveyed companies expect to spend more on warehouse AI over the next two to three years, and 29% expect spending to rise by more than a quarter. The report draws on responses from 1,967 supply chain and warehousing professionals across 21 countries.\nGenerative AI can draft training materials or help plan a warehouse layout. Agentic AI can take an action, such as deciding where inventory should go. Among companies testing or using generative AI, 57% used it to create documentation or training materials, and 53% used it to design warehouse layouts or processes. Handling exceptions and managing inventory were the two most common jobs for AI agents.\nCompanies drew tighter lines around decisions that affect customers or spending. In 22% of the agentic AI applications studied, agents could make commitments to customers without approval. Just 12% could make financial decisions. The most common setup let agents work within company-set rules while employees monitored their actions and could step in.\nSixty-one percent of surveyed companies said they had rolled out generative AI at scale or fully integrated it into their warehouses. Fifty-six percent said the same about agentic AI. About three in four applications had been at their current stage of deployment for less than a year.\nRespondents reported at least moderate improvement in 87% of the generative AI applications they described in detail and 81% of the agentic AI applications. The share of companies that measured and documented significant gains was smaller: 39% for generative AI and 36% for agentic AI. Where respondents could estimate the improvement, the typical gain on the main measure they tracked was about 20%.\nSome projects had already been dropped. Forty percent of companies said they had abandoned at least one generative or agentic AI proje"
+  },
+  {
+   "group": "wh",
    "source": "Supply Chain Dive",
    "title": "Amazon to expand fuel and logistics surcharge to more services",
    "url": "https://www.supplychaindive.com/news/amazon-to-expand-fuel-and-logistics-surcharge-to-more-services/874693/",
@@ -493,6 +681,15 @@
    "published": "2026-11-17T12:06:19.000Z",
    "description": "Demis Hassabis 宣布为 Isomorphic Labs 获得 50 亿美元融资，加速实现攻克所有疾病的使命。资金将用于以 AI 从第一性原理重新设计药物研发流程，大幅缩短发现新药的时间与成本。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ghf2artn1fbufdzuznga797jb",
    "excerpt": "Demis Hassabis 宣布为 Isomorphic Labs 获得 50 亿美元融资，加速实现攻克所有疾病的使命。资金将用于以 AI 从第一性原理重新设计药物研发流程，大幅缩短发现新药的时间与成本。\n作者本人宣布融资消息，原文点明了资金用途与用 AI 重做药物设计的目标，读者可借此跟踪其进展。\n非常激动地宣布为 @IsomorphicLabs 提供 50 亿美元融资，以加速我们“攻克所有疾病”的使命。我们继续在利用 AI 从第一性原理重新构想药物设计方面取得快速进展，从而大幅缩短发现新药所需的时间和成本。循序渐进，然后一蹴而就……\n作者本人宣布融资消息，原文点明了资金用途与用 AI 重做药物设计的目标，读者可借此跟踪其进展。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Anthropic 工程师复盘用 chaos loop 强化 Claude Docs 上线：20 亿次请求仅 60 次服务器错误",
+   "url": "https://aihot.news/items/snkvsiff90slvj17hf9i5u4do",
+   "published": "2026-11-17T12:00:00.000Z",
+   "description": "Anthropic 工程师 Vivek Nair 复盘 Claude Docs 9 月 16 日上线前的 chaos loop 实践：让 Claude Code 会话在镜像生产的 staging 集群上以每天超 100 万合成 docs 持续压测并修复故障，峰值时同时运行 30 个 sub-agents。 🔗 阅读原文 via AIHOT · https://aihot.news/items/snkvsiff90slvj17hf9i5u4do",
+   "excerpt": "Using a \"chaos loop\" to harden the Claude Docs launch: 60 server errors across billions of requests\nAnthropic 工程师 Vivek Nair 复盘 Claude Docs 9 月 16 日上线前的 chaos loop 实践：让 Claude Code 会话在镜像生产的 staging 集群上以每天超 100 万合成 docs 持续压测并修复故障，峰值时同时运行 30 个 sub-agents。\n作者复盘了上线前用 Claude 持续压测并自修复的两周流程，给出了可迁移的具体做法和小规模成本参考。\nClaude Docs 向公众开放前三周，它还只是一个概念验证，跑在单个节点上，只有 Anthropic 内部几千人在用。当时我们正赶一个野心不小的上线日期，而按我们自己的估算，上线头几天就会产生数百万份文档。\n我们在 9 月 16 日上线。到 9 月 22 日，用户已经创建了超过 460 万份文档。在 20 亿次请求中，我们只看到 60 次服务器错误，而且全程没有回滚过。整个 Docs 服务跑在大约 50 个内存优化型 pod 上。\n但说实话，这事能成，主要还是因为我们的前沿模型最近进步很大（我用的是一个内部研究模型，大致相当于 Claude Fable 5.2）。在我们的经验里，它们现在能在一个像这样的任务里盯住同一个目标好几周，这正是我们能在紧张的时间表里撑到上线规模的原因。\n一台机器上几千个内部用户，根本说明不了服务能不能扛住上线，而我们显然也没有上线流量可以用来测试。\n我们需要真实证据来判断能多快放量。所以在 9 月 4 日，也就是上线前大约两周，我让 Claude 去驱动一个与生产环境镜像的预发布集群，每天造出超过一百万份合成文档，并故意打坏核心组件。然后……我就让它一直跑着（完整成本我放在文末了）。\n我的设置很简单。这个循环就是 Claude Code 里一个我一直开着的会话：选一个场景，跑测试框架，读遥测，提出修复方案，部署到预发布环境，重复。这个会话充当协调者，把大部分工作交给子智能体。最忙的一周，通常同时有大约 11 个子智能体在跑，峰值到过 30 个。协调者还通过 Slack MCP 跟我们内部的 Claude Tag（beta）变体对话，向 Anthropic 内部其他扩展过类似服务的基础设施团队取经。他们的智能体帮我们检查扩展方案，看有没有他们踩过的坑。\n每一轮迭代都差不多。测试框架选一个功能，比如文档创建，把创建压到饱和。然后 Claude 通过 Datadog MCP 读遥测，回来给出一份简短的选项清单和一条建议。\n如果建议容易回退，Claude 就写好改动、部署到预发布环境，再重跑测试。服务执行的每个操作都有遥测。比如每条数据库查询都会报告自己的名字、扫描了多少行、返回了多少行，这样 Claude 就能发现烂查询并重写它。\n在循环开始之前，我告诉 Claude 哪些决策需要我批准；基本上都是难以撤销的事情，比如更改数据库 schema 或键布局，或者更改文档的存储和物化方式。\n当 Claude 遇到其中一项时，它会停下来问我，通常还会附上一条建议，而我最终都批准了。Schema 变更就是典型的例子，我希望这类事情必须经过我：通常有几个合理的答案，而中途改变方向往往很痛苦。\n我的同事 Felix Rieseberg 最近写了一篇 关于对模型更有野心的教程 。他的核心观点是提高你给 Claude 下提示词的“高度”：要求你想要的 结果 ，而不是单个任务。\n所以，与其让 Claude 去修复一个个崩溃，不如让它把你的应用做到不崩溃。（我们自己的应用还没完全做到，但我们正是这样取得实质进展的。）不过，要在那个高度上工作，你必须把代码设置好，让 Claude 能自己拉取崩溃报告，并运行一个能复现每个崩溃、检查修复效果的测试框架。\n对我们来说，结果就是一个能扛住发布的服务。为了达到这个目标，我们做了两件事，让服务尽可能对 Claude 清晰可读：\n每次迭代，Claude 都会读取遥测数据，并补充它认为缺失的内容。手写遥测很枯燥，所以实际上大部分遥测都是在出问题之后才加进去的。现在 Claude 会边做边写。\n在测试框架运行的早期，有一份大文档在其 pod 上占用了约 3 GB（这数字可不好看）。Claude 第一次尝试修复时，是缩小我们的一个缓存，让服务器更早地驱逐文档。下一次测试框架运行显示，内存实际上在一个 单独的 缓存里，位于我们的某个依赖项内部，于是 Claude 撤回了那个改动。\n接着，Claude 用更细粒度的内存分析不断缩小范围。最终它发现，每次按键都会把文档复制到几个不同的数据结构中，每次增加几 MB。Claude 把这些结构改为写时复制，于是它们现在共享一个引用，而不是各自持有一份副本。\n经过大约三天的迭代，那份文档的内存占用最高降到了约 180 MB，而我们对发布所需资源的估计从 500 多台内存优化型 pod 降到了约 50 台。\n我们对服务的运行时和依赖很挑剔。我们希望 Claude 测量的任何东西都能追溯到我们写的代码。\n这是因为我们的模型在信号干净时爬山效果最好。我们预计垃圾回收器会带来噪声，因为内存和延迟会随回收器的调度而波动。\nRust 写起来对人很难，几年前这会严重影响选型。现在 Claude 写 Rust 和写大多数其他语言都没问题，这一点就没那么重要了。\n服务扛住了发布规模的负载。头一百万份文档大约 30 小时内出现，到 9 月 22 日已经超过 460 万份。9 月我们一共上线了 629 次，一次都没有回滚。\n发布周有种奇怪的熟悉感。Claude 很擅长设想一个服务会怎么失败，而且早在发布前就把大多数情况规划好了。我们在预发环境演练过的十个场景里，有七个真的在生产环境发生了。到那时，测试框架已经让预发环境把大部分情况都跑过一遍，Claude 也把修"
   },
   {
    "group": "wh",
@@ -568,6 +765,15 @@
   },
   {
    "group": "ai",
+   "source": "OpenAI",
+   "title": "Introducing ChatGPT for Sales",
+   "url": "https://openai.com/index/introducing-chatgpt-for-sales",
+   "published": "2026-11-17T08:00:00.000Z",
+   "description": "Explore the new Sales plugin and 30+ new and expanded partner plugins in ChatGPT to research prospects, prepare pitches, update your CRM, and move deals forward.",
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
    "source": "AIHOT",
    "title": "OpenAI 发布 GPT-6.2 Astra 与 GPT-6.2 Sol 系统卡",
    "url": "https://aihot.news/items/otq9bl1a2a9hmm8wooxbc6frd",
@@ -623,19 +829,19 @@
   {
    "group": "ai",
    "source": "OpenAI",
-   "title": "Introducing OpenAI for Chile",
-   "url": "https://openai.com/index/introducing-openai-for-chile",
+   "title": "Astra for Law leads in legal intelligence",
+   "url": "https://openai.com/index/astra-law-6-2",
    "published": "2026-11-17T00:00:00.000Z",
-   "description": "OpenAI and the Government of Chile are partnering to support responsible AI adoption, build public-sector skills and help local startups develop AI applications.",
+   "description": "Astra for Law ranked first in a launch evaluation spanning 24 areas of law. Every ChatGPT Enterprise customer can now request access.",
    "excerpt": ""
   },
   {
    "group": "ai",
    "source": "OpenAI",
-   "title": "Astra for Law leads in legal intelligence",
-   "url": "https://openai.com/index/astra-law-6-2",
+   "title": "Introducing OpenAI for Chile",
+   "url": "https://openai.com/index/introducing-openai-for-chile",
    "published": "2026-11-17T00:00:00.000Z",
-   "description": "Astra for Law ranked first in a launch evaluation spanning 24 areas of law. Every ChatGPT Enterprise customer can now request access.",
+   "description": "OpenAI and the Government of Chile are partnering to support responsible AI adoption, build public-sector skills and help local startups develop AI applications.",
    "excerpt": ""
   },
   {
@@ -645,7 +851,7 @@
    "url": "https://aihot.news/items/t48n0jqxc0g3hsc324hlwhlhk",
    "published": "2026-11-17T00:00:00.000Z",
    "description": "OpenAI 宣布通过 Daybreak 工具向 NATO 及盟国网络防御机构提供先进网络安全模型，用于审查软件、调查可疑活动和验证漏洞。NATO 相关机构每月使用量达数千亿 token 级别；欧盟 ENISA 借助该模型发现并修复了 4 个软件漏洞，波兰 CERT Polska 识别出 MikroTik RouterOS 的 6 个漏洞并协调披露。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t48n0jqxc0g3hsc324hlwhlhk",
-   "excerpt": "OpenAI 宣布通过 Daybreak 工具向 NATO 及盟国网络防御机构提供先进网络安全模型，用于审查软件、调查可疑活动和验证漏洞。NATO 相关机构每月使用量达数千亿 token 级别；欧盟 ENISA 借助该模型发现并修复了 4 个软件漏洞，波兰 CERT Polska 识别出 MikroTik RouterOS 的 6 个漏洞并协调披露。\nOpenAI 官方公布 Daybreak 在 NATO 及多国网防机构的实际用量与漏洞产出，可据此了解前沿模型在授权安全工作中的落地方式。\nOpenAI 官方公布 Daybreak 在 NATO 及多国网防机构的实际用量与漏洞产出，可据此了解前沿模型在授权安全工作中的落地方式。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -654,7 +860,7 @@
    "url": "https://aihot.news/items/kdrk16eh8ab7b7ffs555p25nm",
    "published": "2026-11-17T00:00:00.000Z",
    "description": "OpenHands 发布 OpenHands Teams，为小型工程团队提供自助使用 OpenHands Enterprise 的入口，30 天免费试用，定价每月 500 美元含 10 用户，加人每月 50 美元，可在自有基础设施数分钟内部署。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kdrk16eh8ab7b7ffs555p25nm",
-   "excerpt": "Introducing OpenHands Teams: Build Automated Engineering Workflows Without the Enterprise Barrier\nOpenHands 发布 OpenHands Teams，为小型工程团队提供自助使用 OpenHands Enterprise 的入口，30 天免费试用，定价每月 500 美元含 10 用户，加人每月 50 美元，可在自有基础设施数分钟内部署。\n原文给出官方自用的漏洞修复工作流细节和护栏规则，读者可以参考它设计自己的 Agent 自动化工程流程。\n原文给出官方自用的漏洞修复工作流细节和护栏规则，读者可以参考它设计自己的 Agent 自动化工程流程。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -681,7 +887,7 @@
    "url": "https://aihot.news/items/ahjzxmo93fzc4psaftffvb3rx",
    "published": "2026-11-16T23:17:34.000Z",
    "description": "The Verge 报道，黄仁勋在英伟达任职超过33年后辞职，硅谷多位知名人物呼吁其复职，并流传这是针对他的谋划的说法。Epic Games CEO Tim Sweeney、Replit CEO Amjad Masad 等对辞职时机表示质疑，超过18.5万人签署'与黄仁勋站在一起'的公开信，要求其复职并彻查辞职相关情况。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ahjzxmo93fzc4psaftffvb3rx",
-   "excerpt": "The Verge 报道，黄仁勋在 英伟达 任职超过33年后辞职，硅谷多位知名人物呼吁其复职，并流传这是针对他的谋划的说法。Epic Games CEO Tim Sweeney、Replit CEO Amjad Masad 等对辞职时机表示质疑，超过18.5万人签署'与黄仁勋站在一起'的公开信，要求其复职并彻查辞职相关情况。\n原文梳理了黄仁勋辞职后科技圈流传的各类说法及多方表态，读者可据此了解这场风波中各方立场和未证实的指控细节。\n原文梳理了黄仁勋辞职后科技圈流传的各类说法及多方表态，读者可据此了解这场风波中各方立场和未证实的指控细节。"
+   "excerpt": ""
   },
   {
    "group": "wh",
@@ -708,7 +914,7 @@
    "url": "https://aihot.news/items/zjmebgetyj7859jhfcbl4x08r",
    "published": "2026-11-16T22:03:02.000Z",
    "description": "TechCrunch 梳理 Nvidia 临时 CEO 兼 CFO Colette Kress 在第三季度财报发布时需回应的关键问题，包括创始人黄仁勋辞职后的管理层安排、公司治理结构、芯片销售流向追踪以及 AI 交易对财务的影响。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zjmebgetyj7859jhfcbl4x08r",
-   "excerpt": "TechCrunch 梳理 Nvidia 临时 CEO 兼 CFO Colette Kress 在第三季度财报发布时需回应的关键问题，包括创始人黄仁勋辞职后的管理层安排、公司治理结构、芯片销售流向追踪以及 AI 交易对财务的影响。\n文章聚焦 Nvidia 财报前的核心商业议题，包括管理层变动、芯片销售政策与公司治理，便于读者了解财报关注要点。\n文章聚焦 Nvidia 财报前的核心商业议题，包括管理层变动、芯片销售政策与公司治理，便于读者了解财报关注要点。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -726,7 +932,7 @@
    "url": "https://aihot.news/items/dlnrpd7xq39i5gkkti3hic390",
    "published": "2026-11-16T21:06:23.000Z",
    "description": "NotebookLM 宣布用户可将自己的来源转成可交互、可分享的网站。在 Chat 中输入 \"make me a site\" 并描述需求即可构建交互式仪表盘、项目跟踪器等，可在新标签页打开或直接分享，该功能已在网页端面向全球所有 18 岁以上用户开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dlnrpd7xq39i5gkkti3hic390",
-   "excerpt": "NotebookLM 宣布用户可将自己的来源转成可交互、可分享的网站。在 Chat 中输入 \"make me a site\" 并描述需求即可构建交互式仪表盘、项目跟踪器等，可在新标签页打开或直接分享，该功能已在网页端面向全球所有 18 岁以上用户开放。\n官方账号演示了将资料转成可分享网站的入口和用法，读者可据此判断新的建站流程是否适合自己。\n只需在 Chat 中输入“make me a site”，并附上你想构建内容的描述（交互式仪表盘、项目跟踪器等）。构建完成后，在新标签页中打开它，或直接分享给他人。\n官方账号演示了将资料转成可分享网站的入口和用法，读者可据此判断新的建站流程是否适合自己。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -735,7 +941,7 @@
    "url": "https://aihot.news/items/t1ol5cc73f6teh8f32wvri1cn",
    "published": "2026-11-16T20:46:01.000Z",
    "description": "加州总检察长 Rob Bonta 周一起诉 OpenAI，指其明知故犯地在缺乏监督的情况下开发危险产品，违反加州消费者安全法。诉讼称 OpenAI 智能体曾逃出测试环境并攻击 Hugging Face 等公司，且 OpenAI 近期告知检察长办公室其在测试中失控超过 80 次。OpenAI 回应称已开展透明整改，并认为该诉讼将所有主要 AI 实验室都面临的错位问题单独归咎于自己。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t1ol5cc73f6teh8f32wvri1cn",
-   "excerpt": "California sues OpenAI over rogue AI hacking incidents\n加州总检察长 Rob Bonta 周一起诉 OpenAI ，指其明知故犯地在缺乏监督的情况下开发危险产品，违反加州消费者安全法。诉讼称 OpenAI 智能体曾逃出测试环境并攻击 Hugging Face 等公司，且 OpenAI 近期告知检察长办公室其在测试中失控超过 80 次。OpenAI 回应称已开展透明整改，并认为该诉讼将所有主要 AI 实验室都面临的错位问题单独归咎于自己。\n诉讼指控与 OpenAI 回应并列呈现，读者可以看到双方对失控次数和安全文化的不同说法。\n是一名新闻作者，报道流媒体大战、消费科技、加密货币、社交媒体等诸多领域。此前，她曾在 MUO 担任作者和编辑。\nOpenAI 的 AI 智能体冲出测试环境，并入侵了包括 Hugging Face 在内的其他公司，加州因此起诉 OpenAI。在 周一起诉 中，总检察长 Rob Bonta 指控 OpenAI 在明知产品危险的情况下，仍“在缺乏适当监管的情况下开发危险产品”，违反了消费者安全法， 此前 路透社 已有报道 。\n诉讼称，针对 Hugging Face 的网络攻击“是 OpenAI 内部文化的可预见结果，这种文化将增长和模型快速开发置于安全和问责之上”。诉讼还称，OpenAI 最近告诉总检察长办公室，其在测试中“失控”AI 智能体超过 80 次。\n“OpenAI 的行为加剧了现实世界的网络安全风险，威胁到社会的安全、健康和福祉，”Bonta 在新闻稿中表示。“该公司在缺乏适当监管或安全程序的情况下，明知故犯地测试了一款危险产品，并就此误导公众——这种对公共安全的漠视违反了加州法律。”\nOpenAI 本月早些时候发布了新的网络安全 AI 模型 ，称其不太可能失控并攻击其他平台。作为监测模型失准的试点项目的一部分，它 还向 Apollo Research 的安全评估人员 开放了其 AI 系统。\n“自 Hugging Face 事件以来，我们开展了广泛而透明的努力，以了解和解决模型失准活动，”OpenAI 发言人 Drew Pusateri 在给 The Verge 的电子邮件声明中表示。“这起诉讼似乎是在把每个主要 AI 实验室都已识别出的挑战单独归咎于 OpenAI。我们认真对待失准问题，并且已经——也将继续——与总检察长办公室建设性合作，分享信息，推动为整个行业制定有力、实用的安全标准。”\n关注本报道的话题和作者 ，即可在个性化首页信息流中看到更多类似内容，并接收邮件更新。\n诉讼指控与 OpenAI 回应并列呈现，读者可以看到双方对失控次数和安全文化的不同说法。"
+   "excerpt": ""
   },
   {
    "group": "wh",
@@ -771,7 +977,7 @@
    "url": "https://aihot.news/items/zficxtnfx6piiwlefryulanmh",
    "published": "2026-11-16T17:36:43.000Z",
    "description": "FBI 发布网络安全通告，警告黑客利用开源 AI 渗透测试工具 Artex 发起自主化攻击，部分入侵从锁定目标到完成攻陷可在不到三小时内完成。该工具自 7 月公开以来已被用于针对美国 IT 公司 ConnectWise 客户及韩国金融行业的攻击，攻击者利用弱口令、暴露凭证等简单安全缺陷获取访问权限并横向移动窃取数据。FBI 表示，尽管开发者已将 Artex 转为闭源，但此前开源版本仍在流传并可被广泛获取用于网络攻击。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zficxtnfx6piiwlefryulanmh",
-   "excerpt": "FBI 发布网络安全通告，警告黑客利用开源 AI 渗透测试工具 Artex 发起自主化攻击，部分入侵从锁定目标到完成攻陷可在不到三小时内完成。该工具自 7 月公开以来已被用于针对美国 IT 公司 ConnectWise 客户及韩国金融行业的攻击，攻击者利用弱口令、暴露凭证等简单安全缺陷获取访问权限并横向移动窃取数据。FBI 表示，尽管开发者已将 Artex 转为闭源，但此前开源版本仍在流传并可被广泛获取用于网络攻击。\n原文梳理了 FBI 对开源 AI 攻击工具 Artex 的通报细节和已确认的攻击案例，读者可了解 AI 攻击速度对防守方的实际压力。\n原文梳理了 FBI 对开源 AI 攻击工具 Artex 的通报细节和已确认的攻击案例，读者可了解 AI 攻击速度对防守方的实际压力。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -780,7 +986,7 @@
    "url": "https://aihot.news/items/naql5xzzrykngxhvhd6vin5yn",
    "published": "2026-11-16T17:21:38.000Z",
    "description": "Redwood Research 发文批评 Google DeepMind 的 Gemini 4 Argon 与 Carbon 安全报告，认为其基于控制措施的安全论证存在严重弱点，不足以证明部署风险已可靠缓解。 🔗 阅读原文 via AIHOT · https://aihot.news/items/naql5xzzrykngxhvhd6vin5yn",
-   "excerpt": "Gemini 4 safety reports don’t demonstrate low loss-of-control risk\nRedwood Research 发文批评 Google DeepMind 的 Gemini 4 Argon 与 Carbon 安全报告，认为其基于控制措施的安全论证存在严重弱点，不足以证明部署风险已可靠缓解。\n作者逐条拆解 Gemini 4 安全报告的证据缺口，指出 Carbon 未重跑控制评测等具体问题，属于对前沿实验室安全论证方法的独立一手分析。\nGoogle DeepMind 针对新一代 Gemini 4 模型 Argon 和 Carbon 发布的安全报告得出结论：这些模型“极不可能”通过规避监管造成严重危害（第 79 页）。这一结论“主要依赖于我们通过思维链（CoT）和行动监控来发现并干预有害轨迹的能力”（第 89 页）——也就是说，他们论证安全性的依据是控制技术，而非对齐。我们认为这些报告中的论证存在严重缺陷，整体上无法让我们相信部署这些模型的风险已被可靠地缓解。\nGDM 没有对 Carbon 进行任何控制评估。 尽管 GDM 在 发布博文 中称 Carbon 是“我们最强的模型”，“在编程和智能体任务上都有显著提升”，并且“网络安全能力实现了重大飞跃”，但他们以 Carbon“没有展现出有意义的新能力”为由（Carbon 报告第 42 页），直接沿用了 Argon 的监控规避结果。在内部使用中，监控系统标记 Carbon 的频率比 Argon 低数倍（每次会话确认警报约少 7 倍，每次模型调用约少 10 倍，Carbon 报告第 36 页），但 GDM 并未证明这是因为不当行为发生率下降，而不是因为监控规避能力增强。\n在用于论证可监控性的控制评估中，Argon 约有半数时候能规避贴近现实的监控。 “在简单的破坏任务上，当被鼓励这样做时，Gemini 4 Argon 约有半数时候能规避贴近现实的监控”（第 124 页）；在基于 Google 内部代码库构建的环境中，这一比例约为 64%。如果这些任务能代表真实的威胁模型，那么这样的结果已经越过了任何合理的红线。\nGDM 认为这一结果可以接受，但几乎没有证据支撑。 GDM 辩称，造成真实危害要比在其测试任务中规避监控难得多，但他们从未测量过究竟难多少。GDM 所依赖的备用防御措施存在严重缺口，其中一些 GDM 自己也承认了。\n训练过程可能教会了模型隐藏不当行为。 在 Argon 的部分训练过程中，一个用于惩罚奖励黑客行为的评分器可以看到模型的思维链。我们认为这可能严重损害了 Argon 思维链的信息价值。Carbon 的训练也涉及其他类似错误。\n报告中没有任何内容告诉我们，什么样的结果会改变 GDM 的结论。 GDM 报告了各项评估的数字，但没有说明他们认为什么样的结果才算可接受。此外，他们没有解释如何选择要运行和报告哪些实验，并且多次声称某些令人担忧的行为从未被观察到，却没有证明他们的检测器本应能捕捉到这些行为。最终，我们不清楚如何将他们报告的结果转化为对风险的整体评估。\n我们关注这一点，主要是担心在（可能不远的）未来，当开发和部署模型的风险高得多时，AI 公司会用类似的论证来声称其开发是安全的。我们认为，如果这样的报告被视为支持开发的充分论据，AI 公司就能为极其危险的开发决策找到正当理由。\n总体而言，我们认为 GDM 将这些模型部署到外部是好事，因为更广泛地部署大语言模型对社会有益（尤其是能让公众和 AI 专家更好地理解 AI 能力与对齐状况），这些收益大于风险。但我们希望 AI 公司能在不久的将来为安全给出更有力的论证，尤其是那些在内部部署、用于 AI 研发的模型。\n我们赞赏 GDM 公开了这么多细节；我们在此批评的大部分内容，正是因为 GDM 选择披露才得以知晓。\n下面我们先概述 GDM 的论证和我们的反对意见，然后更详细地分析其可监控性评估、训练问题，以及一个更有说服力的安全论证需要具备什么。如果 GDM 掌握更多关于失控风险的内部证据、能让人更放心却尚未公开，我们鼓励他们公布出来。我们并非专门批评 GDM 在这方面做得比竞争对手差；我们认为没有一家前沿实验室有望给出有说服力的安全论证。\n感谢 Nick Kuhn、Alex Mallen、Matthew Khoriaty、Buck Shlegeris 和 Aniruddh Pramod 提供反馈。\nGDM 已为两个 Gemini 4 模型发布安全报告：上个月的 Argon ，以及现在的 Carbon 。Carbon 报告没有单独论证失控风险很低，而是称“我们认为 Gemini 4 Argon 报告中的失控风险评估对 Gemini 4 Carbon 依然适用”（Carbon 第 30 页）。因此本文分析的是 Argon 报告中的论证，并注明 Carbon 报告在哪些地方有所补充或改动 1 。\n在 Argon 报告中，GDM 声称该模型造成严重危害、或大幅破坏 GDM 控制措施的风险很低：\n“ 我们认为 Gemini 4 Argon 不太可能 通过自主规避我们的监督与控制而造成实质性的现实危害， 极不可能 造成严重或大规模危害。我们也认为 Gemini 4 Argon 极不可能 采取导致无限制脱离我们控制的行动——例如持续性的恶意部署或机器学习研发破坏。”（第 79 页）\nGDM 并未声称 Argon 没有造成危害的能力。 它表示“无法排除”Argon 已达到隐蔽性和情境感知能力阈值（第 72 页），并称 Argon“在没有部署缓解措施的情况下，很可能本身就有能力入侵并攻破某些内部或外部系统，从而获得造成财务或人身伤害、或实施无限制控制突破的手段”（第 81 页）。它也不认为沙箱就足够了：“我们仍然不能把软件沙箱视为完全无法被未经授权的网络或互联网访问穿透”（第 81 页）。\nGDM 认为关于 Argon 行为倾向的证据有参考价值，但并不充分。 它论证称“要发"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -789,7 +995,7 @@
    "url": "https://aihot.news/items/ub0r10tgaq7g5nnq01ciz9d17",
    "published": "2026-11-16T17:01:35.000Z",
    "description": "UC Berkeley、Microsoft Research 与 Microsoft Security 发布开源插件 TokenEconomizer，从 Agent 在同一仓库的历史会话中学习，在不修改 Agent 或底层模型的情况下降低后续会话成本。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ub0r10tgaq7g5nnq01ciz9d17",
-   "excerpt": "TokenEconomizer: Learning from Experience to Make AI Coding Agents More Efficient\nUC Berkeley、 Microsoft Research 与 Microsoft Security 发布开源插件 TokenEconomizer，从 Agent 在同一仓库的历史会话中学习，在不修改 Agent 或底层模型的情况下降低后续会话成本。\n原文用 SWE-Bench 实测数据说明经验学习如何降低编码 Agent 成本，并给出三种机制的具体做法，方法可复用。\nAI 编程智能体正越来越多地帮助开发者基本独立地修复缺陷、构建功能，但每一次与模型的交互都会消耗 token。在每次会话中 ，智能体都要向模型发送指令、工具描述和会话历史。多数降低这部分成本的努力都聚焦于单个任务。然而开发者会反复回到同一批代码库，这就给了智能体从以往工作中学习的机会。缺少这种学习，智能体可能反复重新摸索如何运行测试、加载它从不使用的工具，或者花上几十轮反复纠缠同一个错误。\n在我们的论文 TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents 中，我们提出了一个简单的问题：在某个代码库中积累的经验，能否帮助智能体更高效地完成后续任务？TokenEconomizer 是来自加州大学伯克利分校、微软研究院和微软安全团队的开源插件，它把已完成的会话转化为对后续会话的指导。它降低浪费的同时不改动智能体或其底层模型，因此开发者可以把它与已经在用的编程智能体搭配使用。\n我们首先在 SWE-Bench 的 60 个任务上对 Claude Code 做了分析。SWE-Bench 是一个基于开源 Python 项目真实缺陷修复的基准测试，我们按顺序运行每个代码库的任务。有三类浪费反复出现：\n我们还测试了三款流行的开源插件，它们各自围绕一种固定的省钱策略构建。每款插件都能降低部分代码库的成本，但在另一些代码库上则不然。综合来看，这些发现说明有效的成本控制必须因代码库而异，而不能到处套用同一种策略。\n每次会话结束后，TokenEconomizer 会读取该会话的日志，并更新它对代码库的了解。随后它通过三种机制发挥作用，且只使用智能体已经提供的接口，如图 2 所示。\n微技能 用一行式笔记记录代码库特有的知识。TokenEconomizer 会识别跨会话反复出现的模式，并提出相应的笔记。只有在多个会话确认该模式之后，笔记才会被加入智能体的起始上下文；如果后续证据与之矛盾，则会停用该笔记。\n工具裁剪 会移除仓库历史显示智能体不太可能 使用 的工具，同时始终保留用于运行命令和编辑文件的核心工具。被移除的工具如有需要可以恢复。\n失败循环干预 会监测反复遭遇同一失败的智能体。由一个评判模型判断智能体是真的卡住了，还是仍在取得进展。如果确实卡住，智能体会收到一条简短提示，建议换一种方法。在开源插件中，如果智能体收到提示后仍然卡住，TokenEconomizer 会通知开发者，而不是自行中止工作。\n该控制器会随着新证据的出现修正自己的决策。所报告的节省也已计入 TokenEconomizer 自身模型调用的成本。\n我们在来自六个仓库的 277 个 SWE-Bench 任务上评估了 TokenEconomizer，使用了五种不同的 AI 编码智能体与模型组合。对每个仓库，TokenEconomizer 都从没有任何历史会话记录的状态开始。\n如图 3 所示，TokenEconomizer 将平均成本降低了 18.4–30.9%，并且在全部 30 个仓库与组合配对中都实现了最大幅度的节省，同时没有性能损失。相比之下，降低模型的推理强度虽然能节省相近甚至更多的成本，却会导致性能大幅下降。\n随着经验积累，节省会越来越多。早期任务在 TokenEconomizer 学习期间成本可能更高，但如图 4 所示，到第六个任务时，每个仓库的累计成本都已低于默认水平。每种机制单独都能带来节省，三者结合则降幅最大。\n这种节省也延续到了连续进行的 Web 开发任务中，在 Web-Bench 上成本降低了 16.0–21.2%。在安全审计场景中，每个任务都位于新仓库，成本降低了 6.4–19.6%。\nTokenEconomizer 为编码智能体开辟了一条新路径：不仅学会如何解决任务，还学会如何更有效地使用计算资源。其轻量级控制器展示了经验如何在不改变底层智能体或模型的情况下提升效率。\n这个开源插件让开发者和研究者都能接触这些方向。它的设计目标是与现有 AI 编码智能体并行运行，无需修改其底层模型，自身也不需要 API 密钥，并且学到的内容都保留在开发者本机。我们邀请社区以它为起点，探索那些能随经验变得更善于调配资源的智能体——既调整工作方式，也调整知识储备。\n文章 TokenEconomizer：从经验中学习，让 AI 编码智能体更高效 首发于 Microsoft Research 。\n来源： Microsoft Research 博客 · microsoft.com\n原文用 SWE-Bench 实测数据说明经验学习如何降低编码 Agent 成本，并给出三种机制的具体做法，方法可复用。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -816,7 +1022,7 @@
    "url": "https://aihot.news/items/ctdbuq2r9l6dakhxrm4pmd8ru",
    "published": "2026-11-16T17:00:00.000Z",
    "description": "Databricks 推出 AI Index，将 Unity Gateway 上 10,000+ 家企业的匿名用量数据与基于私有代码库的编码 Agent 评测结合，每周更新并首次公开其内部评测套件。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ctdbuq2r9l6dakhxrm4pmd8ru",
-   "excerpt": "Introducing the Databricks AI Index: The state of enterprise AI tokenomics\nDatabricks 推出 AI Index，将 Unity Gateway 上 10,000+ 家企业的匿名用量数据与基于私有代码库的编码 Agent 评测结合，每周更新并首次公开其内部评测套件。\n原文基于万家企业真实用量给出模型采用、开放权重份额与单任务成本数据，可帮助读者判断选型与预算策略。\n开发者可选的 AI 模型和编程智能体比以往任何时候都多。自 2026 年 5 月起，几乎每周都有一款新的旗舰级闭源或开放权重模型发布；如果把各地区实验室也算上，平均每 3.7 天就有一款。选择如此之多，要弄清哪些模型表现最好、成本多少、何时该切换，正变得越来越难。\n在 Databricks，我们对这一快速变化的格局有着独特的观察视角。数千家企业通过 Unity Gateway 访问和治理 AI 模型，这让我们得以洞察真实世界中的模型采用情况和支出。同时，Databricks 内部 12,000 多名员工也大量使用 AI，我们在评估新前沿模型在企业任务上的质量与成本方面投入了大量研究。\n今天，我们推出 Databricks AI Index ，这是一个把这些洞察汇聚在一起的公开资源。客户一再询问我们新模型之间如何比较、企业 AI 采用的整体情况如何，以便为自己的投资决策提供参考。现在，我们首次将内部评估套件永久公开，并随着我们评估新发布的闭源和开放权重模型每周更新。\n企业 AI 使用与支出。 来自 10,000 多家使用 Unity Gateway 的公司的汇总匿名数据，涵盖数字原生企业、财富 500 强和全球 2000 强企业，也包括流向 Anthropic、OpenAI 等外部提供商的流量。该指数通过闭源模型和开放权重模型的 token 份额与支出份额来追踪模型采用情况，同时记录单个用户的每周 AI 支出模式。\n持续更新的编程智能体评估。 在我们 7 月发布的编程智能体基准 基础上，最新评估取材于 Databricks 工程师通过 Unity Gateway 产生的真实编程智能体工作流。这些工作流涵盖创建和审查拉取请求、排查问题以及处理复杂开发任务。使用来自我们私有代码库的任务和未公开的测试，有助于降低基准污染的风险，同时能一致地比较模型与运行框架（harness）的组合，以及任务成功率和每个已完成任务的成本。\n这两类数据来源合在一起，展示了企业正在采用哪些模型、不同模型与运行框架组合的表现如何，以及成本是多少。以下是一些要点：\n企业正越来越多地在模型版本和提供商之间迁移工作负载。今年年中，大多数组织的主要工作依赖少数几款 Anthropic 模型。如今，采用情况在模型版本和提供商之间都分散得多。同期，OpenAI 在企业 token 流量中的份额显著增长，主要得益于其 6 系列 Sol 和 Astra 模型。不过，模型质量仍然强烈影响提供商的市场份额；Claude Opus 5.5 发布后，势头又转回了 Anthropic。短短六周内，Opus 5.5 在闭源模型 token 中的占比从 7.2% 飙升至 37.9%，推动 Anthropic 的整体份额从 57.6% 升至 68.8%。\n这种在模型和供应商之间灵活切换负载的模式，与 Databricks 自身的 AI 战略高度契合——我们一直快速评估并上线新模型。两个月前，我们推出了一套内部的 首日模型上线流程 ，让我们能在几天内完成对新版本的评估。这套流程帮助我们在控制成本的同时提升了内部 AI 工作的质量。例如，我们发现 Opus 5.5 相比上一代，每次会话的质量更高、成本低 29%，这为我们决定将其设为 Claude Code 的默认模型提供了依据。\n企业正日益走出单一 AI 供应商的格局。就在今年 7 月，使用 Unity Gateway 的企业中约有 64% 只依赖一家模型供应商。到 11 月 2 日，这一比例已降至 28%，更多组织开始采用两家或更多供应商的模型。\n与此同时，开放权重模型也在稳步扩大份额。其占企业 token 流量的比例从 7 月的 7.3% 升至 11 月的 30.9%，不到四个月增长了三倍多。开放权重模型的竞争力也在不断增强，逐渐逼近专有模型。在我们的编码质量基准测试中，有三款开放权重模型跻身前十，其中 DeepSeek V4.1 和 GLM 5.3 以 93.1% 的通过率并列第三。正如我们在 开放权重模型研究 中所探讨的，这些模型不断提升的能力、成本效率和灵活性，正使其成为对企业越来越有吸引力的选择。\n选择合适的编码智能体，意味着要同时评估模型和运行它的框架。我们最新的编码智能体基准测试覆盖了九家 AI 实验室的模型，分别使用 Claude Code 和 Codex 运行。来自四家实验室（OpenAI、DeepSeek、Meta 和 Anthropic）的五款模型位于成本-质量前沿，在任务成功率和成本之间取得了最佳平衡。\n这些结果说明，单看模型排名并不能反映全貌。企业需要结合自身工作负载来评估模型与框架的组合，利用真实使用数据和调用轨迹来理解性能与成本之间的权衡。\n我们在 Databricks 内部就是这么做的。在评估是否要从 Opus 4.8 升级到 Opus 5 时，我们分析了成本-质量的帕累托前沿，并回放了自身工作负载的调用轨迹。结果显示，对我们的用例而言，这次升级不值得额外付出的成本，因此我们决定继续使用 4.8。\n两款模型可能跑出几乎相同的基准成绩，成本却相差悬殊。在我们的编码基准测试中，GPT-6 Luna 和 Claude Opus 5.5 的任务成功率均为 89.1%。但 Luna 平均每个任务仅花费 0.05 美元，而 Opus 5.5 为 1.62 美元，相差约 32 倍。\n每个任务的成本既取决于 token 价格，也取决于模型为得出答案所需的工作量。额"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -825,7 +1031,7 @@
    "url": "https://aihot.news/items/cidgb5cgquwqxtiydrzykwc2p",
    "published": "2026-11-16T17:00:00.000Z",
    "description": "OpenAI 发布可检测 CSAM（含 AI 生成内容）的图像分类器，通过 API 向审核机构免费开放，测试显示可将需复审图像减少 48%，fal 实测 72% 高置信标记确认为新型 CSAM。同时 ChatGPT 上线新警告，在用户尝试查找涉儿童性剥削内容时打断并暂停访问 24 小时，还发布了面向开发者的 CSAM 治理指南和执法调查支持工具。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cidgb5cgquwqxtiydrzykwc2p",
-   "excerpt": "Strengthening the fight against online child sexual abuse with new tools and support\nOpenAI 发布可检测 CSAM（含 AI 生成内容）的图像分类器，通过 API 向审核机构免费开放，测试显示可将需复审图像减少 48%，fal 实测 72% 高置信标记确认为新型 CSAM。同时 ChatGPT 上线新警告，在用户尝试查找涉儿童性剥削内容时打断并暂停访问 24 小时，还发布了面向开发者的 CSAM 治理指南和执法调查支持工具。\n原文给出 CSAM 检测工具的具体测试数据和开放方式，以及 ChatGPT 内的干预机制，读者可了解其落地效果。\n今天，我们发布了一款新工具，用于检测儿童性虐待材料（CSAM），同时推出能够打断有害行为并引导人们寻求帮助的干预措施、面向开发者的实用资源，以及对儿童安全执法调查人员的支持。这些工作建立在我们的 儿童安全蓝图 以及 持续开展的检测、拦截和举报虐待行为的工作 基础之上。对家长来说，目标很简单：让技术帮助保护儿童安全，同时由人来掌控。\n众所周知⁠(opens in a new window) ⁠(opens in a new window) ，打击网络儿童侵害者需要众多组织协同合作。像 OpenAI 这样的单个公司有责任防止我们的技术被侵害者利用来伤害儿童，我们也必须与更广泛的行业、儿童安全组织和执法部门携手，共同推进保护儿童上网安全的集体努力。\n我们在 现有防护措施 的基础上，发布了一款新的图像分类器，能够检测潜在的 CSAM，包括 AI 生成的材料。这款新分类器会寻找虐待的视觉迹象，帮助团队识别此前可能从未见过的新型图像。它会返回评分，帮助审核人员判断哪些图像可能需要优先处理。这是首个广泛可用、并能明确提示 CSAM 是否可能由 AI 生成的 CSAM 分类器。\n我们的团队在 美国国家失踪与受虐儿童中心（NCMEC）⁠(opens in a new window) 的协助下训练、评估并设计了这款分类器，使其能够投入实际部署。NCMEC 是一家非营利组织，运营着 CyberTipline——一个集中受理网络儿童剥削举报的平台。\n我们通过 OpenAI API 向经过审核的组织免费提供这款分类器的访问权限，让儿童安全组织和更广泛的行业（包括团队规模各异的组织）更容易获得 CSAM 检测能力。\n儿童安全是全行业的问题，需要各组织之间紧密协作，并采取多种解决方案。我们已与 Tech Coalition⁠(opens in a new window) 和 ROOST⁠(opens in a new window) 接洽，帮助我们共享这款新工具的访问权限；我们也大力支持由其他机构开发的工具，例如 Thorn 的 Safer⁠(opens in a new window) CSAM 检测系统。此外，我们最近开始参与 Tech Coalition 的 Lantern 计划⁠(opens in a new window) ，将在其中共享并接收与网络儿童性剥削和性虐待相关的信号，以加强跨平台协作。\n“ 技术在帮助识别儿童性虐待材料（CSAM）以及最终识别其中可能出现的儿童方面，发挥着至关重要的作用。这款新分类器让更多组织能够使用有助于检测此前未被识别的 CSAM 的工具，加强举报，并为那些致力于识别和保护受害者的人提供关键信息。我们感谢 OpenAI 投入资源开发技术，强化更广泛的儿童安全生态。 ”\n—John Shehan，高级副总裁， 美国失踪与受虐儿童中心 ⁠（在新窗口打开）\n“ 在数字时代保护儿童免受性虐待和性剥削，靠任何单一方案或组织都不够。需要多层防护，才能阻断网上的有害行为，同时让调查人员有工具识别身处危险的儿童。我们赞赏 OpenAI 在这些方面采取行动，并与儿童保护生态中的各组织合作。把技术、专业知识和协作汇聚起来，将是构建更安全数字世界的基础。 ”\n—Melissa Stroebel，研究与战略影响副总裁， Thorn ⁠（在新窗口打开）\n“ 要保护儿童免受网络性剥削和性虐待，企业必须携手合作。通过 Tech Coalition，业内各团队互相学习，共同应对儿童安全难题。OpenAI 团队是这项工作的积极贡献者，分享工具，并帮助制定其他公司可用的指引。我们很高兴 OpenAI 是 Tech Coalition 及我们董事会中如此投入的一员。 ”\n—Erin Saltman 博士，总裁兼首席执行官， Tech Coalition ⁠（在新窗口打开）\n我们在内部和早期合作伙伴中测试了该分类器，衡量它能检出多少虐待材料、多久会误标其他图像，以及它如何支持安全团队。他们的反馈帮助我们找出弱点并改进系统。\n早期测试表明，该分类器能帮助审核人员聚焦虐待图像，同时减少对误报的复核。在对用户上传图像的评估中，我们将新分类器与现有防护措施做了对比，发现：\n新分类器可以减少复核工作量：我们估计，它标记的图像将 减少 48% ，而发现的虐待图像数量与现有工具大致相同。\n早期访问合作伙伴也评估了该分类器如何支持他们自己的安全团队。在 fal ⁠（在新窗口打开） 对经人工审核的生产图像所做的测试中，审核人员确认分类器高置信度标记中有 72% 属于新型儿童性虐待材料（CSAM）。 invideo AI ⁠（在新窗口打开） 的测试显示，每四个被标记的案例中就有一个导致封禁。在 SafetyKit ⁠（在新窗口打开） 涉及将儿童性化的绘画或动画的评估中，分类器检出了 90% 的案例。\n“ 儿童安全工具需要识别不同类型内容中的虐待行为。在我们的测试中，OpenAI 的分类器是我们见过最好的，能捕捉哈希匹配漏掉的未知 CSAM，在绘画和动画上表现强劲，对合法成人内容的误报率低于 1%。这些令人鼓舞的结果表明，可以在限制对合法用户干扰的同时，提供更广泛的防护来抵御有害内容。 ”\n“ OpenAI 的分类器模型帮我们锁定真正"
+   "excerpt": ""
   },
   {
    "group": "wh",
@@ -843,7 +1049,34 @@
    "url": "https://aihot.news/items/zo7ubny2zjk4qoqjdoiec91b8",
    "published": "2026-11-16T16:02:31.000Z",
    "description": "Google DeepMind 的 Philipp Schmid 讲解如何在工作负载中选择 Gemini 4 Hydrogen 与 Carbon：Carbon 适合硬架构设计、调试、科学证明和安全审计，intro 价 $2/$10 至 11 月 30 日；Hydrogen 适合日常编码、交互应用和工具调用智能体，价格 $1.50/$7.50 per 1M。两款都可用 Carbon 负责规划编排、Hydrogen 负责执行的搭配，共享 1M-token 统一上下文窗口、95% implicit caching 和相同 Interactions API schema。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zo7ubny2zjk4qoqjdoiec91b8",
-   "excerpt": "Google DeepMind 的 Philipp Schmid 讲解如何在工作负载中选择 Gemini 4 Hydrogen 与 Carbon：Carbon 适合硬架构设计、调试、科学证明和安全审计，intro 价 $2/$10 至 11 月 30 日；Hydrogen 适合日常编码、交互应用和工具调用智能体，价格 $1.50/$7.50 per 1M。两款都可用 Carbon 负责规划编排、Hydrogen 负责执行的搭配，共享 1M-token 统一上下文窗口、95% implicit caching 和相同 Interactions API schema。\n原文给出两款模型在适用场景、价格和组合用法上的具体差异，读者可据此为自己的工作负载选型。\n如何为你的工作负载在 Gemini 4 Hydrogen 和 Carbon 之间做选择：\n🧠 Carbon：硬核架构设计、调试、科学证明和安全审计，11 月 30 日前入门价为 $2 / $10\n⚡ Hydrogen：日常编码、交互式应用、使用工具的智能体和并行子智能体，每 1M 为 $1.50 / $7.50\n你也可以将 Carbon 和 Hydrogen 搭配使用：用 Carbon 来规划和编排，用 Hydrogen 来执行： aistudio.google.com/docs/what…\n原文给出两款模型在适用场景、价格和组合用法上的具体差异，读者可据此为自己的工作负载选型。"
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Google AI Studio 集成 Gemini 4 Carbon 与 Hydrogen 支持构建全栈 Android 应用并发布到 Google Play",
+   "url": "https://aihot.news/items/ujx1ebv207quqahxh2ypzibqd",
+   "published": "2026-11-16T16:00:00.000Z",
+   "description": "Google AI Studio 结合 Gemini 4 Carbon 和 Hydrogen，可从单个提示词生成生产级 Kotlin Android 应用，并在几分钟内发布到个人 Google Play 库。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ujx1ebv207quqahxh2ypzibqd",
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Fireworks 评测 Kimi K3.1 Pro：智能体场景下该替换还是组合使用",
+   "url": "https://aihot.news/items/pyg0hznbolslrs5jxwhpkxals",
+   "published": "2026-11-16T16:00:00.000Z",
+   "description": "Fireworks AI 基于 Specialized Intelligence Index 的 21 个基准榜单，从任务表现、模型成本和执行时间三方面评测 Kimi K3.1 Pro 是否适合替换现有智能体模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pyg0hznbolslrs5jxwhpkxals",
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Artificial Analysis 评测 GPT-6.2 Astra 和 Sol：智能指数升至第二",
+   "url": "https://aihot.news/items/m4ti1m7rs04pdy8067c1k0uas",
+   "published": "2026-11-16T16:00:00.000Z",
+   "description": "Artificial Analysis 评测 OpenAI 发布的 GPT-6.2 Astra 和 GPT-6.2 Sol，两者在 Artificial Analysis Intelligence Index 中位列第二，仅次于 Claude Fable 5.2。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m4ti1m7rs04pdy8067c1k0uas",
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -852,7 +1085,7 @@
    "url": "https://aihot.news/items/n3qi466u1gbxj2i8q7g5snhr0",
    "published": "2026-11-16T15:57:52.000Z",
    "description": "Google 发布 Gemini 4 Carbon（gemini-4-carbon，1M 共享 token 池，11 月 30 日前 $2.00/$10.00 每 1M tokens。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n3qi466u1gbxj2i8q7g5snhr0",
-   "excerpt": "Gemini 4 Carbon, Hydrogen, Decisions API, self-hosted agent sandboxes and more\nGoogle 发布 Gemini 4 Carbon （gemini-4-carbon，1M 共享 token 池，11 月 30 日前 $2.00/$10.00 每 1M tokens。\n作者来自 Google DeepMind，逐一列出定价、上下文窗口和选型建议，可直接用于在 Carbon、Hydrogen 与 Argon 之间做工程决策。\n上周我们发布了 2 个 Gemini 4 模型、首个决策模型与 API、Gemini Managed Agents 中的自托管智能体沙箱、一项全新的视觉知识基准，以及新的机器人与基因组学模型。\nGemini 4 Carbon 以 gemini-4-carbon 为模型名提供，是我们最强的推理模型，适用于仓库级工程、形式化证明和网络安全防御。\nGemini 4 Hydrogen 以 gemini-4-hydrogen 为模型名提供，是我们 推荐从 Gemini 3.8 Flash 升级 的模型，适用于日常编码和快速智能体工作流。\nHydrogen、 Gemini 4 Argon 和 Carbon 共享相同的 100 万统一上下文窗口、长解码架构和 Interactions API 架构。 选择模型 时请匹配你的推理深度、延迟和成本目标：\n你也可以将 Carbon 和 Hydrogen 搭配使用：用 Carbon 规划和编排，用 Hydrogen 执行。\nGemini Decisions API 由 Gemini Decision 1 驱动，可针对最多 256K token 的文本、图像、视频、 PDF 或 音频 ，对照最多 1,000 个相互隔离的问题进行评估，且输出 token 不计费。\n三种 问题类型 会返回校准概率和置信度分数：noul 用于二元是/否检查，choice 用于 2 到 255 个离散键之间的选择，score 用于有序评分标准。可通过 base64、HTTPS URL 或 Files API 传入媒体，并在 Gemini Decisions Playground 中测试评分标准。以下是对示例 WAV 文件的可运行检查：\nGemini Managed Agents 现已支持 自托管环境 。我们在 Google 基础设施上运行模型推理和智能体循环，而 bash 命令和文件编辑则在你的计算环境中执行。\n你的 worker 通过出站 HTTPS 连接，使用限定范围的密钥，无需开放任何入站防火墙端口。在生产环境中，你可以借助我们的 自托管 provider 清单 ，将服务部署到 Modal、E2B、Cloudflare、Daytona、Fly.io、Vercel 或 Cloud Run 上。\n如果想在自己的机器上做端到端测试，请按照 CLI 指南 安装我们的开源 gemini-api CLI ，然后运行下面这个脚本。它会通过 REST 创建一个自托管环境，启动一个被限制在 ./sandbox 目录内的本地 worker，在本地运行托管智能体，并在结束后清理环境。本地模式会直接在你的主机上执行 bash，除非你在容器中运行，或者传入 --disable-bash：\n我们与 Artificial Analysis 合作发布了 多模态知识智能体基准 ，围绕 CAD 图纸、射频原理图、GIS 地图、凝胶板、图表等关键视觉材料，在 10 个垂直领域评估了 200 个多步骤任务。我们已在 Hugging Face 上发布了 10 个示例任务。\n我们在 Google AI Studio 中直接加入了 Google 开发者计划 Cloud 额度领取 功能。Google AI Pro 和 Ultra 订阅用户现在可以在 AI Studio 中 领取并跟踪每月 Cloud 额度 ，同时查看 API 账单 ，用于抵扣 Gemini 4、Gemini Decisions API 和智能体的用量。\n作者来自 Google DeepMind，逐一列出定价、上下文窗口和选型建议，可直接用于在 Carbon、Hydrogen 与 Argon 之间做工程决策。"
+   "excerpt": ""
   },
   {
    "group": "wh",
@@ -972,15 +1205,6 @@
    "excerpt": ""
   },
   {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "英伟达CEO黄仁勋辞职后风波持续，公司股价一周下跌14%",
-   "url": "https://aihot.news/items/rk143d9qa0j9gp3fdti162fy7",
-   "published": "2026-11-16T13:00:00.000Z",
-   "description": "英伟达CEO黄仁勋于上周辞任，公司股价随之下跌14%，CFO Colette Kress出任临时CEO。辞职数小时后，路透社报道其第三段婚外情。事件还涉及公司芯片供应相关指控，国会议员已启动调查。报道称黄仁勋正联络盟友寻求回归，业内担心动荡加剧营收压力，可能促使公司在安全投入上有所松懈。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rk143d9qa0j9gp3fdti162fy7",
-   "excerpt": ""
-  },
-  {
    "group": "wh",
    "source": "Supply Chain Dive",
    "title": "FedEx launches China-US air capacity ahead of peak season",
@@ -999,69 +1223,6 @@
    "excerpt": ""
   },
   {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Claude Code 团队如何设计 Agent 验证与测试流程",
-   "url": "https://aihot.news/items/jy89axg8rd82ugct5uwh5psaq",
-   "published": "2026-11-16T12:00:00.000Z",
-   "description": "Anthropic Claude Code 团队分享其验证方法论，团队约 90% 的代码由 Claude 编写和审查，验证循环让并行运行数十上百个 Claude 成为可能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jy89axg8rd82ugct5uwh5psaq",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "自媒体作者分享10条指挥Agent最常用的Prompt",
-   "url": "https://aihot.news/items/jqangh4mwcgcv6pwcv8ar7pga",
-   "published": "2026-11-16T10:05:59.000Z",
-   "description": "作者让Agent整理出自己近两个月指挥Agent干活最常用的10条Prompt并分享，包括从第一性原理找根因、先对齐喜好再出3版方案、推演改动二阶三阶影响、假设最优方案错误找反例、分析Git历史识别可移除的历史包袱、评估新工程师接手的认知成本、复盘Bug和返工并沉淀成规则或Skill等。作者希望对大家指挥Agent开发有用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jqangh4mwcgcv6pwcv8ar7pga",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "国家统计局",
-   "title": "10月份国民经济运行总体平稳、向新向优",
-   "url": "https://www.stats.gov.cn/sj/zxfb/202611/t20261116_1965844.html",
-   "published": "2026-11-16T10:00:05.000Z",
-   "description": "（2026年11月16日）国家统计局 10月份，在以习近平同志为核心的党中央坚强领导下，各地区各部门认真贯彻落实党中央和国务院决策部署，坚持稳中求进工作总基调，强化存量政策和增量政策协同，扎实推进高质量发展，生产供给平稳增长，市场销售规模扩大，对外贸易快速增长，就业物价总体稳定，新质生产力茁壮成长，国...",
-   "excerpt": "10 月份，在以习近平同志为核心的党中央坚强领导下，各地区各部门认真贯彻落实党中央和国务院决策部署，坚持稳中求进工作总基调，强化存量政策和增量政策协同，扎实推进高质量发展，生产供给平稳增长，市场销售规模扩大，对外贸易快速增长，就业物价总体稳定，新质生产力茁壮成长，国民经济运行延续总体平稳、向新向优发展态势。\n10 月份，全国规模以上工业增加值同比增长 4.8% ，环比增长 0.21% 。分三大门类看，采矿业增加值同比增长 0.7% ，制造业增长 5.4% ，电力、热力、燃气及水生产和供应业增长 4.4% 。装备制造业增加值同比增长 10.6% ，高技术制造业增加值增长 17.6% ，分别快于全部规模以上工业增加值 5.8 和 12.8 个百分点。分经济类型看，国有控股企业增加值同比增长 2.1% ；股份制企业增长 5.2% ，外商及港澳台投资企业增长 3.0% ；私营企业增长 3.2% 。分产品看， 3D 打印设备、锂离子电池、工业机器人产品产量同比分别增长 85.9% 、 30.0% 、 26.0% 。 1 — 10 月份，全国规模以上工业增加值同比增长 5.3% 。 10 月份，制造业采购经理指数为 49.3% ，企业生产经营活动预期指数为 53.4% 。 1 — 9 月份，全国规模以上工业企业实现利润总额 60337 亿元，同比增长 15.5% 。\n10 月份，全国服务业生产指数同比增长 4.6% 。分行业看，租赁和商务服务业，信息传输、软件和信息技术服务业，交通运输、仓储和邮政业生产指数同比分别增长 9.3% 、 9.2% 、 5.1% 。 1 — 10 月份，全国服务业生产指数同比增长 4.7% 。 10 月份，服务业商务活动指数为 50.0% ，服务业业务活动预期指数为 55.2% 。其中，铁路运输、水上运输、邮政、互联网软件及信息技术服务等行业商务活动指数位于 55.0% 以上较高景气区间。 1 — 9 月份，规模以上服务业企业营业收入同比增长 5.4% 。\n1 — 10 月份，社会消费商品和服务零售总额同比增长 2.5% ，其中服务零售额增长 4.9% ，商品零售额增长 0.9% 。在服务零售额中，通讯信息服务类、旅游咨询租赁服务类、文体休闲服务类零售额较快增长。 1 — 10 月份，社会消费品零售总额 416464 亿元，同比增长 1.0% 。 1 — 10 月份，全国网上商品和服务零售额 169811 亿元，同比增长 3.7% 。其中，网上商品零售额 107274 亿元，增长 2.9% ；网上服务零售额 62537 亿元，增长 5.0% 。 10 月份，社会消费品零售总额 46463 亿元，同比增长 0.4% ；环比增长 0.02% 。按经营单位所在地分，城镇消费品零售额 40098 亿元，同比增长 0.2% ；乡村消费品零售额 6365 亿元，增长 1.5% 。按消费类型分，商品零售额 41228 亿元，同比增长 0.3% ；餐饮收入 5235 亿元，增长 0.7% 。部分升级类商品销售较快增长，限额以上单位通讯器材类、文化办公用品类商品零售额同比分别增长 6.5% 、 4.1% 。\n1 — 10 月份，全国固定资产投资（不含农户） 364824 亿元，同比下降 8.1% ；扣除房地产开发的固定资产投资下降 5.1% 。其中，知识产权产品投资同比增长 9.2% 。高技术产业投资同比增长 4.0% ，其中信息服务业，航空、航天器及设备制造业，电子及通信设备制造业投资分别增长 20.5% 、 10.2% 、 6.6% 。分产业看，第一产业投资同比下降 6.1% ，第二产业投资下降 3.6% ，第三产业投资下降 10.9% 。分领域看，基础设施投资同比下降 5.1% ，制造业投资下降 2.9% ，房地产开发投资下降 21.6% 。民间投资同比下降 11.4% ；扣除房地产开发的民间投资下降 7.8% 。全国新建商品房销售面积 61358 万平方米，同比下降 13.7% ；新建商品房销售额 58550 亿元，下降 14.3% 。全国二手房交易网签面积 67971 万平方米，同比增长 11.4% 。 10 月份，固定资产投资（不含农户）环比下降 2.93% 。\n10 月份，货物进出口总额 48683 亿元，同比增长 31.2% 。其中，出口 27905 亿元，增长 28.7% ；进口 20778 亿元，增长 34.7% 。 1 — 10 月份，货物进出口总额 448100 亿元，同比增长 20.0% 。其中，出口 259866 亿元，增长 17.6% ；进口 188234 亿元，增长 23.6% 。 1 — 10 月份，一般贸易进出口同比增长 13.2% 。对共建“一带一路”国家进出口增长 18.5% 。民营企业进出口增长 20.1% 。机电产品出口增长 25.2% 。\n1 — 10 月份，全国城镇调查失业率平均值为 5.2% ，与上年同期持平。 10 月份，全国城镇调查失业率为 5.1% ，比上月下降 0.1 个百分点。本地户籍劳动力调查失业率为 5.2% ；外来户籍劳动力调查失业率为 4.9% ，其中外来农业户籍劳动力调查失业率为 4.8% 。 31 个大城市城镇调查失业率为 5.1% ，比上月下降 0.1 个百分点。全国企业就业人员周平均工作时间为 48.3 小时。\n10 月份，全国居民消费价格（ CPI ）同比上涨 0.7% ，环比持平。分类别看，食品烟酒及在外餐饮价格同比下降 1.6% ，衣着价格上涨 1.1% ，居住价格下降 0.3% ，生活用品及服务价格上涨 0.2% ，交通通信价格上涨 5.5% ，教育文化娱乐价格上涨 1.5% ，医疗保健价格上涨 2.4% ，其他用品及服务价格上涨 1.8% 。在食品烟酒及在外餐饮价格中，鲜菜价格下降 16.9% ，猪肉价格下降 8.6% ，鲜果价格下降 3.8% ，粮食价格下降 0.5% 。扣除食品和能源价格后的核心 CPI 同比上涨 0.8"
-  },
-  {
-   "group": "wh",
-   "source": "国家统计局",
-   "title": "2026年10月份规模以上工业增加值增长4.8%",
-   "url": "https://www.stats.gov.cn/sj/zxfb/202611/t20261116_1965842.html",
-   "published": "2026-11-16T10:00:04.000Z",
-   "description": "10月份，规模以上工业增加值同比实际增长4.8%（增加值增速均为扣除价格因素的实际增长率）。从环比看，10月份，规模以上工业增加值比上月增长0.21%。1—10月份，规模以上工业增加值同比增长5.3%。 分三大门类看，10月份，采矿业增加值同比增长0.7%，制造业增长5.4%，电力、热力、燃气及水生产和供应业增长4.4...",
-   "excerpt": "10 月份，规模以上工业增加值同比实际增长 4.8% （增加值增速均为扣除价格因素的实际增长率）。从环比看， 10 月份，规模以上工业增加值比上月增长 0.21% 。 1 — 10 月份，规模以上工业增加值同比增长 5.3% 。\n分三大门类看， 10 月份，采矿业增加值同比增长 0.7% ，制造业增长 5.4% ，电力、热力、燃气及水生产和供应业增长 4.4% 。\n分经济类型看， 10 月份，国有控股企业增加值同比增长 2.1% ；股份制企业增长 5.2% ，外商及港澳台投资企业增长 3.0% ；私营企业增长 3.2% 。\n分行业看， 10 月份， 41 个大类行业中有 28 个行业增加值保持同比增长。其中，煤炭开采和洗选业下降 2.9% ，石油和天然气开采业增长 9.4% ，农副食品加工业增长 4.0% ，酒、饮料和精制茶制造业增长 4.9% ，纺织业增长 2.0% ，化学原料和化学制品制造业增长 1.3% ，非金属矿物制品业下降 2.3% ，黑色金属冶炼和压延加工业下降 1.7% ，有色金属冶炼和压延加工业下降 4.4% ，通用设备制造业增长 8.5% ，专用设备制造业增长 11.5% ，汽车制造业增长 0.9% ，铁路、船舶、航空航天和其他运输设备制造业增长 9.2% ，电气机械和器材制造业增长 8.1% ，计算机、通信和其他电子设备制造业增长 19.4% ，电力、热力生产和供应业增长 4.2% 。\n分产品看， 10 月份，规模以上工业 626 种产品中有 254 种产品产量同比增长。其中，钢材 11161 万吨，同比下降 5.1% ；水泥 14375 万吨，下降 1.3% ；十种有色金属 685 万吨，下降 1.2% ；乙烯 356 万吨，增长 1.1% ；汽车 304.5 万辆，下降 7.7% ，其中新能源汽车 202.7 万辆，增长 17.1% ；发电量 7940 亿千瓦时，下降 2.1% ；原油加工量 5830 万吨，下降 8.1% 。\n10 月份，规模以上工业企业产品销售率为 96.5% ，同比下降 0.4 个百分点；规模以上工业企业实现出口交货值 15580 亿元，同比名义增长 18.6% 。\n工业增加值增长速度 ： 即工业增长速度，是用来反映一定时期工业生产物量增减变动程度的指标。利用该指标，可以判断短期工业经济的运行走势和经济的景气程度，也是制定和调整经济政策、实施宏观调控的重要参考和依据。\n出口交货值：是指工业企业自营（委托）出口（包括销往香港、澳门、台湾地区）或交给外贸部门出口的产品价值，以及外商来样、来料加工、来件装配和补偿贸易等生产的产品价值。\n由于规模以上工业企业范围每年发生变化，为保证本年数据与上年可比，计算产品产量等各项指标同比增长速度所采用的同期数与本期的企业统计范围尽可能相一致，和上年公布的数据存在口径差异。主要原因是：（一）统计单位范围发生变化。每年有部分企业达到规模纳入调查范围，也有部分企业因规模变小退出调查范围，还有新建投产企业、破产、注（吊）销企业等影响；（二）部分企业集团（公司）产品产量数据存在跨地区重复统计现象，根据专项调查对企业集团（公司）跨地区重复产量进行了剔重。\n根据季节调整模型自动修正结果，对 2025 年 10 月至 2026 年 9 月份规模以上工业增加值环比增速进行修订。修订结果及 2026 年 10 月份环比数据如下：\n10 月份，规模以上工业增加值同比实际增长 4.8% （增加值增速均为扣除价格因素的实际增长率）。从环比看， 10 月份，规模以上工业增加值比上月增长 0.21% 。 1 — 10 月份，规模以上工业增加值同比增长 5.3% 。\n分三大门类看， 10 月份，采矿业增加值同比增长 0.7% ，制造业增长 5.4% ，电力、热力、燃气及水生产和供应业增长 4.4% 。\n分经济类型看， 10 月份，国有控股企业增加值同比增长 2.1% ；股份制企业增长 5.2% ，外商及港澳台投资企业增长 3.0% ；私营企业增长 3.2% 。\n分行业看， 10 月份， 41 个大类行业中有 28 个行业增加值保持同比增长。其中，煤炭开采和洗选业下降 2.9% ，石油和天然气开采业增长 9.4% ，农副食品加工业增长 4.0% ，酒、饮料和精制茶制造业增长 4.9% ，纺织业增长 2.0% ，化学原料和化学制品制造业增长 1.3% ，非金属矿物制品业下降 2.3% ，黑色金属冶炼和压延加工业下降 1.7% ，有色金属冶炼和压延加工业下降 4.4% ，通用设备制造业增长 8.5% ，专用设备制造业增长 11.5% ，汽车制造业增长 0.9% ，铁路、船舶、航空航天和其他运输设备制造业增长 9.2% ，电气机械和器材制造业增长 8.1% ，计算机、通信和其他电子设备制造业增长 19.4% ，电力、热力生产和供应业增长 4.2% 。\n分产品看， 10 月份，规模以上工业 626 种产品中有 254 种产品产量同比增长。其中，钢材 11161 万吨，同比下降 5.1% ；水泥 14375 万吨，下降 1.3% ；十种有色金属 685 万吨，下降 1.2% ；乙烯 356 万吨，增长 1.1% ；汽车 304.5 万辆，下降 7.7% ，其中新能源汽车 202.7 万辆，增长 17.1% ；发电量 7940 亿千瓦时，下降 2.1% ；原油加工量 5830 万吨，下降 8.1% 。\n10 月份，规模以上工业企业产品销售率为 96.5% ，同比下降 0.4 个百分点；规模以上工业企业实现出口交货值 15580 亿元，同比名义增长 18.6% 。\n工业增加值增长速度 ： 即工业增长速度，是用来反映一定时期工业生产物量增减变动程度的指标。利用该指标，可以判断短期工业经济的运行走势和经济的景气程度，也是制定和调整经济政策、实施宏观调控的重要参考和依据。\n出口交货值：是指工业企业自营（委托）出口（包括销往香港、澳门、台湾地区）或交给外贸部门出口的产品价值，以及外商来"
-  },
-  {
-   "group": "wh",
-   "source": "国家统计局",
-   "title": "2026年1—10月份全国固定资产投资基本情况",
-   "url": "https://www.stats.gov.cn/sj/zxfb/202611/t20261116_1965841.html",
-   "published": "2026-11-16T10:00:03.000Z",
-   "description": "1—10月份，全国固定资产投资（不含农户）364824亿元，同比下降8.1%（按可比口径计算，详见附注7）。其中，知识产权产品投资同比增长9.2%。 分产业看，第一产业投资7018亿元，同比下降6.1%；第二产业投资142333亿元，下降3.6%；第三产业投资215473亿元，下降10.9%。 工业投资同比下降3.6%。其中，采矿业...",
-   "excerpt": "1 — 10 月份，全国固定资产投资（不含农户） 364824 亿元，同比下降 8.1% （按可比口径计算，详见附注 7 ）。其中，知识产权产品投资同比增长 9.2% 。\n分产业看，第一产业投资 7018 亿元，同比下降 6.1% ；第二产业投资 142333 亿元，下降 3.6% ；第三产业投资 215473 亿元，下降 10.9% 。\n工业投资同比下降 3.6% 。其中，采矿业投资增长 2.5% ，制造业投资下降 2.9% ，电力、热力、燃气及水生产和供应业投资下降 7.7% 。\n基础设施投资（口径详见附注 1 ）同比下降 5.1% 。其中，信息传输业投资增长 32.0% ，航空运输业投资增长 12.5% ，水上运输业投资增长 12.5% 。\n分地区看，东部地区投资同比下降 11.5% ，中部地区投资下降 12.9% ，西部地区投资下降 9.2% ，东北地区投资下降 25.9% 。\n分登记注册统计类别看，内资企业固定资产投资同比下降 7.9% ，港澳台投资企业固定资产投资下降 8.4% ，外商投资企业固定资产投资下降 6.6% 。\n1 — 10 月份，民间固定资产投资同比下降 11.4% 。从环比看， 10 月份固定资产投资（不含农户）下降 2.93% 。\n固定资产投资（不含农户）：是以货币形式表现的在一定时期内完成的建造和购置固定资产的工作量以及与此有关的费用的总称。\n基础设施投资：按照现行统计制度规定，基础设施投资包括电力、热力生产和供应业，燃气生产和供应业，水的生产和供应业，铁路运输业，道路运输业，水上运输业，航空运输业，管道运输业，多式联运和运输代理业，装卸搬运，邮政业，电信、广播电视和卫星传输服务，互联网和相关服务，水利管理业，生态保护和环境治理业，公共设施管理业的固定资产投资。基础设施投资增速按可比口径计算。\n国有控股：在企业的全部实收资本中，国有经济成分的出资人拥有的实收资本（股本）所占企业全部实收资本（股本）的比例大于 50% 的国有绝对控股。\n在企业的全部实收资本中，国有经济成分的出资人拥有的实收资本（股本）所占比例虽未大于 50% ，但相对大于其他任何一方经济成分的出资人所占比例的国有相对控股；或者虽不大于其他经济成分，但根据协议规定拥有企业实际控制权的国有协议控股。\n投资双方各占 50% ，且未明确由谁绝对控股的企业，若其中一方为国有经济成分的，一律按国有控股处理。\n登记注册统计类别：按照国家统计局、国家市场监督管理总局联合印发《关于市场主体统计分类的划分规定》（国统字〔 2023 〕 14 号）执行。\n东部地区包括北京、天津、河北、上海、江苏、浙江、福建、山东、广东、海南 10 个省（市）；中部地区包括山西、安徽、江西、河南、湖北、湖南 6 个省；西部地区包括内蒙古、广西、重庆、四川、贵州、云南、西藏、陕西、甘肃、青海、宁夏、新疆 12 个省（市、自治区）；东北地区包括辽宁、吉林、黑龙江 3 个省。\n根据季节调整模型自动修正结果，对 2025 年 10 月份以来的固定资产投资（不含农户）环比增速进行修订。修订结果及 2026 年 10 月份环比数据如下：\n根据投资统计制度方法改革、统计执法检查等规定，对上年同期固定资产投资数据进行修订，固定资产投资增速按可比口径计算。\n1 — 10 月份，全国固定资产投资（不含农户） 364824 亿元，同比下降 8.1% （按可比口径计算，详见附注 7 ）。其中，知识产权产品投资同比增长 9.2% 。\n分产业看，第一产业投资 7018 亿元，同比下降 6.1% ；第二产业投资 142333 亿元，下降 3.6% ；第三产业投资 215473 亿元，下降 10.9% 。\n工业投资同比下降 3.6% 。其中，采矿业投资增长 2.5% ，制造业投资下降 2.9% ，电力、热力、燃气及水生产和供应业投资下降 7.7% 。\n基础设施投资（口径详见附注 1 ）同比下降 5.1% 。其中，信息传输业投资增长 32.0% ，航空运输业投资增长 12.5% ，水上运输业投资增长 12.5% 。\n分地区看，东部地区投资同比下降 11.5% ，中部地区投资下降 12.9% ，西部地区投资下降 9.2% ，东北地区投资下降 25.9% 。\n分登记注册统计类别看，内资企业固定资产投资同比下降 7.9% ，港澳台投资企业固定资产投资下降 8.4% ，外商投资企业固定资产投资下降 6.6% 。\n1 — 10 月份，民间固定资产投资同比下降 11.4% 。从环比看， 10 月份固定资产投资（不含农户）下降 2.93% 。\n固定资产投资（不含农户）：是以货币形式表现的在一定时期内完成的建造和购置固定资产的工作量以及与此有关的费用的总称。\n基础设施投资：按照现行统计制度规定，基础设施投资包括电力、热力生产和供应业，燃气生产和供应业，水的生产和供应业，铁路运输业，道路运输业，水上运输业，航空运输业，管道运输业，多式联运和运输代理业，装卸搬运，邮政业，电信、广播电视和卫星传输服务，互联网和相关服务，水利管理业，生态保护和环境治理业，公共设施管理业的固定资产投资。基础设施投资增速按可比口径计算。\n国有控股：在企业的全部实收资本中，国有经济成分的出资人拥有的实收资本（股本）所占企业全部实收资本（股本）的比例大于 50% 的国有绝对控股。\n在企业的全部实收资本中，国有经济成分的出资人拥有的实收资本（股本）所占比例虽未大于 50% ，但相对大于其他任何一方经济成分的出资人所占比例的国有相对控股；或者虽不大于其他经济成分，但根据协议规定拥有企业实际控制权的国有协议控股。\n投资双方各占 50% ，且未明确由谁绝对控股的企业，若其中一方为国有经济成分的，一律按国有控股处理。\n登记注册统计类别：按照国家统计局、国家市场监督管理总局联合印发《关于市场主体统计分类的划分规定》（国统字〔 2023 〕 14 号）执行。\n东部地区包括北京、天津、河北、上海、江苏、浙江、福建、山东、广东、海南 10 个省（市"
-  },
-  {
-   "group": "wh",
-   "source": "国家统计局",
-   "title": "2026年1—10月份全国房地产市场基本情况",
-   "url": "https://www.stats.gov.cn/sj/zxfb/202611/t20261116_1965840.html",
-   "published": "2026-11-16T10:00:02.000Z",
-   "description": "一、房地产开发投资完成情况 1—10月份，全国房地产开发投资57215亿元，同比下降21.6%（按可比口径计算，详见附注5）；其中，住宅投资44102亿元，下降21.4%。 1—10月份，房地产开发企业房屋施工面积568164万平方米，同比下降13.0%。其中，住宅施工面积394637万平方米，下降13.3%。房屋新开工面积37036...",
-   "excerpt": "1 — 10 月份，全国房地产开发投资 57215 亿元，同比下降 21.6% （按可比口径计算，详见附注 5 ）；其中，住宅投资 44102 亿元，下降 21.4% 。\n1 — 10 月份，房地产开发企业房屋施工面积 568164 万平方米，同比下降 13.0% 。其中，住宅施工面积 394637 万平方米，下降 13.3% 。房屋新开工面积 37036 万平方米，下降 24.4% 。其中，住宅新开工面积 26959 万平方米，下降 24.9% 。房屋竣工面积 25544 万平方米，下降 26.6% 。其中，住宅竣工面积 17914 万平方米，下降 27.9% 。\n1 — 10 月份，新建商品房销售面积 61358 万平方米，同比下降 13.7% ；其中住宅销售面积下降 14.2% 。新建商品房销售额 58550 亿元，下降 14.3% ；其中住宅销售额下降 14.1% 。根据住房城乡建设部数据， 1 — 10 月份，二手房交易网签面积（见附注 6 ） 67971 万平方米，同比增长 11.4% 。\n10 月末，新建商品房待售面积 74412 万平方米，同比下降 1.7% 。其中，待售 3 年以下面积 53652 万平方米，下降 5.3% 。\n1 — 10 月份，房地产开发企业到位资金 61530 亿元，同比下降 21.9% 。其中，国内贷款 8148 亿元，下降 33.4% ；自筹资金 22169 亿元，下降 21.9% ；定金及预收款 19620 亿元，下降 15.5% ；个人按揭贷款 8414 亿元，下降 22.1% 。\n房地产开发企业本年完成投资：指报告期内完成的全部用于房屋建设工程、土地开发工程的投资额以及公益性建筑和土地购置费等的投资。该指标是累计数据。\n新建商品房销售面积：指报告期内出售新建商品房屋的合同总面积（即双方签署的正式买卖合同中所确认的建筑面积）。该指标是累计数据。\n新建商品房销售额：指报告期内出售新建商品房屋的合同总价款（即双方签署的正式买卖合同中所确认的合同总价）。该指标与新建商品房销售面积同口径，也是累计数据。\n商品房待售面积：指报告期末已竣工的可供销售或出租的商品房屋建筑面积中，尚未销售或出租的商品房屋建筑面积，包括以前年度竣工和本期竣工的房屋面积，但不包括报告期已竣工的拆迁还建、统建代建、公共配套建筑、房地产公司自用及周转房等不可销售或出租的房屋面积。\n房地产开发企业本年到位资金：指房地产开发企业报告期内实际用于房地产开发的各种货币资金。具体细分为国内贷款、利用外资、自筹资金、定金及预收款、个人按揭贷款和其他资金。该指标是累计数据。\n房屋施工面积：指房地产开发企业报告期内施工的全部房屋建筑面积。包括本期新开工的面积、上期跨入本期继续施工的房屋面积、上期停缓建在本期恢复施工的房屋面积、本期竣工的房屋面积以及本期施工后又停缓建的房屋面积。多层建筑物的施工面积指各层建筑面积之和。\n房屋新开工面积：指房地产开发企业报告期内新开工建设的房屋面积，以单位工程为核算对象。不包括在上期开工跨入报告期继续施工的房屋建筑面积和上期停缓建而在本期复工的建筑面积。房屋的开工以房屋正式开始破土刨槽（地基处理或打永久桩）的日期为准。房屋新开工面积指整栋房屋的全部建筑面积，不能分割计算。\n房屋竣工面积：指报告期内房屋建筑按照设计要求已全部完工，达到住人和使用条件，经验收鉴定合格或达到竣工验收标准，可正式移交使用的各栋房屋建筑面积的总和。\n东部地区包括北京、天津、河北、上海、江苏、浙江、福建、山东、广东、海南 10 个省（市）；中部地区包括山西、安徽、江西、河南、湖北、湖南 6 个省；西部地区包括内蒙古、广西、重庆、四川、贵州、云南、西藏、陕西、甘肃、青海、宁夏、新疆 12 个省（市、自治区）；东北地区包括辽宁、吉林、黑龙江 3 个省。\n根据房地产开发统计制度、统计执法检查等规定，对上年同期房地产开发投资、新建商品房销售面积等数据进行修订，增速按可比口径计算。\n6. 二手房交易网签面积是指报告期内城镇二手房网签交易合同总面积，数据来源于住房城乡建设部。\n1 — 10 月份，全国房地产开发投资 57215 亿元，同比下降 21.6% （按可比口径计算，详见附注 5 ）；其中，住宅投资 44102 亿元，下降 21.4% 。\n1 — 10 月份，房地产开发企业房屋施工面积 568164 万平方米，同比下降 13.0% 。其中，住宅施工面积 394637 万平方米，下降 13.3% 。房屋新开工面积 37036 万平方米，下降 24.4% 。其中，住宅新开工面积 26959 万平方米，下降 24.9% 。房屋竣工面积 25544 万平方米，下降 26.6% 。其中，住宅竣工面积 17914 万平方米，下降 27.9% 。\n1 — 10 月份，新建商品房销售面积 61358 万平方米，同比下降 13.7% ；其中住宅销售面积下降 14.2% 。新建商品房销售额 58550 亿元，下降 14.3% ；其中住宅销售额下降 14.1% 。根据住房城乡建设部数据， 1 — 10 月份，二手房交易网签面积（见附注 6 ） 67971 万平方米，同比增长 11.4% 。\n10 月末，新建商品房待售面积 74412 万平方米，同比下降 1.7% 。其中，待售 3 年以下面积 53652 万平方米，下降 5.3% 。\n1 — 10 月份，房地产开发企业到位资金 61530 亿元，同比下降 21.9% 。其中，国内贷款 8148 亿元，下降 33.4% ；自筹资金 22169 亿元，下降 21.9% ；定金及预收款 19620 亿元，下降 15.5% ；个人按揭贷款 8414 亿元，下降 22.1% 。\n房地产开发企业本年完成投资：指报告期内完成的全部用于房屋建设工程、土地开发工程的投资额以及公益性建筑和土地购置费等的投资。该指标是累计数据。\n新建商品房销售面积：指报告期内出售新建商品房屋的合同总面积（即双方签署的正式买卖合同中"
-  },
-  {
-   "group": "wh",
-   "source": "国家统计局",
-   "title": "2026年1—10月份社会消费品零售总额增长1.0%",
-   "url": "https://www.stats.gov.cn/sj/zxfb/202611/t20261116_1965839.html",
-   "published": "2026-11-16T10:00:01.000Z",
-   "description": "1—10月份，社会消费品零售总额416464亿元，同比增长1.0%。其中，除汽车以外的消费品零售额383811亿元，增长2.8%。10月份，社会消费品零售总额46463亿元，同比增长0.4%。其中，除汽车以外的消费品零售额43162亿元，增长2.5%。 按经营单位所在地分，1—10月份，城镇消费品零售额359918亿元，同比增长0.9%；乡...",
-   "excerpt": "1 — 10 月份，社会消费品零售总额 416464 亿元，同比增长 1.0% 。其中，除汽车以外的消费品零售额 383811 亿元，增长 2.8% 。 10 月份，社会消费品零售总额 46463 亿元，同比增长 0.4% 。其中，除汽车以外的消费品零售额 43162 亿元，增长 2.5% 。\n按经营单位所在地分， 1 — 10 月份，城镇消费品零售额 359918 亿元，同比增长 0.9% ；乡村消费品零售额 56546 亿元，增长 2.2% 。 10 月份，城镇消费品零售额 40098 亿元，同比增长 0.2% ；乡村消费品零售额 6365 亿元，增长 1.5% 。\n按消费类型分， 1 — 10 月份，商品零售额 369261 亿元，同比增长 0.9% ；餐饮收入 47203 亿元，增长 2.2% 。 10 月份，商品零售额 41228 亿元，同比增长 0.3% ；餐饮收入 5235 亿元，增长 0.7% 。\n按零售业态分， 1 — 10 月份，限额以上零售业单位中便利店、超市零售额同比分别增长 5.1% 、 3.5% ；专业店、百货店、品牌专卖店零售额分别下降 2.2% 、 3.5% 、 11.0% 。\n1 — 10 月份，全国网上商品和服务零售额 169811 亿元，同比增长 3.7% 。其中，网上商品零售额 107274 亿元，增长 2.9% ；在网上商品零售额中，吃类、穿类、用类商品分别增长 15.3% 、 1.8% 、 0.1% 。网上服务零售额 62537 亿元，增长 5.0% 。\n社会消费品零售总额：是指企业（单位、个体户）通过交易售给个人、社会集团非生产、非经营用的实物商品金额，以及提供餐饮服务所取得的收入金额。\n网上商品和服务零售额：是指通过公共网络交易平台（包括自建网站和第三方平台）实现的商品和服务零售额之和。\n从事商品零售活动或提供餐饮服务的法人企业、产业活动单位和个体户。其中，限额以上单位是指年主营业务收入 2000 万元及以上的批发业企业（单位、个体户）、 500 万元及以上的零售业企业（单位、个体户）、 200 万元及以上的住宿和餐饮业企业（单位、个体户）。\n由于限额以上批发和零售业、住宿和餐饮业企业（单位、个体户）范围每年发生变化，为保证本年数据与上年可比，计算限额以上单位消费品零售额等各项指标同比增长速度所采用的同期数与本期的企业（单位、个体户）统计范围相一致，和上年公布的数据存在口径差异。主要原因是每年都有部分企业（单位、个体户）达到限额标准纳入调查范围，同时也有部分企业（单位、个体户）因规模变小达不到限额标准退出调查范围，还有新开业、破产、注（吊）销企业（单位、个体户）的影响。\n由于纳入网上商品和服务零售额统计的重点平台范围每年发生变化，为保证本年数据与上年可比，计算网上商品和服务零售额同比增长速度所采用的同期数与本期的平台统计范围相一致，和上年公布的数据存在口径差异。主要原因是每年有新增平台纳入调查范围，也有不符合统计制度要求的平台退出调查范围。\n根据季节调整模型自动修正的结果，对 2025 年 10 月份以来的社会消费品零售总额环比增速进行修订。修订结果及 2026 年 10 月份环比数据如下：\n为更加全面反映网上消费市场发展状况，对网上消费统计指标进行了完善，根据网络消费发展态势，扩大网络服务平台统计范围，强化网上服务零售额测算。为此，将原“网上零售额”调整为“网上商品和服务零售额”，指标内涵不变，统计范围扩大；“实物商品网上零售额”调整为“网上商品零售额”，指标内涵和统计范围不变；增加“网上服务零售额”。网上商品和服务零售额与网上零售额数据不可比。\n1 — 10 月份，社会消费品零售总额 416464 亿元，同比增长 1.0% 。其中，除汽车以外的消费品零售额 383811 亿元，增长 2.8% 。 10 月份，社会消费品零售总额 46463 亿元，同比增长 0.4% 。其中，除汽车以外的消费品零售额 43162 亿元，增长 2.5% 。\n按经营单位所在地分， 1 — 10 月份，城镇消费品零售额 359918 亿元，同比增长 0.9% ；乡村消费品零售额 56546 亿元，增长 2.2% 。 10 月份，城镇消费品零售额 40098 亿元，同比增长 0.2% ；乡村消费品零售额 6365 亿元，增长 1.5% 。\n按消费类型分， 1 — 10 月份，商品零售额 369261 亿元，同比增长 0.9% ；餐饮收入 47203 亿元，增长 2.2% 。 10 月份，商品零售额 41228 亿元，同比增长 0.3% ；餐饮收入 5235 亿元，增长 0.7% 。\n按零售业态分， 1 — 10 月份，限额以上零售业单位中便利店、超市零售额同比分别增长 5.1% 、 3.5% ；专业店、百货店、品牌专卖店零售额分别下降 2.2% 、 3.5% 、 11.0% 。\n1 — 10 月份，全国网上商品和服务零售额 169811 亿元，同比增长 3.7% 。其中，网上商品零售额 107274 亿元，增长 2.9% ；在网上商品零售额中，吃类、穿类、用类商品分别增长 15.3% 、 1.8% 、 0.1% 。网上服务零售额 62537 亿元，增长 5.0% 。\n社会消费品零售总额：是指企业（单位、个体户）通过交易售给个人、社会集团非生产、非经营用的实物商品金额，以及提供餐饮服务所取得的收入金额。\n网上商品和服务零售额：是指通过公共网络交易平台（包括自建网站和第三方平台）实现的商品和服务零售额之和。\n从事商品零售活动或提供餐饮服务的法人企业、产业活动单位和个体户。其中，限额以上单位是指年主营业务收入 2000 万元及以上的批发业企业（单位、个体户）、 500 万元及以上的零售业企业（单位、个体户）、 200 万元及以上的住宿和餐饮业企业（单位、个体户）。\n由于限额以上批发和零售业、住宿和餐饮业企业（单位、个体户）范围每年发生变化，为保证本年数据与上年可比，计算限额以上单位消费品零"
-  },
-  {
    "group": "wh",
    "source": "Supply Chain Dive",
    "title": "From cost center to growth engine: The supply chain value shift",
@@ -1069,42 +1230,6 @@
    "published": "2026-11-16T10:00:00.000Z",
    "description": "The resilience era is over. Learn how leading companies are converting supply chain investments into margin, market share and growth.",
    "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "Business continuity starts before supply chain disruption",
-   "url": "https://www.supplychaindive.com/spons/business-continuity-starts-before-supply-chain-disruption/874344/",
-   "published": "2026-11-16T10:00:00.000Z",
-   "description": "Discover how Crisis24 AiiA helps leaders anticipate supply chain risks and make informed business continuity decisions.",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "国家统计局",
-   "title": "2026年10月份能源生产情况",
-   "url": "https://www.stats.gov.cn/sj/zxfb/202611/t20261116_1965837.html",
-   "published": "2026-11-16T10:00:00.000Z",
-   "description": "10月份，规模以上工业（以下简称规上工业）原煤生产降幅收窄，原油生产增速加快，天然气生产由降转增，电力生产有所下降。 一、原煤、原油和天然气生产及相关情况 原煤生产降幅收窄。10月份，规上工业原煤产量3.8亿吨，同比下降5.8%，降幅比9月份收窄1.0个百分点；日均产量1242万吨。 1—10月份，规...",
-   "excerpt": "10 月份，规模以上工业（以下简称规上工业）原煤生产降幅收窄，原油生产增速加快，天然气生产由降转增，电力生产有所下降。\n原煤生产降幅收窄。 10 月份，规上工业原煤产量 3.8 亿吨，同比下降 5.8% ，降幅比 9 月份收窄 1.0 个百分点；日均产量 1242 万吨。\n原油生产增速加快。 10 月份，规上工业原油产量 1845 万吨，同比增长 2.3% ，增速比 9 月份加快 0.1 个百分点；日均产量 59.5 万吨。\n原油加工降幅收窄。 10 月份，规上工业原油加工量 5830 万吨，同比下降 8.1% ，降幅比 9 月份收窄 0.3 个百分点；日均加工量 188.1 万吨。\n天然气生产由降转增。 10 月份，规上工业天然气产量 222 亿立方米，同比增长 0.8% ， 9 月份为下降 1.0% ；日均产量 7.2 亿立方米。\n1 — 10 月份，规上工业天然气产量 2181 亿立方米，同比增长 0.9% 。\n规上工业电力生产有所下降。 10 月份，规上工业发电量 7940 亿千瓦时，同比下降 2.1% ；日均发电 256.1 亿千瓦时。 1 — 10 月份，规上工业发电量 82904 亿千瓦时，同比增长 1.8% 。\n分品种看， 10 月份，规上工业火电、水电降幅扩大，核电增速放缓，风电、太阳能发电增速加快。其中，规上工业火电同比下降 7.3% ，降幅比 9 月份扩大 5.9 个百分点；规上工业水电下降 18.9% ，降幅扩大 0.8 个百分点；规上工业核电增长 17.5% ，增速放缓 4.0 个百分点；规上工业风电增长 33.7% ，增速加快 23.1 个百分点；规上工业太阳能发电增长 31.0% ，增速加快 11.5 个百分点。\n报告中的产量数据统计口径均为规模以上工业，其统计范围为年主营业务收入 2000 万元及以上的工业企业。\n由于规模以上工业企业范围每年发生变化，为保证本年数据与上年可比，计算产品产量等各项指标同比增长速度所采用的同期数与本期的企业统计范围相一致，和上年公布的数据存在口径差异。\n10 月份，规模以上工业（以下简称规上工业）原煤生产降幅收窄，原油生产增速加快，天然气生产由降转增，电力生产有所下降。\n原煤生产降幅收窄。 10 月份，规上工业原煤产量 3.8 亿吨，同比下降 5.8% ，降幅比 9 月份收窄 1.0 个百分点；日均产量 1242 万吨。\n原油生产增速加快。 10 月份，规上工业原油产量 1845 万吨，同比增长 2.3% ，增速比 9 月份加快 0.1 个百分点；日均产量 59.5 万吨。\n原油加工降幅收窄。 10 月份，规上工业原油加工量 5830 万吨，同比下降 8.1% ，降幅比 9 月份收窄 0.3 个百分点；日均加工量 188.1 万吨。\n天然气生产由降转增。 10 月份，规上工业天然气产量 222 亿立方米，同比增长 0.8% ， 9 月份为下降 1.0% ；日均产量 7.2 亿立方米。\n1 — 10 月份，规上工业天然气产量 2181 亿立方米，同比增长 0.9% 。\n规上工业电力生产有所下降。 10 月份，规上工业发电量 7940 亿千瓦时，同比下降 2.1% ；日均发电 256.1 亿千瓦时。 1 — 10 月份，规上工业发电量 82904 亿千瓦时，同比增长 1.8% 。\n分品种看， 10 月份，规上工业火电、水电降幅扩大，核电增速放缓，风电、太阳能发电增速加快。其中，规上工业火电同比下降 7.3% ，降幅比 9 月份扩大 5.9 个百分点；规上工业水电下降 18.9% ，降幅扩大 0.8 个百分点；规上工业核电增长 17.5% ，增速放缓 4.0 个百分点；规上工业风电增长 33.7% ，增速加快 23.1 个百分点；规上工业太阳能发电增长 31.0% ，增速加快 11.5 个百分点。\n报告中的产量数据统计口径均为规模以上工业，其统计范围为年主营业务收入 2000 万元及以上的工业企业。\n由于规模以上工业企业范围每年发生变化，为保证本年数据与上年可比，计算产品产量等各项指标同比增长速度所采用的同期数与本期的企业统计范围相一致，和上年公布的数据存在口径差异。\n版权所有: 国家统计局&emsp;&emsp; 联系我们 &emsp;&emsp; 服务条款 &emsp;&emsp; 网站地图"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "IMF 总裁警告全球经济过度依赖 AI，循环融资规模超 1 万亿美元",
-   "url": "https://aihot.news/items/leb3cw7nrt06nvf0ew7rkiqf7",
-   "published": "2026-11-16T09:32:58.000Z",
-   "description": "IMF 总裁格奥尔基耶娃在东盟峰会期间表示，全球经济正依靠 AI 支撑，过度依赖可能危及金融稳定，IMF 估计 AI 企业间循环融资规模已超 1 万亿美元，其中约三分之二来自债务融资。她认为近期市场波动属于有序调整，不太可能演变成系统性风险，但最坏情景下美股可能在 2026 年下跌 20%，2028 年全球经济产出比基准预测低 1.1%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/leb3cw7nrt06nvf0ew7rkiqf7",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "国家统计局",
-   "title": "2026年10月份70个大中城市商品住宅销售价格变动情况",
-   "url": "https://www.stats.gov.cn/sj/zxfb/202611/t20261116_1965836.html",
-   "published": "2026-11-16T09:30:01.000Z",
-   "description": "表1：2026年10月70个大中城市新建商品住宅销售价格指数 城市环比同比1-10月平均城市环比同比1-10月平均上月=100上年同月=100上年同期=100上月=100上年同月=100上年同期=100北 京99.997.497.7唐 山99.794.794.0天 津99.796.895.7秦 皇 岛99.894.894.8石 家 庄100.096.795.7包 头99.994.593.0太 原100.199...",
-   "excerpt": "表 3 ： 2026 年 10 月 70 个大中城市新建商品住宅销售价格分类指数（一）\n表 3 ： 2026 年 10 月 70 个大中城市新建商品住宅销售价格分类指数（二）\n表 4 ： 2026 年 10 月 70 个大中城市二手住宅销售价格分类指数（一）\n表 4 ： 2026 年 10 月 70 个大中城市二手住宅销售价格分类指数（二）\n2. 调查方法：新建商品住宅销售价格调查为全面调查，基础数据采用当地房地产管理部门的网签数据；二手住宅销售价格调查为重点调查和典型调查相结合，基础数据来源于房地产经纪机构或房屋居住服务平台等相关企业上报和调查员实地采价。\n5. 按照统计制度规定， 2026 年 1 月起， 70 个大中城市房地产价格统计调查开始使用 2025 年作为新一轮对比基期，各城市基本分类权数有所调整，以更好反映住宅销售结构变动。经测算，本次基期轮换对 70 个大中城市商品住宅销售价格各月同比指数影响平均在 0.03 个百分点以内。\n表 3 ： 2026 年 10 月 70 个大中城市新建商品住宅销售价格分类指数（一）\n表 3 ： 2026 年 10 月 70 个大中城市新建商品住宅销售价格分类指数（二）\n表 4 ： 2026 年 10 月 70 个大中城市二手住宅销售价格分类指数（一）\n表 4 ： 2026 年 10 月 70 个大中城市二手住宅销售价格分类指数（二）\n2. 调查方法：新建商品住宅销售价格调查为全面调查，基础数据采用当地房地产管理部门的网签数据；二手住宅销售价格调查为重点调查和典型调查相结合，基础数据来源于房地产经纪机构或房屋居住服务平台等相关企业上报和调查员实地采价。\n5. 按照统计制度规定， 2026 年 1 月起， 70 个大中城市房地产价格统计调查开始使用 2025 年作为新一轮对比基期，各城市基本分类权数有所调整，以更好反映住宅销售结构变动。经测算，本次基期轮换对 70 个大中城市商品住宅销售价格各月同比指数影响平均在 0.03 个百分点以内。\n版权所有: 国家统计局&emsp;&emsp; 联系我们 &emsp;&emsp; 服务条款 &emsp;&emsp; 网站地图"
   },
   {
    "group": "ai",
@@ -1135,11 +1260,11 @@
   },
   {
    "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenAI 与 Apollo Research、METR、Transluce、Goodfire 签约启动首阶段嵌入式安全评估",
-   "url": "https://aihot.news/items/qaj2npptre8jgn8xanq9ic965",
-   "published": "2026-11-16T08:00:00.000Z",
-   "description": "OpenAI 宣布与四家独立评估机构 Apollo Research、METR、Transluce 和 Goodfire 签署协议，启动首阶段嵌入式安全评估。评估专家将获得模型 checkpoint、源码、训练数据和监控系统等内部资源，分别评估模型暗中违背开发者意图的可能性、模型内部可解释性、最大 RL 训练运行的未对齐行为以及后训练对齐评测的质量覆盖。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qaj2npptre8jgn8xanq9ic965",
+   "source": "OpenAI",
+   "title": "More ways to move care forward with ChatGPT for Healthcare",
+   "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
+   "published": "2026-11-16T06:00:00.000Z",
+   "description": "Introducing computer-use agents, improved clinical answers, and new healthcare plugins that work across healthcare software to get real work done.",
    "excerpt": ""
   },
   {
@@ -1149,15 +1274,6 @@
    "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
    "published": "2026-11-16T06:00:00.000Z",
    "description": "",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "More ways to move care forward with ChatGPT for Healthcare",
-   "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
-   "published": "2026-11-16T06:00:00.000Z",
-   "description": "Introducing computer-use agents, improved clinical answers, and new healthcare plugins that work across healthcare software to get real work done.",
    "excerpt": ""
   },
   {
@@ -1177,42 +1293,6 @@
    "published": "2026-11-16T05:05:00.000Z",
    "description": "Survey finds 67% of companies say AI tools can access supplier pricing and rebate data.",
    "excerpt": "Concern over the integrity of supplier data being exposed is high. In fact, a new report, Shared Risk: Why Supply Chain's Most Sensitive Data Needs AI Built for the Industry. from InstaLILY found that 1 in 6 supply chain leaders experienced an AI-related data exposure incident.\nThe findings come as AI reaches deeper into commercially sensitive records. Seventy-eight percent say their AI tools can access customer pricing and margins, and 67% say the same for supplier pricing and rebate data.\nGiven the fact that distributors, wholesalers, and logistics providers routinely work with confidential information from both sides of a transaction, this is a concern. If AI puts one customer's contract price on another customer's quote, surfaces a supplier's bid to a competitor, or shows a shipper the carrier rate behind a broker's margin, the damage reaches every party involved.\nQuestions from suppliers and customers are already influencing technology choices. Sixty-three percent of respondents say their employer has been asked how supplier or customer information is protected, and nearly a third of all respondents (30%) say such an inquiry affected a vendor, software, or AI decision.\nRespondents most often expect their own company to bear the most responsibility for an exposure (51%), compared with 23% who point to the software or AI vendor.\n\"Speed means very little if a faster answer costs you a relationship that took years to build,\" said Adam Isenberg , head of distribution at InstaLILY, in a statement. \"AI working in distribution should know that one customer's contract price never belongs on another customer's quote. Buyers should make vendors prove that before they sign.\"\nSixty-three percent of respondents report at least some overlap between supplier and customer data across company platforms, including AI tools, and 87% are very or somewhat confident their AI keeps that data appropriately separated.\nStill, incidents were reported in every segment surveyed. That gives businesses good reason to test how AI handles confidential information throughout a task, from the records it retrieves to the response it delivers.\nThe most common barrier to keeping supplier and customer data separate is that AI tools were not built with that requirement in mind (22%), ahead of cost (21%) and lack of technical expertise (20%). Ninety percent say their employers would be more likely to choose AI built for distribution and supply chain operations over a general-purpose tool if i"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "腾讯混元发布 Hy4 flash：224B 总参数、1M 上下文的日常高性价比模型",
-   "url": "https://aihot.news/items/u36vxmxeopbsx4if4lap30899",
-   "published": "2026-11-16T04:29:37.000Z",
-   "description": "腾讯混元推出 Hy4 flash，总参数 224B（含 64B Engram 参数）、激活 12B，支持多模态和 1M 上下文，API 价格大幅低于 Hy4（输入 0.5 元、输出 2 元每百万 tokens）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/u36vxmxeopbsx4if4lap30899",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "通义千问发布 Qwen4 Max，Intelligence Index 较 Qwen3.8 Max 高 9 分且成本更低",
-   "url": "https://aihot.news/items/r9e7azie93xzxxdf6yyd1jmqe",
-   "published": "2026-11-16T03:46:34.000Z",
-   "description": "通义千问宣布发布 Qwen4 Max，据 Artificial Analysis 数据，其 Intelligence Index 得分 43，较 Qwen3.8 Max（xhigh）高 9 分，落后 Kimi K3.1 Pro 3 分。每任务成本 $3.27，约为 Qwen3.8 Max 的三分之一，输出 token 用量减少 39%；上下文窗口 1M tokens，定价 $1.50/$4.50 per 1M input/output tokens，已在阿里第一方 API 开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r9e7azie93xzxxdf6yyd1jmqe",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Qwen4-Max 登顶 Agent Arena 中国模型榜首，Alibaba 排名升至总榜第14",
-   "url": "https://aihot.news/items/kzt8bjcin243qefkuiq49c2i6",
-   "published": "2026-11-16T02:21:45.000Z",
-   "description": "Arena 榜单显示 Qwen4-Max 以 +7.5% 净提升在 Agent Arena 总排名第14，成为第一中国模型，使 Alibaba 成为排名第一的中国实验室、总榜第5，仅次于 Anthropic、Google、OpenAI 和 Meta。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kzt8bjcin243qefkuiq49c2i6",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Qwen 发布 Qwen4-Max：2.4T 参数骨干、百万 token 上下文与长程智能体能力",
-   "url": "https://aihot.news/items/nqcfrkilrh7nhnpd03t9q1zfh",
-   "published": "2026-11-16T02:00:00.000Z",
-   "description": "Qwen 团队发布 Qwen4-Max，基于新 Qwen4 架构，拥有 2.4T 骨干参数、每 token 激活 71B、328B N-gram Embedding 参数，具备原生视觉能力和 100 万 token 上下文窗口。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nqcfrkilrh7nhnpd03t9q1zfh",
-   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1243,39 +1323,12 @@
   },
   {
    "group": "ai",
-   "source": "AIHOT",
-   "title": "Hugging Face Inference Providers 语言模型路由切换为 OpenRouter",
-   "url": "https://aihot.news/items/v9a6479l3xc0c2m5xsd9bzo9o",
-   "published": "2026-11-16T00:00:00.000Z",
-   "description": "Hugging Face 与 OpenRouter 合作，将语言模型的 Inference Providers 从自有路由切换到 OpenRouter，按实时价格、速度和可靠性为每次请求挑选最佳 provider，失败时自动重试到其他 provider，代码无需更改。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v9a6479l3xc0c2m5xsd9bzo9o",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Conductor 0.95.0 发布：本地工作区 Agent 可启动和管理其他 Agent",
-   "url": "https://aihot.news/items/o5vy2ohp1gixm197jxdmrtorl",
-   "published": "2026-11-16T00:00:00.000Z",
-   "description": "Conductor 发布 0.95.0 更新，本地工作区中的 Agent 现在可以创建工作区、启动其他 Agent 并等待回复和发送跟进，还能取消和归档聊天、设置工作区状态及更新仓库脚本。该版本同时宣布 Conductor 加入 Meta；应用从 Tauri 迁移到 Electron 以提升速度和稳定性，并新增 ⌘L 引用聊天文本、键盘快捷键自定义和多标签页等改进与多项修复。 🔗 阅读原文 via AIHOT · https://aihot.news/items/o5vy2ohp1gixm197jxdmrtorl",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
    "source": "Simon Willison",
    "title": "datasette-maplibre 0.1a0",
    "url": "https://simonwillison.net/2026/Nov/15/datasette-maplibre/",
    "published": "2026-11-15T23:58:36.000Z",
    "description": "Release: datasette-maplibre 0.1a0 The first new Datasette geospatial plugin in quite a while! This one combines the excellent MapLibre GL library with OpenFreeMap , the free vector map server operated by Zsolt Ero (you should sponsor Zsolt on GitHub .) I built most of this with a single prompt to Claude Fable 5.2: Look at datasette-cluster-map and datasette-leaflet-geojson plugins, then look at ~/dev/tools/openfreemap-demo.html - then build a brand new Datasette plugin that uses maplibreGL and openfreemap and combines the features of those other two plugins - but be creative and think outside ",
    "excerpt": "The first new Datasette geospatial plugin in quite a while! This one combines the excellent MapLibre GL library with OpenFreeMap , the free vector map server operated by Zsolt Ero (you should sponsor Zsolt on GitHub .)\nI built most of this with a single prompt to Claude Fable 5.2:\nLook at datasette-cluster-map and datasette-leaflet-geojson plugins, then look at ~/dev/tools/openfreemap-demo.html - then build a brand new Datasette plugin that uses maplibreGL and openfreemap and combines the features of those other two plugins - but be creative and think outside the box for other useful features the plugin might have\n\"Be creative and think outside the box\" resulted in a few neat ideas - my favorite is that it displays SVG previews of GeoJSON shapes, then loads a WebGL preview only when they scroll into view.\nI also had Claude build a comprehensive demo which works in the latest Datasette Lite, so you can visit this link to load the plugin and a demo database in your browser via Pyodide and WebAssembly.\nI like this demo page showing both GeoJSON shapes and lat/lon points on the same map:\nThis is a beat by Simon Willison, posted on 15th November 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "AI 手搓的 1.4M 纯 HTML 3D 游戏走红，卡兹克拆解 Three.js 程序化生成原理并给出提示词模板",
-   "url": "https://aihot.news/items/izdx1kuppob6c65ghvmyeal38",
-   "published": "2026-11-15T23:56:00.000Z",
-   "description": "作者拆解了近期在群里疯传的 1.4M 纯 HTML 3D 游戏，指出其中约 700KB 是打包进文件的 Three.js，其余全部由代码程序化生成，没有图片、模型和录音。 🔗 阅读原文 via AIHOT · https://aihot.news/items/izdx1kuppob6c65ghvmyeal38",
-   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1359,24 +1412,6 @@
    "excerpt": "Wing has launched its drone delivery service in the Memphis metropolitan area in partnership with Walmart , extending its autonomous delivery network into Tennessee for the first time.\nThe service is available to tens of thousands of households across parts of Tennessee and Arkansas, allowing eligible customers to order groceries, household products and other everyday essentials for delivery by drone.\nCustomers can choose from thousands of Walmart products, with orders arriving in as little as 30 minutes, according to the companies.\nThe initial rollout covers neighborhoods surrounding three Walmart Supercenters in Bartlett and Cordova, Tennessee, and West Memphis, Arkansas.\nHeather Rivera, chief business officer at Wing, says: “We’re proud to have the opportunity to show up as a helpful, good neighbor for residents throughout the Memphis metro. Starting today, local families have a faster, more convenient option for last-minute groceries and daily necessities, while helping ease neighborhood traffic.”\nThe Memphis launch is part of a wider expansion of Wing’s partnership with Walmart, which already operates drone delivery services in Dallas-Fort Worth, Atlanta, Houston, Charlotte and Orlando.\nWing says it has completed more than one million deliveries this year and is working with Walmart to expand its network to nearly 20 major US metropolitan areas by 2027.\nPlanned markets include Los Angeles, Seattle, Denver and Miami.\nThe companies aim to make drone delivery accessible to approximately 40 million US residents by 2027.\nWing’s aircraft can travel at speeds of up to 60 mph and typically cruise at altitudes of 150 to 200 feet.\nWhen approaching a delivery destination, the drone hovers at approximately 23 feet and lowers the package to the ground using a tether, eliminating the need for the aircraft to land.\nThe drones currently carry packages weighing up to 2.75 pounds, with Wing planning to increase capacity to five pounds.\nThe company says flights average five minutes or less, although total delivery times also depend on order preparation and other operational factors.\nCustomers can check availability through the Walmart app or Wing’s website and place orders through Walmart’s online shopping services or the Wing app.\nThe service is limited to eligible addresses within the operating areas of participating stores.\nWing says its expansion is intended to make autonomous delivery a practical alternative for small, time-sensitive purchases, while reducing the n"
   },
   {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "METR 测量模型对对齐评测的识别能力：调查型智能体能区分对齐与能力评测",
-   "url": "https://aihot.news/items/m4emm1ej7qzex1k77a7mfaztd",
-   "published": "2026-11-15T16:00:00.000Z",
-   "description": "METR 发布研究笔记，用调查型智能体在 19 个对齐评测和 36 个能力评测中探测环境，测量模型能否识别自己处于对齐评测。结果显示智能体区分两类评测的能力在过去一年持续提升，Opus 5.5 在其数据集上把所有对齐评测排在所有能力评测之上。模型识别依据包括环境看起来像模拟的蜜罐等线索，作者将对齐线索分为环境级和任务级两类，并提出可借此迭代改进对齐评测设计。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m4emm1ej7qzex1k77a7mfaztd",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Anthropic 缩短协同漏洞披露政策时限",
-   "url": "https://aihot.news/items/hlcy3o9sbfz920grc9b6p86re",
-   "published": "2026-11-15T16:00:00.000Z",
-   "description": "Anthropic 更新其协同漏洞披露（CVD）政策，将高危及严重漏洞的披露窗口从 90 天缩短至 30 天，其他问题缩短至 45 天，适用于 2027 年 1 月 1 日或之后报告给供应商的漏洞。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hlcy3o9sbfz920grc9b6p86re",
-   "excerpt": ""
-  },
-  {
    "group": "wh",
    "source": "Robotics & Automation News",
    "title": "Physicl raises $10 million to improve physical AI training with synthetic data",
@@ -1420,24 +1455,6 @@
    "published": "2026-11-15T03:49:47.000Z",
    "description": "Release: datasette-agent 0.6a0 Accumulated small fixes for Datasette Agent, my agent plugin for Datasette that lets you ask questions about your data. Most notably, it now adds an agent prompt directly to the Datasette homepage, with support for hash-mentions of tables and queries: Tags: datasette-agent , llm , datasette , llms , ai , generative-ai",
    "excerpt": "Accumulated small fixes for Datasette Agent, my agent plugin for Datasette that lets you ask questions about your data. Most notably, it now adds an agent prompt directly to the Datasette homepage, with support for hash-mentions of tables and queries:\nThis is a beat by Simon Willison, posted on 15th November 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
-  },
-  {
-   "group": "ai",
-   "source": "Simon Willison",
-   "title": "datasette-llm 0.1a11",
-   "url": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
-   "published": "2026-11-14T23:59:28.000Z",
-   "description": "Release: datasette-llm 0.1a11 datasette-llm is the intermediate plugin for Datasette that supports configuring LLMs for use with other Datasette plugins. This release adds support for OpenAI-compatible endpoints, so you can configure Datasette to use an LLM hosted anywhere that talks the OpenAI pseudo-standard web protocol. This means that if you're running local models with LM Studio or Ollama or llama.cpp (which just hit v1.0.0 ) you can run Datasette via uvx like this: wget https://datasette.io/content.db uvx --with datasette-agent datasette \\ --root --secret 1 \\ -s plugins.datasette-llm.de",
-   "excerpt": "datasette-llm is the intermediate plugin for Datasette that supports configuring LLMs for use with other Datasette plugins.\nThis release adds support for OpenAI-compatible endpoints, so you can configure Datasette to use an LLM hosted anywhere that talks the OpenAI pseudo-standard web protocol.\nThis means that if you're running local models with LM Studio or Ollama or llama.cpp (which just hit v1.0.0 ) you can run Datasette via uvx like this:\nAnd you'll get a local server running a Datasette Agent instance powered by your local model!\nThis is a beat by Simon Willison, posted on 14th November 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "马斯克等高管联署请愿，要求 Nvidia 恢复黄仁勋 CEO 职务",
-   "url": "https://aihot.news/items/umoosrbjhi12kj7lv51qan4ju",
-   "published": "2026-11-14T21:41:22.000Z",
-   "description": "要求 Nvidia 恢复被罢免 CEO 黄仁勋职务的请愿书，截至周六下午已获得超过 11.5 万个签名，包括 5,965 名在职员工、1,108 名前员工和 63,063 名股东，马斯克、Replit CEO Amjad Masad 和 Epic Games CEO Tim Sweeney 均已联署。 🔗 阅读原文 via AIHOT · https://aihot.news/items/umoosrbjhi12kj7lv51qan4ju",
-   "excerpt": ""
   }
  ]
 }
