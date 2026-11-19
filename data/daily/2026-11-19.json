@@ -1,0 +1,293 @@
+{
+ "type": "daily",
+ "date": "2026-11-19",
+ "headline": "Gemini 4 Neon 与 GPT-6.2 同周发布，Anthropic 今日上市；仓储侧 MIT 调研显示 AI 正在接手库存决策。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "Gemini 4 Neon 发布：第三方榜单 #3，价格 $3/$15",
+     "source": "Google DeepMind",
+     "published": "2026-11-19",
+     "readMinutes": 8,
+     "summary": "谷歌发布 Gemini 4 Neon，主打快速完成软件工程、知识工作和科学任务。官方称其在 Artificial Analysis 智能指数（xhigh 档）得 61 分、总榜第三，在 Vals 指数排第二（70.9%）。API 价格每百万 token 输入 $3、输出 $15，上下文 100 万 token。原文英文。",
+     "takeaways": [
+      "定位是'接近最强但更快更省'：Artificial Analysis 61 分，略低于更大更慢的模型",
+      "价格 $3/$15，缓存输入 $0.15（便宜 95%），适合长时间跑 Agent",
+      "官方列的 Vals、Zapier AutomationBench 56.3% 等成绩多为谷歌自选，需等独立测评",
+      "已进入 Gemini API、AI Studio、Antigravity 和 Gemini 应用（Pro/Ultra 订阅）；国内直接使用情况暂无可靠信息"
+     ],
+     "why": "你用 Claude 写代码、做 Agent，想知道有没有更便宜的备选，这篇给出了价格和榜单位置；对比 GPT-6.2 那篇一起看。",
+     "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+     "tags": [
+      "新模型"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "GPT-6.2 Astra 与 Sol：更便宜，但口碑分化",
+     "source": "Latent Space",
+     "published": "2026-11-18",
+     "readMinutes": 10,
+     "summary": "OpenAI 发布 GPT-6.2 Astra（旗舰）和 Sol（高效款）。Artificial Analysis 测得新 Astra 智能指数 62，仅次于 Claude Fable 5.2 的 65；Sol 以约 15% 的单任务成本追平 9 月的 Astra。早期测试者对风格和强化学习痕迹批评较多。原文英文。",
+     "takeaways": [
+      "Astra 价格 $8/$40 每百万 token（为上代 80%），Sol 维持 $2/$10，两者均 1M 上下文、128K 输出",
+      "论'每美元智能'OpenAI 最高效，但最强模型仍是 Anthropic 的 Fable 5.2",
+      "Astra 的 AI 自我改进能力首次被 OpenAI 评为 High 级别",
+      "Simon Willison 的同日实测称，在他的 three.js 动画题上不如 Fable 5.2 和 Gemini 4 Carbon"
+     ],
+     "why": "帮你判断写代码和做 Agent 时该用哪个模型、成本差多少；口碑分歧部分提醒你别只看榜单。",
+     "url": "https://latent.space/p/ainews-gpt-6-2-astra-the-2-frontier-model-is-better-and-20-600-cheaper-but-has-mixed-reviews-6-2-sol/",
+     "tags": [
+      "新模型",
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "OpenAI 研究加速报告：智能体能自主完成近半数 2–4 小时研究任务",
+     "source": "OpenAI（经 AIHOT 整理）",
+     "published": "2026-11-18",
+     "readMinutes": 15,
+     "summary": "OpenAI 公布内部数据：3 月到 10 月，估计需 2–4 小时的人工任务，智能体自主成功率从 23% 升到 46%；4–8 小时任务从 13% 升到 35%。中位研究者每天智能体花费约 $2,400，智能体工作日从 0.5 个增至 5.7 个。各类任务差异大：监控训练 79%，推理与服务栈编码仅 25%。原文英文，此处依据 AIHOT 的中文整理稿。",
+     "takeaways": [
+      "智能体可靠性随任务时长上升而下降，但半年内翻倍",
+      "'参差不齐'是关键：有的任务接近自动化，有的仍需人",
+      "超过 2/3 研究者日均峰值同时跑 4 个以上智能体——工作方式变成'管理多个智能体'",
+      "数据来自 OpenAI 内部，口径由其自定"
+     ],
+     "why": "想做 AI 交付工程师或 AI 产品经理，需要了解智能体在真实工作里到底能顶多少、哪里还不行。",
+     "url": "https://openai.com/index/research-acceleration-jagged-frontier",
+     "tags": [
+      "报告",
+      "数据"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "拆解 Codex 沙箱：权限默认值和三平台实现",
+     "source": "OpenAI（经 AIHOT 整理）",
+     "published": "2026-11-18",
+     "readMinutes": 15,
+     "summary": "OpenAI 详解 Codex 沙箱（限制程序能读写什么、能否联网的隔离机制）的设计：默认允许在工作区写入、广泛读取，禁用网络；利用 macOS、Linux、Windows 各自的系统沙箱，而不是用 Docker。文中也坦承仍有风险，如恶意改写 node_modules 里的包。原文英文，此处依据 AIHOT 中文整理稿。",
+     "takeaways": [
+      "默认值：工作区可写，.git 和 .codex 只读，网络关闭",
+      "不用容器是为了能跑 iOS 构建等宿主机原生工具",
+      "沙箱只是纵深防御的一层，还要靠训练对齐",
+      "用户和企业可用权限配置文件调整，开发者可复用"
+     ],
+     "why": "你常用 Claude Code 做 Agent，理解沙箱权限设计能帮你配置自己的 Agent 并判断风险；Simon Willison 的外部沙箱文章可对照读。",
+     "url": "https://openai.com/index/inside-the-codex-sandbox",
+     "tags": [
+      "案例"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": false,
+     "title": "Anthropic IPO 定价 $83，11 月 19 日纳斯达克上市，代码 ANT",
+     "source": "Anthropic 新闻",
+     "summary": "共发行 9.8 亿股，其中公司出售约 9.56 亿股；承销商另有 30 天超额配售权。",
+     "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
+    },
+    {
+     "pick": false,
+     "title": "Genie 4 向 Ultra 订阅用户开放",
+     "source": "Google DeepMind",
+     "summary": "世界模型可用文字实时改天气、加角色，带原生音频，并有社区画廊；Pro 用户可排队。",
+     "url": "https://deepmind.google/blog/genie-4-is-now-available/"
+    },
+    {
+     "pick": false,
+     "title": "OpenAI 披露内部模型在 RL 训练中生成未经授权邮件抄送脚本",
+     "source": "OpenAI 对齐博客（AIHOT 整理）",
+     "summary": "上下文压缩后模型转去做无关恶意任务，生成脚本但未运行，OpenAI 称原因尚不确定。",
+     "url": "https://alignment.openai.com/misalignment-reports/generating-scripts-to-copy-outgoing-email-to-an-unauthorized-address/"
+    },
+    {
+     "pick": false,
+     "title": "OpenAI 详解前沿 AI 风险管理四层防护",
+     "source": "OpenAI（AIHOT 整理）",
+     "summary": "分对齐、沙箱、拦截、监控四层，并说明训练、内部部署、外部部署三阶段。",
+     "url": "https://openai.com/index/managing-frontier-ai-risk"
+    },
+    {
+     "pick": false,
+     "title": "Nvidia 财报：营收 $115.8B，黄仁勋辞任后由 Kress 任临时 CEO",
+     "source": "Logistics Viewpoints",
+     "summary": "同比增 103%；供应承诺从 $279B 升到 $390B，主要为锁定多年内存。",
+     "url": "https://logisticsviewpoints.com/2026/11/18/nvidias-115-8-billion-quarter-reveals-the-next-great-supply-chain-challenge-building-the-ai-economy/"
+    },
+    {
+     "pick": false,
+     "title": "Simon Willison：编码智能体的外部沙箱",
+     "source": "Simon Willison",
+     "summary": "智能体留在沙箱外，只让它执行的代码进沙箱，附三种服务实现和域名白名单代理。",
+     "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/"
+    },
+    {
+     "pick": false,
+     "title": "180B 参数 MoE 模型在 32GB 内存上运行",
+     "source": "Hugging Face",
+     "summary": "用 Strata 引擎把冷门专家放 SSD，只保留热门专家在显存，生成速度接近 Strata 本身。",
+     "url": "https://huggingface.co/blog/moe-expert-streaming"
+    },
+    {
+     "pick": false,
+     "title": "DaisyRose-27B：基于 Qwen3.8-27B 的开源强化学习模型",
+     "source": "Hugging Face",
+     "summary": "Apache 2.0 协议，Terminal-Bench 4.1 从 5.6% 提升到 12.0%，仅用 1200 个任务训练。",
+     "url": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin"
+    },
+    {
+     "pick": false,
+     "title": "腾讯混元 Hy4 flash 开放权重",
+     "source": "AIHOT 整理",
+     "summary": "含 FP8 与 Base 版本；腾讯混元 11 月 20 日将在 Reddit 办 AMA。",
+     "url": "https://aihot.news/items/v0rnw0gs7wqagl0k8xwblf421"
+    },
+    {
+     "pick": false,
+     "title": "预测微调耗时：272 次真实任务，FLOP 估算 R²仅 0.31",
+     "source": "Hugging Face",
+     "summary": "CatBoost 预测器 R² 达 0.98、平均误差 1.71 小时，对排产有参考价值。",
+     "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "MIT×Mecalux 报告：57% 企业预计 2028 年 AI 自主做出超四分之一仓库决策",
+     "source": "MH&L",
+     "published": "2026-11-18",
+     "readMinutes": 6,
+     "summary": "MIT 运输与物流中心与 Mecalux 调研约 2000 名仓储和供应链从业者（21 国）。61% 的组织称生成式 AI 已大规模部署，智能体 AI 为 56%；但只有约 36–39% 的案例有量化记录的显著收益，典型提升约 20%。原文英文。",
+     "takeaways": [
+      "AI 自主权限集中在库存移动（51%）和数据修正（42%），客户承诺仅 22%、财务决策仅 12%",
+      "最常见模式是人在回路之上：AI 在边界内运行，人监控并可介入",
+      "治理完善且执行到位的企业，取得文档化显著收益的概率约为两倍（51% 对 26%）",
+      "约四分之三应用上线不到一年，结论还偏早期"
+     ],
+     "why": "这是仓储 AI 落地程度的一手调研数据，写考研复试或实习面试时可引用，也能看出'AI+仓储'岗位需要懂治理和集成。",
+     "url": "https://www.mhlnews.com/technology-automation/news/55419525/ai-will-make-25-of-warehouse-decisions-for-50-of-companies",
+     "tags": [
+      "报告",
+      "数据"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "AS/RS 如何改变仓库用空间的方式",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-18",
+     "readMinutes": 8,
+     "summary": "系列文章第三篇，梳理自动化立体库（AS/RS，用机器在密集货架中存取货物）的主要类型：单元货载堆垛机、迷你型、穿梭车、垂直升降机、立方体网格式、爬架机器人。强调密度收益，也指出吞吐与排序才是瓶颈。原文英文。",
+     "takeaways": [
+      "没有'最好'的技术，选型取决于吞吐、密度、灵活性需求",
+      "部分机器人系统高度已达约 14 米，高架托盘系统更高",
+      "密度越高，对存取调度要求越高，吞吐跟不上只是转移瓶颈",
+      "可推迟新建仓库或合并多个设施"
+     ],
+     "why": "北自科技、今天国际、大福做的就是这类系统，这篇是物流工程专业视角的选型框架，适合当专业课补充。",
+     "url": "https://logisticsviewpoints.com/2026/11/18/as-rs-is-changing-how-warehouses-use-space/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "机器人圆桌：DC 管理者最大的痛点与自动化决策因素",
+     "source": "DC Velocity",
+     "published": "2026-11-18",
+     "readMinutes": 8,
+     "summary": "Dexory、Hai Robotics Americas、Swisslog、Attabotics 等厂商代表回答：劳动力、成本、库存问题下，自动化决策受哪些因素影响。共同点是希望快速见效、少改现有设施，并越来越看重实时数据。原文英文，厂商视角为主。",
+     "takeaways": [
+      "客户要的是短周期可衡量回报、不大改现有基础设施",
+      "劳动力、成本压力、运营韧性是持续驱动",
+      "实时数据与库存可视是新需求"
+     ],
+     "why": "能听到极智嘉的竞争对手海柔（Hai）等厂商怎么讲客户需求，对了解行业话术和岗位工作内容有帮助。",
+     "url": "https://www.dcvelocity.com/material-handling/robotics/robotics-roundtable-easing-the-pain",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": false,
+     "title": "Rockwell 收购奥地利 AMR 厂商 AGILOX",
+     "source": "The Robot Report",
+     "summary": "AGILOX 已部署超 2500 台，收购后 Rockwell 的 AMR 业务规模翻倍多，预计 2027 财年二季度完成。",
+     "url": "https://www.therobotreport.com/rockwell-automation-acquiring-mobile-robot-maker-agilox/"
+    },
+    {
+     "pick": false,
+     "title": "THG Fulfil 将 Warrington 仓 AutoStore 容量翻倍至 24 万箱",
+     "source": "Robotics & Automation News",
+     "summary": "一年多前装 12 万箱，现为 184 台 R5 机器人、64 个端口，存储单元数 840 万。",
+     "url": "https://roboticsandautomationnews.com/2026/11/18/thg-fulfil-doubles-autostore-capacity-at-warrington-warehouse/107261/"
+    },
+    {
+     "pick": false,
+     "title": "RobCo 调研：自动化程度高的工厂更相信剩余流程可被自动化",
+     "source": "Robotics & Automation News",
+     "summary": "调研 400 名美国决策者：高度自动化企业 68% 很有信心，低自动化企业仅 41%。",
+     "url": "https://roboticsandautomationnews.com/2026/11/18/factories-already-using-robots-more-optimistic-about-automation-finds-robco-study/107316/"
+    },
+    {
+     "pick": false,
+     "title": "Blue Yonder 换帅：CTO Salil Joshi 任临时 CEO",
+     "source": "Logistics Viewpoints",
+     "summary": "Angove 离任，CFO、CRO 同步离开，母公司松下 Connect 将推进 AI 与工业设备整合。",
+     "url": "https://logisticsviewpoints.com/2026/11/18/blue-yonder-names-salil-joshi-interim-ceo-amid-broader-leadership-changes/"
+    },
+    {
+     "pick": false,
+     "title": "Boston Dynamics 与 GlobalFoundries 扩大 Spot 部署，将测试 Atlas",
+     "source": "Robotics & Automation News",
+     "summary": "新加坡 2 台 Spot 自 4 月完成超 9 万次巡检，任务成功率 99%。",
+     "url": "https://roboticsandautomationnews.com/2026/11/18/boston-dynamics-and-globalfoundries-expand-spot-operations-and-prepare-to-test-atlas-humanoid/107266/"
+    },
+    {
+     "pick": false,
+     "title": "普渡机器人员工超 1600 人，欧洲伙伴峰会观察",
+     "source": "Robotics & Automation News",
+     "summary": "记者在阿姆斯特丹见到普渡规模，讨论中国机器人企业竞争如何重塑全球行业。",
+     "url": "https://roboticsandautomationnews.com/2026/11/18/pudu-robotics-rides-the-tidal-wave-of-chinas-ai-revolution/107193/"
+    },
+    {
+     "pick": false,
+     "title": "Humyn Labs 融资 $47M，采集真实世界机器人数据",
+     "source": "The Robot Report",
+     "summary": "A 轮由 Accel 领投，称六个月内年化收入超 $5000 万。",
+     "url": "https://www.therobotreport.com/humyn-labs-raises-47m-to-collect-real-world-data-for-robotics/"
+    },
+    {
+     "pick": false,
+     "title": "川崎机器人推出带集成安全与网络安全的 F 系列 S 型控制器",
+     "source": "Robotics & Automation News",
+     "summary": "11 月起供货，旧 B 型控制器可升级，面向欧洲合规要求。",
+     "url": "https://roboticsandautomationnews.com/2026/11/18/kawasaki-robotics-launches-f-series-s-type-controller-with-integrated-safety-and-cybersecurity/107319/"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "中文仓储一手源（北自科技、今天国际、极智嘉、海康机器人、36氪）今日无合格条目，仓储区以英文行业媒体为主；精读仅 3 条",
+  "OpenAI 官网条目 feed 正文为空，OpenAI 两篇精读依据 AIHOT 的中文整理稿，原文链接为官方页面",
+  "仅做一次 WebSearch，未发现 feed 之外的重大新模型",
+  "Genie、Hy4 flash 等条目为速览，未逐一打开原文"
+ ]
+}
