@@ -1,0 +1,272 @@
+{
+  "type": "daily",
+  "date": "2026-11-20",
+  "headline": "Anthropic 登陆纳斯达克引发对 AI 融资结构与治理的讨论，谷歌发布 Gemini 4 Neon；仓储侧 AS/RS 选型、盘点无人机案例和 AI 落地难点值得读。",
+  "sections": [
+    {
+      "key": "ai",
+      "title": "AI",
+      "items": [
+        {
+          "pick": true,
+          "title": "Gemini 4 Neon 发布：谷歌中档模型追近 Opus 与 Sol",
+          "source": "Latent Space（AINews）",
+          "published": "2026-11-19",
+          "readMinutes": 8,
+          "summary": "谷歌 DeepMind 在约七周内发出第四个 Gemini 4 模型 Neon（中档，比 Carbon 更快更便宜）。定价每百万 token 输入 3 美元、输出 15 美元，上下文 100 万 token。独立榜单：Artificial Analysis 智能体榜第二（1336 分），Vals 指数第二（70.9%，仅落后 Fable 5.2 约 0.4 分，单任务成本不到一半）。原文英文。",
+          "takeaways": [
+            "Neon 在 Cursor 的 CursorBench 4.1 得 63.7%，高于 Hydrogen 的 57.3%；已接入 Cursor、GitHub Copilot",
+            "高强度推理（xhigh）不一定更好：GDP.pdf 上 high 得 33.4%，xhigh 反而 28.0%",
+            "文本榜（Text Arena）仍是 Carbon 领先；Code Migration 任务 Neon 得分低于 Carbon 和 Hydrogen",
+            "国内可用性：原文未提，暂无独立测评"
+          ],
+          "why": "想知道现在写代码、做 Agent 该选哪个模型，这篇把价格和多个独立榜单放在一起，几分钟就能建立判断；榜单数据多为第三方，但部分来自谷歌自述。",
+          "url": "https://latent.space/p/ainews-gemini-4-neon-gdm-s-opus-sol-contender/",
+          "tags": [
+            "新模型",
+            "数据"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "pick": true,
+          "title": "Anthropic IPO 检验 AI『循环融资』：钱从供应商流向 Anthropic，再流回供应商",
+          "source": "TechCrunch（经 AIHOT 收录）",
+          "published": "2026-11-19",
+          "readMinutes": 6,
+          "summary": "Anthropic 以每股 83 美元上市。亚马逊持股 14.7%（超 1590 亿美元）、谷歌 13.7%（约 1490 亿美元）；英伟达、AMD、微软等还参与 260 亿美元私募，同时又是 Anthropic 的最大供应商。所谓循环融资，就是投资人的钱最终又通过买算力回到投资人手里。文章引用分析师称：Q3 营收 170 亿美元，上市后现金约 2200 亿美元，已承诺 9000 亿美元算力开支。",
+          "takeaways": [
+            "Anthropic 每季度仍净亏数百亿美元，但上市后资金转为来自公开市场而非供应商",
+            "分析师认为最大风险是输掉模型竞赛，而不是融资结构本身",
+            "算力供应商无论谁赢都受益"
+          ],
+          "why": "理解 AI 行业钱怎么流动，对判断 AI 岗位和行业景气有帮助，读起来不需要技术背景。",
+          "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test/",
+          "tags": [
+            "观点",
+            "数据"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "pick": true,
+          "title": "Anthropic 上市后，『安全公司』的治理结构有多少约束力？",
+          "source": "The Verge（经 AIHOT 收录）",
+          "published": "2026-11-19",
+          "readMinutes": 7,
+          "summary": "The Verge 拆解 Anthropic S-1 披露的长期利益信托（LTBT）：它能选出七人董事会中的四席，但其中一人需创始人认可，且无权叫停模型发布，权限弱于重组前后的 OpenAI 非营利董事会。多位专家认为这更像创始人主导的架构。原文英文。",
+          "takeaways": [
+            "上市后股东也无法投票罢免创始人，信托的制衡主要靠任命董事",
+            "信托成员多为非 AI 专家，专家质疑其判断何时踩刹车的能力",
+            "募资 813 亿美元，是史上规模最大的 IPO"
+          ],
+          "why": "如果你以后做 AI 产品或想进这类公司，了解『安全承诺』在公司治理上到底落在哪，比只看口号有用。",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1037459/anthropic-ipo-safe-ai-reputation-power-structure",
+          "tags": [
+            "观点"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "pick": true,
+          "title": "Gemini API 推出 Tool Retrieval：按需加载工具定义，省 token",
+          "source": "Google AI 博客",
+          "published": "2026-11-19",
+          "readMinutes": 5,
+          "summary": "Gemini Interactions API 预览版新增 Tool Retrieval：Agent 挂了几十上百个工具时，不再每次请求都发完整参数定义，只让模型先看到工具名和描述，需要时再加载具体参数。用法是请求里加 tool_search 工具，并对要延迟加载的工具设 defer_loading: true。原文英文。",
+          "takeaways": [
+            "解决工具多时输入 token 变多、延迟变高、选工具变不准的问题",
+            "接入只需两处配置，文中有代码示例和计费说明",
+            "目前是预览版，主要是谷歌自己的说法，未见独立测评"
+          ],
+          "why": "你在用 Claude 做 Agent，工具一多就会遇到同样的上下文膨胀，这篇是理解『工具按需加载』思路的短文。",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+          "tags": [
+            "教程"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "pick": false,
+          "title": "a16z 第二期 FDE 研修项目开放",
+          "source": "a16z",
+          "summary": "面向 FDE（驻客户现场的 AI 交付工程师）和应用 AI 负责人的 8 周项目，2027 年 1 月开始，主要在旧金山和纽约。",
+          "url": "https://www.a16z.news/p/the-a16z-fde-fellowship-is-back"
+        },
+        {
+          "pick": false,
+          "title": "OpenAI 详解用 Codex 自动排查 ChatGPT 性能回归",
+          "source": "AIHOT 整理",
+          "summary": "据 AIHOT 摘要：三个多月跟踪 1700 多次调查、定位 600 多个根因（原文未能打开）。",
+          "url": "https://aihot.news/items/alwgjr29158n454prl9tjmmw1"
+        },
+        {
+          "pick": false,
+          "title": "Mac 版 Gemini 应用上线电脑操作功能",
+          "source": "AIHOT 整理",
+          "summary": "可跨文件夹、应用和网页代用户执行任务，屏幕和光标控制权仍归用户。",
+          "url": "https://aihot.news/items/h5xjk79bhcu8vgnbrynj208uj"
+        },
+        {
+          "pick": false,
+          "title": "Genie 4 实时世界模型上线 Gemini API 与 AI Studio",
+          "source": "AIHOT 整理",
+          "summary": "可从文本或图像生成 720p、24fps 的可操控世界，支持 WebRTC 或 WebSocket 串流。",
+          "url": "https://aihot.news/items/n1nzpfmd3f6zc4abq3s8yxrde"
+        },
+        {
+          "pick": false,
+          "title": "Ai2 发布科研理论生成智能体 Theorizer 并开源",
+          "source": "Ai2（经 AIHOT 收录）",
+          "summary": "检索文献后为未解释的观测提出候选理论，论断均链接文献，也承认会漏检、误判原创性。",
+          "url": "https://allenai.org/blog/theorizer-in-asta"
+        },
+        {
+          "pick": false,
+          "title": "Perplexity Computer 的 Brain 智能体可自动编写个人技能",
+          "source": "AIHOT 整理",
+          "summary": "Brain 读取历史会话轨迹，识别重复模式，证据足够时才提议新技能或更新。",
+          "url": "https://aihot.news/items/cty34utgc5ppbdnayf7cnjqlv"
+        },
+        {
+          "pick": false,
+          "title": "Token 欺诈来了：免费试用被刷来转卖或跑商业项目",
+          "source": "Simon Willison",
+          "summary": "ChatPRD 创始人 Claire Vo 讲述产品免费试用被批量滥用，有人借其 Agent 做 Roblox 地图。",
+          "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/"
+        },
+        {
+          "pick": false,
+          "title": "美收紧芯片出口管制，Moonshot 取消 1.5 亿美元海外算力合同",
+          "source": "The Decoder（经 AIHOT 收录）",
+          "summary": "第三方国家云算力通道关闭，台积电、三星暂停向部分中国客户交付处理器。",
+          "url": "https://the-decoder.com/chinese-tech-firms-face-a-double-hit-as-chip-shipments-stop-and-overseas-cloud-access-disappears/"
+        },
+        {
+          "pick": false,
+          "title": "Nvidia 财报强劲但股价较 10 月高点跌近 40%",
+          "source": "The Verge（经 AIHOT 收录）",
+          "summary": "第三季度营收 1158 亿美元，同比翻倍；受 CEO 离任等影响，股价创 52 周新低。",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1038063/nvidia-stock-market-price-earnings"
+        }
+      ]
+    },
+    {
+      "key": "wh",
+      "title": "仓储物流自动化",
+      "items": [
+        {
+          "pick": true,
+          "title": "AS/RS 如何改变仓库用空间的方式",
+          "source": "Logistics Viewpoints",
+          "published": "2026-11-18",
+          "readMinutes": 8,
+          "summary": "系列文章第三篇，讲 AS/RS（自动化立体仓储系统）：从托盘堆垛机、穿梭车、立库、魔方式密集存储到爬架机器人，各类设计取舍不同。核心收益是存储密度，部分机器人系统可高到约 14 米，能推迟新建仓库或合并多个库。原文英文。",
+          "takeaways": [
+            "选型取决于要做什么，而不是哪种技术『最好』：堆垛机和穿梭车重稳定吞吐，魔方系统重密度，爬架机器人重灵活",
+            "密度越高越要管理存取，检索设备数量和排序决定吞吐，否则只是把瓶颈挪走",
+            "土地贵、建筑受限、城市小型履约点最受益"
+          ],
+          "why": "这正好是物流工程专业课（仓储系统设计）的实战版，北自、今天国际、极智嘉做的就是这些系统，面试时能用来讲选型逻辑。",
+          "url": "https://logisticsviewpoints.com/2026/11/18/as-rs-is-changing-how-warehouses-use-space/",
+          "tags": [
+            "观点"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "pick": true,
+          "title": "ASICS 用盘点无人机把库存盘点提到每月一次",
+          "source": "Automated Warehouse",
+          "published": "2026-11-19",
+          "readMinutes": 5,
+          "summary": "ASICS 美国密西西比配送中心使用 Corvus One 自主盘点无人机，夜间每晚约 7 次飞行，在不足 6 英尺宽的窄巷道内靠机载视觉飞行，无需额外基础设施。两个高风险区域盘点频率提高 6 倍（原先每年两次，现每月），找回错放库存快约 60%，每月约 200 小时盘点人工转去处理异常。原文英文。",
+          "takeaways": [
+            "无人机同时读 UPC 并数箱，用箱数核对扫码结果，解决退货区同一 SKU 多处放置的错配",
+            "次日由库存员在桌面复核视频与图片，处理多数差异",
+            "数据来自供应商发布的案例，属厂商说法"
+          ],
+          "why": "一个有具体数字的落地案例，能看清盘点自动化的收益点是『频率』和『人力转移』，写项目报告或面试时可引用。",
+          "url": "https://www.automatedwarehouseonline.com/corvus-one-drones-help-asics-america-find-missing-inventory-faster/",
+          "tags": [
+            "案例"
+          ],
+          "vendorClaim": true
+        },
+        {
+          "pick": true,
+          "title": "Körber 调查：AI 投入在涨，但四分之三的领导者说决策更复杂了",
+          "source": "DC Velocity",
+          "published": "2026-11-19",
+          "readMinutes": 4,
+          "summary": "Körber 调查了美德 2000 名高管：试点 AI 与全企业部署 AI 的公司，在 AI 决策支持上的投入比例几乎一样（59%），但全面部署的公司业绩和信心明显更强。美国受访者中 77% 称 AI 更多参与决策，78% 称决策变得更复杂；障碍包括信息延迟、数据摩擦、系统割裂和不愿让技术拥有最终决定权。",
+          "takeaways": [
+            "差距不在预算，而在能否把 AI 落到流程里",
+            "文中给出区分『有回报』组织的四项条件",
+            "调查方是供应链软件商，样本为美德高管"
+          ],
+          "why": "说明企业买 AI 难在系统集成与流程改造，这正是 FDE 和供应链数字化岗位的价值所在。",
+          "url": "https://www.dcvelocity.com/technology/artificial-intelligence/korber-ai-investment-is-up-but-3-in-4-leaders-say-decision-making-is-now-more-complex",
+          "tags": [
+            "报告",
+            "数据"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "pick": true,
+          "title": "谁将掌控供应链的 AI 决策层？",
+          "source": "Logistics Viewpoints",
+          "published": "2026-11-19",
+          "readMinutes": 5,
+          "summary": "文章认为竞争焦点正从模型性能转向『协调运营决策的权力』：OpenAI、Anthropic、谷歌等模型厂商与既有供应链软件商都想占据这一层。强大的语言模型不等于可靠的供应链决策，处理货运异常或供应商故障还需要可靠记录、专业计算、合同约束和执行交易的授权。原文英文。",
+          "takeaways": [
+            "买哪套 TMS/WMS 可能不如谁控制解读数据的智能层重要",
+            "模型能力之外，数据、规则、授权才是落地条件",
+            "这是观点型分析，没有实测数据"
+          ],
+          "why": "帮你理解 AI 公司与传统物流软件的博弈，对选择供应链 AI 方向的实习和项目有参考。",
+          "url": "https://logisticsviewpoints.com/2026/11/19/who-will-control-the-supply-chains-ai-decision-layer/",
+          "tags": [
+            "观点"
+          ],
+          "vendorClaim": false
+        },
+        {
+          "pick": false,
+          "title": "Boston Dynamics 发布第二代 Stretch 卸车机器人",
+          "source": "Robotics & Automation News",
+          "summary": "基于超 10 万小时运行数据，内部线缆减 81%，更换驱动轮由一天缩到约一小时。",
+          "url": "https://roboticsandautomationnews.com/2026/11/19/boston-dynamics-launches-next-generation-stretch-robot-with-major-reliability-upgrades/107354/"
+        },
+        {
+          "pick": false,
+          "title": "罗克韦尔收购奥地利 AMR 厂商 Agilox",
+          "source": "DC Velocity",
+          "summary": "把 Agilox 叉车型 AMR 与 Otto 平板 AMR 合并，称将使其 AMR 业务规模翻倍以上。",
+          "url": "https://www.dcvelocity.com/rockwell-automation-buys-agilox-to-combine-amr-fleets"
+        },
+        {
+          "pick": false,
+          "title": "全球工业机器人存量首破 500 万台",
+          "source": "DC Velocity",
+          "summary": "去年全球新装工业机器人超 60 万台，同比增长 11%。",
+          "url": "https://www.dcvelocity.com/material-handling/robotics/factory-robots-hit-record-5-million-mark"
+        },
+        {
+          "pick": false,
+          "title": "Humyn Labs 获 4700 万美元 A 轮，采集真实世界机器人数据",
+          "source": "The Robot Report",
+          "summary": "称成立六个月年化收入超 5000 万美元，数据采集覆盖 20 多个国家。",
+          "url": "https://www.therobotreport.com/humyn-labs-raises-47m-to-collect-real-world-data-for-robotics/"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "抓取失败的信源：Epoch AI、Import AI（HTTP 403）、Symbotic IR（403）、大福中英文（502）、Interact Analysis、Locus Robotics（410）、国家统计局（超时）。AIHOT 各接口正常。",
+    "仓储方向今天无国内一手来源（北自、今天国际等）的新内容。",
+    "OpenAI Performance Factory 原文无法打开（403），只放入速览；TechCrunch、The Verge 两篇依据 AIHOT 收录的正文。",
+    "WebSearch 未发现 11 月 20 日之外的新重大模型发布。"
+  ]
+}
