@@ -1,0 +1,258 @@
+{
+ "type": "daily",
+ "date": "2026-11-21",
+ "headline": "Anthropic 上市次日跌破近发行价、AI 板块抛售；METR 与 Runway 给出 Agent 能力和落地的硬数据，仓储侧 Rockwell 收购 AGILOX 加码生产物流。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "METR 11 月能力更新：AI 研发相关能力约每 3.6 个月翻倍，但测量越来越难",
+     "source": "METR",
+     "published": "2026-11-20",
+     "readMinutes": 30,
+     "summary": "METR 用 TH1.1、TH2 等任务集测 Opus 5.5、GPT-6 Astra 等约 15 个模型，发现「时间跨度」（模型能以 50% 成功率完成的任务相当于人类做多久）约每 3.6 个月翻一番，可验证子集约 1.65 个月。在 15 场多月竞赛中，最强模型排在参赛者的第 96–98 百分位。原文英文，篇幅很长。",
+     "takeaways": [
+      "时间跨度合并数据倍增期约 3.6 个月（95% 区间 2.08–4.94）；按线性外推，2027 年 7 月触到测试集 200 小时上限",
+      "可验证任务进步更快；难以验证、需要判断力的任务是否更慢仍是开放问题",
+      "人类基线仅 9% 的时间估计来自真实实测，其余靠估计，作者自己也称「相当投机」",
+      "模型当评审时会给更强模型的产出打高分，评测本身有偏差"
+     ],
+     "why": "想判断 AI 对软件和研究类工作的冲击速度，这是少有的带方法和局限说明的一手数据；读方法与局限部分，也能练习怎么看待「某某指标翻倍」这类说法。",
+     "url": "https://metr.org/blog/2026-11-20-q4-2026-capability-update/",
+     "tags": [
+      "报告",
+      "数据"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Runway：把软件交付各环节逐步交给智能体，10 月 38% 的合并 PR 由智能体驱动",
+     "source": "Runway",
+     "published": "2026-11-20",
+     "readMinutes": 15,
+     "summary": "Runway 工程团队复盘如何把写代码、审查、批准、QA、修故障、调度六个环节逐步交给 AI 智能体（Agent，能自主执行多步任务的程序）。agent 驱动 PR 占比从 6 月约 0.1% 升到 10 月约 38%，首次批准等待中位数从超 2 小时降到约 5 分钟。数据为公司自报，原文英文。",
+     "takeaways": [
+      "按风险分级批准：低风险 AI 批准，高风险和数据库迁移、密钥、认证等关键区域必须人批准",
+      "先让 AI 与人并行批准、统计人的异议率（约 1.5%），再放开 AI 单独批准；AI 单独批准的回滚率约千分之一",
+      "每自动化一环，瓶颈就上移，最后变成「决定做什么」",
+      "最大收益常来自给 agent 开权限、修基础设施，而不是让它写更好的代码"
+     ],
+     "why": "你平时用 Claude 做 Agent 和网站，这篇是工程团队怎么给 Agent 设门禁、分级授权的真实案例，对做 Agent 项目和面试 FDE（前线部署工程师）岗位都有参考价值。",
+     "url": "https://runway.com/news/engineering/building-a-software-factory",
+     "tags": [
+      "案例"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "OpenHands：用 Agent 流水线自动修复镜像 CVE，一个月内严重漏洞从 87 个降到 5 个",
+     "source": "OpenHands 官方博客",
+     "published": "2026-11-19",
+     "readMinutes": 12,
+     "summary": "OpenHands 说明如何用 Agent 处理容器镜像的 CVE（公开安全漏洞）：自动生成镜像清单，Trivy 和 Grype 双扫描器每日扫描，Agent 每个工作日挑低风险修复开 PR，人每天只看一条不超过 11 行的 Slack 消息。一个月后可修复的严重漏洞从峰值 87 个降到 5 个，高危从 1,997 个降到 188 个。原文英文，数据为作者自报。",
+     "takeaways": [
+      "先定义「人读什么」：每天一条短消息加最多 3 个 PR，控制认知负担",
+      "用工作日志在无状态沙箱间保存状态，PR 对应的 CVE 消失后才清除记录",
+      "大版本升级、无修复版本的漏洞、发布环节仍由人负责",
+      "两个扫描器重叠只有约一半，单一扫描器会漏"
+     ],
+     "why": "流程可以直接照搬到自己的 GitHub 项目里做一个小型自动化 Agent，也是理解「怎么让 Agent 在有限权限下稳定干活」的实践样本。",
+     "url": "https://www.openhands.dev/blog/automating-cve-remediation-with-openhands",
+     "tags": [
+      "教程",
+      "案例"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Thinking Machines Lab 发布开源权重模型 Inkling 2 Mini：循环架构，笔记本可跑",
+     "source": "Thinking Machines Lab",
+     "published": "2026-11-20",
+     "readMinutes": 8,
+     "summary": "Inkling 2 Mini 是混合专家（MoE，每次只激活一部分参数）模型，总参数 26.4B、激活 3.4B，中间 12 层每个 token 循环三次，内存约 20GB，32GB 以上内存的 Mac 可本地运行，支持 1M 上下文和图文输入。官方称在 DeepSWE v1.1 达 48.2%、SWE-bench Pro v2 Hard 达 77.9%，领先 100B 以下开源模型；Hugging Face 的主观测试认为至少与 Qwen 3.8 27B 相当。原文英文。",
+     "takeaways": [
+      "循环让模型用更少输出 token 完成推理，对智能体编程更有利，官方称吞吐约 54 tokens/s",
+      "基准主要是厂商自报，Hugging Face 称仍需更多验证，暂无其他独立测评",
+      "提供 transformers、llama.cpp、MLX 支持；国内可用性：权重在 Hugging Face 发布，国内直连情况未核实"
+     ],
+     "why": "想在自己电脑上跑本地模型做 Agent 实验时，这是一个值得关注的新选择，原文也解释了循环架构和思维链可监控性的取舍。",
+     "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+     "tags": [
+      "新模型"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "title": "Anthropic 完成 IPO：发行价 83 美元，募资约 935 亿美元",
+     "source": "Anthropic 新闻",
+     "published": "2026-11-20",
+     "summary": "11 月 19 日在纳斯达克以代码 ANT 上市，含超额配售共售 11.27 亿股，总募资约 935 亿美元。",
+     "url": "https://www.anthropic.com/news/ipo-close"
+    },
+    {
+     "title": "Anthropic 上市次日跌 9% 逼近发行价，亚洲股市创 2020 年来最差一周",
+     "source": "AIHOT 整理（转述《卫报》）",
+     "published": "2026-11-20",
+     "summary": "股价报 88.17 美元；纳指周五跌 2%，台湾加权指数周跌 6.7%，日经跌 5%。",
+     "url": "https://aihot.news/items/ufyn252g3i251j0mfwy8xth9r"
+    },
+    {
+     "title": "Anthropic 数学家称与 Claude 合作证明黎曼猜想，仅放出 1737 万行 Lean 代码",
+     "source": "AIHOT 整理",
+     "published": "2026-11-21",
+     "summary": "没有论文，只发布 14 个压缩包的 Lean 形式化文件，验证尚未完成，属个人声明，需等待核查。",
+     "url": "https://aihot.news/items/vu6fw8wmrs3xcln4u9gwzf1f4"
+    },
+    {
+     "title": "腾讯混元开放 Hy4 权重：770B 总参数、激活 49B，1M 上下文",
+     "source": "AIHOT 整理",
+     "published": "2026-11-20",
+     "summary": "原生多模态旗舰 MoE，同步发布 System Card，提供 GitHub、Hugging Face 与 GGUF 下载；暂无独立测评。",
+     "url": "https://aihot.news/items/vu6fw8wmrs3xcln4u9gwzf1f4"
+    },
+    {
+     "title": "OpenAI 披露如何对抗「对抗性蒸馏」，重点保护模型的思维链",
+     "source": "OpenAI",
+     "published": "2026-11-20",
+     "summary": "介绍用对抗测试、分类器和 API 层防护检测并阻止他人用输出训练仿制模型。",
+     "url": "https://openai.com/index/combatting-adversarial-distillation"
+    },
+    {
+     "title": "browser-use 1.0：用一个 Python REPL 工具替代 24 个浏览器动作",
+     "source": "AIHOT 整理",
+     "published": "2026-11-20",
+     "summary": "单一持久 Python REPL 加 Chrome DevTools 协议访问，作者给出基准分数与成本对比。",
+     "url": "https://aihot.news/items/wibzzhd168cafn7o3gl8336di"
+    },
+    {
+     "title": "Kling 发布 Kling Image 4.0：原生 8K 出图与高级文字渲染",
+     "source": "AIHOT 整理",
+     "published": "2026-11-20",
+     "summary": "可灵图像模型升级，主打 8K 和文字渲染，对做海报、照片艺术类提示词的人可试；暂无独立测评。",
+     "url": "https://aihot.news/items/rhln87mprozseglkairsway74"
+    },
+    {
+     "title": "ChatGPT 推出 Space：统一管理页面、幻灯片、图片与文件",
+     "source": "AIHOT 整理（原帖在 X）",
+     "published": "2026-11-21",
+     "summary": "可写页面、做研究、生成幻灯片并邀请协作，内容可从已连接工具自动更新。",
+     "url": "https://aihot.news/items/ekf0so0xitc52thkrxx3mwax1"
+    },
+    {
+     "title": "Latent Space：形式化验证正成为对抗 AI 代码「slop」的工具",
+     "source": "Latent Space",
+     "published": "2026-11-20",
+     "summary": "访谈 &Truth 联合创始人 Clark Barrett，介绍用 Lean 与 SMT 求解器让 AI 自动证明软件正确性；原文英文。",
+     "url": "https://latent.space/p/formal-verification/"
+    },
+    {
+     "title": "MIT 数学家座谈：AI 冲击下数学研究的未来",
+     "source": "MIT News",
+     "published": "2026-11-20",
+     "summary": "多位数学家对 AI 影响研究的看法有分歧，期刊与人才培养已在调整。",
+     "url": "https://news.mit.edu/2026/following-mathocalypse-mathematicians-consider-future-1120"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "Rockwell 的生产物流战略：重点不在 AMR 本体，而在编排、数字孪生和产线集成",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-20",
+     "readMinutes": 8,
+     "summary": "分析师解读 Rockwell 发布会：自动化产线末端仍靠叉车司机和推车工，Rockwell 想把物料搬运纳入生产系统，打通生产软件、编排、控制、AMR（自主移动机器人）和独立小车。目标从「派一台机器人」变成「保证生产计划」。原文英文。",
+     "takeaways": [
+      "物料流动可由生产需求、质量状态、库存和设备状况事件驱动",
+      "价值在编排和与控制系统集成，而不是单台机器人",
+      "产线边界的人工搬运是被忽视的自动化缺口"
+     ],
+     "why": "北自、今天国际这类公司也在做产线物流与系统集成；这篇帮你理解「内部物流」如何从设备销售转向系统能力，写简历或面试时可用。",
+     "url": "https://logisticsviewpoints.com/2026/11/20/beyond-the-amr-rockwells-production-logistics-strategy-connects-material-flow-to-plant-autonomy/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "DHL Supply Chain 与旺季的终结：仓库机器人能否足够灵活？",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-20",
+     "readMinutes": 7,
+     "summary": "旺季越来越不可预测，文章以 DHL 为例：全球超过 9,000 台协作机器人，上年新增约 1,000 台，旺季可临时多开约 30% 机器人，累计支持超 15 亿次拣选。作者认为自动化的关键价值是在需要时给仓库弹性产能，而非单纯省人。原文英文。",
+     "takeaways": [
+      "DHL 披露的数字：9,000+ 台、旺季弹性约 30%、15 亿次拣选",
+      "需求波动让「弹性产能」成为评估自动化的新指标",
+      "传统仓库靠临时用工应对峰值，机器人租赁或可扩缩方案正改变这一模式"
+     ],
+     "why": "物流工程方向的课程多讲固定产能设计，这篇给了「弹性」这个更贴近现实的评价角度，可用于专业课大作业或实习面试。",
+     "url": "https://logisticsviewpoints.com/2026/11/20/dhl-supply-chain-and-the-end-of-peak-season-can-warehouse-robotics-flex-fast-enough/",
+     "tags": [
+      "案例",
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "title": "Rockwell 同意收购奥地利叉车 AMR 厂商 AGILOX，AMR 业务将翻倍以上",
+     "source": "Supply Chain 24/7",
+     "published": "2026-11-20",
+     "summary": "AGILOX 已部署超 2,500 台 AMR，将与 Rockwell 旗下 OTTO 互补，预计 2027 年 3 月底前完成交割。",
+     "url": "https://www.supplychain247.com/article/rockwell-automation-acquires-agilox-mobile-robots"
+    },
+    {
+     "title": "Körber 调查：73% 高管不愿让 AI 拥有最终决定权",
+     "source": "Supply Chain 24/7",
+     "published": "2026-11-20",
+     "summary": "2,000 名高管受访，供应链与分销行业 AI 参与决策比例最高，达 92%。",
+     "url": "https://www.supplychain247.com/article/korber-survey-ai-decision-making-complexity"
+    },
+    {
+     "title": "Geodis 首份「末端配送指数」：美国三季度配送成本同比涨 10.5%",
+     "source": "DC Velocity",
+     "published": "2026-11-21",
+     "summary": "指数 149.8（2019=100），约为同期消费价格涨幅 3.5% 的三倍，柴油价格创纪录。",
+     "url": "https://www.dcvelocity.com/transportation/trucking/last-mile/geodis-u-s-q3-delivery-costs-rose-three-times-faster-than-inflation"
+    },
+    {
+     "title": "Logistics Viewpoints：谁来授权 AI Agent？从 OpenAI Daybreak Red 看供应链",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-20",
+     "summary": "用权限边界、隔离执行和可停止机制的架构，类比物流 Agent「能决策不等于有权执行」。",
+     "url": "https://logisticsviewpoints.com/2026/11/20/who-authorizes-the-ai-agent-a-supply-chain-lesson-from-openais-daybreak-red/"
+    },
+    {
+     "title": "仓库自动化同时要规划的五项安全升级",
+     "source": "Supply Chain 24/7",
+     "published": "2026-11-20",
+     "summary": "涵盖通道标线配色、凸面镜等实体设施，提醒自动化不能忽视物理安全。",
+     "url": "https://www.supplychain247.com/article/warehouse-safety-upgrades-automation"
+    },
+    {
+     "title": "ABB 中国初创挑战赛：Wasome 凭 AI 自动化方案夺冠",
+     "source": "Robotics & Automation News",
+     "published": "2026-11-20",
+     "summary": "ABB 评出 AI 自动化方案赛的冠军，与仓储关联较弱，仅供了解。",
+     "url": "https://roboticsandautomationnews.com/2026/11/20/abb-names-wasome-winner-of-china-startup-challenge-for-ai-automation-solution/107417/"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "抓取失败：Epoch AI、Import AI（403）、Symbotic IR（403）、Interact Analysis、Locus Robotics（410）、国家统计局（超时）；36氪快讯无条目",
+  "仓储方向今日一手内容少，精读仅 2 条；AIHOT 的 ok 字段为空，但 endpoints 有数据",
+  "Kling Image 4.0 与 Anthropic 黎曼猜想条目只有 AIHOT 摘要，未打开原文；黎曼猜想声明尚未核实",
+  "新模型（Inkling 2 Mini、Hy4）暂无独立测评，基准多为厂商自报",
+  "Walmart、Target 等 Supply Chain Dive 条目无正文，未收录"
+ ]
+}
