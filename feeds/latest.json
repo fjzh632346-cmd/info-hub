@@ -1,33 +1,19 @@
 {
- "fetchedAt": "2026-11-20T18:38:07.277Z",
+ "fetchedAt": "2026-11-21T03:15:48.116Z",
  "hours": 72,
  "status": [
   {
    "source": "OpenAI",
    "feed": "https://openai.com/news/rss.xml",
    "ok": true,
-   "total": 1418,
-   "recent": 12
-  },
-  {
-   "source": "a16z",
-   "feed": "https://www.a16z.news/feed",
-   "ok": true,
-   "total": 20,
-   "recent": 5
+   "total": 1421,
+   "recent": 13
   },
   {
    "source": "Anthropic Engineering",
    "feed": "https://znck.github.io/feeds/anthropic-engineering.xml",
    "ok": true,
    "total": 26,
-   "recent": 0
-  },
-  {
-   "source": "Epoch AI",
-   "feed": "https://epochai.substack.com/feed",
-   "ok": true,
-   "total": 20,
    "recent": 0
   },
   {
@@ -38,11 +24,37 @@
    "recent": 2
   },
   {
+   "source": "Epoch AI",
+   "feed": "https://epochai.substack.com/feed",
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  {
    "source": "Hugging Face",
    "feed": "https://huggingface.co/blog/feed.xml",
    "ok": true,
-   "total": 914,
-   "recent": 6
+   "total": 915,
+   "recent": 5
+  },
+  {
+   "source": "a16z",
+   "feed": "https://www.a16z.news/feed",
+   "ok": true,
+   "total": 20,
+   "recent": 5
+  },
+  {
+   "source": "Import AI",
+   "feed": "https://importai.substack.com/feed",
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  {
+   "source": "Simon Willison",
+   "feed": "https://simonwillison.net/atom/everything/",
+   "ok": true,
+   "total": 30,
+   "recent": 8
   },
   {
    "source": "Google AI",
@@ -59,27 +71,6 @@
    "recent": 0
   },
   {
-   "source": "Import AI",
-   "feed": "https://importai.substack.com/feed",
-   "ok": true,
-   "total": 20,
-   "recent": 0
-  },
-  {
-   "source": "Simon Willison",
-   "feed": "https://simonwillison.net/atom/everything/",
-   "ok": true,
-   "total": 30,
-   "recent": 9
-  },
-  {
-   "source": "Sequoia",
-   "feed": "https://www.sequoiacap.com/feed/",
-   "ok": true,
-   "total": 50,
-   "recent": 0
-  },
-  {
    "source": "Interconnects",
    "feed": "https://www.interconnects.ai/feed",
    "ok": true,
@@ -91,14 +82,21 @@
    "feed": "https://www.latent.space/feed",
    "ok": true,
    "total": 20,
-   "recent": 4
+   "recent": 5
+  },
+  {
+   "source": "Sequoia",
+   "feed": "https://www.sequoiacap.com/feed/",
+   "ok": true,
+   "total": 50,
+   "recent": 0
   },
   {
    "source": "BestBlogs 每日早报",
    "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
    "ok": true,
-   "total": 6,
-   "recent": 3
+   "total": 7,
+   "recent": 4
   },
   {
    "source": "宝玉",
@@ -115,11 +113,10 @@
    "recent": 0
   },
   {
-   "source": "Symbotic",
-   "feed": "https://www.symbotic.com/feed/",
-   "ok": true,
-   "total": 10,
-   "recent": 0
+   "source": "Symbotic IR",
+   "feed": "https://ir.symbotic.com/rss/news-releases.xml",
+   "ok": false,
+   "error": "HTTP 403"
   },
   {
    "source": "大福（日文）",
@@ -129,13 +126,6 @@
    "recent": 2
   },
   {
-   "source": "Symbotic IR",
-   "feed": "https://ir.symbotic.com/rss/news-releases.xml",
-   "ok": true,
-   "total": 10,
-   "recent": 0
-  },
-  {
    "source": "Daifuku",
    "feed": "https://www.daifuku.com/rss_all.xml",
    "ok": true,
@@ -143,25 +133,11 @@
    "recent": 0
   },
   {
-   "source": "Automated Warehouse",
-   "feed": "https://www.automatedwarehouseonline.com/feed/",
+   "source": "Symbotic",
+   "feed": "https://www.symbotic.com/feed/",
    "ok": true,
    "total": 10,
-   "recent": 1
-  },
-  {
-   "source": "Logistics Viewpoints",
-   "feed": "https://logisticsviewpoints.com/feed/",
-   "ok": true,
-   "total": 10,
-   "recent": 10
-  },
-  {
-   "source": "The Robot Report 物流",
-   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
-   "ok": true,
-   "total": 15,
-   "recent": 3
+   "recent": 0
   },
   {
    "source": "Georgia Tech SCL",
@@ -171,6 +147,33 @@
    "recent": 0
   },
   {
+   "source": "Interact Analysis",
+   "feed": "https://www.interactanalysis.com/feed/",
+   "ok": false,
+   "error": "fetch failed"
+  },
+  {
+   "source": "Automated Warehouse",
+   "feed": "https://www.automatedwarehouseonline.com/feed/",
+   "ok": true,
+   "total": 10,
+   "recent": 1
+  },
+  {
+   "source": "The Robot Report 物流",
+   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
+   "ok": true,
+   "total": 15,
+   "recent": 2
+  },
+  {
+   "source": "Logistics Viewpoints",
+   "feed": "https://logisticsviewpoints.com/feed/",
+   "ok": true,
+   "total": 10,
+   "recent": 10
+  },
+  {
    "source": "MH&L",
    "feed": "https://www.mhlnews.com/__rss/website-scheduled-content.xml?input=%7B%22sectionAlias%22%3A%22home%22%7D",
    "ok": true,
@@ -178,11 +181,11 @@
    "recent": 3
   },
   {
-   "source": "DC Velocity",
-   "feed": "https://www.dcvelocity.com/rss",
+   "source": "Supply Chain 24/7 自动化",
+   "feed": "https://feeds.feedburner.com/sc247/rss/automation",
    "ok": true,
-   "total": 30,
-   "recent": 11
+   "total": 20,
+   "recent": 4
   },
   {
    "source": "Supply Chain Dive",
@@ -192,25 +195,11 @@
    "recent": 10
   },
   {
-   "source": "Supply Chain 24/7 自动化",
-   "feed": "https://feeds.feedburner.com/sc247/rss/automation",
+   "source": "DC Velocity",
+   "feed": "https://www.dcvelocity.com/rss",
    "ok": true,
-   "total": 20,
-   "recent": 1
-  },
-  {
-   "source": "Interact Analysis",
-   "feed": "https://www.interactanalysis.com/feed/",
-   "ok": true,
-   "total": 0,
-   "recent": 0
-  },
-  {
-   "source": "AIHOT",
-   "feed": "https://aihot.news/rss",
-   "ok": true,
-   "total": 50,
-   "recent": 50
+   "total": 30,
+   "recent": 13
   },
   {
    "source": "Locus Robotics",
@@ -226,6 +215,13 @@
    "recent": 0
   },
   {
+   "source": "AIHOT",
+   "feed": "https://aihot.news/rss",
+   "ok": true,
+   "total": 50,
+   "recent": 50
+  },
+  {
    "source": "Robotics & Automation News",
    "feed": "https://roboticsandautomationnews.com/feed/",
    "ok": true,
@@ -235,16 +231,15 @@
   {
    "source": "国家统计局",
    "feed": "https://www.stats.gov.cn/sj/zxfb/rss.xml",
-   "ok": true,
-   "total": 500,
-   "recent": 0
+   "ok": false,
+   "error": "This operation was aborted"
   },
   {
    "source": "Anthropic 新闻",
    "feed": "https://www.anthropic.com/news",
    "ok": true,
    "total": 14,
-   "recent": 2
+   "recent": 1
   },
   {
    "source": "Claude 官方博客",
@@ -255,6 +250,132 @@
   }
  ],
  "items": [
+  {
+   "group": "ai",
+   "source": "BestBlogs 每日早报",
+   "title": "EP243 · Claude 参与黎曼猜想研究、Linear 智能体、Stanford AI100 规模化回顾",
+   "url": "https://www.bestblogs.dev/explore/brief/2026-11-21?utm_source=rss&utm_medium=feed&utm_campaign=daily_brief&entry=rss_brief_index",
+   "published": "2026-11-21T06:00:00.000Z",
+   "description": "📝 今日导语 数学家公开黎曼猜想候选证明，Linear 复盘智能体协作，Stanford AI100 解读规模化影响。 🏷 今日关键词： 黎曼猜想 Linear Stanford AI100 混元 Hy4 Spring AI 📰 今日精选内容 数学家称与 Claude 找到黎曼猜想证明，已公开 Lean 代码 爱范儿 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 Linear 如何把智能体融入产品协作？对话 COO Cristina Cordova Latent.Space &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 生成式 AI 如何走向大众：Stanford AI100 的规模化时代报告 Stanford HAI &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 91 为什么 AI 让 DHH 每天工作 16 小时 a16z &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 混元 Hy4 正式版开源，新增视觉理解与电脑操作 魔搭ModelScope社区 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 推出 Harness 适配器：将你喜欢的模型适配到 Harness，以提升性能并降低成本 Hugging Face - Blog &nbsp;·&nb",
+   "excerpt": ""
+  },
+  {
+   "group": "wh",
+   "source": "DC Velocity",
+   "title": "Geodis: U.S. Q3 delivery costs rose three times faster than inflation",
+   "url": "https://www.dcvelocity.com/transportation/trucking/last-mile/geodis-u-s-q3-delivery-costs-rose-three-times-faster-than-inflation",
+   "published": "2026-11-21T01:52:47.000Z",
+   "description": "U.S. delivery costs in the third quarter rose three times faster than inflation, according to a report from global logistics provider Geodis. Geodis’ Final Mile Cost Index reached 149.8 (2019 = 100), up 10.5% year over year and about three times the 3.5% rise in consumer prices, the company said in its inaugural “Final Mile Index.” The measurement, which tracks quarterly U.S. delivery costs, performance trends, and risk factors, also reflected a record diesel price and second-quarter cargo theft losses that more than doubled. GEODIS built the report around the three questions shippers serving ",
+   "excerpt": "Over the longer term, final mile costs were up 49.8% since 2019, against 30.8% for consumer prices.\nU.S. delivery costs in the third quarter rose three times faster than inflation, according to a report from global logistics provider Geodis. Geodis’ Final Mile Cost Index reached 149.8 (2019 = 100), up 10.5% year over year and about three times the 3.5% rise in consumer prices, the company said in its inaugural “Final Mile Index.”\nThe measurement, which tracks quarterly U.S. delivery costs, performance trends, and risk factors, also reflected a record diesel price and second-quarter cargo theft losses that more than doubled.\nGEODIS built the report around the three questions shippers serving the U.S. raise most once the invoice is understood: where freight is most exposed in the final mile, who answers when it goes missing or a truck crashes, and which controls actually reduce the exposure. Answering them gives shippers the visibility and accountability to deliver in the promised window, in full and intact, with a clear owner if something goes wrong.\n\"While pricing varies by customer, delivery service must always remain consistent, reliable, and accountable,\" said Kevvon Burdette, SVP, Business Development, Transportation, GEODIS. \"Factors like cargo theft, chargebacks, and accidents threaten delivery certainty and raise costs. The Final Mile Index provides the benchmarks shippers need to spot risks, protect budgets, and build resilience.\"\nThe Final Mile Index includes data from two U.S. Bureau of Labor Statistics Producer Price Indexes: couriers and messengers (NAICS 492) representing B2C and parcel segments, and local general freight trucking (NAICS 484110), focused on B2B and big-and-bulky freight. Each edition evaluates fuel trends, driver availability, cargo theft dynamics, and delivery performance metrics, with GEODIS’ perspective on what reduces each exposure.\nIn other findings, the report tracked cost inflation across several points, led by final mile costs up 49.8% since 2019, against 30.8% for consumer prices. B2C parcel and courier rose 10.2% to 163.5, and B2B local freight rose 10.7% to 136.0, now above its 2022 peak. September alone read 152.0, the highest month on record.\n\"Shippers cannot afford to treat surprise delivery expenses as fixed operational noise,\" said Rob Greene, EVP, Transportation, GEODIS. \"As executive teams evaluate upcoming budgets, I challenge supply chain leaders to bring at least one of this report’s core questions to thei"
+  },
+  {
+   "group": "wh",
+   "source": "DC Velocity",
+   "title": "NRF: number of Thanksgiving weekend shoppers to drop in 2027",
+   "url": "https://www.dcvelocity.com/tech-infrastructure/e-commerce/nrf-number-of-thanksgiving-weekend-shoppers-to-drop-in-2027",
+   "published": "2026-11-21T01:49:48.000Z",
+   "description": "An estimated 182.7 million consumers plan to shop during the Thanksgiving weekend this year, down slightly from 186.9 million shoppers last year, according to a report from the National Retail Federation (NRF). Despite the dip, the figure continues the trend of elevated shopping during the holiday weekend seen in recent years. In addition, consumers continue to embrace earlier holiday shopping, with 60% starting by the beginning of November, up from 56% before the pandemic, according to results from the annual NRF survey, which was conducted by Prosper Insights & Analytics. “Holiday shopping c",
+   "excerpt": "Forecast of 182.7 million consumers would be down slightly from 2026 figure of 186.9 million shoppers.\nAn estimated 182.7 million consumers plan to shop during the Thanksgiving weekend this year, down slightly from 186.9 million shoppers last year, according to a report from the National Retail Federation (NRF).\nDespite the dip, the figure continues the trend of elevated shopping during the holiday weekend seen in recent years. In addition, consumers continue to embrace earlier holiday shopping, with 60% starting by the beginning of November, up from 56% before the pandemic, according to results from the annual NRF survey, which was conducted by Prosper Insights & Analytics.\n“Holiday shopping continues to be pulled forward, but Thanksgiving weekend remains an important shopping event for consumers,” NRF Vice President of Industry and Consumer Insights Allison Zeller said. “Shoppers are looking for deals, and retailers are delivering great value on gifts while creating special experiences that keep the Thanksgiving weekend shopping tradition going.”\nBlack Friday remains the most popular day to shop during the Thanksgiving weekend, with 69% (126 million) of holiday shoppers planning to shop. Of those, 67% are likely to shop in stores and 89% online. Cyber Monday follows in popularity, with 36% (66.1 million) planning to shop.\nThroughout Thanksgiving weekend, 59% of holiday shoppers plan to use AI to support their winter holiday shopping. Top reasons for Thanksgiving weekend shoppers using AI include product recommendations (32%), brainstorming gift ideas (31%), gift lists and recipient tracking (25%), budget tracking (25%), and scanning retailer sites to find the best prices (25%).\n“AI has become another tool consumers use to make holiday shopping easier, whether they’re researching products or looking for the best deals,” Prosper Insights & Analytics Executive Vice President of Strategy Phil Rist said. “As consumers incorporate these tools into their lives, holiday shopping represents one of the many ways they are putting AI to use.”\nTo keep their budgets in check this season, 82% are taking steps to manage holiday costs, including buying less expensive gifts (25%), cutting back in other areas (24%), buying for fewer people (20%) or waiting until Thanksgiving weekend to do most of their shopping (20%)."
+  },
+  {
+   "group": "wh",
+   "source": "DC Velocity",
+   "title": "FedEx and three finance firms complete $8.5 billion buyout of Polish parcel company",
+   "url": "https://www.dcvelocity.com/transportation/trucking/last-mile/fedex-and-three-finance-firms-complete-8-5-billion-buyout-of-polish-parcel-company",
+   "published": "2026-11-21T01:47:31.000Z",
+   "description": "A four-company consortium of parcel giant FedEx and three investment firms has completed its previously announced $8.5 billion acquisition of InPost, a Polish provider of e-commerce parcel delivery services. The specific investments made by each of the partners was not disclosed, but they had first announced the deal in February . The buyers included: the private equity firm Advent International, L.P.; the Czech investment group PPF Group; FedEx Corp. through its subsidiary FCWB LLC; and A&R Investments Ltd.—a financial entity founded by InPost CEO Rafał Brzoska. The acquisition converts InPos",
+   "excerpt": "InPost delivers e-com packages to 70,000 automated parcel lockers and 30,000 pick-up and drop-off points.\nBen Ames has spent 30 years as a journalist since starting out as a reporter for daily newspapers in Pennsylvania and Massachusetts. He has focused on business and technology reporting since 1999 for trade journals including Cahners’ Design News and Modern Materials Handling magazines, and other magazines with PennWell and IDG. A native New Yorker, Ames went to college in Maine and now lives with his family outside of Boston, where they all love to hike and kayak.\nA four-company consortium of parcel giant FedEx and three investment firms has completed its previously announced $8.5 billion acquisition of InPost, a Polish provider of e-commerce parcel delivery services.\nThe specific investments made by each of the partners was not disclosed, but they had first announced the deal in February . The buyers included: the private equity firm Advent International, L.P.; the Czech investment group PPF Group; FedEx Corp. through its subsidiary FCWB LLC; and A&R Investments Ltd.—a financial entity founded by InPost CEO Rafał Brzoska. The acquisition converts InPost to private ownership, having delisted its stock from Euronext Amsterdam.\nInPost operates an out-of-home network of over 100,000 locations, comprising more than 70,000 automated parcel lockers and close to 30,000 pick-up and drop-off points.\nLooking forward, InPost will work to strengthen its position in Poland and to expand across Europe, including in the UK, Italy, France, Spain, Portugal and the Benelux region. InPost’s home market of Poland will remain the blueprint for new innovations, which will then be scaled across InPost’s wider European network.\nAccording to the new partners, that growth will be supported by structural sector tailwinds, including increasing e-commerce penetration, rising consumer demand for speed and convenience, and the shift towards more sustainable delivery solutions.\nInPost says it is aiming to redefine the European e-commerce sector by improving the delivery experience for consumers and merchants alike, supported by the new ownership consortium’s accelerated investment in InPost’s digital offering and consumer experience, including its mobile app."
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Figma 演示用 Specs 与 Figma agent 把上下文变成可实现的开发计划",
+   "url": "https://aihot.news/items/w612ivonntodntv1ydkt2lqwh",
+   "published": "2026-11-20T22:17:00.000Z",
+   "description": "Figma 在 Workflow lab 中演示一个完整工作流：工程师用 Specs 在画布上汇集 PRD、Hex 数据、FigJam 图、标注设计和组件说明，再让 Figma agent 生成供编码智能体使用的实现计划。文中还提到 Specs 与 code layers 已开放 beta、覆盖所有套餐，最后通过 Figma MCP 把计划链接交给 Codex 读取全部上下文并实现功能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/w612ivonntodntv1ydkt2lqwh",
+   "excerpt": "Workflow lab: Turning context into a plan with Specs and the Figma agent\nFigma 在 Workflow lab 中演示一个完整工作流：工程师用 Specs 在画布上汇集 PRD、Hex 数据、FigJam 图、标注设计和组件说明，再让 Figma agent 生成供编码智能体使用的实现计划。文中还提到 Specs 与 code layers 已开放 beta、覆盖所有套餐，最后通过 Figma MCP 把计划链接交给 Codex 读取全部上下文并实现功能。\nFigma 官方用完整示例演示如何把分散的 PRD、设计与数据整理成 Specs，并经 Figma MCP 交给 Codex 实现，方法可迁移。\nFigma 官方用完整示例演示如何把分散的 PRD、设计与数据整理成 Specs，并经 Figma MCP 交给 Codex 实现，方法可迁移。"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "ABB names Wasome winner of China startup challenge for AI automation solution",
+   "url": "https://roboticsandautomationnews.com/2026/11/20/abb-names-wasome-winner-of-china-startup-challenge-for-ai-automation-solution/107417/",
+   "published": "2026-11-20T22:07:02.000Z",
+   "description": "ABB, together with its open innovation platform SynerLeap, has announced Wasome as the winner of the ABB Startup Challenge China 2026, the solution will make automation engineering faster, simpler and more accessible. Hosted for the first time in China, the challenge is now in its seventh year. ABB experts will directly work with Wasome to […]",
+   "excerpt": "ABB , together with its open innovation platform SynerLeap, has announced Wasome as the winner of the ABB Startup Challenge China 2026, the solution will make automation engineering faster, simpler and more accessible. Hosted for the first time in China, the challenge is now in its seventh year.\nABB experts will directly work with Wasome to create a market-ready solution with the opportunity to launch it for ABB’s customers and partners.\nThe winner is awarded with a 200,000 CNY (about $30,000) project prize and will be supported by SynerLeap to boost their growth and visibility.\nThe competition invited innovative startups to explore how AI-powered solutions could act as technical experts, supporting engineers in their daily tasks from automation system programming and commissioning to troubleshooting and maintenance.\nTuomo Hoysniemi, division president, ABB Drive Products, says: “At ABB, open innovation is at the core of how we operate. By partnering with startups that bring bold ideas and fresh perspectives, we can continuously unlock new possibilities and deliver even greater value to our customers with China speed.\n“Bringing the challenge to China was deliberate, because the innovation in the local startup ecosystem is remarkable. We see enormous potential in partnering with these startups to co-develop solutions that address customer needs and can scale locally and globally.”\nThis year’s challenge attracted strong interest from startups across China, out of which seven finalists pitched their solutions in Nanjing. ABB will actively explore ways to collaborate with all shortlisted companies.\nThe challenge reflects ABB’s continued commitment to open innovation – partnering with startups to develop solutions that lower the barriers to industrial automation, making expert-level capabilities more accessible and helping customers run leaner and smarter.\nOur website relies on ads to provide free content and sustain our operations. By turning off your ad blocker, you help support us and ensure we can continue offering valuable content without any cost to you.\nWe truly appreciate your understanding and support. Thank you for considering disabling your ad blocker for this website"
+  },
+  {
+   "group": "ai",
+   "source": "Latent Space",
+   "title": "The War Against Slop and an Emerging Weapon to Fight it: Formal Verification",
+   "url": "https://latent.space/p/formal-verification/",
+   "published": "2026-11-20T21:18:41.000Z",
+   "description": "Proving software correct with math has traditionally required specialist work. Now AI and Lean are helping automate the process.",
+   "excerpt": "Proving software correct with math has traditionally required specialist work. Now AI and Lean are helping automate the process.\nThe word of the year in the AI industry over 2026 has been “slop” — meaning low-quality output from a large language model. And with so much code being AI-generated now, avoiding slop has become a daily concern for software engineers. So how to do that? One way is to use formal verification systems , which use mathematical proofs and logic to verify the correctness of software or hardware.\nWith AI’s growing prowess at solving math problems , there’s now a number of AI companies offering formal verification systems. They include Harmonic , Theorem , Axiom Math , and a new entrant called &Truth (pronounced ‘and truth’). In this article we’ll look at some of the approaches these companies are taking.\nIn order to better understand the landscape of formal verification systems, we spoke to one of its leading proponents: Clark Barrett , &Truth’s co-founder and co-CEO. He’s also Corbel Professor (Research) of Computer Science at Stanford and was the co-creator of cvc5 , a popular automated reasoning engine used in formal verification.\nWithout getting too in the weeds, cvc5 is what’s called a “solver” for satisfiability modulo theories (SMT) , which Barrett says is widely used in companies like Amazon. For instance, cvc5 is used for specification analysis and test generation in Kiro , Amazon’s agentic development environment.\n“It's been fun to see my tools go from a good idea in the lab to cvc5 is now called billions of times a day in production pipelines at Amazon,” Barrett told us.\nVia a 2022 paper about cvc5 co-authored by Clark Barrett.\nWhen AI coding agent companies talk about “verifying” their work, it typically means agents running tests, critiquing their own output, or having another AI model judge it. So I asked Barrett how far short of real verification does that fall?\n“The main difference is really just, how do you know when you're done,” he replied. “So if you're testing, patching, scanning — using all these existing tools — they're quite good. I mean, they find a ton of problems. They raise those issues. But you're never quite sure, did I find all of them [the issues] or is there one more lurking there that my tool can't find?”\n&Atlas, the first tool of &Truth; it’s “a map of the world’s open-source code, starting with code written in the C programming language.”\n&Truth builds on Lean , an open-source programming language and"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Watco expands Intramotev autonomous railcar operations to Texas",
+   "url": "https://roboticsandautomationnews.com/2026/11/20/watco-expands-intramotev-autonomous-railcar-operations-to-texas/107409/",
+   "published": "2026-11-20T20:45:00.000Z",
+   "description": "Intramotev, the technology company building autonomous freight railcars, has announced a new agreement with Watco, one of the largest short line railroad holding companies in North America. Watco will deploy Intramotev’s TugVolt technology at a second site in Seadrift, Texas, building on the companies’ work together at Watco’s terminal in Wood River, Illinois. Aaron Jensen, […]",
+   "excerpt": "Intramotev , the technology company building autonomous freight railcars, has announced a new agreement with Watco , one of the largest short line railroad holding companies in North America.\nWatco will deploy Intramotev’s TugVolt technology at a second site in Seadrift, Texas, building on the companies’ work together at Watco’s terminal in Wood River, Illinois.\nAaron Jensen, Watco’s senior vice president of operations solutions and support, says: “At Watco, we’re always exploring new ways to support our customers. Our deployment at Wood River showed us that TugVolt can deliver safe, reliable car handling and fit into our existing operations. Bringing it to Seadrift is the next step in putting this technology to work across our network.”\nUnder the new agreement, Intramotev will deploy TugVolt units to switch railcars within an industrial facility in Seadrift. At Wood River, TugVolt technology is in revenue service moving soda ash for Watco’s customers.\nTim Luchini, Intramotev’s CEO, says: “We’re grateful to have earned Watco’s trust at Wood River, and proud they’ve chosen to expand with us to Seadrift. We look forward to delivering the same flexibility, safety and cost savings for their customers.”\nIntramotev is the first company in the world to commercially deploy autonomous freight railcars. TugVolt technology has moved more than 650,000 tons of material and 9,000 carloads in production, with active deployments in Missouri, Illinois, Michigan and Austria.\nThe agreement is the latest milestone in a busy year for Intramotev. In March, the company announced an agreement with R.J. Corman to deploy TugVolt technology in Kentucky. In April, it announced an agreement with Austria’s national railway.\nIn June, US Army Reserve soldiers trained on TugVolts during a planned technology assessment. In October, the Federal Railroad Administration selected the City of Columbia, Missouri for a $16.2 million grant that will deploy TugVolt technology as well.\nWatco provides rail, transloading, and logistics services for customers throughout North America and Australia. The company operates more than 45 railroads across over 7,100 miles of track. Watco is based in Pittsburg, Kansas and has been in operation for over 40 years.\nOur website relies on ads to provide free content and sustain our operations. By turning off your ad blocker, you help support us and ensure we can continue offering valuable content without any cost to you.\nWe truly appreciate your understanding and s"
+  },
+  {
+   "group": "wh",
+   "source": "Supply Chain Dive",
+   "title": "Walmart’s sub-30-minute delivery volume surges in Q3",
+   "url": "https://www.supplychaindive.com/news/walmarts-sub-30-minute-delivery-volume-surges-in-q3/875339/",
+   "published": "2026-11-20T19:38:00.000Z",
+   "description": "The retailer could speed up deliveries even further with faster pick times at stores, U.S. President and CEO David Guggina said.",
+   "excerpt": ""
+  },
+  {
+   "group": "wh",
+   "source": "Logistics Viewpoints",
+   "title": "Beyond the AMR: Rockwell’s Production Logistics Strategy Connects Material Flow to Plant Autonomy",
+   "url": "https://logisticsviewpoints.com/2026/11/20/beyond-the-amr-rockwells-production-logistics-strategy-connects-material-flow-to-plant-autonomy/",
+   "published": "2026-11-20T19:24:52.000Z",
+   "description": "An analyst perspective on why orchestration, digital twins, and plant-floor integration matter more than the robot alone Production logistics becomes a control problem Rockwell Automation’s press conference presented a clear thesis: the next major productivity opportunity lies in the space between automated processes. Many factories have sophisticated machines and well-instrumented production lines, yet material still […] The post Beyond the AMR: Rockwell’s Production Logistics Strategy Connects Material Flow to Plant Autonomy appeared first on Logistics Viewpoints .",
+   "excerpt": "An analyst perspective on why orchestration, digital twins, and plant-floor integration matter more than the robot alone\nProduction logistics becomes a control problem\nRockwell Automation’s press conference presented a clear thesis: the next major productivity opportunity lies in the space between automated processes. Many factories have sophisticated machines and well-instrumented production lines, yet material still arrives through manual, disconnected workflows. The result is a familiar contradiction: a highly automated line can still depend on a forklift driver or an operator pushing a cart at its boundary.\n“At the end of the line, there was a person driving a forklift and a person pushing a cart.”\nThat gap is where Rockwell is positioning production logistics. Rather than treating intralogistics as a stand-alone robotics project, the company describes an end-to-end workflow spanning production software, orchestration, controls, autonomous mobile robots, independent cart technology, and human work. This is a stronger industrial proposition than simply adding AMRs to a fleet. It treats the movement of work-in-process, components, packaging, and finished goods as part of the production system itself.\nFor manufacturers, the implication is significant. Material movement can become event-driven by production demand, quality status, inventory availability, and equipment conditions. The operational objective shifts from “dispatch a robot” to “maintain the production plan.”\nRockwell placed production logistics within a broader progression from connected operations to predictive and increasingly autonomous plants. Its “sense, think, act” framing is familiar in robotics, but the company extends the concept beyond the mobile robot to machines, lines, and plant-level workflows. Sensors establish context, software evaluates conditions, and physical assets execute the response, with a human retained in the loop where risk or uncertainty requires oversight.\n“The right product to the right spot at the right time.”\nThis framing addresses one of the hardest problems in plant automation: local optimization does not automatically create system optimization. A packaging machine can be highly efficient while waiting for film. An assembly cell can meet its cycle time but starve because a component was not replenished in sequence. A warehouse can optimize picks while production priorities have already changed. The value of autonomy therefore depends on coordinating decisions "
+  },
+  {
+   "group": "ai",
+   "source": "Simon Willison",
+   "title": "Quoting Ravi Vakil",
+   "url": "https://simonwillison.net/2026/Nov/20/ravi-vakil/",
+   "published": "2026-11-20T19:21:49.000Z",
+   "description": "Alessandro Masullo has a proposed proof of [Generalized Riemann Hypothesis], and Brian Conrad has been looking closely at it for months and gave extensive feedback which is being incorporated, and it is so far looking good. It is all human, with no AI. The hope was to bring Alessandro to Stanford for a year to polish the writing and then announce it after running it by enough people. Now it seems best to put out the current draft. &mdash; Ravi Vakil , Hurried Announcement: Alessandro Masullo GRH Tags: mathematics",
+   "excerpt": "Alessandro Masullo has a proposed proof of [Generalized Riemann Hypothesis], and Brian Conrad has been looking closely at it for months and gave extensive feedback which is being incorporated, and it is so far looking good. It is all human, with no AI. The hope was to bring Alessandro to Stanford for a year to polish the writing and then announce it after running it by enough people. Now it seems best to put out the current draft.\n&mdash; Ravi Vakil , Hurried Announcement: Alessandro Masullo GRH\nThis is a quotation collected by Simon Willison, posted on 20th November 2026 ."
+  },
+  {
+   "group": "wh",
+   "source": "Logistics Viewpoints",
+   "title": "DHL Supply Chain and the End of Peak Season: Can Warehouse Robotics Flex Fast Enough?",
+   "url": "https://logisticsviewpoints.com/2026/11/20/dhl-supply-chain-and-the-end-of-peak-season-can-warehouse-robotics-flex-fast-enough/",
+   "published": "2026-11-20T19:17:43.000Z",
+   "description": "For decades, warehouse peak season was something operators could circle on a calendar. Black Friday arrived. Holiday orders surged. Distribution centers added temporary labor, opened extra shifts, increased transportation capacity, and prepared for several frantic weeks before volumes settled back into something resembling normal. That model is becoming considerably less reliable. Promotions happen more frequently. […] The post DHL Supply Chain and the End of Peak Season: Can Warehouse Robotics Flex Fast Enough? appeared first on Logistics Viewpoints .",
+   "excerpt": "For decades, warehouse peak season was something operators could circle on a calendar. Black Friday arrived. Holiday orders surged. Distribution centers added temporary labor, opened extra shifts, increased transportation capacity, and prepared for several frantic weeks before volumes settled back into something resembling normal. That model is becoming considerably less reliable.\nPromotions happen more frequently. E-commerce demand can change quickly. Product launches can create sudden volume spikes. Weather, geopolitical disruptions, tariffs, and viral products can alter demand patterns with little warning. For warehouse operators, the challenge is shifting from preparing for the peak to operating in an environment where a peak can appear almost anywhere. That change makes warehouse automation interesting for a reason that has relatively little to do with eliminating labor. The more important question may be: Can automation give a warehouse capacity exactly when it needs it?\nDHL Supply Chain Offers an Interesting Test\nA recent article from DHL Supply Chain provides a useful example. The company says it operates more than 9,000 collaborative robots globally , after adding roughly 1,000 units during the previous year. More interestingly, DHL says it can temporarily expand its active robot fleet by approximately 30 percent during peak periods . Its robotic systems have also supported more than 1.5 billion item picks . That 30 percent figure deserves attention.\nTraditional warehouse automation economics have often been built around relatively stable throughput assumptions. A conveyor, sorter, or large AS/RS may produce tremendous productivity, but operators generally cannot add 30 percent more conveyor for November and remove it in January. Mobile robotics changes that calculation. If additional robots can be deployed temporarily, operators can begin treating automated capacity somewhat more like seasonal labor: bring it in when volumes rise, reduce it when demand falls. That is potentially a major change in warehouse economics.\nThe Biggest Automation Users Still Have an Advantage\nThere is, however, an important caveat. Scale matters. Recent research from Link Logistics estimates that only around 6 percent of North American warehouses are highly automated , while approximately 63 percent remain fully manual and another 31 percent have some degree of partial automation. The research also identifies Amazon and Walmart as the two largest deployers of warehouse "
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Algorithmic Scrutiny on Social Platforms: Evaluating TikTok Profile Expansion and Bot Detection",
+   "url": "https://roboticsandautomationnews.com/2026/11/20/algorithmic-scrutiny-on-social-platforms-evaluating-tiktok-profile-expansion-and-bot-detection/107406/",
+   "published": "2026-11-20T18:54:22.000Z",
+   "description": "Social media platforms deploy incredibly sophisticated machine learning models to monitor account activity in 2026. TikTok’s moderation infrastructure relies heavily on pattern recognition to separate genuine human interaction from automated scripts. For everyday users looking to build a personal community, understanding how these algorithms function is essential. Many individuals wonder if artificially boosting their follower […]",
+   "excerpt": "Social media platforms deploy incredibly sophisticated machine learning models to monitor account activity in 2026.\nTikTok’s moderation infrastructure relies heavily on pattern recognition to separate genuine human interaction from automated scripts.\nFor everyday users looking to build a personal community, understanding how these algorithms function is essential.\nMany individuals wonder if artificially boosting their follower count poses a risk to their account standing.\nThe answer lies entirely in the underlying mechanics of the delivery system. When automated bots flood a profile, the platform’s artificial intelligence flags the anomaly almost immediately.\nConversely, interactions stemming from verifiable human users behave completely differently within the algorithmic parameters.\nKnowing the technical distinction between automated networks and real human engagement prevents unexpected account restrictions while maintaining a secure profile environment.\nMachine learning systems on video-sharing platforms continuously analyze user behavior data points. They map out expected interaction patterns based on typical human navigation, watch times, and scrolling speeds.\nWhen an account receives an influx of followers, the system evaluates the origin and behavior of those incoming profiles.\n“The integration of behavioral AI principles into digital moderation means platforms now evaluate the nuanced movement of an account across the application, rather than just the final input.”\nAutomated scripts leave a distinct technical footprint that these moderation systems easily detect. Bots often lack varied session durations and demonstrate repetitive, predictable interaction loops. This makes them highly visible to modern algorithmic sweeps designed to maintain platform integrity.\nFor a hobbyist or an art student wanting to get TikTok followers to share their personal projects, utilizing a service requires careful selection.\nThe process is only secure if the incoming engagement originates from actual individuals using standard devices.\nServices leveraging ad-based sourcing or community networks bypass algorithmic triggers because the actions mirror organic human behavior.\nTherefore, the safety of expanding a personal profile depends entirely on the technical authenticity of the accounts involved.\nSocial media platforms are frequently viewed through a commercial lens, but a massive segment of the user base operates purely for entertainment.\nStudents, weekend travelers, "
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "ChatGPT 推出 Space：统一管理页面、幻灯片、图片与文件",
+   "url": "https://aihot.news/items/ekf0so0xitc52thkrxx3mwax1",
+   "published": "2026-11-20T18:48:12.000Z",
+   "description": "ChatGPT 官方宣布侧边栏中的 Space 成为 pages、slides、images、files 和 uploads 的新家。用 ChatGPT 可写页面、做研究、生成图片并创建交互式图表，把想法变成带图片和图形的幻灯片并邀请他人协作；页面和幻灯片还可从已连接的工具自动更新。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ekf0so0xitc52thkrxx3mwax1",
+   "excerpt": "ChatGPT 官方宣布侧边栏中的 Space 成为 pages、slides、images、files 和 uploads 的新家。用 ChatGPT 可写页面、做研究、生成图片并创建交互式图表，把想法变成带图片和图形的幻灯片并邀请他人协作；页面和幻灯片还可从已连接的工具自动更新。\n官方介绍了 Space 承载页面、幻灯片与文件的能力，读者可据此评估它在协作和内容生成场景中的用法。\n在 ChatGPT 侧边栏中，Space 是页面、幻灯片、图片、文件和上传内容的新家。\n用 ChatGPT 构建页面：写作、研究、创建图片，并通过交互式图表让数字活起来。\n把一个想法变成带有图片和图表的幻灯片，然后邀请他人协作。如果你有一个 dot，他们也可以加入。\n将页面和幻灯片设置为从你连接的工具自动更新，这样你的待办清单始终保持最新，你的项目跟踪器紧跟进度，你的旅行行程也拥有最新计划。\n官方介绍了 Space 承载页面、幻灯片与文件的能力，读者可据此评估它在协作和内容生成场景中的用法。"
+  },
   {
    "group": "wh",
    "source": "Robotics & Automation News",
@@ -383,12 +504,39 @@
   },
   {
    "group": "wh",
+   "source": "Supply Chain 24/7 自动化",
+   "title": "Five Warehouse Safety Upgrades to Plan Alongside Automation",
+   "url": "https://www.supplychain247.com/article/warehouse-safety-upgrades-automation",
+   "published": "2026-11-20T14:12:00.000Z",
+   "description": "From clearer aisle markings to stronger rack protection, five physical upgrades can make warehouses safer as they add robots and software.",
+   "excerpt": "Warehouse automation is trending &mdash; and rightfully so. Robotics and software systems solve many operational bottlenecks amid growing order volumes. They also mitigate the impact of chronic labor shortages .\nDecision-makers should continue adopting digital technology . However, the shift to automation shouldn&rsquo;t come at the expense of physical infrastructure . Here&rsquo;s how prudent executives modernize tangible warehouse design elements for workplace safety and security .\nThe United States Occupational Safety and Health Administration requires appropriate markings on permanent aisles and passageways used by material handling equipment, such as forklifts. However, the agency doesn&rsquo;t specify how wide the lines should be or what colors to use.\nFollowing industry standards is a safe bet. For example, ANSI Z535.1 recommends orange for warning labels and yellow to communicate caution. This standard is a handy guide when color-coding aisles, traffic lanes, general walkways, equipment locations, inspection areas and other key zones across the warehouse floor.\nMounting parabolic or convex mirrors makes traffic paths, loading bays and personnel exit points safer. The curvature of these mirrors expands fields of view, which can help reduce blind spots and raise situational awareness among workers.\nThese safety mirrors come in different configurations. Generally, quarter or 90-degree domes suit sharp bends. Half or 180-degree mirrors fit T-intersections, while full or 360-degree domes increase visibility in cross aisles when suspended from the ceiling.\nCommercial doors in warehouses and distribution centers have a demanding job. Busy loading environments require high-cycle door systems to withstand the rigors of heavy daily use. Industrial facilities often benefit from insulated sectional steel panels, which maintain consistent indoor temperature levels and protect inventory from dust and the elements.\nIntegrating a commercial door operator is key to streamlining loading and unloading operations. Models with sensors can detect obstructions and automatically reverse to prevent accidental closures.\nThese barriers absorb impact, helping keep racking posts intact when hit by forklifts, pallet jacks and transport vehicles. More warehouses have high clear heights to accommodate taller racks and support modern distribution.\nColumn barriers avert disaster, especially in facilities with autonomous mobile robots that can navigate independently across the floor"
+  },
+  {
+   "group": "wh",
    "source": "Robotics & Automation News",
    "title": "How your flow model decides the shape of a distribution center building",
    "url": "https://roboticsandautomationnews.com/2026/11/20/how-your-flow-model-decides-the-shape-of-a-distribution-center-building/107374/",
    "published": "2026-11-20T14:08:58.000Z",
    "description": "A distribution center’s flow model decides its shape: the path freight takes from inbound trailer to outbound trailer sets which walls carry dock doors, how deep the building runs and which end can grow. Agree the flow first and most of the building’s geometry follows. Fix the footprint first and the operation can spend years […]",
    "excerpt": "A distribution center’s flow model decides its shape: the path freight takes from inbound trailer to outbound trailer sets which walls carry dock doors, how deep the building runs and which end can grow.\nAgree the flow first and most of the building’s geometry follows. Fix the footprint first and the operation can spend years working around it.\nMost distribution buildings follow one of three patterns, named for the path freight takes:\nEach pattern is a trade-off. U-flow shares doors, yard space and dock labor between inbound and outbound, but it puts both streams of traffic on the same wall.\nI-flow separates them completely and suits high-volume transfer, in exchange for truck access on two sides of the site.\nThe Department of Defense’s warehouse design criteria, UFC 4-440-01 , set a useful test for any of them: arrange the site and the material handling layout to reduce or eliminate conflicting traffic.\nThe right pattern also depends on the facility’s role in the network, as the next two building types show.\nA cross-dock transfers freight from inbound to outbound trailers with little or no storage, so nearly all of its floor is staging. Pallets are unloaded, sorted and carried across the dock to outbound trailers on the far wall.\nThe building’s width is the distance every pallet travels, so a cross-dock needs only enough width for a staging zone along each dock wall and a travel lane between them.\nJohn Bartholdi of the Georgia Institute of Technology observes that most cross-docks are long, narrow rectangles in the shape of an I.\nWidening the dock only lengthens the carry across it, so the better way to add doors is to extend the building at its ends.\nVery large docks are the exception: with many doors, he notes, a T, H or X shape puts more doors near the center.\nHis research with Kevin Gue, published in Transportation Science, found that the best shape depends on the size of the facility and the pattern of freight flows inside.\nA storage-and-pick distribution center adds a third zone to receiving and shipping: racking, pick faces and the aisles that serve them.\nIts depth is the sum of the staging zone behind the dock doors, the cross aisle along the dock wall and the storage block beyond.\nIn a U-flow building all of that sits behind a single dock wall, so the building runs deep rather than long.\nStaging depth is easy to underestimate. On a busy shift, staged pallets creep into the travel lane and forklifts end up working around them.\nOSHA’s materials han"
+  },
+  {
+   "group": "wh",
+   "source": "Supply Chain 24/7 自动化",
+   "title": "Nearly 3 in 4 Leaders Want People, Not AI, to Have the Final Say",
+   "url": "https://www.supplychain247.com/article/korber-survey-ai-decision-making-complexity",
+   "published": "2026-11-20T14:06:00.000Z",
+   "description": "A Körber survey of 2,000 U.S. and German leaders found that 76% say decisions have become more complex and 73% are uneasy giving technology the final say.",
+   "excerpt": "Artificial intelligence is playing a bigger role in business decisions, but most leaders still want a person to make the final call. In a new K&ouml;rber repo rt , 73% of executives surveyed said they were uncomfortable letting technology have the final say.\nAmong U.S. respondents, 77% said AI was more involved in decisions, and 78% said decision-making had become more complex. Across the full survey, nearly three-quarters said too much data could make decisions harder or that decisions could stall while teams waited for information.\nK&ouml;rber released its AI and Decision Complexity Report on Nov. 18. Censuswide surveyed 2,000 senior leaders, split evenly between the U.S. and Germany, at organizations with more than $250 million in annual revenue and at least 250 employees.\nSupply chain and distribution leaders reported the highest AI involvement in decisions, at 92%. Handling exceptions and dealing with variability were challenges for 36% of respondents, while 24% cited trouble getting systems to work together.\nHealthcare and life sciences leaders reported slower AI adoption, at 60%. Their most frequently cited challenges were connecting systems (48%) and workforce skills (46%). K&ouml;rber based each industry breakdown on responses from 50 U.S. executives.\nAbout 59% of leaders at organizations making companywide changes planned to invest heavily in AI tools that help people make decisions. The share was nearly identical among organizations still in the pilot phase.\nLeaders in the companywide group were more likely to say their organizations were performing well, at 64% compared with 42% in the pilot group.\n&ldquo;Most organizations are planning or executing significant AI-related investments, but spending alone won&rsquo;t secure a return on investment ,&rdquo; said Helena Garriga, a member of K&ouml;rber&rsquo;s executive board and president of its supply chain business.\nK&ouml;rber points to four things companies can put in place to get more out of their AI spending."
+  },
+  {
+   "group": "wh",
+   "source": "Supply Chain 24/7 自动化",
+   "title": "Rockwell Automation Agrees to Buy Austrian Mobile Robot Maker AGILOX",
+   "url": "https://www.supplychain247.com/article/rockwell-automation-acquires-agilox-mobile-robots",
+   "published": "2026-11-20T14:04:00.000Z",
+   "description": "Rockwell Automation agreed to buy AGILOX from Carlyle, adding more driverless forklifts to its OTTO lineup and expanding its robotics business in Europe.",
+   "excerpt": "Rockwell Automation has agreed to buy AGILOX, an Austrian maker of driverless forklifts, from private equity firm Carlyle. Rockwell says the deal would more than double its autonomous mobile robot (AMR) business.\nThe companies announced the agreement on Wednesday. Carlyle took a majority stake in AGILOX in 2021.\nRockwell expects the deal to close in the quarter ending March 31, subject to regulatory approval and other closing conditions. AGILOX would join Rockwell&rsquo;s Intelligent Devices segment.\nThe big draw for Rockwell is how AGILOX fits with OTTO, the AMR line it added when it bought Clearpath Robotics in 2023. AGILOX makes forklift robots that move pallets. OTTO is best known for its flatbed robots and already sells a driverless forklift. The deal would give Rockwell more models for moving pallets.\nThere&rsquo;s a geographic fit too. OTTO is strongest in North America, while AGILOX has an established base in Europe. AGILOX also gets a door into Rockwell&rsquo;s customers in consumer packaged goods and life sciences.\n&ldquo;Combining AGILOX and OTTO technologies creates a best-in-class technology platform,&rdquo; said Blake Moret, Rockwell&rsquo;s chairman and CEO.\nHe added that the deal &ldquo;doesn&rsquo;t just combine strengths; it amplifies innovation and delivers breakthrough value for our customers.&rdquo;\nFounded in 2017 and based in Neukirchen bei Lambach, Austria, AGILOX has deployed more than 2,500 AMRs for customers in automotive , third-party logistics , food and beverage , and pharmaceuticals . It has more than 250 employees and subsidiaries in Europe, the U.S. and China .\nCarlyle says AGILOX has more than 400 customers worldwide and works with more than 40 partners across more than 35 countries. The firm also says AGILOX&rsquo;s revenue has quadrupled since its 2021 investment.\nAGILOX co-CEOs and co-founders Dirk Erlacher and David Niedermaier said the deal gives the company room to grow.\n&ldquo;For AGILOX, joining Rockwell Automation represents a transformational step forward,&rdquo; they said. &ldquo;This gives AGILOX the scale and market reach that we couldn&rsquo;t build on our own.&rdquo;"
   },
   {
    "group": "ai",
@@ -428,12 +576,30 @@
   },
   {
    "group": "ai",
+   "source": "OpenAI",
+   "title": "Combatting adversarial distillation",
+   "url": "https://openai.com/index/combatting-adversarial-distillation",
+   "published": "2026-11-20T10:00:00.000Z",
+   "description": "OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.",
+   "excerpt": "How we’re addressing safety risks of distillation and lessons we’ve learned for strengthening safeguards across the industry.\nAs frontier AI models become more capable, safeguards play an increasingly important role in how they can be used responsibly. Adversarial distillation creates a path for bad actors to reproduce these capabilities without appropriate safeguards. An actor may use a frontier model’s outputs without authorization to train another model with similar capabilities, then deploy it without comparable protections. For instance, an adversary might distill a model’s cyber capabilities and use the resulting model to help carry out cyberattacks that the original model would have refused to assist with or that its safeguards would have blocked.\nWe’re sharing how OpenAI detects and disrupts adversarial distillation, how we’ve strengthened protections for our models’ protected reasoning, and what we’ve learned that can help strengthen defenses across the industry.\nOur approach to adversarial distillation combines adversarial testing, model training, classifiers, and API-level protections with investigations into coordinated attempts to extract model capabilities. These updated safeguards align more closely with those we use for biology and cybersecurity.\nWe place particular emphasis on preventing attackers from extracting our models’ protected reasoning: the intermediate steps a model generates internally while working toward an answer, known as its chain-of-thought. These traces can contain information the final answer leaves out, making them especially valuable training data for another model.\nW e’ve strengthened our defenses against protected reasoning extraction in GPT‑6.2 Astra and GPT‑6.2 Sol. In an internal adaptive evaluation using strong automated red-teaming , we tested whether attackers could recover protected reasoning the model had generated while answering an earlier prompt. The average attack success rate fell from 54.0% against GPT‑6 Astra with its original safeguards to 0.2% against GPT‑6.2 Astra with its updated safeguards.\nDistillation is a common machine-learning technique in which one model learns from data produced by another. For example, a model can learn from another model’s answers, its reasoning, or its judgments about which answers are better and why . Beyond intellectual property concerns, unauthorized distillation poses serious safety risks. Through adversarial distillation, a second model can learn advanced frontier c"
+  },
+  {
+   "group": "ai",
    "source": "Latent Space",
    "title": "[AINews] Anthropic successfully completes largest IPO in history, valued at $1.5T",
    "url": "https://latent.space/p/ainews-anthropic-successfully-completes-largest-ipo-in-history-valued-at-1-5t/",
    "published": "2026-11-20T07:12:24.000Z",
    "description": "November 19, 2026 — ANT went from $83 at pricing to $111.50 at the open and $97.17 at the close. Plus, Google opens Genie 4 to developers.",
    "excerpt": "November 19, 2026 — ANT went from $83 at pricing to $111.50 at the open and $97.17 at the close. Plus, Google opens Genie 4 to developers.\nAs we previewed on our Know Before You IPO pod , Anthropic set its IPO price at $83 and today $ANT closed at $97.17, up 17% from the offering price ( drifting -5% to $92.60 after the close) . The $81.3B offering overtook SpaceX's June IPO as the largest in history.\nDario and Daniela ( Dario’s remarks , Founders’ letter ) used the occasion to say Anthropic would pace training and deployment based on whether it could keep its systems safe and under human control.\nTheir Class F shares carry 50.1% of voting power on most shareholder matters. Expect the lockup expiries to weigh on the stock price as about a trillion dollars of shares free up over the next year, while Anthropic has to keep the world’s top model ... for now .\nAI News for 11/18/2026–11/19/2026. We checked 12 subreddits and 544 accounts on X . Search past issues in the AINews archive .\nAnthropic listed on Nasdaq under $ANT, priced at $83, and opened 34% higher, putting it near a $2T valuation.\nListing: Anthropic rang the Nasdaq opening bell ( @kimmonismus , @yacinelearning ). The official account posted a media-only launch item that drew by far the day's highest engagement ( @AnthropicAI ).\nOpening trade: $ANT opened at $111.50 , which is $28.50 (34.3%) above the $83 IPO price ( @TheRundownAI , @kimmonismus ). Pre-open indications were up ~32% at ~$110 ( @kimmonismus ).\nRecord raise: The $81.3B raised beats SpaceX's $75B (June) as the largest IPO ever ( @TheRundownAI ).\nNet proceeds: Expected net proceeds are $104.8B including a concurrent private placement. Fully diluted valuation was ~$2T at the open ( @kimmonismus ).\nAMD investment: AMD agreed to invest $2.5B in Anthropic alongside the IPO. The same morning, AMD fell after a Hunterbrook report that a US-blacklisted Chinese server maker kept shipping newer AMD firmware ( @kimmonismus , source ).\nCEO statement: Dario Amodei published IPO remarks with a strong safety commitment (details below) ( @AnthropicAI ).\nEmployee wealth: The average employee could be worth >$40M , per SEC filings and investors ( @kimmonismus ). Anthropic's 5,300 founders and employees are now worth more than the bottom third of US households, about 45M families ( @SteveRattner ).\nPersonal framing: Dario and Daniela lost their father to a disease that became curable a few years later. Dario cited CRISPR's decades-long path from discovery t"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Thinking Machines Lab 发布可跑在笔记本上的开源权重模型 Inkling 2 Mini",
+   "url": "https://aihot.news/items/y7nk77dxae51qwi826gpmvbho",
+   "published": "2026-11-20T07:00:00.000Z",
+   "description": "Thinking Machines Lab 发布开源权重模型 Inkling 2 Mini，采用循环 Transformer 架构，将中间 12 层每 token 运行三次，总参数 26.4B、激活 3.4B，内存占用约 20GB，可在 32GB 内存以上的 Mac 本地运行。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y7nk77dxae51qwi826gpmvbho",
+   "excerpt": "Thinking Machines Lab 发布开源权重模型 Inkling 2 Mini ，采用循环 Transformer 架构，将中间 12 层每 token 运行三次，总参数 26.4B、激活 3.4B，内存占用约 20GB，可在 32GB 内存以上的 Mac 本地运行。\n原文给出循环架构设计、基准分数和可运行硬件门槛，读者可据此判断它是否适合本地部署和智能体任务。\n今天我们发布 Inkling 2 Mini，这是一款速度快、能力强的模型，体积小到可以在你的笔记本电脑上运行。\nInkling 2 Mini 是一个循环式 transformer，每生成一个 token 都会把模型的中间层跑三遍。这样一来，模型能进行更多推理，用更少的 token 得出正确答案，在依赖推理质量的智能体编程等任务上尤其如此。在 DeepSWE v1.1（48.2%）和 Vals Index v2.2（46.5%）等基准上，Inkling 2 Mini 领先所有总参数量低于 100B 的开源权重模型，运行速度也比性能相近的模型更快。\nDeepSWE v1.1。Ripple-65B（预览版）：44.3%，理论吞吐 4.7 tokens/s。Gemma 4 31B：0.3%，理论吞吐 10.0 tokens/s。Muse Glimmer：4.4%，理论吞吐 10.2 tokens/s。Qwen3.8-27B：42.2%，理论吞吐 11.4 tokens/s。Inkling 2 Mini：48.2%，理论吞吐 54.4 tokens/s。Gemma 4 26B A4B：0%，理论吞吐 80.8 tokens/s。Recursive Flint：10.81%，理论吞吐 122.8 tokens/s\nSWE-bench Pro v2 Hard（51 项任务）。Ripple-65B（预览版）：79.1%，理论吞吐 4.7 tokens/s。Gemma 4 31B：14.2%，理论吞吐 10.0 tokens/s。Muse Glimmer：44.3%，理论吞吐 10.2 tokens/s。Qwen3.8-27B：73.8%，理论吞吐 11.4 tokens/s。Qwen3.6-27B：37.25%，理论吞吐 11.4 tokens/s。Inkling 2 Mini：77.9%，理论吞吐 54.4 tokens/s。Gemma 4 26B A4B：11.8%，理论吞吐 80.8 tokens/s。Qwen3.6-35B-A3B：28.1%，理论吞吐 102.3 tokens/s\nInkling 2 Mini 是一个混合专家（MoE）模型，总参数量 26.4B，激活参数 3.4B，考虑到循环，每个 token 的权重激活量为 5.4B。循环让模型能够推理更久，而不必把推理过程写下来，这对监控很重要：也就是我们通过阅读模型的思维链（CoT）来监督和理解其行为的能力。\n我们用 Inkling 2 Mini 以及随它一同发布的一个研究专用的可变循环变体，测量了循环对性能和可监控性的影响。可变循环模型的无 CoT 时间跨度从单次运行的 16 秒提升到三次运行的 37 秒，其在一项串行推理基准上的表现一直提升到十次循环——是训练时循环次数的两倍。随着循环次数增加，模型的思维链变短了，但始终清晰可读。在智能体破坏行为的测试中，增加循环并没有让模型的得分呈上升趋势。\n我们很高兴能为研究者提供首批采用循环架构的模型。可变循环模型被用于我们的可监控性实验，因为它能更清晰地在不同循环深度之间做比较。\nInkling 2 Mini 的大部分权重在训练和部署时都原生采用 NVFP4，最后四层为 MXFP8。Inkling 2 Mini 的总内存占用约为 20GB，因此可以在消费级笔记本电脑和桌面 AI 电脑等本地设备上运行。我们的研究人员带着 Inkling 2 Mini 上了一趟航班，它在 MacBook Pro 上离线运行，几分钟内就做出了一个可玩的飞行模拟器。\n正在加载 Inkling 2 Mini 构建的飞行模拟器… 要试用飞行模拟器，请在桌面端打开此页面。\nInkling 2 Mini 以开放权重形式发布，今天已在 Tinker 上线，可用于推理和定制。\nInkling 2 Mini 的优势与 Inkling 2 Small 一致：它最擅长长周期智能体任务，在我们测过的大多数任务上，是同尺寸开放权重模型中的最佳。\n在 DeepSWE v1.1、SWE-bench Pro v2 等智能体编程基准上，Inkling 2 Mini 的得分领先所有同类模型；在其他一些基准上则仅次于 Qwen3.8-27B。在内核优化基准 PMPP-Hard 上，它的成绩接近体量大得多的 Inkling 2 Small。\n循环能提升模型的推理能力，但无法让权重存下更多事实——知识量主要取决于参数总量。在衡量事实性的 AA-Omniscience 上，Inkling 2 Mini 的得分与同尺寸的其他模型相当。研究 可变循环模型 时我们发现，长上下文基准的表现会随循环次数增加而提升，例如 GraphWalks BFS 和 MRCR v2；但知识密集型基准不会因循环次数增加而改善，例如 AA-Omniscience、SimpleQA Verified、SimpleVQA 和 WorldVQA。\nInkling 2 Mini 通过高效使用搜索和工具弥补了知识短板。在 BrowseComp、DeepSearchQA 和 MCP Atlas 上，它领先同尺寸的开放权重模型；在结合搜索与工具使用的知识工作基准上同样表现强劲。\n每行中 已报告的最佳成绩 （数值越低越好时取最低值）；显示分数相同则并列 每行中 已报告的第二好成绩 ；第一名并列时无此项\n斯坦福的研究人员以“每焦耳智能”来衡量：大语言模型要达到某一性能水平，每次查询需要消耗多少能量。 斯坦福 Hazy Research Lab 和 S"
   },
   {
    "group": "ai",
@@ -509,12 +675,57 @@
   },
   {
    "group": "ai",
+   "source": "OpenAI",
+   "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+   "url": "https://openai.com/business/customer-stories/hebbia",
+   "published": "2026-11-20T00:00:00.000Z",
+   "description": "Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality.",
+   "excerpt": "Hebbia sees gains in financial research in tests of GPT‑6 Astra.\nPercentage-point lead over the best alternative tested in Hebbia’s tests.\nPercent of cited excerpts relevant to the question in Hebbia’s tests.\nPercent of applicable presentation requirements met in Hebbia’s tests.\nPercentage-point lead over the best alternative tested on presentation requirements.\nBefore a banker can recommend an acquisition to their client, they need to make sense of financial statements, customer contracts and management presentations. Hebbia’s Matrix helps bring that research together, linking answers to the documents behind them.\nHebbia tested OpenAI’s GPT‑6 Astra to improve two parts of that work: finding the sources a question requires and building a presentation that follows the banker’s brief.\nIt could work like this: a banker is helping their client assess a strategic acquisition of an industrial-software company, with roughly 2,000 files to review. What makes its revenue durable? How does it compare with peers? In Hebbia’s hypothetical example, the banker could load the data room into Matrix and examine customer concentration, contract terms and churn in cited cells. Matrix could bring in peer filings and industry news to help develop the deal thesis, then turn that research into a diligence summary and valuation deck in the firm’s template.\nIn that workflow, GPT‑6 Astra selects documents or Matrix cells to support an answer, then turns the analysis into native PowerPoint slides that follow the user’s structure and guidelines.\n“Traceability is really important to our users because they’re basing millions of dollars of decisions on what the AI actually comes back with,” Kavita says. “Citations help with traceability as well as giving users confidence that the AI found the right answer.”\nIn Hebbia’s tests, GPT‑6 Astra combined broader source coverage with highly relevant citations. It scored 13.6 percentage points above the best alternative tested on citing the required types of sources, while 99.5% of the excerpts it cited were relevant to the question.\nHebbia tested a prerelease build in August-September 2026, using the same financial research cases and grading criteria for each model. Domain experts wrote or audited the criteria against source documents.\n“When you’re looking at a data room with thousands of documents, that’s extremely important. Even a single percentage-point gain can yield a lot of marginal benefit,” Kavita says.\nA presentation also has to look l"
+  },
+  {
+   "group": "ai",
+   "source": "OpenAI",
+   "title": "Can AI help scientists identify promising drug candidates?",
+   "url": "https://openai.com/index/introducing-medchembench",
+   "published": "2026-11-20T00:00:00.000Z",
+   "description": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery.",
+   "excerpt": "Introducing MedChemBench, a benchmark that tests how well AI models read molecular structures, interpret experimental results, and choose which compounds to test next.\nWe’re introducing MedChemBench, a benchmark that evaluates AI models on reasoning tasks drawn from medicinal chemistry research. It tests whether models can connect a molecule’s structure with experimental evidence to explain results, compare compounds, and predict their properties. Building AI that can reliably support this work is one step towards helping scientists develop better medicines.\nOne of the hardest parts of this work is that improving one property of a molecule can make another worse. A compound might act strongly against a disease related protein but be poorly absorbed or break down too quickly in the body. Medicinal chemists work through these tradeoffs by designing, making, and testing related compounds, then deciding what to try next. For AI to help, it needs to connect changes in molecular structure with experimental evidence and reason about what compounds are worth pursuing.\nMedChemBench measures these abilities through 99 problems drawn from published research. At the xhigh reasoning setting, GPT‑6.2 Astra earned 84.5% of the available credit, compared with 83.3% for GPT‑6 Astra, 82.0% for GPT‑6.1 Sol, and 58.2% for GPT‑5.6 Sol. GPT‑6 Astra was strongest at reconstructing molecular structures and explaining experimental evidence. Selecting compounds and predicting their numerical properties proved harder for that model.\nMedChemBench draws on 117 papers and patents and includes 761 distinct molecular structures. For most problems, models receive the context available at a chosen point in a research program: the biological target, the researchers’ goals, the compounds studied so far, and selected experimental findings.\nMolecular structures. Correct atom connections and specified stereochemistry in molecules assembled from the drawings and chemical groups provided.\nScientific reasoning. Explanations supported by the supplied evidence, such as the reasons for choosing one compound over another.\nRanking and selection. Compound rankings and choices that meet the stated requirements.\nProperty predictions. Agreement with the numerical values and categories reported in the source material, including measured and calculated molecular properties.\nOne MedChemBench problem draws on research into inhibitors of PRMT5, a protein studied in cancer drug discovery. The model receives mole"
+  },
+  {
+   "group": "ai",
+   "source": "Hugging Face",
+   "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
+   "url": "https://huggingface.co/blog/inkling2mini",
+   "published": "2026-11-20T00:00:00.000Z",
+   "description": "",
+   "excerpt": "TLDR; Inkling 2 Mini is a new looped transformer model. It’s a multimodal Mixture-of-Experts with ~26B physical total and 3B active parameters per token. It uses a neat trick to increase capacity: some layers are visited in a loop that repeats three times, which makes it work like it had more parameters. It supports a 1M-token context size, accepts images and text inputs. Thinking Machines Lab ships the model in a mixed-precision format, with NVFP4 and MXFP8 expert weights. A DSpark drafter is also included for additional speed-up at a small memory cost.\nInkling 2 Mini is much, much smaller than Inkling 2 Small, and is designed for local AI setups. We think this is a refreshingly new great local model. In our vibe tests, it's at least comparable with Qwen 3.8 27B. More validation is needed, but we are super excited about this release!\nWe ship transformers, Llama App (llama.cpp), and MLX support. SGLang also provides day-zero inference support for production deployments on datacenter hardware.\nThis post goes through what makes Inkling Mini different, some of our vibe tests, and how you can use it with your setup.\nInkling 2 Mini is a mixture-of-experts model with 24 decoder layers, but the 12 middle layers run three times in a loop. Therefore, the model acts as if it had 48 (6+ 3*12 + 6) logical layers with just 24 physical ones.\nSimilar to Inkling 2 Small, Inkling 2 Mini executes 48 layer visits per token. The hidden size is 2,304 instead of 4,608. At each layer visit, both variants route the token to 8 experts, but Mini selects them from among 128 experts per layer, while Small selects from 384. The decoder runs layers 0–5 once, layers 6–17 three times, and layers 18–23 once. All three passes through layers 6–17 reuse the same weights.\nArchitectures such as Nanbeige have explored looping before. But Inkling 2 Mini explores an interesting approach. Every pass through the looped core (layers 6–17) starts from the same inputs which is the output of the first six layers. Information moves between passes through cross-pass messages . Each looped layer reads a message from the previous pass's outputs with its own learned query (one message for its query, key, value and MLP inputs). A small gating controller then looks at both the layer's current input and the message. It decides how much of the current input to forget and how much of the message to add. Each pass therefore refines what the previous one computed.\nText decoder width is 2,304, and the intermediate "
+  },
+  {
+   "group": "ai",
    "source": "Hugging Face",
    "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
    "url": "https://huggingface.co/blog/harness-adapters-at-scale",
    "published": "2026-11-20T00:00:00.000Z",
    "description": "",
    "excerpt": "Combining RL on a custom task distribution with your favorite agent harness yields more accurate and efficient models for that target harness and task distribution.\nModels are not fully optimized for all harnesses and the tasks you’re doing. Instead, they target general performance. So when you combine a model and harness, you’re leaving performance and efficiency on the table for the stuff you’re actually doing. With RL, you can train a custom harness adapter that squeezes everything out of your model for your harness and task combination.\nTake Qwen3.8-27B, its Terminal-Bench 2.1 score with the pi harness is 39% which uses on average 2.9K tokens per task. If we freeze those weights and add a custom RL-trained LoRA adapter we can get 55% pass@1, with average token usage of 1.5K. Most of this is down to the model reasoning less, calling less tools, and performing better first time.\nOur earlier work ( multi-harness RL , harness adapters ) showed that RL on your own task distribution, inside your own harness, gives a more accurate and more efficient model. Those experiments covered data-analysis and code-building tasks. Here we wanted to push this further by exploring whether the result holds at 27B, on harder real-world software engineering tasks, across three harnesses: Pi, OpenCode and Hermes Agent. And most of all, share a fully reusable recipe, so you can reproduce this on your own task, harness, model combinations.\nWe leverage the Harbor integration in OpenEnv and TRL’s OpenEnv guide to train the model inside the harnesses we chose for the final training. We have built ready-to-use docker images for all our RL tasks that come with the target harnesses already pre-installed inside. In our final docker images, we use Pi 1.5.2 , OpenCode 2.2.7 and Hermes Agent v0.22.6 . The diagram below from the aforementioned blogpost explains well the entire protocol:\nMost RL frameworks train a re-implementation of the agent loop: the agent is written against the framework's own interface, such as verl's AgentLoop , SkyRL-Gym environments, rLLM 's agent and environment classes, slime 's custom rollout functions, or ART 's client inside your own Python agent. Here the harness runs exactly as it ships, and the trainer learns from the exact tokens it produced, recorded by a proxy between the harness and vLLM. Recent work moves in the same direction: Agent Lightning v1.0 keeps the deploy-time harness in the loop through a proxy (\"harnessed agentic RL\"), and SkyRL's Harbor i"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "browser-use 1.0 发布：用一个 Python REPL 工具替代 24 个浏览器动作",
+   "url": "https://aihot.news/items/wibzzhd168cafn7o3gl8336di",
+   "published": "2026-11-20T00:00:00.000Z",
+   "description": "Browser Use 发布 browser-use 1.0，用单一 python 持久 REPL 加原生 Chrome DevTools Protocol 访问替代 0.x 的 24 个浏览器动作。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wibzzhd168cafn7o3gl8336di",
+   "excerpt": "browser-use 1.0: Why We Replaced 24 Agent Tools With One\nBrowser Use 发布 browser-use 1.0，用单一 python 持久 REPL 加原生 Chrome DevTools Protocol 访问替代 0.x 的 24 个浏览器动作。\n作者用同一基准的分数与成本对比，说明了把 24 个工具收敛成一个 Python REPL 的取舍和适用边界，方法可迁移到自己维护的 agent 工具集。\n作者用同一基准的分数与成本对比，说明了把 24 个工具收敛成一个 Python REPL 的取舍和适用边界，方法可迁移到自己维护的 agent 工具集。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Google 回顾 Duplex 十年演进：如何在 Gemini Tasks 中替用户打电话给商家",
+   "url": "https://aihot.news/items/t68rgyv46hdbp52212ozxleh3",
+   "published": "2026-11-20T00:00:00.000Z",
+   "description": "Google Research 回顾 Duplex 十年架构演进，并介绍本周在 Gemini App Tasks 中上线的自动致电商家功能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t68rgyv46hdbp52212ozxleh3",
+   "excerpt": "How Google Duplex evolved to also call businesses for you in Gemini\nGoogle Research 回顾 Duplex 十年架构演进，并介绍本周在 Gemini App Tasks 中上线的自动致电商家功能。\n文章梳理 Duplex 三代架构演进与技术难点，可帮读者理解 AI 电话智能体如何处理实时对话的延迟与语用问题。\n完成订晚餐、约理发这类事情很费时间。实时电话对话节奏很快，很少按剧本走。电话那头的人几乎什么话都可能说，还常常说到一半就改口——而人们往往靠细微的语气变化来判断该谁开口。停顿多出半秒，听起来就像电话断了；抢话太早，又会变成两个人同时说话。要借助 AI 在电话里得体地完成这些事，我们必须让高质量的语音理解、上下文推理和语音合成在同一个低延迟系统里协同工作。\n大约十年前，我们推出了 Google Duplex 来应对这一挑战。在基础模型进步的推动下，Duplex 架构不断演进，如今已能为 Google 搜索、地图等众多核心产品提供自主任务完成能力。本周，我们在 Gemini 应用中的 Tasks 里上线了 Duplex——这是一个个人 AI 协作助手，能帮你处理现实生活中的琐事，比如替你给商家打电话，代表用户完成现实世界中的请求。本文回顾这十年间的架构演进，正是它让这一切成为可能——从早期封闭领域的模型，走向完全基于 Gemini 构建的统一技术栈。\n最初只是一个狭窄的、针对特定任务的系统，很快就扩展为共享的对话基础设施，由 Google 各团队协作打造。\n新冠疫情期间，营业时间和服务内容变化很快，Duplex 加大了 自动核实商家信息 的力度，以保证商家信息准确。它至今仍是重要的数据来源；例如，正如我们在 2023 年所分享的，来自 Duplex 电话通话的商家信息在搜索和地图中 展示已超过一万亿次 。\n与此同时，我们与 Android 和硬件团队合作，把这些对话模型直接带到设备端。从 2019 年起，我们连续五代 Pixel 推出了新的 Pixel Call Assist 功能。这些模型至今仍在为 来电筛选 和 为我等候 等功能提供支持，帮助用户过滤陌生来电，并在排队等待结束后由 AI 与人工客服对话，直到用户重新接入。2025 年和 2026 年，基础模型在 Google 搜索 和 Ask Maps 中解锁了更广泛的智能体通话能力，可查询报价、商品库存和服务空档，从宠物美容到汽车维修都能覆盖。\n过去十年间，支撑这些通话的技术栈经历了三个截然不同的阶段，从定制的神经网络流水线走向使用 Gemini 的统一架构。\n早在现代语言模型出现之前，甚至早在 transformer 被发明出来之前，我们就已经启动了 Google Duplex 的研发工作。在早期阶段，为了确保商家和用户都能获得良好体验，我们把 Duplex 限制在较窄的领域内，并基于匿名化的特定任务电话对话训练定制的 循环神经网络 模型。由于没有预训练的世界知识，我们只能教会模型如何高效处理每一种具体任务。在实践中，这意味着每种任务类型都依赖大量训练数据——比如要理解餐厅预订与查询节假日营业时间这两种截然不同的固定流程——才能确保系统可靠地应对特定领域的逻辑。\n随着开放域基础模型的出现，Google Duplex 开始将其投入生产环境。例如，2022 年 Duplex 在实时通话中使用了 LaMDA 。这些预训练模型简化了语义理解和常识推理，让系统能够应对意料之外的对话转折和跑题，同时仍能紧扣上下文，像标准的餐厅预订那样推进对话。\n不过，这些早期生成式模型的可预测性不如今天，有时速度也更慢，因此我们构建了混合架构：用生成式模型负责灵活措辞，用确定性的状态跟踪和严格的策略护栏来兜底。这有助于确保用户和商家都能获得良好体验。\n随着基础模型不断进步，我们彻底取消了固定垂直领域的限制，转而用自由文本的任务描述来提示系统。这样一来，模型只需一段提示词就能定义任务，系统便能泛化到新的任务类型和细节（比如要求靠窗座位，或需要放婴儿车的额外空间）以及新的商家类别，无需从零构建独立的对话模型。\n我们的通话架构使用 Gemini 统一多模态理解、规划和对话生成，使系统能够处理多重约束的请求——比如在日程冲突中安排汽车保养——并在接待员提出其他时间段时灵活调整。\n即便有了前沿模型，实时电话通话仍存在一些仅靠网页等标准数据集预训练无法解决的障碍：\nDuplex 既要服务好接听电话的商家，也要服务好用户。这一原则塑造了若干设计选择：\n许多日常琐事、本地服务和紧急任务，仍然需要直接与人交谈才能可靠地协调细节。通过把 Duplex 的能力集成到 Gemini App 的 Tasks 中，我们又向打通这一环迈出了一步。自然语音交互成为一种无缝集成的交互方式，当在线 API 或预订表单这类结构化数字渠道不存在时，智能体随时可以启用它。借助我们最新的 Gemini 4 模型——包括 Gemini 4 Hydrogen 和 Gemini 4 Neon ——Gemini 中的 Tasks 现在可以支持更全面的工作流，比如分析水电费账单、通过 Agent Payments Protocol 安全处理交易，以及通过电子邮件和富通信服务（RCS）与用户协调。借助这些能力，我们正把这项研究带入下一代 AI 助手。\n我们感谢 Duplex 团队，以及 Google 上下在这段长达十年的旅程中领导和参与其中的每一个人。感谢 Yoav Tzur、Sasha Goldshtein、Rafael Goldfarb、Liran Peretz、Ritika Pathak、Sen Li、Ran Manor、Dekel Auster 以及团队中许多其他人为推动向 Gemini 驱动的通话转型、并促成此次在 Gemini 的 Tasks 中上线所做的贡献。\n来源： Google Research：Blog · research.goo"
   },
   {
    "group": "ai",
@@ -796,6 +1007,15 @@
    "excerpt": "Runway 介绍了逐步把软件交付各环节交给智能体完成的实践。智能体 10 月驱动了 38% 的合并 PR（6 月仅 0.1%），首次批准等待中位数从超过 2 小时降至约 5 分钟；AI 单独批准的 PR 回滚率约千分之一，低于人工批准的约 1/200。\nRunway 逐站交代了让智能体接管软件交付各环节的做法与验收标准，读者可对照借鉴这套可迁移的工程方法。\nAI 让写代码变快了，但代码审查却成了工程师们的瓶颈。下面是我们如何一步步把交付流水线交给智能体，以及数据说明了什么。\n每个月，智能体编写的代码占比都在上升，拉取请求审查的队列也随之变长。审查机器人能发现问题，但每发现一个问题，改动就要退回再走一轮审查，最终拉取请求还是得等人来批准。\n今年夏天，在我们核心 API 仓库中，花在智能体编写代码上的人工审查占比增长了两倍多，达到约五分之一，等待人工批准的拉取请求数量也翻了一番。\nAnthropic 工程师 Felix Rieseberg 的“ How to be more ambitious ”启发了我们向前看。我们没有要求智能体写出更好的改动，而是测试它们能否接管软件交付的每个阶段，并且在看结果之前就先定好每个交接环节的评判标准。OpenAI 也描述过 在一个从空仓库起步的产品上发生的类似转变。\n10 月我们合并的拉取请求中，有 38% 由云端智能体驱动，而 6 月这一比例仅为 0.1%。9 月到 11 月中旬，首次批准的中位等待时间从两个多小时降到约五分钟，每周合并的拉取请求数量也翻了一倍多。由智能体批准的改动，被回滚的频率并不比人工批准的更高。\n从接到任务到上线，中间有七道工序。审查是指阅读改动并提出修改要求；批准则是放行合并的签字。智能体已经在帮忙做第一道工序；下面每一步都会把下一道工序交给它们。\n年初的时候，工程师挑一个任务，提示智能体把它写出来并开一个拉取请求，然后等 CI 跑完，再把问题交回给智能体。接着他们得找一位同事来审查。改动一旦合并，主干可能会挂掉，谁先发现谁就得找出原因，要么向前修复，要么回滚。QA 也是手工做的。这些步骤之间的每一次交接都是人的工作，所以智能体写的改动越多，转给工程师的活就越多。\n问题所在： 让智能体来写改动，也许能省下我们一个小时的敲代码时间，但随之而来的是整整一个下午的收尾工作：修不稳定的测试、处理 lint 报错、解决合并冲突、回应评审意见。\n我们做了什么： 一个内部服务，在云端运行编码智能体，并一路跟进每个拉取请求，直到它全部通过。你给它一个任务、批准它的计划，之后智能体就会写出改动、发起拉取请求、重跑 CI、修复测试、回复评审意见并完成变基。\n我们如何确认它有效： 到第三个月，这个服务已经处理了我们 38% 的拉取请求，而且我们的智能体也几乎不需要人工介入。在 11 月上半月合并的 100 个智能体拉取请求样本中，有 78 个没有任何人工提交。\n每月合并的智能体驱动拉取请求数：6 月 2 个，7 月 164 个，8 月 268 个，9 月 592 个，10 月 3,130 个，11 月截至目前 1,912 个，全月预计约 3,200 个。\n智能体产出可供评审的拉取请求的速度，超过了人们阅读它们的速度，于是评审成了下一个需要交接的环节。\n问题所在： 我们的第三方评审机器人缺乏上下文，工程师们于是学会了快速略过它，仍然自己阅读每一处改动。\n我们做了什么： 一个 AI 评审器，它拥有与编写代码的智能体相同的上下文，包括计划、diff 以及周围的代码。通常作者也是另一个智能体，因此改动会在编码智能体和 AI 评审器之间来回往返，直到干净为止。\n我们如何确认它有效： 在我们的核心 API 仓库中，11 月上半月 AI 评审器发起的评论线程有 93% 被解决或促成了代码改动，高于 9 月的 84%。9 月下旬的一次重建把每次评审的成本降到了约三分之一，同时每周评审量还在上升。\n每周评审的拉取请求数从 8 月 10 日当周的 234 个上升到 11 月 9 日当周的 3,177 个。\n每次评审成本指数在 9 月 21 日之前保持在 60 到 110 之间，从 9 月 28 日起降至 25 到 37 之间。\n问题所在： 让 AI 评审器直接批准能清空队列，但这意味着代码会在没人读过的情况下合并。迈出这一步之前，我们需要证明 AI 的批准与工程师的判断一致。\n我们做了什么： 基于风险的批准机制。由一个独立的智能体给每个拉取请求评定低、中、高风险，拿不准时就往高里评，评级决定谁能批准它。起初，我们让 AI 自行批准低风险改动，以及在仓库允许的情况下批准中风险改动。高风险改动交给人工，数据库迁移、密钥和身份认证等代码库的关键区域仍须由代码所有者签字确认。\n我们一开始让评审器与人工并行批准，并统计人工提出异议的频率。十月中旬，我们允许仅凭 AI 批准就合并拉取请求。九月到十月间，它批准的 977 个拉取请求中只有 15 个被人提出异议，约占 1.5%，这一日期前后的比例基本持平。\n我们如何确认它有效： 首次批准的中位等待时间从九月的两个多小时降到十一月中旬的约五分钟；在我们核心 API 仓库中，AI 评审的合并约有七成仅凭它的批准就完成了。十月到十一月间所有仅凭 AI 批准合并的拉取请求中，只有千分之一被回滚，而人工批准的约为两百分之一。考虑到 AI 批准的大多是较不容易被回滚的低风险改动，我们按风险等级做了对比，发现 AI 批准的表现与人工相当。\n核心 API 仓库中仅凭 AI 批准完成的已评审合并占比，每两周统计：10月5日至18日，35%；10月19日至11月1日，70%；11月2日至15日，74%；11月16日至18日至今，78%。\n在我们的核心 API 仓库中，从待审核到合并的中位时间从约 11 小时降到不足 2 小时，但人们仍在手动测试产品。\n问题： 我们发布了一款名为 App Studio 的新产品，光靠单元测试不足以建立信心。我们需要一个能像真人一样使用它的东西，"
   },
   {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "METR 发布 2026 年 11 月能力测量更新：AI R&D 相关能力每约 3.6 个月翻倍且更难测量",
+   "url": "https://aihot.news/items/sn8qb9u8fqka3mpnmy0r1nz4b",
+   "published": "2026-11-19T16:00:00.000Z",
+   "description": "METR 发布截至 Opus 5.5 和 GPT-6 Astra 的能力评测更新，发现在 TH1.1 与 TH2 任务上模型时间视野约每 3.6 个月翻倍，可验证子集翻倍时间约 1.65 个月。 🔗 阅读原文 via AIHOT · https://aihot.news/items/sn8qb9u8fqka3mpnmy0r1nz4b",
+   "excerpt": "METR 发布截至 Opus 5.5 和 GPT-6 Astra 的能力评测更新，发现在 TH1.1 与 TH2 任务上模型时间视野约每 3.6 个月翻倍，可验证子集翻倍时间约 1.65 个月。\nMETR 用自家任务套件量化模型能力增速与短板，并讨论评测环境与 RL 训练环境趋同带来的测量偏差，方法细节可供评测设计参考。\nMETR 用自家任务套件量化模型能力增速与短板，并讨论评测环境与 RL 训练环境趋同带来的测量偏差，方法细节可供评测设计参考。"
+  },
+  {
    "group": "wh",
    "source": "Supply Chain Dive",
    "title": "How Home Depot built the missing logistics piece for its Pro business",
@@ -850,15 +1070,6 @@
    "excerpt": "Anthropic’s IPO puts AI’s circular financing boom to the test\nTechCrunch 分析 Anthropic IPO 如何检验 AI 行业的循环融资模式。Amazon 14.7% 股份价值超 1590 亿美元，Google 13.7% 股份约 1490 亿美元；Nvidia、AMD、 Microsoft 、Broadcom、Micron、TSMC 还以 83 美元/股参与 260 亿美元私募。\n文章梳理了 Anthropic IPO 中供应商与投资者的资金回流结构，为理解 AI 循环融资争议提供了具体数字与分析师观点。\nAnthropic 今天登陆公开市场，此次 IPO 有望为公司及其投资者募集数十亿美元。但最大的意外或许是，其中很大一部分资金最终会流向作为供应商的投资者。\n亚马逊和谷歌 是 Anthropic 最大的两家基础设施合作伙伴，按公司最新 IPO 价格每股 83 美元计算，两家持股合计价值约 3079 亿美元。根据 Anthropic IPO 招股书披露的持股数据，亚马逊向这家 AI 初创公司投资了 180 亿美元，其 14.7% 的持股价值将超过 1590 亿美元；谷歌 13.7% 的持股价值则接近 1490 亿美元。\n另外几家 AI 基础设施供应商也有望从中受益。英伟达、AMD、微软、博通、美光科技和台积电与谷歌一道，在私募配售中按 IPO 价格向 Anthropic 承诺投资 260 亿美元。\n自 2023 年以来，谷歌已向 Anthropic 投资 123 亿美元，另有 承诺的 300 亿美元 取决于 Anthropic 能否达成某些业绩里程碑。除台积电外，Anthropic 还宣布与英伟达、AMD、博通、微软、美光科技等其他基础设施供应商投资者达成数十亿美元的战略合作，Anthropic 将向这些公司采购产品。\n这就是让一些观察人士对 AI 热潮深表怀疑的 循环融资 。这些公司不仅是投资者，也是 Anthropic 最大的供应商。表面上看，亚马逊和谷歌向 Anthropic 投入了数十亿美元，但当 Anthropic 需要训练模型或为用户运行 Claude 时，这笔钱又原路流回它们手中。从远处看，这像是云公司前所未有的营收增长，以及 Anthropic 前所未有的融资规模——但实际上，只是同一笔钱从一个口袋转到另一个口袋。\n今天的 IPO 标志着这一融资体系的关键转折，它或许正是这套体系走向自我维持的时刻。那些投资看来已经见效，如今也已变现。Anthropic 每季度仍处于数百亿美元的净亏损状态，但买单的将不再是供应商和私募投资者。今后，资金将来自公开市场投资者和公司债券的组合，这两者都不存在此前引发担忧的利益冲突。\n上市后，Anthropic 预计将拥有约 2200 亿美元的现金、现金等价物和短期投资，其中包括 IPO 募资和 260 亿美元私募配售所得。Anthropic 也有能力用股票支付未来的承诺款项。\nSemiAnalysis 旗下 Tokenomics 团队负责人 Joey Brookhart 估计，Anthropic 未来四年需要累计约 2800 亿美元的收入才能支付其算力账单，Brookhart 称，考虑到他们明年的营收前景，这一目标“是可以实现的”。\n“这笔持股非常值得，这些公司也不再需要（供应商）提供更多支持了，”Brookhart 对 TechCrunch 表示。“亚马逊不需要再扶持他们了。收入全都来自其他客户。”\n不过，这并不意味着服务器账单会减少。根据一份 监管文件 ，Anthropic 已承诺支出 9000 亿美元，主要用于算力和基础设施。部分协议设有终止条款，但 Brookhart 认为公司有足够实力付清这些款项。\n另一方面，Anthropic 在 2026 年第三季度实现了 170 亿美元营收，按此速度全年年化营收将达到 680 亿美元。Brookhart 认为，如果 Anthropic 保持当前的增长轨迹，它很容易就能补上算力投入所需的资金缺口。\nLuria 对 TechCrunch 表示：“等到 IPO 完成时，Anthropic 手上的现金将超过任何一家公司曾经拥有的水平。”他指出，该公司已募集约 1410 亿美元资本，按每股 83 美元计算，净收益约为 917 亿美元。“而且他们并没有在烧钱，只是要攒下一笔战争基金。”\nBrookhart 表示，上市会让 Anthropic 成为更可信的借款方，从而更容易在公开市场之外融资。尽管近期有 报道 称，债权人可能不认为 Anthropic 具备“投资级”资质。\nLuria 将 Anthropic 的供应商投资与 CoreWeave 这类新型云厂商区分开来，他认为后者更纯粹地依赖循环融资。“如果没有英伟达扶持，CoreWeave 根本不会存在；如果英伟达不出手相救，它大概也活不下去。”Luria 说。\nBrookhart 也反驳了将 Anthropic 的融资描述为纯粹循环融资的说法，称它仍然“对整个生态有增量贡献”。\n在两位分析师看来，Anthropic 最大的风险就是输掉 AI 竞赛。目前，公司的增长得益于它处于生成式 AI 的前沿——但如果被 OpenAI、Google DeepMind，甚至廉价的开源权重模型超越，情况可能迅速改变。正如 Luria 所说：“如果我们都在用别人的模型，那 Anthropic 就不值 1.5 万亿美元，而是一文不值。”\n但无论谁在前沿竞赛中胜出，算力供应商的日子大概都不会差。Brookhart 和 Luria 都不认为 Anthropic 的增长面临风险，尽管有人主张 更便宜的 token 和更激烈的竞争 会直接影响这家 AI 公司的利润。\nLuria 说：“对亚马逊和谷歌来说，风险其实没那么高，因为那种情况下我们用的是其他模型。我认为我们会使用多得多的 AI。我不确定是否全都来自 Anthropic 的 "
   },
   {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Realbotix launches humanoid robots for education, wellness and companionship",
-   "url": "https://roboticsandautomationnews.com/2026/11/19/realbotix-launches-echo-humanoid-robots-for-education-wellness-and-companionship/107339/",
-   "published": "2026-11-19T14:51:35.000Z",
-   "description": "Realbotix has launched a new range of humanoid robots designed for education, wellness and personal companionship, with the first units scheduled for delivery in the second half of 2027. The US-based robotics company has introduced two models through its Echo platform – which has been renamed Series 1 – combining realistic facial expressions, conversational AI […]",
-   "excerpt": "Realbotix has launched a new range of humanoid robots designed for education, wellness and personal companionship, with the first units scheduled for delivery in the second half of 2027.\nThe US-based robotics company has introduced two models through its Echo platform – which has been renamed Series 1 – combining realistic facial expressions, conversational AI and modular hardware designed for human-robot interaction.\nThe company is initially limiting production to 225 Tabletop units and 25 Full Body robots.\nThe Series 1 Tabletop, priced at $11,950, features 17 degrees of freedom and is designed for desktop applications, including education and personal wellness.\nThe Series 1 Full Body, priced at $59,950, offers 39 degrees of freedom and more extensive upper-body movement.\nBoth models feature Realbotix’s proprietary silicone-based synthetic skin, expressive facial movements and integrated audio systems.\nThe robots support more than 100 languages and can integrate with AI platforms including ChatGPT, Claude and Gemini.\nCustomers can choose from four robotic characters, each offering a different personality, voice and interaction style.\nRealbotix also offers its optional Vinci computer-vision system, which provides facial recognition, gaze tracking, emotional cue recognition and spatial awareness.\nAccording to the company, Vinci processes conversations and visual information locally, reducing reliance on cloud services and supporting data privacy.\n“Realbotix Series 1 reflects the strong brand recognition we’ve built for producing lifelike humanoid robots,” said Andrew Kiguel, CEO of Realbotix.\n“Aligning this product line with the Realbotix name reinforces what customers already associate with us, ultra-realistic silicone skin, advanced facial expressions, and genuine human-like presence. These are not remote-operated machines.\n“They think, decide, and interact independently, with their own personalities, on-device intelligence, and the ability to respond in real time. Realbotix Series 1 carries forward that same standard of lifelike interaction under a name that clearly belongs to the brand.”\nRealbotix plans to introduce digital AI twins in 2027, allowing users to interact with their chosen robotic character through computers and mobile devices while maintaining continuity with the physical robot.\nReservations are now available through Realbotix.com, with a $199 deposit securing priority delivery.\nOperating the robots will also require a monthly software sub"
-  },
-  {
    "group": "ai",
    "source": "AIHOT",
    "title": "Anthropic 完成史上最大规模 IPO，其安全治理结构受到审视",
@@ -892,7 +1103,7 @@
    "url": "https://www.supplychain247.com/article/survey-few-executives-are-building-their-work-processes-around-ai",
    "published": "2026-11-19T13:58:00.000Z",
    "description": "Accenture found that 72% of operations leaders see more potential for AI to grow revenue than to cut costs, while only 15% are redesigning processes around it.",
-   "excerpt": ""
+   "excerpt": "Only 15% of senior operations leaders say they&rsquo;re redesigning how work gets done around artificial intelligence , even though 60% expect AI to substantially or completely change their business model within three years. The findings come from Accenture &rsquo;s latest Pulse of Change survey .\nNearly half of operations leaders, 47%, say they&rsquo;re using AI to improve existing ways of working or to experiment without changing how the work is done. And 72% see more potential for AI to grow revenue than to cut costs.\nAccenture surveyed 3,000 C-suite leaders across 19 industries and 21 countries in July and August 2026. The findings are based on responses from 392 senior leaders overseeing areas such as supply chain, procurement , production, and research and development.\nAbout six in 10 operations leaders (61%) expect a measurable return on AI investment within a year or less. That compares with 52% of C-suite leaders responsible for other parts of the business. Those figures reflect what executives expect to see from AI spending. The survey findings released by Accenture did not specify how respondents define a measurable return.\nSeven in 10 operations leaders plan to spend more on AI over the next 12 months, and 66% say they&rsquo;re tracking the cost of running AI more closely than they were a year ago. Accenture did not specify how much respondents expect to increase spending or how much of that money they plan to put toward redesigning processes.\nCybersecurity was the most common choice when operations leaders were asked which strategic priority had grown in importance. Fifty-four percent pointed to strengthening their defenses and improving their ability to recover from an attack.\nThe level of concern varied by region. In North America, 55% of operations leaders said they were highly or extremely concerned about cyberattacks, compared with 37% in Europe, the Middle East and Africa.\nEven as companies plan to spend more on AI, 57% of operations leaders expect to hire more people over the next year. North America had the highest share at 67%, followed by Europe, the Middle East, and Africa at 53% and Asia-Pacific at 51%. Accenture's findings did not break down which jobs leaders expect to fill.\nTracey Countryman, Accenture&rsquo;s global lead for supply chain and engineering, pointed to the challenge of using AI across the different stages of a product&rsquo;s life. &ldquo;What they lack is the operating model to scale it across the value chain, fro"
   },
   {
    "group": "wh",
@@ -922,31 +1133,13 @@
    "excerpt": "Global transportation is an enormous web of thousands, if not hundreds of thousands, of interdependent shipments, routes, modes, carriers, facilities and trading partners, creating countless risks and opportunities. Each shipment has its own service expectations, costs, capacity requirements and constraints. Across a global operation, transportation management becomes a continuous stream of interwoven decisions and data points. Yet seeing more is not enough. Without context to guide action, extended visibility feels like noise.\nBlue Yonder AI and ML alone generate more than 27 billion predictions per day, illustrating both the volume of information and the supply chain’s reliance on AI to interpret it. Networks now include hundreds of thousands of members and track an even greater volume of shipments across the globe, modes and tiers.\nMaking this data useful requires complementary technologies. Network visibility shows where shipments are and how conditions are changing, but it is not enough. To strengthen the equation, collaboration enables teams and trading partners to coordinate execution and automate tasks, while AI interprets enterprise and network signals to evaluate responses. Together, this trifecta helps transportation teams understand what is happening, determine what matters and act on it.\nTogether, these capabilities raise a critical question: What do you do with what you see?\nThat question doesn’t apply only when something goes wrong. It applies to the thousands of everyday decisions that determine how efficiently transportation operates: how loads are built, how capacity is used, which routes and carriers make the most sense, where opportunities exist to consolidate freight, and where people are spending time on work that could be streamlined.\nMoving transportation management forward requires more than visibility. It’s turning visibility into better decisions and execution backed by AI and advanced, often automated, collaboration.\nThe value of visibility is easy to understand when there’s a disruption. If a shipment is running late, transportation teams want to know about it as quickly as possible.\nBut an alert is not a resolution. Knowing a shipment is delayed doesn’t tell a transportation planner whether intervention is necessary, let alone explain why. Nor does it determine whether another carrier, route or mode would create a better outcome. Those decisions require context and supply chain understanding.\nHowever, focusing only on exceptio"
   },
   {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Hire Automated Manufacturing Employees Fast with Skills Assessments",
-   "url": "https://roboticsandautomationnews.com/2026/11/19/hire-automated-manufacturing-employees-fast-with-skills-assessments/107332/",
-   "published": "2026-11-19T11:26:40.000Z",
-   "description": "Here’s your quick checklist on how to hire automated manufacturing employees with skills assessments. Read on for more details. Map the job first: List what a new hire does in the first weeks and mark each skill as required on entry or trainable after hiring. Test only entry requirements: Leave plant-specific procedures you plan to […]",
-   "excerpt": "Here’s your quick checklist on how to hire automated manufacturing employees with skills assessments. Read on for more details.\nPicture two applicants for an operator vacancy on an automated packaging line. One talks fluently about robots and vision systems.\nThe other recognizes that 24.9 mm falls within a 25.0 mm dimension with a tolerance of ±0.2 mm, follows a four-step work instruction and explains why a large pulley driven by a small one turns more slowly.\nOnly the second applicant has shown skills a hiring team can record and compare.\nThat gap matters because the talent pool is tight. Deloitte and The Manufacturing Institute project that US manufacturing will need 3.8 million workers by 2033, with as many as 1.9 million jobs potentially unfilled if the skills gap isn’t addressed, a point covered in this look at how automation created a training problem for the industrial workforce .\nAutomation raises the skill bar on the plant floor, so interviews alone rarely tell you who can read a drawing, follow a procedure or reason through a mechanism.\nA manufacturing skills assessment is a structured evaluation of job-relevant capabilities. The steps below show how to define the role, choose the right tests, score results consistently and turn them into hiring and training decisions.\nThe US Office of Personnel Management (OPM) treats job analysis as the starting point for any assessment strategy: identify the tasks performed on the job, then the competencies needed to do that work.\nFor shared vocabulary, NIST’s Office of Advanced Manufacturing maintains the Manufacturing USA Advanced Manufacturing Occupation and Competency Framework, which aims to give industry, training providers and workers a common language. It helps describe capabilities, but it isn’t a ready-made hiring test.\nThe illustrative matrix below describes one hypothetical automated cell. Adapt its entry requirements to the work and training your role involves.\nCertifications can support a hiring decision, but they shouldn’t replace a role-specific assessment.\nNo single test covers everything an automated line demands. OPM’s assessment guidance lists estimated validity of .54 for work sample tests and .51 for cognitive ability tests, and notes that tools measuring different job-related factors each add unique information about the applicant.\nCombine methods instead of relying on one score.\nUse the task matrix to select knowledge questions and, where practical competence is required on entry, a con"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Beyond Chatbots: What Multimodal Game Agents Reveal About AI Automation",
-   "url": "https://roboticsandautomationnews.com/2026/11/19/beyond-chatbots-what-multimodal-game-agents-reveal-about-ai-automation/107327/",
-   "published": "2026-11-19T10:54:07.000Z",
-   "description": "Automation is often measured by the number of individual tasks a system can complete. A more useful measure is whether the system can carry a goal across several tools and representations. Games offer a clear test because a playable experience combines language, code, 3D geometry, sound, rules and user feedback. An AI game maker is […]",
-   "excerpt": "Automation is often measured by the number of individual tasks a system can complete. A more useful measure is whether the system can carry a goal across several tools and representations. Games offer a clear test because a playable experience combines language, code, 3D geometry, sound, rules and user feedback.\nAn AI game maker is therefore more than a content generator. It is an experiment in multimodal automation. The system receives an intention, assembles a working environment and responds to feedback after a human interacts with the result.\nThat loop resembles the kind of agentic workflow many robotics and industrial AI researchers are exploring: perceive a goal, act in an environment, observe the outcome and update the plan.\nSEELE AI applies this idea to game creation. A prompt or image can become a browser-playable build with code, 3D assets, audio and levels. The creator can then describe a change and let the agent update the project.\nThe SEELE AI platform provides a public example of how multimodal agents can operate across a connected software pipeline.\nA generated image can be judged by visual quality. A generated code sample can be checked with tests. A game requires both, plus a human response. The player must understand the objective, control the system and receive meaningful feedback. This makes the game a compact environment for evaluating whether an agent’s outputs work together.\nThe challenge is partly structural. A change to the level may require a change to collision, navigation, camera framing, sound and UI. If the agent only edits one file, the result can break elsewhere. A useful game agent needs a representation of the project and the relationships among its parts.\nThat is why multimodality matters. Text can state the goal, an image can provide visual context and the project state can show what already exists. The agent has to connect those signals rather than process them as isolated prompts.\nTraditional automation often follows a fixed script. Agentic systems are more flexible because they can choose the next action based on the current state. In a game workflow, the creator might say, “the player cannot tell which door is active.” The agent must identify the relevant scene, material, lighting or interface element, apply a change and produce a new build for review.\nThe important output is not a paragraph explaining what changed. It is a new state that a human can test. This is a closed loop: instruction, implementation, playtest,"
-  },
-  {
    "group": "ai",
    "source": "OpenAI",
    "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
    "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
    "published": "2026-11-19T08:00:00.000Z",
    "description": "Learn how OpenAI built the Performance Factory, a system of Codex-powered workflows that finds and fixes performance issues to help keep ChatGPT fast.",
-   "excerpt": ""
+   "excerpt": "Our Codex-powered system automates finding and fixing performance issues.\nBy Okay Zed and Cyrus Forbes, Members of Technical Staff\nThe staggering pace of agentic development has made traditional approaches to performance engineering unsustainable. To keep up, we built the Performance Factory, an autonomous system that uses the full capabilities of Codex and our models to find and fix regressions at an unprecedented speed. The Performance Factory, which runs in the cloud and automates investigating and resolving performance problems, enables us to keep pace with the ambition of our roadmap.\nIn the Performance Factory, our engineers define workflows for recurring jobs and write instructions for the Codex agents that carry them out. In particular, the Regression Workflow opens a task when a performance alert fires. An agent investigates the slowdown, records its findings in the task, and proposes a fix for an engineer to review. After deployment, another agent picks up the same task to check whether performance has returned to baseline. From investigating to authoring the fix to verifying mitigation, this first workflow in the Performance Factory has automated the entire process of fixing regressions. In just over three months, the Regression Workflow tracked more than 1,700 investigations and root caused over 600 cases. That’s 17 automated investigations every day.\nHere, we’ll share how our use of Codex evolved into what’s now the Performance Factory, walk through our first running workflow, and share early lessons from building and running agent workflows in production.\nAs we used Codex for more of our performance work, we noticed a progression in how our team worked. We hope other service teams can learn from our process as they adopt agentic workflows in other domains.\nSoftware work evolves from manual labor to partnering with machines to agent factories.\n1. Pre-Codex . Before Codex, engineers manually examined metrics and logs, compared traces, debugged live machines, and read code to investigate a slowdown. This work was time consuming, and knowing where to look often required deep knowledge of the service. Relevant signals were easy to miss. When we encountered the same kinds of problems repeatedly—like regressions in ChatGPT’s first token latency—we built advanced tools, like CPU and allocation profilers, to make those investigations easier. Over time, we accumulated more than 30 performance tools.\n2. Codex as a partner . Once we had Codex as a partne"
   },
   {
    "group": "ai",
@@ -964,7 +1157,7 @@
    "url": "https://aihot.news/items/alwgjr29158n454prl9tjmmw1",
    "published": "2026-11-19T08:00:00.000Z",
    "description": "OpenAI 官方详解其 Performance Factory 系统，用 Codex 智能体在云端自动排查并修复 ChatGPT 的性能回归。其中 Regression Workflow 在三个多月内跟踪超过 1700 次调查、定位超过 600 个根因，相当于每天约 17 次自动调查。 🔗 阅读原文 via AIHOT · https://aihot.news/items/alwgjr29158n454prl9tjmmw1",
-   "excerpt": "OpenAI 官方详解其 Performance Factory 系统，用 Codex 智能体在云端自动排查并修复 ChatGPT 的性能回归。其中 Regression Workflow 在三个多月内跟踪超过 1700 次调查、定位超过 600 个根因，相当于每天约 17 次自动调查。\nOpenAI 团队复盘用 Codex 智能体自动排查和修复 ChatGPT 性能回归的完整做法，含三个月 1700 多次调查的实战数据和可复用的落地经验。\nOpenAI 团队复盘用 Codex 智能体自动排查和修复 ChatGPT 性能回归的完整做法，含三个月 1700 多次调查的实战数据和可复用的落地经验。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1000,7 +1193,7 @@
    "url": "https://aihot.news/items/gpufpm2kxcsxrewhivsjviz3a",
    "published": "2026-11-19T04:49:53.000Z",
    "description": "彭博社 11 月 19 日报道称，英伟达管理层变动及黄仁勋离任引发全球 AI 概念股新一轮抛售，日本相关股票首当其冲，市场风向从“AI 溢价”转向“AI 折价”。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gpufpm2kxcsxrewhivsjviz3a",
-   "excerpt": "彭博社 11 月 19 日报道称， 英伟达 管理层变动及黄仁勋离任引发全球 AI 概念股新一轮抛售，日本相关股票首当其冲，市场风向从“AI 溢价”转向“AI 折价”。\n彭博社报道给出日本 AI 股的具体跌幅和机构观点，读者可借此了解黄仁勋离任后市场情绪如何转向估值审视。\nIT之家 11 月 19 日消息，彭博社今天（11 月 19 日）发布博文，报道称英伟达管理层变动及创始人黄仁勋突然离任， 正引发全球 AI 概念股新一轮抛售，日本相关股票首当其冲。\n彭博社指出日本股市风向从“AI 溢价”转向“AI 折价”，投资者重新审视日本芯片、半导体设备与 AI 基础设施企业，关注重点转向未来盈利能否兑现。\n自黄仁勋辞职以来，日本存储芯片厂商铠侠（Kioxia）和半导体测试设备公司爱德万测试（Advantest）股价均累计下跌超过 9%，明显跑输东证指数约 2.9% 的跌幅。\n分析人士将当前局面概括为“三重打击”：AI 企业盈利能力恶化的担忧、美国中期选举后监管趋严预期，以及英伟达领导层动荡带来的行业信心冲击。\n野村新加坡高级跨资产策略师须田义孝认为，投资者可能不再愿意为 AI 标签支付溢价，反而会要求“AI 折价”。三菱 UFJ 资产管理执行基金经理友明弘明也表示，部分大型 AI 股仍处于高估值，若盈利预期下修，可能继续遭遇抛售。\n不过彭博汇总数据显示，六家美国大型科技公司今年资本支出预计达 8,850 亿美元 （IT之家注：现汇率约合 5.91 万亿元人民币） ，明年或再增长 64% 至 1.45 万亿美元 （现汇率约合 9.69 万亿元人民币） ，表明 AI 基础设施需求尚未出现明确拐点。\n彭博社报道给出日本 AI 股的具体跌幅和机构观点，读者可借此了解黄仁勋离任后市场情绪如何转向估值审视。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1009,7 +1202,7 @@
    "url": "https://aihot.news/items/g47lsydtqfsi16e0z920ghe2y",
    "published": "2026-11-19T00:42:56.000Z",
    "description": "Microsoft CEO Satya Nadella 在 DealBook Summit 上解释，10 月向 6 万名员工提供买断是为了让员工在转型中拥有选择权，而非用 AI 取代员工，目标是让所有人都用 AI 工作、转向管理 AI 智能体。 🔗 阅读原文 via AIHOT · https://aihot.news/items/g47lsydtqfsi16e0z920ghe2y",
-   "excerpt": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit\nMicrosoft CEO Satya Nadella 在 DealBook Summit 上解释，10 月向 6 万名员工提供买断是为了让员工在转型中拥有选择权，而非用 AI 取代员工，目标是让所有人都用 AI 工作、转向管理 AI 智能体。\nNadella 亲自解释买断计划的真实动机，不是用 AI 裁员，而是重组工作流让员工转型为智能体的管理者，可对照其具体说法。\n微软 CEO 萨提亚·纳德拉周三解释了为什么他在 10 月 向 6 万名员工提供了买断方案 ，实质上是鼓励他们自愿离职，而不是通过又一轮大规模裁员来缩减员工规模。\n简短的回答是：AI，但他坚称，并不是你想象的那种方式。他并不是说自己要用 AI 取代员工，尤其是软件工程师。他说的是，他要把微软重组为一家所有人都用 AI 来完成工作的公司，而员工的工作则变成管理这些 AI。\n他在 DealBook 峰会 上对安德鲁·罗斯·索金说，这次买断“是为了确保至少每个人都觉得自己在做出选择时拥有自主权”。\n“就拿软件工程来说。我们经历了从‘我们不相信 AI 能写软件’，到突然‘哇，它能写所有软件，那我们为什么还需要软件工程师？’，再到如今重新发现软件工程依然充满活力，事实上还会蓬勃发展，只不过团队的组建方式和软件工程师所做的工作，如今有了新的平衡点。”他解释道。\n他补充说，对一些人来说，“这种重组和变化有点难，对吧？但是，我的意思是，这必须得做。”\n他举了负责开发 Cowork 的团队为例，Cowork 是 Microsoft 365 应用中的 AI 智能体。他说，这个团队只有 11 名开发者，他们已经掌握了用 AI 来完成工作的方法。“他们打造了一座生产软件的工厂，由工厂来造产品。他们自己不造产品。”\n他相信，有朝一日每位员工都会同样成为智能体的管理者，而不是亲自直接干活的人。“顺便说一句，这种程度的指导管理，将会出现在所有工作中。”\n但微软作为一家有 51 年历史的公司，并不是以 AI 为先成长起来的。“所以问题在于，一家老牌企业能多快转变工作方式、工作流程和工作产物，以及与之配套的所有薪酬支持？”他说，“这比任何人预期的都要多花一些时间。而在这一切之中，总会有人说，‘嘿，我还有别的选择想做。’”\n上周， 格盖利·奥罗斯 在其播客《务实工程师》中问及同一话题——为什么要让 6 万人自愿辞职——纳德拉进一步解释说：“我们让人们产生了巨大的焦虑，他们觉得自己无法掌控自己的命运，因为我们谈论这场 AI 革命的方式有问题。”\n他点名批评了关于奇点的说法（即 AI 超越人类智能的假想时刻），以及 AI 将夺走所有工作的预测。“所有这些都会让任何哪怕只是想做出改变的人感到焦虑……你必须踏踏实实地走完艰难的路，真正进行结构性变革，把人安排到合适的位置，给他们机会。”\n换句话说，这次买断是向员工传递的信息：你可以跟上新的 AI 优先计划，这将彻底改变你的工作；或者你选择继续自己的生活。去别处。\n当你通过我们文章中的链接购买时， 我们可能会赚取少量佣金 。这不会影响我们的编辑独立性。\nNadella 亲自解释买断计划的真实动机，不是用 AI 裁员，而是重组工作流让员工转型为智能体的管理者，可对照其具体说法。"
+   "excerpt": ""
   },
   {
    "group": "wh",
@@ -1041,11 +1234,11 @@
   {
    "group": "ai",
    "source": "OpenAI",
-   "title": "Deploying Daybreak Red",
-   "url": "https://openai.com/business/learn/deploying-daybreak-red",
+   "title": "Explore the Codex Security Plugin",
+   "url": "https://openai.com/business/learn/codex-security-plugin-demo",
    "published": "2026-11-19T00:00:00.000Z",
-   "description": "Explore a reference architecture for supervised security investigations with Daybreak Red, including safety controls, setup, and monitoring.",
-   "excerpt": ""
+   "description": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording.",
+   "excerpt": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording."
   },
   {
    "group": "ai",
@@ -1054,16 +1247,7 @@
    "url": "https://openai.com/business/learn/pr-scans-demo",
    "published": "2026-11-19T00:00:00.000Z",
    "description": "Watch a walkthrough of PR scans and see how the presenter reviews scan results in a pull request workflow.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "Explore the Codex Security Plugin",
-   "url": "https://openai.com/business/learn/codex-security-plugin-demo",
-   "published": "2026-11-19T00:00:00.000Z",
-   "description": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording.",
-   "excerpt": ""
+   "excerpt": "Watch a walkthrough of PR scans and see how the presenter reviews scan results in a pull request workflow."
   },
   {
    "group": "ai",
@@ -1072,7 +1256,16 @@
    "url": "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
    "published": "2026-11-19T00:00:00.000Z",
    "description": "Watch a walkthrough of onboarding to Daybreak Blue, with a closer look at the setup experience and how to get started.",
-   "excerpt": ""
+   "excerpt": "Watch a walkthrough of onboarding to Daybreak Blue, with a closer look at the setup experience and how to get started."
+  },
+  {
+   "group": "ai",
+   "source": "OpenAI",
+   "title": "Deploying Daybreak Red",
+   "url": "https://openai.com/business/learn/deploying-daybreak-red",
+   "published": "2026-11-19T00:00:00.000Z",
+   "description": "Explore a reference architecture for supervised security investigations with Daybreak Red, including safety controls, setup, and monitoring.",
+   "excerpt": "A reference architecture for supervised security investigations.\nLearn how to set up an isolated environment for supervised security investigations with Daybreak Red. This guide covers architecture, safety controls, environment configuration, and how to run and monitor an investigation.\nRead the full guide (PDF). ⁠ (opens in a new window)"
   },
   {
    "group": "ai",
@@ -1081,7 +1274,16 @@
    "url": "https://aihot.news/items/stnka187ae3za2qnx70vqheg7",
    "published": "2026-11-19T00:00:00.000Z",
    "description": "Conductor 发布 0.97.0 更新，同时宣布 Conductor 加入 Meta。本地工作区的 Agent 现在可以生成 artifacts，即能在聊天中内联显示的 HTML 页面，默认开启，可在 Settings → Artifacts 关闭，通过 @ 名称调用；还支持高亮文本添加评论 pill 回复聊天的任意部分。 🔗 阅读原文 via AIHOT · https://aihot.news/items/stnka187ae3za2qnx70vqheg7",
-   "excerpt": "Conductor 发布 0.97.0 更新，同时宣布 Conductor 加入 Meta 。本地工作区的 Agent 现在可以生成 artifacts，即能在聊天中内联显示的 HTML 页面，默认开启，可在 Settings → Artifacts 关闭，通过 @ 名称调用；还支持高亮文本添加评论 pill 回复聊天的任意部分。\nchangelog 给出了 artifacts 的具体交互方式和默认开关设置，用户可直接据此调整本地工作流。\nchangelog 给出了 artifacts 的具体交互方式和默认开关设置，用户可直接据此调整本地工作流。"
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "OpenHands 详解用 Agent 自动修复自家镜像 CVE 的软件工厂",
+   "url": "https://aihot.news/items/i94tul4bae051uizh2kkpn2r4",
+   "published": "2026-11-19T00:00:00.000Z",
+   "description": "OpenHands 团队详解把大部分 CVE 修复工作交给 Agent 流水线的做法：Agent 选择修复、开 PR、合并低风险项并跟踪到部署，人每天只读一条最多 11 行的 Slack 消息和少量 PR。 🔗 阅读原文 via AIHOT · https://aihot.news/items/i94tul4bae051uizh2kkpn2r4",
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1099,7 +1301,7 @@
    "url": "https://aihot.news/items/abxhv94f3gcq1qb9mzdf7yma3",
    "published": "2026-11-18T23:41:28.000Z",
    "description": "围绕英伟达前高管黄仁勋及AI芯片转运传闻，美国商务部与司法部就Megaspeed发布联合声明，未认定存在违规芯片销售，也未将该公司列入实体清单；英伟达此前已主动切断对Megaspeed的供应。相关声明未提及间谍行为，新加坡内政部亦表示未就间谍问题调查该公司负责人。 🔗 阅读原文 via AIHOT · https://aihot.news/items/abxhv94f3gcq1qb9mzdf7yma3",
-   "excerpt": "围绕 英伟达 前高管黄仁勋及AI芯片转运传闻，美国商务部与司法部就Megaspeed发布联合声明，未认定存在违规芯片销售，也未将该公司列入实体清单；英伟达此前已主动切断对Megaspeed的供应。相关声明未提及间谍行为，新加坡内政部亦表示未就间谍问题调查该公司负责人。\n梳理美商务部、司法部及新加坡内政部等多方公开表态，读者可对照主流媒体叙事核查这条AI芯片传闻的信息差。\n梳理美商务部、司法部及新加坡内政部等多方公开表态，读者可对照主流媒体叙事核查这条AI芯片传闻的信息差。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1108,16 +1310,7 @@
    "url": "https://aihot.news/items/uaupvkzwpndnn2zg1b50zv9v7",
    "published": "2026-11-18T23:17:28.000Z",
    "description": "英伟达CEO黄仁勋在任职33年后于上周卸任，微软CEO萨提亚·纳德拉在纽约时报DealBook峰会上表示此事令人惋惜，并称仍对英伟达及其临时CEO科莱特·克雷斯带领的团队充满信心。纳德拉提到克雷斯曾在微软长期工作，自己与她相识已久。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uaupvkzwpndnn2zg1b50zv9v7",
-   "excerpt": "英伟达CEO黄仁勋在任职33年后于上周卸任，微软CEO萨提亚·纳德拉在纽约时报DealBook峰会上表示此事令人惋惜，并称仍对 英伟达 及其临时CEO科莱特·克雷斯带领的团队充满信心。纳德拉提到克雷斯曾在 微软 长期工作，自己与她相识已久。\n纳德拉在DealBook峰会上回应黄仁勋离任并表达对英伟达团队的信心，可作为观察英伟达高管变动后合作伙伴态度的一手表态。\n纳德拉在DealBook峰会上回应黄仁勋离任并表达对英伟达团队的信心，可作为观察英伟达高管变动后合作伙伴态度的一手表态。"
-  },
-  {
-   "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "AS/RS Is Changing How Warehouses Use Space",
-   "url": "https://logisticsviewpoints.com/2026/11/18/as-rs-is-changing-how-warehouses-use-space/",
-   "published": "2026-11-18T22:54:58.000Z",
-   "description": "For most of the last century, warehouse capacity was measured on the floor. More inventory meant more racking, more aisles, and eventually a bigger building. Automated storage and retrieval systems (AS/RS) have changed that calculation. By putting inventory into dense, machine-served structures and bringing it to people instead of sending people to it, AS/RS lets […] The post AS/RS Is Changing How Warehouses Use Space appeared first on Logistics Viewpoints .",
-   "excerpt": "For most of the last century, warehouse capacity was measured on the floor. More inventory meant more racking, more aisles, and eventually a bigger building. Automated storage and retrieval systems (AS/RS) have changed that calculation. By putting inventory into dense, machine-served structures and bringing it to people instead of sending people to it, AS/RS lets operators grow capacity upward and inward rather than outward.\nIn the first two parts of this series, we looked at why the warehouse operating model is under pressure and what automation really costs. This article looks at the technology that often anchors those investments, and at the questions that decide whether it delivers.\nAS/RS is not a single product. The category includes unit-load cranes that handle full pallets in high-bay buildings, mini-load systems for totes and cartons, shuttle systems that run on each rack level, vertical lift modules and carousels for small parts, cube-based grid systems that stack bins on top of each other, and robotic systems in which mobile robots drive across the floor and climb the racks themselves.\nEach design reflects different priorities. Cranes and shuttles are built for high, steady throughput in fixed aisles. Cube-based systems maximize density by removing aisles almost completely. Robotic, rack-climbing systems trade some density for flexibility, with the fleet able to grow or shrink as needs change. The right choice depends less on which technology is “best” and more on what the operation needs to do.\nThe clearest benefit of AS/RS is storage density. Conventional racking served by forklifts or pickers needs wide aisles and stops at whatever height people and lift trucks can safely reach. AS/RS narrows or removes those aisles and uses the facility’s full clear height. Some robotic systems now reach roughly 14 meters, and high-bay pallet systems go much higher.\nThat shift matters most where land is expensive, buildings are constrained, or urban fulfillment sites are small. It can postpone a new building, consolidate several facilities into one, or free floor space for packing, returns, and value-added services. Density does have a cost, though. The denser the storage, the more carefully the system has to manage access to it.\nThroughput and Sequencing: Where Density Meets Demand\nA dense system that cannot retrieve the right item at the right moment just moves the bottleneck. Throughput depends on how many retrieval devices work in parallel, how quickly ea"
+   "excerpt": ""
   },
   {
    "group": "wh",
@@ -1309,15 +1502,6 @@
    "excerpt": "An AGILOX mobile robot operating inside a container. | Credit: AGILOX\nRockwell Automation has signed a definitive agreement to acquire AGILOX, an Austria-based developer of autonomous mobile robots (AMRs). Rockwell said the acquisition will more than double the size of its AMR business and complement its existing OTTO Motors portfolio.\nFinancial terms of the acquisition were not disclosed. The deal is expected to close in the second quarter of Rockwell’s fiscal 2027, subject to regulatory approval. AGILOX will become part of Rockwell’s Intelligent Devices operating segment.\nAGILOX said it has deployed more than 2,500 AMRs worldwide since its founding in 2017. The company has more than 250 employees and operations in Europe, North America, and China. Its robots are used in automotive, third-party logistics, food and beverage, and pharmaceutical applications.\nThe acquisition will combine OTTO’s strong presence in North America with AGILOX’s established customer base in Europe, Rockwell said.\nThe acquisition also marks an exit for global investment firm Carlyle, which made a majority growth investment in AGILOX in 2021. According to Carlyle, AGILOX has quadrupled its revenue since then and launched a robots-as-a-service (RaaS) offering.\nBoth AGILOX and OTTO Motors develop AMRs that automate material transport. However, there are several differences between their technologies.\nOTTO specializes in flatbed AMRs that can be equipped with attachments such as conveyors and lift tables to transport different materials. Its largest AMR, the OTTO 1500, can carry payloads of up to 1,900 kg (4,189 lb.). The company also offers an autonomous forklift called OTTO Lifter.\nAGILOX specializes in AMRs with integrated lifting mechanisms for transporting pallets and other loads. Its robots feature omnidirectional drives, enabling them to move sideways and diagonally without turning. This allows the robots to maneuver in tight spaces. AGILOX also has an autonomous forklift.\nRockwell said the technologies are complementary, but it did not disclose how it plans to integrate the two platforms or whether customers will eventually be able to operate AGILOX and OTTO robots as part of the same fleet.\nThe AGILOX deal comes three years after Rockwell acquired Clearpath Robotics , including its industrial division, OTTO Motors. Rockwell valued that acquisition at $609 million at the time of purchase.\nFounded in 2009 in Ontario, Canada, Clearpath initially developed mobile robots for resea"
   },
   {
-   "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "Blue Yonder Names Salil Joshi Interim CEO Amid Broader Leadership Changes",
-   "url": "https://logisticsviewpoints.com/2026/11/18/blue-yonder-names-salil-joshi-interim-ceo-amid-broader-leadership-changes/",
-   "published": "2026-11-18T16:24:28.000Z",
-   "description": "Blue Yonder has announced a significant leadership transition, naming longtime Chief Technology Officer Salil Joshi as interim CEO, succeeding Duncan Angove, who is departing after four years leading the company. Joshi, who joined Blue Yonder in 1997, brings nearly three decades of experience spanning product development, technology, customer success, and global operations. The transition comes […] The post Blue Yonder Names Salil Joshi Interim CEO Amid Broader Leadership Changes appeared first on Logistics Viewpoints .",
-   "excerpt": "Blue Yonder has announced a significant leadership transition, naming longtime Chief Technology Officer Salil Joshi as interim CEO, succeeding Duncan Angove, who is departing after four years leading the company. Joshi, who joined Blue Yonder in 1997, brings nearly three decades of experience spanning product development, technology, customer success, and global operations. The transition comes as Panasonic Connect seeks to accelerate Blue Yonder’s growth and deepen the integration of artificial intelligence into enterprise supply chain operations.\nThe changes extend across Blue Yonder’s executive leadership. Chief Financial Officer Mark Henry and Chief Revenue Officer Corey Tollefson are also departing. Wayne Usie, a 25-year company veteran, will serve as interim Chief Revenue Officer while retaining his Chief Strategy Officer responsibilities. Gurdip Singh will assume the CTO role while continuing as Chief Product Officer, and Panasonic Connect executive Naoya Fujita will become CFO.\nPanasonic is reinforcing its commitment to Blue Yonder , with plans to expand adoption of the company’s software across Panasonic Connect businesses. A central priority will be connecting Blue Yonder’s supply chain applications and AI capabilities with Panasonic’s industrial machines and equipment, creating opportunities to link planning, warehouse, and transportation decisions more closely with physical operations.\nBlue Yonder also indicated that an initial public offering is no longer a near-term organizing priority, although it remains a future option. Instead, the company is emphasizing product development, customer commitments, and its ambition to become a leading multi-enterprise supply chain AI platform. With adoption of its Cognitive Solutions reportedly gaining momentum, the leadership team is focused on executing its product roadmap and entering 2027 with a stronger operational foundation.\nIndependent ARC Advisory Group research and Logistics Viewpoints analysis."
-  },
-  {
    "group": "ai",
    "source": "AIHOT",
    "title": "Stanford RegLab 发布 PhantomDocket 基准，追踪美国州法院诉讼文书中的 AI 辅助写作",
@@ -1399,24 +1583,6 @@
    "excerpt": "The PSF end-of-year fundraiser . With my Python Software Foundation board director hat on: we've launched our end-of-year fundraiser for the non-profit that supports Python development and the Python community.\nIf your company or your work benefits from Python, please consider donating this year!\nThe PSF looks after the IP behind Python, operates PyPI, sponsors core developer sprints, supports community events (including running PyCon US every year), and employs a small and excellent staff team to keep everything running.\nWe also operate the Developers in Residence program , which now includes three security developers (welcome, Brett Smith) focused on helping secure Python, PyPI, and the wider ecosystem.\nThis is a link post by Simon Willison, posted on 18th November 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
   },
   {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "Jim Beam won’t resume production at flagship distillery next year",
-   "url": "https://www.supplychaindive.com/news/jim-beam-wont-resume-production-at-flagship-distillery-next-year/875019/",
-   "published": "2026-11-18T14:25:00.000Z",
-   "description": "The Suntory-owned whiskey is moving production to another facility in Kentucky as value spirits brands continue to struggle.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Anthropic IPO 估值最高或达 1.4 万亿美元，华尔街提前造势散户争抢",
-   "url": "https://aihot.news/items/yxu549lhmsyp0qe8rstrheqlw",
-   "published": "2026-11-18T10:45:07.000Z",
-   "description": "据路透社报道，Anthropic 预计于当地时间 11 月 19 日登陆公开市场，IPO 估值最高可能达到 1.4 万亿美元。金融机构已推出 2 倍做多与做空 ETF 等挂钩产品，Vanda Research 预计上市将吸引约 2.5 亿美元散户净买入，为 SpaceX IPO 期间 1.18 亿美元纪录的两倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yxu549lhmsyp0qe8rstrheqlw",
-   "excerpt": ""
-  },
-  {
    "group": "ai",
    "source": "Latent Space",
    "title": "[AINews] GPT-6.2 Astra, the #2 Frontier Model is better and 20%-600% cheaper, but has mixed reviews; 6.2 Sol likely main workhorse",
@@ -1427,30 +1593,12 @@
   },
   {
    "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenAI 发布 GPT-6.2 Astra 和 Sol：更便宜但口碑分化，Anthropic 仍握最强模型",
-   "url": "https://aihot.news/items/oisr0dfay736le62g425urn8l",
-   "published": "2026-11-18T10:19:04.000Z",
-   "description": "Latent Space 汇总 OpenAI 发布的 GPT-6.2 Astra 和 Sol：Artificial Analysis 测得 Sol 以约 15% 的单任务成本追平 9 月的 Astra，新 Astra 以 62 分位居 Intelligence Index 第二，仅次于 Fable 5.2 的 65 分，两者均为 1M 上下文、128K 输出。 🔗 阅读原文 via AIHOT · https://aihot.news/items/oisr0dfay736le62g425urn8l",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
    "source": "OpenAI",
    "title": "The Silent Consensus",
    "url": "https://openai.com/index/the-silent-consensus",
    "published": "2026-11-18T10:00:00.000Z",
    "description": "Dean Ball, Head of Strategic Futures at OpenAI, examines how more capable AI could reshape society and how people can retain control of their institutions.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "Research acceleration: The jagged frontier",
-   "url": "https://openai.com/index/research-acceleration-jagged-frontier",
-   "published": "2026-11-18T08:00:00.000Z",
-   "description": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.",
-   "excerpt": ""
+   "excerpt": "Author’s note: Today’s essay is adapted from a lecture the author gave recently as part of the Vik-Bailey Lecture series at Harvard. This post reflects the author’s own views, and not necessarily the views of OpenAI or any of its other employees.\nThank you for being here today. As we speak, one of the most significant sets of cybersecurity events in history is happening, a set of critical security vulnerability disclosures that some are calling “Black October.” These vulnerabilities, which were found in some of the core infrastructure of the internet, were found by frontier AI systems, and their disclosure is part of an urgent effort to bolster software security worldwide. This is the urgent matter this month; next month there will be another. Software vulnerability discovery is the dual-use capability AI systems have arrived at today, but soon enough there will be another, and it will inspire its own urgent project to use the good side of the capability before malicious actors use the bad side. All of these urgent matters will overlap, inevitably, and much of what we today call “AI policy” is likely to be made amid this clamor.\nBut it is not the reactive and urgent things I’ve come to talk to you about today. Instead, I want to talk to you about where things might be headed in the bigger picture. It can be hard, amid such a barrage of urgency, to think about these more abstract and airy questions. But these questions matter, because without a sense of what long-term futures we’d like to achieve–and which we’d like to avoid–we might end up with a macro outcome we disfavor, even if we made wise decisions at every step along the way.\nIt is often remarked that the technology industry lacks a positive vision for where the things it is building will take us. I disagree: San Francisco and other hubs of entrepreneurship are filled with positive visions for our technological future. People really are building flying cars, autonomous vehicles, robots of many sizes and shapes, nuclear fusion, and, of course, artificial general intelligence. What we lack, instead, is a positive vision of our institutional future: how is this all going to work?\nThat is not to say, however, that there is no institutional vision for the future. Unfortunately, the vision I find most common is not one I would call positive. When it is articulated at all, it is usually in whispers. But more often, it is left unsaid, discernable only by implication. I call it the silent consensus.\nConsider "
   },
   {
    "group": "ai",
@@ -1459,7 +1607,16 @@
    "url": "https://openai.com/business/customer-stories/sumitomo-life",
    "published": "2026-11-18T08:00:00.000Z",
    "description": "Sumitomo Life uses ChatGPT Enterprise to research insurers, prepare proposals, and draft code for investment analysis. Early use by executives helped drive adoption.",
-   "excerpt": ""
+   "excerpt": "Planning teams use ChatGPT to research overseas insurers and prepare proposals. Investment teams use it to draft code for risk analysis.\nAverage estimated ROI among employees using ChatGPT at least 101 times a month\nROI estimates are based on employee-reported time savings; overall estimated ROI is 203%.\nWhen Sumitomo Life’s planning teams prepare proposals for senior management, ChatGPT Enterprise helps them review source material and organize their findings. They combine those findings with firsthand information and draw on their expertise to decide what to recommend. Teams in accounting and finance also use ChatGPT for research and analysis.\nThe Japanese life insurer’s executives and managers were among the first to use ChatGPT. Their example and the president’s encouragement helped more employees try it in their own work.\nSumitomo Life began using generative AI at work in 2023. At first, employees mainly asked questions in chat. As they tested general-purpose AI tools, ChatGPT stood out for its range. They could use deep research to explore a question across sources and bring ChatGPT into work they were already doing in Word, PowerPoint, and Excel.\nIn 2025, about 100 to 150 people, including executives and members of planning teams, piloted ChatGPT Business. In June 2026, the company moved to ChatGPT Enterprise. In planning a rollout to thousands of employees, the insurer weighed output quality, how well ChatGPT fit different kinds of work, and the security requirements of a financial institution.\nSumitomo Life worked with OpenAI to assess ChatGPT Enterprise against the insurer’s security standards. The review covered how Sumitomo Life could manage workspace access and feature permissions, along with OpenAI’s policy of excluding business data from model training by default. The insurer continues to decide how employees can use ChatGPT based on the information they handle and the systems they connect to.\nSumitomo Life’s investment teams use statistical analysis to forecast returns and assess risks such as price swings. ChatGPT helps analysts draft the code for that work, reducing the amount they need to write themselves.\nPlanning teams use ChatGPT to track developments at other Japanese insurers and find examples from overseas. They use that research to strengthen proposals for senior management.\nPlanning teams supplement public sources with firsthand information from people familiar with the work. They use projects in ChatGPT to keep the material toget"
+  },
+  {
+   "group": "ai",
+   "source": "OpenAI",
+   "title": "Research acceleration: The jagged frontier",
+   "url": "https://openai.com/index/research-acceleration-jagged-frontier",
+   "published": "2026-11-18T08:00:00.000Z",
+   "description": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.",
+   "excerpt": "Over the course of this year, AI systems have become increasingly capable, potentially increasing their ability to contribute to AI research and development themselves. Today, we’re providing an update on the state of research acceleration at OpenAI, based on internal measurements of how coding agents have accelerated and changed the AI development cycle.\nThis report builds on our September blog post on research acceleration at OpenAI ⁠ , adding new quantitative and qualitative measures of (1) AI uplift across research domains and (2) how humans remain involved in the research process. Overall, we believe this update provides a broader, though still partial, picture of how research at OpenAI is changing.\nWe are sharing this work because, as we wrote in our frontier policy blueprint ⁠ ⁠ and reiterated in our first research acceleration report ⁠ , we believe that AI labs should be required to track and publicly report indicators of recursive self-improvement (RSI)—the process by which AI accelerates the development of future AI systems.\nAs capabilities improve and dramatic AI-driven research acceleration becomes increasingly possible, we will need to solve novel technical and governance issues to maintain human oversight and safely scale AI systems ⁠ . Transparency about indicators of RSI is therefore essential to inform a public discussion of the capabilities, risks, and required safeguards for increasingly powerful AI; however, our reporting should not be read as an intention to pursue full RSI. We have been heartened to see that several other organizations have recently contributed to the growing body of work measuring AI R&D acceleration 1 . Our hope is that this expanded report will help sustain and advance these shared measurement norms across the industry.\nWe structure this report in three sections, each focused on a different aspect of AI research:\nWe believe organizing the results in this way provides a useful framework for reasoning about how AI is used in research and how that use might contribute to improvements in model capabilities.\nAI research uses several inputs, including data, AI tools (e.g., coding agents), human labor, and compute. In this report, we focus on AI tools as an input to research. Specifically, we document how the intensity of coding-agent use varies across teams and changes over time. Further, while we do not directly report changes in labor costs, we examine how the share of spending on research labor has changed relative to"
   },
   {
    "group": "ai",
@@ -1468,25 +1625,7 @@
    "url": "https://openai.com/index/inside-the-codex-sandbox",
    "published": "2026-11-18T08:00:00.000Z",
    "description": "See how Codex runs commands on your machine while enforcing the filesystem and network limits you control across macOS, Linux, and Windows.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenAI 发布研究加速报告：智能体完成近半数长时研究任务但进展参差",
-   "url": "https://aihot.news/items/v0rnw0gs7wqagl0k8xwblf421",
-   "published": "2026-11-18T08:00:00.000Z",
-   "description": "OpenAI 发布第二份研究加速报告，基于内部测量介绍编码智能体如何改变 AI 研发周期。3 月到 10 月，估计需 2-4 小时的人工任务智能体自主成功率从 23% 升至 46%，4-8 小时任务从 13% 升至 35%；但任务间差异明显，监控训练成功率达 79%，而推理与服务栈编码仅 25%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v0rnw0gs7wqagl0k8xwblf421",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenAI 深入解析 Codex 沙箱的权限设计与三平台实现",
-   "url": "https://aihot.news/items/fn0p7buwy74nvduahsy10sp2f",
-   "published": "2026-11-18T08:00:00.000Z",
-   "description": "OpenAI 发布长文，详解 Codex 沙箱如何在用户现有环境中以可控的文件系统和网络限制运行命令。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fn0p7buwy74nvduahsy10sp2f",
-   "excerpt": ""
+   "excerpt": "How Codex runs commands on your machine with limits you control.\nBy Michael Bolin, Member of Technical Staff\nAt OpenAI, we take a defense in depth ⁠ (opens in a new window) approach when it comes to safeguarding agents. While our investments in training and alignment are fundamental to this effort, we also implement features in our agentic harness, Codex ⁠ (opens in a new window) , to provide additional protections. Because one of the most common (and potentially risky) things Codex does is run commands on your computer, we built the Codex sandbox so Codex can work in your existing environment within filesystem and network limits you control.\nA ⁠ (opens in a new window) sandbox ⁠ (opens in a new window) limits what a program can access while it runs. For a photo-organizing task, you might configure the Codex sandbox to let commands read and modify files in ~/Pictures while blocking network access to prevent uploads. For code review, you might allow access to online documentation while keeping source files read-only. Users configure the Codex sandbox through ⁠ (opens in a new window) permission profiles ⁠ (opens in a new window) , which define the filesystem and network restrictions for a Codex session.\nIn this article, we’ll start with the tradeoffs behind Codex’s sandbox defaults, then explain the sandbox’s design and how the harness uses it to run commands. We’ll show how end users and enterprises can tailor its permissions to their needs and how developers can reuse the sandbox in their own tools. Finally, we’ll examine how these restrictions are enforced on macOS, Linux, and Windows.\nIn Codex, our philosophy is to specify conservative defaults for the sandbox that still enable meaningful work. For example, with a Git repository as the workspace root, the built-in :workspace permission profile:\nAllows writes within the workspace, while keeping directories such as .git and .codex read-only. This lets Codex edit source code without seeking permission for every change, while preventing direct changes to .codex/config.toml or Git hooks under .git/hooks .\nAllows broad filesystem reads, subject to the user’s existing OS permissions. Compilers, runtimes, and build tools depend on SDKs, libraries, and configuration outside the repository. Restricting reads to the workspace would break many ordinary workflows. The tradeoff is that sensitive files elsewhere on the machine may also remain readable (such as config files containing API keys).\nDisables network access"
   },
   {
    "group": "ai",
@@ -1495,7 +1634,7 @@
    "url": "https://openai.com/index/managing-frontier-ai-risk",
    "published": "2026-11-18T06:00:00.000Z",
    "description": "OpenAI explains how it manages frontier AI risk from training through deployment with model alignment, sandboxing, blocking safeguards, and monitoring.",
-   "excerpt": ""
+   "excerpt": "The capabilities of frontier models are rapidly accelerating, and our ability to understand, align, and secure them must stay ahead. We are pacing the development and release of our models, including pausing internal training ⁠ (opens in a new window) or holding back models like GPT‑6.1 Astra when we need more time to meet our safety standards. We’ve introduced new processes such as safety cases and require stronger evidence of aligned behavior throughout training. These requirements slow the pace of model releases, but they give us greater confidence to safely move forward.\nSince the Hugging Face incident ⁠ in July, we've strengthened safeguards and alignment requirements for how we train, test, and deploy models. This post explains how we evaluate and manage risk at each stage , from highly sandboxed training environments to the Codex deployment you use on your computer. We evaluate both models and safeguards at each stage, requiring a safety review to advance to the next stage.\nWe use defense in depth with m ultiple layers of protection that reduce dependence on any single safeguard. If one layer fails, others help prevent harm, limit consequences, or alert us so we can intervene.\nW e organize our protections around four layers:\nEffective monitoring depends on model monitorability - how reliably monitors can detect mistakes or unsafe behavior from a model’s reasoning and actions. For example, a model that verbalizes its intention to cheat in its chain-of-thought (CoT) is more monitorable than one that omits this information. We evaluate monitorability during training and before deployment, develop better methods for measuring ⁠ (opens in a new window) it , and study what affects it ⁠ (opens in a new window) .\nThe Hugging Face incident showed why we should not rely on sandboxing alone to contain highly capable models. We now monitor frontier models across most internal and external deployment settings, including all internal deployments that use tools .\nThe role of each layer changes across three stages of model development and deployment:\nResearch: We train, test, and use models in sandboxed environments.\nInternal deployment: OpenAI employees use models for practical work.\nExternal deployment: Models become available to people and organizations more broadly.\nWe rely on different layers at different stages. During training, when alignment is less certain, we depend more heavily on sandboxing and monitoring. As models gain broader access during deployment"
   },
   {
    "group": "ai",
@@ -1507,33 +1646,6 @@
    "excerpt": ""
   },
   {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenAI 详解前沿 AI 风险管理：从训练到部署的四层防护",
-   "url": "https://aihot.news/items/na2nxuqq5bxz0us1vjup0l259",
-   "published": "2026-11-18T06:00:00.000Z",
-   "description": "OpenAI 发布长文，介绍其在模型全生命周期中管理前沿 AI 风险的防御纵深体系，涵盖模型对齐、安全与沙箱、拦截防护、监控响应四层保护，并按研究、内部部署、外部部署三阶段说明各层的作用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/na2nxuqq5bxz0us1vjup0l259",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenAI Codex 团队成员解释 6.2 Sol/Astra 评测视频与现场反馈的差异",
-   "url": "https://aihot.news/items/sah26a5ofgvrxd76bgj9t77wf",
-   "published": "2026-11-18T05:47:21.000Z",
-   "description": "Tibo 解释 6.2 Sol/Astra 上评测视频与现场人群反馈氛围不同的原因：部分人较早获得访问权限，而团队在过去 3-4 天做了大量改动，视频是上周制作的，之后大概率没有重新测试。他称这两个模型相比 GPT 前代有明显提升，但仍不完美，团队希望在后续迭代的品味和使用体验上改进，并表示欢迎反馈。 🔗 阅读原文 via AIHOT · https://aihot.news/items/sah26a5ofgvrxd76bgj9t77wf",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Nvidia 临时 CEO Colette Kress 表示董事会不会恢复黄仁勋的 CEO 职务",
-   "url": "https://aihot.news/items/znj4uw6kr9vt4uij9fmao9p00",
-   "published": "2026-11-18T05:30:49.000Z",
-   "description": "Nvidia 临时 CEO Colette Kress 在 Jim Cramer 的节目上表示，董事会已决定不会恢复黄仁勋（Jensen）的 CEO 职务，称这就是董事会的决定和官方声明。此前董事 Harvey Jones 在昨天的首次财报电话会上表示，董事会一致接受其辞职且无意让其复任。完整采访见 CNBC Mad Money，完整视频见 CNBC Television YouTube 频道。 🔗 阅读原文 via AIHOT · https://aihot.news/items/znj4uw6kr9vt4uij9fmao9p00",
-   "excerpt": ""
-  },
-  {
    "group": "wh",
    "source": "MH&L",
    "title": "AI Will Make 25% of Warehouse Decisions for 50% of Companies",
@@ -1541,87 +1653,6 @@
    "published": "2026-11-18T05:05:00.000Z",
    "description": "A new MIT survey says this will happen by 2028.",
    "excerpt": "AI is continuing its quick trajectory into the decision-making function of warehouses.\nIn fact, a report from the Intelligent Logistics Systems Lab at the Massachusetts Institute of Technology (MIT) Center for Transportation & Logistics (CTL) and Mecalux found that 57% of companies expect AI to make or execute more than a quarter of their operational warehouse decisions autonomously by 2028.\nAnd 90% expect to increase their AI investment over the next two to three years.\nThe survey consisted of responses from nearly 2,000 experienced supply chain and warehousing professionals across 21 countries.\nAdoption is already high, with 61% of organizations reporting use of GenAI at large-scale deployment or full integration, compared with 56% for agentic AI.\nMost applications are still young, however, as about three in four have been at their current deployment stage for less than a year. Reported value is also widespread but not yet well documented.\nAmong the use cases respondents described in detail, 87% of GenAI and 81% of agentic AI applications show at least moderate improvement in their target metrics, yet only 39% of GenAI and 36% of agentic AI use cases have significant gains that have been quantified and documented.\nWhere respondents could estimate the gain, the typical figure was around 20% on their main target metric.\nAs for autonomy, companies are giving AI agents real authority, but within clear limits. Agents most often make decisions without human approval on inventory movements (51% of agentic use cases) and data corrections (42%), while only 22% are permitted to make customer-facing commitments and 12% to make financial decisions.\nThe most common oversight model is &ldquo;human-on-the-loop,&rdquo; in which AI operates within defined limits while employees monitor and can step in.\n&ldquo;The objective is to move beyond general sentiment and to provide practical guidance on where these technologies are delivering operational value today and where they remain experimental,&rdquo; said Matthias Winkenbach , director of the Intelligent Logistics Systems Lab, in a statement.\nWhen comparing the organizations that document results with those that do not, governance and integration appear to separate them. Businesses with comprehensive, actively enforced AI governance are about twice as likely to report significant, documented improvements: 51% versus 26% for GenAI and 46% versus 23% for agentic AI.\nThe pattern holds after controlling for deployment status,"
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "Advancing chip design with OpenAI models",
-   "url": "https://openai.com/index/advancing-chip-design-with-our-models",
-   "published": "2026-11-18T00:00:00.000Z",
-   "description": "OpenAI models optimized circuits used in Jalapeño silicon and improved RISC‑V core designs, showing progress in AI-assisted chip design with GPT‑6 Astra.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
-   "url": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
-   "published": "2026-11-18T00:00:00.000Z",
-   "description": "Le Groupe Figaro and OpenAI partner to bring Le Figaro’s journalism to ChatGPT through summaries and excerpts, with links to original stories.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "Hugging Face",
-   "title": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
-   "url": "https://huggingface.co/blog/moe-expert-streaming",
-   "published": "2026-11-18T00:00:00.000Z",
-   "description": "",
-   "excerpt": "Streaming MoE experts directly from SSD gets within 6% of Strata on token generation.\nI've been trying to rely less on online models and run bigger ones locally. At home I have a PC with two RTX 4090s (let's call it Orthrus - the two-headed hound of Greek mythology), and for work I have a MacBook M5 with 32G of unified memory.\nOrthrus runs on Windows 11, because my kids play games all the time. I had a dual boot with Ubuntu, but their games ended up taking most of the two terabytes of disk.\nI am also a huge fan of RMD (rooms moving development): one hour in the kitchen sipping my coffee, two hours at my office desk, then the sofa. A fixed desktop tower is not for me.\nMy first experiment was to run Qwen 3.8 27B with llama.app on Orthrus and use it from my laptop through pi . That model does the coding tasks, an online model like Opus does the orchestration, and the second RTX runs a FIM model for auto-completion in Neovim.\nWhen I talked about this on social networks, I got very strong feedback: use Strata with Qwen3.8-Flash-Next .\nStrata is an inference engine for MoE models like Qwen. Only the hot experts stay in VRAM, the rest goes to RAM, or even to disk. Experts are 90%+ of a MoE model's weights, so a 180B model like this one can run on a GPU with much less memory. Like my RTX 4090!\nIt works on a laptop too, and I stumbled on this blog post doing exactly that: Qwen3.8-Flash-Next on a 32 GB Mac M4, faster than llama.cpp , at 13.5 tok/s.\nThat's too slow for how I use coding agents, but it's an interesting itch to scratch. A whole range of MoE models don't fit in a MacBook's unified memory and could run at a decent speed.\nBefore committing to Strata, I looked at what llama.cpp, vLLM and Transformers do when a MoE model doesn't fit. Three questions matter: where do the experts live, where does the expert matmul run, and what moves on each token?\nllama.cpp maps the GGUF file with mmap and can keep the experts on the CPU ( --cpu-moe , --n-cpu-moe N , -ot \"exps=CPU\" , or --fit on to pick for you). Those experts are also computed on the CPU, so only the activations cross PCIe, never the weights. Great when the experts fit in RAM. When they don't, the page cache thrashes. A GPU expert cache ( --moe-cache-mib ) just landed, but it fragments the graph (2 splits per token become 50) and loses ~10% even when everything fits.\nvLLM 's --cpu-offload-gb N puts N GB of weights in pinned RAM, and kernels read them in place over PCIe. For a MoE layer, that's only the route"
-  },
-  {
-   "group": "ai",
-   "source": "Hugging Face",
-   "title": "Rumble-2-Flash: an open 0.5B speech model for 40+ languages",
-   "url": "https://huggingface.co/blog/rumble-2-flash",
-   "published": "2026-11-18T00:00:00.000Z",
-   "description": "",
-   "excerpt": "Today we're open sourcing Rumble-2-Flash under the Apache 2.0 license. It's a 0.5B-parameter speech recognition model for 40+ languages that competes with models 3-60x its size.\naudio accepts a local path, a URL, a NumPy array, or a list of these.\nRumble-2-Flash uses the Qwen3-ASR architecture for day-0 support. If your stack runs Transformers or vLLM, it runs Rumble-2-Flash, with no forked runtime or trust_remote_code .\nTo find out how small a model could get before accuracy dropped off, we distilled Rumble-2, our larger production model, into it with on-policy distillation. The student doesn't train on transcripts the teacher wrote. It transcribes the audio itself, and the teacher grades that transcript token by token: at every position, it gives its own probability for what should come next, and the student learns to match it. Because the student learns from its own outputs, it gets corrected on exactly the mistakes it makes, with feedback on every token instead of one score per clip.\nOn-policy distillation normally requires teacher and student to share a tokenizer, and ours don't: choosing Qwen3-ASR meant taking its vocabulary too. GOLD removes that restriction. It merges tokens where the two tokenizers split the text differently, so both models are compared over the same text. Tokens that exist in both vocabularies are compared directly, and the rest by their sorted probabilities.\nOn the Open ASR Leaderboard multilingual track, Rumble-2-Flash averages a 6.96% error rate across Chinese, German, French, Italian, Spanish, Portuguese, Hindi, Dutch and English. That's better than Meta's omniASR-LLM 7B, a model 15x larger, and ahead of Whisper large-v3. On the English track it averages 6.6% WER .\nRumble-2-Flash is also fast. Its throughput depends on how full the batches are: on the larger datasets in HF's Open ASR Leaderboard, where batches stay full, it reaches over 7,000 RTFx . That's an hour of audio in about half a second.\nClean audio is easy. Phone calls are compressed and noisy, and often have speakers with very different accents. On AppTek's call-centre benchmark (302 hours of helpline calls, 14 English accents, scored with AppTek's own script), Rumble-2-Flash reaches 7.86% WER , on par with NVIDIA's Nemotron 3.5 Transcribe (30B) at 7.78%. That's well ahead of Qwen3-ASR 0.6B (8.7%), from the same model family, and close to Qwen3-ASR 1.7B (7.4%), the only model in the comparison that does better.\nThe weights are on the Hub at Reson8/Rumble-2-Flash . "
-  },
-  {
-   "group": "ai",
-   "source": "Anthropic 新闻",
-   "title": "Anthropic prices initial public offering",
-   "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
-   "published": "2026-11-18T00:00:00.000Z",
-   "description": "Today Anthropic, PBC priced its initial public offering of its Class A common stock.",
-   "excerpt": "Today Anthropic, PBC priced its initial public offering of its Class A common stock at $83.00 per share. The offering consists of 980,000,000 shares of Class A common stock, 956,351,354 of which are being sold by Anthropic and 23,648,646 of which are being sold by certain selling stockholders. Anthropic will not receive any proceeds from the sale of shares by the selling stockholders.\nThe shares are expected to begin trading on the Nasdaq Global Select Market on November 19, 2026 under the symbol “ANT.” The offering is expected to close on November 20, 2026, subject to the satisfaction of customary closing conditions. In addition, Anthropic has granted the underwriters a 30-day option to purchase up to an additional 147,000,000 shares of its Class A common stock.\nA registration statement relating to these securities was declared effective by the Securities and Exchange Commission on November 18, 2026. The offering is being made only by means of a prospectus. Copies of the final prospectus may be obtained, when available, from: Goldman Sachs & Co. LLC, Attention: Prospectus Department, 200 West Street, New York, NY 10282, by telephone at (866) 471-2526, or by email at prospectus-ny@ny.email.gs.com; or Morgan Stanley & Co. LLC, Attention: Prospectus Department, 180 Varick Street, 2nd Floor, New York, NY 10014, or by email at prospectus@morganstanley.com.\nToday’s announcement does not constitute an offer to sell or the solicitation of an offer to buy these securities, nor shall there be any sale of these securities in any state or jurisdiction in which such offer, solicitation, or sale would be unlawful prior to registration or qualification under the securities laws of any such state or jurisdiction."
-  },
-  {
-   "group": "ai",
-   "source": "Simon Willison",
-   "title": "External sandboxes for coding agents",
-   "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/",
-   "published": "2026-11-17T22:52:29.000Z",
-   "description": "External sandboxes for coding agents I've been exploring new ways to sandbox code that is executed by agents, with a focus on making it safer to try out local models without worrying that a mistake or prompt injection attack might cause them to take damaging actions on a machine. I worked on this project with Prime Radiant , the AI research lab behind Superpowers and other projects . My post on the Prime Radiant blog introduces the external sandbox pattern, where code executed by the agent runs inside a dedicated sandbox while the agent itself lives outside of that sandbox. To demonstrate this",
-   "excerpt": "External sandboxes for coding agents . I've been exploring new ways to sandbox code that is executed by agents, with a focus on making it safer to try out local models without worrying that a mistake or prompt injection attack might cause them to take damaging actions on a machine.\nI worked on this project with Prime Radiant , the AI research lab behind Superpowers and other projects .\nMy post on the Prime Radiant blog introduces the external sandbox pattern, where code executed by the agent runs inside a dedicated sandbox while the agent itself lives outside of that sandbox.\nTo demonstrate this pattern we've released three sandbox server implementations:\nEach of these implementations offers the same localhost API. You can then configure Pi, Claude Code, or Codex to send API calls to that sandbox any time they want to execute code.\nThe sandboxes also include an optional HTTP/HTTPS allow-list proxy, so you can control exactly which hosts your agent's code is allowed to communicate with - plus a credential replacement mechanism to make authenticated API calls without sharing a secret with the agent. Here's the UI you can use to reconfigure that proxy while the sandbox is still running:\nI continue to be fascinated by the challenge of safely running untrusted code. This external sandbox pattern provides a neat way to experiment with different approaches.\nThis is a link post by Simon Willison, posted on 17th November 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "MIT Report: Corporate commitment to sustainability soars, but roadblocks to execution remain",
-   "url": "https://www.dcvelocity.com/supply-chain/other-services/supply-chain-strategy/mit-report-corporate-commitment-to-sustainability-soars-but-roadblocks-to-execution-remain",
-   "published": "2026-11-17T22:39:07.000Z",
-   "description": "Corporate commitment to sustainability has reached a record high, but oversight is lagging and external disruptions are keeping companies from delivering transformational results. That’s according to the 2026 State of Supply Chain Sustainability report from the MIT Sustainable Supply Chain Lab at the MIT Center for Transportation and Logistics (MIT CTL), released this month. Researchers surveyed 1,810 supply chain professionals across 91 countries and found that 83% rate sustainability as important or very important to long-term business success, the highest level in the report’s seven-year hi",
-   "excerpt": "Tariffs and geopolitical pressures are among the key external factors slowing progress, but internal gaps persist as well, State of Supply Chain Sustainability report shows.\nCorporate commitment to sustainability has reached a record high, but oversight is lagging and external disruptions are keeping companies from delivering transformational results. That’s according to the 2026 State of Supply Chain Sustainability report from the MIT Sustainable Supply Chain Lab at the MIT Center for Transportation and Logistics (MIT CTL), released this month.\nResearchers surveyed 1,810 supply chain professionals across 91 countries and found that 83% rate sustainability as important or very important to long-term business success, the highest level in the report’s seven-year history. What’s more, the report found that corporate commitment has grown despite recent shifts in U.S. climate policy, with 59% saying they have become more committed to sustainability while just 13% say they have become less committed.\nThose advances are being tempered by outside factors. Nearly 70% of respondents said that tariff uncertainty has forced their organizations to delay, scale back, or compromise sustainability strategies, and more than eight in 10 said that geopolitical conflict is reducing the effectiveness of climate action.\nInternal problems exist as well: The study also found that companies’ public sustainability ambition is outpacing the governance and accountability needed to deliver results.\n“Companies with formal cross-functional sustainability teams are far more likely to embed sustainability in everyday decisions: 57% do so frequently or always, compared with 13% where responsibility sits within a single function,” according to the report. “Yet only 51% of companies with public sustainability goals have a formal cross-functional team, and only 33% place oversight at board level. Many companies have set the direction but have not yet built the internal structures needed to turn those commitments into consistent action.”\nThe effects of geopolitics and governance is just one of four themes examined in the report. The research also evaluates where sustainability efforts “live” in the supply chain, how artificial intelligence is affecting sustainability goals, and how warehousing and freight transportation operations are progressing toward decarbonization.\nOne of the key findings is that logistics is emerging as a prime area for sustainability action: The research identified dai"
-  },
-  {
-   "group": "ai",
-   "source": "Simon Willison",
-   "title": "GPT‑6.2 Astra and GPT‑6.2 Sol",
-   "url": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/",
-   "published": "2026-11-17T22:38:52.000Z",
-   "description": "GPT‑6.2 Astra and GPT‑6.2 Sol OpenAI: We’re introducing GPT‑6.2 Astra, our new frontier model for your hardest projects, and GPT‑6.2 Sol, our efficient, versatile model for everyday work. They're available in the API as gpt-6.2-astra and gpt-6.2-sol . I shipped LLM 0.38 with support for the new models. 6.2 Astra is 80% of the price of 6 Astra - $8/MTok input and $40/MTok output, the same price as Claude Fable 5.2 (which was also 80% of its predecessor). 6 Astra and Fable 5 were both $10/$50. The cached price is an even bigger discount - $0.40/million compared to $1/million for the older model.",
-   "excerpt": "We’re introducing GPT‑6.2 Astra, our new frontier model for your hardest projects, and GPT‑6.2 Sol, our efficient, versatile model for everyday work.\nThey're available in the API as gpt-6.2-astra and gpt-6.2-sol . I shipped LLM 0.38 with support for the new models.\n6.2 Astra is 80% of the price of 6 Astra - $8/MTok input and $40/MTok output, the same price as Claude Fable 5.2 (which was also 80% of its predecessor). 6 Astra and Fable 5 were both $10/$50. The cached price is an even bigger discount - $0.40/million compared to $1/million for the older model. This is great news for longer running agentic sessions.\nGPT-6.2 Sol is the same $2/$10 price as 6.1 Sol and 6 Sol - which are half the price of GPT-5.6 Sol ($4/$20).\nHere are the pelicans for GPT-6.2 Sol and for GPT-6.2 Astra . The 6.2 Astra max pelican looks like this:\nI have a full comparison grid here , but here's how the high/xhigh/max pelicans compare with the previous Sol and Astra releases:\nI also ran my most recent benchmark prompt against the two models, using \"Ultra' effort levels in the Codex CLI:\nMake a three js animation where yonkers stands up as a big mech (cool stand up motion) and stomps around manhattan and queens and Brooklyn, use openstreetmap mapping data\nHere's Sol and here's Astra . Neither of them did a good enough job of morphing Yonkers into a big mech, at least in comparison to Claude Fable 5.2 and Gemini 4 Carbon .\nThis video showing the Astra and Sol animations playing out at the same time:\nI created that video using GPT-6.2 Astra (Ultra) in the Codex desktop app by prompting:\nhttps://static.simonwillison.net/static/2026/yonkers-gpt-6.2-astra-ultra/index.html and https://static.simonwillison.net/static/2026/yonkers-gpt-6.2-sol-ultra/index.html are two videos of the same thing by two different models\nI need a video of the first 10 seconds where the top half of the video plays the first and the bottom half plays the second\nI need an overlaid label of \"GPT-6.2 Astra\" on the top half and \"GPT-6.2 Sol\" on the bottom half. These labels should be tastefully positioned.\nMake the video square and 2000x2000 pixels\nThe buzz around these new models is mixed at the moment. Astra 6.2 isn't scoring quite as high as Fable 5.2 on various benchmarks, and I've seen a few complaints that its communication style can be confusing. Theo Browne's review (in the form of a feedback letter he sent OpenAI during pre-release) has this useful example:\nWhen this model is working on long tasks, it can pull "
-  },
-  {
-   "group": "wh",
-   "source": "The Robot Report 物流",
-   "title": "Learn how AI is changing supply chain robotics",
-   "url": "https://www.therobotreport.com/learn-how-ai-is-changing-supply-chain-robotics/",
-   "published": "2026-11-17T19:58:18.000Z",
-   "description": "The live webinar, \"Robots in the Supply Chain,\" will take place Wednesday, November 18, 2026, at 12 P.M. ET. The post Learn how AI is changing supply chain robotics appeared first on The Robot Report .",
-   "excerpt": "From left to right: Lior Elazary, the co-founder and CEO of inVia Robotics, Josip Cesic, the co-founder and CEO of Gideon, and Jeff Mahler, the co-founder and CTO of Ambi Robotics.\nSupply chain robotics is undergoing rapid transformation. Companies hope to address labor shortages, improve efficiency, and build resilience against disruptions. Increasingly, they’re turning to robotics to solve these challenges.\nCurrently, available technologies include warehouse automation, picking and packing systems, autonomous mobile robots for material handling, and AI-powered inventory management. These systems can work together and help organizations adapt to changing demand patterns and product variations.\nNow, the integration of artificial intelligence is enabling predictive analytics, demand forecasting, and dynamic routing optimization. With AI, robots can learn from operational data to improve performance, reduce errors, and optimize energy consumption.\nEven manufacturers already using robots stand to gain from these advancements, achieving higher quality, reduced downtime, better predictability, and cost optimization. This transition is a strategic necessity, supporting the shift towards high-volume, high-mix production and resilient supply chains.\nLearn about all of the latest advancements in the webinar , “Robots in the Supply Chain.” The live webinar will take place Wednesday, November 18, 2026, at 12 P.M. ET. If you can’t attend live, registered attendees will be able to watch a recording of the webinar at their convenience.\nThe webinar will feature insights from three robotics experts: Lior Elazary, co-founder and CEO of InVia Robotics; Josip Cesic, co-founder and CEO of Gideon; and Jeff Mahler, co-founder and CTO of Ambi Robotics.\nIn this webinar, attendees will learn how:\nLior Elazary is the co-founder and CEO of inVia Robotics . At inVia, he leads the company’s vision for applying AI, software, and robotics to improve warehouse operations. With more than 20 years of experience in technology and entrepreneurship, he has built and scaled companies across robotics, software, networking, and enterprise technology.\nJosip Cesic is the co-founder and CEO of Gideon , a pioneering robotics and AI company. Gideon revolutionizes supply chains with their Physical-AI platform, automating some of the hardest automation problems such as loading and unloading truck trailers with autonomous forklifts.\nCesic holds a PhD in autonomy technologies from the University of Zagre"
   }
  ]
 }
