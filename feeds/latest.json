@@ -1,14 +1,7 @@
 {
- "fetchedAt": "2026-11-21T17:35:33.095Z",
+ "fetchedAt": "2026-11-22T02:18:35.981Z",
  "hours": 72,
  "status": [
-  {
-   "source": "OpenAI",
-   "feed": "https://openai.com/news/rss.xml",
-   "ok": true,
-   "total": 1421,
-   "recent": 8
-  },
   {
    "source": "Anthropic Engineering",
    "feed": "https://znck.github.io/feeds/anthropic-engineering.xml",
@@ -17,10 +10,11 @@
    "recent": 0
   },
   {
-   "source": "Epoch AI",
-   "feed": "https://epochai.substack.com/feed",
-   "ok": false,
-   "error": "HTTP 403"
+   "source": "OpenAI",
+   "feed": "https://openai.com/news/rss.xml",
+   "ok": true,
+   "total": 1421,
+   "recent": 4
   },
   {
    "source": "a16z",
@@ -30,18 +24,16 @@
    "recent": 3
   },
   {
-   "source": "Google DeepMind",
-   "feed": "https://deepmind.google/blog/rss.xml",
-   "ok": true,
-   "total": 100,
-   "recent": 2
+   "source": "Epoch AI",
+   "feed": "https://epochai.substack.com/feed",
+   "ok": false,
+   "error": "HTTP 403"
   },
   {
-   "source": "Hugging Face",
-   "feed": "https://huggingface.co/blog/feed.xml",
-   "ok": true,
-   "total": 915,
-   "recent": 4
+   "source": "Import AI",
+   "feed": "https://importai.substack.com/feed",
+   "ok": false,
+   "error": "HTTP 403"
   },
   {
    "source": "One Useful Thing",
@@ -51,17 +43,18 @@
    "recent": 0
   },
   {
-   "source": "Import AI",
-   "feed": "https://importai.substack.com/feed",
-   "ok": false,
-   "error": "HTTP 403"
+   "source": "Hugging Face",
+   "feed": "https://huggingface.co/blog/feed.xml",
+   "ok": true,
+   "total": 915,
+   "recent": 2
   },
   {
-   "source": "Simon Willison",
-   "feed": "https://simonwillison.net/atom/everything/",
+   "source": "Google DeepMind",
+   "feed": "https://deepmind.google/blog/rss.xml",
    "ok": true,
-   "total": 30,
-   "recent": 5
+   "total": 100,
+   "recent": 0
   },
   {
    "source": "Google AI",
@@ -71,11 +64,45 @@
    "recent": 2
   },
   {
+   "source": "Simon Willison",
+   "feed": "https://simonwillison.net/atom/everything/",
+   "ok": true,
+   "total": 30,
+   "recent": 6
+  },
+  {
    "source": "Interconnects",
    "feed": "https://www.interconnects.ai/feed",
    "ok": true,
    "total": 20,
    "recent": 0
+  },
+  {
+   "source": "Latent Space",
+   "feed": "https://www.latent.space/feed",
+   "ok": true,
+   "total": 20,
+   "recent": 5
+  },
+  {
+   "source": "BestBlogs 每日早报",
+   "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
+   "ok": true,
+   "total": 7,
+   "recent": 4
+  },
+  {
+   "source": "Sequoia",
+   "feed": "https://www.sequoiacap.com/feed/",
+   "ok": true,
+   "total": 50,
+   "recent": 0
+  },
+  {
+   "source": "Symbotic IR",
+   "feed": "https://ir.symbotic.com/rss/news-releases.xml",
+   "ok": false,
+   "error": "HTTP 403"
   },
   {
    "source": "Benedict Evans",
@@ -92,31 +119,11 @@
    "recent": 0
   },
   {
-   "source": "BestBlogs 每日早报",
-   "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
+   "source": "大福（日文）",
+   "feed": "https://www.daifuku.com/jp/rss_all.xml",
    "ok": true,
-   "total": 6,
-   "recent": 3
-  },
-  {
-   "source": "Sequoia",
-   "feed": "https://www.sequoiacap.com/feed/",
-   "ok": true,
-   "total": 50,
-   "recent": 0
-  },
-  {
-   "source": "Latent Space",
-   "feed": "https://www.latent.space/feed",
-   "ok": true,
-   "total": 20,
-   "recent": 5
-  },
-  {
-   "source": "Symbotic IR",
-   "feed": "https://ir.symbotic.com/rss/news-releases.xml",
-   "ok": false,
-   "error": "HTTP 403"
+   "total": 10,
+   "recent": 2
   },
   {
    "source": "Symbotic",
@@ -133,11 +140,11 @@
    "recent": 0
   },
   {
-   "source": "大福（日文）",
-   "feed": "https://www.daifuku.com/jp/rss_all.xml",
+   "source": "Automated Warehouse",
+   "feed": "https://www.automatedwarehouseonline.com/feed/",
    "ok": true,
    "total": 10,
-   "recent": 2
+   "recent": 1
   },
   {
    "source": "Georgia Tech SCL",
@@ -147,19 +154,6 @@
    "recent": 0
   },
   {
-   "source": "Interact Analysis",
-   "feed": "https://www.interactanalysis.com/feed/",
-   "ok": false,
-   "error": "fetch failed"
-  },
-  {
-   "source": "Automated Warehouse",
-   "feed": "https://www.automatedwarehouseonline.com/feed/",
-   "ok": true,
-   "total": 10,
-   "recent": 1
-  },
-  {
    "source": "Logistics Viewpoints",
    "feed": "https://logisticsviewpoints.com/feed/",
    "ok": true,
@@ -167,11 +161,17 @@
    "recent": 10
   },
   {
+   "source": "Interact Analysis",
+   "feed": "https://www.interactanalysis.com/feed/",
+   "ok": false,
+   "error": "fetch failed"
+  },
+  {
    "source": "The Robot Report 物流",
    "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
    "ok": true,
    "total": 15,
-   "recent": 1
+   "recent": 0
   },
   {
    "source": "MH&L",
@@ -185,7 +185,7 @@
    "feed": "https://www.dcvelocity.com/rss",
    "ok": true,
    "total": 30,
-   "recent": 12
+   "recent": 8
   },
   {
    "source": "Supply Chain 24/7 自动化",
@@ -199,13 +199,20 @@
    "feed": "https://www.supplychaindive.com/feeds/news/",
    "ok": true,
    "total": 10,
-   "recent": 9
+   "recent": 8
   },
   {
    "source": "Locus Robotics",
    "feed": "https://locusrobotics.com/feed/",
    "ok": false,
    "error": "HTTP 410"
+  },
+  {
+   "source": "AIHOT",
+   "feed": "https://aihot.news/rss",
+   "ok": true,
+   "total": 50,
+   "recent": 37
   },
   {
    "source": "36氪快讯",
@@ -220,13 +227,6 @@
    "ok": true,
    "total": 15,
    "recent": 15
-  },
-  {
-   "source": "AIHOT",
-   "feed": "https://aihot.news/rss",
-   "ok": true,
-   "total": 50,
-   "recent": 47
   },
   {
    "source": "国家统计局",
@@ -250,6 +250,42 @@
   }
  ],
  "items": [
+  {
+   "group": "ai",
+   "source": "BestBlogs 每日早报",
+   "title": "EP244 · Inkling 2 Mini 开放权重、Gemini 企业身份、Particle 谈模型成本",
+   "url": "https://www.bestblogs.dev/explore/brief/2026-11-22?utm_source=rss&utm_medium=feed&utm_campaign=daily_brief&entry=rss_brief_index",
+   "published": "2026-11-22T06:00:00.000Z",
+   "description": "📝 今日导语 Inkling 2 Mini 开放权重，Gemini 分清三类身份，Particle 按任务核算模型成本。 🏷 今日关键词： Inkling 2 Mini Gemini Enterprise 模型成本 长期智能体 本地推理 📰 今日精选内容 Thinking Machines 发布 Inkling 2 Mini：可在笔记本运行的开放权重模型 Thinking Machines Lab &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 Gemini Enterprise 自定义界面如何验证用户、连接器和智能体身份 Google Developers Blog &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 86 Particle 创始人 Suhail Doshi 谈如何算清模型使用成本 Riley Brown &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 Harrison Chase 谈如何构建长期运行的智能体 LangChain &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 百度将 System 1 决策模型用于 Feed 推荐 百度Geek说 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 Ahmad Osman 谈本地 AI 生产实践",
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "Simon Willison",
+   "title": "Muru",
+   "url": "https://simonwillison.net/2026/Nov/21/muru/",
+   "published": "2026-11-21T23:56:28.000Z",
+   "description": "Muru Graham Dumpleton started mod_wsgi 20 years ago, and has been thinking about the ideal way to serve Python web applications in production ever since. Muru is his new, AI-assisted Rust server that aims to provide the best possible tools for running ASGI and WSGI Python apps both in development and production. As he did with wrapture , he's been publishing an extraordinarily detailed account of the project as he works on it - as part of his development process. Here's everything he's published so far, all in the last three weeks: 2026-11-04 — Twenty years of mod_wsgi, and what comes next 202",
+   "excerpt": "Muru . Graham Dumpleton started mod_wsgi 20 years ago, and has been thinking about the ideal way to serve Python web applications in production ever since.\nMuru is his new, AI-assisted Rust server that aims to provide the best possible tools for running ASGI and WSGI Python apps both in development and production.\nAs he did with wrapture , he's been publishing an extraordinarily detailed account of the project as he works on it - as part of his development process.\nHere's everything he's published so far, all in the last three weeks:\nThat post about AI as a lifestyle choice is particularly worth a read:\nThe AI may be doing a lot of the work on the surface, but deciding what isn't good enough yet is still down to me, and twenty years of getting things wrong with mod_wsgi turns out to be useful for that. I am prepared to put in the hard work to keep polishing Muru until it is something I would trust, and something you would too.\nThis is a link post by Simon Willison, posted on 21st November 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
+  },
+  {
+   "group": "wh",
+   "source": "Logistics Viewpoints",
+   "title": "Always-On AI Is Coming to Supply Chains. But Who Owns the Exception?",
+   "url": "https://logisticsviewpoints.com/2026/11/21/always-on-ai-is-coming-to-supply-chains-but-who-owns-the-exception/",
+   "published": "2026-11-21T19:39:58.000Z",
+   "description": "The supply chain industry has invested heavily in detecting problems sooner. Transportation visibility systems identify late shipments, planning applications flag shortages, and control towers consolidate operational alerts. Yet knowing about an exception and resolving it are two different things. The delay may be visible to everyone, while responsibility for the next action remains surprisingly unclear. […] The post Always-On AI Is Coming to Supply Chains. But Who Owns the Exception? appeared first on Logistics Viewpoints .",
+   "excerpt": "The supply chain industry has invested heavily in detecting problems sooner. Transportation visibility systems identify late shipments, planning applications flag shortages, and control towers consolidate operational alerts. Yet knowing about an exception and resolving it are two different things. The delay may be visible to everyone, while responsibility for the next action remains surprisingly unclear.\nThat gap is becoming more important as artificial intelligence moves beyond answering questions and begins maintaining responsibility for work over time. On November 19, OpenAI expanded access to ChatGPT Dots , its persistent agents, to eligible ChatGPT Business Standard users, while testing access with a limited group of Plus subscribers. The agents can retain useful context, work with authorized applications, and pursue continuing assignments. This is not the same as releasing an autonomous transportation management system. It does, however, point toward an operating model that supply chain leaders should be examining.\nThe critical question is not whether an AI agent can produce a better recommendation. It is whether an organization can assign a bounded operational responsibility, know who is accountable for the result, and verify that the work was actually completed.\nConsider how many logistics exceptions are managed today. A late container generates an alert. A transportation planner checks the revised estimated arrival, calls the carrier, and coordinates with a distribution center. Someone may approve a new receiving window or an inventory transfer. But the work does not end when the recommendation is accepted. The carrier must acknowledge the change, the appointment must be updated, and the revised plan must hold up as conditions change.\nA great deal of operational effort is spent in the intervals between those actions. Employees chase confirmations, reconstruct previous conversations, and determine whether an apparent resolution was reflected in the system of record. Enterprise applications support the process, but they do not always maintain a single durable record of who owns the exception through closure.\nPersistent AI could improve this situation by preserving the case history, recognizing when new information changes its significance, and continuing to monitor outstanding actions. The benefit is not simply an answer that arrives in seconds. It is potentially less time between identifying an exception, deciding what to do, and confirming that th"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Columbia 与 MIT 论文展示 Claude 发现的算法突破 3SUM 与 APSP 长期速度上限",
+   "url": "https://aihot.news/items/d32df9vzpliz9m348fug74inq",
+   "published": "2026-11-21T18:47:26.000Z",
+   "description": "Columbia 和 MIT 的论文展示 Claude 发现的算法在 3SUM 和全对最短路径（APSP）上取得多项式改进，3SUM 达到 O(n^1.9992)、APSP 达到 O(n^2.9995)，推翻了 3SUM 和 APSP 假设。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d32df9vzpliz9m348fug74inq",
+   "excerpt": "Columbia 和 MIT 的论文展示 Claude 发现的算法在 3SUM 和全对最短路径（APSP）上取得多项式改进，3SUM 达到 O(n^1.9992)、APSP 达到 O(n^2.9995)，推翻了 3SUM 和 APSP 假设。\n论文显示 Claude 发现的算法改进了 3SUM 和 APSP 的长期复杂度上限，并用 Lean 4 形式化验证，读者可以了解 AI 搜索算法的可行路径。\n哥伦比亚大学和麻省理工学院的新论文表明，Claude 发现的一种算法打破了 3SUM 和全对最短路径长期以来的速度极限。\n3SUM 问的是列表中是否有 3 个数之和为 0，全对最短路径则要求出图中每一对节点之间的距离。几十年来，没有人能把教科书式的二次和三次时间复杂度改进超过极小的常数因子，许多人认为不可能做到。\nClaude 找到了一种更快的方法来计算两个长而窄的矩阵乘积中的选定元素，跳过了经典方法所做的一些工作。已知的归约随后将其转化为 3SUM、最短路径以及许多相关问题的加速。\n3SUM 现在的运行时间为 O(n^1.9992)，最短路径为 O(n^2.9995)，这些微小的改进仍然否定了 3SUM 和 APSP 猜想。Claude 在一次会话中找到了该方法，使用了 1600 万输出 token，没有人类输入。\n把“已知困难”的算法极限视为 AI 搜索的开放目标，并像这篇论文用 Lean 4 所做的那样，对 AI 发现的证明进行形式化验证。\n论文显示 Claude 发现的算法改进了 3SUM 和 APSP 的长期复杂度上限，并用 Lean 4 形式化验证，读者可以了解 AI 搜索算法的可行路径。"
+  },
   {
    "group": "wh",
    "source": "Robotics & Automation News",
@@ -316,6 +352,24 @@
   {
    "group": "ai",
    "source": "AIHOT",
+   "title": "Together AI 通报 2026 年 6-7 月 serverless 推理服务提示词泄露事件",
+   "url": "https://aihot.news/items/xqe6lbb5zsjp9xbsc1o912cs0",
+   "published": "2026-11-21T00:00:00.000Z",
+   "description": "Together AI 通报一起安全事件：因 AI 编码 agent 在公开 GitHub 仓库 xorl 中提交了私有 Hugging Face 仓库凭证，未授权方下载了 2026 年 6-7 月提交给 MiniMax M3、GLM-5.2、Kimi K2.6 等 serverless 推理服务的存储提示词样本，并搜索其中其他服务凭证。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xqe6lbb5zsjp9xbsc1o912cs0",
+   "excerpt": "Security event: Prompt leakage for requests in June and July of 2026\nTogether AI 通报一起安全事件：因 AI 编码 agent 在公开 GitHub 仓库 xorl 中提交了私有 Hugging Face 仓库凭证，未授权方下载了 2026 年 6-7 月提交给 MiniMax M3 、 GLM-5.2 、Kimi K2.6 等 serverless 推理服务的存储提示词样本，并搜索其中其他服务凭证。\n原文披露了提示词泄露的范围、成因与已落实的整改措施，用户可据此评估自己是否受影响及是否开启 ZDR。\n我们正在就一起安全事件通知客户。该事件涉及 2026 年 6 月和 7 月提交至 Together AI 无服务器推理服务的部分提示词。一个私有仓库的凭据在公开代码仓库中泄露后，未经授权的第三方下载了存储的提示词样本。\n我们为这起事件致歉。我们正在审查受影响的数据，以确定哪些信息遭到泄露、哪些客户需要直接通知。\n作为常规软件测试的一部分，我们收集了经授权用于该用途的提示词样本，并将其存储在私有的 Hugging Face 仓库中。这些样本来自对 MiniMax M3、GLM-5.2 和 Kimi K2.6 模型的请求，主要集中在 2026 年 6 月 24 日、7 月 4 日、7 月 8 日和 7 月 14 日。\n在开发我们的公开 GitHub 仓库 xorl 期间，一个 AI 编程智能体提交了一份凭据，该凭据可用于访问上述私有 Hugging Face 仓库。我们的自动扫描检测到了泄露的凭据，并回滚了该提交。\n在泄露窗口期内，未经授权的第三方获取了该凭据，并用它下载了存储的提示词样本。该第三方随后在这些样本中搜索其他服务的凭据，并测试这些凭据是否有效。测试的凭据中有五个是与 Dragos 安全实验相关的金丝雀凭据。\n我们没有理由认为该未经授权的第三方进一步泄露了这些数据，并了解到这些数据现已被删除。\n根据我们的审查，除本事件外，我们未发现其他提示词泄露的证据。我们正在持续审查受影响的提示词内容，以确定是否泄露了敏感个人信息或其他客户数据。我们将视需要直接联系受影响客户，告知与其相关的调查结果。\n如果您对本事件或其可能对贵组织造成的影响有疑问，请联系 security@together.ai。\n原文披露了提示词泄露的范围、成因与已落实的整改措施，用户可据此评估自己是否受影响及是否开启 ZDR。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Qwen4 Max 上线 Together AI，单次调用修复 Tornado 整仓 bug",
+   "url": "https://aihot.news/items/rlj39tzyujneo0u35iyrfb4uc",
+   "published": "2026-11-21T00:00:00.000Z",
+   "description": "Together AI 宣布阿里旗舰模型 Qwen4 Max 上线其 Serverless 推理平台（模型串 Qwen/Qwen4-Max），1M token 上下文，截至 2026 年 11 月 22 日 7 折。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rlj39tzyujneo0u35iyrfb4uc",
+   "excerpt": "Together AI 宣布 阿里 旗舰模型 Qwen4 Max 上线其 Serverless 推理平台（模型串 Qwen/Qwen4-Max），1M token 上下文，截至 2026 年 11 月 22 日 7 折。\nTogether AI 用一次 65 万 token 的整仓修 bug 实测展示 Qwen4 Max 的长上下文编码能力，并给出价格、缓存和调用细节。\n我们把一份 bug 报告和整个代码库一次性交给了 Qwen4 Max 。代码库是 Python Web 框架 Tornado：全部 344 个文件，652,519 个 token。模型没有工具可用，我们也没有预先挑选相关文件或先跑一遍检索。72 秒后它返回了一个补丁，而这个补丁通过了 Tornado 维护者为该 bug 编写的测试。这次请求花了 69 美分。\n它还在仓库的其他地方找到了先例。bug 报告里从未提到 tornado/iostream.py ，但模型指出那里的代码已经用它的补丁所需的方式处理了错误。Tornado 维护者在自己修复时也引用了同一处代码。\nQwen4 Max 是阿里巴巴的旗舰 Qwen 模型。它今天已在 Together AI 上线，并在 2026 年 11 月 22 日前享受 30% 折扣。\nTornado 是一个开源 Python Web 框架。它的仓库包含约 340 个代码、测试和文档文件。这能放进 Qwen4 Max 的上下文窗口，而且远超任何人会手动粘贴进提示词的内容。我们挑选了维护者在 2026 年 11 月 18 日提交的一个修复——也就是 Qwen4 Max 发布两天后——并针对该提交之前的仓库状态进行了测试。\n这个 bug 出在 Tornado 的 websocket 代码里。当连接关闭时仍有消息未发送，每一个未被 await 的 write_message() 调用都会记录一条错误，尽管 await 它是可选的。我们把该检出中的每个文本文件作为一个提示词发送，并附上一份只描述症状的 bug 报告：\n当 websocket 连接在仍有消息未发送时关闭（例如，客户端发送了消息和一个 FIN，或重置了连接，却没有读取回复），每一个结果未被 await 的 write_message() 调用都会在 ERROR 级别记录“Task exception was never retrieved”。\nawait write_message 返回的 Future 是可选的，因此未 await 的调用不应记录任何内容。而确实 await 它的调用方仍应收到 WebSocketClosedError。\n第一个 token 在 54 秒后到达，回复在 72 秒时完成。Qwen4 Max 将错误追溯到 tornado/websocket.py 中的 WebSocketProtocol13.write_message 。该方法把每次写入包装在一个任务中。当连接关闭时，任务因一个无人必须收集的异常而失败，Python 会将其记录为“Task exception was never retrieved”。\n模型的补丁将该异常标记为已检索。这样就不会记录任何内容，而确实 await 写入的调用方仍会收到错误：\n先例让这个补丁读起来像是项目本身的一部分。模型的解释称，修复应当做 BaseIOStream.write 已经为其自身的 future 所做的事。该方法位于 tornado/iostream.py 中，比 websocket 代码低一层，并且用同样的方式解决了同样的问题。维护者的提交也做了同样的比较。\n没有人替它挑选这些文件。全部 344 个文件都放进去了，而模型找到了关键的那两个。\nTornado 维护者在修复中增加了两个回归测试：一个针对未 await 的写入，一个针对已 await 的写入。在修复前的代码上，第一个测试失败。应用模型的补丁后，两个测试都通过。随后我们在应用补丁的情况下运行了 Tornado 的完整测试套件，共 1,673 个测试，没有一个失败。\n按折扣价计算，这次请求约为 69 美分，几乎全部花在 652,519 个输入 token 上。按原价计算则是 98 美分。\n再次发送同一个仓库，费用会低得多。Together AI 会自动缓存提示词输入，促销期间缓存输入的价格是每百万 token \\$0.0525。我们重复发送一个约 63 万 token 的请求时，几乎全部命中缓存。首个 token 8 秒就返回了，而不是 54 秒；输入费用约 3 美分，而不是 66 美分。\n阿里巴巴于 2026 年 11 月 16 日发布 Qwen4 Max，称其为 Qwen 系列迄今能力最强的模型。该模型面向长时间运行的智能体任务，包括跨大型仓库的编码，这正是我们测试的那类任务。\nQwen4 Max 是一个稀疏混合专家模型，总参数 2.4 万亿，每个 token 激活 71 亿。在 Work360 上——这是阿里巴巴自建的基准，覆盖 721 个专业领域的行业任务——阿里报告称其整体表现优于 Qwen3.8 Max，在高推理强度下少用 35% 的 token，平均每个任务成本低约 60%。这些是阿里巴巴的数据， 其发布公告 中有详细说明。\nQwen4 Max 已上线 Together Serverless Inference，模型字符串为 Qwen/Qwen4-Max 。下面这个脚本像我们的测试那样，在一次请求中发送整个仓库和一份缺陷报告。你需要 Together Python SDK（ pip install together ）、一个 TOGETHER_API_KEY 、仓库的本地克隆，以及保存为 bug_report.md 的缺陷报告。脚本会发送 git 跟踪的所有文本文件，所以先检查仓库里有没有密钥。\n其中有两点是该模型特有的。请求必须设置 stream=True ，因为 Together AI 上的 Qwen4"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
    "title": "Figma 演示用 Specs 与 Figma agent 把上下文变成可实现的开发计划",
    "url": "https://aihot.news/items/w612ivonntodntv1ydkt2lqwh",
    "published": "2026-11-20T22:17:00.000Z",
@@ -339,6 +393,15 @@
    "published": "2026-11-20T21:18:41.000Z",
    "description": "Proving software correct with math has traditionally required specialist work. Now AI and Lean are helping automate the process.",
    "excerpt": "Proving software correct with math has traditionally required specialist work. Now AI and Lean are helping automate the process.\nThe word of the year in the AI industry over 2026 has been “slop” — meaning low-quality output from a large language model. And with so much code being AI-generated now, avoiding slop has become a daily concern for software engineers. So how to do that? One way is to use formal verification systems , which use mathematical proofs and logic to verify the correctness of software or hardware.\nWith AI’s growing prowess at solving math problems , there’s now a number of AI companies offering formal verification systems. They include Harmonic , Theorem , Axiom Math , and a new entrant called &Truth (pronounced ‘and truth’). In this article we’ll look at some of the approaches these companies are taking.\nIn order to better understand the landscape of formal verification systems, we spoke to one of its leading proponents: Clark Barrett , &Truth’s co-founder and co-CEO. He’s also Corbel Professor (Research) of Computer Science at Stanford and was the co-creator of cvc5 , a popular automated reasoning engine used in formal verification.\nWithout getting too in the weeds, cvc5 is what’s called a “solver” for satisfiability modulo theories (SMT) , which Barrett says is widely used in companies like Amazon. For instance, cvc5 is used for specification analysis and test generation in Kiro , Amazon’s agentic development environment.\n“It's been fun to see my tools go from a good idea in the lab to cvc5 is now called billions of times a day in production pipelines at Amazon,” Barrett told us.\nVia a 2022 paper about cvc5 co-authored by Clark Barrett.\nWhen AI coding agent companies talk about “verifying” their work, it typically means agents running tests, critiquing their own output, or having another AI model judge it. So I asked Barrett how far short of real verification does that fall?\n“The main difference is really just, how do you know when you're done,” he replied. “So if you're testing, patching, scanning — using all these existing tools — they're quite good. I mean, they find a ton of problems. They raise those issues. But you're never quite sure, did I find all of them [the issues] or is there one more lurking there that my tool can't find?”\n&Atlas, the first tool of &Truth; it’s “a map of the world’s open-source code, starting with code written in the C programming language.”\n&Truth builds on Lean , an open-source programming language and"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "研究者向 AI 供应链埋入 200 万个金丝雀，揭露敏感数据泄露",
+   "url": "https://aihot.news/items/agm7klro03kcu9weuix1bt4su",
+   "published": "2026-11-20T20:59:08.000Z",
+   "description": "研究者在经过 OpenRouter 等 AI 路由的请求中埋入 200 万个金丝雀链接，测试敏感信息是否会沿 AI 服务链泄露，结果显示这些数据像筛子一样大量外泄。 🔗 阅读原文 via AIHOT · https://aihot.news/items/agm7klro03kcu9weuix1bt4su",
+   "excerpt": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.\n研究者在经过 OpenRouter 等 AI 路由的请求中埋入 200 万个金丝雀链接，测试敏感信息是否会沿 AI 服务链泄露，结果显示这些数据像筛子一样大量外泄。\n研究者在 AI 供应链中埋入 200 万个金丝雀链接，原文给出了数据泄露路径和 OpenRouter 的回应细节。\n研究人员在通过庞大 AI 服务网络发送的请求中埋下了 200 万个数字追踪标记，想弄清托付给这些服务的敏感信息究竟去了哪里。结果他们发现，这个生态系统泄露高度敏感数据简直像筛子一样。\n这一暴露是通过一项巧妙的实验发现的，该实验旨在检验敏感信息是否会经由大量广泛使用的 AI 服务链条泄露，以及一旦泄露，这些信息又是如何被利用的。如今许多 AI 应用会使用 OpenRouter 或 Vercel 这类充当中间商的服务。这些“AI 路由器”（有时也叫“AI 网关”）接收 AI 应用终端用户发来的大量提示词，再根据最低收费、最适合当前任务等标准，把它们路由到可用的推理引擎。开发者不用 Anthropic、OpenAI 或其他大厂，而是雇一个 AI 路由器来寻找最合适的模型。\n11 月 21 日更新： Hacker News 和 X 上的帖子都称，OpenRouter 已向客户发送邮件，通知他们部分提示词可能已被读取。OpenRouter 援引了这项研究，称收到一份报告，指出潜在暴露涉及发送给中国模型提供商 MiniMax 的提示词。OpenRouter 表示，无论提示词是直接发给 MiniMax，还是经由 AtlasCloud、Novita 和 StreamLake 这三家转售商发送，研究人员埋下的 URL 都被访问过。OpenRouter 已移除 MiniMax 模型端点上的“零数据保留”标签。鸣谢： Sulat.com 。\n研究者在 AI 供应链中埋入 200 万个金丝雀链接，原文给出了数据泄露路径和 OpenRouter 的回应细节。"
   },
   {
    "group": "wh",
@@ -672,6 +735,15 @@
    "published": "2026-11-20T03:52:40.000Z",
    "description": "腾讯混元发布 Hy4 开放权重，定位原生多模态旗舰 MoE 模型，总参数 770B、激活 49B，支持 1M 上下文。同步发布含安全评估报告的 Hy4 System Card，并提供 GitHub、Hugging Face 权重与 GGUF 下载链接，团队将于本周五 8–10 AM PT 在 r/LocalLLaMA 举行 AMA。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jl6m0eymz9z0kleh54c3guowx",
    "excerpt": "腾讯混元发布 Hy4 开放权重，定位原生多模态旗舰 MoE 模型，总参数 770B、激活 49B，支持 1M 上下文。同步发布含安全评估报告的 Hy4 System Card，并提供 GitHub、 Hugging Face 权重与 GGUF 下载链接，团队将于本周五 8–10 AM PT 在 r/LocalLLaMA 举行 AMA。\n官方开源原生多模态旗舰 MoE 模型，规格、权重与安全评估入口齐全，本地部署用户可按需取用。\n我们的原生多模态旗舰 MoE（总参数 770B / 激活 49B，1M 上下文）。\n➡️ 本周五太平洋时间上午 8–10 点，来 r/LocalLLaMA 参加 Hy 团队的直播 AMA——欢迎提出任何关于 Hy 模型的问题，与我们直接交流！\nGitHub: github.com/Tencent-Hunyuan/Hy4 Weights: huggingface.co/tencent/Hy4 GGUF： huggingface.co/AngelSlim/Hy4-… License: huggingface.co/tencent/Hy4/bl… System Card: hy.tencent.ai/Hy4_system_card…\n官方开源原生多模态旗舰 MoE 模型，规格、权重与安全评估入口齐全，本地部署用户可按需取用。"
+  },
+  {
+   "group": "ai",
+   "source": "Simon Willison",
+   "title": "llm-gemini 0.38.1",
+   "url": "https://simonwillison.net/2026/Nov/20/llm-gemini/",
+   "published": "2026-11-20T03:01:57.000Z",
+   "description": "Release: llm-gemini 0.38.1 Gemini 4 Carbon only supports low , medium and high reasoning levels - but Gemini 4 Hydrogen and Gemini 4 Neon both have an extra xhigh level. I missed that when I added those models to the llm-gemini plugin, which is now fixed in this dot release. The xhigh setting for Hydrogen makes a significant difference. I updated my Gemini 4 comparison grid - note how Hydrogen at high used 5,311 output tokens and cost 3.99 cents, but the same model at xhigh used 31,477 output tokens, cost 23.61 cents, and produced a pelican that's competitive with Gemini 4 Neon: Tags: gemini ,",
+   "excerpt": "Gemini 4 Carbon only supports low , medium and high reasoning levels - but Gemini 4 Hydrogen and Gemini 4 Neon both have an extra xhigh level.\nI missed that when I added those models to the llm-gemini plugin, which is now fixed in this dot release.\nThe xhigh setting for Hydrogen makes a significant difference. I updated my Gemini 4 comparison grid - note how Hydrogen at high used 5,311 output tokens and cost 3.99 cents, but the same model at xhigh used 31,477 output tokens, cost 23.61 cents, and produced a pelican that's competitive with Gemini 4 Neon:\nThis is a beat by Simon Willison, posted on 20th November 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
   },
   {
    "group": "ai",
@@ -1040,7 +1112,7 @@
    "url": "https://aihot.news/items/sn8qb9u8fqka3mpnmy0r1nz4b",
    "published": "2026-11-19T16:00:00.000Z",
    "description": "METR 发布截至 Opus 5.5 和 GPT-6 Astra 的能力评测更新，发现在 TH1.1 与 TH2 任务上模型时间视野约每 3.6 个月翻倍，可验证子集翻倍时间约 1.65 个月。 🔗 阅读原文 via AIHOT · https://aihot.news/items/sn8qb9u8fqka3mpnmy0r1nz4b",
-   "excerpt": "METR 发布截至 Opus 5.5 和 GPT-6 Astra 的能力评测更新，发现在 TH1.1 与 TH2 任务上模型时间视野约每 3.6 个月翻倍，可验证子集翻倍时间约 1.65 个月。\nMETR 用自家任务套件量化模型能力增速与短板，并讨论评测环境与 RL 训练环境趋同带来的测量偏差，方法细节可供评测设计参考。\nMETR 用自家任务套件量化模型能力增速与短板，并讨论评测环境与 RL 训练环境趋同带来的测量偏差，方法细节可供评测设计参考。"
+   "excerpt": ""
   },
   {
    "group": "wh",
@@ -1085,7 +1157,7 @@
    "url": "https://aihot.news/items/a8d06cpj4vy2dkdzazgsqsrwx",
    "published": "2026-11-19T14:54:39.000Z",
    "description": "TechCrunch 分析 Anthropic IPO 如何检验 AI 行业的循环融资模式。Amazon 14.7% 股份价值超 1590 亿美元，Google 13.7% 股份约 1490 亿美元；Nvidia、AMD、Microsoft、Broadcom、Micron、TSMC 还以 83 美元/股参与 260 亿美元私募。 🔗 阅读原文 via AIHOT · https://aihot.news/items/a8d06cpj4vy2dkdzazgsqsrwx",
-   "excerpt": "Anthropic’s IPO puts AI’s circular financing boom to the test\nTechCrunch 分析 Anthropic IPO 如何检验 AI 行业的循环融资模式。Amazon 14.7% 股份价值超 1590 亿美元，Google 13.7% 股份约 1490 亿美元；Nvidia、AMD、 Microsoft 、Broadcom、Micron、TSMC 还以 83 美元/股参与 260 亿美元私募。\n文章梳理了 Anthropic IPO 中供应商与投资者的资金回流结构，为理解 AI 循环融资争议提供了具体数字与分析师观点。\nAnthropic 今天登陆公开市场，此次 IPO 有望为公司及其投资者募集数十亿美元。但最大的意外或许是，其中很大一部分资金最终会流向作为供应商的投资者。\n亚马逊和谷歌 是 Anthropic 最大的两家基础设施合作伙伴，按公司最新 IPO 价格每股 83 美元计算，两家持股合计价值约 3079 亿美元。根据 Anthropic IPO 招股书披露的持股数据，亚马逊向这家 AI 初创公司投资了 180 亿美元，其 14.7% 的持股价值将超过 1590 亿美元；谷歌 13.7% 的持股价值则接近 1490 亿美元。\n另外几家 AI 基础设施供应商也有望从中受益。英伟达、AMD、微软、博通、美光科技和台积电与谷歌一道，在私募配售中按 IPO 价格向 Anthropic 承诺投资 260 亿美元。\n自 2023 年以来，谷歌已向 Anthropic 投资 123 亿美元，另有 承诺的 300 亿美元 取决于 Anthropic 能否达成某些业绩里程碑。除台积电外，Anthropic 还宣布与英伟达、AMD、博通、微软、美光科技等其他基础设施供应商投资者达成数十亿美元的战略合作，Anthropic 将向这些公司采购产品。\n这就是让一些观察人士对 AI 热潮深表怀疑的 循环融资 。这些公司不仅是投资者，也是 Anthropic 最大的供应商。表面上看，亚马逊和谷歌向 Anthropic 投入了数十亿美元，但当 Anthropic 需要训练模型或为用户运行 Claude 时，这笔钱又原路流回它们手中。从远处看，这像是云公司前所未有的营收增长，以及 Anthropic 前所未有的融资规模——但实际上，只是同一笔钱从一个口袋转到另一个口袋。\n今天的 IPO 标志着这一融资体系的关键转折，它或许正是这套体系走向自我维持的时刻。那些投资看来已经见效，如今也已变现。Anthropic 每季度仍处于数百亿美元的净亏损状态，但买单的将不再是供应商和私募投资者。今后，资金将来自公开市场投资者和公司债券的组合，这两者都不存在此前引发担忧的利益冲突。\n上市后，Anthropic 预计将拥有约 2200 亿美元的现金、现金等价物和短期投资，其中包括 IPO 募资和 260 亿美元私募配售所得。Anthropic 也有能力用股票支付未来的承诺款项。\nSemiAnalysis 旗下 Tokenomics 团队负责人 Joey Brookhart 估计，Anthropic 未来四年需要累计约 2800 亿美元的收入才能支付其算力账单，Brookhart 称，考虑到他们明年的营收前景，这一目标“是可以实现的”。\n“这笔持股非常值得，这些公司也不再需要（供应商）提供更多支持了，”Brookhart 对 TechCrunch 表示。“亚马逊不需要再扶持他们了。收入全都来自其他客户。”\n不过，这并不意味着服务器账单会减少。根据一份 监管文件 ，Anthropic 已承诺支出 9000 亿美元，主要用于算力和基础设施。部分协议设有终止条款，但 Brookhart 认为公司有足够实力付清这些款项。\n另一方面，Anthropic 在 2026 年第三季度实现了 170 亿美元营收，按此速度全年年化营收将达到 680 亿美元。Brookhart 认为，如果 Anthropic 保持当前的增长轨迹，它很容易就能补上算力投入所需的资金缺口。\nLuria 对 TechCrunch 表示：“等到 IPO 完成时，Anthropic 手上的现金将超过任何一家公司曾经拥有的水平。”他指出，该公司已募集约 1410 亿美元资本，按每股 83 美元计算，净收益约为 917 亿美元。“而且他们并没有在烧钱，只是要攒下一笔战争基金。”\nBrookhart 表示，上市会让 Anthropic 成为更可信的借款方，从而更容易在公开市场之外融资。尽管近期有 报道 称，债权人可能不认为 Anthropic 具备“投资级”资质。\nLuria 将 Anthropic 的供应商投资与 CoreWeave 这类新型云厂商区分开来，他认为后者更纯粹地依赖循环融资。“如果没有英伟达扶持，CoreWeave 根本不会存在；如果英伟达不出手相救，它大概也活不下去。”Luria 说。\nBrookhart 也反驳了将 Anthropic 的融资描述为纯粹循环融资的说法，称它仍然“对整个生态有增量贡献”。\n在两位分析师看来，Anthropic 最大的风险就是输掉 AI 竞赛。目前，公司的增长得益于它处于生成式 AI 的前沿——但如果被 OpenAI、Google DeepMind，甚至廉价的开源权重模型超越，情况可能迅速改变。正如 Luria 所说：“如果我们都在用别人的模型，那 Anthropic 就不值 1.5 万亿美元，而是一文不值。”\n但无论谁在前沿竞赛中胜出，算力供应商的日子大概都不会差。Brookhart 和 Luria 都不认为 Anthropic 的增长面临风险，尽管有人主张 更便宜的 token 和更激烈的竞争 会直接影响这家 AI 公司的利润。\nLuria 说：“对亚马逊和谷歌来说，风险其实没那么高，因为那种情况下我们用的是其他模型。我认为我们会使用多得多的 AI。我不确定是否全都来自 Anthropic 的 "
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -1094,7 +1166,7 @@
    "url": "https://aihot.news/items/zs46vfwtzhs7fzho1p17mfisf",
    "published": "2026-11-19T14:25:37.000Z",
    "description": "The Verge 报道 Anthropic 完成 IPO，募资 813 亿美元，超过 SpaceX 成为史上估值最高的上市，完全稀释市值约 1.5 万亿美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zs46vfwtzhs7fzho1p17mfisf",
-   "excerpt": "With the biggest IPO of all time, Anthropic’s ‘good guy’ reputation is on the line\nThe Verge 报道 Anthropic 完成 IPO，募资 813 亿美元，超过 SpaceX 成为史上估值最高的上市，完全稀释市值约 1.5 万亿美元。\n文章拆解了 Anthropic 上市后 LTBT 治理结构的实际权限与缺口，读者可以据此评估其安全承诺与资本压力之间的张力。\n今天是 Anthropic 的全新起点：一场酝酿多年的 IPO 终于落地，募资 813 亿美元，超越 SpaceX 成为史上估值最高的 IPO，也为后续其他公开上市的 AI 实验室立下了重要先例。但这不只是一次财务上的里程碑。\nAnthropic 创立时的理念，是把安全放在比其他实验室更优先的位置；其创始人此前都在 OpenAI 担任研究高管。然而随着 AI 竞赛加速，公司高管反复强调，Anthropic 只有拿下第一名，才能真正完成这一使命，而这需要大量资金和算力。不出所料，深思熟虑、安全且审慎的 AI 开发，与赢得这场竞赛所需的极致速度之间，难免产生冲突。再加上 IPO，事情只会更复杂，而 Anthropic 的领导层几乎可以单方面推进这一切。这得益于一种旨在让公司免受股东盈利压力影响的企业架构——但这一架构同时也移除了对其权力的常规制衡。\n一位在 IPO 前离职的 Anthropic 前员工表示，他和公司里的其他人越来越觉得，当前的 AI 开发节奏“在正常的市场结构下难以为继”，尤其是在这样一个影响力巨大、却几乎不受监管的行业里，各方激励本就错位。\n多年来，Anthropic 一直对外宣称自己与其他 AI 公司不同、更为谨慎。理论上，这一点也体现在它的上市方案里。它注册为公益公司（Public Benefit Corporation），这意味着 Anthropic 董事会有责任在使命与股东财富最大化之间取得平衡。正如我的同事 Robert Hart 此前讨论过的，它还设计了一套 极不寻常的权力结构 。\nAnthropic 于 2023 年 设立的长期利益信托（LTBT）及其创始人掌握着控制性投票权，这意味着即便公司已经上市，股东也永远无法把他们投票赶下台。一种特殊的 T 类股票，让一小群受托人——即 LTBT 成员——拥有“挑选和罢免部分”Anthropic 董事的“权力”。他们不受典型股东压力的影响，理论上是对创始人的一种制衡，其使命是“在预期我们的决策后果将远远超出 Anthropic 本身的关键节点，平衡股东的财务利益与我们的公共利益目标”。\n现实要复杂得多。举例来说，LTBT 在技术上负责选出 Anthropic 七人董事会中的四名成员，但这四人中有一人实际上需要得到 Anthropic 创始人的认可，因此该信托并未掌握直接的多数控制权。此外，关于提名或罢免董事还有附加规定：LTBT 必须提前 30 天通知公司的“提名与公司治理委员会”其决定，该委员会由三名成员组成：联合创始人 Daniela Amodei（担任委员会主席）、Netflix 联合创始人 Reed Hastings，以及 Anthropic 投资人 Yasmin Razavi。\n虽然长期利益信托（LTBT）的成员在公司中“没有经济利益”，但理论上，Anthropic 也完全可以挖走一名受托人，用高薪把他招进公司。马里亚诺-弗洛伦蒂诺·奎利亚尔（前受托人）就在今年 8 月加入 Anthropic，出任首席全球事务官；OpenAI 过去也曾把前董事会成员菲吉·西莫招入公司担任高管。非营利 AI 行业监督机构 The Midas Project 的创始人泰勒·约翰斯顿说，可以设想这样一种情形：如果某位受托人“显得有点太激进之类的，他们大可以直接给这名受托人开出一个条件，用数百万美元的实际报酬换他退出信托，这就是他们对信托施加某种监督的方式之一”。\n尽管 LTBT 被宣传为制衡 Anthropic 领导层的一种手段，但在一些外部观察者看来，细则并不可靠。“这个信托既然在 Anthropic 没有经济利益，理论上可以动用它任命四名董事中三名的权力，让公司不偏离使命，”科罗拉多大学法学院法学教授、公司治理专家安·利普顿说，“但人们有理由怀疑这有多大可能发生。”\n此外，利普顿还质疑：即便信托拥有这样的权力，它是否具备足够的认知来判断何时该对公司的某项计划或产品踩刹车。公开列出的四名 LTBT 成员并非知名的 AI 专家：前美联储主席本·伯南克、外交政策分析师理查德·方丹、实验物理学家克里斯托弗·斯塔布斯，以及曾任 GiveWell 高管的尼尔·巴迪·沙阿——他是 LTBT 主席。“我不认为这些受托人，或者他们任命的董事，对 AI 和 AI 开发有足够的洞察力来做出这些选择，”利普顿说，“他们都是很有声望的人，但本·伯南克对 AI 又了解多少呢？”\n多位专家把 Anthropic 的 LTBT 比作奥特曼被罢免前的 OpenAI 非营利董事会：“长期利益信托的权力——或者说它缺乏的权力……在某些方面类似于 OpenAI 非营利组织拥有的权力，”The Midas Project 的约翰斯顿说。当然，那个董事会罢免 OpenAI CEO 萨姆·奥特曼的决定，最终在几天后导致奥特曼回归担任 CEO，董事会多数成员辞职并被替换。\n但它与 LTBT 之间有一个显著区别。在 OpenAI 重组之前，其非营利董事会有权在认为必要时介入并指导公司的日常决策；即便在重组之后，他们仍保留在安全与安保事务上的这一权力，比如推迟或阻止某个模型发布。Anthropic 的 Form S-1 显示，LTBT 的主要职责是任命（并可能罢免）某些董事会成员，并不具备上述任何一种权力。\n相反，Anthropic 的架构更像硅谷偏爱的那种以创始人为中心的安排——就像马克·扎克伯格之于 Meta、埃隆·马斯克之于 SpaceX。\n“无"
+   "excerpt": ""
   },
   {
    "group": "wh",
@@ -1112,7 +1184,7 @@
    "url": "https://aihot.news/items/wefmgc42bqc1uhcqc2gv3haav",
    "published": "2026-11-19T14:00:00.000Z",
    "description": "MIT 研究团队在 Environmental Research Letters 发表研究，估算 2023 年数据中心电力需求带来的额外空气污染在美国导致约 650 例过早死亡，其中 513 例来自 PM2.5、137 例来自烟雾，约占全国电力相关死亡总量的 5.3%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wefmgc42bqc1uhcqc2gv3haav",
-   "excerpt": "Study reveals data centers’ long-distance damage to air quality\nMIT 研究团队在 Environmental Research Letters 发表研究，估算 2023 年数据中心电力需求带来的额外空气污染在美国导致约 650 例过早死亡，其中 513 例来自 PM2.5、137 例来自烟雾，约占全国电力相关死亡总量的 5.3%。\n研究用逐小时电网建模追踪数据中心用电的排放传播，指出污染与健康损害常落在远离设施的下风州。\n麻省理工学院（MIT）研究人员的一项新研究发现，人工智能数据中心的快速扩张，会在远离实体设施所在地的地区造成负面健康影响和空气质量问题。\n研究团队估算，2023年数据中心用电需求带来的额外空气污染，在美国全国范围内导致约650例过早死亡。\n中西部一些州的人均过早死亡估算率位居前列，而这些死亡可归因于数据中心，尽管大部分数据中心用电需求集中在弗吉尼亚州和得克萨斯州。\n研究人员构建了一个建模框架，用以刻画数据中心用电需求如何在全国互联电网中传导。该模型还考虑了大气条件如何影响不同地区空气污染的形成。\n该框架识别出全国范围内因数据中心用电需求而增加排放的发电厂。在中西部部分地区，这些排放与有利于细颗粒物形成的大气条件叠加，而细颗粒物可引发心脏病、中风和肺部疾病。\n研究人员表示，这些结果凸显了考虑数据中心意外区域健康影响的重要性，以及这些设施的位置和运营如何在大范围上影响公共健康。\n“人们想到数据中心的负面影响时，通常关注的是周边邻居。但我们的研究表明，数据中心的空气质量影响在很大区域范围内非常广泛。即使你认为自己不受影响，因为附近没有数据中心，也请再想想，”麻省理工学院数据、系统与社会研究所（IDSS）和地球、大气与行星科学系（EAPS）教授、可持续发展科学与战略中心主任、该研究资深作者诺埃尔·塞林（Noelle Selin）说。\n与塞林共同撰写论文的还有麻省理工学院研究生陈宇昂（Albert Chen），以及麻省理工学院、加州大学欧文分校和耶鲁大学的其他人员。这项研究 今天发表在《环境研究快报》上 。\n劳伦斯伯克利国家实验室 估算 ，2023年数据中心用电需求约占美国总能源需求的4%，并导致全国总排放量的约4.4%。\n许多先前的研究使用电网平均排放来估算影响。与这些研究一样，研究人员假设数据中心全天候持续用电来运行计算任务。陈解释说，他们的方法还逐小时识别哪些发电机组响应了这部分额外需求，从而能够追踪由此产生的排放和健康影响发生在何处。\n“响应额外电力需求的发电机组通常是天然气电厂，不过响应情况因地点和时段而异，”他说。\n为了深入分析区域健康影响，MIT研究人员开发了一种建模方法，使他们能够识别在每个建模区域内哪些发电机组在满足数据中心用电需求。\n他们构建了一个电力系统模型，用来模拟每台发电机组每小时发多少电、向电网输送多少电，同时考虑电力在不同地区之间的传输。\n该模型为研究人员提供了美国每台发电机组的氮氧化物（NOx）和二氧化硫（SO 2 ）排放数据。NOx 会促进近地面臭氧（即雾霾）的形成，而 NOx 和 SO 2 都会促进大气中细颗粒物（PM 2.5 ）的生成。\n“收集所有这些数据是个挑战，”Chen 说。“美国电网中有超过 1 万台发电机组，我们需要确保每台发电机组提供的数据有效，并与其他数据源交叉验证。”\n研究人员将这些数据纳入一个化学传输模型。该模型模拟污染物如何形成、如何跨区域在大气中传输。\n在此基础上，他们结合流行病学文献中的证据，将数据中心运行带来的额外空气污染换算为过早死亡人数。\n模型估算，2023 年数据中心排放造成的过早死亡约为 650 例（其中 513 例来自 PM 2.5 ，137 例来自雾霾），约占全美电力相关死亡总数的 5.3%。\n“任何新增的空气污染源都会导致死亡，这并不令人意外；但就数据中心而言，这些死亡发生的时间和地点与人们预想的不同，”Selin 说。\n过早死亡率最高的是爱荷华州、内华达州、南达科他州和堪萨斯州，但大部分电力需求却集中在弗吉尼亚州北部和得克萨斯州。弗吉尼亚州和得克萨斯州的过早死亡率只有中西部大多数州的一半左右。\n响应弗吉尼亚州新增电力需求的发电机组很可能位于俄亥俄河谷，那里老旧电厂比例更高，燃煤和天然气发电带来的排放也更多。\n“不同地区的电力结构不同。如果你接入一个大型新增需求源，比如把数据中心接入电网，可能就得启动那些污染很重的电厂来满足新增需求，”Selin 说。\n内布拉斯加州和爱荷华州等中西部州传统上是农业区。化肥带来的额外氨进入大气后，会促进 PM 2.5 的生成。估算的健康影响还波及堪萨斯州、南达科他州、密苏里州和阿肯色州，说明影响可以延伸到数据中心相对较少的州。\nChen 说，研究显示，就数据中心电力需求而言，农村人口面临的死亡风险预计明显高于城市人口。\n“人们在考虑数据中心的选址和运营时，不能只看土地和能源价格，还应该把空气质量因素纳入考量，”他说。“这是一个很好的基准，可以用来思考应该在哪里建设数据中心，以及如何为这些数据中心供电。”\n未来，研究人员希望把现场发电对空气质量的影响也纳入考量——现场发电正成为一种日益流行的做法，即数据中心自建发电厂来供电。他们还可以研究数据中心运行的灵活性，以及自适应调整用电需求会如何影响空气质量。\n这项研究的部分经费来自 MIT 能源倡议能源学者学会和 MIT 马丁家族可持续发展研究员学会。\n研究用逐小时电网建模追踪数据中心用电的排放传播，指出污染与健康损害常落在远离设施的下风州。"
+   "excerpt": ""
   },
   {
    "group": "wh",
@@ -1140,15 +1212,6 @@
    "published": "2026-11-19T13:00:00.000Z",
    "description": "Retail inventory optimization is a network design decision. See why the right stock location, fulfillment economics and order promises matter more than. The post Retail’s Inventory Problem Is Not Too Much Stock. It Is Stock in the Wrong Places. appeared first on Logistics Viewpoints .",
    "excerpt": "The most expensive retail inventory is not necessarily the inventory sitting on a shelf. It may be stock that is technically available to the enterprise but unavailable to the customer who wants it, where and when the customer wants it. That distinction changes what executives should measure: not simply days of supply or store-level turns, but availability, fulfillment cost, service reliability and margin after the order is completed.\nConsider a retailer with 200 stores selling a jacket in eight sizes and six colors. That is 48 combinations before we account for seasonal assortment, regional preferences, or replenishment cycles. Some sizes sell out in Miami while the same items sit in a stockroom in Denver. Customers see a shortage. The company may have more than enough units across its network.\nThis is one of retail’s persistent operating problems: inventory availability is local, but inventory investment is enterprise-wide. Showrooms and inventory-light stores create an opportunity to change that equation. A location can display representative merchandise, help a customer select a product, and draw sellable inventory from a regional pool. The promise is compelling. Less duplicated stock, broader availability, and fewer markdowns. But before anyone declares the end of store inventory, we need to examine the economics.\nRetailers have understood the logic of pooled inventory for decades. When individual locations protect themselves against uncertain demand, each carries safety stock. A shared pool can often support the same combined demand with less total buffer, provided the demand across locations is not perfectly correlated. The improvement is not automatic. It depends on the variability and correlation of demand, lead times, service targets, and replenishment flexibility. A regional facility serving 30 stores might reduce duplicated safety stock for slow-moving items while worsening service if its orders take too long to reach customers.\nIn the jacket example, maintaining every size-color combination at every location creates an expensive long tail. A showroom could carry fit samples and perhaps the highest-velocity sellable sizes, while less common combinations are held regionally. That may release working capital and reduce end-of-season transfers. But consider a customer who wants that jacket for an event tomorrow. If the regional unit takes four days to arrive, theoretical availability does not convert into a sale. Inventory has an economic value pr"
-  },
-  {
-   "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "Transportation management needs more than visibility. It needs better decisions",
-   "url": "https://logisticsviewpoints.com/2026/11/19/transportation-management-needs-more-than-visibility-it-needs-better-decisions/",
-   "published": "2026-11-19T11:49:00.000Z",
-   "description": "Global transportation is an enormous web of thousands, if not hundreds of thousands, of interdependent shipments, routes, modes, carriers, facilities and trading partners, creating countless risks and opportunities. Each shipment has its own service expectations, costs, capacity requirements and constraints. Across a global operation, transportation management becomes a continuous stream of interwoven decisions and data […] The post Transportation management needs more than visibility. It needs better decisions appeared first on Logistics Viewpoints .",
-   "excerpt": "Global transportation is an enormous web of thousands, if not hundreds of thousands, of interdependent shipments, routes, modes, carriers, facilities and trading partners, creating countless risks and opportunities. Each shipment has its own service expectations, costs, capacity requirements and constraints. Across a global operation, transportation management becomes a continuous stream of interwoven decisions and data points. Yet seeing more is not enough. Without context to guide action, extended visibility feels like noise.\nBlue Yonder AI and ML alone generate more than 27 billion predictions per day, illustrating both the volume of information and the supply chain’s reliance on AI to interpret it. Networks now include hundreds of thousands of members and track an even greater volume of shipments across the globe, modes and tiers.\nMaking this data useful requires complementary technologies. Network visibility shows where shipments are and how conditions are changing, but it is not enough. To strengthen the equation, collaboration enables teams and trading partners to coordinate execution and automate tasks, while AI interprets enterprise and network signals to evaluate responses. Together, this trifecta helps transportation teams understand what is happening, determine what matters and act on it.\nTogether, these capabilities raise a critical question: What do you do with what you see?\nThat question doesn’t apply only when something goes wrong. It applies to the thousands of everyday decisions that determine how efficiently transportation operates: how loads are built, how capacity is used, which routes and carriers make the most sense, where opportunities exist to consolidate freight, and where people are spending time on work that could be streamlined.\nMoving transportation management forward requires more than visibility. It’s turning visibility into better decisions and execution backed by AI and advanced, often automated, collaboration.\nThe value of visibility is easy to understand when there’s a disruption. If a shipment is running late, transportation teams want to know about it as quickly as possible.\nBut an alert is not a resolution. Knowing a shipment is delayed doesn’t tell a transportation planner whether intervention is necessary, let alone explain why. Nor does it determine whether another carrier, route or mode would create a better outcome. Those decisions require context and supply chain understanding.\nHowever, focusing only on exceptio"
   },
   {
    "group": "ai",
@@ -1211,267 +1274,6 @@
    "url": "https://aihot.news/items/gpufpm2kxcsxrewhivsjviz3a",
    "published": "2026-11-19T04:49:53.000Z",
    "description": "彭博社 11 月 19 日报道称，英伟达管理层变动及黄仁勋离任引发全球 AI 概念股新一轮抛售，日本相关股票首当其冲，市场风向从“AI 溢价”转向“AI 折价”。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gpufpm2kxcsxrewhivsjviz3a",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Nadella 解释向 6 万员工提供买断的原因：转型为 AI 优先的组织而非裁员",
-   "url": "https://aihot.news/items/g47lsydtqfsi16e0z920ghe2y",
-   "published": "2026-11-19T00:42:56.000Z",
-   "description": "Microsoft CEO Satya Nadella 在 DealBook Summit 上解释，10 月向 6 万名员工提供买断是为了让员工在转型中拥有选择权，而非用 AI 取代员工，目标是让所有人都用 AI 工作、转向管理 AI 智能体。 🔗 阅读原文 via AIHOT · https://aihot.news/items/g47lsydtqfsi16e0z920ghe2y",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Körber: AI investment is up, but 3 in 4 leaders say decision-making is now more complex",
-   "url": "https://www.dcvelocity.com/technology/artificial-intelligence/korber-ai-investment-is-up-but-3-in-4-leaders-say-decision-making-is-now-more-complex",
-   "published": "2026-11-19T00:21:30.000Z",
-   "description": "AI adoption is accelerating faster than organizations' ability to execute on it, according to a report from intelligent manufacturing and supply chain solution provider Körber. That conclusion comes from a survey of 2,000 senior decision-makers in the U.S. and Germany which showed that companies piloting AI and companies running it enterprise-wide are investing in AI-powered decision support at virtually the same rate: 59%. Yet the enterprise-wide group shows significantly stronger reported performance and confidence in its future readiness. The finding challenges a common assumption in boardr",
-   "excerpt": "Survey shows that AI adoption is accelerating faster than organizations' ability to execute on it.\nAI adoption is accelerating faster than organizations' ability to execute on it, according to a report from intelligent manufacturing and supply chain solution provider Körber.\nThat conclusion comes from a survey of 2,000 senior decision-makers in the U.S. and Germany which showed that companies piloting AI and companies running it enterprise-wide are investing in AI-powered decision support at virtually the same rate: 59%. Yet the enterprise-wide group shows significantly stronger reported performance and confidence in its future readiness.\nThe finding challenges a common assumption in boardrooms: that AI budgets are the main lever for better, faster decisions. Among U.S. respondents specifically, 77% say AI has become increasingly involved in decision-making, while 78% say decision-making has become more complex.\nThe real divide is who can turn AI into action, Koerber says. The company says its findings reveal that increased decision complexity is linked to execution challenges like information delays, data friction, disconnected systems, and reluctance to give technology final authority.\n\"Most organizations are planning or executing significant AI-related investments, but spending alone won't secure a return on investment,\" says Helena Garriga, member of the Körber Group Executive Board and President Business Area Supply Chain. \"The real return happens once we connect technology, data, and people with AI-redefined processes. That's where the real value starts to emerge.\"\nAs a conclusion, Körber identifies four conditions that distinguish organizations converting AI investment into measurable results:"
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Diesel prices punished shippers in September, FTR says",
-   "url": "https://www.dcvelocity.com/transportation/trucking/diesel-prices-punished-shippers-in-september-ftr-says",
-   "published": "2026-11-19T00:17:34.000Z",
-   "description": "Weighed down by record diesel prices, the freight market in September matched April as the second-toughest month for shippers since March 2022, according to the transportation analysis firm FTR. That result was shown by Bloomington, Indiana-based FTR’s Shippers Conditions Index (SCI), which fell further in September to -17.3 from the August revised reading of -13.8. According to FTR, record diesel prices were the largest factor but not the only one, as capacity utilization and rates remain strongly negative. The market looks more challenging for shippers over the next couple of quarters than i",
-   "excerpt": "Freight market in September matched April as the second-toughest month for shippers since March 2022.\nWeighed down by record diesel prices, the freight market in September matched April as the second-toughest month for shippers since March 2022, according to the transportation analysis firm FTR.\nThat result was shown by Bloomington, Indiana-based FTR’s Shippers Conditions Index (SCI), which fell further in September to -17.3 from the August revised reading of -13.8.\nAccording to FTR, record diesel prices were the largest factor but not the only one, as capacity utilization and rates remain strongly negative. The market looks more challenging for shippers over the next couple of quarters than it did in the previous forecast.\n“The surge in fuel prices to an all-time high in September guaranteed a highly unfavorable market for shippers. Although diesel prices are easing – at least for now – dynamics related to the freight market remain quite challenging and look to be even tougher for shippers than previously estimated,” Avery Vise, FTR’s vice president of trucking, said in a release.\n“Slow payroll job growth in trucking and other factors have led us to increase our expectations for capacity utilization over the next couple of quarters, leading to firmer freight rates, too. The good news is that the overall market conditions do not look to be as difficult for shippers as they were in September – provided, of course, that diesel prices do not surge again,” Vise said.\nThe SCI tracks the changes representing four major conditions in the U.S. full-load freight market: freight demand, freight rates, fleet capacity, and fuel price. Combined into a single index, a positive score represents good, optimistic conditions, and a negative score is the opposite."
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Gartner ranks healthcare supply chains, led by AdventHealth",
-   "url": "https://www.dcvelocity.com/finance-strategy/strategy/gartner-ranks-healthcare-supply-chains-led-by-adventhealth",
-   "published": "2026-11-19T00:15:13.000Z",
-   "description": "AdventHealth claimed the No. 1 spot for the third consecutive year in the “Gartner Healthcare Supply Chain Top 25 for 2026” as top performers followed three main themes, the analyst firm said : accelerating clinical collaboration initiatives; strengthening commitment to supply chain resiliency; and advancing AI and digital supply chain capabilities. That top finisher was followed by the rest of the top five: Stanford Medicine, Bon Secours Mercy Health, Corewell Health, and Northwestern Medicine. Those top shops shared several practices in common, researchers said. \"The highest-performing organ",
-   "excerpt": "Top finishers followed three themes: accelerating clinical collaboration initiatives; strengthening commitment to supply chain resiliency; and advancing AI and digital supply chain capabilities.\nAdventHealth claimed the No. 1 spot for the third consecutive year in the “Gartner Healthcare Supply Chain Top 25 for 2026” as top performers followed three main themes, the analyst firm said : accelerating clinical collaboration initiatives; strengthening commitment to supply chain resiliency; and advancing AI and digital supply chain capabilities.\nThat top finisher was followed by the rest of the top five: Stanford Medicine, Bon Secours Mercy Health, Corewell Health, and Northwestern Medicine.\nThose top shops shared several practices in common, researchers said. \"The highest-performing organizations no longer frame resiliency as a cost,” said Bruce Gilmore , VP Analyst in Gartner’s Supply Chain practice . “They are embedding it into their operating models to gain greater visibility and control across the supply network, helping maintain supply assurance during disruptions while improving day-to-day performance.”\nMore specifically, Gartner described the three themes as follows:\nFirst, leading health systems are integrating physicians and other clinical leaders more directly into product governance and supply chain decision making. Some have established formal medical director roles within supply chain, while others are using procedural analytics to connect cost and utilization data with clinical outcomes. They are also standardizing procedure cards through closer integration with electronic health records, helping reduce variation and waste without compromising quality of care.\nSecond, high-performing organizations are treating resiliency as an enterprise capability that protects continuity of patient care. Investments in strategic inventory hubs and consolidated service centers are giving organizations greater control over supply availability, while multitier supplier intelligence helps them identify potential disruptions earlier. Health systems are also pairing AI-enabled risk monitoring with clinically approved substitution strategies to strengthen supply assurance and improve overall performance.\nThird, health systems are expanding their use of AI and automation to reduce manual work and generate more actionable insights. Leading organizations are applying these technologies throughout supply chain operations, including contract management and disruption monit"
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "Explore the Codex Security Plugin",
-   "url": "https://openai.com/business/learn/codex-security-plugin-demo",
-   "published": "2026-11-19T00:00:00.000Z",
-   "description": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording.",
-   "excerpt": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording."
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "See PR scans in action",
-   "url": "https://openai.com/business/learn/pr-scans-demo",
-   "published": "2026-11-19T00:00:00.000Z",
-   "description": "Watch a walkthrough of PR scans and see how the presenter reviews scan results in a pull request workflow.",
-   "excerpt": "Watch a walkthrough of PR scans and see how the presenter reviews scan results in a pull request workflow."
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "Get started with Daybreak Blue",
-   "url": "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
-   "published": "2026-11-19T00:00:00.000Z",
-   "description": "Watch a walkthrough of onboarding to Daybreak Blue, with a closer look at the setup experience and how to get started.",
-   "excerpt": "Watch a walkthrough of onboarding to Daybreak Blue, with a closer look at the setup experience and how to get started."
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "Deploying Daybreak Red",
-   "url": "https://openai.com/business/learn/deploying-daybreak-red",
-   "published": "2026-11-19T00:00:00.000Z",
-   "description": "Explore a reference architecture for supervised security investigations with Daybreak Red, including safety controls, setup, and monitoring.",
-   "excerpt": "A reference architecture for supervised security investigations.\nLearn how to set up an isolated environment for supervised security investigations with Daybreak Red. This guide covers architecture, safety controls, environment configuration, and how to run and monitor an investigation.\nRead the full guide (PDF). ⁠ (opens in a new window)"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Conductor 0.97.0 发布并宣布加入 Meta，本地工作区智能体新增 artifacts",
-   "url": "https://aihot.news/items/stnka187ae3za2qnx70vqheg7",
-   "published": "2026-11-19T00:00:00.000Z",
-   "description": "Conductor 发布 0.97.0 更新，同时宣布 Conductor 加入 Meta。本地工作区的 Agent 现在可以生成 artifacts，即能在聊天中内联显示的 HTML 页面，默认开启，可在 Settings → Artifacts 关闭，通过 @ 名称调用；还支持高亮文本添加评论 pill 回复聊天的任意部分。 🔗 阅读原文 via AIHOT · https://aihot.news/items/stnka187ae3za2qnx70vqheg7",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenHands 详解用 Agent 自动修复自家镜像 CVE 的软件工厂",
-   "url": "https://aihot.news/items/i94tul4bae051uizh2kkpn2r4",
-   "published": "2026-11-19T00:00:00.000Z",
-   "description": "OpenHands 团队详解把大部分 CVE 修复工作交给 Agent 流水线的做法：Agent 选择修复、开 PR、合并低风险项并跟踪到部署，人每天只读一条最多 11 行的 Slack 消息和少量 PR。 🔗 阅读原文 via AIHOT · https://aihot.news/items/i94tul4bae051uizh2kkpn2r4",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "Simon Willison",
-   "title": "llm-gemini 0.38",
-   "url": "https://simonwillison.net/2026/Nov/18/llm-gemini/",
-   "published": "2026-11-18T23:59:20.000Z",
-   "description": "Release: llm-gemini 0.38 Today Google introduced Gemini 4 Neon . I wrote recently about how confusing the pricing for the Gemini 4 series was - Neon has somehow made this even worse. Previously the Gemini 4 lineup was Hydrogen, Argon, and Carbon - where Argon and Carbon were the same price , and Hydrogen was 3/4 of that price now but will be 1/4 of that price when the other two double an 1st December once their initial discount pricing expires. The Neon announcement pretends that Argon doesn't exist. Here's their new image explaining the model line-up: So the lineup now, from most to least exp",
-   "excerpt": "Today Google introduced Gemini 4 Neon . I wrote recently about how confusing the pricing for the Gemini 4 series was - Neon has somehow made this even worse.\nPreviously the Gemini 4 lineup was Hydrogen, Argon, and Carbon - where Argon and Carbon were the same price , and Hydrogen was 3/4 of that price now but will be 1/4 of that price when the other two double an 1st December once their initial discount pricing expires.\nThe Neon announcement pretends that Argon doesn't exist. Here's their new image explaining the model line-up:\nSo the lineup now, from most to least expensive, is Carbon, Neon, Hydrogen.\nExcept Carbon is currently half price, so right now Neon ($3/million input, $15/million output) is the most expensive of the three - then Carbon ($2/$10), then Hydrogen ($1.50/$7.50). I guess this will make more sense when Carbon doubles to $4/$20 on December 1st.\nI ran some pelicans through the three reasoning levels for Neon - low, medium, high.\nI dropped Argon from my Gemini 4 comparison grid - here's the new Gemini 4 lineup, where the Neon pelicans do look better than Hydrogen and worse than Carbon:\nAs I've done with several recent models , I also fired the following prompt against Gemini 4 Neon on \"extra\" effort level in Google Antigravity:\nMake a three js animation where yonkers stands up as a big mech (cool stand up motion) and stomps around manhattan and queens and Brooklyn, use openstreetmap mapping data\nThis is a beat by Simon Willison, posted on 18th November 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "黄仁勋相关传闻核查：美商务部与司法部就Megaspeed发联合声明，未认定违规芯片销售",
-   "url": "https://aihot.news/items/abxhv94f3gcq1qb9mzdf7yma3",
-   "published": "2026-11-18T23:41:28.000Z",
-   "description": "围绕英伟达前高管黄仁勋及AI芯片转运传闻，美国商务部与司法部就Megaspeed发布联合声明，未认定存在违规芯片销售，也未将该公司列入实体清单；英伟达此前已主动切断对Megaspeed的供应。相关声明未提及间谍行为，新加坡内政部亦表示未就间谍问题调查该公司负责人。 🔗 阅读原文 via AIHOT · https://aihot.news/items/abxhv94f3gcq1qb9mzdf7yma3",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "微软CEO纳德拉就英伟达CEO变动表态：仍对英伟达团队有信心",
-   "url": "https://aihot.news/items/uaupvkzwpndnn2zg1b50zv9v7",
-   "published": "2026-11-18T23:17:28.000Z",
-   "description": "英伟达CEO黄仁勋在任职33年后于上周卸任，微软CEO萨提亚·纳德拉在纽约时报DealBook峰会上表示此事令人惋惜，并称仍对英伟达及其临时CEO科莱特·克雷斯带领的团队充满信心。纳德拉提到克雷斯曾在微软长期工作，自己与她相识已久。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uaupvkzwpndnn2zg1b50zv9v7",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "The Robot Report 物流",
-   "title": "Humyn Labs raises $47M to collect real-world data for robotics",
-   "url": "https://www.therobotreport.com/humyn-labs-raises-47m-to-collect-real-world-data-for-robotics/",
-   "published": "2026-11-18T22:43:06.000Z",
-   "description": "Humyn Labs provides data collected from real-world operations for frontier AI labs, robotics companies, and world-model developers. The post Humyn Labs raises $47M to collect real-world data for robotics appeared first on The Robot Report .",
-   "excerpt": "Humyn Labs’ co-founders, from left to right, Ishank Gupta and Manish Agarwal. | Source: Humyn Labs\nHumyn Labs, a physical AI research and deployment company, today announced it raised $47 million in Series A funding. The company said it has also surpassed $50 million in annualized revenue within six months of operations.\nHumyn Labs works with frontier AI labs, robotics companies and world-model developers. It uses its own data capture and enrichment operations across over 20 countries to help robots better prepare for deployments in the real world.\n“A lot of robotics development is bottlenecked in terms of what’s happening in the real world. A bunch of the robotics development that we were seeing and a bunch of the partners that we were talking to were working on essentially simulated environments,” Ishank Gupta, the co-founder of Humyn Labs, told The Robot Report . “The biggest gap was how do you take what’s happening in the lab into the real world?”\nThe funding round includes $26 million in equity led by Accel. It included participation from Prosus Ventures, BeeGlobal, Finserv Intelligence through Bajaj Finance, Bajaj Alts AI Opportunities Fund, Dallas Venture Capital, Lighthouse Canton, Jump Trading LLC and marquee angel investor Anita Pramoda, former CFO of Epic. The $21 million venture debt round was led by Lighthouse Canton with participation from Trifecta Capital.\nRight now, Humyn Labs gathers data across vision, sound, touch, and motion. “The idea is to not just be a data partner, but also a deployment partner to our customers,” Gupta said. The company gathers data using its proprietary capture devices.\nThese devices record how people perform specific jobs to a specific labs’ requirements. Meanwhile, Humyn Labs’ end-to-end data engine converts these into labelled, training-ready datasets with verified provenance across these four modalities.\n“We want to be an extension of the lab’s research team. We work backwards from what the researchers need, and then build out bespoke large-scale collection programs and enrichment programs,” Gupta said. “We currently operate and partner with on-ground collection partners across 20 countries. Our biggest area of operations are LATAM, southeast Asia, south Asia, and east Asia.”\nFor audio data, Gupta said the company focuses on gathering data across different languages rather than across different industries. Vision, touch, and motion data, however, typically go hand in hand and are more industry specific.\nHumyn L"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenAI 团队成员 Tibo 评价 GPT-6.2 Astra 并转引 AMD 与 Jalapeño 芯片优化结果",
-   "url": "https://aihot.news/items/bnqsw7ispucfily4bdq9vz33j",
-   "published": "2026-11-18T22:03:01.000Z",
-   "description": "OpenAI 成员 Tibo 转引团队结果并评价 GPT-6.2 Astra 擅长极难任务，同时承认收到对其沟通风格的反馈并正在改进。所引内容称与 AMD 合作在不到五个月内将旗舰 GPU IP 的 PPA 提升最高 14%，同样方法改进了 OpenAI 首款自研推理芯片 Jalapeño 且在真实硅片上验证，并与 Synopsys 合作把模型能力接入其 EDA 设计和验证工具，详情见 https://openai.com/index/advancing-chip-design-with-our-models/ 🔗 阅读原文 via AIHOT · https://aihot.news/items/bnqsw7ispucfily4bdq9vz33j",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Google DeepMind 的 Gemini 4 Neon 上线 OpenRouter",
-   "url": "https://aihot.news/items/k821p6smjnprmolffcr66q1mz",
-   "published": "2026-11-18T21:42:43.000Z",
-   "description": "OpenRouter 宣布 Google DeepMind 的 Gemini 4 Neon 正式上线其平台，可通过 Google Cloud 使用。该模型面向复杂软件工程、知识工作和科学场景，定位介于 Carbon 与 Hydrogen 之间。Google 称其在 Artificial Analysis Coding Agent Index 排名第一，每任务成本比 Carbon 低 32%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/k821p6smjnprmolffcr66q1mz",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Gemini 4 Neon 向 Google AI Pro 和 Ultra 订阅用户开放",
-   "url": "https://aihot.news/items/dpmse0g0euqubtr0704x8bqvw",
-   "published": "2026-11-18T21:37:20.000Z",
-   "description": "Google 宣布即日起 Gemini 4 Neon 向 Google AI Pro 和 Ultra 订阅用户开放，覆盖移动端、桌面端和网页端。官方称该模型擅长需要前沿级推理和快速响应的工作。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dpmse0g0euqubtr0704x8bqvw",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "Google DeepMind",
-   "title": "Introducing Gemini 4 Neon",
-   "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
-   "published": "2026-11-18T21:35:43.000Z",
-   "description": "",
-   "excerpt": "Bringing frontier-level intelligence with fast end-to-end task completion across complex software engineering, knowledge work, and science workflows.\nSVP, Google DeepMind and Chief AI Architect, Google\nToday, we’re introducing Gemini 4 Neon — bringing frontier-level intelligence with fast end-to-end task completion across complex software engineering, knowledge work, and science workflows.\nNeon ranks ahead of comparable models and #3 overall with a score of 61 on the Artificial Analysis Intelligence Index at its xhigh thinking level, landing just behind larger, slower models. On the Vals Index , Neon ranks #2 and lands on the Pareto frontier. Beyond just pushing on raw model capability, we’re continuing to make our models better to work with, Neon ranks #2 on steerability (adapting cleanly to mid-task user corrections) on the new Agent Arena Index . Neon also excels at multi-step instruction following and builds on our ongoing progress to curb fabrication, recording our lowest fabrication rate yet in internal Google Antigravity testing.\nThe model is priced at $3 per million input tokens ($0.15 per million cached input tokens, a 95% discount) and $15 per million output tokens, with a 1 million-token context window.\nGemini 4 Neon is rolling out today in the Gemini API in Google AI Studio , Gemini for business (via API and model dropdown), for paid Google AI Pro and Ultra subscribers in Google Antigravity , and for Pro and Ultra subscribers in the Gemini app .\nEnterprise work lives in spreadsheets, PDFs, charts, audio, and video. Neon can synthesize across all of these inputs in a single 1 million-token context window and turns inputs into structured deliverables. Independent evaluations rank Neon as one of the top models and on benchmarks like the Vals Index , it ranks #2 (70.9%), and reaches #1 on both the Legal Research Bench and Tax Agent Bench .\nNeon also shows strong wins across categories on Surge AI , ranking #1 on most benchmarks across finance, accounting, spreadsheet modeling, and complex constraint following. It also scores 73.5% on Chartography for reading dense professional charts and performs on par with leading models on Agents' Last Exam v1.1 (75.8%). It achieves #1 overall on both Zapier’s AutomationBench (56.3%) and Andon Labs' Vending-Bench 2 ($16,843), a long-horizon simulation of running a business. Finally, it debuts #2 globally with a score of 1336 on Arena's new Agent Arena Index across 4,200+ real-world agent sessions.\nOn scientific "
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Google DeepMind 发布 Gemini 4 Neon",
-   "url": "https://aihot.news/items/lp0snt9lfrx5ju7mg3wma6hnw",
-   "published": "2026-11-18T21:35:43.000Z",
-   "description": "Google DeepMind 发布 Gemini 4 Neon，主打前沿智能与快速端到端任务完成，覆盖软件工程、知识工作和科学工作流。模型在 Artificial Analysis Intelligence Index 得 61 分排第 3，Vals Index 排第 2，Agent Arena Index 以 1336 分全球第 2。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lp0snt9lfrx5ju7mg3wma6hnw",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Palmer Luckey 就 Nvidia CEO 人事变动发表看法",
-   "url": "https://aihot.news/items/isjju2oyoxg3d9v6k4eyt32fi",
-   "published": "2026-11-18T21:31:21.000Z",
-   "description": "TechCrunch 报道，Anduril CEO Palmer Luckey 在纽约时报 DealBook Summit 上就 Nvidia 领导层变动发表看法，认为相关变动可能影响美国产业竞争力，并呼吁 Nvidia 恢复创始人黄仁勋的 CEO 职位。报道称，已有超过 20 万人联署请愿，包括马斯克及多家科技公司 CEO；Nvidia 临时 CEO Colette Kress 在财报电话会上表示，公司暂无重新任命黄仁勋的计划。 🔗 阅读原文 via AIHOT · https://aihot.news/items/isjju2oyoxg3d9v6k4eyt32fi",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "Hugging Face",
-   "title": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
-   "url": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
-   "published": "2026-11-18T19:54:56.000Z",
-   "description": "",
-   "excerpt": "Today we are releasing DaisyRose-27B , RadixArk’s first model, built on Qwen3.8-27B and trained with reinforcement learning using Miles . We trained it on long-horizon agent tasks with sessions up to 1M tokens, with just 1,200 curated tasks in 18 days on 144 H200 GPUs. DaisyRose-27B improves Terminal-Bench 4.1 pass@1 from 5.6% to 12.0% . Beyond Terminal-Bench 4.1, it also delivers gains on a variety of other reasoning, instruction following, and coding benchmarks.\nThe checkpoints are available under Apache 2.0 :\nThe model retains Qwen3.8-27B’s architecture, tokenizer, chat template, image understanding, and 256K-token context window . The longer training sessions use harness summarization to span multiple trajectories. See the model card for model properties and inference settings.\nWe recommend serving DaisyRose-27B with SGLang and DSpark speculative decoding. The SGLang cookbook provides launch configurations for different GPUs and checkpoint formats.\nAfter starting the server with the served model name DaisyRose-27B on port 30000 , you can send a request using the OpenAI Python client:\nThe model thinks before answering by default. Its reasoning is returned in reasoning_content , and its final answer in content . These settings follow the model card’s quickstart .\nDaisyRose-27B scores higher than the original Qwen3.8-27B model on every benchmark above. The largest gain is on Terminal Bench 4.1, where pass@1 rises from 5.6% to 12.0%.\nScores use the higher of the BF16 and FP8 runs for each benchmark; the two differ by less than one point wherever both were evaluated. The model card includes comparison sources and evaluation settings.\nThree parts of the training setup made this release possible: carefully designed tasks, an efficient training backend, and reliable sandboxes.\nWe built the tasks in partnership with Eigent AI , starting from its large pool of tasks in machine learning, software engineering, science, and other fields. Together we built thousands of candidates. About 1,200 made it into the final training set.\nRadixArk trained DaisyRose-27B with Miles, our open-source reinforcement learning framework for large-scale model post-training, in fully asynchronous mode: the agent keeps working while the model learns, and neither waits for the other. While 128 H200s run the inference on agent tasks, 16 more run the trainer and learn from the trajectories. After every step, the updated model goes out to the 128 GPUs that run the agent. The learning runs o"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Meta 员工内部聊天显示对 Muse 智能体隐私风险的担忧",
-   "url": "https://aihot.news/items/i24hiy236uc3ynswh26pw7s0h",
-   "published": "2026-11-18T19:19:33.000Z",
-   "description": "Reuters 披露的内部聊天显示，Meta 员工在测试 Muse 智能体时发现它似乎访问了加密私信、可能混淆用户对话，甚至输出他人银行账户余额等内容；有员工称测试中被误注册每月 888 美元的宠物保险且无法挽回。 🔗 阅读原文 via AIHOT · https://aihot.news/items/i24hiy236uc3ynswh26pw7s0h",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Small businesses upbeat about holiday peak",
-   "url": "https://www.dcvelocity.com/small-businesses-upbeat-about-holiday-peak",
-   "published": "2026-11-18T19:15:14.000Z",
-   "description": "Leaders at small and mid-sized businesses across the country are optimistic as they approach the 2026 holiday season, with most saying they expect sales to hold steady or improve. That’s according to recent research from shipping and logistics provider DHL Express. DHL surveyed more than 400 decision-makers from a range of industries and found that 50% expect sales to be about the same as 2025, and 42% expect sales to increase—including 12% who predict “significant growth.” Just 8% of those surveyed said they expect sales to decline this holiday season. But challenges persist, despite the rosy",
-   "excerpt": "Most small and mid-sized companies expect holiday sales to hold steady or improve, despite trade policy challenges and demand volatility, DHL Express research shows.\nVictoria Kickham, Senior Editor , started her career as a newspaper reporter in the Boston area before moving into B2B journalism. She has covered manufacturing, distribution, and supply chain issues for a variety of publications in the industrial and electronics sectors, and now writes about warehousing, transportation, and logistics trends for DC VELOCITY . Victoria earned a bachelor’s degree in English from the University of New Hampshire and a master’s degree in English from Northeastern University.\nLeaders at small and mid-sized businesses across the country are optimistic as they approach the 2026 holiday season, with most saying they expect sales to hold steady or improve.\nThat’s according to recent research from shipping and logistics provider DHL Express. DHL surveyed more than 400 decision-makers from a range of industries and found that 50% expect sales to be about the same as 2025, and 42% expect sales to increase—including 12% who predict “significant growth.” Just 8% of those surveyed said they expect sales to decline this holiday season.\nBut challenges persist, despite the rosy outlook—especially tariff and trade policies, which lead the list of anticipated headwinds, at 28%. Other top challenges include delivery delays due to new regulations (21%), customs and regulatory costs (13%), consumer demand volatility (11%), and inventory availability (7%).\n“Most SMEs [small and mid-sized enterprises] expect holiday sales to remain steady or increase, but tariffs, changing trade policies and potential delivery delays could complicate preparations,” DHL researchers wrote in the report. “Planning ahead for shipping timelines, customs requirements, and related costs will be important to managing seasonal demand.”\nLooking ahead to 2027, nearly 45% of business leaders pointed to inflation and operating costs as their biggest challenges—despite 74% saying they expect stronger business performance in the new year. More than a third of respondents said they plan to focus on cutting expenses and improving efficiency in 2027 in response to persistent cost pressures.\nSeparately, DHL Express announced the launch of an AI-powered item identification service for international shipping that company leaders said will be especially helpful to SMEs as they prepare to meet holiday shipping demands. The s"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Greg Brockman 称 OpenAI 模型不到 5 个月为 AMD 芯片带来约一年额外进度",
-   "url": "https://aihot.news/items/tsh3b6rieynf7vstk1ipl34ae",
-   "published": "2026-11-18T19:05:11.000Z",
-   "description": "Greg Brockman 转引 OpenAI 与 AMD 的合作结果，其模型在不到 5 个月内对 AMD 旗舰 GPU IP 实现最高 14% 的 PPA 提升，相当于约一年的额外进度，部分结果已进入近期完成 tapeout 的设计。同样的方法也改善了 OpenAI 首款自研推理芯片 Jalapeño，收益已在真实硅片上验证，OpenAI 还在与 Synopsys 合作将模型能力与 EDA 工具带给更多芯片设计师。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tsh3b6rieynf7vstk1ipl34ae",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "Hugging Face",
-   "title": "Why your fine-tuning job takes longer than the FLOPs say",
-   "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
-   "published": "2026-11-18T18:53:43.000Z",
-   "description": "",
-   "excerpt": "Predicting end-to-end fine-tuning time on shared GPU clusters, from 272 production runs.\nA preview of our upcoming paper, Predicting End-to-End Fine-Tuning Time for Generative Language Models . The full version will be on arXiv soon.\nGPUs are among the most expensive and scarcest resources in AI today. Anyone running a shared cluster has to decide, every day, which jobs go on which GPUs and in what order. That plan is only as good as the estimate of how long each job will take. When a job finishes hours early, GPUs sit idle until the next one is dispatched. When it runs hours late, everything queued behind it slips, experiments wait and delivery dates move.\nBetter duration estimates turn this into planning instead of guesswork: what runs, when, and on how many GPUs, with less idle capacity in between. Yet the estimate most teams use is a back-of-the-envelope FLOP calculation. It says nine hours, and the job finishes the next afternoon.\nWe wanted to know how far off that math really is, and whether we could do better before a job is even dispatched. So we took 272 real supervised fine-tuning (SFT) jobs from our production pool of NVIDIA H200 GPUs, about 7,382 GPU-hours in total, and compared analytical estimates against learned predictors.\nThe short version: the usual FLOP-based estimate explains little of what we observed (R² = 0.31, MAE 12.41 h). A CatBoost regressor that only sees information available before dispatch reaches R² = 0.98, with a mean absolute error of 1.71 h and a median error of 0.51 h in 5-fold cross-validation. The gap comes from two things a closed-form estimate cannot do. The regressor sees more training-specific signals, such as evaluation cadence, checkpoint policy, per-GPU load and fine-tuning regime, and it learns the nonlinear interactions between them from past runs.\nFor a dense Transformer, training costs roughly 6·P·D floating-point operations, where P is the parameter count and D the number of training tokens. Divide that by what your GPUs can deliver and you get a training-loop time:\nHere N_GPU is the number of GPUs, FLOPS_peak is the peak throughput of one GPU from its spec sheet, and MFU (Model FLOPs Utilization) is the fraction of that peak the training actually achieves. Real jobs never run at peak because of memory traffic, communication and kernel inefficiencies, so MFU typically sits somewhere between 30% and 60%, and the right value for a given job is not known in advance.\nThis is a good description of the optimizati"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "黄仁勋辞职后首次财报电话会：Nvidia 新 CEO Colette Kress 收紧支出并回应回归呼声",
-   "url": "https://aihot.news/items/gpvt9y9d89gd5nkw92bwhyw6s",
-   "published": "2026-11-18T18:34:15.000Z",
-   "description": "作者分析黄仁勋辞职后 Nvidia 首次由新 CEO Colette Kress 主持的财报电话会，指出董事会明确不打算让黄仁勋回归，也不会回答相关问题。财报释放的新条款显示 neocloud 只有在拿到融资且数据中心建成投产后才能获得 Nvidia 的采购兜底，作者认为这透露了 Nvidia 支持意愿的边界。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gpvt9y9d89gd5nkw92bwhyw6s",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "Google DeepMind",
-   "title": "Genie 4 is now available",
-   "url": "https://deepmind.google/blog/genie-4-is-now-available/",
-   "published": "2026-11-18T18:13:42.000Z",
-   "description": "",
-   "excerpt": "Explore a new Project Genie experience for Google AI Ultra subscribers, featuring Genie 4, the Project Genie agent, and a community gallery.\nWe are rolling out Genie 4 to eligible Google AI Ultra subscribers, offering more responsive, social, and interactive world generation. You can now use natural language to edit environments in real time, add native audio, and share your creations in our new community gallery. Visit the Project Genie website to start building your own worlds or join the waitlist if you are a Google AI Pro member.\nWe are updating Project Genie to help you create and explore interactive digital worlds. With our new Genie 4 model, you can change weather, add characters, and hear adaptive audio in real time just by typing prompts. You can also use our new creative agent to build complex environments through simple conversation. If you subscribe to Google AI Ultra, you can start building, sharing, and remixing these custom worlds in our community gallery today.\nEarlier this year we introduced Project Genie , an experimental research prototype that lets you generate and explore interactive worlds. Early testers told us they wanted deeper control over what happens inside those worlds, and easier ways to build and share them.\nSo today, we are rolling out a new Project Genie experience to eligible Google AI Ultra subscribers, making these worlds far more responsive, creative, and social. This update unlocks first-time access to Genie 4, new upgrades to Genie 3, the Project Genie agent which helps users build their vision, and a community gallery to discover, explore, and remix worlds.\nProject Genie brings together our most advanced world models alongside our Gemini models, empowering you to generate, step inside, and shape worlds directly from your browser.\nWith Genie 4 , our most realistic and interactive world model yet, you can now prompt mid-session to change the world you created. Just type a new prompt while you navigate your world and you can edit your environments in real time. Shift the weather, drop in a character, or redirect the action. For the first time, Genie 4 pairs these visuals with real-time native audio that adapts as the scene unfolds, from ambient soundscapes to character dialogue.\nWhile Genie 4 delivers our highest-fidelity visuals, physics, and native audio, Genie 3 remains available in Project Genie’s model picker when you want longer runs or panorama-seeded spaces. Today’s Genie 3 updates include:\nGenie 3 uses real-tim"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Google DeepMind 开放 Project Genie 新体验，首次提供 Genie 4 世界模型",
-   "url": "https://aihot.news/items/rubpebtbkzpp1fpbtvw0kt8v2",
-   "published": "2026-11-18T18:13:42.000Z",
-   "description": "Google DeepMind 于 11 月 18 日向符合条件的 Google AI Ultra 订阅者开放新 Project Genie 体验，首次提供 Genie 4，并更新 Genie 3。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rubpebtbkzpp1fpbtvw0kt8v2",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "Amazon’s first Puerto Rico delivery station speeds up shipping",
-   "url": "https://www.supplychaindive.com/news/amazons-first-puerto-rico-delivery-station-speeds-up-shipping/874996/",
-   "published": "2026-11-18T17:35:00.000Z",
-   "description": "The 100,000-square-foot site can bring delivery time down to about two days for customers in the San Juan metro area, compared to two weeks.",
    "excerpt": ""
   }
  ]
