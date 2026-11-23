@@ -1,0 +1,281 @@
+{
+  "type": "daily",
+  "date": "2026-11-23",
+  "headline": "Anthropic 数学家称与 Claude 合作证明黎曼猜想，Lean 社区已确认形式化验证通过；仓储侧，罗克韦尔收购 AGILOX，AMR 竞争转向“工厂内物流编排”。",
+  "sections": [
+    {
+      "key": "ai",
+      "title": "AI",
+      "items": [
+        {
+          "pick": true,
+          "title": "Claude 合作证明黎曼猜想：Lean 验证通过，斯坦福“纯人类草稿”同日出现问题",
+          "source": "The Decoder（经 AIHOT 收录）",
+          "published": "2026-11-21",
+          "readMinutes": 8,
+          "summary": "Anthropic 数学家 Levent Alpöge 宣布与 Claude 合作证明黎曼猜想及广义黎曼猜想，证明以 Lean（可由计算机逐步检查的形式化证明语言）发布，共 175187 个文件、约 1737 万行。数小时后斯坦福发布了一份完全由人写的竞争草稿，随后被指出存在问题；11 月 22 日 Lean 与 Mathlib 社区发表声明确认 Alpöge 的证明通过验证。原文英文。",
+          "takeaways": [
+            "关键思路据称来自 Claude：把变换串联来模拟“求导”，需要串联的数量恰好是数列长度的平方根",
+            "“机器验证通过”和“数学界理解并认可”是两件事，菲尔兹奖得主梅纳德也强调证明需要被人理解",
+            "同期还有 Columbia/MIT 论文称 Claude 发现的算法改进了 3SUM 与全对最短路径（APSP）的复杂度上限"
+          ],
+          "why": "这是今年 AI 能力最重磅的事件之一，读它能看清“AI 做研究”现在到哪一步、怎样验证；你做 Agent 和找 AI 方向工作，值得了解形式化验证这条路线。",
+          "url": "https://the-decoder.com/hours-after-anthropic-claims-a-claude-proof-of-the-riemann-hypothesis-stanford-releases-an-all-human-competing-draft/",
+          "tags": ["新闻深度", "观点"],
+          "vendorClaim": false
+        },
+        {
+          "pick": true,
+          "title": "Perplexity and Intelligence：OpenAI 首席科学家主张用“困惑度”作行业共享指标",
+          "source": "OpenAI",
+          "published": "2026-11-22",
+          "readMinutes": 15,
+          "summary": "OpenAI 首席科学家 Jakub Pachocki 认为，现代 AI 的进步主要来自“在海量数据上训练一个更好的压缩器（预测器）”，所以应追踪困惑度（perplexity，即模型预测下一个词有多不意外，等价于交叉熵损失）来比较各家进展，并作为共同安全标准的依据。作为第一步，OpenAI 公开了内部预训练的困惑度测量数据。原文英文，且是一家公司的立场文章。",
+          "takeaways": [
+            "把 AI 进展看成“压缩器越来越好”，是理解预训练规模定律的一个简洁视角",
+            "OpenAI 愿意公开内部数据，理由是共享安全节奏比隐藏实力更紧迫",
+            "困惑度能否代表真实能力、能否被各家公平比较，文中是主张而非定论"
+          ],
+          "why": "想理解大模型为什么会变强、行业在争论什么，一手阅读比二手解读可靠；原文有些数学，但不要求你有深度学习基础。",
+          "url": "https://openai.com/index/perplexity-and-intelligence",
+          "tags": ["观点"],
+          "vendorClaim": true
+        },
+        {
+          "pick": true,
+          "title": "对抗 AI“垃圾代码”的新武器：形式化验证与 AI 的结合",
+          "source": "Latent Space",
+          "published": "2026-11-20",
+          "readMinutes": 12,
+          "summary": "文章指出“slop”（低质量 AI 输出）是今年 AI 圈的年度词，AI 写的代码越多越需要验证正确性。作者采访了斯坦福教授、cvc5 求解器联合作者 Clark Barrett（新公司 &Truth 联合创始人），梳理 Harmonic、Theorem、Axiom Math 等用 AI 加 Lean 自动做形式化验证的公司。原文英文。",
+          "takeaways": [
+            "形式化验证 = 用数学证明确认软件或硬件符合规格，过去要专家手工做，现在 AI 开始自动化",
+            "cvc5 这类 SMT 求解器已被亚马逊用于 Kiro 的规格分析和测试生成",
+            "这和今天的黎曼猜想事件是同一条技术线：让 AI 的输出可被机器核验"
+          ],
+          "why": "你天天用 Claude 写代码，“怎么确认它写对了”是核心问题；这篇给出一条超出“多写测试”的思路，也是 AI 交付工程师可以关注的方向。",
+          "url": "https://latent.space/p/formal-verification/",
+          "tags": ["观点"],
+          "vendorClaim": false
+        },
+        {
+          "pick": true,
+          "title": "Thinking Machines 发布 Inkling 2 Mini：循环 Transformer，笔记本可跑的开放权重模型",
+          "source": "AIHOT 整理（Thinking Machines Lab 官方发布）",
+          "published": "2026-11-20",
+          "readMinutes": 8,
+          "summary": "Inkling 2 Mini 是混合专家（MoE，每次只激活部分参数）模型，总参数 26.4B、激活 3.4B，把中间 12 层每个 token 跑三遍（循环），内存约 20GB，32GB 以上内存的 Mac 可本地运行。官方称 DeepSWE v1.1 得 48.2%、SWE-bench Pro v2 Hard 得 77.9%，在 100B 以下开放权重模型中领先，吞吐约 54.4 tokens/s。原文英文，基准为厂商自测，暂无独立测评；国内可否直接使用未见说明，权重开放可自行下载。",
+          "takeaways": [
+            "循环让模型多“想”几轮而不必写出思维链，官方认为这对监控模型行为有意义",
+            "对比同级开放模型：DeepSWE 上 Qwen3.8-27B 为 42.2%，但吞吐约 11.4 tokens/s，Inkling 2 Mini 快得多",
+            "同时发布研究用的可变循环版本，循环次数从 3 增到 10 时推理能力仍在提升"
+          ],
+          "why": "想在自己电脑上跑编程 Agent 的话，这类小而快的开放权重模型是现实选项；也能看到架构层面的新玩法。",
+          "url": "https://aihot.news/items/y7nk77dxae51qwi826gpmvbho",
+          "tags": ["新模型"],
+          "vendorClaim": true
+        },
+        {
+          "pick": false,
+          "title": "腾讯混元开放 Hy4 权重：770B 总参数、49B 激活、1M 上下文",
+          "source": "AIHOT 整理",
+          "published": "2026-11-20",
+          "summary": "原生多模态旗舰 MoE 模型，同步发布安全评估报告与 GGUF 权重，暂无独立测评。",
+          "url": "https://aihot.news/items/jl6m0eymz9z0kleh54c3guowx",
+          "tags": ["新模型"],
+          "vendorClaim": true
+        },
+        {
+          "pick": false,
+          "title": "Qwen4 Max 上线 Together AI：65 万 token 整仓修 Tornado bug，花费 0.69 美元",
+          "source": "AIHOT 整理（Together AI 博客）",
+          "published": "2026-11-21",
+          "summary": "阿里旗舰模型，1M 上下文；平台自测一次调用 72 秒修复 bug 并通过测试，属平台说法。",
+          "url": "https://aihot.news/items/rlj39tzyujneo0u35iyrfb4uc",
+          "tags": ["新模型"],
+          "vendorClaim": true
+        },
+        {
+          "pick": false,
+          "title": "Kling Image 4.0 发布：原生 8K，文生图榜第 7、图像编辑榜第 6",
+          "source": "AIHOT 整理",
+          "published": "2026-11-20",
+          "summary": "引用 Artificial Analysis 评测，2K 黑五价低至 0.022 美元/张，比此前版本提升超 225 Elo。",
+          "url": "https://aihot.news/items/rhln87mprozseglkairsway74",
+          "tags": ["新模型"],
+          "vendorClaim": false
+        },
+        {
+          "pick": false,
+          "title": "OpenAI 公布如何对抗“对抗性蒸馏”",
+          "source": "OpenAI",
+          "published": "2026-11-20",
+          "summary": "说明如何检测并阻断未经授权用前沿模型输出训练模型，并加强对思维链的保护（原文英文）。",
+          "url": "https://openai.com/index/combatting-adversarial-distillation",
+          "vendorClaim": true
+        },
+        {
+          "pick": false,
+          "title": "Together AI 通报提示词泄露：AI 编码 agent 把凭证提交到公开仓库",
+          "source": "AIHOT 整理（Together AI 博客）",
+          "published": "2026-11-21",
+          "summary": "2026 年 6–7 月部分 serverless 推理请求的存储提示词样本被未授权下载，建议用户核对自己是否受影响。",
+          "url": "https://aihot.news/items/xqe6lbb5zsjp9xbsc1o912cs0",
+          "tags": ["报告"]
+        },
+        {
+          "pick": false,
+          "title": "Anthropic 完成史上最大 IPO，募资 813 亿美元，上市前估值约 1.5 万亿美元",
+          "source": "AIHOT 整理（TechCrunch 报道）",
+          "published": "2026-11-23",
+          "summary": "TechCrunch 复盘 Notable、GIC、Baillie Gifford 三家机构在上市前的押注逻辑。",
+          "url": "https://aihot.news/items/dus34samsjrld1qopq65v54uq",
+          "tags": ["新闻"]
+        },
+        {
+          "pick": false,
+          "title": "Figma 演示：用 Specs 加 Figma agent 生成开发计划，经 MCP 交给 Codex 实现",
+          "source": "AIHOT 整理（Figma 博客）",
+          "published": "2026-11-21",
+          "summary": "把 PRD、数据、设计汇集到画布再交给编码智能体，工作流可迁移到自己的项目。",
+          "url": "https://aihot.news/items/w612ivonntodntv1ydkt2lqwh",
+          "tags": ["教程"],
+          "vendorClaim": true
+        }
+      ]
+    },
+    {
+      "key": "wh",
+      "title": "仓储物流自动化",
+      "items": [
+        {
+          "pick": true,
+          "title": "超越 AMR：罗克韦尔的“生产物流”策略把物料流与工厂自治连起来",
+          "source": "Logistics Viewpoints",
+          "published": "2026-11-20",
+          "readMinutes": 7,
+          "summary": "分析师评论罗克韦尔发布会的核心论点：下一个效率空间在自动化工序“之间”——产线很自动化，末端却仍靠叉车司机和推车工。罗克韦尔把厂内物流看成覆盖生产软件、调度编排、控制器、AMR（自主移动机器人）、独立小车技术与人工的端到端流程，而不是单独的机器人项目。作者认为编排、数字孪生与产线集成比机器人本体更关键。原文英文。",
+          "takeaways": [
+            "厂内物流正在从“买几台 AMR”变成“控制问题”：物料移动要纳入生产系统",
+            "价值在调度编排软件和与产线控制层的集成，而不是车本身",
+            "这与同日罗克韦尔收购 AGILOX 的动作相互印证"
+          ],
+          "why": "你关注的内部物流方向，这篇讲清了为什么厂内物流的竞争点在系统集成层；写考研方向比较或面试时可以用这个视角。",
+          "url": "https://logisticsviewpoints.com/2026/11/20/beyond-the-amr-rockwells-production-logistics-strategy-connects-material-flow-to-plant-autonomy/",
+          "tags": ["观点"],
+          "vendorClaim": false
+        },
+        {
+          "pick": true,
+          "title": "DHL Supply Chain 与旺季的终结：仓库机器人能否足够快地弹性扩容？",
+          "source": "Logistics Viewpoints",
+          "published": "2026-11-20",
+          "readMinutes": 6,
+          "summary": "文章指出促销更频繁、需求更易突变，旺季不再是日历上的固定几周。DHL Supply Chain 称其在全球运营超过 9000 台协作机器人（cobot，与人同场作业的机器人），上一年新增约 1000 台，并能临时扩展机器人规模应对峰值。作者的核心问题是：自动化的价值不只是替代人工，而是在需要时提供产能。原文英文。",
+          "takeaways": [
+            "衡量自动化可以看“弹性”：能否在峰值出现的当周增加产能",
+            "DHL 的数据（9000+ 台、年增约 1000 台）是协作机器人规模化的真实参照",
+            "峰值不可预测，租赁/可快速部署的方案更有优势"
+          ],
+          "why": "对物流工程专业来说，这是“自动化投资该看什么指标”的好案例，可以连到课上的产能规划与仿真。",
+          "url": "https://logisticsviewpoints.com/2026/11/20/dhl-supply-chain-and-the-end-of-peak-season-can-warehouse-robotics-flex-fast-enough/",
+          "tags": ["案例", "观点"],
+          "vendorClaim": false
+        },
+        {
+          "pick": true,
+          "title": "常开 AI 要进供应链了，但“异常”归谁管？",
+          "source": "Logistics Viewpoints",
+          "published": "2026-11-21",
+          "readMinutes": 6,
+          "summary": "文章指出供应链系统擅长发现异常，却常说不清谁负责下一步。以 OpenAI 11 月 19 日扩大 ChatGPT Dots（可持续保留上下文、能连授权应用的持续型 agent）的开放范围为引子，作者主张：关键不是 AI 能否给出更好建议，而是组织能否分配有边界的职责、明确责任人并核实任务确实完成。同日另一篇文章也讨论“谁授权 AI agent”（建议的权限边界）。原文英文。",
+          "takeaways": [
+            "“能决策”不等于“有权执行”，需要权限边界、隔离执行和独立监控",
+            "例子：agent 加急订运力保交付，却可能让订单利润为负，一个目标优化了另一个被违反",
+            "落地 AI agent 的难点往往是流程与责任设计，而非模型"
+          ],
+          "why": "你关注 AI 交付工程师（FDE）和供应链，这篇讲的正是 agent 进入业务流程时要解决的问题，可当面试素材。",
+          "url": "https://logisticsviewpoints.com/2026/11/21/always-on-ai-is-coming-to-supply-chains-but-who-owns-the-exception/",
+          "tags": ["观点"],
+          "vendorClaim": false
+        },
+        {
+          "pick": false,
+          "title": "罗克韦尔同意收购奥地利 AMR 厂商 AGILOX，AMR 业务将翻倍以上",
+          "source": "Supply Chain 24/7",
+          "published": "2026-11-20",
+          "summary": "卖方为 Carlyle，预计 3 月 31 日所在季度完成；AGILOX 做托盘叉车机器人，补强 OTTO 的欧洲业务。",
+          "url": "https://www.supplychain247.com/article/rockwell-automation-acquires-agilox-mobile-robots",
+          "tags": ["新闻"]
+        },
+        {
+          "pick": false,
+          "title": "F-Prime：2026 年机器人融资将达 607 亿美元，84% 集中在少数大额轮次",
+          "source": "Robotics & Automation News",
+          "published": "2026-11-22",
+          "summary": "报告指出资金高度集中，投资热度与企业商业表现之间的差距在拉大。",
+          "url": "https://roboticsandautomationnews.com/2026/11/22/robotics-investment-set-to-reach-60-7-billion-in-2026-but-funding-boom-raises-concerns/107478/",
+          "tags": ["报告", "数据"]
+        },
+        {
+          "pick": false,
+          "title": "Körber 调研：73% 高管不愿让 AI 拥有最终决定权",
+          "source": "Supply Chain 24/7",
+          "published": "2026-11-20",
+          "summary": "对美德 2000 名高管的调查中，供应链与分销行业 AI 参与决策的比例最高，为 92%。",
+          "url": "https://www.supplychain247.com/article/korber-survey-ai-decision-making-complexity",
+          "tags": ["报告", "数据"]
+        },
+        {
+          "pick": false,
+          "title": "BlueBotics 更新 ANT 系统：一个平台同时调度人工叉车与 AGV/AMR",
+          "source": "Robotics & Automation News",
+          "published": "2026-11-22",
+          "summary": "按实时位置和空闲状态派单，叉车司机通过车载界面接单，适合人机混场。",
+          "url": "https://roboticsandautomationnews.com/2026/11/22/bluebotics-unifies-fleet-management-for-manual-forklifts-and-mobile-robots/107455/"
+        },
+        {
+          "pick": false,
+          "title": "Anthropic 推出 Claude for Manufacturing：17 项技能加 4 个连接器",
+          "source": "Robotics & Automation News",
+          "published": "2026-11-22",
+          "summary": "11 月 12 日发布，连接 Autodesk Fusion、Infor、Microsoft 365、Oracle NetSuite，处理报价、质量、设备故障等。",
+          "url": "https://roboticsandautomationnews.com/2026/11/22/anthropic-launches-claude-for-manufacturing-to-automate-administrative-and-engineering-workflows/107487/",
+          "vendorClaim": true
+        },
+        {
+          "pick": false,
+          "title": "Multiway Robotics 在 CeMAT Asia 2026 展出轮式人形 H01 与无人叉车",
+          "source": "Robotics & Automation News",
+          "published": "2026-11-22",
+          "summary": "H01 为双臂轮式机器人，合计负载 30 kg，现场演示料箱搬运。",
+          "url": "https://roboticsandautomationnews.com/2026/11/22/multiway-robotics-showcases-wheeled-humanoid-and-autonomous-forklifts-at-cemat-asia-2026/107492/",
+          "vendorClaim": true
+        },
+        {
+          "pick": false,
+          "title": "Geodis 首期末端配送指数：美国三季度配送成本同比涨 10.5%，约为通胀的三倍",
+          "source": "DC Velocity",
+          "published": "2026-11-21",
+          "summary": "指数 149.8（2019=100），自 2019 年累计上涨 49.8%，消费价格同期涨 30.8%。",
+          "url": "https://www.dcvelocity.com/transportation/trucking/last-mile/geodis-u-s-q3-delivery-costs-rose-three-times-faster-than-inflation",
+          "tags": ["数据"]
+        },
+        {
+          "pick": false,
+          "title": "仓库自动化之外要同步规划的五项安全升级",
+          "source": "Supply Chain 24/7",
+          "published": "2026-11-20",
+          "summary": "涵盖通道标线、凸面镜等实体设施，随自动化一起更新人机混行的安全。",
+          "url": "https://www.supplychain247.com/article/warehouse-safety-upgrades-automation"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "今天是周一，时间范围放宽到 72 小时。",
+    "抓取失败的信源：Epoch AI（HTTP 403）、Import AI（HTTP 403）、Symbotic IR（HTTP 403）、Locus Robotics（HTTP 410）、国家统计局（请求超时）；36氪快讯、Interact Analysis 抓到 0 条。",
+    "AIHOT 接口正常。本次未使用 WebSearch，大新闻核对主要依据 AIHOT 与 feeds；Inkling 2 Mini、Hy4 等条目来自 AIHOT 转录的官方内容，未独立核实。",
+    "仓储方向近 72 小时没有北自科技、今天国际、极智嘉、海康机器人的一手内容，精读仅 3 篇且均为英文分析文章。"
+  ]
+}
