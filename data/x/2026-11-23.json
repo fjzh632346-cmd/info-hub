@@ -1,0 +1,89 @@
+{
+  "type": "x",
+  "date": "2026-11-23",
+  "items": [
+    {
+      "kind": "opinion",
+      "category": "编程",
+      "score": 90,
+      "author": "数字生命卡兹克",
+      "handle": "@Khazix0918",
+      "url": "https://x.com/Khazix0918/status/2124680457623425334",
+      "posted": "2026-11-23",
+      "metrics": "26.4 万查看",
+      "textZh": "卡兹克的长文：他怎么让 Claude、GPT、Gemini 三家模型分工合作。他的判断是：Gemini 4 Neon 最好沟通、点子多、文案好，但粗心、容易出错；Claude 审美最好、Claude Code 这套工具（Harness，指模型外面那层调工具、跑命令的“壳”）最顺手，但偶尔漏细节、额度紧；GPT-6.2 最严谨，适合后端、算法、查 bug、代码审查，但汇报很难读。做法是让 Claude 当“项目经理”：大方案让 Gemini 独立再出一份（只给原始需求、不给 Claude 的草稿）再合并；界面文案请 Gemini 改；接口定死的后端模块派给 GPT 写，Claude 读改动、跑测试验收；上线前必须过 GPT 审查，但只拦“算错钱、丢数据、越权”这类严重问题，最多审两轮。文中给了他写在 CLAUDE.md 里的原文规则，可以直接参考。对平时用 Claude 做网站、做 Agent 的你，这是一份可照抄的多模型分工方案；只有国产模型也能套用同样的思路。"
+    },
+    {
+      "kind": "opinion",
+      "category": "编程",
+      "score": 88,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2124603209394078089",
+      "posted": "2026-11-23",
+      "metrics": "3.2 万查看",
+      "textZh": "宝玉分享五条让 Agent“验证”靠得住的经验：一、别依赖让多个 Agent 互相挑错（对抗式验证），没有统一标准时常常越改越糟；二、先说清什么叫“做好了”，再给它能自查的手段，比如“做完截图和设计稿对比，像素不差”；三、越早验证越省事，写代码前先做可行性分析、做原型、写技术方案让人过一眼；四、让 Agent 交截图、修改前后对比、HTML 报告当证据，降低人验收的成本；五、代码审查让 PR 尽量小，人只盯安全、性能这类 P0/P1 级问题。一句话：Agent 说“做好了”不能直接当结论，要变成你能检查的东西。"
+    },
+    {
+      "kind": "prompt",
+      "category": "照片艺术",
+      "score": 85,
+      "author": "Taaruk",
+      "handle": "@Taaruk_",
+      "url": "https://x.com/Taaruk_/status/2124358326486269975",
+      "posted": "2026-11-22",
+      "metrics": "5.4 万查看",
+      "textZh": "用 ChatGPT 的 GPT Image 2 把一张普通照片做成“复古摄影杂志海报”：上半部分保留原照片，下半部分把同一画面重画成瑞士平面设计 / 包豪斯风格的几何插画，配旧纸纹理、细线辅助线、打字机字体编号和三色色卡。旅行照、街景、建筑照片都适合。波兰博主 @matpuszczynski 照着这个提示词做了人像和沙拉的版本，效果同样稳定。",
+      "prompt": "Transform the uploaded reference photograph into a sophisticated vintage editorial photography poster, following the exact visual aesthetic of the provided examples.\n\nCreate a vertical 2:3 split-layout composition. Place the original photograph in the upper half, preserving its original colors, subject, camera angle, perspective, framing, and details. In the lower half, recreate the exact same scene as a minimalist, geometric, vintage-inspired 2D illustration.\n\nUse a refined Swiss graphic design and Bauhaus-inspired editorial aesthetic. Apply a muted, earthy color palette featuring warm beige, cream, charcoal black, dusty grey, muted blue-grey, and subtle brown tones. Simplify the subjects and surroundings into clean geometric shapes, bold silhouettes, angular forms, and flat color blocks while maintaining the original scene’s composition and recognizable details.\n\nAdd a subtle aged paper texture, fine grain, distressed vintage print effects, and slightly faded ink. Incorporate delicate graphic design elements such as thin circular arcs, vertical and horizontal alignment guides, intersecting lines, dotted lines, small square markers, and minimal geometric grids around the illustrated scene.\n\nInclude small editorial typography in a typewriter-style font, with a numbered photographic series label in the upper-left corner of the illustrated section. Add a small sequence number in the bottom-right corner and a minimal three-color palette swatch along the lower-left edge.\n\nMaintain generous negative space, precise alignment, balanced proportions, and an elegant museum-quality art direction.\n\nIMPORTANT: Preserve the original photograph in the upper section without changing the scene. The lower illustration must represent the exact same photograph, including the same subjects, positions, perspective, architecture, objects, and background. Do not introduce new elements or change the original composition.\n\nOverall aesthetic: vintage photography journal, Swiss editorial graphic design, minimalist architectural illustration, retro art direction, sophisticated print design, and timeless visual storytelling. High resolution, crisp details, vertical poster format.",
+      "promptZh": "把上传的参考照片改造成一张精致的复古杂志风摄影海报，严格沿用示例的视觉风格。\n\n竖版 2:3 上下分屏构图。上半部分放原照片，保留原有颜色、主体、机位、透视、取景和细节。下半部分把完全相同的场景重绘成极简、几何、复古风的 2D 插画。\n\n采用精致的瑞士平面设计和包豪斯式编辑风格。使用柔和的大地色系：暖米色、奶油色、炭黑、灰尘灰、灰蓝、淡棕。把主体和环境简化成干净的几何形、醒目剪影、棱角形状和平涂色块，同时保持原场景构图和可辨认的细节。\n\n加上轻微的旧纸纹理、细颗粒、做旧印刷效果和略微褪色的油墨。在插画周围加入细腻的平面设计元素：细圆弧、横竖对齐辅助线、交叉线、虚线、小方块标记和极简几何网格。\n\n加入小号打字机风格的编辑字体：插画区左上角放一个带编号的“摄影系列”标签，右下角放一个小序号，左下边缘放一个三色色卡。\n\n保持大量留白、精确对齐、比例均衡，呈现优雅的博物馆级美术指导感。\n\n重要：上半部分的原照片不得改变场景。下半部分插画必须表现同一张照片，包括相同的主体、位置、透视、建筑、物体和背景。不要添加新元素，也不要改变原构图。\n\n整体风格：复古摄影期刊、瑞士编辑平面设计、极简建筑插画、复古美术指导、精致印刷设计、经典视觉叙事。高分辨率、细节清晰、竖版海报格式。",
+      "images": [
+        "https://pbs.twimg.com/media/HXs8od5aEAAG9dq?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HXs8od5bUAAWflI?format=jpg&name=large"
+      ]
+    },
+    {
+      "kind": "opinion",
+      "category": "编程",
+      "score": 78,
+      "author": "Zach",
+      "handle": "@ZryMiller",
+      "url": "https://x.com/ZryMiller/status/2124316990919897227",
+      "posted": "2026-11-22",
+      "metrics": "8.9 万查看",
+      "textZh": "一位开发者对比 Gemini 4 Neon 和 Claude Opus 5.5 的使用体验：他仍认为 Opus 5.5 是综合最强、在 Claude Code 里额度也更宽裕，但日常更爱用 Neon。分项看：沟通——Neon 大胜，讲复杂问题最好懂；写代码——他认为 Neon 目前最强，还会把做了什么讲明白；前端审美——Opus 仍然领先；知识面——Neon 很广；3D 演示——Opus 更好；信任度——用得久的 Opus 更放心。这是个人体验，不是正式测评，但和卡兹克的判断（Gemini 好沟通、Claude 审美好）基本一致，可作为选模型的参考。"
+    },
+    {
+      "kind": "news",
+      "category": "编程",
+      "score": 72,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2124726140023537849",
+      "posted": "2026-11-23",
+      "metrics": "3.5 万查看",
+      "textZh": "智谱的新模型 GLM-5.4 已向所有 GLM Coding Plan（智谱的编程订阅套餐）用户开放：新增看图能力，官方称编程能力全面提升；有每周额度的用户，用 GLM-5.4 能用的量比上一代 GLM-5.3 多 50%。消息来自 Z.ai 负责人 Zixuan Li。国内能直接用、价格比海外模型低，适合当 Claude 额度不够时的替补。"
+    },
+    {
+      "kind": "news",
+      "category": "网页设计",
+      "score": 70,
+      "author": "Florence",
+      "handle": "@flxrnc",
+      "url": "https://x.com/flxrnc/status/2123859460233793601",
+      "posted": "2026-11-21",
+      "metrics": "8.3 万查看",
+      "textZh": "一份给用 Claude 做网页的人的 18 个开源仓库清单，目标是让 AI 做出的页面不那么“AI 味”。和你最相关的几个：ui-ux-pro-max（80 种风格、配色、字体组合的 Skill）、Anthropic 官方的 frontend-design Skill、Impeccable（专挑设计毛病的审查工具）、Hallmark、Google 的 DESIGN.md（把品牌风格写成文件给 Agent 读）、Figma Context MCP（让 Agent 直接读 Figma 文件）。其余是 shadcn/ui、Tailwind、Magic UI、Lucide 图标、Excalidraw、Rough.js 手绘风、rembg 抠图等常用库。可以挑一两个 Skill 装上试试，对比做出来的页面差别。"
+    },
+    {
+      "kind": "opinion",
+      "category": "其他",
+      "score": 60,
+      "author": "a16z",
+      "handle": "@a16z",
+      "url": "https://x.com/a16z/status/2123864298288304549",
+      "posted": "2026-11-21",
+      "metrics": "15 万查看",
+      "textZh": "Ruby on Rails 作者 DHH 谈“氛围编程”（vibe coding，指主要靠 AI 生成代码）：很多项目前 80% 进展很快，剩下 20% 有 bug、不够好，人就失去兴趣放弃了。他说自己的成就感全在最后 2%，愿意一直磨到完美的人，在这个时代反而最吃香，因为至少现在还需要人来驾驭这些 Agent；他也还没找到能一次性把设计和所有细节都做完美的方法。对用 Claude 做项目的你，提醒是：做出能跑的版本只是开始，打磨收尾才拉开差距。"
+    }
+  ]
+}
