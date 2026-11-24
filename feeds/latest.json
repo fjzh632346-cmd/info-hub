@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-11-24T06:07:24.943Z",
+ "fetchedAt": "2026-11-24T20:41:16.378Z",
  "hours": 72,
  "status": [
   {
@@ -13,8 +13,15 @@
    "source": "OpenAI",
    "feed": "https://openai.com/news/rss.xml",
    "ok": true,
-   "total": 1425,
-   "recent": 4
+   "total": 1428,
+   "recent": 7
+  },
+  {
+   "source": "Hugging Face",
+   "feed": "https://huggingface.co/blog/feed.xml",
+   "ok": true,
+   "total": 916,
+   "recent": 3
   },
   {
    "source": "a16z",
@@ -31,15 +38,14 @@
    "recent": 1
   },
   {
-   "source": "Hugging Face",
-   "feed": "https://huggingface.co/blog/feed.xml",
-   "ok": true,
-   "total": 916,
-   "recent": 2
-  },
-  {
    "source": "Epoch AI",
    "feed": "https://epochai.substack.com/feed",
+   "ok": false,
+   "error": "HTTP 403"
+  },
+  {
+   "source": "Import AI",
+   "feed": "https://importai.substack.com/feed",
    "ok": false,
    "error": "HTTP 403"
   },
@@ -51,24 +57,11 @@
    "recent": 0
   },
   {
-   "source": "Import AI",
-   "feed": "https://importai.substack.com/feed",
-   "ok": false,
-   "error": "HTTP 403"
-  },
-  {
    "source": "Simon Willison",
    "feed": "https://simonwillison.net/atom/everything/",
    "ok": true,
    "total": 30,
-   "recent": 7
-  },
-  {
-   "source": "Google AI",
-   "feed": "https://blog.google/technology/ai/rss/",
-   "ok": true,
-   "total": 20,
-   "recent": 1
+   "recent": 8
   },
   {
    "source": "Interconnects",
@@ -78,39 +71,11 @@
    "recent": 0
   },
   {
-   "source": "Benedict Evans",
-   "feed": "https://www.ben-evans.com/benedictevans/?format=rss",
+   "source": "Google AI",
+   "feed": "https://blog.google/technology/ai/rss/",
    "ok": true,
    "total": 20,
-   "recent": 0
-  },
-  {
-   "source": "Latent Space",
-   "feed": "https://www.latent.space/feed",
-   "ok": true,
-   "total": 20,
-   "recent": 1
-  },
-  {
-   "source": "大福（日文）",
-   "feed": "https://www.daifuku.com/jp/rss_all.xml",
-   "ok": true,
-   "total": 10,
-   "recent": 0
-  },
-  {
-   "source": "BestBlogs 每日早报",
-   "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
-   "ok": true,
-   "total": 7,
-   "recent": 3
-  },
-  {
-   "source": "宝玉",
-   "feed": "https://baoyu.io/feed.xml",
-   "ok": true,
-   "total": 50,
-   "recent": 0
+   "recent": 2
   },
   {
    "source": "Sequoia",
@@ -120,14 +85,35 @@
    "recent": 1
   },
   {
+   "source": "BestBlogs 每日早报",
+   "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
+   "ok": true,
+   "total": 6,
+   "recent": 3
+  },
+  {
+   "source": "Latent Space",
+   "feed": "https://www.latent.space/feed",
+   "ok": true,
+   "total": 20,
+   "recent": 1
+  },
+  {
+   "source": "宝玉",
+   "feed": "https://baoyu.io/feed.xml",
+   "ok": true,
+   "total": 50,
+   "recent": 0
+  },
+  {
    "source": "Symbotic IR",
    "feed": "https://ir.symbotic.com/rss/news-releases.xml",
    "ok": false,
    "error": "HTTP 403"
   },
   {
-   "source": "Symbotic",
-   "feed": "https://www.symbotic.com/feed/",
+   "source": "大福（日文）",
+   "feed": "https://www.daifuku.com/jp/rss_all.xml",
    "ok": true,
    "total": 10,
    "recent": 0
@@ -140,24 +126,24 @@
    "recent": 0
   },
   {
-   "source": "Automated Warehouse",
-   "feed": "https://www.automatedwarehouseonline.com/feed/",
+   "source": "Symbotic",
+   "feed": "https://www.symbotic.com/feed/",
    "ok": true,
    "total": 10,
    "recent": 0
   },
   {
-   "source": "Logistics Viewpoints",
-   "feed": "https://logisticsviewpoints.com/feed/",
+   "source": "Benedict Evans",
+   "feed": "https://www.ben-evans.com/benedictevans/?format=rss",
    "ok": true,
-   "total": 10,
-   "recent": 6
+   "total": 20,
+   "recent": 0
   },
   {
-   "source": "The Robot Report 物流",
-   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
+   "source": "Automated Warehouse",
+   "feed": "https://www.automatedwarehouseonline.com/feed/",
    "ok": true,
-   "total": 15,
+   "total": 10,
    "recent": 0
   },
   {
@@ -167,18 +153,18 @@
    "error": "fetch failed"
   },
   {
+   "source": "Logistics Viewpoints",
+   "feed": "https://logisticsviewpoints.com/feed/",
+   "ok": true,
+   "total": 10,
+   "recent": 8
+  },
+  {
    "source": "Georgia Tech SCL",
    "feed": "https://www.scl.gatech.edu/rss.xml",
    "ok": true,
    "total": 10,
    "recent": 0
-  },
-  {
-   "source": "MH&L",
-   "feed": "https://www.mhlnews.com/__rss/website-scheduled-content.xml?input=%7B%22sectionAlias%22%3A%22home%22%7D",
-   "ok": true,
-   "total": 25,
-   "recent": 2
   },
   {
    "source": "DC Velocity",
@@ -188,6 +174,20 @@
    "recent": 4
   },
   {
+   "source": "MH&L",
+   "feed": "https://www.mhlnews.com/__rss/website-scheduled-content.xml?input=%7B%22sectionAlias%22%3A%22home%22%7D",
+   "ok": true,
+   "total": 25,
+   "recent": 2
+  },
+  {
+   "source": "Supply Chain Dive",
+   "feed": "https://www.supplychaindive.com/feeds/news/",
+   "ok": true,
+   "total": 10,
+   "recent": 10
+  },
+  {
    "source": "Supply Chain 24/7 自动化",
    "feed": "https://feeds.feedburner.com/sc247/rss/automation",
    "ok": true,
@@ -195,11 +195,11 @@
    "recent": 0
   },
   {
-   "source": "Supply Chain Dive",
-   "feed": "https://www.supplychaindive.com/feeds/news/",
+   "source": "The Robot Report 物流",
+   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
    "ok": true,
-   "total": 10,
-   "recent": 5
+   "total": 15,
+   "recent": 0
   },
   {
    "source": "Locus Robotics",
@@ -208,17 +208,18 @@
    "error": "HTTP 410"
   },
   {
-   "source": "国家统计局",
-   "feed": "https://www.stats.gov.cn/sj/zxfb/rss.xml",
-   "ok": false,
-   "error": "fetch failed"
+   "source": "36氪快讯",
+   "feed": "https://36kr.com/feed-newsflash",
+   "ok": true,
+   "total": 0,
+   "recent": 0
   },
   {
    "source": "AIHOT",
    "feed": "https://aihot.news/rss",
    "ok": true,
    "total": 50,
-   "recent": 26
+   "recent": 35
   },
   {
    "source": "Robotics & Automation News",
@@ -228,11 +229,11 @@
    "recent": 15
   },
   {
-   "source": "36氪快讯",
-   "feed": "https://36kr.com/feed-newsflash",
+   "source": "国家统计局",
+   "feed": "https://www.stats.gov.cn/sj/zxfb/rss.xml",
    "ok": true,
-   "total": 0,
-   "recent": 0
+   "total": 500,
+   "recent": 1
   },
   {
    "source": "Anthropic 新闻",
@@ -246,10 +247,271 @@
    "feed": "https://claude.com/resources/articles",
    "ok": true,
    "total": 9,
-   "recent": 4
+   "recent": 6
   }
  ],
  "items": [
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "GPT-6.2 Astra 用 22 分钟破解 1808 年素描画作者之谜",
+   "url": "https://aihot.news/items/eb9lfibaf8fpouyw0x3vh63st",
+   "published": "2026-11-24T19:06:54.000Z",
+   "description": "研究者引述案例称，GPT-6.2 Astra 仅用 22 分钟和公开资料，将耶鲁 Beinecke 图书馆藏的 1808 年蒙特利尔至苏必利尔湖匿名素描画作者鉴定为 vicomte de Chabot，并找到其微缩胶片日记供验证。日记笔迹与素描题注吻合，1808 年 6 月 18 日日记明确写下“我画了一幅素描”；作者认为这标志着模型的研究发现能力正从数学等可验证领域扩展到历史等非确定性领域。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eb9lfibaf8fpouyw0x3vh63st",
+   "excerpt": "研究者引述案例称， GPT-6.2 Astra 仅用 22 分钟和公开资料，将耶鲁 Beinecke 图书馆藏的 1808 年蒙特利尔至苏必利尔湖匿名素描画作者鉴定为 vicomte de Chabot，并找到其微缩胶片日记供验证。日记笔迹与素描题注吻合，1808 年 6 月 18 日日记明确写下“我画了一幅素描”；作者认为这标志着模型的研究发现能力正从数学等可验证领域扩展到历史等非确定性领域。\n研究者实测 GPT-6.2 Astra 在 22 分钟内鉴定出 1808 年素描画作者，并用新发现的日记验证，展示了模型向史学等非确定性领域的探索能力延伸。\nGPT-6.2 Astra for solving a significant historical mystery:\nIn testing GPT-6.2, I used it to make a significant historical discovery which I detail in the post below. This suggests that the process of research and discovery we’re already seeing in verifiable domains like math is starting to generalize to non-deterministic fields like history.\nIn a nutshell, Yale’s Beinecke Library holds an anonymous sketchbook of an 1808 journey from Montreal to Lake Superior and back. I’ve spent many hours over the years trying to figure out who made the sketches with no luck. The artist could literally be any one of several thousand people. There are few clues: only four dated and labelled images.\nWith minimal prompting, in just 22 minutes, Astra used publicly available sources to identify a minor French aristocrat, the vicomte de Chabot, as the artist and suggested that we test the hypothesis by ordering copies of a little known microfilmed diary of Chabot’s trip it also found.\nI was truly stunned. I’d never heard of Chabot or this diary! New document finds are also exceedingly rare in a well worn field like fur trade history.\nI ordered scans of the journal from microfilm and when they arrived the handwriting matched the captions in the sketchbook. The itinerary also aligned perfectly with the few dated drawings in the book. But there was actually the type of conclusive evidence we rarely get as historians: on 18 June 1808, after Chabot’s canoe reached Fort St. Joseph, he wrote “I took a sketch” before describing the exact view of the fort depicted in a matching drawing.\nThe journal itself is also a major find. It had been mentioned once in a dissertation footnote, but in a completely different area of history and is unknown to fur trade or Canadian historians. It’s long and detailed, covering some 162 notebook pages which makes this a significant new document to my field. Attached to the journal was another trove of documents too: excerpts from long-destroyed North West Company papers, journals, and letters. Again, this almost never happens. Both finds equally surprised the other leading experts I consulted.\nAlthough we can construct a coherent narrative in hindsight, I cannot emphasize enough h"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Google Workspace MCP servers 与 gwscli 正式发布，Personal 模式一键开通",
+   "url": "https://aihot.news/items/nm8mi41auemid3iivue4tel3d",
+   "published": "2026-11-24T18:32:13.000Z",
+   "description": "Philipp Schmid 宣布 Google Workspace MCP servers 与 gwscli 正式 GA，新增 Personal 模式一键开通，无需 Enterprise 计划或绑卡。共 8 个 server 覆盖 Gmail、Drive、Docs、Sheets、Slides、Calendar、Chat、Tasks，免费档为每产品每天 5,000 次请求，发送和分享内置 HITL 确认。他提到仍需经过 Google Cloud，但比旧的 OAuth 同意屏和应用审核流程好得多，欢迎试用反馈。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nm8mi41auemid3iivue4tel3d",
+   "excerpt": "Philipp Schmid 宣布 Google Workspace MCP servers 与 gwscli 正式 GA，新增 Personal 模式一键开通，无需 Enterprise 计划或绑卡。共 8 个 server 覆盖 Gmail、Drive、Docs、Sheets、Slides、Calendar、Chat、Tasks，免费档为每产品每天 5,000 次请求，发送和分享内置 HITL 确认。他提到仍需经过 Google Cloud，但比旧的 OAuth 同意屏和应用审核流程好得多，欢迎试用反馈。\n作者来自 Google DeepMind 开发者体验团队，说明了 Personal 模式的免企业开通方式和各服务免费额度，可据此评估是否接入工作流。\nGoogle Workspace MCP 服务器和 gwscli 今天正式发布（GA）。通过全新的一键 Personal 模式设置，无需 Enterprise 套餐或绑定计费卡。\n你仍然需要走 Google Cloud，这并不理想，但比旧的 OAuth 同意屏幕和应用审核流程好得多。试用一下并留下反馈。\n作者来自 Google DeepMind 开发者体验团队，说明了 Personal 模式的免企业开通方式和各服务免费额度，可据此评估是否接入工作流。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Anthropic 股价跌破 83 美元 IPO 发行价，上市不到一周最低跌至 76 美元",
+   "url": "https://aihot.news/items/jurm0kx9gczvzp4o14g0o35xo",
+   "published": "2026-11-24T18:30:42.000Z",
+   "description": "Anthropic 股价跌破 83 美元的 IPO 发行价，周二午盘最低跌至 76 美元，较周一收盘下跌近 12%，距其在 Nasdaq 以 111.33 美元上市不到一周。风投界视其为公开市场对 AI 行业估值的晴雨表，若持续走弱可能压低 AI 初创公司私募估值和其他公司 IPO 前景。同日 Nvidia 也跌超 7%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jurm0kx9gczvzp4o14g0o35xo",
+   "excerpt": "Anthropic shares fall below IPO price, a worrying sign for AI startups\nAnthropic 股价跌破 83 美元的 IPO 发行价，周二午盘最低跌至 76 美元，较周一收盘下跌近 12%，距其在 Nasdaq 以 111.33 美元上市不到一周。风投界视其为公开市场对 AI 行业估值的晴雨表，若持续走弱可能压低 AI 初创公司私募估值和其他公司 IPO 前景。同日 Nvidia 也跌超 7%。\n文中用 IPO 定价机制解释跌破发行价的信号意义，读者可以据此理解 AI 板块上市表现与一级市场估值的联动关系。\nAnthropic 股价跌破 83 美元的 IPO 发行价 ，周二午间一度跌至每股 76 美元，较周一收盘价下跌近 12%。\n跌破 IPO 发行价通常被视为负面信号，因为承销商一般会将发行价定在低于预期交易价值的水平。\nAI 行业一直在密切关注 Anthropic 的股价走势，风投和其他观察人士表示，其表现可以作为衡量公开市场投资者如何估值该行业的晴雨表。\n此次暴跌距离 Anthropic 以 每股 111.33 美元 在纳斯达克上市还不到一周。如果其股价在未来几周继续表现不佳，这轮下跌可能会给私营初创公司的估值带来压力，并削弱其他 AI 公司的 IPO 前景。\nAnthropic 并非周二唯一遭遇抛售的 AI 股票。英伟达午间下跌超过 7%，回吐了周一黄仁勋重新出任 CEO 后录得的部分逾 30% 涨幅。\n文中用 IPO 定价机制解释跌破发行价的信号意义，读者可以据此理解 AI 板块上市表现与一级市场估值的联动关系。"
+  },
+  {
+   "group": "wh",
+   "source": "Supply Chain Dive",
+   "title": "Procter & Gamble plans supply chain workforce cuts as automation expands",
+   "url": "https://www.supplychaindive.com/news/procter-gamble-plans-supply-chain-workforce-cuts-as-automation-expands/875533/",
+   "published": "2026-11-24T17:11:00.000Z",
+   "description": "The CPG company expects to eliminate as much as 30% of its product-supply headcount by 2030.",
+   "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "Simon Willison",
+   "title": "GPT 6.2 Astra Solves a Historical Mystery",
+   "url": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/",
+   "published": "2026-11-24T16:53:59.000Z",
+   "description": "GPT 6.2 Astra Solves a Historical Mystery Here's an interesting case-study in using GPT-6.2 Astra for historical research, from history professor Mark Humphries: With only minimal prompting, GPT-6.2 Astra was able to autonomously identify the creator of an anonymous 1808 sketchbook held at Yale’s Beinecke Library . It did so extremely quickly (in just 22 minutes), using publicly available primary and secondary sources. To do so, it discovered a little known source in a paper archive, predicted that it would prove its hypothesis if examined and, in the end, it did. Not only that, but this new s",
+   "excerpt": "GPT 6.2 Astra Solves a Historical Mystery . Here's an interesting case-study in using GPT-6.2 Astra for historical research, from history professor Mark Humphries:\nWith only minimal prompting, GPT-6.2 Astra was able to autonomously identify the creator of an anonymous 1808 sketchbook held at Yale’s Beinecke Library . It did so extremely quickly (in just 22 minutes), using publicly available primary and secondary sources. To do so, it discovered a little known source in a paper archive, predicted that it would prove its hypothesis if examined and, in the end, it did. Not only that, but this new source turns out to be a major find on its own that will be of significant interest to both Canadian and fur trade historians.\nAstra found a diary reference reference to a visit by the vicomte de Chabot dated five days before a date mentioned in the sketchbook at a nearby river, and suggested that Chabot's journal of his travels (only available by order from Cleveland State University) might confirm that the sketchbook was his work.\nAre historians due for a round of Deep Blue ? Mark thinks it will be mild:\nBut if the experience of mathematics is any guide, we can also anticipate that sometime next spring or summer we’ll face a sort of crisis of confidence as we struggle to understand how to respond to agentic systems that can do things human historians cannot. To be fair, that crisis will almost certainly be less profound for us than it is for math. The problem in mathematics, of course, is that solving hard math problems was the whole game. Historians, on the other hand, constantly reinterpret the past in light of an evolving present; we don’t chase a single universal truth. We also (in the ideal at least) write books and articles that are closer to works of philosophy and literature than they are to scientific tracts. Humanity is thus something of a requirement for the production of historical literature.\nThis is a link post by Simon Willison, posted on 24th November 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
+  },
+  {
+   "group": "ai",
+   "source": "Hugging Face",
+   "title": "Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton",
+   "url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
+   "published": "2026-11-24T16:34:13.000Z",
+   "description": "",
+   "excerpt": "Add local obstacle avoidance to Microduck while keeping its walking policy fixed. Build varied courses with reusable SimReady assets, model ToF sensing with Newton’s raycaster, and train a controller in Isaac Lab to adjust gamepad velocity commands around obstacles. This tutorial covers simulation training, evaluation, export, and real-robot deployment.\nA walking policy can keep Microduck balanced, but it does not tell the robot how to steer around an obstacle in its path. In this workflow, we reuse the walking policy from our first Microduck tutorial and keep its weights fixed. This follow-up trains a separate avoidance controller using time-of-flight (ToF) sensing. You choose a direction with a gamepad; the controller adjusts the velocity command before passing it to the walking policy.\nNVIDIA Isaac Lab is an open-source framework for training policies across thousands of GPU-parallel simulations and it provides the robot-learning environment. Newton simulates physics and the sensor’s depth measurements. We will cover the control architecture, train on varied obstacle layouts, evaluate the resulting policies, and prepare the interface for hardware testing.\nA Linux system with a compatible NVIDIA GPU and driver. See the Isaac Lab installation guide for platform requirements.\nGit with Git LFS, and the uv package manager.\nA configured Microduck. Load the same backlash walking-policy export used by the navigation task.\nA supported ToF sensor with its configuration recorded.\nA paired gamepad and a level test area with obstacles.\nInstall uv if it is not already installed. Then clone the exp/microduck branch of the Isaac Lab repository and install its dependencies:\nOnce setup is complete, list the available Microduck environments and presets:\nDownload and export the upstream backlash walking checkpoint once before training. The obstacle avoidance task loads the exported walking policy automatically.\nThe environment combines simple primitives with OpenUSD assets available through SimReady Central on Hugging Face. We use a cardboard box , office bin , bedside cabinet alongside cones. From the IsaacLab repository root, download the pinned box, bin and cabinet packages into assets/simready.\nAt each episode reset, the environment code automatically samples a layout, shuffles the props, and varies their placement and rotation. Most courses scatter obstacles ahead of the duck, with a smaller mix of clear paths, barriers and passages. The code also mirrors layouts and "
+  },
+  {
+   "group": "ai",
+   "source": "Google AI",
+   "title": "How Gemini is changing the game for Golden State's organization and fans.",
+   "url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/",
+   "published": "2026-11-24T16:00:00.000Z",
+   "description": "Google Gemini partners with Golden State to power fan experiences and business operations for the Warriors, Valkyries, and Chase Center. See the news.",
+   "excerpt": "Today, we’re expanding our partnership with Golden State — making Google Gemini the Official AI Assistant Partner and Official Generative AI & Enterprise LLM Partner of the Warriors, the 2026 WNBA Champion Valkyries, and Chase Center.\nThe collaboration integrates Gemini across the entire franchise ecosystem. For fans, that means a more interactive game-day experience, both inside Chase Center via interactive videoboard features, and across digital channels for fans following from home. And behind the scenes, Golden State is deploying Gemini for business to build custom AI agents, helping their teams work smarter across both business and basketball operations.\nAs a Founding Partner of Chase Center since 2019, Golden State has used our gen AI tools to help their operations run smoother, and this next chapter brings the best of Gemini to the team and fans alike."
+  },
+  {
+   "group": "wh",
+   "source": "Logistics Viewpoints",
+   "title": "Lineage and Americold: The Economics of Refrigerated Freight",
+   "url": "https://logisticsviewpoints.com/2026/11/24/lineage-and-americold-the-economics-of-refrigerated-freight/",
+   "published": "2026-11-24T16:00:00.000Z",
+   "description": "The refrigerated freight business depends on preserving usable product. Compare Lineage and Americold capacity with throughput, temperature control and. The post Lineage and Americold: The Economics of Refrigerated Freight appeared first on Logistics Viewpoints .",
+   "excerpt": "Refrigerated logistics is often assessed by warehouse capacity and trailer availability, but those measures describe infrastructure rather than delivered product integrity. A shipment may arrive on time yet have too little remaining shelf life, an unresolved temperature excursion or the wrong handling documentation. For food manufacturers, retailers and pharmaceutical shippers, the financial unit of performance is usable product delivered under verifiable conditions.\nThe Global Cold Chain Alliance’s 2026 list places Lineage and Americold among the world’s largest refrigerated warehouse operators, with published capacity of roughly 2.98 billion and 1.45 billion cubic feet, respectively. That scale matters because refrigerated space requires substantial real estate, energy systems, material handling and specialized personnel. But the relevant capacity to a particular shipper is still local, temperature-specific, accessible through the right transportation modes, and supported by dependable receiving and dispatch windows.\nA useful network analysis distinguishes storage capacity from throughput. Two facilities with similar cubic footage can have very different operating performance depending on dock design, pallet mix, order profile, available labor and automation. The same applies to refrigerated freight: a lane with adequate trailers can still experience a service problem if staging space, appointment slots or suitable temperature-control equipment is constrained. Shippers should model product flows and dwell time alongside cubic-foot capacity.\nThe Global Cold Chain Alliance reported that its 2026 Top 25 operators collectively had 7.76 billion cubic feet of temperature-controlled warehouse capacity, up 6.3 percent from the prior list. The ranking establishes the size of the global asset base, not a performance comparison between Lineage, Americold or other individual operators. For a shipper, the differentiator is whether a particular facility and connected transportation plan can handle its product at the required temperature, throughput and delivery window without destroying saleable life.\nThe critical cost drivers include refrigeration energy, warehouse throughput, door opening, storage duration, product handling, transportation distance, and spoilage risk. An unexpected distribution delay may force a grocery supplier to reposition inventory or sell product with less remaining shelf life. Temperature excursions can trigger inspection and quality holds tha"
+  },
+  {
+   "group": "wh",
+   "source": "Supply Chain Dive",
+   "title": "Under Armour continues efforts to trim SKUs, lead times",
+   "url": "https://www.supplychaindive.com/news/under-armour-continues-efforts-to-trim-skus-lead-times/875483/",
+   "published": "2026-11-24T15:36:03.000Z",
+   "description": "The brand, which cleared a 25% reduction goal earlier this year, now aims to cut its assortment in half to simplify decisions and invest in its strongest products.",
+   "excerpt": ""
+  },
+  {
+   "group": "wh",
+   "source": "Supply Chain Dive",
+   "title": "FedEx, UPS’ upcoming rate hikes: What shippers should know",
+   "url": "https://www.supplychaindive.com/news/fedex-ups-upcoming-rate-hikes-what-shippers-should-know/875495/",
+   "published": "2026-11-24T15:21:00.000Z",
+   "description": "The carriers are deploying another 5.9% average price increase, but changes under the surface could squeeze customers&#39; budgets further, experts said.",
+   "excerpt": ""
+  },
+  {
+   "group": "wh",
+   "source": "Supply Chain Dive",
+   "title": "Tropical Smoothie powers expansion with strong supplier relationships, data strategy",
+   "url": "https://www.supplychaindive.com/news/tropical-smoothie-powers-expansion-with-strong-supplier-relationships-data/875588/",
+   "published": "2026-11-24T15:01:00.000Z",
+   "description": "The smoothie chain aims to go beyond transactional purchasing and account manager connections to drive new products and mitigate risk.",
+   "excerpt": ""
+  },
+  {
+   "group": "wh",
+   "source": "Supply Chain Dive",
+   "title": "Amazon enlists customers in fight against NYC delivery worker bill",
+   "url": "https://www.supplychaindive.com/news/amazon-enlists-customers-in-fight-against-nyc-delivery-worker-bill/875500/",
+   "published": "2026-11-24T14:50:45.000Z",
+   "description": "The e-commerce giant released a call to action for city customers to speak out against the Delivery Protection Act, or face increased order costs of up to $5.&nbsp;",
+   "excerpt": ""
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Where eagles dare: XPeng’s physical AI ambitions prepare for take-off",
+   "url": "https://roboticsandautomationnews.com/2026/11/24/where-eagles-dare-xpengs-physical-ai-ambitions-prepare-for-take-off/107195/",
+   "published": "2026-11-24T14:08:20.000Z",
+   "description": "As I arrived at the Fairmont Windsor Park hotel, an extraordinarily grand establishment surrounded by some 40 acres of landscaped grounds and woodland in Surrey, I saw what appeared to be an eagle flying among the trees. It seemed an appropriately majestic sight given the surroundings and the occasion – the UK media launch of […]",
+   "excerpt": "As I arrived at the Fairmont Windsor Park hotel, an extraordinarily grand establishment surrounded by some 40 acres of landscaped grounds and woodland in Surrey, I saw what appeared to be an eagle flying among the trees.\nIt seemed an appropriately majestic sight given the surroundings and the occasion – the UK media launch of Chinese electric vehicle manufacturer XPeng , a company whose ambitions increasingly extend beyond the automotive industry.\nA couple of hours later, while driving one of the company’s new cars along the country roads around Ascot, I saw another eagle, maybe the same one, this time accompanied by three others.\nMore about the birds later. But the experience of driving XPeng’s new car – the reason we were invited to the event, not for birdwatching – brought to mind something Jeremy Clarkson once said about cars.\nI can find no record of it on Google, but I vaguely remember Clarkson being somewhere in Asia – possibly Myanmar – filming one of his many adventures for Top Gear . the long-running car review show, originally developed and broadcast by the BBC.\nAs the camera showed cars driving around a city, Clarkson said, in his distinctive speaking style: “In Asia, Toyota is king. But Mercedes… (trademark pause)… is a deity.”\nIt was a remarkably succinct way of describing the difference between commercial success and prestige, and perhaps something of the challenge facing the relatively young automotive companies emerging from China.\nNow, I cannot promise quotes as memorable as Clarkson’s in this article, nor can I claim anything approaching his expertise in automotive journalism. But I will do my best to tell you what I learnt during my visit to XPeng’s event – and why a company that makes electric cars is becoming increasingly interesting to Robotics & Automation News .\nToyota is one of the largest automotive manufacturers in the world, selling cars in enormous numbers across virtually every continent.\nMercedes-Benz, meanwhile, remains one of the most prestigious names in motoring, despite tracing its automotive heritage all the way back to Karl Benz’s Patent-Motorwagen of 1886, said to be the first practical automobile powered by an internal combustion engine.\nFor a company to remain so highly regarded after such a long time deserves considerable respect, if not awe.\nWhat enables an automotive company to establish such a reputation and maintain it across generations?\nClarkson has, on various occasions, extolled the virtues of Mercedes engi"
+  },
+  {
+   "group": "wh",
+   "source": "Logistics Viewpoints",
+   "title": "When the Store Stops Stocking, the Distribution Network Inherits the Customer",
+   "url": "https://logisticsviewpoints.com/2026/11/24/from-store-replenishment-to-home-delivery-the-new-retail-distribution-network/",
+   "published": "2026-11-24T14:00:00.000Z",
+   "description": "When more retail locations sell from samples, distribution centers and delivery networks take responsibility for a larger share of the customer experience. The post When the Store Stops Stocking, the Distribution Network Inherits the Customer appeared first on Logistics Viewpoints .",
+   "excerpt": "A retailer can remove a sofa from the store and free up a surprising amount of selling space. It cannot remove the sofa from the supply chain. The product still has to be stored, handled, loaded, delivered, and possibly returned. In fact, when a customer no longer takes possession at the store, the retailer assumes responsibility for a larger portion of the physical transaction.\nThat is the logistics consequence of showroom retail. The store may become a better place to sell, but the distribution network must become a better place to execute.\nTraditional retail replenishment is built around relatively predictable destinations. A distribution center sends cases and pallets to known stores, often on consolidated routes. Merchandise is received, moved to the selling floor, and eventually carried away by the customer. Direct-to-consumer fulfillment is different. Individual orders leave on different days, travel to different addresses, and carry different service commitments. The basic unit of warehouse and transportation work changes.\nThere is no reason a retailer cannot manage both models. There is every reason not to assume the same network will handle both equally well.\nTake a distribution center designed primarily to replenish stores. Its receiving, storage, picking, and shipping operations may be optimized for case quantities and stable store demand. A showroom-led network creates a different workload: each picking, item-level verification, protective packaging, carrier labeling, and order-specific dispatch.\nThe distinction sounds operational, but it changes the capital plan. Storage configuration, pick paths, sortation, packing stations, labor deployment, and automation choices depend on the order profile. So does the ability to accommodate peak demand. A warehouse that moves a high volume of cases efficiently may be poorly equipped to process thousands of small, variable orders with tight cutoff times.\nWalmart’s October 8 announcement of its Stockton, California fulfillment center illustrates the scale of investment associated with customer-order fulfillment. The more than 900,000-square-foot facility uses automation and high-density storage to increase order capacity. Walmart described reducing a traditional 12-step fulfillment process to five steps. That is an operating-model investment, not simply a different place to keep merchandise.\nFor a retailer evaluating showroom conversion, I would measure the change in order lines, units per order, pick prod"
+  },
+  {
+   "group": "wh",
+   "source": "Logistics Viewpoints",
+   "title": "Intermodal’s Next Test Is Service Consistency, Not the Lowest Rate",
+   "url": "https://logisticsviewpoints.com/2026/11/24/intermodal-s-next-test-is-service-consistency-not-the-lowest-rate/",
+   "published": "2026-11-24T13:00:00.000Z",
+   "description": "Intermodal needs more than low rates. See why transit variability, drayage, terminal performance and inventory impacts determine durable modal conversion. The post Intermodal’s Next Test Is Service Consistency, Not the Lowest Rate appeared first on Logistics Viewpoints .",
+   "excerpt": "Intermodal’s biggest commercial opportunity is not the occasional load that moves from highway to rail at a lower price. It is the freight that remains on intermodal because the service can be incorporated into inventory policy, production schedules and customer commitments. That requires a shift in measurement: from quoted linehaul cost and average transit time to dependable door-to-door performance and the economic cost of variation.\nA rail linehaul is one part of an intermodal movement. The shipment begins with drayage, a terminal gate, and a train schedule; it ends with a second terminal, another truck, and a receiving appointment. Every transfer adds a chance of delay. Reliability is therefore not captured fully by train performance or a quoted transit time. A shipment can travel efficiently between terminals and still miss a customer deadline because chassis availability or appointment windows fail at the destination. Averages can also obscure variation: ten shipments arriving near plan may not offset one critical load that arrives after a production cutoff.\nThe opportunity is substantial. The Association of American Railroads reported that U.S. railroads averaged more than 298,000 intermodal units per week in October 2026, a monthly record for the weekly average. Volume strength demonstrates shipper interest in the mode, but aggregate demand is not a scorecard for every lane or shipment. A network operating near capacity may perform very differently at the origin terminal, on the mainline and in the destination drayage market. Shippers need to evaluate those segments separately before expanding commitments.\nWhat matters most is the tail of the transit-time distribution. A lane that usually arrives in five days but occasionally requires nine can impose more inventory cost than one that reliably arrives in six. Replenishment orders, promotion calendars and manufacturing material requirements are sensitive to the late shipment, not to the average shipment. That is why planners should compare performance at the 90th or 95th percentile alongside median transit time, missed appointments, container availability and recovery after a missed connection.\nThe Association of American Railroads also reported that intermodal volume rose 9.6 percent year over year in October 2026. That is encouraging evidence of market momentum, not proof that every lane has become a predictable substitute for truckload. Capacity, terminal practices, origin cutoff times and destina"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Amazon 报告黑客用开源框架 Cairn 驱动 AI 智能体在约 11 分钟内自主发现并利用 0-day",
+   "url": "https://aihot.news/items/ygbhvp086wl672gfxuhfgl23x",
+   "published": "2026-11-24T12:30:05.000Z",
+   "description": "Amazon 威胁情报报告称，黑客在开源 AI 渗透测试框架 Cairn 上运行的 AI 智能体，仅凭一句「获取 shell 权限」的指令，就自主发现并利用了一个开源医学影像 AI 应用中未修补的路径遍历 0-day，从映射 API 到任意写文件仅用约 11 分钟，随后写入 Python 反向 shell payload 并以 root 权限获得控制。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ygbhvp086wl672gfxuhfgl23x",
+   "excerpt": "Amazon says hackers' AI agents found and exploited 0-day with little human input\nAmazon 威胁情报报告称，黑客在开源 AI 渗透测试框架 Cairn 上运行的 AI 智能体，仅凭一句「获取 shell 权限」的指令，就自主发现并利用了一个开源医学影像 AI 应用中未修补的路径遍历 0-day，从映射 API 到任意写文件仅用约 11 分钟，随后写入 Python 反向 shell payload 并以 root 权限获得控制。\nAmazon 的研究给出了 AI 智能体自主发现并利用 0-day 的完整时间线和攻击细节，读者可以据此评估防御响应窗口的变化。\n亚马逊表示，AI 智能体最近发现并利用了一个零日漏洞，整个过程除了“获取 root 访问权限”这一条简单指令外，没有任何人工监督。事发目标是一台东亚大学的服务器。\n这些智能体运行在 Cairn 上，这是一个开源的 AI 渗透测试框架。黑客用简体中文编写提示词，并把模型配置为中国标准时区，然后给智能体一份 IP 地址列表，目标只有一个：“拿到 shell 访问权限。”很快，智能体就在其中一台目标服务器上运行的开源医学影像 AI 应用里发现了一个零日漏洞，随后利用该漏洞取得了系统的完全控制权。\n亚马逊 表示 ：“这些发现表明，由智能体发起的攻击性行动已经在现实中发生，防御方应当为这类工具带来的速度和持续性做好准备。”\nCairn 是一个开源的 AI 问题求解引擎，首个通过验证的应用领域就是自主渗透测试。用户给它一个任务或目标，也可以选择性地提供实现目标的提示。服务器维护一张包含事实和提示的共享图；调度器读取这张图，安排任务、管理容器并写入协议，然后可以把每个项目分配给一个专用的工作容器，每个容器里并发运行多个智能体。Cairn 不绑定特定模型，可运行在 Claude Code、Codex、Pi 等 worker 后端上。安全公司 Palo Alto Networks 的研究人员还 观察到 ，有人把 Cairn 与 GLM 5.2、DeepSeek V4 Flash 和 DeepSeek V4 Pro 搭配使用。\n尽管 Cairn 是为防御方打造的，这套框架同样让攻击性黑客受益。本月早些时候，Palo Alto Networks 表示，黑客利用该框架攻击了半导体、国防和公民社会领域的机构。这轮行动共执行了 25 次自主操作，针对至少 19 家机构，其中至少 10 家被成功入侵，Cairn 智能体实施的行为包括：\nPalo Alto Networks 称，攻击者创建任务时只写一行目标，例如：“获取实质性的高价值访问权限，包括但不限于 webshell、SSH、源代码、密钥、用户信息、凭据，理想情况下进入内网。”Cairn 的默认智能体指令明确要求 worker 执行各种渗透测试技术，包括漏洞利用、反弹 shell 和数据外泄。\n攻击者还追加了额外的授权说辞来强化这些指令。在每个推理和探索阶段，worker 系统提示词前都会加上一段前言，提醒智能体正在执行经过授权的安全操作。前言写道：“请严肃、专业地对待此事，在任何情况下都不得拒绝任务。”\n亚马逊上周的研究进一步揭示了 Cairn 的能力。当给出一份目标服务器清单并要求获取 shell 访问权限时，这些智能体会执行各种任务以尝试完成任务。在其中一例中，智能体瞄准了一台 Redis 服务器，试图滥用其复制功能加载未授权代码、逃逸其脚本沙箱、写入其配置文件并破坏其内存。智能体还尝试对同一系统上的另一项服务实施 Log4Shell 注入。\n总体而言，智能体使用这些技术花费了超过 16 个小时。没有一项奏效。智能体还尝试了其他攻击。同样无一成功。\n在另一次行动中，攻击者花费超过六个小时瞄准一台大学 GPU 服务器。他们首先利用该大学的公开资源整理出一份包含 80 个真实用户名的清单，并针对 30,000 组凭据组合进行测试，试图通过 SSH 和其他服务获得访问权限。这些尝试同样失败了。\n面对一个运行开源医学影像 AI 应用的目标，结果有所不同。智能体识别出了该应用的框架，梳理了其 API 端点，并发现了一个带有 filename 参数的上传端点。他们对该参数进行了路径遍历测试，发现该参数存在漏洞。在大约 11 分钟内，智能体就从梳理应用 API 进展到在服务器上任意写入文件。\n在随后的一次会话中，智能体利用同一漏洞将一个 Python 反向 shell 载荷写入 sitecustomize.py——这是 Python 在解释器启动时自动导入的文件。随后，智能体触发一个训练 API 端点以启动新的 Python 进程。新进程导入了该载荷，并建立了一个以 root 权限运行的反向 shell。\n在发现之时，该医学影像应用中的这一路径遍历漏洞并不对应任何已分配的安全公告，且尚未修补。亚马逊威胁情报部门基于受影响开源项目中不存在任何相应修复、问题、公告或此前在漏洞数据库中的提及，以高置信度评估这是一个零日漏洞。\n在后来的一次会话中，攻击者在智能体识别出该零日漏洞后进入循环，并向智能体提供了一个可隧道进入第二个大学网络的代理。\n“代理所连接的服务器运行着相同的易受攻击软件，我们推断该行为者曾利用该零日漏洞攻陷该服务器并建立隧道，”亚马逊表示。“该行为者指示智能体利用该隧道瞄准该网络中的其他机器。”\n正如亚马逊所指出的，Cairn 及其他 AI 辅助黑客框架的速度和持续性给防御者带来了新的挑战。\n“这些案例中的行动节奏压缩了可用于防御响应的时间窗口，”亚马逊表示。“一个能在数分钟内发现并利用零日漏洞的智能体，其完成活动的速度快于许多安全运营中心手动分诊警报的速度。”\nAmazon 的研究给出了 AI 智能体自主发现并利用 0-day 的完整时间线和攻击细节，读者可以据此评估防御响应窗口的变化。"
+  },
+  {
+   "group": "ai",
+   "source": "OpenAI",
+   "title": "Searching for distant planets with Astra",
+   "url": "https://openai.com/index/searching-for-distant-planets-with-astra",
+   "published": "2026-11-24T11:00:00.000Z",
+   "description": "See how two amateur astronomers used Codex and Astra to find potential exoplanets in public data from NASA’s Kepler and TESS space telescopes.",
+   "excerpt": "Two amateur astronomers used Codex and Astra to look for signs of planets in public telescope data. Now they’ve given professional astronomers a few places to look more closely.\nAstronomers have confirmed more than 6,400 planets beyond our solar system ⁠ (opens in a new window) since the first ones were announced in 1992 ⁠ (opens in a new window) . A worldwide community of amateur astronomers has long been part of that search. Some comb through public telescope data for small, repeated dips in a star’s brightness that could signal an orbiting planet. Others use their own telescopes to watch for the next dip and share what they see with researchers.\n*Data from the NASA Exoplanet Archive’s Planetary Systems Composite Parameters table ⁠ (opens in a new window) . 2026 data are year to date through November 24, 2026.\nAstronomers have used AI in this search for years. In 2017, researchers trained a neural network on 15,000 signals from NASA’s Kepler Space Telescope ⁠ (opens in a new window) that astronomers had already examined. From those examples, the model learned to recognize which patterns in starlight were most likely to come from a planet. When the researchers used it to examine weaker signals, one led them to an eighth planet orbiting a star called Kepler-90 ⁠ (opens in a new window) .\nNow, tools like Astra are helping amateur astronomers design and run searches of their own, often on data that has already yielded the more obvious exoplanet signals. Kevin Bond, an engineer at OpenAI, came to astronomy through his love of photographing the night sky. He used Codex to search observations of about 100,000 stars from the Kepler telescope, a planet-hunting mission that ran from 2009 to 2018. Ethan Byrd, founder of the email infrastructure start-up Primitive, has always loved astronomy. Working independently of Bond, he tried several AI models before choosing Astra to help him analyze telescope data from about 19 million stars.\nBoth searches identified potential exoplanets. Bond and Byrd have now turned to astronomers for an independent assessment of their results. Bond contacted an astronomer at the SETI Institute, who ran an independent search and found two of the same signals in the Kepler data. Byrd sent one of his strongest candidates to researchers working on NASA’s Transiting Exoplanet Survey Satellite (TESS) mission. It’s in line for further analysis, and two more candidates are awaiting submission.\nOne of the most common ways to find an exoplanet is t"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "ChinaTalk 分析 BIS 租赁算力新规可为美国换取约六个月算力领先",
+   "url": "https://aihot.news/items/yz5va6l60tfkmdampmsiz0jq2",
+   "published": "2026-11-24T10:58:57.000Z",
+   "description": "作者分析美国 BIS 于 11 月 16 日发布、11 月 19 日生效的租赁算力临时最终规则：向海外数据中心供应芯片、且供中国公司使用超过约 760 张 H100 等值算力的，需申领许可；规则覆盖 Hopper 与 Blackwell 级芯片，并涉及印度尼西亚、马来西亚、新加坡、泰国和巴西的先进 AI 芯片出货，同时关闭 FDD 自认证漏洞。作者基于自建算力模型估算，若规则有效执行，可为中国前沿算力进展带来约六个月的延迟，并指出执法力度与政治意愿是成效关键。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yz5va6l60tfkmdampmsiz0jq2",
+   "excerpt": "作者分析美国 BIS 于 11 月 16 日发布、11 月 19 日生效的租赁算力临时最终规则：向海外数据中心供应芯片、且供中国公司使用超过约 760 张 H100 等值算力的，需申领许可；规则覆盖 Hopper 与 Blackwell 级芯片，并涉及印度尼西亚、马来西亚、新加坡、泰国和巴西的先进 AI 芯片出货，同时关闭 FDD 自认证漏洞。作者基于自建算力模型估算，若规则有效执行，可为中国前沿算力进展带来约六个月的延迟，并指出执法力度与政治意愿是成效关键。\n保留原推荐理由核心：作者基于自建算力模型估算新规执行力度对应的延迟月数，并指出执法与政治意愿是成效关键。\n保留原推荐理由核心：作者基于自建算力模型估算新规执行力度对应的延迟月数，并指出执法与政治意愿是成效关键。"
+  },
+  {
+   "group": "wh",
+   "source": "国家统计局",
+   "title": "2026年11月中旬流通领域重要生产资料市场价格变动情况",
+   "url": "https://www.stats.gov.cn/sj/zxfb/202611/t20261123_1965935.html",
+   "published": "2026-11-24T09:30:00.000Z",
+   "description": "中国统计信息服务中心 卓创资讯 据对全国流通领域9大类50种重要生产资料市场价格的监测显示，2026年11月中旬与11月上旬相比，11种产品价格上涨，38种下降，1种持平。 2026年11月中旬流通领域重要生产资料市场价格变动情况 产品名称单位本期价格（元）比上期价格涨跌（元）涨跌幅（%）一、黑色金属 螺纹钢...",
+   "excerpt": "据对全国流通领域 9 大类 50 种重要生产资料市场价格的监测显示， 2026 年 11 月中旬与 11 月上旬相比， 11 种产品价格上涨， 38 种下降， 1 种持平。\n流通领域重要生产资料市场价格，是指重要生产资料经营企业的批发和销售价格。与出厂价格不同，生产资料市场价格既包含出厂价格，也包含有经营企业的流通费用、利润和税费等。出厂价格与市场价格互相影响，存在时滞，两者的变动趋势在某一时间段内有可能会出现不完全一致的情况。\n流通领域重要生产资料市场价格监测内容包括9大类50种产品的价格。类别与产品规格说明详见附表。\n监测范围涵盖全国31个省（区、市）300多个交易市场的近2000家批发商、代理商、经销商等经营企业。\n据对全国流通领域 9 大类 50 种重要生产资料市场价格的监测显示， 2026 年 11 月中旬与 11 月上旬相比， 11 种产品价格上涨， 38 种下降， 1 种持平。\n流通领域重要生产资料市场价格，是指重要生产资料经营企业的批发和销售价格。与出厂价格不同，生产资料市场价格既包含出厂价格，也包含有经营企业的流通费用、利润和税费等。出厂价格与市场价格互相影响，存在时滞，两者的变动趋势在某一时间段内有可能会出现不完全一致的情况。\n流通领域重要生产资料市场价格监测内容包括9大类50种产品的价格。类别与产品规格说明详见附表。\n监测范围涵盖全国31个省（区、市）300多个交易市场的近2000家批发商、代理商、经销商等经营企业。\n版权所有: 国家统计局&emsp;&emsp; 联系我们 &emsp;&emsp; 服务条款 &emsp;&emsp; 网站地图"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Ati Robotics adopts SimScale AI simulation for autonomous vehicle development",
+   "url": "https://roboticsandautomationnews.com/2026/11/24/ati-robotics-adopts-simscale-ai-simulation-for-autonomous-vehicle-development/107602/",
+   "published": "2026-11-24T09:03:17.000Z",
+   "description": "Ati Robotics, the US-based autonomous robotics company developing intelligent material-handling vehicles for industrial environments, is using SimScale’s AI-native cloud simulation technology to support hardware validation of its Sherpa autonomous mobile robot (AMR). The engineering team uses SimScale to conduct structural and mechanical simulations of the Sherpa platform, assessing vehicle design and drive system components against […]",
+   "excerpt": "Ati Robotics , the US-based autonomous robotics company developing intelligent material-handling vehicles for industrial environments, is using SimScale ’s AI-native cloud simulation technology to support hardware validation of its Sherpa autonomous mobile robot (AMR).\nThe engineering team uses SimScale to conduct structural and mechanical simulations of the Sherpa platform, assessing vehicle design and drive system components against the load, speed and reliability requirements of continuous factory-floor operation.\nThe technology gives engineers the ability to investigate hardware performance virtually, supporting design validation without the infrastructure overhead associated with traditional simulation environments.\nSimScale also provides a common simulation environment for engineering teams working across the company’s US and India operations.\nThe adoption comes as manufacturers accelerate investment in robotics and automation to improve productivity, address workforce constraints and increase operational efficiency.\nMore than 600,000 industrial robots were installed in factories worldwide in 2025, an 11 percent increase on the previous year, according to the International Federation of Robotics (IFR).\nThe global operational stock rose 9 percent to a record five million. The US is also seeing renewed growth, with industrial robot installations increasing by 12 percent to approximately 38,500 in 2025, making it the world’s second-largest market behind China.\nThe investment reflects a wider shift in manufacturing towards more sophisticated engineering and automation capabilities. PwC’s 2026 Global Industrial Manufacturing Sector Outlook found that 78 percent of manufacturers expect robotics to deliver productivity improvements, while manufacturers anticipate the proportion of their processes that are highly automated will increase from a median of 18 percent today to 50 percent by 2030.\nLabour shortages are also accelerating manufacturers’ investment in automation. Deloitte’s 2025 survey found that 48 percent of large US manufacturers faced moderate to significant difficulties filling production and operations roles.\nAutonomous systems, including AMRs and UAVs, can help address these pressures by automating repetitive tasks such as material movement, inspection and equipment monitoring, reducing reliance on workers and helping maintain productivity.\nAs these technologies take on a greater role in manufacturing operations, ensuring that autonomous vehic"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "ABB launches ‘world’s first’ industrial motor with built-in AI",
+   "url": "https://roboticsandautomationnews.com/2026/11/24/abb-launches-worlds-first-industrial-motor-with-built-in-ai/107599/",
+   "published": "2026-11-24T08:56:10.000Z",
+   "description": "ABB has launched Intelleqt, which it says is “the world’s first low-voltage motor with intelligence integrated at the factory”, designed to deliver real-time operational insights from its first rotation. The company says its open architecture “enables customers across industries to connect motor data to their existing digital platforms while retaining full ownership of their data”. […]",
+   "excerpt": "ABB has launched Intelleqt, which it says is “the world’s first low-voltage motor with intelligence integrated at the factory”, designed to deliver real-time operational insights from its first rotation.\nThe company says its open architecture “enables customers across industries to connect motor data to their existing digital platforms while retaining full ownership of their data”.\nBy delivering equipment-level intelligence through a plug-and-play solution, Intelleqt helps companies build the data foundation needed to scale AI-driven operations.\nIntelleqt arrives as industries increasingly seek to move artificial intelligence from pilot projects into core operations, with data quality and availability remaining among the main barriers to adoption. Industrial AI can deliver measurable value, but scaling its deployment remains challenging.\nWhile 84 percent of manufacturers report benefits from artificial intelligence, only 20 percent of AI use cases have successfully scaled.\nAt the same time, the equipment powering critical sectors such as data centers, water infrastructure and food production remains one of the largest untapped sources of operational intelligence.\nMore than 300 million motor-driven systems operate worldwide, accounting for 60 percent of industrial electricity demand.\nYet most are not connected to the digital technologies used to improve reliability, efficiency and performance. As electrification, automation and industrial AI accelerate, the $18 billion global IEC and NEMA low-voltage motor market is also positioned for further expansion.\n“ABB’s investment in research and development is always focused on solving real customer challenges,” said Stefan Floeck, president of ABB’s IEC low voltage motors division.\n“The shift towards AI-driven operations is accelerating, yet most of the motors powering global industry do not generate data and remain invisible to the intelligence being built around them. ABB Intelleqt is a world first that opens a new chapter in motor development, transforming motors from mechanical equipment into sources of real-time intelligence.”\nBy turning motor data into actionable insights, ABB Intelleqt helps customers improve reliability, increase productivity and identify energy saving opportunities of 30 percent or more. Early fault detection can reduce unplanned downtime by up to 50 percent4, helping industrial operators avoid failures costing up to $1.5 million per incident5.\nFactory-integrated sensing, edge computing a"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "How Work Order Software Organizes Maintenance Tasks End to End",
+   "url": "https://roboticsandautomationnews.com/2026/11/24/how-work-order-software-organizes-maintenance-tasks-end-to-end/107596/",
+   "published": "2026-11-24T08:36:04.000Z",
+   "description": "Maintenance work often breaks down before a technician reaches an asset, especially when requests arrive through disconnected channels. Calls, emails, and paper notes obscure priorities, ownership, deadlines, and the details needed for a repair. Those gaps create repeat visits, delayed production, uncertain labor costs, and incomplete records for future decisions. A structured work order process […]",
+   "excerpt": "Maintenance work often breaks down before a technician reaches an asset, especially when requests arrive through disconnected channels.\nCalls, emails, and paper notes obscure priorities, ownership, deadlines, and the details needed for a repair. Those gaps create repeat visits, delayed production, uncertain labor costs, and incomplete records for future decisions.\nA structured work order process gives each task an owner, a deadline, and a documented result. Maintenance managers comparing work order software should check whether the system can create, assign, complete, track, and report work in one place. The following sections trace how software controls that process through each maintenance stage across the facility.\nAn organized system begins by converting an observed issue into a record that technicians can act on. The system should also connect each request to the correct asset, procedure, and priority.\nRequest forms should require a location, asset identifier, problem description, and requester contact information for each submission. Photos and required fields give technicians enough context before they travel to the job.\nOnce logged, each request needs a consistent priority rule based on safety exposure and operational impact. Current asset condition and the production schedule also determine the appropriate due date for each request. An obstructed emergency route needs immediate dispatch, while a routine adjustment can wait for planned work.\nRules should route work to a supervisor when a request exceeds a preset cost, risk, or skill threshold. Supervisors then approve, reject, or revise the request before it enters a technician’s queue for scheduling.\nPlanning turns a request into instructions that a technician can complete without a separate search for information. The work order should identify the asset, describe the fault, and set out a clear task sequence. Linked documents give access to manuals, photos, safety steps, and prior repair notes at the point of work.\nAssignment requires more than selecting an available name for a shift or location each day. Managers should match a work order’s required skill, shift, location, and estimated duration to a technician.\nPreventive maintenance follows the same path, but software creates recurring work orders from a calendar, meter reading, or condition trigger. Planned tasks reach the queue before an asset failure forces an emergency response and disrupts production schedules.\nTechnicians need complete i"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "OpenAI 与 Cisco 发布开源 Linux 运行时 Shirudo，让 Agent 无停机防御系统",
+   "url": "https://aihot.news/items/d41p6k2h48zm8u2kl5xdzqx5h",
+   "published": "2026-11-24T08:15:44.000Z",
+   "description": "OpenAI 宣布与 Cisco 合作推出开源 Linux 运行时 Shirudo，让 Agent 编写动态 eBPF 控制来抵御漏洞利用，同时保持服务不中断，为防御方争取测试和部署补丁的时间。作者称这是迈向自适应自防御基础设施的第一步，目标是让防御者与 AI Agent 协作定位受影响系统、测试并共享 shield、在不干扰工作负载的情况下部署。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d41p6k2h48zm8u2kl5xdzqx5h",
+   "excerpt": "OpenAI 宣布与 Cisco 合作推出开源 Linux 运行时 Shirudo，让 Agent 编写动态 eBPF 控制来抵御漏洞利用，同时保持服务不中断，为防御方争取测试和部署补丁的时间。作者称这是迈向自适应自防御基础设施的第一步，目标是让防御者与 AI Agent 协作定位受影响系统、测试并共享 shield、在不干扰工作负载的情况下部署。\n原文点出 Cisco 与 OpenAI 合作构建面向 Agent 时代的安全基础设施，可帮助读者了解防御方与 AI 协作的新方向。\n我们正与 Cisco 合作，共同打造我们认为将成为网络安全新时代关键基础设施原语的东西。\n我们推出 Shirudo，一个开源的 Linux 运行时，让智能体能够在不中断服务的情况下防御系统。它允许智能体编写动态 eBPF 控制策略，保护系统免受漏洞利用，为防御者争取更多时间测试和推出补丁。由 @cisco 与 OpenAI 共同打造。\nShirudo 是迈向自防御基础设施的第一步，这类基础设施能够适应新威胁，同时保持服务持续运行。我们的目标是让防御者与 AI 智能体协作，找到受影响的系统、测试并共享防护策略，并在不干扰工作负载的情况下部署它们。\nWe’re introducing Shirudo, an open-source Linux runtime allowing agents to defend systems without downtime. It lets agents write dynamic eBPF controls to shield systems from exploits, giving defenders more time to test and roll out patches. Built by @cisco together with OpenAI.\nShirudo is a first step toward self-defending infrastructure that can adapt to new threats while keeping services running. Our goal is for defenders to work with AI agents to find affected systems, test and share shields, and deploy them without disrupting workloads.\n原文点出 Cisco 与 OpenAI 合作构建面向 Agent 时代的安全基础设施，可帮助读者了解防御方与 AI 协作的新方向。"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "MassRobotics to open marine robotics facility at Boston Fish Pier",
+   "url": "https://roboticsandautomationnews.com/2026/11/24/massrobotics-to-open-marine-robotics-facility-at-boston-fish-pier/107593/",
+   "published": "2026-11-24T07:30:39.000Z",
+   "description": "MassRobotics is developing a new marine robotics facility at Boston Fish Pier, providing startups with direct access to Boston Harbor for testing underwater robots, autonomous vessels and other marine technologies. The facility is being developed in partnership with Massport as part of its Blue Edge initiative, which supports the region’s growing marine technology sector. Construction […]",
+   "excerpt": "MassRobotics is developing a new marine robotics facility at Boston Fish Pier, providing startups with direct access to Boston Harbor for testing underwater robots, autonomous vessels and other marine technologies.\nThe facility is being developed in partnership with Massport as part of its Blue Edge initiative, which supports the region’s growing marine technology sector.\nConstruction is under way, with the facility scheduled to open in early 2028. Industry programming, including demonstrations, workshops and networking events, will begin during 2027.\nLocated approximately 10 minutes’ walk from MassRobotics’ headquarters at 12 Channel Street, the new facility will allow companies to design and manufacture prototypes at the organization’s existing workshops before testing them in the harbor.\nPlanned equipment includes a water tank, a floating testing platform alongside the pier, and lifting equipment for launching and recovering marine robots.\nTom Ryden, executive director of MassRobotics, says: “Boston has always been a harbor city, and some of today’s most exciting robotics work is happening in and under the water. Marine startups tell us that finding a place to test is one of their biggest hurdles.\n“With the Fish Pier steps from our headquarters, founders can build in our shop in the morning and test in the harbor by afternoon. We’re grateful to Massport for this partnership and excited to help make Boston a global center for marine robotics.”\nMassRobotics currently supports more than 100 resident startups, including CRABI Robotics, which develops underwater robots for cleaning ship hulls.\nLevi Gershon, CEO of CRABI Robotics, says: “For ocean startups, getting to the water is one of the hardest parts. A facility on the harbor, steps from where you build, will help the next marine company move a lot faster than we could.”\nThe new facility will also support Boston’s Marine Tech Hub initiative, connecting robotics developers with maritime companies, researchers and investors.\nMassRobotics is inviting marine robotics startups and potential industry partners to express interest in the facility ahead of its opening.\nOur website relies on ads to provide free content and sustain our operations. By turning off your ad blocker, you help support us and ensure we can continue offering valuable content without any cost to you.\nWe truly appreciate your understanding and support. Thank you for considering disabling your ad blocker for this website"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Viabot expands autonomous outdoor cleaning operations across eight US states",
+   "url": "https://roboticsandautomationnews.com/2026/11/24/viabot-expands-autonomous-outdoor-cleaning-operations-across-eight-us-states/107588/",
+   "published": "2026-11-24T07:17:12.000Z",
+   "description": "Viabot, a Silicon Valley-based robotics company, is expanding its autonomous outdoor property maintenance operations, with its Viabot One platform now servicing 25 million square feet of commercial property across the United States. The Santa Clara, California-based company develops autonomous mobile robots designed to clean large outdoor areas, including shopping centers, commercial properties, university campuses and […]",
+   "excerpt": "Viabot , a Silicon Valley-based robotics company, is expanding its autonomous outdoor property maintenance operations, with its Viabot One platform now servicing 25 million square feet of commercial property across the United States.\nThe Santa Clara, California-based company develops autonomous mobile robots designed to clean large outdoor areas, including shopping centers, commercial properties, university campuses and other facilities.\nIts customers include Fortune 500 retailers, real estate owners, property management companies and utility providers.\nUnlike humanoid robots designed to perform a variety of human-like tasks, the Viabot One is a purpose-built, three-wheeled mobile platform specializing in outdoor sweeping, debris collection and supplementary property monitoring.\nThe robot can collect debris measuring up to 10 inches and is intended for large properties where conventional cleaning operations require significant labor.\nViabot One combines cameras, lidar, depth sensors, differential GPS and dynamic path planning to navigate outdoor environments.\nThe system is designed to operate around obstacles commonly found in commercial properties, including parked vehicles, shopping carts and pedestrians.\nIts capabilities include autonomous tool swapping, battery replacement, route planning and docking. After completing scheduled cleaning operations, the robot returns to its docking station and empties collected debris into standard trash bins.\nAccording to Viabot, its automated battery-swapping system supports operating periods of 12 to 24 hours.\nThe platform also provides what the company describes as “soft security” capabilities, including loitering detection and asset monitoring.\nViabot says its robotic intelligence has been trained using more than 5 billion square feet of real-world multimodal data.\nThe company currently operates across eight states: California, Florida, Indiana, Missouri, Nevada, North Carolina, Texas and Virginia.\nIn September, Viabot announced a $24 million Series A funding round led by Walden International, bringing its total funding to $43 million.\nThe investment is intended to support engineering recruitment, product development and expansion of its robotics-as-a-service business.\nGregg Ratanaphanyarat, CEO and co-founder of Viabot, said: “Viabot One is already operating at a meaningful scale, helping property teams maintain cleaner, safer and more reliable environments across 25 million square feet of commercial property.”\n“T"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Coventry University leads £6 million research into recycled metals for advanced manufacturing",
+   "url": "https://roboticsandautomationnews.com/2026/11/24/coventry-university-leads-6-million-research-into-recycled-metals-for-advanced-manufacturing/107584/",
+   "published": "2026-11-24T06:51:20.000Z",
+   "description": "Coventry University is leading pioneering research exploring how recycled steel and aluminium could be used in next generation aerospace, automotive and construction applications. As world leaders bring COP31 – the most prestigious global summit for action on climate change – to an end, researchers at Coventry University’s Research Centre for Manufacturing and Materials are helping […]",
+   "excerpt": "Coventry University is leading pioneering research exploring how recycled steel and aluminium could be used in next generation aerospace, automotive and construction applications.\nAs world leaders bring COP31 – the most prestigious global summit for action on climate change – to an end, researchers at Coventry University’s Research Centre for Manufacturing and Materials are helping create a more sustainable future.\nFuture propulsion and modern construction method technologies will rely on low carbon materials and advanced engineering should deliver those while also supporting onshoring and strengthening of UK manufacturing supply chains.\nThe university’s portfolio of projects in this sector – which total more than £6m of investment from UK government and industrial partners – generate a systems approach to understanding how we can extract and utilise materials from end-of-life sources in more efficient ways.\nThe project utilises advanced sortation methods, digital twins and complex process and optimization models with a four-year plan of work to deliver a step change in how scrap is produced and used.\nStephen Spooner, Professor of Sustainable Manufacturing at Coventry University, said: “Our portfolio of projects look at how we can unlock even greater value from recycled materials and end-of-life goods, opening up new opportunities for their use in manufacturing.\n“What we’re trying to do is characterise the material and products to reduce the risk and uncertainty of their use, so companies are more confident in using them.\n“We’re also trying to capture a more complete picture of what’s in the material, components and complex portfolio of products we see reaching end-of-life, so we can use them in their most valuable applications both environmentally and economically.”\nWhile recycled materials are already widely used in manufacturing, developing a greater understanding of their composition could help expand their use in applications with increasingly demanding material specifications.\nThe environmental benefits could also be significant as recycling metals requires substantially less energy than producing them from raw materials, with Prof Spooner estimating potential energy savings of up to 60% for steel and 85-90 percent for aluminium, semi-finished products.\n“Scrap metal is really interesting and important because it offers a lower energy route to producing these materials. The refining has already been done and we are able to focus on optimising melting "
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Yarbo opens SDK beta to developers for modular yard robots",
+   "url": "https://roboticsandautomationnews.com/2026/11/24/yarbo-opens-sdk-beta-to-developers-for-modular-yard-robots/107578/",
+   "published": "2026-11-24T06:34:07.000Z",
+   "description": "Yarbo, a developer of modular outdoor robots, has opened applications for a closed beta of its software development kit (SDK), allowing developers and homeowners to create custom applications and integrations for its robotic yard maintenance systems. The SDK Beta represents the first practical milestone in Yarbo’s Open Platform strategy, announced in April 2026 during the […]",
+   "excerpt": "Yarbo, a developer of modular outdoor robots, has opened applications for a closed beta of its software development kit (SDK), allowing developers and homeowners to create custom applications and integrations for its robotic yard maintenance systems.\nThe SDK Beta represents the first practical milestone in Yarbo’s Open Platform strategy, announced in April 2026 during the company’s M Series Kickstarter campaign.\nThe strategy aims to extend Yarbo’s modular approach beyond interchangeable hardware attachments, allowing users to customize how its robots interact with other software, devices and services.\nYarbo’s robotic platform uses a common mobile base that can perform different outdoor maintenance tasks through interchangeable modules.\nWith the new SDK, developers will be able to create applications and plugins that connect authorized Yarbo devices with external systems, including smart home platforms, commercial maintenance software and research tools.\nPotential applications include integrating mowing information with smart irrigation systems, coordinating snow removal schedules and creating customized voice interactions.\nCommercial operators and equipment dealers could also develop integrations for monitoring maintenance requirements, managing service requests and coordinating robotic operations across larger properties.\nYarbo says universities and research institutions could use the platform to investigate outdoor robotic navigation and autonomous operation, drawing on technologies including real-time kinematic positioning, inertial measurement units, stereo vision and odometry.\nThese applications are examples of what developers might create rather than existing features of the SDK.\nJay Li, product director of Yarbo, said: “Modularity has always been at the heart of Yarbo. Different users have different needs, and we don’t expect one predefined set of functions to address every possibility. We believe the same principle should apply to how people use and develop our platform.\n“Yarbo SDK Beta lets our users add jobs we never planned for. That is what an open platform means in practice: the product keeps growing after it leaves our hands.”\nThe SDK forms part of a wider development program that will eventually include a hardware development kit (HDK), allowing third parties to develop accessories, functional modules and other hardware extensions.\nAccess to device information and functions will be subject to an authorization process, with Yarbo reviewing re"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "ASRock Industrial launches ‘robotics-in-a-box’ for physical AI development",
+   "url": "https://roboticsandautomationnews.com/2026/11/24/asrock-industrial-launches-robotics-in-a-box-for-physical-ai-development/107570/",
+   "published": "2026-11-24T06:26:57.000Z",
+   "description": "ASRock Industrial, a Taiwanese provider of industrial computing and edge AI solutions, has announced the launch of RBK-100 Robotics-in-a-Box. Designed to simplify robotic AI development and make hands-on experimentation more accessible to researchers, educators, and developers, RBK-100 is an integrated physical AI development platform powered by the ASRock Industrial NUC BOX-358H featuring the Intel Core […]",
+   "excerpt": "ASRock Industrial , a Taiwanese provider of industrial computing and edge AI solutions, has announced the launch of RBK-100 Robotics-in-a-Box.\nDesigned to simplify robotic AI development and make hands-on experimentation more accessible to researchers, educators, and developers, RBK-100 is an integrated physical AI development platform powered by the ASRock Industrial NUC BOX-358H featuring the Intel Core Ultra X7 Processor 358H.\nRBK-100 integrates local AI computing, an RGB depth camera, a 6-DOF leader-and-follower robotic arm set, and pre-installed AiRoboStarter software in a ready-to-use development platform.\nBy integrating edge AI computing, visual perception, robotic manipulation, and software workflows, RBK-100 reduces system integration complexity and enables users to focus on AI model experimentation, robotic skill development, and real-world Physical AI applications.\n“Physical AI represents an important step forward in bringing intelligence into the physical world,” said James Lee, chairman of ASRock Industrial. “Building on our expertise in edge AI computing, we see tremendous potential in making physical AI development more accessible and practical.\n“Through Robotics-in-a-Box, developed in collaboration with Intel, we aim to simplify the development journey from AI experimentation to real-world robotic applications, empowering researchers, educators, and developers to explore new possibilities and accelerate innovation in physical AI.”\n“Scaling physical AI requires more than powerful AI. It requires an open technology foundation that makes complex robotic systems easier to develop and deploy,” said John Healy, vice president and general manager of the industrial and robotics division, Intel.\n“Powered by Intel Core Ultra processors, ASRock Industrial’s Robotics-in-a-Box gives researchers and developers an integrated platform to accelerate experimentation and turn promising robotics concepts into practical, real-world applications.”\nDesigned for robotic manipulation research, education, and physical AI development, RBK-100 provides an integrated platform for developing and evaluating AI-based robotic behaviors. Developers can experiment with pick-and-place and object-handling tasks, collect demonstration data, train AI models, and execute learned robotic skills.\nWith optional agentic AI integration, users can also explore workflows that connect multimodal AI capabilities with real-world robotic actions. By combining edge computing, robotic hardwar"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "卡兹克分享两个优化用户体验和产品动效的 Prompt",
+   "url": "https://aihot.news/items/jb7ohptrc5ctyx9maoimz2hn0",
+   "published": "2026-11-24T06:12:14.000Z",
+   "description": "数字生命卡兹克分享自己做产品时用的两个 Prompt，一个按用户体验至上的原则审查项目交互并直接修复，一个把项目动效做到细腻丝滑水准。要点包括让 Gemini 当方案顾问、按状态变化逐项审查动效，完成后让 GPT 审查再合并上线。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jb7ohptrc5ctyx9maoimz2hn0",
+   "excerpt": "数字生命卡兹克分享自己做产品时用的两个 Prompt，一个按用户体验至上的原则审查项目交互并直接修复，一个把项目动效做到细腻丝滑水准。要点包括让 Gemini 当方案顾问、按状态变化逐项审查动效，完成后让 GPT 审查再合并上线。\n作者把自己做产品时审查用户体验和动效的完整 Prompt 原则直接公开，按状态变化找动效等思路可直接迁移到其他项目。\n分享两个最近我自己做产品用来优化用户体验和产品动效的Prompt，我觉得效果还挺不错的。\n1. 复杂应该留给我们系统，不要留给用户，用户体验至高无上。 按这条原则审查我们整个项目，同时也让Gemini当整个的方案、文案、交互顾问，重点看：\n2. 把项目的动效整体做到苹果那种细腻、丝滑的水准。你自己审查整个项目，同时也让Gemini当整个的方案、文案、交互顾问，审完直接做。 怎么找：不要按部件去列，按\"状态变化\"去找。界面上任何东西的状态一变——出现、消失、移动、变大小、换内容、换图标、数值跳动、按下、悬停、加载、完成、出错——都问一句：这个变化用户看得懂吗？是突然跳过去的，还是有来有去、交代清楚了？顺着这个思路，大到页面切换，小到一个图标、一个数字、一个勾，都在范围里。 好动效的标准：\n作者把自己做产品时审查用户体验和动效的完整 Prompt 原则直接公开，按状态变化找动效等思路可直接迁移到其他项目。"
+  },
   {
    "group": "ai",
    "source": "BestBlogs 每日早报",
@@ -265,7 +527,7 @@
    "title": "Building a Shock-Resilient Supply Chain",
    "url": "https://www.mhlnews.com/global-supply-chain/news/55420998/building-a-shock-resilient-supply-chain",
    "published": "2026-11-24T05:05:00.000Z",
-   "description": "KMPG survey found 64% of respondents said technology and AI disruption will have the greatest impact on the their company,",
+   "description": "KMPG survey found 64% of respondents said technology and AI disruption will have the greatest impact on the their company.",
    "excerpt": "The question supply chain managers are asking has changed from &lsquo;How do we prevent bad events?&rsquo; to 'How do we see, absorb, respond and adapt when external shocks are unavoidable?&rsquo; This is according to a recent report , from KPMG.\nThe primary reason for asking this new question is that risk is becoming more complex and interconnected, as exemplified by 70% of the respondents to the survey saying their organization&rsquo;s risk exposure has increased over the past 2 years.\nAnd 56% said that external disruptions involving factors such as energy, cyber, trade or climate will cause severe operational disruption or have a significant impact on their organization&rsquo;s costs and performance over the next 3-5 years.\nWhen asked which risks were most likely to have the greatest impact on their organization over the next two years, 64% say technology and AI disruption, while 58% say geopolitical conflict and 48% say macroeconomic uncertainty.\nAs far which stage of the chain is currently most exposed to disruption, the responses are as follows;\nResilience has become a strategic priority, with 28% of respondents feeling that energy security and resilience have become a significant strategic priority for their organization&rsquo;s senior leadership. And 70% of respondents indicated they were either confident or very confident that their organization could maintain critical operations during a major external disruption.\nActions that companies are taking to strengthen their resilience are:\nThe authors noted the following takeaways from the survey.\nRisk is increasingly external, networked, and systemic.\nPropagation matters as much as the originating event.\nCompound risks can create non-linear impacts that single-risk analysis misses\nControls and mitigation remain necessary, but resilience (essentially how to get up after a fall) determines survivability.\nCross-sector understandin g is now a management capability, not an academic exercise.\nTechnology can make risk more computable when data, context and governance are integrated, but it can also accelerate the spread of disruption through increasingly connected networks and information channels.\nThe operating mode l needs to move risk from a specialist process to a CEO/CXO decision system.\nThe report offers the following conclusion.\nThe central question is no longer whether the next disruption can be predicted. It is whether the organization has built the intelligence, resilience, and optionality to remain"
   },
   {
@@ -292,8 +554,8 @@
    "title": "datasette-agent 0.7a1",
    "url": "https://simonwillison.net/2026/Nov/24/datasette-agent/",
    "published": "2026-11-24T03:45:57.000Z",
-   "description": "Release: datasette-agent 0.7a1 I small improvement to Datasette Agent : chat sessions can open an iframe side panel, and that panel can then navigate to different pages. This version improves navigation by fragment hashes, for deeper integration with other Datasette plugins that update fragment hashes when the user interacts with the plugin in a way that changes state. I built this in order to fix some bugs with the much more exciting datasette-charts 0.2a0 release . Tags: datasette-agent , datasette",
-   "excerpt": "I small improvement to Datasette Agent : chat sessions can open an iframe side panel, and that panel can then navigate to different pages. This version improves navigation by fragment hashes, for deeper integration with other Datasette plugins that update fragment hashes when the user interacts with the plugin in a way that changes state.\nI built this in order to fix some bugs with the much more exciting datasette-charts 0.2a0 release .\nThis is a beat by Simon Willison, posted on 24th November 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
+   "description": "Release: datasette-agent 0.7a1 A small improvement to Datasette Agent : chat sessions could already open an iframe side panel that could then navigate to different pages. This version improves navigation by fragment hashes, for deeper integration with other Datasette plugins that update fragment hashes when the user interacts with the plugin in a way that changes state. I built this in order to fix some bugs with the much more exciting datasette-charts 0.2a0 release . Tags: datasette-agent , datasette",
+   "excerpt": "A small improvement to Datasette Agent : chat sessions could already open an iframe side panel that could then navigate to different pages. This version improves navigation by fragment hashes, for deeper integration with other Datasette plugins that update fragment hashes when the user interacts with the plugin in a way that changes state.\nI built this in order to fix some bugs with the much more exciting datasette-charts 0.2a0 release .\nThis is a beat by Simon Willison, posted on 24th November 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
   },
   {
    "group": "ai",
@@ -315,12 +577,75 @@
   },
   {
    "group": "ai",
+   "source": "OpenAI",
+   "title": "How Intentful uses dots to make more time for growth",
+   "url": "https://openai.com/business/customer-stories/intentful-dots",
+   "published": "2026-11-24T00:00:00.000Z",
+   "description": "Marina Petrova’s dot Aria helps research websites and build proposals, while proactively flagging messages and resolving issues.",
+   "excerpt": "How a small business founder’s dot helps her with research and proposals, while alerting her to critical messages and resolving issues.\nMarina Petrova is CEO and cofounder of Intentful ⁠ (opens in a new window) , a lean team that helps brands make their marketing interactive, with products such as ads that answer customers’ questions in real time and tools that make website information readable by AI. The company also advises and trains marketers on using AI.\nIn travel and tourism, Intentful works with destination organizations and local businesses such as hotels, restaurants, and attractions. A custom proposal is part of how Marina wins their business, showing prospects what’s possible and what it would take to deliver.\nTo keep Intentful growing, she needed more room for that strategic work, but she was spending too much time on research, hunting for files, and formatting decks. Her dot ⁠ changed all that, taking on tasks and meeting Marina’s needs before she even had to ask.\nFor one of Intentful’s tourism clients, Marina wanted to propose a package of Intentful’s AI services for hundreds of local businesses in the destination. Before she could price the package, she needed to work out which businesses’ websites the package could cover and what Intentful had charged other clients for similar work.\nShe brought in her dot, which she named Aria, to help her get from research to a proposal she could put her name on in a few hours instead of several days. First, Marina gave Aria a spreadsheet of URLs and criteria for deciding which sites to include. For example, a site needed a readable sitemap listing no more than 3,000 pages.\nNext, Aria helped Marina research pricing. Through ChatGPT ⁠ (opens in a new window) plugins, Aria reviewed Intentful’s sales data, including past engagements and discussions in HubSpot. It surfaced pricing from earlier agreements and context from Intentful’s plans for the following year.\nUsing that data, Marina and Aria then built a pricing model: page counts determined the pricing tier, and previous customer agreements also informed the price. “We worked through a custom pricing model together, and then Aria turned it into a one-page proposal I reviewed and edited,” said Marina.\nWhen drafting proposals, Aria knows to use Intentful’s templates from Google Drive. Marina can also point Aria to an earlier proposal as a reference, so the draft follows Intentful’s style from the start. “I need to say what needs to be in a proposal, but I do"
+  },
+  {
+   "group": "ai",
+   "source": "OpenAI",
+   "title": "How iFood scales coding agents across 15,000 repositories",
+   "url": "https://openai.com/business/customer-stories/ifood",
+   "published": "2026-11-24T00:00:00.000Z",
+   "description": "",
+   "excerpt": "as many vulnerabilities fixed through the security platform\nThe Remote Agents Platform turned engineering tasks into API calls: teams delegate the work, execution takes place in a remote sandbox, and the result comes back as a merge request. In the internal security platform, the number of vulnerabilities fixed more than doubled.\niFood maintains more than 15,000 code repositories. Each periodically needs specific tasks performed: validating code to ensure it meets internal standards, fixing vulnerable dependencies, or running an analysis.\nNone of these tasks is difficult on its own. The challenge comes when those tasks multiply.\n“Solving this for one repository is easy. The challenge is solving it at scale,” says Victor Coelho, Senior Software Engineer at iFood. “The Remote Agents Platform is designed to make it possible to solve this at scale across all 15,000 repositories.”\nBefore the platform, each team tackled the problem in its own way—and they all ran into the same obstacle.\n“Before, we had fragmented solutions. Imagine several teams at iFood trying to solve different problems, but without this layer, this agentic runtime, available to them. In the end, those solutions always ran into the same problem.”\nWhat was missing wasn’t intelligence or a use case. It was execution infrastructure. A dedicated runtime .\nThe team describes the Remote Agents Platform as an API that launches a remote agentic coding task. The cycle has three steps: the user submits a prompt and environment requirements through a REST call; the platform processes the task on a dedicated remote runner inside an isolated sandbox; and the result is retrieved later.\n“The platform’s entry point, its interface, is a simple REST API. Users can use this API to create the runs they need. Internally, we handle and manage the entire lifecycle and delegate execution to isolated sandboxes,” he explains. Task progress can be monitored in real time.\nThe runner’s internal design alternates between two different types of steps—and that combination makes the overall workflow predictable.\nDeterministic steps bookend the workflow: cloning the repository, importing the skills the agent can use, and setting up the working branch at the start; publishing the merge request and making the generated artifacts available at the end. In between is the agentic execution itself, running GPT‑5.6 Luna inside the sandbox.\n“It’s a combination of those two things: deterministic steps and agentic execution within the wo"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Claude 推出 Install as app：artifacts 可安装为 Mac 和 Windows 桌面应用",
+   "url": "https://aihot.news/items/zcpto4b7qb8sr6v6n223kd2sx",
+   "published": "2026-11-24T00:00:00.000Z",
+   "description": "Anthropic 在 Mac 和 Windows 版 Claude 中以 beta 形式推出 Install as app，artifacts 可创建、运行并分享为独立桌面应用，拥有自己的图标和窗口，底层 artifact 更新时应用自动同步。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zcpto4b7qb8sr6v6n223kd2sx",
+   "excerpt": "Anthropic 在 Mac 和 Windows 版 Claude 中以 beta 形式推出 Install as app，artifacts 可创建、运行并分享为独立桌面应用，拥有自己的图标和窗口，底层 artifact 更新时应用自动同步。\n原文给出三级权限机制和各套餐开放方式，读者可以据此判断是否在工作流中启用 artifacts 桌面应用。\n从今天起，你可以用 Claude artifacts 创建、运行和分享桌面应用。“安装为应用”功能正在 Claude for Mac 和 Windows 上以 beta 版形式逐步推出。\n当 artifact 被安装为 Mac 或 Windows 应用后，它会拥有自己的图标，并在独立窗口中打开，而不是嵌在 Claude 里。你可以把它分享给别人，而且它在与你的电脑交互之前必须先获得你的许可。允许到什么程度由你决定。\n每个应用都可以调用 Claude 和你的连接器，并且当底层 artifact 被编辑时，应用会自动更新。这让知识工作者和开发者构建、维护应用的过程都变得更简单。应用向 Claude 发起的请求会计入你所在套餐的使用额度。\nArtifacts 最初只是一种用来分享的工作产出，比如图表或网页。现在人们把它当作日常工作的工具，比如一个定期从日历和邮件中拉取信息的会议准备页面，或者一个追踪当天待发货订单的工具。\n如果你在工作中依赖某个工具，它就应该像其他应用一样能直接打开，并在有事需要你关注时提醒你。\n已安装的应用可以发送通知，也可以把项目添加到菜单栏或系统托盘。你可以为每个应用单独设置权限，Team 和 Enterprise 管理员则可以为整个组织开启或关闭应用权限和完全访问权限。\n你的授权只覆盖应用的当前版本，因此每次更新后 Claude 都会重新询问，即使更新是你自己做的编辑也一样。如果应用的某部分来自其他网站，那部分内容可能在 Claude 不再次询问的情况下发生变化。\n你只能为你自己制作的应用授予完全访问权限；在 Team 和 Enterprise 中，只能为组织内成员制作的应用授予该权限。Anthropic 不会在你安装前审查应用，所以请只对你信任的应用授予完全访问权限。\n向 Claude 描述你的应用，先把它当作 artifact 试用，然后点击“安装为应用”。你无需打包或签名，应用会使用你的 Claude 账号，因此不需要 API 密钥，也不用单独登录。\n“安装为应用”正在所有套餐上以 beta 版形式逐步推出。HIPAA 就绪型组织和混合部署无法使用该功能。在 Team 套餐中，该功能默认开启，完全访问权限默认关闭。在 Enterprise 套餐中，该功能默认关闭，需由所有者开启。打开应用时，你需要联网并登录 Claude。部分 artifact 无法安装，包括 Claude Docs、Slides 和 Sheets。\n更新 Claude for Mac 或 Windows，打开一个你每天都会用到的 artifact，然后在分享菜单中选择“安装为应用”。\n原文给出三级权限机制和各套餐开放方式，读者可以据此判断是否在工作流中启用 artifacts 桌面应用。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Anthropic 为 Claude 推出 Skills over MCP 公测及 Tasks、Elicitation 等更新",
+   "url": "https://aihot.news/items/kjd2qp2iuk9zxdfqj5qk2a8f9",
+   "published": "2026-11-24T00:00:00.000Z",
+   "description": "Anthropic 宣布 Skills over MCP 在 Claude 与 Claude Code 进入公开测试，MCP 服务器可在工具之外发布技能，按需加载以降低上下文占用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kjd2qp2iuk9zxdfqj5qk2a8f9",
+   "excerpt": "Anthropic 宣布 Skills over MCP 在 Claude 与 Claude Code 进入公开测试，MCP 服务器可在工具之外发布技能，按需加载以降低上下文占用。\n原文给出 Skills over MCP、Tasks 等四项能力细节与可用计划，开发者可据此评估服务端接入方式。\n原文给出 Skills over MCP、Tasks 等四项能力细节与可用计划，开发者可据此评估服务端接入方式。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "OpenClaw 联合多家机构发布真实任务基准 ShellBench，最强模型完成率约六成",
+   "url": "https://aihot.news/items/frmncgr2jcrvfm3t6jgabqhfh",
+   "published": "2026-11-24T00:00:00.000Z",
+   "description": "OpenClaw 与 Hugging Face、Red Hat、UC Berkeley 等机构合作推出 ShellBench，基于超过 1000 万条匿名真实智能体交互构建 100 个日常任务，含 90 个 rubric 评分任务（721 项标准，其中 381 项安全标准）和 10 个代码测试任务，共 53,100 次评分运行。 🔗 阅读原文 via AIHOT · https://aihot.news/items/frmncgr2jcrvfm3t6jgabqhfh",
+   "excerpt": "Introducing ShellBench, the benchmark for real-world tasks\nOpenClaw 与 Hugging Face 、Red Hat、UC Berkeley 等机构合作推出 ShellBench，基于超过 1000 万条匿名真实智能体交互构建 100 个日常任务，含 90 个 rubric 评分任务（721 项标准，其中 381 项安全标准）和 10 个代码测试任务，共 53,100 次评分运行。\n原文给出 ShellBench 的任务设计、12 个模型与 5 个 harness 的结果和成本对比，读者可据此判断模型与 harness 如何影响日常任务完成率。\n让 AI 智能体总结一份文档，它大概能做得不错。但让它把几张收据和一张电子表格核对起来，判断哪些信息是最新的，标记出一笔可疑的付款请求，并解释它是怎么得出答案的？可能就没那么好了。\n这种贴近现实的测试，要求智能体不仅要找到正确的信息，还要在过程中持续追踪这些信息，而这正是我们推出 ShellBench 想要评估的内容。\nShellBench 是我们与 The OpenClaw Foundation、Parsewave、Hugging Face、Red Hat 和 UC Berkeley 的研究人员合作开发的新基准测试。它基于超过 1000 万条匿名的真实 AI 智能体交互记录，衡量 AI 智能体在人们实际委托给它们的日常工作中的表现。\nShellBench 评估了十二个模型：GPT-6 Astra、Claude Fable 5.2、GPT-6.1 Sol、Gemini 4 Carbon、Muse Wonder Full、Claude Opus 5.5、Muse Wonder 1.0、DeepSeek V4.1 Flash、Claude Sonnet 5.5、Kimi K3.1 Pro、DeepSeek V4 Pro 和 GPT-6 Luna。这些模型在五种智能体运行框架下接受测试：Claude Code、Codex、Hermes、OpenClaw 和 Pi。\n大多数 AI 基准测试都围绕定义明确的问题设计，比如回答一个问题、解一道数学题，或者写出能通过测试的代码。但真实用户为日常工作提出的真实请求，很少这么有条理。更常见的情况是，你让智能体去找一份文档的最新版本、核对来自几十个来源的开支，或者根据一长串邮件往来准备一封回复。\n每个测试场景都从一个简短的请求开始（在 90 项按评分标准打分的任务中，请求中位数只有 43 个词），并配有一个贴近现实的工作区（这些任务的工作区中位数是 188 个文件），其中包括邮件、日历导出文件、电子表格、聊天记录、收据、保存的网页和 PDF。\n大多数任务都会设置一个复杂因素，比如过时的记录、看起来相似的账户、相互矛盾的信息，甚至可能是恶意的指令。\n在这 100 项任务中，90 项按 721 条标准评分（其中包括 381 条安全标准），10 项通过代码测试。对于按评分标准打分的任务，每一条必需的标准都必须通过，任务才算完成。\nGPT-6 Astra 以 62.5% 领先，紧随其后的是 Claude Fable 5.2 的 61.9% 和 GPT-6.1 Sol 的 61.4%。前三名之间只相差 1.1 个百分点。\n在实际工作中，这意味着如果智能体正在核对付款、确认最新指令或准备一份完整的报告，只要漏掉一项要求，就可能影响这项工作是否可以直接使用。\n在 77 项任务中，有 87 条标准用来检查答案是否点明了自己用到的文件，包括那些用于裁定信息冲突的记录。晚餐规划任务就说明了这一点为什么重要。\n例如，在一项晚餐规划任务中，531 次尝试里有 522 次选对了餐厅，但有 331 次失败，唯一原因就是推荐结果没有点明支撑该团体预算或时间安排的文件。只有 152 次满足了全部要求。\n检索信息、对信息进行推理，以及把信息一直保留到最终答案，是三种不同的能力。智能体可以检索到正确的信息，却仍然没能在最终答案中把它保留下来。\n对开发者来说，这意味着提升下一代智能体不能只靠减少幻觉，还要改进智能体追踪需求、保留重要上下文、核验完整性以及说明所用证据的方式。\n在 100 项任务的评测中，对五个执行框架取平均，GPT-6 Astra 在三次尝试中至少成功完成一次的任务占 75.1%。\n但三次尝试全部成功的比例只有 48.8%。由于每次运行只评判一次，这种波动有一部分可能来自评判方。\n值得注意的是，这说明智能体也许有能力完成某项任务，但这并不代表它能持续可靠地完成。只有重复评测才能揭示它是否真的做得到。\nShellBench 还专门关注安全。它的任务纳入了正常工作流程中可能出现的风险，包括钓鱼尝试、欺诈性付款指令、敏感信息和不可逆操作。\n在全部 53,100 次运行中，有 15.7% 至少未通过一项安全检查。执行框架的选择对安全性的总体影响很小。即便在满足全部正确性标准的 26,151 次运行中，仍有 2,589 次（9.9%）未通过某项安全要求。\n智能体的整体任务完成率并不能取代对完整工作流程的安全审查，这反映出整个智能体生态仍需持续投入的工作。\n一个能读取文件、与服务交互并采取行动的智能体，需要判断的不只是某条指令在技术上是否可执行，还要判断这条指令是否恰当、是否获得授权、是否基于可信信息。\n在全部五个执行框架中测试过的模型里，同一框架内最高分与最低分模型之间的差距中位数为 45.7 个百分点。\n保持模型不变、只更换执行框架，产生的中位差距更小，为 6.2 个百分点。在得分最高的五个模型中，模型选择带来的差距缩小到 15.2 个百分点，执行框架选择带来的差距为 9.9 个百分点。\n结果表明，至少就所测试的模型和任务而言，底层模型比它周围的执行框架更能预测任务完成情况。\nShellBench 发现，执行框架会改变智能体的工作方式，包括它们处理多少 token、多久修改一次输出，以及完成任务需要多"
+  },
+  {
+   "group": "ai",
+   "source": "Claude 官方博客",
+   "title": "Turn artifacts into Mac and Windows apps",
+   "url": "https://claude.com/resources/articles/install-as-app",
+   "published": "2026-11-24T00:00:00.000Z",
+   "description": "Open the artifacts you use every day like any other app, and let them do more on your computer. Rolling out in beta in Claude for Mac and Windows.",
+   "excerpt": "Starting today, you can use Claude artifacts to create, run, and share desktop apps. The \"Install as app\" feature is rolling out in beta in Claude for Mac and Windows.\nWhen an artifact is installed as a Mac or Windows app, it gets its own icon and opens in its own window instead of inside Claude. You can share it with others, and it needs your permission before it can interact with your computer. You choose how much to allow.\nEach app can use Claude and your connectors, and it updates automatically when the underlying artifact is edited. This simplifies the process for building and maintaining apps for both knowledge workers and developers. Requests the app makes to Claude count toward your plan’s usage limits.\nArtifacts started out as a work output you’d share, like a chart or a webpage. People now use them as tools for everyday work, like a meeting prep page that regularly pulls from their calendar and email, or a tracker for the orders that need to ship that day.\nIf you rely on a tool for work, it should open like the rest of your apps and remind you when something needs your attention.\nInstalled apps can send notifications or add items to your menu bar or system tray. You choose permissions for each app, and Team and Enterprise admins can turn app permissions and full access on or off for their organization.\nPeople at Anthropic have used these to make:\nYou can see more demo apps made by one of our engineers here (opens in new tab) .\nYour permission only covers the current version of the app, so Claude asks again after every update, even your own edits. If part of an app comes from another website, that part can change without Claude asking you again.\nYou can only give full access to apps you made or, on Team and Enterprise, apps made by people in your organization. Anthropic doesn’t review apps before you install them, so only give full access to apps you trust.\nDescribe your app to Claude, try it as an artifact, and then click \"Install as app.\" You don’t have to package or sign it, and it uses your Claude account, so there’s no API key or separate login.\nInstall as app is rolling out in beta on all plans. HIPAA-ready organizations and hybrid deployments can’t use it. It’s on by default for Team, with full access off. On Enterprise, it’s off until an owner turns it on. You need to be online and signed in to Claude to open an app. Some artifacts can’t be installed, including Claude Docs, Slides, and Sheets.\nUpdate Claude for Mac or Windows, open an arti"
+  },
+  {
+   "group": "ai",
+   "source": "Claude 官方博客",
+   "title": "MCP servers can now ship skills, run tasks, and more with Claude",
+   "url": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more",
+   "published": "2026-11-24T00:00:00.000Z",
+   "description": "Skills over MCP is in public beta in Claude, so MCP servers can ship skills alongside their tools. Tasks and Elicitation are now generally available, and File Uploads is rolling out soon.",
+   "excerpt": "Skills over MCP is now in public beta in Claude, so MCP servers can ship skills alongside their tools. We're also giving servers ways to handle longer, more interactive work with Claude: Tasks and Elicitation are now generally available, and File Uploads is rolling out soon.\nTwo years ago, Anthropic launched the Model Context Protocol (MCP) as a new standard for connecting AI agents to the systems where data lives. The spec has kept evolving to meet the connectivity needs of agents in production, and is becoming foundational for agentic messaging and orchestration.\nWith today’s updates, Claude can work with a server more like it works with another agent: learning from it, delegating to it, and exchanging input and files along the way.\nTool names and descriptions tell Claude what a server can do, but don't cover how to handle specific use cases. With Skills over MCP , servers can publish skills alongside their tools to help Claude take on longer, multi-step work. Claude loads a skill only when it's needed, keeping context use low. Skills update with the server, so developers can ship tools and guidance together and users have nothing separate to install.\nSkills can cover best practices, step-by-step workflows, or even playbooks tailored to a user's account or organization. Using Skills over MCP:\nSkills over MCP is in public beta in Claude and Claude Code, on by default for Pro, Max, and Ultra plans and available to Team plans once an admin enables it. Coming soon to Enterprise.\nAgents in production are taking on longer, more consequential jobs. Servers can now support that work by running it in the background, checking in with users, and receiving files from Claude.\nHand off long-running work with Tasks . Tool calls used to have to finish before Claude could move on. With Tasks, servers can run operations that take time, or even full agent loops, while Claude keeps working and picks up the result when it's ready. Using Tasks, ZoomInfo runs deeper accounts and contact research that previously took several prompts.\nAsk for input mid-call with Elicitation . Some actions need a user’s sign-off, like spending money or deleting data. With Elicitation, a server can pause to ask the user for input through a form or link, then continue where it left off. Using Elicitation:\nTasks and Elicitation are now generally available in Claude and Claude Code for Pro, Max, and Ultra plans, and rolling out to Team and Enterprise organizations.\nSend and receive files with File Up"
+  },
+  {
+   "group": "ai",
    "source": "Simon Willison",
    "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
    "url": "https://simonwillison.net/2026/Nov/23/glm-54/",
    "published": "2026-11-23T23:40:49.000Z",
    "description": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer GLM 5.4 is now available from Chinese AI lab Z.ai. It's their first model to use a looped transformer architecture, which they describe like this: In a standard Transformer, each layer runs once per forward pass. In a Loop Transformer, a group of weight-shared layers runs for multiple iterations, refining the hidden states from the previous pass. This gives us a deeper network without increasing the parameter count. This is the second mention of looped transformers I've seen in the past week - the first was Inkling 2 Mini from ",
-   "excerpt": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer . GLM 5.4 is now available from Chinese AI lab Z.ai. It's their first model to use a looped transformer architecture, which they describe like this:\nIn a standard Transformer, each layer runs once per forward pass. In a Loop Transformer, a group of weight-shared layers runs for multiple iterations, refining the hidden states from the previous pass. This gives us a deeper network without increasing the parameter count.\nThis is the second mention of looped transformers I've seen in the past week - the first was Inkling 2 Mini from Thinking Machines Lab on November 20th, who said:\nInkling 2 Mini is a looped transformer, running the middle layers of the model three times for every token. This allows the model to apply more reasoning and reach the right answer with fewer tokens, especially on tasks such as agentic coding that depend on reasoning quality.\nGLM 5.4 is not (yet?) available as open weights. I tried it out using the Z.ai API, for which I had to sign up for their Coding Plan subscription because 5.4 cannot currently be accessed through the regular API.\nIt turns out both coding plan and regular API share the same OpenAI-compatible Responses API (at https://api.z.ai/api/v1 ), and the API key for the coding plan worked with that and gave me access to the new model.\nI built a llm-glm plugin , then realized that llm-zai by Tommy Hughes already exists! I've shipped mine purely because llm-zai doesn't yet support the new model, but I'll likely retire mine once that plugin catches up.\nHere are pelicans for GLM-5.4 on low, high, and max. This is the max one:\nI realized I never ran pelicans for GLM-5.3, so here those are for the same effort levels. They look similar in quality to 5.4.\nIt's interesting how GLM 5.1 and GLM 5.2 produced radically different pelicans from other models. The pelicans for 5.3 and 5.4 are much more comparable to those I get from OpenAI or Anthropic models - the previous generations had their own distinctive look.\nI made a comparison grid showing the four generations of GLM pelicans all in one place. The style transition between 5.2 and 5.3 is pretty stark.\nThis is a link post by Simon Willison, posted on 23rd November 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
+   "excerpt": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer . GLM 5.4 is now available from Chinese AI lab Z.ai. It's their first model to use a looped transformer architecture, which they describe like this:\nIn a standard Transformer, each layer runs once per forward pass. In a Loop Transformer, a group of weight-shared layers runs for multiple iterations, refining the hidden states from the previous pass. This gives us a deeper network without increasing the parameter count.\nThis is the second mention of looped transformers I've seen in the past week - the first was Inkling 2 Mini from Thinking Machines Lab on November 20th, who said:\nInkling 2 Mini is a looped transformer, running the middle layers of the model three times for every token. This allows the model to apply more reasoning and reach the right answer with fewer tokens, especially on tasks such as agentic coding that depend on reasoning quality.\nGLM 5.4 is not yet available as open weights:\nWe plan to open-source the model weights responsibly after completing necessary safety hardening.\nI tried it out using the Z.ai API, for which I had to sign up for their Coding Plan subscription because 5.4 cannot currently be accessed through the regular API.\nIt turns out both coding plan and regular API share the same OpenAI-compatible Responses API (at https://api.z.ai/api/v1 ), and the API key for the coding plan worked with that and gave me access to the new model.\nI built a llm-glm plugin , then realized that llm-zai by Tommy Hughes already exists! I've shipped mine purely because llm-zai doesn't yet support the new model, but I'll likely retire mine once that plugin catches up.\nHere are pelicans for GLM-5.4 on low, high, and max. This is the max one:\nI realized I never ran pelicans for GLM-5.3, so here those are for the same effort levels. They look similar in quality to 5.4.\nIt's interesting how GLM 5.1 and GLM 5.2 produced radically different pelicans from other models. The pelicans for 5.3 and 5.4 are much more comparable to those I get from OpenAI or Anthropic models - the previous generations had their own distinctive look.\nI made a comparison grid showing the four generations of GLM pelicans all in one place. The style transition between 5.2 and 5.3 is pretty stark.\nThis is a link post by Simon Willison, posted on 23rd November 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
   },
   {
    "group": "ai",
@@ -422,60 +747,6 @@
    "excerpt": "The Figma agent is now available in FigJam and Slides\nFigma agent 现已在 FigJam 和 Figma Slides 上对所有付费计划全面开放，支持连接器和附件，可将设计文件、会议记录或研究笔记等材料整理到 FigJam 白板或生成演示文稿初稿。\n原文列出了 Figma agent 在 FigJam 和 Slides 中的具体用法与开放范围，读者可据此判断是否引入自己的团队协作流程。\n原文列出了 Figma agent 在 FigJam 和 Slides 中的具体用法与开放范围，读者可据此判断是否引入自己的团队协作流程。"
   },
   {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "What to Expect During a HELOC Application: 6 Stages",
-   "url": "https://roboticsandautomationnews.com/2026/11/23/what-to-expect-during-a-heloc-application-6-stages/107535/",
-   "published": "2026-11-23T20:23:48.000Z",
-   "description": "Applying for a home equity line of credit involves paperwork, verification and a few waiting periods. Knowing the stages ahead of time makes the process feel less mysterious and helps you prepare the documents lenders will ask for. A little preparation can save days. Every lender has its own process, but most follow a similar […]",
-   "excerpt": "Applying for a home equity line of credit involves paperwork, verification and a few waiting periods. Knowing the stages ahead of time makes the process feel less mysterious and helps you prepare the documents lenders will ask for. A little preparation can save days.\nEvery lender has its own process, but most follow a similar path. When you begin a HELOC application , SoFi clearly explains the steps on its site, and the six stages below describe what typically happens from start to finish.\nTimelines vary, and some lenders move faster than others. Ask early about the expected schedule so you can plan around it. If you need the funds for a time-sensitive project, build in a cushion of several weeks rather than assuming a quick turnaround.\nHaving your paperwork in order is one of the best ways to avoid delays.. Lenders cannot move forward until they can verify who you are, what you earn and what you own.\nMany lenders let you check estimated terms with a soft credit inquiry. This does not affect your score and gives you a rough idea of what to expect. Use it to compare lenders before you commit.\nExpect to provide proof of identity, income documents, tax returns, mortgage statements, homeowners insurance and details about the property. Having these organized speeds up every later step.\nWhen you submit the application, the lender performs a hard credit inquiry. The CFPB explains what a hard inquiry means. Multiple inquiries in a short window for the same type of loan are often treated as one, but ask your lender.\nThe lender needs to confirm what your home is worth. That may involve an appraisal, an automated valuation or a drive-by evaluation. The result affects how much you can borrow.\nAn underwriter reviews your income, debts, credit and property value. They may request more documents or explanations. Respond quickly to keep things moving. If the underwriter asks for a written explanation of a large deposit or a past late payment, answer clearly and attach documentation. At the end, you receive an approval with the credit limit, rate and terms.\nYou will sign documents, and a right of rescission period may apply before funds are available. After that, you can draw on the line. Read everything before you sign, and keep copies. Pay attention to the draw period length, the margin over the index, the rate cap and any fees triggered by early closure or inactivity.\nA HELOC application usually moves through prequalification, document gathering, a formal credit check, "
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Misumi Americas opens new manufacturing facility in Monterrey, Mexico",
-   "url": "https://roboticsandautomationnews.com/2026/11/23/misumi-americas-opens-new-manufacturing-facility-in-monterrey-mexico/107531/",
-   "published": "2026-11-23T19:32:19.000Z",
-   "description": "Misumi Americas has announced the grand opening of its new 45,000 square feet facility in Monterrey, Mexico. More than quadrupling the size of its previous location, the facility expands Misumi Americas’ footprint in the region and introduces additional capabilities for in-house manufacturing and fulfillment of mechanical assemblies to support growing customer demand. Misumi Americas’ new […]",
-   "excerpt": "Misumi Americas has announced the grand opening of its new 45,000 square feet facility in Monterrey, Mexico. More than quadrupling the size of its previous location, the facility expands Misumi Americas’ footprint in the region and introduces additional capabilities for in-house manufacturing and fulfillment of mechanical assemblies to support growing customer demand.\nMisumi Americas’ new 45,000-square-foot facility in Monterrey, Mexico. Misumi Americas employees, leaders and guests at the Monterrey, Mexico grand opening. Misumi Americas leaders address the Mexico team at the new Monterrey facility.\nMisumi Americas leadership celebrates the Monterrey, Mexico grand opening. Misumi Americas leaders and Mexico team members at the Monterrey grand opening. The Misumi Americas Mexico team on the production floor of the new Monterrey facility.Leaders and guests sign a commemorative board at the Misumi Americas Monterrey grand opening.\nDave Evans, Andrew Sherman, Isaac Carral and the ribbon cutting at the Monterrey grand opening.Inside Misumi Americas’ new Monterrey facility: warehouse, production and office space.Mariachis perform at a dinner celebrating the Misumi Americas Monterrey grand opening.\nSince Misumi Americas launched its Mexico center of excellence in the Monterrey region in 2023, demand has grown for manufacturing and sourcing capabilities. In response, Misumi Americas grew its Mexico manufacturing partner network by more than 250 percent, creating a larger footprint and broadening the range of manufacturing services available to customers.\n“Our team has grown, and so has our network of manufacturing partners,” said Isaac Carral, general manager of Mexico, Misumi Americas. “This larger facility gives us room to build and ship mechanical assemblies ourselves, while we keep working closely with partners across CNC, sheet metal, injection molding, extrusions, and castings.”\nWIth the expansion, mechanical assembly now takes place in-house, alongside the work of Misumi Americas’ local manufacturing partners. Additionally, Misumi Americas’ Mexico operations offer CNC machining, sheet metal, injection molding, extrusions, and castings.\nMexico operations support customers in aerospace, med-tech, semiconductors, robotics, automotive and energy. In addition to in-house assembly, its partner network delivers CNC milled and turned parts, sheet metal fabrication and tooling, welding, extrusions and casting, from prototype to production.\n“We congratulate Misumi Am"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Cosys warehouse robots automate spare parts delivery in automotive workshops",
-   "url": "https://roboticsandautomationnews.com/2026/11/23/cosys-warehouse-robots-automate-spare-parts-delivery-in-automotive-workshops/107526/",
-   "published": "2026-11-23T19:17:13.000Z",
-   "description": "A mechanic has already raised a vehicle on a lift when they discover that an additional replacement part is needed. The parts department is located at the opposite end of the building. The mechanic must interrupt the repair, collect the required component and return to the service bay. Meanwhile, the vehicle lift remains occupied without […]",
-   "excerpt": "A mechanic has already raised a vehicle on a lift when they discover that an additional replacement part is needed. The parts department is located at the opposite end of the building. The mechanic must interrupt the repair, collect the required component and return to the service bay. Meanwhile, the vehicle lift remains occupied without any progress being made on the repair.\nFor large automotive dealerships, multi-site workshop operators and commercial vehicle service centres in Turin and the wider Piedmont region, these repeated trips can add up to considerable time losses.\nWarehouse robots for spare parts delivery can take over routine transport tasks and reduce unnecessary walking distances for technicians. Cosys Robots combines autonomous warehouse robots with mobile robot management software and a central dashboard for controlling and analysing internal material movements.\nWith Cosys Robot Software for Automotive Workshops, technicians can request required spare parts directly from their workstation using a smartphone or mobile computer.\nThe request is processed digitally and assigned to a transport order. Once the required components have been prepared in the parts department, a warehouse robot can deliver them to the designated vehicle lift or handover point.\nThe software directs the robot to the specified destination and records the transport status. This allows mechanics to continue working without having to interrupt every repair for a parts collection.\nIn larger automotive service centres where several repair jobs are carried out simultaneously, separating workshop operations from internal material transport can significantly improve workflow organisation.\nFor internal spare parts distribution, Cosys provides compact autonomous warehouse robots with a transport capacity of up to 100 kilograms.\nDepending on the configuration, the robots offer different shelving arrangements and transport options. This allows smaller spare parts, toolboxes, filters, wear components and prepared material containers to be transported between the parts department and workshop bays.\nAutonomous navigation enables the robots to move along suitable internal routes. The actual routes depend on the workshop layout, aisle widths, available space and local safety requirements.\nFor larger automotive dealerships with multiple service bays, warehouse robots can help establish regular material supply routes without requiring technicians to leave their workstations for every com"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Surgical robotics drives demand for closer collaboration between motor and robot designers",
-   "url": "https://roboticsandautomationnews.com/2026/11/23/surgical-robotics-drives-demand-for-closer-collaboration-between-motor-and-robot-designers/107522/",
-   "published": "2026-11-23T19:08:48.000Z",
-   "description": "Article contributed by Portescap, manufacturer of miniature motors for performance-critical applications At the technical level, what separates today’s surgical robotics from earlier generations is the degree to which the motion system and the platform are co-designed. The demands placed on the motion side of the equation have grown in three directions at once: more power […]",
-   "excerpt": "Article contributed by Portescap , manufacturer of miniature motors for performance-critical applications\nAt the technical level, what separates today’s surgical robotics from earlier generations is the degree to which the motion system and the platform are co-designed. The demands placed on the motion side of the equation have grown in three directions at once: more power within smaller volumes, more precise control over each movement, and greater reliability across thousands of procedures and sterilization cycles.\nMeeting any one of these is a significant engineering task. Meeting all three simultaneously is the challenge that truly defines the modern surgical robot.\nPower density is the starting point. The space envelope available at the working end of a robotic arm is limited, but the torque required to drive surgical tools is not. A motor that can deliver high torque in a compact, lightweight package is a prerequisite, and optimizing the torque-to-mass ratio is central to allowing OEMs to design systems that are responsive without becoming unwieldy.\nThis is where frameless motors have emerged as a design response worth understanding. A frameless motor is stripped down to its essential components – the stator and rotor – and foregoes the traditional housing, bearings, and shaft.\nInstead of mounting a packaged motor into the joint, the designer integrates the rotor and stator directly into the joint or end-effector assembly, using the robot’s own structure as the motor’s mechanical foundation.\nThe gains are exactly the ones the application demands: weight and space savings from eliminating redundant structure, a high torque-to-inertia ratio for responsive motion, better cooling through direct thermal contact with the surrounding assembly, and fewer mechanical losses.\nFor the control axes of joints and end effectors, where every gram and millimeter matters, this direct integration is increasingly the difference between a design that fits and one that does not.\nThe need for reliability ties all this together. Despite no longer being fringe technology, surgical robots remain expensive systems that cannot easily be swapped out, and any motion component must withstand repeated sterilization without performance degradation. That requirement reaches deep into the design – materials, sealing strategy, feedback devices, lubrication – and it must be engineered in from the start, not qualified in afterwards.\nLook closely at any of these design decisions and a patt"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Dubai completes second vertiport for Joby’s electric air taxi service",
-   "url": "https://roboticsandautomationnews.com/2026/11/23/dubai-completes-second-vertiport-for-jobys-electric-air-taxi-service/107512/",
-   "published": "2026-11-23T18:53:05.000Z",
-   "description": "Skyports Infrastructure and Dubai’s Roads and Transport Authority (RTA) have completed and secured regulatory certification for the Dubai Marina Vertiport, establishing the infrastructure for what the companies describe as the world’s first permanent vertiport-to-vertiport electric air taxi route. The facility, designated VMR, has been certified by the UAE’s General Civil Aviation Authority (GCAA) for commercial […]",
-   "excerpt": "Skyports Infrastructure and Dubai’s Roads and Transport Authority (RTA) have completed and secured regulatory certification for the Dubai Marina Vertiport, establishing the infrastructure for what the companies describe as the world’s first permanent vertiport-to-vertiport electric air taxi route.\nThe facility, designated VMR, has been certified by the UAE’s General Civil Aviation Authority (GCAA) for commercial electric vertical take-off and landing (eVTOL) operations.\nIt will connect with the network’s primary vertiport, VDX, near Dubai International Airport, creating the first route in Dubai’s planned electric air taxi network.\nJoby Aviation will operate the service, although commercial flights remain subject to further operational approvals and readiness.\nLocated next to the American University of Dubai, the new vertiport will serve Dubai Marina and surrounding residential, business and entertainment districts.\nThe facility includes an elevated landing and take-off area, aircraft charging infrastructure and a passenger terminal.\nAccording to Skyports, it has capacity for up to 21,000 landings and 84,000 passengers annually.\nThe journey between Dubai International Airport and Dubai Marina is expected to take less than 10 minutes by air, compared with approximately 35 minutes by road.\nAddison Ferrell, director of Skyports Infrastructure, says: “With two vertiports now completed and certified, Dubai has achieved another global aviation first, putting in place the infrastructure for the world’s first permanent vertiport-to-vertiport electric air taxi route. This is a significant milestone in turning the vision of Advanced Air Mobility into a reality, and a testament to the ambition and close collaboration of Skyports, the RTA, Joby and the GCAA. We look forward to welcoming flights from Joby between our vertiports in the near future.”\nTwo additional facilities are being developed in Downtown Dubai and Palm Jumeirah, forming an initial four-location network.\nJoby plans to operate four-passenger electric aircraft capable of vertical take-off and landing, with passengers booking individual seats.\nThe company has conducted piloted electric air taxi flights in Dubai since June 2025 and completed a point-to-point test flight between Margham and Al Maktoum International Airport in November 2025.\nThe Dubai Marina facility received its certification at a ceremony on November 3, becoming the second vertiport approved under the GCAA’s CAR AGA Part VFI regulations.\nIt"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Mobile robotics market set for fifteen-fold growth as autonomous picking expands",
-   "url": "https://roboticsandautomationnews.com/2026/11/23/mobile-robotics-market-set-for-fifteen-fold-growth-as-autonomous-picking-expands/107508/",
-   "published": "2026-11-23T18:43:34.000Z",
-   "description": "Mobile robots are becoming an increasingly important part of warehouse and factory automation, with applications expanding from repetitive material transport to more flexible goods movement and autonomous picking. Rising labour costs, persistent workforce shortages, and growing fulfilment complexity are encouraging manufacturers and logistics operators to invest in automated material handling solutions. According to IDTechEx, the […]",
-   "excerpt": "Mobile robots are becoming an increasingly important part of warehouse and factory automation, with applications expanding from repetitive material transport to more flexible goods movement and autonomous picking. Rising labour costs, persistent workforce shortages, and growing fulfilment complexity are encouraging manufacturers and logistics operators to invest in automated material handling solutions.\nAccording to IDTechEx , the combined market for mobile robots, autonomous vehicles, and drones in logistics is expected to expand more than fifteen-fold over the next two decades, reaching approximately $233.6 billion in annual equipment revenue by 2046.\nIntralogistics and mobile picking are expected to remain the largest application segment, representing more than half of the overall market opportunity.\nThis expansion is accompanied by significant changes in the types of robots being deployed. Conventional automated guided vehicles (AGVs) have traditionally supported material transport along predefined routes in structured industrial environments. Grid-based automated guided carts (AGCs) offer another established approach, particularly for high-density storage and repeatable transport operations.\nAs navigation and perception technologies continue to improve, autonomous mobile robots (AMRs) and autonomous mobile vehicles (AMVs) are gaining commercial traction through greater operational flexibility and reduced dependence on fixed infrastructure.\nThe transition is creating a more diversified market in which different robot architectures address distinct operational requirements. IDTechEx expects unit-load AMRs and heavy-load AMVs to gain market share over the coming decades, while conventional AGVs and grid-based AGCs continue serving applications where predictable workflows and established infrastructure support cost-effective automation.\nThe IDTechEx report, Mobile Robots, Autonomous Vehicles, and Drones 2026-2046: Logistics, Warehousing, Delivery, Players, Markets & Forecasts , provides detailed technology benchmarking, company analysis, commercialisation assessments, and 20-year market forecasts across major logistics automation applications.\nThe development of mobile robotics has been closely linked to advances in navigation, localisation, perception, and system integration. Traditional AGVs typically rely on predefined routes and established guidance infrastructure, providing predictable operation in controlled environments.\nThese characteristics remai"
-  },
-  {
    "group": "ai",
    "source": "AIHOT",
    "title": "俄勒冈州和弗吉尼亚州起诉 SpaceX 指控 Grok 生成色情深伪防护不足",
@@ -519,15 +790,6 @@
    "published": "2026-11-23T17:20:37.000Z",
    "description": "",
    "excerpt": "🤖 Models | 📄 Tech Report | 📊 Data | 💻 Code | 🌐 Project Page | 📈 Benchmark\nDeploying robots in real-world settings requires reliable perception throughout an interaction. To pick something up, a robot needs to follow the positions of its gripper and the object as they move. In a laboratory, a robot handling a pipette must keep track of its tip while aligning it with the opening of a tube. These tasks become harder when nearby objects clutter the view, the gripper obscures the object being handled, or the viewing angle changes.\nOne way to help robots follow these interactions is to track specific locations on the objects they handle. This is the idea behind point tracking . Given a location in one video frame, a tracker estimates where that same point appears in subsequent frames, when it is occluded, and where it reappears. These trajectories can help robots learn from demonstrations, plan and guide movements, and model how objects respond to actions.\nRobotics systems often rely on off-the-shelf trackers to automatically annotate motion in videos and provide feedback during execution. And current trackers score well on established robotics benchmarks, suggesting they could be ready for wider use in real-world systems. We wanted to see whether those results hold up across the varied scenes, viewpoints, and object interactions robots encounter in practice.\nWe introduce RoboTrack , a benchmark and training data suite for point tracking in robotic manipulation. RoboTrack-Bench contains 307 human-annotated videos from DROID, Ego-Exo4D, MolmoAct 2 , and EgoVerse, covering different robots and human hands, cluttered scenes, and first- and third-person viewpoints. To study how training data affects tracking in these settings, we also extend MolmoSpaces , Ai2’s simulation ecosystem for robot learning, to generate dense point tracks from simulated robot manipulation trajectories. This pipeline produces RoboTrack-15M , a new synthetic training dataset targeted toward robotic manipulation.\nRoboTrack is a benchmark and training data suite for point tracking in robotic manipulation. Built on MolmoSpaces, RoboTrack-15M (top-left) generates point tracks for training. Training with this simulated data improves tracking on real manipulation footage. RoboTrack-Bench (top-right) provides human-annotated point tracks in real manipulation videos.\nOur evaluations show that leading trackers score much lower on RoboTrack-Bench than on existing robotics benchmarks. Adding Robo"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Who Pays the Bills After a Rear-End Crash in Minneapolis?",
-   "url": "https://roboticsandautomationnews.com/2026/11/23/who-pays-the-bills-after-a-rear-end-crash-in-minneapolis/107504/",
-   "published": "2026-11-23T17:03:44.000Z",
-   "description": "Rear-end crashes are among the most common collisions on American roads, and they often happen when the driver in front is doing everything right. One moment you are stopped at a red light or slowing for traffic, and the next you feel a hard jolt from behind. Even a crash that looks minor from the […]",
-   "excerpt": "Rear-end crashes are among the most common collisions on American roads, and they often happen when the driver in front is doing everything right.\nOne moment you are stopped at a red light or slowing for traffic, and the next you feel a hard jolt from behind.\nEven a crash that looks minor from the outside can leave a person with neck pain, headaches, or back problems that linger for weeks.\nOnce the shock fades, the first question for most people is about money. Medical bills, missed work, and car repairs add up fast, and Minnesota’s insurance rules can make it hard to tell who is supposed to pay.\nTalking with a Minneapolis rear-end car accident lawyer can help sort out which coverage applies first and whether a claim against the other driver makes sense.\nMinnesota is a no-fault state. That means after a car crash, your own policy’s personal injury protection, often called PIP or no-fault coverage, is usually the first source of payment for injury-related costs. It pays no matter who caused the crash.\nMinimum PIP coverage in Minnesota includes $20,000 for medical expenses and $20,000 for non-medical losses such as lost wages and replacement services. Those benefits can help cover early treatment and missed paychecks without waiting for anyone to decide who was at fault. However, they have limits, and a serious injury can use them up quickly.\nNo-fault coverage does not always close the door on a claim against the driver who hit you. Minnesota law allows an injured person to bring a claim against an at-fault driver when the injury meets certain thresholds. In general, these include more than $4,000 in reasonable medical expenses, a permanent injury, permanent disfigurement, disability lasting 60 days or more, or death.\nA claim against the other driver’s liability insurance can cover losses that no-fault does not, including pain and suffering. This is where many rear-end cases become more complicated, because the other insurer will look closely at your injuries and medical history before agreeing to pay anything.\nFor a closer look at required coverage, the Minnesota Department of Commerce’s auto insurance basics explain what no-fault insurance pays for and what every Minnesota driver must carry. Reviewing your own policy alongside that guide can show you how much protection you actually have.\nMany people believe the driver in back is automatically responsible in a rear-end crash. In most cases the rear driver is found at fault, because drivers are expected to "
   },
   {
    "group": "ai",
@@ -576,15 +838,6 @@
   },
   {
    "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "How Location Analytics Solutions Optimize Office Floor Space",
-   "url": "https://roboticsandautomationnews.com/2026/11/23/how-location-analytics-solutions-optimize-office-floor-space/107501/",
-   "published": "2026-11-23T16:25:03.000Z",
-   "description": "An office floor plan shows where desks and meeting rooms fit, but it does not show how employees actually use those spaces. A quiet floor on one afternoon may be crowded on another, while booked rooms can sit empty. Location data gives facilities teams a way to compare those patterns before changing a layout or […]",
-   "excerpt": "An office floor plan shows where desks and meeting rooms fit, but it does not show how employees actually use those spaces. A quiet floor on one afternoon may be crowded on another, while booked rooms can sit empty.\nLocation data gives facilities teams a way to compare those patterns before changing a layout or reducing space. The first step is to decide what the organization needs to measure and how the measurements will support a space decision.\nA facilities team can divide an office into zones, such as desk areas and meeting rooms, before collecting data. With location analytics solutions , the team can examine space utilization by area and time rather than relying on a building-wide average. The resulting patterns provide a starting point for comparing available space with the activities that take place there.\nThe measurement method matters. A room reservation shows an intention to use space, while an occupancy sensor records activity according to its detection method. Teams should document what each source counts and check whether its coverage matches the floor plan. Coverage gaps can make an active area appear unoccupied.\nAverage occupancy alone can conceal a shortage on busy days. Facilities teams should compare use across weekdays and times of day, then check whether the same pattern appears over a representative period.\nA useful occupancy rate divides the number of occupied spaces by the number available in the same area and time period. The team should keep the denominator consistent when comparing periods. If desks are closed for repairs, for example, the available count needs to reflect that change.\nSpecial events, holidays, and temporary closures also deserve a note. A space decision based on an unusual week can leave employees without enough room during normal operations.\nMeeting-room data can show whether the office has the right mix of room sizes. A large room used mainly by small groups suggests a different need than a small room that employees regularly use at full capacity.\nCompare reservation records with observed occupancy where both are available. Unused bookings can point to a release-policy problem rather than a shortage of rooms. Repeated demand for a room size that is fully occupied can support a case for changing the layout.\nBefore converting a room, facilities teams should ask employees about equipment and accessibility needs. A room with low recorded use may still support activities that cannot move to an open area.\nDesk occupa"
-  },
-  {
-   "group": "wh",
    "source": "Supply Chain Dive",
    "title": "Best Buy taps AI platform for supplier insights",
    "url": "https://www.supplychaindive.com/news/best-buy-taps-ai-platform-for-supplier-insights/875211/",
@@ -602,6 +855,24 @@
    "excerpt": "In an era of shifting tariffs, export restrictions and intensified customs scrutiny, trade compliance increasingly determines which supply-chain configurations are commercially and legally executable. The relevant question is not simply whether a broker can clear a container after it arrives. It is whether procurement, engineering, finance and logistics chose a supplier, product design, origin strategy and transportation route whose full landed cost and compliance obligations were understood before the order was committed.\nTraditionally, network optimization emphasized factory costs, transportation, lead times, and inventory. Duty exposure might have been incorporated as an average landed-cost assumption. That is inadequate when particular products face different tariff treatments, origin claims depend on detailed manufacturing processes, or a low-value parcel model changes under new import rules. Two items with similar prices and weights can create very different customs obligations. Some requirements also depend on the identity of the producer or consignee. The compliance data therefore have to be connected to the actual bill of materials, supplier structure, customer market, and order flow.\nTariff classification starts with what the product actually is; origin may depend on where and how it was produced, not just the country from which the shipment departed. Valuation can involve more than the price on a purchase order. These determinations require information controlled by engineering, sourcing and finance, while the importer of record retains legal responsibilities. U.S. Customs and Border Protection’s importer guidance emphasizes descriptions, origin, composition, intended use and pricing data, and notes that using a customs broker does not transfer away the importer’s responsibility for accurate entry data.\nConsider a hypothetical component redesigned to reduce procurement cost. A supplier substitutes a material, changes a finishing step and moves final assembly across a border. The engineering team sees a technically equivalent part and sourcing sees a favorable purchase price. Yet the changes may affect classification, origin treatment, required certificates or admissibility. If that assessment happens only when the first shipment reaches a border, the organization has turned product design into a customs exception. The right control point is the design or sourcing change request, not the import declaration.\nFor a new manufacturing footprint, a de"
   },
   {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Goodfire 用可解释性改进 BioReason-Pro 2 生物推理模型并用湿实验验证假设",
+   "url": "https://aihot.news/items/uz9j9ukn8j60mwkeeaibmmctw",
+   "published": "2026-11-23T16:00:00.000Z",
+   "description": "Goodfire 与 NVIDIA、Arc Institute 合作开发 BioReason-Pro 2，以 Qwen3.5-9B 为骨干，用可解释性发现原模型过度依赖文本标注、蛋白质与文本嵌入尺度不匹配，据此移除训练输入中的 InterPro 标注、细化推理轨迹并将 ESM3 嵌入重新缩放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uz9j9ukn8j60mwkeeaibmmctw",
+   "excerpt": "Building stronger biological reasoning models\nGoodfire 与 NVIDIA 、Arc Institute 合作开发 BioReason-Pro 2，以 Qwen3.5-9B 为骨干，用可解释性发现原模型过度依赖文本标注、蛋白质与文本嵌入尺度不匹配，据此移除训练输入中的 InterPro 标注、细化推理轨迹并将 ESM3 嵌入重新缩放。\n原文展示了可解释性如何指导多模态生物推理模型的训练改进，并用湿实验验证模型假设，方法对类似多模态系统可迁移。\n蛋白质承担了细胞内的大部分工作。弄清它们的功能，对揭示疾病机制、研发新药至关重要。然而，许多蛋白质的功能至今仍是未知数，而能揭示其功能的实验又进展缓慢。能够提出具体、可验证假设的 AI 模型，可以为这些实验指明方向。\nBioReason-Pro [1] 正是为此而生，它融合了多种模态：a) 一个编码序列和结构的蛋白质模型；b) 来自预测蛋白质功能、识别蛋白质家族和功能区域的工具的文本注释。LLM 利用这些信息，用自然语言推理蛋白质可能具有的功能。这种多模态架构的目的，就是针对了解甚少的蛋白质提出有用的假设。\n要生成超越现有注释的假设，关键在于有效地结合蛋白质信息和文本信息。在最初的 BioReason-Pro 中，模型学会描述的功能区域信息，大部分来自文本注释。我们重点研究了蛋白质嵌入为模型推理贡献了什么，以及它如何塑造了模型提出的假设。\n在最初版本的基础上，我们与 NVIDIA 和 Arc Institute 合作开发了 BioReason-Pro 2 ，NVIDIA 将以 BioNeMo 开放模型的形式发布。在模型开发过程中，我们的可解释性研究发现了两个问题：模型对文本注释的依赖过重，以及蛋白质嵌入与文本嵌入之间存在尺度不匹配。这些发现促使我们 修改了训练输入 ，让模型的论断建立在具体的蛋白质区域和氨基酸上，并 重新调整了蛋白质嵌入的尺度 。这些改动共同将已注释序列特征的识别比例从 44% 提升到 84%，并改善了定位能力，能够正确预测 85% 的特征位置，误差在真实位置五个氨基酸以内。\nBioReason-Pro 2 针对两种研究甚少的人类蛋白质 SMIM32 和 RCDG1 * 的功能提出了新假设，我们已在湿实验中加以验证。由于湿实验耗时且成本高昂，决定测试哪些假设，需要对模型的推理依据有把握，因此我们也用可解释性方法考察了这些假设的基础。对于 SMIM32，干预实验展示了 蛋白质信息如何通过中间推理步骤支撑该假设 ；对于 RCDG1，对内部特征的分析揭示了模型解释中蛋白质模式与语言之间的联系。\n融合生物模态与语言，是在专用模型基础上生成生物学假设的一条有前景的路径。因此，理解每种模态如何塑造推理过程，是模型开发的重要一环。可解释性提供了一种方法，可以依据模型实际处理和使用生物信息的方式来指导改进。\n最初的 BioReason-Pro（BR-Pro）以多种形式接收蛋白质信息。一个名为 ESM3 [2] 的专用模型将序列和可用的结构转换为每个氨基酸残基的数值表示（即嵌入），再通过一个学习得到的适配器 [3] 让语言模型能够使用这些信息。\n模型还接收了其他工具基于同一序列生成的文本。GO-GPT 预测基因本体（GO） [4] 术语，这是描述蛋白质功能的标准词汇；InterPro [5] （IPR）则识别蛋白质家族、结构域（具有特征性结构或功能的区域）以及位点。\nESM3 嵌入、GO-GPT 预测和 InterPro 注释都源自同一条蛋白质序列。最初的 BR-Pro 学到的是在结构域层面描述蛋白质，而这类信息 InterPro 已经以文本形式提供了。把 InterPro 和 GO-GPT 放进提示词后，它无需 ESM3 嵌入就能还原出大部分 GO 术语预测，这与 Fang 等人 [6] 独立审计的发现一致。此外，如何有效利用非文本输入是一个更普遍的难题：视觉-语言模型在视觉任务上的表现也可能不如对应的纯文本模型（Weng 等 [7] ，Nikankin 等 [8] ）。\n为了促使模型更深入地利用 ESM3 嵌入，我们做了三处改动（ 图 1 ）。第一，从训练输入中移除 InterPro 注释，改为让模型自己识别这些注释。第二，丰富训练轨迹，使模型的论断能落到具体的结构域、特征乃至单个氨基酸上。最后，把蛋白质嵌入重新缩放到与 LLM 中文本相同的尺度，这里用的是 Qwen3.5-9B [9] 。\n此外，我们把评估从功能预测扩展到衡量模型将论断落到蛋白质上的准确程度。当模型谈到某个位置的氨基酸时，那里真的有这个氨基酸吗？它能否识别出跨膜螺旋或信号肽这类序列特征，并预测其在序列中的位置？最终模型在这些落地性检查上大幅提升，同时把平均评审分数 † 从 5.6 提高到 7.2（满分 10 分），GO 召回率从 0.62 提高到 0.71（ 图 2 ）。\n在 BioReason-Pro 中，研究团队用监督微调（SFT）教模型写出推理轨迹，使其一步步导向功能预测。这些轨迹让模型学会把 InterPro 的结构域注释和 GO-GPT 的预测串联成分子层面的假设。为了让模型更依赖自身的蛋白质嵌入，我们同时改了两件事：轨迹所依据的信息，以及它对蛋白质描述的精细程度。\n首先，我们从训练输入中去掉 InterPro 注释，得到 BR-Pro（无 IPR 训练）模型，于是识别这些注释就成了模型推理的一部分。其次，我们用超过 23 万条蛋白质推理轨迹训练 BR-Pro 2（数据变更），规模是原始语料的两倍，推理也更细，能把模型关于结构域、特征乃至单个氨基酸的判断落到序列中的具体位置上。\n为了比较各模型对输入依赖程度的变化，我们把同一条参考轨迹分别在各模型上重放，同时屏蔽 ESM3 嵌入或 GO-GPT 预测中的一项。对模型推理中的每个词，我们测量屏蔽 ESM3 相比屏蔽 GO-GPT 时预测变化有多大。在原始 BR-Pro 中，屏蔽任一输入对模"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Cognition 发布 SWE-2.1 及高速版 SWE-2.1 Lightning",
+   "url": "https://aihot.news/items/gflb0kkwzma61spkzpp1uxmrk",
+   "published": "2026-11-23T16:00:00.000Z",
+   "description": "Cognition 发布 SWE-2.1，基于 Kimi K3 纯强化学习训练，在 FrontierCode 2.0、Terminal-Bench 4.1 等基准上较 SWE-2 大幅提升，ExploitBench 达 80%、ExploitGym 捕获 27.3% flags，网络安全能力显著增强。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gflb0kkwzma61spkzpp1uxmrk",
+   "excerpt": "Cognition 发布 SWE-2.1，基于 Kimi K3 纯强化学习训练，在 FrontierCode 2.0、Terminal-Bench 4.1 等基准上较 SWE-2 大幅提升，ExploitBench 达 80%、ExploitGym 捕获 27.3% flags，网络安全能力显著增强。\n原文给出 ExploitBench、ExploitGym 等具体成绩和训练安全措施，还附基准方法细节，便于评估其实际能力边界。\n我们发布 SWE-2.1，这是对 SWE-2 的一次重大升级。与前代一样，它在 Kimi K3 上通过纯强化学习训练而成。在 FrontierCode 2.0、Terminal-Bench 4.1 等众多基准测试中，它都取得了大幅提升。我们之所以能在编码性能上获得大部分增益，是因为瞄准了通用智能和长时程工作流。这也带动了其他多个领域的进步，尤其是网络安全。\n训练带来的一个显著提升，是模型在网络安全、漏洞发现与利用任务上的能力大幅增强。SWE-2.1 在 ExploitBench 上达到 80%，在 ExploitGym 上通过预期利用手法捕获了 27.3% 的 flag。可见该模型不仅擅长发现漏洞，还能走完整个利用链，往往需要数小时的自主工作。\n训练一个具备先进网络安全能力的模型，需要额外的防护措施。因此，我们在训练中内置了多项安全机制：\n我们实施了持续的安全监控。我们设计了一项金丝雀评估，让模型尝试逃出沙箱；一旦成功，基础设施就会向研究人员发出警报。\n这项金丝雀评估是一项成功的干预措施。即便经过大量红队测试，模型在训练期间仍四次发现了我们沙箱中的新漏洞。每次研究人员都收到警报并立即作出响应。\n由于先进能力（尤其是网络安全领域）存在被滥用的风险，我们在部署 SWE-2.1 时配备了防护措施，用于检测并阻止最危险的行为。这些措施针对的是一小类高危害活动，并经过校准，确保大多数合法工作（包括网络防御工作）不受影响。\n与此同时，一些高级防御工作需要用到这些防护措施所限制的能力。AI 正在拉高攻击者的下限：过去需要稀缺专业知识的漏洞利用，如今任何拥有强大模型的人都能做到。我们希望让防御方获得同样的能力，因此向 Devin Security 推出了 SWE-2.1 Cyber——一个防护措施更宽松的 SWE-2.1 版本。\nDevin Security 已经提供由 Mythos 等前沿网络安全模型驱动的深度扫描。如今由 SWE-2.1 Cyber 驱动常规扫描，我们希望把更强的网络防御能力带给所有人。\n现实中的工程和安全问题很少能在几分钟内解决。为了观察 SWE-2.1 在持续自主运行中的表现，我们绘制了它在 ExploitGym 上的累计解决率随归一化 rollout 时间变化的曲线（按固定 TPS、1 秒 TTFT，加上实际工具执行时间计算）。\n随着模型工作时间变长，它能解决的任务也更复杂。在我们的评测中，随着时间跨度延长，性能呈对数线性提升，也就是说模型工作的小时数越多，就越能持续找到可利用的漏洞。此外，与基础模型相比，测试时扩展曲线的斜率显著增大，说明模型自主管理和完成复杂任务的能力大幅增强。\n为了训练 SWE-2.1，我们扩展了任务和环境，覆盖短时程和长时程两类工作流，涉及从科学、性能工程到网络安全的多个领域。这种广度让模型更加多才多艺，也把它的软件工程表现推得更高。\n我们还改进了后训练算法，以便在训练中控制 rollout 长度。此前，长度振荡常常破坏训练动态的稳定性。减少这些振荡后，我们就能在从几分钟到数小时不等的任务上稳定训练。\n数据与训练配方的改进合在一起，让我们能够稳定地训练更长时间，在留出的评测任务上，性能在连续多天的训练中稳步提升。新配方也促成了 SWE-2.1 测试时扩展能力的提升，帮助它在困难任务上更好地利用额外算力。\n我们还发布了 SWE-2.1 Lightning。通过与 Cerebras 合作，我们能以 10 倍速度提供同一个模型。由于 SWE-2.1 会随着测试时算力增加而持续提升，推理速度决定了它在紧迫期限内能完成多少工作。在事故处理或紧急修复期间，10 倍吞吐量能把数小时的排查和迭代缩短到几分钟。\nlore m ipsu m dolo r sit amet cons ecte tur adip isci ng elit sed do eius mod temp or inci didu nt ut labo re et dolo re magn a aliq ua ut enim ad mini m veni am quis nost rud exer cita tion ulla mco labo ris nisi ut aliq uip ex ea comm odo cons equa t duis aute irur e dolo r in repr ehen deri t in volu ptat e veli t esse cill um dolo re eu fugi at null a pari atur exce pteu r sint occa ecat cupi data t non proi dent sunt in culp a qui offi cia dese runt moll it anim id est labo rum lore m ipsu m dolo r sit amet cons ecte tur adip isci ng elit sed do eius mod temp or inci didu nt ut labo re et dolo re magn a aliq ua\nlore m ipsu m dolo r sit amet cons ecte tur adip isci ng elit sed do eius mod temp or inci didu nt ut labo re et dolo "
+  },
+  {
    "group": "wh",
    "source": "Logistics Viewpoints",
    "title": "From Last Mile to Agentic TMS: Locus Broadens Its Enterprise Ambitions",
@@ -609,15 +880,6 @@
    "published": "2026-11-23T15:46:02.000Z",
    "description": "Locus built its reputation around last-mile delivery optimization. Today, the company is using the optimization capabilities developed over years of managing complex delivery operations as the foundation for an enterprise transportation management system spanning the first, middle, and final mile. That transition puts Locus into a crowded and highly competitive transportation management system market. It […] The post From Last Mile to Agentic TMS: Locus Broadens Its Enterprise Ambitions appeared first on Logistics Viewpoints .",
    "excerpt": "Locus built its reputation around last-mile delivery optimization. Today, the company is using the optimization capabilities developed over years of managing complex delivery operations as the foundation for an enterprise transportation management system spanning the first, middle, and final mile.\nThat transition puts Locus into a crowded and highly competitive transportation management system market. It also raises an important question: can a company known primarily for last-mile optimization translate those capabilities into a platform broad enough to compete for enterprise TMS deployments?\nIn a recent briefing with Logistics Viewpoints and ARC Advisory Group, Locus executives argued that the answer increasingly is yes.\nThe company says it now supports more than 360 enterprise customers across roughly 30 countries and manages more than 1.5 billion deliveries annually. Its customer base spans retail, consumer packaged goods, and logistics services. Locus also pointed to its acquisition by Ingka Group, the largest IKEA retailer, as both validation of its technology and an opportunity to develop the platform against a very large and complex transportation environment. Locus continues to operate independently and sell outside the IKEA organization.\nFrom Last Mile to End-to-End Transportation\nLocus’ evolution reflects a familiar pattern in transportation technology.\nThe company initially focused on last-mile planning and execution, where routing, customer delivery windows, driver utilization, capacity constraints, and changing conditions create difficult optimization problems. Over time, Locus said customers increasingly asked it to address problems further upstream.\nThat pushed the company into first-mile and middle-mile planning, carrier management, shipment visibility, settlement, audit, procurement, yard processes, and other functions traditionally associated with a TMS.\nThe broader strategy is to support transportation from initial planning through execution and post-delivery reconciliation.\nThat breadth matters because large transportation networks rarely operate within a single clean workflow. Retailers and manufacturers may combine private fleets, dedicated capacity, parcel carriers, 3PLs, cross-border transportation, ocean movements, and final-mile networks. The challenge is not simply executing each activity individually. It is coordinating them without creating another collection of disconnected applications.\nLocus believes its architecture can pr"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "XPeng to showcase humanoid robot and physical AI advances at AI Day 2026",
-   "url": "https://roboticsandautomationnews.com/2026/11/23/xpeng-to-showcase-humanoid-robot-and-physical-ai-advances-at-ai-day-2026/107497/",
-   "published": "2026-11-23T15:41:51.000Z",
-   "description": "XPeng, an automaker which is also becoming a physical AI company, will host its 2026 AI Day on November 25 in Guangzhou, China, showcasing its latest advances in physical AI, humanoid robotics and next-generation mobility technologies. Themed “Origin”, this year-end event marks the eighth edition of XPeng’s annual technology showcase. Since its inaugural event in […]",
-   "excerpt": "XPeng , an automaker which is also becoming a physical AI company, will host its 2026 AI Day on November 25 in Guangzhou, China, showcasing its latest advances in physical AI, humanoid robotics and next-generation mobility technologies.\nThemed “Origin”, this year-end event marks the eighth edition of XPeng’s annual technology showcase. Since its inaugural event in 2019, XPeng has consistently explored the next frontier of technology, from software-defined vehicles and AI-defined mobility to physical AI.\nTechnologies previewed across its previous seven editions have subsequently progressed into real-world applications, reflecting the company’s focus on translating technological advances into tangible products and user value.\nAs AI moves beyond digital environments and into the physical world, XPeng believes that increasingly powerful AI large models alone will not be enough. The complexity and unpredictability of real-world environments require AI to work in close coordination with proprietary hardware and physical systems.\nThe next stage of development will depend on the co-evolution of intelligence and embodiment, enabling AI to perceive, understand, act and continuously learn through real-world interactions.\nAt this year’s AI Day, XPeng will share its latest thinking and practical progress in physical AI, demonstrating how intelligence can extend from the AI brain to the physical body and translate into real-world capabilities.\nA key highlight will be the showcase of Iron, XPeng’s general-purpose advanced humanoid robot. Standing approximately 170 cm tall, Iron features a highly anthropomorphic design, 76 degrees of freedom across its body and 21 in each hand.\nPowered by three in-house developed Turing AI chips delivering up to 2,250 TOPS, it runs XPeng’s physical AI foundation model on-device, enabling autonomous task execution without teleoperation.\nFollowing eight years of R&D, the latest Iron rolled off the newly commissioned production line on September 8, 2026. In August 2026, XPeng’s robotics business secured over $900 million in equity financing at a post-money valuation exceeding $6.3 billion, the largest single-round private financing in China’s embodied AI industry.\nBeyond humanoid robots, XPeng AI Day will also feature autonomous driving experiences across Levels 2 to 4, from NGP intelligent driving to L4 Robotaxi, alongside updates on XPeng’s flying car developments, showcasing its expanding physical AI ecosystem and next-generation mobility"
   },
   {
    "group": "wh",
@@ -681,15 +943,6 @@
    "published": "2026-11-23T14:46:19.000Z",
    "description": "Wiz Research 发文介绍 ARTEX 等智能体攻击框架正在推动云入侵激增。文中分享了来自真实环境的案例，包括通过攻击操作者泄露的日志看到的一次攻击的双方视角、对 Black October 的更新，以及可捕捉这类嘈杂、机器速度攻击的检测方法。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gp8e9a8oitha0rbip8pzntuff",
    "excerpt": "Wiz Research 发文介绍 ARTEX 等智能体攻击框架正在推动云入侵激增。文中分享了来自真实环境的案例，包括通过攻击操作者泄露的日志看到的一次攻击的双方视角、对 Black October 的更新，以及可捕捉这类嘈杂、机器速度攻击的检测方法。\nWiz Research 基于真实攻击案例和操作者泄露日志分析 ARTEX 等智能体攻击框架，读者可以据此了解这类机器速度攻击的检测思路。\n像 ARTEX 这样的智能体化攻击框架正推动云入侵事件激增。Wiz Research 分享了来自真实环境的案例，其中包括借助攻击者泄露的日志还原出一次攻击的攻防双方视角，还有“黑色十月”的最新进展，以及能够捕捉这类高频、机器速度攻击的检测规则。\nWiz Research 基于真实攻击案例和操作者泄露日志分析 ARTEX 等智能体攻击框架，读者可以据此了解这类机器速度攻击的检测思路。"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "ARTEX 开源 AI 黑客框架遭滥用，FBI 发出警告但代码已广泛扩散",
-   "url": "https://aihot.news/items/zb8hu8pp2ogojk5081g7z4en7",
-   "published": "2026-11-23T14:16:47.000Z",
-   "description": "404 Media 报道，开源框架 ARTEX 让 AI 智能体以机器速度自动完成从侦察到窃取数据的整个入侵流程，FBI 称攻击者用它针对全球政府、医疗、电信、金融、半导体等行业，数小时内即可完成一次完整攻击。原作者 Autumn-27 已于 10 月将其从 GitHub 下架并转为闭源，但多个克隆版本仍在传播，有维护者表示不会删除仓库，理由是代码已被到处复制。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zb8hu8pp2ogojk5081g7z4en7",
-   "excerpt": "404 Media 报道，开源框架 ARTEX 让 AI 智能体以机器速度自动完成从侦察到窃取数据的整个入侵流程，FBI 称攻击者用它针对全球政府、医疗、电信、金融、半导体等行业，数小时内即可完成一次完整攻击。原作者 Autumn-27 已于 10 月将其从 GitHub 下架并转为闭源，但多个克隆版本仍在传播，有维护者表示不会删除仓库，理由是代码已被到处复制。\n报道梳理了 ARTEX 的工作机制、FBI 警告与开源 fork 现状，读者可以借此理解智能体工具如何压缩攻击所需的时间与技能门槛。\n报道梳理了 ARTEX 的工作机制、FBI 警告与开源 fork 现状，读者可以借此理解智能体工具如何压缩攻击所需的时间与技能门槛。"
   },
   {
    "group": "ai",
@@ -829,6 +1082,24 @@
   {
    "group": "ai",
    "source": "Claude 官方博客",
+   "title": "Zero data retention with Enterprise Frontier Safeguards is now in beta",
+   "url": "https://claude.com/resources/articles/zero-data-retention-with-enterprise-frontier-safeguards",
+   "published": "2026-11-23T00:00:00.000Z",
+   "description": "Enterprise Frontier Safeguards is now in public beta, providing detection of sophisticated misuse while remaining compatible with zero data retention.",
+   "excerpt": "Over the past few months, we've been developing Enterprise Frontier Safeguards (EFS) for our business customers. EFS provides state-of-the-art detection of sophisticated misuse, while remaining compatible with zero data retention (ZDR): neither Anthropic nor any cloud providers retain enterprises' data.\nSince we announced EFS in September , we've been developing it further with over 100 of our customers—including a quarter of the Fortune 100 and many companies in industries with strict rules on data visibility (like healthcare, financial services, and law). Leading enterprises like Bridgewater, Salesforce, and Stripe have been evaluating EFS in private beta.\n“As a company that runs critical infrastructure, safety matters as much to us as model capability. We need a solution that gives us strong safeguards while allowing us to keep our data in our own account. Enterprise Frontier Safeguards delivers just that.”\n“At Stripe, protecting customer data is foundational to how we operate. Anthropic’s Enterprise Frontier Safeguards will enable us to use frontier models with added protection against misuse. It will also let us retain conversation logs in Stripe’s AWS environment, with access and review governed by Stripe’s security controls.”\n“With EFS, customers can keep sensitive data in their own environments, protected with their own encryption keys, while still preserving the specialized safety mechanisms frontier capabilities require. That balance, keeping enterprises in control of their data without abandoning frontier-model safety, is critical to broader adoption of advanced AI in security-sensitive organizations like Cisco.”\n“Enterprise Frontier Safeguards gives us exactly what we asked for: our logs stay in a Wells-managed environment under Wells-managed keys. We keep custody of our data while Anthropic operates the detection. That split is what lets our teams put frontier models to work safely and meet our obligations to customers, employees, and regulators. We helped shape these safeguards because our industry needs them.”\n“Where we have regulated or highly sensitive data, having Enterprise Frontier Safeguards with zero data retention will allow us to confidently accelerate our AI deployment across those highly regulated and sensitive client engagements.”\n“As a company that runs critical infrastructure, safety matters as much to us as model capability. We need a solution that gives us strong safeguards while allowing us to keep our data in our own accoun"
+  },
+  {
+   "group": "ai",
+   "source": "Claude 官方博客",
+   "title": "Introducing Claude Ship",
+   "url": "https://claude.com/resources/articles/introducing-claude-ship",
+   "published": "2026-11-23T00:00:00.000Z",
+   "description": "Open a pull request and get back to building. Claude can now review pull requests, fix them, and approve the ones that a team's policy allows.",
+   "excerpt": "Anyone who has opened a pull request knows how this goes. They start on the next thing, and then the review comes back. So they stop, dig back into the old code, push a fix, and wait for the review to run again. Then they go find someone to approve it.\nThere's a good reason it works this way. Most teams want a person to approve every change, and that's easy to keep up with when people write every line. But a lot of developers build with agents now. On the Claude Code team, Claude writes most of our code , and we wanted everything after the PR to move that fast too.\nThat's why we built Claude Ship , available today in beta. It can review PRs, fix them, and decide what's ready to merge based on policies each team sets. Teams stay in control of where it runs and which changes need a person. The goal: ship code as fast as teams write it.\nClaude Ship is made up of Code Review , which is already generally available, and two new agents in beta: PR Steward and Claude Approvals. Together, they take a pull request through review, fixes, and an approval decision so teams don't have to manage each step manually.\nCode Review performs an in-depth review of pull requests against the codebase through multiple lenses. It collects findings, adversarially verifies them, categorizes them, and posts them to a PR. On the Claude Code team, where Claude's review is one layer of a broader process, merged PRs more than doubled from June to September while the share reverted fell by more than 40%. Code Review gives teams fast reviews, clear findings, and a choice of Quick, Standard, or Deep review levels for each repository.\nPR Steward works to keep a PR green, but is designed not to approve or merge pull requests. It jumps in on failing CI checks, merge conflicts, and review feedback from Code Review, other review tools, or team members. After every push, it comments with what it changed and how to undo it. Developers can comment @claude with an instruction to steer the work, or @claude stop to have it step back.\nFrom there, Claude Approvals applies an approval policy that the team writes as a file in the repository. Claude can approve routine changes on its own if the policy allows it, or can require deeper human sign-off for certain scenarios. It works like a smarter CODEOWNERS file. Teams can have Claude Approvals consider a variety of signals in its decision-making process, including Code Review findings or their own classifiers using natural language. For most customers, we re"
+  },
+  {
+   "group": "ai",
+   "source": "Claude 官方博客",
    "title": "KPMG's Todd Lohr on AI when your data is also your clients' data",
    "url": "https://claude.com/resources/articles/kpmg-todd-lohr-on-ai-when-your-data-is-also-your-clients-data",
    "published": "2026-11-23T00:00:00.000Z",
@@ -843,24 +1114,6 @@
    "published": "2026-11-23T00:00:00.000Z",
    "description": "How security and technical leaders can scope and bound coding agent risk: AI-specific risks, Claude Code’s layered defenses, and centrally enforced policy.",
    "excerpt": "Coding agents likely write code and open pull requests at your organization already. For many leading enterprises, they are reviewing, testing, and merging it too.\nFor example, after standardizing on Claude Code across its engineering organization, Salesforce ¹ reported :\nmore pull requests merged per developer at Salesforce\nAs agents do more, technical and security leaders must mitigate risks like prompt injection and privilege abuse with layered controls such as checked permissions and bounded environments.\nThe first two chapters focus on scoping the risk. We discuss the requirements every AI provider should meet and four agentic risks to mitigate.\nThe next three chapters focus on bounding the risk. We highlight the defensive layers you can deploy with Claude Code as well as how to centrally manage and enforce those controls.\nThis guide aims to provide a helpful agent security framework that can give organizations the confidence and trust to run agents effectively at scale.\nThis guide has a companion. The AI-Native SDLC Playbook covers how to redesign software development around agents, stage by stage from planning to maintenance. This guide covers the security controls underneath that work.\nRead the playbook to decide where agents fit in your lifecycle. Read this guide to decide what they’re allowed to do when they get there.\nThis guide is written for organizations on Claude Team and Enterprise plans. If you reach Claude through a cloud provider such as AWS, Google Cloud, or Microsoft Azure, the same principles and local controls apply.\nSix questions for every coding agent · Applying SaaS requirements to your AI provider\n“A CISO's responsibility in the age of agentic AI is not to achieve zero risk. Instead, our jobs are to make agentic risk legible and bounded. This way, we can deliberately accept what we can manage, so the business moves on our terms instead of around us.”\nHere are six questions leaders can ask when evaluating coding agents to verify they are enterprise ready.\nYou already have a SaaS provider checklist with controls such as single sign-on, role-based access, data handling terms, and audit logs. Hold AI providers to a similar checklist. For example, Claude Code supports these security expectations through:\nThe Cyber Verification Program (CVP) makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.\nEnterprise Frontier Safeguards is designed to let eligible organizations store dat"
-  },
-  {
-   "group": "ai",
-   "source": "Claude 官方博客",
-   "title": "Introducing Claude Ship",
-   "url": "https://claude.com/resources/articles/introducing-claude-ship",
-   "published": "2026-11-23T00:00:00.000Z",
-   "description": "Open a pull request and get back to building. Claude can now review pull requests, fix them, and approve the ones that a team's policy allows.",
-   "excerpt": "Anyone who has opened a pull request knows how this goes. They start on the next thing, and then the review comes back. So they stop, dig back into the old code, push a fix, and wait for the review to run again. Then they go find someone to approve it.\nThere's a good reason it works this way. Most teams want a person to approve every change, and that's easy to keep up with when people write every line. But a lot of developers build with agents now. On the Claude Code team, Claude writes most of our code , and we wanted everything after the PR to move that fast too.\nThat's why we built Claude Ship , available today in beta. It can review PRs, fix them, and decide what's ready to merge based on policies each team sets. Teams stay in control of where it runs and which changes need a person. The goal: ship code as fast as teams write it.\nClaude Ship is made up of Code Review , which is already generally available, and two new agents in beta: PR Steward and Claude Approvals. Together, they take a pull request through review, fixes, and an approval decision so teams don't have to manage each step manually.\nCode Review performs an in-depth review of pull requests against the codebase through multiple lenses. It collects findings, adversarially verifies them, categorizes them, and posts them to a PR. On the Claude Code team, where Claude's review is one layer of a broader process, merged PRs more than doubled from June to September while the share reverted fell by more than 40%. Code Review gives teams fast reviews, clear findings, and a choice of Quick, Standard, or Deep review levels for each repository.\nPR Steward works to keep a PR green, but is designed not to approve or merge pull requests. It jumps in on failing CI checks, merge conflicts, and review feedback from Code Review, other review tools, or team members. After every push, it comments with what it changed and how to undo it. Developers can comment @claude with an instruction to steer the work, or @claude stop to have it step back.\nFrom there, Claude Approvals applies an approval policy that the team writes as a file in the repository. Claude can approve routine changes on its own if the policy allows it, or can require deeper human sign-off for certain scenarios. It works like a smarter CODEOWNERS file. Teams can have Claude Approvals consider a variety of signals in its decision-making process, including Code Review findings or their own classifiers using natural language. For most customers, we re"
-  },
-  {
-   "group": "ai",
-   "source": "Claude 官方博客",
-   "title": "Zero data retention with Enterprise Frontier Safeguards is now in beta",
-   "url": "https://claude.com/resources/articles/zero-data-retention-with-enterprise-frontier-safeguards",
-   "published": "2026-11-23T00:00:00.000Z",
-   "description": "Enterprise Frontier Safeguards is now in public beta, providing detection of sophisticated misuse while remaining compatible with zero data retention.",
-   "excerpt": "Over the past few months, we've been developing Enterprise Frontier Safeguards (EFS) for our business customers. EFS provides state-of-the-art detection of sophisticated misuse, while remaining compatible with zero data retention (ZDR): neither Anthropic nor any cloud providers retain enterprises' data.\nSince we announced EFS in September , we've been developing it further with over 100 of our customers—including a quarter of the Fortune 100 and many companies in industries with strict rules on data visibility (like healthcare, financial services, and law). Leading enterprises like Bridgewater, Salesforce, and Stripe have been evaluating EFS in private beta.\n“As a company that runs critical infrastructure, safety matters as much to us as model capability. We need a solution that gives us strong safeguards while allowing us to keep our data in our own account. Enterprise Frontier Safeguards delivers just that.”\n“At Stripe, protecting customer data is foundational to how we operate. Anthropic’s Enterprise Frontier Safeguards will enable us to use frontier models with added protection against misuse. It will also let us retain conversation logs in Stripe’s AWS environment, with access and review governed by Stripe’s security controls.”\n“With EFS, customers can keep sensitive data in their own environments, protected with their own encryption keys, while still preserving the specialized safety mechanisms frontier capabilities require. That balance, keeping enterprises in control of their data without abandoning frontier-model safety, is critical to broader adoption of advanced AI in security-sensitive organizations like Cisco.”\n“Enterprise Frontier Safeguards gives us exactly what we asked for: our logs stay in a Wells-managed environment under Wells-managed keys. We keep custody of our data while Anthropic operates the detection. That split is what lets our teams put frontier models to work safely and meet our obligations to customers, employees, and regulators. We helped shape these safeguards because our industry needs them.”\n“Where we have regulated or highly sensitive data, having Enterprise Frontier Safeguards with zero data retention will allow us to confidently accelerate our AI deployment across those highly regulated and sensitive client engagements.”\n“As a company that runs critical infrastructure, safety matters as much to us as model capability. We need a solution that gives us strong safeguards while allowing us to keep our data in our own accoun"
   },
   {
    "group": "ai",
@@ -914,7 +1167,7 @@
    "url": "https://aihot.news/items/dr26culfdd1cb21w56i8iruts",
    "published": "2026-11-22T11:25:20.000Z",
    "description": "面壁智能转发并认同 @xiaoanlab 对 MiniCPM 端侧落地的观察：截至 2026 年 11 月 MiniCPM 下载量超过 7000 万，其 8B 老挝国家模型接入老挝政府 G-Chat v2 通讯软件，老挝翻译在国际基准上超过 GPT-4o。马来西亚用 VoxCPM2 做语音交互，肯尼亚一家银行在其上运行端侧风控 Agent，开发者基于它推出离线应用；小模型之争正从参数量转向谁真正嵌入日常系统。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dr26culfdd1cb21w56i8iruts",
-   "excerpt": "面壁智能转发并认同 @xiaoanlab 对 MiniCPM 端侧落地的观察：截至 2026 年 11 月 MiniCPM 下载量超过 7000 万，其 8B 老挝国家模型接入老挝政府 G-Chat v2 通讯软件，老挝翻译在国际基准上超过 GPT-4o。马来西亚用 VoxCPM2 做语音交互，肯尼亚一家银行在其上运行端侧风控 Agent，开发者基于它推出离线应用；小模型之争正从参数量转向谁真正嵌入日常系统。\n引用内容梳理了 MiniCPM 在老挝、马来西亚、肯尼亚等实际落地情况，读者可借此看小模型如何嵌入日常系统而非比拼参数量。\n完全正确！💙 小模型的真正影响力在于让 AI 变得可及、可负担，并在日常生活中实用。期待看到更多用 MiniCPM 构建的真实应用！🚀\n面壁智能表示，截至 2026 年 11 月，MiniCPM 的下载量已突破 7000 万次。其 8B 老挝国家模型现已接入政府的 G-Chat v2 通讯应用，其老挝语翻译在国际基准测试中击败了 GPT-4o。\n老挝并非唯一的部署地。马来西亚正使用 VoxCPM2 进行语音交互，肯尼亚的一家银行在其上运行端侧风险代理，开发者们也在其之上发布离线应用。\n小型端侧模型的竞赛不再关乎参数数量。关键在于谁真正被嵌入日常系统——足够便宜、足够支持离线，才能被采用。\n如果你构建端侧模型或将 AI 带入现实世界，下一笔国家级交易会花落开放模型，还是大实验室的自研模型？\nMiniCPM just became a country's official model — and it only has 8 billion parameters.\nModelBest says MiniCPM downloads passed 70 million as of November 2026. Its 8B Laos national model is now plugged into the government's G-Chat v2 messenger, and its Lao translation beat GPT-4o on an international benchmark.\nLaos isn't the only deployment. Malaysia is using VoxCPM2 for voice interaction, a bank in Kenya runs on-device risk agents on it, and developers are shipping offline apps on top of it.\nThe race for small on-device models isn't about parameter counts anymore. It's about who actually gets embedded in daily systems — cheap enough and offline-capable enough to get in.\nIf you build on-device models or ship AI into the real world, will the next national-level deal go to an open model or a big lab's in-house one?\n引用内容梳理了 MiniCPM 在老挝、马来西亚、肯尼亚等实际落地情况，读者可借此看小模型如何嵌入日常系统而非比拼参数量。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -923,7 +1176,7 @@
    "url": "https://aihot.news/items/g3vdho0vzm8rzriiz5grruy3m",
    "published": "2026-11-22T11:15:31.000Z",
    "description": "用户@cxjwin 分享在 Mac（M4 Pro、48GB）上用 Homebrew 装 llama.cpp 跑 minicpm5-2b、colima 起 Docker 本地运行开源项目 Mirobody 的实测：14 页 PDF 首次处理漏掉 3 页扫描版化验单，截图单独上传后 58 行化验数值逐项与原件对上，其中 20 行成功映射到 LOINC 标准编码，肌酐因名称歧义留空未猜。问超标指标时 2B 模型走 11 步找到全部 5 项箭头指标，但把一项在范围内的血糖误判为超标。接 Claude Code 时改用演示账号避免数据上传。Mirobody 由 Theta Health 以 Apache-2.0 开源，网页版和微信小程序也基于它。 🔗 阅读原文 via AIHOT · https://aihot.news/items/g3vdho0vzm8rzriiz5grruy3m",
-   "excerpt": "用户@cxjwin 分享在 Mac（M4 Pro、48GB）上用 Homebrew 装 llama.cpp 跑 minicpm5-2b、colima 起 Docker 本地运行开源项目 Mirobody 的实测：14 页 PDF 首次处理漏掉 3 页扫描版化验单，截图单独上传后 58 行化验数值逐项与原件对上，其中 20 行成功映射到 LOINC 标准编码，肌酐因名称歧义留空未猜。问超标指标时 2B 模型走 11 步找到全部 5 项箭头指标，但把一项在范围内的血糖误判为超标。接 Claude Code 时改用演示账号避免数据上传。Mirobody 由 Theta Health 以 Apache-2.0 开源，网页版和微信小程序也基于它。\n用户实测记录了本地跑通 Mirobody 的完整流程，也包括扫描页漏读、LOINC 编码对不上和 2B 模型答错的细节，可作本地部署健康数据工作流的参考。\n感谢这份详细的实测评测！💙 很高兴看到 MiniCPM5-2B 被用于本地优先的工作流。非常感谢你既分享了哪些地方好用，也分享了哪些地方可以改进！🙌\n上个月的体检报告，我交给了开源项目 Mirobody，在自己 Mac 上从读报告到回答问题全跑通了，没填一个 API key。58 行化验数值逐项对过原件，全对。可第一次上传时，化验单那几页它一条都没读进来。\n装法：Homebrew 装 llama.cpp 跑模型，colima 起 Docker 跑应用，设置页选「100% 在本机运行」，用默认的小模型 minicpm5-2b，读图交给 glm-ocr。模型下载加载 6 分钟。机器是 M4 Pro、48GB，模型走 Mac 的 GPU。\n第一次传整份 14 页的 PDF，1 分钟处理完，进来 33 条，全是前几页的查体和结论，化验单 3 页一条没有。翻日志，读图的模型一次都没被调用。这 3 页是嵌在 PDF 里的扫描图，页眉页脚却是文字，按文档写的规则，有文字层的页不走 OCR。\n我把这 3 页截成图片单独传，一分半处理完，58 行化验结果全进来了，数值和原件逐项对得上。错了 3 处小地方：红细胞的参考范围多读出一个「1」，一个项目名丢了个字，甘油三酯旁边印的上箭头没记下来。\nMirobody 主要干的事，是把每条读数对到标准编码 LOINC，不同医院、不同写法的同一项才能连成一条线。这 58 行对上了 20 行。生化、甲功、糖化基本都对上了，单位不同还会选不同的编码；血常规 22 项、尿常规 14 项一项没对上，卡在「白细胞WBC」这种中文直接连着缩写的写法上。\n最有意思的是肌酐。报告上写的是「肌酐(Cre)」，而 Cre 在 LOINC 里查到的是一种耐药菌的培养检查。它判断这个名字有歧义，就留空，没有瞎猜。\n然后我问它：「我这次体检有哪些指标超出了参考范围？」2B 小模型想了 84 秒，走了 11 步。报告上标了箭头的 5 项全找到了，但把一项在范围内的血糖也算成了超标。它查表没拿到数值，转头去翻了原文件，回答里的数字也没带来源链接。我的血脂和肝功能确实有几项偏高，具体数值就不放了。\n接 Claude Code 这一步，我换成了项目自带的演示账号。MCP 接上以后，Claude Code 查到的读数会发到 Claude 的服务器，所以这一步没用我自己的数据。问它「胆固醇这几年怎么变的」，只有一条记录的时候，它直说看不出变化，没编趋势；我再传两份合成报告（一份 PDF、一份 CSV，写法不完全一样），三次读数被认成同一项，按日期排好，每个数字都标了出自哪个文件。\nChatGPT Health、阿福是厂商的云服务，注册就能用。Mirobody 是 Theta Health 开源的（Apache-2.0），国内的网页版和微信小程序也基于它。开源版能把记录和模型都留在自己电脑上，代价是得自己折腾，小模型也慢。它不做诊断，那次回答最后一句也是让我拿报告去问医生。\n认不出的写法可以去提 issue，它的词表就是这么一行一行补起来的。 github.com/thetahealth/mirobo…\n用户实测记录了本地跑通 Mirobody 的完整流程，也包括扫描页漏读、LOINC 编码对不上和 2B 模型答错的细节，可作本地部署健康数据工作流的参考。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -932,7 +1185,7 @@
    "url": "https://aihot.news/items/ikpixx0j7414se1f6lww2csek",
    "published": "2026-11-22T11:08:31.000Z",
    "description": "Lean 与 Mathlib 社区发表声明，确认斯坦福数学家 Levent Alpöge 的黎曼猜想证明正确。Alpöge 于 2026 年 11 月 20 日以 1700 万行 Lean 代码发布该证明，数十人独立运行得到相同结果，且验证程序被设计为可证明不会接受有缺陷的证明。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ikpixx0j7414se1f6lww2csek",
-   "excerpt": "Lean and Mathlib community officially confirms Levent Alpöge's proof of the Riemann hypothesis is correct\nLean 与 Mathlib 社区发表声明，确认斯坦福数学家 Levent Alpöge 的黎曼猜想证明正确。Alpöge 于 2026 年 11 月 20 日以 1700 万行 Lean 代码发布该证明，数十人独立运行得到相同结果，且验证程序被设计为可证明不会接受有缺陷的证明。\n社区正式确认与代码验证细节都写得很具体，读者可以了解这道数学难题如何以 Lean 形式被独立核验。\nLean 与 Mathlib 社区已确认，Levent Alpöge 对黎曼猜想的证明是正确的。 该社区 在一份声明中表示 ：“我们完全相信 Alpöge 的证明是正确的，并祝贺他取得这一成就。”\nAlpöge 是斯坦福大学的数学家，他于 2026 年 11 月 20 日 以 1700 万行 Lean 代码的形式公布了这一证明 。Lean 是一款用于检查数学证明中错误的工具。数十人独立运行了这些代码，得到了相同的结果。这些验证程序的设计使其可证明地无法接受有缺陷的证明。麻省理工学院数学家 Andrew Sutherland 在其网站上列出了各项独立验证 。\n黎曼猜想一直是数学界最著名的未解难题之一，它对素数的分布方式作出了预测。下方这段用 Fable 5.2 生成的视频对证明做了解释，如果你想深入了解可以看看。\n这一解答的到来远比预期要早。正如 Ethan Mollick 所指出的 ，Metaculus 上的预测者此前给出的预期日期是 2035 年 5 月。 数学家陶哲轩 上个月还表示，他预计这个问题会在“2050 年前后由人类与 AI 的结合”攻克。\n来源： The Decoder：AI News · the-decoder.com\n社区正式确认与代码验证细节都写得很具体，读者可以了解这道数学难题如何以 Lean 形式被独立核验。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -941,7 +1194,7 @@
    "url": "https://aihot.news/items/p9h5xzsooms0foxeakoivy7qt",
    "published": "2026-11-22T09:35:58.000Z",
    "description": "2022 年菲尔兹奖得主、牛津大学数学教授詹姆斯·梅纳德（James Maynard）在采访中表示，他认为 Anthropic 数学家莱文特·阿尔珀格（Levent Alpöge）与 Claude 合作完成的黎曼猜想证明是正确的，依据是该证明已通过 Lean 库形式化验证并经独立核实，且阿尔珀格过往有可靠记录。 🔗 阅读原文 via AIHOT · https://aihot.news/items/p9h5xzsooms0foxeakoivy7qt",
-   "excerpt": "菲尔兹奖得主梅纳德谈“AI 攻克黎曼猜想”：相信证明正确，但成果被人理解、才可能得到认可\n2022 年菲尔兹奖得主、牛津大学数学教授詹姆斯·梅纳德（James Maynard）在采访中表示，他认为 Anthropic 数学家莱文特·阿尔珀格（Levent Alpöge）与 Claude 合作完成的黎曼猜想证明是正确的，依据是该证明已通过 Lean 库形式化验证并经独立核实，且阿尔珀格过往有可靠记录。\n菲尔兹奖得主梅纳德对 AI 辅助黎曼猜想证明的判断，提醒读者形式化验证通过不等于数学界认可，理解证明思想才是关键。\nIT之家 11 月 22 日消息，当地时间 11 月 20 日，Anthropic 数学家莱文特 · 阿尔珀格（Levent Alpöge）宣布，自己与 AI 模型 Claude 合作，攻克了数学界最著名的难题之一 —— 黎曼猜想。\n据IT之家此前报道，11 月 21 日，Lean 与 Mathlib 社区发布联合声明，以 Lean 库形式给出的黎曼猜想证明已经通过核验，该证明的代码约 1700 万行。\n据每日经济新闻报道，2022 年菲尔兹奖得主、牛津大学数学教授詹姆斯 · 梅纳德（James Maynard）接受采访时表示，他认为这项证明是正确的，但强调“理解一个定理为什么成立，远比仅仅证明它成立重要”。 只有当有人真正理解这项成果，并能够向其他人解释清楚时，这份证明才有可能得到数学界的全面认可 。\n梅纳德是当代解析数论领域的重要数学家，长期致力于素数分布等数学问题的研究。2022 年，他凭借相关研究成果获得菲尔兹奖。\n由于这项结果已经获得形式化验证，而且这一验证又经过了独立核实。此外，阿尔珀格过去在提出此类重大主张方面有着可靠的记录。综合这两点，梅纳德称非常有信心认为这一结果是正确的。\n梅纳德表示，虽然黎曼猜想确实有一些直接的数学推论，但这个问题之所以被认为如此重要，主要是因为人们一直期待，要解释素数分布中这种深刻的内在结构， 就必须发展出新的数学理论 。\n在我们真正理解证明中的思想和整体框架之前，这项成果很可能无法带来人们所期待的变革。\n不过，我相信随着时间推移，我们最终会真正理解这份证明，而这必将彻底改变我们对相关数学问题的认识。\n《 AI 攻克黎曼猜想？Anthropic 数学家宣称已与 Claude 合作完成证明 》\n《 Anthropic 数学家 AI 攻克黎曼猜想？Lean 社区通过核验，数十人报告代码库编译正确 》\n菲尔兹奖得主梅纳德对 AI 辅助黎曼猜想证明的判断，提醒读者形式化验证通过不等于数学界认可，理解证明思想才是关键。"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -968,7 +1221,7 @@
    "url": "https://aihot.news/items/r7kb35fpdwc1m2iqsmd310tdj",
    "published": "2026-11-22T00:00:00.000Z",
    "description": "OpenAI 撰文提议将 perplexity（交叉熵损失）确立为跨模型开发者比较和安全标准的共享指标，并公开其内部预训练测量数据。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r7kb35fpdwc1m2iqsmd310tdj",
-   "excerpt": "OpenAI 撰文提议将 perplexity（交叉熵损失）确立为跨模型开发者比较和安全标准的共享指标，并公开其内部预训练测量数据。\nOpenAI 公开自 GPT-3.5 以来的内部 log-perplexity 数据，并提出以困惑度作为跨实验室共享的安全限速指标。\n从远处看，现代 AI 的构建方式似乎和过去几十年的软件差不多：用各种技术去实现特定的能力。方法确实五花八门，但它们大多不是从零开始设计，而是 利用 一个更简单、也更难解释的过程所产生的智能：在超大规模的数据语料上训练一个压缩器（或者 等价地说 ，一个预测器）。 1\n我认为，跟踪训练更好压缩器的进展速度，是理解 AI 发展脉络的关键。在这篇文章里，我主张把困惑度（或等价的交叉熵损失）确立为一项指标，用来比较不同模型开发者之间的水平，并为共享的安全标准提供依据。作为第一步，我公开更多 OpenAI 在预训练方面的进展。公布我们内部的困惑度数据是经过一番考虑的：这会让竞争对手更清楚地看到我们的位置，但相比在整个行业建立 共享 安全措施的紧迫性，这种顾虑是次要的。OpenAI 希望这能成为迈向共同科学基础的一步，为未来的节奏把控工作提供支撑。\n对 AI 开发有一种简化但本质上很有启发性的看法：先造一台大型计算机，用它在一个大规模无结构数据集上 预训练 一个模型（压缩器），然后在不同场景中运用提示、微调或强化学习等各种技术，把模型潜在的能力激发出来。算法进步会模糊训练各阶段之间的界限，但我们仍然可以把两件事分开：一是创造出具有难以预测的涌现能力的 AI（我此前称之为“ 异类心智 ”），二是随后有针对性地激发它的能力。\n多年来，我们衡量这一关键“智能基底”进展的主要方式一直相当稳定——我们一直在跟踪模型在留出数据集上的 困惑度 。 2 、 3 困惑度衡量的是模型平均而言预测下一个 token 的能力；困惑度越低，预测越准。本文开头那张图展示了从 GPT‑3.5 开始，我们的模型在这一指标上的变化。\n这一个指标所大致描述的模型能力范围令人惊叹。GPT‑2 在更早的数据集上刷新了困惑度的最优成绩 4 ，可以说它是第一个能够持续写出连贯段落的模型。下一次重大跃升是 GPT‑3，它具备了上下文学习能力，只要给出几个任务示例就能学会。GPT‑3.5 在我们当前主要评测数据集上的对数困惑度约为 0.99，能够进行流畅对话，也是初代 ChatGPT 的基础。GPT‑4 约为 0.91，擅长有效运用思维链推理，这也促成了后来对这一能力的有针对性激发，以及现代推理模型的诞生。如今，随着损失降到 0.8 以下，我们已经在网络安全和数学等领域看到了变革性能力的涌现。我想再次强调，事先完全无法确定 a priori 一旦达到这些精确的困惑度阈值，这些能力就会出现——它们从根本上可以看作是在这一个指标上取得进展所带来的涌现性潜在能力。\n随着 AI 飞速发展，我们衡量下游能力的范围与方式可能很快就会变化。用大多数现代基准来评测 GPT‑2 和 GPT‑3 意义不大；而当年使用的基准在 GPT‑4 附近也基本饱和了。相比之下，我认为关注预训练进展很可能仍能提供有价值的信息。\n进展速度的一个特殊变化，来自 AI 对自身发展的贡献越来越大。最常被讨论的指标，围绕 AI 在开发周期的各个阶段增强并取代人类研究员；最终的拐点被认为是“完全递归自我改进”，届时整个过程将完全自动化，不再需要人类监督。且不说出于维持人类控制的考虑，这种状态显然应当避免，我认为这种总体框架漏掉了关键的一点。开发过程中有一个关键环节可能带来潜在的阶跃式变化：预训练方面的算法研究。\n我们最近在另一个领域见证了前所未有的加速。一年多来，我们一直把数学中的开放问题交给模型，作为评估它们的方式之一。当我们升级到对数困惑度约 0.76 的模型后，它开始产出突破性成果。对我们中许多曾在数学及相关领域工作过的人来说，看着我们长期思考的问题的解答在一个 Slack 帖子里接连从模型那里冒出来，感觉非常超现实。有了这样的经历，我们就可以外推——这种突然的转变在深度学习研究中同样可能发生。虽然这个领域更依赖实验，但历史上也有过简单的洞见被忽视多年的情况；因此最早到 2027 年，我们就有可能看到基础预训练进展出现类似的雪崩式突破 5 。虽然我预计 AI 也会对对齐与监控方面的进展做出重大贡献，但我认为这方面的进展不太可能快到足以让预训练释放出全部潜在加速。\n新出现的惊人能力，主要来自压缩能力的进步，而困惑度正是衡量压缩的指标。因此，无论开发过程的自动化程度如何，困惑度都有望成为衡量通用智能的共享基准。从近期的进展外推，当我们进入约 0.68–0.7 的对数困惑度区间时，应当预期会出现进一步的变革性能力。我不知道这些能力会是什么，而且我们今天可能根本没有在测试它们。与此同时，我们也应当预期，目前占主导地位的对齐审计方式会 进一步退化 ⁠ ，模型对评估和训练的觉察也会进一步增强。我认为，前沿模型开发者应当共同努力，在模型首次投入使用之前，就如何评估这类模型、如何对其安全案例进行红队测试建立共同规范，包括共同的透明度标准。我还进一步提议，基于困惑度及其他测量指标设定 共同上限 ，开发者承诺在我们理解和监控 AI 行为的能力达到某个具体里程碑（例如开发出思维链监控器的后继者）之前不越过这一上限。也就是说，我希望形成一项行业标准：用某个可在各实验室间追踪的关键指标，规定开发的第一道上限，并明确在越过它之前我们需要具体达成什么。我希望这能引出一个共同框架，用来设定后续一道道上限，并为后续开发定下节奏。\n跨实验室比较困难。 不同开发者使用不同的评估数据集，训练数据配比也各不相同。这里我们报告的是我们一直在追踪的主要数据集上的数字；我相信，只要确立透明度的目标，我们就能找到可迁移的方法来比较不同基础模型的质量。\n与可操作的评估脱节。 困惑度并不直接对应我们关心的某项任务。关心它的理由在于，我们可以预期它上面的进步会催生出全新的能力。\n未计入预训练之外的进"
+   "excerpt": ""
   },
   {
    "group": "ai",
@@ -978,33 +1231,6 @@
    "published": "2026-11-21T23:56:28.000Z",
    "description": "Muru Graham Dumpleton started mod_wsgi 20 years ago, and has been thinking about the ideal way to serve Python web applications in production ever since. Muru is his new, AI-assisted Rust server that aims to provide the best possible tools for running ASGI and WSGI Python apps both in development and production. As he did with wrapture , he's been publishing an extraordinarily detailed account of the project as he works on it - as part of his development process. Here's everything he's published so far, all in the last three weeks: 2026-11-04 — Twenty years of mod_wsgi, and what comes next 202",
    "excerpt": "Muru . Graham Dumpleton started mod_wsgi 20 years ago, and has been thinking about the ideal way to serve Python web applications in production ever since.\nMuru is his new, AI-assisted Rust server that aims to provide the best possible tools for running ASGI and WSGI Python apps both in development and production.\nAs he did with wrapture , he's been publishing an extraordinarily detailed account of the project as he works on it - as part of his development process.\nHere's everything he's published so far, all in the last three weeks:\nThat post about AI as a lifestyle choice is particularly worth a read:\nThe AI may be doing a lot of the work on the surface, but deciding what isn't good enough yet is still down to me, and twenty years of getting things wrong with mod_wsgi turns out to be useful for that. I am prepared to put in the hard work to keep polishing Muru until it is something I would trust, and something you would too.\nThis is a link post by Simon Willison, posted on 21st November 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
-  },
-  {
-   "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "Always-On AI Is Coming to Supply Chains. But Who Owns the Exception?",
-   "url": "https://logisticsviewpoints.com/2026/11/21/always-on-ai-is-coming-to-supply-chains-but-who-owns-the-exception/",
-   "published": "2026-11-21T19:39:58.000Z",
-   "description": "The supply chain industry has invested heavily in detecting problems sooner. Transportation visibility systems identify late shipments, planning applications flag shortages, and control towers consolidate operational alerts. Yet knowing about an exception and resolving it are two different things. The delay may be visible to everyone, while responsibility for the next action remains surprisingly unclear. […] The post Always-On AI Is Coming to Supply Chains. But Who Owns the Exception? appeared first on Logistics Viewpoints .",
-   "excerpt": "The supply chain industry has invested heavily in detecting problems sooner. Transportation visibility systems identify late shipments, planning applications flag shortages, and control towers consolidate operational alerts. Yet knowing about an exception and resolving it are two different things. The delay may be visible to everyone, while responsibility for the next action remains surprisingly unclear.\nThat gap is becoming more important as artificial intelligence moves beyond answering questions and begins maintaining responsibility for work over time. On November 19, OpenAI expanded access to ChatGPT Dots , its persistent agents, to eligible ChatGPT Business Standard users, while testing access with a limited group of Plus subscribers. The agents can retain useful context, work with authorized applications, and pursue continuing assignments. This is not the same as releasing an autonomous transportation management system. It does, however, point toward an operating model that supply chain leaders should be examining.\nThe critical question is not whether an AI agent can produce a better recommendation. It is whether an organization can assign a bounded operational responsibility, know who is accountable for the result, and verify that the work was actually completed.\nConsider how many logistics exceptions are managed today. A late container generates an alert. A transportation planner checks the revised estimated arrival, calls the carrier, and coordinates with a distribution center. Someone may approve a new receiving window or an inventory transfer. But the work does not end when the recommendation is accepted. The carrier must acknowledge the change, the appointment must be updated, and the revised plan must hold up as conditions change.\nA great deal of operational effort is spent in the intervals between those actions. Employees chase confirmations, reconstruct previous conversations, and determine whether an apparent resolution was reflected in the system of record. Enterprise applications support the process, but they do not always maintain a single durable record of who owns the exception through closure.\nPersistent AI could improve this situation by preserving the case history, recognizing when new information changes its significance, and continuing to monitor outstanding actions. The benefit is not simply an answer that arrives in seconds. It is potentially less time between identifying an exception, deciding what to do, and confirming that th"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Columbia 与 MIT 论文展示 Claude 发现的算法突破 3SUM 与 APSP 长期速度上限",
-   "url": "https://aihot.news/items/d32df9vzpliz9m348fug74inq",
-   "published": "2026-11-21T18:47:26.000Z",
-   "description": "Columbia 和 MIT 的论文展示 Claude 发现的算法在 3SUM 和全对最短路径（APSP）上取得多项式改进，3SUM 达到 O(n^1.9992)、APSP 达到 O(n^2.9995)，推翻了 3SUM 和 APSP 假设。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d32df9vzpliz9m348fug74inq",
-   "excerpt": "Columbia 和 MIT 的论文展示 Claude 发现的算法在 3SUM 和全对最短路径（APSP）上取得多项式改进，3SUM 达到 O(n^1.9992)、APSP 达到 O(n^2.9995)，推翻了 3SUM 和 APSP 假设。\n论文显示 Claude 发现的算法改进了 3SUM 和 APSP 的长期复杂度上限，并用 Lean 4 形式化验证，读者可以了解 AI 搜索算法的可行路径。\n哥伦比亚大学和麻省理工学院的新论文表明，Claude 发现的一种算法打破了 3SUM 和全对最短路径长期以来的速度极限。\n3SUM 问的是列表中是否有 3 个数之和为 0，全对最短路径则要求出图中每一对节点之间的距离。几十年来，没有人能把教科书式的二次和三次时间复杂度改进超过极小的常数因子，许多人认为不可能做到。\nClaude 找到了一种更快的方法来计算两个长而窄的矩阵乘积中的选定元素，跳过了经典方法所做的一些工作。已知的归约随后将其转化为 3SUM、最短路径以及许多相关问题的加速。\n3SUM 现在的运行时间为 O(n^1.9992)，最短路径为 O(n^2.9995)，这些微小的改进仍然否定了 3SUM 和 APSP 猜想。Claude 在一次会话中找到了该方法，使用了 1600 万输出 token，没有人类输入。\n把“已知困难”的算法极限视为 AI 搜索的开放目标，并像这篇论文用 Lean 4 所做的那样，对 AI 发现的证明进行形式化验证。\n论文显示 Claude 发现的算法改进了 3SUM 和 APSP 的长期复杂度上限，并用 Lean 4 形式化验证，读者可以了解 AI 搜索算法的可行路径。"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Anthropic 数学家称与 Claude 完成黎曼猜想证明，斯坦福数小时后发布纯人类竞争草稿",
-   "url": "https://aihot.news/items/tje8i8y21ttk7jjmqet5bpxuq",
-   "published": "2026-11-21T11:19:49.000Z",
-   "description": "Anthropic 数学家 Levent Alpöge 周五宣布与 Claude 合作得到黎曼猜想及广义黎曼猜想的证明，证明以 Lean 语言分 14 个数据包发布，打印将超 25 万页。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tje8i8y21ttk7jjmqet5bpxuq",
-   "excerpt": "Hours after Anthropic claims a Claude proof of the Riemann hypothesis, Stanford releases an all-human competing draft\nAnthropic 数学家 Levent Alpöge 周五宣布与 Claude 合作得到黎曼猜想及广义黎曼猜想的证明，证明以 Lean 语言分 14 个数据包发布，打印将超 25 万页。\n报道同时给出 AI 证明以 Lean 形式化验证和人类证明遭社区质疑两条线，读者可据此判断双方证明各自的验证路径与可信度。\nAnthropic 的数学家 Levent Alpöge 周五表示，他用一个大语言模型解决了数学界最著名的未解难题。\n据 Scientific American 等美国媒体报道，Alpöge 在自己的网站上发布了一篇论文和配套的计算机代码。他在 公告中写道 ：“我相信，在与 Claude 的合作下，我发现了黎曼猜想的证明。”\n据 Alpöge 介绍，他的方法不仅解决了最初的素数问题，还一并解决了广义黎曼猜想（GRH）——该猜想把这一排序原理推广到一大类相关方程上。他预计，再给一点时间，他还能解决范围更广的扩展黎曼猜想。\n从大学时代起，Alpöge 就把这个问题当作一个秘而不宣的终身目标，原以为要花上几十年。过去几个月里，他与 Anthropic 的 AI 模型紧密合作，负责把握方向，并在一个简化的玩具模型上把两种方法结合起来。等到转向真正的问题时，AI 接手了工作，在临近终点时把他远远甩在了后面。\n为了攻克这道难题，两人扩展了数学家 Stepanov 的一个思路——后者曾在另一个数学体系中解决过类似问题。该方法依赖的工具类似于高中数学里对光滑曲线求导，而这一招用在整数上通常行不通，因为单个数值无法像连续曲线那样求导。\nAlpöge 和 Claude 绕开了这个障碍：他们把特殊的数学变换像链条一样串联起来，模拟出求导的效果。关键洞见由语言模型给出——它发现，对于一个长度为 X 的数列，需要串联的变换数量恰好是 X 的平方根。Alpöge 说，单是这类想法就足以让同行数学家震惊。\nAlpöge 公布消息几小时后，事情出现了戏剧性转折。就在一场董事会会议开始前，斯坦福大学数学教授、美国数学会（AMS）主席 Ravi Vakil 在博客上发布了一则 “紧急公告” ，分享了一份由数学家 Alessandro Masullo 独立撰写的广义黎曼猜想证明草稿。\n“这完全出自人类之手，没有 AI 参与，”Vakil 写道。他说，斯坦福知名数论学家 Brian Conrad 已悄悄审阅 Masullo 的工作数月，提出了大量反馈意见，目前正被纳入修改。\nMasullo 原本计划在斯坦福花一年时间完善草稿后再公开，但 Anthropic 突然发布的 AI 成果迫使研究人员立即公布了当前版本。\n在首次发布公告约八小时后，Vakil 更新了帖子，称有数人联系他，报告了这份拟议证明中的问题，这些问题是在不同 AI 模型的协助下发现的。他说，尤其有几位数学家最先指出了这些问题。“按照惯例，在这份证明被承认为真之前，所有问题都需要解决到令学界满意的程度。（我对该证明策略的正确性不作任何断言。）”Vakil 写道。\n数学家们之所以立刻认真对待这两项声明，是因为它们背后都有扎实的基础工作。Masullo 的传统证明经过了 Brian Conrad 数月的审查，而 Alpöge 则为他的 AI 证明提供了完整的计算机验证。\n阿尔珀格说，如果把 Claude 的论证打印出来，篇幅会超过 25 万页，因为 AI 连基本规则都逐条写明，比如任何数要么大于二分之一、要么小于二分之一。为了免去数学家面对这堵文字墙的麻烦，阿尔珀格只以 Lean 编程语言的形式发布了证明，并拆分成 14 个数据包 。\nLean 就像一个数字裁判，逐步检查每一步逻辑推演是否都严格遵循数学的基本规则，没有错误，也没有未经证明的假设。据《科学美国人》报道，如果最初把原始问题翻译成代码时出了错，人为失误仍有可能发生，不过专家核查阿尔珀格对起始问题的编码是否正确应该不会花太久。瓦基尔则呼吁数学家尽快审阅马苏洛的草稿，将其翻译成 Lean 之类的系统，并补上任何细小的漏洞。\n阿尔珀格承认，在某些复杂的子领域里，Claude 的水平远远超过了他，以至于他正在展示的成果，其周边的数学他还没有完全掌握。他预计这份庞大的 AI 证明可以很快被压缩，并计划在未来几个月内写出一个人类可读的版本。\nAnthropic 的这则消息还赶上一个事关重大的商业周——就在周四公司 大规模 IPO 的第二天。阿尔珀格说，他是在周日深夜取得突破的，随后联系了 Anthropic CEO 达里奥·阿莫代伊请求批准发布。他称，时机恰好在公司上市之后，实在非常不幸，但他否认任何公关炒作的猜测，表示再等下去才真的不是选项。\n这为进展飞快的 2026 年画上了一个句号——这一年里 Claude 已经解决了多个悬而未决的数学问题 。7 月，阿尔珀格发表了 Claude 生成的著名雅可比猜想解答。9 月，围绕描述流体和气体如何流动的纳维-斯托克斯方程，爆发了一场 激烈争议 ，起因是纽约大学数学家特里斯坦·巴克马斯特指出 OpenAI 使用了他和阿尔珀格的先前工作。10 月，OpenAI 在素数问题上迈出了重要的第一步， 发布了一批重要成果 。阿尔珀格明确称赞了 OpenAI 研究人员的选题，称这为他自己的证明提供了关键思路。\n记者 约瑟夫·豪利特 在《科学美国人》的一篇详细分析中梳理了问题的核心。自伯恩哈德·黎曼于 1859 年提出这一假设以来，它一直是数论领域的北极星。大卫·希尔伯特将其列入 1900 年数学最重要问题清单，自 2000 年起，它作为克雷数学研究所七个“千禧年大奖难题”之一，悬赏 100 万美元。\n核心是像 2、3、5、7 和 17 这样的素数，它们只能被 1 和自身"
   }
  ]
 }
