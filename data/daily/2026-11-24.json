@@ -1,0 +1,260 @@
+{
+ "type": "daily",
+ "date": "2026-11-24",
+ "headline": "智谱发布首个循环 Transformer 旗舰 GLM-5.4，OpenAI 公开预训练曲线；仓储侧数据中心建设正拉动工业地产与物流需求。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "智谱 GLM-5.4：首个 Loop Transformer 旗舰，主打泛 Coding",
+     "source": "Simon Willison",
+     "published": "2026-11-23",
+     "readMinutes": 6,
+     "summary": "Z.ai（智谱）发布 GLM-5.4，首个采用 Loop Transformer（循环 Transformer：一组共享权重的层重复运行多轮，不增加参数量就加深推理）的模型。Simon Willison 实测了 API，指出它暂未开源权重，且目前需订阅 Coding Plan 才能调用；一周内这是第二个循环架构模型（此前有 Thinking Machines 的 Inkling 2 Mini）。原文英文。",
+     "takeaways": [
+      "循环结构是本周新趋势：用重复计算换更深推理，而不是堆参数",
+      "GLM-5.4 暂不开放权重，只能通过 Coding Plan 订阅使用 OpenAI 兼容接口",
+      "智谱称其效果相当于 2–3T 级模型，属厂商说法，暂无独立测评"
+     ],
+     "why": "你用 Claude 写代码做 Agent，国产编程模型是否值得换用，这篇给出了接入方式和架构背景；价格与榜单排名暂无独立测评。",
+     "url": "https://simonwillison.net/2026/Nov/23/glm-54/",
+     "tags": [
+      "新模型"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "OpenAI 公开预训练损失曲线，提议各实验室共定“能力上限”",
+     "source": "Latent Space",
+     "published": "2026-11-24",
+     "readMinutes": 8,
+     "summary": "OpenAI 首席科学家 Pachocki 公开了基础模型在内部编程留出集上的困惑度（模型对下一个词的“意外程度”，越低越好）曲线：GPT-3.5 约 0.99，GPT-4 约 0.91，GPT6 Astra 约 0.76，并推测下一次能力跃迁在 0.68–0.70。他提议各实验室约定首个发展上限，微软已跟进并报出 0.819。同一期还记述了黄仁勋复任 Nvidia CEO。原文英文。",
+     "takeaways": [
+      "困惑度成为衡量前沿进展的公开指标，但该数据集有局限",
+      "“放缓前沿”提议需要更多顶级实验室（尤其 Anthropic）加入才有意义",
+      "Nvidia 董事会一致投票让黄仁勋复职，独立调查继续，参议院听证 8 天后举行"
+     ],
+     "why": "想理解 AI 行业走向和监管博弈，这期是一篇密度很高的圈内日报，对未来做 AI 产品或 FDE 岗位的判断有背景价值。",
+     "url": "https://latent.space/p/ainews-jensen-is-back-and-openai-shows-its-pretraining-curve-joined-by-microsoft/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "a16z：怎样把东西卖给 AI Agent（11,307 次 Agent 购物实测）",
+     "source": "a16z",
+     "published": "2026-11-23",
+     "readMinutes": 10,
+     "summary": "a16z 与 The Prompting Company 在 1,270 个提示、11,307 次 Agent 运行中测试 Grok Bot、Muse、Instinct、Dots 等购物 Agent，并结合 YipitData 消费数据总结五条企业如何被 Agent 选中的方法。一个关键发现：某商品被一个 Agent 选中时，有 73% 概率也被至少另一个选中，近四分之一情况下四个 Agent 选同一个第一名。原文英文。",
+     "takeaways": [
+      "Agent 对宽泛需求有共同的默认推荐，成为默认选择是关键",
+      "测试覆盖实体商品与软件",
+      "附 Agent 消费 Top 50 商家数据"
+     ],
+     "why": "做 AI 产品经理或做 Agent 项目时，了解“Agent 作为客户”的分发逻辑；也关系到电商供应链未来的需求入口。",
+     "url": "https://www.a16z.news/p/welcome-to-the-b2a-economy-how-agents",
+     "tags": [
+      "报告",
+      "数据"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "DeepMind：Gemini 4 智能体团队 + Lean 形式化验证，改进量子算法",
+     "source": "Google DeepMind",
+     "published": "2026-11-23",
+     "readMinutes": 8,
+     "summary": "DeepMind 让多组 Gemini 4 智能体独立寻找已知量子算法的改进，所有结果必须用 Lean（形式化定理证明器）证明正确才进入共享笔记本，各组每四小时开一次“虚拟会议”交换成果。优化后的量子电路面向聚变能源、化学和酶模拟，Lean 库和已验证解已在 GitHub 开源。原文英文。",
+     "takeaways": [
+      "“多智能体分组 + 形式化验证”是让 AI 产出可信结果的工程范式",
+      "验证环节由 Lean 自动完成，不靠人工审",
+      "代码与问题集开源，可复用思路"
+     ],
+     "why": "你做 Agent 时常碰到“怎么确认输出对不对”，这篇给了一个可借鉴的验证闭环思路。",
+     "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+     "tags": [
+      "报告"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "title": "ChatGPT 推出 GPT-6.2 Sol（日常对话版）",
+     "source": "AIHOT 整理",
+     "summary": "面向 Plus/Pro/Business/Enterprise 开放，更擅长复杂指令、联网查找和识别照片细节，暂无独立测评。",
+     "url": "https://aihot.news/items/gl6fl6hsisrt26tg83li0j4gk"
+    },
+    {
+     "title": "Claude 把连接器和技能合并为“插件”",
+     "source": "AIHOT 整理",
+     "summary": "Free/Pro/Max/Ultra 已上线，Team 与 Enterprise 即将支持，claude.ai/plugins 有 1 万多个插件。",
+     "url": "https://aihot.news/items/h1vnjuwxsli7ku7rpocjlr3s2"
+    },
+    {
+     "title": "NVIDIA 宣布黄仁勋复任总裁兼 CEO",
+     "source": "AIHOT 整理",
+     "summary": "董事会一致通过，参考了美国政府意见；独立调查继续，新设国家安全与出口管制委员会。",
+     "url": "https://aihot.news/items/ajcxs84uezjqgsgxpdtr31o0l"
+    },
+    {
+     "title": "MiniMax 发布 H3 Family 系列模型",
+     "source": "AIHOT 整理",
+     "summary": "含 H3、Highspeed、Lite 及图像模型；称 H3 开源百天衍生模型 1472 个、下载超 1.48 亿次。",
+     "url": "https://aihot.news/items/f1380j6hyrxn0rnz6666nu3b8"
+    },
+    {
+     "title": "OpenAI 与思科推出开源运行时 Shirudo",
+     "source": "OpenAI",
+     "summary": "用 eBPF 在不重启服务下加载临时“护盾”，演示中拦截了 Java4Shell 利用尝试。",
+     "url": "https://openai.com/index/introducing-shirudo"
+    },
+    {
+     "title": "Google 搜索 AI 模式可连接 Wallet、Drive 和 Gemini 应用",
+     "source": "Google AI",
+     "summary": "个性化智能支持用户自选接入消费、文档和聊天记录，来回答问题。",
+     "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/"
+    },
+    {
+     "title": "Figma agent 开放至 FigJam 和 Slides",
+     "source": "AIHOT 整理",
+     "summary": "所有付费计划可用，能把设计稿、会议记录整理成白板或演示文稿初稿。",
+     "url": "https://aihot.news/items/zur9ndkrkvtk4lqiix14q468s"
+    },
+    {
+     "title": "a16z 投资 Embo：用世界模型做人形机器人大脑",
+     "source": "a16z",
+     "summary": "创始人 Danijar Hafner 是 Dreamer 系列作者，主张世界模型是下一代前沿 AI。",
+     "url": "https://www.a16z.news/p/investing-in-embo"
+    },
+    {
+     "title": "Allen AI 发布 RoboTrack：面向真实机器人操作的点跟踪",
+     "source": "Hugging Face",
+     "summary": "在遮挡、杂乱和视角变化下跟踪夹爪与物体位置，模型、数据、代码均已公开。",
+     "url": "https://huggingface.co/blog/allenai/robotrack"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "Cushman & Wakefield：数据中心成为仓储物流新需求引擎",
+     "source": "DC Velocity",
+     "published": "2026-11-23",
+     "readMinutes": 5,
+     "summary": "报告称截至 2026 年 Q3，与数据中心相关的工业地产租赁达 5000 万平方英尺，比 2025 全年高 113%，而全美新增工业租赁仅增 21%。美国 AI 相关设备进口同比增 62%，达 6590 亿美元；与数据中心有关的 3PL（第三方物流）租赁近 1100 万平方英尺。原文英文。",
+     "takeaways": [
+      "AI 基建正拉动仓储用地需求，服务器、电力和冷却设备都要存储与分拨",
+      "大面积（50 万平方英尺以上）3PL 租赁 YTD 共 10 笔",
+      "数据来自地产咨询公司报告，反映美国市场"
+     ],
+     "why": "想判断仓储行业需求方向，这是少见的把 AI 热潮和仓储需求挂钩的数据，可作为选题或面试谈资。",
+     "url": "https://www.dcvelocity.com/logistics/warehousing/data-center-boom-is-driving-warehouse-and-logistics-demand-cushman-wakefield-says",
+     "tags": [
+      "数据",
+      "报告"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "门店变展厅，物流要承担其余工作",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-23",
+     "readMinutes": 6,
+     "summary": "文章以宜家内华达州 Henderson 的“规划与下单点”为例：顾客在门店做设计咨询，但商品通过配送或日后自提交付。作者认为机会不是缩店减库存，而是给不同设施分配不同职责并作为整体运营，门店库存转移后的履约工作转到了配送网络。原文英文。",
+     "takeaways": [
+      "销售与库存、履约可以拆开，但工作量会转移到配送网络",
+      "网络规划要把门店、仓库当作一个运营系统管理",
+      "不能误解为“少放货”就能省成本"
+     ],
+     "why": "物流工程的网络设计、库存布局会用到这种思路，读完能理解零售履约为什么催生更多自动化需求。",
+     "url": "https://logisticsviewpoints.com/2026/11/23/the-store-is-becoming-a-showroom-the-supply-chain-is-becoming-the-store/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Locus 从末端配送走向 Agentic TMS",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-23",
+     "readMinutes": 7,
+     "summary": "Locus 称拥有 360 多家企业客户、覆盖约 30 国、每年管理超 15 亿次配送，并被宜家最大零售商 Ingka 收购、保持独立运营。文章分析它能否把末端配送优化能力扩展到首中末公里的企业 TMS（运输管理系统）。内容基于与 ARC 的公司简报，偏厂商说法。原文英文。",
+     "takeaways": [
+      "Locus 正由末端优化向端到端运输管理扩张",
+      "TMS 市场竞争拥挤，差异化在优化算法和智能体",
+      "数据来自厂商自述"
+     ],
+     "why": "了解仓储/物流软件厂商如何向“AI 智能体”转型，适合关注民企供应链岗位的你。",
+     "url": "https://logisticsviewpoints.com/2026/11/23/from-last-mile-to-agentic-tms-locus-broadens-its-enterprise-ambitions/",
+     "tags": [
+      "案例"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "title": "IDTechEx：物流移动机器人市场 20 年增长超 15 倍",
+     "source": "Robotics & Automation News",
+     "summary": "预计移动机器人、自动驾驶车辆和无人机物流设备年收入 2046 年达 2336 亿美元，仓内物流与移动拣选占一半以上。",
+     "url": "https://roboticsandautomationnews.com/2026/11/23/mobile-robotics-market-set-for-fifteen-fold-growth-as-autonomous-picking-expands/107508/"
+    },
+    {
+     "title": "Cosys 仓库机器人为汽车维修车间送备件",
+     "source": "Robotics & Automation News",
+     "summary": "技师用手机呼叫备件，机器人按运输单送到工位，减少停工往返。",
+     "url": "https://roboticsandautomationnews.com/2026/11/23/cosys-warehouse-robots-automate-spare-parts-delivery-in-automotive-workshops/107526/"
+    },
+    {
+     "title": "KPMG：70% 受访者称供应链风险敞口两年内增加",
+     "source": "MH&L",
+     "summary": "64% 认为技术与 AI 颠覆是未来两年最大风险，58% 选地缘冲突。",
+     "url": "https://www.mhlnews.com/global-supply-chain/news/55420998/building-a-shock-resilient-supply-chain"
+    },
+    {
+     "title": "贸易合规正成为供应链网络设计的约束条件",
+     "source": "Logistics Viewpoints",
+     "summary": "关税、出口限制下，合规决定哪些供应链配置可行，需在下单前算清到岸成本。",
+     "url": "https://logisticsviewpoints.com/2026/11/23/trade-compliance-is-now-a-network-design-constraint/"
+    },
+    {
+     "title": "稀土问题正变成物流与制造问题",
+     "source": "Logistics Viewpoints",
+     "summary": "关键在合格材料能否在需要的形态、阶段和出口许可下交付，而非矿业股行情。",
+     "url": "https://logisticsviewpoints.com/2026/11/23/the-rare-earth-disconnect-is-becoming-a-logistics-and-manufacturing-problem/"
+    },
+    {
+     "title": "美国银行货运支付指数：托运成本创五年新高",
+     "source": "DC Velocity",
+     "summary": "运力趋紧、柴油价格高企推高运价，而货运需求停滞（厂商赞助内容）。",
+     "url": "https://www.dcvelocity.com/sponsored-content/u-s-bank-freight-payment-index-shipper-costs-hit-five-year-high-as-freight-demand-stalls"
+    },
+    {
+     "title": "Figure AI 专利：背负式机械臂采集人类动作训练人形机器人",
+     "source": "Robotics & Automation News",
+     "summary": "专利申请 US 2026/0364774 A1，可在真实工作场景采集数据或远程操控。",
+     "url": "https://roboticsandautomationnews.com/2026/11/23/figure-ai-patents-wearable-system-for-teaching-humanoid-robots-through-human-movement/107567/"
+    },
+    {
+     "title": "Coprod 获 600 万美元种子前融资，做标准化机器人硬件部件",
+     "source": "Robotics & Automation News",
+     "summary": "目标是让机器人硬件像软件一样易搭建，已有瑞士多款机器人采用。",
+     "url": "https://roboticsandautomationnews.com/2026/11/23/coprod-raises-6-million-to-make-robot-hardware-as-easy-to-build-as-software/107544/"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "抓取失败信源：Epoch AI(403)、Import AI(403)、Symbotic IR(403)、Interact Analysis、Locus Robotics(410)、国家统计局；36氪快讯无数据。",
+  "GLM-5.4、GPT-6.2 Sol、MiniMax H3 只有二手或摘要信息，暂无独立测评；仓储精读的原文均为英文，仅依据 excerpt。未做额外 WebSearch。"
+ ]
+}
