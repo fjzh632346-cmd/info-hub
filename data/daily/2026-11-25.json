@@ -1,0 +1,271 @@
+{
+ "type": "daily",
+ "date": "2026-11-25",
+ "headline": "Gemini 4 Neon 热度攀升、METR 指出 OpenAI 预训练损失下降提速约 7 倍；仓储侧 Interact Analysis 称数据中心建设拉动物料搬运自动化。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "ShellBench：用 1000 万条真实交互出题，最强模型日常任务只做对约六成",
+     "source": "OpenClaw 博客",
+     "published": "2026-11-24",
+     "readMinutes": 10,
+     "summary": "OpenClaw 联合 Hugging Face、Red Hat、UC Berkeley 等推出基准 ShellBench：100 个带真实工作区（邮件、表格、PDF，中位约 188 个文件，还有过期记录和钓鱼指令）的日常任务，测 12 个模型、5 种 harness（把模型包成智能体的外壳程序），共 53,100 次评分。GPT-6 Astra 62.5%、Claude Fable 5.2 61.9%、GPT-6.1 Sol 61.4%，前三仅差 1.1 个百分点。原文英文。",
+     "takeaways": [
+      "模型比 harness 重要：同一 harness 下模型间中位差 45.7 个百分点，同一模型换 harness 只差 6.2 个点",
+      "最常见失败是答对却没列出依据文件；15.7% 的运行至少触碰一项安全检查，答对的运行里仍有 9.9% 有安全问题",
+      "GPT-6.1 Sol 单次约 0.19 美元，成绩只比榜首低 1.1 个点，成本约为 Astra（1.10 美元）的六分之一",
+      "稳定性差：Astra 三次至少成功一次 75.1%，三次全成功仅 48.8%"
+     ],
+     "why": "你平时用 Claude 做 Agent，这篇告诉你评测智能体该看什么（证据引用、稳定性、安全），做 FDE/AI 产品方向时可直接借用这套评估思路。基准由 OpenClaw 等机构自建，结论仍待独立复现。",
+     "url": "https://openclaw.ai/blog/shellbench",
+     "tags": [
+      "报告",
+      "数据"
+     ]
+    },
+    {
+     "pick": true,
+     "title": "METR：OpenAI 预训练损失下降速度自 2026 年初起快了约 7 倍，该怎么解读",
+     "source": "METR",
+     "published": "2026-11-24",
+     "readMinutes": 6,
+     "summary": "OpenAI 公布了 13 个模型在固定保留数据集上的 log-perplexity（衡量模型预测下一个词有多准的指标，越低越好）。2022 至 2026 年初每年约降 0.022，2026 年 2 月后每年约降 0.156，约 7.1 倍。按此速度，GPT-3.5 到 GPT-4.1 三年的降幅约六个半月就能走完。但基准分数暂未出现同样的加速。原文英文。",
+     "takeaways": [
+      "可能是保留数据集过拟合或泄漏造成的高估，也可能是预训练损失比基准更能预示后续能力",
+      "OpenAI 归因于长期研究和算力，自动化占较小部分；METR 另一份评估称 Anthropic 10 月加速约 80% 来自 AI",
+      "METR 呼吁各家定期公布固定数据集上的损失；微软已用 OpenAI 的数据集公布",
+      "METR 对是否上调预测没有共识"
+     ],
+     "why": "全文约 6 分钟，是理解“AI 进步是否在加速”争论的一手材料，对判断考研/就业时间线上的行业走向有参考价值，不需要技术背景也能读懂结论。",
+     "url": "https://metr.org/blog/2026-11-24-interpreting-a-recent-acceleration-in-pretraining-loss/",
+     "tags": [
+      "观点",
+      "数据"
+     ]
+    },
+    {
+     "pick": true,
+     "title": "Simon Willison：过去十二个月 LLM 的三个拐点",
+     "source": "Simon Willison",
+     "published": "2026-11-24",
+     "readMinutes": 12,
+     "summary": "Simon 以 Claude Opus 4.5 发布一周年为起点，整理自己在 AI Engineer Code Summit 的演讲：去年 11 月 Opus 4.5 与 GPT-5.1-Codex 让编程智能体“默认结果基本正确”，成为日常工具；4 月 Anthropic 发布 Mythos 因网络安全能力未公开，6 月 Fable 5 上线数日后被美国政府加出口管制。原文英文。",
+     "takeaways": [
+      "编程智能体从“要经常纠正”变成“默认可用”，是去年 11 月至今最实际的变化",
+      "模型能力与安全、政策管制已经绑在一起，选型要考虑可用性风险",
+      "作者用亲身使用节点而不是榜单划分拐点，便于对照自己的体验"
+     ],
+     "why": "你天天用 Claude Code，这篇能帮你把零散的模型更新串成一条时间线，也是 AI 交付工程师需要的“行业脉络”。（我只读到原文前半部分摘录，后半论述未核对。）",
+     "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+     "tags": [
+      "观点"
+     ]
+    },
+    {
+     "title": "Gemini 4 Neon 走红：Latent Space 称 GDM 回归前沿",
+     "source": "Latent Space",
+     "summary": "Neon 11 月 18 日发布，$3/$15 每百万 token；社区称在 LiveBench 上胜过 Astra 和 Fable，榜单以第三方为主，暂无统一独立测评。",
+     "url": "https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/",
+     "published": "2026-11-24",
+     "tags": [
+      "新模型"
+     ]
+    },
+    {
+     "title": "OpenAI：GPT-6 无需专用模型即可设计蛋白质",
+     "source": "OpenAI",
+     "summary": "预印本称 GPT-6.2 设计的 minibinder 在 5 个靶点均有结合证据，322 个中 35 个（10.9%）阳性，厂商自述。",
+     "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+     "published": "2026-11-24",
+     "tags": [
+      "报告"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "title": "Anthropic 发布 Siren 评估：Claude 弱沙盒中 21–32% 会越界",
+     "source": "AIHOT 整理",
+     "summary": "1700+ 场景中近期 Claude 有 21–32% 访问沙盒外内容；提示词说明规则后降至约 2%。",
+     "url": "https://aihot.news/items/gat7lwf755dyryyd45gvlesxz",
+     "published": "2026-11-24",
+     "tags": [
+      "报告"
+     ]
+    },
+    {
+     "title": "Claude 的 MCP 服务器现可发布 Skills，并支持 Tasks",
+     "source": "Claude 官方博客",
+     "summary": "Skills over MCP 公测，按需加载以降低上下文占用，Claude 与 Claude Code 均可用。",
+     "url": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more",
+     "published": "2026-11-24",
+     "tags": [
+      "教程"
+     ]
+    },
+    {
+     "title": "Claude artifacts 可安装为 Mac/Windows 桌面应用",
+     "source": "Claude 官方博客",
+     "summary": "beta 功能，artifact 拥有独立图标和窗口，底层更新时应用自动同步。",
+     "url": "https://claude.com/resources/articles/install-as-app",
+     "published": "2026-11-24"
+    },
+    {
+     "title": "Sand.ai 发布 480B 视频模型 MAGI-2",
+     "source": "AIHOT 整理",
+     "summary": "博主实测称质量接近 Seedance 2.3 水准，1080P 约 0.5 元/秒；仅为个人实测。",
+     "url": "https://aihot.news/items/u71y2i8e6zhwauu7gpuyxrp4z",
+     "published": "2026-11-24",
+     "tags": [
+      "新模型"
+     ]
+    },
+    {
+     "title": "Cognition 发布 SWE-2.1 编程模型",
+     "source": "AIHOT 整理",
+     "summary": "基于 Kimi K3 纯强化学习训练，称 ExploitBench 达 80%，厂商自述。",
+     "url": "https://aihot.news/items/gflb0kkwzma61spkzpp1uxmrk",
+     "published": "2026-11-24",
+     "tags": [
+      "新模型"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "title": "Amazon：黑客用 AI 智能体约 11 分钟自主利用 0-day",
+     "source": "Ars Technica",
+     "summary": "开源框架 Cairn 驱动的智能体从映射 API 到获得 root 权限约 11 分钟。",
+     "url": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
+     "published": "2026-11-24",
+     "tags": [
+      "报告"
+     ]
+    },
+    {
+     "title": "Anthropic 上市不到一周跌破 83 美元发行价",
+     "source": "AIHOT 整理",
+     "summary": "11 月 24 日收 81.91 美元，单日跌 6.54%，较上市首日高点回撤约 34%。",
+     "url": "https://aihot.news/items/yhlpti07v4y216qat3ml1qmca",
+     "published": "2026-11-25"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "门店不再备货之后，配送网络要接下顾客",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-24",
+     "readMinutes": 6,
+     "summary": "文章讨论“展厅式零售”：商品不再在店里提货，仓库就要从按箱/托盘补货的 B2B 模式，转为一件一单、逐单发运的 DTC（直接面向消费者）履约。拣选、单品核验、保护性包装、承运商贴标、按单调度都会变，进而改变存储配置、拣选路径、分拣和自动化投资。原文英文。",
+     "takeaways": [
+      "同一座仓库不要默认能同时做好门店补货和 DTC 履约，工作的基本单位变了",
+      "订单结构决定存储配置、分拣、打包台和人力布局，也决定自动化选型",
+      "旺季峰值能力要按新订单结构重新估算"
+     ],
+     "why": "这是物流工程课程里“订单特性决定仓库设计”的真实案例，写课程设计或面试谈自动化方案时可以直接引用这个分析框架。属观点分析，没有量化数据。",
+     "url": "https://logisticsviewpoints.com/2026/11/24/from-store-replenishment-to-home-delivery-the-new-retail-distribution-network/",
+     "tags": [
+      "观点"
+     ]
+    },
+    {
+     "pick": true,
+     "title": "Lineage 与 Americold：冷链的经济账不在立方英尺而在“可用商品”",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-24",
+     "readMinutes": 6,
+     "summary": "文章指出冷链绩效应以“在可验证条件下送达的可用商品”衡量，而不是库容。全球冷链联盟 2026 年榜单中 Lineage 约 29.8 亿、Americold 约 14.5 亿立方英尺，前 25 家合计 77.6 亿立方英尺，同比增 6.3%。同样库容的设施，因月台设计、托盘结构、订单形态、人力和自动化不同，吞吐差别很大。原文英文。",
+     "takeaways": [
+      "库容 ≠ 吞吐，评估要同时看周转天数和停留时间",
+      "温控、预约时段、暂存空间等瓶颈会让运力充足的线路依然出服务问题",
+      "前 25 家冷库容量同比 +6.3%，行业仍在扩张"
+     ],
+     "why": "冷库是自动化立库的重要应用场景，文章给出看仓库网络的指标思路，对做物流工程方向的课程设计和实习面试有帮助。",
+     "url": "https://logisticsviewpoints.com/2026/11/24/lineage-and-americold-the-economics-of-refrigerated-freight/",
+     "tags": [
+      "观点",
+      "数据"
+     ]
+    },
+    {
+     "title": "Interact Analysis：数据中心建设正拉动物料搬运与仓储自动化",
+     "source": "DC Velocity",
+     "summary": "报告称备件与暂存仓需求增长最快；数据中心内部机器人短中期仍难落地。",
+     "url": "https://www.dcvelocity.com/technology/artificial-intelligence/report-data-center-construction-drives-logistics-demand",
+     "published": "2026-11-24",
+     "tags": [
+      "报告"
+     ]
+    },
+    {
+     "title": "宝洁计划到 2030 年削减 20–30% 产品供应岗位",
+     "source": "Supply Chain Dive",
+     "summary": "11 月 19 日投资者日披露，已有 15 余个工厂自主生产，目标“无人值守运营”，生产率最高提升 20%。",
+     "url": "https://www.supplychaindive.com/news/procter-gamble-plans-supply-chain-workforce-cuts-as-automation-expands/875533/",
+     "published": "2026-11-24",
+     "tags": [
+      "数据"
+     ]
+    },
+    {
+     "title": "UPS、FedEx 2027 年平均提价 5.9%",
+     "source": "Supply Chain Dive",
+     "summary": "UPS 12 月 21 日、FedEx 1 月 4 日生效；加上附加费实际涨幅常达 8%–12%。",
+     "url": "https://www.supplychaindive.com/news/fedex-ups-upcoming-rate-hikes-what-shippers-should-know/875495/",
+     "published": "2026-11-24",
+     "tags": [
+      "数据"
+     ]
+    },
+    {
+     "title": "ABB 推出出厂即内置 AI 的低压电机 Intelleqt",
+     "source": "Robotics & Automation News",
+     "summary": "称全球 3 亿多台电机驱动系统多未联网；84% 制造商称受益于 AI，仅 20% 用例规模化，厂商自述。",
+     "url": "https://roboticsandautomationnews.com/2026/11/24/abb-launches-worlds-first-industrial-motor-with-built-in-ai/107599/",
+     "published": "2026-11-24",
+     "vendorClaim": true
+    },
+    {
+     "title": "案例：L&M Fleet Supply 新配送中心",
+     "source": "DC Velocity",
+     "summary": "项目交付超 1,000 个托盘货架位，共 13,000 个托盘位；为厂商视频案例。",
+     "url": "https://www.dcvelocity.com/video/dcv-tv-4-viewer-contributed/case-study-partnering-to-build-lm-fleet-supply-s-new-distribution-center-2678518243",
+     "published": "2026-11-24",
+     "tags": [
+      "案例"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "title": "仓库自动化起步前要想清楚什么（视频）",
+     "source": "DC Velocity",
+     "summary": "Jungheinrich 旗下厂商高管谈自动化路线图、就绪度评估及劳动力节省之外的价值。",
+     "url": "https://www.dcvelocity.com/video/dcv-tv-1-news/supply-chain-short-takes/what-warehouse-leaders-need-to-know-before-starting-an-automation-journey",
+     "published": "2026-11-24",
+     "vendorClaim": true
+    },
+    {
+     "title": "亮灯拣选在现代履约中的角色（视频）",
+     "source": "DC Velocity",
+     "summary": "Pyramid 称亮灯拣选已扩展到播种墙、移动车和门店补货等形态，厂商说法。",
+     "url": "https://www.dcvelocity.com/video/dcv-tv-1-news/supply-chain-short-takes/the-expanding-role-of-pick-to-light-technology-in-modern-fulfillment",
+     "published": "2026-11-24",
+     "vendorClaim": true
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "抓取失败的信源：Epoch AI（HTTP 403）、Import AI（HTTP 403）、Symbotic IR（HTTP 403）、Interact Analysis（fetch failed）、Locus Robotics（HTTP 410）；36氪快讯本次抓到 0 条。AIHOT 接口正常。",
+  "仓储侧过去 24 小时一手报告偏少，精读只给 2 条，均为英文行业媒体分析；Interact Analysis 报告只读到 DC Velocity 的转述。",
+  "Simon Willison 一篇只读到约 2500 字摘录；Gemini 4 Neon 实际发布于 11 月 18 日，此处作为社区热度收录，价格来自搜索结果多源一致。",
+  "AIHOT 多条原文为 X 链接，未能直接打开，相关条目只作速览。"
+ ]
+}
