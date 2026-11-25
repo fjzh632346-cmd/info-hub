@@ -1,0 +1,101 @@
+{
+  "type": "x",
+  "date": "2026-11-25",
+  "items": [
+    {
+      "kind": "news",
+      "category": "编程",
+      "score": 88,
+      "author": "ClaudeDevs",
+      "handle": "@ClaudeDevs",
+      "url": "https://x.com/ClaudeDevs/status/2125289797199511594",
+      "posted": "2026-11-25",
+      "metrics": "11.7 万查看",
+      "textZh": "Anthropic 官方开发者账号宣布 MCP（让 AI 连接外部工具和数据的通用接口）两周年更新：① Skills over MCP（测试版）——MCP 服务器可以把 Skill（教 Claude 怎么一步步干活的说明书）和工具一起发布，按需加载、随服务器一起更新，不会再出现工具升级了、说明书还是旧版的问题；② Tasks（正式版）——耗时长的操作放到后台跑，Claude 不用干等，做完再回来取结果；③ 文件上传即将上线，Claude 能直接把 PDF、表格、图片发给服务器。官方说 Claude 现在已有 1 万多个 MCP 连接器。宝玉（@dotey）的中文解读还补充了 Elicitation：删库这类敏感操作前，要求用户完整输入对象名称再确认。你在做 Agent，这几项直接影响以后怎么设计工具和 Skill。"
+    },
+    {
+      "kind": "news",
+      "category": "编程",
+      "score": 84,
+      "author": "Felix Rieseberg",
+      "handle": "@felixrieseberg",
+      "url": "https://x.com/felixrieseberg/status/2125310111149416682",
+      "posted": "2026-11-25",
+      "metrics": "16.7 万查看",
+      "textZh": "Anthropic 的 Felix Rieseberg 宣布：现在可以直接用 Claude 做出 Mac 和 Windows 桌面应用并分享给别人，不用会写代码。这些应用能调用系统功能（菜单栏、透明窗口、系统通知）、连接器和 Claude 本身。他自己做了终端、文件管理器、视频剪辑器、聊天工具和桌面宠物。需要把 Claude 桌面端更新到最新版（Windows 上有人说暂时没看到“安装为应用”的选项，他回复要先更新）。对想做小工具、作品集的你来说是低成本试手的入口。"
+    },
+    {
+      "kind": "prompt",
+      "category": "视频",
+      "score": 74,
+      "author": "Chetaslua",
+      "handle": "@chetaslua",
+      "url": "https://x.com/chetaslua/status/2125331978891461023",
+      "posted": "2026-11-25",
+      "metrics": "26.4 万查看",
+      "textZh": "作者发了一段约 2 分钟的动漫短片，说是用 Claude 的“Opus 5.6”（作者自称拿到的灰度测试版，官方未发布，无法核实）纯代码做出来的：画面、配乐、歌声全部由代码生成，没用外部素材和语音合成。只给了 6 张参考图和一段提示词，耗时 20 分 42 秒、消耗约 575 万 token，代码已在 GitHub 公开（ChetasLua/noroi-iwai），提示词在第一条回复的截图里。中文圈（@cfenghub、@op7418 歸藏）在讨论“写代码做视频”会不会吃掉一部分视频模型的活。值得看的是提示词的思路：给自由度 + 要求用子代理（subagent）自己回看、回听成品来自检。注意成片模仿的是现有动漫的画风和角色，自己做时换成原创题材。",
+      "prompt": "now start a new work of anime of jjk on same detail pure code these assets are to show you inspiration every decision is yours and you have to even sing a bacground soung by yourself no tts and external libraries , music and song should match what happening on screen , it should have the quality and art stylr of jujutsu kaisen and make sure it covers all emotions and famous actions sequence and sadness , warmth , fear , comedy , wrath , and all make sure you use subagents to see what you created and hear and make this masterpeice under 2 min in video each frame should look like a masterclass of art",
+      "promptZh": "现在开始做一部新的《咒术回战》动漫作品，细节水准保持一致，全部用纯代码实现。这些素材只是给你灵感，每个决定都由你来做，你甚至要自己唱背景歌曲——不用语音合成（TTS），也不用外部库。音乐和歌曲要和画面里发生的事情匹配，要有《咒术回战》的品质和画风，确保覆盖所有情绪和经典动作场面：悲伤、温暖、恐惧、喜剧、愤怒等等。务必用子代理去看你做出来的画面、听你做出来的声音，把这部杰作控制在 2 分钟以内，每一帧都要像大师级的艺术作品。",
+      "images": [
+        "https://pbs.twimg.com/media/HX6yLabboAAMFq5"
+      ],
+      "video": "https://x.com/chetaslua/status/2125331978891461023"
+    },
+    {
+      "kind": "news",
+      "category": "研究",
+      "score": 70,
+      "author": "OpenAI",
+      "handle": "@OpenAI",
+      "url": "https://x.com/OpenAI/status/2125334383490105601",
+      "posted": "2026-11-25",
+      "metrics": "133.3 万查看",
+      "textZh": "OpenAI 发布预印本：GPT-6 系列模型只靠推理和写代码，不调用专门的生物学模型，就能设计出新的蛋白质形状和序列，并且做了湿实验（真实实验室）验证。官方说模型一代比一代强，一个内部研究模型在不少蛋白质任务上追平或超过了专用模型。Ethan Mollick 评论：机器人、3D 设计、蛋白质这些过去以为要专用模型的难题，正在被通用大模型一并拿下——“苦涩的教训”（通用方法+算力终会胜过专门设计）到处应验。对你的启发：做行业应用时，先试通用模型能不能直接解决，再考虑专用方案。",
+      "vendorClaim": true
+    },
+    {
+      "kind": "news",
+      "category": "研究",
+      "score": 62,
+      "author": "宝玉",
+      "handle": "@dotey",
+      "url": "https://x.com/dotey/status/2125464294401720614",
+      "posted": "2026-11-25",
+      "metrics": "5541 查看",
+      "textZh": "宝玉用白话讲清了 OpenAI 11 月 24 日放在 GitHub 上的 111 页预印本《矩阵乘法指数是四分之九》：两个 n×n 矩阵相乘，运算量最快只能做到 n 的 2.25 次方，不可能更快。上限 2.25 是 OpenAI 内部模型 10 月给出的，已有几组人类数学家独立重新证明；这次补的是下限，目前只有 OpenAI 自己的论文和 Lean 形式化证明，还没同行评审。他也提醒：这个结论只管理论上的运算次数，GPU 实际用的仍是课本算法，对 AI 训练推理没有直接影响。线性代数学过矩阵乘法的话，这篇是很好的“AI 做数学”科普。"
+    },
+    {
+      "kind": "news",
+      "category": "研究",
+      "score": 66,
+      "author": "Kaggle",
+      "handle": "@kaggle",
+      "url": "https://x.com/kaggle/status/2125313430303244739",
+      "posted": "2026-11-25",
+      "metrics": "8.6 万查看",
+      "textZh": "Google DeepMind 在 Kaggle 上推出新测评“Humanity's First Exam”，专测“底线可靠性”：简单任务能不能每次都做对，而不是偶尔做对一次。共 544 道文字和看图题。18 个前沿模型的早期结果：前五名单次正确率 96%–98%，但同一组题连续四次全对的比例平均只有 85.6%；74% 的错误出在看图（视觉识别）上，多给思考时间对看图题帮助不大；39% 的错误只差一点（数数差一个之类）。当前榜单：GPT-6.2 Astra 90.7%、GPT-6.2 Sol 87.5%、Gemini 4 Neon 85.6%。同时开了比赛征集“人一两分钟能做对、AI 还会错”的题，截止 12 月 15 日。给你做 Agent 的提醒：别看单次演示，要测重复稳定性。"
+    },
+    {
+      "kind": "opinion",
+      "category": "其他",
+      "score": 60,
+      "author": "Ethan Mollick",
+      "handle": "@emollick",
+      "url": "https://x.com/emollick/status/2125267894644916669",
+      "posted": "2026-11-25",
+      "metrics": "80.5 万查看",
+      "textZh": "沃顿商学院教授 Ethan Mollick 说，他从制造业到金融业的多家大公司都听到同一件事：零散的 2–3 人小团队靠 AI 用很短时间干完了几十人的活，结果引发了管理层之间的大争论。他补充：没有现成的应对方案，这些小团队的工作常常跨越市场、法务、工程、销售等部门边界，冲击了原有的组织结构和规矩，所以反应格外激烈。对你找供应链/AI 产品类工作的启示：能用 AI 跨部门把事情做完的人会更稀缺，但也要预期组织阻力。"
+    },
+    {
+      "kind": "news",
+      "category": "视频",
+      "score": 58,
+      "author": "歸藏(guizang.ai)",
+      "handle": "@op7418",
+      "url": "https://x.com/op7418/status/2125531570622828617",
+      "posted": "2026-11-25",
+      "metrics": "1.1 万查看",
+      "textZh": "歸藏演示了他叫“Code to Video / Video to Code”的双向玩法：用谷歌 Gemini Neon + LibTV 的 MCP + MAGI-2 视频模型，一边拿视频模型生成的视频当参考，让大模型写出动效丰富的网页；一边让大模型用代码做出人物动作视频，再交给视频模型当参考。他把其中的提示词优化方法和修好的插件打包成了一个 Skill，链接在他的第一条回复里。评论里有人指出两个方向之间“人物和画风能否保持一致”还是难点。"
+    }
+  ]
+}
