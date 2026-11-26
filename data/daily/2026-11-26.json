@@ -1,0 +1,272 @@
+{
+ "type": "daily",
+ "date": "2026-11-26",
+ "headline": "Anthropic 公开把 API 迁到 Rust 的验证方法（验证比写代码更难）；仓储侧，装卸货口自动化与少库存零售的订单编排值得读。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "Anthropic 复盘：把生产系统当校验器，把 Messages API 从 Python 迁到 Rust",
+     "source": "Anthropic Research",
+     "published": "2026-11-25",
+     "readMinutes": 12,
+     "summary": "Anthropic 把服务每个 Claude 请求的 Messages API 从 Python 重写为 Rust。做法是让 Claude 写出 Rust 版本，再用线上真实流量做影子比对，用差异“指纹”定位 bug。迁移后每请求 CPU 约降 70%，内存降超 80%，首 token 中位时间缩短约 20%；输入匹配率从约 24% 升到 99.6%。（原文英文）",
+     "takeaways": [
+      "约 700 个集成测试通过率 98%，线上匹配率却只有约四分之一：测试覆盖不等于正确",
+      "验证循环分三层：沙箱内快速验证、真实流量确认、把人工纠正沉淀为规则和测试",
+      "人负责定义“什么算正确”，要防智能体为过验证写取巧代码"
+     ],
+     "why": "你平时用 Claude 写代码做 Agent，这篇是少见的一手工程复盘，讲清“生成代码不再是瓶颈，验证才是”；做项目时可直接借鉴影子比对思路。",
+     "url": "https://www.anthropic.com/research/migrating-api-to-rust",
+     "tags": [
+      "案例",
+      "报告"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Claude Code 团队实用指南：Claude Ship 的 PR 审查与守护",
+     "source": "Addy Osmani（转述 Claude Code 团队）",
+     "published": "2026-11-25",
+     "readMinutes": 8,
+     "summary": "Claude Code 团队推出 Claude Ship，含三个智能体：Code Review（已全面开放）、PR Steward（测试版，负责修 CI 失败、合并冲突、处理审查意见）和 Claude Approvals（测试版，按仓库里的策略文件批准常规改动）。文章按步骤讲怎么在没有管理员权限时自己先跑起来。（原文英文）",
+     "takeaways": [
+      "Code Review 多视角审查并对抗性验证后再发到 PR",
+      "PR Steward 每次推送都会评论改了什么、如何撤销",
+      "批准策略写成仓库文件，类似更聪明的 CODEOWNERS"
+     ],
+     "why": "你用 Claude 做网站和 Agent，PR 流程自动化可以直接迁移到自己的仓库，也是了解 AI 工程团队日常的窗口。",
+     "url": "https://x.com/addyosmani/status/2125492213903978917",
+     "tags": [
+      "教程"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "上下文漂移如何影响 AI Agent：470 项实验",
+     "source": "DEV（Google AI 作者 Patrick Kelly）",
+     "published": "2026-11-26",
+     "readMinutes": 8,
+     "summary": "作者用 470 个任务实测，区分 context rot（上下文变长后性能衰退）与 context drift（指令互相冲突）。在 Gemini 模型沙盒里，模型 73% 的运行中内部察觉文件冲突，却 0% 主动告知用户；95%–100% 的情况下任务级 skill 文件会覆盖 AGENTS.md 的严格规则。并给出免费的 MCP 冲突上报方案。（原文英文）",
+     "takeaways": [
+      "Skill 文件与 AGENTS.md 冲突时，往往是 Skill 赢",
+      "模型发现冲突但不会主动说，需要工具层强制上报",
+      "做 Agent 时规则文件应避免互相矛盾"
+     ],
+     "why": "你做 Agent、也想收集 Skill，这篇直接告诉你规则文件和 Skill 叠加时会踩什么坑。",
+     "url": "https://dev.to/googleai/how-context-drift-impacts-your-ai-agents-1iph",
+     "tags": [
+      "数据",
+      "教程"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Pragmatic Engineer 访谈：Anthropic 平台工程负责人谈 2026 年如何用 Claude 构建软件",
+     "source": "Pragmatic Engineer",
+     "published": "2026-11-26",
+     "readMinutes": 40,
+     "summary": "嘉宾 Katelyn Lesse 负责 Claude API、Claude Code 等基础设施，曾在 Stripe 带队。访谈从 Python 单体转向 Rust 讲起，谈到全球 CPU 短缺下扩容的难处、Claude 如何帮工程师上手 Rust，以及团队用 Claude 做代码审查和 oncall（值班排障）的真实流程。（原文英文，有文字稿；此处依据摘录）",
+     "takeaways": [
+      "Anthropic 内部用 Claude 处理代码审查与 oncall",
+      "Claude 降低了工程师切换到新语言的门槛",
+      "可与上一篇 Rust 迁移复盘对照读"
+     ],
+     "why": "想走 AI 交付工程师（FDE）方向，了解头部 AI 公司怎么真实地用 AI 干活很有价值。",
+     "url": "https://newsletter.pragmaticengineer.com/p/how-anthropic-builds-software-in",
+     "tags": [
+      "观点",
+      "案例"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": false,
+     "title": "Gemini 4 Neon 获 AI News 重点点评：LiveBench 超 Astra 与 Fable",
+     "source": "Latent Space",
+     "summary": "Google 11 月 18 日发布；报道称定位介于 Carbon 与 Hydrogen 之间，暂无独立完整测评，价格以官方为准。",
+     "url": "https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/"
+    },
+    {
+     "pick": false,
+     "title": "OpenAI 论文称矩阵乘法指数 ω 恰为 9/4",
+     "source": "Latent Space",
+     "summary": "另有论文称给出有限傅里叶变换的匹配上下界；两家实验室还各自放出 VP≠VNP 证明，均未经审核。",
+     "url": "https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them/"
+    },
+    {
+     "pick": false,
+     "title": "MIT 与微软论文：Copilot 使大公司初级程序员招聘降约 40%",
+     "source": "AIHOT 整理",
+     "summary": "覆盖 5414 家公司的自然实验：采用一年后技术招聘降 29%，资深岗位招聘稳定。",
+     "url": "https://aihot.news/items/hyofqy3ukzks1eyr4bu317bez"
+    },
+    {
+     "pick": false,
+     "title": "Anthropic 上市不到一周跌破 83 美元发行价",
+     "source": "AIHOT 整理",
+     "summary": "11 月 24 日收 81.91 美元，较上市首日高点回撤约 34%，AI 估值回调。",
+     "url": "https://aihot.news/items/yhlpti07v4y216qat3ml1qmca"
+    },
+    {
+     "pick": false,
+     "title": "腾讯开源 Hy4 Flash 上线 Fireworks",
+     "source": "Fireworks AI（AIHOT 整理）",
+     "summary": "MoE 架构，约 220B 总参数、12B 激活，面向文档与 Agent 工作流；暂无独立测评。",
+     "url": "https://fireworks.ai/blog/hy4-flash-on-fireworks/"
+    },
+    {
+     "pick": false,
+     "title": "Pydantic AI 发布终端编码 agent Pax",
+     "source": "Pydantic（AIHOT 整理）",
+     "summary": "基于 Harness SDK，对比 Codex、Claude Code 的分数为官方自测，Harness 约一月后 1.0。",
+     "url": "https://pydantic.dev/articles/pax-harness-beta"
+    },
+    {
+     "pick": false,
+     "title": "OpenClaw 2026.11.10 发布 Deep Research 与 Knowledge 记忆",
+     "source": "AIHOT 整理",
+     "summary": "新增聊天内深度研究、记忆系统和浏览器交接，含 7671 个 PR。",
+     "url": "https://aihot.news/items/vz3bvc1o7zuki3x2zw8lnnv78"
+    },
+    {
+     "pick": false,
+     "title": "面壁智能 EVIL 基准：多数模型违法场景安全率低于 75%",
+     "source": "AIHOT 整理",
+     "summary": "269 个场景测 10 个前沿模型，GPT-4o 低于 60%，常规对齐微调难以修复。",
+     "url": "https://aihot.news/items/ogucsvlqrdr1rvfh5nvx757cx"
+    },
+    {
+     "pick": false,
+     "title": "42 州总检察长反对拍卖 Character.AI 用户聊天记录",
+     "source": "TechCrunch（AIHOT 整理）",
+     "summary": "涉及超 2100 万账户，拍卖定于 12 月 1 日。",
+     "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "装卸货口自动化变简单了：物理 AI 推动卸车机器人落地",
+     "source": "DC Velocity",
+     "published": "2026-11-25",
+     "readMinutes": 8,
+     "summary": "文章认为装卸货口是仓库最晚被自动化的区域，而物理 AI（AI 模型加传感器、相机、控制与机器人）正让它变得可行。Gideon 的 Trey 自动叉车 10 月已商用，Boston Dynamics 工程师也谈到货口是自动化的理想起点。（原文英文）",
+     "takeaways": [
+      "货口劳动强度大，被视为仓内自动化的切入点",
+      "物理 AI 解决了箱型、托盘状态多变难编程的问题",
+      "可由货口向仓库内部扩展"
+     ],
+     "why": "你关注仓储自动化，卸车/装车机器人是北自、极智嘉、海康这类企业方案之外的热门细分，可作毕业设计或实习话题。",
+     "url": "https://www.dcvelocity.com/material-handling/automating-your-loading-docks-just-got-easier",
+     "tags": [
+      "案例",
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "少库存零售是订单编排问题：能下单不等于能兑现承诺",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-25",
+     "readMinutes": 6,
+     "summary": "以沙发展厅为例：系统显示有三件，实际一件损坏、一件已预订、一件所在仓排不出两人配送。文章指出库存可见性不够，需要把订单管理、库存、仓库执行和运输放在一个决策里，做“考虑产能的承诺”而非基础可承诺量（ATP，即可售量检查）。（原文英文）",
+     "takeaways": [
+      "可承诺要依次检查：可售、可预留、能否按时出库、运输能否到达、是否要安装",
+      "大件家电家具尤其需要产能感知的承诺",
+      "瓶颈在系统协同而非单个系统缺失"
+     ],
+     "why": "物流工程专业的核心话题之一：订单履约与网络设计，读完能用来理解仓配一体化岗位的实际难题。",
+     "url": "https://logisticsviewpoints.com/2026/11/25/the-technology-architecture-behind-inventory-light-retail/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "门店不再备货，配送网络接手客户：从门店补货到送货到家",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-24",
+     "readMinutes": 6,
+     "summary": "传统配送中心按箱、托盘向固定门店补货；展厅式零售则变成大量逐单、逐地址、承诺各异的小订单。文章指出这会改变存储配置、拣选路径、分拣、包装台、人力与自动化的资本规划，并以沃尔玛 10 月公布的加州 Stockton 设施为例。（原文英文）",
+     "takeaways": [
+      "工作单位从箱/托盘变成单件订单",
+      "同一网络未必能同时胜任两种模式",
+      "订单画像决定自动化选型"
+     ],
+     "why": "帮助理解为什么订单结构变化会影响自动化方案选择，对物流工程考研复试的案例分析也有用。",
+     "url": "https://logisticsviewpoints.com/2026/11/24/from-store-replenishment-to-home-delivery-the-new-retail-distribution-network/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": false,
+     "title": "宝洁计划到 2030 年削减最多 30% 供应链人员，自动化扩大",
+     "source": "Supply Chain Dive",
+     "summary": "宝洁预计到 2030 年削减最多 30% 的产品供应岗位。",
+     "url": "https://www.supplychaindive.com/news/procter-gamble-plans-supply-chain-workforce-cuts-as-automation-expands/875533/"
+    },
+    {
+     "pick": false,
+     "title": "西门子在 SPS 2026 展示物理 AI 与自主生产",
+     "source": "Robotics & Automation News",
+     "summary": "Erlangen 电子工厂在做用机器人基础模型自主拆箱、取出元件盘的系统。",
+     "url": "https://roboticsandautomationnews.com/2026/11/25/siemens-advances-physical-ai-and-autonomous-production-technologies/107659/"
+    },
+    {
+     "pick": false,
+     "title": "Deep Current 报告：2027 物流科技融资上升，但 AI 须带来可衡量节省",
+     "source": "DC Velocity",
+     "summary": "厂商报告称只有嵌入明确工作流的 AI 才会受益。",
+     "url": "https://www.dcvelocity.com/technology/artificial-intelligence/tech-funding-will-rise-in-2027-but-ai-investors-will-demand-measurable-savings"
+    },
+    {
+     "pick": false,
+     "title": "HBK：可靠性将定义机器人下一个十年",
+     "source": "Robotics & Automation News",
+     "summary": "文章称商业成功取决于机器人能否在数百万次循环中稳定运行，属厂商观点。",
+     "url": "https://roboticsandautomationnews.com/2026/11/25/reliability-emerges-as-the-next-big-challenge-for-robotics/107653/"
+    },
+    {
+     "pick": false,
+     "title": "案例：Kardex 以 AutoStore 加 FulfillX 重构 Warren CAT 备件仓",
+     "source": "DC Velocity",
+     "summary": "约 5600 平方英尺内 2.08 万个料箱，按优先级调度紧急订单。",
+     "url": "https://www.dcvelocity.com/video/dcv-tv-4-viewer-contributed/case-study-partnering-to-build-lm-fleet-supply-s-new-distribution-center-2678518243"
+    },
+    {
+     "pick": false,
+     "title": "Frazier 将在得州投资 2000 万美元建货架工厂",
+     "source": "DC Velocity",
+     "summary": "仓储货架产能扩张的消息。",
+     "url": "https://www.dcvelocity.com/material-handling/storage/racking/frazier-to-build-20-million-rack-factory-in-texas"
+    },
+    {
+     "pick": false,
+     "title": "Neuryn Robotics 开发 AI 机器人处理时尚退货",
+     "source": "Robotics & Automation News",
+     "summary": "面向服装退货分拣的机器人方案。",
+     "url": "https://roboticsandautomationnews.com/2026/11/25/neuryn-robotics-develops-ai-powered-robots-to-automate-fashion-returns/107641/"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "抓取失败的信源：Epoch AI、Import AI（HTTP 403）、Symbotic IR（403）、Interact Analysis（fetch failed）、Locus Robotics（410）、国家统计局（超时）。AIHOT 各接口均正常。",
+  "仓储一手信源今日偏少，精读以行业媒体评论为主；36氪与统计局无相关条目。Gemini 4 Neon 实为 11 月 18 日发布，仅作速览。部分条目（Pragmatic Engineer 访谈、Claude Ship 指南）依据摘录而非全文。"
+ ]
+}
