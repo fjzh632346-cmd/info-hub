@@ -1,0 +1,266 @@
+{
+ "type": "daily",
+ "date": "2026-11-27",
+ "headline": "AI 侧：Willison 总结一年来编程智能体的拐点，MCP 用量数据反驳“已过时”；仓储侧：Exotec 租机器人应对旺季、物理 AI 抓取速度首次超过人类遥操作。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "Simon Willison：十二个月里 LLM 的三次拐点",
+     "source": "Simon Willison",
+     "published": "2026-11-24",
+     "readMinutes": 10,
+     "summary": "Willison 在 AI Engineer Code Summit 的主题演讲整理成文：过去十二个月，LLM 和编程智能体（能自己读代码、跑命令、改代码的 AI）出现三次能力拐点。他以一年前发布的 Claude Opus 4.5 为第一个拐点——那是他第一次觉得 Claude Code 默认结果「基本就对」，才开始每天使用。原文英文。",
+     "takeaways": [
+      "以 Opus 4.5 为界：之前需要频繁纠正，之后多数日常编码任务一次做对",
+      "同月 OpenAI 发布 GPT-5.1 系列，几家厂商几乎同时越过「可靠」门槛",
+      "用时间线看工具变化，比盯单次发布更能判断该投入学什么"
+     ],
+     "why": "你平时用 Claude 写代码做 Agent，这篇是资深开发者对「什么时候开始真正好用」的亲历复盘，帮你判断该把多少工作流交给智能体。",
+     "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Philipp Schmid：Skills 和 CLI 流行之后，为什么我反而更看好 MCP",
+     "source": "Philipp Schmid（经 AIHOT 转载，原文英文）",
+     "published": "2026-11-26",
+     "readMinutes": 8,
+     "summary": "MCP（让 AI 智能体统一调用外部工具和服务的协议）过去 18 个月经历炒作与反弹，主要抱怨是工具描述占满上下文。作者用真实数据反驳：Linear 和 Notion 约一半的 issue/页面（每周约 240 万条）由智能体创建，Atlassian 每个工作日 MCP 工具调用超 500 万次，其中 44% 的用户来自软件团队之外。文章还梳理了代码模式、Skills 扩展、Events、MCP Apps 四个改进方向。",
+     "takeaways": [
+      "代码模式：给模型一个沙箱，把 MCP 工具当函数调用，不再把 50 个工具说明塞进提示词",
+      "鉴权更干净：OAuth 登录由客户端处理，智能体拿不到原始密钥",
+      "Skills over MCP 公测：服务器可按用户下发操作手册，用摘要值自动更新",
+      "Events 扩展让服务器能主动唤醒智能体，不再只是被动拉取"
+     ],
+     "why": "你在做 Agent 和想要 Skill，这篇讲清 Skills、CLI、MCP 三者怎么分工，做项目选接入方式时直接有用；注意作者立场偏 MCP。",
+     "url": "https://aihot.news/items/jcdfpftbam647yhc210dbace9",
+     "tags": [
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Hugging Face：蜂群、鸟群、帮派——如何构建、训练和评估多智能体系统（第 1 篇）",
+     "source": "Hugging Face",
+     "published": "2026-11-26",
+     "readMinutes": 15,
+     "summary": "系列博客第一篇：用 4 个智能体共享同一个语言模型，在一个可自动验证对错的简单任务上，训练它们学会彼此沟通。作者强调多智能体不会天然比单智能体强，混合上下文并不自带提升，沟通能力需要靠训练获得。示例可在 Hugging Face Jobs 上复现，约 2 张 H200 跑 5 小时、花费约 50 美元。原文英文。",
+     "takeaways": [
+      "多智能体会改变上下文、预算和系统复杂度，不是加人就变强",
+      "核心问题是：该让模型学什么、更新哪些权重",
+      "从小模型 + 可验证任务入手，是自己动手学的合理起点"
+     ],
+     "why": "你想做 Agent 和 FDE 方向，这篇给出少见的可复现入门实验，理解多智能体何时值得用、何时是白费成本。",
+     "url": "https://huggingface.co/blog/training-swarms",
+     "tags": [
+      "教程"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": false,
+     "title": "MiniMax 推出 H3 Family：旗舰视频模型与图像扩展模型",
+     "source": "AIHOT 整理",
+     "published": "2026-11-26",
+     "summary": "旗舰 H3 支持 2K 输出、起价 $0.08/秒；H3-Image Highspeed 最快 10 秒出 4K 图；开源百天衍生 1,472 个模型。暂无独立测评。",
+     "url": "https://aihot.news/items/cxodjj13xa8ey821rbnmumcrf",
+     "tags": [
+      "新模型"
+     ]
+    },
+    {
+     "pick": false,
+     "title": "FT：Nvidia 暂停向马来西亚、新加坡、泰国、印尼发运服务器",
+     "source": "AIHOT 整理",
+     "published": "2026-11-26",
+     "summary": "起因是美国要求这些国家和巴西的先进 AI 芯片需申请许可，此前中国实验室经当地云厂商租算力。",
+     "url": "https://aihot.news/items/rlt60gq96bl1cf5b88o8rbj30"
+    },
+    {
+     "pick": false,
+     "title": "Karpathy 用 Claude Code + Opus 5.5 七小时做出美国数据版“文明”地图",
+     "source": "AIHOT 整理",
+     "published": "2026-11-26",
+     "summary": "45K 行代码、整合 31 个公开数据源，已部署在线；展示了智能体长时间编码的实际产出。",
+     "url": "https://aihot.news/items/gc4qp85ij5qzhu53qzkg8quqj"
+    },
+    {
+     "pick": false,
+     "title": "OpenAI 开始测试“私有推理”（机密计算）",
+     "source": "AIHOT 整理",
+     "published": "2026-11-26",
+     "summary": "模型处理提示词和回复时受严格隔离控制，现已进入测试阶段。",
+     "url": "https://aihot.news/items/lewbr91m3z1dyea1n7pbm3bnl"
+    },
+    {
+     "pick": false,
+     "title": "蚂蚁 inclusionAI 开源图像模型 Ming-Image-0.2-Design",
+     "source": "AIHOT 整理",
+     "published": "2026-11-26",
+     "summary": "改进复杂构图、光照和文字渲染，面向电商主图、UI 设计稿和效果图；暂无独立测评。",
+     "url": "https://aihot.news/items/hdvt6wswzycj78wnr7r43xn6o",
+     "tags": [
+      "新模型"
+     ]
+    },
+    {
+     "pick": false,
+     "title": "Dario Amodei 发文澄清：不主张把人类自由意志交给 AI",
+     "source": "AIHOT 整理",
+     "published": "2026-11-26",
+     "summary": "他称 AI 须受民主程序治理，并对递归自我改进设限、端到端部署冲击就业持谨慎态度。",
+     "url": "https://aihot.news/items/e6gp31eup40d99unaon9umnpo"
+    },
+    {
+     "pick": false,
+     "title": "llama.cpp × AMD 基准看板上线 Hugging Face",
+     "source": "Hugging Face",
+     "published": "2026-11-26",
+     "summary": "可按硬件、模型、构建版本对比 Ryzen 与 Radeon 上的本地推理速度，每周自动更新。",
+     "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench"
+    },
+    {
+     "pick": false,
+     "title": "Latent Space 访谈 Clay AI 负责人：为什么用户讨厌选模型",
+     "source": "Latent Space",
+     "published": "2026-11-26",
+     "summary": "Clay 用量约一半来自外部智能体；估算 1,500 美元可筛完 4000 万家公司。",
+     "url": "https://latent.space/p/how-clay-builds-gtm-agents-jeff-barg-head-of-ai/"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "Exotec 为 Fnac Darty 做旺季扩容：二手机器人 + 租赁机器人",
+     "source": "Robotics & Automation News",
+     "published": "2026-11-26",
+     "readMinutes": 4,
+     "summary": "法国零售商 Fnac Darty 在巴黎近郊的玩具仓库用 36 台 Exotec Skypod（可上下货架的箱式存取机器人）、30,700 个货位、5 个货到人拣选站。平时日处理 1 万–1.5 万订单行，旺季临时租 25 台，机器人增至 61 台，峰值能力到约 3.5 万行/天。原文英文。",
+     "takeaways": [
+      "旺季产能用「租」而不是「买」：机器人数量增加 69%，峰值吞吐可翻倍以上",
+      "自动化系统的容量设计要看峰谷比，不能只按平均量",
+      "部分机器人用翻新二手，降低一次性投入"
+     ],
+     "why": "你学物流工程，这是一个有具体数字的方案案例，可直接拿来练习产能、峰谷、投资回报的分析，也是面试聊极智嘉、海康机器人类方案的素材。",
+     "url": "https://roboticsandautomationnews.com/2026/11/26/exotec-helps-fnac-darty-handle-black-friday-rush-with-refurbished-and-rented-robots/107714/",
+     "tags": [
+      "案例"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": true,
+     "title": "PhAIL 排行榜：物理 AI 模型在机械臂操作测试中速度超过人类遥操作",
+     "source": "Robotics & Automation News",
+     "published": "2026-11-26",
+     "readMinutes": 4,
+     "summary": "独立榜单 PhAIL 用 Franka FR3 机械臂做开抽屉、放物品入容器等任务。mimic 的 FLUX-mimic-x 中位用时 11 秒，人类遥控 27 秒；可靠度 71.2%，人类 94.7%，但每分钟成功任务数 3.08 对 1.83。可靠度最高的四个专用机器人模型都基于视频模型而非视觉语言模型。原文英文。",
+     "takeaways": [
+      "速度已超人，可靠度（71.2% vs 94.7%）仍明显落后",
+      "视频模型路线在可靠度榜单上领先",
+      "测试是家居类任务，不等同仓库拣选，别直接外推"
+     ],
+     "why": "拣选抓取是仓储自动化最难的环节，这篇让你看到「AI 抓取」目前的真实水平，读来判断它离落地多远。",
+     "url": "https://roboticsandautomationnews.com/2026/11/26/physical-ai-model-outpaces-human-operator-in-robot-manipulation-tests/107719/",
+     "tags": [
+      "数据"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Deep Current 报告：2027 年物流科技融资将增长，但投资人要看可量化的节省",
+     "source": "DC Velocity",
+     "published": "2026-11-25",
+     "readMinutes": 4,
+     "summary": "挪威物流 AI 公司 Deep Current 的报告（访谈高管加公开财报）称：物流科技创业公司融资到 8 月中旬已达 84 亿美元，2026 年有望超过 2025 年的 90 亿；10 月中旬物流科技并购 66 宗，同比增 73.7%。2027 年货运市场偏软，只有嵌在明确工作流里、能算出节省的 AI 才会被买单。原文英文，报告出自 AI 厂商。",
+     "takeaways": [
+      "融资 84 亿美元（至 8 月中旬）、并购同比 +73.7%",
+      "买家问题从「AI 管不管用」变成「在哪里回本」",
+      "AI 要嵌入工作流，节省要体现在买家自己的数字里"
+     ],
+     "why": "想去民企供应链或做 AI 交付，这篇说明客户现在怎么评估 AI 项目，面试和做项目选题都要用「可量化节省」来讲。",
+     "url": "https://www.dcvelocity.com/technology/artificial-intelligence/tech-funding-will-rise-in-2027-but-ai-investors-will-demand-measurable-savings",
+     "tags": [
+      "报告"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": false,
+     "title": "沃尔沃根特工厂开始训练 Hexagon AEON 人形机器人",
+     "source": "Robotics & Automation News",
+     "published": "2026-11-26",
+     "summary": "用模仿学习训练，首个任务是把零件精确放入两个夹具，目标 2027 年中投入生产。",
+     "url": "https://roboticsandautomationnews.com/2026/11/26/volvo-cars-begins-training-hexagon-humanoid-robots-for-factory-work/107733/"
+    },
+    {
+     "pick": false,
+     "title": "Universal Robots 把 Inbolt 的 3D AI 视觉直接装进 Gen 7 机器人",
+     "source": "Robotics & Automation News",
+     "published": "2026-11-26",
+     "summary": "协作机器人原生集成 3D 视觉，减少外接相机调试。",
+     "url": "https://roboticsandautomationnews.com/2026/11/26/universal-robots-brings-inbolts-3d-ai-vision-directly-onto-its-gen-7-robots/107737/"
+    },
+    {
+     "pick": false,
+     "title": "Lute 融资 2000 万美元，给机器人加触觉",
+     "source": "Robotics & Automation News",
+     "published": "2026-11-26",
+     "summary": "触觉感知是精细抓取的短板，该融资面向这一方向。",
+     "url": "https://roboticsandautomationnews.com/2026/11/26/lute-raises-20-million-to-give-robots-a-sense-of-touch/107756/"
+    },
+    {
+     "pick": false,
+     "title": "Logistics Viewpoints：DSV 整合 Schenker，规模变大服务就更好吗",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-26",
+     "summary": "DSV 三季度毛利增 2.3%，但整合后欧洲公路业务出现生产率下降，季末才恢复。",
+     "url": "https://logisticsviewpoints.com/2026/11/26/dhl-dsv-and-kuehne-nagel-does-forwarding-scale-improve-service/"
+    },
+    {
+     "pick": false,
+     "title": "Logistics Viewpoints：零售的未来是“按设计备库存”，不是零库存",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-26",
+     "summary": "不同品类的需求和时效要求不同，门店备货、陈列、配送模式应按经济性区分。",
+     "url": "https://logisticsviewpoints.com/2026/11/26/will-the-retail-store-survive-the-economics-of-the-next-retail-operating-model/"
+    },
+    {
+     "pick": false,
+     "title": "Logistics Viewpoints：自动驾驶货运拼的是运营经济性，不是演示",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-26",
+     "summary": "Aurora 季度收入约 300 万美元，需按每单交付全成本比较；与仓储关系较弱。",
+     "url": "https://logisticsviewpoints.com/2026/11/26/autonomous-freight-will-succeed-by-operating-economics-not-demonstrations/"
+    },
+    {
+     "pick": false,
+     "title": "Frazier 将在得州投 2000 万美元建货架工厂",
+     "source": "DC Velocity",
+     "published": "2026-11-25",
+     "summary": "仓储货架产能扩张，美国市场仍在投资仓储基础设施。",
+     "url": "https://www.dcvelocity.com/material-handling/storage/racking/frazier-to-build-20-million-rack-factory-in-texas"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "抓取失败的信源：Epoch AI（HTTP 403）、Import AI（HTTP 403）、Symbotic IR（HTTP 403）、Interact Analysis（fetch failed）、Locus Robotics（HTTP 410）、国家统计局（超时）；36氪快讯抓到 0 条。aihot.json 各接口均 ok。",
+  "今天是周五，一手来源（Anthropic、OpenAI、DeepMind）近 24 小时基本没有新文章，AI 精选以博客和转载为主；Schmid 一文原文链接未在材料里，使用 AIHOT 链接，内容依据 excerpt 全文。",
+  "WebSearch 未发现 11-26 当天新的重大模型发布；MiniMax H3 与蚂蚁 Ming-Image 仅有 AIHOT 摘要，暂无独立测评。",
+  "仓储方向近 24 小时一手材料偏少，精读 3 条里 Exotec、Deep Current 均带厂商/AI 公司立场，已标注。昨日已收录装卸货口自动化与少库存零售编排，今天不重复。"
+ ]
+}
