@@ -1,7 +1,21 @@
 {
- "fetchedAt": "2026-11-27T04:18:16.214Z",
+ "fetchedAt": "2026-11-27T19:29:33.530Z",
  "hours": 72,
  "status": [
+  {
+   "source": "Google DeepMind",
+   "feed": "https://deepmind.google/blog/rss.xml",
+   "ok": true,
+   "total": 100,
+   "recent": 0
+  },
+  {
+   "source": "OpenAI",
+   "feed": "https://openai.com/news/rss.xml",
+   "ok": true,
+   "total": 1430,
+   "recent": 0
+  },
   {
    "source": "Anthropic Engineering",
    "feed": "https://znck.github.io/feeds/anthropic-engineering.xml",
@@ -10,25 +24,11 @@
    "recent": 0
   },
   {
-   "source": "OpenAI",
-   "feed": "https://openai.com/news/rss.xml",
-   "ok": true,
-   "total": 1430,
-   "recent": 2
-  },
-  {
    "source": "a16z",
    "feed": "https://www.a16z.news/feed",
    "ok": true,
    "total": 20,
    "recent": 0
-  },
-  {
-   "source": "Google DeepMind",
-   "feed": "https://deepmind.google/blog/rss.xml",
-   "ok": true,
-   "total": 100,
-   "recent": 1
   },
   {
    "source": "Epoch AI",
@@ -40,8 +40,8 @@
    "source": "Hugging Face",
    "feed": "https://huggingface.co/blog/feed.xml",
    "ok": true,
-   "total": 918,
-   "recent": 6
+   "total": 919,
+   "recent": 7
   },
   {
    "source": "Import AI",
@@ -54,7 +54,7 @@
    "feed": "https://simonwillison.net/atom/everything/",
    "ok": true,
    "total": 30,
-   "recent": 9
+   "recent": 6
   },
   {
    "source": "One Useful Thing",
@@ -68,13 +68,6 @@
    "feed": "https://blog.google/technology/ai/rss/",
    "ok": true,
    "total": 20,
-   "recent": 1
-  },
-  {
-   "source": "Sequoia",
-   "feed": "https://www.sequoiacap.com/feed/",
-   "ok": true,
-   "total": 50,
    "recent": 0
   },
   {
@@ -85,10 +78,17 @@
    "recent": 0
   },
   {
-   "source": "Benedict Evans",
-   "feed": "https://www.ben-evans.com/benedictevans/?format=rss",
+   "source": "BestBlogs 每日早报",
+   "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
    "ok": true,
-   "total": 20,
+   "total": 6,
+   "recent": 3
+  },
+  {
+   "source": "Sequoia",
+   "feed": "https://www.sequoiacap.com/feed/",
+   "ok": true,
+   "total": 50,
    "recent": 0
   },
   {
@@ -112,18 +112,18 @@
    "error": "HTTP 403"
   },
   {
+   "source": "Benedict Evans",
+   "feed": "https://www.ben-evans.com/benedictevans/?format=rss",
+   "ok": true,
+   "total": 20,
+   "recent": 0
+  },
+  {
    "source": "Symbotic",
    "feed": "https://www.symbotic.com/feed/",
    "ok": true,
    "total": 10,
    "recent": 0
-  },
-  {
-   "source": "BestBlogs 每日早报",
-   "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
-   "ok": true,
-   "total": 7,
-   "recent": 4
   },
   {
    "source": "大福（日文）",
@@ -140,11 +140,10 @@
    "recent": 0
   },
   {
-   "source": "Georgia Tech SCL",
-   "feed": "https://www.scl.gatech.edu/rss.xml",
-   "ok": true,
-   "total": 10,
-   "recent": 0
+   "source": "Interact Analysis",
+   "feed": "https://www.interactanalysis.com/feed/",
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "source": "Automated Warehouse",
@@ -154,31 +153,25 @@
    "recent": 0
   },
   {
-   "source": "Interact Analysis",
-   "feed": "https://www.interactanalysis.com/feed/",
-   "ok": false,
-   "error": "fetch failed"
+   "source": "Georgia Tech SCL",
+   "feed": "https://www.scl.gatech.edu/rss.xml",
+   "ok": true,
+   "total": 10,
+   "recent": 0
   },
   {
    "source": "Logistics Viewpoints",
    "feed": "https://logisticsviewpoints.com/feed/",
    "ok": true,
    "total": 10,
-   "recent": 7
-  },
-  {
-   "source": "The Robot Report 物流",
-   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
-   "ok": true,
-   "total": 15,
-   "recent": 0
+   "recent": 6
   },
   {
    "source": "MH&L",
    "feed": "https://www.mhlnews.com/__rss/website-scheduled-content.xml?input=%7B%22sectionAlias%22%3A%22home%22%7D",
    "ok": true,
    "total": 25,
-   "recent": 2
+   "recent": 1
   },
   {
    "source": "DC Velocity",
@@ -188,11 +181,25 @@
    "recent": 11
   },
   {
+   "source": "Supply Chain 24/7 自动化",
+   "feed": "https://feeds.feedburner.com/sc247/rss/automation",
+   "ok": true,
+   "total": 20,
+   "recent": 0
+  },
+  {
    "source": "Supply Chain Dive",
    "feed": "https://www.supplychaindive.com/feeds/news/",
    "ok": true,
    "total": 10,
-   "recent": 9
+   "recent": 4
+  },
+  {
+   "source": "The Robot Report 物流",
+   "feed": "https://www.therobotreport.com/category/markets-industries/logistics-warehousing-asrs/feed/",
+   "ok": true,
+   "total": 15,
+   "recent": 1
   },
   {
    "source": "Locus Robotics",
@@ -201,10 +208,10 @@
    "error": "HTTP 410"
   },
   {
-   "source": "Supply Chain 24/7 自动化",
-   "feed": "https://feeds.feedburner.com/sc247/rss/automation",
+   "source": "36氪快讯",
+   "feed": "https://36kr.com/feed-newsflash",
    "ok": true,
-   "total": 20,
+   "total": 0,
    "recent": 0
   },
   {
@@ -212,14 +219,7 @@
    "feed": "https://aihot.news/rss",
    "ok": true,
    "total": 50,
-   "recent": 35
-  },
-  {
-   "source": "36氪快讯",
-   "feed": "https://36kr.com/feed-newsflash",
-   "ok": true,
-   "total": 0,
-   "recent": 0
+   "recent": 28
   },
   {
    "source": "Robotics & Automation News",
@@ -251,6 +251,168 @@
  ],
  "items": [
   {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "The ‘Iron’ age: XPeng prepares for mass production of its humanoid robot",
+   "url": "https://roboticsandautomationnews.com/2026/11/27/the-iron-age-xpeng-prepares-for-mass-production-of-its-humanoid-robot/107831/",
+   "published": "2026-11-27T19:14:21.000Z",
+   "description": "For a company that made its name manufacturing intelligent electric vehicles, the prospect of producing a humanoid robot every two and a half minutes represents a remarkable evolution of its industrial ambitions. And that is precisely what Chinese technology company XPeng is working towards. At its AI Day 2026 event in Guangzhou, XPeng unveiled the […]",
+   "excerpt": "For a company that made its name manufacturing intelligent electric vehicles, the prospect of producing a humanoid robot every two and a half minutes represents a remarkable evolution of its industrial ambitions. And that is precisely what Chinese technology company XPeng is working towards.\nAt its AI Day 2026 event in Guangzhou, XPeng unveiled the latest generation of its general-purpose humanoid robot, Iron, outlining a strategy that brings together artificial intelligence, automotive manufacturing expertise and a new commercial ecosystem for robotics.\nMass production is scheduled to begin in January 2027, marking an important transition from technology development to commercial operations.\nHe Xiaopeng, chairman and CEO of XPeng, says: “Humanoid robotics is reaching the point where the industry must move beyond demonstrations and prove that robots can create value in the real world.\n“That requires more than capable hardware or intelligent models. It requires reliable products, high-quality data, scalable manufacturing and continuous learning through deployment. XPeng Iron brings these capabilities together as we prepare for commercial deployment and mass production is scheduled to begin in January 2027.”\nCentral to XPeng’s approach is the simultaneous development of the robot’s intelligence and physical capabilities.\nIts Turing physical AI architecture incorporates three interconnected systems responsible for higher-level reasoning and task planning, real-time decision-making and the direct control of physical movements.\nThe latest generation of Iron features 76 degrees of freedom, including a dexterous hand with 21 degrees of freedom, more than 1,500 tactile sensing points, 3D vision and 360-degree environmental perception.\nThree proprietary Turing AI chips provide a combined 2,250 trillion operations per second of effective computing power.\nThe robot is designed to recognize people, retain conversational context, navigate autonomously, monitor its operational health and recharge itself before returning to work.\nXPeng has also incorporated five layers of safety protection, including collision detection, torque limits and emergency-stop mechanisms.\nPerhaps one of XPeng’s greatest potential advantages in the emerging humanoid robotics market is the industrial infrastructure and manufacturing knowledge it has accumulated through its automotive business.\nThe company has established a 50,000 sq m Robot Data Factory covering more than 250 scenarios and 15 job"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Robbyant open-sources AI models to improve robotic navigation and spatial memory",
+   "url": "https://roboticsandautomationnews.com/2026/11/27/robbyant-open-sources-ai-models-to-improve-robotic-navigation-and-spatial-memory/107827/",
+   "published": "2026-11-27T18:59:42.000Z",
+   "description": "Robbyant, an embodied AI company within Ant Group, has announced the open-source release of two AI models designed to improve robots’ ability to map physical environments, retain spatial information and navigate autonomously. The models – LingBot-Map 2.0 and LingBot-Navi – address two significant challenges in autonomous robotics: the accumulation of mapping errors over long distances […]",
+   "excerpt": "Robbyant , an embodied AI company within Ant Group, has announced the open-source release of two AI models designed to improve robots’ ability to map physical environments, retain spatial information and navigate autonomously.\nThe models – LingBot-Map 2.0 and LingBot-Navi – address two significant challenges in autonomous robotics: the accumulation of mapping errors over long distances and the inability of some navigation systems to retain knowledge of their surroundings between tasks.\nThese challenges affect a range of physical AI applications, from warehouse logistics and industrial automation to last-mile delivery and domestic robotics.\nLingBot-Map 2.0 builds on the original model released in April 2026, introducing an internal error correction mechanism inspired by memory reconsolidation in the human brain.\nCalled Geometric Context Reshaping (GCR), the mechanism enables the model to reuse previously extracted geometric information and correct its internal spatial memory without having to process images again.\nUnlike conventional external correction methods, which adjust a robot’s recorded trajectory, GCR updates the model’s internal representation of its surroundings, providing a more reliable reference for subsequent movement.\nThe system also incorporates LingBot-Vision, Robbyant’s visual foundation model, to improve geometric accuracy.\nAccording to Robbyant, testing over a 5.2 km urban trajectory involving nearly 19,000 frames showed that average trajectory error fell from 31.12 meters in the original model to 4.72 meters in version 2.0 – a reduction of nearly 85 percent.\nThe company also reports that the model ranked first across three dense 3D reconstruction benchmarks: CroCoDL, EuRoC and Oxford.\nBuilt on LingBot-Map 2.0, LingBot-Navi introduces persistent spatial memory, enabling robots to retain information about objects and locations between missions.\nRather than repeatedly exploring familiar environments, robots can retrieve previously acquired spatial information in response to natural language commands and use it to plan more efficient routes.\nThe model also supports on-device operation, allowing user commands and environmental data to remain local, reducing latency and supporting data privacy.\nIn simulation tests using a subset of the GOAT-Bench public benchmark, LingBot-Navi achieved a task success rate of 68.60 percent, outperforming the best of six comparative methods by 10.36 percentage points.\nIn fully end-to-end simulation tests, where"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Prensilia launches new robotic hand for industrial humanoids and cobots",
+   "url": "https://roboticsandautomationnews.com/2026/11/27/prensilia-launches-new-robotic-hand-for-industrial-humanoids-and-cobots/107822/",
+   "published": "2026-11-27T17:57:17.000Z",
+   "description": "Italian robotics company Prensilia has introduced NH1 Era, a robotic hand designed for humanoid and collaborative robots, combining versatile grasping capabilities with the grip force and durability required for industrial applications. Unveiled at SPS 2026 in Nuremberg, Germany, the robotic hand is designed to help bring physical AI capabilities from research laboratories to factory floors. […]",
+   "excerpt": "Italian robotics company Prensilia has introduced NH1 Era, a robotic hand designed for humanoid and collaborative robots, combining versatile grasping capabilities with the grip force and durability required for industrial applications.\nUnveiled at SPS 2026 in Nuremberg, Germany, the robotic hand is designed to help bring physical AI capabilities from research laboratories to factory floors.\nPrensilia aims to provide robotics developers with hardware that offers greater versatility than traditional industrial grippers while meeting the requirements of production environments in terms of robustness, simplicity and cost.\nThe approach is intended to enable physical AI development teams to train and test robotic manipulation skills using hardware that can subsequently be used in industrial operations.\nNH1 Era supports multiple grasping modes and features underactuated fingers that use mechanical intelligence to adapt to objects of different shapes and sizes.\nThe fingers can also be equipped with force sensors that provide the feedback required to regulate grasping force, enabling robots to handle a variety of components and tools.\nPrensilia is targeting applications including kitting and assembly in high-mix, low-volume manufacturing, where robots may need to handle a wide range of components without frequent changes of end-of-arm tooling.\nOther potential applications include machine loading and unloading, handling delicate components and automated testing of human-machine interfaces involving buttons, touchscreens and knobs.\nThe robotic hand’s key technical features include:\nThe combination of mechanical adaptability, sensor feedback and software integration is intended to simplify the development of robotic manipulation applications across different robot platforms.\nFounded in 2009 as a spin-off from the Scuola Superiore Sant’Anna in Pisa, Prensilia is based in Pontedera, Italy.\nThe company develops and manufactures robotic hands for laboratory research, alongside CE-marked versions for use as medical devices and industrial grippers.\nThe introduction of NH1 Era expands its product portfolio into industrial manipulation and humanoid robotics, as developers increasingly look to translate advances in physical AI into practical manufacturing applications.\nPre-orders for the first production batch are now open through the Prensilia website, with no payment required to register.\nThe company has also released a video introducing the NH1 Era robotic hand.\nOur websit"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "How to Move a Large Collection Without Losing Track of What You Own",
+   "url": "https://roboticsandautomationnews.com/2026/11/27/how-to-move-a-large-collection-without-losing-track-of-what-you-own/107819/",
+   "published": "2026-11-27T17:11:47.000Z",
+   "description": "Moving an ordinary household is one thing. Moving a home library, hundreds of vinyl records, artwork, vintage cameras, or years of hobby equipment is a different kind of job. These aren’t just boxes of belongings. They’re collections you’ve spent time, money, and plenty of patience putting together. Some pieces may be rare, fragile, or impossible […]",
+   "excerpt": "Moving an ordinary household is one thing. Moving a home library, hundreds of vinyl records, artwork, vintage cameras, or years of hobby equipment is a different kind of job. These aren’t just boxes of belongings. They’re collections you’ve spent time, money, and plenty of patience putting together. Some pieces may be rare, fragile, or impossible to replace.\nThe challenge is getting everything to the new address without damage, missing parts, or losing track of how it was organized. Finding the right crew can help coordinate transportation, but protecting a collection starts well before moving day. Here’s how to make the process manageable.\nCollections need more planning than ordinary household goods because their items often vary in size, shape, material, and value. A vinyl collection, for example, might include records, sleeves, inserts, and special editions that all need to stay together. A library may be arranged by author, subject, or a personal system that makes perfect sense to its owner and nobody else.\nPacking everything randomly into spare boxes can destroy that organization. It can also make unpacking a frustrating guessing game. Treat the collection as a separate moving project. Give it its own inventory, packing materials, labels, and designated space in the new home. For a longer haul, experienced movers from Los Angeles to Sacramento can plan the collection as its own part of the shipment rather than mixing it in with everything else.\nBefore wrapping anything, make a record of what you own. A simple spreadsheet is usually enough. Include each item’s name, description, condition, approximate value, and the box number where it will be packed. Take photographs of valuable, rare, fragile, or sentimental pieces. For artwork, photograph the front, back, frame, and any existing damage. For collectibles, capture serial numbers, signatures, identifying marks, and accessories.\nKeep receipts, appraisals, certificates of authenticity, and other relevant paperwork in a separate digital folder. This documentation can help establish an item’s condition and value if something goes wrong during the move. It might feel like extra work, but a few minutes with a camera can save you a serious headache later.\nA mountain of cardboard boxes isn’t a packing strategy. Different objects need different protection:\nFor particularly delicate materials, ordinary bubble wrap may not be the right answer. Pay attention to moisture, temperature, and direct sunlight, especiall"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Why Automated Billing Belongs on the Factory Floor, Not Just in the Front Office",
+   "url": "https://roboticsandautomationnews.com/2026/11/27/why-automated-billing-belongs-on-the-factory-floor-not-just-in-the-front-office/107816/",
+   "published": "2026-11-27T16:56:17.000Z",
+   "description": "Most small shops I walk into have a robot arm, a CNC cell, or a sensor array doing real work, and a bookkeeper in the back office still retyping job numbers into a paper invoice at 6 p.m. Two halves of the same business that never speak to each other. That gap costs you more […]",
+   "excerpt": "Most small shops I walk into have a robot arm, a CNC cell, or a sensor array doing real work, and a bookkeeper in the back office still retyping job numbers into a paper invoice at 6 p.m. Two halves of the same business that never speak to each other.\nThat gap costs you more than you think. A finished install sits in limbo until someone remembers to bill it, and every idle day is working capital you already spent on parts and labor. Getting paid faster starts with treating billing as part of your operations layer, not as paperwork that trails behind it. If you run a field crew or a service bench, part of the fix is simply picking better invoicing software that can fire a bill from a phone the moment the job closes.\nHere’s the promise: by the end of this piece you’ll know how to wire your completed work directly to your cash flow, which signals matter, and where the whole thing breaks if you let it. Call it the close-the-loop model. Work finishes, a bill goes out, money comes in, and nobody has to be the human reminder in the middle.\nThe leak has a shape. It’s not one dramatic failure. It’s a hundred small delays. A technician finishes a repair at 3 p.m. and means to write it up later. A project manager marks a job complete but the billing trigger lives in a spreadsheet someone updates on Fridays. A customer disputes a line item because your handwritten note didn’t match what they were quoted.\nAdd those up and you’re floating your own customers a loan you never agreed to. That’s a real cost on a balance sheet, and it’s boring enough that most owners ignore it because the money does eventually arrive.\nCompare that with a shop that closes the loop. Equipment signals completion, a pre-approved rate card generates the invoice, the customer gets it by text before they leave the site, and payment lands in days instead of weeks. Same work, wildly different cash position.\nTrying to automate everything at once is how you blow a quarter’s budget on integrations nobody uses. Instead, sort your billing triggers into three buckets and do them in order.\nMy opinion: most operators should live in tier one for at least a full quarter before they touch tier two. You’ll learn the edge cases on small money and avoid an ugly surprise on a six-figure contract.\nThe pieces aren’t exotic. Data from your machines or job-tracking app feeds an invoice trigger. That trigger hits a pre-filled template with a rate card attached. The bill goes out by email or text. Payment status syncs ba"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Keeping digital signage reliable in automated manufacturing environments",
+   "url": "https://roboticsandautomationnews.com/2026/11/27/keeping-digital-signage-reliable-in-automated-manufacturing-environments/107813/",
+   "published": "2026-11-27T14:41:21.000Z",
+   "description": "A robotic packing line can continue operating even if a separate digital display showing its output stops updating. The machinery remains productive, but supervisors may lose access to the information they use to coordinate packing, pallet collection and dispatch. That makes the computer behind the display more than an accessory. Where signage helps keep people […]",
+   "excerpt": "A robotic packing line can continue operating even if a separate digital display showing its output stops updating. The machinery remains productive, but supervisors may lose access to the information they use to coordinate packing, pallet collection and dispatch.\nThat makes the computer behind the display more than an accessory. Where signage helps keep people informed on the factory floor , the computer’s operating conditions and failure behaviour deserve attention during system design.\nThe computer’s location is often dictated by the display it serves, available cabling and maintenance access. Beside a robotic production line or inside a loading-bay enclosure, the task is to choose hardware that can operate reliably in that position.\nWhere possible, temperatures should be measured at the computer’s intended location under representative operating conditions. A factory floor could reach 28°C, while heat accumulating inside the enclosure takes the player’s surroundings to 46°C. In this illustrative case, a computer with a maximum operating temperature of 40°C would be unsuitable, even though the surrounding factory environment remains within that limit.\nCold conditions matter too. Equipment in an unheated loading bay may need to start before the morning shift, when temperatures are lower than during normal working hours.\nFor these installations, wide-temperature digital signage computers can provide operating ranges suited to the measured extremes. Selection should account for both startup and continuous operation, with enough allowance for seasonal changes and heat generated during production.\nChoosing a computer with a broader temperature range does not compensate for an unsuitable enclosure or configuration.\nOperating temperature ratings can depend on the computer’s hardware configuration and cooling requirements. For example, a system fitted with an industrial wide-temperature solid-state drive may support a broader operating temperature range than the same system configured with a conventional hard disk drive.\nManufacturers may also specify minimum airflow requirements or other installation conditions for extended-temperature operation. Installing a computer in a sealed cabinet without accounting for heat removal could therefore compromise its reliability, even if its published temperature rating appears suitable.\nThe practical point is to assess the complete assembly. The player, power supply, and display each have operating limits, while the enclos"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Why Windshield Accuracy Matters in Vehicles With ADAS",
+   "url": "https://roboticsandautomationnews.com/2026/11/27/why-windshield-accuracy-matters-in-vehicles-with-adas/107808/",
+   "published": "2026-11-27T14:12:02.000Z",
+   "description": "A windshield does more than protect you from wind, rain, and road debris. In many modern cars, it also helps safety systems monitor the road. These cars have cameras mounted behind the windshield that help detect vehicles, pedestrians, and road markings. The cameras need a clear view of the road to work properly. Even the […]",
+   "excerpt": "A windshield does more than protect you from wind, rain, and road debris. In many modern cars, it also helps safety systems monitor the road.\nThese cars have cameras mounted behind the windshield that help detect vehicles, pedestrians, and road markings. The cameras need a clear view of the road to work properly. Even the shape of the glass and the camera’s position can affect how these systems work.\nADAS stands for advanced driver assistance systems. These systems use cameras, sensors, and software to help drivers stay safe on the road.\nMany vehicles have a forward-facing camera near the rearview mirror. This camera looks through the windshield and collects information about the road ahead. The vehicle’s software uses this information to support different safety features.\nAccording to the National Highway Traffic Safety Administration (NHTSA) , driver assistance features include:\nNot all vehicles use the same cameras or sensors. These features also assist drivers rather than replace them.\nA windshield must do more than fit the vehicle. Its clarity, shape, and camera mounting position can all affect the information a camera collects.\nA camera captures images through the windshield. If the glass distorts these images, road markings and other objects may appear different from their actual shape or position.\nThis can make it harder for the system to process the information correctly.\nWindshields are made with specific curves, thicknesses, and dimensions. These can differ between vehicle models.\nA replacement windshield may fit the car but still fail to meet its camera system’s requirements. This is why checking the vehicle manufacturer’s glass specifications is important.\nThe camera must sit at the correct height and angle. Even a small change in its position can affect its view of the road.\nFor example, a poorly aligned camera may provide inaccurate information about where the vehicle is positioned within a lane.\nUsing unsuitable glass or installing a windshield incorrectly can affect how driver assistance features work.\nSome vehicle manufacturers have specific requirements for replacement glass. For example, I-CAR’s guidance on Ford and Lincoln vehicles discusses the manufacturer’s position on using original equipment glass.\nHowever, not every windshield defect will cause these problems. The effect depends on the vehicle, the type of damage, and the safety systems it uses.\nCalibration is the process of adjusting a vehicle’s cameras or sensors so they work a"
+  },
+  {
+   "group": "wh",
+   "source": "Logistics Viewpoints",
+   "title": "Black Friday 2026: The Logistics Bill Arrives After Checkout",
+   "url": "https://logisticsviewpoints.com/2026/11/27/black-friday-2026-the-logistics-bill-arrives-after-checkout/",
+   "published": "2026-11-27T14:00:00.000Z",
+   "description": "Black Friday sales are only part of the story. Parcel surcharges, fulfillment decisions and returns determine how much holiday revenue retailers keep. The post Black Friday 2026: The Logistics Bill Arrives After Checkout appeared first on Logistics Viewpoints .",
+   "excerpt": "Black Friday has traditionally been measured by what consumers spend. Retailers report sales growth, analysts track transaction volumes, and the financial press compares this year’s numbers with last year’s records. But for logistics and supply chain executives, the more important question comes after the transaction: How much of that revenue will remain once the order has been fulfilled, delivered, and potentially returned?\nThe distinction matters particularly in 2026. According to Adobe's holiday shopping forecast , U.S. consumers are expected to spend $12.9 billion online on Black Friday, an increase of 9.2% from last year. Cyber Monday is projected to reach $15.1 billion, while online spending for the full November–December holiday season is expected to total $275.1 billion, up 6.7%. Meanwhile, the National Retail Federation forecasts $1.013 trillion in total holiday retail sales, representing 4.2% growth. The two forecasts cover different retail measures, but both point toward another substantial holiday selling season.\nThat should be encouraging news for retailers. It is also a reminder that transaction growth and profitable fulfillment are not necessarily the same thing. Every additional order creates obligations across warehousing, transportation, labor, customer service, and reverse logistics. When promotional discounts are already reducing product margins, the economics of fulfilling those obligations deserve considerably more attention.\nBlack Friday is no longer the beginning of the holiday shopping season. Promotional activity now extends through October, November, and December, with retailers using successive events to stimulate demand. Adobe expects U.S. online spending in October alone to reach $95.8 billion, an 8% year-over-year increase.\nFor logistics organizations, this changes the nature of peak season planning. Rather than preparing for a concentrated surge following Thanksgiving, distribution networks must manage successive demand waves while maintaining normal replenishment, store support, and e-commerce operations. The challenge is not simply processing a higher volume of orders. It is managing the variability in order composition, delivery destinations, labor requirements, and transportation capacity.\nConsider what happens when a major promotion succeeds beyond expectations. Order volumes increase, but those orders do not necessarily arrive in the configurations anticipated by warehouse labor plans or transportation contracts. A con"
+  },
+  {
+   "group": "wh",
+   "source": "The Robot Report 物流",
+   "title": "GXO doubling down on robotics in 2027",
+   "url": "https://www.therobotreport.com/gxo-doubling-down-on-robotics-in-2027/",
+   "published": "2026-11-27T13:56:43.000Z",
+   "description": "GXO didn't disclose which providers it would increase deployments with, but let's take a look at the existing technologies in its portfolio. The post GXO doubling down on robotics in 2027 appeared first on The Robot Report .",
+   "excerpt": "Some of the robots GXO is testing or using in its facilities, including Apptronik’s Apollo humanoid, the Exotec ASRS, Dexory’s inventory robot, and Agility’s Digit humanoid. | Source: Apptronik, Exotec, Dexory, and Agility Robotics\nGXO Logistics plans to accelerate deployments of adaptive technologies across the U.S. in 2027. The phased rollout will start at GXO’s priority sites and continue over the next 12 months.\n“Today’s supply chains require solutions that are efficient and adaptable,” said Michael Jacobs, CEO of the Americas & Asia Pacific at GXO . “This deployment underscores our commitment to helping customers modernize their operations with technologies that can deliver immediate value while positioning them for long-term growth. By leveraging advanced automation and vision-enabled solutions across multiple industries, we are enabling safer, smarter and more responsive operations across our footprint.”\nGXO said it expects the deployments to help sites increase efficiency, optimize labor resources, and enhance service levels. The company didn’t disclose which providers it would be sourcing these robots from, but let’s take a look at the existing technologies in its portfolio.\nApollo features an expressive LED mouth, coordinated lighting, speech, and listening capabilities to make interactions feel natural. | Source: Apptronik\nEarlier this month, GXO shared it is expanding its partnership with Apptronik. The partners are working toward a global rollout of up to 1,000 Apollo humanoids over the next four years. Jeff Cardenas, co-founder and CEO of Apptronik, said in an interview with investment firm RoboStrategy that, when the company started working with GXO in 2024, it tested a range of tasks to see what Apollo would be best at. Eventually, the companies landed on logistics tasks, like kitting.\n“We measured the performance of the model against a benchmark, which is basically a human benchmark, and we showed that the model could perform 96% efficient for those tasks,” Cardenas said.\nUnder the agreement, Apptronik said that it and GXO will expand joint trials of Apollo in live operations across a range of warehouse workflows. These include goods-to-person (G2P) and person-to-goods picking, case and tote movement, packing, and sortation.\n“Where humanoids are at today is we’re proving out the KPIs,” Cardenas said. “Can we actually do these tasks with an ROI that makes sense? Then, once you do that, you really get into site acceptance testing, where you "
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Best Truck Accident Lawyers in Queens, NY for 2027",
+   "url": "https://roboticsandautomationnews.com/2026/11/27/best-truck-accident-lawyers-in-queens-ny-for-2027/107783/",
+   "published": "2026-11-27T13:41:33.000Z",
+   "description": "A truck crash on the Van Wyck or the BQE leaves two kinds of evidence behind. One is visible: the damage, the scene, the witnesses. The other sits inside the truck, in an electronic logging device (ELD), an engine control module and often a camera, and some of it can be overwritten within days. That […]",
+   "excerpt": "A truck crash on the Van Wyck or the BQE leaves two kinds of evidence behind. One is visible: the damage, the scene, the witnesses.\nThe other sits inside the truck, in an electronic logging device (ELD), an engine control module and often a camera, and some of it can be overwritten within days.\nThat second kind is why choosing a Queens truck accident lawyer is partly a technical decision.\nThis guide compares nine firms with Queens offices, using what each one publicly says about its fees, languages and handling of onboard truck data.\nELDs log hours, not driving behavior. Under 49 CFR 395.26, an ELD automatically records date, time, location, engine hours, vehicle miles and driver, vehicle and carrier identifiers. That is the core reason why truck drivers need ELDs .\nFMCSA guidance from March 2022 confirms ELDs are not required to collect speed, braking or steering data, and while a truck is moving they create roughly hourly intermediate records.\nEngine and vehicle control units fill the gap, sometimes. In its investigation of the February 2025 Interstate 80 tunnel crash near Green River, Wyoming, the NTSB recovered vehicle speed, engine speed and steering, brake and accelerator inputs from truck control modules.\nIt also found one truck’s VECU running 10 minutes and 1 second slow and another more than two hours slow, so clocks must be reconciled before any timeline is trusted.\nVideo settles disputes. In the NTSB’s final report on a July 2025 multivehicle crash in Charlotte, dashcam footage showed a truck had been parked on the shoulder for 1 minute and 28 seconds when it was struck.\nRetention is short. Carriers must keep duty-status records for six months under 49 CFR 395.8(k)(1).\nNothing comparable protects engine events or footage, and guidance from the Scientific Working Group on Digital Evidence warns that power cycles during vehicle handling can cause data loss.\nWe started with firms that have a physical office in Queens and handle truck accident claims.\nWe then checked each firm’s own website for its Queens office address, fee terms, languages and what it says about preserving electronic truck evidence.\nFirms with conflicting details on their own pages had those details left out. Ranking weighs Queens presence, how specifically a firm describes preserving onboard data, and accessibility.\nFounded in 2000, Frekhtman & Associates runs a Queens office at 100-09 Metropolitan Avenue in Forest Hills.\nIts Queens truck page commits to preserving black box and "
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "6 Best Car Accident Lawyers in Rochester, New York for 2027",
+   "url": "https://roboticsandautomationnews.com/2026/11/27/6-best-car-accident-lawyers-in-rochester-new-york-for-2027/107797/",
+   "published": "2026-11-27T13:41:05.000Z",
+   "description": "A crash on I-490 at rush hour or a slide through a snowy intersection on East Avenue can leave you with medical bills, a damaged car and an insurance adjuster asking for a recorded statement within days. The lawyer you call first shapes almost everything that follows. The choice matters more now than it did […]",
+   "excerpt": "A crash on I-490 at rush hour or a slide through a snowy intersection on East Avenue can leave you with medical bills, a damaged car and an insurance adjuster asking for a recorded statement within days. The lawyer you call first shapes almost everything that follows.\nThe choice matters more now than it did two years ago. New York changed its motor vehicle fault rules in 2026, so a Rochester driver who is found mostly at fault can now walk away with nothing. This guide compares seven Rochester car accident firms on the details that actually separate them, then explains what to ask before you sign.\nFor decades, New York let an injured driver recover something even when they were mostly to blame. That changed for motor vehicle cases. Under CPLR 1411(b), added on May 26, 2026, a claimant whose fault exceeds that of the defendants being sued recovers nothing. An exact 50/50 split does not trigger the bar.\nThe same law removed the 90/180-day category from New York’s serious injury threshold. That category let people with temporary injuries that kept them from normal activities for 90 of the first 180 days sue for pain and suffering. Those claims now have to fit one of the remaining categories, such as a fracture, significant disfigurement or a permanent limitation.\nBoth changes apply to lawsuits started on or after May 26, 2026, regardless of when the crash happened. In practice, fault evidence and medical documentation now carry more weight than ever, so a firm’s investigation habits matter as much as its marketing.\nWe started from scratch rather than reshuffling an existing ranking. Each firm on this list had to meet three checks:\nEvery entry follows the same format so you can compare like for like.\nFounded in 1982, Stanley Law Offices runs its Rochester practice from 510 Clinton Square and has offices across Upstate New York, from Buffalo to Binghamton, plus Montrose, Pennsylvania. Its car accident work covers no-fault filings, at-fault driver claims, uninsured and underinsured motorist claims, and trial when an insurer will not pay fairly. Free consultations can happen at your home, in the hospital or by video, and there are no attorney fees unless the firm recovers for you.\nBest for: injured drivers who cannot easily travel to an office and want a firm with deep Upstate trial history.\nJed Dietrich founded the Dietrich Law Firm P.C. in 2005, and the firm represents crash victims across Rochester and Western New York. Its Rochester pages cover specific colli"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "OpenBMB 点评 InternLM 基于 MiniCPM-o 4.5 打造的 Sage-Interaction",
+   "url": "https://aihot.news/items/l9md8ugx8e2zlm5g1tuqthmaw",
+   "published": "2026-11-27T13:32:15.000Z",
+   "description": "OpenBMB 转发并点评上海人工智能实验室 InternLM 团队发布的开源全双工语音视频模型 Sage-Interaction，该模型基于 MiniCPM-o 4.5 构建。OpenBMB 称赞其边说边听、在不打断对话的情况下把复杂任务交给后端模型，是迈向更自然 AI 交互的一步，并向 InternLM 团队致意。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l9md8ugx8e2zlm5g1tuqthmaw",
+   "excerpt": "OpenBMB 转发并点评上海人工智能实验室 InternLM 团队发布的开源全双工语音视频模型 Sage-Interaction，该模型基于 MiniCPM-o 4.5 构建。OpenBMB 称赞其边说边听、在不打断对话的情况下把复杂任务交给后端模型，是迈向更自然 AI 交互的一步，并向 InternLM 团队致意。\nOpenBMB 对他人基于 MiniCPM-o 4.5 构建的全双工语音模型给予反馈，侧面说明该底座模型在语音交互场景的外部落地情况。\n很高兴看到 Sage-Interaction 构建在 MiniCPM-o 4.5 之上！💙 边说话边聆听，并在不打断对话的情况下委派复杂任务，这是迈向更自然 AI 交互的迷人一步。向 InternLM 团队致敬！\n上海人工智能实验室的 InternLM（@intern_lm）于11月23日发布了 Sage-Interaction，这是一个开放的 9B 全双工语音与视频模型。你可以打断它，它会在快速“mm-hm”后继续，并能区分背景闲聊与对它说的话。当问题需要长时间推理时，它会将任务异步发送给后端模型，保持对话继续，并在答案到达时说出答案。\n它基于 OpenBMB 的 MiniCPM-o 4.5 构建：SigLip2 视觉编码器、Whisper-medium 音频编码器、Qwen3-8B 主干和基于 CosyVoice2 的语音解码器，以一秒块进行流式处理。训练对话由角色扮演智能体在真实场景中生成，采用针对密集音频和稀疏视频的非对称目标。\n在 FD-Bench v1.5 上，它平均得分 80.73，在比较的八个模型中排名第一，轮次切换延迟为 1.29 秒，任务委派 F1 为 80.47。团队还报告了它的落后之处，例如察觉你正在与别人交谈。你会首先把什么交给助手处理？请在下方回复。\nAn open assistant that listens while it talks and hands hard jobs to a stronger model\nInternLM (@intern_lm) at the Shanghai AI Laboratory released Sage-Interaction on November 23, an open 9B full-duplex voice and video model. You can interrupt it, it carries on after a quick \"mm-hm\", and it tells background chatter from speech meant for it. When a question needs long reasoning, it sends the job to a back-end model asynchronously, keeps the conversation going and speaks the answer when it arrives.\nIt is built on OpenBMB's MiniCPM-o 4.5: a SigLip2 vision encoder, a Whisper-medium audio encoder, a Qwen3-8B backbone and a CosyVoice2-based speech decoder, streaming in one-second chunks. Training conversations were generated by role-playing agents in real-world scenarios, with an asymmetric objective for dense audio and sparse video.\nOn FD-Bench v1.5 it averages 80.73, first among the eight models compared, with 1.29 s turn-taking latency and 80.47 F1 on task delegation. The team also reports where it trails, such as noticing when you talk to someone else. What would you hand off to an assistant first? Reply below.\nOpenBMB 对他人基于 MiniCPM-o 4.5 构建的全双工语音模型给予反馈，侧面说明该底座模型在语音交互场景的外部落地情况。"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Antigravity 实用技巧：在 GEMINI.md 加一句话让模型边干活边汇报",
+   "url": "https://aihot.news/items/tiqf353lek6sib8ktn8uvc6nc",
+   "published": "2026-11-27T12:38:45.000Z",
+   "description": "卡兹克分享一个 Antigravity 使用技巧，针对模型长时间闷头干活不输出信息的问题，只需在 GEMINI.md 中加一句话，要求动手前说要做什么、有发现、换方向、卡住或连干四五步时再说一句，即可获得类似 Claude 或 Codex 那种实时汇报进度的交互体验。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tiqf353lek6sib8ktn8uvc6nc",
+   "excerpt": "卡兹克分享一个 Antigravity 使用技巧，针对模型长时间闷头干活不输出信息的问题，只需在 GEMINI.md 中加一句话，要求动手前说要做什么、有发现、换方向、卡住或连干四五步时再说一句，即可获得类似 Claude 或 Codex 那种实时汇报进度的交互体验。\n原文给出了可直接复用的 GEMINI.md 提示词，让 Antigravity 边干活边汇报进度，改善交互掌控感。\n就是很多人不喜欢Antigravity的交互方式，就是模型一直闷头思考或者干活，一干就是2、3个小时一点信息不输出，然后突然给你个结论。。。\n大家反馈的都是喜欢Claude或者Codex那种没事给你汇报一下进度的那种掌控感和交互感。\n但其实，你只需要在GEMINI.md里加一句话就可以了： “干活时边做边说：动手前一句话说要做什么；之后不用每步都说，有发现、换方向、卡住，或者连着干了四五步时再说一句，沉默不行。”\n原文给出了可直接复用的 GEMINI.md 提示词，让 Antigravity 边干活边汇报进度，改善交互掌控感。"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "Neura Robotics partners with Costa Group to develop Aragón’s physical AI ambitions",
+   "url": "https://roboticsandautomationnews.com/2026/11/27/turning-industrial-knowledge-into-robotic-skills-neura-robotics-partners-with-costa-group-to-develop-aragons-physical-ai-ambitions/107778/",
+   "published": "2026-11-27T12:03:09.000Z",
+   "description": "Europe’s industrial strength has traditionally been built on generations of accumulated knowledge – the expertise of people who understand how to work with materials, operate machinery, manufacture products and manage complex production processes. But what if that knowledge could be transferred to robots and become a commercially valuable asset in its own right? That is […]",
+   "excerpt": "Europe’s industrial strength has traditionally been built on generations of accumulated knowledge – the expertise of people who understand how to work with materials, operate machinery, manufacture products and manage complex production processes. But what if that knowledge could be transferred to robots and become a commercially valuable asset in its own right?\nThat is one of the ideas behind a new initiative in the Spanish region of Aragón, where German robotics company Neura Robotics , the regional government and agri-food company Costa Group are joining forces to develop an industrial ecosystem around physical AI.\nThe three partners have signed a memorandum of understanding to establish Neura Gym Aragón and develop a surrounding Physical AI Model Zone, with an opening targeted for mid-2027.\nThe project envisages investment in the tens of millions of euros, with Neura Robotics taking a leading investment role.\nRather than simply encouraging businesses to introduce more robots into their operations, the initiative aims to give companies the infrastructure to develop robotic capabilities based on their own industrial expertise – and potentially generate new sources of revenue from that knowledge.\nDavid Reger, founder and CEO of Neura Robotics, says: “The knowledge of how to produce, handle and assemble things is one of Europe’s greatest assets. With our partners in Aragón, we want to give companies the tools to turn that knowledge into robotic capabilities they can use, improve and build a business around.\n“A company that develops a valuable skill should benefit when others use it. Our ambition is to connect Europe’s industrial strengths while keeping control and economic opportunity with the people and businesses that create them. That is how expertise developed here can become technology that customers around the world need.”\nOne of the challenges facing the emerging physical AI industry is that intelligence developed in the digital world does not necessarily translate into an ability to perform useful tasks in the physical world.\nRobots need to understand how to interact with objects, materials, tools and environments that can vary considerably from one workplace to another.\nAnd much of the knowledge required to perform these tasks resides not in computer systems or instruction manuals, but in the experience of people working in factories, warehouses, farms and other industrial environments.\nNeura Gym Aragón is intended to bring robotics training infra"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "ETH Zurich develops tiny sensor that enables silent communication with AI",
+   "url": "https://roboticsandautomationnews.com/2026/11/27/eth-zurich-develops-tiny-sensor-that-enables-silent-communication-with-ai/107773/",
+   "published": "2026-11-27T11:49:05.000Z",
+   "description": "Researchers at ETH Zurich in Switzerland have developed a miniature wearable sensor that enables users to communicate with artificial intelligence without speaking aloud or moving their lips. Called InvisiSpeech, the device fits between a back molar and the cheek, detecting the subtle vibrations generated when users silently form words with their tongues. These signals are […]",
+   "excerpt": "Researchers at ETH Zurich in Switzerland have developed a miniature wearable sensor that enables users to communicate with artificial intelligence without speaking aloud or moving their lips.\nCalled InvisiSpeech, the device fits between a back molar and the cheek, detecting the subtle vibrations generated when users silently form words with their tongues.\nThese signals are transmitted wirelessly to a smartphone, where an AI model decodes them into commands.\nThe technology has been developed by researchers at ETH Zurich’s Sensing, Interaction & Perception Lab (SIPLAB), led by Christian Holz, professor of computer science.\nThe device resembles a small dental brace and contains a sensor, a battery and electronics for wireless data transmission. It remains completely hidden from outside view when worn.\nUnlike brain-computer interfaces, InvisiSpeech does not measure brain signals or require implants or surgical intervention.\nYijing Jiang, a doctoral student working on the project, says: “The device itself is so small that it can be worn comfortably in your mouth.”\nIn studies involving 15 participants, InvisiSpeech correctly recognized around 90 percent of 50 predefined English commands, requiring only brief calibration for each individual.\nThe researchers found that background noise had little effect on recognition accuracy, offering a potential advantage over conventional microphone-based interfaces in noisy environments.\nApplications already tested include switching electronic devices on and off, retrieving information during meetings and translating foreign-language content using AI glasses.\nHolz says: “InvisiSpeech enables us to interact in fundamentally new ways: the invisible input of commands to an AI via natural language.”\nThe technology could also provide new opportunities for accessible communication and discreet interaction with wearable computing devices.\nThe researchers ultimately aim to move beyond predefined commands and enable users to conduct natural, private conversations with AI assistants.\nSuch a system could operate in a similar way to existing AI voice assistants, but with users silently articulating their questions and receiving spoken responses through earphones.\nThis could allow people to interact with AI while traveling on public transport, attending meetings or accessing personal information without being overheard.\nHowever, further development is required before the technology becomes practical for widespread everyday use.\nKey challe"
+  },
+  {
+   "group": "wh",
+   "source": "Logistics Viewpoints",
+   "title": "Thanksgiving: Recognizing the People Behind Global Supply Chains",
+   "url": "https://logisticsviewpoints.com/2026/11/27/thanksgiving-recognizing-the-people-behind-global-supply-chains/",
+   "published": "2026-11-27T11:20:00.000Z",
+   "description": "Thanksgiving provides an opportunity to recognize the people, organizations, and infrastructure that support our everyday lives. Although the holiday is primarily observed in the United States, the supply chains that make it possible extend across international borders, industries, and transportation networks. For those of us working in supply chain management and logistics, it is an […] The post Thanksgiving: Recognizing the People Behind Global Supply Chains appeared first on Logistics Viewpoints .",
+   "excerpt": "Thanksgiving provides an opportunity to recognize the people, organizations, and infrastructure that support our everyday lives. Although the holiday is primarily observed in the United States, the supply chains that make it possible extend across international borders, industries, and transportation networks. For those of us working in supply chain management and logistics, it is an appropriate occasion to acknowledge the professionals whose contributions make modern commerce possible.\nConsider the traditional Thanksgiving meal. The products on the table represent the combined efforts of agricultural producers, food processors, packaging suppliers, transportation providers, distribution operations, and retailers. Some products originate nearby, while others move through extensive international networks. Bringing these goods together at the right place and time requires an extraordinary degree of coordination, much of which remains invisible to the final consumer.\nThat invisibility is one measure of the industry’s success. When products are available, shipments arrive as expected, and operations continue without interruption, relatively few people consider the systems and decisions that made those outcomes possible. Yet dependable performance is not automatic. It results from investments in infrastructure, sound operating processes, effective technology, and the experience of people working throughout the supply chain.\nThroughout my career, I have had the opportunity to work with supply chain and logistics professionals across manufacturing, distribution, transportation, and industrial technology. These interactions have reinforced my appreciation for the operational knowledge and practical judgment required to manage increasingly complex networks.\nSupply chain performance depends on a remarkably broad range of expertise. Transportation planners coordinate capacity and delivery commitments. Warehouse managers balance labor, inventory, and customer requirements. Manufacturing personnel maintain production schedules despite changing material availability. Maintenance technicians keep critical equipment operating, while engineers and technology specialists develop the systems that support these activities.\nThese responsibilities extend well beyond any single organization or geography. A manufacturer in North America may depend on components from Asia, transportation services from European logistics providers, and information systems supporting operations acro"
+  },
+  {
+   "group": "wh",
+   "source": "Robotics & Automation News",
+   "title": "5 Best Residential Proxies for Web Scraping in 2026",
+   "url": "https://roboticsandautomationnews.com/2026/11/27/5-best-residential-proxies-for-web-scraping-in-2026/107764/",
+   "published": "2026-11-27T10:55:06.000Z",
+   "description": "Pulling data at scale means fighting blocks, CAPTCHAs, and geo-restrictions at every turn. The right residential proxy network routes requests through real home IPs, so automated scrapers look like ordinary visitors rather than bots. These five providers cover different price points, pool sizes, and feature sets worth comparing before you commit to a plan. Why […]",
+   "excerpt": "Pulling data at scale means fighting blocks, CAPTCHAs, and geo-restrictions at every turn. The right residential proxy network routes requests through real home IPs, so automated scrapers look like ordinary visitors rather than bots. These five providers cover different price points, pool sizes, and feature sets worth comparing before you commit to a plan.\nDatacenter IPs are fast and cheap, but major platforms flag them quickly because the subnets are well-known. Residential proxies carry addresses assigned by real ISPs to real households, making them far harder for target sites to tell apart from genuine traffic. That’s the practical reason most serious scraping operations eventually switch.\nThe tradeoff is cost. Residential proxy traffic runs higher than datacenter traffic, which is why pool size, price per GB, and session controls matter so much. A provider with 100 million IPs and city-level targeting gives a scraper far more room to rotate and avoid patterns than one with a few million IPs concentrated in top-tier countries. For use cases like SERP monitoring or e-commerce pricing, where location accuracy decides whether the data is usable at all, those targeting options aren’t optional extras.\nThordata offers 100M+ residential IPs spread across 190+ countries, with targeting down to city and ASN level. Residential plans start at $2.00 for 1 GB and drop to $0.65/GB on the 5,000 GB plan, one of the sharper per-GB rates at volume among residential providers. Thordata states an average 99.82% success rate, a 0.41-second average response time, and 99.9% uptime.\nBoth rotating and sticky session modes are available. Rotating sessions assign a fresh IP on every request, which suits high-volume crawls; sticky sessions keep one IP for up to 90 minutes, making them suitable for shorter multi-step tasks. For longer sessions and account workflows, Thordata recommends its Static ISP Proxies. IPs are ethically sourced through a consent-based network where participants opt in and get compensated for sharing their connection.\nBeyond proxies, the same account includes a SERP API, a Web Scraper API, a Scraping Browser, and structured datasets. Useful if your team wants proxies and data tooling under one roof. An MCP server and n8n connection links web data directly to AI agents and workflow automations.New users can currently claim a 3-day residential trial through LiveChat, with no credit card required.\nBright Data is one of the longest-standing providers in this spac"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "Dragos 调查称 MiniMax 在用户请求不存储的情况下仍打开提示词中的私有链接",
+   "url": "https://aihot.news/items/v5fxjqr2vapkk9vn1j9a8ke96",
+   "published": "2026-11-27T07:21:40.000Z",
+   "description": "据美国安全公司 Dragos，MiniMax 收集并打开了用户提示词中的私有链接，即便用户要求不存储数据。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v5fxjqr2vapkk9vn1j9a8ke96",
+   "excerpt": "据美国安全公司 Dragos， MiniMax 收集并打开了用户提示词中的私有链接，即便用户要求不存储数据。\n转述 Dragos 的金丝雀测试细节，读者可以据此评估把敏感数据交给 AI 服务商的风险和供应商的隐私承诺可信度。\n据美国安全公司Dragos称，MiniMax从用户提示词中收集了私人链接并打开了它们，即使是在无存储请求的情况下也是如此。\nDragos在发送给众多AI服务的近200万条提示词中埋设了陷阱链接和虚假登录页面，以检查是否有任何提供商秘密读取或传递客户数据。只有到达MiniMax服务器的提示词中的链接在数天后被不明第三方打开，即使用户已要求不存储其数据。\n其中一个链接24天后出现在字节跳动飞书的一场聊天中，北京和上海的3台台式机和3部手机在2分钟内打开了它，这看起来更像是有人在分享它，而非自动化扫描器所为。\n在链接抓取似乎在10月22日停止后，一个git客户端试图克隆发往MiniMax的提示词中提到的私有代码仓库，目前不清楚是谁运行的，也不清楚是否有代码被取走。\n研究人员还观察到来自莫斯科地区的涉及这些链接的异常活动，不过证据并未显示这些链接是从俄罗斯打开的。\nMiniMax表示，其安全系统收集链接并自动打开部分链接以检查威胁，且未保留完整对话，已删除存储的地址，并未发现对话流向第三方的证据。\nAtlas Cloud停止将请求转发给MiniMax，并告知M3、M2.7和M3.1 Flash用户将其密钥视为已泄露，而OpenRouter移除了3家提供商并收紧了其数据隐私规则。\n转述 Dragos 的金丝雀测试细节，读者可以据此评估把敏感数据交给 AI 服务商的风险和供应商的隐私承诺可信度。"
+  },
+  {
    "group": "ai",
    "source": "BestBlogs 每日早报",
    "title": "EP249 · 阿里谈智能体授权、麦卡锡谈软件工厂、杰森·刘谈创作判断",
@@ -258,6 +420,15 @@
    "published": "2026-11-27T06:00:00.000Z",
    "description": "📝 今日导语 阿里拆解智能体授权，麦卡锡区分软件工厂与需求探索，杰森·刘讲如何把创作判断说清楚。 🏷 今日关键词： 智能体授权 软件工厂 创作判断 Cloudflare 搜索 QQ 音乐 JEV 📰 今日精选内容 阿里巴巴谈智能体身份与授权治理 阿里技术 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 91 Justin McCarthy 谈什么时候该建软件工厂 AI Engineer &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 OpenAI 的 Jason Liu 谈 AI 降低执行成本后的创作选择 AI Engineer &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 91 Cloudflare 面向智能体推出网站内容搜索 The Cloudflare Blog &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 87 JEV 决策模型落地 QQ 音乐实践：把决策延迟打到 25ms 腾讯云开发者 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 百度用 Loopy 分开改进视频生成与评分标准 百度Geek说 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 91 Google DeepMind 为 Antigravity 推出质谱判读技能 Goo",
    "excerpt": ""
+  },
+  {
+   "group": "ai",
+   "source": "Hugging Face",
+   "title": "Taking Trainium3 to the Track: Generating Videos with LTX-2.5",
+   "url": "https://huggingface.co/blog/video-trainium3",
+   "published": "2026-11-27T00:00:00.000Z",
+   "description": "",
+   "excerpt": "Thanks to our partnership with AWS, we were lucky enough to get access to a Trainium3 machine ( trn3.48xlarge , 64 NeuronCores) for a month. We spent most of the month testing Hugging Face models on it, and getting more of them to work.\nWith five days left, I allowed myself a little fun. When you have a Ferrari, every now and then you want to take it out on the track. So I asked myself: what if I tried to generate videos?\nI picked LTX-2.5 from Lightricks, which generates video and sound together. By the end, once the models were loaded, a 10-second clip with sound took 22 to 23 s to generate, on half of the machine. Here is the result.\nI had two goals. The first was to see how easy it is to generate videos with diffusers on Trainium3. Not the simple clips from the examples: I wanted to make short films from a script, closer to a real use case, like drafting a movie. The second was performance. I wanted to get close to what you get with CUDA, or with LTX's own API.\nFor CUDA, I found no real figure to compare against. The only one is LTX's claim of 6.8 s for a 10-second 720p clip on four B200 GPUs, with no detail on how it was measured. So I set CUDA aside and compared with LTX's online API instead, which LTX says makes a 10-second 1080p clip in 23.7 s. In the end, the setup matches it, and even beats it by about a second: 22 to 23 s for a 10-second clip at 2048×1024, once the models are loaded, on half of the machine. Not bad, considering how little time I had to optimize the pipelines.\nThe input is a film: a JSON list of shots, each with a name and a prompt, much like a storyboard. LTX-2.5 does better with long prompts, so each prompt is a paragraph on the style, the subject, the motion, the camera, the light and the sound. Here is the seal film's file, with the prompts shortened:\nEach shot has a name and a prompt , and can have a seed , to keep the take I picked among several. Shots are chained with two keys. This chaining is the point, since prompts alone do not keep a subject from one shot to the next:\nA shot can also be trimmed, or have a caption drawn over it.\nMaking a film from shots works like animation, which has two ways to go. Straight ahead, each shot continues the one before. Pose to pose, you make the key shot first, until you get one you like; then the shots before it end on its first frames ( to ), and the shots after it start from its last frames ( from ). When a film builds up to a payoff (the moment everything was leading to), the payoff "
   },
   {
    "group": "ai",
@@ -333,15 +504,6 @@
   },
   {
    "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Researchers develop 3D-printable humanoid robotic hand costing less than $650",
-   "url": "https://roboticsandautomationnews.com/2026/11/26/researchers-develop-3d-printable-humanoid-robotic-hand-costing-less-than-650/107748/",
-   "published": "2026-11-26T14:08:47.000Z",
-   "description": "Researchers at the New Jersey Institute of Technology (NJIT) have developed a dexterous humanoid robotic hand that can be manufactured using an affordable 3D printer and readily available components for less than $650 in parts. Called the PHD-Hand – short for Printable Humanoid Dexterous Hand – the five-fingered device uses a linkage-driven mechanism rather than […]",
-   "excerpt": "Researchers at the New Jersey Institute of Technology (NJIT) have developed a dexterous humanoid robotic hand that can be manufactured using an affordable 3D printer and readily available components for less than $650 in parts.\nCalled the PHD-Hand – short for Printable Humanoid Dexterous Hand – the five-fingered device uses a linkage-driven mechanism rather than the tendon-based systems commonly found in dexterous robotic hands.\nThe design aims to address some of the longstanding challenges associated with humanoid robotic hands, including manufacturing costs, mechanical complexity, reliability and maintenance requirements.\nThe team’s research paper , authored by Neel Adwani, Muhaiminul Islam Akash, Saffia Ouali, Ethan Liu and Cong Wang, has been accepted at the IEEE-RAS International Conference on Humanoid Robots (Humanoids 2026).\nAdwani, a PhD candidate at NJIT, tells Robotics & Automation News : “Hands are still one of the hardest and most expensive parts of a humanoid to get right.”\nThe PHD-Hand features three actuated degrees of freedom in each of its five digits, providing a total of 15 independently actuated degrees of freedom.\nCentral to the design is a 3D-printed flexible hinge at the base of each digit, manufactured from thermoplastic polyurethane (TPU).\nCombined with spring steel drive rods, the hinge enables finger movements without requiring the numerous miniature moving components typically associated with complex linkage-driven designs.\nAdwani says: “PHD-Hand uses rigid linkage-driven fingers instead, a mechanism-design choice that delivers human-like dexterity without that maintenance.”\nThe design also enables bidirectional actuation, allowing the fingers to be actively extended as well as contracted.\nSource: PHD-Hand project website and research team.\nThe researchers have demonstrated all 33 grasp types identified in the GRASP taxonomy, a classification system for human grasping movements, although some configurations remain imperfect.\nThe prototype can also rotate a 55 mm cube within its palm, reposition a jar to open its lid, manipulate a precision screwdriver and adjust the worm screw of an adjustable wrench.\nA browser-based control interface enables users to calibrate individual joints, select predefined hand positions, and record and replay motion sequences.\nInterestingly, the researchers used Anthropic’s Claude AI system to generate the graphical control interface and motion trajectories from a textual description of the hand, subseq"
-  },
-  {
-   "group": "wh",
    "source": "Logistics Viewpoints",
    "title": "The Future of Retail Is Not Inventory-Free. It Is Inventory by Design.",
    "url": "https://logisticsviewpoints.com/2026/11/26/will-the-retail-store-survive-the-economics-of-the-next-retail-operating-model/",
@@ -368,15 +530,6 @@
    "excerpt": "The economics of autonomous freight will not be settled by a successful demonstration run or the number of miles driven without a person behind the wheel. A commercial buyer pays for a complete, reliable shipment. That service includes first- and last-mile handling, maintenance, terminals, incident response, dispatch, insurance and customer support. Until autonomous carriers can show a sustained advantage after those costs, the technology remains promising but its operating model remains unproven at scale.\nDriverless vehicles can potentially increase available operating hours, improve consistency on suitable routes, and change how fleets are staffed. But ‘driverless’ does not mean labor-free. The service still needs terminal handling, maintenance, dispatch, support, incident response, fueling or charging, inspections, and customer coordination. It may also need transfer hubs where a human-driven truck completes the portion of a trip outside the autonomous operating domain. Those additional handoffs cost time and money. Savings that look compelling in a comparison of vehicle wages can shrink when the full network is modeled. Utilization matters, as does the predictability of the freight that keeps equipment moving.\nThe market is advancing beyond the prototype stage. In its third-quarter 2026 investor communication , Aurora reported approximately $3 million in quarterly revenue across driverless and vehicle-operator-supervised commercial freight. In a separate SEC filing , Kodiak reported more than 58,000 cumulative hours of paid driverless operations and more than 29,000 delivered loads as of September 30, 2026. Those are meaningful commercialization indicators, but the data describe different business models and operating domains; they are not directly comparable unit-cost disclosures.\nConsider a hypothetical 600-mile hub-to-hub shipment. Eliminating in-cab driver time could improve asset utilization, but the total cost depends on loaded miles, empty repositioning, fuel, trailer and terminal cycles, remote support, maintenance reserves and capacity utilization. If the truck sits idle waiting for a customer’s dock appointment or requires expensive transfer operations at both ends, the theoretical advantage shrinks. The right comparison is the all-in cost per delivered load against the conventional carrier that would otherwise serve the same lane.\nThe disclosed milestones should not be converted into a universal industry payback calculation. Aurora’s quarter"
   },
   {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Heavy metal acrobatics: Researchers teach five-ton construction vehicle to balance on two wheels",
-   "url": "https://roboticsandautomationnews.com/2026/11/26/heavy-metal-acrobatics-researchers-teach-five-ton-construction-vehicle-to-balance-on-two-wheels/107740/",
-   "published": "2026-11-26T12:22:33.000Z",
-   "description": "An international team of researchers has demonstrated how artificial intelligence trained in simulation can enable heavy construction machinery to perform complex autonomous maneuvers previously mastered by only a small number of highly skilled human operators. The research, published in Science Robotics under the title “Heavy metal acrobatics: Learning dynamic control for skid-steer loaders”, brings together […]",
-   "excerpt": "An international team of researchers has demonstrated how artificial intelligence trained in simulation can enable heavy construction machinery to perform complex autonomous maneuvers previously mastered by only a small number of highly skilled human operators.\nThe research, published in Science Robotics under the title “Heavy metal acrobatics: Learning dynamic control for skid-steer loaders” , brings together researchers from ETH Zurich , Gravis Robotics , Blue River Technology and Intel .\nUsing reinforcement learning, the team trained a five-metric-ton John Deere 332G skid-steer loader to balance on its two front wheels, navigate uneven terrain, follow driving commands, spin in place and return safely to a four-wheel position.\nBeyond the acrobatic demonstrations, the research addresses fundamental engineering challenges associated with automating heavy machinery in industries including construction, mining, agriculture and material handling.\nHydraulic machinery presents particular challenges for autonomous control because of the nonlinear behavior of its actuators, unpredictable delays and complex physical dynamics.\nThe size and weight of construction equipment also make extensive real-world experimentation potentially dangerous and expensive.\nTo overcome these challenges, the researchers collected operational data from the physical machine and used it to develop a neural network capable of predicting the behavior of its hydraulic actuators.\nThe team then trained individual control policies in simulation using reinforcement learning, without relying on demonstrations from expert human operators.\nOnce trained, the AI controllers were transferred to the physical machine, running on a standard laptop without requiring a graphics processing unit.\nThe researchers compared their reinforcement learning (RL) approach with a conventional model predictive control (MPC) system.\nWhile both approaches demonstrated comparable performance in several tasks, the reinforcement learning system proved more capable in certain demanding maneuvers.\nSource: Science Robotics, Heavy metal acrobatics, November 2026.\nNotably, despite being trained exclusively on flat terrain, the reinforcement learning controller successfully navigated terrain with undulations measuring up to 75 cm in height.\nThe conventional controller maintained balance but was unable to traverse the obstacles.\nHowever, the AI system was not universally superior. The conventional controller exhibited less oscilla"
-  },
-  {
    "group": "ai",
    "source": "AIHOT",
    "title": "MiniMax 推出 H3 Family：旗舰与扩展视频图像模型",
@@ -386,24 +539,6 @@
    "excerpt": "MiniMax 发布 H3 Family，包含旗舰 H3、H3-Highspeed、H3-Lite、H3-Image 系列及 fal、Suno、HeyGen、Pika 等第三方的扩展模型。H3 开源 100 天已衍生 1,472 个模型、累计下载超 1.48 亿次，旗舰 H3 支持 2K 输出、起价 $0.08/秒，H3-Image Highspeed 最快 10 秒内生成 4K 图像。\n原文梳理了 H3 开源百天衍生的社区生态，并给出旗舰与扩展模型的定价和速度数据，便于比较选用。\n原文梳理了 H3 开源百天衍生的社区生态，并给出旗舰与扩展模型的定价和速度数据，便于比较选用。"
   },
   {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Universal Robots brings Inbolt’s 3D AI vision directly onto its Gen 7 robots",
-   "url": "https://roboticsandautomationnews.com/2026/11/26/universal-robots-brings-inbolts-3d-ai-vision-directly-onto-its-gen-7-robots/107737/",
-   "published": "2026-11-26T11:59:22.000Z",
-   "description": "Universal Robots and Inbolt have integrated AI-powered 3D vision guidance directly into Universal Robots’ latest generation of collaborative industrial robots, enabling manufacturers to automate a wider range of tasks without additional computing hardware. Announced at the SPS 2026 exhibition in Nuremberg, Germany, the integration allows Inbolt’s vision guidance software, Inbolt Standard, to run natively on […]",
-   "excerpt": "Universal Robots and Inbolt have integrated AI-powered 3D vision guidance directly into Universal Robots’ latest generation of collaborative industrial robots, enabling manufacturers to automate a wider range of tasks without additional computing hardware.\nAnnounced at the SPS 2026 exhibition in Nuremberg, Germany, the integration allows Inbolt’s vision guidance software, Inbolt Standard, to run natively on Universal Robots’ Gen 7 platform.\nThe technology enables robots to identify components and adapt their programmed trajectories to the actual position of each part during every production cycle.\nUsing a wrist-mounted 3D camera, the system recognizes components based on their CAD files, reducing the need for customized jigs and fixtures when introducing new products to manufacturing lines.\nInbolt Standard runs directly on Universal Robots’ CB7 Core controller, eliminating the need for a separate industrial computer.\nThe Gen 7 platform’s integrated Ethernet and power connections also enable the camera to connect directly to the robot’s tool flange, removing the need to route cables along the outside of the robotic arm.\nAnders Billesø Beck, vice president, AI robotics products at Universal Robots, says: “Gen 7 is our platform for physical AI, giving partners the compute, connectivity and tools to develop AI applications and deploy them directly on the robot.\n“Inbolt Standard is a clear example of what that brings to the factory floor in terms of usability and reduced integration time. For manufacturers that standardise on UR across many sites, vision guidance is now a standard option for every new cell.”\nThe two companies have worked together since 2022, with vision-guided robotic systems already operating at manufacturing facilities in Europe and North America.\nAt a Stellantis engine-tightening station, Inbolt’s technology reportedly reduced tightening failures by 91 percent, with vision processing taking just 0.5 seconds per engine.\nThe integration is designed to support applications including screwdriving, machine tending, rack loading and depalletizing across industries such as automotive, electronics and data center hardware manufacturing.\nRudy Cohen, co-founder and CEO of Inbolt, says: “Inbolt and Universal Robots have deployed vision-guided cobots together for years, and with the new Gen 7, our products have never been closer.\n“Because vision guidance now runs on the robot itself, a manufacturer rolling out cobots across dozens of stations and severa"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Volvo Cars begins training Hexagon humanoid robots for factory work",
-   "url": "https://roboticsandautomationnews.com/2026/11/26/volvo-cars-begins-training-hexagon-humanoid-robots-for-factory-work/107733/",
-   "published": "2026-11-26T11:49:48.000Z",
-   "description": "Volvo Cars has begun training and testing Hexagon Robotics’ AEON humanoid robots at its manufacturing plant in Ghent, Belgium, with the aim of introducing the machines into production operations by mid-2027. The Ghent facility is the first Volvo Cars plant to trial humanoid robots, which are being trained to perform repetitive and physically demanding tasks […]",
-   "excerpt": "Volvo Cars has begun training and testing Hexagon Robotics ’ AEON humanoid robots at its manufacturing plant in Ghent, Belgium, with the aim of introducing the machines into production operations by mid-2027.\nThe Ghent facility is the first Volvo Cars plant to trial humanoid robots, which are being trained to perform repetitive and physically demanding tasks alongside factory workers and existing automation systems.\nThe initiative forms part of the automotive manufacturer’s wider investment in advanced manufacturing technologies aimed at improving safety, flexibility and operational efficiency.\nVolvo Cars’ own manufacturing team is working closely with Hexagon Robotics to train the robots using imitation learning – a technique that enables robots to learn tasks by observing and copying demonstrations.\nThe initial task involves placing components into two fixtures with a high degree of precision.\nAs training progresses, the robots will be introduced to increasingly complex activities, including handling multiple components, navigating production areas and interacting with existing automated systems.\nWhile industrial robotic arms have been a feature of automotive manufacturing for decades, humanoid robots offer the potential to automate tasks that require greater mobility and flexibility.\nTheir human-like form also enables them to work within manufacturing environments originally designed around people, potentially reducing the need for extensive changes to factory infrastructure.\nMagnus Nilsson, chief manufacturing officer at Volvo Cars, says: “AEON’s humanoid design means it can fit into our production as it is today, alongside our teams and existing automation.\n“Our aim is for humanoid robots to take on some of the most physically demanding tasks and help make work more ergonomic for our people.”\nUnlike many humanoid robots currently under development, AEON uses wheels rather than legs for locomotion.\nThe robot stands 1.65 meters tall, weighs 60 kilograms and can carry loads of up to 10 kilograms. It can travel at speeds of up to 2.4 meters per second and uses cameras and sensors to navigate its surroundings and manipulate components.\nThe current training program lays the groundwork for a larger factory pilot scheduled for the first half of 2027, when additional AEON robots will arrive in Ghent to undertake a wider range of manufacturing tasks.\nArnaud Robert, president of Hexagon Robotics, says: “The purpose of humanoid robotics is to deliver business val"
-  },
-  {
    "group": "ai",
    "source": "Hugging Face",
    "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
@@ -411,60 +546,6 @@
    "published": "2026-11-26T11:37:17.000Z",
    "description": "",
    "excerpt": "The llama.cpp × AMD Benchmark dashboard is available on Hugging Face. It lets you track prompt processing and text generation performance across llama.cpp builds, models, and quantizations, so you can explore how local inference performs on AMD Ryzen and Radeon hardware.\nLocal inference performance changes as models, kernels, and builds evolve. We want those changes to be easy to inspect for any AMD developer: pick a hardware, a model and a build, compare quantizations, and follow performance over time. The benchmark workflow and underlying results are public, so you can also inspect how we benchmark inference performance.\nYou can choose Hardware , Model , and llama.cpp build in the Configuration sidebar. The current hardware choices are Radeon 8060S (gfx1151) and Radeon AI Pro R9700S (gfx1201).\nThe dashboard shows two separate tests, both measured in tokens per second:\nBoth tests start at context depth zero ( n_depth=0 ). PP512 measures processing 512 input tokens without generation; TG128 measures generating 128 tokens without a pre-existing context. The plotted value is the mean throughput ( avg_ts ). These are useful reference workloads, while the Context scaling tab lets you explore token generation throughput as the context grows.\nWe benchmark the prebuilt binaries distributed through llama-install.sh , the build and installation project behind llama.app . The public gfx1151 and gfx1201 workflows are scheduled weekly and run the standard benchmarks using the llama-bench tool with Flash Attention on and off, with 10 repetitions per configuration.\nThe model set evolves and currently includes Inkling 2 Mini, Qwen, Gemma, gpt-oss, and LFM models, covering both dense and mixture-of-experts architectures. Available GGUF formats include Q4_K_M , Q8_0 , other quantizations, and higher-precision formats such as BF16 and F16 .\nThe explorer reads directly from the public ggml-org/install.sh-benches-data Storage Bucket on Hugging Face. The data source link beside the chart title opens the folder for the selected build, hardware, and model.\nStandard results use / / / .jsonl . Workload sweeps use the same folder -tg.jsonl filename.\nUse them to investigate a result, make your own charts, or compare with a local run.\nThanks to the AMD team for providing test infrastructure and helping validate the setup! Try the dashboard , inspect the data , and let us know which models and workloads you would like to see next."
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "A Practical Guide to Integrating Automation into Commercial Buildings",
-   "url": "https://roboticsandautomationnews.com/2026/11/26/a-practical-guide-to-integrating-automation-into-commercial-buildings/107730/",
-   "published": "2026-11-26T11:33:03.000Z",
-   "description": "Automation in commercial buildings has moved well beyond programmable thermostats. Sensors, controllers, and software can now coordinate heating and cooling, lighting, access control, and more, adjusting each based on who is in the building and when. But getting there is rarely as simple as buying a system and switching it on. Different technologies have to […]",
-   "excerpt": "Automation in commercial buildings has moved well beyond programmable thermostats. Sensors, controllers, and software can now coordinate heating and cooling, lighting, access control, and more, adjusting each based on who is in the building and when.\nBut getting there is rarely as simple as buying a system and switching it on. Different technologies have to work together, the electrical and network infrastructure has to carry them, and the people who use the building have to accept the changes. Automation works best when the building, its infrastructure, and its people are ready for it.\nBuilding automation is moving from a nice-to-have to an essential. As energy codes tighten and time-of-use utility pricing spreads, buildings that can monitor and adjust themselves are better placed to stay efficient, competitive, and often more sustainable than those that rely on manual controls and fixed schedules.\nThe market is growing accordingly. Estimates by Mordor Intelligence show that the global building automation system market is valued at around $83.4 billion in 2025 and expected to rise to $143.4 billion by 2031, a growth rate of roughly 9.5% a year. Retrofits in existing buildings are growing at about 9.9 percent annually, slightly faster than the market overall.\nBut before implementing automation, the building itself has to be ready. Every automated system rests on a few basics, and a gap in any one of them tends to surface later as delays or surprise costs. Check that the building can provide:\nThese six steps move from planning to long-term operation, and you can adapt them to the size of your building and budget.\nWalk through the building and document what you already have: HVAC equipment, lighting controls, meters, and any existing building management system. Interview the facilities team too, as they often know which zones run hot, which schedules are ignored, and which alarms get silenced.\nOnce you have a clear idea of what you have, decide what you want automation to accomplish, whether that is lower energy bills, fewer comfort complaints, or less time spent on manual rounds. A specific target, such as trimming after-hours cooling, gives you something to measure and makes it much easier to rule out features you don’t need.\nIf you are building or renovating a commercial property, this is the ideal moment to set up the electrical system to support what automation requires. Controls draw power around the clock, and a design developed with the needs of auto"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "When robots lose contact: Research examines the resilience of decentralized robot swarms",
-   "url": "https://roboticsandautomationnews.com/2026/11/26/when-robots-lose-contact-research-examines-the-resilience-of-decentralized-robot-swarms/107725/",
-   "published": "2026-11-26T10:37:32.000Z",
-   "description": "A robot that loses communication with the rest of its swarm may still be capable of performing useful work, according to new research examining how autonomous systems operate under deteriorating environmental conditions. The computational robotics study, conducted by independent researcher Dhyan Ishwar Shaji and presented at the IEEE IECON 2026 conference, explores the advantages and […]",
-   "excerpt": "A robot that loses communication with the rest of its swarm may still be capable of performing useful work, according to new research examining how autonomous systems operate under deteriorating environmental conditions.\nThe computational robotics study, conducted by independent researcher Dhyan Ishwar Shaji and presented at the IEEE IECON 2026 conference, explores the advantages and limitations of decentralized robotic coordination.\nUsing pressure vessel inspection as the motivation for the research, Shaji examined how groups of robots could locate a target when their sensing, movement and communication capabilities were simultaneously compromised.\nShaji says: “A disconnected robot does not necessarily stop being useful. Its local memory can survive even when the rest of the swarm can no longer access it.”\nThe study simulated 25 robots moving through a 10-meter-long, two-meter-wide channel, incorporating fluid flow, drag and radiation-related disturbances affecting sensors and radio communications.\nThe decentralized architecture used a modified particle swarm optimization (M-PSO) controller, allowing individual robots to retain information locally and exchange it with neighboring robots whenever communication links were available.\nLeader-based alternatives relied on a shared search state.\nUnder the original study’s extreme environmental conditions, the four architectures recorded the following results:\nEach architecture underwent 500 simulated trials, with success defined as producing a location estimate within 0.3 meters of the target.\nHowever, any decentralized robot’s local estimate could qualify as a success, whereas each leader-based architecture provided a single shared estimate. Canonical particle swarm optimization also operated under simplified conditions.\nSubsequent exploratory experiments examined whether the advantages of decentralized coordination persisted under more comparable assessment conditions.\nWhen only one designated decentralized robot’s estimate was assessed, its performance advantage over the static leader architecture fell from 81 percentage points to 4.3 percentage points.\nIn a separate series of 400 simulations using a common reporting protocol under extreme conditions, the decentralized architecture produced qualifying local estimates in 347 trials but successfully delivered them to an external receiver in only two.\nEach of the other three architectures also achieved just two successful deliveries.\nThe findings suggest that de"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Physical AI model outpaces human operator in robot manipulation tests",
-   "url": "https://roboticsandautomationnews.com/2026/11/26/physical-ai-model-outpaces-human-operator-in-robot-manipulation-tests/107719/",
-   "published": "2026-11-26T10:21:17.000Z",
-   "description": "A new physical AI model developed by robotics company mimic has outperformed a human operator in speed tests involving everyday robotic manipulation tasks, according to results published by Positronic Robotics, the company behind the independent physical AI leaderboard PhAIL. The model, FLUX-mimic-x, completed successful tasks in a median time of 11 seconds, compared with 27 […]",
-   "excerpt": "A new physical AI model developed by robotics company mimic has outperformed a human operator in speed tests involving everyday robotic manipulation tasks, according to results published by Positronic Robotics , the company behind the independent physical AI leaderboard PhAIL.\nThe model, FLUX-mimic-x, completed successful tasks in a median time of 11 seconds, compared with 27 seconds for a human remotely controlling the same robotic arm.\nAnother model, Praxis-1, developed by generative AI company Runway, achieved comparable median task completion times to the human operator and demonstrated an ability to recover from mistakes.\nPerhaps more significant for the wider robotics industry is that the four dedicated robot models with the highest reliability scores are all based on video models rather than conventional vision-language models.\nThe tests use a Franka FR3 robotic arm to perform everyday tasks such as opening drawers, moving household objects and placing items into containers.\nFLUX-mimic-x achieved a reliability score of 71.2 percent and a speed of 3.08 successful tasks per minute in its first 100 test runs.\nThe human operator achieved a considerably higher reliability score of 94.7 percent but completed only 1.83 successful tasks per minute.\nDmitry Matov, writing on the Positronic Robotics blog, says: “The arm also almost never waits for the model. The next actions are ready before the current ones run out, so the arm keeps moving.”\nReleased as a preview on November 16, FLUX-mimic-x is a seven-billion-parameter video-action model built on Black Forest Labs’ FLUX 3 video model.\nRunway’s Praxis-1 demonstrated another capability that could prove particularly valuable in commercial robotics applications – recovering from unsuccessful actions without abandoning the task.\nWhen an object slipped from the robot’s gripper, Praxis-1 attempted to grasp it again, ultimately completing the task successfully in 66 percent of such episodes.\nOf those successful recovery episodes, 79 percent took less than 60 seconds.\nRunway released Praxis-1 on November 11 under the Apache 2.0 license, making its model weights available for researchers and developers to use and train further.\nThe results point towards a potentially significant technological shift within the physical AI industry.\nWhile conventional vision-language models learn relationships between images and text, world-action models learn from video how objects move and interact, predicting future video frames alon"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Exotec helps Fnac Darty handle Black Friday rush with refurbished and rented robots",
-   "url": "https://roboticsandautomationnews.com/2026/11/26/exotec-helps-fnac-darty-handle-black-friday-rush-with-refurbished-and-rented-robots/107714/",
-   "published": "2026-11-26T09:59:16.000Z",
-   "description": "European retail giant Fnac Darty is preparing for the Black Friday and Christmas shopping rush with a warehouse automation system that combines second-hand robots with additional machines available to rent during periods of peak demand. The retailer has partnered with French warehouse robotics specialist Exotec to automate its logistics facility in Massy, near Paris, increasing […]",
-   "excerpt": "European retail giant Fnac Darty is preparing for the Black Friday and Christmas shopping rush with a warehouse automation system that combines second-hand robots with additional machines available to rent during periods of peak demand.\nThe retailer has partnered with French warehouse robotics specialist Exotec to automate its logistics facility in Massy, near Paris, increasing its order processing capacity to as many as 35,000 order lines per day during the busiest shopping periods of the year.\nThe installation offers an interesting example of how retailers can increase their automation capacity without investing in an entirely new system or purchasing more robots than they need throughout the year.\nThe warehouse, which specializes in toys and games, serves both online customers and the replenishment requirements of Fnac Darty’s retail stores.\nIts automation system comprises 36 Exotec Skypod robots, 30,700 storage locations and five goods-to-person order picking stations.\nUnder normal operating conditions, the system processes between 10,000 and 15,000 order lines per day. During seasonal peaks, the addition of 25 rented robots increases the fleet to 61 machines, enabling the warehouse to more than double its normal maximum throughput.\nFabrice Coulombel, warehouse director at Fnac Massy, says: “With Exotec’s solution, we are taking another step forward in modernising our logistics operations.\n“Beyond its reliable, proven technology, this project was designed together with our teams and with their needs in mind: it makes their day-to-day work easier, improves working conditions and enables us to handle periods of particularly high activity more efficiently, especially in the run-up to Black Friday and Christmas.\n“This combination of innovation and operational performance will help us to improve efficiency and responsiveness, ultimately benefiting our customers.”\nAnother notable aspect of the project is that much of the automation equipment has already had a working life elsewhere.\nThe robots and picking stations were originally installed at Rediv, formerly known as Patatam, a company specializing in second-hand fashion.\nExotec refurbished the equipment and adapted the system to meet the operational requirements of Fnac Darty.\nThe initial installation, completed over the summer, incorporated 29 refurbished Skypod robots, three picking stations and one exchanger.\nThe project highlights two potential advantages of modular warehouse automation – the ability to"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Why Automated Check-In Beats a Manual Visitor Sign-In Process",
-   "url": "https://roboticsandautomationnews.com/2026/11/26/why-automated-check-in-beats-a-manual-visitor-sign-in-process/107711/",
-   "published": "2026-11-26T09:35:44.000Z",
-   "description": "Walk into a modern facility, and you’ll find automation nearly everywhere: the production line, the inventory system, the building controls. Then you reach the lobby, and a visitor is handed a pen and a paper book. The front desk is often the last manual holdout in an otherwise automated operation, and it shows. Automated visitor […]",
-   "excerpt": "Walk into a modern facility, and you’ll find automation nearly everywhere: the production line, the inventory system, the building controls. Then you reach the lobby, and a visitor is handed a pen and a paper book. The front desk is often the last manual holdout in an otherwise automated operation, and it shows.\nAutomated visitor management brings the entrance up to the standard of everything behind it. Instead of a handwritten line in a logbook, check-in becomes a fast, consistent, self-service step that captures accurate data and enforces the rules every time.\nA paper sign-in works until multiple people show up at once. Then it becomes a queue. A delivery driver, two interviewees, and a contractor all wait while a receptionist writes down names, calls hosts one at a time, and digs out visitor badges. At a busy site, that line forms several times a day.\nAutomated check-in removes the bottleneck. Pre-registered guests check in at a kiosk in seconds; the system notifies the host automatically, and a badge prints without anyone lifting a finger. Reception stops being a chokepoint, and the lobby stops backing up when a few people arrive together.\nThat same setup works even when no one is at the desk. Early mornings, shift changes, and smaller sites often run without a dedicated receptionist, and an automated kiosk covers those hours instead of leaving the entrance to a sign-in no one is watching.\nHandwriting on a paper log is a problem in itself. Names come out illegible, times get rounded or skipped, and nothing stops a visitor from writing whatever they like. The record you’re left with is only as reliable as the least careful person who signed it.\nAn automated system captures structured, consistent data every time. Fields get filled, identity is checked against pre-registration, and each entry is time-stamped by the system rather than guessed. The difference goes beyond tidiness.\nWhen you need to know exactly who was on site and when, a clean digital record answers in seconds. Returning visitors are easier too, since the system recognizes a repeat contractor and pulls up their details instead of starting from a blank line.\nOn industrial and manufacturing sites, the entrance is also a safety checkpoint. You can’t let a contractor onto the floor without knowing the hazards, and host employers are expected to share safety information with contractors before work begins. A manual sign-in enforces none of that. It collects a signature and waves the person throu"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Designing Robot Gripper Fingers for Repeatable Changeovers",
-   "url": "https://roboticsandautomationnews.com/2026/11/26/designing-robot-gripper-fingers-for-repeatable-changeovers/107707/",
-   "published": "2026-11-26T09:17:46.000Z",
-   "description": "A robot can return to its programmed position while the part in its gripper arrives somewhere slightly different. After a finger change, the cause may be mechanical: a contact surface has moved, a mounting face has picked up debris, or a replacement finger seats differently from the original. That distinction matters in machine tending and […]",
-   "excerpt": "A robot can return to its programmed position while the part in its gripper arrives somewhere slightly different. After a finger change, the cause may be mechanical: a contact surface has moved, a mounting face has picked up debris, or a replacement finger seats differently from the original.\nThat distinction matters in machine tending and assembly. A successful first installation shows that one set of fingers works. It does not establish that the next set will locate the workpiece in the same way. Repeatable changeovers need to be designed into the finger interface, checked during manufacture and demonstrated on the assembled tooling.\nStart at the receiving operation. A blank loaded into a chuck, a housing placed in a nest and a component presented for insertion impose different requirements. Identify which workpiece surfaces must arrive in a controlled position and which directions allow some freedom.\nThen trace that requirement back through the workpiece contact surfaces, the fingers, the base jaws and the gripper mounting. This turns “make the fingers accurate” into a specific question: which dimensions and relationships determine the position of the part at handoff?\nA gripper’s published repeatability figure is not a guarantee for this complete chain. Check how the manufacturer defines the figure and under what conditions. Finger mounting variation, part variation, contact conditions and deflection still need their own consideration.\nWrite down the acceptance condition before ordering tooling. It might be an allowable workpiece position relative to an assembly reference, supported by a functional loading check. The limit should come from the process and its tolerance analysis, not from a machining tolerance copied from another project.\nOrdinary clearance holes leave room for a finger to move before its screws are tightened. If that freedom affects workpiece position, define locating features separately from the fasteners that hold the joint together. Depending on the gripper interface, those features might be a shoulder, a register, dowels or a purpose-designed quick-change connection.\nMore locating features do not automatically improve the design. Redundant constraints can make parts difficult to assemble when their dimensions vary. In fixture design, a round pin paired with a relieved diamond pin is one established way to locate through two holes without binding. It is an option to evaluate, not a universal prescription for robot fingers; follow the"
   },
   {
    "group": "ai",
@@ -582,24 +663,6 @@
    "published": "2026-11-25T22:23:41.000Z",
    "description": "November 25, 2026 — From Erdős problems to new bounds for matrix multiplication and Fourier transforms.",
    "excerpt": "November 25, 2026 — From Erdős problems to new bounds for matrix multiplication and Fourier transforms. Plus: Thariq at OpenAI!\nScott Aaronson was still trying to digest two proofs of VP ≠ VNP at dinner. Before dessert, an OpenAI paper claimed that the square matrix multiplication exponent ω is exactly 9/4 . During dessert, another paper claimed matching upper and lower bounds for the finite Fourier transform . The lower bound is the biggest news. In October, OpenAI found an upper bound for ω down to at most 9/4 . Finding the lower bound = upper bound leaves only one possible value, which is a shocking result for most.\nWe plotted 64 selected AI-assisted research advances so far this year. November accounts for 20, including six preprints from Google’s Cogentic . The curve follows public releases, including proofs still under review. We count the two VP ≠ VNP proofs once and give October’s faster matrix multiplication algorithm and November’s matching lower bound an entry each.\nThe big releases underline how much a paper count can hide. OpenAI’s catalogue lists 730 manuscripts across 375 result families, including follow-ups and companion arguments. Its revision log also records three October withdrawals after a sign error in one paper affected two others. Yupan Liu showed that two messages suffice for quantum interactive proofs , a result that would have been a big deal on its own. Aaronson says Liu used AI and that he had to remind himself the result had even happened.\nIn other big news, today’s guest Thariq Shihipar announced his big move from Anthropic to OpenAI , the second high profile Ant→OAI move in recent times after Cat Wu . We dive into his two philosophies of AI and how and where /humans add taste.\nAI News for 11/25/2026. We checked 12 subreddits, 544 Twitters and no further Discords. AINews' website lets you search all past issues. As a reminder, AINews is now a section of Latent Space . You can opt in/out of email frequencies!\nAI-Generated Math Results: Matmul Exponent, Factoring and Lean Proofs\nMatrix multiplication exponent : OpenAI's model claims a lower bound matching its October upper bound, making ω exactly 9/4. Previously no nontrivial lower bound was known ( @SebastienBubeck ; repo ).\nMechanism : The result reportedly comes through an explicit superlinear circuit lower bound ( @wjmzbmr1 ).\nImplications : Bubeck notes that a prior Lee et al. result implies LPs solvable in n^{9/4}. He also says LPs can now be solved in strongly polynomi"
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Angelini Technologies acquires stake in Oversonic Robotics to support international expansion",
-   "url": "https://roboticsandautomationnews.com/2026/11/25/angelini-technologies-acquires-stake-in-oversonic-robotics-to-support-international-expansion/107696/",
-   "published": "2026-11-25T20:16:24.000Z",
-   "description": "Oversonic Robotics, an Italian company specializing in the development and manufacturing of cognitive humanoid robots, has announced that Angelini Technologies has acquired a stake in the company to support its industrial growth and international expansion. The investment will help Oversonic expand its manufacturing capacity and bring its robotics solutions to global markets, with a particular […]",
-   "excerpt": "Oversonic Robotics , an Italian company specializing in the development and manufacturing of cognitive humanoid robots, has announced that Angelini Technologies has acquired a stake in the company to support its industrial growth and international expansion.\nThe investment will help Oversonic expand its manufacturing capacity and bring its robotics solutions to global markets, with a particular focus on the US.\nAngelini Technologies, part of the Angelini Industries Group, specializes in advanced automation technologies and services for logistics and the production of consumer goods and batteries.\nThe company holds more than 1,200 active patents, has sold over 1,300 production lines across 72 countries and employs approximately 800 people.\nOversonic will benefit from Angelini Technologies’ 50 years of industrial automation experience, expertise in logistics robotics, established supply chain and international presence.\nThe investment follows the addition of STMicroelectronics, Fondazione Tech e Biomedical and SpotInvest to Oversonic’s shareholder base in June 2026.\nFabio Puglia, chairman, and Paolo Denti, CEO of Oversonic Robotics, say: “Welcoming Angelini Technologies as a shareholder strengthens our growth trajectory and gives us even greater confidence in the opportunities emerging internationally.\n“Humanoid robotics has now reached a decisive stage, where the ability to turn innovation into practical solutions will increasingly make the difference. With RoBee, we have already taken this step, bringing to market a technology that is now operating in real-world industrial environments. Angelini Technologies’ industrial expertise will play a crucial role in accelerating its adoption internationally.”\nFounded in 2020, Oversonic has developed RoBee, a cognitive humanoid robot designed to work alongside people in complex environments, incorporating proprietary technologies for environmental perception, autonomous navigation and human-robot interaction.\nThe robot is available in two configurations – RoBee R for industrial applications and RoBee M for healthcare.\nRoBee is already operating in manufacturing facilities in Italy and internationally, while its healthcare applications are being explored through research projects involving hospitals and rehabilitation centers.\nLuigi De Vito, CEO of Angelini Technologies, says: “We chose to invest in Oversonic Robotics because we believe in the potential of its technology and the opportunities that cognitive robotics "
-  },
-  {
-   "group": "wh",
-   "source": "Robotics & Automation News",
-   "title": "Hiring a Moving Company for a California-to-Portland Move: 6 Things to Verify First",
-   "url": "https://roboticsandautomationnews.com/2026/11/25/hiring-a-moving-company-for-a-california-to-portland-move-6-things-to-verify-first/107693/",
-   "published": "2026-11-25T19:55:29.000Z",
-   "description": "A move from California to Portland crosses a state line, a mountain pass and several days of transit. That is enough distance for a small problem to turn into an expensive one, and enough time on the road that you will want to know exactly who is handling your belongings. Before you sign anything, these […]",
-   "excerpt": "A move from California to Portland crosses a state line, a mountain pass and several days of transit. That is enough distance for a small problem to turn into an expensive one, and enough time on the road that you will want to know exactly who is handling your belongings. Before you sign anything, these six checks are worth the effort.\nInterstate household goods movers must be registered with the Federal Motor Carrier Safety Administration, and every legitimate carrier has a USDOT number. A company based in California should also hold a household goods carrier permit from the California Public Utilities Commission, which appears as a CAL-T number.\nAsk for both numbers and look them up yourself, starting with the FMCSA’s Protect Your Move resources, rather than taking them on faith. A reputable company hands them over without hesitation.\nSome companies run their own trucks and crews. Others sell the job and pass it to a carrier you have not met. Federal guidance expects a legitimate company to say which it is, so ask directly, and ask who will actually load, drive and unload. Either arrangement can work, but you should know which one you are buying.\nFederal rules require interstate movers to give written estimates, and the type matters. A binding estimate means you pay no more than the quoted amount at delivery as long as the shipment and services match what was estimated. A non-binding estimate is the mover’s best calculation, and at delivery the mover cannot require more than 110 percent of it. Ask for an in-home or video survey, because a number built from a five-minute phone call is a guess dressed up as a quote.\nPlenty of companies will quote a move to Oregon. Fewer run the corridor regularly. A dedicated California to Portland moving company usually has a better feel for realistic transit times, winter conditions near Siskiyou Summit and delivery logistics in Portland’s older neighborhoods and downtown towers, which tends to produce more accurate quotes and fewer surprises on delivery day. Ask how often they run this lane and who will be handling your shipment.\nInterstate movers present two levels of liability: full value protection, and a released-value option that pays 60 cents per pound per article. Under the lower option, a ten-pound speaker that arrives broken is worth $6, whatever it cost you. Ask what is included by default, what the higher level involves, how a claim is filed and how long you have to report damage.\nA modest deposit to hold a d"
   },
   {
    "group": "ai",
@@ -960,249 +1023,6 @@
    "published": "2026-11-24T21:31:57.000Z",
    "description": "From traditional pick-to-light to put walls, mobile carts, and put-to-store retail replenishment systems, light-directed technologies continue to play an important role in order fulfillment. Peter Gerbitz of Pyramid, a Duravant company, shares with DC Velocity 's David Maloney how decades of experience with Lightning Pick solutions are helping customers improve productivity, accommodate changing order profiles, and combine proven technologies with new forms of automation. Sponsored by",
    "excerpt": "Decades of experience with Lightning Pick solutions are helping customers improve productivity, accommodate changing order profiles, and combine proven technologies with new forms of automation.\nFrom traditional pick-to-light to put walls, mobile carts, and put-to-store retail replenishment systems, light-directed technologies continue to play an important role in order fulfillment. Peter Gerbitz of Pyramid, a Duravant company, shares with DC Velocity 's David Maloney how decades of experience with Lightning Pick solutions are helping customers improve productivity, accommodate changing order profiles, and combine proven technologies with new forms of automation.\nLearn practical strategies for building an automation roadmap, evaluating opportunities beyond labor savings, and taking the first steps toward a more scalable, efficient operation.\nAutomation is no longer reserved for large, high-volume operations, but determining when and where to begin can be challenging. In this episode, Ryan Borgerding, vice president of automation sales at Storage Solutions - a Jungheinrich company, joins DC Velocity 's David Maloney to discuss common misconceptions about automation, how organizations can assess their readiness, and the key factors leaders should consider before making an investment. Learn practical strategies for building an automation roadmap, evaluating opportunities beyond labor savings, and taking the first steps toward a more scalable, efficient operation.\nSupply chains are losing millions on assets they often ignore: the reusable pallets, totes, and containers used to move goods. In this DC Velocity Short Take Video, Wes Coleman of Zebra Technologies joins DC Velocity's David Maloney to explain how this \"blind spot\" in Returnable Transport Item (RTI) management is no longer a necessary cost of doing business. Discover how RFID technology provides the real-time visibility needed to help eliminate asset loss, improve utilization, and maintain continuous control over your container pool.\nLearn why the next five years will separate operations that keep evolving from those left behind on legacy platforms.\nAI is quickly changing the costs to build warehouse software that actually fits operations. In this short video discussion, William Korrki, Chief Product Officer at VARGO, unpacks the shift — from evaluating WMS on adaptability instead of feature checklists, to why the next five years will separate operations that keep evolving from those left behind on l"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "GPT-6.2 Astra 用 22 分钟破解 1808 年素描画作者之谜",
-   "url": "https://aihot.news/items/eb9lfibaf8fpouyw0x3vh63st",
-   "published": "2026-11-24T19:06:54.000Z",
-   "description": "研究者引述案例称，GPT-6.2 Astra 仅用 22 分钟和公开资料，将耶鲁 Beinecke 图书馆藏的 1808 年蒙特利尔至苏必利尔湖匿名素描画作者鉴定为 vicomte de Chabot，并找到其微缩胶片日记供验证。日记笔迹与素描题注吻合，1808 年 6 月 18 日日记明确写下“我画了一幅素描”；作者认为这标志着模型的研究发现能力正从数学等可验证领域扩展到历史等非确定性领域。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eb9lfibaf8fpouyw0x3vh63st",
-   "excerpt": "研究者引述案例称， GPT-6.2 Astra 仅用 22 分钟和公开资料，将耶鲁 Beinecke 图书馆藏的 1808 年蒙特利尔至苏必利尔湖匿名素描画作者鉴定为 vicomte de Chabot，并找到其微缩胶片日记供验证。日记笔迹与素描题注吻合，1808 年 6 月 18 日日记明确写下“我画了一幅素描”；作者认为这标志着模型的研究发现能力正从数学等可验证领域扩展到历史等非确定性领域。\n研究者实测 GPT-6.2 Astra 在 22 分钟内鉴定出 1808 年素描画作者，并用新发现的日记验证，展示了模型向史学等非确定性领域的探索能力延伸。\nGPT-6.2 Astra for solving a significant historical mystery:\nIn testing GPT-6.2, I used it to make a significant historical discovery which I detail in the post below. This suggests that the process of research and discovery we’re already seeing in verifiable domains like math is starting to generalize to non-deterministic fields like history.\nIn a nutshell, Yale’s Beinecke Library holds an anonymous sketchbook of an 1808 journey from Montreal to Lake Superior and back. I’ve spent many hours over the years trying to figure out who made the sketches with no luck. The artist could literally be any one of several thousand people. There are few clues: only four dated and labelled images.\nWith minimal prompting, in just 22 minutes, Astra used publicly available sources to identify a minor French aristocrat, the vicomte de Chabot, as the artist and suggested that we test the hypothesis by ordering copies of a little known microfilmed diary of Chabot’s trip it also found.\nI was truly stunned. I’d never heard of Chabot or this diary! New document finds are also exceedingly rare in a well worn field like fur trade history.\nI ordered scans of the journal from microfilm and when they arrived the handwriting matched the captions in the sketchbook. The itinerary also aligned perfectly with the few dated drawings in the book. But there was actually the type of conclusive evidence we rarely get as historians: on 18 June 1808, after Chabot’s canoe reached Fort St. Joseph, he wrote “I took a sketch” before describing the exact view of the fort depicted in a matching drawing.\nThe journal itself is also a major find. It had been mentioned once in a dissertation footnote, but in a completely different area of history and is unknown to fur trade or Canadian historians. It’s long and detailed, covering some 162 notebook pages which makes this a significant new document to my field. Attached to the journal was another trove of documents too: excerpts from long-destroyed North West Company papers, journals, and letters. Again, this almost never happens. Both finds equally surprised the other leading experts I consulted.\nAlthough we can construct a coherent narrative in hindsight, I cannot emphasize enough h"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Ed Zitron 分析 NVIDIA 董事会恢复黄仁勋 CEO 职位背后的行业流动性风险",
-   "url": "https://aihot.news/items/lb66i6g7eq01l6hx0rr8f7k9r",
-   "published": "2026-11-24T18:08:05.000Z",
-   "description": "Ed Zitron 撰文分析 NVIDIA 董事会恢复黄仁勋 CEO 职位一事，认为此举是应对外部压力的符号性操作，并未解决 AI 行业面临的循环融资、流动性紧张及 OpenAI 亏损等根本问题。文章梳理了 NVIDIA 对 AI 行业的巨额资金支持、Anthropic 上市后表现及 OpenAI 的财务压力等证据，论证行业流动性风险并未消除。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lb66i6g7eq01l6hx0rr8f7k9r",
-   "excerpt": "Ed Zitron 撰文分析 NVIDIA 董事会恢复黄仁勋 CEO 职位一事，认为此举是应对外部压力的符号性操作，并未解决 AI 行业面临的循环融资、流动性紧张及 OpenAI 亏损等根本问题。文章梳理了 NVIDIA 对 AI 行业的巨额资金支持、 Anthropic 上市后表现及 OpenAI 的财务压力等证据，论证行业流动性风险并未消除。\n作者从 NVIDIA 董事会恢复黄仁勋 CEO 职位一事切入，梳理了循环融资、Anthropic 上市表现和 OpenAI 亏损等资金链证据，论证行业流动性风险并未消除。\n来源： Ed Zitron 长文 / Where’s Your Ed At · wheresyoured.at\n作者从 NVIDIA 董事会恢复黄仁勋 CEO 职位一事切入，梳理了循环融资、Anthropic 上市表现和 OpenAI 亏损等资金链证据，论证行业流动性风险并未消除。"
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "Procter & Gamble plans supply chain workforce cuts as automation expands",
-   "url": "https://www.supplychaindive.com/news/procter-gamble-plans-supply-chain-workforce-cuts-as-automation-expands/875533/",
-   "published": "2026-11-24T17:11:00.000Z",
-   "description": "The CPG company expects to eliminate as much as 30% of its product-supply headcount by 2030.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "Simon Willison",
-   "title": "GPT 6.2 Astra Solves a Historical Mystery",
-   "url": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/",
-   "published": "2026-11-24T16:53:59.000Z",
-   "description": "GPT 6.2 Astra Solves a Historical Mystery Here's an interesting case-study in using GPT-6.2 Astra for historical research, from history professor Mark Humphries: With only minimal prompting, GPT-6.2 Astra was able to autonomously identify the creator of an anonymous 1808 sketchbook held at Yale’s Beinecke Library . It did so extremely quickly (in just 22 minutes), using publicly available primary and secondary sources. To do so, it discovered a little known source in a paper archive, predicted that it would prove its hypothesis if examined and, in the end, it did. Not only that, but this new s",
-   "excerpt": "GPT 6.2 Astra Solves a Historical Mystery . Here's an interesting case-study in using GPT-6.2 Astra for historical research, from history professor Mark Humphries:\nWith only minimal prompting, GPT-6.2 Astra was able to autonomously identify the creator of an anonymous 1808 sketchbook held at Yale’s Beinecke Library . It did so extremely quickly (in just 22 minutes), using publicly available primary and secondary sources. To do so, it discovered a little known source in a paper archive, predicted that it would prove its hypothesis if examined and, in the end, it did. Not only that, but this new source turns out to be a major find on its own that will be of significant interest to both Canadian and fur trade historians.\nAstra found a diary reference reference to a visit by the vicomte de Chabot dated five days before a date mentioned in the sketchbook at a nearby river, and suggested that Chabot's journal of his travels (only available by order from Cleveland State University) might confirm that the sketchbook was his work.\nAre historians due for a round of Deep Blue ? Mark thinks it will be mild:\nBut if the experience of mathematics is any guide, we can also anticipate that sometime next spring or summer we’ll face a sort of crisis of confidence as we struggle to understand how to respond to agentic systems that can do things human historians cannot. To be fair, that crisis will almost certainly be less profound for us than it is for math. The problem in mathematics, of course, is that solving hard math problems was the whole game. Historians, on the other hand, constantly reinterpret the past in light of an evolving present; we don’t chase a single universal truth. We also (in the ideal at least) write books and articles that are closer to works of philosophy and literature than they are to scientific tracts. Humanity is thus something of a requirement for the production of historical literature.\nThis is a link post by Simon Willison, posted on 24th November 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
-  },
-  {
-   "group": "ai",
-   "source": "Google AI",
-   "title": "How Gemini is changing the game for Golden State's organization and fans.",
-   "url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/",
-   "published": "2026-11-24T16:00:00.000Z",
-   "description": "Google Gemini partners with Golden State to power fan experiences and business operations for the Warriors, Valkyries, and Chase Center. See the news.",
-   "excerpt": "Today, we’re expanding our partnership with Golden State — making Google Gemini the Official AI Assistant Partner and Official Generative AI & Enterprise LLM Partner of the Warriors, the 2026 WNBA Champion Valkyries, and Chase Center.\nThe collaboration integrates Gemini across the entire franchise ecosystem. For fans, that means a more interactive game-day experience, both inside Chase Center via interactive videoboard features, and across digital channels for fans following from home. And behind the scenes, Golden State is deploying Gemini for business to build custom AI agents, helping their teams work smarter across both business and basketball operations.\nAs a Founding Partner of Chase Center since 2019, Golden State has used our gen AI tools to help their operations run smoother, and this next chapter brings the best of Gemini to the team and fans alike."
-  },
-  {
-   "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "Lineage and Americold: The Economics of Refrigerated Freight",
-   "url": "https://logisticsviewpoints.com/2026/11/24/lineage-and-americold-the-economics-of-refrigerated-freight/",
-   "published": "2026-11-24T16:00:00.000Z",
-   "description": "The refrigerated freight business depends on preserving usable product. Compare Lineage and Americold capacity with throughput, temperature control and. The post Lineage and Americold: The Economics of Refrigerated Freight appeared first on Logistics Viewpoints .",
-   "excerpt": "Refrigerated logistics is often assessed by warehouse capacity and trailer availability, but those measures describe infrastructure rather than delivered product integrity. A shipment may arrive on time yet have too little remaining shelf life, an unresolved temperature excursion or the wrong handling documentation. For food manufacturers, retailers and pharmaceutical shippers, the financial unit of performance is usable product delivered under verifiable conditions.\nThe Global Cold Chain Alliance’s 2026 list places Lineage and Americold among the world’s largest refrigerated warehouse operators, with published capacity of roughly 2.98 billion and 1.45 billion cubic feet, respectively. That scale matters because refrigerated space requires substantial real estate, energy systems, material handling and specialized personnel. But the relevant capacity to a particular shipper is still local, temperature-specific, accessible through the right transportation modes, and supported by dependable receiving and dispatch windows.\nA useful network analysis distinguishes storage capacity from throughput. Two facilities with similar cubic footage can have very different operating performance depending on dock design, pallet mix, order profile, available labor and automation. The same applies to refrigerated freight: a lane with adequate trailers can still experience a service problem if staging space, appointment slots or suitable temperature-control equipment is constrained. Shippers should model product flows and dwell time alongside cubic-foot capacity.\nThe Global Cold Chain Alliance reported that its 2026 Top 25 operators collectively had 7.76 billion cubic feet of temperature-controlled warehouse capacity, up 6.3 percent from the prior list. The ranking establishes the size of the global asset base, not a performance comparison between Lineage, Americold or other individual operators. For a shipper, the differentiator is whether a particular facility and connected transportation plan can handle its product at the required temperature, throughput and delivery window without destroying saleable life.\nThe critical cost drivers include refrigeration energy, warehouse throughput, door opening, storage duration, product handling, transportation distance, and spoilage risk. An unexpected distribution delay may force a grocery supplier to reposition inventory or sell product with less remaining shelf life. Temperature excursions can trigger inspection and quality holds tha"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Anthropic 复盘 Messages API 从 Python 迁移到 Rust 的校验方法",
-   "url": "https://aihot.news/items/h1ja45355xx1xf9rqf89cv1if",
-   "published": "2026-11-24T16:00:00.000Z",
-   "description": "Anthropic 介绍如何将 Messages API 从 Python 迁移到 Rust，并把生产系统本身当作校验器。该 API 流量从 2024 年初到 2026 年秋增长约 1800 倍，迁移后每请求 CPU 降低约 70%，首 token 中位时间缩短约 20%，且未停服或冻结功能开发。 🔗 阅读原文 via AIHOT · https://aihot.news/items/h1ja45355xx1xf9rqf89cv1if",
-   "excerpt": "Anthropic 介绍如何将 Messages API 从 Python 迁移到 Rust，并把生产系统本身当作校验器。该 API 流量从 2024 年初到 2026 年秋增长约 1800 倍，迁移后每请求 CPU 降低约 70%，首 token 中位时间缩短约 20%，且未停服或冻结功能开发。\n原文复盘了用生产系统当校验器迁移 API 的完整方法，读者可以借鉴定位和修复重写中的行为差异。\n很多问题都存在 生成—验证 之间的落差：验证一个解法是否正确，往往比想出一个解法要容易得多。数独就是典型例子。检查答案很简单（只要数一数每行、每列、每个宫里的数字），但找到这个答案可能要花很长时间。许多雄心勃勃的 Claude 项目正是依赖这一落差：在数学中形式化 证明 ，或者 迁移 规模庞大、经过充分测试的代码库——只要 Claude 有可靠的办法验证自己的工作，这类任务它就能承担。\n但随着 Claude 能力越来越强，它开始接手真实运行系统中的项目，而在这些系统里，生成工作反而比验证工作更容易。这类系统的用户常常依赖一些 不在测试套件覆盖范围内 的边界情况和特殊行为，而很难写出 一个能覆盖所有情况的“正确”定义 。没有可靠的办法检查 Claude 的工作，线上系统的迁移就很难让人放心——无论 Claude 生成代码有多快。\n我们在把 Messages API 从 Python 迁移到 Rust 时就遇到了这个问题。这个 API 是客户以及我们自己的应用（比如 Claude Code 和 Cowork）访问 Claude 的主要途径。从 2024 年初到 2026 年秋，API 流量增长了约 1,800 倍。改用 Rust 后，每个请求消耗的 CPU 会少得多。Claude 用大约一周时间写出了这个 API 核心请求路径的第一版。但要让人信任这次迁移，我们必须找到一种办法，验证 Rust 版 API 与生产环境 API 行为一致。这件事之所以困难，原因有好几个：Python 版 API 在整个迁移过程中一直在变，所以“一致”是个不断移动的目标；Claude 对同一个请求的回复可能不确定，所以两份输出有差异不一定就是 bug；而且我们看不到客户的请求内容，也就无法轻易发现两个版本在哪里出现了分歧。\n本文介绍我们如何把生产环境的 Messages API 本身变成一个验证器，以及这如何帮助我们在生产流量上测试新的 Rust 版本、找出两者的差异，并自动派发智能体去修复这些差异。最终我们上线了一个 Rust 版 API，每个请求消耗的 CPU 减少约 70%，首 token 中位延迟降低约 20%，而且全程没有让服务下线，也没有冻结功能开发。\n我们在 2023 年构建了 Messages API，用 Python 编写，因为当时公司内部大量研究代码都用 Python。起初它很简单：Messages API 把请求转给模型，再把模型写出的内容发回去。（当时有位工程师称它“基本就是个请求转发器”。）但随着 Messages API 功能越来越强、与我们的代码库结合得越来越深，它也开始与研究团队和推理团队维护的 Python 库产生共享依赖，这让它很难挪动。如果哪天想换用另一种语言，就意味着日志、指标和工具全都要重新做一遍。\n这种权衡逐渐开始改变。到 2025 年底，每个 Messages API 请求都必须经过校验、转换成提示词、分词，再由我们的安全分类器筛查。每收到一条回复，token 流都要被分拣成文本、思考和工具调用，而 Python 在每一步都会带来额外开销——每次创建对象、释放内存或把工作交给下一个任务时都是如此。流量最终远远超出了最初那个 Python 服务的设计承载能力（图 1），我们很快需要想办法让服务高效得多。\n对大型生产系统做彻底重写，人们往往慎之又慎，至少有两个原因。第一，无法保证测试套件覆盖了生产代码 100% 的行为，重写有风险。第二，所需的工作量之大，常常让这种项目难以推进。（2024 年，我们一位工程师提出迁移到 Go 或 Rust 后，另一位工程师暂时给这个问题定了调：“ 我们不会用 go 或 rust 重写 API！ ”）\n因此，想提升性能，通常的建议是只重写拖慢系统的那部分代码，我们也是从这里入手的。我们用 Rust 重写了负责解析模型输出的代码，并从 Python 调用它。这让 API 的 CPU 占用降低了约 8% 到 10%。不过，增量方案往往会带来额外的复杂度，因此必须确保增量改进值得付出这些代价。在我们的案例中，收益并不足以抵消增加的复杂度。现在每个 token 都要在 Python 和 Rust 之间来回穿越三次（图 2），又制造出新的开销来源。\n增量重写之后，回复中的每个 token 都要在 Python 和 Rust 之间来回穿越三次。\n随着 Claude 能力越来越强，我们开始质疑：过去那些避免整体迁移的理由是否仍然成立。这个项目所需的工作量正在快速下降：到 2026 年 5 月，Claude 已经编写了 Anthropic 合并代码的 80% 以上 。我们想，Claude 现在能否帮我们写出代码，以实证方式捕捉生产系统中的每一项行为和修复？但问题变成了：我们如何验证迁移后的行为是正确的？瓶颈已经从生成代码变成了验证。\n要验证迁移，首先需要定义什么叫“正确”。有几种做法（图 3）。运气好的话，你可以直接写一条规则。 数学中的定理 就是一个精确的陈述，证明助手（比如 Lean）可以依据一套固定规则检查证明的每一步。另一些时候——在软件工程中更常见——你用一组示例来定义“正确”，比如测试。例如， Bun 从 Zig 迁移到 Rust 时，它的测试套件是用 TypeScript 写的，因此同一套测试可以评判两个版本。在我们的案例中，这两种方法都不够用，于是我们以现有系统作为基准，在迁移过程中测试两者是否一致。但问题在于，我们的现有系统（Messages API）一直在变。我们定期"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "腾讯开源模型 Hy4 Flash 上线 Fireworks serverless",
-   "url": "https://aihot.news/items/dvu6olan4q58k1evvnp8t60t2",
-   "published": "2026-11-24T16:00:00.000Z",
-   "description": "腾讯新开源模型 Hy4 Flash 现已在 Fireworks serverless 上可用。该模型为 MoE 架构，总参数约 220B、每 token 激活约 12B，1M token 上下文窗口（Fireworks 上线时为 512K），支持文本和图像输入，面向文档处理、研究、办公和 Agent 工作流。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dvu6olan4q58k1evvnp8t60t2",
-   "excerpt": "Hy4 Flash on Fireworks: Tencent's open model for cost-efficient professional work\n腾讯新开源模型 Hy4 Flash 现已在 Fireworks serverless 上可用。该模型为 MoE 架构，总参数约 220B、每 token 激活约 12B，1M token 上下文窗口（Fireworks 上线时为 512K），支持文本和图像输入，面向文档处理、研究、办公和 Agent 工作流。\n原文给出 Hy4 Flash 在多个专业基准上的得分与成本对比，读者可据此评估它在专业任务中的性价比取舍。\n腾讯新发布的开源权重模型 Hy4 Flash 现已在 Fireworks 无服务器平台上架。这是一款混合专家模型，总参数量约 220B，每个 token 激活约 12B，上下文窗口达 100 万 token（在 Fireworks 上线初期为 512K），支持文本和图像输入。腾讯为文档处理、研究、办公和智能体工作流等场景打造了这款模型。\n在我们记录了成本的每一项 Specialized Intelligence Index 基准测试中，Hy4 Flash 都处在得分-成本帕累托前沿上。在这些榜单上，没有哪个模型能以更低的成本拿到更高的分数。最明显的例子是 Epiq 的 CorporateBench：它略胜 Claude Opus 5.5，而每任务成本低 200 倍以上（$0.013 对 $2.80）。在 Rogo 的 Big Finance Benchmark 上，它与 Claude Opus 5 打平；在 Sierra 的 τ³-Banking 上也与 Opus 5 持平，同样便宜 200 倍以上。\nHy4 Flash 在 Fireworks 无服务器平台上运行，Standard 档定价为每百万未缓存输入 token $0.07、每百万缓存输入 token $0.003、每百万输出 token $0.281，另有 Priority 档可选。该模型在全球范围内提供服务。\n我们在七项 Specialized Intelligence Index 基准测试上运行了 Hy4 Flash，使用与其他模型在各榜单上相同的测试框架，并开启高推理模式。成本按 Fireworks 无服务器价格对实际记录的 token 计算。其中三项结果尤为突出：\n在我们记录了成本的每个榜单上，Hy4 Flash 都是成本最低的模型，Big Finance 除外。它在 HealthBench Professional（18 个模型中排第 16）和 DeepSWE（22 个模型中排第 19）上排名较低；对于长周期软件工程任务，腾讯建议使用更大的 Hy4。\n结果来自 Fireworks 于 2026 年 11 月 22 日在 Hy4 Flash 的 Fireworks 部署上运行的 Specialized Intelligence Index 。\n在开放端点之前，我们让 Hy4 Flash 在我们的推理引擎 FireAttention 上跑了一遍上线验证套件，并与腾讯官方端点做了对比。每一项得分与腾讯的差距都在 1 分以内。\n立即开始 在 Fireworks 无服务器平台上使用 Hy4 Flash，或为生产工作负载切换到预留吞吐量。\n还可以在我们的 Serverless 和 Dedicated Training API 上微调 Hy4 Flash，Dedicated 支持全参数训练。\n原文给出 Hy4 Flash 在多个专业基准上的得分与成本对比，读者可据此评估它在专业任务中的性价比取舍。"
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "Under Armour continues efforts to trim SKUs, lead times",
-   "url": "https://www.supplychaindive.com/news/under-armour-continues-efforts-to-trim-skus-lead-times/875483/",
-   "published": "2026-11-24T15:36:03.000Z",
-   "description": "The brand, which cleared a 25% reduction goal earlier this year, now aims to cut its assortment in half to simplify decisions and invest in its strongest products.",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "FedEx, UPS’ upcoming rate hikes: What shippers should know",
-   "url": "https://www.supplychaindive.com/news/fedex-ups-upcoming-rate-hikes-what-shippers-should-know/875495/",
-   "published": "2026-11-24T15:21:00.000Z",
-   "description": "The carriers are deploying another 5.9% average price increase, but changes under the surface could squeeze customers&#39; budgets further, experts said.",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "Tropical Smoothie powers expansion with strong supplier relationships, data strategy",
-   "url": "https://www.supplychaindive.com/news/tropical-smoothie-powers-expansion-with-strong-supplier-relationships-data/875588/",
-   "published": "2026-11-24T15:01:00.000Z",
-   "description": "The smoothie chain aims to go beyond transactional purchasing and account manager connections to drive new products and mitigate risk.",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "Amazon enlists customers in fight against NYC delivery worker bill",
-   "url": "https://www.supplychaindive.com/news/amazon-enlists-customers-in-fight-against-nyc-delivery-worker-bill/875500/",
-   "published": "2026-11-24T14:50:45.000Z",
-   "description": "The e-commerce giant released a call to action for city customers to speak out against the Delivery Protection Act, or face increased order costs of up to $5.&nbsp;",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "When the Store Stops Stocking, the Distribution Network Inherits the Customer",
-   "url": "https://logisticsviewpoints.com/2026/11/24/from-store-replenishment-to-home-delivery-the-new-retail-distribution-network/",
-   "published": "2026-11-24T14:00:00.000Z",
-   "description": "When more retail locations sell from samples, distribution centers and delivery networks take responsibility for a larger share of the customer experience. The post When the Store Stops Stocking, the Distribution Network Inherits the Customer appeared first on Logistics Viewpoints .",
-   "excerpt": "A retailer can remove a sofa from the store and free up a surprising amount of selling space. It cannot remove the sofa from the supply chain. The product still has to be stored, handled, loaded, delivered, and possibly returned. In fact, when a customer no longer takes possession at the store, the retailer assumes responsibility for a larger portion of the physical transaction.\nThat is the logistics consequence of showroom retail. The store may become a better place to sell, but the distribution network must become a better place to execute.\nTraditional retail replenishment is built around relatively predictable destinations. A distribution center sends cases and pallets to known stores, often on consolidated routes. Merchandise is received, moved to the selling floor, and eventually carried away by the customer. Direct-to-consumer fulfillment is different. Individual orders leave on different days, travel to different addresses, and carry different service commitments. The basic unit of warehouse and transportation work changes.\nThere is no reason a retailer cannot manage both models. There is every reason not to assume the same network will handle both equally well.\nTake a distribution center designed primarily to replenish stores. Its receiving, storage, picking, and shipping operations may be optimized for case quantities and stable store demand. A showroom-led network creates a different workload: each picking, item-level verification, protective packaging, carrier labeling, and order-specific dispatch.\nThe distinction sounds operational, but it changes the capital plan. Storage configuration, pick paths, sortation, packing stations, labor deployment, and automation choices depend on the order profile. So does the ability to accommodate peak demand. A warehouse that moves a high volume of cases efficiently may be poorly equipped to process thousands of small, variable orders with tight cutoff times.\nWalmart’s October 8 announcement of its Stockton, California fulfillment center illustrates the scale of investment associated with customer-order fulfillment. The more than 900,000-square-foot facility uses automation and high-density storage to increase order capacity. Walmart described reducing a traditional 12-step fulfillment process to five steps. That is an operating-model investment, not simply a different place to keep merchandise.\nFor a retailer evaluating showroom conversion, I would measure the change in order lines, units per order, pick prod"
-  },
-  {
-   "group": "ai",
-   "source": "Google DeepMind",
-   "title": "From spectrum to structure: Identifying molecules with Mass Spec Skills for Google Antigravity",
-   "url": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
-   "published": "2026-11-24T13:07:53.000Z",
-   "description": "Mass Spec Skills empowers scientists using Google Antigravity to interpret tandem mass spectra.",
-   "excerpt": "Robert Brunck, Stefan Ganscha, Swaroop Guntupalli, Dariusz Lasecki, Gabriella Marfani, Jack Mason, Hussain Masoom, Rose Mirshafian, Eliseo Papa and Zoi Tsangalidou\nBuilt in collaboration with analytical chemists and using community-developed tools, Mass Spec Skills empowers scientists using Google Antigravity to interpret tandem mass spectra, lay out chemical evidence, and match frontier-level retrieval accuracy even with a lightweight model.\nEvery sample of blood, soil or plant tissue contains a vast array of small molecules, such as nutrients, hormones, drugs and their breakdown products, pollutants, or bioactive compounds with therapeutic potential. A modern mass spectrometer can detect tens of thousands of these molecular signals in a single drop of sample extract, measuring the masses of charged molecules and, in tandem mass spectrometry (MS/MS), the fragments they break into.\nThese measurements, however, do not directly reveal the molecular structure. Researchers cannot immediately tell which compound produced a signal and relate it to its biological role or downstream use cases.\nTo fully map the diversity of small molecules, which remains largely uncharted, researchers need ways to translate mass spectra to molecular structures at scale. The standard approach is to match each spectrum against reference spectra from previously measured molecules. Yet even after a decade of expanding reference libraries, spectral searches annotate on average only about 5% of measured spectra, and 10% for human samples; the rest has been called the \"dark matter\" of mass spectrometry.\nMany of the molecules producing these unannotated signals are already listed in public chemical databases, but their spectra have not been recorded, so there is no reference spectrum to compare against. Elucidating them instead requires inferring the structure directly from the observed fragment ions.\nAnalytical chemists have a well-tested, step-by-step workflow for narrowing down candidate structures from tandem (MS/MS) spectra: check spectral reference libraries, find the molecular formula and retrieve candidate structures from chemical databases, and then test every candidate against observed fragment peaks.\nThe tools for each step exist and are openly available, but running the full workflow would take a domain expert a significant amount of time for every single spectrum. Because a single study can produce thousands of spectra, manual analysis cannot keep up, leaving most of these sig"
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
-   "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
-   "published": "2026-11-24T13:00:00.000Z",
-   "description": "GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.",
-   "excerpt": "Our GPT‑6 family of models can design new protein shapes and the sequence of their chemical building blocks using only reasoning and code, without calling specialized biology models to generate those designs.\nAn internal research model matched or outperformed specialized models on many protein design tasks. Researchers could also guide designs by prompting the model on where a protein should attach and what shape it should take.\nIn lab tests with Onava, proteins based on GPT‑6.2’s designs showed evidence of binding, or attachment, across five targets. Redesigned antibodies also retained binding. Specialized models helped supply sequences and select candidates for testing.\nThe models’ written reasoning and code suggest they draw on math, physics, chemistry, and biological knowledge to reason about protein shapes and interactions with other molecules.\nIn a preprint titled GPT‑6 as a Universal Foundation Model for Protein Biology: Beyond Specialized Models , we show that our GPT‑6 family of models has intrinsic capabilities for designing new proteins: the models can design new protein structures and sequences without relying on specialized biology models, using only reasoning and general-purpose coding tools.\nProteins do much of the work in living cells. They drive the chemical reactions that sustain life, carry oxygen through the blood, and defend the body against infection. Incorrectly shaped proteins can also cause disease and dysfunction. Proteins are made from chains of chemical building blocks called amino acids. The order, or sequence, of these amino acids helps determine how a protein folds into a three-dimensional shape, which in turn influences what it does.\nScientists often start with a clear idea of what they want a protein to do. They might want it to block a signal that helps cancer cells evade the immune system or to help capture carbon dioxide from the air. The challenge is to work out what three-dimensional structure would enable the protein to do its job and which amino acid sequence would give it that structure. Specialized biology models capable of generating three-dimensional protein structures and sequences have made this work more practical.\nUsing and coordinating these specialized models requires substantial expertise. Each accepts particular kinds of inputs and constraints, and these models cannot easily accept new kinds of information without changes to their software or additional training. In contrast, a general-purpose model capab"
-  },
-  {
-   "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "Intermodal’s Next Test Is Service Consistency, Not the Lowest Rate",
-   "url": "https://logisticsviewpoints.com/2026/11/24/intermodal-s-next-test-is-service-consistency-not-the-lowest-rate/",
-   "published": "2026-11-24T13:00:00.000Z",
-   "description": "Intermodal needs more than low rates. See why transit variability, drayage, terminal performance and inventory impacts determine durable modal conversion. The post Intermodal’s Next Test Is Service Consistency, Not the Lowest Rate appeared first on Logistics Viewpoints .",
-   "excerpt": "Intermodal’s biggest commercial opportunity is not the occasional load that moves from highway to rail at a lower price. It is the freight that remains on intermodal because the service can be incorporated into inventory policy, production schedules and customer commitments. That requires a shift in measurement: from quoted linehaul cost and average transit time to dependable door-to-door performance and the economic cost of variation.\nA rail linehaul is one part of an intermodal movement. The shipment begins with drayage, a terminal gate, and a train schedule; it ends with a second terminal, another truck, and a receiving appointment. Every transfer adds a chance of delay. Reliability is therefore not captured fully by train performance or a quoted transit time. A shipment can travel efficiently between terminals and still miss a customer deadline because chassis availability or appointment windows fail at the destination. Averages can also obscure variation: ten shipments arriving near plan may not offset one critical load that arrives after a production cutoff.\nThe opportunity is substantial. The Association of American Railroads reported that U.S. railroads averaged more than 298,000 intermodal units per week in October 2026, a monthly record for the weekly average. Volume strength demonstrates shipper interest in the mode, but aggregate demand is not a scorecard for every lane or shipment. A network operating near capacity may perform very differently at the origin terminal, on the mainline and in the destination drayage market. Shippers need to evaluate those segments separately before expanding commitments.\nWhat matters most is the tail of the transit-time distribution. A lane that usually arrives in five days but occasionally requires nine can impose more inventory cost than one that reliably arrives in six. Replenishment orders, promotion calendars and manufacturing material requirements are sensitive to the late shipment, not to the average shipment. That is why planners should compare performance at the 90th or 95th percentile alongside median transit time, missed appointments, container availability and recovery after a missed connection.\nThe Association of American Railroads also reported that intermodal volume rose 9.6 percent year over year in October 2026. That is encouraging evidence of market momentum, not proof that every lane has become a predictable substitute for truckload. Capacity, terminal practices, origin cutoff times and destina"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenAI 发布预印本：GPT-6 模型展现内在蛋白质设计能力",
-   "url": "https://aihot.news/items/yg04c9d5qnwzitqstg19c6ow2",
-   "published": "2026-11-24T13:00:00.000Z",
-   "description": "OpenAI 发布预印本，称 GPT-6 系列模型仅凭推理和通用编码工具即可设计新蛋白的结构与序列，无需调用专用生物学模型。与 Onava 的实验室测试中，基于 GPT-6.2 设计的 minibinder 在 5 个靶点上均出现结合证据，322 个 minibinder 中 35 个（10.9%）结合阳性；重设计的抗体片段 66% 保留结合。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yg04c9d5qnwzitqstg19c6ow2",
-   "excerpt": "OpenAI 发布预印本，称 GPT-6 系列模型仅凭推理和通用编码工具即可设计新蛋白的结构与序列，无需调用专用生物学模型。与 Onava 的实验室测试中，基于 GPT-6.2 设计的 minibinder 在 5 个靶点上均出现结合证据，322 个 minibinder 中 35 个（10.9%）结合阳性；重设计的抗体片段 66% 保留结合。\n原文用计算评测和两组实验室数据说明 GPT-6 可独立设计蛋白结构与序列，并如实列出对专用模型的依赖和局限。\n原文用计算评测和两组实验室数据说明 GPT-6 可独立设计蛋白结构与序列，并如实列出对专用模型的依赖和局限。"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Amazon 报告黑客用开源框架 Cairn 驱动 AI 智能体在约 11 分钟内自主发现并利用 0-day",
-   "url": "https://aihot.news/items/ygbhvp086wl672gfxuhfgl23x",
-   "published": "2026-11-24T12:30:05.000Z",
-   "description": "Amazon 威胁情报报告称，黑客在开源 AI 渗透测试框架 Cairn 上运行的 AI 智能体，仅凭一句「获取 shell 权限」的指令，就自主发现并利用了一个开源医学影像 AI 应用中未修补的路径遍历 0-day，从映射 API 到任意写文件仅用约 11 分钟，随后写入 Python 反向 shell payload 并以 root 权限获得控制。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ygbhvp086wl672gfxuhfgl23x",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "OpenAI",
-   "title": "Searching for distant planets with Astra",
-   "url": "https://openai.com/index/searching-for-distant-planets-with-astra",
-   "published": "2026-11-24T11:00:00.000Z",
-   "description": "See how two amateur astronomers used Codex and Astra to find potential exoplanets in public data from NASA’s Kepler and TESS space telescopes.",
-   "excerpt": "Two amateur astronomers used Codex and Astra to look for signs of planets in public telescope data. Now they’ve given professional astronomers a few places to look more closely.\nAstronomers have confirmed more than 6,400 planets beyond our solar system ⁠ (opens in a new window) since the first ones were announced in 1992 ⁠ (opens in a new window) . A worldwide community of amateur astronomers has long been part of that search. Some comb through public telescope data for small, repeated dips in a star’s brightness that could signal an orbiting planet. Others use their own telescopes to watch for the next dip and share what they see with researchers.\n*Data from the NASA Exoplanet Archive’s Planetary Systems Composite Parameters table ⁠ (opens in a new window) . 2026 data are year to date through November 24, 2026.\nAstronomers have used AI in this search for years. In 2017, researchers trained a neural network on 15,000 signals from NASA’s Kepler Space Telescope ⁠ (opens in a new window) that astronomers had already examined. From those examples, the model learned to recognize which patterns in starlight were most likely to come from a planet. When the researchers used it to examine weaker signals, one led them to an eighth planet orbiting a star called Kepler-90 ⁠ (opens in a new window) .\nNow, tools like Astra are helping amateur astronomers design and run searches of their own, often on data that has already yielded the more obvious exoplanet signals. Kevin Bond, an engineer at OpenAI, came to astronomy through his love of photographing the night sky. He used Codex to search observations of about 100,000 stars from the Kepler telescope, a planet-hunting mission that ran from 2009 to 2018. Ethan Byrd, founder of the email infrastructure start-up Primitive, has always loved astronomy. Working independently of Bond, he tried several AI models before choosing Astra to help him analyze telescope data from about 19 million stars.\nBoth searches identified potential exoplanets. Bond and Byrd have now turned to astronomers for an independent assessment of their results. Bond contacted an astronomer at the SETI Institute, who ran an independent search and found two of the same signals in the Kepler data. Byrd sent one of his strongest candidates to researchers working on NASA’s Transiting Exoplanet Survey Satellite (TESS) mission. It’s in line for further analysis, and two more candidates are awaiting submission.\nOne of the most common ways to find an exoplanet is t"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "ChinaTalk 分析 BIS 租赁算力新规或为美国换取约六个月算力领先",
-   "url": "https://aihot.news/items/yz5va6l60tfkmdampmsiz0jq2",
-   "published": "2026-11-24T10:58:57.000Z",
-   "description": "作者分析美国 BIS 于11月16日发布、11月19日生效的租赁算力临时最终规则，该规则要求向境外数据中心供应芯片需申领许可，门槛约为760块 H100 等效算力，覆盖 Hopper 和 Blackwell 级芯片，并关闭 Foundry Due-Diligence 漏洞。作者基于自建测算模型给出规则执行率与延迟月数的量化区间，并梳理柔佛数据中心和执法风险等关键变量。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yz5va6l60tfkmdampmsiz0jq2",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenAI 与 Cisco 发布开源 Linux 运行时 Shirudo，让 Agent 无停机防御系统",
-   "url": "https://aihot.news/items/d41p6k2h48zm8u2kl5xdzqx5h",
-   "published": "2026-11-24T08:15:44.000Z",
-   "description": "OpenAI 宣布与 Cisco 合作推出开源 Linux 运行时 Shirudo，让 Agent 编写动态 eBPF 控制来抵御漏洞利用，同时保持服务不中断，为防御方争取测试和部署补丁的时间。作者称这是迈向自适应自防御基础设施的第一步，目标是让防御者与 AI Agent 协作定位受影响系统、测试并共享 shield、在不干扰工作负载的情况下部署。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d41p6k2h48zm8u2kl5xdzqx5h",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Mantic 与 Thinking Machines 训练可扩展预测智能体，成本降 15 倍",
-   "url": "https://aihot.news/items/yh9lmlhqwoc77d1ii1mvr5d6x",
-   "published": "2026-11-24T07:00:00.000Z",
-   "description": "Mantic 与 Thinking Machines 在 Tinker 上对 Inkling 2 Small 做后训练，得到一个端到端完成研究与预测的预测智能体，其准确度接近 Fable 5.2 (medium)，单次预测成本降低 15 倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yh9lmlhqwoc77d1ii1mvr5d6x",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "卡兹克分享两个优化用户体验和产品动效的 Prompt",
-   "url": "https://aihot.news/items/jb7ohptrc5ctyx9maoimz2hn0",
-   "published": "2026-11-24T06:12:14.000Z",
-   "description": "数字生命卡兹克分享自己做产品时用的两个 Prompt，一个按用户体验至上的原则审查项目交互并直接修复，一个把项目动效做到细腻丝滑水准。要点包括让 Gemini 当方案顾问、按状态变化逐项审查动效，完成后让 GPT 审查再合并上线。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jb7ohptrc5ctyx9maoimz2hn0",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "Simon Willison",
-   "title": "datasette-charts 0.2a1",
-   "url": "https://simonwillison.net/2026/Nov/24/datasette-charts-2/",
-   "published": "2026-11-24T06:07:19.000Z",
-   "description": "Release: datasette-charts 0.2a1 Minor UI improvements: Collapsing the suggested charts section now leaves the chart visible. Following a link to a chart opens it with the suggestions collapsed for that visit. On table pages the panel now sits below the \"4,235 rows where country = CHN\" line. The \"Data\" table under each chart has been replaced by Copy TSV and Copy CSV buttons. Removed the \"Chart this data\" item from the table, view and query action menus. More space between lines in chart tooltips. Tags: datasette , visualization , datasette-charts",
-   "excerpt": "This is a beat by Simon Willison, posted on 24th November 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
-  },
-  {
-   "group": "ai",
-   "source": "BestBlogs 每日早报",
-   "title": "EP246 · 智谱发 GLM-5.4、TaoDesign 连接画板与代码、Atlassian 谈产品协作",
-   "url": "https://www.bestblogs.dev/explore/brief/2026-11-24?utm_source=rss&utm_medium=feed&utm_campaign=daily_brief&entry=rss_brief_index",
-   "published": "2026-11-24T06:00:00.000Z",
-   "description": "📝 今日导语 智谱发布 GLM-5.4，TaoDesign 连接画板与源码，Atlassian 谈如何让团队更快做决定。 🏷 今日关键词： GLM-5.4 TaoDesign Atlassian 智能体意图校验 Orchestra Bio EROX 智能体评测 📰 今日精选内容 智谱发布 GLM-5.4，旗下首款采用 Loop Transformer 的旗舰模型 智谱 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 淘宝 TaoDesign 的 AI 设计工具实践 大淘宝技术 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 Atlassian 的 Sherif Mansour 谈 AI 时代的产品管理 Lenny&apos;s Podcast &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 91 Google 用语义治理策略校验智能体操作是否符合用户意图 Google Developers Blog &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 OpenAI 为什么收购 Orchestra Bio：让 AI 接入药物研发的证据链 a16z &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 GitHub、Marks &amp; Spencer 与 Prov",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "MH&L",
-   "title": "Building a Shock-Resilient Supply Chain",
-   "url": "https://www.mhlnews.com/global-supply-chain/news/55420998/building-a-shock-resilient-supply-chain",
-   "published": "2026-11-24T05:05:00.000Z",
-   "description": "KMPG survey found 64% of respondents said technology and AI disruption will have the greatest impact on the their company.",
-   "excerpt": "The question supply chain managers are asking has changed from &lsquo;How do we prevent bad events?&rsquo; to 'How do we see, absorb, respond and adapt when external shocks are unavoidable?&rsquo; This is according to a recent report , from KPMG.\nThe primary reason for asking this new question is that risk is becoming more complex and interconnected, as exemplified by 70% of the respondents to the survey saying their organization&rsquo;s risk exposure has increased over the past 2 years.\nAnd 56% said that external disruptions involving factors such as energy, cyber, trade or climate will cause severe operational disruption or have a significant impact on their organization&rsquo;s costs and performance over the next 3-5 years.\nWhen asked which risks were most likely to have the greatest impact on their organization over the next two years, 64% say technology and AI disruption, while 58% say geopolitical conflict and 48% say macroeconomic uncertainty.\nAs far which stage of the chain is currently most exposed to disruption, the responses are as follows;\nResilience has become a strategic priority, with 28% of respondents feeling that energy security and resilience have become a significant strategic priority for their organization&rsquo;s senior leadership. And 70% of respondents indicated they were either confident or very confident that their organization could maintain critical operations during a major external disruption.\nActions that companies are taking to strengthen their resilience are:\nThe authors noted the following takeaways from the survey.\nRisk is increasingly external, networked, and systemic.\nPropagation matters as much as the originating event.\nCompound risks can create non-linear impacts that single-risk analysis misses\nControls and mitigation remain necessary, but resilience (essentially how to get up after a fall) determines survivability.\nCross-sector understandin g is now a management capability, not an academic exercise.\nTechnology can make risk more computable when data, context and governance are integrated, but it can also accelerate the spread of disruption through increasingly connected networks and information channels.\nThe operating mode l needs to move risk from a specialist process to a CEO/CXO decision system.\nThe report offers the following conclusion.\nThe central question is no longer whether the next disruption can be predicted. It is whether the organization has built the intelligence, resilience, and optionality to remain"
-  },
-  {
-   "group": "ai",
-   "source": "Simon Willison",
-   "title": "datasette-charts 0.2a0",
-   "url": "https://simonwillison.net/2026/Nov/24/datasette-charts/",
-   "published": "2026-11-24T04:24:29.000Z",
-   "description": "Release: datasette-charts 0.2a0 I introduced this new charting plugin for Datasette yesterday . Today it's gained integration with Datasette Agent , so now you can ask chat for a chart and it will create one for you using the same underlying chart suggestion and generation tools. Here's a demo video, recorded on agent.datasette.io where you can sign in with GitHub to try the plugin yourself: Download the video (MP4) I prompt Datasette Agent to \"Use #stats to show sqlite-utils downloads over time as a chart\" - where typing \"#stats\" opens a table search box. It shows me a chart inline in the cha",
-   "excerpt": "I introduced this new charting plugin for Datasette yesterday . Today it's gained integration with Datasette Agent , so now you can ask chat for a chart and it will create one for you using the same underlying chart suggestion and generation tools.\nHere's a demo video, recorded on agent.datasette.io where you can sign in with GitHub to try the plugin yourself:\nHere's a Markdown export of the chat from the video.\nThis is a beat by Simon Willison, posted on 24th November 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
   }
  ]
 }
