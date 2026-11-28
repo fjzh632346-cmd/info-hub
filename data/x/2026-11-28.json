@@ -1,0 +1,131 @@
+{
+  "type": "x",
+  "date": "2026-11-28",
+  "items": [
+    {
+      "kind": "prompt",
+      "category": "编程",
+      "score": 88,
+      "author": "数字生命卡兹克",
+      "handle": "@Khazix0918",
+      "url": "https://x.com/Khazix0918/status/2126324185626734795",
+      "posted": "2026-11-27",
+      "metrics": "26.8 万查看 · 3983 赞 · 8331 收藏",
+      "textZh": "卡兹克分享的一条「代码库大扫除」长指令，配合 /goal（让智能体按目标长时间自己跑）使用。核心思路：假设产品今天才诞生、但需求已经全知道，让 AI 把代码库往「理想样子」一步步重构——每种规则只留一个权威来源、同一功能只留一种实现、删掉旧的平行实现和临时补丁、模块高内聚低耦合，并且把定下的规范写成 Lint、类型检查、CI 这类机器能自动检查的约束，防止以后又乱回去。它还规定了每轮必须「迁移完旧代码再删掉」，在独立的 Git worktree（隔离的工作副本）里做、每批改进单独提交、遇到要产品拍板的事先记下来跳过。收藏数是点赞的两倍，说明很多人存下来要用。你用 Claude 写网站和 Agent，项目一大就会出现重复代码，这条可以直接拿来用，但最好先在不重要的项目上试。",
+      "prompt": "/goal 对整个代码库进行系统性的架构降熵、规范化归一、模块解耦和复杂度治理，将其逐步演进为一个高度规整、极易理解、极易维护、适合大量 Agent 并行开发的工程系统。\n\n核心思想：\n\n假设今天是这个产品诞生的第一天，但我们已经知道了\n当前所有真实需求、业务约束和产品形态。\n思考这个代码库在理想情况下应该是什么样子，\n然后通过安全、渐进、可验证的重构向该状态收敛。\n\n追求以下工程属性：\n\n1. Single Source of Truth\n   每一种业务规则、数据定义、配置、状态和设计规范，\n   都应拥有唯一明确的权威来源。\n\n2. Canonical Implementation\n   同一语义、同一职责只保留一种标准实现。\n   全面消除历史遗留的平行实现、重复逻辑、临时补丁、\n   无意义的兼容层和多套并存的技术方案。\n   保留有真实调用方或明确契约要求的兼容能力。\n\n3. Deep Modules\n   参考 John Ousterhout 的 A Philosophy of Software Design。\n   将复杂性封装在内部，通过尽可能简单、稳定的接口暴露能力。\n   减少浅模块、无意义的转发层和泄漏内部实现的抽象。\n\n4. High Cohesion, Low Coupling\n   每个模块都有明确的职责、所有权和依赖方向。\n   模块内部高度内聚，模块之间通过稳定契约交互。\n   消除循环依赖、隐式耦合、跨层访问和共享可变状态。\n\n5. Locality of Change\n   修改一个业务概念时，应尽可能只修改一个逻辑位置。\n   消除一个需求需要同步修改大量无关文件的情况。\n\n6. Deletion over Accumulation\n   优先考虑能否删除不必要的复杂性。\n   每次引入新的标准实现，都要检查并迁移旧调用方，\n   在确认安全后删除被替代的实现。\n   禁止让新旧体系长期并存。\n\n7. Enforceable Architecture\n   将已经确立的工程规范转化为机器可以执行的约束，\n   使用类型系统、Lint、AST 检查、契约测试和 CI，\n   防止未来的开发重新引入已消除的混乱。\n\n执行流程：\n\n首先理解整个代码库的真实业务、架构、历史决策、\n模块关系、技术栈、现有测试和生产约束。\n\n建立完整的架构地图、依赖图、状态所有权地图、\n重复实现清单、技术方案清单和规范偏离清单。\n\n逐个检查并治理：\n\n- UI 组件与设计系统\n- 业务逻辑与领域模型\n- API 接口与数据契约\n- 状态管理与数据流\n- 数据访问与缓存\n- 配置与环境变量\n- 错误处理与重试机制\n- 日志与可观测性\n- 权限与身份认证\n- 命名、目录结构与模块边界\n- 工具函数与公共基础设施\n- 测试、构建与开发工具链\n\n持续运行以下循环：\n\n扫描整个系统\n→ 发现架构熵和规范偏离\n→ 分析真实调用方与依赖关系\n→ 提出多个重构方案\n→ 选择总复杂度最低的方案\n→ 建立行为基线和测试\n→ 完成一批完整的迁移\n→ 删除已被替代的旧实现\n→ 独立复审\n→ 执行验证\n→ 建立防回归约束\n→ 记录结果并继续下一轮\n\n每轮重构必须形成完整闭环，禁止只建立新抽象、\n新目录或新接口，却不迁移原有调用方。\n\n使用 Deletion Test 审视每一层抽象：\n如果删除这一层，复杂性会消失，还是会扩散到调用方？\n只有真正封装复杂性的抽象才值得保留。\n\n验收标准：\n\n- 每种核心业务概念拥有明确的权威实现。\n- 每个核心模块拥有清晰的职责和公开接口。\n- 同一语义不存在未经说明的多套实现。\n- 核心模块间不存在未经批准的循环依赖。\n- 业务逻辑与 UI、存储、框架和外部服务合理解耦。\n- 新增功能可以在明确的模块边界内完成。\n- 已确定的关键架构规范具备自动化防回归检查。\n- 所有现有功能、数据兼容性和对外契约得到保留。\n\n禁止过度抽象、无价值的目录搬迁、为了减少代码行数\n而牺牲可读性，以及为了形式统一而合并语义不同的概念。\n\n在隔离 Git worktree 中执行，每批有效改进独立 commit。\n持续维护进度文件、架构决策记录和优化任务池。\n\n遇到需要产品决策、重大架构变更或破坏性迁移的事项，\n记录为待确认并继续其他独立任务。\n\n无需每轮询问是否继续。\n持续执行，直到高价值治理任务全部收敛，\n或达到运行预算，或不存在可安全实施的进一步改进。",
+      "promptZh": "（原文即中文。几个英文术语的意思：Single Source of Truth＝唯一权威来源；Canonical Implementation＝标准唯一实现；Deep Modules＝深模块，复杂性藏在里面、接口尽量简单；High Cohesion, Low Coupling＝高内聚低耦合；Locality of Change＝改一个需求只动一个地方；Deletion over Accumulation＝优先删除而不是堆积；Enforceable Architecture＝能被机器自动检查的架构规范；Deletion Test＝删掉这一层试试，复杂性是消失还是转移到别处。）"
+    },
+    {
+      "kind": "prompt",
+      "category": "网页设计",
+      "score": 84,
+      "author": "高山仰止（AI 版）",
+      "handle": "@GaoShanZkk",
+      "url": "https://x.com/GaoShanZkk/status/2126351263617200261",
+      "posted": "2026-11-28",
+      "metrics": "2.8 万查看 · 223 赞 · 304 收藏",
+      "textZh": "作者的观点：让 AI 做网页时别只说「做得好看点」「更时尚」这种空形容词，要给它审美参照和明确禁区。他在回复里给了 5 条可直接复制的提示词，组成一套流程：①先让 AI 找 10 个本领域设计出色的真实网站、分析布局字体配色间距，存成 DESIGN.md 当固定规范；②一页里先出 3 个风格完全不同的方案，选定再做；③明确禁止「AI 味」元素（Inter 字体、紫色渐变、发光按钮、4 张并排数据卡片等）；④开新对话让 AI 以第一次访问者的眼光、对比你喜欢的 3 个网站给设计打分挑刺；⑤用 shadcn/ui 组件库和 Magic UI 动效收尾，并在 375 像素手机宽度下逐页检查。这套流程对你用 Claude 做网站很实用。",
+      "prompt": "1.参考捕手\n\n在设计任何东西之前，在我的领域中搜索 10 个真实网站，它们以设计出色著称。截图它们，并向我解释每个网站在页面布局、字体、颜色和间距方面的独特之处。\n\n将结果保存到名为 DESIGN.md 的文件中，作为一个固定参考，所有页面在设计时都应遵守它»\n\n2. 三个初步设计\n\n请在一页上创建 3 个完全不同的设计模型，每个模型基于不同的设计参考，以便我能选择最合适的那个。\n在选择一个模型之前，不要开始构建最终设计。\n\n3. 禁止人工智能设计风格\n\n禁止使用 Inter 字体、紫色渐变、发光按钮、衬线标题并让其中一个词倾斜，或并排放置 4 张统计卡片。\n\n如果设计看起来和其他用人工智能设计的网站一样，就从头重新设计。\n\n4. 以批判的眼光审视设计\n（在新对话中粘贴以下指令，并附上设计图）\n\n想象你是第一次看到这个网站，之前从未浏览过。与我喜欢的三个网站相比，请给它打分，满分10分：[添加三个网站的名称]。\n\n列出所有让设计看起来像是人工智能生成的元素，并按影响程度从最严重到最轻微排序。请在评价时直言不讳，毫不留情。\n\n然后，提出3项修改建议，让设计的评分达到9分（满分10分）。\n\n5. 最终润色\n\n使用 shadcn/ui 库来实现所有界面组件，并使用 Magic UI 添加简单的动态细节。\n\n之后，在 375 像素的屏幕宽度上测试每一页，处理间距、对齐以及鼠标悬停（Hover）交互状态的问题，然后才认为工作完成。",
+      "promptZh": "（原文即中文。shadcn/ui 和 Magic UI 是两个常用的前端组件库，前者给按钮、表单等基础组件，后者给动画小效果。）"
+    },
+    {
+      "kind": "prompt",
+      "category": "编程",
+      "score": 72,
+      "author": "数字生命卡兹克",
+      "handle": "@Khazix0918",
+      "url": "https://x.com/Khazix0918/status/2126294658431201385",
+      "posted": "2026-11-27",
+      "metrics": "10 万查看 · 1052 赞 · 1172 收藏",
+      "textZh": "一个让 Google 的编程智能体 Antigravity「边干边汇报」的小技巧：很多人嫌它闷头干两三个小时不说话、最后突然给结论，不如 Claude 和 Codex 那样随时汇报进度。作者的办法是在项目说明文件 GEMINI.md 里加一句话就行。评论区有人补充：在设置 → 外观 → 对话里把显示模式从 default 改成 verbose 也能达到类似效果。同样的思路也可以用在 CLAUDE.md 里，约束任何智能体的汇报节奏。",
+      "prompt": "干活时边做边说：动手前一句话说要做什么；之后不用每步都说，有发现、换方向、卡住，或者连着干了四五步时再说一句，沉默不行。",
+      "promptZh": "（原文即中文。把这句话写进项目根目录的 GEMINI.md 即可。）",
+      "images": [
+        "https://pbs.twimg.com/media/HYIdgIVawAAFgUv?format=jpg&name=large"
+      ]
+    },
+    {
+      "kind": "prompt",
+      "category": "视频",
+      "score": 70,
+      "author": "Vini",
+      "handle": "@Viniai_",
+      "url": "https://x.com/Viniai_/status/2126281185588555807",
+      "posted": "2026-11-27",
+      "metrics": "21 万查看 · 1984 赞 · 604 收藏",
+      "textZh": "作者用 Opus 5.5 写分镜脚本、再交给字节的视频模型 Seedance 2.5 生成的一段 48 秒短片：诺亚方舟起航前，一只霸王龙把恐龙蛋叼给诺亚托付，然后独自走上岩丘，最后被洪水吞没。完整提示词在作者的第一条回复里。写法值得学：先写「风格 + 角色锁定」（统一画面风格，把诺亚、霸王龙、蛋、方舟的外貌写死，保证每个镜头里长得一样），再统一写声音，然后按时间切成 4 段，每段写清镜头景别、动作和音效。",
+      "prompt": "Prompt :\n\nSTYLE + CHARACTER LOCK\n\nStyle: photorealistic epic biblical film, dark moody overcast sky, muted desaturated grey-brown colour grade, soft diffused stormy light, light drizzle and mist, a flat muddy wet plain stretching to the horizon, anamorphic 35mm cinematic look, shallow depth of field, slow deliberate camera moves, 16:9, 24fps, no text, no subtitles.\nCharacters (keep identical in every shot):\nNOAH – old man around 70, long wavy grey hair, long thick grey-white beard, weathered wrinkled face, pale blue eyes, rough beige-grey woven linen tunic, wooden walking staff.\nT-REX – huge realistic Tyrannosaurus rex, dark grey-brown scaly skin with bumpy ridges over the eyes, glowing amber-orange eyes with slit pupils, rows of sharp teeth, gentle sad behaviour (not aggressive).\nEGG – one big smooth cream-white dinosaur egg, about the size of a large beach ball.\nARK – enormous dark weathered wooden ark with iron-studded planks, a big wooden ramp to a doorway, a small square shuttered window, a warm lantern glow inside.\nSound (always): loud, crisp, full-range cinematic sound design — heavy dinosaur footsteps that shake the ground, deep breathing and soft rumbling purrs, wood creaking, rain and wind, rolling thunder, a huge emotional roar, crashing waves, an emotional orchestral score with low strings, choir and solo cello, deep clean bass, no muffled audio, no dialogue.\n\nClip 1 (0:00–0:15)\n\nLow wide shot at the base of the ARK: the T-REX's huge legs walk past camera toward the wooden ramp, carrying the EGG gently in its mouth, while a pair of giraffes and an elephant walk up the ramp into the ark's doorway. NOAH steps into the doorway. Medium shot: NOAH leans on the door frame with one arm, looking up, staff in hand, awed. Extreme close-up of the T-REX's amber eye blinking slowly, soft and emotional. Close-up: the T-REX lowers its head to the doorway and gently places the EGG into NOAH's arms; NOAH hugs the egg, looking at the dinosaur with tears in his eyes, the teeth just inches from his face.\nSound: earth-shaking footsteps, ramp wood creaking, animal hooves, low dinosaur breathing, a soft emotional rumble, rising cello melody.\n\nClip 2 (0:15–0:24)\n\nOver-the-shoulder shot from behind NOAH standing in the dark doorway holding the EGG: the T-REX turns and slowly walks away across the muddy plain, looking back once. Inside the dark ark, NOAH closes the door, holding the EGG next to a warm oil lantern, only the egg and his face lit. Wide shot: under a dark stormy sky, the T-REX climbs alone up a tall pointed mound of dark rocks in the middle of the empty plain.\nSound: slow heavy footsteps fading, a soft sad rumble, the heavy wooden door slamming shut and echoing, lantern flicker, wind, distant thunder, strings swelling.\n\nClip 3 (0:24–0:37)\n\nLow-angle shot: the T-REX on the rock looks up at the storm and lets out a huge long roar into the dark clouds. High shot over the plain: dark floodwater spreads fast across the land toward the rock, mist rolling. The T-REX turns its head in fear as spray and mist hit it. Wide shot: the ARK sits on the wet plain with a warm lit window, the T-REX tiny on top of the rock behind it; a big wave crashes against the rock as the water rises.\nSound: a massive emotional roar echoing, booming thunder, rushing floodwater rumble, waves crashing, choir rising.\n\nClip 4 (0:37–0:48)\n\nHigh drone shot circling: the T-REX stands alone on top of a small rock pillar in the middle of an endless grey sea, waves hitting the rock, it roars at the sky. Close-up of the ARK wall: the small wooden window shutter opens and NOAH looks out with sad eyes. His view through the dark window frame: far away on the grey sea, a white splash rises where the rock and the dinosaur go under, then the sea goes calm. Final extreme close-up: NOAH's wet face, beard dripping, blue eyes full of tears, mouth slightly open in grief.\nSound: wind and waves, a last fading roar, window latch creak, a distant splash, silence with soft rain, a single cello note and deep low swell ending the film.",
+      "promptZh": "风格 + 角色锁定\n\n风格：写实史诗圣经题材电影，阴沉多云的天空，低饱和灰棕色调，柔和漫射的暴风雨光线，小雨和薄雾，一望无际的泥泞湿地平原，变形宽银幕 35mm 电影质感，浅景深，缓慢克制的运镜，16:9，24 帧，不要文字和字幕。\n角色（每个镜头保持一致）：\n诺亚——约 70 岁老人，灰色长卷发，浓密灰白长胡子，饱经风霜的皱纹脸，浅蓝色眼睛，粗糙米灰色亚麻长袍，木手杖。\n霸王龙——巨大写实的暴龙，深灰棕色鳞皮、眼睛上方有凸起骨脊，发光的琥珀橙色竖瞳，满口利齿，举止温柔悲伤（不具攻击性）。\n蛋——一个光滑的奶白色大恐龙蛋，大约大号沙滩球那么大。\n方舟——巨大、深色、饱经风雨的木方舟，木板上有铁钉，一条宽木坡道通向舱门，一扇带百叶的小方窗，里面透出温暖的灯光。\n声音（始终）：响亮清晰的全频电影级音效——震地的恐龙脚步、深沉的呼吸和低沉呜噜声、木头吱嘎、雨声风声、滚雷、一声巨大的悲情咆哮、拍岸巨浪；悲情管弦配乐，低音弦乐、合唱和大提琴独奏，低音干净，不要发闷，没有对白。\n\n片段 1（0:00–0:15）\n方舟底部低机位大全景：霸王龙巨大的腿从镜头前走过，嘴里轻轻叼着蛋走向木坡道，一对长颈鹿和一头大象正走上坡道进入舱门。诺亚走到门口。中景：诺亚一只手臂倚着门框，手握手杖，抬头仰望，满脸敬畏。霸王龙琥珀色眼睛缓缓眨动的大特写，温柔动情。近景：霸王龙把头低到门口，轻轻把蛋放进诺亚怀里；诺亚抱紧蛋，含泪望着恐龙，利齿离他的脸只有几寸。\n声音：震地脚步、坡道木头吱嘎、动物蹄声、恐龙低沉呼吸、一声温柔的低鸣、渐起的大提琴旋律。\n\n片段 2（0:15–0:24）\n从诺亚身后过肩拍，他抱着蛋站在昏暗门口：霸王龙转身，慢慢穿过泥泞平原离开，回头望了一次。方舟昏暗的舱内，诺亚关上门，抱着蛋靠近一盏温暖的油灯，只有蛋和他的脸被照亮。大全景：暴风雨天空下，霸王龙独自爬上空旷平原中央一座高耸的尖形黑色岩丘。\n声音：沉重脚步渐远、一声悲伤低鸣、厚重木门砰然关上并回响、灯火摇曳、风声、远处雷声、弦乐渐强。\n\n片段 3（0:24–0:37）\n仰拍：岩丘上的霸王龙抬头望向风暴，对着乌云发出一声长长的巨吼。平原俯拍：黑色洪水迅速漫过大地涌向岩丘，雾气翻滚。水花和雾扑来，霸王龙惊恐地转过头。大全景：方舟停在湿漉漉的平原上，窗口透着暖光，后方岩丘顶上是渺小的霸王龙；水位上涨，一个大浪拍上岩丘。\n声音：巨大的悲情咆哮回荡、轰隆雷声、洪水奔涌的低吼、浪涛拍击、合唱升起。\n\n片段 4（0:37–0:48）\n无人机高空环绕：霸王龙独自站在无边灰色大海中一根小石柱顶端，浪打在石柱上，它朝天咆哮。方舟舱壁近景：小木窗的百叶打开，诺亚用悲伤的眼神向外望。他透过昏暗窗框看到的画面：远处灰色海面上，岩石和恐龙沉没处溅起一团白色水花，随后海面归于平静。最后大特写：诺亚湿漉漉的脸，胡子滴水，蓝眼睛噙满泪水，嘴微张，满是悲痛。\n声音：风浪声、最后一声渐弱的咆哮、窗闩吱嘎、远处的落水声、细雨中的寂静，一个大提琴单音和深沉的低音铺底结束全片。",
+      "video": "https://x.com/Viniai_/status/2126281185588555807"
+    },
+    {
+      "kind": "prompt",
+      "category": "视频",
+      "score": 64,
+      "author": "Kristina娜娜酱",
+      "handle": "@nanajiang8888",
+      "url": "https://x.com/nanajiang8888/status/2126270828199444867",
+      "posted": "2026-11-27",
+      "metrics": "6.1 万查看 · 743 赞 · 537 收藏",
+      "textZh": "作者用视频模型 Muse 生成的一段 10 秒竖屏人像视频，效果像真人用手持云台（类似大疆 Osmo Pocket）在酒店房间自拍，皮肤纹理保留得很好。完整提示词在第一条回复。写法要点：分块写清格式、人物外貌、服装、环境与光线（约 3200K 暖光、不要电影调色）、拍摄方式（24mm 广角、手持、真实的加减速，不要数码放大假装推近），再按秒写时间线（0–1.5 秒开场、1.5–2.5 秒快速靠近、之后大特写、低头让头发挡脸、最后抬头微笑闭眼），最后列出要避免的「机器感」运镜。想做写实感视频可以借鉴这种「模拟真人拍摄」的写法。",
+      "prompt": "**VIDEO FORMAT**\n\n10-second video, vertical 9:16, 30fps. Realistic live-action footage, one continuous shot, natural handheld camera operation.\n\n**SUBJECT & APPEARANCE**\n\nA young East Asian woman with very long, voluminous dark brown hair, naturally fluffy roots and loose, slightly messy waves. Her hair falls over both shoulders and covers most of her chest.\n\nSoft Korean-style makeup, naturally fair skin, subtle pink blush, delicate lower eyelashes, natural straight eyebrows, glossy rosy-pink lips and tiny sparkling rhinestone decorations near the outer corners of her eyes.\n\nPreserve natural facial proportions and realistic skin texture. Fine pores, subtle skin details and natural facial expressions. No exaggerated beauty retouching or artificial facial features.\n\n**OUTFIT**\n\nShe wears a simple light-colored, white or ivory garment. Only small portions of the fabric are visible because her extremely long, thick hair naturally covers almost the entire chest and shoulder area. The exact garment design is subtle and not clearly visible. Keep the clothing understated and consistent throughout the video.\n\n**ENVIRONMENT & LIGHTING**\n\nA real hotel bedroom with warm beige walls, a gray-brown blackout curtain on the right side, an air conditioner visible in the upper left background, and warm ceiling lights.\n\nSoft warm indoor lighting, approximately 3200K. Natural warm highlights on the hair, gentle facial shadows and slightly bright exposure. Preserve the original warm cream-colored atmosphere.\n\nNo dramatic studio lighting, no artificial colored lights, no cinematic color grading.\n\n**CAMERA & FILMING STYLE**\n\nAuthentic footage captured with a small handheld gimbal camera, similar to DJI Osmo Pocket footage.\n\nThe camera is physically operated by a person at close range, directly in front of the woman. It should feel spontaneous and casually filmed, not like a professionally choreographed beauty commercial.\n\nNatural wide-angle perspective, approximately 24mm equivalent.\n\nThe camera operator physically changes the camera's distance, position and angle. Movement should have realistic acceleration, deceleration and subtle handheld imperfections.\n\nDo not simulate movement by digitally enlarging the image. Preserve genuine spatial perspective changes as the camera moves closer to the subject.\n\n**TIMELINE & CAMERA MOVEMENT**\n\n**0–1.5 seconds: Natural opening**\n\nStart with a medium close-up showing the woman's head, shoulders, upper chest and part of the hotel room. She looks naturally toward the camera with a relaxed expression and slightly parted lips.\n\nThe camera has subtle organic handheld movement. The framing is not perfectly static or artificially centered.\n\n**1.5–2.5 seconds: Quick physical approach**\n\nThe camera operator naturally moves the camera rapidly toward the woman's face.\n\nThis is a noticeable, continuous physical movement, not a slow cinematic push-in. The camera approaches with a spontaneous hand movement, accelerates naturally and then slows down as it reaches the face.\n\nHer face quickly fills most of the frame. The background shifts in perspective naturally as the physical distance changes.\n\n**2.5–4.5 seconds: Extreme close-up**\n\nThe camera stays extremely close to her face. It makes small, natural positional adjustments around her face rather than continuing to zoom in.\n\nHer eyes, nose, cheeks and lips occupy most of the frame. Individual eyelashes, eye makeup, tiny rhinestones and natural skin texture are visible.\n\nShe maintains a relaxed expression, with subtle eye movements and natural blinking.\n\n**4.5–6.5 seconds: Subtle camera repositioning**\n\nThe camera makes gentle lateral and angular adjustments while remaining very close to her face.\n\nHer facial features shift naturally within the frame. She slightly changes her gaze and subtly turns her head.\n\nKeep the movement spontaneous and imperfect, as if someone is casually filming her from very close range.\n\n**6.5–8.5 seconds: Natural hair movement**\n\nShe gently lowers her head. Her long, thick hair naturally falls forward, partially covering her eyes and face.\n\nSeveral loose strands move across the frame. The camera subtly follows her movement without abruptly changing direction.\n\n**8.5–10 seconds: Natural ending**\n\nShe gradually raises her face again. The camera slightly readjusts its distance and framing.\n\nHer face becomes visible again. She tilts her head slightly, gives a gentle natural smile and softly closes her eyes at the end.\n\n**IMAGE QUALITY**\n\nRealistic high-quality camera footage, natural skin texture, delicate facial details, individual hair strands, realistic depth and natural motion blur.\n\nKeep the original warm indoor color temperature, soft highlights and natural exposure. The skin should look clear, fresh and naturally luminous, never plastic or excessively retouched.\n\nMaintain consistent facial appearance, hairstyle, clothing and environment throughout the entire video.\n\n**MOTION REQUIREMENTS**\n\nOne continuous shot without cuts or transitions.\n\nCamera movement must feel physically operated by a human, with natural changes in speed, distance, angle and framing.\n\nAvoid mechanical constant-speed camera movement, artificial digital zoom, perfectly smooth robotic motion, static portrait framing, exaggerated handheld shaking, stiff facial expressions and artificial beauty-commercial aesthetics.",
+      "promptZh": "【视频格式】10 秒，竖屏 9:16，30 帧。写实真人实拍画面，一镜到底，自然的手持拍摄。\n\n【人物与外貌】一位年轻东亚女性，非常长、蓬松的深棕色头发，发根自然蓬松，松散略凌乱的波浪卷；头发垂过双肩，遮住大部分胸前。韩系淡妆，自然白皙的皮肤，淡粉腮红，精致的下睫毛，自然平直的眉毛，水润玫瑰粉唇，眼尾有细小闪亮的水钻装饰。保留自然的五官比例和真实皮肤质感：细小毛孔、细微皮肤细节、自然表情。不要夸张美颜或假的五官。\n\n【服装】简单的浅色（白色或象牙色）衣服。因为极长极厚的头发几乎盖住了整个胸前和肩部，只露出少量布料，具体款式不明显。整段视频衣服保持低调、一致。\n\n【环境与光线】真实的酒店卧室：暖米色墙面，右侧灰棕色遮光窗帘，左上方背景能看到空调，暖色吸顶灯。柔和的室内暖光，约 3200K；头发上有自然暖色高光，脸部阴影柔和，曝光略亮；保留原本温暖的奶油色氛围。不要戏剧化的影棚灯、不要人工彩色灯、不要电影调色。\n\n【机位与拍摄风格】真实感画面，像用小型手持云台相机（类似大疆 Osmo Pocket）拍的。镜头由一个人在近距离、正对女生手持操作，要显得随手、即兴，而不是精心编排的美妆广告。自然广角，约等效 24mm。拍摄者真的移动相机来改变距离、位置和角度，运动要有真实的加速、减速和轻微的手持不完美。不要用数码放大来假装移动，镜头靠近时要有真实的空间透视变化。\n\n【时间线与运镜】\n0–1.5 秒（自然开场）：中近景，拍到头、肩、上胸和部分酒店房间。她自然地看向镜头，表情放松，嘴唇微张。镜头有轻微自然的手持晃动，构图不刻意静止或居中。\n1.5–2.5 秒（快速靠近）：拍摄者自然地把相机快速移向她的脸。这是明显、连续的真实移动，不是缓慢的电影推镜：随手一推，自然加速，到脸前再减速。她的脸很快占满大部分画面，背景因距离变化自然产生透视变化。\n2.5–4.5 秒（大特写）：镜头停在离脸极近的位置，在脸周围做细小自然的位置调整，而不是继续放大。眼睛、鼻子、脸颊、嘴唇占据大部分画面，能看清每根睫毛、眼妆、小水钻和自然皮肤纹理。她保持放松表情，眼神轻微移动，自然眨眼。\n4.5–6.5 秒（轻微换位）：镜头在贴近脸的同时做轻柔的横向和角度调整，五官在画面里自然移动。她稍微改变视线，轻轻转头。运动要随性、不完美，像有人随手在极近距离拍她。\n6.5–8.5 秒（头发自然动）：她轻轻低头，长而厚的头发自然向前垂落，部分遮住眼睛和脸，几缕散发划过画面。镜头轻微跟随，不突然改变方向。\n8.5–10 秒（自然收尾）：她慢慢抬起脸，镜头稍微重新调整距离和构图。脸再次露出，她微微歪头，露出温柔自然的微笑，最后轻轻闭上眼睛。\n\n【画质】高质量写实画面，自然皮肤质感，精致五官细节，根根分明的发丝，真实景深和自然的运动模糊。保留原本的暖色室内色温、柔和高光和自然曝光。皮肤要清透、干净、自然有光泽，绝不能像塑料或过度修图。整段视频保持面容、发型、服装和环境一致。\n\n【运动要求】一镜到底，没有剪辑或转场。镜头运动必须像人手操作，速度、距离、角度和构图自然变化。避免：机械匀速运镜、人工数码变焦、过于平滑的机器人式运动、静态人像构图、夸张的手抖、僵硬表情和刻意的美妆广告感。",
+      "video": "https://x.com/nanajiang8888/status/2126270828199444867"
+    },
+    {
+      "kind": "news",
+      "category": "视频",
+      "score": 70,
+      "author": "Riley Brown",
+      "handle": "@rileybrown",
+      "url": "https://x.com/rileybrown/status/2126431351914233943",
+      "posted": "2026-11-28",
+      "metrics": "6.7 万查看 · 1394 赞 · 2186 收藏",
+      "textZh": "Riley Brown 发布了免费开源的 v2（v2.video），自称「给 AI 剪视频用的 GitHub」。它本身不是剪辑软件，而是给视频做版本管理：把每一版视频连同背后的提示词、素材文件和评论都存下来，让智能体慢慢学会你的喜好；视频公开后，别人在自己的智能体里粘贴一条提示词就能「分叉」（复制一份改）任意版本。支持 Hyperframes、Remotion 等用代码生成视频的工具，有命令行工具（GitHub：agentnativeinc/v2），官网免费托管。作者说团队一个月来所有剪辑都交给 AI 做了，下周会加团队协作和密码保护。他判断 18 个月内主力「剪辑软件」会变成 Claude Code、Codex 这类智能体——这是他的个人判断。"
+    },
+    {
+      "kind": "opinion",
+      "category": "其他",
+      "score": 68,
+      "author": "Andrej Karpathy",
+      "handle": "@karpathy",
+      "url": "https://x.com/karpathy/status/2126347015198302437",
+      "posted": "2026-11-28",
+      "metrics": "2.8 万查看 · 704 赞",
+      "textZh": "Karpathy 前几天让 Claude（Opus 5.5）用美国 31 个公开数据源（人口普查、劳工统计、能源、气象等）做了一个「文明」风格的全美策略游戏地图；随后有印度团队照着做了全印度版。Karpathy 在回复里说，他真正着迷的是「数字孪生」——给工厂这类真实物体或系统建一个会动态变化的虚拟模型，只不过这次对象是整个国家。对你的意义：数字孪生在仓储物流里已经很常用（用虚拟仓库模拟设备排布和订单波峰），现在用 AI 编程工具 + 公开数据，个人也能搭出像样的原型，可以当课程设计或作品集的方向。评论区也有做仿真的人提醒：孪生模型如果没法验证和现实一致，输出就不可信。"
+    },
+    {
+      "kind": "opinion",
+      "category": "其他",
+      "score": 64,
+      "author": "Elia De Leo",
+      "handle": "@eliadele",
+      "url": "https://x.com/eliadele/status/2126306424892670051",
+      "posted": "2026-11-27",
+      "metrics": "5.3 万查看 · 1848 赞",
+      "textZh": "一位开发者的使用体会：最近用 Google 的 Gemini 4 Neon 特别多，用它来审查 Claude Fable 写的代码、并替 Fable 写开发计划。他的结论是：大规模功能实现和设计仍然是 Fable 更强，其他事情 Neon「好得吓人」。他的具体分工是：Neon 在计划文档上批注修改 → Fable 负责大块代码 → Neon 再审查改动。评论区还提到 Neon 的额度很宽裕，以及它会主动记起之前的对话。这是个人体验，不是正式测评，但「两个不同公司的模型互相审查」这种用法值得参考。"
+    },
+    {
+      "kind": "opinion",
+      "category": "研究",
+      "score": 62,
+      "author": "Ethan Mollick",
+      "handle": "@emollick",
+      "url": "https://x.com/emollick/status/2126345004746707119",
+      "posted": "2026-11-27",
+      "metrics": "3.2 万查看 · 473 赞",
+      "textZh": "沃顿商学院教授 Mollick 的提醒：至少目前，想用 AI 做出新发现，你自己得懂这个领域。AI 很容易给出看起来很激动人心的结果，但如果你不知道该做哪些检验、不了解背景、「闻」不出哪里不对，这些结果往往是错的。评论区有人讽刺有人声称用 AI「破译」了印度河文字。对你的意义：用 AI 写课程论文、做数据分析时，结论要自己能核对；专业基础课不是可以省掉的东西。"
+    },
+    {
+      "kind": "opinion",
+      "category": "其他",
+      "score": 50,
+      "author": "歸藏",
+      "handle": "@op7418",
+      "url": "https://x.com/op7418/status/2126306059648462936",
+      "posted": "2026-11-27",
+      "metrics": "10 万查看 · 663 赞 · 300 收藏",
+      "textZh": "歸藏推荐了《黑神话：悟空》制作人冯骥当天在公众号发的文章《后 AI 时代最重要的问题》，讨论 AI 时代财富该怎么分配。歸藏在后续帖子里概括自己的理解：AI 的数据和每一次进步都来自全人类留下的内容，所以每个人都该分到 AI 创造财富的「原始股」，未来要把 AI 带来的财富更普惠地分给每个人（冯骥原文也提到坚持按劳分配为基础）。原文在微信公众号，帖子里只有二维码，有兴趣可以去搜标题读全文。"
+    }
+  ]
+}
