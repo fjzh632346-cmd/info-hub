@@ -1,0 +1,240 @@
+{
+ "type": "daily",
+ "date": "2026-11-28",
+ "headline": "周六信息偏少：AI 侧值得读的是 MCP 为何仍被看好；仓储侧 GXO 加码机器人试点，人形机器人仍在验 ROI。",
+ "sections": [
+  {
+   "key": "ai",
+   "title": "AI",
+   "items": [
+    {
+     "pick": true,
+     "title": "为什么在 Skills 和 CLI 流行后，我反而更看好 MCP",
+     "source": "Philipp Schmid（经 AIHOT 收录）",
+     "published": "2026-11-26",
+     "readMinutes": 8,
+     "summary": "作者认为 MCP（让模型调用外部工具的通用协议）经历炒作与反弹后依然健康：Linear、Notion 里约一半新建 issue/页面（每周约 240 万条）由智能体创建，Atlassian 每个工作日 MCP 工具调用超 500 万次，其中 44% 用户来自软件团队之外。文中梳理了代码模式、Skills、Events、MCP Apps 四个方向。原文英文，AIHOT 提供了中文译文。",
+     "takeaways": [
+      "代码模式：不再把几十个工具说明塞进提示词，而是让模型在沙箱里写代码调用 MCP 工具，缓解“上下文膨胀”",
+      "Claude Code、OpenAI Codex、OpenCode 2.0 等已把代码模式作为默认做法",
+      "非程序员场景（Atlassian 44% 用户）里 CLI 本来就不是选项，这是 MCP 的存在理由",
+      "2026-07-28 版规范移除了有状态会话并加入官方扩展"
+     ],
+     "why": "你平时用 Claude 做 Agent，这篇有真实用量数据，能帮你判断做 Agent 该选 MCP 还是 Skills/CLI，对 AI 交付工程师方向也是常识性素材。",
+     "url": "https://x.com/_philschmid/status/2125945282072297794",
+     "tags": [
+      "观点",
+      "数据"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "群体、鸟群、帮派：怎么构建、训练和评估多智能体系统（第 1 部分）",
+     "source": "Hugging Face",
+     "published": "2026-11-26",
+     "readMinutes": 15,
+     "summary": "Hugging Face 新开的系列博客，第一篇讲多智能体（多个 AI 分工协作）为什么难：加入智能体会改变上下文和预算，简单混合各自上下文并不天然提升效果，模型需要通过训练学会沟通。文中示例可在 Hugging Face Jobs 上复现，约 5 小时、两块 H200，成本约 50 美元。原文英文。",
+     "takeaways": [
+      "多智能体不是堆数量就变强，沟通要靠训练学出来",
+      "系列会用小而便宜的模型做可复现实验",
+      "示例成本约 50 美元，说明入门门槛不算高"
+     ],
+     "why": "你想做 Agent 项目，这是少见的从原理到可复现实验的教程；即使不跑训练，也能建立多 Agent 设计的判断框架。",
+     "url": "https://huggingface.co/blog/training-swarms",
+     "tags": [
+      "教程"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "AI 训练数据市场内幕：编程数据怎么卖给前沿实验室",
+     "source": "Latent Space（访谈 G2i 创始人 Gabe Greenberg）",
+     "published": "2026-11-27",
+     "readMinutes": 40,
+     "summary": "长访谈：实验室为独占的训练数据付更高价，对竞品也能买的数据则要折扣；好的训练任务应“略超出模型当前能力”，由资深工程师设计任务、选起始数据并写可打分的验证器（verifier）。同期 AINews 称这类创业公司成立约一年、年合同额各约 1 亿美元。原文为英文播客，页面有要点文字。",
+     "takeaways": [
+      "训练任务设计：任务、起始数据、验证器三件套",
+      "独占与非独占数据的定价差异",
+      "小额试点如何变成大合同，何时值得自建数据团队"
+     ],
+     "why": "想了解 AI 行业的钱怎么流动、AI 交付/数据类岗位具体做什么，可以听这一期；偏行业认知，不必逐字听。",
+     "url": "https://latent.space/p/inside_the_ai_training_data_market_gabe_greenberg_g2i/",
+     "tags": [
+      "访谈"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": false,
+     "title": "MIT 与微软论文：Copilot 使大公司初级程序员招聘下降约 40%",
+     "source": "AIHOT 整理",
+     "summary": "覆盖 5,414 家公司的自然实验：采用 Copilot 一年后初级招聘降约 40%，资深招聘持平。",
+     "url": "https://aihot.news/items/hyofqy3ukzks1eyr4bu317bez"
+    },
+    {
+     "pick": false,
+     "title": "Dragos 称 MiniMax 在用户要求不存储时仍打开提示词中的私有链接",
+     "source": "AIHOT 整理",
+     "summary": "安全公司金丝雀测试结论，转述自推文，暂无厂商回应信息。",
+     "url": "https://aihot.news/items/v5fxjqr2vapkk9vn1j9a8ke96"
+    },
+    {
+     "pick": false,
+     "title": "InternLM 发布基于 MiniCPM-o 4.5 的开源全双工语音视频模型 Sage-Interaction",
+     "source": "AIHOT 整理",
+     "summary": "可边说边听，并把复杂任务交给后端模型；目前为 OpenBMB 点评，暂无独立测评。",
+     "url": "https://aihot.news/items/l9md8ugx8e2zlm5g1tuqthmaw"
+    },
+    {
+     "pick": false,
+     "title": "蚂蚁 inclusionAI 开源图像生成模型 Ming-Image-0.2-Design",
+     "source": "AIHOT 整理",
+     "summary": "改进复杂构图、光照和文字渲染，面向电商主图和 UI 设计稿；暂无独立测评。",
+     "url": "https://huggingface.co/inclusionAI/Ming-Image-0.2-Design"
+    },
+    {
+     "pick": false,
+     "title": "Nvidia 暂停向东南亚四国发运服务器",
+     "source": "AIHOT 整理",
+     "summary": "据 FT，因美国要求这些国家的先进 AI 芯片需许可，中国实验室的租算力通道受影响。",
+     "url": "https://aihot.news/items/rlt60gq96bl1cf5b88o8rbj30"
+    },
+    {
+     "pick": false,
+     "title": "实测支付宝 SkillPay：把 Skill 挂上去卖钱",
+     "source": "AIHOT 整理（卡兹克）",
+     "summary": "支持买断和订阅两种模式，买断定价 0.01–50 元，订阅上限 50 元。",
+     "url": "https://aihot.news/items/cdkswjz368inpelrz3f52rekx"
+    },
+    {
+     "pick": false,
+     "title": "Antigravity 技巧：GEMINI.md 加一句话让模型边干活边汇报",
+     "source": "AIHOT 整理（卡兹克）",
+     "summary": "要求动手前说明、卡住或连续几步后汇报，改善长任务的掌控感。",
+     "url": "https://x.com/Khazix0918/status/2126294658431201385"
+    },
+    {
+     "pick": false,
+     "title": "Hugging Face：在 Trainium3 上用 LTX-2.5 生成视频",
+     "source": "Hugging Face",
+     "summary": "10 秒带声音视频约 22–23 秒生成（2048×1024，半台机器），作者称与 LTX 官方 API 相当。",
+     "url": "https://huggingface.co/blog/video-trainium3"
+    }
+   ]
+  },
+  {
+   "key": "wh",
+   "title": "仓储物流自动化",
+   "items": [
+    {
+     "pick": true,
+     "title": "GXO 2027 年加码机器人：Apollo 人形、Exotec、Dexory 等试点与部署",
+     "source": "The Robot Report",
+     "published": "2026-11-27",
+     "readMinutes": 6,
+     "summary": "GXO 计划 2027 年在美国重点站点分阶段加快“自适应技术”部署，未披露供应商。文章梳理其已有机器人：与 Apptronik 合作最多 1,000 台 Apollo 人形，Apptronik 称在齐套（kitting）任务上达到人类基准的 96% 效率；还涉及 Exotec 立体仓、Dexory 盘点机器人、Agility Digit。原文英文。",
+     "takeaways": [
+      "人形机器人目前在验证 KPI 和 ROI，之后才进入现场验收测试",
+      "试点任务包括货到人/人到货拣选、箱与料箱搬运、打包、分拣",
+      "第三方物流商（3PL）把多种机器人并行试点，而不是押单一方案"
+     ],
+     "why": "GXO 是全球大型 3PL，看它实际用什么机器人、在哪些环节试，对理解仓储自动化落地节奏、写实习/考研面试里的行业认知很有用。",
+     "url": "https://www.therobotreport.com/gxo-doubling-down-on-robotics-in-2027/",
+     "tags": [
+      "案例"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "黑色星期五 2026：结账之后才是物流的账单",
+     "source": "Logistics Viewpoints",
+     "published": "2026-11-27",
+     "readMinutes": 6,
+     "summary": "文章引用 Adobe 预测：黑五美国线上消费 129 亿美元（+9.2%），网络星期一 151 亿，整个假日季线上 2751 亿（+6.7%）；NRF 预测假日零售总额 1.013 万亿美元（+4.2%）。作者强调每个订单都带来仓储、运输、人工、客服和退货成本，折扣叠加后履约利润才是关键。原文英文。",
+     "takeaways": [
+      "销售增长不等于盈利，履约成本和退货要一起算",
+      "预测数据可作旺季仓配压力的背景数字",
+      "物流从业者看的是“订单交付后还剩多少收入”"
+     ],
+     "why": "理解仓库为何要上自动化、旺季为什么吃紧，这篇给了可引用的数据和视角，对物流工程专业课和面试有用。",
+     "url": "https://logisticsviewpoints.com/2026/11/27/black-friday-2026-the-logistics-bill-arrives-after-checkout/",
+     "tags": [
+      "数据",
+      "观点"
+     ],
+     "vendorClaim": false
+    },
+    {
+     "pick": true,
+     "title": "Deep Current 报告：2027 年物流科技融资回升，但投资人要看可衡量的节省",
+     "source": "DC Velocity",
+     "published": "2026-11-25",
+     "readMinutes": 4,
+     "summary": "挪威物流 AI 公司 Deep Current 的报告称，2026 年物流科技交易大增，2027 年货运市场偏软，只有嵌入明确工作流并带来可衡量节省的 AI 才会被买单。报告基于对物流、航运高管的访谈和公司披露。注意这是 AI 厂商自己的报告。原文英文。",
+     "takeaways": [
+      "“嵌入式 AI”：放在流程里能推动下一步的才留得下",
+      "覆盖货代、集装箱航运、仓储、港口等领域",
+      "工具堆叠而无清晰流程只会增加混乱"
+     ],
+     "why": "对想进供应链/互联网公司做 AI 相关岗位的你，可看清买方对 AI 的真实要求：能量化节省。",
+     "url": "https://www.dcvelocity.com/technology/artificial-intelligence/tech-funding-will-rise-in-2027-but-ai-investors-will-demand-measurable-savings",
+     "tags": [
+      "报告"
+     ],
+     "vendorClaim": true
+    },
+    {
+     "pick": false,
+     "title": "小鹏发布新一代人形机器人 Iron，计划 2027 年 1 月量产",
+     "source": "Robotics & Automation News",
+     "summary": "AI Day 上发布，称约每 2.5 分钟下线一台，主要是厂商说法，与仓储关系有限。",
+     "url": "https://roboticsandautomationnews.com/2026/11/27/the-iron-age-xpeng-prepares-for-mass-production-of-its-humanoid-robot/107831/"
+    },
+    {
+     "pick": false,
+     "title": "蚂蚁灵波开源机器人导航与空间记忆模型",
+     "source": "Robotics & Automation News",
+     "summary": "Robbyant 开源提升机器人导航和空间记忆的 AI 模型，暂无独立测评。",
+     "url": "https://roboticsandautomationnews.com/2026/11/27/robbyant-open-sources-ai-models-to-improve-robotic-navigation-and-spatial-memory/107827/"
+    },
+    {
+     "pick": false,
+     "title": "Lute 融资 2000 万美元，做触觉基础模型，面向零售和仓储",
+     "source": "Robotics & Automation News",
+     "summary": "让机器人除视觉外使用触觉信息判断抓握力和易碎程度，成立于 2026 年 1 月。",
+     "url": "https://roboticsandautomationnews.com/2026/11/26/lute-raises-20-million-to-give-robots-a-sense-of-touch/107756/"
+    },
+    {
+     "pick": false,
+     "title": "Frazier 将在德州建 2000 万美元货架工厂",
+     "source": "DC Velocity",
+     "summary": "仓储货架产能扩张的新闻，细节有限。",
+     "url": "https://www.dcvelocity.com/material-handling/storage/racking/frazier-to-build-20-million-rack-factory-in-texas"
+    },
+    {
+     "pick": false,
+     "title": "自动化装卸月台变得更容易",
+     "source": "DC Velocity",
+     "summary": "介绍月台自动化的趋势与方案。",
+     "url": "https://www.dcvelocity.com/material-handling/automating-your-loading-docks-just-got-easier"
+    },
+    {
+     "pick": false,
+     "title": "DHL、DSV、Kuehne+Nagel：货代规模能否改善服务",
+     "source": "Logistics Viewpoints",
+     "summary": "以 DSV 整合 Schenker 为例，三季度利润增长但欧洲公路业务一度受扰。",
+     "url": "https://logisticsviewpoints.com/2026/11/26/dhl-dsv-and-kuehne-nagel-does-forwarding-scale-improve-service/"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "抓取失败：Epoch AI、Import AI（HTTP 403）、Symbotic IR（403）、Interact Analysis、Locus Robotics（410）、国家统计局（超时）。AIHOT 各接口均正常。",
+  "今日是周六，过去 24 小时新内容较少，AI 精读部分为过去 1–2 天内容；未做额外 WebSearch，也未发现重大新模型发布（本周 GPT-6.2、Gemini 4 等已在周报中）。",
+  "Schmid 原文为 X 链接，正文依据 AIHOT 提供的译文；速览中 DC Velocity、Logistics Viewpoints 条目依据 feed 摘录。",
+  "MIT/微软论文、MiniMax 隐私等条目仅有 AIHOT 摘要，只放速览。"
+ ]
+}
