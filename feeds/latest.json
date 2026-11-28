@@ -1,19 +1,19 @@
 {
- "fetchedAt": "2026-11-28T03:58:05.920Z",
+ "fetchedAt": "2026-11-28T18:15:39.912Z",
  "hours": 72,
  "status": [
-  {
-   "source": "OpenAI",
-   "feed": "https://openai.com/news/rss.xml",
-   "ok": true,
-   "total": 1430,
-   "recent": 0
-  },
   {
    "source": "Anthropic Engineering",
    "feed": "https://znck.github.io/feeds/anthropic-engineering.xml",
    "ok": true,
    "total": 26,
+   "recent": 0
+  },
+  {
+   "source": "OpenAI",
+   "feed": "https://openai.com/news/rss.xml",
+   "ok": true,
+   "total": 1430,
    "recent": 0
   },
   {
@@ -23,13 +23,6 @@
    "error": "HTTP 403"
   },
   {
-   "source": "Hugging Face",
-   "feed": "https://huggingface.co/blog/feed.xml",
-   "ok": true,
-   "total": 919,
-   "recent": 6
-  },
-  {
    "source": "Google DeepMind",
    "feed": "https://deepmind.google/blog/rss.xml",
    "ok": true,
@@ -37,8 +30,22 @@
    "recent": 0
   },
   {
+   "source": "Hugging Face",
+   "feed": "https://huggingface.co/blog/feed.xml",
+   "ok": true,
+   "total": 919,
+   "recent": 5
+  },
+  {
    "source": "a16z",
    "feed": "https://www.a16z.news/feed",
+   "ok": true,
+   "total": 20,
+   "recent": 0
+  },
+  {
+   "source": "Google AI",
+   "feed": "https://blog.google/technology/ai/rss/",
    "ok": true,
    "total": 20,
    "recent": 0
@@ -61,7 +68,7 @@
    "feed": "https://simonwillison.net/atom/everything/",
    "ok": true,
    "total": 30,
-   "recent": 7
+   "recent": 8
   },
   {
    "source": "Interconnects",
@@ -71,18 +78,11 @@
    "recent": 0
   },
   {
-   "source": "Google AI",
-   "feed": "https://blog.google/technology/ai/rss/",
+   "source": "Latent Space",
+   "feed": "https://www.latent.space/feed",
    "ok": true,
    "total": 20,
-   "recent": 0
-  },
-  {
-   "source": "Sequoia",
-   "feed": "https://www.sequoiacap.com/feed/",
-   "ok": true,
-   "total": 50,
-   "recent": 0
+   "recent": 5
   },
   {
    "source": "Benedict Evans",
@@ -95,8 +95,15 @@
    "source": "BestBlogs 每日早报",
    "feed": "https://www.bestblogs.dev/zh/feeds/rss/daily-brief",
    "ok": true,
-   "total": 7,
-   "recent": 4
+   "total": 6,
+   "recent": 3
+  },
+  {
+   "source": "Sequoia",
+   "feed": "https://www.sequoiacap.com/feed/",
+   "ok": true,
+   "total": 50,
+   "recent": 0
   },
   {
    "source": "宝玉",
@@ -106,21 +113,14 @@
    "recent": 0
   },
   {
-   "source": "Latent Space",
-   "feed": "https://www.latent.space/feed",
-   "ok": true,
-   "total": 20,
-   "recent": 6
-  },
-  {
    "source": "Symbotic IR",
    "feed": "https://ir.symbotic.com/rss/news-releases.xml",
    "ok": false,
    "error": "HTTP 403"
   },
   {
-   "source": "Daifuku",
-   "feed": "https://www.daifuku.com/rss_all.xml",
+   "source": "Symbotic",
+   "feed": "https://www.symbotic.com/feed/",
    "ok": true,
    "total": 10,
    "recent": 0
@@ -133,8 +133,22 @@
    "recent": 0
   },
   {
-   "source": "Symbotic",
-   "feed": "https://www.symbotic.com/feed/",
+   "source": "Daifuku",
+   "feed": "https://www.daifuku.com/rss_all.xml",
+   "ok": true,
+   "total": 10,
+   "recent": 0
+  },
+  {
+   "source": "Georgia Tech SCL",
+   "feed": "https://www.scl.gatech.edu/rss.xml",
+   "ok": true,
+   "total": 10,
+   "recent": 0
+  },
+  {
+   "source": "Automated Warehouse",
+   "feed": "https://www.automatedwarehouseonline.com/feed/",
    "ok": true,
    "total": 10,
    "recent": 0
@@ -146,38 +160,10 @@
    "error": "fetch failed"
   },
   {
-   "source": "Georgia Tech SCL",
-   "feed": "https://www.scl.gatech.edu/rss.xml",
-   "ok": true,
-   "total": 10,
-   "recent": 0
-  },
-  {
    "source": "Logistics Viewpoints",
    "feed": "https://logisticsviewpoints.com/feed/",
    "ok": true,
    "total": 10,
-   "recent": 6
-  },
-  {
-   "source": "Automated Warehouse",
-   "feed": "https://www.automatedwarehouseonline.com/feed/",
-   "ok": true,
-   "total": 10,
-   "recent": 0
-  },
-  {
-   "source": "MH&L",
-   "feed": "https://www.mhlnews.com/__rss/website-scheduled-content.xml?input=%7B%22sectionAlias%22%3A%22home%22%7D",
-   "ok": true,
-   "total": 25,
-   "recent": 1
-  },
-  {
-   "source": "DC Velocity",
-   "feed": "https://www.dcvelocity.com/rss",
-   "ok": true,
-   "total": 30,
    "recent": 5
   },
   {
@@ -188,6 +174,13 @@
    "recent": 1
   },
   {
+   "source": "MH&L",
+   "feed": "https://www.mhlnews.com/__rss/website-scheduled-content.xml?input=%7B%22sectionAlias%22%3A%22home%22%7D",
+   "ok": true,
+   "total": 25,
+   "recent": 0
+  },
+  {
    "source": "Supply Chain 24/7 自动化",
    "feed": "https://feeds.feedburner.com/sc247/rss/automation",
    "ok": true,
@@ -195,11 +188,11 @@
    "recent": 0
   },
   {
-   "source": "Supply Chain Dive",
-   "feed": "https://www.supplychaindive.com/feeds/news/",
+   "source": "DC Velocity",
+   "feed": "https://www.dcvelocity.com/rss",
    "ok": true,
-   "total": 10,
-   "recent": 4
+   "total": 30,
+   "recent": 0
   },
   {
    "source": "Locus Robotics",
@@ -208,11 +201,18 @@
    "error": "HTTP 410"
   },
   {
+   "source": "Supply Chain Dive",
+   "feed": "https://www.supplychaindive.com/feeds/news/",
+   "ok": true,
+   "total": 10,
+   "recent": 1
+  },
+  {
    "source": "AIHOT",
    "feed": "https://aihot.news/rss",
    "ok": true,
    "total": 50,
-   "recent": 24
+   "recent": 14
   },
   {
    "source": "36氪快讯",
@@ -252,6 +252,24 @@
  "items": [
   {
    "group": "ai",
+   "source": "Simon Willison",
+   "title": "Code-driven AI illustrations are more useful than images from dedicated image models",
+   "url": "https://simonwillison.net/2026/Nov/28/code-driven-ai-illustrations/",
+   "published": "2026-11-28T17:45:40.000Z",
+   "description": "An interesting trend in frontier LLMs released in the second half of 2026 is that they tend to be much better at visual reasoning and creative \"design\" than their predecessors. If you ask these text-output models to create a 2D image (or a 3D model, as discussed here previously ), you're very likely to get a useful result, and you may even get one that's aesthetically impressive. Most importantly, because these images are defined using code you (or the model) can make further edits to them without any of the weirdness that comes from iterating with a text-input, image-output model. Poster desi",
+   "excerpt": "An interesting trend in frontier LLMs released in the second half of 2026 is that they tend to be much better at visual reasoning and creative “design” than their predecessors. If you ask these text-output models to create a 2D image (or a 3D model, as discussed here previously ), you’re very likely to get a useful result, and you may even get one that’s aesthetically impressive. Most importantly, because these images are defined using code you (or the model) can make further edits to them without any of the weirdness that comes from iterating with a text-input, image-output model.\nGemini 4 Neon is getting some buzz for its 2D design skills, so I decided to try it out in AI Studio starting with the prompt:\nCreate an SVG poster promoting the Kakapo recovery project, research details first, make the poster look really cool and give it a 1970s graphic design\nIt took some iteration, partly because AI Studio doesn’t render SVGs, so the models there can’t spot visual mistakes without assistance.\nMake the kakapo a bit more realistic, especially the face (image search for references)\n[IMAGE] The text here doesn't fit the pill, fix it\nHere’s the full transcript , exported from AI Studio as Markdown because I couldn’t find a way to share a session that didn’t require a Google login to view.\nAI Studio ran Google searches to find those numbers—I’ve checked and they are all correct. I like that it included red rimu tree fruit on the branch, since those are essential for the breeding season .\nWhether or not you like the poster, the key thing about it is that everything is editable . You can directly edit the text in the SVG, or you can open it in Inkscape or Adobe Illustrator or Boxy SVG and edit it visually.\nI have a well documented fondness for SVG generation, but it’s not the only game in town.\nA model hooked up to a coding agent environment can execute code to generate images. This opens up a whole realm of possibilities—generated image files, HTML and CSS, 2D HTML Canvas elements, Blender scripts, WebGPU shaders, PDF... any image mechanism that can be represented by a file on disk or the output of a script can be targeted by a model with a coding agent.\nOne of the reasons vibe game development has exploded recently is that models like Claude Opus 5.5 and GPT-6 Astra and Gemini 4 Neon are capable of creating good-enough quality game assets—3D models, textures, sprites, etc—entirely through writing code.\nBuilding them with code means that tweaking, reusing, and remix"
+  },
+  {
+   "group": "ai",
+   "source": "AIHOT",
+   "title": "MiniMax 评估内部模型逆向能力：200 万行 Rust 克隆知名二进制分析软件",
+   "url": "https://aihot.news/items/j903zx9d0v80rsxi3aw7yj12s",
+   "published": "2026-11-28T12:52:31.000Z",
+   "description": "MiniMax 发布对内部最智能模型逆向工程能力的内部评估报告，称模型可自主编排多智能体对闭源软件做端到端功能复刻，并绕过代码混淆与虚拟化保护。 🔗 阅读原文 via AIHOT · https://aihot.news/items/j903zx9d0v80rsxi3aw7yj12s",
+   "excerpt": "MiniMax 发布对内部最智能模型逆向工程能力的内部评估报告，称模型可自主编排多智能体对闭源软件做端到端功能复刻，并绕过代码混淆与虚拟化保护。\nMiniMax 以内部模型实测闭源软件克隆与虚拟化脱壳，给出了具体数字和能力边界，对关注软件保护体系的读者有参考价值。\nMiniMax 以内部模型实测闭源软件克隆与虚拟化脱壳，给出了具体数字和能力边界，对关注软件保护体系的读者有参考价值。"
+  },
+  {
+   "group": "ai",
    "source": "BestBlogs 每日早报",
    "title": "EP250 · Cloudflare 自训小模型、腾讯治理智能体记忆、Clay 重做销售智能体",
    "url": "https://www.bestblogs.dev/explore/brief/2026-11-28?utm_source=rss&utm_medium=feed&utm_campaign=daily_brief&entry=rss_brief_index",
@@ -284,7 +302,7 @@
    "url": "https://latent.space/p/inside_the_ai_training_data_market_gabe_greenberg_g2i/",
    "published": "2026-11-27T22:19:18.000Z",
    "description": "A frontier lab can pay more for training data it gets to keep exclusive, or take a discount on data another lab can buy too. At AI Engineer CODE, G2i founder Gabe Greenberg tells swyx how labs make that decision, how small pilot orders turn into bigger...",
-   "excerpt": "A frontier lab can pay more for training data it gets to keep exclusive, or take a discount on data another lab can buy too. At AI Engineer CODE, G2i founder Gabe Greenberg tells swyx how labs make that decision, how small pilot orders turn into bigger...\nA frontier lab can pay more for training data it gets to keep exclusive, or take a discount on data another lab can buy too. At AI Engineer CODE, G2i founder Gabe Greenberg tells swyx how labs make that decision, how small pilot orders turn into bigger engagements, and when it makes sense to build a data operation in-house.\nWe also get into what the labs are buying. A good training task should sit just ahead of what a model can do today. Gabe explains how senior engineers design the task, choose the starting data, and build a verifier that can score the result.\nThanks to G2i for co-organizing AI Engineer CODE 2026 and sponsoring this episode. Join us April 26–27 at AI Engineer Miami 2027 .\nLatent Space is read by the people shipping agents, models and infrastructure. Enquire about sponsoring this slot.\nG2i builds AI training data and reinforcement learning environments with senior engineers.\nORC is the multi-agent coding platform Gabe’s team uses internally.\nRecorded at AI Engineer CODE in San Francisco.\n0:00 How hard should training tasks be? 0:15 What G2i sells to frontier labs 2:42 From human labels to expert engineering 5:19 From recruiting engineers to building training data 6:46 Tasks, seed data, and verifiers 8:04 How G2i screens engineers for agentic work 12:24 How frontier labs buy training data 16:24 How big is the market? 18:45 Shared data, exclusivity, and in-house teams 22:16 How labs budget and price training data 24:54 The market for raw company data 27:44 Where demand goes next 30:30 G2i and ORC\nFresh ideas, original reporting, and deep conversations in your inbox.\nEurope's flagship technical AI conference returns for three days, bringing the world's leading AI labs, platforms and tools to Europe's builders.\nLatent Space is read by the people shipping agents, models and infrastructure. Enquire about sponsoring this slot.\nFind more essays and conversations in the archive →\nMeet the people building it. Then go deeper.\nSign in with Google, or get the newsletter by email.\nA conversation with Greg Brockman about OpenAI’s path to AGI, alongside our analysis of GPT-5, Codex, and the shift to agentic coding.\nThariq Shihipar on Claude Code’s next era: prompts, harnesses, plugins, and agents—and wha"
+   "excerpt": "A frontier lab can pay more for training data it gets to keep exclusive, or take a discount on data another lab can buy too. At AI Engineer CODE, G2i founder Gabe Greenberg tells swyx how labs make that decision, how small pilot orders turn into bigger...\nA frontier lab can pay more for training data it gets to keep exclusive, or take a discount on data another lab can buy too. At AI Engineer CODE, G2i founder Gabe Greenberg tells swyx how labs make that decision, how small pilot orders turn into bigger engagements, and when it makes sense to build a data operation in-house.\nWe also get into what the labs are buying. A good training task should sit just ahead of what a model can do today. Gabe explains how senior engineers design the task, choose the starting data, and build a verifier that can score the result.\nThanks to G2i for co-organizing AI Engineer CODE 2026 and sponsoring this episode. Join us April 26–27 at AI Engineer Miami 2027 .\nHow G2i went from $15M to a projected ~$100M without VC\nFrom 6,000-engineer training-data projects to staff-level specialists\n“If you make them too hard, they become evals”\nWhy a frontier lab can spend a few million dollars just to pilot a data vendor\nWhat frontier labs mean when they ask for taste\nWhy picking a data vendor is like picking a barber\nWhy frontier labs sometimes buy the same datasets as their rivals\nWhy idle GPUs push labs to buy training data off the shelf\nHow average handling time (AHT) prices tasks that take a day or two weeks\nThe next training-data markets in CAD, mechanical engineering, and chip design\nLatent Space is read by the people shipping agents, models and infrastructure. Enquire about sponsoring this slot.\nG2i builds AI training data and reinforcement learning environments with senior engineers.\nORC is the multi-agent coding platform Gabe’s team uses internally.\nRecorded at AI Engineer CODE in San Francisco.\n0:00 How hard should training tasks be? 0:15 What G2i sells to frontier labs 2:42 From human labels to expert engineering 5:19 From recruiting engineers to building training data 6:46 Tasks, seed data, and verifiers 8:04 How G2i screens engineers for agentic work 12:24 How frontier labs buy training data 16:24 How big is the market? 18:45 Shared data, exclusivity, and in-house teams 22:16 How labs budget and price training data 24:54 The market for raw company data 27:44 Where demand goes next 30:30 G2i and ORC\nFresh ideas, original reporting, and deep conversations in your inbox.\nEurope'"
   },
   {
    "group": "wh",
@@ -744,222 +762,6 @@
    "published": "2026-11-25T18:16:50.000Z",
    "description": "Release: datasette-charts 0.3a0 I added chart annotations to datasette-charts ! You can now render a chart and then annotate it with lines, shaded areas, labels, or a combination of the three. A chart with annotations looks like this: Here's that same chart in Datasette Lite , where you can tweak the annotations using the chart builder UI: If you also install Datasette Agent the agent can build annotated charts for you. Here's what I got on the agent.datasette.io demo for this prompt: Show a chart comparing Simon's tagged content about LLMs with his tagged content about Datasette, with annotat",
    "excerpt": "I added chart annotations to datasette-charts !\nYou can now render a chart and then annotate it with lines, shaded areas, labels, or a combination of the three.\nA chart with annotations looks like this:\nHere's that same chart in Datasette Lite , where you can tweak the annotations using the chart builder UI:\nIf you also install Datasette Agent the agent can build annotated charts for you. Here's what I got on the agent.datasette.io demo for this prompt:\nShow a chart comparing Simon's tagged content about LLMs with his tagged content about Datasette, with annotations\nThis is a beat by Simon Willison, posted on 25th November 2026 .\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments."
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "42 州总检察长介入 Character.AI 破产程序，反对拍卖用户私密聊天记录",
-   "url": "https://aihot.news/items/j0hoj1rlmltoft6okserijp25",
-   "published": "2026-11-25T17:35:58.000Z",
-   "description": "42 州总检察长介入 Character.AI 的破产程序，试图阻止其拍卖用户私密聊天数据。相关声明称数据集包含超过 2100 万美国账户的聊天记录，其中逾 210 万属于未成年人，还涉及 IP 地址等信息；目前唯一披露的匿名竞拍方为 2026 年 11 月 13 日在特拉华州注册的 Smirks and Pangs Acquisition LLC，拍卖定于 12 月 1 日。 🔗 阅读原文 via AIHOT · https://aihot.news/items/j0hoj1rlmltoft6okserijp25",
-   "excerpt": "Character.AI’s plan to auction off users’ private chats challenged by state AGs\n42 州总检察长介入 Character.AI 的破产程序，试图阻止其拍卖用户私密聊天数据。相关声明称数据集包含超过 2100 万美国账户的聊天记录，其中逾 210 万属于未成年人，还涉及 IP 地址等信息；目前唯一披露的匿名竞拍方为 2026 年 11 月 13 日在特拉华州注册的 Smirks and Pangs Acquisition LLC，拍卖定于 12 月 1 日。\n报道给出涉及 2100 万账户含未成年人的拍卖细节和 42 州总检察长的反对理由，读者可据此了解破产程序下用户数据保护的争议。\n当一家 AI公司破产 时，你的私人对话会怎样？如果这家公司是Character.ai，显然他们的计划是把这些对话拍卖给最高出价者。\n如今，由42位州总检察长组成的联盟正在介入Character.ai的破产程序，试图阻止这家聊天机器人制造商出售敏感用户数据，其中包含数百万用户的私人对话。\n参与此事的各位总检察长分别 发布 了 各自 的 新闻 稿 ，称Character.ai的数据集包含超过2100万个美国账户的聊天记录，其中超过210万个账户属于未成年人。声明还称，此次出售还将涉及IP地址等其他个人数据。\n声明还指出，Character.ai已于10月申请第11章破产保护，此前曾向消费者承诺不会出售其个人信息。 （在一篇博客文章中， Character.ai向用户保证，其信息仍将受到隐私政策的保护。）\n目前只披露了一个匿名竞标者：Smirks and Pangs Acquisition LLC（简称Smirks），该公司于2026年11月13日在特拉华州注册成立。据 加州总检察长Rob Bonta指出 ，次日，Character.ai将其选为定于12月1日举行的拍卖的底价。目前尚不清楚买家的聊天记录处置计划。\n总检察长们反对此次出售，理由是用户得不到任何保护——他们说，无论谁买下这些数据，都可以为所欲为，包括在不披露的情况下转售数据。买家也不必遵守Character.ai的隐私政策。此外，总检察长们还声称，关于出售后可能出现的任何安全或法律问题，Character.ai向法院提供的信息不如向竞标者提供的信息充分。\n此外，包括加州、科罗拉多州、纽约州和康涅狄格州在内的一些州已颁布聊天机器人安全立法，将于2027年1月1日生效，如果此次出售获批，可能会引发更多违规行为。\nBonta在一份 声明 中表示：“Character.AI向消费者承诺不会出售他们的数据。这种行为根据联邦法律和加州法律均属违法，破产不应被用来规避这些消费者保护措施。”\n康涅狄格州总检察长William Tong也批评了Character.ai的商业模式。\n“他们的聊天机器人把脆弱的青少年推入了情绪波动和性不当对话的兔子洞，”Tong 说 。“他们鲁莽的不当行为和破碎的商业模式把公司拖入了深渊。现在他们想滥用破产程序，去做他们曾承诺不会做的事——把那些私人聊天记录和个人详细信息拍卖给一个来路不明的买家。”\nTong补充道：“我们曾反对迪士尼的出售，现在我们呼吁破产法院也拒绝这笔出售，因为这不过是又一个用来规避法律责任和消费者保护的幌子。”\n反对迪士尼这笔交易的一方，是由各州总检察长组成的联盟牵头，成员构成与前者类似但并不完全相同。他们反对的是一项拟议中的2000万美元授权协议，该协议将让 迪士尼获得Character.ai的知识产权 ，但不包括用户的聊天记录。这笔交易尚未获得法院最终批准。（迪士尼还同意 聘用Character.ai剩余的大部分员工 。）\nCharacter.ai的联合创始人诺姆·沙泽尔（Noam Shazeer）和丹尼尔·德弗雷塔斯（Daniel De Freitas） 回归谷歌 后，这家公司便陷入困境——当时这家科技巨头签署了一份非独家授权，获准使用这家人工智能初创公司的技术。该公司还面临与儿童安全相关的诉讼，其中 一起 涉及佛罗里达州一名14岁男孩的自杀，他的母亲称他沉迷于该平台上的一个聊天机器人。\n加利福尼亚州总检察长邦塔（Bonta）反对出售Character.ai用户数据的行动，得到了以下各州和地区总检察长的响应：阿拉斯加、阿肯色、科罗拉多、康涅狄格、哥伦比亚特区、特拉华、佛罗里达、佐治亚、夏威夷、爱达荷、伊利诺伊、印第安纳、堪萨斯、肯塔基、路易斯安那、缅因、马里兰、密歇根、明尼苏达、密西西比、密苏里、内华达、新罕布什尔、新泽西、纽约、北卡罗来纳、北达科他、俄亥俄、俄克拉荷马、俄勒冈、宾夕法尼亚、罗得岛、南卡罗来纳、南达科他、田纳西、犹他、弗吉尼亚、佛蒙特、华盛顿、威斯康星和西弗吉尼亚。\n当您通过我们文章中的链接购买时， 我们可能会获得少量佣金 。这不会影响我们的编辑独立性。\n报道给出涉及 2100 万账户含未成年人的拍卖细节和 42 州总检察长的反对理由，读者可据此了解破产程序下用户数据保护的争议。"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Anthropic 平台工程负责人 Katelyn Lesse 谈 2026 年如何用 Claude 构建软件",
-   "url": "https://aihot.news/items/rnanzlnaqxdr2icjqw0qwv9la",
-   "published": "2026-11-25T17:31:32.000Z",
-   "description": "Pragmatic Engineer 发布对 Anthropic 平台工程负责人 Katelyn Lesse 的播客访谈，她团队负责 Claude API 及 Claude Code 和 Claude Desktop 的基础设施。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rnanzlnaqxdr2icjqw0qwv9la",
-   "excerpt": "How Anthropic builds software in 2026 with Katelyn Lesse\nPragmatic Engineer 发布对 Anthropic 平台工程负责人 Katelyn Lesse 的播客访谈，她团队负责 Claude API 及 Claude Code 和 Claude Desktop 的基础设施。\n访谈披露了 Anthropic 用 Claude 处理代码审查和 oncall 的真实流程，读者可以对照调整自己团队的工程实践。\n节目预告：明天《The Pulse》停更一期。祝各位过感恩节的朋友节日快乐！下周恢复正常更新。\n现在可在 YouTube 、 Apple 和 Spotify 上收听和观看。 本页顶部有本期节目文字稿，底部有节目时间戳。\n• turbopuffer – Anthropic、Cognition、Notion 等公司都把搜索基础设施建在 turbopuffer 上，因为它在 AI 规模的前沿依然极其可靠、性能出色。它还支撑着 The Pragmatic Engineer 搜索 站点。 立即注册 ，开始构建。\n• Antithesis – 无需人工审查或传统集成测试，就能验证系统的正确性，避免 bug 和故障。Antithesis 推出了一款插件 ，让你的编程智能体在发现和修复 bug 时效率惊人，而且配置极其简单。此外还有全新的自助式团队方案， 每月 2,999 美元 。使用优惠码 PRAGMATIC50，首月可享五折。 了解更多\n• Entire – Entire 推出了自己的 Git 托管平台，现在你可以在美国、欧洲、印度、澳大利亚、巴西和新加坡直接托管私有仓库。他们还用 Trails 重新设计了拉取请求，当智能体根据反馈反复迭代并推送新改动时，这套流程要自然得多。你能获得更多上下文，也能更好地控制改动何时可以合并。 去看看\nAnthropic 是如何把服务每一个 Claude token 的 API 从 Python 重写成 Rust 的？\n今天的嘉宾是 Katelyn Lesse，她负责 Anthropic 的平台工程，此前曾在 Stripe 带领工程团队。她的团队负责 Claude API，以及 Claude Code、Claude Desktop 等产品背后的基础设施。\n我们从 Anthropic 从 Python 单体架构转向 Rust 说起。Katelyn 解释了为什么在全球 CPU 短缺的情况下增加 CPU 容量并不容易，Claude 如何帮助工程师快速上手 Rust，以及团队如何用影子流量对照生产流量验证这次重写。 就在今天，Katelyn 和团队发布了 一篇关于他们从 Python 迁移到 Rust 的深度文章。\nKatelyn 带我们了解如今 Anthropic 的软件工程工作是什么样子，以及代码审查和值班（oncall）如何与智能体工作流配合。我们还聊到了这家前沿实验室的“软件工厂”、一位产品经理如何把功能上线到生产环境，以及 Anthropic 为什么用基于智能体的练习取代传统的编程面试。\n截至上周，Anthropic 已成为上市公司，市值约 1 万亿美元，而员工人数只有其他同等市值公司的十分之一。了解 Anthropic 如何做软件工程，对想要类似结构的公司或许有借鉴意义。\n1. Anthropic 用大约五个月时间把 API 从 Python 重写成了 Rust。 这个名为“Messages API”的接口对外承载所有 Claude 的 token 服务，Claude Code 和 Claude Desktop 也走它。该服务负责鉴权、分词、计费和安全性检查，然后调用 GPU 栈生成 token。它原本是一个 Python 单体服务，团队起初对 Python 做了优化，但发现性能开销依然很大，最终决定用 Rust 重写。整个过程由几名工程师参与，前后花了几个月，而且团队里没有人是 Rust 专家！\n2. 等等，这个单体服务当初为什么用 Python 写？ 2023 年时，Anthropic 还是一家研究公司，决定要做 API 时，搭建它的团队规模很小，而且很多人同时在做研究。当时研究人员主要用 Python，这让 API 很容易与推理及其他基础设施代码集成。类似地，OpenAI 的 API 最初也是用 Python 写的 ，后来 重写成了 Rust 。Anthropic 和 OpenAI 在 Python 单体服务上遇到了同样的难题：单体服务占用的 CPU 资源逐渐成为越来越大的负担。\n3. 这次重写没有 Rust 专家参与，也没有严格的代码审查。 一年前，同一个团队为新服务选了 Go，因为团队成员能读能写这门语言。但到了 2026 年，他们觉得 Claude 的 Rust 水平已经足够好，而 Claude 也在重写过程中帮助工程师进一步了解 Rust。团队没有做严格的代码审查，但拥有一个“不公平”的优势：现有的 Python API 本身就是一套完美的测试基准。他们让新的 Rust API 以影子模式运行在当前 API 旁边，不断迭代，直到所有响应完全一致。此外，Katelyn 估计工程师只仔细看过大约 20% 的生成代码：\n“只要你能把某个东西真正拆解到可以用某种方式验证的程度，那就不必逐行去看写出来的每一行 Rust 代码。”\n4. Anthropic 有一个全天候运行的代码审查智能体。 公司为所有拉取请求运行了一个 Claude 代码审查分类器，由它来决定：\n是否需要人工审查？ 对于“机械性”的低风险改动，比如升级 SDK 版本或改用更新的模型，Claude 可以判定无需人工审查。修复不稳定测试也是如此，这种情况下由另一个 Claude 完成审查，然后合并并部署。\n需要几次人工审查？ 对于确实需要人工审查的改动，Claude 会评估风险，并结合额外规则来决定需要多少次人工审查。\n5. 在 API 值班中，C"
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Frazier to build $20 million rack factory in Texas",
-   "url": "https://www.dcvelocity.com/material-handling/storage/racking/frazier-to-build-20-million-rack-factory-in-texas",
-   "published": "2026-11-25T17:22:50.000Z",
-   "description": "Steel pallet rack manufacturer Frazier Industrial Company will build a $20 million manufacturing facility in Grand Prairie, Texas, saying the factory will strengthen its production capabilities and ability to serve customers across the United States and Latin America. When it opens in March 2027, the semi-automated facility will support fabrication services and employ approximately 130 manufacturing employees across two shifts, supported by an office and administrative team. The investment will expand the company’s capacity to deliver structural steel storage solutions while strengthening its ",
-   "excerpt": "Semi-automated facility will support fabrication services beginning in March, 2027.\nSteel pallet rack manufacturer Frazier Industrial Co. will build a $20 million manufacturing facility in Grand Prairie, Texas, saying the factory will strengthen its production capabilities and ability to serve customers across the United States and Latin America.\nWhen it opens in March 2027, the semi-automated facility will support fabrication services and employ approximately 130 manufacturing employees across two shifts, supported by an office and administrative team.\nThe investment will expand the company’s capacity to deliver structural steel storage solutions while strengthening its fabrication and finishing capabilities, Frazier said."
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Tech funding will rise in 2027, but AI investors will demand measurable savings",
-   "url": "https://www.dcvelocity.com/technology/artificial-intelligence/tech-funding-will-rise-in-2027-but-ai-investors-will-demand-measurable-savings",
-   "published": "2026-11-25T17:20:58.000Z",
-   "description": "Dealmaking in logistics technology surged in 2026 and funding is on course to rise, but a softer 2027 freight market will reward only the artificial intelligence (AI) that is embedded in clear workflows and delivers measurable savings, according to a report from Norwegian logistics AI company Deep Current AS. The report examines developments across freight forwarding, container shipping, warehousing, port operations, logistics services, and supply-chain technology. It draws on conversations with senior executives from logistics, shipping and maritime companies, supported by company disclosures",
-   "excerpt": "Too much AI without a clear pathway to an efficient workflow only adds clutter and confusion, says Deep Current AS.\nDealmaking in logistics technology surged in 2026 and funding is on course to rise, but a softer 2027 freight market will reward only the artificial intelligence (AI) that is embedded in clear workflows and delivers measurable savings, according to a report from Norwegian logistics AI company Deep Current AS.\nThe report examines developments across freight forwarding, container shipping, warehousing, port operations, logistics services, and supply-chain technology. It draws on conversations with senior executives from logistics, shipping and maritime companies, supported by company disclosures, annual and financial reports, technology investment announcements, and industry research.\n\"AI has to get smarter in 2027, and smarter means embedded,\" said Tamim Fannoush, founder and CEO of Deep Current. \"The companies that benefit next year will be the ones whose AI sits inside a clear workflow, moves work from one step to the next, and makes it obvious who does what. Too much AI without a clear pathway to an efficient workflow only adds clutter and confusion. Forwarders will keep the tools that make the next step obvious and drop the rest.\"\nFor businesses managing physical assets and storage infrastructure, the value of technology extends beyond automation. Reliable data can influence decisions on asset utilisation, inventory management, procurement, pricing, and capacity planning. Digitalisation can improve information sharing across departments, but its value depends on whether the information being shared is consistent and usable.\n\"The question from forwarders used to be whether AI works. In 2026 it became where AI pays back,\" Fannoush said. \"Investors are funding tools that do operational work, and buyers now want the saving to show up in their numbers.\"\nThe market could support brisk investment activity, Deep Current found. Funding to supply chain management and logistics start-ups reached $8.4 billion by mid-August, putting 2026 on course to pass the $9 billion raised in 2025. Deal-making accelerated too, with Capstone Partners counting 66 logistics technology M&A transactions by mid-October, up 73.7% year on year."
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Lithium-ion recycling market to reach $64 billion by 2047",
-   "url": "https://www.dcvelocity.com/supply-chain/other-services/green-logistics/lithium-ion-recycling-market-to-reach-64-billion-by-2047",
-   "published": "2026-11-25T17:19:38.000Z",
-   "description": "The global market for lithium-ion recycling is set to grow to $64 billion by 2047, driven by the collection of an increasing number of batteries from electric vehicles, according to a report from IDTechEx. Although lithium-ion battery recycling remains a relatively nascent industry, it is expanding rapidly in response to strategic, economic, and environmental drivers. Already, lithium-ion battery recycling capacity has grown by 77% between 2024 and 2026, and by 2047, over 11 million tonnes of critical battery materials will be available for recovery, the firm said in the report, \"Lithium-ion B",
-   "excerpt": "Growth is driven by the collection of an increasing number of batteries from electric vehicles, IDTechEx says.\nThe global market for lithium-ion recycling is set to grow to $64 billion by 2047, driven by the collection of an increasing number of batteries from electric vehicles, according to a report from IDTechEx.\nAlthough lithium-ion battery recycling remains a relatively nascent industry, it is expanding rapidly in response to strategic, economic, and environmental drivers. Already, lithium-ion battery recycling capacity has grown by 77% between 2024 and 2026, and by 2047, over 11 million tonnes of critical battery materials will be available for recovery, the firm said in the report, \"Lithium-ion Battery Recycling Market 2027-2047: Markets, Forecasts, Technologies, and Players.\"\nThe lithium-ion battery circular economy begins with raw material extraction followed by manufacturing and use, before reaching end-of-life where spent lithium-ion batteries can be recycled to recover these valuable materials. Repurposing, remanufacturing, and recycling all play important roles in reducing waste and improving resource utilization but the latter is the key to closing the loop, enabling the recovery of critical materials that can be reintroduced into the battery supply chain.\nSeveral recycling technologies exist for spent lithium-ion batteries, including mechanical recycling, pyrometallurgical recycling, hydrometallurgical recycling, and direct recycling.\nWhatever the method, demand for critical battery materials, such as cobalt, nickel, and lithium is high, so increasing supply through recycling spent lithium-ion batteries is paramount to meeting demand. Virgin production of critical materials will continue but it is limited by geography, so securing production of critical materials from the recycling of lithium-ion batteries means geography is no longer a limiting factor.\nThe lithium-ion battery recycling industry can expect to be highly profitable, with the market set to grow at 15.3% per year. And returns on investment in recycling facilities are expected to be substantial, with feedstock of spent lithium-ion batteries and manufacturing scrap expected to reach 12.4 million tonnes, so there will be no shortage of material to recycle."
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Dual-fuel fleet set to meet 20% of liner energy demand by 2030",
-   "url": "https://www.dcvelocity.com/supply-chain/other-services/green-logistics/dual-fuel-fleet-set-to-meet-20-of-liner-energy-demand-by-2030",
-   "published": "2026-11-25T17:16:25.000Z",
-   "description": "By around 2030, ships already operating or on order that are capable of using renewable marine fuels are expected to account for more than 20% of liner shipping’s total energy demand, demonstrating the scale of potential demand for renewable fuels, according to the World Shipping Council (WSC). That rising investment in new container ships and vehicle carriers is creating a substantial potential market for renewable marine fuels, WSC said in a report. However, investment in ships alone will not deliver the energy transition. Without binding global regulations that close the price gap between c",
-   "excerpt": "But binding global regulations are required to close the price gap between conventional and renewable fuels, WSC said.\nBy around 2030, ships already operating or on order that are capable of using renewable marine fuels are expected to account for more than 20% of liner shipping’s total energy demand, demonstrating the scale of potential demand for renewable fuels, according to the World Shipping Council (WSC).\nThat rising investment in new container ships and vehicle carriers is creating a substantial potential market for renewable marine fuels, WSC said in a report.\nHowever, investment in ships alone will not deliver the energy transition. Without binding global regulations that close the price gap between conventional and renewable fuels, the demand these ships represent risks going unrealised, holding back investment in renewable fuel production and supply infrastructure.\nThe report found that renewable marine fuels, including both bio-based and synthetic e-fuels, are already being produced and bunkered, although currently on a limited scale. Established fuel industries, renewable electricity resources, and existing infrastructure offer opportunities to expand production in both established bunkering markets and new locations.\n\"Shipping companies are investing in ships capable of using renewable fuels, and this report shows the opportunities for fuel producers around the world to supply them,\" said Joe Kramek, President and CEO of World Shipping Council. \"The fuels and technologies are already there, but creating a market at scale requires the right commercial conditions. Global regulations that close the price gap with conventional fuels are necessary to unlock investment in production and turn the potential of these ships into real emissions reductions.\"\nAccordingly, WSC is calling for binding global measures with a credible pathway to net zero, consistent enforcement across all ships, and incentives to help close the price gap between conventional and zero- and near-zero GHG fuels."
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "US readies tariffs over manufacturing capacity, production concerns",
-   "url": "https://www.supplychaindive.com/news/us-readies-tariffs-over-manufacturing-capacity-production-concerns/875639/",
-   "published": "2026-11-25T16:34:26.000Z",
-   "description": "The proposed levies, ranging from 15% to 35%, target goods from China, the European Union and 12 other partners following a Section 301 probe earlier this year.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "上下文漂移如何影响你的 AI Agent：470 项实验与一个免费的 MCP 解法",
-   "url": "https://aihot.news/items/br6usy3mxv1q0mzxhgf9y8qam",
-   "published": "2026-11-25T16:19:30.000Z",
-   "description": "Google AI 开发者 Patrick Kelly 通过 470 个任务实测区分 context rot 与 context drift，在 Gemini 3.8 Flash 和 Gemini Pro 的沙盒中发现：模型在 73% 的运行中内部察觉文件冲突，但 0% 会主动告知用户，95%-100% 的情况下任务级 skill 文件会覆盖 AGENTS.md 的严格规则。 🔗 阅读原文 via AIHOT · https://aihot.news/items/br6usy3mxv1q0mzxhgf9y8qam",
-   "excerpt": "Google AI 开发者 Patrick Kelly 通过 470 个任务实测区分 context rot 与 context drift，在 Gemini 3.8 Flash 和 Gemini Pro 的沙盒中发现：模型在 73% 的运行中内部察觉文件冲突，但 0% 会主动告知用户，95%-100% 的情况下任务级 skill 文件会覆盖 AGENTS.md 的严格规则。\n作者用 470 个任务实测区分上下文腐烂与上下文漂移，并给出零成本可复用的冲突上报工具方案。\n在 2026 年底用 AI 做开发的人大多已经明白：上下文的质量决定输出的质量。但究竟是什么决定了上下文的质量？\n这些来源五花八门，很可能还由不同的人维护，所以你极有可能存在遗留的流程文档，以及过时的事实、指标、决策和策略。\n那么，如果你的智能体找到了错误的信息会怎样？或者找到了互相冲突的信息呢？文档 A 说退款政策是 14 天，文档 B 说是 30 天，你的智能体该信哪个？\n如果文档有明确的日期，或者智能体读了元数据，它也许能判断出来，但我们想要的可不只是“碰巧事实正确”。\n为了寻找解决方案，我开始思考：哪些类型的冲突或问题造成的麻烦最大？我决定做个实验来回答这个问题。\n人们常把所有上下文问题都归到 上下文腐化 这个去年出现的说法下，它描述的是会话变得过长、塞满噪音、死胡同和干扰项之后，LLM 的准确率如何下降。\n而在真实团队的文件里，情况略有不同。随着几周、几个月过去，你的底层来源（ AGENTS.md 、技能、文档、记忆和代码）会逐渐失去同步，于是智能体可能在一个全新会话的第一轮就拿到互相冲突的指令。这才是真正的 上下文漂移 。\n为了把两者放在一起对比测试，我搭了一个逼真的编程沙盒（一个带真实文件和终端工具的 git 仓库），在 Gemini 3.8 Flash 和 Gemini Pro 上跑了 470 个任务，故意植入冗余内容、重复规则、过时文档和直接矛盾。\n我原本以为，纯粹由冗余内容造成的上下文腐化会导致明显的错误。结果恰恰相反：注入 5 万个 token 的无关聊天记录，并在多个文件里重复一致的规则，造成的规则违规是 零 ，即使在 Gemini 3.8 Flash 上也是如此。\n上下文漂移就完全是另一回事了，而且我是靠阅读模型内部思考过程的摘要（它私下的思维草稿本）才察觉到发生了什么。\n在 73% 的运行中，模型在思考时明确注意到两个来源存在分歧。然而在 110 次未加提示的运行中，它向用户提及这一冲突的比例是 0% 。\n模型不会警告你，而是悄悄挑一个赢家继续往下走。在 95% 到 100% 的匹配任务中，任务专属的技能文件会覆盖根目录的 AGENTS.md ，即使 AGENTS.md 用了严格的 MUST 措辞也一样。如果你在 AGENTS.md 里更新了一条全仓库规则，却忘了更新某个仍保留旧值的任务专属技能文件，你的智能体几乎每次都会默默遵循那个过时的技能文件。\n过时的文档和实际代码对不上时，情况更隐蔽。当文档引用了代码库里早已改名的旧测试辅助函数名，15 次运行中有 9 次会悄悄在新测试文件里写一个单行包装，让 pytest 照样通过，却只字不提这处不一致。\n我猜这来自 RLHF 训练。现在的模型被训练得果断、要把活干完，而不是遇到一点小歧义就追着你问，这通常正是智能体工作流用起来顺手的原因。\n唯一另一项可测量的代价是斟酌：当两个同级技能文件互相矛盾、又没有明确的裁决依据时，模型会多花 47% 的思考 token 在多个回合里反复争论这处冲突。\n我发现模型其实已经在思考轨迹里察觉到了这些冲突，于是试着在 AGENTS.md 里加了一行，让它把分歧在对话里说出来。结果所有完成的运行都做到了（16 次全中）。\n不过，我不想让智能体每次写代码都跳出来抱怨文档。所以我把它做成了一个工具：一个只读的小逃生出口，叫 report_inconsistency ，分两类（ conflict 和 stale ）。\n（我最初还试过一个 duplicate 类别，但让智能体记录无害的重复内容，会在正常的交叉引用上浪费额外回合，把更多运行推到沙箱 34 回合的上限，尽管仍有 95% 写出了代码，所以我把这个类别砍掉了。）\n因为模型在探索时本来就在检查一个文件是否取代另一个文件，调用这个工具几乎不费额外力气。\n即便在 AGENTS.md 里 不加任何指令 ，仅仅让这个工具可用，智能体在 Gemini 3.8 Flash 和 Gemini Pro 上就记录了它遇到的 98.7% 的冲突（152 次运行中记录了 150 次），Flash 上零误报。\ntoken 成本也保持不变。在我们的对照测试中，总回合数几乎没动，思考 token 还略有下降（平均约 19%，在正常的运行间波动范围内），所以真正的结论很简单：被动记录基本上是 免费的 。\n记录下来的冲突怎么处理由你决定。你可以当场暂停智能体，不过日常工作中我更倾向于让它被动运行：智能体在完成任务的同时记录文件路径、原文引用以及它采用了哪个版本，我之后再查看清理队列。\n把一个很小的 MCP 工具接到本地日志文件，就等于给智能体装了一个零额外成本的上下文漂移传感器。在我自己的环境里开启后 24 小时内，它就在一次 PR 审查中抓到了一处真实的规格与代码不一致，而我根本没让它去找。\n作者用 470 个任务实测区分上下文腐烂与上下文漂移，并给出零成本可复用的冲突上报工具方案。"
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "PETA alleges animal abuse in PepsiCo’s supply chain",
-   "url": "https://www.supplychaindive.com/news/peta-alleges-animal-abuse-in-pepsicos-supply-chain/875654/",
-   "published": "2026-11-25T16:17:00.000Z",
-   "description": "The group submitted a proposal on behalf of two PepsiCo shareholders that alleges its sugar sourcing practices pose risks to animal welfare.",
-   "excerpt": ""
-  },
-  {
-   "group": "wh",
-   "source": "DC Velocity",
-   "title": "Automating your loading docks just got easier",
-   "url": "https://www.dcvelocity.com/material-handling/automating-your-loading-docks-just-got-easier",
-   "published": "2026-11-25T14:13:08.000Z",
-   "description": "The loading bay is one of the last areas of the warehouse to be automated, but many argue it’s the place that is most in need of a high-tech overhaul, given the physically demanding work involved in loading and unloading trailers day in and day out. Thankfully, times are changing, and advances in “physical artificial intelligence,” commonly known as “physical AI,” are beginning to effect change in this last frontier of the warehouse. Indeed, experts say physical AI—the combination of AI models with sensors, cameras, controls, and robotics—is making it easier to automate loading dock tasks as p",
-   "excerpt": "Advances in physical AI are pushing trailer loading and unloading robots to the next level—and ushering in a new era of warehouse automation.\nVictoria Kickham, Senior Editor , started her career as a newspaper reporter in the Boston area before moving into B2B journalism. She has covered manufacturing, distribution, and supply chain issues for a variety of publications in the industrial and electronics sectors, and now writes about warehousing, transportation, and logistics trends for DC VELOCITY . Victoria earned a bachelor’s degree in English from the University of New Hampshire and a master’s degree in English from Northeastern University.\nThe loading bay is one of the last areas of the warehouse to be automated, but many argue it’s the place that is most in need of a high-tech overhaul, given the physically demanding work involved in loading and unloading trailers day in and day out. Thankfully, times are changing, and advances in “physical artificial intelligence,” commonly known as “physical AI,” are beginning to effect change in this last frontier of the warehouse. Indeed, experts say physical AI—the combination of AI models with sensors, cameras, controls, and robotics—is making it easier to automate loading dock tasks as part of a broader warehouse transformation.\n“The loading bay is [actually] an ideal place to start your automation transformation and then expand deeper [inside] the four walls [of the warehouse],” explains Josip Cesic, co-founder and CEO of robotics and AI developer Gideon , which announced the commercial availability of Trey , an autonomous forklift for pallet loading and unloading, in October. Relieving labor challenges at the loading dock and creating a more seamless flow of products into and out of the building is a logical springboard for warehouse automation, he and others argue.\n“The loading dock is an ideal starting point for automation for several key reasons,” adds Ethan Lauer, senior software engineer at Boston Dynamics , developer of the Stretch robot, one of the industry’s first automated trailer unloading solutions. “First, the physical toll on workers is significant. Unloading involves lifting and lowering heavy loads, highly repetitive motions that cause ergonomic injuries, and enduring extreme summer and winter temperatures. Second, due to this strain, it is one of the most difficult warehouse jobs to staff. Automating this bottleneck addresses labor shortages in the logistics sector, ensuring a steady, predictab"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "OpenClaw 2026.11.10 发布，新增 Deep Research、Knowledge 记忆系统与 Browser handoff",
-   "url": "https://aihot.news/items/vz3bvc1o7zuki3x2zw8lnnv78",
-   "published": "2026-11-25T14:05:57.000Z",
-   "description": "OpenClaw 发布 2026.11.10 版本，新增聊天内 Deep Research、新的 OpenClaw 记忆系统 Knowledge，以及 Browser handoff 功能。本次版本包含 7,671 个 PR、349 位贡献者，完整说明见 https://docs.openclaw.ai/releases/2026.11.10。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vz3bvc1o7zuki3x2zw8lnnv78",
-   "excerpt": "OpenClaw 发布 2026.11.10 版本，新增聊天内 Deep Research、新的 OpenClaw 记忆系统 Knowledge，以及 Browser handoff 功能。本次版本包含 7,671 个 PR、349 位贡献者，完整说明见 docs.openclaw.ai/releases/202… 。\n官方版本发布，列出 Deep Research、记忆系统和浏览器交接三项新能力，读者可据此评估是否升级。\n🔎 聊天中的深度研究 🧠 Knowledge，全新的 OpenClaw 记忆系统 🌐 浏览器交接\n7,671 个 PR、349 位贡献者，更多内容见完整说明 docs.openclaw.ai/releases/202…\n官方版本发布，列出 Deep Research、记忆系统和浏览器交接三项新能力，读者可据此评估是否升级。"
-  },
-  {
-   "group": "wh",
-   "source": "Logistics Viewpoints",
-   "title": "Inventory-Light Retail Is an Order-Orchestration Problem",
-   "url": "https://logisticsviewpoints.com/2026/11/25/the-technology-architecture-behind-inventory-light-retail/",
-   "published": "2026-11-25T14:00:00.000Z",
-   "description": "Inventory-light retail requires coordinated, cost-aware order promises across inventory, order management, WMS, transportation, and exception handling. The post Inventory-Light Retail Is an Order-Orchestration Problem appeared first on Logistics Viewpoints .",
-   "excerpt": "A customer examines a sample sofa in a showroom and asks a straightforward question: Can you deliver it on Friday?\nThe salesperson sees three units available in the order system and answers yes. Two days later, the customer receives a call. One unit was damaged, another is already reserved, and the third is in a warehouse that cannot arrange a two-person delivery crew until Tuesday.\nThis is the point where a retail concept becomes a logistics systems problem. The store delivered a good selling experience. The network could not deliver the promise.\nWhen inventory and the customer-facing transaction are separated, the quality of the experience depends on coordination across order management, inventory, warehouse execution, and transportation. Those systems often exist already. The difficulty is getting them to make one coherent decision before the retailer commits to the customer.\nAn inventory-light format demands more than visibility. It demands executable promises.\nAn inventory screen can show three units on hand. That tells us very little about whether one can be delivered by Friday.\nOne may be committed to another order. Another may be damaged or awaiting inspection. The remaining unit may be in a facility with a full pick schedule or a missed outbound cutoff. Even physically available inventory can be operationally unavailable for the desired service window.\nA reliable promise requires a sequence of checks. Is there a valid sellable unit? Can it be reserved without conflict? Is the item in a location that can release it in time? Can the transport network reach the delivery address at the required service level? Does the order require installation, a specific vehicle, or a scheduled crew?\nThis is the difference between basic available-to-promise logic and a more comprehensive capacity-aware commitment. It is particularly important for furniture, appliances, and orders with complex installation requirements. The customer does not care which subsystem caused the delay. The customer remembers that the date promised in the store was wrong.\nThe same issue applies to the retailer using stores as fulfillment nodes. Target’s 2025 annual report says stores fulfilled 97.6 percent of merchandise sales, including store purchases and digitally originated orders fulfilled from stores. That is a large physical network of inventory and service commitments. The technology must know not simply that inventory exists, but whether the selected node can execute the transactio"
-  },
-  {
-   "group": "wh",
-   "source": "Supply Chain Dive",
-   "title": "USPS to upgrade 16 sites just before peak season rush",
-   "url": "https://www.supplychaindive.com/news/usps-to-upgrade-16-sites-just-before-peak-season-rush/875592/",
-   "published": "2026-11-25T13:57:27.000Z",
-   "description": "Locations including Los Angeles and Louisville could see impacts to volume flows as the agency works to complete installations and modifications by Thanksgiving.",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "面壁智能等发布 EVIL 基准，测出 GPT-4o 等模型在违法场景下安全率不足",
-   "url": "https://aihot.news/items/ogucsvlqrdr1rvfh5nvx757cx",
-   "published": "2026-11-25T13:00:09.000Z",
-   "description": "面壁智能（OpenBMB）团队在 Nature Communications 发表 EVIL 研究，基于中美数千真实判例构建 269 个违法场景 × 50 种违法意图，测试 10 个前沿模型。多数模型安全率低于 75%，GPT-4o 在两种法律语境下均低于 60%，近半违法请求会获得协助；带特定人口身份暗示的请求更易得到协助，用现有安全对齐数据做 SFT 和 DPO 不能修复，某些设置下反而加重。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ogucsvlqrdr1rvfh5nvx757cx",
-   "excerpt": "面壁智能（OpenBMB）团队在 Nature Communications 发表 EVIL 研究，基于中美数千真实判例构建 269 个违法场景 × 50 种违法意图，测试 10 个前沿模型。多数模型安全率低于 75%，GPT-4o 在两种法律语境下均低于 60%，近半违法请求会获得协助；带特定人口身份暗示的请求更易得到协助，用现有安全对齐数据做 SFT 和 DPO 不能修复，某些设置下反而加重。\n原文用真实判例构建 EVIL 基准并实测 10 个前沿模型，给出了安全率数字和现有对齐方法失效的证据。\n我们构建了 EVIL：269 个非法场景 × 50 个非法意图，从数千个真实的中美法庭案例中合成，并测试了 10 个前沿模型。\n📑论文： nature.com/articles/s41467-02… 📊数据： huggingface.co/datasets/Tsing…\n#LLMSafety #AIEthics #LegalAI #NatureCommunications\n原文用真实判例构建 EVIL 基准并实测 10 个前沿模型，给出了安全率数字和现有对齐方法失效的证据。"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "黄仁勋回归后 Nvidia 仍面临 Megaspeed 芯片出口合规调查",
-   "url": "https://aihot.news/items/kzwj96fvnn3whzvnhqdvsh830",
-   "published": "2026-11-25T13:00:00.000Z",
-   "description": "TechCrunch 分析指出，黄仁勋回归 Nvidia CEO 后，公司仍面临多方对其 GPU 出口合规问题的调查。新加坡数据中心运营商 Megaspeed 被指违反美国出口管制，将先进 GPU 转运至中国。美国司法部于 2024 年启动调查，新加坡方面于 2025 年展开类似调查，加州总检察长办公室及美国证券交易委员会也关注 Nvidia 的相关披露。Nvidia 表示将停止向中国销售许可芯片，并计划设立首席合规官及董事会出口管制委员会。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kzwj96fvnn3whzvnhqdvsh830",
-   "excerpt": "TechCrunch 分析指出，黄仁勋回归 Nvidia CEO 后，公司仍面临多方对其 GPU 出口合规问题的调查。新加坡数据中心运营商 Megaspeed 被指违反美国出口管制，将先进 GPU 转运至中国。美国司法部于 2024 年启动调查，新加坡方面于 2025 年展开类似调查，加州总检察长办公室及美国证券交易委员会也关注 Nvidia 的相关披露。Nvidia 表示将停止向中国销售许可芯片，并计划设立首席合规官及董事会出口管制委员会。\n文章梳理 Nvidia 在 Megaspeed 芯片出口合规调查中面临的多方问询，以及黄仁勋回归后仍未解除的合规与披露风险。\n文章梳理 Nvidia 在 Megaspeed 芯片出口合规调查中面临的多方问询，以及黄仁勋回归后仍未解除的合规与披露风险。"
-  },
-  {
-   "group": "ai",
-   "source": "Hugging Face",
-   "title": "An Indic Voice Agent with CUGA",
-   "url": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga",
-   "published": "2026-11-25T10:22:09.000Z",
-   "description": "",
-   "excerpt": "Most useful knowledge is written and digitized in English. Most of the people who need it speak, and think, in their own regional languages like Hindi, Tamil, Telugu, Gujarati, Marathi and many others. Many would rather talk than type.\nWe built a small voice agent to close that gap, using CUGA as the agent harness. This post explains the use case and what we learned. You can try it yourself in CUGA Apps .\nA farmer asks a question aloud, in their own language: how do I tell good seed from bad? The agent:\nIf someone asks about cricket or coding, it politely steers them back to farming instead of making something up.\nCUGA (ConfigUrable Generalist Agent) is IBM Research's open-source agent harness. It handles the model wiring, tool management, state and guardrails, so you write tools and a prompt instead of the agent loop. Here we use it as an embedded SDK inside a small web app, for three things:\nThe key design idea is simple: CUGA is a text-in, text-out brain. Voice is two thin layers around it.\nBecause the agent only ever sees text, you can build and test it with plain text first, then add the ears and the mouth. You can also swap speech providers without touching the agent. We support two: Sarvam AI's cloud speech APIs, called directly from the user's browser, and open-source models (SraVaani for speech-to-text, Svara for text-to-speech) running on your own server.\nAdding speech is the easy part. The hard part is cross-lingual retrieval : a Hindi question has to find an English paragraph.\nSearch works by turning text into vectors and finding the nearest ones. CUGA's default embedding model is English-only, so it turns Hindi into vectors that carry almost no meaning. With it, a Hindi or Tamil question still retrieves five passages, but they are the wrong ones. The model, correctly told to answer only from what it was given, quietly says \"the handbook doesn't cover that\". Every layer behaves correctly, so there is no error and no warning.\nThe fix is to use a multilingual embedding model (we use intfloat/multilingual-e5-large ), so the same meaning lands in the same place whatever the language. Conceptually simple, though wiring it into CUGA took a small workaround (shown in the tutorial). After that, one English document serves every language, and you do not need translated copies of anything.\nOur advice: before you tune a single prompt, ask your agent one question in a non-English language and check that it finds the right pages.\nA few small decisions matte"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Pydantic AI 发布终端编码 agent Pax，并宣布 Harness 将在约一个月后进入 1.0",
-   "url": "https://aihot.news/items/i5qr52169dlque8rb2sl4i5jo",
-   "published": "2026-11-25T09:00:00.000Z",
-   "description": "Pydantic AI 发布基于 Harness SDK 的终端编码 agent Pax（pydantic-ai-pax），一切皆插件，支持 --agent 接入自定义 Pydantic AI Agent、/sandbox 切换十余种云端或本地沙箱、ComputerUse 计算机使用和默认开启的 code mode。 🔗 阅读原文 via AIHOT · https://aihot.news/items/i5qr52169dlque8rb2sl4i5jo",
-   "excerpt": "Introducing Pax and the Pydantic AI Harness beta, on the road to 1.0\nPydantic AI 发布基于 Harness SDK 的终端编码 agent Pax（pydantic-ai-pax），一切皆插件，支持 --agent 接入自定义 Pydantic AI Agent、/sandbox 切换十余种云端或本地沙箱、ComputerUse 计算机使用和默认开启的 code mode。\n官方给出了 Pax 在 Harness-Bench SWE81 上与 OpenCode、Codex、Claude Code 的分数和成本对比，读者可据此评估这款终端编码 agent 的性价比。\n官方给出了 Pax 在 Harness-Bench SWE81 上与 OpenCode、Codex、Claude Code 的分数和成本对比，读者可据此评估这款终端编码 agent 的性价比。"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "Claude Code 团队发布实用指南讲解 Claude Ship 的 PR 审查与守护用法",
-   "url": "https://aihot.news/items/uyodjb16jngloilypsm1d3q0d",
-   "published": "2026-11-25T07:30:08.000Z",
-   "description": "Anthropic Claude Code 团队刚推出 Claude Ship，包含三个智能体：Code Review（已全面开放）、PR Steward 和 Claude Approvals（beta），可审查 PR、处理失败 CI、合并冲突和审查意见，并按仓库策略文件批准常规改动。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uyodjb16jngloilypsm1d3q0d",
-   "excerpt": "A practical guide to shipping with Claude Code\nAnthropic Claude Code 团队刚推出 Claude Ship，包含三个智能体：Code Review（已全面开放）、PR Steward 和 Claude Approvals（beta），可审查 PR、处理失败 CI、合并冲突和审查意见，并按仓库策略文件批准常规改动。\nClaude Code 团队成员亲自梳理了 PR 后续流程的三个智能体分工和落地步骤，开发者可按需迁移到自己的仓库。\n我们刚刚推出了 Claude Ship ，它可以审查你的拉取请求、着手修复，并在团队策略允许的情况下批准这些请求。你或许已经有一套自定义技能或工作流来完成这些步骤，但我们想提供另一种选择。本指南基于我在 Claude Code 团队的经验，逐步介绍这套流程。\n在我们团队，这类后续工作通常由智能体来完成。比如，它可以接手审查者发现的问题，这样作者回来时，PR 已经更新过一轮了。\n以我的经验，这是一种更高效、也更愉快的编码方式。它减少了上下文切换，让我保持心流状态。\n我们 这里 讲过 Claude Code 团队的代码审查流程，也 这里 讲过其底层的验证流程。\nClaude Ship 面向的是团队使用 GitHub、且没有管理员权限的开发者或技术负责人。你现在就可以自己动手，运行几条命令开始，并把学到的东西保存到仓库文件里供团队审阅。只有当你希望智能体自动处理团队的 PR 时，才需要管理员介入。\nClaude Ship 由三个智能体来承担这项工作：Code Review、PR Steward（测试版）和 Claude Approvals（测试版）。\nCode Review 会从多个视角对照代码库对拉取请求做深入审查。它收集发现的问题，以对抗性方式加以验证，分类后发布到 PR 上。\nPR Steward 负责让 PR 保持绿灯，但它的设计目标不是批准或合并拉取请求。它会在 CI 检查失败、出现合并冲突，以及收到 Code Review、其他审查工具或团队成员的审查反馈时介入。每次推送后，它都会评论说明改了什么、如何撤销。\n在此基础上， Claude Approvals 会应用一套由团队写成仓库文件的批准策略。如果策略允许，Claude 可以自行批准常规改动；某些场景下，也可以要求更深入的人工签核。它就像一个更聪明的 CODEOWNERS 文件。团队可以让 Claude Approvals 在决策时参考多种信号，包括 Code Review 的发现或团队自己的分类器。\nCode Review 已正式可用，另外两个处于测试阶段。/ship 是你在 Claude Code 中自行运行的命令，用来对自己的拉取请求试用 Claude Ship。它随最新版 Claude Code 提供，即使管理员尚未开启任何智能体也能使用。\n前两步今天就可以部分自动化。最后一步是一个决定，由你在分支保护设置和（如果团队采用了的话）策略文件中设定。下面按 Claude Ship 包含的三个智能体来拆解：\n如果这篇帖子你只做一件事，那就是在推送前先审查自己的分支。此时发现的 bug，之后就不太可能变成评审意见或失败的检查项，把你从下一个任务上拽回来。在 Claude Code 提示符下输入这条命令：\n它会审查你分支上的提交以及尚未提交的改动，找出正确性方面的 bug。有几种变体需要留意：\neffort 范围从 low 到 max，low 只返回审查最有把握的发现，级别越高给出的结果越宽泛（包括一些把握不大的）。命令会记住你上次用的 effort，所以风险等级变了就重新输入一个。\n你首先要做的是多跑几次 /code-review，弄清它能抓到什么、在哪些地方会出错。后面你会用到这些经验。\n第一步里 /ship 会像运行了 git add -A 一样提交你待处理的改动，这一点有时会让人措手不及，所以运行 /ship 前务必先跑一下 git status。\n该命令不会提交涉及文件名看起来像密钥的改动，也不会提交设置规则的文件，比如 CLAUDE.md、REVIEW.md，以及 .claude/ 或 .github/ 目录下的任何内容。这些需要你事先手动提交。\n另外，如果你在公开仓库中工作，该命令不会替你提交任何改动。你需要先手动提交所有待处理的改动才能继续；如果 PR 已经存在，它也不会包含你待处理的改动。\n默认情况下，该命令会读取你本人、有写权限的人以及 Claude GitHub App 的评论。你可以用 +name 的形式指定额外的机器人。如果该机器人发表了评论，它会被当作一条断言，对照代码进行检查。\nClaude 以你的身份、在你的机器上关注 PR，并消耗你的配额。合上笔记本电脑它就会停止，所以要保持会话打开、机器不休眠。你还需要登录 GitHub CLI（先运行 gh auth login），而且它只关注你打开的 PR。\n除了 自动模式 之外， watch 会在每个提示处停下，等待你回应。它不会在 bypass-permissions 模式下运行。注意在 Windows 上，/ship 会打开 PR 并进行审查，但 watch 不会启动。\n确保 watch 有自己独立的检出目录。你需要让该分支保持检出状态。如果你打算直接开始下一个任务，那就为其中一个任务单独使用一个 worktree。\n如果 watch 启动失败，Claude 会解释原因，但仍会审查 PR。例如，如果你的仓库 .claude/settings.json 中针对 Bash 配置了 PreToolUse 或 PermissionRequest 钩子，就无法运行 watch。\n此外，watch 会在你离开期间消耗模型轮次，因此会计入你的套餐用量或 API 账单。第一次使用时，最好待在机器旁边，确认用量符合预期。\nwatch 会在必要时把基础分支合并到你的分支，然后运行测试等命令。换句话说，"
-  },
-  {
-   "group": "ai",
-   "source": "BestBlogs 每日早报",
-   "title": "EP247 · Noam Brown 谈推理、Claude 拆分执行、腾讯发布 Hy MT3 · 11-25 早报",
-   "url": "https://www.bestblogs.dev/explore/brief/2026-11-25?utm_source=rss&utm_medium=feed&utm_campaign=daily_brief&entry=rss_brief_index",
-   "published": "2026-11-25T06:00:00.000Z",
-   "description": "📝 今日导语 从 Brown 谈推理、Claude 拆分执行到腾讯发布 Hy MT3，三个案例帮你细化能力验收。 🏷 今日关键词： 推理时计算 Claude 智能体 混元 Hy MT3 Bun 编译器 ERNIE 解码 📰 今日精选内容 Noam Brown：为什么博弈论没有通往通用智能 | No Limit 决赛现场 Sequoia Capital &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 91 Anthropic 在 Claude 平台上构建智能体的经验 Claude &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 90 腾讯发布混元翻译模型 Hy MT3，扩充语种并优化游戏翻译 腾讯混元 &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 90 Jarred Sumner 谈如何交付数百万行智能体编写的 Bun 编译器代码 AI Engineer &nbsp;·&nbsp; 视频 &nbsp;·&nbsp; 评分 92 迈向解码极限：ERNIE 5.5 Flash 在 SGLang 上达到 1074 tokens/s LMSYS Blog &nbsp;·&nbsp; 文章 &nbsp;·&nbsp; 评分 92 从提示词优化到决策模型：Jev 辅助业务 Agent 技能路由的探索与落地 阿里云开发者 &nbs",
-   "excerpt": ""
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "MIT 与 Microsoft 论文：GitHub Copilot 使初级软件工程师招聘下降约 40%",
-   "url": "https://aihot.news/items/hyofqy3ukzks1eyr4bu317bez",
-   "published": "2026-11-25T05:29:48.000Z",
-   "description": "MIT 和 Microsoft 的新论文《AI-Assisted Programming and Labor Demand》利用 5,414 家跨国公司（覆盖 38% 美国程序员）的 GitHub 合同审查时点构造自然实验，估计 Copilot 采用对劳动力需求的影响。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hyofqy3ukzks1eyr4bu317bez",
-   "excerpt": "MIT 和 Microsoft 的新论文《AI-Assisted Programming and Labor Demand》利用 5,414 家跨国公司（覆盖 38% 美国程序员）的 GitHub 合同审查时点构造自然实验，估计 Copilot 采用对劳动力需求的影响。\n论文用合同审查时点构造自然实验，给出了 Copilot 采用对初级工程师招聘影响的因果证据，可作讨论 AI 与就业的依据。\n总体而言，该论文发现GitHub Copilot减少了大公司对初级程序员的招聘，而员工离职和高级人员招聘则保持平稳。\n早期采用AI的公司在招聘和增长方式上已经有所不同，因此简单的比较无法显示AI编程工具对就业的影响。此前关于这一问题的研究得出了相互矛盾的答案。\n他们追踪了5,414家跨国公司，覆盖了38%的美国程序员，这些公司的GitHub合同审查时间设定在Copilot发布之前。审查时间较早的公司更早采用了Copilot，这形成了一个自然实验。\n1年后，在被审查日期推动采用Copilot的公司中，季度技术招聘下降了29%，而离职率没有上升。其初级软件工程师招聘下降了约40%，而有经验的工程师招聘保持稳定。\n在Copilot之前，72%的初级技术招聘进入了编码密集型岗位。采用之后这一比例为52%，因此入门级招聘最终在编码密集型和非编码密集型岗位之间大致平均分配。\n论文用合同审查时点构造自然实验，给出了 Copilot 采用对初级工程师招聘影响的因果证据，可作讨论 AI 与就业的依据。"
-  },
-  {
-   "group": "wh",
-   "source": "MH&L",
-   "title": "Consumer Confidence Surged in November",
-   "url": "https://www.mhlnews.com/global-supply-chain/news/55421367/consumer-confidence-surged-in-november",
-   "published": "2026-11-25T05:05:00.000Z",
-   "description": "One cause of the confidence was due to lower uncertainty following the midterm elections, said Fergus McCormick, of The Conference Board.",
-   "excerpt": "Just in time for the holiday season, consumer confidence has increased.\nThe Conference Board Consumer Confidence Index rose by 11.4 points to 103.3 (1985=100) in November, up from 91.9 in October.\n&ldquo;Consumer confidence rallied again in November, potentially due to lower uncertainty following the midterm elections,&rdquo; said Fergus McCormick, senior economist, Global Indicators, The Conference Board , in a statement.\n&ldquo;After two months of consecutive increases, the headline index is back to levels of confidence last seen in January 2025. The gain in confidence was led by stronger perceptions of present and future labor market conditions. Perceptions of current and future business conditions also improved sharply. Along with the gain in headline confidence, consumers planned slightly higher spending on goods and vacations.&rdquo;\nAll age groups and generations recorded an increase in confidence in November, with the greatest increase by Gen Z respondents. Improvements in confidence were largest among consumers with higher household incomes.\nMcCormick continued: &ldquo;Write-in responses in November were slightly less negative than previous months. While consumers continued to express frustration with high prices and rising costs, some comments cited hope for the general economy. Comments about war and conflict ticked up slightly, along with mixed feelings about elections, politics, and the direction of the labor market.&rdquo;\nOn a month-over-month as well as on a six-month moving average basis, plans to purchase autos and homes both improved slightly in November.\nPlanned spending on durable goods in the month generally increased across the board.\nExpected spending on services over the next six months was mixed. Anticipated spending on hotels and airfare for personal travel increased.\nOther increases in planned spending remained concentrated on discretionary items such as gambling and lottery, amusement parks and/or outdoor recreation, and historic sites, museums, and libraries. The top spending plans included restaurants, bars, take-out; streaming, internet, mobile services; utilities; health care; and beauty, personal care, but these categories were somewhat less prioritized compared to previous months.\nConsumers&rsquo; views of current business conditions improved in November:\nConsumers&rsquo; views of the labor marke t were more positive in November:\nConsumers were significantly less negative about the labor market outlook in November:\nConsum"
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "千问App免费开放打电话服务，可代用户拨号沟通需求",
-   "url": "https://aihot.news/items/cebavio3uyjwli5r3imsuq1si",
-   "published": "2026-11-25T04:32:44.000Z",
-   "description": "千问App宣布千问Go打电话服务免费开放，用户告知打给谁、要办什么事并授权后，AI可代为拨打电话、沟通需求。文中举例称可帮用户联系酒店前台找回遗落行李并沟通寄回，还适用于订包间、催快递等场景。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cebavio3uyjwli5r3imsuq1si",
-   "excerpt": "千问App宣布千问Go打电话服务免费开放，用户告知打给谁、要办什么事并授权后，AI可代为拨打电话、沟通需求。文中举例称可帮用户联系酒店前台找回遗落行李并沟通寄回，还适用于订包间、催快递等场景。\n千问App官方介绍免费开放的代打电话服务，说明了授权流程和订包间、催快递等典型使用场景。\n千问App官方介绍免费开放的代打电话服务，说明了授权流程和订包间、催快递等典型使用场景。"
-  },
-  {
-   "group": "ai",
-   "source": "Latent Space",
-   "title": "[AINews] Gemini 4 Neon marks GDM's full return as a Frontier Lab",
-   "url": "https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/",
-   "published": "2026-11-25T04:29:07.000Z",
-   "description": "November 24, 2026 — Neon beats Astra and Fable on LiveBench and cuts Theo’s TS Rust benchmark runtime by 48.6%.",
-   "excerpt": "November 24, 2026 — Neon beats Astra and Fable on LiveBench and cuts Theo’s TS Rust benchmark runtime by 48.6%.\nThree months ago, shortly after the Demis/Dean/etc departures , and with disappointing progress on Gemini 3 models, people had publicly given up on Google DeepMind as a frontier lab. Today, apologies are being issued , and Neon is the talk of the town!\nDespite giving Gemini 4 Argon (RIP), Carbon and Neon the title story (with Hydrogen a near miss ), we are exercising yet another rare double-feature choice to highlight the unusually strong breakout trend in Neon’s adoption:\nIf this seems like a coordinated hype campaign, it very probably isn’t, mostly because the names we feature can’t be bought, especially coming up to the end.\nAI News for 11/23/2026-11/24/2026. We checked 12 subreddits, 544 Twitters and no further Discords. AINews' website lets you search all past issues. As a reminder, AINews is now a section of Latent Space . You can opt in/out of email frequencies!\nFrontier Models as Research Engines: VP ≠ VNP, Protein Design and 948 Kernel Bugs\nVP ≠ VNP, posted by two labs : An Anthropic GitHub repo reportedly contains a proof by an internal Claude research model that VP ≠ VNP. This is the algebraic analogue of P vs NP, posed by Valiant in 1979, and implies that polynomials such as the permanent lack small circuits over every field ( @kimmonismus , repo pointer ).\nOpenAI's counter-release : OpenAI then posted its own proof and says it was \"obtained on November 6, 2026.\" Neither lab named a model or published an announcement ( @AndrewCurran_ ).\nScope : The result does not imply P ≠ NP, which still requires general Boolean circuit lower bounds ( @ZhihuFrontier ).\nSpeculation : Curran argues that both labs are sitting on unreleased results and repeats unconfirmed rumors of cryptography breakthroughs. Treat this as opinion.\nRiemann proof clarifications : Levent Alpöge says the \"250,000+ pages\" claim was a joke. He released only the Lean code because he could not produce a readable writeup, and called it \"full of garbage obviously, but compiles\" ( @kimmonismus , @simonw ).\nLineage claim : A Zhihu analysis traces Alpöge's key method to a short OpenAI proof excluding Landau–Siegel zeros. This is an attributed inference ( @ZhihuFrontier ).\nGPT-6 protein design, wet-lab validated : OpenAI released a preprint showing GPT-6 models designing new protein shapes and sequences through reasoning and code, without specialized bio models ( @OpenAI ).\nResults "
-  },
-  {
-   "group": "ai",
-   "source": "AIHOT",
-   "title": "蚂蚁 inclusionAI 开源 Ming-Image-0.2-Design 图像生成模型",
-   "url": "https://aihot.news/items/hdvt6wswzycj78wnr7r43xn6o",
-   "published": "2026-11-25T04:02:44.000Z",
-   "description": "蚂蚁 inclusionAI 在 Hugging Face 发布并开源 Ming-Image-0.2-Design，改进复杂构图、光照和文字渲染，可用于电商主图、UI 设计稿和空间效果图。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hdvt6wswzycj78wnr7r43xn6o",
-   "excerpt": "蚂蚁 inclusionAI 在 Hugging Face 发布并开源 Ming-Image-0.2-Design，改进复杂构图、光照和文字渲染，可用于电商主图、UI 设计稿和空间效果图。\n官方发布页给出能力改进、榜单排名和部署参数，读者可以据此判断它在设计出图场景中的实际用法。\n🧩 ModelScope · 🤗 Hugging Face 🎨 设计技能 · 📊 PPT 技能\n本次发布对 Ming-Image-0.2-Design 进行了升级并开源。新版本改进了复杂构图、光影和文字渲染，可用于制作电商主图、UI 设计稿和空间效果图。上一代图层分解模型 Ming-Image-0.1-Design-Layer 已经能把设计图拆分成透明图层，本次升级进一步细化到人物部件级别，为下游编辑和动画提供素材。在网页设计方面，Ming-Image-0.2-Design 可与 Ling-3.2-flash 配合，把设计构想变成可交互页面。\n11 月 23 日的初步评测结果显示，Ming 在文生图总榜的开源权重模型中排名第一。\n为了获得更好的效果，我们推荐使用 Figma 风格的结构化提示词及其 提示词增强器 。 四季小屋示例使用的是 结构化提示词文件 ：\n提示词增强（PE）可以使用 Ling-3.0-flash-VL 或 qwen3.8-27B ；参见 文生图提示词改写 。\n同时传入 --width 和 --height 。代码会选择内部 1024 或 2048 级别的宽高比桶；任意指定的尺寸可能会在最后被缩放。旧的方形 --resolution 选项仍然兼容。\n来源： 蚂蚁 inclusionAI：HuggingFace 新模型 · huggingface.co\n官方发布页给出能力改进、榜单排名和部署参数，读者可以据此判断它在设计出图场景中的实际用法。"
   }
  ]
 }
